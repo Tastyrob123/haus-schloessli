@@ -342,7 +342,8 @@ body.re :is(h1,h2,h3,b,strong,em,i,dt){font-style:normal}
 #w-los{flex:none}
 
 /* Messlauf 30.10.2026 (Kriterium 35): Schrift optisch mittig: Umschalter (Sperrung ausgleichen), Beispielfragen im Probe-Chat (Zeile auf Versalhöhe) */
-.wahl2 button{padding-left:18.5px!important;padding-right:17.5px!important}
+.wahl2 button{padding-left:18px!important;padding-right:18px!important}   /* WebKit: symmetrisch (kein Sperrabstand nach dem letzten Buchstaben) */
+@supports (interpolate-size:allow-keywords){.wahl2 button{padding-left:18.5px!important;padding-right:17.5px!important}}   /* nur Chromium: Sperrabstand hinter dem letzten Buchstaben ausgleichen */
 .probe__fragen span{text-box:trim-both cap alphabetic}
 /* Messlauf 30.10.2026 (Kriterium 5): langer Gruppentitel («Allergien & Unverträglichkeiten») schrumpft nie unter sein längstes Wort, der Zähler rückt daneben bzw. darunter statt darüber */
 .re-gr summary b{min-width:min-content}
@@ -350,7 +351,7 @@ body.re :is(h1,h2,h3,b,strong,em,i,dt){font-style:normal}
 .re-q .re-a__n b{-webkit-line-clamp:3;text-wrap:pretty}
 @media (max-width:760px){.gs-hinweis #gs-name{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.5;min-height:3em;text-wrap:pretty}}
 .re-n__q{text-wrap:balance}
-@supports (font:-apple-system-body){.re-modus button{padding-left:18.25px!important;padding-right:17.75px!important}}   /* nur Safari: «Gestalten» rastet dort einen halben Punkt weiter rechts ein */
+/* (Safari-Ausgleich für «Gestalten» entfällt: WebKit ist im Grundfall symmetrisch, Cloud-Prüfung 3.11.2026) */
 /* Kein «×» (Robert 30.10.2026): alle Schliessen-Knöpfe zeigen den Zurück-Pfeil; der Pfeil dreht sich beim Überfahren nicht mehr, er rückt leicht nach links */
 .quit button:last-child svg{width:14px;height:14px;stroke-width:1.7}
 .gs-seite .gs-seite__zu:hover{transform:none}
