@@ -1,6 +1,6 @@
-/* bewegung.js · die ruhige, edle Bewegung für alle Werkzeuge des Culinarium (29.10.2026, Robert: «dieses mit dem Reinzoomen, mit dem hochgeflogen
+/* bewegung.js · die ruhige, edle Bewegung für alle Werkzeuge des Hauses (Wirtschaft am Schlössli) (29.10.2026, Robert: «dieses mit dem Reinzoomen, mit dem hochgeflogen
    Kommen der Schriften … wenn man scrollt, dass das halt sich toll anfühlt»). Haltung wie das Schweben der anderen Häuser (studio/schweben.js),
-   im Ton des Culinarium: Abend, Kerzenlicht, ruhig — längere, weich auslaufende Kurven, kaum Feder.
+   im Ton des Hauses: ruhig wie der See — längere, weich auslaufende Kurven, kaum Feder.
    Lädt das Kleid (kleid/schloessli.js) nach, async und mit wenig Vorrang: nichts davon steht vor dem ersten Knopf.
    - Startbild und Knöpfe: in grund.css (laufen ab dem ersten Bild, ohne auf dieses Skript zu warten).
    - Hier: Zwischentitel, Karten, Blätter, Kacheln schweben gestaffelt aus der Tiefe herauf, sobald sie am unteren Rand auftauchen; Fotos darin zoomen

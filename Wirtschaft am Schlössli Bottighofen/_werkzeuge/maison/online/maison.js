@@ -1,5 +1,5 @@
-/* La Maison · Culinarium Hannover (28.10.2026). Quelle für bau.py, nicht die Ausgabe. Vorlage: La Maison der Häuser.
-   Gruss, Datum, Empfang «Die Plakatwand» (Vorschau statt Foto, M23), Auftritte, Leiste und der Stand je Werkzeug.
+/* Das Hafenbüro (Zentrale, Arbeitsname La Maison) · Wirtschaft am Schlössli (Nachtbau 3./4.11.2026). Quelle für bau.py, nicht die Ausgabe. Vorlage: die Zentrale der Häuser.
+   Gruss, Datum, Empfang mit fünf Fenstern, Auftritte, Leiste und der Stand je Werkzeug.
    Stand nur aus den Werkzeugen selbst (nichts geschätzt): Wege als Daten in der Seite (#maison-wege); ein Weg darf eine Liste sein
    (antwortet der erste nicht, gilt der nächste). Werte gehen nur als Zahl in die Seite. Antwortet ein Werkzeug nicht: Satz ohne Zahl. */
 (function () {
@@ -10,6 +10,9 @@
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var ganz = function (x) { var n = parseInt(x, 10); return isFinite(n) && n > 0 ? n : 0; };
   var n = function (x) { return Number(x || 0).toLocaleString('de-DE'); };
+  /* Stand-Zeilen, wie bau.py sie setzt (aus den Hauswerten): antwortet ein Werkzeug nicht, kommt dieser Satz zurück */
+  var GRUND = {}; Array.prototype.forEach.call(document.querySelectorAll('[data-stand]'), function (el) { var k = el.getAttribute('data-stand'); if (!(k in GRUND)) GRUND[k] = el.innerHTML; });
+  var grund = function (k) { return GRUND[k] || '&nbsp;'; };
   var setze = function (key, html) { $$('[data-stand="' + key + '"]').forEach(function (el) { el.innerHTML = html; }); };
   var zahl = function (key, wert) { $$('[data-zahl="' + key + '"]').forEach(function (el) { el.textContent = wert; }); };
   var ruhig = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -52,7 +55,7 @@
     Promise.all(r.map(function (i) { return (i.decode ? i.decode() : Promise.resolve()).catch(function () {}); })).then(function () { clearTimeout(uhr); requestAnimationFrame(los); });
   })();
 
-  /* M23: in Ruhe die Fenster der Bar am Abend; Zeiger oder Tastatur-Fokus auf einer Zeile zeigt links die echte Vorschau dieses Werkzeugs.
+  /* M23: in Ruhe die Fenster; Zeiger oder Tastatur-Fokus auf einer Zeile zeigt links die echte Vorschau dieses Werkzeugs.
      Erst entpacken, dann zeigen (M16). Verlässt der Zeiger die Tafel, kommt die Ruhe-Ansicht zurück. Nichts bewegt sich, nur Deckkraft. */
   /* Fotos der Fenster: einblenden, sobald geladen (Oberchef 29.10.2026: die Bewegung hält das Bild nie zurück) */
   $$('.m-f5__k img').forEach(function (i) { var da = function () { i.classList.add('da'); }; if (i.complete && i.naturalWidth) da(); else { i.addEventListener('load', da, { once: true }); i.addEventListener('error', da, { once: true }); } });
@@ -176,34 +179,34 @@
   var BSP = '<span class="bsp">Beispiel</span>';
   var BEISPIEL = []; try { BEISPIEL = JSON.parse($('#maison-beispiel').textContent) || []; } catch (e) {}   /* Werkzeuge, die in der Demo Beispieldaten zeigen (R20) */
 
-  /* Le Bureau: {aenderungen, zuletzt:{zeit}, bereiche, seiten} oder Stand des Stamms */
+  /* Das Schaufenster (bureau): {aenderungen, zuletzt:{zeit}, bereiche, seiten} oder Stand des Stamms */
   hole('bureau').then(function (u) {
     var s = stamm(u), a = s ? (s.offen ? ganz(s.offen) || 1 : 0) : ganz(u.aenderungen), zul = !s && u.zuletzt && u.zuletzt.zeit ? tag(u.zuletzt.zeit) : '';
     if (!s && Array.isArray(u.bereiche) && u.bereiche.length) zahl('bereiche', u.bereiche.length);
     if (!s && ganz(u.seiten)) zahl('seiten', ganz(u.seiten));
     setze('bureau-kurz', a ? '<b>' + a + ' im Entwurf</b>' : (zul ? 'Veröffentlicht ' + esc(zul) : 'Alles veröffentlicht'));
     setze('bureau', (a ? '<b>' + a + (a > 1 ? ' Änderungen' : ' Änderung') + ' im Entwurf.</b> ' : 'Nichts offen im Entwurf. ') + (zul ? 'Zuletzt veröffentlicht am ' + esc(zul) + '.' : ''));
-  }).catch(function () { setze('bureau-kurz', 'Die Website, Seite für Seite'); setze('bureau', 'Der Stand ist gerade nicht abrufbar.'); });
+  }).catch(function () { setze('bureau-kurz', grund('bureau-kurz')); setze('bureau', 'Der Stand ist gerade nicht abrufbar.'); });
 
-  /* La Carte: {karten:[{entwurf, pdf_zeit}]} oder Stand des Stamms */
+  /* Das Kartenpult (carte): {karten:[{entwurf, pdf_zeit}]} oder Stand des Stamms */
   hole('carte').then(function (d) {
     var s = stamm(d);
     if (s) { var o = ganz(s.offen); setze('carte-kurz', o || s.offen === true ? '<b>Entwurf wartet</b>' : 'Alle Karten veröffentlicht'); return; }
-    var k = Array.isArray(d.karten) ? d.karten : null; if (!k) throw new Error('ohne Karten');
+    var k = Array.isArray(d.karten) ? d.karten : null; if (!k || !k.length) throw new Error('ohne Karten');
     var e = k.filter(function (x) { return x && x.entwurf; }).length;
     zahl('karten', k.length); zahl('entwurf', e);
     setze('carte-kurz', e ? '<b>' + e + ' im Entwurf</b>' : k.length + (k.length === 1 ? '\u00a0Karte, veröffentlicht' : '\u00a0Karten, alle\u00a0veröffentlicht'));
-  }).catch(function () { setze('carte-kurz', 'Menü und Drinks je Abend'); });
+  }).catch(function () { setze('carte-kurz', grund('carte-kurz')); });
 
-  /* L’Imprimerie: Liste der Vorlagen [{art, zahl}] (M17) */
+  /* Die Hausdruckerei (imprimerie): Liste der Vorlagen [{art, zahl}] (M17) */
   hole('imprimerie').then(function (l) {
     var liste = Array.isArray(l) ? l : Array.isArray(l.vorlagen) ? l.vorlagen : null; if (!liste || !liste.length) throw new Error('leer');
     var z = 0, arten = {}, gruppiert = false; liste.forEach(function (x) { z += ganz(x && x.zahl) || 1; var g = x && (x.gruppe || x.art); if (g) arten[String(g)] = 1; if (x && x.gruppe) gruppiert = true; });   /* Arten nach «gruppe» (Werkstatt, 30.10.2026), sonst nach «art» */
     var a = Object.keys(arten).length;
     var text = function (n) { return z + '\u00a0Vorlagen' + (n ? ' in ' + n + (n === 1 ? '\u00a0Art' : '\u00a0Arten') : ''); };
     setze('imprimerie-kurz', text(a));
-    /* 30.10.2026 (Tor, Oberchef): die Zahl der Arten wie in der Ansicht der Plakatwerkstatt. Sie legt kleine Arten zu Gruppen zusammen (GRUPPE in start.js);
-       der Tresen liest Arten und Gruppen dort mit, damit die Zahl nie wieder von der Werkstatt abweicht. */
+    /* 30.10.2026 (Tor, Oberchef): die Zahl der Arten wie in der Ansicht der Hausdruckerei. Sie legt kleine Arten zu Gruppen zusammen (GRUPPE in start.js);
+       die Zentrale liest Arten und Gruppen dort mit, damit die Zahl nie von der Hausdruckerei abweicht. */
     var weg = [].concat(WEGE.imprimerie || [])[0] || '';
     var quelle = weg.replace(/haeuser\/.*$/, 'start.js');
     if (gruppiert || !quelle || quelle === weg) return;   /* trägt die Liste schon «gruppe», gilt sie allein */
@@ -216,9 +219,9 @@
       var n = keys.filter(function (k) { return !drin[k]; }).length;
       if (n) setze('imprimerie-kurz', text(n));
     }).catch(function () {});
-  }).catch(function () { setze('imprimerie-kurz', 'Vorlagen, druckfertig'); });
+  }).catch(function () { setze('imprimerie-kurz', grund('imprimerie-kurz')); });
 
-  /* La Réception: {anfragen_neu, anfragen_offen, ohne_antwort, fragen_gesamt} */
+  /* Das Reservationsbuch (reception): {anfragen_neu, anfragen_offen, ohne_antwort, fragen_gesamt} */
   hole('reception').then(function (r) {
     var u = {}; ['anfragen_neu', 'anfragen_offen', 'ohne_antwort', 'fragen_gesamt'].forEach(function (k) { u[k] = ganz(r[k]); });
     var t = [];
@@ -226,20 +229,20 @@
     else if (u.anfragen_offen) t.push(u.anfragen_offen + (u.anfragen_offen === 1 ? '\u00a0Anfrage offen' : '\u00a0Anfragen offen'));
     if (u.ohne_antwort) t.push('<b>' + u.ohne_antwort + (u.ohne_antwort === 1 ? '\u00a0Frage ohne Antwort' : '\u00a0Fragen ohne\u00a0Antwort') + '</b>');
     var kurz = t.length ? t.join(' · ') : 'Nichts offen';
-    setze('reception-kurz', kurz);   /* Gestaltung 28.10.2026: Probe-Kennzeichnung nur einmal, in der Zeile oben, nicht in jeder Kachel */
+    setze('reception-kurz', t[0] || kurz);   /* im Fenster nur das Wichtigste (eine Zeile), die ganze Zeile im Saal */   /* Gestaltung 28.10.2026: Probe-Kennzeichnung nur einmal, in der Zeile oben, nicht in jeder Kachel */
     setze('reception', t.length ? kurz : 'Nichts offen · ' + u.fragen_gesamt + (u.fragen_gesamt === 1 ? ' Frage' : ' Fragen') + ' bisher');
-  }).catch(function () { setze('reception-kurz', 'Chat auf der Website'); setze('reception', '&nbsp;'); });
+  }).catch(function () { setze('reception-kurz', grund('reception-kurz')); setze('reception', '&nbsp;'); });
 
-  /* Le Livre: stand:{fotos, dateien, ki, ue} */
+  /* Das Markenbuch (livre): stand:{fotos, dateien, ki, ue} */
   hole('livre').then(function (d) {
     var s = d.stand || {}, f = ganz(s.fotos), da = ganz(s.dateien), ki = ganz(s.ki), ue = ganz(s.ue);
     if (!f && !da) throw new Error('leer');
     setze('livre-kurz', f + '\u00a0Fotos · ' + da + '\u00a0Dateien');
     var dazu = [ki ? ki + ' mit KI erzeugt' : '', ue ? ue + ' nachgeschärft' : ''].filter(Boolean);
     setze('livre', f + ' Fotos in fertigen Grössen' + (dazu.length ? ', davon ' + dazu.join(' und ') + ', alle gekennzeichnet' : '') + '. ' + da + ' Dateien für Agenturen und Druckereien.');
-  }).catch(function () { setze('livre-kurz', 'Fotos, Dateien, Markenprüfung'); setze('livre', '&nbsp;'); });
+  }).catch(function () { setze('livre-kurz', grund('livre-kurz')); setze('livre', '&nbsp;'); });
 
-  /* Le Registre: {summe:{heute, besuche, seiten, laender, buchung}, je_tag:[…], tage, beispiel, leer} */
+  /* Die Besucherliste (registre): {summe:{heute, besuche, seiten, laender, buchung}, je_tag:[…], tage, beispiel, leer} */
   hole('registre').then(function (m) {
     var u = m.summe || {}, bs = ganz(u.besuche), jt = Array.isArray(m.je_tag) && m.je_tag.length ? m.je_tag[m.je_tag.length - 1] : null;
     var heute = jt && isFinite(Number(jt.besuche)) ? Number(jt.besuche) : (isFinite(Number(u.heute)) ? Number(u.heute) : null);
@@ -250,23 +253,22 @@
     if (m.beispiel) { var kb = $('.rw-kopf__bsp'); if (kb) kb.hidden = false; }   /* «Beispiel» leise in der Datumszeile des Kopfs, nie mitten in den Zahlen (29.10.2026) */
     setze('registre-kurz', m.leer || !bs ? 'Noch keine Besuche gezählt' : n(bs) + (bs === 1 ? ' Besuch' : ' Besuche') + ' in ' + n(ganz(m.tage)) + ' Tagen');
     zahl('reg-besuche', bs ? n(bs) : '–'); zahl('reg-seiten', ganz(u.seiten) ? n(u.seiten) : '–'); zahl('reg-laender', ganz(u.laender) ? n(u.laender) : '–');
-    /* Der Weg zur Buchung (Weg des Gastes): Besuche → Abend angesehen → Platz gebucht oder Warteliste → dabei. Rechnung und Namen wie im Besucherbuch
-       des Hauses (registre.js trichter, Fehlerbuch 10a): abbruch.von = erste Stufe, davon ohne Abbruch = zweite; booking.zahl = direkt gebucht */
-    /* Culinarium (Le Registre, 28.10.2026): Stufe 2 = «Der Abend» geöffnet = Aufrufe von abend.html (höchstens die Besuche), Stufe 3 = zum Platz
-       (gebucht oder Warteliste, summe.buchung, höchstens Stufe 2); Anteil je Stufe an der davor, nie über 100 % */
-    var ab = (m.seiten || []).filter(function (x) { return x && x.s === 'abend.html'; })[0], fen = Math.min(bs, ganz(ab && ab.n)), wei = Math.min(fen, ganz(u.buchung)), bk = 0;
+    /* Der Weg zur Reservation (Weg des Gastes): Besuche → Seite der zweiten Stufe (data-seite am .m-weg, aus bau.py; im Schlössli die Karte) → Reservation,
+       Anruf oder Anfrage (summe.buchung, höchstens Stufe 2) → am Tisch. Anteil je Stufe an der davor, nie über 100 % */
+    var weg = $('.m-weg'), seite2 = (weg && weg.getAttribute('data-seite')) || 'karte.html';
+    var ab = (m.seiten || []).filter(function (x) { return x && x.s === seite2; })[0], fen = Math.min(bs, ganz(ab && ab.n)), wei = Math.min(fen, ganz(u.buchung)), bk = 0;
     var ant = function (t, g) { return g ? Math.round(100 * t / g) + ' % davon' : ''; };
     $$('[data-wg]').forEach(function (el) {
       var k = el.getAttribute('data-wg');
       if (k === 'besuche') el.textContent = bs ? n(bs) : '–';
       if (k === 'fenster') el.textContent = fen ? n(fen) : '–';
       if (k === 'weiter') el.textContent = wei ? n(wei) : '–';
-      if (k === 'besuche-satz') el.textContent = 'auf der Website, in ' + n(ganz(m.tage) || 30) + ' Tagen';
+      if (k === 'besuche-satz') el.textContent = 'letzte ' + n(ganz(m.tage) || 30) + ' Tage';
       if (k === 'fenster-satz') el.textContent = fen ? ant(fen, bs) : 'Noch nichts gezählt';
       if (k === 'weiter-satz') el.textContent = wei ? ant(wei, fen) + (bk ? ', dazu ' + (bk === 1 ? 'einmal' : n(bk) + ' Mal') + ' gleich gebucht' : '') : 'Noch nichts gezählt';
     });
     setze('besuche', m.leer ? 'Noch keine Besuche gezählt.' : (m.beispiel ? 'Beispielwerte, bis die Website echte Besuche zählt · ' : '') + 'letzte ' + n(ganz(m.tage)) + ' Tage');
-  }).catch(function () { setze('registre-kurz', 'Besuche ohne Namen'); setze('besuche', 'Die Zählung ist gerade nicht abrufbar.'); setze('registre-heute', '–'); setze('registre-buchung', '–'); });
+  }).catch(function () { setze('registre-kurz', grund('registre-kurz')); setze('besuche', 'Die Zählung ist gerade nicht abrufbar.'); setze('registre-heute', '–'); setze('registre-buchung', '–'); });
 
   window.MAISON_BEREIT = true;   /* Startfehler-Tür (R04): ohne dieses Zeichen öffnet fehler.js die Tür */
 })();

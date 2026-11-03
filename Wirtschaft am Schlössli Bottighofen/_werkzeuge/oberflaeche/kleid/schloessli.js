@@ -2,7 +2,7 @@
    Im <head> VOR allen Stilen laden (ohne defer). Rahmen «Die Bühne»: Kopf dunkel wie die Nacht über dem See (#0b1d3d), Raum hell wie das Papier im Seespiegel (#E7ECF3).
    Liegt unter _werkzeuge/oberflaeche/ und wird von den Werkzeug-Servern unter /assets/oberflaeche/ ausgeliefert (einziger Schreiber: Hafenbüro bzw. Oberchef).
    Fotos und Schriften kommen aus der Website (/assets/img/<schlüssel>-<breite>.webp, Register website/inhalt/bilder.json; /assets/fonts/), Wortmarke aus /assets/oberflaeche/kleid/schloessli-marke.svg#wm.
-   Stamm: kleid/schloessli.js (Culinarium Hannover) bzw. kleid/wildside.js; Werte des Hauses aus dem Kleid vom 19.10.2026 und der gebauten Website (assets/css/haus.css :root). */
+   Stamm: das Kleid der Häuser; Werte des Hauses aus dem Kleid vom 19.10.2026 und der gebauten Website (assets/css/haus.css :root). */
 window.WO_HAUS = { kurz: 'schloessli', name: 'Wirtschaft am Schlössli', voll: 'Wirtschaft am Schlössli Bottighofen', ort: 'Bottighofen', bar: 'Lästermeile', welt: 'land', rahmen: 'buehne', anrede: 'sie',   /* das Haus siezt («Mehr Wirtschaft, weniger feine Pinkel», herzlich, Schweizer Schreibung mit ss) */
   /* Aussenfoto des Startbilds: die blauen Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen (Bildregister der Website, Schlüssel «start», Stufen 480/800/1200/1800/2400) */
   foto: '/assets/img/start-1200.webp', fotoKlein: '/assets/img/start-800.webp', fotoFarbe: '#7d94ab',
@@ -23,7 +23,7 @@ window.WO_HAUS = { kurz: 'schloessli', name: 'Wirtschaft am Schlössli', voll: '
   /* Prüfserver je Werkzeug (cloud/haus.json); Wege zwischen Werkzeugen immer 127.0.0.1, nie localhost (Fehlerbuch 10a) */
   ports: { zentrale: 9281, website: 9282, karten: 9283, gaeste: 9284, marke: 9285, besuche: 9286, druck: 9287, werkbank: 9288, website_lokal: 8982 } };
 /* Lokal (Prüfserver je Werkzeug) zeigen die Wege zu den ANDEREN Werkzeugen auf deren eigenen Server unter 127.0.0.1, nie auf den eigenen Port
-   (Fund culinarium-reception 28.10.2026: der Knopf «La Maison» öffnete /_werkzeuge/maison/ auf 9284 ohne Stand-Wege; Fehlerbuch 10a). Online bleiben sie relativ.
+   (Fund aus dem Stamm, 28.10.2026: der Knopf «La Maison» öffnete /_werkzeuge/maison/ auf 9284 ohne Stand-Wege; Fehlerbuch 10a). Online bleiben sie relativ.
    Wer selbst schon absolute Wege setzt: nur Wege umschreiben, die noch mit «/» beginnen (WO_HAUS.wegeLokal = true zeigt, dass es hier geschah). */
 (function () {
   if (!/^(127\.0\.0\.1|localhost)$/.test(location.hostname)) return;

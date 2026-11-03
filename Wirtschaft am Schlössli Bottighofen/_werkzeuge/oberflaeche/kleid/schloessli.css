@@ -1,4 +1,4 @@
-/* kleid/schloessli.css · Wirtschaft am Schlössli Bottighofen · «Stuhl und See» (Oberchef Nachtbau 3./4.11.2026; Stamm: kleid/schloessli.css und kleid/wildside.css, Hauswerte aus dem Kleid vom 19.10.2026).
+/* kleid/schloessli.css · Wirtschaft am Schlössli Bottighofen · «Stuhl und See» (Oberchef Nachtbau 3./4.11.2026; Stamm: das Kleid der Häuser, Hauswerte aus dem Kleid vom 19.10.2026).
    Werte aus der gebauten Website (website/assets/css/haus.css :root, Farbwelt A «Stuhl und See» aus marke.json, seit 19.10.2026 «Ton in Ton» auf das Blau des Platztellers gedreht):
    Nacht über dem See #0b1d3d, Tief #0A234C, Stuhlblau #113d88 als dunkle Flächen; Papier im Seespiegel #E7ECF3 / #D0DAE7 als Raum; Seehimmel #A2B6CF (hell #C5D2E1) als Linie, Zeichen und Knauf auf Dunkel;
    Seehimmel tief #0F3678 als Betonung auf Hell; Tinte #041023; Schirmrot #FD9964 nur als Punkt (Marke «Entwurf», Nabe der Zeiger). Keine eigenen Hexwerte für Flächen in den Werkzeugen.
@@ -31,7 +31,7 @@
 .wo-sb__h em,.wo-zw em{font-style:normal;font-weight:400;color:var(--wo-akzent)}
 /* Fehlerbuch 10a (Robert 20.10.2026: «Da ist blaue Schrift. Das kann man nicht lesen … die muss weiss sein»): auf dunkler Fläche ist jede Titelzeile hell */
 .wo-sb .wo-sb__h em,[data-wo-rahmen] .wo-sb .wo-sb__h em,#ansicht .wo-sb .wo-sb__h em,body .wo-sb .wo-sb__h em{font-style:normal;color:#fff;font-weight:400}
-/* Frühere Klasse für Menüzeilen (Rudis Zeilen): im Schlössli Gerichte wie auf der Karte in DM Mono gesperrt (THON · CAVATELLI) */
+/* Klasse für Menüzeilen der Werkzeuge (.wo-rudi, Name aus dem Stamm): im Schlössli Gerichte wie auf der Karte in DM Mono gesperrt (THON · CAVATELLI) */
 .wo-rudi{font-family:var(--wo-etikett);font-weight:400;text-transform:uppercase;letter-spacing:.1em}
 /* Etiketten in DM Mono gesperrt wie die Website, Zahlen mit gleich breiten Ziffern */
 .wo-bk__t small,.wo-mk,.wo-sb__zier span{font-family:var(--wo-etikett);font-weight:400;letter-spacing:.12em}

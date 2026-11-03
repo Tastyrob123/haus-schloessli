@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-/* Bildschirme der Werkzeuge für La Maison · Culinarium Hannover (M08, M23): unsichtbar im Safari-Kern, 1440 × 900 @2x, nach roh/<name>.png.
+/* Bildschirme der Werkzeuge für das Hafenbüro · Wirtschaft am Schlössli (M08, M23): unsichtbar im Safari-Kern (sonst Chromium), 1440 × 932 @2x, nach roh/<name>.png.
    Adresse je Werkzeug aus stand_wege.json; nur Werkzeuge, deren Server antwortet. Jede Anfrage ausser GET/HEAD wird abgewiesen (nichts wird geschrieben),
    ebenso jeder KI-Weg. Weitere Ansichten je Werkzeug (zweiter Bildschirm) über ansichten.json: {"livre-marke": {"von": "livre", "klick": "Text"}}.
    node _werkzeuge/maison/schirme.js [werkzeug …] */
 const path = require('path'), os = require('os'), fs = require('fs');
-module.paths.push(path.join(os.homedir(), 'Aussen-Pruefung', 'node_modules'));
+module.paths.push(path.join(os.homedir(), 'Aussen-Pruefung', 'node_modules'), '/Users/robertreff/Aussen-Pruefung/node_modules');
 const pw = require('playwright');
 const HIER = __dirname, ROOT = path.resolve(HIER, '..', '..');
 const TEIL = { bureau: 'website', carte: 'karten', imprimerie: 'druck', reception: 'gaeste', livre: 'marke', registre: 'besuche' };
@@ -14,7 +14,7 @@ const kette = k => ({ adresse: (SW[k] || {}).adresse || '' });
 const ansichten = (() => { try { return JSON.parse(fs.readFileSync(path.join(HIER, 'ansichten.json'), 'utf8')); } catch (e) { return {}; } })();
 (async () => {
   const nur = process.argv.slice(2);
-  const browser = await pw.webkit.launch({ headless: true });
+  const browser = await (process.env.SCHIRM_KERN === 'chromium' ? pw.chromium : pw.webkit).launch({ headless: true });
   const aus = [];
   for (const k of Object.keys(TEIL)) {
     if (nur.length && !nur.includes(k)) continue;
@@ -23,8 +23,8 @@ const ansichten = (() => { try { return JSON.parse(fs.readFileSync(path.join(HIE
     try { const r = await fetch(s.adresse); if (!r.ok) throw new Error(r.status); } catch (e) { aus.push({ k, uebersprungen: 'Server antwortet nicht' }); continue; }
     const auftraege = [[ERSTE[k], null]].concat(Object.entries(ansichten).filter(([, a]) => a.von === k).map(([n, a]) => [n, a]));
     for (const [name, a] of auftraege) {
-      const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2, locale: 'de-DE', reducedMotion: 'reduce' });   /* ohne Bewegung (30.10.2026): nichts mitten im Auftritt, Zahlen mit ihrem Endwert statt mitten im Hochzählen */   // Zeitzone des Rechners: Datum und Gruss wie beim Betrachter (keine feste Zone, sonst falscher Tag auf den Bildern)
-      await ctx.addInitScript(() => { try { Object.keys(localStorage).forEach(x => { if (/^rundgang/.test(x)) localStorage.removeItem(x); }); localStorage.setItem('ds-culinarium-willkommen', '1');   /* Begrüssung der Druckerei als gesehen, nur im Wegwerf-Profil der Aufnahme */ } catch (e) {} });
+      const ctx = await browser.newContext({ viewport: { width: 1440, height: 932 }, deviceScaleFactor: 2, locale: 'de-DE', reducedMotion: 'reduce' });   /* ohne Bewegung (30.10.2026): nichts mitten im Auftritt, Zahlen mit ihrem Endwert statt mitten im Hochzählen */   // Zeitzone des Rechners: Datum und Gruss wie beim Betrachter (keine feste Zone, sonst falscher Tag auf den Bildern)
+      await ctx.addInitScript(() => { try { Object.keys(localStorage).forEach(x => { if (/^rundgang/.test(x)) localStorage.removeItem(x); }); localStorage.setItem('ds-schloessli-willkommen', '1');   /* Begrüssung der Druckerei als gesehen, nur im Wegwerf-Profil der Aufnahme */ } catch (e) {} });
       const page = await ctx.newPage();
       const fehler = [];
       page.on('pageerror', e => fehler.push(String(e)));

@@ -1,4 +1,4 @@
-/* Rundgang (R18, M11): Kopie des Werkzeugs der Häuser, Gang für Der Tresen des Culinarium; gebaut von _werkzeuge/maison/bau.py */
+/* Rundgang (R18, M11): Kopie des Werkzeugs der Häuser, Gang für Das Hafenbüro der Wirtschaft am Schlössli; gebaut von _werkzeuge/maison/bau.py */
 /* Kurzer Rundgang beim ersten Öffnen eines Werkzeugs (Robert 16.10.2026: «einmal ganz kurz zeigen, hier kannst du das machen,
    da das, damit man weiss, wo man gelandet ist»). Ein Lichtkegel liegt auf dem echten Bedienelement, daneben eine Karte mit
    zwei, drei Sätzen. Je Werkzeug und Browser einmal; wieder aufrufen über «Kurzer Rundgang» im Rand oder ?rundgang.
@@ -12,59 +12,59 @@
 
   /* ziel: Liste von Wahlorten, der erste sichtbare gilt (Handy hat andere Flächen). */
   var GAENGE = {
-    maison: { name: 'Der Tresen', schritte: [
-      { ziel: ['.m-f5__titel', '#oben'], oben: true, titel: 'Das ist Der Tresen',
-        text: 'Der Eingang zu allen Werkzeugen des Culinarium. Von hier aus pflegst du Website, Menüs mit Drinks, Plakate, den Chat und die Marke selbst.' },
+    maison: { name: 'Das Hafenbüro', schritte: [
+      { ziel: ['.m-f5__titel', '#oben'], oben: true, titel: 'Das ist das Hafenbüro',
+        text: 'Der Eingang zu allen Werkzeugen des Hauses. Von hier aus pflegen Sie Website, Karten, Drucksachen, den Chat und die Marke selbst.' },
       { ziel: ['.hz-z:first-child a', '.hz-tafel'], titel: 'Ein Fenster je Werkzeug',
-        text: 'Das Schaufenster, Die Pairing-Karte, Die Plakatwerkstatt, Das Gästebuch, Das Markenbuch, Die Besucherliste. Darunter steht, was dort gerade ansteht.' },
+        text: 'Das Schaufenster, Das Kartenpult, Die Hausdruckerei, Das Reservationsbuch, Das Markenbuch. Darunter steht, was dort gerade ansteht. Ein Klick oder die Taste 1 bis 6 öffnet es.' },
       { ziel: ['.m-f5__zeile'], titel: 'Heute auf der Website',
-        text: 'Wer heute auf der Website war und wer von dort weiter zur Reservierung ging. Ein Klick öffnet die ganze Liste.' },
+        text: 'Wer heute auf der Website war und wer von dort weiter zur Reservation ging. Ein Klick öffnet die Besucherliste.' },
       { ziel: ['.m-insel', '.m-oben'], oben: true, titel: 'Immer erreichbar',
-        text: 'Ein Klick auf diese Leiste bringt dich von überall zurück zu den Werkzeugen. Aus jedem Werkzeug kommst du hierher zurück.' },
+        text: 'Ein Klick auf diese Leiste bringt Sie von überall zurück zu den Werkzeugen. Aus jedem Werkzeug kommen Sie hierher zurück.' },
       { ziel: ['#bureau .m-saal__kopf', '#bureau'], titel: 'Jedes Werkzeug stellt sich vor',
-        text: 'Weiter unten zeigt jedes Werkzeug, was es für das Culinarium tut, mit Bildern aus dem Werkzeug selbst.' }
+        text: 'Weiter unten zeigt jedes Werkzeug, was es für das Haus tut, mit Bildern aus dem Werkzeug selbst.' }
     ] }
   };;;
 
   /* La Réception: «Das weiss der Chat» bekommt seinen eigenen Rundgang, sobald man dorthin wechselt. */
   function aktuell() { return WZ === 'reception' && (document.querySelector('#ansicht .wi-oben, #w-ein') || /^#wissen/.test(location.hash)) ? 'savoir' : WZ; }   /* La Réception merkt sich die letzte Ansicht, darum nach dem Inhalt fragen */
-  function schluessel(w) { return 'rundgang-culinarium-' + w; }
+  function schluessel(w) { return 'rundgang-schloessli-' + w; }
   function gesehen(w) { try { return localStorage.getItem(schluessel(w)) === '1'; } catch (e) { return true; } }
   function merk(w) { try { localStorage.setItem(schluessel(w), '1'); } catch (e) { } }
 
   var CSS = '' +
     '.rdg-kegel{position:fixed;left:0;top:0;z-index:2147483000;border-radius:16px;pointer-events:none;' +
-      'box-shadow:0 0 0 3px #F5A689,0 0 0 9px rgba(245,166,137,.35),0 0 40px 10px rgba(245,166,137,.35),0 0 0 200vmax rgba(15,14,19,.74)}' +
+      'box-shadow:0 0 0 3px #C5D2E1,0 0 0 9px rgba(197,210,225,.35),0 0 40px 10px rgba(197,210,225,.35),0 0 0 200vmax rgba(4,16,35,.74)}' +
     '.rdg-sperre{position:fixed;inset:0;z-index:2147482999}' +
     '.rdg-karte{position:fixed;left:0;top:0;z-index:2147483001;width:360px;max-width:calc(100vw - 32px);box-sizing:border-box;' +
-      'padding:22px 24px 20px;border-radius:18px;color:#1C1B21;background:linear-gradient(180deg,#FFFCFB,#FAF4F4);' +
-      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(177,87,54,.22),0 30px 60px -24px rgba(15,14,19,.6),0 10px 22px -12px rgba(15,14,19,.4);' +
+      'padding:22px 24px 20px;border-radius:18px;color:#0A2552;background:linear-gradient(180deg,#ffffff,#F3F6F9);' +
+      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(15,54,120,.22),0 30px 60px -24px rgba(4,16,35,.6),0 10px 22px -12px rgba(4,16,35,.4);' +
       'font:15px/1.55 "Instrument Sans",system-ui,sans-serif;animation:rdg-auf .42s cubic-bezier(.2,.8,.2,1) both}' +
     '@keyframes rdg-auf{from{transform:translate3d(var(--rx,0),calc(var(--ry,0px) + 14px),0)}to{transform:translate3d(var(--rx,0),var(--ry,0),0)}}' +
     '.rdg-karte{transform:translate3d(var(--rx,0),var(--ry,0),0)}' +
-    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;color:#3A3845}' +
-    '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#F5A689,rgba(245,166,137,0))}' +
-    '.rdg-karte h3{margin:12px 0 6px;font:340 27px/1.12 Fraunces,Georgia,serif;color:#1C1B21;letter-spacing:0}' +
-    '.rdg-karte p{margin:0;color:rgba(22,21,26,.78)}' +
+    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;color:#113d88}' +
+    '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#C5D2E1,rgba(162,182,207,0))}' +
+    '.rdg-karte h3{margin:12px 0 6px;font:400 21px/1.2 "Open Sans",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#0A2552;letter-spacing:0}' +
+    '.rdg-karte p{margin:0;color:rgba(4,16,35,.78)}' +
     '.rdg-fuss{display:flex;align-items:center;gap:14px;margin-top:20px}' +
-    '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(22,21,26,.14)}.rdg-karte .rdg-weg b.da{background:#EF7649}' +
-    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#3A3845;cursor:pointer}' +
-    '.rdg-karte .rdg-zu:hover{color:#1C1B21}' +
+    '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(4,16,35,.14)}.rdg-karte .rdg-weg b.da{background:#A2B6CF}' +
+    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#113d88;cursor:pointer}' +
+    '.rdg-karte .rdg-zu:hover{color:#0A2552}' +
     '.rdg-karte .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:0 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
-      'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#FAF4F4!important;' +
-      'background:linear-gradient(180deg,#3A3845,#1C1B21 55%,#16151A);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 18px -10px rgba(15,14,19,.8)}' +
-    '.rdg-karte .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FBD9CB,#F5A689 55%,#EF7649);' +
+      'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#F3F6F9!important;' +
+      'background:linear-gradient(180deg,#113d88,#0A2552 55%,#0b1d3d);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 18px -10px rgba(4,16,35,.8)}' +
+    '.rdg-karte .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#EAEFF5,#C5D2E1 55%,#A9BAD0);' +
       'box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45)}' +
-    '.rdg-karte .rdg-los svg{width:14px;height:14px;fill:none;stroke:#1C1B21;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
+    '.rdg-karte .rdg-los svg{width:14px;height:14px;fill:none;stroke:#0A2552;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
     '.rdg-karte .rdg-los:hover i{transform:translateX(2px)}.rdg-karte .rdg-los i{transition:transform .2s}' +
-    '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #EF7649;outline-offset:3px}' +
+    '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #A2B6CF;outline-offset:3px}' +
     /* Werkzeug-Stile (La Carte vergrössert Knöpfe und Schrift) dürfen die Karte nicht verändern */
     '.rdg-karte,.rdg-karte *{box-sizing:border-box!important}' +
     '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important}' +
-    '.rdg-karte h3{font:340 27px/1.12 Fraunces,Georgia,serif!important;letter-spacing:0!important;text-transform:none!important}' +
+    '.rdg-karte h3{font:400 21px/1.2 "Open Sans",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase!important;letter-spacing:0!important;text-transform:none!important}' +
     '.rdg-karte .rdg-fuss{flex-wrap:nowrap!important}' +
     '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 10px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
-    '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#3A3845!important}' +
+    '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#113d88!important}' +
     '.rdg-karte .rdg-los{height:42px!important;padding:0 6px 0 18px!important;letter-spacing:.16em!important;border-radius:999px!important}' +
     '.rdg-karte .rdg-los i{width:30px!important;height:30px!important;flex:none!important}' +
     '@media (max-width:700px){.rdg-karte{left:16px!important;right:16px;top:auto!important;bottom:16px;width:auto;--rx:0!important;--ry:0!important}}' +
@@ -135,7 +135,7 @@
         (letzt ? '' : '<button type="button" class="rdg-zu">Überspringen</button>') +
         '<button type="button" class="rdg-los">' + (letzt ? 'Los geht’s' : 'Weiter') + PFEIL + '</button></div>';
       karte.style.animation = 'none'; void karte.offsetWidth; karte.style.animation = '';   /* Karte kommt je Schritt neu herauf, deckend ab dem ersten Bild */
-      var handy = function () {   /* Handy: Ziel ins freie Feld zwischen Kopf und Karte (30.10.2026); der Tresen lädt das Kleid nicht und rechnet selbst (Tor 1) */
+      var handy = function () {   /* Handy: Ziel ins freie Feld zwischen Kopf und Karte (30.10.2026); die Zentrale lädt das Kleid nicht und rechnet selbst (Tor 1) */
         if (window.WO && WO.rdgHandy) return WO.rdgHandy(ziel, karte);
         if (!ziel || innerWidth > 700) return;
         for (var a = ziel; a && a.nodeType === 1; a = a.parentElement) { var pos = getComputedStyle(a).position; if (pos === 'fixed' || pos === 'sticky') return; }
@@ -206,29 +206,29 @@
 
   var SCHILD_CSS = '' +
     '.rdg-schild{position:fixed;right:24px;bottom:24px;z-index:2147482990;display:flex;align-items:center;gap:14px;box-sizing:border-box;' +
-      'padding:10px 10px 10px 18px;border-radius:999px;color:#1C1B21;background:linear-gradient(180deg,#FFFCFB,#FAF4F4);' +
-      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(177,87,54,.28),0 18px 34px -16px rgba(15,14,19,.55),0 6px 14px -8px rgba(15,14,19,.35);' +
+      'padding:10px 10px 10px 18px;border-radius:999px;color:#0A2552;background:linear-gradient(180deg,#ffffff,#EEF2F6);' +
+      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(15,54,120,.28),0 18px 34px -16px rgba(4,16,35,.55),0 6px 14px -8px rgba(4,16,35,.35);' +
       'transform:translate3d(0,0,0);transition:transform .55s cubic-bezier(.2,.8,.2,1);animation:rdg-schild-auf .7s cubic-bezier(.2,.9,.25,1.15) both}' +
     '@keyframes rdg-schild-auf{from{transform:translate3d(0,calc(100% + 40px),0)}to{transform:translate3d(0,0,0)}}' +
     '.rdg-schild.weg{animation:none;transform:translate3d(0,calc(100% + 60px),0)}' +
     '.rdg-schild__t{display:flex;flex-direction:column;gap:4px;line-height:1}' +
-    '.rdg-schild__t small{font:500 9px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.2em!important;text-transform:uppercase;color:#3A3845}' +
-    '.rdg-schild__t b{font:340 18px/1 Fraunces,Georgia,serif!important;letter-spacing:0!important;color:#1C1B21}' +
+    '.rdg-schild__t small{font:500 9px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.2em!important;text-transform:uppercase;color:#113d88}' +
+    '.rdg-schild__t b{font:400 15px/1.1 "Open Sans",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase!important;letter-spacing:0!important;color:#0A2552}' +
     '.rdg-schild .rdg-los{flex:none;margin:0!important;display:inline-flex;align-items:center;gap:10px;height:38px!important;padding:0 5px 0 15px!important;border:0!important;border-radius:999px!important;cursor:pointer;' +
-      'font:500 9.5px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#FAF4F4!important;' +
-      'background:linear-gradient(180deg,#3A3845,#1C1B21 55%,#16151A)!important;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 8px 16px -10px rgba(15,14,19,.8)!important}' +
-    '.rdg-schild .rdg-los i{display:grid;place-items:center;width:28px!important;height:28px!important;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FBD9CB,#F5A689 55%,#EF7649);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45);transition:transform .2s}' +
+      'font:500 9.5px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#F3F6F9!important;' +
+      'background:linear-gradient(180deg,#113d88,#0A2552 55%,#0b1d3d)!important;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 8px 16px -10px rgba(4,16,35,.8)!important}' +
+    '.rdg-schild .rdg-los i{display:grid;place-items:center;width:28px!important;height:28px!important;border-radius:50%;background:radial-gradient(circle at 35% 30%,#EAEFF5,#C5D2E1 55%,#A9BAD0);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45);transition:transform .2s}' +
     '.rdg-schild .rdg-los:hover i{transform:translateX(2px)}' +
-    '.rdg-schild .rdg-los svg{width:13px;height:13px;fill:none;stroke:#1C1B21;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
-    '.rdg-schild__zu{flex:none;width:26px;height:26px;margin:0 2px 0 -4px!important;padding:0!important;border:0!important;border-radius:50%;background:none!important;box-shadow:none!important;cursor:pointer;color:#8a8592;font:16px/1 system-ui!important}' +
-    '.rdg-schild__zu:hover{color:#1C1B21}' +
+    '.rdg-schild .rdg-los svg{width:13px;height:13px;fill:none;stroke:#0A2552;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
+    '.rdg-schild__zu{flex:none;width:26px;height:26px;margin:0 2px 0 -4px!important;padding:0!important;border:0!important;border-radius:50%;background:none!important;box-shadow:none!important;cursor:pointer;color:#0F3678;font:16px/1 system-ui!important}' +
+    '.rdg-schild__zu:hover{color:#0A2552}' +
     '.rdg-schild__zu{display:grid;place-items:center}.rdg-schild__zu svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}' +   /* kein «×» (Robert 30.10.2026): Zurück-Pfeil wie «Verwerfen» */
     '@media (max-width:700px){.rdg-schild{right:16px;left:auto}}' +
     '@media (prefers-reduced-motion:reduce){.rdg-schild{animation:none;transition:none}}';
 
   function schild(w) {
     if (document.querySelector('.rdg-schild')) return;
-    /* Tresen 29.10.2026 (Oberchef, Kriterium 5): im ersten Bildschirm liegt das Schild nie auf den Fenstern des Empfangs.
+    /* Zentrale 29.10.2026 (Oberchef, Kriterium 5): im ersten Bildschirm liegt das Schild nie auf den Fenstern des Empfangs.
        Es kommt erst, wenn die Knopfreihe der Fenster über dem Platz des Schilds steht, also nach dem ersten Scrollen. */
     var empfang = document.querySelector('.m-f5');
     if (empfang && !schild.frei) {

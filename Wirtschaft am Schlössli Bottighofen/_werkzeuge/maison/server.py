@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Prüfserver von La Maison · Culinarium Hannover (nur zum Bedienen und Prüfen, 28.10.2026).
+"""Prüfserver des Hafenbüros · Wirtschaft am Schlössli Bottighofen (nur zum Bedienen und Prüfen; Nachtbau 3./4.11.2026).
 
   python3 _werkzeuge/maison/server.py [port]      Standard 9281
 
 Liefert nur lesend (GET/HEAD):
-  /_werkzeuge/…            aus _werkzeuge/ (La Maison unter /_werkzeuge/maison/)
+  /_werkzeuge/…            aus _werkzeuge/ (das Hafenbüro unter /_werkzeuge/maison/)
   /assets/oberflaeche/…    aus _werkzeuge/oberflaeche/ (gemeinsames Kleid aller sieben Werkzeuge des Hauses)
-  /assets/…  und Seiten    aus website/ (Fotos, Schriften, Wortmarke, Seiten für «Website ansehen»)
-Die Stand-Wege der Werkzeuge reicht er weiter: /_weiter/<werkzeug>/<weg> geht an die Adresse, die das Werkzeug in der Kette angibt
-(_kette/11-werkbank/werkzeuge/<teil>/stand.json → adresse), sonst an seinen festen Port (9282 … 9287); nur 127.0.0.1, nur GET.
-Ein Browser liest nicht quer über Ports, deshalb dieser Umweg. Fehlermeldungen der Seite (POST /studio/api/fehler) werden angenommen und verworfen."""
+  /assets/…  und Seiten    aus website/ (Fotos, Schriften, Seiten für «Website ansehen»)
+Die Stand-Wege der Werkzeuge reicht er weiter: /_weiter/<werkzeug>/<weg> geht an die Adresse aus stand_wege.json (sonst an den festen Port
+9282 … 9287 aus cloud/haus.json); nur 127.0.0.1, nur GET. Ein Browser liest nicht quer über Ports, deshalb dieser Umweg.
+Fehlermeldungen der Seite (POST /studio/api/fehler) werden angenommen und verworfen."""
 import http.server, json, os, socketserver, sys, urllib.request, urllib.error
 from urllib.parse import urlparse, unquote, urljoin
 
@@ -19,18 +19,19 @@ WEB = os.path.join(WURZEL, 'website')
 WZ = os.path.join(WURZEL, '_werkzeuge')
 OF = os.path.join(WZ, 'oberflaeche')
 TEIL = {'bureau': 'website', 'carte': 'karten', 'imprimerie': 'druck', 'reception': 'gaeste', 'livre': 'marke', 'registre': 'besuche'}
-WERKBANK = 'http://127.0.0.1:9288'   # Server der Werkbank (Chat «culinarium-werkbank», Port 9288): «Zur Werkbank» führt lokal dorthin
+WERKBANK = 'http://127.0.0.1:9288'   # Server der Werkbank (Port 9288): «Zur Werkbank» führt lokal dorthin
 FEST = {'bureau': 9282, 'carte': 9283, 'reception': 9284, 'livre': 9285, 'registre': 9286, 'imprimerie': 9287}   # Ports aus dem gemeinsamen Auftrag
+LOKAL = urllib.request.build_opener(urllib.request.ProxyHandler({}))   # nie über einen Proxy: nur 127.0.0.1
 
 
 def adresse(k):
     try:
-        j = json.load(open(os.path.join(WURZEL, '_kette', '11-werkbank', 'werkzeuge', TEIL[k], 'stand.json'), encoding='utf-8'))
-        a = j.get('adresse') or ''
-    except (OSError, ValueError, KeyError):
+        a = (json.load(open(os.path.join(WZ, 'maison', 'stand_wege.json'), encoding='utf-8')).get(k) or {}).get('adresse') or ''
+    except (OSError, ValueError):
         a = ''
-    if urlparse(a).hostname in ('127.0.0.1', 'localhost'):
-        return a
+    u = urlparse(a)
+    if u.hostname in ('127.0.0.1', 'localhost') and u.port:
+        return f'http://127.0.0.1:{u.port}/'
     return f'http://127.0.0.1:{FEST[k]}/' if k in FEST else ''
 
 
@@ -58,7 +59,7 @@ class H(http.server.SimpleHTTPRequestHandler):
             if urlparse(ziel).hostname not in ('127.0.0.1', 'localhost'):
                 return self._roh(403, b'{"fehler":"nur lokal"}')
             try:
-                with urllib.request.urlopen(ziel, timeout=6) as r:
+                with LOKAL.open(ziel, timeout=6) as r:
                     return self._roh(r.status, r.read(), r.headers.get('Content-Type', 'application/json'))
             except urllib.error.HTTPError as f:
                 return self._roh(f.code, f.read() or b'{}')
@@ -92,5 +93,5 @@ class S(socketserver.ThreadingTCPServer):
 
 if __name__ == '__main__':
     with S(('127.0.0.1', PORT), H) as httpd:
-        print(f'La Maison · Culinarium Hannover, Prüfserver auf http://127.0.0.1:{PORT}/_werkzeuge/maison/ (Wurzel {WURZEL})', flush=True)
+        print(f'Das Hafenbüro · Wirtschaft am Schlössli, Prüfserver auf http://127.0.0.1:{PORT}/_werkzeuge/maison/ (Wurzel {WURZEL})', flush=True)
         httpd.serve_forever()

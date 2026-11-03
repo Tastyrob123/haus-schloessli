@@ -1,14 +1,10 @@
 {
- "_hinweis": "Je Werkzeug: Stand-Weg ab der Wurzel seines Servers (lokal über /_weiter/<werkzeug>/ von server.py), Adresse, Anleitung, Ordner mit seinem Code (Knopf-Namen der Tafel). Form nach Master 4.1; Ports aus AUFTRAG-GEMEINSAM.md. Am Ende gegen die Lieferung des Werkzeugs geprüft (LIEFERUNG.md im Revier).",
+ "_hinweis": "Je Werkzeug: Stand-Weg ab der Wurzel seines Servers (lokal über /_weiter/<werkzeug>/ von server.py), Adresse, Anleitung, Ordner mit seinem Code (Knopf-Namen der Tafel; ohne Angabe _werkzeuge/<werkzeug>). Form nach Master 4.1; Ports aus AUFTRAG-GEMEINSAM.md (9282–9287).",
  "bureau": {
   "adresse": "http://127.0.0.1:9282/_werkzeuge/bureau/",
   "stand": "/_werkzeuge/bureau/api/ueberblick",
   "anleitung": "http://127.0.0.1:9282/_werkzeuge/bureau/anleitung.html",
-  "pruefung": "http://127.0.0.1:9282/werkzeuge/website/pruefung.html?haus=culinarium",
-  "code": [
-   "~/Desktop/Website-Projekte/Culinarium Hannover/_werkzeuge/bureau",
-   "~/Desktop/Website-Projekte/_Werkzeuge/werkzeuge/website"
-  ]
+  "pruefung": "http://127.0.0.1:9282/werkzeuge/website/pruefung.html?haus=schloessli"
  },
  "carte": {
   "adresse": "http://127.0.0.1:9283/_werkzeuge/carte/",
@@ -17,7 +13,7 @@
  },
  "imprimerie": {
   "adresse": "http://127.0.0.1:9287/_werkzeuge/imprimerie/",
-  "stand": "/_werkzeuge/imprimerie/haeuser/culinarium/vorlagen/index.json",
+  "stand": "/_werkzeuge/imprimerie/haeuser/schloessli/vorlagen/index.json",
   "anleitung": "http://127.0.0.1:9287/_werkzeuge/imprimerie/hilfe/index.html"
  },
  "reception": {

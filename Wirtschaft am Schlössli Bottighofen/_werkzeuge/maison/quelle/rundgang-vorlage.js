@@ -135,7 +135,7 @@
         (letzt ? '' : '<button type="button" class="rdg-zu">Überspringen</button>') +
         '<button type="button" class="rdg-los">' + (letzt ? 'Los geht’s' : 'Weiter') + PFEIL + '</button></div>';
       karte.style.animation = 'none'; void karte.offsetWidth; karte.style.animation = '';   /* Karte kommt je Schritt neu herauf, deckend ab dem ersten Bild */
-      var handy = function () {   /* Handy: Ziel ins freie Feld zwischen Kopf und Karte (30.10.2026); der Tresen lädt das Kleid nicht und rechnet selbst (Tor 1) */
+      var handy = function () {   /* Handy: Ziel ins freie Feld zwischen Kopf und Karte (30.10.2026); die Zentrale lädt das Kleid nicht und rechnet selbst (Tor 1) */
         if (window.WO && WO.rdgHandy) return WO.rdgHandy(ziel, karte);
         if (!ziel || innerWidth > 700) return;
         for (var a = ziel; a && a.nodeType === 1; a = a.parentElement) { var pos = getComputedStyle(a).position; if (pos === 'fixed' || pos === 'sticky') return; }
@@ -228,7 +228,7 @@
 
   function schild(w) {
     if (document.querySelector('.rdg-schild')) return;
-    /* Tresen 29.10.2026 (Oberchef, Kriterium 5): im ersten Bildschirm liegt das Schild nie auf den Fenstern des Empfangs.
+    /* Zentrale 29.10.2026 (Oberchef, Kriterium 5): im ersten Bildschirm liegt das Schild nie auf den Fenstern des Empfangs.
        Es kommt erst, wenn die Knopfreihe der Fenster über dem Platz des Schilds steht, also nach dem ersten Scrollen. */
     var empfang = document.querySelector('.m-f5');
     if (empfang && !schild.frei) {
