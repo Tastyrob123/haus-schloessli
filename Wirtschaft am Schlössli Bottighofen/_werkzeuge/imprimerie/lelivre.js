@@ -31,7 +31,7 @@
     const box = $('#msLivre'); if (!box || !L()) return;
     if (!box.dataset.gebaut) {
       box.dataset.gebaut = 1;
-      box.innerHTML = `<div class="ms-titel"><h1>Logo &amp; Farben</h1><span class="ms-leise">Das Markenbuch des Hauses, hier in der Werkstatt: Fotos, Logo und Dateien, Farben. Was Sie hier sehen, ist dieselbe Quelle wie im Markenbuch.</span></div>
+      box.innerHTML = `<div class="ms-titel"><h1>Logo &amp; Farben</h1><span class="ms-leise">Das Markenbuch des Hauses, hier beim Gestalten zur Hand: Fotos, Logo und Dateien, Farben. Was Sie hier sehen, ist dieselbe Quelle wie im Markenbuch.</span></div>
         <div class="ll-kopf"><div class="ms-chips ll-reiter">${[['bilder', 'Bildarchiv'], ['dateien', 'Logo und Dateien'], ['farben', 'Farben']].map(([k, t]) => `<button data-llreiter="${k}">${t}</button>`).join('')}</div>
           <a class="ms-lnk" href="${DS.livreSeite()}" target="_blank" rel="noopener"><span>Das Markenbuch öffnen</span>${IC.pfeil}</a></div>
         <div class="ll-fach" data-llfach="bilder"><div id="llBilderPlatz"></div></div>

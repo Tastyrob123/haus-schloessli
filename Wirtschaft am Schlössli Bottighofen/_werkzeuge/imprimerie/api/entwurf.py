@@ -28,16 +28,16 @@ FORMATE = {
     'schild': 'Namensschild, 90 × 55 mm: Namensschild zum Anstecken, Ausweis für Tagungen',
 }
 VORLAGEN = {
-    'deckel': ('Titelblatt: Zeichen gross, Titel, kurze Goldlinie, Zeile darunter, optional ein kurzer Satz. Für Deckblätter, Ankündigungen mit starkem Titel, Karten ohne Foto.', ['ueber', 'titel', 'unter', 'text', 'fuss']),
+    'deckel': ('Titelblatt: Zeichen gross, Titel, kurze Linie in Seehimmel, Zeile darunter, optional ein kurzer Satz. Für Deckblätter, Ankündigungen mit starkem Titel, Karten ohne Foto.', ['ueber', 'titel', 'unter', 'text', 'fuss']),
     'buehne': ('Bild oben: grosses Foto über gut die Hälfte, das Zeichen sitzt auf der Naht, darunter Zeile, Titel, Text, Handlungszeile. Für Flyer, Plakate, Aushänge mit Foto.', ['bild', 'ueber', 'titel', 'text', 'aktion', 'fuss']),
     'ansicht': ('Ansichtskarte: Foto randlos, kleines Schild unten links mit Ortsname und Zeile. NUR Haus von aussen oder Landschaft, Titel = Ort wie auf einer echten Postkarte («Bottighofen», «Bodensee»).', ['bild', 'titel', 'unter']),
     'karte': ('Karte mit Liste: Zeichen klein, Titel, kursive Einleitung, dann Einträge mit Name, Beschreibung, Preis, dazwischen Haarlinien. Für Speise-, Getränke-, Wein-, Behandlungs- und Preiskarten. Bis etwa 14 Einträge pro Seite, sonst auf mehrere Seiten verteilen.', ['ueber', 'titel', 'text', 'liste', 'fuss']),
-    'einladung': ('Einladung: doppelter Goldrahmen, Zeile, grosser Titel, Linie, wann, wo (kursiv), Text, Bitte um Antwort, kleines Zeichen unten.', ['ueber', 'titel', 'wann', 'wo', 'text', 'aktion']),
+    'einladung': ('Einladung: feiner Rahmen in Seehimmel, Zeile, grosser Titel, Linie, wann, wo (kursiv), Text, Bitte um Antwort, kleines Zeichen unten.', ['ueber', 'titel', 'wann', 'wo', 'text', 'aktion']),
     'programm': ('Programm: Titel linksbündig, darunter Termine mit Datum, Titel und Ort. Für Veranstaltungen, Wochenprogramm, Tagesablauf einer Tagung oder Hochzeit.', ['ueber', 'titel', 'termine', 'fuss']),
-    'fenster': ('Bild im Rahmen: Foto mit feinem Goldrahmen auf der Fläche (Passepartout), darunter Titel, Zeile, Text. Ruhiger und edler als «buehne».', ['bild', 'ueber', 'titel', 'unter', 'text', 'fuss']),
+    'fenster': ('Bild im Rahmen: Foto mit feinem Rahmen in Seehimmel auf der Fläche (Passepartout), darunter Titel, Zeile, Text. Ruhiger und edler als «buehne».', ['bild', 'ueber', 'titel', 'unter', 'text', 'fuss']),
     'geteilt': ('Bild und Text geteilt: quer halb Foto links, halb Text rechts; hoch Text oben, Foto unten randlos. Für Restaurant, Wellness, Angebote, Instagram.', ['bild', 'ueber', 'titel', 'text', 'aktion', 'fuss']),
     'gutschein': ('Gutschein: Zeichen, Titel «Gutschein» (oder anders), Zeile, Wert, kurzer Text, Felder Für / Von / Nr. Am besten im Format dlq.', ['titel', 'unter', 'wert', 'text', 'fuss']),
-    'menue': ('Menükarte am Tisch: Wortmarke, Zeile, Titel «Menü», Datum des Abends, je Gang {gang, name (Teller), detail (Drink)} wie auf den Karten der Abende. Format dlh.', ['titel', 'ueber', 'liste', 'text', 'fuss', 'akzent']),
+    'menue': ('Menükarte am Tisch: Wortmarke, Zeile, Titel «Menü», Anlass oder Datum, je Gang {gang, name (Gericht in Versalien wie auf der Karte), detail (Beilage oder Wein)}. Format dlh.', ['titel', 'ueber', 'liste', 'text', 'fuss', 'akzent']),
     'aushang': ('Aushang: Zeichen oben, Titel, Linie, gut lesbarer Text mit Zeilenumbrüchen, Handlungszeile. Für Hinweise, Öffnungszeiten, Hausregeln, Tischaufsteller.', ['ueber', 'titel', 'text', 'aktion', 'fuss']),
     'tuer': ('Türhänger: oben das Loch für die Klinke, darunter Zeichen, grosser Titel, Linie, Zeile in zweiter Sprache (unter), kurzer Text, Handlungszeile. Nur im Format tuer.', ['ueber', 'titel', 'unter', 'text', 'aktion']),
     'kartengruss': ('Postkarten-Rückseite: links Zeichen, Name des Hauses, Zeile und ein kurzer Gruss, rechts Markenfeld und vier Adresszeilen. IMMER die zweite Seite einer «ansicht», nie «rueckseite» für Postkarten.', ['titel', 'text']),
@@ -72,9 +72,9 @@ DIE MARKE DES HAUSES
 {json.dumps(M, ensure_ascii=False, indent=1)}
 
 GRUND (ton) je Seite
-- dunkel: Marine mit der Tapete, Gold für Zeichen und Zeilen. Für Abend, Feste, Bar, Titelblätter, Gutscheine, Einladungen.
-- hell: Papier, Marine-Schrift. Für Karten mit viel Text, Preislisten, Programme, Aushänge am Tag.
-- creme: Creme mit heller Tapete. Für Wellness, Frühstück, Sommer, Terrasse, leichte Anlässe.
+- dunkel: Stuhlblau mit der Punkt-Tapete, Seehimmel für Zeichen und Zeilen. Für Abende, Feste, die Lästermeile, Titelblätter, Gutscheine, Einladungen.
+- hell: Blatt, Schrift in Tief. Für Karten mit viel Text, Preislisten, Programme, Aushänge am Tag.
+- creme: Papier mit heller Tapete. Für Lunch, Sommer, Seeterrasse, leichte Anlässe.
 Wechsle bei zweiseitigen Stücken nicht wild: Vorder- und Rückseite meist im selben Grund, eine helle Innenseite zu einer dunklen Hülle ist gut.
 
 FORMATE
@@ -88,9 +88,9 @@ FELDER
 
 SO ARBEITEST DU
 1. Ein Stück aus einer Seite, ausser der Auftrag oder das Stück verlangen mehr: Flyer und Karten zum Mitnehmen bekommen meist eine «rueckseite» als zweite Seite; lange Listen gehen auf mehrere «karte»-Seiten. Höchstens vier Seiten, ausser beim Karussell.
-2. Wenn kein Format vorgegeben ist, wähle das, was ein gutes Hotel für diesen Zweck drucken würde.
+2. Wenn kein Format vorgegeben ist, wähle das, was eine gute Wirtschaft am See für diesen Zweck drucken würde.
 3. Fotos: nur Schlüssel aus dem Fotokatalog, passend zum Thema, in der richtigen Lage (quer für «ansicht» quer und «buehne», hoch oder quer für «fenster»). Lies die Bildbeschreibung genau. Nie dasselbe Foto zweimal im selben Stück.
-4. Texte im Ton des Hauses: Sie-Form, herzlich und unkompliziert, Schweizer Schreibung (ss statt ß), nie werblich laut, kein Ausrufezeichen im Titel, keine Floskeln wie «unvergesslich», «einzigartiges Erlebnis», «Vom … zum …». Jeder Satz wertet auf: Sorgfalt, Handarbeit, der einzelne Gast; Zahlen nur als Exklusivität («vierzehn Plätze»), nie als Menge. Deutsche Schreibung (ß), Anführungszeichen „…“, Preise «89,00 EUR», Zeiten «ab 19 Uhr». Rudis Teller so, wie er sie schreibt: Versalien mit Schrägstrich («LAUCH / BLUMENKOHL / CHIPOTLE»). Deutsch, ausser der Auftrag verlangt eine andere Sprache.
+4. Texte im Ton des Hauses: Sie-Form, herzlich und unkompliziert, Schweizer Schreibung (ss statt ß), nie werblich laut, kein Ausrufezeichen im Titel, keine Floskeln wie «unvergesslich», «einzigartiges Erlebnis», «Vom … zum …». Jeder Satz wertet auf: Sorgfalt, Handarbeit, der einzelne Gast; Zahlen nur als Exklusivität («vierzehn Plätze»), nie als Menge. Anführungszeichen «…», Zeiten «11:30 Uhr - 13:30 Uhr», keine Preise auf Drucksachen. Gerichte wie auf der Karte in Versalien («THON», «CAVATELLI»). Deutsch, ausser der Auftrag verlangt eine andere Sprache.
 5. Fakten nur aus dem WISSEN unten oder aus dem Auftrag: Namen der Betriebe, Zeiten, Preise, Gerichte, Daten genau so übernehmen. Was du nicht sicher weisst (Preis, Datum, Uhrzeit, Menüfolge, Ansprechperson), schreibst du als Platzhalter in eckigen Klammern, z. B. «[Preis]» oder «[Datum]», und nennst es in «hinweise». Erfinde nie eine Zahl.
 6. Wenig Text. Ein Titel trägt das Blatt, der Rest begleitet. Lieber eine Zeile weniger.
 7. «hinweise»: höchstens vier kurze Sätze an die Mitarbeitenden, was sie noch prüfen oder ausfüllen sollten. Leer lassen, wenn alles belegt ist.
@@ -120,7 +120,7 @@ def _werkzeug(varianten=False):
                 'name': {'type': 'string', 'description': 'kurzer Name der Drucksache für die Ablage, z. B. «Plakat Neujahrskonzert»'},
                 'format': {'type': 'string', 'enum': list(FORMATE)},
                 'varianten': {'type': 'array', 'minItems': 5, 'maxItems': 5, 'items': {'type': 'object', 'properties': {
-                    'titel': {'type': 'string', 'description': 'zwei bis vier Wörter, was diese Gestaltung ausmacht, z. B. «Foto gross, Marine» oder «Ruhig auf Papier»'},
+                    'titel': {'type': 'string', 'description': 'zwei bis vier Wörter, was diese Gestaltung ausmacht, z. B. «Foto gross, Stuhlblau» oder «Ruhig auf Papier»'},
                     'seiten': {'type': 'array', 'minItems': 1, 'maxItems': 10, 'items': seite}}, 'required': ['titel', 'seiten']}},
                 'hinweise': {'type': 'array', 'items': {'type': 'string'}, 'maxItems': 4},
             }, 'required': ['name', 'format', 'varianten', 'hinweise']},
@@ -128,7 +128,7 @@ def _werkzeug(varianten=False):
     return {
         'name': 'entwurf', 'description': 'Den fertigen Entwurf der Drucksache übergeben.',
         'input_schema': {'type': 'object', 'properties': {
-            'name': {'type': 'string', 'description': 'kurzer Name der Drucksache für die Ablage, z. B. «Plakat des Abends»'},
+            'name': {'type': 'string', 'description': 'kurzer Name der Drucksache für die Ablage, z. B. «Aushang Betriebsferien»'},
             'format': {'type': 'string', 'enum': list(FORMATE)},
             'seiten': {'type': 'array', 'minItems': 1, 'maxItems': 10, 'items': {'type': 'object', 'properties': {
                 'vorlage': {'type': 'string', 'enum': list(VORLAGEN)}, 'ton': {'type': 'string', 'enum': ['dunkel', 'hell', 'creme']}, 'inhalt': inhalt},

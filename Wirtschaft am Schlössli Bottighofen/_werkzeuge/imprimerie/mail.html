@@ -12,13 +12,14 @@
 <script>/* Hauseigene Stilschicht (Robert 15.10.2026: GBR hell, wie die übrigen Werkzeuge des Hauses). Ein Haus ohne Eintrag bleibt beim Kern. */
 (function(){var HAUS_STIL={schloessli:1},h=new URLSearchParams(location.search).get('haus')||'schloessli';if(!HAUS_STIL[h])return;
 document.write('<link rel="stylesheet" href="haeuser/'+h+'/hell.css?v=6-sl1"><script src="haeuser/'+h+'/buehne.js?v=3-sl1" defer><\/script>');})();</script>
+<script src="/assets/oberflaeche/kleid/schloessli.js"></script>
 <script>/* Namen der Werkzeuge nur aus dem Kleid (WO.name, kleid/schloessli.js): Elemente mit data-wo-name bekommen ihren Namen */
 addEventListener('DOMContentLoaded',function(){var f=function(){if(!window.WO||!WO.name)return;[].forEach.call(document.querySelectorAll('[data-wo-name]'),function(e){var n=WO.name(e.getAttribute('data-wo-name'));if(n)e.textContent=n;});if(window.DS&&DS.NAME)document.title=document.title.replace(/^Die Werkstatt/,DS.NAME());};f();setTimeout(f,400);});</script>
 </head>
 <body class="ml-seite">
 <div class="ml">
   <header class="ml-kopf">
-    <a class="ml-marke" href="index.html" title="Zur Übersicht der Werkstatt"><span class="ml-zeichen" id="mlZeichen"></span><span class="ml-marke__n"><b data-wo-name="druck">Die Werkstatt</b><small>Newsletter & E-Mail</small></span></a>
+    <a class="ml-marke" href="index.html" title="Zur Übersicht"><span class="ml-zeichen" id="mlZeichen"></span><span class="ml-marke__n"><b data-wo-name="druck">Die Werkstatt</b><small>Newsletter & E-Mail</small></span></a>
     <input class="ml-name" id="mlName" aria-label="Name der E-Mail" spellcheck="false">
     <span class="ml-gespeichert" id="mlGespeichert">Gespeichert</span>
     <span class="ml-frei"></span>
@@ -55,7 +56,7 @@ addEventListener('DOMContentLoaded',function(){var f=function(){if(!window.WO||!
   <main class="ml-mitte">
     <div class="ml-buehne" id="mlBuehne">
       <div class="ml-posteingang">
-        <span class="ml-pe__zeichen">CU</span>
+        <span class="ml-pe__zeichen">WS</span>
         <div><b>Wirtschaft am Schlössli</b><span class="ml-pe__betreff" id="mlBetreff"></span><span class="ml-pe__vorschau" id="mlVorschau"></span></div>
       </div>
       <div class="ml-blatt" id="mlBlatt"><iframe id="mlRahmen" title="Vorschau der E-Mail" scrolling="no"></iframe><span class="ml-blatt__licht"></span></div>

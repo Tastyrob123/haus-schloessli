@@ -164,7 +164,7 @@
         `text-align:${{ l: 'left', c: 'center', r: 'right' }[el.ausr || 'l']};color:${DS.farbe(M, el.farbe)};opacity:${el.deck ?? 1};` +
         `white-space:pre-wrap;overflow-wrap:${/^(titel|kapitale|plakat|plakatfett|kopf)$/.test(el.rolle) ? 'normal' : 'break-word'};font-variant-ligatures:none;font-feature-settings:'liga' 0,'clig' 0;text-rendering:geometricPrecision;` +
         (el.gross ? 'text-transform:uppercase;' : '') +
-        (el.schatten ? (t => `text-shadow:${t.dx * S}px ${t.dy * S}px 0 ${t.hart}` + (t.glow ? `,0 0 ${t.blur * S}px ${t.glow}` : '') + ';')(DS.kopfTiefe(DS.farbe(M, el.farbe), el.schatten, el.gr)) : '');   // Kopfzeile wie Rudi: harte Kante, gedruckter Schatten (29.10.)
+        (el.schatten ? (t => `text-shadow:${t.dx * S}px ${t.dy * S}px 0 ${t.hart}` + (t.glow ? `,0 0 ${t.blur * S}px ${t.glow}` : '') + ';')(DS.kopfTiefe(DS.farbe(M, el.farbe), el.schatten, el.gr)) : '');   // Kopfzeile: harte Kante, gedruckter Schatten (29.10.)
       d.textContent = el.text;
       if (o.editor && /\[[^\]]*\]/.test(el.text)) d.classList.add('platzhalter');
     } else if (el.typ === 'bild') {

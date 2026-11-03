@@ -178,7 +178,7 @@
         ${feld('betreff', 'Betreff', doc.betreff || '')}
         ${feld('vorschau', 'Vorschauzeile (erscheint im Posteingang nach dem Betreff)', doc.vorschau || '', 'textarea', 2)}
         <label class="ml-f"><span>Verschickt mit</span><select data-k="versand">${Object.entries(DSMAIL.VERSAND).map(([k, v]) => `<option value="${k}"${doc.versand === k ? ' selected' : ''}>${v.name}</option>`).join('')}</select></label>
-        <p class="ml-leise ml-versand">Die Werkstatt verschickt selbst nichts. Wählen Sie hier das Programm, mit dem Sie Ihren Newsletter schon verschicken: Die Werkstatt setzt den Abmeldelink so, wie dieses Programm ihn braucht, und gibt Ihnen die fertige Mail zum Einfügen dort. Haben Sie kein solches Programm, wählen Sie «Anderes Programm»: Dann steht im Fuss [Abmeldelink], den ersetzen Sie vor dem Versand.</p>
+        <p class="ml-leise ml-versand">Von hier aus wird nichts verschickt. Wählen Sie hier das Programm, mit dem Sie Ihren Newsletter schon verschicken: Der Abmeldelink wird so gesetzt, wie dieses Programm ihn braucht, und gibt Ihnen die fertige Mail zum Einfügen dort. Haben Sie kein solches Programm, wählen Sie «Anderes Programm»: Dann steht im Fuss [Abmeldelink], den ersetzen Sie vor dem Versand.</p>
         <p class="ml-leise ml-tipp">Tipp: Tippen Sie in der Vorschau einen Teil der E-Mail an, öffnet er sich hier zum Bearbeiten.</p>`;   // Versand und Bearbeiten getrennt erklärt (Robert 29.10.2026)
     } else if (wahl === 'kopf') {
       box.innerHTML = `<div class="ml-kopfzeile"><h2><small>Teil der E-Mail</small>Kopf</h2></div><p class="ml-leise">Oben stehen Zeichen und Name des Hauses, darunter das Kopfbild.</p>${fotoFeld(doc.kopf || {}, true)}`;
