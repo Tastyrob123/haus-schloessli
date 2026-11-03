@@ -1,0 +1,219 @@
+{
+ "profil": {
+  "name": "schloessli_bottighofen",
+  "titel": "Wirtschaft am Schlössli",
+  "art": "Restaurant",
+  "bio": [
+   "Direkt im Hafen von Bottighofen, mit Blick aufs Wasser und die Alpen.",
+   "Mediterrane Küche, die Lästermeile mit Tapas. By Christian Kuchler."
+  ],
+  "link": "schloessli-bottighofen.ch",
+  "zahlen": {
+   "beitraege": "94",
+   "follower": "2’601",
+   "gefolgt": "584"
+  },
+  "stand": "19.10.2026"
+ },
+ "posts": [
+  {
+   "n": "01",
+   "cap": "Ein Salat auf dem gerippten silbernen Teller. Der Frühling kommt auch auf die Karte."
+  },
+  {
+   "n": "02",
+   "cap": "Der Guide Michelin nennt uns «Favorit der Inspektoren», Falstaff gibt 91 von 100 Punkten. Am meisten freut uns trotzdem, wenn Sie wiederkommen."
+  },
+  {
+   "n": "03",
+   "cap": "Die Weinkarte von Jonas Volpert hat 26 Seiten. GaultMillau schreibt: «Der Weinkeller, bei vielen neuen Lokalen das Sorgenkind, ist im ‹Schlössli› bestens bestückt.»"
+  },
+  {
+   "n": "04",
+   "cap": "Ihr Tisch am Hafen: Reservieren Sie auf unserer Website oder rufen Sie uns an, +41 71 688 90 92. Wir freuen uns auf Sie."
+  },
+  {
+   "n": "05",
+   "cap": "Die Sauce wird mit dem Löffel angegossen. Am Pass zählt jeder Handgriff."
+  },
+  {
+   "n": "06",
+   "cap": "Damit Sie planen können: Donnerstag bis Montag ab 11:30 Uhr offen, die Küche kocht von 11:30 bis 13:30 und von 18:00 bis 20:00 Uhr. Die Karte der Lästermeile gibt es den ganzen Tag. Dienstag und Mittwoch ist Ruhetag."
+  },
+  {
+   "n": "07",
+   "cap": "Schichttorte mit Beeren auf dem blauen Teller."
+  },
+  {
+   "n": "08",
+   "cap": "Bald wieder draussen: GaultMillau schreibt von unserer «Terrasse im Schatten prächtiger Platanen und Blick auf den Bodensee». Reservieren Sie Ihren Tisch auf unserer Website oder unter +41 71 688 90 92."
+  },
+  {
+   "n": "09",
+   "cap": "Fisch in grüner Sauce in der gerippten Schale, daneben ein Glas Wein."
+  },
+  {
+   "n": "10",
+   "cap": "Die Ferien sind vorbei: Ab Donnerstag, 11. Februar 2027 sind wir wieder für Sie da. Donnerstag bis Montag von 11:30 bis 23:00 Uhr, Dienstag und Mittwoch ist Ruhetag. Wir freuen uns auf Sie."
+  },
+  {
+   "n": "11",
+   "cap": "Gefülltes Fleisch mit Blättern und Blüten auf dem geriffelten Teller."
+  },
+  {
+   "n": "12",
+   "cap": "An der Bar wird ein Bier gezapft, unter der Theke die Zementfliesen."
+  },
+  {
+   "n": "13",
+   "cap": "Von oben gesehen, auf dem blauen Platzteller."
+  },
+  {
+   "n": "14",
+   "cap": "Unser Schild zeigt den Weg: zur Restaurant-Terrasse und zur Lästermeile."
+  },
+  {
+   "n": "15",
+   "cap": "Von der Karte der Lästermeile: CROQUETAS, Pata-Negra-Kroketten für 9 Franken. Dazu ein Glas, und der Nachmittag am Hafen gehört Ihnen."
+  },
+  {
+   "n": "16",
+   "cap": "Lukas Siebel, Sous-Chef, an der Seite von Moni Huber."
+  },
+  {
+   "n": "17",
+   "cap": "Moni Huber kommt aus Südtirol, hat in der Vila Joya an der Algarve bei Dieter Koschina gelernt, war Sous-Chefin von Christian Kuchler in der Taverne zum Schäfli und führt seit April 2025 ihre eigene Küche am See."
+  },
+  {
+   "n": "18",
+   "cap": "Schwarze Pasta mit Garnelen und Meeresfrüchten."
+  },
+  {
+   "n": "19",
+   "cap": "Aus der Geschichte am Hafen: Gleich nebenan, im Haus am See, das heute Schlössli heisst, setzte Hans Conrad Hafen Ende des 17. Jahrhunderts einen Wirt ein, der die Schiffsleute mit Speis und Trank bewirtete. Statt eines Wirtshausschilds hing nur ein Besen heraus."
+  },
+  {
+   "n": "20",
+   "cap": "Ein Abend unter der Platane, die Lichterkette brennt. Danke, dass Sie da waren."
+  },
+  {
+   "n": "21",
+   "cap": "Bis Montag, 21. Dezember sind wir noch für Sie da, dann macht das Team Ferien. Vom 22. Dezember 2026 bis 10. Februar 2027 bleibt die Wirtschaft geschlossen. Danke für dieses Jahr am See."
+  },
+  {
+   "n": "22",
+   "cap": "Direkt im Hafen von Bottighofen, mit Blick aufs Wasser und die Alpen. Das ganze Bild sehen Sie in unserem Profil, über drei Beiträge."
+  },
+  {
+   "n": "23",
+   "cap": "Die blauen Stühle der Terrasse am Mittag. Aus diesem Bild stammen die Farben unseres Hauses: das Blau der Stühle, der See, der Himmel."
+  },
+  {
+   "n": "24",
+   "cap": "«Die schönste Terrasse am Bodensee», sagt Christian Kuchler."
+  },
+  {
+   "n": "25",
+   "cap": "Zum Schluss etwas Süsses mit Beeren, auf dem blauen Teller."
+  },
+  {
+   "n": "26",
+   "cap": "Noch ein Geschenk gesucht? Mit unserem Gutschein verschenken Sie einen Abend am Hafen von Bottighofen. Den Betrag wählen Sie selbst, bestellen können Sie ihn auf unserer Website."
+  },
+  {
+   "n": "27",
+   "cap": "Die Lounge am Ufer, dahinter der See und die Alpen."
+  },
+  {
+   "n": "28",
+   "cap": "Das Weihnachtsessen mit der Firma, ein runder Geburtstag, die Familie am Tisch: Wir haben auf zwei Etagen Platz für jeweils bis zu 26 Personen. Sie geben den Rahmen vor, ob Tavolata oder gesetztes Menue. Schreiben Sie uns, dann besprechen wir alles in Ruhe."
+  },
+  {
+   "n": "29",
+   "cap": "Die Gaststube mit den grossen Fenstern zum Hafen. Wenn es draussen kühler wird, sitzen Sie hier mit demselben Blick."
+  },
+  {
+   "n": "30",
+   "cap": "Die Zementfliesen an der Bar. Wer an der Lästermeile steht, hat sie unter den Füssen."
+  },
+  {
+   "n": "31",
+   "cap": "Ein Fischfilet mit Sauce in der gerippten Schale, dahinter ein blauer Stuhl der Terrasse."
+  },
+  {
+   "n": "32",
+   "cap": "Ein Glas Weisswein, dahinter nur noch der See."
+  },
+  {
+   "n": "33",
+   "cap": "Von der Karte im Oktober: CAVATELLI, Buchenpilze, Pfaffenschnittchen, Sellerie, schwarze Zitrone. Als Vorspeise oder als Hauptgang, auf Wunsch auch vegetarisch."
+  },
+  {
+   "n": "34",
+   "cap": "Die Flaschen stehen an der Scheibe, dahinter liegt der See. An der Lästermeile."
+  },
+  {
+   "n": "35",
+   "cap": "An der Lästermeile sitzen Sie in der Reihe, schauen auf den Bootshafen und die Promenade und lästern ein wenig. Pimientos de Padrón, Croquetas, Kalamata Oliven: Die Tapas gibt es den ganzen Tag."
+  },
+  {
+   "n": "36",
+   "cap": "Grüne Suppe in der blauen Schale. Für einen kühlen Mittag am See."
+  },
+  {
+   "n": "37",
+   "cap": "Unser Lunch-Menü: Kürbissuppe mit Wachtelei und Serrano Schinken, Risi e bisi mit Reis, Miesmuschel, Erbsen, Spinat, zum Schluss Joghurt Panna Cotta mit Apfelcrumble. Drei Gänge für 35 Franken."
+  },
+  {
+   "n": "38",
+   "cap": "«Mehr Wirtschaft, weniger feine Pinkel», hat das Tagblatt über uns geschrieben. Wir nehmen das als Kompliment. Das ist unser Team."
+  },
+  {
+   "n": "39",
+   "cap": "15 Punkte im GaultMillau und «Entdeckung des Jahres 2026» für Moni Huber. Danke an alle, die jeden Tag mit in der Küche und am Pass stehen."
+  },
+  {
+   "n": "40",
+   "cap": "Gedeckt unter den Platanen, dahinter der Hafen. Im Herbst wird es ruhiger auf der Terrasse, der Blick bleibt."
+  },
+  {
+   "n": "41",
+   "cap": "Von der Karte: TORTELLONI, Tomate, Burrata, Taggiasca Olive. 35 Franken als Vorspeise, 50 Franken als Hauptgang."
+  },
+  {
+   "n": "42",
+   "cap": "Die Tortelloni mit Tomate, Burrata und Taggiasca-Olive. Das Gericht des Hauses, als Vorspeise oder als Hauptgang."
+  },
+  {
+   "n": "43",
+   "cap": "Vom 13. bis 15. November bleibt unsere Wirtschaft geschlossen, denn das ganze Team ist mit an Bord der Excellence Countess. Ab Montag, 16. November sind wir wieder für Sie da."
+  },
+  {
+   "n": "44",
+   "cap": "Jonas Volpert, Gastgeber und Sommelier. Der Schwerpunkt seiner Weinkarte liegt auf der Bündner Herrschaft, dem Burgund und der Champagne. Fragen Sie ihn ruhig, was zu Ihrem Teller passt."
+  },
+  {
+   "n": "45",
+   "cap": "Ein Spritz und ein Bier in der blauen Stunde. An der Lästermeile gibt es die Karte den ganzen Tag."
+  },
+  {
+   "n": "46",
+   "cap": "Monika Huber, unsere Küchenchefin. Bei Dieter Koschina hat sie in der Vila Joya an der Algarve viel gelernt, im November kochen die beiden gemeinsam auf dem Schiff."
+  },
+  {
+   "n": "47",
+   "cap": "Thunfisch in Scheiben, in der gerippten Schale. Mediterran und klar, so kocht das junge Team um Moni Huber."
+  },
+  {
+   "n": "48",
+   "cap": "Four-Hands-Dinner auf der Excellence Countess: Vom 13. bis 15. November geht unsere Küchenchefin Monika Huber mit Dieter Koschina an Bord. Start ist am Freitag in Basel, über Nacht geht es nach Strassburg und am Samstag denselben Weg zurück. Alles zur Reise finden Sie auf excellence.ch."
+  }
+ ],
+ "hl": [
+  "Terrasse",
+  "Küche",
+  "Lästermeile",
+  "Team",
+  "Wein"
+ ]
+}

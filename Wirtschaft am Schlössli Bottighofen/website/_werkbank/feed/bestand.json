@@ -1,0 +1,404 @@
+{
+ "bestand": [
+  "ig-01.jpg",
+  "ig-02.jpg",
+  "ig-03.jpg",
+  "ig-04.jpg",
+  "ig-05.jpg",
+  "ig-06.jpg",
+  "ig-07.jpg",
+  "ig-08.jpg",
+  "ig-09.jpg",
+  "ig-10.jpg",
+  "ig-11.jpg",
+  "ig-12.jpg"
+ ],
+ "ausnahmen": [],
+ "fotos": {
+  "salat": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "wein": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "sauce": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "torte": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "iberia": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "fleisch": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "bar": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "anguria": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "schild": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "lukas": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "pasta": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "abend": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "start": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "dessert": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "lounge": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "gaststube": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "fliesen": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "fisch": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "glas": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "regal": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "suppe": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "team": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "platanen": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "tortelloni": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "jonas": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "apero": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "moni": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "thon": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "abend-hafen": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "abendschiff": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "baum": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "bootshafen": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ch-anzeige": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ch-luftkarte": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ch-mann": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ch-portal": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ch-postkarte": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ch-strandhotel": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ch-ufer": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ch-zeichnung": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "feuerwerk": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "feuerwerk-ki": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "haus": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "jz-fruehling": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "jz-herbst": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "jz-sommer": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "kf-anrichten": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "kf-deck-abend": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "kf-teller": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "kp-party": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "luft1954": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "mi-teller": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "morgen": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "pa-teller": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "saentis": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "schaefli": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "schifflaende": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "start-hoch": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "stier": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "tb-dunkel": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "tb-fisch": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "tb-glas": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "tb-teller": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "teller": {
+   "im_feed": false,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  }
+ },
+ "doppelt": []
+}

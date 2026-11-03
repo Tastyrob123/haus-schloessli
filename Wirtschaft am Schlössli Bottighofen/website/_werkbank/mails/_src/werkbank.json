@@ -1,0 +1,62 @@
+[
+ [
+  "01",
+  "01-reservation",
+  "Ihre Reservation",
+  "Kommt, sobald das Haus den Tisch bestätigt: Tag, Uhrzeit, Personen, Platz und der Weg zum Hafen."
+ ],
+ [
+  "02",
+  "02-terrasse",
+  "Tisch auf der Terrasse",
+  "Kommt, wenn ein Gast ausdrücklich draussen sitzen möchte: der Tisch auf der Terrasse, und was das Haus macht, wenn das Wetter nicht mitspielt."
+ ],
+ [
+  "03",
+  "03-bankett",
+  "Ihr Bankett",
+  "Kommt nach der Bankettanfrage: Datum, Personen, Speisenform und Menü, und der Satz, dass das Haus sich persönlich meldet."
+ ],
+ [
+  "04",
+  "04-gutschein",
+  "Ihr Gutschein",
+  "Kommt nach der Bestellung des Gutscheins. Die Karte selbst hängt als PDF an der Mail."
+ ],
+ [
+  "05",
+  "05-winterpause",
+  "Unsere Winterpause",
+  "Geht vor den Ferien an Gäste, die schon reserviert haben oder bald kommen möchten: wann zu ist, bis wann noch offen, wann es weitergeht."
+ ],
+ [
+  "06",
+  "06-kreuzfahrt",
+  "Ein Wochenende auf dem Rhein",
+  "Geht an Gäste, die gern von Anlässen hören: die Gourmetkreuzfahrt mit Dieter Koschina, wann und wo, und dass das Haus in den drei Tagen zu ist."
+ ],
+ [
+  "07",
+  "07-lunch",
+  "Unser Lunch",
+  "Geht an Gäste aus der Nähe, wenn es ein neues Lunch-Menü gibt: die drei Gänge, der Preis und die Zeiten der Küche am Mittag."
+ ],
+ [
+  "08",
+  "08-wein",
+  "Eine Weinempfehlung",
+  "Antwort von Jonas Volpert, wenn ein Gast nach einem Wein gefragt hat: Weingut, Jahrgang, Flasche und Preis aus der Weinkarte."
+ ],
+ [
+  "09",
+  "09-danke",
+  "Danke für Ihren Besuch",
+  "Kommt am Tag nach dem Besuch: ein Dank, die Bitte um ein Wort und der Weg zum nächsten Tisch."
+ ],
+ [
+  "10",
+  "10-warteliste",
+  "Auf der Warteliste",
+  "Kommt, wenn der Wunschtermin ausgebucht ist: der Gast steht auf der Warteliste, und wird ein Tisch frei, ruft das Haus an."
+ ]
+]

@@ -3,57 +3,71 @@ tags: [projekt, feed]
 status: aktiv
 ---
 
-# Feed-Bestand und Gegenprobe · Culinarium (Werkbank-Chat, 28.10.2026)
+# Feed-Bestand und Gegenprobe · Wirtschaft am Schlössli (Nachtbau 3./4.11.2026, Agent schloessli-werkbank-feed)
 
-Rolle: `~/Desktop/Website-Projekte/_Kette/rollen/feed-planer.md` · Master Website-Bau 5a Regel 10 und 10a. Bestand der früheren Feeds: `Taverne zum Schäfli Wigoltingen/website/_werkbank/feed-bestand.md` (Gegenprobe Stand 21.10.2026, dort mit Schlössli, Maeder-Häusern, Rivage, Carlton).
+Rolle: Feed-Planer (Master Website-Bau 5a Regel 10 und 10a). Aufbau: Fassung «Fortsetzung» der Werkbank-Vorlage (die nächsten Beiträge über dem heutigen Feed). Alte Fassung des Schlössli: «Ein Horizont», 21 Beiträge (19.10.2026), hier übernommen und erweitert.
 
-## Dieses Haus: Culinarium · «Fortsetzung», die nächsten 60 Beiträge (Fassung 3, 29.10.2026)
+## Dieses Haus: «Die nächsten 48 Beiträge»
 
-Robert: «die werden jetzt nicht ihren gesamten Feed löschen … man muss gucken, was sie an Bildern benutzt haben, damit wir jetzt diese 60 Beiträge darauf aufbauen können … bei den Plakaten … eine Ausnahme». Der Feed setzt @culinarium_hannover fort.
-- **Bestandsabgleich:** Kit-Schritt `_Werkbank-Kit/feed_bestand.py` (pHash und Ausschnitt-Vergleich mit Inhaltsprobe) gegen alle 56 Bilder der 20 Beiträge in `_quelle/extern/ig/` und Rudis Beitrag mit Culinarium als Mitautor (DLSA60BMwiG). 50 Fotos der Website sind schon gepostet und gesperrt (u. a. alle `ab_…`, lauch, g3, m8, ws03, ws28); Plakate sind Ausnahme (`BESTAND_AUSNAHMEN`). Bericht `feed/bestand.json`.
-- **Die nächsten 60 in Reihenfolge des Postens** (`JAHR` in `_werkbank/feed_daten.py`, im Raster umgekehrt): Abend 27./28.11. (Ankündigung, «Noch eine Woche.», «Noch drei Plätze.», Abend, «Danke für zwei Abende.»), 18./19.12. («Samstag ausgebucht.», «Danke für 2026.»), Dirty Chicken [Datum], Abend im Frühjahr [Datum] mit Countdown, Abend im Sommer [Datum] mit «Ausgebucht.», Dirty Chicken, nächster Abend [Datum]. 7 Plakate «Aus dem Archiv». Keine gleiche Art neben- oder untereinander (`nachbarn()`).
-- **Profil:** oben die 60 neuen (nummeriert in Reihenfolge des Postens, Nummern abschaltbar), ein Band «Die nächsten 60 · Euer Feed heute», darunter die 21 echten bisherigen Beiträge (leicht zurückgenommen); Schalter «Heute» / «Mit den nächsten 60» mit wachsendem Feed; Kopf 88 bzw. 28. Bausteine: `feed/uebergang.css`, `feed/uebergang.js`, eingebaut von `_werkbank/feed_leicht.py`.
-- Sicherungen: `*.vor-fortsetzung-2026-10-29`, `*.vor-uebergang-2026-10-29`.
+- **Profil heute:** @schloessli_bottighofen, 46 Beiträge, 2’601 Follower, 584 gefolgt (abgelesen 19.10.2026 ohne Anmeldung, `_quelle/extern/ig/profil.txt`); fast nur Reels vom See, aus der Küche und vom Pass. Die zwölf zuletzt sichtbaren Beiträge (`_quelle/extern/ig/herkunft.json`, ohne den Beitrag von Christian Kuchler: elf) stehen im Profil der Werkbank unter den neuen (Schalter «Heute» / «Mit den nächsten 48»).
+- **Bestandsabgleich** (`_Werkbank-Kit/feed_bestand.py`, pHash und Ausschnitt-Vergleich): 12 gepostete Bilder gegen die 28 Fotos des Feeds: **0 schon gepostet, 0 doppelt im Feed**. Bericht `feed/bestand.json`.
+- **Aufbau:** 16 Reihen; ein einziges breites Bild über drei Beiträge (die blauen Stühle der Terrasse am Mittag, Reihe 8); 27 einzelne Fotos (davon zwei gerahmt auf der Nacht: Bar und Zementfliesen, weil zu niedrig für einen ganzen Beitrag); 18 Tafeln (Schrift auf der Nacht oder dem Papier, Blätter aus der Karte in DM Mono). Keine zwei Tafeln neben- oder untereinander, gleiche Art nie nebeneinander (`nachbarn()` in `_werkbank/feed_daten.py`).
+- **Folge zum Posten** (1 = zuerst, im Raster unten rechts): Gourmetkreuzfahrt 13.–15.11. und «Wir sind an Bord», Tortelloni, GaultMillau, Team, Lunch, Lästermeile, Cavatelli, Bankett und Gutschein im Advent, die Terrasse als breites Bild, Winterpause 22.12.2026–10.2.2027, Geschichte vom Besen, Moni Huber, Croquetas, «Ab 11. Februar wieder da», Zeiten, Reservation, Weinkarte, Guide Michelin. Termine nur aus `website/inhalt/haus.json` (16.11.2026 und 21.12.2026 sind Montage, 11.2.2027 ein Donnerstag).
+- **Bilder:** nur eigene Fotos des Hauses aus `website/assets/img` (Register `website/inhalt/bilder.json`), jedes einmal. Nicht verwendet: `tb-*`, `baum`, `mi-teller` (Gäste- und Portalbilder), `kf-*`, `pa-teller`, `stier`, `kp-party`, `schaefli` (andere Häuser), `feuerwerk*`, `ch-*`, Commons, erzeugte Bilder; `ig-*` sind schon gepostet.
+- **Kleid:** Nacht über dem See `#0b1d3d` mit der Punkt-Tapete, Papier `#E7ECF3`, Seehimmel `#A2B6CF` als Linie und Zeichen, Open Sans 400 in Versalien gesperrt, Instrument Sans, DM Mono; die Zeiger als einziges Zeichen; der Horizont als feine Linie unter jedem Titel. Profilbild: die Zeiger auf der Nacht.
+- **Bau:** `bash website/_werkbank/_werkbank/feed_alles.sh feed` (Kit `feed.py` über `feed_bau.py` mit den Hauswerten aus `feed_haus.py`, `feed_druck.js`, `feed_leicht.py`, `feed_kleid.py`).
 
-## Frühere Fassung: Culinarium · «Ein Abend in Folgen», 60 Beiträge (Fassung 2b, 29.10.2026, ersetzt)
+## Jeder Beitrag mit Bild und Quelle
 
-Robert zur Fassung 2: «das gefällt mir sehr gut … aus 36 Beiträgen … so 60 machen». Die 36 oben bleiben unverändert; darunter acht Reihen (37–60) als dritte Folge: Karussell «Fünf Drinks, ein Abend», Blick durch die Tür, Zeile «ROTE BEETE / ZWIEBEL / PARMESAN», Blumenkohl mit Kürbis, Plakat November 2025, Momo, Momos Drink «Black Pearl» als Schrift, Pass, Longdrink, Service, Reel «Geklärt, Glas für Glas», Dirty Chicken in Violett («Dit ist wahre Liebe!»), Knödel, «Danke für gestern.», Plakat November 2024, Tafel, Dessert mit Drink, Dirty Chicken von oben, Zeile «BLUMENKOHL / ROQUEFORT / KAPERN / QUINOA», das Team, Coupe, Plakat April 2024, Fenster der Bar, Karussell «Wie es kam». Neun Plakate von 60, nie neben- oder untereinander; jedes Foto einmal. Im Kopf 60 Beiträge (aus len(P) und feed.json); die ersten zwölf Kacheln laden sofort, alle mit Motivfarbe (`_werkbank/feed_leicht.py`). Sicherung der 36er-Fassung: `*.vor-feed60-2026-10-29`.
+Nr. = Datei `feed/posts/NN.jpg` (Raster, 01 oben links); Posten = Reihenfolge zum Posten. Tafeln: Wortlaut aus `haus.json` (Zeiten, Ferien, Anlässe, Bankett, Gutschein, Zitate, Auszeichnungen, Besen, weg_moni), `karte.json`, `lunch.json`, `laestermeile.json`.
 
-## Dieses Haus: Culinarium · «Ein Abend in Folgen» (Fassung 2, 29.10.2026, oberste 36 der Fassung 2b)
-
-Ersetzt Fassung 1 «Momo x Rudi» (Plakat-Säule in der Mitte; Robert 29.10.2026: «diese gerade Reihe in der Mitte … mit den Plakaten … total monoton und billig»). Sicherung: `feed.vor-feed-2026-10-29/`, `_werkbank/feed_daten.py.vor-feed-2026-10-29`.
-
-- **Idee:** Der Feed erzählt den Abend in Folgen, von oben nach unten: Ankündigung, Tafel bei Kerzenlicht, Teller, Drink, Hände am Pass, die Leute, Rückblick, dann die nächste Folge. Keine feste Spalte; jede Reihe anders gemischt.
-- **36 Beiträge, 12 Reihen:** 19 Fotos, 6 Plakate, 3 Zeilen von Rudi als reine Schrift (Fraunces 360, Schrägstriche in Kerze, auf Nacht oder Warmweiss), 2 Stimmen (Momo, Rudi), 2 Text-Beiträge (Ankündigung 27./28.11., «Ausgebucht.» September), 2 Karussell-Deckblätter («Was im Glas passiert», «Ein Abend an der langen Tafel»), 2 Reel-Titel («Jeder Teller von Hand angerichtet», «Durchs Sieb, ins Glas»).
-- **Plakate:** September 2026, März 2026, Juni 2025, Februar 2025, Juli 2024, November 2023; ganz, nie beschnitten, auf Nacht oder Warmweiss; nie zwei neben- oder untereinander.
-- **Raster:** hell und dunkel, warm und kühl, nah und weit wechseln; keine zwei Schrift-Beiträge untereinander; das «C» aus Rudis Wortmarke ist das einzige Zeichen.
-- **Bilder:** nur Fotos des Hauses aus dem Bildregister der Website und Rudis Plakate, jedes einmal. Echte Gästestimmen mit Wortlaut gibt es in den Quellen nicht; die Zitate sind Momo und Rudi.
-- **Bau:** `_werkbank/feed_daten.py` (REGEL «bogen», Liste FEED Reihe für Reihe), `python3 _Werkbank-Kit/feed.py "<…>/website/_werkbank"`, `node feed_druck.js …`, noch einmal feed.py, `node feed_druck.js … --handy`, `node _werkbank/geraete/schirme.js feed`.
-- **Tafel:** http://localhost:8978/haus/_Oberchef/zeigen/culinarium/feed-2910/index.html
-
-## Frühere Fassung: Culinarium · «Momo x Rudi» (erste Fassung, 28.10.2026, ersetzt)
-
-- **Idee:** Auf den Plakaten steht «BY MOMO X RUDI». Das Raster ebenso: in jeder Reihe links ein Teller aus Rudis Küche, rechts ein Glas von Momo, und in der Mitte, wo das «x» steht, das Plakat eines Abends. Die Mittelspalte läuft vom neuesten Plakat (September 2026) oben bis April 2024 unten: das Profil bleibt eine Sammlung der Plakate, wie heute, und zeigt dazu, was an der Tafel passiert.
-- **Plakate:** ganz, nicht beschnitten, auf der Nacht der Bar mit dem Raster der Website (als Tafel gesetzt, `BOGEN_CSS`), damit Wortmarke und Zeile des Plakats lesbar bleiben.
-- **Menschen:** keine. Teller und Gläser tragen das Raster; Gesichter stehen auf der Website und im Brief.
-- **Raster:** 24 Beiträge, 8 Reihen, jede Reihe Teller · Plakat · Glas. Keine Schrift außer der auf den Plakaten.
-- **Erste neun:** Lauch/Blumenkohl/Chipotle · Plakat September 2026 · Drink mit Schaum · Blumenkohl/Roquefort · Plakat März 2026 · Schaum bei Kerzenlicht · Hokkaido · Plakat November 2025 · Glas mit Feige.
-- **Farbbett:** helle Teller nie übereinander (Spaghetti-Eis in Reihe 5 zwischen Rote Bete und Knödeln), die Gläser rechts im Wechsel hell und dunkel.
-- **Bilder:** 16 Fotos und 8 Plakate, alle aus dem Bildregister der Website (`website/assets/bild`, geschärfte Fassungen kommen von selbst nach). Jedes einmal. Rudis Dateien und eigene Plakate; keine Gästefotos, keine Fotos Dritter, keine erzeugten Bilder.
-- **Profil:** 28 Beiträge, 1.079 Follower, 305 gefolgt (abgelesen ohne Anmeldung, `_qa/spaeher/ig-profil-handy.txt`, 25.10.2026).
-- **Bau:** `website/_werkbank/_werkbank/feed_daten.py` (REGEL «bogen»), `python3 _Werkbank-Kit/feed.py "<…>/website/_werkbank"`.
-
-## Gegenprobe
-
-| Feed | Leitform | Schrift | Erste Reihe | Unterschied zu Culinarium |
-|---|---|---|---|---|
-| Carlton-Europe | Paar 1 + 2, Hochkant 1 × 2 | Sätze auf Fotos | Abzug + Häuser heute | keine Paare über zwei Felder, kein Hochkant, keine Sätze |
-| Waldhotel Doldenhorn | Titelseite 2 × 2 oben, Zahl darunter | Titel und Zahlen | Titelseite «Das Haus» | keine Blöcke, keine Zahlen |
-| Landgasthof Ruedihus | Bild über sechs 3 × 2 oben, Raumnamen | Namen auf Fotos | Haus im Grünen | nie über mehrere Felder, keine Namen |
-| Berghotel Gasterntal | drei Wortplakate 3 × 1 | Satz groß im Plakat | Plakat Fest | keine Wortplakate; die Plakate sind die echten des Hauses, je ein Feld |
-| Grand Beau-Rivage | Plakat jede vierte Reihe | Tafeln | Plakat Haus | Plakate verteilt, nie in einem festen Takt |
-| Wirtschaft am Schlössli | ein Breitbild 3 × 1 in der Mitte | keine | Dessert, Abend, Glas | kein Breitbild |
-| Taverne zum Schäfli | drei Blöcke 2 × 2 links/rechts | keine | Stube (vier Felder) | keine Blöcke, alles Einzelfelder |
-| Tasty Hub | Banner oben | – | Banner | kein Banner |
-
-Ergebnis (Fassung 2): Kein bisheriger Feed erzählt einen Abend in Folgen mit reinen Schrift-Beiträgen (Rudis Zeilen), Karussell- und Reel-Titeln; alle Stücke sind Einzelfelder, ohne festes Muster.
+| Nr. | Posten | Bild | Text zum Beitrag |
+|---|---|---|---|
+| 01 | 48 | Foto `salat` (Ein Salat auf einem gerippten silbernen Teller; Quelle website/bilder/49a4b9_Schloessli_August2025-7-3.jpeg) | Ein Salat auf dem gerippten silbernen Teller. Der Frühling kommt auch auf die Karte. |
+| 02 | 47 | Tafel: «Favorit der Inspektoren. Guide Michelin · Falstaff 91 von 100» | Der Guide Michelin nennt uns «Favorit der Inspektoren», Falstaff gibt 91 von 100 Punkten. Am meisten freut uns trotzdem, wenn Sie wiederkommen. |
+| 03 | 46 | Foto `wein` (Weinflaschen im Regal; Quelle website/bilder/8e85ca__DSC5833_1.JPG) | Die Weinkarte von Jonas Volpert hat 26 Seiten. GaultMillau schreibt: «Der Weinkeller, bei vielen neuen Lokalen das Sorgenkind, ist im ‹Schlössli› bestens bestückt.» |
+| 04 | 45 | Tafel: «Ihr Tisch am Hafen. +41 71 688 90 92 Reservation auf schloessli-bottighofen.ch» | Ihr Tisch am Hafen: Reservieren Sie auf unserer Website oder rufen Sie uns an, +41 71 688 90 92. Wir freuen uns auf Sie. |
+| 05 | 44 | Foto `sauce` (Die Sauce wird mit dem Löffel angegossen; Quelle extern/myswitzerland/02_922778688.jpg) | Die Sauce wird mit dem Löffel angegossen. Am Pass zählt jeder Handgriff. |
+| 06 | 43 | Tafel: «Unsere Zeiten. Do – Mo 11:30 - 23:00 Küche 11:30 - 13:30 18:00 - 20:00 Lästermeile durchgehend Dienstag & Mittwoch Ruhetag» | Damit Sie planen können: Donnerstag bis Montag ab 11:30 Uhr offen, die Küche kocht von 11:30 bis 13:30 und von 18:00 bis 20:00 Uhr. Die Karte der Lästermeile gibt es den ganzen Tag. Dienstag und Mittwoch ist Ruhetag. |
+| 07 | 42 | Foto `torte` (Schichttorte mit Beeren auf einem blauen Teller; Quelle website/bilder/fb5117_Schloessli_August2025-19-10.jpeg) | Schichttorte mit Beeren auf dem blauen Teller. |
+| 08 | 41 | Tafel: «mit der Terrasse im Schatten prächtiger Platanen und Blick auf den Bodensee GaultMillau» | Bald wieder draussen: GaultMillau schreibt von unserer «Terrasse im Schatten prächtiger Platanen und Blick auf den Bodensee». Reservieren Sie Ihren Tisch auf unserer Website oder unter +41 71 688 90 92. |
+| 09 | 40 | Foto `iberia` (Fisch in grüner Sauce in einer gerippten Schale, daneben ein Weinglas; Quelle website/bilder/d18c6d_Schloessli_August2025-9-4.jpg) | Fisch in grüner Sauce in der gerippten Schale, daneben ein Glas Wein. |
+| 10 | 39 | Tafel: «Ab 11. Februar wieder da. Do – Mo · 11:30 - 23:00 Dienstag & Mittwoch Ruhetag» | Die Ferien sind vorbei: Ab Donnerstag, 11. Februar 2027 sind wir wieder für Sie da. Donnerstag bis Montag von 11:30 bis 23:00 Uhr, Dienstag und Mittwoch ist Ruhetag. Wir freuen uns auf Sie. |
+| 11 | 38 | Foto `fleisch` (Gefülltes Fleisch mit Blättern und Blüten auf einem geriffelten Teller; Quelle website/bilder/9f9d8b_Schloessli_August2025-15-8.jpeg) | Gefülltes Fleisch mit Blättern und Blüten auf dem geriffelten Teller. |
+| 12 | 37 | Blatt mit Foto `bar`: «An der Bar» | An der Bar wird ein Bier gezapft, unter der Theke die Zementfliesen. |
+| 13 | 36 | Foto `anguria` (Ein Teller von oben auf dem blauen Platzteller; Quelle website/bilder/7f6b93_Anguria.jpg) | Von oben gesehen, auf dem blauen Platzteller. |
+| 14 | 35 | Foto `schild` (Wegweiser zur A-la-carte-Restaurant-Terrasse und zur Lästermeile; Quelle website/bilder/a005f3_2026-05-22_193805_Schl_C3_B6ssli_SM.jpg) | Unser Schild zeigt den Weg: zur Restaurant-Terrasse und zur Lästermeile. |
+| 15 | 34 | Tafel: «Tapas durchgehend Croquetas Pata-Negra-Kroketten CHF 9» | Von der Karte der Lästermeile: CROQUETAS, Pata-Negra-Kroketten für 9 Franken. Dazu ein Glas, und der Nachmittag am Hafen gehört Ihnen. |
+| 16 | 33 | Foto `lukas` (Lukas Siebel, Sous-Chef, auf der Terrasse; Quelle website/bilder/5c9a30_13_-_FHF_2729.jpg) | Lukas Siebel, Sous-Chef, an der Seite von Moni Huber. |
+| 17 | 32 | Tafel: «Aus Südtirol an den See. Vila Joya an der Algarve, Taverne zum Schäfli, seit April 2025 die eigene Küche am Hafen. Monika Huber · Küchenchefin» | Moni Huber kommt aus Südtirol, hat in der Vila Joya an der Algarve bei Dieter Koschina gelernt, war Sous-Chefin von Christian Kuchler in der Taverne zum Schäfli und führt seit April 2025 ihre eigene Küche am See. |
+| 18 | 31 | Foto `pasta` (Schwarze Pasta mit Garnelen und Meeresfrüchten; Quelle website/bilder/93b96d_Schloessli_August2025-12-6.jpeg) | Schwarze Pasta mit Garnelen und Meeresfrüchten. |
+| 19 | 30 | Tafel: «Aus der Geschichte Statt eines Schilds ein Besen. Am Hafen · Ende 17. Jahrhundert» | Aus der Geschichte am Hafen: Gleich nebenan, im Haus am See, das heute Schlössli heisst, setzte Hans Conrad Hafen Ende des 17. Jahrhunderts einen Wirt ein, der die Schiffsleute mit Speis und Trank bewirtete. Statt eines Wirtshausschilds hing nur ein Besen heraus. |
+| 20 | 29 | Foto `abend` (Abend unter der Platane mit Lichterkette, Gäste am Tisch über dem See; Quelle website/bilder/28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg) | Ein Abend unter der Platane, die Lichterkette brennt. Danke, dass Sie da waren. |
+| 21 | 28 | Tafel: «Winterpause. 22.12.2026 – 10.2.2027 Bis Montag, 21. Dezember sind wir für Sie da. Danke für dieses Jahr am See» | Bis Montag, 21. Dezember sind wir noch für Sie da, dann macht das Team Ferien. Vom 22. Dezember 2026 bis 10. Februar 2027 bleibt die Wirtschaft geschlossen. Danke für dieses Jahr am See. |
+| 22 | 27 | Foto `start` (Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen; Quelle website/bilder/8cc68d_32_-_FHF_2573.jpg), Teil 1 von 3 | Direkt im Hafen von Bottighofen, mit Blick aufs Wasser und die Alpen. Das ganze Bild sehen Sie in unserem Profil, über drei Beiträge. |
+| 23 | 26 | Foto `start` (Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen; Quelle website/bilder/8cc68d_32_-_FHF_2573.jpg), Teil 2 von 3 | Die blauen Stühle der Terrasse am Mittag. Aus diesem Bild stammen die Farben unseres Hauses: das Blau der Stühle, der See, der Himmel. |
+| 24 | 25 | Foto `start` (Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen; Quelle website/bilder/8cc68d_32_-_FHF_2573.jpg), Teil 3 von 3 | «Die schönste Terrasse am Bodensee», sagt Christian Kuchler. |
+| 25 | 24 | Foto `dessert` (Dessert mit Beeren auf einem blauen Teller, dahinter ein Wasserglas; Quelle website/bilder/9f207d_Schloessli_August2025-18-9.jpg) | Zum Schluss etwas Süsses mit Beeren, auf dem blauen Teller. |
+| 26 | 23 | Tafel: «Gutschein Ein Abend am See. Zum Verschenken: unser Gutschein, den Betrag wählen Sie. schloessli-bottighofen.ch» | Noch ein Geschenk gesucht? Mit unserem Gutschein verschenken Sie einen Abend am Hafen von Bottighofen. Den Betrag wählen Sie selbst, bestellen können Sie ihn auf unserer Website. |
+| 27 | 22 | Foto `lounge` (Lounge mit Champagner am Ufer, dahinter der See und die Alpen; Quelle extern/myswitzerland/01_922778687.jpg) | Die Lounge am Ufer, dahinter der See und die Alpen. |
+| 28 | 21 | Tafel: «Ihre Feier am See. Zwei Etagen · je bis zu 26 Personen Tavolata oder gesetztes Menue» | Das Weihnachtsessen mit der Firma, ein runder Geburtstag, die Familie am Tisch: Wir haben auf zwei Etagen Platz für jeweils bis zu 26 Personen. Sie geben den Rahmen vor, ob Tavolata oder gesetztes Menue. Schreiben Sie uns, dann besprechen wir alles in Ruhe. |
+| 29 | 20 | Foto `gaststube` (Die Gaststube mit grossen Fenstern zum Hafen; Quelle website/bilder/50fa79__DSC5718.JPG) | Die Gaststube mit den grossen Fenstern zum Hafen. Wenn es draussen kühler wird, sitzen Sie hier mit demselben Blick. |
+| 30 | 19 | Blatt mit Foto `fliesen`: «Zementfliesen» | Die Zementfliesen an der Bar. Wer an der Lästermeile steht, hat sie unter den Füssen. |
+| 31 | 18 | Foto `fisch` (Fischfilet mit Sauce in einer gerippten Schale, dahinter ein blauer Stuhl; Quelle website/bilder/30467d_Schloessli_August2025-14-7.jpeg) | Ein Fischfilet mit Sauce in der gerippten Schale, dahinter ein blauer Stuhl der Terrasse. |
+| 32 | 17 | Foto `glas` (Ein Glas Weisswein und ein Wasserglas vor dem See; Quelle website/bilder/9a3afc_Schloessli_August2025-1-1.jpg) | Ein Glas Weisswein, dahinter nur noch der See. |
+| 33 | 16 | Tafel: «Italien Cavatelli Buchenpilze – Pfaffenschnittchen – Sellerie – schwarze Zitrone CHF 35 · als Hauptgang 50» | Von der Karte im Oktober: CAVATELLI, Buchenpilze, Pfaffenschnittchen, Sellerie, schwarze Zitrone. Als Vorspeise oder als Hauptgang, auf Wunsch auch vegetarisch. |
+| 34 | 15 | Foto `regal` (Flaschen im Regal an der Bar, durch die Scheibe der See; Quelle website/bilder/de97ff_IMG_2166.jpeg) | Die Flaschen stehen an der Scheibe, dahinter liegt der See. An der Lästermeile. |
+| 35 | 14 | Tafel: «Die Lästermeile. Ein Glas, ein paar Tapas und der Blick auf den Bootshafen. Tapas durchgehend» | An der Lästermeile sitzen Sie in der Reihe, schauen auf den Bootshafen und die Promenade und lästern ein wenig. Pimientos de Padrón, Croquetas, Kalamata Oliven: Die Tapas gibt es den ganzen Tag. |
+| 36 | 13 | Foto `suppe` (Grüne Suppe in einer blauen Schale; Quelle website/bilder/05cfd1_Schloessli_August2025-5-2.jpeg) | Grüne Suppe in der blauen Schale. Für einen kühlen Mittag am See. |
+| 37 | 12 | Tafel: «Lunch. Drei Gänge. CHF 35 Kürbissuppe · Risi e bisi · Joghurt Panna Cotta Mittags · Küche 11:30 Uhr - 13:30 Uhr» | Unser Lunch-Menü: Kürbissuppe mit Wachtelei und Serrano Schinken, Risi e bisi mit Reis, Miesmuschel, Erbsen, Spinat, zum Schluss Joghurt Panna Cotta mit Apfelcrumble. Drei Gänge für 35 Franken. |
+| 38 | 11 | Foto `team` (Das Team der Wirtschaft am Schlössli vor der Holzwand; Quelle website/bilder/d51216_2_-_FHF_2646.jpg) | «Mehr Wirtschaft, weniger feine Pinkel», hat das Tagblatt über uns geschrieben. Wir nehmen das als Kompliment. Das ist unser Team. |
+| 39 | 10 | Tafel: «beeindruckt mit exzellentem Handwerk und klarer kulinarischer Sprache GaultMillau · 15 Punkte» | 15 Punkte im GaultMillau und «Entdeckung des Jahres 2026» für Moni Huber. Danke an alle, die jeden Tag mit in der Küche und am Pass stehen. |
+| 40 | 9 | Foto `platanen` (Gedeckte Tische unter den Platanen, Sonnenschirme, dahinter der Hafen; Quelle website/bilder/178109_IMG_1967.jpeg) | Gedeckt unter den Platanen, dahinter der Hafen. Im Herbst wird es ruhiger auf der Terrasse, der Blick bleibt. |
+| 41 | 8 | Tafel: «Klassiker Tortelloni Tomate – Burrata – Taggiasca Olive CHF 35 · als Hauptgang 50» | Von der Karte: TORTELLONI, Tomate, Burrata, Taggiasca Olive. 35 Franken als Vorspeise, 50 Franken als Hauptgang. |
+| 42 | 7 | Foto `tortelloni` (Tortelloni mit Tomate, Burrata und Taggiasca-Olive; Quelle website/bilder/88d916_Tortelloni.jpg) | Die Tortelloni mit Tomate, Burrata und Taggiasca-Olive. Das Gericht des Hauses, als Vorspeise oder als Hauptgang. |
+| 43 | 6 | Tafel: «Wir sind an Bord. 13.–15. November geschlossen Ab Montag, 16. November wieder für Sie da» | Vom 13. bis 15. November bleibt unsere Wirtschaft geschlossen, denn das ganze Team ist mit an Bord der Excellence Countess. Ab Montag, 16. November sind wir wieder für Sie da. |
+| 44 | 5 | Foto `jonas` (Jonas Volpert, Gastgeber und Sommelier, auf der Terrasse; Quelle website/bilder/dfee6f_11_-_FHF_2706.jpg) | Jonas Volpert, Gastgeber und Sommelier. Der Schwerpunkt seiner Weinkarte liegt auf der Bündner Herrschaft, dem Burgund und der Champagne. Fragen Sie ihn ruhig, was zu Ihrem Teller passt. |
+| 45 | 4 | Foto `apero` (Ein Spritz und ein Bier auf einem blauen Tisch in der blauen Stunde; Quelle website/bilder/816543_2026-05-22_205034_Schl_C3_B6ssli_SM.jpg) | Ein Spritz und ein Bier in der blauen Stunde. An der Lästermeile gibt es die Karte den ganzen Tag. |
+| 46 | 3 | Foto `moni` (Monika Huber, Küchenchefin, auf der Terrasse; Quelle website/bilder/c39c8a_5_-_FHF_2667.jpg) | Monika Huber, unsere Küchenchefin. Bei Dieter Koschina hat sie in der Vila Joya an der Algarve viel gelernt, im November kochen die beiden gemeinsam auf dem Schiff. |
+| 47 | 2 | Foto `thon` (Thunfisch in Scheiben in einer gerippten Schale; Quelle website/bilder/fc5b3b_Schloessli_August2025-11-5.jpg) | Thunfisch in Scheiben, in der gerippten Schale. Mediterran und klar, so kocht das junge Team um Moni Huber. |
+| 48 | 1 | Tafel: «Gourmetkreuzfahrt Four Hands an Bord. 13.–15. November 2026 Excellence Countess · Basel – Strassburg» | Four-Hands-Dinner auf der Excellence Countess: Vom 13. bis 15. November geht unsere Küchenchefin Monika Huber mit Dieter Koschina an Bord. Start ist am Freitag in Basel, über Nacht geht es nach Strassburg und am Samstag denselben Weg zurück. Alles zur Reise finden Sie auf excellence.ch. |

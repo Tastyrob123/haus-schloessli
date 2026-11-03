@@ -1,0 +1,419 @@
+{
+ "reihen": 16,
+ "stuecke": [
+  {
+   "id": "011-salat",
+   "r": 1,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/salat-1536.webp"
+  },
+  {
+   "id": "012-FavoritderInsp",
+   "r": 1,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "013-wein",
+   "r": 1,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/wein-2400.webp"
+  },
+  {
+   "id": "021-IhrTischamHafe",
+   "r": 2,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "022-sauce",
+   "r": 2,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/sauce-1043.webp"
+  },
+  {
+   "id": "023-UnsereZeitenDo",
+   "r": 2,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "031-torte",
+   "r": 3,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/torte-1536.webp"
+  },
+  {
+   "id": "032-mitderTerrasse",
+   "r": 3,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "033-iberia",
+   "r": 3,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/iberia-2400.webp"
+  },
+  {
+   "id": "041-Ab11Februarwie",
+   "r": 4,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "042-fleisch",
+   "r": 4,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/fleisch-1536.webp"
+  },
+  {
+   "id": "043-AnderBar",
+   "r": 4,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "051-anguria",
+   "r": 5,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/anguria-2400.webp"
+  },
+  {
+   "id": "052-schild",
+   "r": 5,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/schild-2400.webp"
+  },
+  {
+   "id": "053-Tapasdurchgehe",
+   "r": 5,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "061-lukas",
+   "r": 6,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/lukas-2400.webp"
+  },
+  {
+   "id": "062-AusSüdtiroland",
+   "r": 6,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "063-pasta",
+   "r": 6,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/pasta-1536.webp"
+  },
+  {
+   "id": "071-AusderGeschich",
+   "r": 7,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "072-abend",
+   "r": 7,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/abend-2400.webp"
+  },
+  {
+   "id": "073-Winterpause221",
+   "r": 7,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "081-start",
+   "r": 8,
+   "c": 1,
+   "w": 3,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/start-2400.webp"
+  },
+  {
+   "id": "091-dessert",
+   "r": 9,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/dessert-2400.webp"
+  },
+  {
+   "id": "092-GutscheinEinAb",
+   "r": 9,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "093-lounge",
+   "r": 9,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/lounge-1761.webp"
+  },
+  {
+   "id": "101-IhreFeieramSee",
+   "r": 10,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "102-gaststube",
+   "r": 10,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/gaststube-2400.webp"
+  },
+  {
+   "id": "103-Zementfliesen",
+   "r": 10,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "111-fisch",
+   "r": 11,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/fisch-1536.webp"
+  },
+  {
+   "id": "112-glas",
+   "r": 11,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/glas-2400.webp"
+  },
+  {
+   "id": "113-ItalienCavatel",
+   "r": 11,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "121-regal",
+   "r": 12,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/regal-1920.webp"
+  },
+  {
+   "id": "122-DieLästermeile",
+   "r": 12,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "123-suppe",
+   "r": 12,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/suppe-1536.webp"
+  },
+  {
+   "id": "131-LunchDreiGänge",
+   "r": 13,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "132-team",
+   "r": 13,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/team-2400.webp"
+  },
+  {
+   "id": "133-beeindrucktmit",
+   "r": 13,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "141-platanen",
+   "r": 14,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/platanen-2400.webp"
+  },
+  {
+   "id": "142-KlassikerTorte",
+   "r": 14,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "143-tortelloni",
+   "r": 14,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/tortelloni-900.webp"
+  },
+  {
+   "id": "151-WirsindanBord1",
+   "r": 15,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "152-jonas",
+   "r": 15,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/jonas-2400.webp"
+  },
+  {
+   "id": "153-apero",
+   "r": 15,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/apero-2400.webp"
+  },
+  {
+   "id": "161-moni",
+   "r": 16,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/moni-2400.webp"
+  },
+  {
+   "id": "162-thon",
+   "r": 16,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/home/user/haus-schloessli/Wirtschaft am Schlössli Bottighofen/website/assets/img/thon-2400.webp"
+  },
+  {
+   "id": "163-Gourmetkreuzfa",
+   "r": 16,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  }
+ ]
+}

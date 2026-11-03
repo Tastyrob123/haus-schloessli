@@ -1,0 +1,146 @@
+[
+ {
+  "name": "Nacht",
+  "hex": "#0B1D3D",
+  "rgb": [
+   11,
+   29,
+   61
+  ],
+  "rolle": "Grund der dunklen Flächen",
+  "gruppe": "dunkel",
+  "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
+ },
+ {
+  "name": "Tief",
+  "hex": "#0A234C",
+  "rgb": [
+   10,
+   35,
+   76
+  ],
+  "rolle": "zweite dunkle Fläche",
+  "gruppe": "dunkel",
+  "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
+ },
+ {
+  "name": "Stuhlblau",
+  "hex": "#113D88",
+  "rgb": [
+   17,
+   61,
+   136
+  ],
+  "rolle": "Knöpfe, Linien, Flächen",
+  "gruppe": "dunkel",
+  "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
+ },
+ {
+  "name": "Papier",
+  "hex": "#E7ECF3",
+  "rgb": [
+   231,
+   236,
+   243
+  ],
+  "rolle": "Grund der hellen Flächen",
+  "gruppe": "hell",
+  "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
+ },
+ {
+  "name": "Seespiegel",
+  "hex": "#D0DAE7",
+  "rgb": [
+   208,
+   218,
+   231
+  ],
+  "rolle": "zweite helle Fläche",
+  "gruppe": "hell",
+  "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
+ },
+ {
+  "name": "Blatt",
+  "hex": "#F3F6F9",
+  "rgb": [
+   243,
+   246,
+   249
+  ],
+  "rolle": "ruhige helle Abschnitte",
+  "gruppe": "hell",
+  "woher": "Wert der Website des Hauses"
+ },
+ {
+  "name": "Seehimmel",
+  "hex": "#A2B6CF",
+  "rgb": [
+   162,
+   182,
+   207
+  ],
+  "rolle": "Linie und Zeichen auf Dunkel",
+  "gruppe": "himmel",
+  "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
+ },
+ {
+  "name": "Seehimmel hell",
+  "hex": "#C5D2E1",
+  "rgb": [
+   197,
+   210,
+   225
+  ],
+  "rolle": "Betonung auf Dunkel",
+  "gruppe": "himmel",
+  "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
+ },
+ {
+  "name": "Seehimmel tief",
+  "hex": "#0F3678",
+  "rgb": [
+   15,
+   54,
+   120
+  ],
+  "rolle": "Betonung auf Hell",
+  "gruppe": "himmel",
+  "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
+ },
+ {
+  "name": "Tinte",
+  "hex": "#041023",
+  "rgb": [
+   4,
+   16,
+   35
+  ],
+  "rolle": "Lesetext, nie reines Schwarz",
+  "gruppe": "schrift",
+  "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
+ },
+ {
+  "name": "Titelblau",
+  "hex": "#0A2552",
+  "rgb": [
+   10,
+   37,
+   82
+  ],
+  "rolle": "Titel auf Hell",
+  "gruppe": "schrift",
+  "woher": "Wert der Website des Hauses"
+ },
+ {
+  "name": "Schirmrot",
+  "hex": "#FD9964",
+  "rgb": [
+   253,
+   153,
+   100
+  ],
+  "rolle": "nur als Punkt, nie als Fläche",
+  "gruppe": "punkt",
+  "woher": "Farbwelt «Stuhl und See», unverändert"
+ }
+]
