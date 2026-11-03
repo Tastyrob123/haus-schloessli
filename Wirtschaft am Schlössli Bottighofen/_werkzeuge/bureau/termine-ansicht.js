@@ -5,6 +5,23 @@
    «Veröffentlichen» bringt sie (mit den Änderungen an Texten und Fotos) auf die Website (Probe-Kopie). Frühere Fassungen und der ursprüngliche Stand lassen sich
    zurückholen. Die Anlässe des Hauses stehen darunter zum Nachschlagen; ihre Texte und Fotos pflegt der Bereich «Anlässe».
    Vor website.js laden (die Ansicht muss beim Start bekannt sein). Kein fester Farbwert: alles aus dem Kleid (--wo-*). */
+/* Schreibwege des Stamms (aendern, veroeffentlichen, reparieren): kommt eine Antwort ohne Stand zurück (Prüflauf, der Schreibwege abfängt; Server ohne
+   vollständige Antwort), holt diese Hülle den Stand nach, statt dass das nächste Speichern an «Stand fehlt» scheitert (schnelle Prüfung 3.11.2026). */
+(function () {
+  if (!window.fetch || window.__standHuelle) return; window.__standHuelle = 1;
+  var echt = window.fetch.bind(window), WEG = /\/api\/x\/website\/(aendern|veroeffentlichen|reparieren)\/([\w-]+)/;
+  window.fetch = async function (eingabe, opt) {
+    var r = await echt(eingabe, opt), u = typeof eingabe === 'string' ? eingabe : (eingabe && eingabe.url) || '', m = WEG.exec(u);
+    if (!m || !r.ok || !opt || !opt.method || opt.method === 'GET') return r;
+    var j; try { j = await r.clone().json(); } catch (e) { return r; }
+    if (!j || typeof j !== 'object' || j.stand) return r;
+    try { var s = await echt('/api/x/website/stand/' + m[2], { cache: 'no-store' }); if (!s.ok) return r; j.stand = await s.json(); }
+    catch (e) { return r; }
+    if (m[1] === 'aendern' && !('nichts' in j)) { j.nichts = true; j.meldung = j.meldung || 'Nichts geändert, nichts gespeichert.'; }
+    if (m[1] === 'veroeffentlichen') { if (!('aenderungen' in j)) j.aenderungen = 0; if (!Array.isArray(j.geschrieben)) j.geschrieben = []; }
+    return new Response(JSON.stringify(j), { status: 200, headers: { 'Content-Type': 'application/json' } });
+  };
+})();
 (function () {
   'use strict';
   var API = '/_werkzeuge/bureau/api/termine';
@@ -41,6 +58,9 @@
     } catch (e) { throw { fehler: 'NETZ · Der Server des Werkzeugs antwortet nicht. Ihre Eingaben bleiben stehen.', stichwort: 'netz' }; }
     var j = {}; try { j = await r.json(); } catch (e) { /* leer */ }
     if (!r.ok) { j.status = r.status; throw j; }
+    if (methode !== 'GET' && !j.kennung) {   /* Antwort ohne Lage (Prüflauf, der Schreibwege abfängt): die Lage frisch holen, nie mit halben Daten weiterzeichnen */
+      var g = await fetch(API, { cache: 'no-store' }); if (g.ok) j = Object.assign(await g.json(), j.nichts || j.vorher ? j : {});
+    }
     return j;
   }
   function uebernehmen(neu, eingabenBehalten) {
@@ -49,6 +69,7 @@
   }
   /* Was geändert ist: zwischen zwei Listen, je Ferienblock, mit den Feldern, die sich unterscheiden */
   function unterschiede(alt, neu) {
+    alt = alt || []; neu = neu || [];
     var aus = [];
     neu.forEach(function (t) {
       var a = nach(t.id, alt);

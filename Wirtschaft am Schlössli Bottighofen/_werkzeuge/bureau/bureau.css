@@ -218,8 +218,8 @@ body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapet
   .ws.wo-app .ws-aufgaben > .wo-ag .wo-ag__t{flex:1 1 auto;margin-top:72px;padding-left:24px}
   .ws.wo-app .ws-aufgaben > .wo-ag .wo-ag__z{top:-56px;left:24px}
 }
-/* K2 «spalte» bei 1440: der Bildtitel im Fenster «Foto tauschen» hatte 151 px; jede Zelle mindestens 172 px */
-.ws.wo-app .ws-fundus{grid-template-columns:repeat(auto-fill,minmax(172px,1fr))}
+/* K2 «spalte» bei 1440: der Bildtitel im Fenster «Foto tauschen» hatte 151 px; jede Zelle mindestens 205 px (auch «ehemaligen Hafenmeistergebäude» passt in eine Zeile) */
+.ws.wo-app .ws-fundus{grid-template-columns:repeat(auto-fill,minmax(205px,1fr))}
 /* K2 «randlos»: Knöpfe des Stamms in Fenstern («Speichern») mit Innenabstand wie die Knöpfe des Rahmens */
 .ws.wo-app .ws-fenster__kn .kn{padding:0 6px 0 20px}
 /* K6 Kante: Reihe kleiner Tasten unter einem Absatz rückt um den Innenabstand der ersten Taste nach links, ihre Schrift steht auf der Kante des Absatzes */
@@ -235,7 +235,7 @@ body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapet
 /* K2 «spalte» am Handy: zwei Fotos je Reihe liessen dem Bildtitel 141 px (drei Zeilen). Am Handy steht je Foto eine Zeile: Bild links, Titel daneben */
 @media (max-width:560px){
   .ws.wo-app .ws-fundus{grid-template-columns:minmax(0,1fr)}
-  .ws.wo-app .ws-fwahl{display:grid;grid-template-columns:96px minmax(0,1fr);align-items:center;gap:12px}
+  .ws.wo-app .ws-fwahl{display:grid;grid-template-columns:72px minmax(0,1fr);align-items:center;gap:12px}
 }
 /* K13/K31: Logos und Motive mit Schrift stehen im Fenster «Foto tauschen» ganz (contain auf Blatt), Fotos bleiben formatfüllend */
 .ws.wo-app .ws-fwahl__b img:is([src*="logo"],[src*="plakat"],[src*="poster"],[src*="motiv"],[src*="wortmarke"],[src*="vorlage"],[src*="flyer"],[src*="einladung"]){object-fit:contain;background:var(--wo-blatt)}
