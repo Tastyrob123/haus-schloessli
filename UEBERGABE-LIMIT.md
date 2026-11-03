@@ -16,6 +16,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 - 17:35 UTC: Culinarium-Werkzeuge nach `Wirtschaft am Schlössli Bottighofen/_werkzeuge/` kopiert (ohne Prüfordner), Werkbank nach `website/_werkbank/`; alter Stand daneben in `*.vor-nachtbau-2026-11-03/` (nicht eingecheckt, nur lesen). Kleid `oberflaeche/kleid/schloessli.{js,css}` + `schloessli-zeichen.svg` + `schloessli-marke.svg`; Ports 908x→928x; Ziellisten `_Werkzeuge/abnahme-tor/ziele-schloessli.json`, `_Werkzeuge/messlauf/ziele-schloessli.json`; `cloud/haus.json` mit acht Servern (9281–9288); alle acht Server laufen (`bash cloud/server.sh`).
 - 17:45 UTC: `_werkzeuge/AUFTRAG-GEMEINSAM.md` (Reviere, Kleid, Hauswerte, Regeln, Prüfung).
 
+- 18:35 UTC: **Hafenbüro fertig** (Agent maison): lokal 0 Funde, Commits cf5ae83/af305b7; offen nur: Bildschirme der anderen Werkzeuge am Ende neu aufnehmen (`SCHIRM_KERN=chromium node schirme.js`, dann `python3 bau.py` in `_werkzeuge/maison`).
+
 ## Was offen ist (Reihenfolge)
 1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
 2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.
