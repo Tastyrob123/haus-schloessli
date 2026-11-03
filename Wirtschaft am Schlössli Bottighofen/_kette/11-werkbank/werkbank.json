@@ -1,0 +1,88 @@
+{
+ "stuecke": [
+  {
+   "name": "Potentialanalyse",
+   "da": true,
+   "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/potenzialanalyse/index.html",
+   "werkbank": "#k1"
+  },
+  {
+   "name": "Angebot (Angebots-Ebene, Vorschlag folgt nach 15c)",
+   "da": true,
+   "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/werkbank/#k8",
+   "werkbank": "#k8"
+  },
+  {
+   "name": "Markenbuch und Designidentität",
+   "da": true,
+   "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/werkbank/#k2",
+   "werkbank": "#k2"
+  },
+  {
+   "name": "Website (Seiten zum Durchklicken)",
+   "da": true,
+   "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/werkbank/#seiten",
+   "werkbank": "#seiten"
+  },
+  {
+   "name": "La Maison / Die Stube",
+   "da": false,
+   "ziel": "http://127.0.0.1:8987/_werkzeuge/maison/",
+   "werkbank": "#k5",
+   "zustand": "läuft"
+  },
+  {
+   "name": "Le Bureau / Der Schreibtisch",
+   "da": true,
+   "ziel": "http://127.0.0.1:9035/_werkzeuge/bureau/",
+   "werkbank": "#k5",
+   "zustand": "liegt vor"
+  },
+  {
+   "name": "La Carte / Die Tafel",
+   "da": true,
+   "ziel": "http://127.0.0.1:9031/_werkzeuge/carte/",
+   "werkbank": "#k5",
+   "zustand": "liegt vor"
+  },
+  {
+   "name": "La Réception / Der Gastgeber",
+   "da": true,
+   "ziel": "http://127.0.0.1:9047/_werkzeuge/reception/",
+   "werkbank": "#k5",
+   "zustand": "liegt vor"
+  },
+  {
+   "name": "Le Livre / Das Hausbuch",
+   "da": true,
+   "ziel": "http://127.0.0.1:9049/_werkzeuge/livre/",
+   "werkbank": "#k5",
+   "zustand": "liegt vor"
+  },
+  {
+   "name": "Le Registre / Das Besucherbuch",
+   "da": true,
+   "ziel": "http://127.0.0.1:8988/_werkzeuge/registre/",
+   "werkbank": "#k5",
+   "zustand": "liegt vor"
+  },
+  {
+   "name": "L’Imprimerie / Die Werkstatt",
+   "da": true,
+   "ziel": "http://127.0.0.1:9053/_werkzeuge/imprimerie/",
+   "werkbank": "#k5",
+   "zustand": "liegt vor"
+  },
+  {
+   "name": "Beigaben",
+   "da": true,
+   "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/werkbank/#k6",
+   "werkbank": "#k6"
+  }
+ ],
+ "port": 8982,
+ "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/werkbank/",
+ "fehlt": [
+  "La Maison / Die Stube"
+ ]
+}

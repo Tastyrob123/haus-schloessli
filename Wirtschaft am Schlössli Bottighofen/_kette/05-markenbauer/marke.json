@@ -1,0 +1,511 @@
+{
+ "farben": [
+  {
+   "name": "Stuhlblau",
+   "hex": "#116788",
+   "rolle": "flaeche-dunkel",
+   "belegt": "Foto",
+   "fundstelle": "Geflecht der Terrassenstühle in der Sonne · _quelle/website/bilder/8cc68d_32_-_FHF_2573.jpg, Ausschnitt x 1262–1987, y 987–1400",
+   "auch": "Median #126B8A; dieselben Stühle auf fast jedem Terrassenfoto der Seite",
+   "foto": "marke/bilder/k-stuhl.webp",
+   "abgeleitet": [
+    "#082E3D",
+    "#0C485F",
+    "#116788",
+    "#7CABBE",
+    "#D4E4EA"
+   ]
+  },
+  {
+   "name": "Seespiegel",
+   "hex": "#B9C5C4",
+   "rolle": "flaeche-hell",
+   "belegt": "Foto",
+   "fundstelle": "Wasser vor den Alpen am Mittag (Startbild der Seite) · _quelle/website/bilder/8cc68d_32_-_FHF_2573.jpg, Ausschnitt x 0–1375, y 525–675",
+   "auch": "Median #B4C1C1",
+   "foto": "marke/bilder/k-see.webp",
+   "abgeleitet": [
+    "#535958",
+    "#828A89",
+    "#B9C5C4",
+    "#D8DFDF",
+    "#F2F5F4"
+   ]
+  },
+  {
+   "name": "Seehimmel",
+   "hex": "#A2C6CF",
+   "rolle": "akzent",
+   "belegt": "Foto",
+   "fundstelle": "Himmel über dem See, ebd. · _quelle/website/bilder/8cc68d_32_-_FHF_2573.jpg, Ausschnitt x 0–1375, y 50–400",
+   "auch": "Median #A8C5CA",
+   "foto": "marke/bilder/k-himmel.webp",
+   "abgeleitet": [
+    "#49595D",
+    "#718B91",
+    "#A2C6CF",
+    "#CCE0E5",
+    "#EEF5F6"
+   ]
+  },
+  {
+   "name": "Ufersand",
+   "hex": "#AD8A5A",
+   "rolle": "flaeche-hell",
+   "belegt": "Foto",
+   "fundstelle": "Sand und Steine am Ufer in der Sonne, ebd. · _quelle/website/bilder/8cc68d_32_-_FHF_2573.jpg, Ausschnitt x 0–850, y 950–1175",
+   "auch": "Median #967868 mit Schatten und nassem Sand",
+   "foto": "marke/bilder/k-ufer.webp",
+   "abgeleitet": [
+    "#4E3E28",
+    "#79613F",
+    "#AD8A5A",
+    "#D2BFA4",
+    "#F0EAE1"
+   ]
+  },
+  {
+   "name": "Kies",
+   "hex": "#747B7B",
+   "rolle": "schrift",
+   "belegt": "Foto",
+   "fundstelle": "Kies unter den Tischen, Licht durch die Platanen · _quelle/website/bilder/178109_IMG_1967.jpeg, Ausschnitt x 1600–2500, y 2333–3333",
+   "auch": "Median #828989",
+   "foto": "marke/bilder/k-kies.webp",
+   "abgeleitet": [
+    "#343737",
+    "#515656",
+    "#747B7B",
+    "#B3B6B6",
+    "#E6E7E7"
+   ]
+  },
+  {
+   "name": "Platanenlaub",
+   "hex": "#717D41",
+   "rolle": "akzent",
+   "belegt": "Foto",
+   "fundstelle": "Laub der Platanen über der Terrasse, nur die hellen Blätter · _quelle/website/bilder/178109_IMG_1967.jpeg, Ausschnitt x 333–1266, y 100–866",
+   "auch": "Median #83933B · nicht in den Farbwelten: Grün ist die Welt B des Schäfli",
+   "foto": "marke/bilder/k-laub.webp",
+   "abgeleitet": [
+    "#33381D",
+    "#4F582E",
+    "#717D41",
+    "#B1B896",
+    "#E5E8DD"
+   ]
+  },
+  {
+   "name": "Schirmrot",
+   "hex": "#FD9964",
+   "rolle": "akzent",
+   "belegt": "Foto",
+   "fundstelle": "Sonnenschirme der Terrasse, Stoff im Gegenlicht · _quelle/website/bilder/178109_IMG_1967.jpeg, Ausschnitt x 1466–2333, y 1166–1283",
+   "auch": "Median #FC9965",
+   "foto": "marke/bilder/k-schirm.webp",
+   "abgeleitet": [
+    "#72452D",
+    "#B16B46",
+    "#FD9964",
+    "#FEC7AA",
+    "#FFEDE3"
+   ]
+  },
+  {
+   "name": "Tellerblau",
+   "hex": "#436496",
+   "rolle": "akzent",
+   "belegt": "Foto",
+   "fundstelle": "Blauer Platzteller unter dem Gericht «Anguria» · _quelle/website/bilder/7f6b93_Anguria.jpg, Ausschnitt x 0–2500, y 0–600",
+   "auch": "Median #4B6C9D",
+   "foto": "marke/bilder/k-teller.webp",
+   "abgeleitet": [
+    "#1E2D44",
+    "#2F4669",
+    "#436496",
+    "#98AAC5",
+    "#DDE3EC"
+   ]
+  },
+  {
+   "name": "Abendrot",
+   "hex": "#D19E68",
+   "rolle": "akzent",
+   "belegt": "Foto",
+   "fundstelle": "Himmel über dem Ufer nach Sonnenuntergang · _quelle/website/bilder/28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg, Ausschnitt x 333–2333, y 1560–1640",
+   "auch": "Hier der Median: der Streifen ist ein Verlauf, der häufigste Ton #F6C57E ist nur sein hellster Teil",
+   "foto": "marke/bilder/k-abendrot.webp",
+   "abgeleitet": [
+    "#5E472F",
+    "#926F49",
+    "#D19E68",
+    "#E6CAAC",
+    "#F7EEE4"
+   ]
+  },
+  {
+   "name": "Blaue Stunde",
+   "hex": "#4D7DB9",
+   "rolle": "flaeche-dunkel",
+   "belegt": "Foto",
+   "fundstelle": "Himmel über dem See am Abend, ebd. · _quelle/website/bilder/28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg, Ausschnitt x 1266–2333, y 1000–1266",
+   "auch": "Median #4877B1",
+   "foto": "marke/bilder/k-blau.webp",
+   "abgeleitet": [
+    "#233853",
+    "#365882",
+    "#4D7DB9",
+    "#9DB8D8",
+    "#DFE8F2"
+   ]
+  },
+  {
+   "name": "Lichterkette",
+   "hex": "#F7AD04",
+   "rolle": "akzent",
+   "belegt": "Foto",
+   "fundstelle": "Lichter in der Platane über der Terrasse, ebd. · _quelle/website/bilder/28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg, Ausschnitt x 1800–2500, y 0–830",
+   "auch": "Median #F9AD08",
+   "foto": "marke/bilder/k-licht.webp",
+   "abgeleitet": [
+    "#6F4E02",
+    "#AD7903",
+    "#F7AD04",
+    "#FBD275",
+    "#FEF0D2"
+   ]
+  },
+  {
+   "name": "Fliese Anthrazit",
+   "hex": "#424340",
+   "rolle": "flaeche-dunkel",
+   "belegt": "Foto",
+   "fundstelle": "Zementfliesen an der Bar, Grund der Fliesen · _quelle/website/bilder/7c2036_IMG_2037.jpeg, Ausschnitt x 0–2500, y 0–582",
+   "auch": "Median #3E3931",
+   "foto": "marke/bilder/k-anthrazit.webp",
+   "abgeleitet": [
+    "#1E1E1D",
+    "#2E2F2D",
+    "#424340",
+    "#979896",
+    "#DDDDDD"
+   ]
+  },
+  {
+   "name": "Fliese Kalk",
+   "hex": "#D1D3D1",
+   "rolle": "flaeche-hell",
+   "belegt": "Foto",
+   "fundstelle": "helle Felder der Fliesen, ebd. · _quelle/website/bilder/7c2036_IMG_2037.jpeg, Ausschnitt x 0–2500, y 0–582",
+   "auch": "Median #D4D6D3",
+   "foto": "marke/bilder/k-kalk.webp",
+   "abgeleitet": [
+    "#5E5F5E",
+    "#929492",
+    "#D1D3D1",
+    "#E6E7E6",
+    "#F7F7F7"
+   ]
+  },
+  {
+   "name": "Fliese Terrakotta",
+   "hex": "#957458",
+   "rolle": "akzent",
+   "belegt": "Foto",
+   "fundstelle": "Ornament der zweiten Fliese, ebd. · _quelle/website/bilder/7c2036_IMG_2037.jpeg, Ausschnitt x 325–800, y 0–582",
+   "auch": "Median #9D785A",
+   "foto": "marke/bilder/k-terrakotta.webp",
+   "abgeleitet": [
+    "#433428",
+    "#68513E",
+    "#957458",
+    "#C5B3A3",
+    "#ECE6E1"
+   ]
+  },
+  {
+   "name": "Fliese Graublau",
+   "hex": "#A1B1B7",
+   "rolle": "akzent",
+   "belegt": "Foto",
+   "fundstelle": "Grund der vierten Fliese, ebd. · _quelle/website/bilder/7c2036_IMG_2037.jpeg, Ausschnitt x 1450–1975, y 0–582",
+   "auch": "Median #9FAFB4",
+   "foto": "marke/bilder/k-graublau.webp",
+   "abgeleitet": [
+    "#485052",
+    "#717C80",
+    "#A1B1B7",
+    "#CBD4D7",
+    "#EEF1F2"
+   ]
+  },
+  {
+   "name": "Schwarz des Logos",
+   "hex": "#000000",
+   "rolle": "schrift",
+   "belegt": "Logo",
+   "fundstelle": "alle deckenden Pixel des Logos · _quelle/extern/logo/schloessli-logo-transparent.png (1563 × 1563, Seite des Schäfli)",
+   "auch": "Das Logo ist einfarbig. Auf dem Teilen-Bild der Seite ebenfalls Schwarz",
+   "foto": "marke/logo/logo-transparent-1563.png",
+   "abgeleitet": [
+    "#000000",
+    "#000000",
+    "#000000",
+    "#737373",
+    "#D1D1D1"
+   ]
+  },
+  {
+   "name": "Mint der heutigen Seite",
+   "hex": "#D8FFFC",
+   "rolle": "flaeche-hell",
+   "belegt": "heutige Seite",
+   "fundstelle": "Grund der Seite, gemessen vom Späher · _kette/02-spaeher/befund.md",
+   "auch": "Im Teilen-Bild des Logos #E0FEFB (JPEG) · nicht als Hausfarbe belegt",
+   "foto": "marke/logo/logo-auf-mint-teilen-bild.jpeg",
+   "abgeleitet": [
+    "#617371",
+    "#97B2B0",
+    "#D8FFFC",
+    "#EAFFFD",
+    "#F8FFFE"
+   ]
+  },
+  {
+   "name": "Nachtblau der heutigen Seite",
+   "hex": "#213C4F",
+   "rolle": "flaeche-dunkel",
+   "belegt": "heutige Seite",
+   "fundstelle": "Knöpfe der heutigen Seite · _kette/02-spaeher/befund.md; Bild: Aufnahme des Spähers _qa/spaeher/start-rechner-voll.jpg, 18.10.2026",
+   "auch": "nicht als Hausfarbe belegt",
+   "foto": "marke/bilder/heute-knoepfe.webp",
+   "abgeleitet": [
+    "#0F1B24",
+    "#172A37",
+    "#213C4F",
+    "#85949E",
+    "#D7DCDF"
+   ]
+  },
+  {
+   "name": "Schrift der heutigen Seite",
+   "hex": "#0F3538",
+   "rolle": "schrift",
+   "belegt": "heutige Seite",
+   "fundstelle": "Lauftext der heutigen Seite · _kette/02-spaeher/befund.md; Bild: ebd.",
+   "auch": "nicht als Hausfarbe belegt",
+   "foto": "marke/bilder/heute-text.webp",
+   "abgeleitet": [
+    "#071819",
+    "#0A2527",
+    "#0F3538",
+    "#7B9092",
+    "#D4DBDB"
+   ]
+  }
+ ],
+ "farbwelten": [
+  {
+   "kennung": "a",
+   "name": "Stuhl und See",
+   "satz": "Das Blau der Terrassenstühle als dunkle Fläche, der Himmel über dem See aufgehellt als helle und als Linie und Zeichen. Schirmrot nur als Punkt.",
+   "flaechen": [
+    "#062531",
+    "#0A3A4C",
+    "#116788",
+    "#E7F0F3",
+    "#D0E2E7"
+   ],
+   "akzent": "#A2C6CF",
+   "akzent_hell": "#C5DCE1",
+   "akzent_tief": "#0F5B78",
+   "schrift": "#041B23",
+   "punkt": "#FD9964",
+   "tapete": [
+    "marke/tapete-a-dunkel.svg",
+    "marke/tapete-a-hell.svg"
+   ],
+   "probe": "marke/probe.html",
+   "gueltig": true
+  },
+  {
+   "kennung": "b",
+   "name": "Fliese und Lichterkette",
+   "satz": "Der dunkle Grund der Zementfliesen an der Bar als dunkle Fläche, ihre hellen Felder als helle, das Licht der Lichterkette in der Platane als Linie und Zeichen. Stuhlblau nur als Punkt.",
+   "flaechen": [
+    "#242423",
+    "#31322F",
+    "#424340",
+    "#E6E4E2",
+    "#D2CEC8"
+   ],
+   "akzent": "#F7AD04",
+   "akzent_hell": "#FACE68",
+   "akzent_tief": "#8F6402",
+   "schrift": "#1E1E1D",
+   "punkt": "#116788",
+   "tapete": [
+    "marke/tapete-b-dunkel.svg",
+    "marke/tapete-b-hell.svg"
+   ],
+   "probe": null,
+   "gueltig": false
+  }
+ ],
+ "farbwelt_gewaehlt": {
+  "k": "a",
+  "name": "Stuhl und See",
+  "wort": "Robert 19.10.2026: «schlössli a» (über den Chef-Chat Familie Kuchler)"
+ },
+ "farbwelt_verworfen": {
+  "k": "b",
+  "name": "Fliese und Lichterkette",
+  "wo": "marke/markenbuch.html#anhang"
+ },
+ "schriften": [
+  {
+   "rolle": "titel",
+   "name": "Open Sans",
+   "gewicht": "400 · Name Versalien 0,3 em · Titel Versalien 0,16 em · Wortmarke gemessen 0,205 em",
+   "datei": "marke/schriften/OpenSans-var.woff2",
+   "quelle": "Google Fonts (github.com/google/fonts, ofl/opensans), 19.10.2026",
+   "lizenz": "SIL Open Font License 1.1 (marke/schriften/OFL-OpenSans.txt)",
+   "abgeleitet_aus": "Wortmarke: Deckung Buchstabe für Buchstabe 0,954 mit Open Sans 400, nächste andere von zehn freien Schriften (Source Sans 3) 0,878 (_bau/match.py)"
+  },
+  {
+   "rolle": "lauf",
+   "name": "Instrument Sans",
+   "datei": "marke/schriften/InstrumentSans-normal-400_600.woff2",
+   "quelle": "Werkbank-Kit (Google Fonts), über Späher 02",
+   "lizenz": "SIL Open Font License 1.1"
+  },
+  {
+   "rolle": "mono",
+   "name": "DM Mono",
+   "datei": "marke/schriften/DMMono-normal-400.woff2",
+   "quelle": "Werkbank-Kit (Google Fonts), über Späher 02",
+   "lizenz": "SIL Open Font License 1.1"
+  },
+  {
+   "rolle": "heute-titel",
+   "name": "Gilda Display",
+   "datei": "marke/schriften/GildaDisplay-latin.woff2",
+   "quelle": "Quelltext der heutigen Seite (Squarespace 2024), Späher 02",
+   "lizenz": "SIL Open Font License 1.1"
+  },
+  {
+   "rolle": "heute-lauf",
+   "name": "PT Serif",
+   "datei": null,
+   "quelle": "Quelltext der heutigen Seite (Squarespace 2024)",
+   "lizenz": "SIL Open Font License 1.1, Datei nicht im Paket"
+  }
+ ],
+ "wortmarke": {
+  "datei": "marke/logo/logo-transparent-1563.png",
+  "weitere": [
+   "marke/logo/logo-auf-mint-teilen-bild.jpeg"
+  ],
+  "art": "png",
+  "groesse": "1563 × 1563 px, transparent (grösste gefundene Fassung, Seite des Schäfli /kontakt)",
+  "vektor": null,
+  "abgeleitete_titelschrift": "Open Sans 400 in Versalien",
+  "schrift_der_wortmarke": "Open Sans (Messung, nicht vom Haus bestätigt)"
+ },
+ "zeichen": [
+  "marke/zeichen/zeichen.svg",
+  "marke/zeichen/zeiger.svg"
+ ],
+ "zeichen_quelle": "_quelle/extern/logo/schloessli-logo-transparent.png: Buchstaben als eigene Flächen weggelassen, Rest mit potrace (_bau/zeichen.py)",
+ "tapete": {
+  "was": "Feines Punktraster (die Kugeln der Zeiger) im Abstand 28 px, in der Mitte jedes Felds die Zeiger als Medaillon, Ton in Ton",
+  "dateien": [
+   "marke/tapete-a-dunkel.svg",
+   "marke/tapete-a-hell.svg",
+   "marke/tapete-b-dunkel.svg",
+   "marke/tapete-b-hell.svg"
+  ]
+ },
+ "knopf": {
+  "form": "Pille 54 px, DM-Mono-Versalien, rechts runder Knauf mit Pfeil in der Gegenfarbe (Master 2.6)",
+  "tiefe": "Verlauf in drei Stufen, Lichtkante oben, dunkle Kante unten, weicher Schatten; Glanzstreif beim Überfahren, hebt sich 2 px"
+ },
+ "darstellungsidee": "Der Horizont: eine feine Linie in der Linienfarbe läuft über die ganze Breite, genau auf der Höhe des Horizonts im Foto; Titel und Bild sitzen an ihr. Auf hellen Blättern läuft sie als Tischkante weiter.",
+ "bewegungsidee": "Die Horizontlinie zieht sich beim Eintreten einmal von links nach rechts auf (nur transform), während das Foto von unten hereinschwebt und im Rahmen von 1,06 auf 1 zoomt.",
+ "ton": {
+  "charakter": [
+   "Eine junge Küche mit Sterne-Herkunft, die am Hafen eine Wirtschaft sein will: Monika Huber, früher Sous-Chefin im Schäfli und vorher bei Dieter Koschina in der Vila Joya, kocht seit April 2025 am See; GaultMillau nennt sie «Entdeckung des Jahres 2026».",
+   "Das Mittelmeer auf einer Karte, geordnet nach Frankreich, Italien, Iberischer Halbinsel und Klassikern; die Tortelloni mit Tomate, Burrata und Taggiasca-Olive sind das Gericht des Hauses.",
+   "Bedient wird «auf légère Art und Weise», wie das Tagblatt schreibt: «Mehr Wirtschaft, weniger feine Pinkel». An der Bar, die von drinnen nach draussen führt, der «Lästermeile», gibt es den ganzen Tag Tapas."
+  ],
+  "eigene_worte": [
+   "Willkommen in der Wirtschaft am Schlössli",
+   "Direkt im Hafen von Bottighofen",
+   "mit Blick aufs Wasser und die Alpen",
+   "Die schönste Terrasse am Bodensee",
+   "kulinarische Reise in die Welt der mediterranen Küche",
+   "junges Küchenteam",
+   "frischer Wind",
+   "herzliche Gastfreundschaft",
+   "Lästermeile",
+   "Tapas durchgehend",
+   "Zur Stärkung & Süsses",
+   "Banketts & Gruppen",
+   "Tavolata oder gesetztes Menue",
+   "unkompliziert",
+   "in Ruhe besprechen",
+   "Reservation",
+   "klassisch wie bei der italienischen Oma"
+  ],
+  "nicht": [
+   "kulinarische Highlights",
+   "Genuss pur",
+   "ein Fest für die Sinne",
+   "Gourmet-Tempel",
+   "unvergesslich",
+   "Verwöhnprogramm",
+   "Geheimtipp",
+   "Wir essen im Schlössli (das Restaurant liegt im ehemaligen Hafenmeistergebäude)",
+   "Statt zu … / ohne zu …",
+   "«ß» (heute in «Genießen», «Weißen»)",
+   "Du-Ansprache (das Cookie-Fenster duzt heute)"
+  ],
+  "quellen": [
+   "_quelle/website/text/start.md",
+   "_quelle/website/text/karten.md",
+   "_quelle/website/pdf-text/Speisekarte-Oktober.txt",
+   "_quelle/website/pdf-text/Lastermeile-Homepage-2339.txt",
+   "_quelle/presse/tagblatt-zu-tisch.md",
+   "_quelle/presse/gaultmillau-zwei-koeniginnen.md",
+   "_quelle/extern/portale/gaultmillau.md",
+   "_kette/02-spaeher/befund.md"
+  ]
+ },
+ "welt": "land",
+ "eigene_welt": {
+  "satz": [
+   "Die Wirtschaft am Schlössli ist die Welt eines Hafens am Bodensee: blaue Stühle auf Kies unter Platanen, das Wasser bis zu den Alpen, eine Bar mit alten Zementfliesen, die von drinnen nach draussen führt, und ein Logo mit zwei Zeigern, dessen Nabe das Ö im Namen ist.",
+   "Der Ort hat ein langes Gedächtnis mit Augenzwinkern: Ende des 17. Jahrhunderts setzte Hans Conrad Hafen im «Haus am See» einen Wirt als Pächter ein, der die Schiffsleute bewirtete, und hängte statt eines Wirtshausschilds einen Besen heraus; 1699 musste er sich der Tagsatzung fügen. Heute ist die Taverne der Familie die Schwester in Wigoltingen.",
+   "Die Seite nimmt den Horizont des Sees als Ordnung, eine feine Linie, die über die ganze Breite läuft und an der Bild und Titel sitzen, und die Zeiger als einziges Zeichen. Worin sie sich von den bisherigen Häusern unterscheidet, steht darunter, Haus für Haus."
+  ],
+  "unterschied_zu": {
+   "Taverne zum Schäfli (Schwesterhaus)": "Riegelhaus im Dorf, Ochsenblut oder Ladengrün auf Kalk, Schildgold, Lamm als Wappen, Titel in Petrona; hier See und Hafen, Stuhlblau und Seehimmel, kein Gold, Zeiger statt Wappentier, Titel in den Versalien der Wortmarke.",
+   "Carlton-Europe": "Vintage-Hotel in Interlaken, Dachterrasse, Kissen, Weinkeller, Nachtblau und Gold; hier kein Hotel, ein Restaurant am Wasser, Petrolblau aus den Stühlen statt Nachtblau, keine Goldlinie.",
+   "Grand Beau-Rivage": "Belle Époque, Portier und Ballsaal, Marine und Beige, Medaillon-Tapete; hier Kies und Platanen, die Tapete ein Punktraster aus den Kugeln der Zeiger.",
+   "Hotel Seiler au Lac": "Seehotel in Braun, Creme und Gold mit Serifen; hier dasselbe Element Wasser, aber kühl, ohne Gold, in einer Grotesk.",
+   "Waldhotel Doldenhorn": "Wald und Berge im Kandertal; hier Mittelland, Hafen und Mittelmeer auf dem Teller.",
+   "Landgasthof Ruedihus": "Holzhaus mit Zimmern im Kandertal; hier keine Zimmer, eine Bar mit Fliesen und eine Terrasse.",
+   "Berghotel Gasterntal": "Tal, Weg und Picknick mit Polaroids, Graphit und kühles Papier mit dem Rot der Läden; hier kein Weg, sondern ein Platz, an dem man sitzen bleibt, Petrol mit hellblauem Papier und Schirmrot als Punkt.",
+   "Zurbriggen (vier Häuser)": "Berg, Schnee und Lärche; Zermatt in Anthrazit mit Pinsel-Rot, Monte-Moro in Bergnacht-Blau; hier Wasser und Hafen im Mittelland, Petrol der Stühle und Himmelblau, Rot nur als kleiner Punkt.",
+   "Salt & Silver": "Hamburger Taco-Bar mit Reise-Erzählung, Antonio in Versalien; hier ruhige, weit gesperrte Versalien aus der eigenen Wortmarke."
+  }
+ },
+ "familie_machart": "Taverne zum Schäfli Wigoltingen (Markenbuch 19.10.2026, gleiche Machart, eigene Farben, Schrift und Zeichen)",
+ "seiten": {
+  "markenbuch": "marke/markenbuch.html",
+  "probe": "marke/probe.html",
+  "logo_richtig_falsch": "marke/logo-richtig-falsch/index.html"
+ },
+ "stand": "19.10.2026, erster Durchgang ohne Blender, auf Farbwelt A veredelt"
+}

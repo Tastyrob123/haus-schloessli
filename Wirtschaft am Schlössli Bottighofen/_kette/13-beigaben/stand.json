@@ -1,0 +1,37 @@
+{
+  "station": "13",
+  "name": "Anschliessen und Beigaben",
+  "rolle": "Werkbank-Bauer",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-20T02:06+07:00",
+  "ende": "2026-10-20T02:06+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Dateien liegen lokal unter website/material/; Drive-Ordner erst auf Roberts Wort",
+      "wo": "website/material/index.html · Master 5a Regel 8"
+    },
+    {
+      "punkt": "Studio und Anleitung folgen als nächster Schritt (die Werkzeuge sind im Laptop zu öffnen)",
+      "wo": "Master 5a Regel 1"
+    },
+    {
+      "punkt": "Rechte an Fotos von Partnern klären: Mail «Ihr Bankett» nutzt «lounge» (MySwitzerland); Ansichtskarten 3 und 4 sind freie Commons-Fotos mit Nachweis auf der Rückseite",
+      "wo": "website/mails/_src/bau.py › FAELLE · website/_werkbank/papier.py › ANSICHT"
+    }
+  ],
+  "paket": [
+    "beigaben/",
+    "beigaben.json"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/werkbank/#k6",
+  "briefing": "briefing.html",
+  "notiz": "Auf Roberts Wort vom 19.10.: komplette Werkbank bauen",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

@@ -1,0 +1,84 @@
+{
+ "druck": [
+  {
+   "id": "ansichtskarten",
+   "name": "Ansichtskarten",
+   "seiten": 8
+  },
+  {
+   "id": "gutschein",
+   "name": "Gutschein",
+   "seiten": 2
+  },
+  {
+   "id": "tischkarte",
+   "name": "Tischkarte",
+   "seiten": 2
+  },
+  {
+   "id": "menuekarte",
+   "name": "Menükarte für Ihre Feier",
+   "seiten": 2
+  },
+  {
+   "id": "aushang",
+   "name": "Aushang Betriebsferien",
+   "seiten": 1
+  },
+  {
+   "id": "briefpapier",
+   "name": "Briefpapier",
+   "seiten": 2
+  }
+ ],
+ "etiketten": [
+  {
+   "id": "u01",
+   "name": "Die Fliese"
+  },
+  {
+   "id": "u02",
+   "name": "Lästermeile"
+  },
+  {
+   "id": "u03",
+   "name": "Tapas durchgehend"
+  },
+  {
+   "id": "u04",
+   "name": "Fliesenboden"
+  },
+  {
+   "id": "u05",
+   "name": "Zur Stärkung & Süsses"
+  },
+  {
+   "id": "u06",
+   "name": "PIMIENTOS DE PADRÓN"
+  },
+  {
+   "id": "u07",
+   "name": "PATATINE FRITTE"
+  },
+  {
+   "id": "u08",
+   "name": "CROQUETAS"
+  },
+  {
+   "id": "u09",
+   "name": "KALAMATA OLIVEN"
+  },
+  {
+   "id": "u10",
+   "name": "PRATO"
+  },
+  {
+   "id": "u11",
+   "name": "Direkt im Hafen"
+  },
+  {
+   "id": "u12",
+   "name": "Die Zeiger"
+  }
+ ]
+}

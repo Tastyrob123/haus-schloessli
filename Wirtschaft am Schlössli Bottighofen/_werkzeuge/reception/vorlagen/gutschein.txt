@@ -1,0 +1,6 @@
+Quelle: schloessli-bottighofen.ch (Startseite, Formular «Gutschein»), über _kette/03-sammler/fakten.json, abgerufen 19.10.2026
+An: kontakt@schloessli-bottighofen.ch
+Betreff: Gutschein
+
+Felder des Formulars: Name Käufer, E-Mail, Adresse, Betrag.
+Wir senden Ihnen eine Bestätigung, sobald der Gutschein versendet wurde.

@@ -1,0 +1,191 @@
+{
+ "id": "laestermeile",
+ "gilt": {
+  "von": "",
+  "bis": ""
+ },
+ "fassungen": {},
+ "herkunft": {
+  "original": "_quelle/website/pdf/Lastermeile-Homepage-2339.pdf",
+  "sha256": "eb6ce81b4ebd2e5814d9054e896ab74219eb453ba509583a3d6e4add1223830d",
+  "adresse": "https://www.schloessli-bottighofen.ch/s/Lastermeile-Homepage-2339.pdf",
+  "abgerufen": "2026-10-19",
+  "gelesen_mit": "_karten/lesen.py"
+ },
+ "offen": [
+  "Zeitraum: die Karte nennt keinen; PDF erstellt 14.10.2026.",
+  "Öffnungszeit «11:30 Uhr - 21:00 Uhr» steht nur auf der Seite /karten, nicht in der PDF; nicht in die Karte übernommen.",
+  "Die Seite /karten verlinkt beim Titel «Lästermeile» eine zweite Datei (/s/Lastermeile-Homepage-2tbd.pdf), die nicht im Paket liegt; gelesen ist die Fassung 2339.",
+  "Währung: die Karte nennt keine (Preise ohne CHF).",
+  "Allergen-Kürzel stehen wörtlich im Feld «zusatz», wie in der Speisekarte."
+ ],
+ "karte": {
+  "ziel": "laestermeile",
+  "name": "Lästermeile",
+  "gruppe": "Bar",
+  "format": [
+   210,
+   297
+  ],
+  "kl": "",
+  "fuss": "",
+  "teile": [
+   {
+    "art": "deckel",
+    "titel": "Lästermeile",
+    "unter": "",
+    "zeilen": []
+   },
+   {
+    "art": "inhalt",
+    "posten": [
+     {
+      "t": "rubrik",
+      "titel": "TAPAS DURCHGEHEND",
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "PIMIENTOS DE PADRÓN",
+      "zeilen": [],
+      "preise": [
+       "8"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "PATATINE FRITTE",
+      "zeilen": [
+       {
+        "text": "Parmesan–Piment d´espelette-Pommes,"
+       },
+       {
+        "text": "Knoblauch-Zitronenmayo"
+       }
+      ],
+      "preise": [
+       "8"
+      ],
+      "s": 1,
+      "zusatz": "L/E"
+     },
+     {
+      "t": "gericht",
+      "name": "CROQUETAS",
+      "zeilen": [
+       {
+        "text": "Pata-Negra-Kroketten"
+       }
+      ],
+      "preise": [
+       "9"
+      ],
+      "s": 1,
+      "zusatz": "G/L/E"
+     },
+     {
+      "t": "gericht",
+      "name": "KALAMATA OLIVEN",
+      "zeilen": [
+       {
+        "text": "Pesto rosso"
+       }
+      ],
+      "preise": [
+       "8"
+      ],
+      "s": 1,
+      "zusatz": "N"
+     },
+     {
+      "t": "rubrik",
+      "titel": "Zur Stärkung & Süsses",
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "PRATO",
+      "zeilen": [
+       {
+        "text": "Aufschnitt, Käse, Pickels und Focaccia"
+       }
+      ],
+      "preise": [
+       "30"
+      ],
+      "s": 1,
+      "zusatz": "G/L"
+     },
+     {
+      "t": "gericht",
+      "name": "TARTE FLAMBÉE",
+      "zeilen": [
+       {
+        "text": "Vegetarisch oder mit Speck"
+       }
+      ],
+      "preise": [
+       "20"
+      ],
+      "s": 1,
+      "zusatz": "G/L"
+     },
+     {
+      "t": "gericht",
+      "name": "CRESPELLE",
+      "zeilen": [
+       {
+        "text": "Gefüllte Crêpes"
+       },
+       {
+        "text": "Vegetarisch „alla parmigiana“ (mit Melanzane)"
+       },
+       {
+        "text": "oder mit Ragù alla bolognese"
+       }
+      ],
+      "preise": [
+       "20"
+      ],
+      "s": 1,
+      "zusatz": "G/L/E/SE"
+     },
+     {
+      "t": "gericht",
+      "name": "TARTA",
+      "zeilen": [
+       {
+        "text": "hausgemachter Kuchen vom Blech"
+       }
+      ],
+      "preise": [
+       "7"
+      ],
+      "s": 1,
+      "zusatz": "G/L/N"
+     },
+     {
+      "t": "gericht",
+      "name": "DOLCE AL CUCCHIAIO",
+      "zeilen": [
+       {
+        "text": "Geschichtetes Löffeldessert im Glas"
+       }
+      ],
+      "preise": [
+       "9"
+      ],
+      "s": 1,
+      "zusatz": "G/L/N"
+     },
+     {
+      "t": "notiz",
+      "text": "G = Gluten, L = Laktose, E = Eier, F = Fische, S = Schalen- und Weichtiere, So = Soja, En = Erdnüsse, N = Nüsse, Se = Sellerie",
+      "s": 1
+     }
+    ]
+   }
+  ]
+ }
+}

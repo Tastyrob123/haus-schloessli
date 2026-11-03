@@ -1,0 +1,47 @@
+{
+ "zeit": "2026-10-19T11:02:00+02:00",
+ "art": "tisch",
+ "name": "Marco Frei",
+ "kontakt": "marco.frei@example.com",
+ "datum": "So, 25. Oktober 2026, 18:30 Uhr",
+ "personen": 8,
+ "anliegen": "Tisch für acht Personen am Sonntag, 25. Oktober, 18:30 Uhr, mit Hund, gerne auf der Terrasse.",
+ "sprache": "de",
+ "gespraech": "beispiel-6",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Habt ihr am Sonntag, 25. Oktober um 18:30 Platz für 8 Personen? Wir bringen unseren Hund mit."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Die Reservation online zeigt die freien Tische. Hunde sind willkommen. Ab 6 Personen gelten Sie als Gruppe; gerne gebe ich Ihre Anfrage an das Team weiter, dafür brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer."
+  },
+  {
+   "rolle": "user",
+   "text": "Marco Frei, marco.frei@example.com, gerne auf der Terrasse."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Haus, sie liegt nur zur Ansicht im Gastgeber."
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "an": "kontakt@schloessli-bottighofen.ch",
+ "abteilung": "Reservation",
+ "entwurf": {
+  "betreff": "Ihre Anfrage in der Wirtschaft am Schlössli (Probe)",
+  "text": "Guten Tag Marco Frei\n\nVielen Dank für Ihre Anfrage. Dies ist ein Probe-Brief ohne KI, damit sich Gestalten, PDF und Text prüfen lassen.\n\nFür Ihr Datum [Verfügbarkeit prüfen] und [Tisch bestätigen].\n\nDamit wir alles in Ruhe vorbereiten können:\n- Uhrzeit\n- Anzahl Personen\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Probe ohne KI\nOffen: Verfügbarkeit, Bestätigung",
+  "vorlage": "",
+  "absender": "kontakt@schloessli-bottighofen.ch",
+  "zeit": "2026-10-20T01:02:26+07:00",
+  "fassung": 3,
+  "original": {
+   "text": "Guten Tag Marco Frei\n\nVielen Dank für Ihre Anfrage. Dies ist ein Probe-Brief ohne KI, damit sich Gestalten, PDF und Text prüfen lassen.\n\nFür Ihr Datum [Verfügbarkeit prüfen] und [Tisch bestätigen].\n\nDamit wir alles in Ruhe vorbereiten können:\n- Uhrzeit\n- Anzahl Personen\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+   "betreff": "Ihre Anfrage in der Wirtschaft am Schlössli (Probe)"
+  },
+  "geaendert": "2026-10-20T14:18:33+07:00"
+ }
+}

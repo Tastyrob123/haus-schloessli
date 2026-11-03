@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+# Designstudie: bleibt bis zur Freigabe ausserhalb der Suchmaschinen.
+Sitemap: https://www.schloessli-bottighofen.ch/sitemap.xml

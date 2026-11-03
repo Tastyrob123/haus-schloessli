@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2548" viewBox="0 0 1200 2548" font-family="DM Mono, Menlo, monospace">
+<rect width="100%" height="100%" fill="#E7F0F3"/>
+<rect x="20" y="20" width="220" height="116" rx="10" fill="#116788"/>
+<rect x="260" y="20" width="110" height="80" rx="6" fill="#082E3D"/>
+<text x="260" y="122" font-size="12" fill="#1d2326">#082E3D</text>
+<rect x="378" y="20" width="110" height="80" rx="6" fill="#0C485F"/>
+<text x="378" y="122" font-size="12" fill="#1d2326">#0C485F</text>
+<rect x="496" y="20" width="110" height="80" rx="6" fill="#116788"/>
+<text x="496" y="122" font-size="12" fill="#1d2326">#116788</text>
+<rect x="614" y="20" width="110" height="80" rx="6" fill="#7CABBE"/>
+<text x="614" y="122" font-size="12" fill="#1d2326">#7CABBE</text>
+<rect x="732" y="20" width="110" height="80" rx="6" fill="#D4E4EA"/>
+<text x="732" y="122" font-size="12" fill="#1d2326">#D4E4EA</text>
+<text x="870" y="48" font-size="18" fill="#1d2326">Stuhlblau</text>
+<text x="870" y="72" font-size="14" fill="#1d2326">#116788 · Foto</text>
+<rect x="20" y="152" width="220" height="116" rx="10" fill="#B9C5C4"/>
+<rect x="260" y="152" width="110" height="80" rx="6" fill="#535958"/>
+<text x="260" y="254" font-size="12" fill="#1d2326">#535958</text>
+<rect x="378" y="152" width="110" height="80" rx="6" fill="#828A89"/>
+<text x="378" y="254" font-size="12" fill="#1d2326">#828A89</text>
+<rect x="496" y="152" width="110" height="80" rx="6" fill="#B9C5C4"/>
+<text x="496" y="254" font-size="12" fill="#1d2326">#B9C5C4</text>
+<rect x="614" y="152" width="110" height="80" rx="6" fill="#D8DFDF"/>
+<text x="614" y="254" font-size="12" fill="#1d2326">#D8DFDF</text>
+<rect x="732" y="152" width="110" height="80" rx="6" fill="#F2F5F4"/>
+<text x="732" y="254" font-size="12" fill="#1d2326">#F2F5F4</text>
+<text x="870" y="180" font-size="18" fill="#1d2326">Seespiegel</text>
+<text x="870" y="204" font-size="14" fill="#1d2326">#B9C5C4 · Foto</text>
+<rect x="20" y="284" width="220" height="116" rx="10" fill="#A2C6CF"/>
+<rect x="260" y="284" width="110" height="80" rx="6" fill="#49595D"/>
+<text x="260" y="386" font-size="12" fill="#1d2326">#49595D</text>
+<rect x="378" y="284" width="110" height="80" rx="6" fill="#718B91"/>
+<text x="378" y="386" font-size="12" fill="#1d2326">#718B91</text>
+<rect x="496" y="284" width="110" height="80" rx="6" fill="#A2C6CF"/>
+<text x="496" y="386" font-size="12" fill="#1d2326">#A2C6CF</text>
+<rect x="614" y="284" width="110" height="80" rx="6" fill="#CCE0E5"/>
+<text x="614" y="386" font-size="12" fill="#1d2326">#CCE0E5</text>
+<rect x="732" y="284" width="110" height="80" rx="6" fill="#EEF5F6"/>
+<text x="732" y="386" font-size="12" fill="#1d2326">#EEF5F6</text>
+<text x="870" y="312" font-size="18" fill="#1d2326">Seehimmel</text>
+<text x="870" y="336" font-size="14" fill="#1d2326">#A2C6CF · Foto</text>
+<rect x="20" y="416" width="220" height="116" rx="10" fill="#AD8A5A"/>
+<rect x="260" y="416" width="110" height="80" rx="6" fill="#4E3E28"/>
+<text x="260" y="518" font-size="12" fill="#1d2326">#4E3E28</text>
+<rect x="378" y="416" width="110" height="80" rx="6" fill="#79613F"/>
+<text x="378" y="518" font-size="12" fill="#1d2326">#79613F</text>
+<rect x="496" y="416" width="110" height="80" rx="6" fill="#AD8A5A"/>
+<text x="496" y="518" font-size="12" fill="#1d2326">#AD8A5A</text>
+<rect x="614" y="416" width="110" height="80" rx="6" fill="#D2BFA4"/>
+<text x="614" y="518" font-size="12" fill="#1d2326">#D2BFA4</text>
+<rect x="732" y="416" width="110" height="80" rx="6" fill="#F0EAE1"/>
+<text x="732" y="518" font-size="12" fill="#1d2326">#F0EAE1</text>
+<text x="870" y="444" font-size="18" fill="#1d2326">Ufersand</text>
+<text x="870" y="468" font-size="14" fill="#1d2326">#AD8A5A · Foto</text>
+<rect x="20" y="548" width="220" height="116" rx="10" fill="#747B7B"/>
+<rect x="260" y="548" width="110" height="80" rx="6" fill="#343737"/>
+<text x="260" y="650" font-size="12" fill="#1d2326">#343737</text>
+<rect x="378" y="548" width="110" height="80" rx="6" fill="#515656"/>
+<text x="378" y="650" font-size="12" fill="#1d2326">#515656</text>
+<rect x="496" y="548" width="110" height="80" rx="6" fill="#747B7B"/>
+<text x="496" y="650" font-size="12" fill="#1d2326">#747B7B</text>
+<rect x="614" y="548" width="110" height="80" rx="6" fill="#B3B6B6"/>
+<text x="614" y="650" font-size="12" fill="#1d2326">#B3B6B6</text>
+<rect x="732" y="548" width="110" height="80" rx="6" fill="#E6E7E7"/>
+<text x="732" y="650" font-size="12" fill="#1d2326">#E6E7E7</text>
+<text x="870" y="576" font-size="18" fill="#1d2326">Kies</text>
+<text x="870" y="600" font-size="14" fill="#1d2326">#747B7B · Foto</text>
+<rect x="20" y="680" width="220" height="116" rx="10" fill="#717D41"/>
+<rect x="260" y="680" width="110" height="80" rx="6" fill="#33381D"/>
+<text x="260" y="782" font-size="12" fill="#1d2326">#33381D</text>
+<rect x="378" y="680" width="110" height="80" rx="6" fill="#4F582E"/>
+<text x="378" y="782" font-size="12" fill="#1d2326">#4F582E</text>
+<rect x="496" y="680" width="110" height="80" rx="6" fill="#717D41"/>
+<text x="496" y="782" font-size="12" fill="#1d2326">#717D41</text>
+<rect x="614" y="680" width="110" height="80" rx="6" fill="#B1B896"/>
+<text x="614" y="782" font-size="12" fill="#1d2326">#B1B896</text>
+<rect x="732" y="680" width="110" height="80" rx="6" fill="#E5E8DD"/>
+<text x="732" y="782" font-size="12" fill="#1d2326">#E5E8DD</text>
+<text x="870" y="708" font-size="18" fill="#1d2326">Platanenlaub</text>
+<text x="870" y="732" font-size="14" fill="#1d2326">#717D41 · Foto</text>
+<rect x="20" y="812" width="220" height="116" rx="10" fill="#FD9964"/>
+<rect x="260" y="812" width="110" height="80" rx="6" fill="#72452D"/>
+<text x="260" y="914" font-size="12" fill="#1d2326">#72452D</text>
+<rect x="378" y="812" width="110" height="80" rx="6" fill="#B16B46"/>
+<text x="378" y="914" font-size="12" fill="#1d2326">#B16B46</text>
+<rect x="496" y="812" width="110" height="80" rx="6" fill="#FD9964"/>
+<text x="496" y="914" font-size="12" fill="#1d2326">#FD9964</text>
+<rect x="614" y="812" width="110" height="80" rx="6" fill="#FEC7AA"/>
+<text x="614" y="914" font-size="12" fill="#1d2326">#FEC7AA</text>
+<rect x="732" y="812" width="110" height="80" rx="6" fill="#FFEDE3"/>
+<text x="732" y="914" font-size="12" fill="#1d2326">#FFEDE3</text>
+<text x="870" y="840" font-size="18" fill="#1d2326">Schirmrot</text>
+<text x="870" y="864" font-size="14" fill="#1d2326">#FD9964 · Foto</text>
+<rect x="20" y="944" width="220" height="116" rx="10" fill="#436496"/>
+<rect x="260" y="944" width="110" height="80" rx="6" fill="#1E2D44"/>
+<text x="260" y="1046" font-size="12" fill="#1d2326">#1E2D44</text>
+<rect x="378" y="944" width="110" height="80" rx="6" fill="#2F4669"/>
+<text x="378" y="1046" font-size="12" fill="#1d2326">#2F4669</text>
+<rect x="496" y="944" width="110" height="80" rx="6" fill="#436496"/>
+<text x="496" y="1046" font-size="12" fill="#1d2326">#436496</text>
+<rect x="614" y="944" width="110" height="80" rx="6" fill="#98AAC5"/>
+<text x="614" y="1046" font-size="12" fill="#1d2326">#98AAC5</text>
+<rect x="732" y="944" width="110" height="80" rx="6" fill="#DDE3EC"/>
+<text x="732" y="1046" font-size="12" fill="#1d2326">#DDE3EC</text>
+<text x="870" y="972" font-size="18" fill="#1d2326">Tellerblau</text>
+<text x="870" y="996" font-size="14" fill="#1d2326">#436496 · Foto</text>
+<rect x="20" y="1076" width="220" height="116" rx="10" fill="#D19E68"/>
+<rect x="260" y="1076" width="110" height="80" rx="6" fill="#5E472F"/>
+<text x="260" y="1178" font-size="12" fill="#1d2326">#5E472F</text>
+<rect x="378" y="1076" width="110" height="80" rx="6" fill="#926F49"/>
+<text x="378" y="1178" font-size="12" fill="#1d2326">#926F49</text>
+<rect x="496" y="1076" width="110" height="80" rx="6" fill="#D19E68"/>
+<text x="496" y="1178" font-size="12" fill="#1d2326">#D19E68</text>
+<rect x="614" y="1076" width="110" height="80" rx="6" fill="#E6CAAC"/>
+<text x="614" y="1178" font-size="12" fill="#1d2326">#E6CAAC</text>
+<rect x="732" y="1076" width="110" height="80" rx="6" fill="#F7EEE4"/>
+<text x="732" y="1178" font-size="12" fill="#1d2326">#F7EEE4</text>
+<text x="870" y="1104" font-size="18" fill="#1d2326">Abendrot</text>
+<text x="870" y="1128" font-size="14" fill="#1d2326">#D19E68 · Foto</text>
+<rect x="20" y="1208" width="220" height="116" rx="10" fill="#4D7DB9"/>
+<rect x="260" y="1208" width="110" height="80" rx="6" fill="#233853"/>
+<text x="260" y="1310" font-size="12" fill="#1d2326">#233853</text>
+<rect x="378" y="1208" width="110" height="80" rx="6" fill="#365882"/>
+<text x="378" y="1310" font-size="12" fill="#1d2326">#365882</text>
+<rect x="496" y="1208" width="110" height="80" rx="6" fill="#4D7DB9"/>
+<text x="496" y="1310" font-size="12" fill="#1d2326">#4D7DB9</text>
+<rect x="614" y="1208" width="110" height="80" rx="6" fill="#9DB8D8"/>
+<text x="614" y="1310" font-size="12" fill="#1d2326">#9DB8D8</text>
+<rect x="732" y="1208" width="110" height="80" rx="6" fill="#DFE8F2"/>
+<text x="732" y="1310" font-size="12" fill="#1d2326">#DFE8F2</text>
+<text x="870" y="1236" font-size="18" fill="#1d2326">Blaue Stunde</text>
+<text x="870" y="1260" font-size="14" fill="#1d2326">#4D7DB9 · Foto</text>
+<rect x="20" y="1340" width="220" height="116" rx="10" fill="#F7AD04"/>
+<rect x="260" y="1340" width="110" height="80" rx="6" fill="#6F4E02"/>
+<text x="260" y="1442" font-size="12" fill="#1d2326">#6F4E02</text>
+<rect x="378" y="1340" width="110" height="80" rx="6" fill="#AD7903"/>
+<text x="378" y="1442" font-size="12" fill="#1d2326">#AD7903</text>
+<rect x="496" y="1340" width="110" height="80" rx="6" fill="#F7AD04"/>
+<text x="496" y="1442" font-size="12" fill="#1d2326">#F7AD04</text>
+<rect x="614" y="1340" width="110" height="80" rx="6" fill="#FBD275"/>
+<text x="614" y="1442" font-size="12" fill="#1d2326">#FBD275</text>
+<rect x="732" y="1340" width="110" height="80" rx="6" fill="#FEF0D2"/>
+<text x="732" y="1442" font-size="12" fill="#1d2326">#FEF0D2</text>
+<text x="870" y="1368" font-size="18" fill="#1d2326">Lichterkette</text>
+<text x="870" y="1392" font-size="14" fill="#1d2326">#F7AD04 · Foto</text>
+<rect x="20" y="1472" width="220" height="116" rx="10" fill="#424340"/>
+<rect x="260" y="1472" width="110" height="80" rx="6" fill="#1E1E1D"/>
+<text x="260" y="1574" font-size="12" fill="#1d2326">#1E1E1D</text>
+<rect x="378" y="1472" width="110" height="80" rx="6" fill="#2E2F2D"/>
+<text x="378" y="1574" font-size="12" fill="#1d2326">#2E2F2D</text>
+<rect x="496" y="1472" width="110" height="80" rx="6" fill="#424340"/>
+<text x="496" y="1574" font-size="12" fill="#1d2326">#424340</text>
+<rect x="614" y="1472" width="110" height="80" rx="6" fill="#979896"/>
+<text x="614" y="1574" font-size="12" fill="#1d2326">#979896</text>
+<rect x="732" y="1472" width="110" height="80" rx="6" fill="#DDDDDD"/>
+<text x="732" y="1574" font-size="12" fill="#1d2326">#DDDDDD</text>
+<text x="870" y="1500" font-size="18" fill="#1d2326">Fliese Anthrazit</text>
+<text x="870" y="1524" font-size="14" fill="#1d2326">#424340 · Foto</text>
+<rect x="20" y="1604" width="220" height="116" rx="10" fill="#D1D3D1"/>
+<rect x="260" y="1604" width="110" height="80" rx="6" fill="#5E5F5E"/>
+<text x="260" y="1706" font-size="12" fill="#1d2326">#5E5F5E</text>
+<rect x="378" y="1604" width="110" height="80" rx="6" fill="#929492"/>
+<text x="378" y="1706" font-size="12" fill="#1d2326">#929492</text>
+<rect x="496" y="1604" width="110" height="80" rx="6" fill="#D1D3D1"/>
+<text x="496" y="1706" font-size="12" fill="#1d2326">#D1D3D1</text>
+<rect x="614" y="1604" width="110" height="80" rx="6" fill="#E6E7E6"/>
+<text x="614" y="1706" font-size="12" fill="#1d2326">#E6E7E6</text>
+<rect x="732" y="1604" width="110" height="80" rx="6" fill="#F7F7F7"/>
+<text x="732" y="1706" font-size="12" fill="#1d2326">#F7F7F7</text>
+<text x="870" y="1632" font-size="18" fill="#1d2326">Fliese Kalk</text>
+<text x="870" y="1656" font-size="14" fill="#1d2326">#D1D3D1 · Foto</text>
+<rect x="20" y="1736" width="220" height="116" rx="10" fill="#957458"/>
+<rect x="260" y="1736" width="110" height="80" rx="6" fill="#433428"/>
+<text x="260" y="1838" font-size="12" fill="#1d2326">#433428</text>
+<rect x="378" y="1736" width="110" height="80" rx="6" fill="#68513E"/>
+<text x="378" y="1838" font-size="12" fill="#1d2326">#68513E</text>
+<rect x="496" y="1736" width="110" height="80" rx="6" fill="#957458"/>
+<text x="496" y="1838" font-size="12" fill="#1d2326">#957458</text>
+<rect x="614" y="1736" width="110" height="80" rx="6" fill="#C5B3A3"/>
+<text x="614" y="1838" font-size="12" fill="#1d2326">#C5B3A3</text>
+<rect x="732" y="1736" width="110" height="80" rx="6" fill="#ECE6E1"/>
+<text x="732" y="1838" font-size="12" fill="#1d2326">#ECE6E1</text>
+<text x="870" y="1764" font-size="18" fill="#1d2326">Fliese Terrakotta</text>
+<text x="870" y="1788" font-size="14" fill="#1d2326">#957458 · Foto</text>
+<rect x="20" y="1868" width="220" height="116" rx="10" fill="#A1B1B7"/>
+<rect x="260" y="1868" width="110" height="80" rx="6" fill="#485052"/>
+<text x="260" y="1970" font-size="12" fill="#1d2326">#485052</text>
+<rect x="378" y="1868" width="110" height="80" rx="6" fill="#717C80"/>
+<text x="378" y="1970" font-size="12" fill="#1d2326">#717C80</text>
+<rect x="496" y="1868" width="110" height="80" rx="6" fill="#A1B1B7"/>
+<text x="496" y="1970" font-size="12" fill="#1d2326">#A1B1B7</text>
+<rect x="614" y="1868" width="110" height="80" rx="6" fill="#CBD4D7"/>
+<text x="614" y="1970" font-size="12" fill="#1d2326">#CBD4D7</text>
+<rect x="732" y="1868" width="110" height="80" rx="6" fill="#EEF1F2"/>
+<text x="732" y="1970" font-size="12" fill="#1d2326">#EEF1F2</text>
+<text x="870" y="1896" font-size="18" fill="#1d2326">Fliese Graublau</text>
+<text x="870" y="1920" font-size="14" fill="#1d2326">#A1B1B7 · Foto</text>
+<rect x="20" y="2000" width="220" height="116" rx="10" fill="#000000"/>
+<rect x="260" y="2000" width="110" height="80" rx="6" fill="#000000"/>
+<text x="260" y="2102" font-size="12" fill="#1d2326">#000000</text>
+<rect x="378" y="2000" width="110" height="80" rx="6" fill="#000000"/>
+<text x="378" y="2102" font-size="12" fill="#1d2326">#000000</text>
+<rect x="496" y="2000" width="110" height="80" rx="6" fill="#000000"/>
+<text x="496" y="2102" font-size="12" fill="#1d2326">#000000</text>
+<rect x="614" y="2000" width="110" height="80" rx="6" fill="#737373"/>
+<text x="614" y="2102" font-size="12" fill="#1d2326">#737373</text>
+<rect x="732" y="2000" width="110" height="80" rx="6" fill="#D1D1D1"/>
+<text x="732" y="2102" font-size="12" fill="#1d2326">#D1D1D1</text>
+<text x="870" y="2028" font-size="18" fill="#1d2326">Schwarz des Logos</text>
+<text x="870" y="2052" font-size="14" fill="#1d2326">#000000 · Logo</text>
+<rect x="20" y="2132" width="220" height="116" rx="10" fill="#D8FFFC"/>
+<rect x="260" y="2132" width="110" height="80" rx="6" fill="#617371"/>
+<text x="260" y="2234" font-size="12" fill="#1d2326">#617371</text>
+<rect x="378" y="2132" width="110" height="80" rx="6" fill="#97B2B0"/>
+<text x="378" y="2234" font-size="12" fill="#1d2326">#97B2B0</text>
+<rect x="496" y="2132" width="110" height="80" rx="6" fill="#D8FFFC"/>
+<text x="496" y="2234" font-size="12" fill="#1d2326">#D8FFFC</text>
+<rect x="614" y="2132" width="110" height="80" rx="6" fill="#EAFFFD"/>
+<text x="614" y="2234" font-size="12" fill="#1d2326">#EAFFFD</text>
+<rect x="732" y="2132" width="110" height="80" rx="6" fill="#F8FFFE"/>
+<text x="732" y="2234" font-size="12" fill="#1d2326">#F8FFFE</text>
+<text x="870" y="2160" font-size="18" fill="#1d2326">Mint der heutigen Seite</text>
+<text x="870" y="2184" font-size="14" fill="#1d2326">#D8FFFC · heutige Seite</text>
+<rect x="20" y="2264" width="220" height="116" rx="10" fill="#213C4F"/>
+<rect x="260" y="2264" width="110" height="80" rx="6" fill="#0F1B24"/>
+<text x="260" y="2366" font-size="12" fill="#1d2326">#0F1B24</text>
+<rect x="378" y="2264" width="110" height="80" rx="6" fill="#172A37"/>
+<text x="378" y="2366" font-size="12" fill="#1d2326">#172A37</text>
+<rect x="496" y="2264" width="110" height="80" rx="6" fill="#213C4F"/>
+<text x="496" y="2366" font-size="12" fill="#1d2326">#213C4F</text>
+<rect x="614" y="2264" width="110" height="80" rx="6" fill="#85949E"/>
+<text x="614" y="2366" font-size="12" fill="#1d2326">#85949E</text>
+<rect x="732" y="2264" width="110" height="80" rx="6" fill="#D7DCDF"/>
+<text x="732" y="2366" font-size="12" fill="#1d2326">#D7DCDF</text>
+<text x="870" y="2292" font-size="18" fill="#1d2326">Nachtblau der heutigen Seite</text>
+<text x="870" y="2316" font-size="14" fill="#1d2326">#213C4F · heutige Seite</text>
+<rect x="20" y="2396" width="220" height="116" rx="10" fill="#0F3538"/>
+<rect x="260" y="2396" width="110" height="80" rx="6" fill="#071819"/>
+<text x="260" y="2498" font-size="12" fill="#1d2326">#071819</text>
+<rect x="378" y="2396" width="110" height="80" rx="6" fill="#0A2527"/>
+<text x="378" y="2498" font-size="12" fill="#1d2326">#0A2527</text>
+<rect x="496" y="2396" width="110" height="80" rx="6" fill="#0F3538"/>
+<text x="496" y="2498" font-size="12" fill="#1d2326">#0F3538</text>
+<rect x="614" y="2396" width="110" height="80" rx="6" fill="#7B9092"/>
+<text x="614" y="2498" font-size="12" fill="#1d2326">#7B9092</text>
+<rect x="732" y="2396" width="110" height="80" rx="6" fill="#D4DBDB"/>
+<text x="732" y="2498" font-size="12" fill="#1d2326">#D4DBDB</text>
+<text x="870" y="2424" font-size="18" fill="#1d2326">Schrift der heutigen Seite</text>
+<text x="870" y="2448" font-size="14" fill="#1d2326">#0F3538 · heutige Seite</text>
+</svg>

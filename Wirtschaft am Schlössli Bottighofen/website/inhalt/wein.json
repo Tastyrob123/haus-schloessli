@@ -1,0 +1,6581 @@
+{
+ "stand": "Weinkarte, Stand 14.10.2026 (26 Seiten)",
+ "quelle": "_quelle/website/pdf/20261014_Weinkarte.pdf",
+ "gruppen": [
+  {
+   "titel": "Champagner & Schaumwein",
+   "regionen": [
+    {
+     "titel": null,
+     "erzeuger": [
+      {
+       "name": "Champagne Roses de Jeanne – Cédric Bouchard",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Champagne pas dosé a VV «2023»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Champagne pas dosé a VV «2024»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Champagne pas dosé UR 2022",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 280
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Champagne pas dosé CE BLANC 2022",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 320
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Ulysse Collin",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Les Roises Blanc de Blancs",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 450
+          }
+         ],
+         "notiz": "Extra brut – Base 2017 – 72 moins sur lie – Dég: 2024"
+        },
+        {
+         "jahr": null,
+         "name": "Jardin d’Ulysse",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 420
+          }
+         ],
+         "notiz": "Extra brut – Base 2017 – 72 moins sur lie – Dég: 2024"
+        },
+        {
+         "jahr": null,
+         "name": "Les Maillons Blanc de Noirs",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 280
+          }
+         ],
+         "notiz": "Extra brut – Base 2021 – 48 moins sur lie – Dég: 2026"
+        },
+        {
+         "jahr": null,
+         "name": "Les Perrières Blanc de Blancs",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 300
+          }
+         ],
+         "notiz": "Extra brut – Base 2021 – 48 moins sur lie – Dég: 2026"
+        },
+        {
+         "jahr": null,
+         "name": "Jardin d’Ulysse",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 420
+          }
+         ],
+         "notiz": "Extra brut – Base 2018 – 72 moins sur lie – Dég: 2025"
+        }
+       ]
+      },
+      {
+       "name": "Champagne Romain Henin – La Bulle Libre",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Brut Nature «Odyssée Pétillante Chapitre 2»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Gosset",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Grand Rosé Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Grand Blanc de Blancs Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Valentin Leflaive",
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "Extra Brut Blanc de Blancs",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Extra Brut Blanc de Blancs Grand Cru Les Peignottes",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Extra Brut Rosé Grand Cru Les Marquises",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Ruinart",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Rosé Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 175
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Dom Pérignon",
+       "weine": [
+        {
+         "jahr": "2012",
+         "name": "Dom Pérignon",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 320
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2013",
+         "name": "Dom Pérignon",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2009",
+         "name": "Dom Pérignon Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 560
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Agrapart et fils",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "7 Crus Extra Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Terroirs Extra Brut Blanc de Blancs Grand Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 155
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Mineral Extra Brut Blanc de Blancs Grand Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 210
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Laurent-Perrier",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "La Cuvée",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          },
+          {
+           "gross": "6.0l",
+           "preis": 1100
+          },
+          {
+           "gross": "9.0l",
+           "preis": 1750
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Millésimé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          },
+          {
+           "gross": "1.5l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Blanc de Blancs",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Grand Siècle It. No.27",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 270
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Grand Siècle It. No.24",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 550
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Cuvée Rosé Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          },
+          {
+           "gross": "1.5l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Delamotte",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          },
+          {
+           "gross": "1.5l",
+           "preis": 210
+          },
+          {
+           "gross": "3.0l",
+           "preis": 430
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Blanc de Blancs",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Blanc de Blancs Millésimé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          },
+          {
+           "gross": "1.5l",
+           "preis": 270
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Rosé Brut",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 270
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Taittinger",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Brut Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2016",
+         "name": "Brut Millésimé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2013",
+         "name": "Comtes de Champagne Blanc de Blancs",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2011",
+         "name": "Comtes de Champagne Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Louis Roederer",
+       "weine": [
+        {
+         "jahr": "2014",
+         "name": "Cristal Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 360
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2015",
+         "name": "Cristal Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 360
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2013",
+         "name": "Cristal Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 820
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Bollinger",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Special Cuvee Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne André Clouet",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Grande Réserve Grand Cru Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Brut Rosé Grand Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Legras & Haas",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Intuition Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Huré Frères",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Invitation Brut (B.2021) [Deg.25]",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "4 Eléments Chardonnay [Deg. 04/25]",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "4 Eléments Pinot Noir [Deg 04/25]",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Champagne Nicolas Maillard",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Extra Brut 1 er Cru Platine",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 210
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Brut Rosé 1 er Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Diverse Schaumweine",
+       "weine": []
+      },
+      {
+       "name": "Schweiz",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Schlossgut Bachtobel – Mousseux (Deg: 03/24)",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Schlossgut Bachtobel – Mousseux (Deg: 03/26)",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Adank`s Brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Scadenagut Wegelin – Scampagna (BdN)",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Obrecht Brut Nature Blanc (Tirage 2022)",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Obrecht Brut Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Obrecht Brut Rosé",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Donatsch Extra Brut – Blanc de Blancs",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Donatsch Extra Brut – Blanc de Blancs",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Deutschland",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Johannes Aufricht – Blanc de Blancs Brut nature",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Bernhard Huber – Blanc de Blancs Brut nature",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Bernhard Huber – Blanc de Noir Brut nature",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Weingut Keller - Grande Cuvée Brut nature No. 002",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Benjamin Lanz – Sprudeldicke Dirn Brut nature",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Italien",
+       "weine": [
+        {
+         "jahr": "2018",
+         "name": "Ferrari Perlé Rosé Riserva",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": null,
+         "name": "Ferrari Maximum Blanc de Blancs",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Spanien",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Cava Gilmas Brut Reserva",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 65
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Frankreich",
+       "weine": [
+        {
+         "jahr": null,
+         "name": "Domaine Trapet Alsace Richovila Crémant extra brut",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "titel": "Weisswein",
+   "regionen": [
+    {
+     "titel": "Schweiz",
+     "erzeuger": []
+    },
+    {
+     "titel": "Thurgau",
+     "erzeuger": [
+      {
+       "name": "Schlossgut Bachtobel",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Pinot Gris",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Pinot Gris",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Pinot Gris",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Sauvignon Blanc",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Sauvignon Blanc",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Weisser Riesling",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Weisser Riesling",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Müller-Thurgau",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Müller-Thurgau",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Forster Weinbau",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Sauvignac",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 70
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Solaris",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 70
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Zürich",
+     "erzeuger": [
+      {
+       "name": "Weingut Familie Zahner",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Langenmooser Gewürztraminer",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 75
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Graubünden",
+     "erzeuger": [
+      {
+       "name": "Hansruedi Adank",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Riesling-Sylvaner",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 70
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Pinot Gris",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Sauvignon Blanc",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay am Berg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 220
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Chardonnay am Berg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 220
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Christian & Francisca Obrecht - Weingut zur Sonne",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Riesling Sylvaner Schiefer",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 75
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Martha & Daniel Gantenbein",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Riesling",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Roman Hermann",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Completer Grand Maitre",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 115
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Martin Donatsch – Weingut zum Ochsen",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Chardonnay Passion",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Completer",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Completer",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Completer",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay Unique",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 220
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Chardonnay Unique",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 220
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Wegelin - Scadenagut",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Malanser Weissburgunder",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Weissburgunder Scadena",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Malanser Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Chardonnay Frassa",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Chardonnay Bothmarhalde",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Malanser Completer",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Thomas Studach",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weinkellerei Giani Boner",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Pinot Gris",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Sauvignon Blanc",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Sauvignon Blanc",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 185
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Deutschland",
+     "erzeuger": []
+    },
+    {
+     "titel": "Bayrischer Bodensee",
+     "erzeuger": [
+      {
+       "name": "Weingut Seehaldenhof – Simon Hornstein",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Chardonnay Sonnenbichl",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay Seehalde",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay Sonnenbichl",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay Gundelsberg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Jonas Kurek",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Weissburgunder Seehalde",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay Seehalde",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay Sonnenbichl",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Baden",
+     "erzeuger": [
+      {
+       "name": "Weingut Bernhard Huber",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Breisgau Weiss (CHA&WB)",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Malterdingen Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Alte Reben Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 125
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay Bienenberg GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay Schlossberg GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Vollmayer",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Grauburgunder Höchste Lage",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chardonnay Höchste Lage",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Johannes Aufricht",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Bodensxx Aligoté",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Mosel",
+     "erzeuger": [
+      {
+       "name": "Weingut Achim Molitor",
+       "weine": [
+        {
+         "jahr": "2015",
+         "name": "Riesling Spätlese trocken Piesporter Goldtröpfchen",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Pfalz",
+     "erzeuger": [
+      {
+       "name": "Weingut von Winning",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Riesling Kirchenstück GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Riesling Marmar",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          },
+          {
+           "gross": "1.5l",
+           "preis": 350
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Dr. Bürklin-Wolf",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Riesling Hohenmorgen G.C.",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut A. Christmann",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Riesling Königsbacher Idig GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Riesling Königsbacher Idig GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Nahe",
+     "erzeuger": [
+      {
+       "name": "Hermann Dönnhoff",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Riesling Niederhäuser Hermannshöhle GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          },
+          {
+           "gross": "1.5l",
+           "preis": 280
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Riesling Niederhäuser Hermannshöhle GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          },
+          {
+           "gross": "1.5l",
+           "preis": 280
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Riesling Norheimer Dellchen GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Schäfer-Fröhlich",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Riesling Halenberg GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          },
+          {
+           "gross": "1.5l",
+           "preis": 270
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Frühlingsplätzchen GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 115
+          },
+          {
+           "gross": "1.5l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Stromberg GG",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 270
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Rheingau",
+     "erzeuger": [
+      {
+       "name": "Weingut Robert Weil",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Riesling Kiedrich Gräfenberg GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 115
+          },
+          {
+           "gross": "1.5l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Monte Vacano",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 270
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Monte Nostrum",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Riesling Spätlese Rheingau",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Künstler",
+       "weine": [
+        {
+         "jahr": "2016",
+         "name": "Riesling Hochheim Kirchenstück GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2017",
+         "name": "Riesling Hochheim Kirchenstück GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut von Oetinger",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Riesling Hohenrain GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Hohenrain GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Riesling Siegelsberg GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Riesling Siegelsberg GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Siegelsberg GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Rheinhessen",
+     "erzeuger": [
+      {
+       "name": "Weingut Wittmann",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Riesling Westhofen Kirchspiel GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Riesling Westhofen Kirchspiel GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Riesling Westhofen Aulerde GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Battenfeld-Spanier",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Riesling Zellerweg am Schwarzer Herrgott GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Frauenberg GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "C.O. Steinlinden Liquid Earth",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 320
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Kühling-Gillot",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Riesling Hipping GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Katharina Wechsler",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Riesling Kirchspiel Grosse Lage",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Klaus Peter Keller",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Weisser Burgunder & Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Westhofen Sylvaner",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Sylvaner „Feuervogel“",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Riesling „von der Fels“",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Riesling Westhofen Kirchspiel GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Riesling Dalsheim Oberer Hubacker GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2012",
+         "name": "Riesling Dalsheim Hubacker GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 370
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2017",
+         "name": "Riesling Westhofen Kirchspiel GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 340
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Österreich",
+     "erzeuger": []
+    },
+    {
+     "titel": "Wachau",
+     "erzeuger": [
+      {
+       "name": "Weingut Emmerich Knoll",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Riesling Loibner Ried Loibenberg Smaragd",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Riesling Ried Schütt Smaragd",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Grüner Veltliner Smaragd Loibner",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Veyder-Malberg",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Grüner Veltliner Weitenberg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Bruck",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Buschenberg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Brandstatt",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Franz Hirtzberger",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Riesling Smaragd Ried Setzberg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Riesling Smaragd Ried Hochrain",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Riesling Smaragd Ried Singerriedel",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Kremstal",
+     "erzeuger": [
+      {
+       "name": "Weingut Josef & Philipp Bründlmayer",
+       "weine": [
+        {
+         "jahr": "2020",
+         "name": "Neuburger Ried Vordernberg Reserve",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Südsteiermark",
+     "erzeuger": [
+      {
+       "name": "Weingut Tement",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Sauvignon Blanc Ehrenhausen",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Walter Polz",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Sauvignon Blanc Stone White",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          },
+          {
+           "gross": "1.5l",
+           "preis": 175
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Sauvignon Blanc Ried Hochgrassnitzberg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          },
+          {
+           "gross": "1.5l",
+           "preis": 195
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Sauvignon Blanc Ried Obegg",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 195
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Italien",
+     "erzeuger": []
+    },
+    {
+     "titel": "Südtirol",
+     "erzeuger": [
+      {
+       "name": "Weingut Tiefenbrunner",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Müller-Thurgau Feldmarschall",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Sauvignon Blanc Riserva Rachtl",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 115
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2014",
+         "name": "Sauvignon Blanc Riserva Rachtl «Ad Tempus»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Tenuta Alois Lageder",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Chardonnay Löwengang",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Piemont",
+     "erzeuger": [
+      {
+       "name": "Angelo Gaja",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Gaja & Rey",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 320
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Bruno Giacosa",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Roero Arneis",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Toskana",
+     "erzeuger": [
+      {
+       "name": "Tenuta dell’Ornellaia",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Poggio alle Gazze dell’Ornellaia",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Ornellaia Bianco",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 270
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Umbrien",
+     "erzeuger": [
+      {
+       "name": "Castello della Sala",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Conte della Vipera",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Cervaro della Sala",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 135
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Spanien · Rioja",
+     "erzeuger": [
+      {
+       "name": "Bodegas Muga",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Flor de Muga Reserva Blanco",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Rias Baixas",
+     "erzeuger": [
+      {
+       "name": "Miguel Torres",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Pazo das Bruxas Albarinho",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Frankreich",
+     "erzeuger": []
+    },
+    {
+     "titel": "Chablis",
+     "erzeuger": [
+      {
+       "name": "Domaine Christian Moreau",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Chablis AC",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chablis 1 er Cru Vaillon",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 115
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Chablis Grand Cru Valmur",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chablis Grand Cru Clos des Hospices",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Francois Raveneau",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Chablis 1 er Cru Monts Mains",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Chablis 1 er Cru Vaillons",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Chablis 1 er Cru Montée de Tonnerre",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 290
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chablis Grand Cru Valmur",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 350
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Burgund",
+     "erzeuger": [
+      {
+       "name": "Maison Meyer",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Bourgogne Blanc Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Bourgogne Aligoté",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Lorenzon",
+       "weine": [
+        {
+         "jahr": "2020",
+         "name": "Montagny Blanc Le May",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Montagny Blanc 1 er Cru Les Truffières",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Mercurey Blanc 1 er Cru Champs Martin",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Olivier Leflaive",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Bourgogne Blanc Les Sétilles",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Auxey-Duresses La Macabrée",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 125
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Meursault 1 er Cru Sous le Dos d’Âne",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Meursault 1 er Cru Les Caillerets",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 210
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Chassagne-Montrachet 1 er Cru Clos Saint-Marc",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 290
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Maison Glandien",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "L’Ouverture Blanc",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Hubert Lamy",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Saint-Aubin 1 er Cru Les Frionnes",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 145
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Saint-Aubin 1 er Cru En Remilly",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 195
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Laurent Ponsot",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Meursault Charmes 1 er Cru «Cuvée de la Centauré»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Corton-Charlemagne G.C. «Cuvée du Kalimeris»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 450
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Vignoble des Cabottes",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Meursault Les Clous",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Meursault 1 er Cru Les Genevrières",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Meursault 1 er Cru Charmes",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 320
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Corton-Charlemagne Grand Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 450
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Paul Pillot",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Chassagne-Montrachet Les Mazures",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Saint Aubin 1 er Cru «Les Charmois»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Jacques-Frédéric Mugnier",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Nuits-Saint-Georges 1 er Cru Clos de la Maréchale",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Joseph Collin",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Chassagne-Montrachet 1 er Cru Vide Bourse",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Bastian Wolber",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Bourgogne Blanc Chardonnay",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine des Lambrays",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Puligny-Montrachet 1 er Cru Les Folatières",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 290
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Puligny-Montrachet 1 er Cru Les Folatières",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 320
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Arnaud Baillot",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Bourgogne Blanc Bourgogne Côte d’Or",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Chassagne-Montrachet",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Meursault",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Puligny-Montrachet",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Puligny-Montrachet",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Rémi Jobard",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Meursault Les Chevalières",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          },
+          {
+           "gross": "1.5l",
+           "preis": 350
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Benjamin Leroux",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Bourgogne Blanc",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Saint-Romain blanc «Sous le Château»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chassagne-Montrachet 1 er Cru Les Baudines",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 220
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Meursault 1 er Cru Les Genevrières",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Fernand & Laurent Pillot",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Chassagne-Montrachet 1 er Cru Vide Bourse",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Chassagne-Montrachet 1 er Cru Les Vergers",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Chassagne-Montrachet 1 er Cru Champs Gain",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Cassiopée",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Bourgogne Aligoté Mitancherie",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Florence Cholet",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Auxey-Duresses",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Jobard-Morey",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Bourgogne Blanc",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Meursault 1 er Cru Charmes",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 210
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine de Villaine",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Bouzeron",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Les Clous Aimé Côte Chalonnaise",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Les Clous Aimé Côte Chalonnaise",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Rully blanc Gresigny 1 er Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Rully blanc Les Margotés 1 er Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Rully blanc Montpalais 1 er Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Verget (J.M. Guffens-Heynen)",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Bourgogne Blanc Grand Elevage",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Pouilly-Fuissé Les Combes Vieilles Vignes",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Pouilly-Fuissé 1 er Cru Sur la Roche",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Loire",
+     "erzeuger": [
+      {
+       "name": "Jean-Phillipe Agisson",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Pouilly-Fumé La Belle Endormie",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Vacheron",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Sancerre",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Chatelain",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Pouilly Fumé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "titel": "Rosé",
+   "regionen": [
+    {
+     "titel": null,
+     "erzeuger": []
+    },
+    {
+     "titel": "Schweiz Graubünden",
+     "erzeuger": [
+      {
+       "name": "Christian & Francisca Obrecht – Weingut zur Sonne",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Blanc de Noir Schiefer",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 70
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Schweiz Neuchâtel",
+     "erzeuger": [
+      {
+       "name": "Domaine Ruedin by Jacques Tatasciore",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Oeil-de-Perdrix",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 75
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Frankreich Provence",
+     "erzeuger": [
+      {
+       "name": "Levant 32",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Levant Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 75
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Miraval",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Miraval Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 70
+          },
+          {
+           "gross": "3.0l",
+           "preis": 310
+          },
+          {
+           "gross": "6.0l",
+           "preis": 640
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Spanien Rioja",
+     "erzeuger": [
+      {
+       "name": "Bodegas Muga",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Flor de Muga Rosado",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 75
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Deutschland Bayerischer Bodensee",
+     "erzeuger": [
+      {
+       "name": "Weingut Benjamin Lanz",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Nonnenhorner Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 75
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Deutschland Baden",
+     "erzeuger": [
+      {
+       "name": "Weingut Bernhard Huber",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Malterdinger Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Vollmayer",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Höhenrausch Rosé",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 65
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "titel": "Rotwein",
+   "regionen": [
+    {
+     "titel": "Schweiz",
+     "erzeuger": []
+    },
+    {
+     "titel": "Thurgau",
+     "erzeuger": [
+      {
+       "name": "Weingut Schlossgut Bachtobel",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Pinot Noir No 1",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 65
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Pinot Noir No 2",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Pinot Noir No 3",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 210
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Pinot Noir No 3",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          },
+          {
+           "gross": "1.5l",
+           "preis": 210
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Pinot Noir No 4",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Bündner Herrschaft",
+     "erzeuger": [
+      {
+       "name": "Weinkellerei Giani Boner",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Malanser Pinot Noir",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Malanser Pinot Noir",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 185
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Malanser Pinot Noir Grand Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Malanser Pinot Noir Grand Cru",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut zum Ochsen - Martin Donatsch",
+       "weine": [
+        {
+         "jahr": "2014",
+         "name": "Pinot Noir Passion",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Pinot Noir Passion",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Pinot Noir Passion",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Pinot Noir Unique",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 220
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Pinot Noir Unique",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 440
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Pinot Noir Unique",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Pinot Noir Unique",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Pinot Noir Tradition",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Martha & Daniel Gantenbein",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Pinot Noir",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Pinot Noir",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Pinot Noir",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Joel Nänni",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Jeninser Pinot Noir",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Hansruedi Adank",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Pinot Noir Spondis",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Pinot Noir Herrenacker",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Eichholz – Irene Grünenfelder",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Pinot Noir Eichholz",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Thomas Studach",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Pinot Noir",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Pinot Noir",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Neuchatel",
+     "erzeuger": [
+      {
+       "name": "Jacques Tatasciore",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Vieilles Vignes",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Vieilles Vignes",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Les Virgas",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Les Virgas",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Les Margiles",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Les Margiles",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Les Rissieux",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Les Rissieux",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Les Chypres",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Ruedin by Jacques Tatasciore",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Neuchâtel Rouge Les Ratenets",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Neuchâtel Rouge «Valentin»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Neuchâtel Rouge «Valentin Vase N 2»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Deutschland",
+       "weine": []
+      }
+     ]
+    },
+    {
+     "titel": "Bayerischer Bodensee",
+     "erzeuger": [
+      {
+       "name": "Weingut Jonas Kurek",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Spätburgunder Seehalde",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Spätburgunder Seehalde",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Seehaldenhof – Simon Hornstein",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Spätburgunder Seehalde",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Spätburgunder Seehalde",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Spätburgunder Hummler",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Schmidt am Bodensee",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Spätburgunder Gundelsberg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Spätburgunder Gundelsberg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Franken",
+     "erzeuger": [
+      {
+       "name": "Weingut Rudolf Fürst",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Spätburgunder Centgrafenberg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Spätburgunder Hundsrück GG",
+         "flaschen": [
+          {
+           "gross": "0,7l",
+           "preis": 220
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Baden",
+     "erzeuger": [
+      {
+       "name": "Weingut Bernhard Huber",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Malterdingen Spätburgunder",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Malterdingen Spätburgunder",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Malterdingen Spätburgunder",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          },
+          {
+           "gross": "1.5l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Alte Reben Spätburgunder",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Alte Reben Spätburgunder",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          },
+          {
+           "gross": "1.5l",
+           "preis": 220
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Hecklingen Spätburgunder",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          },
+          {
+           "gross": "1.5l",
+           "preis": 220
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Sommerhalde Spätburgunder GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          },
+          {
+           "gross": "1.5l",
+           "preis": 380
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Alte Burg Spätburgunder GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          },
+          {
+           "gross": "1.5l",
+           "preis": 400
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Bienenberg Spätburgunder GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Bienenberg Spätburgunder GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Bienenberg Spätburgunder GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Schlossberg Spätburgunder GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Wildenstein Spätburgunder GG",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 320
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Vollmayer",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Spätburgunder Berglage",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 65
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Spätburgunder Höchste Lage",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Cuvée Cabernet Berglage",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 75
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Rheinhessen",
+     "erzeuger": [
+      {
+       "name": "Klaus Peter Keller",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Spätburgunder Réserve",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 125
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Italien",
+     "erzeuger": []
+    },
+    {
+     "titel": "Lombardei",
+     "erzeuger": [
+      {
+       "name": "Torre San Quirico",
+       "weine": [
+        {
+         "jahr": "2014",
+         "name": "Sommoclivo Nebbiolo",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Calabria",
+     "erzeuger": [
+      {
+       "name": "Cantine Statti Lamezia Terme",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Cauro",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Piemont",
+     "erzeuger": [
+      {
+       "name": "Cantina Vietti",
+       "weine": [
+        {
+         "jahr": "2018",
+         "name": "Barolo Castiglione",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Barolo Ravera",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Bruno Giacosa",
+       "weine": [
+        {
+         "jahr": "2016",
+         "name": "Barolo «Falletto»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 410
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Barolo «Falletto»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 360
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Castrum Roche",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Langhe Nebbiolo",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2025",
+         "name": "Langhe Nebbiolo",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "San Barnaba",
+       "weine": [
+        {
+         "jahr": "2025",
+         "name": "Langhe Nebbiolo",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Piero Busso",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Barbaresco «Albesani»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Barbaresco «Albesani»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Barbaresco «San Stunet»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Toskana",
+     "erzeuger": [
+      {
+       "name": "Tua Rita",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Giusto di Notri",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 145
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2017",
+         "name": "Redigaffi",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 560
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Tenuta Tignanello",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Tignanello",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Tignanello",
+         "flaschen": [
+          {
+           "gross": "3.0l",
+           "preis": 880
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Tenuta Guado al Tasso",
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "Cont’Ugo",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Guado al Tasso",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Monteverro",
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "Tinata",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Castello Tricerchi",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Rosso di Montalcino",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 75
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Brunello di Montalcino «Castello Tricerchi»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 105
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Tenuta dell’ Ornellaia",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Le Serre Nuove",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Ornellaia",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 380
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Ornellaia",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 380
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Massetino",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 450
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Le Mortelle",
+       "weine": [
+        {
+         "jahr": "2018",
+         "name": "Ampio delle Mortelle",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 290
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Ampio delle Mortelle",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 280
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Tenuta San Guido",
+       "weine": [
+        {
+         "jahr": "2015",
+         "name": "Sassicaia",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 420
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2017",
+         "name": "Sassicaia",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 820
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Sassicaia",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 380
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Sassicaia",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 380
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Sassicaia",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 380
+          },
+          {
+           "gross": "1.5l",
+           "preis": 800
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Sassicaia",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 380
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Tenuta di Biserno",
+       "weine": [
+        {
+         "jahr": "2020",
+         "name": "Biserno",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Biserno",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Biserno",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 520
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Il Pino",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 105
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Il Pino",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Tenuta Luce – Marchesi Frescobaldi",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Lucente",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Luce",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 165
+          },
+          {
+           "gross": "1.5l",
+           "preis": 330
+          },
+          {
+           "gross": "3.0l",
+           "preis": 660
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Fontodi",
+       "weine": [
+        {
+         "jahr": "2020",
+         "name": "Flaccianello",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Flaccianello",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Castello dei Rampola",
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "Sammarco",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Sammarco",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Vigna d’Alceo",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 210
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Vigna d’Alceo",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 210
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Tenuta Argentiera",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Argentiera",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "San Giusto a Rentennano",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Percarlo",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Portugal",
+     "erzeuger": []
+    },
+    {
+     "titel": "Douro",
+     "erzeuger": [
+      {
+       "name": "Dos Luciadas",
+       "weine": [
+        {
+         "jahr": "2018",
+         "name": "Eleivera",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 70
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Spanien",
+     "erzeuger": []
+    },
+    {
+     "titel": "Catalunya",
+     "erzeuger": [
+      {
+       "name": "Clos d`Agon",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Clos d`Agon «Selección Especial»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Calatayud",
+     "erzeuger": [
+      {
+       "name": "Bodegas Ateca",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Atteca Old Vine",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Jumilla",
+     "erzeuger": [
+      {
+       "name": "Bodegas El Nido",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Corteo",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Penedes",
+     "erzeuger": [
+      {
+       "name": "Mas la Plana – Familia Torres",
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "Mas la Plana",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 115
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Rioja",
+     "erzeuger": [
+      {
+       "name": "R. López de Heredia – Viña Tondonia",
+       "weine": [
+        {
+         "jahr": "2001",
+         "name": "Viña Tondonia Rioja Reserva",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2011",
+         "name": "Viña Tondonia Rioja Reserva",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2004",
+         "name": "Viña Tondonia Rioja Gran Reserva",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 350
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Bodegas Artadi",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Viñas de Gain Álava",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2021",
+         "name": "Viñas de Gain Álava",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Valdeginés",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Bodegas Javier San Pedro Ortega",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Viuda Negra Crianza",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 70
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "Viuda Negra Arca de Asa",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Viuda Negra Arca de Asa",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Ribera del Duero",
+     "erzeuger": [
+      {
+       "name": "Dominio de Pingus",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Flor de Pingus",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Bodegas y Vinedos Alnardo",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "PSI",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Bodegas Vega Sicilia",
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "Valbuena 5°",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2012",
+         "name": "Unico Gran Reserva",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 520
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2014",
+         "name": "Unico Gran Reserva",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 540
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Priorat",
+     "erzeuger": [
+      {
+       "name": "Alvaro Palacios",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Les Terrasses",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Mallorca",
+     "erzeuger": [
+      {
+       "name": "Ses Talaioles",
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "Sestal",
+         "flaschen": [
+          {
+           "gross": "1.5l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Frankreich",
+     "erzeuger": []
+    },
+    {
+     "titel": "Burgund",
+     "erzeuger": [
+      {
+       "name": "Arnaud Baillot",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Gevrey-Chambertin",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Vignoble des Cabottes",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Beaune 1 er Cru Clos de la Mousse",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 150
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Beaune 1 er Cru Vigne de l’Enfant Jésus Les Grèves",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 290
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Corton Le Corton Grand Cru",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 260
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Bastian Wolber",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "Santenay 1 er Cru «Beauregard»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 145
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Beaune 1 er Cru «Beauregard»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Cellier aux Moines",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Givry Le Petit Cellier",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Givry 1 er Cru Clos du Cellier aux Moines",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Benjamin Leroux",
+       "weine": [
+        {
+         "jahr": "2016",
+         "name": "Nuits St-Georges",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2017",
+         "name": "Vosne Romanée",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Laurent Ponsot",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Bourgogne Rouge «Cuvée des Peupliers»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine de la Romanée-Conti",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Romanée-St-Vivant",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 2900
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Romanée-St-Vivant",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 2900
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Maison Glandien",
+       "weine": [
+        {
+         "jahr": "2024",
+         "name": "L’Ouverture Rouge",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Guilbert Gillet",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Chorey-lès-Beaune «Les Beaumonts» Vieille Vignes",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 200
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Jacques-Frédéric Mugnier",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Nuits-Saint-Georges 1 er Cru «Clos de la Maréchale»",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Domaine Michel Noëllat",
+       "weine": [
+        {
+         "jahr": "2022",
+         "name": "Nuits-Saint-Georges",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Chambolle Musigny",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Fernand & Laurent Pillot",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Beaune Rouge 1 er Cru Boucherottes",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Pommard Rouge 1 er Cru Les Charmots",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Pommard Rouge 1 er Cru Clos de Verger",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Loire",
+     "erzeuger": [
+      {
+       "name": "Domaine Guiberteau",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Saumur Rouge",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Rhone",
+     "erzeuger": [
+      {
+       "name": "M. Chapoutier",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Côte-Rôtie Les Bécasses",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 170
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2017",
+         "name": "Côte-Rôtie Neve",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Pierre Gonon",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Saint Joseph Rouge",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2024",
+         "name": "Saint Joseph Rouge",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Yann Chave",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Saint-Joseph Rouge",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Bordeaux",
+     "erzeuger": []
+    },
+    {
+     "titel": "St. Julien",
+     "erzeuger": [
+      {
+       "name": null,
+       "weine": [
+        {
+         "jahr": "2015",
+         "name": "Château Léoville-Poyferré",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2017",
+         "name": "Château Léoville-Poyferré",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2016",
+         "name": "Château Lagrange",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2014",
+         "name": "Château Langoa-Barton",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Château Moulin Riche",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2014",
+         "name": "Château Léoville-Barton",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2015",
+         "name": "Château Léoville-Barton",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 190
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "St.-Emillion/Fronsac",
+     "erzeuger": [
+      {
+       "name": null,
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "Château Bernon Bécot",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 75
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Château Rocheyron",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Château Troplong-Mondot",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 180
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "1999",
+         "name": "Château La Mondotte Comtes de Neipperg",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "St.-Estephe",
+     "erzeuger": [
+      {
+       "name": null,
+       "weine": [
+        {
+         "jahr": "2001",
+         "name": "Château Montrose",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2014",
+         "name": "Château Montrose",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 280
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2015",
+         "name": "La Dame de Montrose",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "La Dame de Montrose",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "1995",
+         "name": "Château Marbuzet",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2000",
+         "name": "Château Cos d’Estournel",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 320
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2014",
+         "name": "Château Phélan-Ségur",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 105
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Château Phélan-Ségur",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 105
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Pessac-Leognan",
+     "erzeuger": [
+      {
+       "name": null,
+       "weine": [
+        {
+         "jahr": "1996",
+         "name": "Château Haut-Bailly",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 300
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2009",
+         "name": "Château Haut-Bailly",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 320
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2023",
+         "name": "Haut Bailly II",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 95
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Margaux",
+     "erzeuger": [
+      {
+       "name": null,
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "Château Mille Roses",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 85
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Moulis · Haut-Medoc",
+     "erzeuger": [
+      {
+       "name": null,
+       "weine": [
+        {
+         "jahr": "2018",
+         "name": "Château Cantemerle",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Château Cantemerle",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Château Belgrave",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 100
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Château Poujeaux",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Pauillac",
+     "erzeuger": [
+      {
+       "name": null,
+       "weine": [
+        {
+         "jahr": "2018",
+         "name": "Château Pichon-Longueville-Baron",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 350
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2016",
+         "name": "Réserve de la Comtesse",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Château Pichon-Comtesse de Lalande",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 400
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2019",
+         "name": "Château Pichon-Comtesse de Lalande",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 370
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2000",
+         "name": "Château Lynch-Bages",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 440
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2010",
+         "name": "Château Lynch-Bages",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 240
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2018",
+         "name": "Château Lynch-Bages",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 330
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2000",
+         "name": "Château Latour Les Forts de Latour",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 380
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2016",
+         "name": "Château d’Armailhac",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 160
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2014",
+         "name": "Château Pontet-Canet",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 250
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2017",
+         "name": "Château Pontet-Canet",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 230
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2015",
+         "name": "Château Grand-Puy-Lacoste",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 140
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Côtes de Bordeaux / Bordeaux Superieur",
+     "erzeuger": [
+      {
+       "name": null,
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Château Grand Village Rouge",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "titel": "Süsswein",
+   "regionen": [
+    {
+     "titel": null,
+     "erzeuger": []
+    },
+    {
+     "titel": "Deutschland · Nahe",
+     "erzeuger": [
+      {
+       "name": "Hermann Dönnhoff",
+       "weine": [
+        {
+         "jahr": "2023",
+         "name": "Riesling Oberhäuser Brücke Spätlese",
+         "flaschen": [
+          {
+           "gross": "0.7l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2022",
+         "name": "Riesling Auslese Hermannshöhle",
+         "flaschen": [
+          {
+           "gross": "0.375l",
+           "preis": 90
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Mosel",
+     "erzeuger": [
+      {
+       "name": "Weingut Joh. Jos. Prüm",
+       "weine": [
+        {
+         "jahr": "2020",
+         "name": "Riesling Auslese Goldkapsel Wehlener Sonnenuhr",
+         "flaschen": [
+          {
+           "gross": "0.375l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weingut Achim Molitor",
+       "weine": [
+        {
+         "jahr": "2018",
+         "name": "Riesling Beerenauslese Piesporter Falkenberg",
+         "flaschen": [
+          {
+           "gross": "0.375l",
+           "preis": 110
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Frankreich · Bordeaux",
+     "erzeuger": [
+      {
+       "name": "Château Lafaurie-Peyraguey",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Sauternes 1 er Grand Cru Classé",
+         "flaschen": [
+          {
+           "gross": "0.375l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Château de Rayne Vigneau",
+       "weine": [
+        {
+         "jahr": "2021",
+         "name": "Sauternes",
+         "flaschen": [
+          {
+           "gross": "0.375l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "titel": "Österreich · Burgenland",
+     "erzeuger": [
+      {
+       "name": "Weingut Heidi Schröck",
+       "weine": [
+        {
+         "jahr": "2018",
+         "name": "Ruster Ausbruch „Auf den Flügeln der Morgenröte“",
+         "flaschen": [
+          {
+           "gross": "0.375l",
+           "preis": 80
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      },
+      {
+       "name": "Weinlaubenhof Kracher",
+       "weine": [
+        {
+         "jahr": "2019",
+         "name": "TBA Welschriesling No. 6 „Zwischen den Seen“",
+         "flaschen": [
+          {
+           "gross": "0.375l",
+           "preis": 130
+          }
+         ],
+         "notiz": null
+        },
+        {
+         "jahr": "2020",
+         "name": "TBA Grande Cuvee No. 4 „Nouvelle Vague»",
+         "flaschen": [
+          {
+           "gross": "0.375l",
+           "preis": 120
+          }
+         ],
+         "notiz": null
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "fuss": [
+  "Alle Preise in Schweizer Franken inkl. 8,1% MwSt.",
+  "Alle Weine enthalten Sulfite"
+ ]
+}

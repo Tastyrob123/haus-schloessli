@@ -1,0 +1,54 @@
+{
+ "_stand": "19.10.2026, Station 03 Sammler. Gäste-Sprachen nach Anzahl liessen sich auf keinem Portal ablesen; die Reihenfolge stützt sich auf die Lage (Hafen gegenüber Konstanz), die Sprachen des Orts und der Tourismusbüros. Nichts entschieden (Station 15a).",
+ "gaeste": [],
+ "gaeste_nicht_bekommen": [
+  {
+   "portal": "TripAdvisor",
+   "grund": "Chrome mit der Claude-Erweiterung nicht verbunden (list_connected_browsers leer, 19.10.2026); nach Auftrag nicht anders versucht. Eintrag «Schlössli» https://www.tripadvisor.ch/Restaurant_Review-g6908343-d33091733-Reviews-Schlossli-Bottighofen_Canton_of_Thurgau.html"
+  },
+  {
+   "portal": "Google Maps",
+   "grund": "ohne Anmeldung eingeschränkte Ansicht: 3 von 85 Rezensionen sichtbar, alle deutsch; Sprachen der übrigen nicht ablesbar, 19.10.2026, https://www.google.com/maps/place/Wirtschaft+am+Schl%C3%B6ssli/@47.6442147,9.212147,17z"
+  },
+  {
+   "portal": "Booking.com",
+   "grund": "betrifft nicht, keine Zimmer"
+  }
+ ],
+ "hinweise": [
+  {
+   "was": "Das Haus liegt am Hafen Bottighofen gegenüber Konstanz; Presse aus Deutschland (Südkurier, Der Feinschmecker), Michelin-Eintrag auch in den Ausgaben Deutschland und Österreich; Gastkoch Patrick Stier aus Konstanz",
+   "quelle": "_quelle/presse/suedkurier-fruehstueck.md, feinschmecker.md; Suchtreffer guide.michelin.com/de/de und /at/de (19.10.2026); _quelle/website/text/events-2-1.md"
+  },
+  {
+   "was": "Das Haus bietet keine Karte und keinen Text in einer anderen Sprache an",
+   "quelle": "_quelle/website/pdf-text/ (alle deutsch); Quelltext lang=\"de-CH\""
+  }
+ ],
+ "website_heute": [
+  "de"
+ ],
+ "website_heute_quelle": "Quelltext lang=\"de-CH\", keine hreflang (Späher 02); Karten nur deutsch",
+ "ort": [
+  "de",
+  "en",
+  "fr"
+ ],
+ "ort_quelle": "Thurgau Bodensee Tourismus https://thurgau-bodensee.ch (hreflang de, en, fr, 19.10.2026); Gemeinde Bottighofen https://www.bottighofen.ch nur de (lang=\"de-CH\")",
+ "schweiz_tourismus": [
+  "de",
+  "en",
+  "fr",
+  "it",
+  "es",
+  "nl",
+  "pt"
+ ],
+ "schweiz_tourismus_quelle": "Eintrag https://www.myswitzerland.com/de-ch/erlebnisse/essen-trinken/restaurant/wirtschaft-am-schloessli/ (hreflang, 19.10.2026)",
+ "reihenfolge": [
+  "de",
+  "en",
+  "fr"
+ ],
+ "reihenfolge_grund": "de: Sprache des Hauses, der sichtbaren Gäste-Texte und der Nachbarn in Konstanz; en: zweite Sprache von Thurgau Bodensee Tourismus und Schweiz Tourismus; fr: dritte Sprache des Tourismusbüros. Nicht aus Gäste-Zahlen belegt: offen, bis TripAdvisor oder Google mit Sprachfilter gelesen sind."
+}

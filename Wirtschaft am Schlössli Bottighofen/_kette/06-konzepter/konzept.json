@@ -1,0 +1,617 @@
+{
+ "geschichte": "Die Startseite ist ein Platz, kein Weg: Man kommt am Hafen von Bottighofen an, setzt sich auf einen der blauen Stühle unter den Platanen, und alles, was die Wirtschaft am Schlössli ausmacht, kommt an diesen Tisch, die Lästermeile, die Karte in vier Ländern, Moni Hubers Küche, Jonas Volperts Keller, der Abend unter der Lichterkette. Ordnung gibt der Horizont des Sees: eine Linie über die ganze Breite, an der jedes Bild mit seinem eigenen Horizont oder seiner Tischkante anlegt, so wie man es vom Stuhl aus sieht.",
+ "geschichte_satz": "Man kommt am Hafen an, setzt sich auf einen der blauen Stühle unter den Platanen und bleibt sitzen; alles, was das Schlössli ausmacht, kommt an diesen einen Tisch, am Horizont des Sees.",
+ "ideen": [
+  {
+   "art": "Darstellung",
+   "name": "Ein Horizont für alle Bilder",
+   "satz": "Aus dem Markenbuch (bestätigt 19.10.): eine feine Linie in Seehimmel läuft über die ganze Breite. Neu für die Seite: Jedes Foto wird so gesetzt, dass sein Horizont auf dieser Linie liegt, bei Tellern die Tischkante. Über der Linie liegt, was man vom Stuhl aus sieht, unter ihr, was auf dem Tisch steht. Titel sitzen mit der Grundlinie auf ihr. Kein anderes Haus ordnet seine Bilder nach dem, was in ihnen zu sehen ist."
+  },
+  {
+   "art": "Bewegung",
+   "name": "Anlegen",
+   "satz": "Neu: Ein Bild schwebt deckend von unten herauf und kommt genau dann zur Ruhe, wenn sein Horizont die Linie erreicht, wie ein Boot an der Mole. Der Zielpunkt hängt am Bildinhalt, nicht am Rahmen. Nur transform, kein Nachfedern, zügig hinein und satt an den Platz. Die Linie selbst zieht sich nur einmal auf, im Auftakt."
+  }
+ ],
+ "seiten": [
+  {
+   "seite": "index.html",
+   "titel": "Startseite",
+   "szenen": [
+    {
+     "teil": "auftakt",
+     "titel": "Wirtschaft am Schlössli",
+     "satz": "«Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen.» (Startseite des Hauses)",
+     "bilder": [
+      "_quelle/website/bilder/8cc68d_32_-_FHF_2573.jpg"
+     ],
+     "baustein": "Name auf dem Horizont",
+     "quelle": "neu",
+     "skizze": "Das ganze Startfoto der heutigen Seite, ein Bildschirm hoch, nicht hineingezoomt. Die Linie verlängert den Horizont des Fotos (Alpenkante, rund 30 % von oben) über die ganze Breite. Der Name in den Versalien der Wortmarke sitzt mit seiner Grundlinie auf der Linie, darunter klein «by Christian Kuchler» und die Ortszeile. Unten die Reservation als runde Platte mit Tiefe (gastronovi, Restaurant 118851), daneben «Lunch-Menü». Nichts darunter.",
+     "bewegung": "Auftakt öffnet sich von selbst; Linie scaleX einmal; Name rollt aus der Linie; Platte schwebt von unten.",
+     "flaeche": "dunkel",
+     "einfall": "Man sitzt vom ersten Blick an auf einem der blauen Stühle; der Horizont des Sees ist die erste Linie der Seite.",
+     "komposition": "Kein Haus von aussen und kein Zeichen über dem Namen: der Blick vom Stuhl, der Name auf dem Horizont statt mittig im Bild.",
+     "moment": "Die Seite geht auf, das Foto zoomt von 1,06 auf 1, die Linie zieht sich einmal von links auf, der Name steigt aus der Linie wie aus einem Schlitz.",
+     "unterschied": "Einziger Auftakt ohne Gebäude und ohne Zeichen über dem Namen; der Titel steht auf dem Horizont des Fotos. Hafen am Mittag vom Tisch aus, nicht vom Wasser.",
+     "bisher": {
+      "Grand Beau-Rivage": "Name gross mit Logo, Leiste mittig darunter, goldenes Laufband mit Adresse (Werdegang)",
+      "Carlton-Europe": "Gebäude-Ecke mit Turm, goldenes CE, Menüpunkte als Zeile unten im Bild (Werdegang)",
+      "Hotel Seiler au Lac": "Dunst statt Vorhang, Sonnenlauf am Rand (UI-Fundus)",
+      "Salt & Silver": "Hafen am Abend, Satz des Hauses, Vorhang mit Zeichen (UI-Fundus)",
+      "Zurbriggen Zermatt": "Foto mit rotem Pinselstrich unter dem wichtigsten Wort",
+      "Zurbriggen Monte-Moro": "Fassade in der Jahreszeit, in der man bucht",
+      "Zurbriggen Wellness": "Sterne zählen, gepinseltes Z"
+     },
+     "ueberleitung": "Man setzt sich. Der nächste Teil beginnt am selben Horizont, einen Schritt weiter unter den Platanen."
+    },
+    {
+     "teil": "terrasse",
+     "titel": "Die schönste Terrasse am Bodensee.",
+     "satz": "Christian Kuchler (Startseite). GaultMillau: «mit der Terrasse im Schatten prächtiger Platanen und Blick auf den Bodensee» (gaultmillau.ch, 19.10.2026). Michelin: «Schöne Terrasse».",
+     "bilder": [
+      "_quelle/website/bilder/178109_IMG_1967.jpeg",
+      "_quelle/extern/myswitzerland/01_922778687.jpg"
+     ],
+     "baustein": "Das Zitat an der Linie",
+     "quelle": "neu",
+     "skizze": "Links das hohe Foto unter den Platanen, so gesetzt, dass das Wasser im Bild auf der Linie liegt. Rechts sitzt der Satz des Pächters in grossen Versalien auf derselben Linie, unter ihr sein Name und zwei Stimmen von aussen als ruhige Zeilen (GaultMillau, Michelin). Darunter quer und kleiner die Lounge mit dem Champagner, bündig mit der Textspalte.",
+     "bewegung": "Anlegen; Titel aus dem Schlitz; Zeilen gestaffelt.",
+     "flaeche": "tapete",
+     "einfall": "Der Satz, den der Pächter selbst über sein Haus sagt, und zwei Führer, die ihm recht geben.",
+     "komposition": "Begrüssung ohne Gastgeberfoto und ohne «Herzlich willkommen»: ein Zitat, das auf dem Horizont des Nachbarbilds steht.",
+     "moment": "Anlegen: das Platanenfoto steigt und setzt mit seinem Horizont auf der Linie auf; das Zitat rollt zeilenweise aus der Linie.",
+     "unterschied": "Der Empfang ist ein Satz des Hauses über seinen Platz, belegt von zwei Führern; kein Gastgeber-Blatt, keine Halle.",
+     "bisher": {
+      "Grand Beau-Rivage": "Halle «Wer hier eintritt, soll verwöhnt werden.»",
+      "Carlton-Europe": "«Das Vintage Hotel» als Begrüssung",
+      "Zurbriggen Zermatt": "Gastgeber-Blatt mit Familienfoto als 3D-Kachel",
+      "Salt & Silver": "Willkommen mit Gründern und Dreiklang der Marke (UI-Fundus)"
+     },
+     "ueberleitung": "Vom Platz draussen der Blick durch die Scheiben zurück ins Haus."
+    },
+    {
+     "teil": "fenster-hafen",
+     "titel": "Fenster: die Gaststube",
+     "satz": "«Drinnen sitzt man genauso am Wasser.» (Satz des Konzepters, zur Freigabe)",
+     "bilder": [
+      "_quelle/website/bilder/50fa79__DSC5718.JPG"
+     ],
+     "baustein": "Fenster",
+     "quelle": "fundus",
+     "bewegung": "Fenster wie Ruedihus und Gasterntal festgelegt.",
+     "flaeche": "dunkel",
+     "einfall": "Die Gaststube hat selbst Fenster zum Hafen; das erste Fenster der Seite zeigt echte Fenster.",
+     "komposition": "Fenster nach Fundus (Bild steht, Ausschnitt geht auf und zu, Satz rollt), erstes von zwei.",
+     "moment": "Der Ausschnitt öffnet sich, der Satz rollt zeilenweise.",
+     "unterschied": "Wendepunkt von draussen nach drinnen; Bild und Satz gehören nur diesem Haus.",
+     "bisher": {
+      "Grand Beau-Rivage": "Fenster «Während das Kaminfeuer knistert.»",
+      "Carlton-Europe": "Fenster «Was bedeutet Vintage?»",
+      "Zurbriggen Monte-Moro": "Fenster zur Sonne und zur Gondel"
+     },
+     "ueberleitung": "Drinnen steht man an der Bar, die nach draussen führt."
+    },
+    {
+     "teil": "laestermeile",
+     "titel": "Lästermeile.",
+     "satz": "«Tapas durchgehend» (Karte der Lästermeile, PDF vom 14.10.2026). Die Bar, «die von drinnen nach draussen führt» (Tagblatt, 24.04.2025).",
+     "bilder": [
+      "_quelle/website/bilder/b49b5b_IMG_2226.jpeg",
+      "_quelle/website/bilder/de97ff_IMG_2166.jpeg",
+      "_quelle/website/bilder/a005f3_2026-05-22_193805_Schl_C3_B6ssli_SM.jpg",
+      "_quelle/website/bilder/7c2036_IMG_2037.jpeg"
+     ],
+     "baustein": "Die Schwelle",
+     "quelle": "neu",
+     "skizze": "Hier wird die Linie zum Boden: das echte Fliesenband der Bar läuft als Streifen über die ganze Breite. Die linke Hälfte ist dunkel (drinnen): die Bar mit den Fliesen und das Regal mit Blick auf den See. Die rechte Hälfte ist hell (draussen): das Schild «Lästermeile» unter den Bäumen und die Tapas wörtlich aus der Karte (Pimientos de Padrón 8, Patatine fritte 8, Croquetas 9, Kalamata Oliven 8; «Zur Stärkung & Süsses»: Prato 30, Tarte flambée 20, Crespelle 20, Tarta 7, Dolce al cucchiaio 9). Die Bilder stehen auf den Fliesen.",
+     "bewegung": "Gruppe als Ganzes von unten; Zeilen gestaffelt; Fotos zoomen im Rahmen.",
+     "flaeche": "dunkel und hell geteilt",
+     "einfall": "Eine Bar, die durch die Wand nach draussen läuft, auf alten Zementfliesen; der Boden ist der Übergang.",
+     "komposition": "Ein Teil, der hart in dunkel und hell geteilt ist und von einem echten Fliesenband zusammengehalten wird; kein anderes Haus teilt einen Abschnitt in drinnen und draussen.",
+     "moment": "Das Fliesenband liegt still, die Bilder drinnen und draussen steigen in einem Zug darauf; die Tapas-Zeilen schweben gestaffelt.",
+     "unterschied": "Die Bar als Durchgang von drinnen nach draussen über einem echten Fliesenband. Das Schild ist ein Foto des Hauses, kein gebauter Wegweiser.",
+     "bisher": {
+      "Grand Beau-Rivage": "«Vor dem Essen und danach.» mit drei Kacheln (Bar, Tea Time, Terrasse)",
+      "Carlton-Europe": "«Zum Apéro in den Gewölbekeller.», zwei Damen gross, Wein und Kerzen überlappend",
+      "Zurbriggen Monte-Moro": "Stübli als Bildgruppe 1 gross, 2 klein mit Weinkarten-Zeile",
+      "Zurbriggen Wellness": "Gebauter Wegweiser in Schokolade und Messing",
+      "Salt & Silver": "Bühne mit Abzügen (UI-Fundus)"
+     },
+     "ueberleitung": "Von den Tapas an der Bar zur Karte des Hauses."
+    },
+    {
+     "teil": "karte",
+     "titel": "Vier Länder auf einer Karte.",
+     "satz": "«Hier erwartet Sie eine kulinarische Reise in die Welt der mediterranen Küche» (Startseite). Karte vom 30.09.2026: Frankreich, Italien, Iberische Halbinsel, Klassiker.",
+     "bilder": [
+      "_quelle/website/bilder/fc5b3b_Schloessli_August2025-11-5.jpg",
+      "_quelle/website/bilder/93b96d_Schloessli_August2025-12-6.jpeg",
+      "_quelle/website/bilder/d18c6d_Schloessli_August2025-9-4.jpg",
+      "_quelle/website/bilder/88d916_Tortelloni.jpg"
+     ],
+     "baustein": "Die Küstenlinie",
+     "quelle": "neu",
+     "skizze": "Vier Teller-Fotos stehen auf der Linie, verschieden hoch, wie eine Küste vom Wasser aus. Unter der Linie je Land der Name in Versalien und seine Gerichte wörtlich aus der Karte, Preis in DM Mono (aus La Carte, eine Quelle für Seite und PDF). Unter allen vier eine Zeile für den Mittag: «Lunch-Menü», drei Gänge, 35 Franken, mit dem Menü der Woche (PDF vom 18.10.2026: Kürbissuppe, Risi e bisi, Joghurt Panna Cotta). Die Fotos tragen keine Gerichtsnamen (siehe offen). Am Handy je Land Foto, Linie, Zeilen untereinander.",
+     "bewegung": "Anlegen gestaffelt in einem Zug; Zeilen schweben; Preise stehen still.",
+     "flaeche": "tapete",
+     "einfall": "Die Karte des Hauses ist nach Ländern geordnet; vom Bodensee aus liegt das Mittelmeer als Küste am Horizont.",
+     "komposition": "Vier Teller in ungleicher Höhe auf einer gemeinsamen Linie, darunter die Karte als Zeilen je Land; keine Mappe, kein Blatt, kein Reiter.",
+     "moment": "Anlegen in einem Zug von links nach rechts: jeder Teller setzt mit seiner Tischkante auf der Linie auf.",
+     "unterschied": "Die Karte als Küste: Länder nebeneinander an einer Linie, nicht als Erkunder, Papierblatt oder Rennverlauf.",
+     "bisher": {
+      "Salt & Silver": "Karten-Erkunder mit Standort-Wahl, Bogen-Karten, Karte auf der Tafel (UI-Fundus)",
+      "Zurbriggen Monte-Moro": "Rösti-Seite als Blatt Papier auf Nacht mit Laufzeile",
+      "Zurbriggen Wellness": "Offene Menümappe",
+      "Zurbriggen Zermatt": "Rennkarte: Gänge als Rennverlauf",
+      "Carlton-Europe": "Frühstück als Bildwand mit Tafel",
+      "Grand Beau-Rivage": "Restaurants & Bar mit Schalter Am Fluss / Am Kamin"
+     },
+     "ueberleitung": "Wer so kocht: die Köchin und ihr Team."
+    },
+    {
+     "teil": "kueche",
+     "titel": "Entdeckung des Jahres 2026.",
+     "satz": "GaultMillau über Moni Huber: «beeindruckt mit exzellentem Handwerk und klarer kulinarischer Sprache» (gaultmillau.ch, 19.10.2026).",
+     "bilder": [
+      "_quelle/website/bilder/c39c8a_5_-_FHF_2667.jpg",
+      "_quelle/extern/myswitzerland/02_922778688.jpg",
+      "_quelle/website/bilder/d51216_2_-_FHF_2646.jpg"
+     ],
+     "baustein": "Die Auszeichnung als Titel",
+     "quelle": "neu",
+     "skizze": "Der Titel ist die Auszeichnung selbst, zwei Zeilen auf der Linie. Über der Linie rechts Moni Huber hoch im Porträt. Unter der Linie ihr Weg in einem Satz (Südtirolerin, Vila Joya bei Dieter Koschina, Sous-Chefin von Christian Kuchler im Schäfli, seit April 2025 eigene Küche am See) und die drei Auszeichnungen als ruhige Zeile: GaultMillau 15 Punkte · Falstaff 91 von 100 · Guide Michelin, «Favorit der Inspektoren». Daneben das Foto, in dem die Sauce angegossen wird. Zum Schluss das Team quer über die Breite: «junges Küchenteam … frischen Wind» (Startseite).",
+     "bewegung": "Titel aus dem Schlitz; Porträt legt an; Team schwebt als Ganzes.",
+     "flaeche": "dunkel",
+     "einfall": "Die Auszeichnung fehlt heute auf der ganzen Seite (Analyse, Befund 01); hier ist sie der Titel und gehört der Köchin.",
+     "komposition": "Porträt über der Linie, Weg und Auszeichnungen unter ihr, das Team als breiter Abschluss; keine Zahlenreihe, keine Felder, keine Medaillons.",
+     "moment": "Der Titel steigt aus der Linie, das Porträt legt an; die Zeile der Auszeichnungen steht still, nichts zählt hoch.",
+     "unterschied": "Auszeichnungen nicht als eigener Teil am Ende, sondern als Titel des Kapitels über die Köchin.",
+     "bisher": {
+      "Carlton-Europe": "Auszeichnungen als vier Felder (vorher hochzählende Zahlen)",
+      "Grand Beau-Rivage": "Grosse Zahlen für Lage, Personal, Google, die hochzählen",
+      "Waldhotel Doldenhorn": "Auszeichnungen als Laufband unter dem Auftakt (Briefing 4.1)",
+      "Zurbriggen Wellness": "Kugelreihe aus Messing-Medaillons",
+      "Zurbriggen Zermatt": "Zieltafel mit drei grossen Zahlen"
+     },
+     "ueberleitung": "Zum Essen der Wein: von der Küche zum Gastgeber."
+    },
+    {
+     "teil": "keller",
+     "titel": "Jonas Volpert, Gastgeber und Sommelier.",
+     "satz": "GaultMillau: «Der Weinkeller, bei vielen neuen Lokalen das Sorgenkind, ist im ‹Schlössli› bestens bestückt.» (30.03.2025). Weinkarte mit 26 Seiten, Stand 14.10.2026.",
+     "bilder": [
+      "_quelle/website/bilder/9a3afc_Schloessli_August2025-1-1.jpg",
+      "_quelle/website/bilder/8e85ca__DSC5833_1.JPG",
+      "_quelle/website/bilder/dfee6f_11_-_FHF_2706.jpg"
+     ],
+     "baustein": "Das Glas auf dem Horizont",
+     "quelle": "neu",
+     "skizze": "In der Mitte gross das Weinglas vor dem See: sein Horizont liegt genau auf der Linie der Seite, so dass das Glas auf dem Bodensee zu stehen scheint. Links das Regal, rechts Jonas Volpert im Porträt, beide kleiner. Unter der Linie der Satz von GaultMillau, darunter der Knopf «Weinkarte» (eigene Seite statt 26 Seiten PDF).",
+     "bewegung": "Anlegen; Foto zoomt im Rahmen; Zeilen gestaffelt.",
+     "flaeche": "hell",
+     "einfall": "Ein Glas Weisswein vor dem Wasser: das Foto des Hauses, in dem Horizont und Tisch dieselbe Linie sind.",
+     "komposition": "Ein grosses Bild in der Mitte, dessen Horizont die Seitenlinie fortsetzt; zwei kleinere Bilder daneben, die mit der Unterkante anlegen.",
+     "moment": "Das deutlichste Anlegen der Seite: das Glas steigt, bis der See im Bild auf der Linie liegt.",
+     "unterschied": "Wein als ein Glas am Horizont, kein Keller mit Kerzen, keine Weinkarten-Zeile neben einer Bildgruppe.",
+     "bisher": {
+      "Carlton-Europe": "Gewölbekeller mit Wein und Kerzen",
+      "Zurbriggen Monte-Moro": "Zwei Zeilen wie in der Weinkarte unter der Stübli-Bildgruppe",
+      "Castell Son Claret": "Eigene Weinkarte-Seite (UI-Fundus)",
+      "Salt & Silver": "Weinliste auf der Seite jedes Hauses (UI-Fundus)"
+     },
+     "ueberleitung": "Das Glas ist leer, der Himmel wird blau."
+    },
+    {
+     "teil": "fenster-abend",
+     "titel": "Fenster: der Abend",
+     "satz": "«Wenn es Abend wird am Hafen.» (Satz des Konzepters, zur Freigabe)",
+     "bilder": [
+      "_quelle/website/bilder/816543_2026-05-22_205034_Schl_C3_B6ssli_SM.jpg"
+     ],
+     "baustein": "Fenster",
+     "quelle": "fundus",
+     "bewegung": "Fenster wie festgelegt.",
+     "flaeche": "dunkel",
+     "einfall": "Apéro in der blauen Stunde: der Wendepunkt vom Tag zum Abend.",
+     "komposition": "Fenster nach Fundus, zweites und letztes der Startseite.",
+     "moment": "Der Ausschnitt öffnet sich, der Satz rollt.",
+     "unterschied": "Bild und Satz gehören nur diesem Haus.",
+     "bisher": {
+      "Grand Beau-Rivage": "Fenster mit dem Haus im Winter, «Wer hier eintritt …»",
+      "Zurbriggen Zermatt": "Fenster Balkon und Abend"
+     },
+     "ueberleitung": "Am Abend die Geschichte, die der Ort schon kennt."
+    },
+    {
+     "teil": "besen",
+     "titel": "Ein Besen statt eines Schilds.",
+     "satz": "Gemeindeschrift «Die Bottighofer Mühlen und das Schlössli am See», Gemeinde Bottighofen 1994, PDF-Seiten 110–111.",
+     "bilder": [],
+     "baustein": "Die Fussnote",
+     "quelle": "neu",
+     "skizze": "Ein kurzer Teil ohne Bild, gesetzt wie eine Fussnote, aber gross: die Linie, darunter in der Laufschrift drei Sätze. Gleich nebenan, im Haus am See, das heute Schlössli heisst, setzte Hans Conrad Hafen Ende des 17. Jahrhunderts einen Wirt als Pächter ein, der die Schiffsleute mit Speis und Trank bewirtete. Statt eines Wirtshausschilds hing nur ein Besen heraus. Das Kloster Münsterlingen klagte, die Gemeinde fürchtete, man müsse bald im Wirtshaus Hochzeit feiern statt zu Hause, und 1699 blieb nur noch Wein aus Eigenbau. Darunter die Quelle in DM Mono. Der letzte Satz leitet zum Feiern über.",
+     "bewegung": "Zeilen aus dem Schlitz.",
+     "flaeche": "tapete",
+     "einfall": "Die Geschichte des Ortes mit Augenzwinkern: ein Pächter am See, ein Besen statt eines Schilds, und die Sorge der Gemeinde ums Hochzeitsessen.",
+     "komposition": "Nur Schrift an der Linie, auf heller Tapete; keine Jahreslinie, keine Archivbilder.",
+     "moment": "Die drei Sätze rollen nacheinander aus der Linie; sonst steht alles.",
+     "unterschied": "Geschichte als Anekdote in drei Sätzen, die zum Feiern überleitet; das Haus selbst ist nicht das Schlössli, das wird gesagt.",
+     "bisher": {
+      "Grand Beau-Rivage": "«Wo Legenden ihre Spuren hinterliessen.» Filmstreifen alter Aufnahmen gegeneinander",
+      "Zurbriggen Wellness": "Wappen mit drei Jahreszahlen und Messinglinien",
+      "Landgasthof Ruedihus": "Kompass der Herkunft (UI-Fundus)"
+     },
+     "ueberleitung": "Die Gemeinde fürchtete das Hochzeitsessen im Wirtshaus; heute feiert man hier gern."
+    },
+    {
+     "teil": "feiern",
+     "titel": "Zwei Etagen, je bis zu 26 Gäste.",
+     "satz": "«Sie geben den Rahmen vor – ob Tavolata oder gesetztes Menue!» (Seite «Karten»). Bankettmenüs Frühling 175, Sommer 185, Herbst 175 (PDF vom 29.04.2025).",
+     "bilder": [
+      "_quelle/website/bilder/7f6b93_Anguria.jpg",
+      "_quelle/website/bilder/9f207d_Schloessli_August2025-18-9.jpg"
+     ],
+     "baustein": "Zwei Linien",
+     "quelle": "neu",
+     "skizze": "Die Linie doppelt sich: zwei Linien übereinander wie die zwei Etagen, auf jeder steht still «26». Zwischen den Linien die Wahl des Hauses als zwei Knöpfe: Tavolata, gesetztes Menü. Rechts zwei Teller auf der unteren Linie. Die Anfrage öffnet ein Fenster auf der Seite mit den Feldern, die das Haus heute in seiner Mail vorgibt: Datum, Uhrzeit, Personenzahl, Speisenform, Anzahl Gänge, Richt-Budget. Fotos der Etagen fehlen (offen).",
+     "bewegung": "Eine Linie zieht sich auf (scaleX, einmal); Anlegen; Knöpfe geben beim Drücken nach.",
+     "flaeche": "dunkel",
+     "einfall": "Das Haus hat zwei Etagen gleicher Grösse; die eine Linie der Seite wird hier zu zweien.",
+     "komposition": "Zwei Linien statt Bildreihen oder Zahlenband; die Zahl steht einmal je Etage.",
+     "moment": "Wenn der Teil den Rand berührt, legt sich die zweite Linie unter die erste; die Teller legen an.",
+     "unterschied": "Säle ohne Bild-Bühne: die zwei Etagen als zwei Linien, die Anfrage mit den Feldern des Hauses.",
+     "bisher": {
+      "Grand Beau-Rivage": "«Feiern & Tagen.» mit zwei Bildreihen und grossen Zahlen (312 m², 160, 120, 6,5 m)",
+      "Carlton-Europe": "«Ihr grosser Tag.» mit Brautbildern",
+      "Salt & Silver": "Anfrage ab zehn Personen mit Polaroids (UI-Fundus)"
+     },
+     "ueberleitung": "Nach dem Fest bleibt der Abend am See."
+    },
+    {
+     "teil": "abend",
+     "titel": "Bis 23 Uhr unter der Platane.",
+     "satz": "Donnerstag bis Montag 11:30 bis 23:00, Küche 11:30 bis 13:30 und 18:00 bis 20:00, die Karte der Lästermeile durchgehend; Dienstag und Mittwoch Ruhetag (Kontakt, 19.10.2026).",
+     "bilder": [
+      "_quelle/website/bilder/28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg"
+     ],
+     "baustein": "Der letzte Blick",
+     "quelle": "neu",
+     "skizze": "Rechts hoch das Abendfoto unter der Platane mit der Lichterkette; sein Horizont liegt auf derselben Linie wie im Auftakt, nur das Licht ist anders. Die Linie läuft aus dem Bild nach links; auf ihr die zweite Reservation als Platte, darunter Zeiten, Ferien (aus La Maison), Seestrasse 50 mit Parkplatz und Bahnhof Bottighofen, Knopf «Gutschein». Der Gutschein öffnet ein Fenster auf der Seite.",
+     "bewegung": "Anlegen; Platte von unten; Zeilen gestaffelt.",
+     "flaeche": "hell",
+     "einfall": "Derselbe Platz wie am Anfang, am Abend: der Faden schliesst sich am Horizont.",
+     "komposition": "Ein hohes Bild, aus dessen Horizont die Linie mit Reservation und Zeiten herausläuft; nicht die Form des Auftakts.",
+     "moment": "Das Abendbild legt an; Platte und Zeilen schweben gestaffelt.",
+     "unterschied": "Der Schluss kehrt an den Ort des Anfangs zurück, über die gemeinsame Linie, ohne Karte, Ticket oder Lageplan.",
+     "bisher": {
+      "Grand Beau-Rivage": "Abschied: Hausfoto mit heller Karte, Willkommenstext, Buchungsleiste, Wegen",
+      "Carlton-Europe": "«Lassen Sie die Seele baumeln.» Karte mit Lageplan und nachtblauem Sockel",
+      "Zurbriggen Monte-Moro": "Haus im Winter mit zweiter Buchungsleiste und Anreise-Platte",
+      "Zurbriggen Zermatt": "Lage mit heller Tafel über dem Bild"
+     },
+     "ueberleitung": "Unten die Adresse, die Familie, das Zeichen."
+    },
+    {
+     "teil": "fuss",
+     "titel": "Schlössli Wirtschaft · by Christian Kuchler",
+     "satz": "Seestrasse 50, 8598 Bottighofen · +41 71 688 90 92 · kontakt@schloessli-bottighofen.ch · Instagram @schloessli_bottighofen.",
+     "bilder": [],
+     "baustein": "Fuss mit Familienzeile",
+     "quelle": "fundus",
+     "skizze": "Dunkel mit der Punkt-Tapete, die Zeiger als Zeichen, Wortmarke, Adresse, Zeiten, Rechtstexte. Eine einzige Zeile zur Familie: «Die Schwester in Wigoltingen: Taverne zum Schäfli» mit Link, wie das Haus es heute auf «Kontakt» hält.",
+     "bewegung": "Ruhig.",
+     "flaeche": "dunkel",
+     "einfall": "Die Familie ist eine Zeile, keine Kartenreihe; das Schäfli bleibt eigenständig.",
+     "komposition": "Fuss nach Fundus, Familie als Satz mit Link.",
+     "moment": "Die Wortmarke baut sich einmal auf; sonst ruhig.",
+     "unterschied": "Keine Karten der Häuser; ein Satz zur Schwester.",
+     "bisher": {
+      "Grand Beau-Rivage": "Kontaktkarte, Newsletter, Band «Zwei Häuser am Wasser» mit Rivage und Seiler, vier Spalten mit Logo in der Mitte (Werdegang)",
+      "Carlton-Europe": "«Hotels · Restaurants · More», Carlton als Breitbild, darunter die drei Schwesterhäuser (Werdegang)",
+      "Waldhotel Doldenhorn": "Goldene Doppellinie, Leitsatz, vier Spalten, Doldenhorn gross und drei Karten der Schwesterhäuser (Werdegang)",
+      "Zurbriggen Wellness": "Fuss der Hotelfamilie mit Tapete, Kontaktfeld und Karten der Häuser"
+     },
+     "ueberleitung": null
+    }
+   ]
+  },
+  {
+   "seite": "karte.html",
+   "titel": "Die Karte",
+   "szenen": [
+    {
+     "teil": "kopf",
+     "satz": "Seitenkopf mit dem Fischgericht, Titel auf der Linie.",
+     "bilder": [
+      "_quelle/website/bilder/30467d_Schloessli_August2025-14-7.jpeg"
+     ]
+    },
+    {
+     "teil": "laender",
+     "satz": "Die ganze Speisekarte nach den vier Ländern, aus La Carte, mit Allergenen wie im PDF; das PDF zum Drucken bleibt.",
+     "bilder": []
+    },
+    {
+     "teil": "mittag",
+     "satz": "Lunch-Menü der Woche, drei Gänge, 35 Franken; wechselt wöchentlich in La Carte.",
+     "bilder": [
+      "_quelle/website/bilder/05cfd1_Schloessli_August2025-5-2.jpeg"
+     ]
+    },
+    {
+     "teil": "laestermeile",
+     "satz": "Karte der Lästermeile: Tapas durchgehend, «Zur Stärkung & Süsses».",
+     "bilder": [
+      "_quelle/website/bilder/a005f3_2026-05-22_193805_Schl_C3_B6ssli_SM.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "seite": "weinkarte.html",
+   "titel": "Weinkarte",
+   "szenen": [
+    {
+     "teil": "kopf",
+     "satz": "Seitenkopf mit dem Weinregal.",
+     "bilder": [
+      "_quelle/website/bilder/8e85ca__DSC5833_1.JPG"
+     ]
+    },
+    {
+     "teil": "karte",
+     "satz": "Die 26 Seiten der Weinkarte (Stand 14.10.2026) als Seite zum Blättern nach Gruppen, Schaumwein bis zur 9-Liter-Flasche; Fassung aus La Carte.",
+     "bilder": []
+    }
+   ]
+  },
+  {
+   "seite": "feiern.html",
+   "titel": "Banketts & Gruppen",
+   "szenen": [
+    {
+     "teil": "kopf",
+     "satz": "Seitenkopf mit dem Tisch von oben (Anguria).",
+     "bilder": [
+      "_quelle/website/bilder/7f6b93_Anguria.jpg"
+     ]
+    },
+    {
+     "teil": "etagen",
+     "satz": "Die zwei Etagen je bis zu 26 Personen, wie Zimmer gezeigt, sobald Fotos da sind (offen).",
+     "bilder": []
+    },
+    {
+     "teil": "menues",
+     "satz": "Bankettmenüs Frühling, Sommer, Herbst; «Aus den Menüs können 3-5 Gerichte ausgewählt werden».",
+     "bilder": []
+    },
+    {
+     "teil": "anfrage",
+     "satz": "Anfrage im Fenster mit den Feldern des Hauses, nie das Mailprogramm.",
+     "bilder": []
+    }
+   ]
+  },
+  {
+   "seite": "anlaesse.html",
+   "titel": "Events & Termine",
+   "szenen": [
+    {
+     "teil": "naechster",
+     "satz": "Der nächste Termin gross: Excellence Gourmetkreuzfahrt 13.–15.11.2026, das Team geschlossen an Bord.",
+     "bilder": []
+    },
+    {
+     "teil": "rueckblick",
+     "satz": "Vergangene Anlässe als Rückblick: 4-Hands-Lunch mit Patrick Stier, Ehemaligen Lunch, Seenachtfest; Kitchen Party mit Link ins Schäfli.",
+     "bilder": []
+    }
+   ]
+  },
+  {
+   "seite": "team.html",
+   "titel": "Über uns",
+   "szenen": [
+    {
+     "teil": "kopf",
+     "satz": "Seitenkopf mit dem ganzen Team.",
+     "bilder": [
+      "_quelle/website/bilder/d51216_2_-_FHF_2646.jpg"
+     ]
+    },
+    {
+     "teil": "menschen",
+     "satz": "Monika Huber, Jonas Volpert, Lukas Siebel mit Porträt; Marco Reisinger und Ole Sass ohne Porträt (offen).",
+     "bilder": [
+      "_quelle/website/bilder/c39c8a_5_-_FHF_2667.jpg",
+      "_quelle/website/bilder/dfee6f_11_-_FHF_2706.jpg",
+      "_quelle/website/bilder/5c9a30_13_-_FHF_2729.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "seite": "kontakt.html",
+   "titel": "Kontakt & Öffnungszeiten",
+   "szenen": [
+    {
+     "teil": "zeiten",
+     "satz": "Zeiten, Ruhetage, Ferien aus La Maison.",
+     "bilder": []
+    },
+    {
+     "teil": "anreise",
+     "satz": "Anfahrt im Wortlaut des Hauses (Kreisverkehr beim Bären, Seestrasse, Bahnübergang, Parkplatz), Bahnhof Bottighofen, Karte.",
+     "bilder": []
+    },
+    {
+     "teil": "reservation",
+     "satz": "Reservation über gastronovi im Stil des Hauses, ohne Weg ins alte Design.",
+     "bilder": []
+    }
+   ]
+  },
+  {
+   "seite": "gutschein.html",
+   "titel": "Gutschein",
+   "szenen": [
+    {
+     "teil": "gutschein",
+     "satz": "Betrag wählen, Angaben wie im heutigen Formular, Bestätigung im Fenster; Bezahlung online ist eine Idee für später (offen).",
+     "bilder": []
+    }
+   ]
+  },
+  {
+   "seite": "impressum.html · datenschutz.html · agb.html",
+   "titel": "Rechtstexte",
+   "szenen": [
+    {
+     "teil": "wortlaut",
+     "satz": "Im Wortlaut des Hauses; Datenschutz nennt heute Squarespace und gastronovi nicht (Befund, zu klären).",
+     "bilder": []
+    }
+   ]
+  }
+ ],
+ "gestrichen": [
+  {
+   "was": "Ein Tag am Hafen vom Mittag bis zum Abendrot als Faden",
+   "grund": "Steht schon beim Seiler au Lac («Ein Tag am See», Sonnenlauf am Rand) und beim Rivage («ein Tag im Haus»). Hier bleibt der Gast an einem Platz."
+  },
+  {
+   "was": "Spaziergänger und Boote als seitwärts laufendes Band an der Lästermeile",
+   "grund": "Seitwärts laufende Bänder sind abgelehnt (Tasty-Sprache, Teil E)."
+  },
+  {
+   "was": "Die Zeiger des Logos als Uhr, die die Tageszeit zeigt",
+   "grund": "Uhr als Hauptelement abgelehnt; was die Zeiger meinen, ist offen und wird nicht gedeutet."
+  },
+  {
+   "was": "Das Schild «Lästermeile» als gebauter Wegweiser",
+   "grund": "Den Wegweiser trägt das Wellnesshotel Zurbriggen. Hier bleibt das Schild ein Foto."
+  },
+  {
+   "was": "Speisekarte als Blatt Papier oder Mappe",
+   "grund": "Monte-Moro (Rösti-Blatt) und Wellness (Menümappe) haben das."
+  },
+  {
+   "was": "Geschichte als Jahreslinie 1676 bis 2025",
+   "grund": "Linien mit Jahreszahlen stehen beim Wellnesshotel und beim Monte-Moro; das Haus ist zudem nicht das Schlössli selbst."
+  },
+  {
+   "was": "Zeichnungen und Postkarten aus der Gemeindeschrift 1994 als Bilder",
+   "grund": "Rechte beim Herausgeber, nur zur Anschauung (Material-Übersicht)."
+  },
+  {
+   "was": "Der Horizont als feststehende Linie über dem ganzen Bildschirm",
+   "grund": "Feste Elemente über bewegtem Inhalt widersprechen Regel 55d; die Linie gehört je Kapitel zu den Bildern."
+  },
+  {
+   "was": "Noten der Portale als eigener Teil (Google 4,2 bei 85)",
+   "grund": "Die Auszeichnungen tragen mehr; der TripAdvisor-Eintrag ist ungeklärt."
+  },
+  {
+   "was": "Das GaultMillau-Bild der Terrasse",
+   "grund": "Fast dasselbe Motiv wie das Startbild; ähnliche Bilder stehen nie nah beieinander."
+  },
+  {
+   "was": "Schwäne und Hafen aus Instagram",
+   "grund": "Nur 640 px, für grosse Flächen zu klein."
+  },
+  {
+   "was": "Karten der Häuser im Fuss",
+   "grund": "Steht so bei der Zurbriggen-Familie; das Schäfli bekommt eine Zeile."
+  },
+  {
+   "was": "Eigene Seite «Impressionen»",
+   "grund": "Die Bilder gehören in die Startseite und die Unterseiten; heute steht die Seite nur in der Sitemap."
+  }
+ ],
+ "offen": [
+  {
+   "punkt": "Kein Foto des Hauses von aussen mit Namen; der Auftakt nimmt deshalb den Blick vom Stuhl",
+   "wo": "_quelle/Material-Übersicht.md (Lücken), Prompt Abschnitt 4"
+  },
+  {
+   "punkt": "Keine Fotos der zwei Bankett-Etagen",
+   "wo": "_quelle/website/bilder, Seite «Karten»"
+  },
+  {
+   "punkt": "Bar-Foto b49b5b nur 900 px, Regal de97ff 1920 px; Squarespace liefert höchstens 2500 px, Originale bis 8256 px liegen beim Haus",
+   "wo": "_quelle/website/bilder, _kette/02-spaeher/befund.md"
+  },
+  {
+   "punkt": "Welche Gerichte die Fotos vom August 2025 zeigen und ob sie auf der Karte vom 30.09.2026 stehen; ausser Tortelloni tragen sie keine Gerichtsnamen",
+   "wo": "_quelle/website/bilder (Dateinamen), pdf-text/Speisekarte-Oktober.txt"
+  },
+  {
+   "punkt": "Patissière Theresa Hermann: kein Foto, nicht auf «Über uns»; Marco Reisinger und Ole Sass ohne Porträt",
+   "wo": "_quelle/website/text/uber-uns.md, presse/gaultmillau-zwei-koeniginnen.md"
+  },
+  {
+   "punkt": "Bildrechte und Fotografen der Hausfotos; Urheberrechte laut Impressum bei der Taverne zum Schäfli AG; zwei Bilder von Schweiz Tourismus",
+   "wo": "_quelle/fotografen-aus-metadaten.json, website/text/impressum.md, extern/myswitzerland/herkunft.json"
+  },
+  {
+   "punkt": "Besen-Geschichte: Wortlaut aus der Texterkennung, am PDF prüfen; Zeitpunkt «Ende 17. Jahrhundert», 1699 Revers-Brief",
+   "wo": "_quelle/presse/pdf-text/…_OCR.txt, PDF-Seiten 110–111"
+  },
+  {
+   "punkt": "Bankettmenüs vom 29.04.2025: ob Preise und Gerichte noch gelten",
+   "wo": "_quelle/website/pdf-text/Bankettmenuvorschlage.txt"
+  },
+  {
+   "punkt": "Sätze der zwei Fenster und Kapiteltitel «Vier Länder auf einer Karte», «Bis 23 Uhr unter der Platane», «Ein Besen statt eines Schilds» sind vom Konzepter, nicht vom Haus",
+   "wo": "konzept.json"
+  },
+  {
+   "punkt": "Horizont-Höhe je Foto nur am Bild abgelesen (Startbild rund 30 %, Glas 50 %, Abend 52 %, Platanen 45 %), beim Bau messen",
+   "wo": "_bau/inhalt.py"
+  },
+  {
+   "punkt": "Bildmaterial reicht für rund 18 bis 20 Bildschirme, nicht 24 wie beim Rivage",
+   "wo": "_quelle/Material-Übersicht.md (33 Bilder der Seite, davon 8 Logos und Bänder)"
+  },
+  {
+   "punkt": "Gutschein mit Bezahlung: Anbieter und Weg offen",
+   "wo": "_kette/04-analyst/potential.json, Befund 05"
+  },
+  {
+   "punkt": "Angaben zu den bisherigen Häusern aus UI-Fundus, Werdegang der Abschnitte und den Zurbriggen-Konzepten; Seiten nicht neu aufgenommen, Entwurfs-Maschine nicht gezogen",
+   "wo": "_UI-Fundus/bereiche.py, Tasty-Sprache — Werdegang der Abschnitte.md"
+  },
+  {
+   "punkt": "Familie-Machart: Das Schäfli hat noch keine abgenommenen Seiten, deshalb keine Machart übernommen",
+   "wo": "Taverne zum Schäfli Wigoltingen/_kette/06-konzepter (leer)"
+  },
+  {
+   "punkt": "Erster Durchgang ohne Blender und ohne Werkbank-Kit; Board baut auf dem bestätigten Markenbuch (Schrift, Farbwelt A, Tapete)",
+   "wo": "Auftrag 19.10.2026"
+  },
+  {
+   "punkt": "Nutzungsanzeige vorher und nachher nicht ablesbar",
+   "wo": "Nutzungsanzeige 19.10.2026"
+  }
+ ],
+ "familie_machart": null,
+ "familie_hinweis": "Taverne zum Schäfli Wigoltingen gehört zur Familie, hat aber noch keine abgenommenen Seiten; nichts übernommen, nichts wiederholt.",
+ "bisherige_haeuser": {
+  "Grand Beau-Rivage": "http://localhost:8940/",
+  "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/",
+  "Hotel Seiler au Lac": "http://localhost:8921/",
+  "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/",
+  "Landgasthof Ruedihus": "https://landgasthof-ruedihus-entwurf.vercel.app/",
+  "Berghotel Gasterntal": "https://berghotel-gasterntal-entwurf.vercel.app/",
+  "Salt & Silver": "https://salt-and-silver-studie.vercel.app/",
+  "Familie Maeder": "https://familie-maeder-startseite.vercel.app/",
+  "Castell Son Claret": "http://127.0.0.1:8923/",
+  "Zurbriggen Monte-Moro": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/06-konzepter/konzept.html",
+  "Zurbriggen Zermatt": "http://127.0.0.1:8978/haus/Zurbriggen%20Suitenhotel%20Zermatt/_kette/06-konzepter/konzept.html",
+  "Zurbriggen Wellness": "http://127.0.0.1:8978/haus/Zurbriggen%20Wellnesshotel%20Saas-Almagell/_kette/06-konzepter/konzept.html",
+  "Taverne zum Schäfli": "http://127.0.0.1:8978/haus/Taverne%20zum%20Sch%C3%A4fli%20Wigoltingen/_kette/05-markenbauer/marke/markenbuch.html"
+ },
+ "stand": "19.10.2026, erster Durchgang ohne Blender"
+}

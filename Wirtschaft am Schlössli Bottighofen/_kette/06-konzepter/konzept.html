@@ -1,0 +1,515 @@
+<!doctype html><html lang="de-CH"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Konzept · Wirtschaft am Schlössli</title><meta name="description" content="Konzept-Board Station 06: Geschichte, Drehbuch und Szenen der neuen Startseite."><link rel="icon" href="../05-markenbauer/marke/zeichen/zeiger.svg"><style>
+@font-face{font-family:'Open Sans';src:url(../05-markenbauer/marke/schriften/OpenSans-var.woff2) format('woff2');font-weight:300 800;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url(../05-markenbauer/marke/schriften/InstrumentSans-normal-400_600.woff2) format('woff2');font-weight:400 600;font-display:swap}
+@font-face{font-family:'DM Mono';src:url(../05-markenbauer/marke/schriften/DMMono-normal-400.woff2) format('woff2');font-weight:400;font-display:swap}
+:root{--nacht:#062531;--tief:#0A3A4C;--mittel:#116788;--kalk:#E7F0F3;--kalk2:#D0E2E7;--ak:#A2C6CF;--ak-h:#C5DCE1;--ak-t:#0F5B78;--tinte:#041B23;--signal:#FD9964;--titel-h:#0A3E52;
+ --titel:'Open Sans',Arial,sans-serif;--lauf:'Instrument Sans',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,Menlo,monospace;--rand:clamp(16px,5vw,64px);--e1:cubic-bezier(.16,1,.3,1);--rund:clamp(22px,2.6vw,34px)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--kalk);color:var(--tinte);font:400 16.5px/1.62 var(--lauf);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.innen{max-width:1240px;margin:0 auto;padding:0 var(--rand)}
+.mono{font-family:var(--mono);font-size:11.5px;letter-spacing:.17em;text-transform:uppercase}
+.dunkel{background-color:var(--nacht);background-image:url(../05-markenbauer/marke/tapete-a-dunkel.svg);background-size:168px;color:#E9F0F2}
+.hell{background-color:var(--kalk);background-image:url(../05-markenbauer/marke/tapete-a-hell.svg);background-size:168px}
+.matt{background:var(--kalk2)}
+.geteilt{background:linear-gradient(90deg,var(--nacht) 0 50%,var(--kalk) 50% 100%)}
+.szene{position:relative;border-radius:var(--rund) var(--rund) 0 0;margin-top:calc(var(--rund)*-1);padding:clamp(64px,8vw,112px) 0 clamp(72px,8vw,112px)}
+.geteilt .skopf,.geteilt .drei,.geteilt .steck,.geteilt .vergleich,.geteilt .skizze{background:var(--kalk);color:var(--tinte);border-radius:20px;padding:22px 24px}
+.geteilt .skopf{background:transparent;color:inherit;padding:0}
+.geteilt .skopf h2,.geteilt .skopf p{color:#E9F0F2;max-width:46%}
+/* Kopf */
+.kopf-board{padding:clamp(80px,11vw,150px) 0 clamp(110px,12vw,170px);text-align:center}
+.kopf-board .z{width:46px;height:auto;color:var(--ak);margin:0 auto 22px;display:block}
+.kopf-board .kz{color:var(--ak-h)}
+.kopf-board h1{font:400 clamp(2.1rem,6vw,5rem)/1.08 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:18px 0 28px;color:#F4F8F9}
+.geschichte{font:300 clamp(1.25rem,2.4vw,1.9rem)/1.4 var(--titel);max-width:34ch;margin:0 auto;color:#F4F8F9;text-wrap:balance}
+.geschichte2{max-width:64ch;margin:26px auto 0;opacity:.82}
+/* Szenen-Kopf */
+.skopf{margin-bottom:clamp(28px,4vw,48px)}
+.skopf h2{font:400 clamp(1.5rem,3.2vw,2.6rem)/1.16 var(--titel);text-transform:uppercase;letter-spacing:.14em;margin:0;color:var(--titel-h);max-width:26ch}
+.dunkel .skopf h2{color:#F4F8F9}
+.ssatz{max-width:70ch;margin:14px 0 0;opacity:.86}
+.schlitz{overflow:hidden}.schlitz>span{display:inline-block}
+.js .schlitz[data-a]>span{transform:translateY(108%);transition:transform 1.3s var(--e1)}
+.js .schlitz[data-a].da>span{transform:none}
+/* Bühne */
+.buehne-hulle{container-type:inline-size;margin:0 0 clamp(30px,4vw,52px)}
+.buehne{position:relative;height:calc(var(--H)*1cqw)}
+.reihe{position:absolute;inset:0;display:flex;gap:2.2cqw;justify-content:center}
+.buehne--ein .reihe{justify-content:stretch}
+.fig{margin:0;width:calc(var(--w)*1cqw);flex:none;position:relative;top:calc(var(--top)*1cqw)}
+.fig .rahmen{overflow:hidden;border-radius:14px;aspect-ratio:1/var(--r);box-shadow:0 30px 50px -34px rgba(4,27,35,.55)}
+.fig img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 2.6s var(--e1)}
+.fig.da img{transform:none}
+.fig figcaption{margin-top:12px;text-align:center}
+.js .fig[data-a]{transform:translateY(64px);transition:transform 1.5s var(--e1)}
+.js .fig[data-a].da{transform:none}
+.linie{position:absolute;left:0;right:0;top:calc(var(--L)*1cqw);height:1.5px;background:var(--ak-t);z-index:2;transform-origin:0 50%;transition:transform 1.6s var(--e1)}
+.dunkel .linie{background:var(--ak)}
+.js .linie[data-l]{transform:scaleX(0)}.js .linie[data-l].da{transform:none}
+.boden{position:absolute;left:0;right:0;top:calc(var(--L)*1cqw);height:5cqw;z-index:2;overflow:hidden}
+.boden img{width:100%;height:100%;object-fit:cover}
+.btitel{position:absolute;bottom:calc((var(--H) - var(--L))*1cqw + 10px);margin:0;z-index:3;font:400 clamp(1rem,2.6cqw,2.4rem)/1.15 var(--titel);letter-spacing:.16em;color:var(--titel-h);max-width:calc(var(--frei)*1cqw)}
+.dunkel .btitel{color:#F4F8F9}
+.btitel--rechts{right:0;text-align:right}.btitel--links{left:0}
+.btitel--innen{left:4cqw;color:#fff;max-width:70cqw;font-size:clamp(1.2rem,4.4cqw,4rem);text-shadow:0 2px 30px rgba(4,27,35,.55)}
+.geteilt .btitel{color:var(--titel-h)}
+.buehne--text{height:auto;padding-top:60px}
+.buehne--text .linie{top:40px}
+.fussnote{font:300 clamp(1.3rem,3vw,2.4rem)/1.3 var(--titel);max-width:30ch;margin:0;color:var(--titel-h)}
+.dunkel .fussnote{color:#F4F8F9}
+.etage{position:absolute;right:0;top:calc(var(--L)*1cqw - 5.2cqw);margin:0;font:300 4.6cqw/1 var(--titel);color:var(--ak-t);z-index:3}
+.dunkel .etage{color:var(--ak)}
+.linie--zwei{opacity:1}
+.wahl{position:absolute;left:0;top:calc(var(--L)*1cqw);display:flex;gap:12px;flex-wrap:wrap;z-index:3}
+/* Fenster */
+.fenster{position:relative;border-radius:22px;overflow:hidden;margin:0 0 clamp(30px,4vw,52px);aspect-ratio:21/9}
+.fenster img{width:100%;height:100%;object-fit:cover}
+.fsatz{position:absolute;inset:auto 0 0 0;margin:0;padding:60px 6% 7%;text-align:center;font:400 clamp(1.1rem,2.8vw,2.3rem)/1.2 var(--titel);letter-spacing:.12em;text-transform:uppercase;color:#fff;
+ background:radial-gradient(ellipse at 50% 90%,rgba(4,27,35,.55),rgba(4,27,35,0) 70%)}
+.js .fenster[data-a]{transform:translateY(60px);transition:transform 1.5s var(--e1)}.js .fenster[data-a].da{transform:none}
+/* Drei Fragen, Steckbrief, Vergleich */
+.drei{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,32px);margin-bottom:28px}
+.frage{background:rgba(255,255,255,.55);border-radius:20px;padding:22px 24px;box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 24px 40px -34px rgba(4,27,35,.5)}
+.dunkel .frage{background:rgba(255,255,255,.06);box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.js .frage[data-a]{transform:translateY(34px);transition:transform 1.4s var(--e1)}.js .frage[data-a].da{transform:none}
+h4{font:400 11px/1.3 var(--mono);letter-spacing:.17em;text-transform:uppercase;margin:0 0 8px;color:var(--ak-t)}
+.dunkel h4{color:var(--ak)}
+.frage p,.steck p,.vergleich p{margin:0}
+.skizze{margin:0 0 28px;max-width:86ch}
+.steck{display:grid;grid-template-columns:2fr 2fr 1.3fr 1fr 2fr;gap:22px;padding:22px 0;border-top:1px solid color-mix(in srgb,currentColor 18%,transparent);border-bottom:1px solid color-mix(in srgb,currentColor 18%,transparent);margin-bottom:28px}
+.bs{font-weight:500}
+.quelle{display:inline-block;font:400 10.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:12px;margin-left:6px;vertical-align:2px}
+.q-neu{background:var(--signal);color:#2B1206}.q-fundus{background:var(--ak);color:#0B2530}
+.chip{display:inline-block;width:18px;height:18px;border-radius:6px;vertical-align:-4px;margin-right:8px;border:1px solid rgba(0,0,0,.15)}
+.chip--dunkel{background:var(--nacht)}.chip--hell{background:var(--kalk)}.chip--matt{background:var(--kalk2)}.chip--geteilt{background:linear-gradient(90deg,var(--nacht) 50%,var(--kalk) 50%)}
+.bilder ul{margin:0;padding:0;list-style:none;font:400 11.5px/1.6 var(--mono);word-break:break-all;opacity:.8}
+.vergleich{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(18px,3vw,40px)}
+.dieses p{font:300 1.2rem/1.45 var(--titel)}
+.bisher ul{margin:0;padding:0;list-style:none}
+.bisher li{display:grid;grid-template-columns:minmax(150px,200px) 1fr;gap:14px;padding:9px 0;border-bottom:1px solid color-mix(in srgb,currentColor 12%,transparent)}
+.bisher .haus a{text-decoration:none;border-bottom:1px solid var(--ak);font-weight:500}
+/* Überleitung */
+.ueber{max-width:1240px;margin:clamp(40px,5vw,70px) auto 0;padding:0 var(--rand);position:relative}
+.ulinie{height:1.5px;background:var(--signal);width:42px;margin-bottom:12px}
+.ueber p{margin:0;font:300 1.15rem/1.4 var(--titel);max-width:52ch}
+/* Ideen und Inhalt */
+.ideen{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,32px);margin-top:10px}
+.idee{background:var(--nacht);color:#E9F0F2;border-radius:22px;padding:28px 30px;box-shadow:0 30px 50px -34px rgba(4,27,35,.6)}
+.idee .mono{color:var(--ak)}
+.idee h3{font:400 1.5rem/1.2 var(--titel);text-transform:uppercase;letter-spacing:.12em;margin:8px 0 12px}
+.idee p{margin:0}
+.js .idee[data-a]{transform:translateY(40px);transition:transform 1.4s var(--e1)}.js .idee[data-a].da{transform:none}
+.inhalt{margin-top:clamp(36px,5vw,60px);display:flex;flex-wrap:wrap;gap:10px 22px;align-items:baseline}
+.inhalt .mono{width:100%;color:var(--ak-t);margin:0 0 6px}
+.inhalt a{text-decoration:none;border-bottom:1px solid var(--ak-t);padding-bottom:2px}
+/* Unterseiten */
+.useiten{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2.4vw,30px)}
+.useite{background:var(--kalk);border-radius:20px;padding:24px 26px;box-shadow:0 26px 44px -34px rgba(4,27,35,.5)}
+.useite h3{font:400 1.25rem/1.2 var(--titel);text-transform:uppercase;letter-spacing:.12em;margin:0 0 4px;color:var(--titel-h)}
+.useite>.mono{color:var(--ak-t);margin:0 0 14px}
+.useite ul{list-style:none;margin:0;padding:0}
+.useite li{display:grid;grid-template-columns:96px 1fr;gap:6px 14px;padding:10px 0;border-top:1px solid rgba(4,27,35,.1)}
+.useite li img{grid-column:2;width:120px;height:80px;object-fit:cover;border-radius:10px;display:inline-block;margin:4px 8px 0 0}
+.useite li .mono{font-size:10.5px;color:var(--ak-t)}
+.js .useite[data-a]{transform:translateY(40px);transition:transform 1.4s var(--e1)}.js .useite[data-a].da{transform:none}
+.zliste{list-style:none;margin:0;padding:0;columns:2;column-gap:clamp(20px,4vw,56px)}
+.zliste li{break-inside:avoid;padding:12px 0;border-top:1px solid color-mix(in srgb,currentColor 16%,transparent)}
+.zliste b{display:block;font-weight:500;margin-bottom:2px}
+.knopf{position:relative;display:inline-flex;align-items:center;gap:16px;height:50px;padding:0 5px 0 22px;border-radius:25px;overflow:hidden;
+ font:400 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#0B2530;
+ background:linear-gradient(180deg,color-mix(in srgb,var(--ak) 55%,#fff),var(--ak) 58%,color-mix(in srgb,var(--ak) 80%,#000));
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -2px 0 rgba(0,0,0,.18),0 20px 30px -20px rgba(0,0,0,.6)}
+.knopf .kn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,var(--tief),var(--nacht));color:var(--ak-h)}
+.knopf .pf{width:15px;height:10px;stroke:currentColor;fill:none;stroke-width:1.3}
+.knopf--dunkel{color:#F2F5F5;background:linear-gradient(180deg,var(--mittel),var(--tief) 60%,var(--nacht))}
+.knopf--dunkel .kn{background:linear-gradient(180deg,var(--ak-h),var(--ak));color:#0B2530}
+.fuss{background:var(--nacht);color:#C9D6DA;padding:60px 0 70px;text-align:center;border-radius:var(--rund) var(--rund) 0 0;margin-top:calc(var(--rund)*-1);position:relative}
+.fuss .z{width:30px;color:var(--ak);margin:0 auto 14px;display:block;height:auto}
+/* Handy */
+@media (max-width:760px){
+ .drei,.vergleich,.ideen,.useiten{grid-template-columns:1fr}
+ .steck{grid-template-columns:1fr 1fr}
+ .bisher li{grid-template-columns:1fr;gap:2px}
+ .zliste{columns:1}
+ .geteilt{background:var(--nacht)}
+ .geteilt .skopf h2,.geteilt .skopf p{max-width:none}
+ .buehne{height:auto}
+ .reihe{position:static;flex-direction:column;gap:22px}
+ .fig{width:100%;top:0}
+ .fig .rahmen{max-height:70vh}
+ .linie{display:none}
+ .boden{position:static;height:44px;border-radius:8px;margin-top:22px}
+ .btitel,.btitel--innen{position:static;max-width:none;font-size:1.3rem;margin:18px 0 0;text-shadow:none;color:inherit;text-align:left}
+ .etage,.linie--zwei{display:none}
+ .wahl{position:static;margin-top:16px}
+ .buehne--text .linie{display:block;top:20px}
+ .buehne--text{padding-top:40px}
+ .fenster{aspect-ratio:4/5}
+ .useite li{grid-template-columns:1fr}
+ .useite li img{grid-column:1}
+}
+@media (prefers-reduced-motion:reduce){.js [data-a],.js [data-a]>span,.js .linie[data-l],.fig img{transform:none!important;transition:none!important}}
+</style></head><body>
+<header class="kopf-board dunkel">
+ <div class="innen">
+  <svg class="z" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="630 16 718 1186" fill="currentColor"><g transform="translate(0.000000,1563.000000) scale(0.100000,-0.100000)"><path d="M8188 14993 c-75 -186 -283 -705 -463 -1153 -180 -448 -343 -853 -362 -900 l-34 -85 39 -95 c22 -52 38 -98 35 -102 -2 -5 -20 -8 -39 -8 -51 0 -314 -38 -429 -61 -55 -12 -168 -43 -252 -70 -165 -54 -213 -84 -213 -133 0 -26 39 -76 59 -76 6 0 44 13 84 29 41 16 98 36 128 45 60 17 413 53 619 62 l135 6 77 -193 c43 -107 118 -295 169 -419 92 -228 364 -902 490 -1216 l69 -172 0 -1744 0 -1744 -66 -11 c-131 -23 -236 -98 -293 -210 -84 -167 -80 -450 9 -594 16 -27 30 -53 30 -57 0 -4 -226 -233 -502 -509 l-503 -502 -64 31 c-52 26 -75 32 -130 32 -183 -1 -341 -155 -341 -334 0 -113 63 -221 161 -275 49 -27 62 -30 149 -30 106 0 153 16 226 79 111 95 144 292 68 408 -13 21 -24 43 -24 50 0 7 225 238 499 512 l500 500 38 -27 c56 -38 128 -66 189 -73 l54 -7 0 -772 c0 -834 3 -785 -48 -785 -28 0 -94 -39 -140 -83 -174 -169 -113 -466 114 -553 63 -24 187 -16 240 16 60 35 113 90 142 145 24 45 27 60 27 155 0 90 -3 111 -23 147 -47 89 -117 147 -202 169 l-45 11 -3 775 -2 775 57 6 c123 13 250 103 309 219 72 142 80 369 18 523 l-24 60 690 690 690 690 368 147 c202 81 558 225 792 319 234 94 589 237 789 318 l365 146 50 127 c28 70 53 124 57 120 3 -4 44 -119 90 -257 106 -316 141 -372 223 -351 46 11 47 38 10 219 -41 198 -74 303 -160 497 -35 80 -64 149 -64 154 0 4 165 420 366 923 201 503 364 916 361 919 -2 3 -78 -25 -168 -62 -149 -60 -1108 -446 -1239 -499 l-56 -22 -65 61 c-36 34 -87 93 -112 131 -64 98 -122 160 -319 342 -391 361 -478 432 -745 607 -514 337 -813 475 -1173 541 -74 14 -157 32 -185 41 -27 9 -55 17 -62 19 -7 2 8 51 43 137 30 73 54 138 54 145 0 6 -60 162 -134 345 -322 802 -714 1777 -778 1938 -39 96 -74 178 -77 183 -4 4 -68 -145 -143 -330z m997 -2805 c44 -16 158 -56 253 -89 96 -33 265 -102 377 -154 111 -52 276 -126 366 -165 381 -165 686 -344 885 -517 56 -48 155 -131 220 -185 65 -53 173 -151 238 -218 l119 -122 -39 -17 c-21 -10 -165 -68 -320 -130 l-281 -112 -454 -1135 -454 -1134 -699 -705 -698 -705 -50 45 c-59 56 -136 93 -224 108 l-64 11 0 1753 0 1753 34 82 c19 46 105 259 191 473 160 398 236 584 390 965 48 118 89 221 92 228 3 8 13 10 22 7 9 -4 52 -20 96 -37z m-887 -5340 c-3 -7 -25 -16 -49 -19 -24 -4 -61 -14 -82 -22 -48 -21 -40 -5 10 19 65 30 127 42 121 22z m188 -19 c23 -11 49 -28 59 -39 16 -18 15 -18 -26 2 -24 12 -68 27 -98 33 -30 6 -57 17 -59 24 -6 18 69 6 124 -20z"/></g></svg>
+
+  <p class="mono kz">Konzept-Board · Station 06 · intern · 19. Oktober 2026</p>
+  <h1 class="schlitz" data-a><span>Wirtschaft am Schlössli</span></h1>
+  <p class="geschichte">Man kommt am Hafen an, setzt sich auf einen der blauen Stühle unter den Platanen und bleibt sitzen; alles, was das Schlössli ausmacht, kommt an diesen einen Tisch, am Horizont des Sees.</p>
+  <p class="geschichte2">Die Startseite ist ein Platz, kein Weg: Man kommt am Hafen von Bottighofen an, setzt sich auf einen der blauen Stühle unter den Platanen, und alles, was die Wirtschaft am Schlössli ausmacht, kommt an diesen Tisch, die Lästermeile, die Karte in vier Ländern, Moni Hubers Küche, Jonas Volperts Keller, der Abend unter der Lichterkette. Ordnung gibt der Horizont des Sees: eine Linie über die ganze Breite, an der jedes Bild mit seinem eigenen Horizont oder seiner Tischkante anlegt, so wie man es vom Stuhl aus sieht.</p>
+ </div>
+</header>
+<section class="szene hell ideen-teil">
+ <div class="innen">
+  <header class="skopf"><h2 class="schlitz" data-a><span>Ein Horizont für alle Bilder.</span></h2>
+  <p class="ssatz">Vier Fotos des Hauses, jedes mit seinem eigenen Horizont auf derselben Linie: so ordnet sich die ganze Seite. Beim Hereinkommen legen sie an.</p></header>
+  <div class="buehne-hulle"><div class="buehne" style="--L:13.40;--H:27.60"><div class="linie" data-l style="--L:13.40"></div><div class="reihe" style="justify-content:center"><figure class="fig" data-a style="--w:24.00;--top:8.60;--r:0.6668;--f:0.300"><div class="rahmen"><img src="bilder/start.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:15.00;--top:4.40;--r:1.3332;--f:0.450"><div class="rahmen"><img src="bilder/platanen.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:13.00;--top:3.65;--r:1.5000;--f:0.500"><div class="rahmen"><img src="bilder/glas.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:15.00;--top:3.00;--r:1.3332;--f:0.520"><div class="rahmen"><img src="bilder/abend.webp" alt="" loading="lazy"></div></figure></div></div></div>
+  <div class="ideen"><div class="idee" data-a><p class="mono">Darstellung</p><h3>Ein Horizont für alle Bilder</h3><p>Aus dem Markenbuch (bestätigt 19.10.): eine feine Linie in Seehimmel läuft über die ganze Breite. Neu für die Seite: Jedes Foto wird so gesetzt, dass sein Horizont auf dieser Linie liegt, bei Tellern die Tischkante. Über der Linie liegt, was man vom Stuhl aus sieht, unter ihr, was auf dem Tisch steht. Titel sitzen mit der Grundlinie auf ihr. Kein anderes Haus ordnet seine Bilder nach dem, was in ihnen zu sehen ist.</p></div><div class="idee" data-a><p class="mono">Bewegung</p><h3>Anlegen</h3><p>Neu: Ein Bild schwebt deckend von unten herauf und kommt genau dann zur Ruhe, wenn sein Horizont die Linie erreicht, wie ein Boot an der Mole. Der Zielpunkt hängt am Bildinhalt, nicht am Rahmen. Nur transform, kein Nachfedern, zügig hinein und satt an den Platz. Die Linie selbst zieht sich nur einmal auf, im Auftakt.</p></div></div>
+  <nav class="inhalt"><p class="mono">Das Drehbuch der Startseite</p><a href="#auftakt">Wirtschaft am Schlössli</a><a href="#terrasse">Die schönste Terrasse am Bodensee.</a><a href="#fenster-hafen">Fenster: die Gaststube</a><a href="#laestermeile">Lästermeile.</a><a href="#karte">Vier Länder auf einer Karte.</a><a href="#kueche">Entdeckung des Jahres 2026.</a><a href="#keller">Jonas Volpert, Gastgeber und Sommelier.</a><a href="#fenster-abend">Fenster: der Abend</a><a href="#besen">Ein Besen statt eines Schilds.</a><a href="#feiern">Zwei Etagen, je bis zu 26 Gäste.</a><a href="#abend">Bis 23 Uhr unter der Platane.</a><a href="#fuss">Schlössli Wirtschaft · by Christian Kuchler</a></nav>
+ </div>
+</section>
+<section class="szene dunkel" id="auftakt">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Wirtschaft am Schlössli</span></h2>
+   <p class="ssatz">«Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen.» (Startseite des Hauses)</p>
+  </header>
+  <div class="buehne-hulle"><div class="buehne buehne--ein" style="--L:23.00;--H:72.68"><div class="linie" data-l style="--L:23.00"></div><div class="reihe" style="justify-content:center"><figure class="fig" data-a style="--w:100.00;--top:3.00;--r:0.6668;--f:0.300"><div class="rahmen"><img src="bilder/start.webp" alt="" loading="lazy"></div></figure></div><p class="btitel btitel--innen schlitz" data-a style="--frei:70.0"><span>WIRTSCHAFT AM SCHLÖSSLI</span></p></div></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Man sitzt vom ersten Blick an auf einem der blauen Stühle; der Horizont des Sees ist die erste Linie der Seite.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Kein Haus von aussen und kein Zeichen über dem Namen: der Blick vom Stuhl, der Name auf dem Horizont statt mittig im Bild.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Die Seite geht auf, das Foto zoomt von 1,06 auf 1, die Linie zieht sich einmal von links auf, der Name steigt aus der Linie wie aus einem Schlitz.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>Das ganze Startfoto der heutigen Seite, ein Bildschirm hoch, nicht hineingezoomt. Die Linie verlängert den Horizont des Fotos (Alpenkante, rund 30 % von oben) über die ganze Breite. Der Name in den Versalien der Wortmarke sitzt mit seiner Grundlinie auf der Linie, darunter klein «by Christian Kuchler» und die Ortszeile. Unten die Reservation als runde Platte mit Tiefe (gastronovi, Restaurant 118851), daneben «Lunch-Menü». Nichts darunter.</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Name auf dem Horizont</b> <span class="quelle q-neu">neu</span></p></div>
+   <div><h4>Bewegung</h4><p>Auftakt öffnet sich von selbst; Linie scaleX einmal; Name rollt aus der Linie; Platte schwebt von unten.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--dunkel"></i>Dunkel, Stuhlblau</p></div>
+   <div><h4>Teil</h4><p class="mono">auftakt</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>8cc68d_32_-_FHF_2573.jpg</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Einziger Auftakt ohne Gebäude und ohne Zeichen über dem Namen; der Titel steht auf dem Horizont des Fotos. Hafen am Mittag vom Tisch aus, nicht vom Wasser.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>Name gross mit Logo, Leiste mittig darunter, goldenes Laufband mit Adresse (Werdegang)</span></li><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>Gebäude-Ecke mit Turm, goldenes CE, Menüpunkte als Zeile unten im Bild (Werdegang)</span></li><li><span class="haus"><a href="http://localhost:8921/" target="_blank" rel="noopener">Hotel Seiler au Lac</a></span><span>Dunst statt Vorhang, Sonnenlauf am Rand (UI-Fundus)</span></li><li><span class="haus"><a href="https://salt-and-silver-studie.vercel.app/" target="_blank" rel="noopener">Salt &amp; Silver</a></span><span>Hafen am Abend, Satz des Hauses, Vorhang mit Zeichen (UI-Fundus)</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Suitenhotel%20Zermatt/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Zermatt</a></span><span>Foto mit rotem Pinselstrich unter dem wichtigsten Wort</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Monte-Moro</a></span><span>Fassade in der Jahreszeit, in der man bucht</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Wellnesshotel%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Wellness</a></span><span>Sterne zählen, gepinseltes Z</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Man setzt sich. Der nächste Teil beginnt am selben Horizont, einen Schritt weiter unter den Platanen.</p></div>
+</section>
+<section class="szene hell" id="terrasse">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Die schönste Terrasse am Bodensee.</span></h2>
+   <p class="ssatz">Christian Kuchler (Startseite). GaultMillau: «mit der Terrasse im Schatten prächtiger Platanen und Blick auf den Bodensee» (gaultmillau.ch, 19.10.2026). Michelin: «Schöne Terrasse».</p>
+  </header>
+  <div class="buehne-hulle"><div class="buehne" style="--L:23.40;--H:51.33"><div class="linie" data-l style="--L:23.40"></div><div class="reihe" style="justify-content:flex-start"><figure class="fig" data-a style="--w:34.00;--top:3.00;--r:1.3332;--f:0.450"><div class="rahmen"><img src="bilder/platanen.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:30.00;--top:17.37;--r:0.6701;--f:0.300"><div class="rahmen"><img src="bilder/lounge.webp" alt="" loading="lazy"></div></figure></div><p class="btitel btitel--rechts schlitz" data-a style="--frei:29.8"><span>DIE SCHÖNSTE TERRASSE AM BODENSEE</span></p></div></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Der Satz, den der Pächter selbst über sein Haus sagt, und zwei Führer, die ihm recht geben.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Begrüssung ohne Gastgeberfoto und ohne «Herzlich willkommen»: ein Zitat, das auf dem Horizont des Nachbarbilds steht.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Anlegen: das Platanenfoto steigt und setzt mit seinem Horizont auf der Linie auf; das Zitat rollt zeilenweise aus der Linie.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>Links das hohe Foto unter den Platanen, so gesetzt, dass das Wasser im Bild auf der Linie liegt. Rechts sitzt der Satz des Pächters in grossen Versalien auf derselben Linie, unter ihr sein Name und zwei Stimmen von aussen als ruhige Zeilen (GaultMillau, Michelin). Darunter quer und kleiner die Lounge mit dem Champagner, bündig mit der Textspalte.</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Das Zitat an der Linie</b> <span class="quelle q-neu">neu</span></p></div>
+   <div><h4>Bewegung</h4><p>Anlegen; Titel aus dem Schlitz; Zeilen gestaffelt.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--hell"></i>Hell mit Punkt-Tapete</p></div>
+   <div><h4>Teil</h4><p class="mono">terrasse</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>178109_IMG_1967.jpeg</li><li>01_922778687.jpg</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Der Empfang ist ein Satz des Hauses über seinen Platz, belegt von zwei Führern; kein Gastgeber-Blatt, keine Halle.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>Halle «Wer hier eintritt, soll verwöhnt werden.»</span></li><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>«Das Vintage Hotel» als Begrüssung</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Suitenhotel%20Zermatt/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Zermatt</a></span><span>Gastgeber-Blatt mit Familienfoto als 3D-Kachel</span></li><li><span class="haus"><a href="https://salt-and-silver-studie.vercel.app/" target="_blank" rel="noopener">Salt &amp; Silver</a></span><span>Willkommen mit Gründern und Dreiklang der Marke (UI-Fundus)</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Vom Platz draussen der Blick durch die Scheiben zurück ins Haus.</p></div>
+</section>
+<section class="szene dunkel" id="fenster-hafen">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Fenster: die Gaststube</span></h2>
+   <p class="ssatz">«Drinnen sitzt man genauso am Wasser.» (Satz des Konzepters, zur Freigabe)</p>
+  </header>
+  <div class="fenster" data-a><img src="bilder/gaststube.webp" alt="" loading="lazy"><p class="fsatz"><span>Drinnen sitzt man genauso am Wasser.</span></p></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Die Gaststube hat selbst Fenster zum Hafen; das erste Fenster der Seite zeigt echte Fenster.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Fenster nach Fundus (Bild steht, Ausschnitt geht auf und zu, Satz rollt), erstes von zwei.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Der Ausschnitt öffnet sich, der Satz rollt zeilenweise.</p></div>
+  </div>
+  
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Fenster</b> <span class="quelle q-fundus">aus dem Fundus</span></p></div>
+   <div><h4>Bewegung</h4><p>Fenster wie Ruedihus und Gasterntal festgelegt.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--dunkel"></i>Dunkel, Stuhlblau</p></div>
+   <div><h4>Teil</h4><p class="mono">fenster-hafen</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>50fa79__DSC5718.JPG</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Wendepunkt von draussen nach drinnen; Bild und Satz gehören nur diesem Haus.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>Fenster «Während das Kaminfeuer knistert.»</span></li><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>Fenster «Was bedeutet Vintage?»</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Monte-Moro</a></span><span>Fenster zur Sonne und zur Gondel</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Drinnen steht man an der Bar, die nach draussen führt.</p></div>
+</section>
+<section class="szene geteilt" id="laestermeile">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Lästermeile.</span></h2>
+   <p class="ssatz">«Tapas durchgehend» (Karte der Lästermeile, PDF vom 14.10.2026). Die Bar, «die von drinnen nach draussen führt» (Tagblatt, 24.04.2025).</p>
+  </header>
+  <div class="buehne-hulle"><div class="buehne buehne--geteilt" style="--L:27.00;--H:33.00"><div class="boden" style="--L:27.00"><img src="bilder/fliesen.webp" alt="" loading="lazy"></div><div class="reihe" style="justify-content:center"><figure class="fig" data-a style="--w:26.00;--top:9.67;--r:0.6667;--f:1"><div class="rahmen"><img src="bilder/bar.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:30.00;--top:7.00;--r:0.6667;--f:1"><div class="rahmen"><img src="bilder/regal.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:18.00;--top:3.00;--r:1.3336;--f:1"><div class="rahmen"><img src="bilder/schild.webp" alt="" loading="lazy"></div></figure></div></div></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Eine Bar, die durch die Wand nach draussen läuft, auf alten Zementfliesen; der Boden ist der Übergang.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Ein Teil, der hart in dunkel und hell geteilt ist und von einem echten Fliesenband zusammengehalten wird; kein anderes Haus teilt einen Abschnitt in drinnen und draussen.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Das Fliesenband liegt still, die Bilder drinnen und draussen steigen in einem Zug darauf; die Tapas-Zeilen schweben gestaffelt.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>Hier wird die Linie zum Boden: das echte Fliesenband der Bar läuft als Streifen über die ganze Breite. Die linke Hälfte ist dunkel (drinnen): die Bar mit den Fliesen und das Regal mit Blick auf den See. Die rechte Hälfte ist hell (draussen): das Schild «Lästermeile» unter den Bäumen und die Tapas wörtlich aus der Karte (Pimientos de Padrón 8, Patatine fritte 8, Croquetas 9, Kalamata Oliven 8; «Zur Stärkung &amp; Süsses»: Prato 30, Tarte flambée 20, Crespelle 20, Tarta 7, Dolce al cucchiaio 9). Die Bilder stehen auf den Fliesen.</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Die Schwelle</b> <span class="quelle q-neu">neu</span></p></div>
+   <div><h4>Bewegung</h4><p>Gruppe als Ganzes von unten; Zeilen gestaffelt; Fotos zoomen im Rahmen.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--geteilt"></i>Dunkel und hell geteilt</p></div>
+   <div><h4>Teil</h4><p class="mono">laestermeile</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>b49b5b_IMG_2226.jpeg</li><li>de97ff_IMG_2166.jpeg</li><li>a005f3_2026-05-22_193805_Schl_C3_B6ssli_SM.jpg</li><li>7c2036_IMG_2037.jpeg</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Die Bar als Durchgang von drinnen nach draussen über einem echten Fliesenband. Das Schild ist ein Foto des Hauses, kein gebauter Wegweiser.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>«Vor dem Essen und danach.» mit drei Kacheln (Bar, Tea Time, Terrasse)</span></li><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>«Zum Apéro in den Gewölbekeller.», zwei Damen gross, Wein und Kerzen überlappend</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Monte-Moro</a></span><span>Stübli als Bildgruppe 1 gross, 2 klein mit Weinkarten-Zeile</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Wellnesshotel%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Wellness</a></span><span>Gebauter Wegweiser in Schokolade und Messing</span></li><li><span class="haus"><a href="https://salt-and-silver-studie.vercel.app/" target="_blank" rel="noopener">Salt &amp; Silver</a></span><span>Bühne mit Abzügen (UI-Fundus)</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Von den Tapas an der Bar zur Karte des Hauses.</p></div>
+</section>
+<section class="szene hell" id="karte">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Vier Länder auf einer Karte.</span></h2>
+   <p class="ssatz">«Hier erwartet Sie eine kulinarische Reise in die Welt der mediterranen Küche» (Startseite). Karte vom 30.09.2026: Frankreich, Italien, Iberische Halbinsel, Klassiker.</p>
+  </header>
+  <div class="buehne-hulle"><div class="buehne" style="--L:36.00;--H:42.00"><div class="linie" data-l style="--L:36.00"></div><div class="reihe" style="justify-content:center"><figure class="fig" data-a style="--w:19.00;--top:7.50;--r:1.5000;--f:1"><div class="rahmen"><img src="bilder/thon.webp" alt="" loading="lazy"></div><figcaption class="mono">FRANKREICH</figcaption></figure><figure class="fig" data-a style="--w:22.00;--top:3.00;--r:1.5000;--f:1"><div class="rahmen"><img src="bilder/pasta.webp" alt="" loading="lazy"></div><figcaption class="mono">ITALIEN</figcaption></figure><figure class="fig" data-a style="--w:17.00;--top:10.50;--r:1.5000;--f:1"><div class="rahmen"><img src="bilder/iberia.webp" alt="" loading="lazy"></div><figcaption class="mono">IBERISCHE HALBINSEL</figcaption></figure><figure class="fig" data-a style="--w:20.00;--top:6.00;--r:1.5000;--f:1"><div class="rahmen"><img src="bilder/tortelloni.webp" alt="" loading="lazy"></div><figcaption class="mono">KLASSIKER</figcaption></figure></div></div></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Die Karte des Hauses ist nach Ländern geordnet; vom Bodensee aus liegt das Mittelmeer als Küste am Horizont.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Vier Teller in ungleicher Höhe auf einer gemeinsamen Linie, darunter die Karte als Zeilen je Land; keine Mappe, kein Blatt, kein Reiter.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Anlegen in einem Zug von links nach rechts: jeder Teller setzt mit seiner Tischkante auf der Linie auf.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>Vier Teller-Fotos stehen auf der Linie, verschieden hoch, wie eine Küste vom Wasser aus. Unter der Linie je Land der Name in Versalien und seine Gerichte wörtlich aus der Karte, Preis in DM Mono (aus La Carte, eine Quelle für Seite und PDF). Unter allen vier eine Zeile für den Mittag: «Lunch-Menü», drei Gänge, 35 Franken, mit dem Menü der Woche (PDF vom 18.10.2026: Kürbissuppe, Risi e bisi, Joghurt Panna Cotta). Die Fotos tragen keine Gerichtsnamen (siehe offen). Am Handy je Land Foto, Linie, Zeilen untereinander.</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Die Küstenlinie</b> <span class="quelle q-neu">neu</span></p></div>
+   <div><h4>Bewegung</h4><p>Anlegen gestaffelt in einem Zug; Zeilen schweben; Preise stehen still.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--hell"></i>Hell mit Punkt-Tapete</p></div>
+   <div><h4>Teil</h4><p class="mono">karte</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>fc5b3b_Schloessli_August2025-11-5.jpg</li><li>93b96d_Schloessli_August2025-12-6.jpeg</li><li>d18c6d_Schloessli_August2025-9-4.jpg</li><li>88d916_Tortelloni.jpg</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Die Karte als Küste: Länder nebeneinander an einer Linie, nicht als Erkunder, Papierblatt oder Rennverlauf.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="https://salt-and-silver-studie.vercel.app/" target="_blank" rel="noopener">Salt &amp; Silver</a></span><span>Karten-Erkunder mit Standort-Wahl, Bogen-Karten, Karte auf der Tafel (UI-Fundus)</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Monte-Moro</a></span><span>Rösti-Seite als Blatt Papier auf Nacht mit Laufzeile</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Wellnesshotel%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Wellness</a></span><span>Offene Menümappe</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Suitenhotel%20Zermatt/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Zermatt</a></span><span>Rennkarte: Gänge als Rennverlauf</span></li><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>Frühstück als Bildwand mit Tafel</span></li><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>Restaurants &amp; Bar mit Schalter Am Fluss / Am Kamin</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Wer so kocht: die Köchin und ihr Team.</p></div>
+</section>
+<section class="szene dunkel" id="kueche">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Entdeckung des Jahres 2026.</span></h2>
+   <p class="ssatz">GaultMillau über Moni Huber: «beeindruckt mit exzellentem Handwerk und klarer kulinarischer Sprache» (gaultmillau.ch, 19.10.2026).</p>
+  </header>
+  <div class="buehne-hulle"><div class="buehne" style="--L:36.00;--H:42.00"><div class="linie" data-l style="--L:36.00"></div><div class="reihe" style="justify-content:center"><figure class="fig" data-a style="--w:22.00;--top:3.00;--r:1.4998;--f:1"><div class="rahmen"><img src="bilder/moni.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:20.00;--top:11.64;--r:1.2176;--f:1"><div class="rahmen"><img src="bilder/sauce.webp" alt="" loading="lazy"></div></figure></div></div><figure class="fig fig--breit" data-a><div class="rahmen"><img src="bilder/team.webp" alt="" loading="lazy"></div></figure></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Die Auszeichnung fehlt heute auf der ganzen Seite (Analyse, Befund 01); hier ist sie der Titel und gehört der Köchin.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Porträt über der Linie, Weg und Auszeichnungen unter ihr, das Team als breiter Abschluss; keine Zahlenreihe, keine Felder, keine Medaillons.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Der Titel steigt aus der Linie, das Porträt legt an; die Zeile der Auszeichnungen steht still, nichts zählt hoch.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>Der Titel ist die Auszeichnung selbst, zwei Zeilen auf der Linie. Über der Linie rechts Moni Huber hoch im Porträt. Unter der Linie ihr Weg in einem Satz (Südtirolerin, Vila Joya bei Dieter Koschina, Sous-Chefin von Christian Kuchler im Schäfli, seit April 2025 eigene Küche am See) und die drei Auszeichnungen als ruhige Zeile: GaultMillau 15 Punkte · Falstaff 91 von 100 · Guide Michelin, «Favorit der Inspektoren». Daneben das Foto, in dem die Sauce angegossen wird. Zum Schluss das Team quer über die Breite: «junges Küchenteam … frischen Wind» (Startseite).</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Die Auszeichnung als Titel</b> <span class="quelle q-neu">neu</span></p></div>
+   <div><h4>Bewegung</h4><p>Titel aus dem Schlitz; Porträt legt an; Team schwebt als Ganzes.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--dunkel"></i>Dunkel, Stuhlblau</p></div>
+   <div><h4>Teil</h4><p class="mono">kueche</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>c39c8a_5_-_FHF_2667.jpg</li><li>02_922778688.jpg</li><li>d51216_2_-_FHF_2646.jpg</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Auszeichnungen nicht als eigener Teil am Ende, sondern als Titel des Kapitels über die Köchin.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>Auszeichnungen als vier Felder (vorher hochzählende Zahlen)</span></li><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>Grosse Zahlen für Lage, Personal, Google, die hochzählen</span></li><li><span class="haus"><a href="https://waldhotel-doldenhorn-entwurf.vercel.app/" target="_blank" rel="noopener">Waldhotel Doldenhorn</a></span><span>Auszeichnungen als Laufband unter dem Auftakt (Briefing 4.1)</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Wellnesshotel%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Wellness</a></span><span>Kugelreihe aus Messing-Medaillons</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Suitenhotel%20Zermatt/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Zermatt</a></span><span>Zieltafel mit drei grossen Zahlen</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Zum Essen der Wein: von der Küche zum Gastgeber.</p></div>
+</section>
+<section class="szene matt" id="keller">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Jonas Volpert, Gastgeber und Sommelier.</span></h2>
+   <p class="ssatz">GaultMillau: «Der Weinkeller, bei vielen neuen Lokalen das Sorgenkind, ist im ‹Schlössli› bestens bestückt.» (30.03.2025). Weinkarte mit 26 Seiten, Stand 14.10.2026.</p>
+  </header>
+  <div class="buehne-hulle"><div class="buehne" style="--L:30.00;--H:55.50"><div class="linie" data-l style="--L:30.00"></div><div class="reihe" style="justify-content:center"><figure class="fig" data-a style="--w:18.00;--top:6.02;--r:1.3320;--f:1"><div class="rahmen"><img src="bilder/wein.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:30.00;--top:7.50;--r:1.5000;--f:0.500"><div class="rahmen"><img src="bilder/glas.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:18.00;--top:3.00;--r:1.4998;--f:1"><div class="rahmen"><img src="bilder/jonas.webp" alt="" loading="lazy"></div></figure></div></div></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Ein Glas Weisswein vor dem Wasser: das Foto des Hauses, in dem Horizont und Tisch dieselbe Linie sind.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Ein grosses Bild in der Mitte, dessen Horizont die Seitenlinie fortsetzt; zwei kleinere Bilder daneben, die mit der Unterkante anlegen.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Das deutlichste Anlegen der Seite: das Glas steigt, bis der See im Bild auf der Linie liegt.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>In der Mitte gross das Weinglas vor dem See: sein Horizont liegt genau auf der Linie der Seite, so dass das Glas auf dem Bodensee zu stehen scheint. Links das Regal, rechts Jonas Volpert im Porträt, beide kleiner. Unter der Linie der Satz von GaultMillau, darunter der Knopf «Weinkarte» (eigene Seite statt 26 Seiten PDF).</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Das Glas auf dem Horizont</b> <span class="quelle q-neu">neu</span></p></div>
+   <div><h4>Bewegung</h4><p>Anlegen; Foto zoomt im Rahmen; Zeilen gestaffelt.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--matt"></i>Hell, Seehimmel</p></div>
+   <div><h4>Teil</h4><p class="mono">keller</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>9a3afc_Schloessli_August2025-1-1.jpg</li><li>8e85ca__DSC5833_1.JPG</li><li>dfee6f_11_-_FHF_2706.jpg</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Wein als ein Glas am Horizont, kein Keller mit Kerzen, keine Weinkarten-Zeile neben einer Bildgruppe.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>Gewölbekeller mit Wein und Kerzen</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Monte-Moro</a></span><span>Zwei Zeilen wie in der Weinkarte unter der Stübli-Bildgruppe</span></li><li><span class="haus"><a href="http://127.0.0.1:8923/" target="_blank" rel="noopener">Castell Son Claret</a></span><span>Eigene Weinkarte-Seite (UI-Fundus)</span></li><li><span class="haus"><a href="https://salt-and-silver-studie.vercel.app/" target="_blank" rel="noopener">Salt &amp; Silver</a></span><span>Weinliste auf der Seite jedes Hauses (UI-Fundus)</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Das Glas ist leer, der Himmel wird blau.</p></div>
+</section>
+<section class="szene dunkel" id="fenster-abend">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Fenster: der Abend</span></h2>
+   <p class="ssatz">«Wenn es Abend wird am Hafen.» (Satz des Konzepters, zur Freigabe)</p>
+  </header>
+  <div class="fenster" data-a><img src="bilder/apero.webp" alt="" loading="lazy"><p class="fsatz"><span>Wenn es Abend wird am Hafen.</span></p></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Apéro in der blauen Stunde: der Wendepunkt vom Tag zum Abend.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Fenster nach Fundus, zweites und letztes der Startseite.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Der Ausschnitt öffnet sich, der Satz rollt.</p></div>
+  </div>
+  
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Fenster</b> <span class="quelle q-fundus">aus dem Fundus</span></p></div>
+   <div><h4>Bewegung</h4><p>Fenster wie festgelegt.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--dunkel"></i>Dunkel, Stuhlblau</p></div>
+   <div><h4>Teil</h4><p class="mono">fenster-abend</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>816543_2026-05-22_205034_Schl_C3_B6ssli_SM.jpg</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Bild und Satz gehören nur diesem Haus.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>Fenster mit dem Haus im Winter, «Wer hier eintritt …»</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Suitenhotel%20Zermatt/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Zermatt</a></span><span>Fenster Balkon und Abend</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Am Abend die Geschichte, die der Ort schon kennt.</p></div>
+</section>
+<section class="szene hell" id="besen">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Ein Besen statt eines Schilds.</span></h2>
+   <p class="ssatz">Gemeindeschrift «Die Bottighofer Mühlen und das Schlössli am See», Gemeinde Bottighofen 1994, PDF-Seiten 110–111.</p>
+  </header>
+  <div class="buehne buehne--text"><div class="linie" data-l></div><p class="fussnote schlitz" data-a><span>Statt eines Wirtshausschilds hing nur ein Besen heraus.</span></p></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Die Geschichte des Ortes mit Augenzwinkern: ein Pächter am See, ein Besen statt eines Schilds, und die Sorge der Gemeinde ums Hochzeitsessen.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Nur Schrift an der Linie, auf heller Tapete; keine Jahreslinie, keine Archivbilder.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Die drei Sätze rollen nacheinander aus der Linie; sonst steht alles.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>Ein kurzer Teil ohne Bild, gesetzt wie eine Fussnote, aber gross: die Linie, darunter in der Laufschrift drei Sätze. Gleich nebenan, im Haus am See, das heute Schlössli heisst, setzte Hans Conrad Hafen Ende des 17. Jahrhunderts einen Wirt als Pächter ein, der die Schiffsleute mit Speis und Trank bewirtete. Statt eines Wirtshausschilds hing nur ein Besen heraus. Das Kloster Münsterlingen klagte, die Gemeinde fürchtete, man müsse bald im Wirtshaus Hochzeit feiern statt zu Hause, und 1699 blieb nur noch Wein aus Eigenbau. Darunter die Quelle in DM Mono. Der letzte Satz leitet zum Feiern über.</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Die Fussnote</b> <span class="quelle q-neu">neu</span></p></div>
+   <div><h4>Bewegung</h4><p>Zeilen aus dem Schlitz.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--hell"></i>Hell mit Punkt-Tapete</p></div>
+   <div><h4>Teil</h4><p class="mono">besen</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>keine Bilder</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Geschichte als Anekdote in drei Sätzen, die zum Feiern überleitet; das Haus selbst ist nicht das Schlössli, das wird gesagt.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>«Wo Legenden ihre Spuren hinterliessen.» Filmstreifen alter Aufnahmen gegeneinander</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Wellnesshotel%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Wellness</a></span><span>Wappen mit drei Jahreszahlen und Messinglinien</span></li><li><span class="haus"><a href="https://landgasthof-ruedihus-entwurf.vercel.app/" target="_blank" rel="noopener">Landgasthof Ruedihus</a></span><span>Kompass der Herkunft (UI-Fundus)</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Die Gemeinde fürchtete das Hochzeitsessen im Wirtshaus; heute feiert man hier gern.</p></div>
+</section>
+<section class="szene dunkel" id="feiern">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Zwei Etagen, je bis zu 26 Gäste.</span></h2>
+   <p class="ssatz">«Sie geben den Rahmen vor – ob Tavolata oder gesetztes Menue!» (Seite «Karten»). Bankettmenüs Frühling 175, Sommer 185, Herbst 175 (PDF vom 29.04.2025).</p>
+  </header>
+  <div class="buehne-hulle"><div class="buehne" style="--L:29.66;--H:45.66"><div class="linie" data-l style="--L:29.66"></div><div class="linie linie--zwei" data-l style="--L:16.66"></div><p class="etage" style="--L:16.66">26</p><p class="etage etage--zwei" style="--L:29.66">26</p><div class="wahl" style="--L:18.66"><span class="knopf">Tavolata<span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></span><span class="knopf knopf--dunkel">Gesetztes Menü<span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></span></div><div class="reihe" style="justify-content:center"><figure class="fig" data-a style="--w:20.00;--top:3.00;--r:1.3332;--f:1"><div class="rahmen"><img src="bilder/anguria.webp" alt="" loading="lazy"></div></figure><figure class="fig" data-a style="--w:17.00;--top:4.16;--r:1.5000;--f:1"><div class="rahmen"><img src="bilder/dessert.webp" alt="" loading="lazy"></div></figure></div></div></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Das Haus hat zwei Etagen gleicher Grösse; die eine Linie der Seite wird hier zu zweien.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Zwei Linien statt Bildreihen oder Zahlenband; die Zahl steht einmal je Etage.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Wenn der Teil den Rand berührt, legt sich die zweite Linie unter die erste; die Teller legen an.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>Die Linie doppelt sich: zwei Linien übereinander wie die zwei Etagen, auf jeder steht still «26». Zwischen den Linien die Wahl des Hauses als zwei Knöpfe: Tavolata, gesetztes Menü. Rechts zwei Teller auf der unteren Linie. Die Anfrage öffnet ein Fenster auf der Seite mit den Feldern, die das Haus heute in seiner Mail vorgibt: Datum, Uhrzeit, Personenzahl, Speisenform, Anzahl Gänge, Richt-Budget. Fotos der Etagen fehlen (offen).</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Zwei Linien</b> <span class="quelle q-neu">neu</span></p></div>
+   <div><h4>Bewegung</h4><p>Eine Linie zieht sich auf (scaleX, einmal); Anlegen; Knöpfe geben beim Drücken nach.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--dunkel"></i>Dunkel, Stuhlblau</p></div>
+   <div><h4>Teil</h4><p class="mono">feiern</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>7f6b93_Anguria.jpg</li><li>9f207d_Schloessli_August2025-18-9.jpg</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Säle ohne Bild-Bühne: die zwei Etagen als zwei Linien, die Anfrage mit den Feldern des Hauses.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>«Feiern &amp; Tagen.» mit zwei Bildreihen und grossen Zahlen (312 m², 160, 120, 6,5 m)</span></li><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>«Ihr grosser Tag.» mit Brautbildern</span></li><li><span class="haus"><a href="https://salt-and-silver-studie.vercel.app/" target="_blank" rel="noopener">Salt &amp; Silver</a></span><span>Anfrage ab zehn Personen mit Polaroids (UI-Fundus)</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Nach dem Fest bleibt der Abend am See.</p></div>
+</section>
+<section class="szene matt" id="abend">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Bis 23 Uhr unter der Platane.</span></h2>
+   <p class="ssatz">Donnerstag bis Montag 11:30 bis 23:00, Küche 11:30 bis 13:30 und 18:00 bis 20:00, die Karte der Lästermeile durchgehend; Dienstag und Mittwoch Ruhetag (Kontakt, 19.10.2026).</p>
+  </header>
+  <div class="buehne-hulle"><div class="buehne" style="--L:23.80;--H:46.00"><div class="linie" data-l style="--L:23.80"></div><div class="reihe" style="justify-content:flex-end"><figure class="fig" data-a style="--w:30.00;--top:3.00;--r:1.3332;--f:0.520"><div class="rahmen"><img src="bilder/abend.webp" alt="" loading="lazy"></div></figure></div><p class="btitel btitel--links schlitz" data-a style="--frei:66.0"><span>RESERVATION · DONNERSTAG BIS MONTAG</span></p></div></div>
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Derselbe Platz wie am Anfang, am Abend: der Faden schliesst sich am Horizont.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Ein hohes Bild, aus dessen Horizont die Linie mit Reservation und Zeiten herausläuft; nicht die Form des Auftakts.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Das Abendbild legt an; Platte und Zeilen schweben gestaffelt.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>Rechts hoch das Abendfoto unter der Platane mit der Lichterkette; sein Horizont liegt auf derselben Linie wie im Auftakt, nur das Licht ist anders. Die Linie läuft aus dem Bild nach links; auf ihr die zweite Reservation als Platte, darunter Zeiten, Ferien (aus La Maison), Seestrasse 50 mit Parkplatz und Bahnhof Bottighofen, Knopf «Gutschein». Der Gutschein öffnet ein Fenster auf der Seite.</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Der letzte Blick</b> <span class="quelle q-neu">neu</span></p></div>
+   <div><h4>Bewegung</h4><p>Anlegen; Platte von unten; Zeilen gestaffelt.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--matt"></i>Hell, Seehimmel</p></div>
+   <div><h4>Teil</h4><p class="mono">abend</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Der Schluss kehrt an den Ort des Anfangs zurück, über die gemeinsame Linie, ohne Karte, Ticket oder Lageplan.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>Abschied: Hausfoto mit heller Karte, Willkommenstext, Buchungsleiste, Wegen</span></li><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>«Lassen Sie die Seele baumeln.» Karte mit Lageplan und nachtblauem Sockel</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Monte-Moro</a></span><span>Haus im Winter mit zweiter Buchungsleiste und Anreise-Platte</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Suitenhotel%20Zermatt/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Zermatt</a></span><span>Lage mit heller Tafel über dem Bild</span></li></ul></div>
+  </div>
+ </div>
+ <div class="ueber"><div class="ulinie"></div><p>Unten die Adresse, die Familie, das Zeichen.</p></div>
+</section>
+<section class="szene dunkel" id="fuss">
+ <div class="innen">
+  <header class="skopf">
+   <h2 class="schlitz" data-a><span>Schlössli Wirtschaft · by Christian Kuchler</span></h2>
+   <p class="ssatz">Seestrasse 50, 8598 Bottighofen · +41 71 688 90 92 · kontakt@schloessli-bottighofen.ch · Instagram @schloessli_bottighofen.</p>
+  </header>
+  
+  <div class="drei">
+   <div class="frage" data-a><h4>Einfall aus dem Haus</h4><p>Die Familie ist eine Zeile, keine Kartenreihe; das Schäfli bleibt eigenständig.</p></div>
+   <div class="frage" data-a><h4>Komposition</h4><p>Fuss nach Fundus, Familie als Satz mit Link.</p></div>
+   <div class="frage" data-a><h4>Moment</h4><p>Die Wortmarke baut sich einmal auf; sonst ruhig.</p></div>
+  </div>
+  <div class="skizze"><h4>Skizze</h4><p>Dunkel mit der Punkt-Tapete, die Zeiger als Zeichen, Wortmarke, Adresse, Zeiten, Rechtstexte. Eine einzige Zeile zur Familie: «Die Schwester in Wigoltingen: Taverne zum Schäfli» mit Link, wie das Haus es heute auf «Kontakt» hält.</p></div>
+  <div class="steck">
+   <div><h4>Baustein</h4><p><b class="bs">Fuss mit Familienzeile</b> <span class="quelle q-fundus">aus dem Fundus</span></p></div>
+   <div><h4>Bewegung</h4><p>Ruhig.</p></div>
+   <div><h4>Fläche</h4><p class="fl"><i class="chip chip--dunkel"></i>Dunkel, Stuhlblau</p></div>
+   <div><h4>Teil</h4><p class="mono">fuss</p></div>
+   <div class="bilder"><h4>Bilder aus _quelle</h4><ul><li>keine Bilder</li></ul></div>
+  </div>
+  <div class="vergleich">
+   <div class="dieses"><h4>Dieses Haus</h4><p>Keine Karten der Häuser; ein Satz zur Schwester.</p></div>
+   <div class="bisher"><h4>Bisherige Häuser an dieser Stelle</h4><ul><li><span class="haus"><a href="http://localhost:8940/" target="_blank" rel="noopener">Grand Beau-Rivage</a></span><span>Kontaktkarte, Newsletter, Band «Zwei Häuser am Wasser» mit Rivage und Seiler, vier Spalten mit Logo in der Mitte (Werdegang)</span></li><li><span class="haus"><a href="https://carlton-europe-entwurf.vercel.app/" target="_blank" rel="noopener">Carlton-Europe</a></span><span>«Hotels · Restaurants · More», Carlton als Breitbild, darunter die drei Schwesterhäuser (Werdegang)</span></li><li><span class="haus"><a href="https://waldhotel-doldenhorn-entwurf.vercel.app/" target="_blank" rel="noopener">Waldhotel Doldenhorn</a></span><span>Goldene Doppellinie, Leitsatz, vier Spalten, Doldenhorn gross und drei Karten der Schwesterhäuser (Werdegang)</span></li><li><span class="haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Wellnesshotel%20Saas-Almagell/_kette/06-konzepter/konzept.html" target="_blank" rel="noopener">Zurbriggen Wellness</a></span><span>Fuss der Hotelfamilie mit Tapete, Kontaktfeld und Karten der Häuser</span></li></ul></div>
+  </div>
+ </div>
+ 
+</section>
+<section class="szene matt" id="unterseiten"><div class="innen">
+ <header class="skopf"><h2 class="schlitz" data-a><span>Unterseiten, kürzer erzählt.</span></h2>
+ <p class="ssatz">Alles, was das Haus heute hat (Seitenliste des Spähers), neu gedacht; Karten als Seiten statt PDF, Anfragen im Fenster statt im Mailprogramm, Reservation über gastronovi bleibt. Kein Klick führt ins alte Design. Jede Unterseite beginnt mit einem Seitenkopf auf der Linie.</p></header>
+ <div class="useiten"><div class="useite" data-a><h3>Die Karte</h3><p class="mono">karte.html</p><ul><li><span class="mono">kopf</span><span>Seitenkopf mit dem Fischgericht, Titel auf der Linie.</span><img src="bilder/fisch.webp" alt="" loading="lazy"></li><li><span class="mono">laender</span><span>Die ganze Speisekarte nach den vier Ländern, aus La Carte, mit Allergenen wie im PDF; das PDF zum Drucken bleibt.</span></li><li><span class="mono">mittag</span><span>Lunch-Menü der Woche, drei Gänge, 35 Franken; wechselt wöchentlich in La Carte.</span><img src="bilder/suppe.webp" alt="" loading="lazy"></li><li><span class="mono">laestermeile</span><span>Karte der Lästermeile: Tapas durchgehend, «Zur Stärkung &amp; Süsses».</span><img src="bilder/schild.webp" alt="" loading="lazy"></li></ul></div><div class="useite" data-a><h3>Weinkarte</h3><p class="mono">weinkarte.html</p><ul><li><span class="mono">kopf</span><span>Seitenkopf mit dem Weinregal.</span><img src="bilder/wein.webp" alt="" loading="lazy"></li><li><span class="mono">karte</span><span>Die 26 Seiten der Weinkarte (Stand 14.10.2026) als Seite zum Blättern nach Gruppen, Schaumwein bis zur 9-Liter-Flasche; Fassung aus La Carte.</span></li></ul></div><div class="useite" data-a><h3>Banketts &amp; Gruppen</h3><p class="mono">feiern.html</p><ul><li><span class="mono">kopf</span><span>Seitenkopf mit dem Tisch von oben (Anguria).</span><img src="bilder/anguria.webp" alt="" loading="lazy"></li><li><span class="mono">etagen</span><span>Die zwei Etagen je bis zu 26 Personen, wie Zimmer gezeigt, sobald Fotos da sind (offen).</span></li><li><span class="mono">menues</span><span>Bankettmenüs Frühling, Sommer, Herbst; «Aus den Menüs können 3-5 Gerichte ausgewählt werden».</span></li><li><span class="mono">anfrage</span><span>Anfrage im Fenster mit den Feldern des Hauses, nie das Mailprogramm.</span></li></ul></div><div class="useite" data-a><h3>Events &amp; Termine</h3><p class="mono">anlaesse.html</p><ul><li><span class="mono">naechster</span><span>Der nächste Termin gross: Excellence Gourmetkreuzfahrt 13.–15.11.2026, das Team geschlossen an Bord.</span></li><li><span class="mono">rueckblick</span><span>Vergangene Anlässe als Rückblick: 4-Hands-Lunch mit Patrick Stier, Ehemaligen Lunch, Seenachtfest; Kitchen Party mit Link ins Schäfli.</span></li></ul></div><div class="useite" data-a><h3>Über uns</h3><p class="mono">team.html</p><ul><li><span class="mono">kopf</span><span>Seitenkopf mit dem ganzen Team.</span><img src="bilder/team.webp" alt="" loading="lazy"></li><li><span class="mono">menschen</span><span>Monika Huber, Jonas Volpert, Lukas Siebel mit Porträt; Marco Reisinger und Ole Sass ohne Porträt (offen).</span><img src="bilder/moni.webp" alt="" loading="lazy"><img src="bilder/jonas.webp" alt="" loading="lazy"><img src="bilder/lukas.webp" alt="" loading="lazy"></li></ul></div><div class="useite" data-a><h3>Kontakt &amp; Öffnungszeiten</h3><p class="mono">kontakt.html</p><ul><li><span class="mono">zeiten</span><span>Zeiten, Ruhetage, Ferien aus La Maison.</span></li><li><span class="mono">anreise</span><span>Anfahrt im Wortlaut des Hauses (Kreisverkehr beim Bären, Seestrasse, Bahnübergang, Parkplatz), Bahnhof Bottighofen, Karte.</span></li><li><span class="mono">reservation</span><span>Reservation über gastronovi im Stil des Hauses, ohne Weg ins alte Design.</span></li></ul></div><div class="useite" data-a><h3>Gutschein</h3><p class="mono">gutschein.html</p><ul><li><span class="mono">gutschein</span><span>Betrag wählen, Angaben wie im heutigen Formular, Bestätigung im Fenster; Bezahlung online ist eine Idee für später (offen).</span></li></ul></div><div class="useite" data-a><h3>Rechtstexte</h3><p class="mono">impressum.html · datenschutz.html · agb.html</p><ul><li><span class="mono">wortlaut</span><span>Im Wortlaut des Hauses; Datenschutz nennt heute Squarespace und gastronovi nicht (Befund, zu klären).</span></li></ul></div></div>
+</div></section><section class="szene hell" id="gestrichen"><div class="innen">
+ <header class="skopf"><h2 class="schlitz" data-a><span>Gestrichen.</span></h2><p class="ssatz">Überlegt und verworfen, damit es kein anderer Chat wieder aufmacht.</p></header>
+ <ul class="zliste"><li><b>Ein Tag am Hafen vom Mittag bis zum Abendrot als Faden</b><span>Steht schon beim Seiler au Lac («Ein Tag am See», Sonnenlauf am Rand) und beim Rivage («ein Tag im Haus»). Hier bleibt der Gast an einem Platz.</span></li><li><b>Spaziergänger und Boote als seitwärts laufendes Band an der Lästermeile</b><span>Seitwärts laufende Bänder sind abgelehnt (Tasty-Sprache, Teil E).</span></li><li><b>Die Zeiger des Logos als Uhr, die die Tageszeit zeigt</b><span>Uhr als Hauptelement abgelehnt; was die Zeiger meinen, ist offen und wird nicht gedeutet.</span></li><li><b>Das Schild «Lästermeile» als gebauter Wegweiser</b><span>Den Wegweiser trägt das Wellnesshotel Zurbriggen. Hier bleibt das Schild ein Foto.</span></li><li><b>Speisekarte als Blatt Papier oder Mappe</b><span>Monte-Moro (Rösti-Blatt) und Wellness (Menümappe) haben das.</span></li><li><b>Geschichte als Jahreslinie 1676 bis 2025</b><span>Linien mit Jahreszahlen stehen beim Wellnesshotel und beim Monte-Moro; das Haus ist zudem nicht das Schlössli selbst.</span></li><li><b>Zeichnungen und Postkarten aus der Gemeindeschrift 1994 als Bilder</b><span>Rechte beim Herausgeber, nur zur Anschauung (Material-Übersicht).</span></li><li><b>Der Horizont als feststehende Linie über dem ganzen Bildschirm</b><span>Feste Elemente über bewegtem Inhalt widersprechen Regel 55d; die Linie gehört je Kapitel zu den Bildern.</span></li><li><b>Noten der Portale als eigener Teil (Google 4,2 bei 85)</b><span>Die Auszeichnungen tragen mehr; der TripAdvisor-Eintrag ist ungeklärt.</span></li><li><b>Das GaultMillau-Bild der Terrasse</b><span>Fast dasselbe Motiv wie das Startbild; ähnliche Bilder stehen nie nah beieinander.</span></li><li><b>Schwäne und Hafen aus Instagram</b><span>Nur 640 px, für grosse Flächen zu klein.</span></li><li><b>Karten der Häuser im Fuss</b><span>Steht so bei der Zurbriggen-Familie; das Schäfli bekommt eine Zeile.</span></li><li><b>Eigene Seite «Impressionen»</b><span>Die Bilder gehören in die Startseite und die Unterseiten; heute steht die Seite nur in der Sitemap.</span></li></ul></div></section><section class="szene matt" id="offen"><div class="innen">
+ <header class="skopf"><h2 class="schlitz" data-a><span>Offen.</span></h2><p class="ssatz">Was nicht belegt ist oder fehlt; steht auch auf der Karte unter Station 06.</p></header>
+ <ul class="zliste"><li><b>Kein Foto des Hauses von aussen mit Namen; der Auftakt nimmt deshalb den Blick vom Stuhl</b><span>_quelle/Material-Übersicht.md (Lücken), Prompt Abschnitt 4</span></li><li><b>Keine Fotos der zwei Bankett-Etagen</b><span>_quelle/website/bilder, Seite «Karten»</span></li><li><b>Bar-Foto b49b5b nur 900 px, Regal de97ff 1920 px; Squarespace liefert höchstens 2500 px, Originale bis 8256 px liegen beim Haus</b><span>_quelle/website/bilder, _kette/02-spaeher/befund.md</span></li><li><b>Welche Gerichte die Fotos vom August 2025 zeigen und ob sie auf der Karte vom 30.09.2026 stehen; ausser Tortelloni tragen sie keine Gerichtsnamen</b><span>_quelle/website/bilder (Dateinamen), pdf-text/Speisekarte-Oktober.txt</span></li><li><b>Patissière Theresa Hermann: kein Foto, nicht auf «Über uns»; Marco Reisinger und Ole Sass ohne Porträt</b><span>_quelle/website/text/uber-uns.md, presse/gaultmillau-zwei-koeniginnen.md</span></li><li><b>Bildrechte und Fotografen der Hausfotos; Urheberrechte laut Impressum bei der Taverne zum Schäfli AG; zwei Bilder von Schweiz Tourismus</b><span>_quelle/fotografen-aus-metadaten.json, website/text/impressum.md, extern/myswitzerland/herkunft.json</span></li><li><b>Besen-Geschichte: Wortlaut aus der Texterkennung, am PDF prüfen; Zeitpunkt «Ende 17. Jahrhundert», 1699 Revers-Brief</b><span>_quelle/presse/pdf-text/…_OCR.txt, PDF-Seiten 110–111</span></li><li><b>Bankettmenüs vom 29.04.2025: ob Preise und Gerichte noch gelten</b><span>_quelle/website/pdf-text/Bankettmenuvorschlage.txt</span></li><li><b>Sätze der zwei Fenster und Kapiteltitel «Vier Länder auf einer Karte», «Bis 23 Uhr unter der Platane», «Ein Besen statt eines Schilds» sind vom Konzepter, nicht vom Haus</b><span>konzept.json</span></li><li><b>Horizont-Höhe je Foto nur am Bild abgelesen (Startbild rund 30 %, Glas 50 %, Abend 52 %, Platanen 45 %), beim Bau messen</b><span>_bau/inhalt.py</span></li><li><b>Bildmaterial reicht für rund 18 bis 20 Bildschirme, nicht 24 wie beim Rivage</b><span>_quelle/Material-Übersicht.md (33 Bilder der Seite, davon 8 Logos und Bänder)</span></li><li><b>Gutschein mit Bezahlung: Anbieter und Weg offen</b><span>_kette/04-analyst/potential.json, Befund 05</span></li><li><b>Angaben zu den bisherigen Häusern aus UI-Fundus, Werdegang der Abschnitte und den Zurbriggen-Konzepten; Seiten nicht neu aufgenommen, Entwurfs-Maschine nicht gezogen</b><span>_UI-Fundus/bereiche.py, Tasty-Sprache — Werdegang der Abschnitte.md</span></li><li><b>Familie-Machart: Das Schäfli hat noch keine abgenommenen Seiten, deshalb keine Machart übernommen</b><span>Taverne zum Schäfli Wigoltingen/_kette/06-konzepter (leer)</span></li><li><b>Erster Durchgang ohne Blender und ohne Werkbank-Kit; Board baut auf dem bestätigten Markenbuch (Schrift, Farbwelt A, Tapete)</b><span>Auftrag 19.10.2026</span></li><li><b>Nutzungsanzeige vorher und nachher nicht ablesbar</b><span>Nutzungsanzeige 19.10.2026</span></li></ul></div></section><footer class="fuss"><svg class="z" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="630 16 718 1186" fill="currentColor"><g transform="translate(0.000000,1563.000000) scale(0.100000,-0.100000)"><path d="M8188 14993 c-75 -186 -283 -705 -463 -1153 -180 -448 -343 -853 -362 -900 l-34 -85 39 -95 c22 -52 38 -98 35 -102 -2 -5 -20 -8 -39 -8 -51 0 -314 -38 -429 -61 -55 -12 -168 -43 -252 -70 -165 -54 -213 -84 -213 -133 0 -26 39 -76 59 -76 6 0 44 13 84 29 41 16 98 36 128 45 60 17 413 53 619 62 l135 6 77 -193 c43 -107 118 -295 169 -419 92 -228 364 -902 490 -1216 l69 -172 0 -1744 0 -1744 -66 -11 c-131 -23 -236 -98 -293 -210 -84 -167 -80 -450 9 -594 16 -27 30 -53 30 -57 0 -4 -226 -233 -502 -509 l-503 -502 -64 31 c-52 26 -75 32 -130 32 -183 -1 -341 -155 -341 -334 0 -113 63 -221 161 -275 49 -27 62 -30 149 -30 106 0 153 16 226 79 111 95 144 292 68 408 -13 21 -24 43 -24 50 0 7 225 238 499 512 l500 500 38 -27 c56 -38 128 -66 189 -73 l54 -7 0 -772 c0 -834 3 -785 -48 -785 -28 0 -94 -39 -140 -83 -174 -169 -113 -466 114 -553 63 -24 187 -16 240 16 60 35 113 90 142 145 24 45 27 60 27 155 0 90 -3 111 -23 147 -47 89 -117 147 -202 169 l-45 11 -3 775 -2 775 57 6 c123 13 250 103 309 219 72 142 80 369 18 523 l-24 60 690 690 690 690 368 147 c202 81 558 225 792 319 234 94 589 237 789 318 l365 146 50 127 c28 70 53 124 57 120 3 -4 44 -119 90 -257 106 -316 141 -372 223 -351 46 11 47 38 10 219 -41 198 -74 303 -160 497 -35 80 -64 149 -64 154 0 4 165 420 366 923 201 503 364 916 361 919 -2 3 -78 -25 -168 -62 -149 -60 -1108 -446 -1239 -499 l-56 -22 -65 61 c-36 34 -87 93 -112 131 -64 98 -122 160 -319 342 -391 361 -478 432 -745 607 -514 337 -813 475 -1173 541 -74 14 -157 32 -185 41 -27 9 -55 17 -62 19 -7 2 8 51 43 137 30 73 54 138 54 145 0 6 -60 162 -134 345 -322 802 -714 1777 -778 1938 -39 96 -74 178 -77 183 -4 4 -68 -145 -143 -330z m997 -2805 c44 -16 158 -56 253 -89 96 -33 265 -102 377 -154 111 -52 276 -126 366 -165 381 -165 686 -344 885 -517 56 -48 155 -131 220 -185 65 -53 173 -151 238 -218 l119 -122 -39 -17 c-21 -10 -165 -68 -320 -130 l-281 -112 -454 -1135 -454 -1134 -699 -705 -698 -705 -50 45 c-59 56 -136 93 -224 108 l-64 11 0 1753 0 1753 34 82 c19 46 105 259 191 473 160 398 236 584 390 965 48 118 89 221 92 228 3 8 13 10 22 7 9 -4 52 -20 96 -37z m-887 -5340 c-3 -7 -25 -16 -49 -19 -24 -4 -61 -14 -82 -22 -48 -21 -40 -5 10 19 65 30 127 42 121 22z m188 -19 c23 -11 49 -28 59 -39 16 -18 15 -18 -26 2 -24 12 -68 27 -98 33 -30 6 -57 17 -59 24 -6 18 69 6 124 -20z"/></g></svg>
+<p class="mono">Wirtschaft am Schlössli · Konzept-Board · nur intern, geht nie an den Kunden</p></footer><script>
+document.documentElement.classList.add('js');
+(function(){
+ var els=document.querySelectorAll('[data-a],[data-l]');
+ if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('da')});return}
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('da');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+ var vh=window.innerHeight||800;
+ els.forEach(function(e){var r=e.getBoundingClientRect();if(r.top<vh&&r.bottom>0){e.classList.add('da')}else{io.observe(e)}});
+})();
+</script></body></html>

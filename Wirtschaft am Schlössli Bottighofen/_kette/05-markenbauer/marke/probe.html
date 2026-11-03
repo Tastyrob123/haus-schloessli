@@ -1,0 +1,145 @@
+<!doctype html><html lang="de-CH"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Probe · Wirtschaft am Schlössli</title><meta name="description" content="Drei Stücke der künftigen Seite in Titelschrift, Farbwelt, Knopf, Tapete und echten Fotos, getragen vom Horizont des Sees."><link rel="icon" href="./zeichen/zeiger.svg"><style>
+@font-face{font-family:'Open Sans';src:url(./schriften/OpenSans-var.woff2) format('woff2');font-weight:300 800;font-stretch:75% 100%;font-display:swap}
+@font-face{font-family:'Open Sans Ersatz';src:local('Arial');size-adjust:105%;ascent-override:102%;descent-override:28%}
+@font-face{font-family:'Instrument Sans';src:url(./schriften/InstrumentSans-normal-400_600.woff2) format('woff2');font-weight:400 600;font-display:swap}
+@font-face{font-family:'DM Mono';src:url(./schriften/DMMono-normal-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Gilda Display';src:url(./schriften/GildaDisplay-latin.woff2) format('woff2');font-weight:400;font-display:swap}
+:root,[data-welt=a]{--nacht:#062531;--tief:#0A3A4C;--mittel:#116788;--kalk:#E7F0F3;--kalk2:#D0E2E7;--ak:#A2C6CF;--ak-h:#C5DCE1;--ak-t:#0F5B78;--tinte:#041B23;--signal:#FD9964;--titel-h:#0A3E52;--ak-text:#0B2530;--ak-titel:#A2C6CF}[data-welt=b]{--nacht:#242423;--tief:#31322F;--mittel:#424340;--kalk:#E6E4E2;--kalk2:#D2CEC8;--ak:#F7AD04;--ak-h:#FACE68;--ak-t:#8F6402;--tinte:#1E1E1D;--signal:#116788;--titel-h:#2E2F2D;--ak-text:#2A1C00;--ak-titel:#EBB946}
+[data-welt=a]{--tap-d:url(./tapete-a-dunkel.svg);--tap-h:url(./tapete-a-hell.svg)}
+[data-welt=b]{--tap-d:url(./tapete-b-dunkel.svg);--tap-h:url(./tapete-b-hell.svg)}
+:root{--titel:'Open Sans','Open Sans Ersatz',Arial,sans-serif;--lauf:'Instrument Sans',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,Menlo,monospace;
+  --sperr:.205em;--rand:clamp(16px,5vw,64px);--e1:cubic-bezier(.16,1,.3,1);--rund:clamp(22px,2.6vw,34px)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--kalk);color:var(--tinte);font:400 17px/1.62 var(--lauf);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.innen{max-width:1180px;margin:0 auto;padding:0 var(--rand)}
+.dunkel{background-color:var(--nacht);background-image:var(--tap-d);background-size:168px;color:#EEF2F2}
+.hell{background-color:var(--kalk);background-image:var(--tap-h);background-size:168px}
+.matt{background:var(--kalk2)}
+.blatt{position:relative;border-radius:var(--rund) var(--rund) 0 0;margin-top:calc(var(--rund)*-1);padding:clamp(72px,9vw,120px) 0}
+.mono{font-family:var(--mono);font-size:11.5px;letter-spacing:.17em;text-transform:uppercase}
+.vers{font-family:var(--titel);font-weight:400;text-transform:uppercase;letter-spacing:var(--sperr)}
+.kopf{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:clamp(36px,5vw,64px)}
+.kopf .z{width:38px;height:auto;color:var(--ak-t);margin-bottom:18px}
+.dunkel .kopf .z{color:var(--ak)}
+.kopf h2{font:400 clamp(1.7rem,3.4vw,2.9rem)/1.16 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:14px 0 0;color:var(--titel-h);max-width:24ch;text-wrap:balance}
+.dunkel .kopf h2{color:#F2F5F5}
+.kopf h2 em{font-style:normal;color:var(--ak-t)}
+.dunkel .kopf h2 em{color:var(--ak-titel)}
+.kopf .mono{color:var(--ak-t)}
+.dunkel .kopf .mono{color:var(--ak-h)}
+.kopf p{max-width:60ch;margin:18px auto 0;opacity:.86}
+/* Knopf: Pille mit rundem Knauf, Tiefe und Glanz (Master 2.6) */
+.knopf{position:relative;display:inline-flex;align-items:center;gap:18px;height:54px;padding:0 6px 0 26px;border-radius:27px;overflow:hidden;
+  font:400 11.5px/1 var(--mono);letter-spacing:.17em;text-transform:uppercase;text-decoration:none;color:var(--ak-text);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--ak-titel) 55%,#fff),var(--ak-titel) 58%,color-mix(in srgb,var(--ak-titel) 80%,#000));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -2px 0 rgba(0,0,0,.18),0 22px 34px -20px rgba(0,0,0,.6);
+  transition:transform .5s var(--e1),box-shadow .5s var(--e1)}
+.knopf::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-120%);pointer-events:none}
+.knopf:hover{transform:translateY(-2px)}
+.knopf:hover::after{transform:translateX(120%);transition:transform .9s var(--e1)}
+.knopf:active{transform:translateY(1px)}
+.knopf .kn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,var(--tief),var(--nacht));color:var(--ak-h);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 6px 12px -6px rgba(0,0,0,.6)}
+.knopf .pf{width:16px;height:10px;stroke:currentColor;fill:none;stroke-width:1.3}
+.knopf--dunkel{color:#F2F5F5;background:linear-gradient(180deg,var(--mittel),var(--tief) 60%,var(--nacht));box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -2px 0 rgba(0,0,0,.35),0 22px 34px -20px rgba(0,0,0,.6)}
+.knopf--dunkel .kn{background:linear-gradient(180deg,var(--ak-h),var(--ak));color:var(--ak-text)}
+/* Auftritt: von unten, deckend, satt an den Platz; startet, sobald ein Fünftel im Bild ist */
+.js [data-a]{opacity:0;transform:translateY(40px) scale(1.02);transition:opacity .85s var(--e1),transform 1.3s var(--e1)}
+.js [data-a].da{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js [data-a]{opacity:1;transform:none;transition:none}}
+
+.hz{position:absolute;left:0;right:0;height:1px;background:var(--ak);opacity:.75;transform:scaleX(0);transform-origin:0 50%;transition:transform 1.6s var(--e1) .35s}
+.da .hz,.hz.da{transform:scaleX(1)}
+.pr{position:relative;padding:clamp(90px,10vw,140px) 0 clamp(110px,12vw,160px);overflow:hidden}
+.pr .innen{max-width:1400px;position:relative}
+.pr__g{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(28px,4.6vw,72px);align-items:start;position:relative}
+.pr__bild{position:relative;margin:0;border-radius:var(--rund);overflow:hidden;box-shadow:0 60px 90px -50px rgba(0,0,0,.8)}
+.pr__bild img{width:100%;aspect-ratio:3/2;object-fit:cover;transform:scale(1.06);transition:transform 2.4s var(--e1)}
+.pr__bild.da img{transform:none}
+.pr .hz{top:calc(var(--h-oben) + var(--h-bild) * .287)}
+.pr__t{padding-top:calc(var(--h-bild) * .287 - 4.2em)}
+.pr__t .z{width:44px;height:auto;color:var(--ak);margin-bottom:20px}
+.pr__t .mono{color:var(--ak-h)}
+.pr__t h1{font:400 clamp(1.7rem,3.1vw,2.9rem)/1.18 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:16px 0 34px;color:#F2F5F5;text-wrap:balance}
+.pr__t h1 em{font-style:normal;color:var(--ak-titel)}
+.pr__t p.l{margin:0 0 26px;color:rgba(238,242,242,.9);max-width:44ch}
+.pr__u{display:flex;flex-direction:column;align-items:flex-end;margin:0 0 30px;max-width:44ch}
+.pr__u q{font:400 1rem/1.4 var(--titel);text-transform:uppercase;letter-spacing:.14em;color:#F2F5F5;quotes:"«" "»";text-align:right}
+.pr__u small{color:var(--ak-h);margin-top:8px}
+.pr__k{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:center}
+.leise{font:400 11.5px/1 var(--mono);letter-spacing:.17em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--ak);padding-bottom:5px}
+.dunkel .leise{color:#F2F5F5}
+.mm{position:relative;padding:clamp(90px,10vw,140px) 0;overflow:hidden}
+.mm__g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:center;position:relative}
+.mm .hz{background:var(--mittel);top:auto;bottom:clamp(150px,16vw,210px);opacity:.5}
+.mm h2{font:400 clamp(1.6rem,3vw,2.6rem)/1.2 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:14px 0 22px;color:var(--titel-h)}
+.mm h2 em{font-style:normal;color:var(--ak-t)}
+.mm .mono{color:var(--ak-t)}
+.mm .laender{display:flex;flex-wrap:wrap;gap:12px 28px;margin:30px 0 0;padding:0;list-style:none;font:400 .95rem/1.2 var(--titel);text-transform:uppercase;letter-spacing:.22em;color:var(--titel-h)}
+.mm .laender li:nth-child(2){color:var(--ak-t)}
+.mm figure{margin:0;position:relative;border-radius:var(--rund);overflow:hidden;box-shadow:0 50px 80px -50px rgba(0,0,0,.5)}
+.mm figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 60%}
+.mm figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 26px 22px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55))}
+.mm figcaption b{display:block;font:400 1rem/1.2 var(--titel);text-transform:uppercase;letter-spacing:.2em}
+.mm figcaption span{font-size:15px;opacity:.92}
+.lm{position:relative;padding:clamp(90px,10vw,140px) 0 clamp(110px,12vw,150px);overflow:hidden}
+.lm__g{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(28px,5vw,80px);align-items:center}
+.lm h2{font:400 clamp(1.6rem,3vw,2.6rem)/1.2 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:14px 0 22px;color:#F2F5F5}
+.lm h2 em{font-style:normal;color:var(--ak-titel)}
+.lm .mono{color:var(--ak-h)}
+.lm .tapas{margin:26px 0 30px;padding:0;list-style:none;display:grid;gap:10px}
+.lm .tapas li{display:flex;justify-content:space-between;gap:20px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.12)}
+.lm .tapas b{font:400 .95rem/1.3 var(--titel);text-transform:uppercase;letter-spacing:.14em;font-weight:400}
+.lm .tapas span{font-family:var(--mono);font-size:13px;color:var(--ak-h)}
+.lm__b{display:grid;grid-template-columns:1.25fr 1fr;gap:14px;align-items:end}
+.lm__b figure{margin:0;border-radius:var(--rund);overflow:hidden;box-shadow:0 50px 80px -50px rgba(0,0,0,.8)}
+.lm__b img{width:100%;object-fit:cover}
+.lm__b figure:first-child img{aspect-ratio:3/4}
+.lm__b figure:last-child img{aspect-ratio:1/1}
+.probe-wahl{position:fixed;right:16px;top:16px;z-index:9;display:flex;gap:6px;padding:6px;border-radius:30px;background:var(--nacht);box-shadow:0 14px 30px -14px rgba(0,0,0,.6),inset 0 0 0 1px color-mix(in srgb,var(--ak) 40%,transparent)}
+.probe-wahl button{all:unset;cursor:pointer;padding:11px 16px;border-radius:24px;font:400 11px/1 var(--mono);letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.probe-wahl button[aria-pressed=true]{color:var(--ak-text);background:linear-gradient(180deg,var(--ak-h),var(--ak))}
+.pfuss{padding:40px 0 110px;text-align:center;font-size:13.5px}
+.pfuss p{opacity:.75;margin:0}
+@media(max-width:900px){.pr__g,.mm__g,.lm__g{grid-template-columns:1fr}.pr__t{padding-top:0}.pr .hz{top:auto;bottom:clamp(60px,8vw,90px)}.pr__u{align-items:flex-start}.pr__u q{text-align:left}.mm .hz{bottom:60px}}
+@media(max-width:520px){.probe-wahl{left:16px;right:16px;justify-content:center}.probe-wahl button{padding:11px 12px}}
+</style></head><body data-welt="a">
+<section class="pr dunkel" aria-label="Probe: Willkommen am Hafen"><span class="hz" aria-hidden="true"></span><div class="innen pr__g">
+  <figure class="pr__bild" data-a><img src="bilder/terrasse-see.webp" alt="Blaue Stühle auf der Terrasse, dahinter der Bodensee und die Alpen"></figure>
+  <div class="pr__t" data-a>
+    <svg class="z" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="630 16 718 1186" fill="currentColor"><g transform="translate(0.000000,1563.000000) scale(0.100000,-0.100000)"><path d="M8188 14993 c-75 -186 -283 -705 -463 -1153 -180 -448 -343 -853 -362 -900 l-34 -85 39 -95 c22 -52 38 -98 35 -102 -2 -5 -20 -8 -39 -8 -51 0 -314 -38 -429 -61 -55 -12 -168 -43 -252 -70 -165 -54 -213 -84 -213 -133 0 -26 39 -76 59 -76 6 0 44 13 84 29 41 16 98 36 128 45 60 17 413 53 619 62 l135 6 77 -193 c43 -107 118 -295 169 -419 92 -228 364 -902 490 -1216 l69 -172 0 -1744 0 -1744 -66 -11 c-131 -23 -236 -98 -293 -210 -84 -167 -80 -450 9 -594 16 -27 30 -53 30 -57 0 -4 -226 -233 -502 -509 l-503 -502 -64 31 c-52 26 -75 32 -130 32 -183 -1 -341 -155 -341 -334 0 -113 63 -221 161 -275 49 -27 62 -30 149 -30 106 0 153 16 226 79 111 95 144 292 68 408 -13 21 -24 43 -24 50 0 7 225 238 499 512 l500 500 38 -27 c56 -38 128 -66 189 -73 l54 -7 0 -772 c0 -834 3 -785 -48 -785 -28 0 -94 -39 -140 -83 -174 -169 -113 -466 114 -553 63 -24 187 -16 240 16 60 35 113 90 142 145 24 45 27 60 27 155 0 90 -3 111 -23 147 -47 89 -117 147 -202 169 l-45 11 -3 775 -2 775 57 6 c123 13 250 103 309 219 72 142 80 369 18 523 l-24 60 690 690 690 690 368 147 c202 81 558 225 792 319 234 94 589 237 789 318 l365 146 50 127 c28 70 53 124 57 120 3 -4 44 -119 90 -257 106 -316 141 -372 223 -351 46 11 47 38 10 219 -41 198 -74 303 -160 497 -35 80 -64 149 -64 154 0 4 165 420 366 923 201 503 364 916 361 919 -2 3 -78 -25 -168 -62 -149 -60 -1108 -446 -1239 -499 l-56 -22 -65 61 c-36 34 -87 93 -112 131 -64 98 -122 160 -319 342 -391 361 -478 432 -745 607 -514 337 -813 475 -1173 541 -74 14 -157 32 -185 41 -27 9 -55 17 -62 19 -7 2 8 51 43 137 30 73 54 138 54 145 0 6 -60 162 -134 345 -322 802 -714 1777 -778 1938 -39 96 -74 178 -77 183 -4 4 -68 -145 -143 -330z m997 -2805 c44 -16 158 -56 253 -89 96 -33 265 -102 377 -154 111 -52 276 -126 366 -165 381 -165 686 -344 885 -517 56 -48 155 -131 220 -185 65 -53 173 -151 238 -218 l119 -122 -39 -17 c-21 -10 -165 -68 -320 -130 l-281 -112 -454 -1135 -454 -1134 -699 -705 -698 -705 -50 45 c-59 56 -136 93 -224 108 l-64 11 0 1753 0 1753 34 82 c19 46 105 259 191 473 160 398 236 584 390 965 48 118 89 221 92 228 3 8 13 10 22 7 9 -4 52 -20 96 -37z m-887 -5340 c-3 -7 -25 -16 -49 -19 -24 -4 -61 -14 -82 -22 -48 -21 -40 -5 10 19 65 30 127 42 121 22z m188 -19 c23 -11 49 -28 59 -39 16 -18 15 -18 -26 2 -24 12 -68 27 -98 33 -30 6 -57 17 -59 24 -6 18 69 6 124 -20z"/></g></svg>
+    <p class="mono">Seestrasse 50 · Bottighofen</p>
+    <h1>Willkommen in der <em>Wirtschaft am Schlössli.</em></h1>
+    <p class="l">Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen.</p>
+    <div class="pr__u"><q>Die schönste Terrasse am Bodensee</q><small class="mono">Christian Kuchler</small></div>
+    <div class="pr__k"><a class="knopf" href="https://services.gastronovi.com/restaurants/118851/reservation/widget" target="_blank" rel="noopener">Tisch reservieren <span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></a><a class="leise" href="markenbuch.html" data-mitwelt>Zum Markenbuch</a></div>
+  </div>
+</div></section>
+<section class="mm blatt hell" aria-label="Probe: Die Karte"><span class="hz" aria-hidden="true"></span><div class="innen mm__g">
+  <div data-a><p class="mono">Monika Huber · Küchenchefin</p><h2>Eine Reise in die Welt der <em>mediterranen Küche.</em></h2>
+    <p>Die Speisekarte des Oktobers ist nach Ländern geordnet. Gekocht wird von einem jungen Küchenteam unter der Leitung von Monika Huber, ehemals Sous-Chefin von Christian Kuchler.</p>
+    <ul class="laender"><li>Frankreich</li><li>Italien</li><li>Iberische Halbinsel</li><li>Klassiker</li></ul>
+  </div>
+  <figure data-a><img src="bilder/tortelloni.webp" alt="Tortelloni mit Tomate, Burrata und Taggiasca-Olive in einer gerippten Schale" loading="lazy"><figcaption><b>Tortelloni</b><span>Tomate – Burrata – Taggiasca Olive</span></figcaption></figure>
+</div></section>
+<section class="lm blatt dunkel" aria-label="Probe: Lästermeile"><div class="innen lm__g">
+  <div data-a><p class="mono">An der Bar · den ganzen Tag</p><h2>Die <em>Lästermeile.</em></h2>
+    <ul class="tapas"><li><b>Pimientos de Padrón</b><span>8</span></li><li><b>Croquetas</b><span>9</span></li><li><b>Kalamata Oliven</b><span>8</span></li><li><b>Prato</b><span>30</span></li></ul>
+    <a class="knopf knopf--dunkel" href="https://www.schloessli-bottighofen.ch/s/Lastermeile-Homepage-2339.pdf" target="_blank" rel="noopener">Karte der Lästermeile <span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></a>
+  </div>
+  <div class="lm__b" data-a><figure><img src="bilder/apero.webp" alt="Ein Spritz und ein Bier auf einem blauen Tisch am Abend über dem See" loading="lazy"></figure><figure><img src="bilder/bar.webp" alt="An der Bar wird ein Bier gezapft, unter der Theke die Zementfliesen" loading="lazy"></figure></div>
+</div></section>
+<footer class="pfuss dunkel"><p>Probe der Designidentität, Station 05 · Designstudie von Tasty Studios, nicht die offizielle Website · Fotos: Wirtschaft am Schlössli · Preise aus der Karte der Lästermeile, in Franken</p></footer>
+<script>(function(){var g=document.querySelector('.pr__g'),b=document.querySelector('.pr__bild'),s=document.querySelector('.pr');
+function setz(){var r=b.getBoundingClientRect(),q=s.getBoundingClientRect();s.style.setProperty('--h-bild',r.height+'px');s.style.setProperty('--h-oben',(r.top-q.top)+'px')}
+setz();addEventListener('resize',setz);if(document.fonts)document.fonts.ready.then(setz);
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('da');io.unobserve(e.target)}})},{threshold:.2});
+document.querySelectorAll('.hz').forEach(function(h){io.observe(h)})})()</script><script>
+document.documentElement.classList.add('js');if('scrollRestoration' in history)history.scrollRestoration='manual';
+(function(){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('da');io.unobserve(e.target)}})},{threshold:.2});
+document.querySelectorAll('[data-a]').forEach(function(el){io.observe(el)});
+})();
+</script></body></html>

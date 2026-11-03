@@ -1,0 +1,24 @@
+{
+  "station": "08",
+  "name": "Fertigstellen und Bilder",
+  "rolle": "Bildmacher",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "wartet",
+  "beginn": null,
+  "ende": null,
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+    "bilder/",
+    "bilder.json"
+  ],
+  "adresse": null,
+  "briefing": "briefing.html",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

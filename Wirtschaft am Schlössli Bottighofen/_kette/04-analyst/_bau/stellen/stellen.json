@@ -1,0 +1,552 @@
+{
+ "fuss-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "pfad": "/",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "img[src*='GM15']",
+    "x": 49.296875,
+    "y": 246.25,
+    "w": 114.28125,
+    "h": 94
+   },
+   {
+    "t": "img[src*='MICHELIN']",
+    "x": 236.546875,
+    "y": 246.25,
+    "w": 94,
+    "h": 94
+   }
+  ],
+  "zeit": "2026-10-18T18:49:46.129Z",
+  "scrollH": 5466
+ },
+ "start-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "pfad": "/",
+  "desk": false,
+  "W": 390,
+  "H": 1150,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Reservation",
+    "x": 116.125,
+    "y": 894.234375,
+    "w": 157.734375,
+    "h": 28
+   }
+  ],
+  "zeit": "2026-10-18T18:49:56.163Z",
+  "scrollH": 5466
+ },
+ "start-rechner": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "pfad": "/",
+  "desk": true,
+  "W": 1440,
+  "H": 1250,
+  "f": 2,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Reservation",
+    "x": 172.859375,
+    "y": 1005.703125,
+    "w": 184.53125,
+    "h": 33
+   }
+  ],
+  "zeit": "2026-10-18T18:50:16.712Z",
+  "scrollH": 5378
+ },
+ "karten-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/karten",
+  "pfad": "/karten",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Speisekarte",
+    "x": 241.671875,
+    "y": 367.546875,
+    "w": 107.15625,
+    "h": 26
+   },
+   {
+    "t": "L\u00e4stermeile",
+    "x": 39.53125,
+    "y": 595.046875,
+    "w": 110.4375,
+    "h": 26
+   }
+  ],
+  "zeit": "2026-10-18T18:54:04.131Z",
+  "scrollH": 2891
+ },
+ "bankett-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/karten",
+  "pfad": "/karten",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "auf zwei Etagen Platz f\u00fcr jeweils bis zu 26 Personen",
+    "x": 23.390625,
+    "y": 253.859375,
+    "w": 334.765625,
+    "h": 46
+   },
+   {
+    "t": "Bankettanfrage",
+    "x": 140.421875,
+    "y": 455.859375,
+    "w": 109.140625,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-18T18:50:41.996Z",
+  "scrollH": 2878
+ },
+ "gutschein-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "pfad": "/",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Betrag",
+    "x": 40,
+    "y": 520.015625,
+    "w": 46.46875,
+    "h": 22
+   },
+   {
+    "t": "vor dem Senden ankreuzen",
+    "x": 40,
+    "y": 614.015625,
+    "w": 192.171875,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-18T18:51:03.850Z",
+  "scrollH": 5466
+ },
+ "newsletter-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/kontakt",
+  "pfad": "/kontakt",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Abonnieren",
+    "x": 122.65625,
+    "y": 287.578125,
+    "w": 144.671875,
+    "h": 33
+   },
+   {
+    "t": "Melde dich mit deiner E-Mail-Adresse",
+    "x": 60.21875,
+    "y": 338.359375,
+    "w": 269.53125,
+    "h": 22
+   },
+   {
+    "t": "Registrieren",
+    "x": 151.625,
+    "y": 567.734375,
+    "w": 86.75,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-18T18:51:27.343Z",
+  "scrollH": 3664
+ },
+ "team-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/uber-uns",
+  "pfad": "/uber-uns",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Monika Huber",
+    "x": 123.953125,
+    "y": 379.21875,
+    "w": 142.078125,
+    "h": 26
+   },
+   {
+    "t": "K\u00fcchenchefin",
+    "x": 146.03125,
+    "y": 409.453125,
+    "w": 97.921875,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-18T18:51:41.885Z",
+  "scrollH": 3532
+ },
+ "kreuzfahrt-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1/excellence-g-ourmetkreuzfahrt",
+  "pfad": "/events-2-1/excellence-g-ourmetkreuzfahrt",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Villa Joya",
+    "x": 23.390625,
+    "y": 399.203125,
+    "w": 340.75,
+    "h": 46
+   }
+  ],
+  "zeit": "2026-10-18T18:51:53.404Z",
+  "scrollH": 1872
+ },
+ "events-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1",
+  "pfad": "/events-2-1",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Bevorstehende Events & Termine",
+    "x": 34.390625,
+    "y": 99.765625,
+    "w": 329.09375,
+    "h": 79.125
+   },
+   {
+    "t": "Excellence Gourmetkreuzfahrt",
+    "x": 23.390625,
+    "y": 677.328125,
+    "w": 236.96875,
+    "h": 66.59375
+   }
+  ],
+  "zeit": "2026-10-18T18:52:06.447Z",
+  "scrollH": 2047
+ },
+ "ehemalige-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1/zqff5xzr7qhnfnil32eokk5dy6gi5q",
+  "pfad": "/events-2-1/zqff5xzr7qhnfnil32eokk5dy6gi5q",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Weggef\u00e4hrten",
+    "x": 23.390625,
+    "y": 334.578125,
+    "w": 99.421875,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-18T18:52:17.954Z",
+  "scrollH": 2273
+ },
+ "datenschutz-rechner": {
+  "url": "https://www.schloessli-bottighofen.ch/datenschutzerklarung",
+  "pfad": "/datenschutzerklarung",
+  "desk": true,
+  "W": 1440,
+  "H": 900,
+  "f": 2,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Google AdSense",
+    "x": 100.046875,
+    "y": 179.046875,
+    "w": 253.15625,
+    "h": 43
+   },
+   {
+    "t": "Wir verwenden auf dieser Website Google AdSense",
+    "x": 100.046875,
+    "y": 255.015625,
+    "w": 359.46875,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-18T18:52:31.495Z",
+  "scrollH": 11790
+ },
+ "shop-rechner": {
+  "url": "https://www.schloessli-bottighofen.ch/datenschutzerklarung",
+  "pfad": "/datenschutzerklarung",
+  "desk": true,
+  "W": 1440,
+  "H": 900,
+  "f": 2,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Onlineshop / Webshop",
+    "x": 100.046875,
+    "y": 178.921875,
+    "w": 362.125,
+    "h": 43
+   },
+   {
+    "t": "Bestellvorg\u00e4nge in unserem Online-Shop",
+    "x": 127,
+    "y": 278.890625,
+    "w": 292.578125,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-18T18:52:44.494Z",
+  "scrollH": 11790
+ },
+ "cookie-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "pfad": "/",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "erkl\u00e4rst du dich",
+    "x": 244.5,
+    "y": 669.125,
+    "w": 96.703125,
+    "h": 19
+   },
+   {
+    "t": "dir ein tolles Erlebnis",
+    "x": 206.046875,
+    "y": 711.0625,
+    "w": 132.328125,
+    "h": 19
+   }
+  ],
+  "zeit": "2026-10-18T18:52:55.614Z",
+  "scrollH": 5466
+ },
+ "leiste-rechner": {
+  "url": "https://www.schloessli-bottighofen.ch/impressionen-1",
+  "pfad": "/impressionen-1",
+  "desk": true,
+  "W": 1440,
+  "H": 900,
+  "f": 2,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Kontakt & \u00d6ffnungszeiten",
+    "x": 818.796875,
+    "y": 66.703125,
+    "w": 188.109375,
+    "h": 22
+   },
+   {
+    "t": "Home",
+    "x": 433.078125,
+    "y": 66.703125,
+    "w": 42.359375,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-18T18:53:06.988Z",
+  "scrollH": 1887
+ },
+ "fuss-rechner": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "pfad": "/",
+  "desk": true,
+  "W": 1440,
+  "H": 900,
+  "f": 2,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Datenschutz",
+    "x": 883.296875,
+    "y": 785.703125,
+    "w": 128.28125,
+    "h": 31
+   },
+   {
+    "t": "AGB`s",
+    "x": 461.703125,
+    "y": 785.703125,
+    "w": 61.703125,
+    "h": 31
+   }
+  ],
+  "zeit": "2026-10-18T18:53:20.296Z",
+  "scrollH": 5378
+ },
+ "plakette-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/kontakt",
+  "pfad": "/kontakt",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "img[src*='Michelin+18']",
+    "x": 116.328125,
+    "y": 663.53125,
+    "w": 157.328125,
+    "h": 59
+   },
+   {
+    "t": "img[src*='IMG_0299']",
+    "x": 67.65625,
+    "y": 328.03125,
+    "w": 254.6875,
+    "h": 170
+   }
+  ],
+  "zeit": "2026-10-18T18:54:16.388Z",
+  "scrollH": 3664
+ },
+ "start-handy-2": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "pfad": "/",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Reservation",
+    "x": 116.125,
+    "y": 350.234375,
+    "w": 157.734375,
+    "h": 28
+   }
+  ],
+  "zeit": "2026-10-18T18:54:38.731Z",
+  "scrollH": 5466
+ },
+ "start-handy-1": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "pfad": "/",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [],
+  "zeit": "2026-10-18T18:54:47.723Z",
+  "scrollH": 5466
+ },
+ "datenschutz-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/datenschutzerklarung",
+  "pfad": "/datenschutzerklarung",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Google AdSense",
+    "x": 23.390625,
+    "y": 252.578125,
+    "w": 194.015625,
+    "h": 33
+   },
+   {
+    "t": "Wir verwenden auf dieser Website Google AdSense",
+    "x": 23.390625,
+    "y": 318.734375,
+    "w": 298.5625,
+    "h": 46
+   }
+  ],
+  "zeit": "2026-10-19T03:31:31.921Z",
+  "scrollH": 27425
+ },
+ "shop-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/datenschutzerklarung",
+  "pfad": "/datenschutzerklarung",
+  "desk": false,
+  "W": 390,
+  "H": 844,
+  "f": 3,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Onlineshop / Webshop",
+    "x": 23.390625,
+    "y": 252.359375,
+    "w": 277.53125,
+    "h": 33
+   },
+   {
+    "t": "Bestellvorg\u00e4nge in unserem Online-Shop",
+    "x": 23.390625,
+    "y": 414.515625,
+    "w": 292.5625,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-19T03:31:51.189Z",
+  "scrollH": 27425
+ },
+ "michelin-en": {
+  "url": "https://guide.michelin.com/ch/en/thurgau/bottighofen_1149146/restaurant/wirtschaft-am-schlossli",
+  "pfad": "https://guide.michelin.com/ch/en/thurgau/bottighofen_1149146/restaurant/wirtschaft-am-schlossli",
+  "desk": true,
+  "W": 1440,
+  "H": 900,
+  "f": 2,
+  "y0": 0,
+  "marks": [
+   {
+    "t": "Wirtschaft am Schl\u00f6ssli (Titel, englische Seite)",
+    "x": 132,
+    "y": 748,
+    "w": 432,
+    "h": 46
+   },
+   {
+    "t": "Mediterranean Cuisine, French",
+    "x": 244,
+    "y": 812,
+    "w": 186,
+    "h": 22
+   }
+  ],
+  "zeit": "2026-10-19T03:40:34.496Z"
+ }
+}

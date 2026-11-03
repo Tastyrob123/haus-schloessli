@@ -1,0 +1,58 @@
+{
+  "station": "11",
+  "name": "Le Bureau / Der Schreibtisch",
+  "rolle": "Werkbank-Bauer + Werkzeug-Anpasser ×7",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "teil": "website",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T23:04+07:00",
+  "ende": "2026-10-19T23:25+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Funktionen des Katalogs, die der Schreibtisch des Stamms nicht hat: Angaben des Hauses (Telefon, Mail, Adresse einmal für alle Seiten), Google-Texte, eigenes Foto hochladen, Anleitung (Knopf im Kopf fehlt deshalb), Rundgang, Fehlermelder an den Server",
+      "wo": "_Werkzeuge/werkzeuge/website/STAND.md › Was offen ist; Master Werkzeug-Bau 4.2 L17"
+    },
+    {
+      "punkt": "Rollen und Anmeldung fehlen (kein Passwort bis zur Auslieferung, Robert 15.10.); Herkunft 403, Grösse 413, Grenze 429 stehen im Server des Schaufensters",
+      "wo": "_werkzeuge/bureau/serve.py; STAND.md › Prüfpunkte"
+    },
+    {
+      "punkt": "Anschluss-Zeile für Station 14: am Ende von website/bau.py nachbau.py schloessli aufrufen (Port 9035), sonst verliert ein neuer Seitenbau die Änderungen des Hauses in der Kopie",
+      "wo": "_kette/11-werkbank/werkzeuge/website/STAND.md › Für den Werkbank-Bauer"
+    },
+    {
+      "punkt": "Online gibt es das Schaufenster nicht (nur lokal :9035); Demo-Regel: online nur ansehen, Veröffentlichen aus",
+      "wo": "Master Werkzeug-Bau 3 (Robert 17.10.)"
+    },
+    {
+      "punkt": "Farben: marke.json nennt Stuhlblau #116788, Website und Kleid sind Ton in Ton auf #113d88 gedreht; Markenbuch nicht nachgeführt",
+      "wo": "_kette/05-markenbauer/marke.json › farben; website/farbwelt.py"
+    },
+    {
+      "punkt": "Zeiten & Preise zeigt die Öffnungszeiten des Schäfli aus dem Fuss ohne Hausnamen neben denen des Schlössli",
+      "wo": "website/*.html › footer .fz__hd"
+    },
+    {
+      "punkt": "Server :9035 läuft, solange ihn niemand beendet (in diesem Chat gestartet); startet niemand neu. Der alte Weg :8970/werkzeuge/website/?haus=schloessli zeigt den Stamm ohne Kleid",
+      "wo": "_werkzeuge/bureau/serve.py"
+    },
+    {
+      "punkt": "Prüflauf Safari-Kern 390 bricht unter hoher Rechnerlast etwa jedes zweite Mal beim Wechsel aus der Übersicht in einen Bereich ab (Zeitüberschreitung), Wiederholung grün; Ursache nicht gefunden",
+      "wo": "_Werkzeuge/werkzeuge/website/pruef.js › nav/bereit; STAND.md › Verlauf 20.10."
+    }
+  ],
+  "paket": [
+    "werkzeuge/<schlüssel>/STAND.md",
+    "../../werkbank/"
+  ],
+  "adresse": "http://127.0.0.1:9035/_werkzeuge/bureau/",
+  "briefing": "briefing.html?teil=website",
+  "notiz": "Im Rahmen des Hauses auf :9035, Prüfläufe Chromium und Safari-Kern bestanden, Fenster-Fehler der Vorschau behoben",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

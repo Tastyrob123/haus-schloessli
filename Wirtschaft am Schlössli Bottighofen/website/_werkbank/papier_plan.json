@@ -1,0 +1,230 @@
+{
+ "druck": [
+  {
+   "id": "ansichtskarten",
+   "name": "Ansichtskarten",
+   "format": "A6 quer, vier Motive",
+   "vorschau": [
+    [
+     "ansichtskarte-1",
+     1
+    ],
+    [
+     "ansichtskarte-2",
+     3
+    ],
+    [
+     "ansichtskarte-3",
+     5
+    ],
+    [
+     "ansichtskarte-4",
+     7
+    ],
+    [
+     "ansichtskarte-r",
+     2
+    ]
+   ],
+   "satz": "Vier Karten mit dem Haus und dem See, der Ort steht im Bild. Zwei Aufnahmen sind freie Fotos, ihr Nachweis steht auf der Rückseite.",
+   "quelle": "Fotos Ihrer Website; zwei Fotos von Wikimedia Commons (JoachimKohler-HB, CC BY-SA 4.0)",
+   "seiten": 8
+  },
+  {
+   "id": "gutschein",
+   "name": "Gutschein",
+   "format": "DIN lang quer, 210 × 100 mm",
+   "vorschau": [
+    [
+     "gutschein",
+     1
+    ],
+    [
+     "gutschein-r",
+     2
+    ]
+   ],
+   "satz": "Der Gutschein zum Verschenken, mit denselben Feldern wie auf der Gutschein-Seite: für wen, von wem, ein Satz und der Betrag.",
+   "quelle": "Gutschein-Seite und Kontakt Ihrer Website",
+   "seiten": 2
+  },
+  {
+   "id": "tischkarte",
+   "name": "Tischkarte",
+   "format": "A6 quer, zum Aufstellen",
+   "vorschau": [
+    [
+     "tischkarte",
+     1
+    ],
+    [
+     "tischkarte-r",
+     2
+    ]
+   ],
+   "satz": "Für reservierte Tische auf der Terrasse und in der Gaststube. Hinten steht Ihr Satz zur Terrasse.",
+   "quelle": "Startseite Ihrer Website",
+   "seiten": 2
+  },
+  {
+   "id": "menuekarte",
+   "name": "Menükarte für Ihre Feier",
+   "format": "A5 hoch, zwei Seiten",
+   "vorschau": [
+    [
+     "menuekarte",
+     1
+    ],
+    [
+     "menuekarte-r",
+     2
+    ]
+   ],
+   "satz": "Für jedes Bankett eine eigene Karte auf dem Tisch, hier mit dem Herbstmenü aus Ihren Bankettmenüvorschlägen. Anlass und Datum tragen Sie ein.",
+   "quelle": "Bankettmenüvorschläge, PDF vom 29.04.2025",
+   "seiten": 2
+  },
+  {
+   "id": "aushang",
+   "name": "Aushang Betriebsferien",
+   "format": "A4 hoch",
+   "vorschau": [
+    [
+     "aushang",
+     1
+    ]
+   ],
+   "satz": "Ein Blatt für die Tür und die Bar, wenn das Schlössli Pause macht, mit Ihren Ferien und Zeiten.",
+   "quelle": "Kontakt-Seite Ihrer Website",
+   "seiten": 1
+  },
+  {
+   "id": "briefpapier",
+   "name": "Briefpapier",
+   "format": "Briefbogen A4, Couvert C6/5",
+   "vorschau": [
+    [
+     "briefbogen",
+     1
+    ],
+    [
+     "couvert",
+     2
+    ]
+   ],
+   "satz": "Briefbogen und Couvert mit den Zeigern und Ihrem Namen.",
+   "quelle": "Kontakt Ihrer Website",
+   "seiten": 2
+  }
+ ],
+ "etiketten": [
+  {
+   "id": "u01",
+   "b": 100,
+   "h": 100,
+   "name": "Die Fliese",
+   "satz": "Die Zementfliesen der Bar, Ton in Ton, in der Mitte die Zeiger.",
+   "form": "M50 1A49 49 0 1 1 50 99A49 49 0 1 1 50 1Z"
+  },
+  {
+   "id": "u02",
+   "b": 100,
+   "h": 100,
+   "name": "Lästermeile",
+   "satz": "Der Name der Bar, geteilt wie auf der Startseite.",
+   "form": "M50 1A49 49 0 1 1 50 99A49 49 0 1 1 50 1Z"
+  },
+  {
+   "id": "u03",
+   "b": 100,
+   "h": 100,
+   "name": "Tapas durchgehend",
+   "satz": "Ihr Satz, im Blau der Stühle.",
+   "form": "M50 1A49 49 0 1 1 50 99A49 49 0 1 1 50 1Z"
+  },
+  {
+   "id": "u04",
+   "b": 94,
+   "h": 94,
+   "name": "Fliesenboden",
+   "satz": "Die Fliesen als ganzer Boden, quadratisch.",
+   "form": "M5 0H89A5 5 0 0 1 94 5V89A5 5 0 0 1 89 94H5A5 5 0 0 1 0 89V5A5 5 0 0 1 5 0Z"
+  },
+  {
+   "id": "u05",
+   "b": 100,
+   "h": 100,
+   "name": "Zur Stärkung & Süsses",
+   "satz": "Die zweite Spalte der Karte, im Rot der Schirme.",
+   "form": "M50 1A49 49 0 1 1 50 99A49 49 0 1 1 50 1Z"
+  },
+  {
+   "id": "u06",
+   "b": 94,
+   "h": 94,
+   "name": "PIMIENTOS DE PADRÓN",
+   "satz": "Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M5 0H89A5 5 0 0 1 94 5V89A5 5 0 0 1 89 94H5A5 5 0 0 1 0 89V5A5 5 0 0 1 5 0Z"
+  },
+  {
+   "id": "u07",
+   "b": 94,
+   "h": 94,
+   "name": "PATATINE FRITTE",
+   "satz": "Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M5 0H89A5 5 0 0 1 94 5V89A5 5 0 0 1 89 94H5A5 5 0 0 1 0 89V5A5 5 0 0 1 5 0Z"
+  },
+  {
+   "id": "u08",
+   "b": 94,
+   "h": 94,
+   "name": "CROQUETAS",
+   "satz": "Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M5 0H89A5 5 0 0 1 94 5V89A5 5 0 0 1 89 94H5A5 5 0 0 1 0 89V5A5 5 0 0 1 5 0Z"
+  },
+  {
+   "id": "u09",
+   "b": 94,
+   "h": 94,
+   "name": "KALAMATA OLIVEN",
+   "satz": "Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M5 0H89A5 5 0 0 1 94 5V89A5 5 0 0 1 89 94H5A5 5 0 0 1 0 89V5A5 5 0 0 1 5 0Z"
+  },
+  {
+   "id": "u10",
+   "b": 94,
+   "h": 94,
+   "name": "PRATO",
+   "satz": "Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M5 0H89A5 5 0 0 1 94 5V89A5 5 0 0 1 89 94H5A5 5 0 0 1 0 89V5A5 5 0 0 1 5 0Z"
+  },
+  {
+   "id": "u11",
+   "b": 100,
+   "h": 100,
+   "name": "Direkt im Hafen",
+   "satz": "Ihr Satz zur Lage, wörtlich.",
+   "form": "M50 1A49 49 0 1 1 50 99A49 49 0 1 1 50 1Z"
+  },
+  {
+   "id": "u12",
+   "b": 100,
+   "h": 100,
+   "name": "Die Zeiger",
+   "satz": "Das Zeichen des Hauses, darunter die Zeile Ihres Logos.",
+   "form": "M50 1A49 49 0 1 1 50 99A49 49 0 1 1 50 1Z"
+  }
+ ],
+ "boegen": 2,
+ "meins": [
+  "Bildzeilen der Ansichtskarten",
+  "Feldnamen auf Gutschein, Tischkarte und Menükarte, das Wort «Reserviert»",
+  "Der Satz auf dem Aushang zu den Betriebsferien",
+  "Auswahl der Sätze und Gerichte auf den Untersetzern",
+  "Zeichnung der Zementfliesen auf den Untersetzern (nach dem Foto «fliesen»)"
+ ],
+ "masse": [
+  94,
+  100
+ ]
+}

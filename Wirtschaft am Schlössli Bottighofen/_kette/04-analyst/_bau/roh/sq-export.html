@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v28068 -->
+
+
+  <title>Export your site content &ndash; Squarespace Help Center</title>
+
+  
+
+  <meta name="description" content="Create an .xml file of your site content, then import it to WordPress.You can export certain content from your Squarespace site into an..." /><meta property="og:image" content="https://support.squarespace.com/hc/theming_assets/01JZ15X3TFKFEF4Q0KN8WNRM3T" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Squarespace Help Center" />
+<meta property="og:title" content="Export your site content" />
+<meta property="og:description" content="Create an .xml file of your site content, then import it to WordPress.You can export certain content from your Squarespace site into an .xml file. Many features rely on our platform's JavaScript an..." />
+<meta property="og:url" content="https://support.squarespace.com/hc/en-us/articles/206566687-Export-your-site-content" />
+<link rel="canonical" href="https://support.squarespace.com/hc/en-us/articles/206566687-Export-your-site-content">
+<link rel="alternate" hreflang="de" href="https://support.squarespace.com/hc/de/articles/206566687-Exportieren-deiner-Website-Inhalte">
+<link rel="alternate" hreflang="en-us" href="https://support.squarespace.com/hc/en-us/articles/206566687-Export-your-site-content">
+<link rel="alternate" hreflang="es" href="https://support.squarespace.com/hc/es/articles/206566687-Exporta-el-contenido-de-tu-sitio">
+<link rel="alternate" hreflang="fr-fr" href="https://support.squarespace.com/hc/fr-fr/articles/206566687-Exporter-le-contenu-de-votre-site">
+<link rel="alternate" hreflang="it" href="https://support.squarespace.com/hc/it/articles/206566687-Esporta-il-contenuto-del-tuo-sito">
+<link rel="alternate" hreflang="ja-jp" href="https://support.squarespace.com/hc/ja-jp/articles/206566687-%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E3%82%92%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B">
+<link rel="alternate" hreflang="ko-kr" href="https://support.squarespace.com/hc/ko-kr/articles/206566687-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%BD%98%ED%85%90%EC%B8%A0-%EB%82%B4%EB%B3%B4%EB%82%B4%EA%B8%B0">
+<link rel="alternate" hreflang="nl-nl" href="https://support.squarespace.com/hc/nl-nl/articles/206566687-De-content-van-je-site-exporteren">
+<link rel="alternate" hreflang="pt" href="https://support.squarespace.com/hc/pt/articles/206566687-Exporte-o-conte%C3%BAdo-do-seu-site">
+<link rel="alternate" hreflang="x-default" href="https://support.squarespace.com/hc/en-us/articles/206566687-Export-your-site-content">
+
+  <link rel="stylesheet" href="//static.zdassets.com/hc/assets/application-b925b7498ff4356827db8a6064e91e2b.css" media="all" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/hc/theming_assets/593095/167125/style.css?digest=49682190553485">
+
+  <link rel="icon" type="image/x-icon" href="/hc/theming_assets/01HZFVW2268CTBGRZP9T7CBH60">
+
+    
+
+  <!-- Favicon -->
+<link rel="icon" type="image/x-icon" media="(prefers-color-scheme: light)" href="https://static1.squarespace.com/static/5134cbefe4b0c6fb04df8065/t/5be0b4d96d2a73f0ce4f95ff/favicon.ico">
+<link rel="icon" type="image/x-icon" media="(prefers-color-scheme: dark)" href="https://static1.squarespace.com/static/5134cbefe4b0c6fb04df8065/t/6553aa5af16e670f2674a81d/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Squarespace session — resolved by runAutoLogin in the JS bundle (scripts/utilities/sso.js) -->
+<script>
+  window.ssoResolve = null;
+  window.SQSP_SESSION = new Promise(resolve => (window.ssoResolve = resolve));
+</script>
+
+<!-- Trust Arc -->
+<script>
+  (function () {
+    // TrustArc keys persistent consent off the userID param, so the notice script can only be
+    // appended once we know whether a Squarespace member is signed in. window.SQSP_SESSION is
+    // resolved by the deferred bundle, so fall back to an anonymous load if it takes too long —
+    // the consent banner must never be blocked by auth.
+    var SESSION_TIMEOUT_MS = 1500;
+
+    async function hashMemberId(memberId) {
+      var data = new TextEncoder().encode(memberId);
+      var hashBuffer = await crypto.subtle.digest('SHA-256', data);
+      return Array.from(new Uint8Array(hashBuffer))
+        .map(b => b.toString(16).padStart(2, '0'))
+        .join('');
+    }
+
+    function appendTrustArc(userId) {
+      var locale = 'en-us';
+      var languageParam = locale ? '&language=' + locale.slice(0, 2) : '';
+      var script = document.createElement('script');
+      script.async = true;
+      script.crossOrigin = '';
+      script.dataset.id = 'trustarc-script';
+      // Append &country=gb to the src to force the banner to show while testing.
+      script.src =
+        '//consent.trustarc.com/notice?domain=squarespace.com&c=teconsent&js=nj&noticeType=bb' +
+        '&text=true&pn=2&gtm=1&pcookie' + languageParam + '&userID=' + encodeURIComponent(userId);
+      document.head.appendChild(script);
+    }
+
+    async function loadTrustArc() {
+      var session = await Promise.race([
+        window.SQSP_SESSION.catch(() => null),
+        new Promise(resolve => setTimeout(() => resolve(null), SESSION_TIMEOUT_MS)),
+      ]);
+
+      var memberId = session && session.id;
+      if (!memberId || !window.crypto || !crypto.subtle) {
+        appendTrustArc('');
+        return;
+      }
+
+      try {
+        appendTrustArc(await hashMemberId(String(memberId)));
+      } catch {
+        appendTrustArc('');
+      }
+    }
+
+    loadTrustArc();
+  })();
+</script>
+
+<!-- scripts -->
+<script async type="text/javascript" src="https://cdn.statuspage.io/se-v2.js"></script>
+
+<!-- Start of Wistia player script -->
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async> </script>
+<!-- End of Wistia player script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Sunshine Conversations Extensions SDK -->
+<script>
+    (function(d, s, id) {
+        var js,
+            fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://cdn.smooch.io/webview-sdk.min.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'WebviewSdkScript');
+</script>
+
+<!-- Single Sign On -->
+<script>
+  var ZD_SSO_SETTINGS = {
+   "enabled": true,
+    "anonymous": true,
+    "end_user": true,
+   "agent": true,
+    "manager": true,
+    "internal": false,
+    "group_filter": "",
+  };
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-BCCP");
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Squarespace Tracing Lightstep -->
+
+<script type="module">
+  import * as mime from 'https://unpkg.com/mime@4.0.4/dist/src/index_lite.js';
+  import other from 'https://unpkg.com/mime@4.0.4/dist/types/other.js';
+  import standard from 'https://unpkg.com/mime@4.0.4/dist/types/standard.js';
+  window.HC_MIME = mime;
+  window.HC_MIME_OTHER = other;
+  window.HC_MIME_STANDARD = standard;
+</script>
+
+<!-- Start of SwiftEQ player script -->
+<script>
+  window.hcm = {};
+  function hcmanager(account_key, dataset_id, domain, script_url) {
+    window.hcm._accountKey = account_key;
+    window.hcm._datasetId = dataset_id;
+    window.hcm._domain = domain;
+    var script = document.createElement("script");
+    script.type = "application/javascript";
+    script.src = script_url;
+    var first = document.getElementsByTagName('script')[0];
+    first.parentNode.insertBefore(script, first);
+  }
+  hcmanager('d57002bae6638b7cfc8d99954cfd46b5', '64b69e50920d04641b5dfaad', 'https://hcmanager.swifteq.com', 'https://scripts.swifteq.com/hc_events.js');
+</script>
+<!-- End of SwiftEQ player script -->
+
+<!-- Impact Landings Tracking -->
+<script type="text/javascript">
+  (function(a, b, c, d, e, f, g) {
+    e["ire_o"] = c;
+    e[c] =
+      e[c] ||
+      function() {
+        (e[c].a = e[c].a || []).push(arguments);
+      };
+    f = d.createElement(b);
+    g = d.getElementsByTagName(b)[0];
+    f.async = 1;
+    f.src = a;
+    g.parentNode.insertBefore(f, g);
+  })("//d.impactradius-event.com/A1325362-caba-4d3f-a83b-1ca7492ec0a51.js", "script", "ire", document, window);
+  ire("identify", { customerId: "", customerEmail: "" });
+</script>
+
+<script>
+  var parseQueryString = function( queryString ) {
+    var params = {}, queries, temp, i, l;
+    // Split into key/value pairs
+    queries = queryString.split("&");
+    // Convert the array of strings into an object
+    for ( i = 0, l = queries.length; i < l; i++ ) {
+        temp = queries[i].split('=');
+        params[temp[0]] = temp[1];
+    }
+    return params;
+  };
+  var result = parseQueryString(window.location.search.substring(1));
+  var ZD_HC_SETTINGS = {
+    "chatbot_enabled": {
+      "en-us": true,
+      "de": true,
+      "es": false,
+      "fr-fr": true,
+      "it": false,
+      "pt": false,
+      "ja-jp": false,
+      "tr": false
+    },
+    "chatbot_environment": "64fbb86dd7a47e1a4627a999",
+    "experiments": {  // A/B tests
+      "autologin-qa": {
+        allocationPercentage: "100",
+        enabled: true
+      },
+      "aus_live_chat": {
+        allocationPercentage: "100",
+        enabled: true
+      },
+    },
+    "dialogflow_agent_id": "",
+    "others": {
+      "isE2ETesting": false || (result["e2e-testing-enabled"] === "true"),
+      "experiments_sqsp_employees": true,
+      "schedulingLiveChatEnabled": false,
+    },
+  };
+
+  const settingsOverrides = localStorage.getItem('ZD_HC_SETTINGS_OVERRIDE');
+  const ssoOverrides = localStorage.getItem('ZD_SSO_SETTINGS_OVERRIDE');
+
+  if (settingsOverrides) {
+    window.ZD_HC_SETTINGS = JSON.parse(settingsOverrides);
+  }
+
+  if (ssoOverrides) {
+    window.ZD_SSO_SETTINGS = JSON.parse(ssoOverrides);
+  }
+
+  var players = [];
+</script>
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="/hc/theming_assets/01M34SAP3KJQZ42WYYHCW2WTJ6" />
+
+<!-- START Google Search Console verification -->
+<meta name="google-site-verification" content="BH2xphEDDDwt0cNe8V3RDvorBsDRLv4iRfN0dZUWk9c" />
+<meta name="google-site-verification" content="24j5Z9PX1iljDwnEp_f3wuU0xXaw6cv72CM_OGBzINQ" />
+<meta name="google-site-verification" content="XG15aS6C0PDPf3W9p8x0wIw138F2F8HH1sjIJT7lwKc" />
+<meta name="google-site-verification" content="qwo6dGj5JehQnxGZdqQHawgsE71EoQi_7FHeXzzLNsk" />
+<meta name="google-site-verification" content="XsKn8HF71BaPpu1fOfqpCCNu2tpozV_EFeejAZkJxR8" />
+<!-- Generative AI Web Crawler -->
+<meta name="google-site-verification" content="6rbKQyIWjGzphq8TlV5UOD5Kod3OO4N_-A8W68QkLGo" />
+<!-- END Google Search Console verification -->
+
+<!-- Facebook Social Sharing -->
+<meta property="og:url" content="https://support.squarespace.com" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Squarespace Help" />
+<meta property="og:description" content="In-depth articles and videos on everything Squarespace." />
+<meta property="og:image" content="https://theme.zdassets.com/theme_assets/593095/76439a2c70d180ab75568a2e5c1a636070099cf8.jpeg" />
+
+<!-- ../assets/banner-image-contact.jpg -->
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="fb:app_id" content="980159875444848" />
+  
+</head>
+<body class="">
+  
+  
+  
+
+  <!-- Mobile Menu Nav -->
+<nav id="mobile-nav" class="mobile-nav"></nav>
+
+<!-- trustArc -->
+<div id="trustArc">
+  <div id="consent_blackbar"></div>
+</div>
+
+<!-- Page Loading Indicator -->
+<div class="loading-indicator" style="display: none;">
+  <div class="loading-symbol-wrapper">
+    <div class="loading-symbol"></div>
+  </div>
+  <div class="loading-text">Gathering resources...</div>
+</div>
+<!-- Announcement Bar -->
+<div id="announcement" style="position: relative;"></div>
+
+<div class="site-wrapper">
+  <header class="header"></header>
+  <div class="community-templates hide">
+    <!-- Community Home Sidebar -->
+    <div id="t-community-sidebar" class="community-sidebar" data-template="community-main">
+      <div class="sidebar-box">
+        <p class="community-welcome"></p>
+        <p class="community-note"></p>
+      </div>
+      <div class="sidebar-box sidebar-box-search">
+        <h3 class="subtitle"></h3>
+        <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input type="hidden" name="utf8" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+      </div>
+    </div>
+
+    <!-- Community Topic Sidebar -->
+    <div id="t-community-topic-sidebar" class="community-sidebar" data-template="community-topic">
+      <div class="sidebar-box">
+        <h3 class="subtitle"></h3>
+        <div class="topic-follow-wrapper"></div>
+        <div class="post-details">
+          <!-- <span class="post-detail">Posts: <span class="post-data" data-content="topic-posts"></span></span> -->
+          <span class="post-detail"> Followers: <span class="post-data" data-content="topic-followers"></span> </span>
+        </div>
+      </div>
+      <div class="sidebar-box sidebar-box-search">
+        <h3 class="subtitle"></h3>
+        <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input type="hidden" name="utf8" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+      </div>
+      <div class="sidebar-box">
+        <p class="community-welcome"></p>
+        <p class="community-note"></p>
+      </div>
+    </div>
+
+    <!-- Post Sidebar -->
+    <div id="t-community-post-sidebar" class="community-sidebar" data-template="community-post">
+      <div class="sidebar-box">
+        <h3 class="subtitle"></h3>
+        <div class="post-follow-wrapper"></div>
+        <div class="post-details">
+          <span class="post-detail"> Asked: <span class="post-data" data-content="post-created"></span> </span>
+          <span class="post-detail hide"> Updated: <span class="post-data" data-content="post-updated"></span> </span>
+          <span class="post-detail"> Followers: <span class="post-data" data-content="post-followers"></span> </span>
+        </div>
+      </div>
+      <div class="sidebar-box">
+        <h3 class="subtitle"></h3>
+        <div class="post-share-wrapper"></div>
+      </div>
+      <div class="sidebar-box sidebar-box-search">
+        <h3 class="subtitle"></h3>
+        <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input type="hidden" name="utf8" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+      </div>
+      <div class="sidebar-box">
+        <p class="community-welcome"></p>
+        <p class="community-note"></p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="is_not_signed_in"></div>
+  
+  <div id="hc-sign-in-link" style="display: none;"><a rel="nofollow" data-auth-action="signin" title="Opens a dialog" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.squarespace.com%2Fhc%2Fen-us%2Farticles%2F206566687-Export-your-site-content">You need to sign in to view this page.</a></div>
+  <div id="hc-sign-out-link" style="display: none;"></div>
+  <div id="dc" style="display: none;">
+    <div name="hc_search_results_page_search_results">Search Results</div>
+    <div name="hc_search_results_page_all_categories">All Categories</div>
+    <div name="hc_search_results_page_category_clear">Clear</div>
+    <div name="hc_header_search">Search</div>
+    <div name="hc_search_results_page_apply">Apply</div>
+    <div name="hc_category_page_search_placeholder">Search in</div>
+    <div name="hc_search_results_page_category_dropdown_placeholder">Category</div>
+    <div name="hc_search_results_page_category_reset">Reset</div>
+    <div name="hc_search_results_page_filter_by">Filter by</div>
+    <div name="hc_category_page_previous_button">Prev</div>
+    <div name="hc_category_page_next_button">Next</div>
+    <div name="hc_category_page_guides">Guides</div>
+    <div name="hc_header_menu_user_menu_log_out">Log out</div>
+    <div name="hc_header_menu_user_menu_account_dashboard">Account dashboard
+    </div>
+    <div name="hc_header_menu_logo_lockup">Help Center</div>
+    <div name="hc_footer_footer_nav_select_language">Select your language</div>
+    <div name="hc_header_menu_videos">VIDEOS</div>
+    <div name="hc_url_webinars_url">https://learning.squarespace.com</div>
+    <div name="hc_header_menu_workshops">WEBINARS</div>
+    <div name="hc_url_forum_url">https://forum.squarespace.com</div>
+    <div name="hc_header_menu_forum">FORUM</div>
+    <div name="hc_url_contact_us_url">/hc/requests/new#choose-topic</div>
+    <div name="hc_header_menu_contact">CONTACT US</div>
+    <div name="hc_header_login_link">Log in</div>
+    <div name="hc_search_see_all_link">See All Results</div>
+    <div name="hc_contact_ticket_send_button">Send</div>
+    <div name="hc_contact_ticket_dropdown_placeholder">Choose a topic
+    </div>
+    <div name="hc_contact_ticket_suggestion_title">We think this will help:</div>
+    <div name="hc_contact_options_description">Still need to contact us? </div>
+    <div name="hc_contact_ticket_live_chat_intro">Real-time conversation and immediate answers.
+    </div>
+    <div name="hc_contact_ticket_live_chat_button">Live Chat</div>
+    <div name="hc_contact_ticket_live_chat_hours">Monday - Friday: </br>
+4:00AM to 8:00PM EST</br>
+    </div>
+    <div name="hc_contact_ticket_email_intro">Send us a message and read our answer when it’s convenient for you.</div>
+    <div name="hc_contact_ticket_email_button">Email</div>
+    <div name="hc_contact_ticket_email_suggestion_footer">Contact us by email to get help with this topic.</div>
+    <div name="hc_contact_ticket_email_hours">24 hours a day<br />
+7 days a week</div>
+    <div name="hc_header_user_menu_log_into_squarespace">Log into Squarespace
+    </div>
+    <div name="hc_error_conditional_button">Go back </div>
+    <div name="hc_error_conditional_title">This guide is not available in English. You will be redirected in 5 seconds </div>
+
+    <div name="hc_contact_page_ticket_form_live_chat_button_alert"> We currently offer live chat support in English only.
+<br/><br/></div>
+    <div name="hc_contact_page_ticket_form_live_chat_button_alert_email"> EMAIL SUPPORT IN SPANISH</div>
+    <div name="hc_contact_page_ticket_form_live_chat_button_alert_chat"> CHAT IN ENGLISH</div>
+
+    <div name="hc_contact_page_ticket_form_squarespace_5_legacy_platform_squarespace_5_help"> Squarespace 5 Help</div>
+    <div name="hc_contact_page_ticket_form_squarespace_5_legacy_platform_description"> For questions about the legacy Squarespace 5 platform, please visit its Help Center:</div>
+    <div name="hc_contact_page_ticket_form_squarespace_5_legacy_platform_back_button"> Back</div>
+
+    <div name="hc_contact_page_ticket_form_account_recovery"> Regain access to your account or site</div>
+    <div name="hc_contact_page_ticket_form_account_recovery_summary"> If you’ve tried to <a target="_blank" href="https://login.squarespace.com/recovery-form#/recovery/domain"><strong>recover your Squarespace or Acuity account</strong></a> and still can’t access it, we’re here to help. Please enter as much information as you can, but if you’re not sure about specific details, provide your best guess.<br><br>
+
+Before you begin:<br>
+
+<p class="dc-indented">• Did you already try to <a target="_blank" href="https://login.squarespace.com/recovery-form#/recovery/domain"><strong>recover your account</strong></a> through the login page? We’ll ask you to try that first if you haven’t yet.<br>
+
+<p class="dc-indented">• For your security, we’ll only provide account details to the account holder.<br>
+
+<p class="dc-indented">• For help recovering a Google Workspace account, contact us <a target="_blank" href="https://support.squarespace.com/hc/requests/new?ticket_form_id=64357"><strong>here.</strong></a></p></div>
+    <div name="hc_contact_page_ticket_form_account_recovery_email"> Email address where we can contact you.</div>
+    <div name="hc_contact_page_ticket_form_account_recovery_description"> What situation led to the trouble accessing your account?</div>
+    <div name="hc_contact_page_ticket_form_account_recovery_website_url_s"> URLs of any websites connected to the account. Enter as many domains as possible. </div>
+    <div name="hc_contact_page_ticket_form_account_recovery_attachment_title">Please attach a bank statement that shows the bank header, bank accountholder name, and the most recent Squarespace charge. You are free to obscure other personal information in the document. (Not required for two-factor authentication issues.)</br>
+
+Note:</br>
+
+<p class="dc-indented">• If you entered multiple websites above, attach statements showing the most recent charge associated with every site.
+<p class="dc-indented">• Files must be in PDF format and official statements downloaded from your bank.</p> </div>
+    <div name="hc_contact_page_ticket_form_account_recovery_form_button"> Request Account Access</div>
+    <div name="hc_contact_page_ticket_form_account_recovery_end_summary"> A member of our team will respond as soon as possible. <a href="http://www.squarespace.com/privacy/">http://www.squarespace.com/privacy/</a></div>
+    <div name="hc_contact_page_ticket_form_account_recovery_plaid_label"> Begin verification of your identity</div>
+    <div name="hc_contact_page_ticket_form_account_recovery_plaid_summary"> Get faster support with accessing your account by verifying your identity.
+<br/><br/>
+Squarespace is committed to the safety and security of our customers’ accounts and personal information. We need to verify your identity to make sure that you're who you say you are.
+<br/><br/>
+Our identity verification process should only take you about five minutes. This process uses industry-leading software from Plaid to quickly, safely, and securely verify your identity. For more information, please see <a href="http://squarespace.com/privacy" target="_blank">Squarespace’s Privacy Policy</a> and <a href="https://plaid.com/legal/#consumers" target="_blank">Plaid’s Privacy Policy</a>.
+
+</div>
+    <div name="hc_contact_page_ticket_form_account_recovery_plaid_cta"> Verify my identity</div>
+    <div name="hc_contact_page_ticket_form_account_recovery_plaid_cta_success"> Verification complete</div>
+    <div name="hc_contact_page_ticket_form_account_recovery_plaid_cta_incomplete"> Pending verification</div>
+    <div name="hc_contact_page_ticket_form_account_recovery_plaid_pending_message"> Your information is still pending verification. Continue with the form submission.</div>
+    <div name="hc_contact_page_security_steps_intro">Follow these steps:</div>
+    <div name="hc_custom_form_email_description">Enter the email address you used to submit your previous ticket</div>
+    <div name="hc_custom_form_secure_document_upload_title"><h1>Secure Document Upload Form</h1>
+<br>
+<i>Information you submit via this form is subject to our Privacy Policy: <a href="https://www.squarespace.com/privacy">https://www.squarespace.com/privacy</a></i></div>
+
+    <div name="hc_contact_page_ticket_form_request_a_refund_button"> Request a Refund</div>
+    <div name="hc_contact_page_ticket_form_request_a_refund_business_hours"> Hear back in 2 business days.</div>
+
+    <div name="hc_contact_page_ticket_form_sales_tax_certificate">If you have a tax exemption certificate, attach it here. .pdf, .png, .jpeg file formats are accepted.</div>
+    <div name="hc_contact_page_ticket_form_sales_tax_description">Use this form to submit a request about exemption from sales tax collected for Squarespace payments.</div>
+    <div name="hc_contact_page_ticket_form_sales_tax_details">Enter the details of your request here. If you’re not based in a country or state where we collect taxes, and you believe we shouldn’t collect taxes from you, please explain.</div>
+    <div name="hc_contact_page_ticket_form_sales_tax_feedback_description">If you have feedback about how we collect sales tax, submit it here.
+
+Your feedback helps make Squarespace better, and we review every request we receive. Please note that we can't reply individually, but we’ll contact you if we need more details.</div>
+    <div name="hc_contact_page_ticket_form_sales_tax_feedback_title">General sales tax feedback</div>
+    <div name="hc_contact_page_ticket_form_sales_tax_form_title">Request an exemption from sales tax</div>
+    <div name="hc_contact_page_subtopic_menu_label">Tell us more </div>
+
+    <div name="hc_contact_page_ticket_form_attachments_description">Upload a screenshot of the issue you’re having, or the site content you'd like to modify, so we can help you more quickly. Learn how to take a screenshot here: <a href="https://sqsp.link/hMaBjw">https://sqsp.link/hMaBjw</a></div>
+
+    <div name="hc_contact_page_copyright_form_overview"><p>Squarespace respects intellectual property rights and expects its users to do the same. Squarespace responds expeditiously to claims of copyright infringement committed using the Services. 
+To submit a notice of claimed copyright infringement, you will need to submit a notice of infringement using the form below. </p> 
+
+<p>Please be aware that in instances where Squarespace is merely the Registrar and does not provide web hosting services, Squarespace does not control the content and the content does not reside on Squarespace’s servers; you will need to resolve the claimed copyright infringement directly with the site owner or the web hosting service provider. </p>
+
+<p>Squarespace's response to notices of alleged copyright infringement may include the removal or restriction of access to allegedly infringing material. Please note that information provided in a notice of copyright infringement may be forwarded to the user who posted the allegedly infringing content or the site owner.</p></div>
+    <div name="sp_ticket_form_dsa_report_preamble">Squarespace is committed to providing a service to our customers that is safe and trusted. If you believe that there is content on Squarespace that is illegal, please submit a notice of illegal content to Squarespace using the form below. We have introduced this reporting channel to customers in accordance with Article 16 of the European Union’s Digital Services Act (Regulation (EU) 2022/2065) (‘DSA’).</div>
+
+    <div name="sp_ticket_form_customer_documentation_submission_details">Please enter the information requested in the email.</div>
+    <div name="sp_ticket_form_customer_identification_submission_attachment_title">Please attach both the following documents</br>
+• A government-issued ID.For example, a drivers license or passport.</br>
+• A selfie holding the government issued I.D.</br>
+</br>
+Note: Ensure your files are .jpg or .png so we can view them</br></div>
+
+    <!-- Hidden Form Preambles -->
+    <div name="sp_ticket_form_au_domain_registrant_information_preamble"><h1>Ensure your .AU domain remains active by confirming your registrant details.</h1>
+
+<br>
+
+The .AU Domain Registry requires that all registrants qualify to own a .AU domain. According to the .AU Domain Administration Rules for individuals, you are required to provide a copy of an Australian government-issued ID number (such as a Driver's License, Passport, or Birth Certificate) and proof of Australian residency.
+
+<br><br>
+
+For more detailed information on these rules and policies, visit the following link: <a href="https://www.auda.org.au/au-domain-names/au-rules-and-policies/
+" target="_blank">https://www.auda.org.au/au-domain-names/au-rules-and-policies</a>
+
+</div>
+    <div name="sp_ticket_form_malware_report_preamble"><h1>Report malware</h1> 
+
+Squarespace Domains LLC and Squarespace Domains II LLC are committed to providing a safe and trusted service. If you have a concern about a domain name registered with Squarespace, you can submit a report to let us know. <br><br>
+
+Malware, or malicious software, are programs designed to disrupt, damage, or gain access to a computer without the owner's knowledge. Malware includes viruses, spyware, ransomware, and other unwanted software. Malware being used through multiple sources are referred to as botnets. <br><br>
+
+To learn more about reporting other suspicious domain activity to Squarespace, visit <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/11580957865869"><strong>Reporting domain name abuse.</strong></a> <br><br>
+
+<strong>Before you begin:</strong><br>
+
+• Ensure the domain you're reporting to us is <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/11580957865869#toc-verify-the-domain-provider"><strong>registered and managed through Squarespace.</strong></a><br>
+
+• Visit our <a target="_blank" href="https://www.squarespace.com/terms-of-service/"><strong>Terms of Service</strong></a> and <a target="_blank" href="https://www.squarespace.com/acceptable-use-policy/"><strong>Acceptable Use Policy</strong></a> to review our policies about abuse and fraudulent or illegal activity.</div>
+    <div name="sp_ticket_form_phishing_report_preamble"><h1>Report phishing or pharming</h1> 
+
+Squarespace Domains LLC and Squarespace Domains II LLC are committed to providing a safe and trusted service. If you have a concern about a domain name registered with Squarespace, you can submit a report to let us know. <br><br>
+
+
+Phishing is a type of fraud that attempts to deceive users into sharing sensitive information like credit card information, passwords, or account details.<br><br>
+
+
+Where phishing attempts to deceive users into sharing sensitive information, pharming attempts to redirect users to fraudulent sites through modified/hijacked DNS, instead of where the user originally attempted to go.<br><br>
+
+
+To learn more about reporting other suspicious domain activity to Squarespace, visit <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/11580957865869"><strong>Reporting domain name abuse.</strong></a> <br><br>
+
+
+<strong>Before you begin:</strong><br>
+
+• Ensure the domain you're reporting to us is <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/11580957865869#toc-verify-the-domain-provider"><strong>registered and managed through Squarespace.</strong></a><br>
+
+• Visit our <a target="_blank" href="https://www.squarespace.com/terms-of-service/"><strong>Terms of Service</strong></a> and <a target="_blank" href="https://www.squarespace.com/acceptable-use-policy/"><strong>Acceptable Use Policy</strong></a> to review our policies about abuse and fraudulent or illegal activity.</div>
+    <div name="sp_ticket_form_spam_report_preamble"><h1>Report spam</h1> 
+
+Squarespace Domains LLC and Squarespace Domains II LLC are committed to providing a safe and trusted service. If you have a concern about a domain name registered with Squarespace, you can submit a report to let us know.<br><br>
+
+Spam encompasses any unsolicited bulk emails sent without the recipient's consent. This includes “spamvertising” and sending emails that violate the <a target="_blank" href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business"><strong>CAN-SPAM Act.</strong></a><br><br>
+
+To learn more about reporting other suspicious domain activity to Squarespace, visit <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/11580957865869"><strong>Reporting domain name abuse.</strong></a> <br><br>
+
+
+<strong>Before you begin:</strong><br>
+
+• Ensure the domain you're reporting to us is <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/11580957865869#toc-verify-the-domain-provider"><strong>registered and managed through Squarespace.</strong></a><br>
+
+• Visit our <a target="_blank" href="https://www.squarespace.com/terms-of-service/"><strong>Terms of Service</strong></a> and <a target="_blank" href="https://www.squarespace.com/acceptable-use-policy/"><strong>Acceptable Use Policy</strong></a> to review our policies about abuse and fraudulent or illegal activity.</div>
+    <div name="sp_ticket_form_general_abuse_report_preamble">Temporary text</div>
+    <div name="sp_ticket_form_whois_preamble"><h1>Report Whois contact inaccuracy</h1> 
+
+Squarespace Domains LLC and Squarespace Domains II LLC are committed to providing a safe and trusted service. If you have a concern about a domain name registered with Squarespace, you can submit a report to let us know.<br><br>
+
+Domain owners are required to keep their Whois records up-to-date. Inaccurate, outdated or intentionally false domain contact details can be reported through this form. <br><br>
+
+To learn more about reporting other suspicious domain activity to Squarespace, visit <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/11580957865869"><strong>Reporting domain name abuse.</strong></a> <br><br>
+
+
+<strong>Before you begin:</strong><br>
+
+• Ensure the domain you're reporting to us is <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/11580957865869#toc-verify-the-domain-provider"><strong>registered and managed through Squarespace.</strong></a><br>
+
+• Visit our <a target="_blank" href="https://www.squarespace.com/terms-of-service/"><strong>Terms of Service</strong></a> and <a target="_blank" href="https://www.squarespace.com/acceptable-use-policy/"><strong>Acceptable Use Policy</strong></a> to review our policies about abuse and fraudulent or illegal activity.</div>
+    <div name="sp_ticket_form_trademark_preamble">Squarespace respects intellectual property rights and expects its users to do the same. Squarespace responds expeditiously to claims of trademark infringement committed using the Services. To submit a notice of claimed trademark infringement, you will need to submit a notice of infringement using the form below.
+<br>
+<br>
+Please be aware that in instances where Squarespace is merely the Registrar and does not provide web hosting services, Squarespace does not control the content and the content does not reside on Squarespace’s servers; you will need to resolve the claimed trademark infringement directly with the site owner or the web hosting service provider.
+<br>
+<br>
+Squarespace's response to notices of alleged trademark infringement may include the removal or restriction of access to allegedly infringing material. Please note that information provided in a notice of trademark infringement may be forwarded to the user who posted the allegedly infringing content or the site owner.</div>
+    <div name="sp_ticket_form_icann_npirpd_preamble" ><h1>Non-Public Information Request Process Disclosure</h1>
+<p>
+For privacy reasons, Squarespace Domains LLC and Squarespace Domains II LLC (collectively, “Squarespace Registrar Entities” and each, a “Squarespace Registrar Entity”) generally redact customers’ personal contact information within registration data (“non-public registration data”) associated with general top-level domains for which a Squarespace Registrar Entity serves as the registrar of record (“domain name”) when a public lookup of such registration data through Squarespace’s Registration Data Directory Services (“RDDS”) outputs are performed.
+<br>
+<br>
+However, in order to comply with ICANN’s Registration Data Policy, Squarespace Registrar Entities are obligated to allow third parties to submit a request for non-public registration data associated with a domain name and have such non-public registration data to be disclosed to them directly on the basis of demonstrable legitimate interest (each, a “request”). This page outlines (a) the format and content required for each request that must be submitted for Squarespace’s review, (b) how Squarespace will respond to your request and (c) the anticipated timeline for our response to your request. Only requests for single domains are permitted.  Please note that <strong>this policy does not jeopardize the fundamental interests, rights and freedoms of a data subject, consistent with the General Data Protection Regulation ("GDPR") or other similar privacy laws.  It is also not a substitute for other less-intrusive mechanisms available and we expect these mechanisms to be exhausted prior to any request submitted hereunder, which request should only be submitted as an extreme, last resort measure given its potential impact to the data subject.</strong>
+<br>
+<br>
+<h2>Points to consider</h2>
+<br>
+• If you are looking to only obtain non-public registration data in order to reach out to the contact associated with a domain name, Squarespace offers the ability to communicate through the form available <a target="_blank" href="https://domains.squarespace.com/whois-contact-form"><strong>here.</strong></a>
+<br>
+<br>
+• If you are looking to report DNS abuse for a domain name registered through Squarespace, steps on how to do so are available <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/11580957865869-Reporting-abuse"><strong>here.</strong></a>
+<br>
+<br>
+• If you believe you are potentially the victim of a crime associated to a domain name, you may file a complaint with the <a target="_blank" href="https://www.ic3.gov/Home/ComplaintChoice"><strong>FBI’s Internet Crime Complaint Center (IC3)</strong></a>, <a target="_blank" href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3"><strong>European Cybercrime Centre (EC3)</strong></a>, or if you reside outside the foregoing regions, then your region’s equivalent cybercrime reporting authority.
+<br>
+<br>
+• If you believe that a domain name registered at Squarespace violates your rights or if you believe that the domain Registrant is otherwise in breach of the representations made in Section 2 of the Uniform Domain Name Dispute Resolution Policy (UDRP), then you may file a complaint against the Registrant with an ICANN-approved dispute resolution provider (the “Resolution Provider”). You can find more information about the UDRP process, including how to file a complaint against the Registrant with an ICANN-approved dispute resolution provider, <a target="_blank" href="https://www.icann.org/resources/pages/help/dndr/udrp-en"><strong>here.</strong></a>
+<br>
+<br>
+• If you are a law enforcement agency seeking information, please note that we are unable to provide information about Squarespace accounts, users, or sites to law enforcement without a subpoena, court order, or warrant.
+<br>
+<br>
+Once the receipt of the information and statements below have been acknowledged, Squarespace will review your submission and respond via email to the contact address provided with the request within 30 days from such acknowledgment absent exceptional circumstances. Squarespace Registrar Entity, in its sole discretion, may grant or deny requests and decisions are considered final. Repeated data access requests against our policy may result in rejection of any future requests you may submit.</div>
+    <div name="sp_ticket_form_threat_of_violence_preamble">If you believe someone is engaging in harmful behavior (e.g., threats of violence or doxxing), please use this form to report it. Provide as much detail as possible — our Trust & Safety team will review.
+
+If you/someone is in immediate danger, call local emergency services first.</div>
+    <div name="sp_ticket_form_non_consensual_content_preamble"><h1>Non-Consensual Intimate Content webform</h1>
+
+<p>
+
+Squarespace takes reports of non-consensual intimate imagery very seriously. We prioritize handling these reports swiftly and will take immediate action on valid reports. Provide as much detail as possible — our Trust & Safety team will review. Please be advised that providing false, misleading, or incomplete information may hinder our ability to investigate.
+
+<br>
+<br>
+
+Please be aware that in instances where Squarespace is merely the Registrar and does not provide web hosting services, Squarespace does not control the content and the content does not reside on Squarespace’s servers; you will need to resolve the issue directly with the site owner or report it to the web hosting service provider.
+
+<br>
+<br> 
+
+Squarespace's response to reports submitted through this form may include the removal or restriction of access to the reported intimate material. Please note that information provided in a report may be forwarded to the user who posted the reported content or the site owner.
+
+<br>
+<br>
+
+<i>If you/someone is in immediate danger, call 911 or local emergency services first.</i></div>
+    <div name="sp_ticket_form_csam_preamble">Squarespace takes reports of CSAM (Child Sexual Abuse Material) very seriously. We prioritize handling these reports swiftly and will take immediate action, including notifying the National Center for Missing and Exploited Children (NCMEC). We strongly encourage you to also file a report directly with NCMEC.
+
+If you/someone is in immediate danger, call local emergency services first.
+</div>
+    <div name="sp_ticket_form_oauth_credentials_request_preamble"><h1>Third Party Developer OAuth Credentials Request</h1>
+
+There is now a new process for creating new OAuth applications which allows you to create and maintain them in a self-service manner.  This form will be decommissioned on <strong>September 30, 2026</strong>.
+
+<br>
+<br>
+
+Please click this link to get started: <a href="https://account.squarespace.com/developer-apps" target="_blank">https://account.squarespace.com/developer-apps</a></div>
+    <div name="sp_ticket_form_transparent_payment_failures_preamble"><h1>Request a Review of a Blocked Order</h1>
+
+This form is intended only for payments blocked by our Risk security checks, specifically, blocks where your dashboard’s Next Steps message directs you to contact the Squarespace Payments Risk Team. 
+
+<br>
+<br>
+
+A failed payment is different. This is a decline issued by the shopper’s own card issuer or bank, typically due to an expired card, insufficient funds, or the issuer’s own risk checks. Squarespace cannot intervene on these declines. Please direct the shopper to contact their bank directly. 
+
+<br>
+<br>
+
+Before you continue, a quick note on how this works:
+
+<br>
+<br>
+
+Our checks are designed to protect you from fraudulent transactions and the disputes that come with them. They are not perfect and sometimes a genuine customer gets caught in them by mistake, that is exactly what this form is for.
+
+<br>
+<br>
+
+If you tell us this shopper is genuine and we lift the block, please know the payment is not guaranteed to succeed. Standard dispute and chargeback rules still apply, so if the order turns out to be fraudulent after all, your store carries that risk the same as any other transaction.
+
+<br>
+<br>
+
+A few common red flags worth checking before you vouch for a shopper: Overpayment followed by a refund request, unusually large or rushed orders from a new customer, a shipping address far from the billing address, or multiple orders going to the same address under different names. 
+
+<br>
+<br>
+
+For a fuller rundown, see our <a href="https://support.squarespace.com/hc/en-us/articles/43041541040909-Identify-and-prevent-common-scams" target="_blank">guide on common scams and how to spot them.</a>
+
+<br>
+<br>
+
+If you still believe this is a genuine customer, go ahead and fill out the form below. </div>
+
+    <div name="hc_contact_page_email_error_message">Please complete all required fields.</div>
+
+    <div name="hc_announcementbar_announcement_title"> #</div>
+    <div name="hc_announcementbar_announcement_url"> #</div>
+    <div name="hc_announcementbar_acuity_title">Squarespace Scheduling is now officially Acuity Scheduling. For help setting up appointments, search “Acuity”, or find related guides under “Acuity Scheduling”.</div>
+    <div name="hc_announcementbar_acuity_url">#</div>
+    <div name="hc_announcementbar_acuity_url">#</div>
+    <div name="hc_contact_page_ticket_form_deceased_owner_description">Please use this form to submit a request regarding a deceased Squarespace customer’s site or Acuity Scheduling account. Our deepest condolences go out to you and your family during this time, and we appreciate your patience as we work through your request.
+
+<br>
+<br>
+
+Please note that information provided in your request may be forwarded to the contact email address we have on file for the account owner. 
+
+<br>
+<br>
+
+Submissions through this form are carefully reviewed. Please be advised that due to their sensitive nature, these reviews may take time.
+
+<br>
+<br>
+
+<strong>A note regarding Squarespace 5 sites:</strong>
+
+<br>
+
+Squarespace 5, our legacy platform, doesn't allow permissions to be edited. However, we can cancel or remove the site.
+</div>
+    <div name="hc_contact_page_ticket_form_deceased_owner_title">Submit a request about a deceased customer's account</div>
+    <div name="hc_contact_page_ticket_form_deceased_owner_subject">Subject</div>
+    <div name="hc_contact_page_ticket_form_deceased_owner_description_field">Any comments, requests, or concerns we should know?</div>
+    <div name="hc_contact_page_ticket_form_deceased_owner_attachment_title">Please attach the following documents:</br>
+• An image of the deceased person’s obituary, death certificate, and/or other documents.</br>
+• Any additional documents, such as Legal Representation documentation.</br></div>
+    <div name="hc_release"></div>
+    <div name="hc_contact_page_messaging_intro">Send us a message. Business hours are Monday - Friday, 5:30AM to 8PM EST. Messages sent outside these hours will receive a response within 12 hours.</div>
+    <div name="hc_contact_page_ticket_form_scheduling_live_chat_button_hours">Monday - Friday: </br>
+4:00AM to 8:00PM EST</br></div>
+
+    <!-- Homepage DC -->
+    <div name="hc_homepage_hero_title">Squarespace Help Center</div>
+    <div name="hc_homepage_search_hint">Find answers and resources</div>
+    <div name="hc_homepage_search_see_more_link">See More Results</div>
+    <div name="hc_homepage_product_area_heading">Browse by product</div>
+    <div name="hc_homepage_website_product_area_title">Websites</div>
+    <div name="hc_homepage_website_product_area_blocks_link">Adding content with blocks
+    </div>
+    <div name="hc_homepage_website_product_area_images_link">Formatting your images for display
+    </div>
+    <div name="hc_homepage_website_product_area_colors_link">Changing colors
+    </div>
+    <div name="hc_homepage_website_product_area_seo_link">SEO checklist</div>
+    <div name="hc_homepage_domains_product_area_title">Domains</div>
+    <div name="hc_homepage_domains_product_area_connecting_link">Connecting a domain</div>
+    <div name="hc_homepage_domains_product_area_moving_link">Moving a domain to another site
+    </div>
+    <div name="hc_homepage_domains_product_area_registering_link">Registering Squarespace domains</div>
+    <div name="hc_homepage_domains_product_area_transferring_link">Transferring a domain</div>
+    <div name="hc_homepage_commerce_product_area_title">Commerce</div>
+    <div name="hc_homepage_commerce_product_area_adding_products_link">Adding products to your store</div>
+    <div name="hc_homepage_commerce_product_area_payment_link">Connecting a payment processor</div>
+    <div name="hc_homepage_commerce_product_area_discounts_link">Creating discounts </div>
+    <div name="hc_homepage_commerce_product_area_taxes_link">Setting up taxes
+    </div>
+    <div name="hc_homepage_email_campaigns_product_area_title">Email Campaigns</div>
+    <div name="hc_homepage_email_campaigns_product_area_mailing_lists_link">Building mailing lists</div>
+    <div name="hc_homepage_email_campaigns_product_area_profiles_link">Creating sender profiles</div>
+    <div name="hc_homepage_email_campaigns_product_area_best_practices_link">Email campaign best practices</div>
+    <div name="hc_homepage_email_campaigns_product_area_getting_started_link">Getting started with Squarespace Email Campaigns</div>
+    <div name="hc_homepage_professional_email_product_area_title">Professional Email</div>
+    <div name="hc_homepage_professional_email_area_basics_link">Using Google Workspace with Squarespace</div>
+    <div name="hc_homepage_professional_email_area_signing_up_for_google_workspace_link">Signing up for Google Workspace</div>
+    <div name="hc_homepage_professional_email_area_business_email_link">Create a business email address with Essential Email by Titan</div>
+    <div name="hc_homepage_professional_email_area_essential_email_link">Sign up for Essential Email by Titan</div>
+    <div name="hc_homepage_scheduling_product_area_title">Acuity Scheduling</div>
+    <div name="hc_homepage_scheduling_product_area_getting_started_link">Starting an Acuity Scheduling trial</div>
+    <div name="hc_homepage_scheduling_product_area_acuity_helpcenter_link">Acuity Help Center</div>
+    <div name="hc_homepage_scheduling_product_area_acuity_what_is_link">What is Acuity Scheduling?</div>
+    <div name="hc_homepage_scheduling_product_pricing_link">Acuity Scheduling pricing, billing, and invoices
+    </div>
+    <div name="hc_homepage_topic_heading">Guides by topic</div>
+    <div name="hc_homepage_topic_show_more_button">Show more</div>
+    <div name="hc_homepage_topic_show_less_button">Show less</div>
+    <div name="hc_homepage_getting_started_topic_tile_title">Getting started
+    </div>
+    <div name="hc_homepage_getting_started_topic_tile_subtitle">Everything you need to start and launch your site on Squarespace</div>
+    <div name="hc_homepage_account_topic_tile_title">Account</div>
+    <div name="hc_homepage_analytics_topic_tile_title">Analytics</div>
+    <div name="hc_homepage_account_topic_tile_subtitle">Get help with your account settings, password, and site contributors</div>
+    <div name="hc_homepage_billing_topic_tile_title">Billing</div>
+    <div name="hc_homepage_analytics_topic_tile_subtitle">View reports to gain insight into visitor engagement and sales</div>
+    <div name="hc_homepage_billing_topic_tile_subtitle">Get help with your plans, payments, and subscriptions</div>
+    <div name="hc_homepage_commerce_topic_tile_title">Commerce</div>
+    <div name="hc_homepage_commerce_topic_tile_subtitle">Learn how to set up, manage, and grow your online store</div>
+    <div name="hc_homepage_domains_topic_tile_title">Domains</div>
+    <div name="hc_homepage_domains_topic_tile_subtitle">Get step-by-step help with registering, transferring, and connecting domains</div>
+    <div name="hc_homepage_images_and_videos_topic_tile_title">Images and videos</div>
+    <div name="hc_homepage_google_workspace_topic_tile_subtitle">Set up a custom email address with your domain</div>
+    <div name="hc_homepage_images_and_videos_topic_tile_subtitle">Make your site stand out with images, videos, and banners</div>
+    <div name="hc_homepage_integrations_topic_tile_title">Integrations and extensions</div>
+    <div name="hc_homepage_integrations_topic_tile_subtitle">Add third-party integrations to help you manage, optimize, and expand your site
+    </div>
+    <div name="hc_homepage_marketing_topic_tile_title">Marketing</div>
+    <div name="hc_homepage_marketing_topic_tile_subtitle">Spread the word about your business with Squarespace’s all-in-one marketing tools</div>
+    <div name="hc_homepage_pages_topic_tile_title">Pages and content</div>
+    <div name="hc_homepage_privacy_topic_tile_title">Privacy and security</div>
+    <div name="hc_homepage_pages_topic_tile_subtitle">Learn how to build and edit your site with pages, sections, and blocks</div>
+    <div name="hc_homepage_seo_topic_tile_title">SEO and AI optimization</div>
+    <div name="hc_homepage_privacy_topic_tile_subtitle">Get information about security, SSL, data privacy, and policies about Squarespace</div>
+    <div name="hc_homepage_seo_topic_tile_subtitle">Learn how to optimize your site for search engines with the best keywords and content</div>
+    <div name="hc_homepage_scheduling_topic_tile_title">Acuity Scheduling</div>
+    <div name="hc_homepage_scheduling_topic_tile_subtitle">Book and manage appointments with integrated online booking</div>
+    <div name="hc_homepage_technical_issues_topic_tile_title">Technical issues and contact us
+    </div>
+    <div name="hc_homepage_technical_issues_topic_tile_subtitle">Troubleshoot technical and speed issues with your site</div>
+    <div name="hc_homepage_templates_topic_tile_title">Templates and design</div>
+    <div name="hc_homepage_templates_topic_tile_subtitle">Learn how to customize fonts, colors, and other design features</div>
+    <div name="hc_homepage_video_heading">Learn by video</div>
+    <div name="hc_homepage_image_videos_link">All About Images</div>
+    <div name="hc_homepage_image_videos_count">7 videos</div>
+    <div name="hc_homepage_commerce_videos_link">Introducing Commerce</div>
+    <div name="hc_homepage_commerce_videos_count">4 videos</div>
+    <div name="hc_homepage_building_videos_link">Build your first Squarespace site</div>
+    <div name="hc_homepage_building_videos_count">1 video</div>
+    <div name="hc_homepage_pages_videos_link">Your Pages & Navigation</div>
+    <div name="hc_homepage_pages_videos_count">7 videos</div>
+    <div name="hc_homepage_see_all_videos_link">See all videos</div>
+    <div name="hc_homepage_forums_headline">Community forums</div>
+    <div name="hc_homepage_forums_subhead">Join our active community of Squarespace users and professionals for advice, inspiration, and best practices.</div>
+    <div name="hc_homepage_forums_cta_squarespace">Squarespace Forum </div>
+    <div name="hc_homepage_webinars_headline">Squarespace webinars</div>
+    <div name="hc_homepage_forums_cta_circle">Circle Forum</div>
+    <div name="hc_homepage_webinars_subhead">Free online sessions where you'll learn the basics and refine your Squarespace skills. Everyone is welcome—no website required.</div>
+    <div name="hc_homepage_webinars_cta">Exploring Webinars</div>
+    <div name="hc_homepage_marketplace_headline">Hire an Expert with Marketplace</div>
+    <div name="hc_homepage_marketplace_subhead">Squarespace Experts can help you polish an existing site, or build a new one from scratch.</div>
+    <div name="hc_homepage_marketplace_cta">Browse Experts</div>
+    <div name="hc_homepage_contact_headline">Can't find what you're looking for?</div>
+    <div name="hc_homepage_contact_subhead">We'll help you find an answer or connect you with Customer Support through live chat or email.</div>
+    <div name="hc_homepage_contact_cta">Contact Us</div>
+    <div name="hc_homepage_search_no_results">No results</div>
+
+    <!-- Homepage Digital Products Card DC -->
+    <div name="hc_homepage_digital_products_topic_tile_title">Content & Memberships
+    </div>
+    <div name="hc_homepage_digital_products_member_sites">Member sites</div>
+    <div name="hc_homepage_digital_products_how_to_sell_access_to_your_blog_posts">How to sell access to your blog posts</div>
+    <div name="hc_homepage_digital_products_how_to_sell_access_to_your_course_page">How to sell access to your course page</div>
+    <div name="hc_homepage_digital_products_how_to_sell_access_to_your_videos">How to sell access to your videos</div>
+
+    <!-- Homepage Image Alts DC -->
+    <div name="hc_homepage_hero_image_alt">A person holding a smart phone and looking at Colima's website</div>
+    <div name="hc_homepage_website_product_area_image_alt">A Squarespace website example</div>
+    <div name="hc_homepage_domains_product_area_image_alt">A sample domain name for a Squarespace website</div>
+    <div name="hc_homepage_google_workspace_product_area_image_alt">A screenshot of Google Workspace toolbar</div>
+    <div name="hc_homepage_commerce_product_area_image_alt">A screenshot of the Commerce product in the Squarespace platform
+    </div>
+    <div name="hc_homepage_email_campaigns_product_area_image_alt">A sample imagery for sending email campaigns</div>
+    <div name="hc_homepage_scheduling_product_area_image_alt">A screenshot of the Acuity product in the Squarespace platform
+    </div>
+    <div name="hc_homepage_member_areas_product_area_image_alt">A screenshot of the member area product in the Squarespace platform</div>
+    <div name="hc_homepage_image_videos_image_alt">An abstract photo of shapes and colors</div>
+    <div name="hc_homepage_commerce_videos_image_alt">A pair of white shoes</div>
+    <div name="hc_homepage_building_videos_image_alt">An iPad showcasing an e-commerce website built with Squarespace</div>
+    <div name="hc_homepage_pages_videos_image_alt">A person holding a smart phone and looking at a website built with Squarespace</div>
+    <div name="hc_homepage_webinars_image_alt">A screenshot of editing tools on the Squarespace platform</div>
+    <div name="hc_homepage_forums_image_alt">Examples of questions in the Squarespace Community Forum</div>
+    <div name="hc_homepage_marketplace_image_alt">An example of a Squarespace Expert's bio</div>
+    <div name="hc_homepage_contact_image_alt">A Squarespace website with the Squarespace Customer Service Chatbot open on the screen</div>
+
+    <!-- Survey DC -->
+    <div name="hc_survey_close_button">Close</div>
+    <div name="hc_survey_satisfaction_page_question">How would you rate your experience with the Help Center?</div>
+    <div name="hc_survey_satisfaction_page_somewhat_dissatisfied_radio">Somewhat dissatisfied</div>
+    <div name="hc_survey_satisfaction_page_very_dissatisfied_radio">Very dissatisfied</div>
+    <div name="hc_survey_satisfaction_page_neither_radio">Neither satisfied nor dissatisfied</div>
+    <div name="hc_survey_satisfaction_page_somewhat_satisfied_radio">Somewhat satisfied</div>
+    <div name="hc_survey_satisfaction_page_feedback_question">Feedback</div>
+    <div name="hc_survey_satisfaction_page_very_satisfied_radio">Very satisfied</div>
+    <div name="hc_survey_next_button">Next</div>
+    <div name="hc_survey_satisfaction_page_feedback_question_placeholder">Can you tell us why? (Optional)</div>
+    <div name="hc_survey_effort_page_question">How was your experience looking for help today?</div>
+    <div name="hc_survey_effort_page_very_difficult_radio">Very difficult
+    </div>
+    <div name="hc_survey_effort_page_somewhat_difficult_radio">Somewhat difficult</div>
+    <div name="hc_survey_effort_page_neither_radio">Neither easy nor difficult</div>
+    <div name="hc_survey_effort_page_somewhat_easy_radio">Somewhat easy</div>
+    <div name="hc_survey_effort_page_very_easy_radio">Very easy</div>
+    <div name="hc_survey_effort_page_feedback_question_placeholder">Why's that? (Optional)</div>
+    <div name="hc_survey_issue_resolution_page_not_sure_radio">I'm not sure</div>
+    <div name="hc_survey_issue_resolution_page_question">Did you find the answer you were looking for in the Help Center?</div>
+    <div name="hc_survey_issue_resolution_page_not_resolved_radio">No, my issue was not resolved</div>
+    <div name="hc_survey_issue_resolution_page_found_elsewhere_radio">I found it elsewhere</div>
+    <div name="hc_survey_issue_resolution_page_yes_partially_radio">Yes, partially</div>
+    <div name="hc_survey_issue_resolution_page_yes_completely_radio">Yes, completely</div>
+    <div name="hc_survey_issue_resolution_page_where_question">Where did you best find your answer?</div>
+    <div name="hc_survey_issue_resolution_page_where_question_placeholder">Select</div>
+    <div name="hc_survey_issue_resolution_page_video_option">Video
+    </div>
+    <div name="hc_survey_issue_resolution_page_guide_option">Guide
+    </div>
+    <div name="hc_survey_issue_resolution_page_webinars_option">Webinars</div>
+    <div name="hc_survey_issue_resolution_page_forum_option">Forum
+    </div>
+    <div name="hc_survey_issue_resolution_page_other_option">Other
+    </div>
+    <div name="hc_survey_thank_you">Thanks for your feedback</div>
+    <div name="hc_support_chatbot_transcript_download_fail">Can’t download the transcript. Please try again.
+    </div>
+    <div name="hc_kb_guide_machine_translation_note">We use machine translation to translate guides in this language. Human editors don’t review the content for quality after it’s translated.</div>
+    <div name="hc_kb_guide_machine_translation_note_link">Read the English version</div>
+
+    <!-- Login Page DC -->
+    <div name="hc_login_page_acuity_button">Acuity Scheduling</div>
+    <div name="hc_login_page_cant_login_button">Can’t log in?</div>
+    <div name="hc_login_page_dont_have_account_button">I don’t have an account</div>
+    <div name="hc_login_page_squarespace_button">Log in</div>
+    <div name="hc_login_page_subtitle">Log into your account so we can customize your experience. </div>
+    <div name="hc_login_page_title">Which account do you need help with today?</div>
+
+    <!-- New Pre Footer DC -->
+    <div name="hc_pre_footer_forum_header">Get help from our community</div>
+    <div name="hc_pre_footer_forum_description">Get help from our community on advanced customizations.</div>
+    <div name="hc_pre_footer_forum_cta">search in the forums</div>
+    <div name="hc_pre_footer_marketplace_header">Hire a Squarespace Expert</div>
+    <div name="hc_pre_footer_marketplace_description">Stand out online with the help of an experienced designer or developer. </div>
+    <div name="hc_pre_footer_marketplace_cta">get matched</div>
+
+    <!-- New KB Guides DC -->
+    <div name="hc_article_page_related_guides_header">People also viewed</div>
+    <div name="hc_article_page_upsell_header">Accessing this feature</div>
+    <div name="hc_article_page_note_header">Note</div>
+    <div name="hc_article_page_tip_header">Tip</div>
+    <div name="hc_article_page_warning_header">Warning</div>
+    <div name="hc_article_page_survey_question">Did you find the information you were looking for?</div>
+    <div name="hc_article_page_survey_dismissal">Still Browsing</div>
+    <div name="hc_article_page_survey_thank_you">Thank you for your feedback.</div>
+
+    <!-- New Article Page DC -->
+    <div name="hc_article_page_copy_error">Error copying text to clipboard</div>
+    <div name="hc_article_page_copy_success">Successfully copied text to clipboard</div>
+    <div name="hc_article_page_copy">Copy</div>
+    <div name="hc_article_page_toc_header">In this guide</div>
+
+    <!-- Request Page DC -->
+    <div name="hc_request_page_title">Your form was submitted successfully!</div>
+    <div name="hc_request_page_subtitle">A confirmation email has been sent to your address. We will get back to you as soon as we can.</div>
+    <div name="hc_request_page_cta_button">return to Squarespace</div>
+
+    <!-- Priority Support DC -->
+    <div name="hc_contact_options_title">Can’t find what you need? Here’s how to contact us.</div>
+    <div name="hc_contact_email_us">Email Us</div>
+    <div name="hc_contact_live_chat">Live Chat</div>
+    <div name="hc_contact_email_description">Send us a message and read our answer when it’s convenient for you.</div>
+    <div name="hc_contact_live_chat_description">Real-time conversations and immediate answers from our award-winning Customer Support team.</div>
+    <div name="hc_contact_email_time">24 hours a day<br>
+7 days a week</div>
+    <div name="hc_contact_live_chat_time">Monday to Friday<br>
+ 4am to 8pm EST</div>
+    <div name="hc_contact_live_chat_time_aus">Monday to Friday  4am to 8pm EDT</div>
+    <div name="hc_contact_email_cta">send an email</div>
+    <div name="hc_contact_live_chat_cta">start live chat</div>
+    <div name="hc_contact_live_chat_unavailable">Live chat currently unavailable.</div>
+
+    <!-- GEOGATING -->
+    <div name="hc_contact_page_schedules_json">{"schedules":[{"id":50095,"name":"Business Hours","time_zone":"Eastern Time (US & Canada)","created_at":"2014-10-03T22:10:16Z","updated_at":"2026-10-02T14:54:07Z","intervals":[{"start_time":240,"end_time":1440},{"start_time":1440,"end_time":2880},{"start_time":2880,"end_time":4320},{"start_time":4320,"end_time":5760},{"start_time":5760,"end_time":7200},{"start_time":7200,"end_time":8400}]},{"id":360000418191,"name":"Social Support","time_zone":"Eastern Time (US & Canada)","created_at":"2020-09-01T09:34:47Z","updated_at":"2026-04-20T14:58:18Z","intervals":[{"start_time":240,"end_time":1440},{"start_time":1680,"end_time":2880},{"start_time":3120,"end_time":4320},{"start_time":4560,"end_time":5760},{"start_time":6000,"end_time":7200},{"start_time":7440,"end_time":8640},{"start_time":8880,"end_time":10080}]},{"id":360000421112,"name":"Account Management VIP Hours","time_zone":"Eastern Time (US & Canada)","created_at":"2020-09-29T20:18:51Z","updated_at":"2021-03-03T10:38:13Z","intervals":[{"start_time":1440,"end_time":2880},{"start_time":2880,"end_time":4320},{"start_time":4320,"end_time":5760},{"start_time":5760,"end_time":7200},{"start_time":7200,"end_time":8640}]},{"id":5995548166541,"name":"Live Chat Business Hours","time_zone":"Eastern Time (US & Canada)","created_at":"2022-05-04T15:10:42Z","updated_at":"2026-10-08T17:10:24Z","intervals":[{"start_time":0,"end_time":1440},{"start_time":1440,"end_time":2880},{"start_time":2880,"end_time":4320},{"start_time":4320,"end_time":5760},{"start_time":5760,"end_time":7200},{"start_time":7200,"end_time":8640},{"start_time":8640,"end_time":10080}]},{"id":5995587746445,"name":"Live Chat AUS/NZ Hours","time_zone":"Eastern Time (US & Canada)","created_at":"2022-05-04T15:12:38Z","updated_at":"2026-10-08T17:10:49Z","intervals":[{"start_time":0,"end_time":1440},{"start_time":1440,"end_time":2880},{"start_time":2880,"end_time":4320},{"start_time":4320,"end_time":5760},{"start_time":5760,"end_time":7200},{"start_time":7200,"end_time":8640},{"start_time":8640,"end_time":10080}]},{"id":18405093826701,"name":"[Inactive] Live Chat Acuity Hours","time_zone":"Eastern Time (US & Canada)","created_at":"2023-08-10T16:06:56Z","updated_at":"2024-04-29T14:57:38Z","intervals":[{"start_time":1680,"end_time":2610},{"start_time":3120,"end_time":4050},{"start_time":4560,"end_time":4920},{"start_time":5220,"end_time":5340},{"start_time":5400,"end_time":5490},{"start_time":6000,"end_time":6360},{"start_time":6420,"end_time":6600},{"start_time":6660,"end_time":6780},{"start_time":6840,"end_time":6930},{"start_time":7440,"end_time":8370}]},{"id":21322019776781,"name":"Email - IntouchCX (COSO-3757)","time_zone":"Eastern Time (US & Canada)","created_at":"2023-11-14T14:54:21Z","updated_at":"2024-04-29T14:59:04Z","intervals":[{"start_time":960,"end_time":1440},{"start_time":1440,"end_time":2880},{"start_time":2880,"end_time":4320},{"start_time":4320,"end_time":5760},{"start_time":5760,"end_time":7200},{"start_time":7200,"end_time":7980}]},{"id":21322160612877,"name":"Email - 24/7 teams (COSO-3757)","time_zone":"Eastern Time (US & Canada)","created_at":"2023-11-14T14:59:39Z","updated_at":"2024-04-29T14:59:13Z","intervals":[{"start_time":0,"end_time":1440},{"start_time":1440,"end_time":2880},{"start_time":2880,"end_time":4320},{"start_time":4320,"end_time":5760},{"start_time":5760,"end_time":7200},{"start_time":7200,"end_time":8640},{"start_time":8640,"end_time":10080}]},{"id":25217370917901,"name":"Product Support Business Hours","time_zone":"Eastern Time (US & Canada)","created_at":"2024-03-21T17:12:42Z","updated_at":"2024-05-07T11:37:22Z","intervals":[{"start_time":1620,"end_time":2700},{"start_time":3060,"end_time":4140},{"start_time":4500,"end_time":5580},{"start_time":5940,"end_time":7020},{"start_time":7380,"end_time":8460}]},{"id":26294188481165,"name":"Live Chat - CUSU & HVCS (COSO-4219)","time_zone":"Eastern Time (US & Canada)","created_at":"2024-04-29T14:59:37Z","updated_at":"2026-10-08T17:10:58Z","intervals":[{"start_time":1980,"end_time":2610},{"start_time":3420,"end_time":4050},{"start_time":4860,"end_time":5490},{"start_time":6300,"end_time":6930},{"start_time":7740,"end_time":8370}]},{"id":28799929362829,"name":"Live Chat - Acuity","time_zone":"Eastern Time (US & Canada)","created_at":"2024-07-29T17:52:26Z","updated_at":"2026-10-08T17:11:05Z","intervals":[{"start_time":1680,"end_time":2640},{"start_time":3120,"end_time":4080},{"start_time":4560,"end_time":5520},{"start_time":6000,"end_time":6960},{"start_time":7440,"end_time":8400}]},{"id":39520137937165,"name":"High Value Domains Coverage","time_zone":"Eastern Time (US & Canada)","created_at":"2025-09-12T12:11:06Z","updated_at":"2026-03-11T17:08:53Z","intervals":[{"start_time":0,"end_time":1200},{"start_time":7800,"end_time":8640},{"start_time":8640,"end_time":10080}]},{"id":48086619834637,"name":"Live Chat - Acuity Off Hours (COSO-6412)","time_zone":"Eastern Time (US & Canada)","created_at":"2026-08-12T16:22:29Z","updated_at":"2026-08-12T16:22:43Z","intervals":[{"start_time":0,"end_time":1440},{"start_time":1440,"end_time":1680},{"start_time":2640,"end_time":2880},{"start_time":2880,"end_time":3120},{"start_time":4080,"end_time":4320},{"start_time":4320,"end_time":4560},{"start_time":5520,"end_time":5760},{"start_time":5760,"end_time":6000},{"start_time":6960,"end_time":7200},{"start_time":7200,"end_time":7440},{"start_time":8400,"end_time":8640},{"start_time":8640,"end_time":10080}]}],"url":"https://squarespace.zendesk.com/api/v2/business_hours/schedules"}</div>
+
+    <!-- SQUARESPACE PAYMENTS PRODUCT CARD -->
+    <div name="hc_homepage_squarespace_payments_product_area_title">Squarespace Payments</div>
+    <div name="hc_homepage_squarespace_payments_product_area_image_alt">Squarespace Payments Product Area</div>
+    <div name="hc_homepage_squarespace_payments_product_area_getting_started_link">Getting started with Squarespace Payments</div>
+    <div name="hc_homepage_squarespace_payments_product_area_managing_payments_link">Squarespace Payments payouts</div>
+    <div name="hc_homepage_squarespace_payments_product_area_understanding_negative_balance_link">Understanding a negative balance with Squarespace Payments </div>
+    <div name="hc_homepage_squarespace_payments_product_area_managing_payments_account_link">Managing your Squarespace Payments account</div>
+
+    <!-- SQUARESPACE PAYMENTS TOPIC -->
+    <div name="hc_homepage_accepting_payments_topic_tile_title">Accepting Payments</div>
+    <div name="hc_homepage_squarespace_payments_learn_how_link">Learn how to process transactions when selling your products on Squarespace</div>
+
+    <!-- CHATBOT -->
+    <div name='hc_chatbot_action_payment_completed'>Payment Completed</div>
+    <div name='hc_chatbot_action_postback_error'>An error occurred while processing your action. Please try again.</div>
+    <div name='hc_chatbot_click_to_retry'>Message not delivered. Click to retry.</div>
+    <div name='hc_chatbot_action_payment_error'>An error occurred while processing the card. <br> Please try again or use a different card.</div>
+    <div name='hc_chatbot_click_to_retry_form'>Form not submitted. Click anywhere on the form to retry.</div>
+    <div name='hc_chatbot_connect_notification_text'>Sync your conversation and continue messaging us through your favorite app.</div>
+    <div name='hc_chatbot_connect_notification_single_text'>Be notified when you get a reply.</div>
+    <div name='hc_chatbot_conversation_list_header_text'>My conversations</div>
+    <div name='hc_chatbot_conversation_list_relative_time_minute'>1 minute ago</div>
+    <div name='hc_chatbot_conversation_list_relative_time_just_now'>Just now</div>
+    <div name='hc_chatbot_conversation_list_relative_time_minutes'>{value} minutes ago</div>
+    <div name='hc_chatbot_conversation_list_relative_time_hour'>1 hour ago</div>
+    <div name='hc_chatbot_conversation_list_relative_time_hours'>{value} hours ago</div>
+    <div name='hc_chatbot_conversation_list_relative_time_yesterday'>Yesterday</div>
+    <div name='hc_chatbot_conversation_list_timestamp_format'>MM/DD/YY</div>
+    <div name='hc_chatbot_conversation_list_preview_carousel_text'>{user} sent a message</div>
+    <div name='hc_chatbot_conversation_list_preview_anonymous_text'>Someone</div>
+    <div name='hc_chatbot_conversation_list_preview_file_text'>{user} sent a file</div>
+    <div name='hc_chatbot_conversation_list_preview_form_text'>{user} sent a form</div>
+    <div name='hc_chatbot_conversation_list_preview_image_text'>{user} sent an image</div>
+    <div name='hc_chatbot_conversation_list_preview_form_response_text'>{user} filled a form</div>
+    <div name='hc_chatbot_conversation_list_preview_location_request_text'>{user} sent a location request</div>
+    <div name='hc_chatbot_conversation_list_preview_user_text'>You</div>
+    <div name='hc_chatbot_conversation_timestamp_header_format'>MMMM D YYYY, h:mm A</div>
+    <div name='hc_chatbot_could_not_connect_retry'>Reconnecting...</div>
+    <div name='hc_chatbot_could_not_connect_retry_success'>You're back online!</div>
+    <div name='hc_chatbot_could_not_connect'>Offline. You will not receive messages.</div>
+    <div name='hc_chatbot_could_not_load_conversations'>Couldn’t load conversations.</div>
+    <div name='hc_chatbot_email_change_address'>Change my email</div>
+    <div name='hc_chatbot_email_description'>To be notified by email when you get a reply, enter your email address.</div>
+    <div name='hc_chatbot_email_field_label'>Email</div>
+    <div name='hc_chatbot_email_field_placeholder'>Your email address</div>
+    <div name='hc_chatbot_email_linking_error_message'>Please submit a valid email address.</div>
+    <div name='hc_chatbot_email_form_button'>Submit</div>
+    <div name='hc_chatbot_error_prefix'>Error:</div>
+    <div name='hc_chatbot_fetch_history'>Load more</div>
+    <div name='hc_chatbot_fetching_history'>Retrieving history...</div>
+    <div name='hc_chatbot_file_too_large_error'>Max file size limit exceeded ({size})</div>
+    <div name='hc_chatbot_form_error_entry_required'>This entry is required</div>
+    <div name='hc_chatbot_file_type_error'>Unsupported file type.</div>
+    <div name='hc_chatbot_form_error_invalid_email'>Email is invalid</div>
+    <div name='hc_chatbot_form_error_no_shorter_than'>Must contain at least ({characters}) characters</div>
+    <div name='hc_chatbot_form_error_no_longer_than'>Must contain no more than ({characters}) characters</div>
+    <div name='hc_chatbot_form_field_select_placeholder_fallback'>Choose one...</div>
+    <div name='hc_chatbot_form_error_unknown'>This doesn't look quite right</div>
+    <div name='hc_chatbot_frontend_email_channel_description'>To talk to us using email just send a message to our email address and we'll reply shortly:</div>
+    <div name='hc_chatbot_header_text'>How can we help?</div>
+    <div name='hc_chatbot_image_click_to_reload'>Click to reload image.</div>
+    <div name='hc_chatbot_image_click_to_view'>Click to view {size} image.</div>
+    <div name='hc_chatbot_input_placeholder'>Type a message...</div>
+    <div name='hc_chatbot_image_preview_not_available'>Preview not available.</div>
+    <div name='hc_chatbot_intro_app_text'>Message us below or from your favorite app.</div>
+    <div name='hc_chatbot_input_placeholder_blocked'>Press Enter for each item</div>
+    <div name='hc_chatbot_link_error'>An error occurred when attempting to generate a link for this channel. Please try again.</div>
+    <div name='hc_chatbot_line_channel_description'>To talk to us using LINE, scan this QR code using the LINE app and send us a message.</div>
+    <div name='hc_chatbot_link_channel_page_header'>Sync your conversation</div>
+    <div name='hc_chatbot_location_not_supported'>Your browser does not support location services or it’s been disabled. Please type your location instead.</div>
+    <div name='hc_chatbot_location_security_restriction'>This website cannot access your location. Please type your location instead.</div>
+    <div name='hc_chatbot_location_sending_failed'>Could not send location</div>
+    <div name='hc_chatbot_location_services_denied'>This website cannot access your location. Allow access in your settings or type your location instead.</div>
+    <div name='hc_chatbot_message_error'>An error occured while sending your message. Please try again.</div>
+    <div name='hc_chatbot_message_indicator_title_plural'>({count}) New messages</div>
+    <div name='hc_chatbot_message_relative_time_day'>{value}d ago</div>
+    <div name='hc_chatbot_message_indicator_title_singular'>({count}) New message</div>
+    <div name='hc_chatbot_message_relative_time_just_now'>Just now</div>
+    <div name='hc_chatbot_message_relative_time_minute'>{value}m ago</div>
+    <div name='hc_chatbot_message_relative_time_hour'>{value}h ago</div>
+    <div name='hc_chatbot_message_delivered'>Delivered</div>
+    <div name='hc_chatbot_message_timestamp_format'>h:mm A</div>
+    <div name='hc_chatbot_message_seen'>Seen</div>
+    <div name='hc_chatbot_message_too_long_error'>Max message size limit exceeded ({size}).</div>
+    <div name='hc_chatbot_message_sending'>Sending...</div>
+    <div name='hc_chatbot_notification_settings_channels_description'>Sync this conversation by connecting to your favorite messaging app to continue the conversation your way.</div>
+    <div name='hc_chatbot_messenger_channel_description'>Connect your Facebook Messenger account to be notified when you get a reply and continue the conversation on Facebook Messenger.</div>
+    <div name='hc_chatbot_new_conversation_button_text'>New Conversation</div>
+    <div name='hc_chatbot_notification_settings_channels_title'>Other Channels</div>
+    <div name='hc_chatbot_notification_settings_connected'>Connected</div>
+    <div name='hc_chatbot_prechat_capture_greeting_text'>Hi there 👋\nTo start off, we'd like to know a little bit more about you:</div>
+    <div name='hc_chatbot_notification_settings_connected_as'>Connected as {username}</div>
+    <div name='hc_chatbot_prechat_capture_name_label'>Your name</div>
+    <div name='hc_chatbot_prechat_capture_email_label'>Email</div>
+    <div name='hc_chatbot_prechat_capture_name_placeholder'>Type your name...</div>
+    <div name='hc_chatbot_prechat_capture_confirmation_text'>Thanks for that! What can we help you with?</div>
+    <div name='hc_chatbot_prechat_capture_email_placeholder'>name@company.com</div>
+    <div name='hc_chatbot_send_button_text'>Send</div>
+    <div name='hc_chatbot_prechat_capture_mailgun_linking_confirmation'>You'll be notified here and by email at {email} once we reply.</div>
+    <div name='hc_chatbot_settings_header_text'>Settings</div>
+    <div name='hc_chatbot_share_location'>Location</div>
+    <div name='hc_chatbot_sms_cancel'>Cancel</div>
+    <div name='hc_chatbot_sms_bad_request_error'>We were unable to communicate with this number. Try again or use a different one.</div>
+    <div name='hc_chatbot_sms_channel_description'>Connect your SMS number to be notified when you get a reply and continue the conversation over SMS.</div>
+    <div name='hc_chatbot_sms_change_number'>Change my number</div>
+    <div name='hc_chatbot_sms_channel_pending_description'>Check your messages at {number} to confirm your phone number.</div>
+    <div name='hc_chatbot_sms_invalid_number_error'>Please submit a valid phone number.</div>
+    <div name='hc_chatbot_sms_continue'>Send</div>
+    <div name='hc_chatbot_sms_link_cancelled'>Link to {appUserNumber} was cancelled.</div>
+    <div name='hc_chatbot_sms_link_pending'>Pending</div>
+    <div name='hc_chatbot_sms_start_texting'>Start Texting</div>
+    <div name='hc_chatbot_sms_ping_channel_error'>There was an error sending a message to your number.</div>
+    <div name='hc_chatbot_sms_send_text'>Send me a text</div>
+    <div name='hc_chatbot_sms_too_many_requests_one_minute_error'>A connection for that number was requested recently. Please try again in 1 minute.</div>
+    <div name='hc_chatbot_sms_too_many_requests_error'>A connection for that number was requested recently. Please try again in {minutes} minutes.</div>
+    <div name='hc_chatbot_sync_conversation'>Sync conversation</div>
+    <div name='hc_chatbot_sms_unhandled_error'>Something went wrong. Please try again.</div>
+    <div name='hc_chatbot_tap_to_retry'>Message not delivered. Tap to retry.</div>
+    <div name='hc_chatbot_tap_to_retry_form'>Form not submitted. Tap anywhere on the form to retry.</div>
+    <div name='hc_chatbot_telegram_channel_description'>Connect your Telegram account to be notified when you get a reply and continue the conversation on Telegram</div>
+    <div name='hc_chatbot_unsupported_message_type'>Unsupported message type.</div>
+    <div name='hc_chatbot_unsupported_action_type'>Unsupported action type.</div>
+    <div name='hc_chatbot_upload_document'>File</div>
+    <div name='hc_chatbot_upload_invalid_error'>Invalid file.</div>
+    <div name='hc_chatbot_upload_photo'>Image</div>
+    <div name='hc_chatbot_upload_virus_error'>A virus was detected in your file and it has been rejected</div>
+    <div name='hc_chatbot_viber_channel_description'>Connect your Viber account to be notified when you get a reply and continue the conversation on Viber. To get started, scan the QR code using the Viber app.</div>
+    <div name='hc_chatbot_viber_channel_description_mobile'>Connect your Viber account to be notified when you get a reply and continue the conversation on Viber. To get started, install the Viber app and tap Connect.</div>
+    <div name='hc_chatbot_viber_qrcode_error'>An error occurred while fetching your Viber QR code. Please try again.</div>
+    <div name='hc_chatbot_wechat_channel_description'>Connect your WeChat account to be notified when you get a reply and continue the conversation on WeChat. To get started, scan this QR code using the WeChat app.</div>
+    <div name='hc_chatbot_wechat_qrcode_error'>An error occurred while fetching your WeChat QR code. Please try again.</div>
+    <div name='hc_chatbot_wechat_channel_description_mobile'>Connect your WeChat account to be notified when you get a reply and continue the conversation on WeChat. To get started, save this QR code image and upload it <a href=\'weixin://dl/scan\'>QR code scanner</a>.</div>
+    <div name='hc_chatbot_whatsapp_channel_description_desktop'>Sync your account to WhatsApp by scanning the QR code or clicking the link below.\nThen, send the pre-populated message to validate the sync request. (Your code: {{code}}).</div>
+    <div name='hc_chatbot_whatsapp_channel_description_mobile'>Sync your account to WhatsApp by clicking the link below.\nThen, send the pre-populated message to validate the sync request. (Your code: {{code}}).</div>
+    <div name='hc_chatbot_whatsapp_linking_error'>An error occurred while fetching your WhatsApp linking information. Please try again.</div>
+    <div name='hc_chatbot_waiting_queue_prompt_body'>This may take a few minutes.</div>
+    <div name='hc_chatbot_waiting_email_prompt_body'>You don't have to wait in the chat queue to get a response. I’ll send your transcript to our team. We'll respond via email as soon as we can.</div>
+    <div name='hc_chatbot_waiting_close_prompt_body'>You'll be leaving the live chat queue and losing your place in line. You can re-enter the queue at any time by starting a new live chat.</div>
+    <div name='hc_chatbot_no_mode_found'>No mode found</div>
+    <div name='hc_chatbot_waiting_queue_prompt_title'>Waiting for an agent...</div>
+    <div name='hc_chatbot_waiting_email_prompt_title'>Send an email instead?</div>
+    <div name='hc_chatbot_waiting_close_prompt_title'>Cancel chat request?</div>
+    <div name='hc_chatbot_waiting_queue_primary_button_text'>Cancel Chat</div>
+    <div name='hc_chatbot_waiting_email_primary_button_text'>Send Email</div>
+    <div name='hc_chatbot_waiting_close_primary_button_text'>Confirm</div>
+    <div name='hc_chatbot_waiting_queue_secondary_button_text'>Send an email instead</div>
+    <div name='hc_chatbot_waiting_other_secondary_button_text'>Continue waiting</div>
+    <div name='hc_chatbot_business_name'>Squarespace Assistant</div>
+    <div name='hc_chatbot_view_queue_status'>View Queue Status</div>
+    <div name='hc_chatbot_live_chat_offline'>Live chat support for this language is currently offline.</div>
+
+    <!-- Chatbot Outage -->
+    <div name="hc_chatbot_outage_tooltip_text">Chatbot not working?</div>
+    <div name="hc_chatbot_outage_tooltip_report_cta">Report it to our team.</div>
+
+    <!-- NEW CONTACT PAGE -->
+    <div name='hc_new_contact_page_title_prefix'>Hi</div>
+    <div name='hc_new_contact_page_title_suffix_logged_in'>let's get you the help you need.</div>
+    <div name='hc_new_contact_page_subtitle'>Our automated Support Assistant will work with you to try to find a quick answer.</div>
+    <div name='hc_new_contact_page_subtitle_human'>Want to talk to a human? The Support Assistant can connect you with a member of our team through live chat or email.</div>
+    <div name='hc_new_contact_page_contact_us_button'>contact us</div>
+    <div name='hc_new_contact_page_section_title'>Ways to get help</div>
+    <div name='hc_new_contact_page_start_with_title'>Start with our automated Support Assistant</div>
+    <div name='hc_new_contact_page_start_with_subtitle'>Get quick answers from our chatbot any time. Type your question and you'll get immediate guidance.</div>
+    <div name='hc_new_contact_page_email_or_chat_title'>Email or chat with our support team</div>
+    <div name='hc_new_contact_page_email_or_chat_subtitle'>Need more help? Our Support Assistant will connect you to an Advisor on our Customer Support team.</div>
+    <div name='hc_new_contact_page_title_suffix_not_logged_in'>Let's get you the help you need.</div>
+    <div name='hc_new_contact_page_title_caption_not_logged_in'>For faster support, please log in.</div>
+
+    <!-- Chatbot Login Modal -->
+    <div name="hc_chatbot_login_modal_title">Log in to chat with us</div>
+    <div name="hc_chatbot_login_modal_body">Or browse our guides for more support.</div>
+    <div name="hc_chatbot_login_modal_login_button">Log in</div>
+    <div name="hc_chatbot_login_modal_email_button">Email us</div>
+    <div name="hc_chatbot_login_modal_cant_login_button">Can't log in?</div>
+    <div name="hc_chatbot_login_modal_close_aria_label">Close login modal</div>
+    <div name="hc_chatbot_login_modal_open_aria_label">Open chat</div>
+    <div name="hc_chatbot_outage_modal_title">Squarespace Assistant</div>
+    <div name="hc_chatbot_outage_modal_body">Chat is currently experiencing an outage...</div>
+    <div name="hc_chatbot_outage_modal_cta">Send an email</div>
+
+   <!-- localized chatbot card -->
+
+
+  <div name="hc_i18n_live_chat_card_live_chat_card_info_live_chat_is_not_available">
+      Live chat is not available.
+  </div>
+
+  <div name="hc_i18n_live_chat_card_live_chat_card_button_cta_chat_in_english">
+      Chat in English
+  </div>
+
+  <div name="hc_i18n_live_chat_card_live_chat_card_title">
+      Live Chat
+  </div>
+
+  <div name="hc_i18n_live_chat_card_live_chat_card_experience_a_body">
+      Live chat is not available right now. Please send us an email and we'll respond within 12 hours.
+  </div>
+
+  <div name="hc_i18n_live_chat_card_live_chat_card_experience_b_body">
+      Live chat is not available in your language right now. Chat with us in English, or send us an email and we'll respond within 12 hours. <br /><br />  Live chat is available in your language Monday-Friday, from 10:00 AM to 4:00 PM CET.
+  </div>
+
+  <div name="hc_i18n_live_chat_card_live_chat_card_experience_c_body">
+      Live chat is not available in your language. Please send us an email and we'll respond within 12 hours.
+  </div>
+
+  <div name="hc_i18n_live_chat_card_live_chat_card_experience_d_body">
+      Live chat is not available in your language. Chat with us in English, or send us an email and we'll respond within 12 hours.
+  </div>
+
+  <div name="hc_i18n_live_chat_card_live_chat_card_experience_e_body">
+      Real-time conversations and immediate responses from our award-winning Customer Support Team.  Monday-Friday: 10:00 AM to 4:00 PM CET
+  </div>
+
+  <div name="hc_i18n_live_chat_card_live_chat_card_experience_f_body">
+      Live chat is not available right now. Please send us an email and we'll respond within 12 hours. <br /><br />  Live chat is available in your language Monday-Friday, from 10:00 AM to 4:00 PM CET.
+  </div>
+
+  <div name="hc_i18n_24_5_live_chat_card_-_live_chat_card_experience_b_body">
+    Live chat is not available in your language right now. Chat with us in English, or send us an email and we'll respond within 12 hours. <br /><br />  24 hours a day<br/>5 days a week
+  </div>
+
+  <div name="hc_i18n_24_5_live_chat_card_-_live_chat_card_experience_e_body">
+    Real-time conversations and immediate responses from our award-winning Customer Support Team.<br /><br />24 hours a day<br/>5 days a week
+  </div>
+
+  <div name="hc_i18n_24_5_live_chat_card_-_live_chat_card_experience_f_body">
+    Live chat is not available right now. Please send us an email and we'll respond within 12 hours.<br /><br />  24 hours a day<br/>5 days a week
+  </div>
+
+  <!-- Accessibility -->
+  <div name='hc_header_skip_to_content'>Skip To Chat</div>
+
+  <!-- Verification Banner -->
+  <div name="hc_verification_banner_title">Let's make sure it's you</div>
+  <div name="hc_verification_banner_body">Click the button to confirm your email address and log into your account.</div>
+  <div name="hc_verification_verify_email">Verify Email</div>
+
+  </div>
+  <script type="text/javascript" src="https://www.squarespace.com/s/cookie-banner.js" defer></script>
+
+
+  <main role="main">
+    <div>
+  <div id="root" style="display: none;"></div>
+  <div id="internal" style="display: none;">false</div>
+  <div id="article-skeleton">
+    <div class="content">
+      <div class="article">
+        <div class="article-wrapper">
+          <div class="breadcrumb"></div>
+          <div class="title">Export your site content</div>
+          <div class="controls">
+            <div class="date"></div>
+            <div class="locale"></div>
+          </div>
+          <div class="article-header"></div>
+          <div class="video">
+            <svg width="57" height="66" viewBox="0 0 57 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M57 33L-3.09953e-06 65.909L-2.22536e-07 0.0910314L57 33Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="body"></div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menu-title">In this guide</div>
+        <div class="divider"></div>
+        <div class="menu-header"></div>
+        <div class="anchor"></div>
+        <div class="anchor"></div>
+        <div class="anchor"></div>
+        <div class="anchor"></div>
+        <div class="anchor"></div>
+        <div class="anchor"></div>
+      </div>
+    </div>
+  </div>
+  <div id="page-article" style="display: none;" class="main-inner article-page">
+    <div class="clearfix default-row">
+      <div class="constrain">
+        <article class="main-column">
+          <header class="article-header clearfix">
+            <div class="announcement-home-page">
+              <div class="announcement-block" id="language-announcement-block">
+<strong>Note: While our most popular guides have been translated into Spanish, some guides are only available in English.</strong>
+</div>
+            </div>
+            <h1>
+              
+              Export your site content
+            </h1>
+            <div class="dateline">
+              Last updated <time datetime="2026-10-09T21:18:04Z" title="2026-10-09T21:18:04Z" data-format="LL" data-datetime="calendar">October 09, 2026 21:18</time>
+            </div>
+          </header>
+          <div class="subtle-wrap">
+            <div class="article-body">
+              <aside class="table-of-contents load" style="display: none;">
+                <h2 class="toc-title">Sections</h2>
+                <ol class="toc-links"></ol>
+              </aside>
+              <h4 class="blurb" id="h_01HKXV4BX0BR42D4S3JWNMEJ98">Create an .xml file of your site content, then import it to WordPress.</h4><p>You can export certain content from your Squarespace site into an .xml file. Many features rely on our platform's JavaScript and CSS, so some content doesn't export.</p><blockquote style="background-color: #fffbe0; border-color: #ffec82;"><p><strong>Note: </strong>You can't export content from one Squarespace site and import it into another. Importing content into a different Squarespace site can cause broken image links and other issues.</p></blockquote><h2 id="h_01JPBSSA8N96DP0CRMN16FT1Y9">Video: Exporting your site content</h2><p>This one-minute video walks through exporting your content as an .xml file and downloading it to your computer.</p><div class="youtube-wrapper"><iframe src="https://www.youtube.com/embed/_UMBW4WB030?modestbranding=1&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=1&amp;iv_load_policy=3&amp;color=white" width="720" height="405" frameborder="0"></iframe></div><h2 id="h_01M4H74CC6VPJCMSRJ1JND2ZYN">What exports to WordPress and what doesn't</h2><p>Because of how WordPress is designed, you can't import every type of Squarespace content. The .xml file exports the content that imports to a WordPress site.</p><p>Some content, like linked .pdf files, exports in the .xml file but can't import to a WordPress site. To learn more, visit WordPress' documentation on <a href="https://en.support.wordpress.com/import/import-from-squarespace/">importing from Squarespace</a>.</p><h3 id="h_01HKXV4BX1A051217F2798SWM1">Content that exports</h3><ul>
+<li data-list-item-id="e3254cd64223d07baec2dc408ab24a902">Layout pages</li>
+<li data-list-item-id="e647519b37e4385a67d146a6b2b1269ec">One blog page, including all of its posts and up to 1000 comments per post</li>
+<li data-list-item-id="ed1326b6b49c2ad2f071a0cd2d894ce62">Text blocks</li>
+<li data-list-item-id="eaeb767ecaa3b38573c97745fcbcf729a">Image blocks</li>
+<li data-list-item-id="e44b9debdedf9200da5e9de2919cca226">Text from other blocks like the embed block and Instagram block will export with minimum structure</li>
+<li data-list-item-id="e13613ba5c8ae528cf8aa6671f661cb17">Gallery pages, including <a href="https://support.squarespace.com/hc/articles/218212447" target="_self">York project pages</a> (<a href="/hc/articles/115005308187" target="_self">version 7.0</a> only)</li>
+</ul><h3 id="h_01HKXV4BX17DVB8811KSBTMH2Q">Content that doesn't export</h3><ul>
+<li data-list-item-id="e2a48e26fb15f019f4481c563f63c2581">Other page types (including album pages, cover pages, index pages, info pages, calendar pages, portfolio pages, and store pages)</li>
+<li data-list-item-id="ec1586a4658b24581711b9cb1c56f0080">Content in page-specific headers, footers, and sidebars</li>
+<li data-list-item-id="e6c9601af852051f43e10991d5d0d8708">More than one blog page</li>
+<li data-list-item-id="e50e82575cbc2330dbdc3e28acca9e894">Dropdowns</li>
+<li data-list-item-id="ec75333daf4979bb3a494e597dbbe56c8">Audio blocks</li>
+<li data-list-item-id="ea15746fcd262ce1cbc40c761ef84f2be">Product blocks</li>
+<li data-list-item-id="e2aefb0ffee39233a7bffcd52f67183eb">Video blocks</li>
+<li data-list-item-id="edd0a1c77e8d7f0479376ee348e8591f8">Drafts</li>
+<li data-list-item-id="e9f713d11a7de818cecdfe104eaaaf0d2">Style settings</li>
+<li data-list-item-id="e9f69bc4fd1d2c86876d2d34cff30d6be">Custom CSS</li>
+</ul><h2 id="h_01M4H79C611Z1KNXSZWB0BFM5G">Export and download your content</h2><p>To create and download the .xml file:</p><ol>
+<li data-list-item-id="e737643950ac39fef2601eaadfbab8401">Ensure your site is <a href="https://support.squarespace.com/hc/articles/360002088548">published</a> and your site availability is set to <strong>Public</strong>. You can't export from a trial site.</li>
+<li data-list-item-id="ee657e9f9dfcdfec3d03f9ce6e441670c">Open the <a href="https://account.squarespace.com/project-picker?client_id=helpcenter&amp;redirect_url=/settings/advanced/import-export">Import &amp; export content panel</a>.</li>
+<li data-list-item-id="e7625f28326e86c39262e5c73eb029ba5">Click <strong>Export</strong>.</li>
+<li data-list-item-id="e4aa3350c7599bb9b3d271f85b917af5b">Click the <strong>WordPress</strong> icon. If you’re not importing the exported content into WordPress site, click the icon anyway. The exported file can only be in a WordPress format, but you don’t have to import it into WordPress.</li>
+<li data-list-item-id="e18396bd98c38a4bb4a69082923e68ebf">If your site has more than one blog page, select a primary blog from the dropdown menu, then click <strong>Export</strong>. Only one blog page exports.</li>
+<li data-list-item-id="e0c5100c1699c66f0a3fa253af23469b6">Wait for the export to process. This can take a few minutes, depending on how much content your site has.</li>
+<li data-list-item-id="e6953ff6a332950c671df0abf002f4676">Click <strong>Download</strong> to save the .xml file to your computer, or click <strong>Clear</strong> to erase the export.</li>
+</ol><h2 id="h_01M4H79C672CTVZZDKVAH3WECT">Keep your images by importing to WordPress.com</h2><p>If you import your content into a self-hosted WordPress site with the <a href="https://wordpress.org/plugins/wordpress-importer/">WordPress Importer</a> plugin, your images might not migrate. WordPress can pull reference links for the images instead, so the image links stop working after you cancel your Squarespace site.</p><p>To keep your images working, import your content into the <a href="https://wordpress.com/">WordPress.com</a> version of the platform, which copies your images to WordPress' servers. After importing, confirm all your images appear in WordPress' Media Library. If images are missing, <a href="https://en.support.wordpress.com/contact/">contact WordPress</a> for more help.</p><p>You can also keep using WordPress Importer and download your site's images manually, then upload them to your WordPress site. To compare both versions of WordPress, visit <a href="https://en.support.wordpress.com/com-vs-org/">their documentation</a>.</p><h2 id="h_01M4H79C698AJTCK32VR9Q2E50">Export content from an expired site</h2><p>If your site has expired, you might be able to recover and export your content by <a href="https://support.squarespace.com/hc/articles/205810488">reactivating your subscription</a> first. Depending on how long the site has been expired, your content may already be deleted.</p><h2 id="h_01M4H79C6AC9178WEXTVWZFC1C">My Squarespace content isn’t importing into Wordpress</h2><p>If you're having trouble importing to WordPress, you can download or copy content like images and text directly from your Squarespace site.</p><p>After a successful import, you can <a href="https://support.squarespace.com/hc/articles/205810508">cancel your site</a> if you no longer need it.</p>
+            </div>
+            
+              <div class="article-vote-legacy">
+                <span class="article-vote-question">Was this article helpful?</span>
+                <div class="article-vote-controls">
+                  <button type="button" class="article-vote-up" data-helper="vote" data-item="article" data-type="up" data-id="206566687" data-upvote-count="1185" data-vote-count="2015" data-vote-sum="355" data-vote-url="/hc/en-us/articles/206566687/vote" data-value="null" data-label="1185 out of 2015 found this helpful" data-selected-class="article-voted" data-as="button" aria-label="This article was helpful" aria-pressed="false">Yes</button>
+                  <button type="button" class="article-vote-down" data-helper="vote" data-item="article" data-type="down" data-id="206566687" data-upvote-count="1185" data-vote-count="2015" data-vote-sum="355" data-vote-url="/hc/en-us/articles/206566687/vote" data-value="null" data-label="1185 out of 2015 found this helpful" data-selected-class="article-voted" data-as="button" aria-label="This article was not helpful" aria-pressed="false">No</button>
+                </div>
+                <small class="article-vote-count">
+                  <span class="article-vote-label" data-helper="vote" data-item="article" data-type="label" data-id="206566687" data-upvote-count="1185" data-vote-count="2015" data-vote-sum="355" data-vote-url="/hc/en-us/articles/206566687/vote" data-value="null" data-label="1185 out of 2015 found this helpful">1185 out of 2015 found this helpful</span>
+                </small>
+              </div>
+            
+          </div>
+
+          <div class="article-more clearfix">
+            <div data-recent-articles></div>
+            
+  <section class="related-articles">
+    
+      <h2 class="related-articles-title">Related articles</h2>
+    
+    <ul>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkETGtEDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEH%2FVPDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJCL2hjL2VuLXVzL2FydGljbGVzLzIwNTgxMDUwOC1DYW5jZWwteW91ci13ZWJzaXRlLXN1YnNjcmlwdGlvbgY7CFQ6CXJhbmtpBg%3D%3D--da6bd4318ac83eeb20e8ca725dcbad0cb6dfecf3" rel="nofollow">Cancel your website subscription</a>
+        </li>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEDHlEDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEH%2FVPDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJFL2hjL2VuLXVzL2FydGljbGVzLzIwNTgxNDAyOC1JbXBvcnQtdG8tYW5kLWV4cG9ydC1mcm9tLXlvdXItc2l0ZQY7CFQ6CXJhbmtpBw%3D%3D--6b3e0727050003cf6bc415ce0f9daedacc261d8f" rel="nofollow">Import to and export from your site</a>
+        </li>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEDH5EDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEH%2FVPDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSIuL2hjL2VuLXVzL2FydGljbGVzLzIwNTgxNTMwOC1VUkwtbWFwcGluZ3MGOwhUOglyYW5raQg%3D--e56136b5ae24cb87f6a678c7e4a9a4e1e3e6174f" rel="nofollow">URL mappings</a>
+        </li>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEqHhEDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEH%2FVPDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJNL2hjL2VuLXVzL2FydGljbGVzLzIwNTgxMzkyOC1VcGxvYWQtcmVuYW1lLWFuZC1kZWxldGUtZmlsZXMtb24teW91ci1zaXRlBjsIVDoJcmFua2kJ--00bc78adb9b60dc029ba7e85d4471df87430cba7" rel="nofollow">Upload, rename, and delete files on your site</a>
+        </li>
+      
+        <li>
+          <a href="/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGwrCA0Y0W0BBDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEH%2FVPDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJWL2hjL2VuLXVzL2FydGljbGVzLzQ0MDQxODM4OTgxMjUtUmV2aWV3LWNoYW5nZS1vci1yZXNldC15b3VyLWRvbWFpbi1zLW5hbWVzZXJ2ZXJzBjsIVDoJcmFua2kK--bb34df195077bccb5ba90dc41ad2ed72851bb045" rel="nofollow">Review, change, or reset your domain&#39;s nameservers</a>
+        </li>
+      
+    </ul>
+  </section>
+
+
+          </div>
+        </article>
+
+        <!-- SIDE NAVIGATION -->
+        <div class="article-sidebar">
+          <div class="sidebar-menu">
+            <span class="icon-menu"></span>
+          </div>
+          <div id="side-navigation">
+            <div class="sidebar-menu-inner">
+              <span class="icon-menu"></span>
+              <span class="sidebar-menu-title">Navigation</span>
+            </div>
+            <ul class="sidebar-nav-categories"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-vote" style="display: none">
+  <button type="button" class="article-vote-up" data-helper="vote" data-item="article" data-type="up" data-id="206566687" data-upvote-count="1185" data-vote-count="2015" data-vote-sum="355" data-vote-url="/hc/en-us/articles/206566687/vote" data-value="null" data-label="1185 out of 2015 found this helpful" data-selected-class="article-voted" data-as="button" aria-label="This article was helpful" aria-pressed="false">Yes</button>
+  <button type="button" class="article-vote-down" data-helper="vote" data-item="article" data-type="down" data-id="206566687" data-upvote-count="1185" data-vote-count="2015" data-vote-sum="355" data-vote-url="/hc/en-us/articles/206566687/vote" data-value="null" data-label="1185 out of 2015 found this helpful" data-selected-class="article-voted" data-as="button" aria-label="This article was not helpful" aria-pressed="false">No</button>
+</div>
+
+<div class="hide">
+  <ol class="breadcrumbs">
+  
+    <li title="Squarespace Help Center">
+      
+        <a href="/hc/en-us">Squarespace Help Center</a>
+      
+    </li>
+  
+    <li title="Pages and Content">
+      
+        <a href="/hc/en-us/categories/200290507-Pages-and-Content">Pages and Content</a>
+      
+    </li>
+  
+    <li title="Importing and exporting">
+      
+        <a href="/hc/en-us/sections/200810147-Importing-and-exporting">Importing and exporting</a>
+      
+    </li>
+  
+</ol>
+
+  <span class="article-title">Export your site content</span>
+</div>
+
+  </main>
+
+  <footer class="footer" aria-role='footer' style="display: none;">
+  <div class="pre-footer"></div>
+  <div class="footer_nav_container">
+    <div class="footer_brand">
+      <a class="footer_logo_link" href="https://support.squarespace.com/hc/" aria-label="Squarespace Logo">
+        <div class="footer_logo_full"></div>
+        <div class="footer_logo_mark"></div>
+      </a>
+      
+        <div id="mf_toggle"></div>
+        <a style="display: none;" id="current-locale" class="locale-switcher-language" href="/hc/change_language/en-us?return_to=%2Fhc%2Fen-us%2Farticles%2F206566687-Export-your-site-content" dir="ltr" rel="nofollow">
+          English (United States)
+        </a>
+        
+          <a style="display: none;" class="locale-switcher-language" href="/hc/change_language/de?return_to=%2Fhc%2Fde%2Farticles%2F206566687-Exportieren-deiner-Website-Inhalte" dir="ltr" rel="nofollow">
+            Deutsch
+          </a>
+        
+          <a style="display: none;" class="locale-switcher-language" href="/hc/change_language/es?return_to=%2Fhc%2Fes%2Farticles%2F206566687-Exporta-el-contenido-de-tu-sitio" dir="ltr" rel="nofollow">
+            Español
+          </a>
+        
+          <a style="display: none;" class="locale-switcher-language" href="/hc/change_language/fr-fr?return_to=%2Fhc%2Ffr-fr%2Farticles%2F206566687-Exporter-le-contenu-de-votre-site" dir="ltr" rel="nofollow">
+            Français (France)
+          </a>
+        
+          <a style="display: none;" class="locale-switcher-language" href="/hc/change_language/it?return_to=%2Fhc%2Fit%2Farticles%2F206566687-Esporta-il-contenuto-del-tuo-sito" dir="ltr" rel="nofollow">
+            Italiano
+          </a>
+        
+          <a style="display: none;" class="locale-switcher-language" href="/hc/change_language/ja-jp?return_to=%2Fhc%2Fja-jp%2Farticles%2F206566687-%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2584%25E3%2582%2592%25E3%2582%25A8%25E3%2582%25AF%25E3%2582%25B9%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25E3%2581%2599%25E3%2582%258B" dir="ltr" rel="nofollow">
+            日本語（日本）
+          </a>
+        
+          <a style="display: none;" class="locale-switcher-language" href="/hc/change_language/ko-kr?return_to=%2Fhc%2Fko-kr%2Farticles%2F206566687-%25EC%2582%25AC%25EC%259D%25B4%25ED%258A%25B8-%25EC%25BD%2598%25ED%2585%2590%25EC%25B8%25A0-%25EB%2582%25B4%25EB%25B3%25B4%25EB%2582%25B4%25EA%25B8%25B0" dir="ltr" rel="nofollow">
+            한국어(대한민국)
+          </a>
+        
+          <a style="display: none;" class="locale-switcher-language" href="/hc/change_language/nl-nl?return_to=%2Fhc%2Fnl-nl%2Farticles%2F206566687-De-content-van-je-site-exporteren" dir="ltr" rel="nofollow">
+            Nederlands (Nederland)
+          </a>
+        
+          <a style="display: none;" class="locale-switcher-language" href="/hc/change_language/pt?return_to=%2Fhc%2Fpt%2Farticles%2F206566687-Exporte-o-conte%25C3%25BAdo-do-seu-site" dir="ltr" rel="nofollow">
+            Português
+          </a>
+        
+          <a style="display: none;" class="locale-switcher-language" href="/hc/change_language/tr?return_to=%2Fhc%2Ftr" dir="ltr" rel="nofollow">
+            Türkçe
+          </a>
+        
+      
+    </div>
+    <div class="footer_navigation">
+      <div class="footer_nav_list">
+        <h4 class="footer_nav_titles">
+          SUPPORT
+          <div class="footer_nav_arrow">↓</div>
+        </h4>
+        <ul class="footer_nav_content">
+          <li>
+            <a class="footer_nav_link footer_contact_us" href="/hc/requests/new#choose-topic">
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_status" target="_blank" rel="noopener"
+              href="https://status.squarespace.com" onclick="">
+              Service Status
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_twitter" target="_blank" rel="noopener"
+              href="https://www.twitter.com/squarespacehelp?lang=en">
+              @SquarespaceHelp
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_v5" target="_blank" rel="noopener"
+              href="https://5help.squarespace.com/hc/">
+              Squarespace 5
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_nav_list">
+        <h4 class="footer_nav_titles">
+          COMMUNITY
+          <div class="footer_nav_arrow">↓</div>
+        </h4>
+        <ul class="footer_nav_content">
+          <li>
+            <a class="footer_nav_link footer_forum" target="_blank" rel="noopener"
+              href="https://forum.squarespace.com">
+              Forum
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_circle_designer" target="_blank" rel="noopener"
+              href="http://sqsp.link/TBsAMJ">
+              Hire a Designer
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_workshop " target="_blank"
+              rel="noopener" href="https://learning.squarespace.com">
+              Webinars
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_blog" target="_blank" rel="noopener" href="https://blog.squarespace.com/">
+              Blog
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_nav_list">
+        <h4 class="footer_nav_titles">
+          DEVELOPERS
+          <div class="footer_nav_arrow">↓</div>
+        </h4>
+        <ul class="footer_nav_content">
+          <li>
+            <a class="footer_nav_link footer_developer_api" target="_blank" rel="noopener"
+              href="https://developers.squarespace.com/commerce-api">
+              API Docs
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_circle" target="_blank" rel="noopener"
+              href="https://www.squarespace.com/circle">
+              Circle
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_developers" target="_blank" rel="noopener"
+              href="https://developers.squarespace.com">
+              Developer Platform
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_enterprise" target="_blank" rel="noopener"
+              href="https://www.squarespace.com/select">
+              ENTERPRISE
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_nav_list">
+        <h4 class="footer_nav_titles">
+          RESOURCES
+          <div class="footer_nav_arrow">↓</div>
+        </h4>
+        <ul class="footer_nav_content">
+          <li>
+            <a class="footer_nav_link footer_templates" target="_blank" rel="noopener"
+              href="https://www.squarespace.com/templates">
+              Website Templates
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_designer" target="_blank" rel="noopener"
+              href="https://www.squarespace.com/website-design">
+              Website Design
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_domain" target="_blank" rel="noopener"
+              href="https://www.squarespace.com/domain-name-search">
+              Domain Name Search
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_online_store" target="_blank" rel="noopener"
+              href="https://www.squarespace.com/ecommerce-website">
+              Online Stores
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_marketing" target="_blank" rel="noopener"
+              href="https://www.squarespace.com/website-marketing">
+              Website Marketing
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_tos" target="_blank" rel="noopener"
+              href="https://www.squarespace.com/terms-of-service">
+              Terms of Service
+            </a>
+          </li>
+          <li>
+            <a class="footer_nav_link footer_privacy" target="_blank" rel="noopener"
+              href="https://www.squarespace.com/privacy">
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <div id="teconsent"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Ends site-wrapper -->
+
+<script type="text/javascript">
+  var articlePageRegex = "\/articles\/([a-zA-Z0-9-_.%\/]+)*$";
+  var homePageRegex = "\/hc\/(en-us|fr-fr|es|it|pt|de)$";
+  var isArticlePage = new RegExp(articlePageRegex).test(window.location.pathname);
+  var isHomePage = new RegExp(homePageRegex).test(window.location.pathname);
+  
+  if (isArticlePage) {
+    document.querySelector('.header').style.background = "#000";
+    document.querySelector('.footer').style.display = "block";
+  } else if (!isHomePage) {
+    document.querySelector('.loading-indicator').style.display = "flex";
+    document.querySelector('.site-wrapper').style.display = "none";
+  }
+</script>
+
+<script type="text/javascript" src="/hc/theming_assets/01M0J73SQZ05RX3FW2GTATMGJ4" defer="defer"></script>
+<script type="text/javascript" src="/hc/theming_assets/01KEADRPCHWD7KTXBAWT1RBKQA" defer="defer"></script>
+<script type="text/javascript" src="/hc/theming_assets/01KEADRQG19JRGFD9MXR94WXCH" defer="defer"></script>
+<script type="text/javascript" src="/hc/theming_assets/01M0J73STZXBM75CCHG8P58DV7" defer="defer"></script>
+<script type="text/javascript" src="/hc/theming_assets/01M52VWPN1J208WFP8JEXM0FS3" defer="defer"></script>
+<script src="https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js"
+  integrity="sha256-yUhvEmYVhZ/GGshIQKArLvySDSh6cdmdcIx0spR3UP4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"
+  integrity="sha256-vFt3l+illeNlwThbDUdoPTqF81M8WNSZZZt3HEjsbSU=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  function tracking(location) {
+    window.ga("send", "event", "PreFooter", "click", location);
+  }
+</script>
+
+<script type="text/javascript">
+  setTimeout(() => {
+    const loadingIndicator = document.querySelector('.loading-indicator');
+    const siteWrapper = document.querySelector('.site-wrapper');
+    const footer = document.querySelector('.footer');
+    if (loadingIndicator) { loadingIndicator.style.display = 'none' }
+    if (siteWrapper) { siteWrapper.style.display = 'block' }
+    if (footer) { footer.style.display = 'block' }
+  }, 3000);
+</script>
+
+<script defer="defer">
+  setTimeout(function () {
+    $("a.nesty-input").click(function () {
+      $("li#54987").hide();
+    });
+  }, 1000);
+</script>
+
+
+
+  <!-- / -->
+
+  
+  <script src="//static.zdassets.com/hc/assets/en-us.a4373f65dddee53ac592.js"></script>
+  
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"squarespace","environment":"production","name":"Support"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":"","role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"external_id":null,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:mzskbtiCSAGkyVCyw5UdjQEfOKi5vlV0Imv2XVn3BKT-Xp0G8HVGkJYvLZNQTjAgImwUIIhGKNXCEK_rfbvbQQ","shared_csrf_token":null},"usage_tracking":{"event":"article_viewed","data":"BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkEH/VPDDoKX21ldGF7DDoPYWNjb3VudF9pZGkDxwwJOhNoZWxwX2NlbnRlcl9pZGkErczsCzoNYnJhbmRfaWRpA9WMAjoMdXNlcl9pZDA6E3VzZXJfcm9sZV9uYW1lSSIOQU5PTllNT1VTBjsGVDsASSIKZW4tdXMGOwZUOhphbm9ueW1vdXNfdHJhY2tpbmdfaWQw--f4a54ee7ab2293bba2b7db9c7d7b42aa27e6c8a7","url":"https://support.squarespace.com/hc/activity"},"current_record_id":"206566687","current_record_url":"/hc/en-us/articles/206566687-Export-your-site-content","current_record_title":"Export your site content","current_text_direction":"ltr","current_brand_id":167125,"current_brand_name":"Squarespace","current_brand_url":"https://squarespace.zendesk.com","current_brand_active":true,"current_path":"/hc/en-us/articles/206566687-Export-your-site-content","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_end_user_attachments":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":true,"has_multi_language_help_center":true,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_help_center_auth_enabled":false,"embeddables_connect_ipms":false},"answer_bot_subdomain":"static","gather_plan_state":"subscribed","has_article_verification":true,"has_gather":true,"has_ckeditor":false,"has_community_enabled":false,"has_community_badges":true,"has_community_post_content_tagging":false,"has_gather_content_tags":true,"has_guide_content_tags":true,"has_user_segments":true,"has_answer_bot_web_form_enabled":false,"has_garden_modals":false,"has_auth_email_less_sso":false,"theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-2-preview","is_preview":false,"has_search_settings_in_plan":true,"theming_api_version":2,"theming_settings":{"logo":"/hc/theming_assets/01JZ15X3TFKFEF4Q0KN8WNRM3T","favicon":"/hc/theming_assets/01HZFVW2268CTBGRZP9T7CBH60","aus_live_chat_enabled":true,"chatbot_english":true,"chatbot_german":true,"chatbot_spanish":false,"chatbot_french":true,"chatbot_italian":false,"chatbot_portuguese":false,"chatbot_japanese":false,"chatbot_turkish":false,"chatbot_env":"64fbb86dd7a47e1a4627a999","dialogflow_agent_id":"","sso_agent":true,"sso_admin":true,"sso_internal":false,"sso_group_filter":""},"has_pci_credit_card_custom_field":true,"help_center_restricted":false,"is_assuming_someone_else":false,"flash_messages":[],"user_photo_editing_enabled":true,"user_preferred_locale":"en-us","base_locale":"en-us","login_url":"https://squarespace.zendesk.com/access?locale=en-us\u0026brand_id=167125\u0026return_to=https%3A%2F%2Fsupport.squarespace.com%2Fhc%2Fen-us%2Farticles%2F206566687-Export-your-site-content","has_alternate_templates":true,"has_custom_statuses_enabled":true,"has_hc_generative_answers_setting_enabled":false,"has_suggested_initial_questions_enabled":false,"has_contentful_eap":false,"has_contentful_eap_eligible":false,"has_pdf_ingestion_eap":true,"has_pdf_ingestion_eap_eligible":true,"has_guide_saas_management":false,"has_knowledge_category_translation_modal":false,"has_guide_service_catalog":true,"has_csat_reverse_2_scale_in_mobile":false,"has_unified_navigation":true,"has_unified_navigation_eap_access":true,"has_knowledge_locale_display_names":true,"has_csat_bet365_branding":false,"has_csat_flora":false,"has_csat_theming_integration_phase_1":false,"has_help_center_gen_search_follow_up_conversation":true,"chat_page_renderable":false,"version":"v28068","dev_mode":false};
+</script>
+
+  
+  
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-43bd7d52b00e5335ac966bab857ea142.js"></script>
+  <script type="text/javascript" src="/hc/theming_assets/593095/167125/script.js?digest=49682190553485"></script>
+  
+</body>
+</html>

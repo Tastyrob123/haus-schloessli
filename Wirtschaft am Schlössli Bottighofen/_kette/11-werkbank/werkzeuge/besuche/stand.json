@@ -1,0 +1,62 @@
+{
+  "station": "11",
+  "name": "Le Registre / Das Besucherbuch",
+  "rolle": "Werkbank-Bauer + Werkzeug-Anpasser ×7",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "teil": "besuche",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T23:07+07:00",
+  "ende": "2026-10-20T00:28+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Server des Besucherbuchs läuft nur lokal (Port 8988, python3 _werkzeuge/registre/server.py 8988); nach einem Neustart des Rechners neu starten",
+      "wo": "_kette/11-werkbank/werkzeuge/besuche/STAND.md, Wo"
+    },
+    {
+      "punkt": "Zählung auf der Website nicht eingebaut (Vorschlag vorschlag/messung.js), echte Zahlen erst auf Roberts Wort: dann VORFUEHRUNG aus an drei Stellen und Die Stube ohne beispiel=1",
+      "wo": "_werkzeuge/registre/vorschlag/messung.js, STAND.md «Für den Werkbank-Bauer»"
+    },
+    {
+      "punkt": "Datenschutz-Absatz für datenschutz.html erst mit eingeschalteter Zählung, Speicherort vom Haus zu nennen",
+      "wo": "_werkzeuge/registre/vorschlag/datenschutz-text.md"
+    },
+    {
+      "punkt": "Online: eigener Blob-Speicher mit REGISTRE_READ_WRITE_TOKEN und Andocken über online.json fehlen; nichts hochgeladen",
+      "wo": "_werkzeuge/registre/online.json"
+    },
+    {
+      "punkt": "Anmeldung, Rechte, Sicherung ausserhalb des Rechners, Monitoring fehlen (Prüfpunkte 7a, kein Passwort bis zur Auslieferung)",
+      "wo": "STAND.md, Prüfpunkte"
+    },
+    {
+      "punkt": "Flüssigkeit nur unter Last 26–36 anderer Chats gemessen (p95 ≤ 16,5 ms, einzelne Ausreisser beim Ansichtswechsel); unter normaler Last neu messen",
+      "wo": "STAND.md, Geprüft"
+    },
+    {
+      "punkt": "Kleid schloessli.js nennt Le Bureau unter /_werkzeuge/bureau/, der Schreibtisch läuft im Stamm auf :8970; Wege zusammenführen",
+      "wo": "_werkzeuge/oberflaeche/kleid/schloessli.js"
+    },
+    {
+      "punkt": "Nutzungsanzeige (Wochenbudget) nicht abgelesen, Verbrauch nicht gemessen",
+      "wo": "stand.json verbrauch"
+    },
+    {
+      "punkt": "Probe der Online-Fassung (_pruefung/online_probe.js) noch auf den Aufbau des Gasterntal geschrieben, im Schlössli nicht gelaufen",
+      "wo": "_werkzeuge/registre/_pruefung/online_probe.js"
+    }
+  ],
+  "paket": [
+    "werkzeuge/<schlüssel>/STAND.md",
+    "../../werkbank/"
+  ],
+  "adresse": "http://127.0.0.1:8988/_werkzeuge/registre/",
+  "briefing": "briefing.html?teil=besuche",
+  "notiz": "Die Besucherliste: Namen nur über WO.name(), Bilder in fünf Listen (Seiten, Am meisten angesehen, Von welcher Seite reserviert, Weg eines Besuchs, Besuchsliste); 91/91 grün, Nachlauf 21/21",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

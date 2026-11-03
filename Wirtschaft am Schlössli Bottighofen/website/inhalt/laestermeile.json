@@ -1,0 +1,62 @@
+{
+ "stand": "Karte der Lästermeile, PDF vom 14.10.2026",
+ "quelle": "_quelle/website/pdf/Lastermeile-Homepage-2339.pdf",
+ "gruppen": [
+  {
+   "titel": "Tapas durchgehend",
+   "eintraege": [
+    {
+     "name": "PIMIENTOS DE PADRÓN",
+     "preis": 8,
+     "text": ""
+    },
+    {
+     "name": "PATATINE FRITTE",
+     "preis": 8,
+     "text": "Parmesan–Piment d´espelette-Pommes, Knoblauch-Zitronenmayo L/E"
+    },
+    {
+     "name": "CROQUETAS",
+     "preis": 9,
+     "text": "Pata-Negra-Kroketten G/L/E"
+    },
+    {
+     "name": "KALAMATA OLIVEN",
+     "preis": 8,
+     "text": "Pesto rosso N"
+    }
+   ]
+  },
+  {
+   "titel": "Zur Stärkung & Süsses",
+   "eintraege": [
+    {
+     "name": "PRATO",
+     "preis": 30,
+     "text": "Aufschnitt, Käse, Pickels und Focaccia G/L"
+    },
+    {
+     "name": "TARTE FLAMBÉE",
+     "preis": 20,
+     "text": "Vegetarisch oder mit Speck G/L"
+    },
+    {
+     "name": "CRESPELLE",
+     "preis": 20,
+     "text": "Gefüllte Crêpes Vegetarisch „alla parmigiana“ (mit Melanzane) oder mit Ragù alla bolognese G/L/E/SE"
+    },
+    {
+     "name": "TARTA",
+     "preis": 7,
+     "text": "hausgemachter Kuchen vom Blech G/L/N"
+    },
+    {
+     "name": "DOLCE AL CUCCHIAIO",
+     "preis": 9,
+     "text": "Geschichtetes Löffeldessert im Glas G/L/N"
+    }
+   ]
+  }
+ ],
+ "allergene": "G = Gluten, L = Laktose, E = Eier, F = Fische, S = Schalen- und Weichtiere, So = Soja, En = Erdnüsse, N = Nüsse, Se = Sellerie"
+}

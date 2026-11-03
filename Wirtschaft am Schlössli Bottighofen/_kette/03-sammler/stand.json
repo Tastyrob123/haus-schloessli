@@ -1,0 +1,92 @@
+{
+  "station": "03",
+  "name": "Recherche",
+  "rolle": "Sammler",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "bestätigt",
+  "beginn": "2026-10-19T00:02+07:00",
+  "ende": "2026-10-19T00:34+07:00",
+  "verbrauch": {
+    "budget_vorher": 70.0,
+    "budget_nachher": 71.0,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "TripAdvisor: Note, Anzahl, Fotos und Sprachen nicht gelesen (Chrome mit Claude-Erweiterung nicht verbunden, nach Auftrag nicht anders versucht); ob der Eintrag «Schlössli» d33091733 zur heutigen Wirtschaft gehört, Späher-Wert 3,1 / 9 nur aus der Suchvorschau",
+      "wo": "list_connected_browsers leer, 19.10.2026; tripadvisor.ch Restaurant_Review-g6908343-d33091733"
+    },
+    {
+      "punkt": "Gäste-Sprachen nach Anzahl auf keinem Portal ablesbar; Reihenfolge de, en, fr nur aus Lage und Sprachen der Tourismusbüros abgeleitet",
+      "wo": "Google Maps eingeschränkte Ansicht (3 von 85 Rezensionen, alle deutsch), 19.10.2026; _kette/03-sammler/sprachen.json"
+    },
+    {
+      "punkt": "Michelin: empfohlen in der Selektion 2025; die Selektion 2026 wird am 02.11.2026 verkündet, dann neu prüfen",
+      "wo": "_quelle/extern/portale/michelin-beleg.md (distinction «plate», «2025 Guide MICHELIN Schweiz»)"
+    },
+    {
+      "punkt": "Baujahr und Geschichte des ehemaligen Hafenmeistergebäudes, in dem die Wirtschaft liegt (die Geschichte des Schlössli seit 1676 ist belegt, das Schlössli ist heute ein Wohnhaus)",
+      "wo": "_quelle/presse/gemeinde-bottighofen-geschichte.md; Gemeindeschrift 1994, _quelle/presse/pdf-text/Bottighofen_Heft_2_Schloessli_S103-128_OCR.txt; Wikipedia Bottighofen"
+    },
+    {
+      "punkt": "Wem die Liegenschaft gehört und zu welchen Bedingungen Christian Kuchler sie gepachtet hat",
+      "wo": "Presse nennt ihn «Pächter» (_quelle/presse/gaultmillau-zwei-koeniginnen.md, tz-14-punkte.md); Seite, Impressum, Handelsregister, Gemeinde nennen keinen Eigentümer"
+    },
+    {
+      "punkt": "Fotografen der Serien «Schloessli_August2025», «2026-05-22 … Schlössli SM», «FHF_», «_DSC»: in den Dateien kein Name; ob das Haus die Bildrechte für eine neue Seite hat",
+      "wo": "_quelle/fotografen-aus-metadaten.json; Impressum «Taverne zum Schäfli Ag oder den speziell genannten Rechtsinhabern»"
+    },
+    {
+      "punkt": "Grosse Bildoriginale: Squarespace liefert höchstens 2500 px, die Originale bis 5504 × 8256 px liegen beim Haus oder den Fotografen",
+      "wo": "_quelle/website/bilder/ (Abmessungen); Späher data-image-dimensions"
+    },
+    {
+      "punkt": "Namen und Plätze der zwei Bankett-Etagen und der Terrasse; kein Foto der Etagen",
+      "wo": "_quelle/website/text/karten.md («zwei Etagen … bis zu 26 Personen»); Bögen in _quelle/_boegen/"
+    },
+    {
+      "punkt": "Patissière Theresa Hermann: GaultMillau 2025 und 2026 nennen sie, «Über uns» nicht",
+      "wo": "_quelle/extern/portale/gaultmillau.md; _quelle/presse/gaultmillau-zwei-koeniginnen.md; _quelle/website/text/uber-uns.md"
+    },
+    {
+      "punkt": "Bedeutung des Zeichens (Kreis mit zwei Zeigern) nirgends erklärt",
+      "wo": "_quelle/extern/logo/; Seite, Presse, Instagram-Profil"
+    },
+    {
+      "punkt": "Filme: kein eigener Kanal, keine Filme Dritter gefunden; die Instagram-Reels lassen sich ohne Anmeldung nicht laden",
+      "wo": "_quelle/video/liste-gesucht.md"
+    },
+    {
+      "punkt": "Thurgauer Zeitung 08.10.2025 und 06.10.2026, Südkurier 23.12.2025: nur Anriss (Bezahlschranke)",
+      "wo": "_quelle/presse/tz-14-punkte.md, tz-weiterer-punkt.md, suedkurier-fruehstueck.md"
+    },
+    {
+      "punkt": "Squarespace: gebuchter Plan, Franken-Preis, wer die Seite baut oder pflegt, unterschriebener Vertrag (vom Späher übernommen)",
+      "wo": "_kette/02-spaeher/stand.json"
+    },
+    {
+      "punkt": "Halter der Adresse schloessli-bottighofen.ch (vom Späher übernommen)",
+      "wo": "Namensserver ns14.net, Whois für .ch nicht öffentlich (Späher 18.10.2026)"
+    },
+    {
+      "punkt": "Aktionäre der Taverne zum Schäfli AG (Inhaberin der Urheberrechte laut Impressum): stehen im Aktienbuch, nicht öffentlich; Verwaltungsrat aus der Schäfli-Sammlung belegt",
+      "wo": "Taverne zum Schäfli Wigoltingen/_quelle/presse/handelsregister-2026-10-18.md; _quelle/presse/handelsregister-2026-10-19.md"
+    }
+  ],
+  "paket": [
+    "fakten.json",
+    "sprachen.json",
+    "../../_quelle/",
+    "sammlung.html",
+    "bau_sammlung.py",
+    "../../Prompt — Wirtschaft am Schlössli.md"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/_kette/03-sammler/sammlung.html",
+  "briefing": "briefing.html",
+  "notiz": "Sammlung liegt vor: Website, Web-Archiv, Portale (GaultMillau 15 belegt, Falstaff 91), Presse, Handelsregister und die Gemeindeschrift 1994 zur Geschichte des Schlössli; das Restaurant liegt im ehemaligen Hafenmeistergebäude; 15 Lücken rot.",
+  "bestaetigt": {
+    "zeit": "2026-10-19T00:35+07:00",
+    "wort": "Oberchef nach Prüfung (Seite lädt ohne Fehler, Paket vollständig: fakten.json 32, sprachen.json, _quelle 187 Dateien), auf Roberts Wort 18.10.2026 «bestätige die Befunde weiter»"
+  },
+  "rueckgaben": []
+}

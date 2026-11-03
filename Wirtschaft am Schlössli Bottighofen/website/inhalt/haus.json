@@ -1,0 +1,237 @@
+{
+ "_stand": "19.10.2026, Station 07. Jede Angabe steht nur hier; alle Seiten lesen von hier. Quelle je Feld unter _quellen.",
+ "name": "Wirtschaft am Schlössli",
+ "wortmarke": "Schlössli Wirtschaft",
+ "by": "by Christian Kuchler",
+ "strasse": "Seestrasse 50",
+ "ort": "8598 Bottighofen",
+ "kanton": "TG",
+ "telefon": "+41 71 688 90 92",
+ "telefon_href": "+41716889092",
+ "mail": "kontakt@schloessli-bottighofen.ch",
+ "instagram": "https://www.instagram.com/schloessli_bottighofen/",
+ "instagram_name": "@schloessli_bottighofen",
+ "reservation": "https://services.gastronovi.com/restaurants/118851/reservation/widget",
+ "satz_lage": "Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen.",
+ "satz_willkommen": "Willkommen in der Wirtschaft am Schlössli!",
+ "satz_reise": "Hier erwartet Sie eine kulinarische Reise in die Welt der mediterranen Küche, die mit frischen, hochwertigen Zutaten und kreativen Rezepten zubereitet wird.",
+ "satz_team": "Unser engagiertes, junges Küchenteam unter der Leitung von Monika Huber, ehemals Sous-Chefin von Christian Kuchler, bringt frischen Wind und Leidenschaft in die Zubereitung jedes Gerichts.",
+ "satz_anlass": "Ob Sie ein gemütliches Essen mit Freunden, einen besonderen Anlass oder einfach eine kleine Auszeit vom Alltag planen – bei uns finden Sie die passende Atmosphäre und ein vielfältiges Angebot an Köstlichkeiten.",
+ "satz_terrasse": "Die schönste Terrasse am Bodensee",
+ "satz_terrasse_von": "Christian Kuchler",
+ "satz_wein": "Lassen Sie sich von unseren mediterranen Spezialitäten und einer vielfältigen Weinauswahl von Sommelier und Gastgeber Jonas Volpert verführen und geniessen Sie die herzliche Gastfreundschaft, die unsere Wirtschaft am Schlössli auszeichnet.",
+ "zeiten": {
+  "tage": "Donnerstag - Montag",
+  "ruhetag": "Dienstag & Mittwoch Ruhetag",
+  "offen": "11:30 Uhr - 23:00 Uhr",
+  "kueche_hinweis": "Die Küchenzeiten betreffen unsere grosse A-la-carte-Karte und die Bestellungsannahme.",
+  "kueche": [
+   "11:30 Uhr - 13:30 Uhr",
+   "18:00 Uhr - 20:00 Uhr"
+  ],
+  "laestermeile": "Den ganzen Tag durchgängig bieten wir die Karte der Lästermeile an."
+ },
+ "ferien": [
+  "13. - 15. November (Excellence Gourmetkreuzfahrt)",
+  "22. Dezember 2026 - 10. Februar 2027"
+ ],
+ "anfahrt": "Am Kreisverkehr beim Restaurant Bären Abfahrt in die Seestrasse in Richtung Hafen, über den Bahnübergang hinweg gelangen Sie der Strasse immer weiter folgend direkt zu unserem Parkplatz.",
+ "bahn": "ausreichend Parkplätze und eine nahe Anbindung zum Zugverkehr mit dem Bahnhof Bottighofen",
+ "koordinaten": [
+  47.6442147,
+  9.212147
+ ],
+ "bankett": {
+  "titel": "Banketts & Gruppen",
+  "fett": "Gerne übernehmen wir die Bewirtung Ihrer Familien- oder Firmenfeier!",
+  "rahmen": "Sie geben den Rahmen vor - ob Tavolata oder gesetztes Menue! Welches Gericht darf auf keinen Fall für Sie fehlen - welche Allergien müssen unbedingt bedacht werden?",
+  "individuell": "Wir richten uns individuell nach Ihnen und Ihren Wünschen - nehmen Sie unkompliziert zu uns Kontakt auf und wir können das sehr gerne auch vor Ort in Ruhe besprechen.",
+  "platz": "Wir haben auf zwei Etagen Platz für jeweils bis zu 26 Personen, ausreichend Parkplätze und eine nahe Anbindung zum Zugverkehr mit dem Bahnhof Bottighofen.",
+  "felder": [
+   "Datum",
+   "Uhrzeit",
+   "Personenzahl",
+   "Gewünschte Speisenform",
+   "Anzahl Gänge",
+   "Richt-Budget für Speisen bzw. insgesamt"
+  ],
+  "speisenform": [
+   "Tavolata",
+   "Gesetztes Menue"
+  ],
+  "etagen": 2,
+  "personen": 26
+ },
+ "team": [
+  {
+   "name": "Jonas Volpert",
+   "rolle": "Gastgeber & Sommelier",
+   "bild": "jonas"
+  },
+  {
+   "name": "Monika Huber",
+   "rolle": "Küchenchefin",
+   "bild": "moni"
+  },
+  {
+   "name": "Lukas Siebel",
+   "rolle": "Sous-Chef",
+   "bild": "lukas"
+  },
+  {
+   "name": "Marco Reisinger",
+   "rolle": "Entremetier",
+   "bild": null
+  },
+  {
+   "name": "Ole Sass",
+   "rolle": "Service",
+   "bild": null
+  }
+ ],
+ "auszeichnungen": [
+  {
+   "wer": "GaultMillau",
+   "was": "15 Punkte",
+   "zusatz": "Guide 2027"
+  },
+  {
+   "wer": "GaultMillau",
+   "was": "«Entdeckung des Jahres 2026»",
+   "zusatz": "Moni Huber"
+  },
+  {
+   "wer": "Falstaff",
+   "was": "91 von 100",
+   "zusatz": ""
+  },
+  {
+   "wer": "Guide Michelin",
+   "was": "«Favorit der Inspektoren»",
+   "zusatz": "empfohlen, Selektion 2025"
+  }
+ ],
+ "zitat_gm_kueche": "beeindruckt mit exzellentem Handwerk und klarer kulinarischer Sprache",
+ "zitat_gm_terrasse": "mit der Terrasse im Schatten prächtiger Platanen und Blick auf den Bodensee",
+ "zitat_michelin": "Schöne Terrasse",
+ "zitat_gm_keller": "Der Weinkeller, bei vielen neuen Lokalen das Sorgenkind, ist im «Schlössli» bestens bestückt.",
+ "zitat_gm_keller_datum": "GaultMillau, 30.03.2025",
+ "weg_moni": "Moni Huber kommt aus Südtirol, hat in der Vila Joya an der Algarve bei Dieter Koschina gelernt, war Sous-Chefin von Christian Kuchler in der Taverne zum Schäfli und führt seit April 2025 ihre eigene Küche am See.",
+ "schwester": {
+  "name": "Taverne zum Schäfli",
+  "ort": "Wigoltingen",
+  "url": "https://www.schaefli-wigoltingen.ch/"
+ },
+ "gutschein": {
+  "felder": [
+   "Name Käufer",
+   "E-Mail",
+   "Adresse",
+   "Betrag"
+  ],
+  "bestaetigung": "Wir senden Ihnen eine Bestätigung, sobald der Gutschein versendet wurde"
+ },
+ "anlaesse": [
+  {
+   "titel": "Excellence Gourmetkreuzfahrt",
+   "datum": "13. bis 15. November 2026",
+   "zeit": "Fr., 13. Nov. 2026 15:00 – So., 15. Nov. 2026 14:00",
+   "bevorstehend": true,
+   "text": [
+    "Four-Hands-Dinner auf der Excellence Countess!",
+    "Gemeinsam mit einem Ihrer grossen Mentoren Dieter Koschina, bei dem unsere Küchenchefin Monika Huber an der Algarve-Küste in der Villa Joya viel gelernt hat, geht es an Bord.",
+    "Start ist am Freitag in Basel und es geht über Nacht nach Strassburg - am Samstag geht es dann den selben Weg wieder zurück.",
+    "Welcome-Apéro, Moderation über den ganzen Abend, Live-Musik, Gala-Dinner, DJ, etc - Genuss pur!",
+    "Unser Restaurant ist über diese drei Tage geschlossen, da unser Team geschlossen mit an Board ist."
+   ],
+   "link": "https://www.excellence.ch/flusskreuzfahrten/gourmetfestival-dieter-koschina-monika-huber-eobas88-gf",
+   "link_text": "Gourmetfestival Dieter Koschina & Monika Huber auf excellence.ch",
+   "bild": "kf-teller",
+   "bild_klein": "kf-anrichten"
+  },
+  {
+   "titel": "Ehemaligen Lunch",
+   "datum": "Sonntag, 6. September 2026",
+   "zeit": "12:00 – 16:00",
+   "bevorstehend": false,
+   "text": [
+    "Wir laden ein zu einem Lunch mit all unseren Weggefährten der letzten Jahre aus der Taverne zum Schäfli!",
+    "Entspannte, gesellige Atmosphäre - 7 Gänge, 1 Glas Laurent Perrier Champagner zum Apéro, Wasser und Kaffee für 190.- SFr."
+   ],
+   "bild": "platanen"
+  },
+  {
+   "titel": "Fantastical / Seenachtfest",
+   "datum": "7. bis 8. August 2026",
+   "zeit": "Fr., 7. Aug. 2026 11:30 – Sa., 8. Aug. 2026 23:30",
+   "bevorstehend": false,
+   "text": [
+    "Der Höhepunkt des Sommers im August!",
+    "Highlight ist das Feuerwerk am Samstag, den 8. August im Konstanzer Trichter des Bodensees - und wir haben beste Sicht von unserer Terrasse auf dieses Spektakel!"
+   ],
+   "bild": "feuerwerk"
+  },
+  {
+   "titel": "Kitchen Party im Schäfli",
+   "datum": "30. April 2026",
+   "zeit": "Do., 30. Apr. 2026 17:00 – Fr., 1. Mai 2026 00:00 · Taverne zum Schäfli, Wigoltingen",
+   "bevorstehend": false,
+   "text": [
+    "Wir haben 10 Gastköche eingeladen, die Sie an Ihren Food-Ständen kulinarisch verwöhnen.",
+    "Dazu Champagner von Laurent Perrier, verschiedene Weine, Cocktails und Bier."
+   ],
+   "link": "https://www.schaefli-wigoltingen.ch/kitchenparty-2026",
+   "link_text": "Mehr erfahren im Schäfli",
+   "bild": "schaefli"
+  },
+  {
+   "titel": "4-Hands-Lunch mit Patrick Stier",
+   "datum": "Sonntag, 22. Februar 2026",
+   "zeit": "12:00 – 15:00",
+   "bevorstehend": false,
+   "text": [
+    "Gemeinsam mit Patrick Stier vom Restaurant Papageno in Konstanz laden wir zum exklusiven 4-Hands-Lunch um 12 Uhr ein.",
+    "Patricks klassisch französische Küche mit mediterranem Einschlag trifft auf Monikas Reise durch das Mittelmeer!"
+   ],
+   "bild": "stier"
+  }
+ ],
+ "besen": [
+  "Gleich nebenan, im Haus am See, das heute Schlössli heisst, setzte Hans Conrad Hafen Ende des 17. Jahrhunderts einen Wirt als Pächter ein, der die Schiffsleute mit Speis und Trank bewirtete.",
+  "Statt eines Wirtshausschilds hing nur ein Besen heraus.",
+  "Das Kloster Münsterlingen klagte, die Gemeinde fürchtete, man müsse bald im Wirtshaus Hochzeit feiern statt zu Hause, und 1699 blieb im Haus am See nur noch Wein aus Eigenbau."
+ ],
+ "besen_quelle": "Magdalena Munz-Schaufelberger, «Die Bottighofer Mühlen und das Schlössli am See», Gemeinde Bottighofen 1994, S. 110–111",
+ "_quellen": {
+  "name, strasse, ort, telefon, mail, zeiten, ferien, anfahrt": "_quelle/website/text/kontakt.md (19.10.2026)",
+  "satz_*": "_quelle/website/text/start.md (19.10.2026); «genießen» in Schweizer Schreibung «geniessen» (marke.json › ton › nicht: «ß»)",
+  "bankett": "_quelle/website/text/karten.md und der Mail-Link «Bankettanfrage» dort",
+  "team": "_quelle/website/text/uber-uns.md",
+  "auszeichnungen": "_kette/03-sammler/fakten.json › auszeichnungen, noten",
+  "zitat_*": "_quelle/extern/portale/gaultmillau.md (Zeile 15), guide-michelin-de.md (Zeile 15), presse/gaultmillau-zwei-koeniginnen.md (Zeile 61)",
+  "weg_moni": "fakten.json › personen; Satz von Station 07 aus den Belegen gebaut",
+  "anlaesse": "_quelle/website/text/events-2-1*.md, Wortlaut des Hauses gekürzt, nichts dazugeschrieben",
+  "besen": "_quelle/presse/pdf-text/…_OCR.txt, PDF-Seiten 110–111; Sätze von Station 06/07, nicht vom Haus",
+  "reservation": "_kette/02-spaeher/einordnung.json › buchung",
+  "gutschein": "fakten.json › gutschein (Formular der heutigen Startseite)",
+  "besen_alt": "_quelle/presse/pdf-text/Bottighofen_Heft_2_Schloessli_S103-128_OCR.txt Zeile 327–328 (PDF-Seite 110), Wortlaut der Klagepunkte, wie im Heft zitiert",
+  "ferien_iso": "dieselben Ferien wie «ferien» (kontakt.md), als Datum für den Kalender der Bankettanfrage",
+  "zitat_gemeinde": "_quelle/presse/gemeinde-bottighofen-geschichte.md Zeile 16",
+  "zitat_gm_laester, zitat_jonas": "_quelle/presse/gaultmillau-zwei-koeniginnen.md Zeile 61 (30.03.2025)"
+ },
+ "besen_alt": "… lasse er keinen Schildt, sondern nur einen raiss aushenkhen …",
+ "besen_alt_von": "Aus der Klage gegen Hans Conrad Hafen, Ende 17. Jahrhundert",
+ "ferien_iso": [
+  [
+   "2026-11-13",
+   "2026-11-15"
+  ],
+  [
+   "2026-12-22",
+   "2027-02-10"
+  ]
+ ],
+ "zitat_gemeinde": "Die Wirtschaft am Schlössli wird im ehemaligen Hafenmeistergebäude geführt.",
+ "zitat_gm_laester": "eine Reihe von Stühlen mit Blick auf den Bootshafen und die Seepromenade",
+ "zitat_jonas": "Der Schwerpunkt liegt auf der Bündner Herrschaft, dem Burgund und der Champagne."
+}

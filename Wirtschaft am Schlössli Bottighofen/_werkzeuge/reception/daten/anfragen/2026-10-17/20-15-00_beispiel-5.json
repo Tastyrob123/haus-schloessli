@@ -1,0 +1,35 @@
+{
+ "zeit": "2026-10-17T20:15:00+02:00",
+ "art": "anlass",
+ "name": "Peter Huber",
+ "kontakt": "peter.huber@example.com",
+ "datum": "",
+ "personen": 2,
+ "anliegen": "Plätze für 4-Hands-Lunch mit Patrick Stier (nächstes Mal)",
+ "sprache": "de",
+ "gespraech": "beispiel-5",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Anlässe): Anlass: 4-Hands-Lunch mit Patrick Stier (nächstes Mal)\nPersonen: 2\nWünsche, Allergien: Bitte melden Sie sich, sobald es wieder einen gibt."
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "an": "kontakt@schloessli-bottighofen.ch",
+ "abteilung": "Bankett",
+ "seite": "/anlaesse.html",
+ "seite_name": "Anlässe",
+ "web": true,
+ "nachricht": "Anlass: 4-Hands-Lunch mit Patrick Stier (nächstes Mal)\nPersonen: 2\nWünsche, Allergien: Bitte melden Sie sich, sobald es wieder einen gibt.",
+ "formular": "plaetze",
+ "entwurf": {
+  "betreff": "Ihre Anfrage in der Wirtschaft am Schlössli (Probe)",
+  "text": "Guten Tag Peter Huber\n\nVielen Dank für Ihre Anfrage. Dies ist ein Probe-Brief ohne KI, damit sich Gestalten, PDF und Text prüfen lassen.\n\nFür Ihr Datum [Verfügbarkeit prüfen] und [Tisch bestätigen].\n\nDamit wir alles in Ruhe vorbereiten können:\n- Uhrzeit\n- Anzahl Personen\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Probe ohne KI\nOffen: Verfügbarkeit, Bestätigung",
+  "vorlage": "anlass",
+  "absender": "kontakt@schloessli-bottighofen.ch",
+  "zeit": "2026-10-20T01:04:27+07:00",
+  "fassung": 1
+ }
+}

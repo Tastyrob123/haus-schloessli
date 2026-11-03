@@ -1,0 +1,38 @@
+{
+ "bankett": {
+  "seiten": 3,
+  "fehlt_in_pdf": [],
+  "dazu_in_pdf": [],
+  "regeln": []
+ },
+ "laestermeile": {
+  "seiten": 2,
+  "fehlt_in_pdf": [],
+  "dazu_in_pdf": [],
+  "regeln": []
+ },
+ "lunch": {
+  "seiten": 1,
+  "fehlt_in_pdf": [],
+  "dazu_in_pdf": [],
+  "regeln": []
+ },
+ "speisekarte": {
+  "seiten": 3,
+  "fehlt_in_pdf": [],
+  "dazu_in_pdf": [],
+  "regeln": []
+ },
+ "vier-haende": {
+  "seiten": 1,
+  "fehlt_in_pdf": [],
+  "dazu_in_pdf": [],
+  "regeln": []
+ },
+ "weinkarte": {
+  "seiten": 25,
+  "fehlt_in_pdf": [],
+  "dazu_in_pdf": [],
+  "regeln": []
+ }
+}

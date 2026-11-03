@@ -1,0 +1,22 @@
+{
+  "titel": "Kunden analysieren",
+  "untertitel": "Wirtschaft am Schlössli Bottighofen · Station 02 · Späher",
+  "stand": "Befund liegt als Seite vor (befund.html): passt als Studie, weil es zur Familie Kuchler gehört; Seite jung, keine Agentur, Auszeichnung und Geschichte fehlen.",
+  "luecken": [],
+  "bilder": [],
+  "messwerte": [],
+  "abschnitte": [],
+  "links": [
+    {
+      "text": "Befund öffnen",
+      "ziel": "befund.html"
+    },
+    {
+      "text": "Heutige Seite",
+      "ziel": "https://www.schloessli-bottighofen.ch/"
+    }
+  ],
+  "frage": "",
+  "knopf_ja": "Bestätigen",
+  "knopf_nein": "Zurückschicken"
+}

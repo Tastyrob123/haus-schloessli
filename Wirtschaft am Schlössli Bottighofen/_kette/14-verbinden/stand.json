@@ -1,0 +1,36 @@
+{
+  "station": "14",
+  "name": "Website verbinden",
+  "rolle": "Werkbank-Bauer",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-20T02:06+07:00",
+  "ende": "2026-10-20T02:06+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Die Website liest die Karten noch aus website/inhalt/*.json; Werte am 19.10. gegen _karten/stand geprüft (Karte 20, Lästermeile 9, Bankett 15 Gerichte, keine Abweichung). Auf eine Quelle umstellen, sobald La Carte veröffentlicht",
+      "wo": "website/bau.py › karte_seite · _karten/karte.js"
+    },
+    {
+      "punkt": "website/assets/oberflaeche/ ist eine Kopie von _werkzeuge/oberflaeche/ (bei jedem Website-Bau erneuert); Quelle bleibt bei La Carte",
+      "wo": "website/_werkbank/sb_anschluss.py"
+    },
+    {
+      "punkt": "Kontakt-Adresse steht auf der Website als Text statt als Mail-Link (nichts öffnet ein Mailprogramm)",
+      "wo": "website/fuss_bau.py, website/funktionen.py (Sicherungen *.vor-ohne-mailto-2026-10-19)"
+    }
+  ],
+  "paket": [
+    "links.json"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/_kette/14-verbinden/links.html",
+  "briefing": "briefing.html",
+  "notiz": "Auf Roberts Wort vom 19.10.: komplette Werkbank bauen",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

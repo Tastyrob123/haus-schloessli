@@ -1,0 +1,1266 @@
+{
+ "start": {
+  "nachweis": null,
+  "datei": "website/bilder/8cc68d_32_-_FHF_2573.jpg",
+  "w": 2500,
+  "h": 1667,
+  "verh": 0.6668,
+  "hz": 0.305,
+  "alt": "Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACQBACdASoYABAAPu1kqU2ppaOiMAgBMB2JZgCdMoMYAEj4/uYGezeyeF/y7GAA/q6uwZnjvRCmxgG2yhgs9vcYX+CFj56q9J/PTJTQDs2DXWUYlFRL2S8LC3BgppCrzre8XuFiZaDsldW2doBOcqIfjcPSDgzwoj1PowOA4l1kyJh96O1LOk6iACWi9LBR86nlLWrRq5WOQTUm0Ia4AA=="
+ },
+ "start-hoch": {
+  "nachweis": null,
+  "datei": "website/bilder/8cc68d_32_-_FHF_2573.jpg",
+  "w": 1250,
+  "h": 1667,
+  "verh": 1.3336,
+  "hz": 0.305,
+  "alt": "Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1250
+  ],
+  "abbild": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAAAQBgCdASoSABgAPu1mp02ppaOiMBgMATAdiWQAnTKDP/5/wLvkdXE/UnB++4FPgXjuLc1Qi2bIalgA/sNDORbmSrHqUAcJ5Mi72HzQB/V5iqucvVXqe5YWRDuAe0tBWX62QeE/ixYZLQSvGR+k6S/7AHjWpZbMKfY0YBMyUYA0wQOMS9dvU1QbX53iFO0JYQZln+XyP0BT/rBYM57OrscaxnINQ3NsQQse1TOeDeiGViJ5ND13JAAA"
+ },
+ "platanen": {
+  "nachweis": null,
+  "datei": "website/bilder/178109_IMG_1967.jpeg",
+  "w": 2500,
+  "h": 3333,
+  "verh": 1.3332,
+  "hz": 0.433,
+  "alt": "Gedeckte Tische unter den Platanen, Sonnenschirme, dahinter der Hafen",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAADwBACdASoSABgAPu1ur1IppiQiqAgBMB2JQBgcAQI8AEnfbVmLH612aIIh5ROdzAwA/qO+2PqSlHs3fwOUMccdnhTMl97w6EGBEKc+c4CB9CEAbmG2MBP0zCKudZlSE1EoFhyYRsLpBr6s+tEdgFDmr6vVN9IbDB5l/jINnlKXFVrVuz9lk3DsMKAlX+IQpS1Jjj16UuTwD5eWcdUObd8prEnqnGFMZCsAAA=="
+ },
+ "lounge": {
+  "nachweis": null,
+  "datei": "extern/myswitzerland/01_922778687.jpg",
+  "w": 1761,
+  "h": 1180,
+  "verh": 0.67007,
+  "hz": 0.305,
+  "alt": "Lounge mit Champagner am Ufer, dahinter der See und die Alpen",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1761
+  ],
+  "abbild": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYgCdMoAB6rqWOjC/5Tx1+FaAANnJI3fqnK7KgBvGd70w2l6EnnjsyEhE9aGLHOgVdEbvWbVe+Rf34tFu4sgQzVZszUrR5+B8DKcncSn7sDs/HdvU3KWmH7OpGBUXXJDYJfLimLcA4eY7cpT7jKeSYT8Ujd/hh7x7Z4UNxrgRew2AAAA="
+ },
+ "baum": {
+  "nachweis": null,
+  "datei": "extern/portale/tripadvisor/tripadvisor-09.jpg",
+  "w": 4284,
+  "h": 3141,
+  "verh": 0.73319,
+  "hz": null,
+  "alt": "Gäste am Tisch im Schatten des Baums am Ufer, roter Sonnenschirm, dahinter der See",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAABQBQCdASoYABIAPu1or1AppaSiqAqpMB2JaACdL9SAzQsDx69dhISzHfPspJhxf+cUX0AA/fBak0T+VnvNiRWkFeBBkd/xdaqHu6D/1M+KUc2WcjDCm0TWDy0MxbN1Y6FXMw5cV6uSRNVknWk3bp7wpH3fIxrph18UOlRaXCK8fhE9IvIppz7i6lNwOC5r503DIzsjZa2n1Goi5sWYtupMxJD6G/Hkvz3Qt5tA9hrfzJHhqOnUs107LfFz44Pw6k0vecQFgR1OsHcGrs372S5CBJtIpbkwAAA="
+ },
+ "gaststube": {
+  "nachweis": null,
+  "datei": "website/bilder/50fa79__DSC5718.JPG",
+  "w": 2500,
+  "h": 1877,
+  "verh": 0.7508,
+  "hz": null,
+  "alt": "Die Gaststube mit grossen Fenstern zum Hafen",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPu1sqlEppaOiqAqpMB2JZQDGQywA1n802EvwV+xvx005kIaHoNu4AADOP0HcPH6PsoCpBVxJpOXKn9lRmcnJfuVjYjDd87wxrbDc0wpaBdgl9LU2rH2BbWXaEt7Yx31/RcYQfLAULgv0kDCIyQsHgFNvcHeSMgbdBzQFj3LgOvi3SiEFX/VBr0983wXeEE14Maw8vTMZKm4WUPzxEmBxN0i8P0Wk9n+/c7R/utIAAAA="
+ },
+ "mi-teller": {
+  "nachweis": null,
+  "datei": "extern/portale/guide-michelin/guide-michelin_titelbild.jpeg",
+  "w": 1000,
+  "h": 1000,
+  "verh": 1.0,
+  "hz": null,
+  "alt": "Ein Gericht der Küche in einer geriffelten Schale",
+  "breiten": [
+   480,
+   800,
+   1000
+  ],
+  "abbild": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABwBQCdASoYABgAPu1ur1IppiQiqAgBMB2JZAC7IQSBhJnQTrnxoacsax+T27KdqhHNsYAAAP7oMeGjTyrl4JC5U/2Kf5JcA0cHY+u1EfKWi70UO8wYAHTyiZg0MwJlkIhl0g1jh0zM56kiJKLPe+/7SIbsCSZTtHuM4LXPRU/ZMfVTGiZX8gR8v8bYyzkORiuVVkDrV9uL27MSgZrFGdmHbTXIgXDrJnMvEKiWLBFZdKCyaFw80xiK3AlLxkz5QAA="
+ },
+ "bar": {
+  "nachweis": null,
+  "datei": "website/bilder/b49b5b_IMG_2226.jpeg",
+  "w": 900,
+  "h": 600,
+  "verh": 0.66667,
+  "hz": null,
+  "alt": "An der Bar wird ein Bier gezapft, unter der Theke die Zementfliesen",
+  "breiten": [
+   480,
+   800,
+   900
+  ],
+  "abbild": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBYfv/xbMZ2sA3v80rXagADLDyU8nFeFvVRaBfmVjeNKkiDib35ZtC1Zqk0KrRY0zaTCrXSqxxzEP1033T6LK510J34ELH6Fu2BRjuC0Zvoi8E+9xHpH/eMiqRxswTQSubjFRXw263y43FKVYEFrc2BD7GfuOCPIeQBrAJXYpM0V6x7Kdo+yp1y0tTL01BPtd9txXAfRL30OyEg2On4AAAA="
+ },
+ "regal": {
+  "nachweis": null,
+  "datei": "website/bilder/de97ff_IMG_2166.jpeg",
+  "w": 1920,
+  "h": 1280,
+  "verh": 0.66667,
+  "hz": null,
+  "alt": "Flaschen im Regal an der Bar, durch die Scheibe der See",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   1920
+  ],
+  "abbild": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYgC/OdwAlEDeSr9pCJ7gAP4f5PbV9adidy21Hqb6wc29m9IpiG/FSMOWePwIWc7+BHNbtFFJnaF9s3YSuqoEA+nomrpPgNu02mt9fwgP1GwZgTMimVaCnM6sqSnpZP7l4NYeF84r02/T11+RGiR64Hisbmy9mx6/aMJoSRU/E/wAAAA="
+ },
+ "schild": {
+  "nachweis": null,
+  "datei": "website/bilder/a005f3_2026-05-22_193805_Schl_C3_B6ssli_SM.jpg",
+  "w": 2500,
+  "h": 3334,
+  "verh": 1.3336,
+  "hz": null,
+  "alt": "Wegweiser zur A-la-carte-Restaurant-Terrasse und zur Lästermeile",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAACQBQCdASoSABgAPu1qrlCppaQiqAqpMB2JagCdMoMxgBYlgCUGrcg1fmRxNnKUFyjK1QuRpAD+yf2WufZkiwG83VbFFrUbNSl+aDVeFMBBK1FOmcpgsDBpnsMzn412mn1TSylPsdBmPq6KnbVcZvxQISOng3BuOPUQQEUHOions+FJE+HAhUUZtLwg1e8PXBfgSLD01a96HpXm9K0XOFXCB5Bi/1dmAifwxn4/1teZwGRZK+Q0l0RpxmnyGUnP4hq2nbaCotQpo+/QEhTsNFaRvQp9ZhIusxwD6G4IAAA="
+ },
+ "fliesen": {
+  "nachweis": null,
+  "datei": "website/bilder/7c2036_IMG_2037.jpeg",
+  "w": 2500,
+  "h": 582,
+  "verh": 0.2328,
+  "hz": null,
+  "alt": "Die Zementfliesen an der Bar",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAwCdASoYAAYALrV2u12jqampiYC0SygF8kEEeqvE5hVAAPuVfRuQWUUvV+RIco8++vWeezQmjZqisK9vYMjp+OHjF7czaSz5AAAA"
+ },
+ "thon": {
+  "nachweis": null,
+  "datei": "website/bilder/fc5b3b_Schloessli_August2025-11-5.jpg",
+  "w": 2500,
+  "h": 3750,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Thunfisch in Scheiben in einer gerippten Schale",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoQABgAPu1iqU2ppaOiMAgBMB2JbACdIDZDAU03UX3LLE8XD74AAP7gqTOImN7FxC0MUWAHEWTAEABLS3UASCTmfDdwQ1Er4hHuXf98tPsTHiXpxKzhYQ0HHNkMoV+/DwAgPyVi+VpuwZPnuFxNQKsnCj9qrN78Xc+izz+b9aARsAtTfcToVqk9AAA="
+ },
+ "pasta": {
+  "nachweis": null,
+  "datei": "website/bilder/93b96d_Schloessli_August2025-12-6.jpeg",
+  "w": 1536,
+  "h": 2304,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Schwarze Pasta mit Garnelen und Meeresfrüchten",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "abbild": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JbACdAYv0x/jxWQI8TJDg0gAA9hfTf3U2jeG3x2dyUEqmtz88KcuvFMVfrLHOeLmm+tJHdMbaRIJkhYBJtpWufl5pf3I/X/V5EDQQUTAav3HPOuXtyJ+rkNfl/tlK/8ieym3hu4FdpLnm9jVbAT9uJykfoy4qRfgm3qJkTt5gAA=="
+ },
+ "iberia": {
+  "nachweis": null,
+  "datei": "website/bilder/d18c6d_Schloessli_August2025-9-4.jpg",
+  "w": 2500,
+  "h": 3750,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Fisch in grüner Sauce in einer gerippten Schale, daneben ein Weinglas",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASoQABgAPu1kqk2ppaQiMAgBMB2JbAAAXBXWQ/5jAhV+qu0ZzAAA/vHMcdW7Cn5FnpRiyyfrymOlJAZXdGZYqTQQTUd0LGnEMBS8Q/4Ka7WkBkif40Lr8cfn1fZxIGMPvD942cgoqsLfZHnGKj7lVwv5EMbWjd8yFvQUGe2xyYTEwRjYo9NeeLgdr/NxRcYbiNR3R03HReZopqdgAAA="
+ },
+ "tortelloni": {
+  "nachweis": null,
+  "datei": "website/bilder/88d916_Tortelloni.jpg",
+  "w": 900,
+  "h": 1350,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Tortelloni mit Tomate, Burrata und Taggiasca-Olive",
+  "breiten": [
+   480,
+   800,
+   900
+  ],
+  "abbild": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoQABgAPu1iqU2ppaOiMAgBMB2JbACdLwA8VgVccIVPZbuAiN4AAP6vcxC1DblHHNvMBIYZEJBXSFb3LkyW0s3x7AdKwnawspRsTePh5mAP1NMq6GeVl6pvZEDwgJufK74gGtoByTiRgxNynjVxEZ2PdDL/FjvHhwr+c4RZ9fOYbNz+228qTGqAAAA="
+ },
+ "moni": {
+  "nachweis": null,
+  "datei": "website/bilder/c39c8a_5_-_FHF_2667.jpg",
+  "w": 2441,
+  "h": 3661,
+  "verh": 1.4998,
+  "hz": null,
+  "alt": "Monika Huber, Küchenchefin, auf der Terrasse",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAABQBACdASoQABgAPu1iqU2ppaOiMAgBMB2JaACdDiAAH9gcLKTmpYBiN1vIAP7FeKc43WxQ9WausNyWMMOI9xivhtLj6TdvDBRmq5YnWFmbbGk04n1zw+ixKt/+ESUMUzpP+Rklet/ZGuk8N1cP1tPgki3PNEwI+1XHhTNsuEfkUrX/6eNcV6VbnrF5/sKuNtqm7xWfbjZUp6WGGOVnrk1vwMz7eW5yoT9pJc4fB2ipivfybKukVEPy0inivPd+gAAAAA=="
+ },
+ "sauce": {
+  "nachweis": null,
+  "datei": "extern/myswitzerland/02_922778688.jpg",
+  "w": 1043,
+  "h": 1270,
+  "verh": 1.21764,
+  "hz": null,
+  "alt": "Die Sauce wird mit dem Löffel angegossen",
+  "breiten": [
+   480,
+   800,
+   1043
+  ],
+  "abbild": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACwBQCdASoUABgAPu1srFEppaQiqAqpMB2JbACBBASlNtdV/Cup+PCwENCRoHwQWe+XDvKXAAAA/uxV1duLDKYMqlsOpTTDUOW/x5iFMMK8NaHDpAZaaltZOlyScRh4a1rnoanoZTJEY0UvY2B2140QcpY0KB1kP8doWc5aAubmZXobDV0wEkiyWwFcFTcDrCjCgwKU/2Hj0SKBkpTBaWknt0UNvkPlTAyqwMkszgAAAA=="
+ },
+ "team": {
+  "nachweis": null,
+  "datei": "website/bilder/d51216_2_-_FHF_2646.jpg",
+  "w": 2500,
+  "h": 1667,
+  "verh": 0.6668,
+  "hz": null,
+  "alt": "Das Team der Wirtschaft am Schlössli vor der Holzwand",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCdACIJkpm9TJ3bBZqJOEKAAP7aT/FCqwGBQWEoMsv/0bes01EuUnOmOkkxorl06BctGNh7kM7BuuHfomJ/lGaQ+sza31r/n3ba+Y8fyFVNi6CyzdZM1Rl77R3Wowure38foivb49RuPyswaFT4kk/88WITFm/HN7e1kYsYe0su3OAAAA=="
+ },
+ "glas": {
+  "nachweis": null,
+  "datei": "website/bilder/9a3afc_Schloessli_August2025-1-1.jpg",
+  "w": 2500,
+  "h": 3750,
+  "verh": 1.5,
+  "hz": 0.485,
+  "alt": "Ein Glas Weisswein und ein Wasserglas vor dem See",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoQABgAPu1iqk2ppaQiMAgBMB2JYwC7AGlfjXLMzkXucpgA/v0sfVs3HfLOXLs9++GNYJzOD1XPxjnSUzebdV0Xr9O7nQ2N4tKbn5/VNa8axrez+Nx2mx/mP2I/x8oAAAA="
+ },
+ "wein": {
+  "nachweis": null,
+  "datei": "website/bilder/8e85ca__DSC5833_1.JPG",
+  "w": 2500,
+  "h": 3330,
+  "verh": 1.332,
+  "hz": null,
+  "alt": "Weinflaschen im Regal",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAACwBQCdASoSABgAPu1srVIppaQiqAgBMB2JQBm6yABhgmiArRjIP+pO3rt9aQlKYf95s6sgmgAA/oifBRHXl6wQywzgJxRLMjpEaSDPZagRPwT9FRGLGmK245ry60aqyU7s3jdngTO5powDl1Hmg12rk0gIx+a1huo1Vckph5awuq5LQJaY3RT1ZqdvUB0AbsvSaSJQxj7U/gig3+f4In97Rn6xa3cn+04Ta3ppRfJ+X9tmFZOO6P2lcxtGc6BNvrW1pt1yBAFv41aphQNdzpM5ElfEMABj2zS6MaEAQAA="
+ },
+ "jonas": {
+  "nachweis": null,
+  "datei": "website/bilder/dfee6f_11_-_FHF_2706.jpg",
+  "w": 2441,
+  "h": 3661,
+  "verh": 1.4998,
+  "hz": null,
+  "alt": "Jonas Volpert, Gastgeber und Sommelier, auf der Terrasse",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JZACdICXguxQMVWKk5wlWAyg80pXQAP5genH7gSyWmJ/yMUnMjcwhYWarywTVDSd0gfvVnghNFzf1NiFt3/ft+azXJZlgorqxk4xsEaOEC1gI7Ljes7WNIcXfc30W+JDN4nT6tr06SR5qY/KaiTDnrs14eCamLF5ZzX+gZwS8Z2SOYc3OTWhPjbqH7sbJfqpfWnoQ2q1d+AsAAAA="
+ },
+ "lukas": {
+  "nachweis": null,
+  "datei": "website/bilder/5c9a30_13_-_FHF_2729.jpg",
+  "w": 2441,
+  "h": 3661,
+  "verh": 1.4998,
+  "hz": null,
+  "alt": "Lukas Siebel, Sous-Chef, auf der Terrasse",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JZACo9YxYqEIAMtXfczf0pgg01gD9z4uc9sbsyDxvRmoT4KUdF/FKN8INuTIzg/pGRs96aTO4qLec9Fq7rpD5bntjD7LzfHPLeSQaAE748WkO7KkIUTQP2/potRlVqocWX4wE9TOjcoATQsdAfWgNNt+UZyE5/V5wyPhBg8NBLejSRvvcAzakSK51nMZIgCyR9cAAAAA="
+ },
+ "apero": {
+  "nachweis": null,
+  "datei": "website/bilder/816543_2026-05-22_205034_Schl_C3_B6ssli_SM.jpg",
+  "w": 2500,
+  "h": 3334,
+  "verh": 1.3336,
+  "hz": 0.61,
+  "alt": "Ein Spritz und ein Bier auf einem blauen Tisch in der blauen Stunde",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABwBACdASoSABgAPu1qq08ppiOiMBgIATAdiWIAtsgPlBVJhLlZXLXvJfBdeAD+7JZtqxjygOefG1Luj1rvp2QscFBVfAodVcWVCyAHEo6gRf3+eolhQIsLTCUf0DqRFFf/HoWpB1AlP15QwOumhN1QWibybvKk3kj24ECU045Zna/KUQ+3o0DFboKoKCbgi4qbGYAA"
+ },
+ "anguria": {
+  "nachweis": null,
+  "datei": "website/bilder/7f6b93_Anguria.jpg",
+  "w": 2500,
+  "h": 3333,
+  "verh": 1.3332,
+  "hz": null,
+  "alt": "Ein Teller von oben auf dem blauen Platzteller",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACQBQCdASoSABgAPu1osFAppaUiqAqpMB2JZACxHxsulCd9ykghME43VInNTpXmawK3aHRAAAD5ELpFN+5zkreJi8K1q05AoASEgRRjA2EqdIJYarmI2DaY8nAOTuEgyMpzfS92AmdYPrpYnxuTDVvbbIJHqKUA/9Xuzel8FUKVwc12nbuoVQ3/geAx3sGkqknPe0ySxnMmIw64Ithwj5nlQTOAvtcW/LQkyVBUHNdU9dnfAAA="
+ },
+ "teller": {
+  "nachweis": null,
+  "datei": "website/bearbeitet/teller-anguria.jpg",
+  "w": 4096,
+  "h": 4096,
+  "verh": 1.0,
+  "hz": null,
+  "alt": "Ein Teller von oben auf dem blauen Platzteller",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAACQBQCdASoYABgAPu1or1AppaSiqAqpMB2JZgCsAYzQXgpHlTZEnLTijoS2HqnIxR313vZgAAD+FKS6KiyqQTtQebYrFoRYmXLKFdQfHcI5bgAvlYrqPAXv4ZwXoDm73fHWrrxxRIGw0RqYC4/YpnhtKPHaX4YD9/wDnJbypdrkxrqPBSGq6797JVqCtUms7pDU2qHE/nPQBzoNCHAy/UXP6DlsrTx/EsdQDSL7Ih1fsio7GtHp9LEHZ0tPi0V07c3s9Ux3ubz5kFxrqXRsBT5RBgA="
+ },
+ "dessert": {
+  "nachweis": null,
+  "datei": "website/bilder/9f207d_Schloessli_August2025-18-9.jpg",
+  "w": 2500,
+  "h": 3750,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Dessert mit Beeren auf einem blauen Teller, dahinter ein Wasserglas",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABwBACdASoQABgAPu1mq04ppaQiMAgBMB2JaACdMoAlpkorW4OI7mP114tzqAD+/S3O0Zp/7ezbOLp8OiJplcxNzV6rQOvV7vSyQgu6B9hFPMjpOgXeQIb+uylm+98xoZyY70wGr3U9hCqYVS7aw8Jn/9+PF69PURy9ORhxmFxOauep13OlG+ru1I1GhdTOGw7vOFHQ6J5s+gwQeDIU3r9gXW0ZlfLttxT3U4pxMrBpVLPAfMEAAA=="
+ },
+ "abend": {
+  "nachweis": null,
+  "datei": "website/bilder/28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg",
+  "w": 2500,
+  "h": 3333,
+  "verh": 1.3332,
+  "hz": 0.565,
+  "alt": "Abend unter der Platane mit Lichterkette, Gäste am Tisch über dem See",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABwBQCdASoSABgAPu1mq08ppaOiKA1RMB2JZACsILm+Pbf4B3+u+RUONwW5miAI3a2gA/IAAP7sm7rUpywFr7NeurhGtwmE1/s6lqA7fIEHNcB6XOY/SXgfsAVponuOqWWq8/432oXpDK0mjGVKP8QFZvf3NU2VgO9m1ZtOhVY0fgNhvN4A0wNw73pa/9DcpK1/6C6YCTd6uMkDT8tE2eqDMzf9mZSrG/GtRfmHKrnpQRqTmV0AZjM3vB0jJx6AAAA="
+ },
+ "suppe": {
+  "nachweis": null,
+  "datei": "website/bilder/05cfd1_Schloessli_August2025-5-2.jpeg",
+  "w": 1536,
+  "h": 2304,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Grüne Suppe in einer blauen Schale",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "abbild": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoQABgAPu1iqU2ppaOiMAgBMB2JYwC7AB7ABKG3r0b0n6QA/uslx4cV5vKv/K8B8D3SscVXvgWBDNjpz+XROb7sNmkCKLzOuGpY5oT0AOeXQHsx+zVUkljERpPBNly5yA3wHD5jMAA="
+ },
+ "fisch": {
+  "nachweis": null,
+  "datei": "website/bilder/30467d_Schloessli_August2025-14-7.jpeg",
+  "w": 1536,
+  "h": 2304,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Fischfilet mit Sauce in einer gerippten Schale, dahinter ein blauer Stuhl",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "abbild": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACwAwCdASoQABgAPu1kqk4ppaQiMAgBMB2JQAAj3WDfcKURK/6LgAD+/XhiZ55jbR5wtzcFfM5ysQYRz/T5rU4gPRu7PVSRVeHgpljSWUUB/rjaBvQsD3g2kz/pY/ZSWABUfQh4C9jD7R7Y09Zo5E8BFqjetDiD4kPz9w9JyjQvSiIAAAA="
+ },
+ "salat": {
+  "nachweis": null,
+  "datei": "website/bilder/49a4b9_Schloessli_August2025-7-3.jpeg",
+  "w": 1536,
+  "h": 2304,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Ein Salat auf einem gerippten silbernen Teller",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "abbild": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoQABgAPu1iqk4ppaQiMAgBMB2JZgABHux6o99fNw8VHEAA/vx42UkmgF5EJqjLg0mN3ZyxpGR+i8GC01uuQBxFwAvul3rPARtyd3uyXJ4OAY09Y/ZN/4jhBT0dzNXdcCshZaIsWX4ZJe95BmscOBbTErLbPg2Y7wAAAA=="
+ },
+ "fleisch": {
+  "nachweis": null,
+  "datei": "website/bilder/9f9d8b_Schloessli_August2025-15-8.jpeg",
+  "w": 1536,
+  "h": 2304,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Gefülltes Fleisch mit Blättern und Blüten auf einem geriffelten Teller",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "abbild": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACQBACdASoQABgAPu1oqk6ppiQiMAgBMB2JZgC7MoMpAEmhdaxuUzw/w3dnCwAA/u/C4WpLvfaLrOI9mfmBmFtkJC8XYuxFBA9NcuT1K/Wh26AlM8xLRMy5oxSOhUS6k5bAqC5Gv295R63JhIVKCbS6XPGkjJc8GcX56s1Suty3p6F8kXZzocqCL3HT3MKUEygIYmu0nXUbSUdydF4wAAAA"
+ },
+ "haus": {
+  "nachweis": {
+   "urheber": "JoachimKohler-HB",
+   "lizenz": "CC BY-SA 4.0",
+   "jahr": "2016",
+   "quelle": "https://commons.wikimedia.org/wiki/File%3ABar_Wirtschaft_%22Schl%C3%B6ssli%22_am_Bodensee_in_Bottighofen_TG_%282016%29.jpg"
+  },
+  "datei": "extern/wikipedia-commons/bilder/Bar_Wirtschaft_\"Schlössli\"_am_Bodensee_in_Bottighofen_TG_(2016).jpg",
+  "w": 3840,
+  "h": 2560,
+  "verh": 0.66667,
+  "hz": 0.647,
+  "alt": "Das ehemalige Hafenmeistergebäude mit der Wirtschaft am Hafen von Bottighofen, 2016",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JQBWEFThVw9RXEikJ0yOAAP7M9gO7Jy4iR59gkufv71lRoaA5Lzk9+m8Q3wKeL0kzltP2Gao51U2rtrv4gHhjaoHb0taGXQ22R36opBcIBd2Qb/r+3g9rtztXWPeHj3jkyBUxfA8nHyv9i2+7VXzaPm2r85TBF3nqXZkUEupmS0VWOZDJZB1mzsAAAA=="
+ },
+ "bootshafen": {
+  "nachweis": {
+   "urheber": "JoachimKohler-HB",
+   "lizenz": "CC BY-SA 4.0",
+   "jahr": "2016",
+   "quelle": "https://commons.wikimedia.org/wiki/File%3ABootshafen_mit_Wirtschaft_und_Schl%C3%B6ssli_-_MG_0679.jpg"
+  },
+  "datei": "extern/wikipedia-commons/bilder/Bootshafen_mit_Wirtschaft_und_Schlössli_-_MG_0679.jpg",
+  "w": 2560,
+  "h": 1707,
+  "verh": 0.6668,
+  "hz": 0.495,
+  "alt": "Der Bootshafen, dahinter die Wirtschaft und das Schlössli",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC06CPNfo4ghSRSQR4AAMycQjjBzwXkl264yzTTCzLlojxpeN0T3ClbreHZmJ8mY4yPfnYEu5+FwpaW6Laggy5La+66h9cKL3zP9bznLsjEbEERPf0kNiyBXrxMgDdAAm7V4cAAAA=="
+ },
+ "luft1954": {
+  "nachweis": {
+   "urheber": "Werner Friedli",
+   "lizenz": "CC BY-SA 4.0",
+   "jahr": "1954",
+   "quelle": "https://commons.wikimedia.org/wiki/File%3AETH-BIB-Bottighofen%2C_Strandhotel_Schl%C3%B6ssli-LBS_H1-017018.tif"
+  },
+  "datei": "extern/wikipedia-commons/bilder/ETH-BIB-Bottighofen,_Strandhotel_Schlössli-LBS_H1-017018.jpg",
+  "w": 3840,
+  "h": 2685,
+  "verh": 0.69922,
+  "hz": null,
+  "alt": "Das Strandhotel Schlössli am See aus der Luft, 1954",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABwBACdASoYABEAPu1kq0+ppSOiMBgIATAdiWkAAA5/Tfz7f2KTbjIRJEBVAADJ7ikfZQ27Sl2QpDWuqlmwvHkIYJMk16Tky03BOebPtHyagrzseGR6Ncr7Wzi1pe3HzX/re7D2ZE2VeDGAjspKTqvGlcAXENd+fy+QOpZWAX6ESAAA"
+ },
+ "morgen": {
+  "nachweis": {
+   "urheber": "JoachimKohler-HB",
+   "lizenz": "CC BY-SA 4.0",
+   "jahr": "2012",
+   "quelle": "https://commons.wikimedia.org/wiki/File%3AMorgen_am_Bodensee_mit_Schiffl%C3%A4nde_Bottighofen_%282012%29.jpg"
+  },
+  "datei": "extern/wikipedia-commons/bilder/Morgen_am_Bodensee_mit_Schifflände_Bottighofen_(2012).jpg",
+  "w": 3840,
+  "h": 2160,
+  "verh": 0.5625,
+  "hz": 0.64,
+  "alt": "Morgen am Bodensee, hinten die Alpen und die Schifflände Bottighofen",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoAKRcXK3AIaXQPIAP7eiG8mM624i+vqkCDKhnadkGDr/eavnW5i939XibZuVb0qmYkfy9yN1Aj4urv6H1g0QEnaYTQgAA=="
+ },
+ "stier": {
+  "nachweis": null,
+  "datei": "extern/papageno/patrick-stier.jpg",
+  "w": 1595,
+  "h": 1200,
+  "verh": 0.75235,
+  "hz": null,
+  "alt": "Patrick Stier vom Restaurant Papageno in Konstanz",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1595
+  ],
+  "abbild": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQBACdASoYABIAPu1oqU+ppaOiKA1RMB2JZwDNwBDR6QDmQ5+aocio5FInBVJelAD+8rF2jq12wIt5ILpvyIrchvTUKmOLtrLSldcEBwoLZmL2lKZss96HypYxQD7dqm9re5hqn7TEmsovedknaHxfl+CX1/II/wQS4sXy2g61hxHnvkjWkAAA"
+ },
+ "kf-teller": {
+  "nachweis": null,
+  "datei": "extern/excellence/twerenbold-107002.jpg",
+  "w": 2685,
+  "h": 4028,
+  "verh": 1.50019,
+  "hz": null,
+  "alt": "Fisch auf Safransauce in einer gerillten Schale, an Bord der Excellence",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAwCdASoQABgAPu1iqk4ppaQiMAgBMB2JQAAj3WDglGHoayTHYCwA/v14YmeeY20ecLc3BTpL1e0dCoDGunh24plT3HFL/5eFExaMPjm7kuMLEdko94NpM/6WP2UkxrjIQrEBnnYmB6bLdnDc6i1cqmleqWsREy6AcnYgIVCxEAAA"
+ },
+ "kf-deck-abend": {
+  "nachweis": null,
+  "datei": "extern/excellence/twerenbold-64243.jpg",
+  "w": 4006,
+  "h": 2671,
+  "verh": 0.66675,
+  "hz": null,
+  "alt": "Das Sonnendeck der Excellence in der Abenddämmerung",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JQBOgBEQJMeZn+/QDV1RAAP36+TKzJ2CZwsjDCxRtDetCeQdPqd+nD92gLANyNCyplwmqSCgZTHF6pP+VOXsrmOy8cTEMGm8i/ZbpHLXpAtie+oNlMY1xQiQAAA=="
+ },
+ "kp-party": {
+  "nachweis": null,
+  "datei": "extern/schaefli-kitchenparty/kp-3651.jpg",
+  "w": 1179,
+  "h": 1504,
+  "verh": 1.27566,
+  "hz": null,
+  "alt": "Kitchen Party in der Gasse vor dem Schäfli am Abend, Lichter und Gäste",
+  "breiten": [
+   480,
+   800,
+   1179
+  ],
+  "abbild": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADwBQCdASoTABgAPu1qrVCppaQiqAqpMB2JbACxG7DBgjwAl/d1vsUzoEWvlnJNWzptYUlueWpmYAD+71m1/VOeiDA3D70tVHVN4NwO5oncAq11pwSZ5t/PEFcAIVl2bYY9JGzVVSM3xECz+pfi6WsSz7qFUSV0NawjuNEu4pO0JoHA2OnNDdfavCLIpCvwkS+ZD6diKcFtyB4SZvNduxrQFXD4/y6es79o0R7eMZ3Op28O3QQfez53vJUAAA=="
+ },
+ "pa-teller": {
+  "nachweis": null,
+  "datei": "extern/papageno/papageno-1.jpg",
+  "w": 1080,
+  "h": 1080,
+  "verh": 1.0,
+  "hz": null,
+  "alt": "Hauptgang von Patrick Stier im Papageno auf weissem Teller vor Schwarz",
+  "breiten": [
+   480,
+   800,
+   1080
+  ],
+  "abbild": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAADwBACdASoYABgAPu1mqk8ppaOiKA1RMB2JQAB8kCFgTpfnmW4fIJzl+/Da7zuhDgAA/vDLlDbpL/lsGzwnoWK+kQHqSF0QNfXhcW7tv6Q1bI4e4Bv1RubAmVMj8YbQ/gR/CEhp00NY9/tAoAsgk7EfvQNgZgeMBPrl0Q5y6lWIV0FltKmUgOKfHkzm30sLrIgSYLCJ1aAKPVrvmWJcgSm9SQAAAA=="
+ },
+ "kf-anrichten": {
+  "nachweis": null,
+  "datei": "extern/excellence/twerenbold-89782.jpg",
+  "w": 1801,
+  "h": 2700,
+  "verh": 1.49917,
+  "hz": null,
+  "alt": "Eine Hand richtet einen Teller an, an Bord der Excellence",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   1801
+  ],
+  "abbild": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JZgCdAB+DsbleRTWxnQv5F+AA/p+M/KwRAi9zfTB21/yoZVlMTVFuYocH3k+c4SHdvN8hyGFXwaX97n1QVkigbaTdzXoWG69y4OgKPySeFrcE72vWOhYa8fNmwoyu6+xWgxMn1h5/NEyYeFRBMIGAAAA="
+ },
+ "schaefli": {
+  "nachweis": null,
+  "datei": "website/bilder/172617_IMG_0293.jpeg",
+  "w": 1919,
+  "h": 1280,
+  "verh": 0.66701,
+  "hz": null,
+  "alt": "Die Taverne zum Schäfli in Wigoltingen am Abend, die Fenster erleuchtet",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   1919
+  ],
+  "abbild": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCw7BMsLC0jl6ESM+zBgAD+gxc0uUPikUoDlYwoTBuSVeGUzn2F2z+m44q9YNqijFa66/bRnoetRD8EFmZiX8q9eDDqWM7ZAWKCm6VtUPIM9Oc43gXLoljUcLyukDpKk5h/GYAAAA=="
+ },
+ "feuerwerk": {
+  "nachweis": null,
+  "datei": "website/bilder/177117_feuerwerk-seenachtfest-konstanz-bildrecht-keller-1.jpg",
+  "w": 1200,
+  "h": 628,
+  "verh": 0.52333,
+  "hz": null,
+  "alt": "Feuerwerk über dem Konstanzer Trichter beim Seenachtfest",
+  "breiten": [
+   480,
+   800,
+   1200
+  ],
+  "abbild": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoYAA0APu1kq04ppaQiMAgBMB2JZgCuHGk8EQFGQsnUxaWAAP7+FLvkZV6ZxDamIy/aLRY/2+Bh8sfbIr3rt7ObFYP8Iw33aFRb6VpicRYJ2L6abibmAswwgQY6xzd7uagSKIK8LIwC3RV1OCgxV/THJ5vAAA=="
+ },
+ "ig-terrasse": {
+  "nachweis": null,
+  "datei": "extern/ig/ig-02.jpg",
+  "w": 360,
+  "h": 640,
+  "verh": 1.77778,
+  "hz": null,
+  "alt": "Gäste auf den Stühlen an der Promenade, dahinter die Wirtschaft",
+  "breiten": [
+   360
+  ],
+  "abbild": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAwCdASoNABgAPu1kq04ppaQiMAgBMB2JagCdMoADTJRJa0/DPnUAAP64yjkkfZtx6cx74gf/8Yo2361qHeWxUFL/437rQtnQV2TZLQ3R4iWA0pLnROvlc9+u+OMBeUg2qpROtISlcf+uo8DmgAAA"
+ },
+ "ig-herd": {
+  "nachweis": null,
+  "datei": "extern/ig/ig-03.jpg",
+  "w": 360,
+  "h": 640,
+  "verh": 1.77778,
+  "hz": null,
+  "alt": "In der Küche am Herd",
+  "breiten": [
+   360
+  ],
+  "abbild": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBACdASoNABgAPu1iqU2ppaOiMAgBMB2JZgCdABrVFA8iWA2E37OwwAD9nPURP89nM+Y8OEuSUztn8UKhqkKLZ5972n83I2um4FBjZ87jto91XtUD3LrX3Q3e2QSP5P/N4scEwFombetlvMSxFkgjQeFuidEXdqM+AAAA"
+ },
+ "ig-teller": {
+  "nachweis": null,
+  "datei": "extern/ig/ig-07.jpg",
+  "w": 360,
+  "h": 640,
+  "verh": 1.77778,
+  "hz": null,
+  "alt": "Am Pass werden die Teller angerichtet",
+  "breiten": [
+   360
+  ],
+  "abbild": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACQBACdASoNABgAPu1iqk2ppaQiMAgBMB2JbACdMoACsYTkrypmFZ/yAvXP3QAA/tEttld+geLwphLZKfWO6M/qvpXIorgTL+p8+GWSRoJXJ/fcxXhk11TyudJXi7mjPzFHVhYpiPNjlAnPFV3JryigdE9zs3xiNzVdC+HKJBMzAwgx/+n/ModPTzc3CXQD8CJBEAAA"
+ },
+ "ig-pasta": {
+  "nachweis": null,
+  "datei": "extern/ig/ig-09.jpg",
+  "w": 480,
+  "h": 640,
+  "verh": 1.33333,
+  "hz": null,
+  "alt": "Tortelloni werden von Hand geformt",
+  "breiten": [
+   480
+  ],
+  "abbild": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABwBQCdASoSABgAPu1srFEppaQiqAqpMB2JagCBKh87P8AtaWP9rrU8I4HSpwD4sBM5LdVEAPjVnZeOzP0rhzmg5aJbeOYdZYxltBBFfs1bbTY03NjfUukFMghrWatb4ZpH/fOtX1WCRMmr70A2Jy3rop8zFjzoS+whnqajQMzTW3CF4WnZOtGyqiNXvXWvMNPZpC2M5MlRyalj4R7sF6TFvC54w19KPVilcvM/GJjjnvcbd9AAAA=="
+ },
+ "schifflaende": {
+  "nachweis": {
+   "urheber": "JoachimKohler-HB",
+   "lizenz": "CC BY-SA 4.0",
+   "jahr": "2021",
+   "quelle": "https://commons.wikimedia.org/wiki/File%3ABottighofen_TG_-_Schiffl%C3%A4nde_und_Bootstankstelle.jpg"
+  },
+  "datei": "extern/wikipedia-commons/bilder/Bottighofen_TG_-_Schifflände_und_Bootstankstelle.jpg",
+  "w": 3840,
+  "h": 2743,
+  "verh": 0.71432,
+  "hz": null,
+  "alt": "Die Schifflände und die Bootstankstelle am Hafen von Bottighofen",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoYABEAPu1mrE+ppSQiMBgIATAdiWcAADFlzu0k5zXShZS9ugAA/u1wZS3+qtjnjt8MKyTT0ZwihFXC/CDYf6oDaDUzZXoxvshdBRCgwwZqarLEvqUmYsj7+K8YbThHDPuLXwWKGUOOAAAA"
+ },
+ "ig-luft": {
+  "nachweis": null,
+  "datei": "extern/ig/ig-08.jpg",
+  "w": 360,
+  "h": 640,
+  "verh": 1.77778,
+  "hz": null,
+  "alt": "Die Terrasse am Abend von oben, davor der Hafen",
+  "breiten": [
+   360
+  ],
+  "abbild": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwBACdASoNABgAPu1iqU2ppaQiMAgBMB2JbACdOUAAzJ4BzuQR3Yg+ggAA/TYwbNK85ON2gjCX7FNapt1hQSsJuYNEOP3j/47JoFAKRE6ifJr68kQunv02stwOFs2sSMVt/Q5F3jA5WKyDM9TVxAjLqgA="
+ },
+ "ig-dessert": {
+  "nachweis": null,
+  "datei": "extern/ig/ig-11.jpg",
+  "w": 480,
+  "h": 640,
+  "verh": 1.33333,
+  "hz": null,
+  "alt": "In der Küche wird ein Dessert auf den Teller gesetzt",
+  "breiten": [
+   480
+  ],
+  "abbild": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADwBACdASoSABgAPuVipU2pJaOiMAwBIByJZQCCSQjALQTydxSw1rm9waBHmp9vfRgA/sJoCSRBrPF9uzqiwH5d0ENGnXiLZXUtHYiQz2GFSRnCdqbHSJrXoC2+4DAptYAwwNiLAqdgdphLKyDzg9h7eeiHus+eymwHkdq6agpvDxSydXVvUIQOS4phawAA"
+ },
+ "ig-abend": {
+  "nachweis": null,
+  "datei": "extern/ig/ig-01.jpg",
+  "w": 360,
+  "h": 640,
+  "verh": 1.77778,
+  "hz": null,
+  "alt": "Dämmerung über dem See, am Ufer die Lichter",
+  "breiten": [
+   360
+  ],
+  "abbild": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAwCdASoNABgAPu1iqU2ppaQiMAgBMB2JbACdACHRd+QiQAD9U3tMrt+5uv+HnBlI0G/lB/bC638O5qGI84iqwFn3Y9uB5uAfdxKk25EFg0Ts9lQAAA=="
+ },
+ "ig-hafen": {
+  "nachweis": null,
+  "datei": "extern/ig/ig-10.jpg",
+  "w": 524,
+  "h": 640,
+  "verh": 1.22137,
+  "hz": null,
+  "alt": "Die Wirtschaft am Hafen vom Wasser aus",
+  "breiten": [
+   480,
+   524
+  ],
+  "abbild": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBQCdASoUABgAPu1sq1EppaOiqAqpMB2JYgCxH4O0bBnU0zrlBinMjFFDoT3pilaCggHgAP6QU9OJqTtib0RZQXAW+Q1sBTD4hUBe0Iv58sDri3dMGtCw3bhsL1KEdo6sWVh8+IKB+20YOjE1u3QwoyJ05QXHzDOv++HHoZ9w32YkEyQ38iUqZJXxEgkStpGv5Y+4FukVglVf3Bm7qOdAAcYYwgAA"
+ },
+ "tb-fisch": {
+  "nachweis": null,
+  "datei": "extern/portale/tripadvisor/tripadvisor-06.jpg",
+  "w": 3024,
+  "h": 4032,
+  "verh": 1.33333,
+  "hz": null,
+  "alt": "Rotbarbe auf Risotto mit grüner Sauce in der gerippten Schale",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAADwBQCdASoSABgAPu1ur1IppiQiqAgBMB2JbACdMt7Bb+UB9vIMMOMp3eAq8uvfjJQxTroQ0krrkADLPQabSSIKziGBRpSfxJ6BOdzmEkDAdfHxOxnuDgL2U6e2F5g0QhHwGemNUKdhI8Tniec0qva1n62yndTLLs7AlPchyv9wRVYPBwvxbPC9bPACU6ZQO8bc2A75ONJ9GoyAOAzpCN05MCmUHwXbbGZvQC6iXS2j4a1t6k5z33q7EVVOaM5jwKmEnIJHCAAAAA=="
+ },
+ "tb-glas": {
+  "nachweis": null,
+  "datei": "extern/portale/tripadvisor/tripadvisor-11.jpg",
+  "w": 4284,
+  "h": 5712,
+  "verh": 1.33333,
+  "hz": null,
+  "alt": "Ein Glas Weisswein auf dem Tisch der Terrasse, dahinter der See",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADQBACdASoSABgAPu1mq08ppaOiKA1RMB2JYgCxHoGv/gGKXfOqPzND2jBHjg1GAAD+VI5iHTCVPA74ywZJedqL8ZCtIX2ORCq+N9otA34Safij5/mkO12+dHrdB4uqJxqaUAaiVKF9htYJA5ylOpwHlziuKh3R8Qej346ZskqAcgaPSVkVmoBiLXvAOPUuaIR/7DbGEQAAAA=="
+ },
+ "tb-teller": {
+  "nachweis": null,
+  "datei": "extern/portale/tripadvisor/tripadvisor-08.jpg",
+  "w": 3024,
+  "h": 4032,
+  "verh": 1.33333,
+  "hz": null,
+  "alt": "Thunfisch mit Kaviar und Sauce in der gerippten Schale auf dem blauen Platzteller",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAADQBQCdASoSABgAPu1srlKppaQiqAgBMB2JbACdMuOCrf/gIHz6F5h074UVDQP8IXEPxbk7xatAAP4lzvxddGuc+M4EEgy9bSPy9UU+2tggrSk8KX0C2whRQqudy5moImaAntOrNNevQFuV5151Kcep6kqL5iFEx/995QqKmM9AtKpaMvY2qLFhXtdfs0t4UkmWtcAlEfdNdRAXQB1vsea5E7AxrE16rm4a061/GdM1e0jXx1MAdSksnyFcVbBEqFbAAA=="
+ },
+ "tb-dunkel": {
+  "nachweis": null,
+  "datei": "extern/portale/tripadvisor/tripadvisor-05.jpg",
+  "w": 2016,
+  "h": 1512,
+  "verh": 0.75,
+  "hz": null,
+  "alt": "Masten im Hafen vor dem Abendrot über dem See",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2016
+  ],
+  "abbild": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwBACdASoYABIAPu1kqU2ppaQiMAgBMB2JYwCzgCHYPO0AuqKpZUU24EAA96Rj/AUDGJZXqKjkjIebpASNdPC1kcsiZxpwk0sokw/zxVZVhQN3Yspb3KrOqWMAvMf4S/jZsFLbpN/cjgAA"
+ },
+ "abend-hafen": {
+  "nachweis": {
+   "urheber": "JoachimKohler-HB",
+   "lizenz": "CC BY-SA 4.0",
+   "jahr": "2015",
+   "quelle": "https://commons.wikimedia.org/wiki/File:Sonnenuntergang_am_SeeRhein_in_Gottlieben_(Thurgau,_2015).jpg"
+  },
+  "datei": "website/bearbeitet/abend-gottlieben.jpg",
+  "w": 3840,
+  "h": 2560,
+  "verh": 0.66667,
+  "hz": null,
+  "alt": "Sonnenuntergang am Seerhein in Gottlieben, Laternen und Pfähle am Ufer",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JYwCdO/7AxhJsNGdWQ4ZJnY6w8oAA/uwuLcFWiWQR1tgom1e7TxyWOZBjnNA9LgfXVXpt2E9VZzA1F4lHyCjzPUrBciCOkc11lwDGPqBFdjAOLKAAAA=="
+ },
+ "torte": {
+  "nachweis": null,
+  "datei": "website/bilder/fb5117_Schloessli_August2025-19-10.jpeg",
+  "w": 1536,
+  "h": 2304,
+  "verh": 1.5,
+  "hz": null,
+  "alt": "Schichttorte mit Beeren auf einem blauen Teller",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "abbild": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAQBACdASoQABgALrV2u12jqampiYC0SzAF+sGyMDR63jqfkeSBjlH4AAD+9ikOYNnwV+b0mUTg6v47AU7OmHwHTdfTf3T+VjPpasF7gXKvTf3f5d+cS8JQDpC0tnKTsjUmlWqJmQJbGRy3QncTrPmSFpLQ2M1hYgGcq42j2CKLtbM69RRn2RKyy9/iDPP+bZ2l8LQAAAA="
+ },
+ "jz-fruehling": {
+  "nachweis": {
+   "urheber": "Kritzolina",
+   "lizenz": "CC BY-SA 3.0",
+   "jahr": "2014",
+   "quelle": "https://commons.wikimedia.org/wiki/File:Apfelbl%C3%BCte_am_Bodensee_2014.JPG"
+  },
+  "datei": "extern/wikipedia-commons/jahreszeiten/fruehling-apfelbluete.jpg",
+  "w": 2816,
+  "h": 2112,
+  "verh": 0.75,
+  "hz": null,
+  "alt": "Apfelblüte am Bodensee im April",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAADQBQCdASoYABIAPu1qrFEppaQiqAqpMB2JagC+Sy6Ybtn8Gw2wCaA48oJdriTrNnCPAxjRS74AAP2WEWCAzlMBBE2R+neMzPS4p2r+DueKD1oqGZUpa/6tmFNrdpEweGGyyR/2B0Glvgy5v02L2OByjOHsna9pH2ooebOa6r3vt0pS2S7fBGABylPiEV7/5INNn1BfV1qLXPivC62Pmu9qf/2BS12ZUjoDHoYixYXIdxPsWdI05oi6rF3VzEnLsUSFVC6hkCaS569ItZm+ZtcjeDAAAA=="
+ },
+ "jz-sommer": {
+  "nachweis": {
+   "urheber": "Angela Huster",
+   "lizenz": "CC0",
+   "jahr": "2014",
+   "quelle": "https://commons.wikimedia.org/wiki/File:Johannisbeeren_rot.jpg"
+  },
+  "datei": "extern/wikipedia-commons/jahreszeiten/sommer-johannisbeeren.jpg",
+  "w": 2237,
+  "h": 1918,
+  "verh": 0.8574,
+  "hz": null,
+  "alt": "Reife rote Johannisbeeren am Strauch",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2237
+  ],
+  "abbild": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAACwBQCdASoYABUAPu1krE4ppaQiKA1RMB2JbACdMoSA3tSA10NJ9dnrbdqJ25k/WPpWxMSJFIAA/rlUQ96see4/TJOpL2zt0DddypyMcZvVGShWjOtbyyRkVTqniR7lMTdz5MhKeE3kcKye3gl+y1shOFoTo1x2SPLPvtme7V+SI8szU+wg2SXa8QC+uvh1bs6T7KCRpmwR6Cv/G9jTaWu5udZyzwC7UfHPlnP8A/gU3ZwqteWvuymT7BInB53nATAdUGaxLK8iUMvDXAAAAA=="
+ },
+ "ch-postkarte": {
+  "nachweis": {
+   "urheber": "Heft 2 der Gemeinde Bottighofen",
+   "lizenz": "nur zur Anschauung, mit KI nachgeschärft",
+   "jahr": "1994",
+   "quelle": "https://www.bottighofen.ch/_doc/87701"
+  },
+  "datei": "presse/heft-bilder/ki/hf-postkarte-ki-bild.png",
+  "w": 2592,
+  "h": 990,
+  "verh": 0.38194,
+  "hz": null,
+  "alt": "Postkarte Hotel & Pension Schlössli Bottighofen, Gruss vom Bodensee",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBACdASoYAAkAPu1iqk4ppaQiMAgBMB2JZwAAXKOiFXy5/WJmymsFAAD+4ME7/GOJ9NzFAWylJ8obeW1hUe+QMUKrw9W3mA/ChgcmI71tqnyFsR6A/ABfyECKpr4vu12ES2hhKlA7TbukurvyUhtP3sIKlYuQAAA="
+ },
+ "ch-anzeige": {
+  "nachweis": {
+   "urheber": "Heft 2 der Gemeinde Bottighofen",
+   "lizenz": "nur zur Anschauung, mit KI nachgeschärft",
+   "jahr": "1994",
+   "quelle": "https://www.bottighofen.ch/_doc/87701"
+  },
+  "datei": "presse/heft-bilder/ki/hf-anzeige-ki.png",
+  "w": 2688,
+  "h": 1520,
+  "verh": 0.56548,
+  "hz": null,
+  "alt": "Anzeige Hotel & Restaurant Schlössli-Bottighofen, Lohnendster Ausflug, Besitzer Carl Gängel",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwCw7CHiBJ9d5zJP5iYLaAAA/pO/uUlcnkPBGlFBMYI2TSnQQ4DjeHhTziLMv5j83Gd2G3lf3i4smuTxpfzVI1ipPIdYwb+3jvBANYr+8N9/eIAAAA=="
+ },
+ "ch-strandhotel": {
+  "nachweis": {
+   "urheber": "Heft 2 der Gemeinde Bottighofen",
+   "lizenz": "nur zur Anschauung, mit KI nachgeschärft",
+   "jahr": "1994",
+   "quelle": "https://www.bottighofen.ch/_doc/87701"
+  },
+  "datei": "presse/heft-bilder/ki/hf-haus-ki.png",
+  "w": 2688,
+  "h": 1520,
+  "verh": 0.56548,
+  "hz": null,
+  "alt": "Das Strandhotel Schlössli mit dem weissen Gitterzaun",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBACdASoYAA4APu1iqk2ppaQiMAgBMB2JaQAD5bm235vT4MPNeNIQAAD5eytnA6+uLmIJc7dWFPktyck+W5C1bqwIWhmejE0edbA7Iyrt6tCB3Tmc6qV38kzZIVDslRZIcNgJpxrpQ/Q9AONIJBgCJ66VETrsMqzycwFiVYiZ+KeTc1V5gnXlANP8yHzMAAA="
+ },
+ "ch-zeichnung": {
+  "nachweis": {
+   "urheber": "Heft 2 der Gemeinde Bottighofen",
+   "lizenz": "nur zur Anschauung, mit KI nachgeschärft",
+   "jahr": "1994",
+   "quelle": "https://www.bottighofen.ch/_doc/87701"
+  },
+  "datei": "presse/heft-bilder/ki/hf-zeichnung-titel-ki.png",
+  "w": 2048,
+  "h": 1360,
+  "verh": 0.66406,
+  "hz": null,
+  "alt": "Das Schlössli, gezeichnet von Günter Dittmann",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2048
+  ],
+  "abbild": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JaQAAW75lrc9kmenDCGdhEAD+83RmYAsmILVqCY/jEcepLY/oasSUYg+3rIoQU3W4x7A+2rZmIRLP6+5kERXYC4xD2Z3eWDxYC6qGK4lg+YKVfLaKtHAMs9yzz5/lnkPkQjIpMxn1mUY1pkLS2z46k9Y3iRlL4L5QZYAA"
+ },
+ "ch-mann": {
+  "nachweis": {
+   "urheber": "Heft 2 der Gemeinde Bottighofen",
+   "lizenz": "nur zur Anschauung, mit KI nachgeschärft",
+   "jahr": "1994",
+   "quelle": "https://www.bottighofen.ch/_doc/87701"
+  },
+  "datei": "presse/heft-bilder/ki/hf-haus-mann-ki.png",
+  "w": 2048,
+  "h": 1360,
+  "verh": 0.66406,
+  "hz": null,
+  "alt": "Ein Mann vor dem Schlössli",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2048
+  ],
+  "abbild": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JaQAD5XFJUCjicyceDjngO3+4AOJ9fZOTw6PeX55OMRhqJJFHop1YK/rHvSmnJddkXzBIdwQyaDjujvi3uBSZB/8v3q0LaWjOaX/FZby1gCWQjMPQ2Uewfj7T6P8DbUPOiwfRHSqy7mXsvVjRS8YKox99Y8znXZP6Ca8TajIAAA=="
+ },
+ "ch-luftkarte": {
+  "nachweis": {
+   "urheber": "Heft 2 der Gemeinde Bottighofen",
+   "lizenz": "nur zur Anschauung, mit KI nachgeschärft",
+   "jahr": "1994",
+   "quelle": "https://www.bottighofen.ch/_doc/87701"
+  },
+  "datei": "presse/heft-bilder/ki/hf-strandhotel-ki.png",
+  "w": 2688,
+  "h": 1520,
+  "verh": 0.56548,
+  "hz": null,
+  "alt": "Postkarte Strand Hotel Schlössli Bottighofen aus der Luft",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwAwCdASoYAA4APu1iqU2ppaQiMAgBMB2JaQAANTRXKOF+N1Q+AADIu2nWYah2qjNL1A6f4trNJdpJT+qBJBD0tvleeLWpykJ7Lf/gp7T8H3807nPOazrGZgB4ImEpkgkDNuY/ZGIwtaGX6GYHgAAA"
+ },
+ "ch-portal": {
+  "nachweis": {
+   "urheber": "Heft 2 der Gemeinde Bottighofen",
+   "lizenz": "nur zur Anschauung, mit KI nachgeschärft",
+   "jahr": "1994",
+   "quelle": "https://www.bottighofen.ch/_doc/87701"
+  },
+  "datei": "presse/heft-bilder/ki/hf-portal-ki.png",
+  "w": 1360,
+  "h": 2048,
+  "verh": 1.50588,
+  "hz": null,
+  "alt": "Das Portal des Schlössli am See",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1360
+  ],
+  "abbild": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwAwCdASoQABgAPu1iqU2ppaOiMAgBMB2JaQAD5nl+8jbOFkVazBLgAPyHsRkFnz6rjLNuYoME8ovpbun7H5qJ8fcHn8pPXDD5KsfGoAiPqN9GGYxaGWPRvzPR3JRKjJIpNjWuz9oToZpjLGy3fM4Y0laqQTc1wwnaeJ93hzJq2H3ZOPC6AAAA"
+ },
+ "ch-ufer": {
+  "nachweis": {
+   "urheber": "Heft 2 der Gemeinde Bottighofen",
+   "lizenz": "nur zur Anschauung, mit KI nachgeschärft",
+   "jahr": "1994",
+   "quelle": "https://www.bottighofen.ch/_doc/87701"
+  },
+  "datei": "presse/heft-bilder/ki/hf-ufer-ki.png",
+  "w": 2592,
+  "h": 1536,
+  "verh": 0.59259,
+  "hz": null,
+  "alt": "Hotel und Restaurant Schlössli vom See aus, Segelboot und Ruderboote",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaQAAWmPwzmPF2+NunKvGvAD+6nzcgb8LnOSzYI3KhMqiXoQOSgzzTlSoUFIyH1bIQ4tVHxF7tY6w8d0Nbs635dNXd3N+Q1jz0l90KDlVapy1V/Eu6+uvdkJm+vWz3JoV8t0BRTtjPYdR1LyHVNDuc+aIlW1F2IKGP8vpvATg+tuwjMAAAA=="
+ },
+ "jz-herbst": {
+  "nachweis": {
+   "urheber": "Stephan van Helden",
+   "lizenz": "CC BY-SA 4.0",
+   "jahr": "2023",
+   "quelle": "https://commons.wikimedia.org/wiki/File:Zwetschgen_am_Baum_in_den_Struth%C3%A4ckern.jpg"
+  },
+  "datei": "extern/wikipedia-commons/jahreszeiten/herbst-zwetschgen.jpg",
+  "w": 3840,
+  "h": 2560,
+  "verh": 0.66667,
+  "hz": null,
+  "alt": "Reife Zwetschgen am Baum",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYgCw7BEkaZ33mxToQADwMYykzAWW3Ds8iHlNjVmEe1PU8C7cOcKhtPBskG0wJx0gCA0J5QzAwHDrwCakfkX38nVejltUdiSdGyE0AAA="
+ },
+ "saentis": {
+  "nachweis": {
+   "urheber": "qwesy",
+   "lizenz": "CC BY 3.0",
+   "jahr": "2012",
+   "quelle": "https://commons.wikimedia.org/wiki/File:Ausblick_vom_Bodensee_bis_zum_S%C3%A4ntis_-_panoramio.jpg"
+  },
+  "datei": "extern/wikipedia-commons/alpen/saentis-ausblick.jpg",
+  "w": 2954,
+  "h": 1336,
+  "verh": 0.45227,
+  "hz": null,
+  "alt": "Blick über den Bodensee bis zum Säntis",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoYAAsAPu1iqk4ppaQiMAgBMB2JQBOmUABpwiqyn5u8ngAA/lb949H+/348UITnOn9nVzPgAB85ArdFmxwzLt7sJRHqAAAA"
+ },
+ "feuerwerk-ki": {
+  "nachweis": null,
+  "datei": "website/bearbeitet/feuerwerk-ki.png",
+  "w": 2336,
+  "h": 1744,
+  "verh": 0.74658,
+  "hz": null,
+  "alt": "Feuerwerk über dem Konstanzer Trichter beim Seenachtfest",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2336
+  ],
+  "abbild": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQBACdASoYABIAPu1kqU4ppaOiMAgBMB2JYgDIBNiDACrM/oASsI+XR37WRAw+gAD+9CBkjxh5Q1xh3I95GzBfz8+HcKkqcOfysrMo+fNSD4s53jAYt7MRXcDc9P2PzbDXpUUM8r+CYbes/H0Oc8stRdjSGJ19dvnBMHDVN37T/+n/9MQDJeQKzeJVAgAA"
+ },
+ "abendschiff": {
+  "nachweis": {
+   "urheber": "Ameichle",
+   "lizenz": "CC BY-SA 3.0",
+   "jahr": "2010",
+   "quelle": "https://commons.wikimedia.org/wiki/File:Abendschiff_vor_dem_S%C3%A4ntis-Massiv.JPG"
+  },
+  "datei": "extern/wikipedia-commons/abend/01-abendschiff-saentis.jpg",
+  "w": 2560,
+  "h": 1920,
+  "verh": 0.75,
+  "hz": null,
+  "alt": "Ein Kursschiff im Abendlicht auf dem Bodensee, dahinter das Säntis-Massiv",
+  "breiten": [
+   480,
+   800,
+   1200,
+   1800,
+   2400
+  ],
+  "abbild": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBQCdASoYABIAPu1oqk8ppiOiMBgIATAdiWgAnTLdd1gkyGN1/Wjr/smHYTuiprUEAAD3iVolZwO9HS6AsnIXisOauDq+nLvabnSCyVRQS6bWsUn8DB+MaJSP9fBnD6xQfE6VM++loHmxKkngMUQGYTzqXz7sfSmQ/pSVmQCWZPA8kRiGVSIeXlfXd3AAAAA="
+ }
+}

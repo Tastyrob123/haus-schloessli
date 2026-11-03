@@ -1,0 +1,38 @@
+{
+  "station": "11",
+  "name": "La Maison / Die Stube",
+  "rolle": "Werkbank-Bauer + Werkzeug-Anpasser ×7",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "teil": "zentrale",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T22:52+07:00",
+  "ende": "2026-10-20T02:09+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Online-Fassung: Andock-Wege der Werkzeuge fehlen, Kacheln führen online in die Werkbank (Station 14/16)",
+      "wo": "_werkzeuge/maison/online/ · STAND.md Offen 1"
+    },
+    {
+      "punkt": "Bildschirme neu aufnehmen, wenn ein Werkzeug sichtbar ändert (schirme.js, bau.py)",
+      "wo": "_werkzeuge/maison/schirme.js"
+    },
+    {
+      "punkt": "Unabhängige Prüfung Station 12",
+      "wo": "Station 12"
+    }
+  ],
+  "paket": [
+    "werkzeuge/<schlüssel>/STAND.md",
+    "../../werkbank/"
+  ],
+  "adresse": "http://127.0.0.1:8987/_werkzeuge/maison/",
+  "briefing": "briefing.html?teil=zentrale",
+  "notiz": "Das Hafenbüro: Empfang Fassung A (Robert «a»), alle sechs Werkzeuge mit echten Vorschauen, Stand und Stücken; Chromium und Safari-Kern 1440/390/360/320 grün; flüssig 4×/6×.",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

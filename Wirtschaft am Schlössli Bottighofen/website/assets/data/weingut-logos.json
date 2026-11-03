@@ -1,0 +1,713 @@
+{
+ "Champagne Gosset": {
+  "logo": "assets/img/logo-weingut/m-gosset.webp",
+  "b": 133,
+  "h": 96,
+  "quelle": "https://www.champagne-gosset.com/site/assets/img/gosset_logo_full.svg",
+  "farbe": "assets/img/logo-weingut/f-gosset.webp",
+  "fb": 133,
+  "fh": 96
+ },
+ "Champagne Valentin Leflaive": {
+  "logo": "assets/img/logo-weingut/m-valentin-leflaive.webp",
+  "b": 71,
+  "h": 96,
+  "quelle": "https://valentin-leflaive.com/admin/wp-content/uploads/2022/03/logo-vl-age-gate.png",
+  "farbe": "assets/img/logo-weingut/f-valentin-leflaive.webp",
+  "fb": 71,
+  "fh": 96
+ },
+ "Champagne Ruinart": {
+  "logo": "assets/img/logo-weingut/m-ruinart.webp",
+  "b": 134,
+  "h": 96,
+  "quelle": "https://www.ruinart.com/dw/image/v2/BGMK_PRD/on/demandware.static/-/Library-Sites-Ruinart-shared/default/dwa9a539b8/ruinart-logo.png",
+  "farbe": "assets/img/logo-weingut/f-ruinart.webp",
+  "fb": 134,
+  "fh": 96
+ },
+ "Champagne Dom Pérignon": {
+  "logo": "assets/img/logo-weingut/m-dom-perignon.webp",
+  "b": 411,
+  "h": 96,
+  "quelle": "https://www.domperignon.com/_next/static/immutable/media/logo-white.0zhf3gr5ycf9e.svg"
+ },
+ "Champagne Laurent-Perrier": {
+  "logo": "assets/img/logo-weingut/m-laurent-perrier.webp",
+  "b": 1075,
+  "h": 96,
+  "quelle": "https://www.laurent-perrier.com/wp-content/themes/laurentperrier/dist/assets/img/laurent-perrier.svg",
+  "farbe": "assets/img/logo-weingut/f-laurent-perrier.webp",
+  "fb": 1075,
+  "fh": 96
+ },
+ "Champagne Delamotte": {
+  "logo": "assets/img/logo-weingut/m-delamotte.webp",
+  "b": 117,
+  "h": 96,
+  "quelle": "https://www.champagne-delamotte.com/img/logo/logo-delamotte.svg",
+  "farbe": "assets/img/logo-weingut/f-delamotte.webp",
+  "fb": 117,
+  "fh": 96
+ },
+ "Champagne Taittinger": {
+  "logo": "assets/img/logo-weingut/m-taittinger.webp",
+  "b": 889,
+  "h": 96,
+  "quelle": "https://www.taittinger.com/_nuxt/logo-taittinger.BDXUrb-k.svg",
+  "farbe": "assets/img/logo-weingut/f-taittinger.webp",
+  "fb": 889,
+  "fh": 96
+ },
+ "Champagne Louis Roederer": {
+  "logo": "assets/img/logo-weingut/m-louis-roederer.webp",
+  "b": 57,
+  "h": 57,
+  "quelle": "https://www.louis-roederer.com/sites/all/themes/roederer/roederer-57x57.png"
+ },
+ "Champagne André Clouet": {
+  "logo": "assets/img/logo-weingut/m-andre-clouet.webp",
+  "b": 322,
+  "h": 96,
+  "quelle": "https://andreclouet.com/wp-content/uploads/2024/09/AC_Noir_2106@4x-8.png",
+  "farbe": "assets/img/logo-weingut/f-andre-clouet.webp",
+  "fb": 322,
+  "fh": 96
+ },
+ "Champagne Legras & Haas": {
+  "logo": "assets/img/logo-weingut/m-legras-haas.webp",
+  "b": 522,
+  "h": 96,
+  "quelle": "https://www.legras-et-haas.com/wp-content/themes/legras-et-haas/assets/images/logo.svg"
+ },
+ "Schlossgut Bachtobel": {
+  "logo": "assets/img/logo-weingut/m-schlossgut-bachtobel.webp",
+  "b": 193,
+  "h": 34,
+  "quelle": "https://www.bachtobel.ch/themes/bachtobel-theme/assets/images/logo-horizontal-mobile.png",
+  "farbe": "assets/img/logo-weingut/f-schlossgut-bachtobel.webp",
+  "fb": 193,
+  "fh": 34
+ },
+ "Forster Weinbau": {
+  "logo": "assets/img/logo-weingut/m-forster.webp",
+  "b": 96,
+  "h": 96,
+  "quelle": "https://static.wixstatic.com/media/eba3da_b11c32e2821d4594ba11f60b8119f8cd%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/eba3da_b11c32e2821d4594ba11f60b8119f8cd%7Emv2.png",
+  "farbe": "assets/img/logo-weingut/f-forster.webp",
+  "fb": 96,
+  "fh": 96
+ },
+ "Weingut Familie Zahner": {
+  "logo": "assets/img/logo-weingut/m-familie-zahner.webp",
+  "b": 245,
+  "h": 96,
+  "quelle": "https://images.squarespace-cdn.com/content/v1/6644c1657b22462fc99ecaca/3ef03df4-8d3f-4666-bdb4-eea78cb63d07/Logo.png?format=1500w",
+  "farbe": "assets/img/logo-weingut/f-familie-zahner.webp",
+  "fb": 247,
+  "fh": 96
+ },
+ "Christian & Francisca Obrecht - Weingut zur Sonne": {
+  "logo": "assets/img/logo-weingut/m-christian-francisca-obrecht-sonne.webp",
+  "b": 96,
+  "h": 96,
+  "quelle": "https://obrecht.ch/wp-content/uploads/2023/03/Obrecht-Logo-Bildmarke-schwarz-300x300.png",
+  "farbe": "assets/img/logo-weingut/f-christian-francisca-obrecht-sonne.webp",
+  "fb": 96,
+  "fh": 96
+ },
+ "Martha & Daniel Gantenbein": {
+  "logo": "assets/img/logo-weingut/m-martha-daniel-gantenbein.webp",
+  "b": 192,
+  "h": 96,
+  "quelle": "https://gantenbeinwein.com/assets/img/logo.png",
+  "farbe": "assets/img/logo-weingut/f-martha-daniel-gantenbein.webp",
+  "fb": 192,
+  "fh": 96
+ },
+ "Weingut Roman Hermann": {
+  "logo": "assets/img/logo-weingut/m-roman-hermann.webp",
+  "b": 96,
+  "h": 96,
+  "quelle": "https://static.wixstatic.com/media/aa1f00_48f5cbfd811345c6a04ef20d05f1a8e7%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/aa1f00_48f5cbfd811345c6a04ef20d05f1a8e7%7Emv2.png",
+  "farbe": "assets/img/logo-weingut/f-roman-hermann.webp",
+  "fb": 96,
+  "fh": 96
+ },
+ "Martin Donatsch – Weingut zum Ochsen": {
+  "logo": "assets/img/logo-weingut/m-martin-donatsch-ochsen.webp",
+  "b": 99,
+  "h": 96,
+  "quelle": "https://static.wixstatic.com/media/d1c60e_bb1744be1cfe4754aefc8d3e254ad869%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/d1c60e_bb1744be1cfe4754aefc8d3e254ad869%7Emv2.png",
+  "farbe": "assets/img/logo-weingut/f-martin-donatsch-ochsen.webp",
+  "fb": 99,
+  "fh": 96
+ },
+ "Weinkellerei Giani Boner": {
+  "logo": "assets/img/logo-weingut/m-giani-boner.webp",
+  "b": 158,
+  "h": 96,
+  "quelle": "https://www.gianiboner.ch/assets/images/logo-simple.png",
+  "farbe": "assets/img/logo-weingut/f-giani-boner.webp",
+  "fb": 158,
+  "fh": 96
+ },
+ "Weingut Seehaldenhof – Simon Hornstein": {
+  "logo": "assets/img/logo-weingut/m-seehaldenhof-simon-hornstein.webp",
+  "b": 828,
+  "h": 96,
+  "quelle": "https://seehaldenhof.de/cdn/shop/files/seehaldenhof-logo-lila_0e114314-6eec-476e-8377-b3c5779777ee.svg?v=1710088014",
+  "farbe": "assets/img/logo-weingut/f-seehaldenhof-simon-hornstein.webp",
+  "fb": 832,
+  "fh": 96
+ },
+ "Weingut Bernhard Huber": {
+  "logo": "assets/img/logo-weingut/m-bernhard-huber.webp",
+  "b": 122,
+  "h": 80,
+  "quelle": "https://weingut-huber.com/img/logo_klein_2.png",
+  "farbe": "assets/img/logo-weingut/f-bernhard-huber.webp",
+  "fb": 122,
+  "fh": 80
+ },
+ "Weingut Vollmayer": {
+  "logo": "assets/img/logo-weingut/m-vollmayer.webp",
+  "b": 465,
+  "h": 96,
+  "quelle": "https://vollmayer-weingut.de/wp-content/uploads/2021/07/Vollmayer_RGB.png",
+  "farbe": "assets/img/logo-weingut/f-vollmayer.webp",
+  "fb": 465,
+  "fh": 96
+ },
+ "Weingut von Winning": {
+  "logo": "assets/img/logo-weingut/m-winning.webp",
+  "b": 111,
+  "h": 96,
+  "quelle": "https://www.von-winning.de/_ipx/f_webp&q_80/images/Logo-Von_Winning.png",
+  "farbe": "assets/img/logo-weingut/f-winning.webp",
+  "fb": 111,
+  "fh": 96
+ },
+ "Weingut Dr. Bürklin-Wolf": {
+  "logo": "assets/img/logo-weingut/m-buerklin-wolf.webp",
+  "b": 158,
+  "h": 96,
+  "quelle": "https://www.buerklin-wolf.de/_assets/334d1269750c1766608983f2f33bc1bd/Images/Misc/logo_buerklin_wolf.png",
+  "farbe": "assets/img/logo-weingut/f-buerklin-wolf.webp",
+  "fb": 158,
+  "fh": 96
+ },
+ "Weingut A. Christmann": {
+  "logo": "assets/img/logo-weingut/m-christmann.webp",
+  "b": 381,
+  "h": 96,
+  "quelle": "https://weingut-christmann.de/wp-content/uploads/2023/07/Weingut_Christmann_Logo_2021.png",
+  "farbe": "assets/img/logo-weingut/f-christmann.webp",
+  "fb": 381,
+  "fh": 96
+ },
+ "Hermann Dönnhoff": {
+  "logo": "assets/img/logo-weingut/m-hermann-doennhoff.webp",
+  "b": 88,
+  "h": 96,
+  "quelle": "https://www.doennhoff.com/apple-touch-icon.png",
+  "farbe": "assets/img/logo-weingut/f-hermann-doennhoff.webp",
+  "fb": 88,
+  "fh": 96
+ },
+ "Weingut Robert Weil": {
+  "logo": "assets/img/logo-weingut/m-robert-weil.webp",
+  "b": 187,
+  "h": 96,
+  "quelle": "https://www.weingut-robert-weil.com/_assets/1cf73443c55b35d99bb64387d68a720a/Images/Misc/logo_weiss.svg"
+ },
+ "Weingut Künstler": {
+  "logo": "assets/img/logo-weingut/m-kuenstler.webp",
+  "b": 98,
+  "h": 96,
+  "quelle": "https://www.weingut-kuenstler.de/fileadmin/gfx/logo-kuenstler.svg",
+  "farbe": "assets/img/logo-weingut/f-kuenstler.webp",
+  "fb": 98,
+  "fh": 96
+ },
+ "Weingut von Oetinger": {
+  "logo": "assets/img/logo-weingut/m-oetinger.webp",
+  "b": 96,
+  "h": 96,
+  "quelle": "https://www.von-oetinger.de/images/Loewe-rrr-gelb-300x300.png",
+  "farbe": "assets/img/logo-weingut/f-oetinger.webp",
+  "fb": 96,
+  "fh": 96
+ },
+ "Weingut Katharina Wechsler": {
+  "logo": "assets/img/logo-weingut/m-katharina-wechsler.webp",
+  "b": 41,
+  "h": 96,
+  "quelle": "https://www.weingut-wechsler.de/",
+  "farbe": "assets/img/logo-weingut/f-katharina-wechsler.webp",
+  "fb": 41,
+  "fh": 96
+ },
+ "Weingut Klaus Peter Keller": {
+  "logo": "assets/img/logo-weingut/m-klaus-peter-keller.webp",
+  "b": 156,
+  "h": 96,
+  "quelle": "https://static.wixstatic.com/media/883e82_9a55b0ea7fd74b97b8004ee9d7809edf~mv2.png/v1/crop/x_25,y_0,w_1886,h_1138/fill/w_446,h_270,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KELLER-Wappen-Logo-Rebe.png",
+  "farbe": "assets/img/logo-weingut/f-klaus-peter-keller.webp",
+  "fb": 156,
+  "fh": 96
+ },
+ "Weingut Emmerich Knoll": {
+  "logo": "assets/img/logo-weingut/m-emmerich-knoll.webp",
+  "b": 91,
+  "h": 96,
+  "quelle": "https://www.knoll.at/knoll_logo_web.jpg",
+  "farbe": "assets/img/logo-weingut/f-emmerich-knoll.webp",
+  "fb": 91,
+  "fh": 96
+ },
+ "Weingut Tement": {
+  "logo": "assets/img/logo-weingut/m-tement.webp",
+  "b": 257,
+  "h": 96,
+  "quelle": "https://www.tement.at/wp-content/uploads/2021/07/tement-logo-fusszeile.png",
+  "farbe": "assets/img/logo-weingut/f-tement.webp",
+  "fb": 257,
+  "fh": 96
+ },
+ "Weingut Tiefenbrunner": {
+  "logo": "assets/img/logo-weingut/m-tiefenbrunner.webp",
+  "b": 1383,
+  "h": 96,
+  "quelle": "https://www.tiefenbrunner.com/themes/custom/logo/logo.svg",
+  "farbe": "assets/img/logo-weingut/f-tiefenbrunner.webp",
+  "fb": 1383,
+  "fh": 96
+ },
+ "Tenuta Alois Lageder": {
+  "logo": "assets/img/logo-weingut/m-alois-lageder.webp",
+  "b": 280,
+  "h": 96,
+  "quelle": "https://aloislageder.eu/assets/images/logo_lageder.png",
+  "farbe": "assets/img/logo-weingut/f-alois-lageder.webp",
+  "fb": 280,
+  "fh": 96
+ },
+ "Bruno Giacosa": {
+  "logo": "assets/img/logo-weingut/m-bruno-giacosa.webp",
+  "b": 358,
+  "h": 27,
+  "quelle": "https://brunogiacosa.it/img/logo.png"
+ },
+ "Tenuta dell’Ornellaia": {
+  "logo": "assets/img/logo-weingut/m-dellornellaia.webp",
+  "b": 58,
+  "h": 96,
+  "quelle": "https://www.ornellaia.com/static/media/logo.svg",
+  "farbe": "assets/img/logo-weingut/f-dellornellaia.webp",
+  "fb": 58,
+  "fh": 96
+ },
+ "Bodegas Muga": {
+  "logo": "assets/img/logo-weingut/m-muga.webp",
+  "b": 329,
+  "h": 96,
+  "quelle": "https://www.bodegasmuga.com/wp-content/uploads/muga-logo-blanco.png"
+ },
+ "Miguel Torres": {
+  "logo": "assets/img/logo-weingut/m-miguel-torres.webp",
+  "b": 196,
+  "h": 96,
+  "quelle": "https://www.torres.es/themes/custom/torres_theme/logo.png"
+ },
+ "Domaine Christian Moreau": {
+  "logo": "assets/img/logo-weingut/m-christian-moreau.webp",
+  "b": 369,
+  "h": 96,
+  "quelle": "https://www.domainechristianmoreau.com/wp-content/uploads/2018/03/logosite.gif",
+  "farbe": "assets/img/logo-weingut/f-christian-moreau.webp",
+  "fb": 369,
+  "fh": 96
+ },
+ "Domaine Francois Raveneau": {
+  "logo": "assets/img/logo-weingut/m-francois-raveneau.webp",
+  "b": 392,
+  "h": 48,
+  "quelle": "https://www.raveneau.fr/wp-content/uploads/2022/05/LOGO-RAVENEAU-BLANC.png"
+ },
+ "Domaine Lorenzon": {
+  "logo": "assets/img/logo-weingut/m-lorenzon.webp",
+  "b": 96,
+  "h": 96,
+  "quelle": "https://www.domainelorenzon.com/wp-content/uploads/2019/09/cropped-favicon-lorenzon2-180x180.png",
+  "farbe": "assets/img/logo-weingut/f-lorenzon.webp",
+  "fb": 96,
+  "fh": 96
+ },
+ "Olivier Leflaive": {
+  "logo": "assets/img/logo-weingut/m-olivier-leflaive.webp",
+  "b": 149,
+  "h": 96,
+  "quelle": "https://olivier-leflaive.com/admin/wp-content/uploads/2024/02/logo-ol-color-1.png",
+  "farbe": "assets/img/logo-weingut/f-olivier-leflaive.webp",
+  "fb": 150,
+  "fh": 96
+ },
+ "Hubert Lamy": {
+  "logo": "assets/img/logo-weingut/m-hubert-lamy.webp",
+  "b": 254,
+  "h": 96,
+  "quelle": "https://www.domainehubertlamy.com/style/logo-domaine-lamy.png",
+  "farbe": "assets/img/logo-weingut/f-hubert-lamy.webp",
+  "fb": 254,
+  "fh": 96
+ },
+ "Laurent Ponsot": {
+  "logo": "assets/img/logo-weingut/m-laurent-ponsot.webp",
+  "b": 1333,
+  "h": 96,
+  "quelle": "https://laurentponsot.com/wp-content/uploads/2025/04/Laurent-ponsot-sur-une-ligne.svg",
+  "farbe": "assets/img/logo-weingut/f-laurent-ponsot.webp",
+  "fb": 1333,
+  "fh": 96
+ },
+ "Vignoble des Cabottes": {
+  "logo": "assets/img/logo-weingut/m-cabottes.webp",
+  "b": 96,
+  "h": 96,
+  "quelle": "https://cabottes.com/wp-content/uploads/2026/02/Group-46.svg"
+ },
+ "Jacques-Frédéric Mugnier": {
+  "logo": "assets/img/logo-weingut/m-jacques-frederic-mugnier.webp",
+  "b": 107,
+  "h": 96,
+  "quelle": "https://mugnier.fr/wp-content/uploads/2024/06/cropped-favicon-1-300x300.png",
+  "farbe": "assets/img/logo-weingut/f-jacques-frederic-mugnier.webp",
+  "fb": 108,
+  "fh": 96
+ },
+ "Domaine des Lambrays": {
+  "logo": "assets/img/logo-weingut/m-lambrays.webp",
+  "b": 277,
+  "h": 96,
+  "quelle": "https://www.lambrays.com/wp-content/uploads/2021/03/LOGO_2021.png"
+ },
+ "Domaine Jobard-Morey": {
+  "logo": "assets/img/logo-weingut/m-jobard-morey.webp",
+  "b": 78,
+  "h": 96,
+  "quelle": "https://www.jobard-morey.com/logo.png",
+  "farbe": "assets/img/logo-weingut/f-jobard-morey.webp",
+  "fb": 78,
+  "fh": 96
+ },
+ "Domaine de Villaine": {
+  "logo": "assets/img/logo-weingut/m-villaine.webp",
+  "b": 1470,
+  "h": 56,
+  "quelle": "https://boutique.de-villaine.com/vinium-theme/images/logo.de1b2b57.svg"
+ },
+ "Verget (J.M. Guffens-Heynen)": {
+  "logo": "assets/img/logo-weingut/m-verget-guffens-heynen.webp",
+  "b": 258,
+  "h": 76,
+  "quelle": "https://www.verget-sa.fr/img/verget-logo-1578592320.jpg"
+ },
+ "Domaine Chatelain": {
+  "logo": "assets/img/logo-weingut/m-chatelain.webp",
+  "b": 257,
+  "h": 85,
+  "quelle": "https://www.domaine-chatelain.com/images/menu/logo.png",
+  "farbe": "assets/img/logo-weingut/f-chatelain.webp",
+  "fb": 257,
+  "fh": 82
+ },
+ "Christian & Francisca Obrecht – Weingut zur Sonne": {
+  "logo": "assets/img/logo-weingut/m-christian-francisca-obrecht-sonne.webp",
+  "b": 96,
+  "h": 96,
+  "quelle": "https://obrecht.ch/wp-content/uploads/2023/03/Obrecht-Logo-Bildmarke-schwarz-300x300.png",
+  "farbe": "assets/img/logo-weingut/f-christian-francisca-obrecht-sonne.webp",
+  "fb": 96,
+  "fh": 96
+ },
+ "Weingut Benjamin Lanz": {
+  "logo": "assets/img/logo-weingut/m-benjamin-lanz.webp",
+  "b": 250,
+  "h": 88,
+  "quelle": "https://www.lanzwein.de/wp-content/uploads/2020/05/LANZ_Logo_anthrazit250px.png",
+  "farbe": "assets/img/logo-weingut/f-benjamin-lanz.webp",
+  "fb": 250,
+  "fh": 88
+ },
+ "Weingut Schlossgut Bachtobel": {
+  "logo": "assets/img/logo-weingut/m-schlossgut-bachtobel.webp",
+  "b": 193,
+  "h": 34,
+  "quelle": "https://www.bachtobel.ch/themes/bachtobel-theme/assets/images/logo-horizontal-mobile.png",
+  "farbe": "assets/img/logo-weingut/f-schlossgut-bachtobel.webp",
+  "fb": 193,
+  "fh": 34
+ },
+ "Weingut zum Ochsen - Martin Donatsch": {
+  "logo": "assets/img/logo-weingut/m-ochsen-martin-donatsch.webp",
+  "b": 99,
+  "h": 96,
+  "quelle": "https://static.wixstatic.com/media/d1c60e_bb1744be1cfe4754aefc8d3e254ad869%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/d1c60e_bb1744be1cfe4754aefc8d3e254ad869%7Emv2.png",
+  "farbe": "assets/img/logo-weingut/f-ochsen-martin-donatsch.webp",
+  "fb": 99,
+  "fh": 96
+ },
+ "Joel Nänni": {
+  "logo": "assets/img/logo-weingut/m-joel-naenni.webp",
+  "b": 252,
+  "h": 75,
+  "quelle": "https://joeljoel.de/wp-content/uploads/2026/01/Logo_JOELJOEL_RGB_rot_ohne_Schatten_klein.png",
+  "farbe": "assets/img/logo-weingut/f-joel-naenni.webp",
+  "fb": 252,
+  "fh": 75
+ },
+ "Weingut Eichholz – Irene Grünenfelder": {
+  "logo": "assets/img/logo-weingut/m-eichholz-irene-gruenenfelder.webp",
+  "b": 114,
+  "h": 85,
+  "quelle": "https://static.wixstatic.com/media/4bf2a0_189571b3d662401eb5b5675a75fa5efc~mv2.png/v1/crop/x_111,y_0,w_1889,h_1354/fill/w_119,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DEF_weingut_eichholz_logo_weiss.png"
+ },
+ "Klaus Peter Keller": {
+  "logo": "assets/img/logo-weingut/m-klaus-peter-keller.webp",
+  "b": 156,
+  "h": 96,
+  "quelle": "https://static.wixstatic.com/media/883e82_9a55b0ea7fd74b97b8004ee9d7809edf~mv2.png/v1/crop/x_25,y_0,w_1886,h_1138/fill/w_446,h_270,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KELLER-Wappen-Logo-Rebe.png",
+  "farbe": "assets/img/logo-weingut/f-klaus-peter-keller.webp",
+  "fb": 156,
+  "fh": 96
+ },
+ "Cantine Statti Lamezia Terme": {
+  "logo": "assets/img/logo-weingut/m-statti-lamezia-terme.webp",
+  "b": 158,
+  "h": 96,
+  "quelle": "https://storage1390.cdn-immedia.net/wp-content/themes/statti.com/assets/img/share/logo-statti-primary.svg",
+  "farbe": "assets/img/logo-weingut/f-statti-lamezia-terme.webp",
+  "fb": 158,
+  "fh": 96
+ },
+ "Cantina Vietti": {
+  "logo": "assets/img/logo-weingut/m-vietti.webp",
+  "b": 317,
+  "h": 96,
+  "quelle": "https://vietti.com/img/logo.svg",
+  "farbe": "assets/img/logo-weingut/f-vietti.webp",
+  "fb": 317,
+  "fh": 96
+ },
+ "Piero Busso": {
+  "logo": "assets/img/logo-weingut/m-piero-busso.webp",
+  "b": 482,
+  "h": 96,
+  "quelle": "https://www.pierobusso.com/wp-content/themes/pierobusso2020/dist/images/logo/logo-black.svg",
+  "farbe": "assets/img/logo-weingut/f-piero-busso.webp",
+  "fb": 482,
+  "fh": 96
+ },
+ "Tua Rita": {
+  "logo": "assets/img/logo-weingut/m-tua-rita.webp",
+  "b": 417,
+  "h": 96,
+  "quelle": "https://www.tuarita.it/wp-content/uploads/2023/05/LogoTuaRitaWhite.png",
+  "farbe": "assets/img/logo-weingut/f-tua-rita.webp",
+  "fb": 417,
+  "fh": 96
+ },
+ "Monteverro": {
+  "logo": "assets/img/logo-weingut/m-monteverro.webp",
+  "b": 154,
+  "h": 96,
+  "quelle": "https://www.monteverro.com/app/uploads/2022/08/cropped-Tavola-disegno-1.png",
+  "farbe": "assets/img/logo-weingut/f-monteverro.webp",
+  "fb": 154,
+  "fh": 96
+ },
+ "Castello Tricerchi": {
+  "logo": "assets/img/logo-weingut/m-tricerchi.webp",
+  "b": 383,
+  "h": 81,
+  "quelle": "https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_405,h_83/https://castellotricerchi.com/wp-content/uploads/2019/10/Logo-ombra.png"
+ },
+ "Tenuta dell’ Ornellaia": {
+  "logo": "assets/img/logo-weingut/m-dell-ornellaia.webp",
+  "b": 58,
+  "h": 96,
+  "quelle": "https://www.ornellaia.com/static/media/logo.svg",
+  "farbe": "assets/img/logo-weingut/f-dell-ornellaia.webp",
+  "fb": 58,
+  "fh": 96
+ },
+ "Tenuta San Guido": {
+  "logo": "assets/img/logo-weingut/m-san-guido.webp",
+  "b": 562,
+  "h": 96,
+  "quelle": "https://www.tenutasanguido.com/icons/Logo-TSG-negative.svg"
+ },
+ "Tenuta di Biserno": {
+  "logo": "assets/img/logo-weingut/m-biserno.webp",
+  "b": 153,
+  "h": 96,
+  "quelle": "https://www.biserno.it/assets/img/logo.png",
+  "farbe": "assets/img/logo-weingut/f-biserno.webp",
+  "fb": 153,
+  "fh": 96
+ },
+ "Tenuta Luce – Marchesi Frescobaldi": {
+  "logo": "assets/img/logo-weingut/m-luce-marchesi-frescobaldi.webp",
+  "b": 96,
+  "h": 96,
+  "quelle": "https://www.tenutaluce.com/static/svg/logo.svg",
+  "farbe": "assets/img/logo-weingut/f-luce-marchesi-frescobaldi.webp",
+  "fb": 96,
+  "fh": 96
+ },
+ "Fontodi": {
+  "logo": "assets/img/logo-weingut/m-fontodi.webp",
+  "b": 417,
+  "h": 96,
+  "quelle": "https://fontodi.com/images/LogoFontodi.png",
+  "farbe": "assets/img/logo-weingut/f-fontodi.webp",
+  "fb": 416,
+  "fh": 96
+ },
+ "Castello dei Rampola": {
+  "logo": "assets/img/logo-weingut/m-dei-rampola.webp",
+  "b": 31,
+  "h": 29,
+  "quelle": "https://www.castellodeirampolla.it/wp-content/uploads/thegem/logos/logo_e978fe72760a76ec3e308746825c1fc7_1x.png",
+  "farbe": "assets/img/logo-weingut/f-dei-rampola.webp",
+  "fb": 31,
+  "fh": 29
+ },
+ "Tenuta Argentiera": {
+  "logo": "assets/img/logo-weingut/m-argentiera.webp",
+  "b": 181,
+  "h": 96,
+  "quelle": "https://www.argentiera.eu/custom/img/logo-menu.png"
+ },
+ "San Giusto a Rentennano": {
+  "logo": "assets/img/logo-weingut/m-san-giusto-rentennano.webp",
+  "b": 71,
+  "h": 63,
+  "quelle": "https://www.fattoriasangiusto.it/images/system/logo_smalls.png"
+ },
+ "Clos d`Agon": {
+  "logo": "assets/img/logo-weingut/m-clos-agon.webp",
+  "b": 147,
+  "h": 96,
+  "quelle": "https://closdagon.com/wp-content/uploads/2022/05/cropped-Nuevo-logo-color-300-px-1x1-1-150x103-1-1.webp",
+  "farbe": "assets/img/logo-weingut/f-clos-agon.webp",
+  "fb": 150,
+  "fh": 96
+ },
+ "Mas la Plana – Familia Torres": {
+  "logo": "assets/img/logo-weingut/m-mas-plana-torres.webp",
+  "b": 196,
+  "h": 96,
+  "quelle": "https://www.torres.es/themes/custom/torres_theme/logo.png"
+ },
+ "Bodegas Artadi": {
+  "logo": "assets/img/logo-weingut/m-artadi.webp",
+  "b": 200,
+  "h": 41,
+  "quelle": "https://artadi.com/wp-content/uploads/2023/04/logo-artadi-200.png",
+  "farbe": "assets/img/logo-weingut/f-artadi.webp",
+  "fb": 200,
+  "fh": 41
+ },
+ "Bodegas Javier San Pedro Ortega": {
+  "logo": "assets/img/logo-weingut/m-javier-san-pedro-ortega.webp",
+  "b": 578,
+  "h": 80,
+  "quelle": "https://www.bodegasjaviersanpedro.com/wp-content/uploads/2020/05/Logo_JSP.png",
+  "farbe": "assets/img/logo-weingut/f-javier-san-pedro-ortega.webp",
+  "fb": 576,
+  "fh": 80
+ },
+ "Ses Talaioles": {
+  "logo": "assets/img/logo-weingut/m-ses-talaioles.webp",
+  "b": 425,
+  "h": 96,
+  "quelle": "https://www.sestalaioles.com/cdn/shop/files/logo.png?v=1678959922",
+  "farbe": "assets/img/logo-weingut/f-ses-talaioles.webp",
+  "fb": 425,
+  "fh": 96
+ },
+ "Cellier aux Moines": {
+  "logo": "assets/img/logo-weingut/m-cellier-aux-moines.webp",
+  "b": 201,
+  "h": 96,
+  "quelle": "https://cellierauxmoines.com/wp-content/themes/core-cellier/images/logo-crest.png",
+  "farbe": "assets/img/logo-weingut/f-cellier-aux-moines.webp",
+  "fb": 201,
+  "fh": 96
+ },
+ "Domaine Laurent Ponsot": {
+  "logo": "assets/img/logo-weingut/m-laurent-ponsot.webp",
+  "b": 1333,
+  "h": 96,
+  "quelle": "https://laurentponsot.com/wp-content/uploads/2025/04/Laurent-ponsot-sur-une-ligne.svg",
+  "farbe": "assets/img/logo-weingut/f-laurent-ponsot.webp",
+  "fb": 1333,
+  "fh": 96
+ },
+ "Domaine de la Romanée-Conti": {
+  "logo": "assets/img/logo-weingut/m-romanee-conti.webp",
+  "b": 442,
+  "h": 96,
+  "quelle": "https://www.romanee-conti.fr/",
+  "farbe": "assets/img/logo-weingut/f-romanee-conti.webp",
+  "fb": 442,
+  "fh": 96
+ },
+ "M. Chapoutier": {
+  "logo": "assets/img/logo-weingut/m-chapoutier.webp",
+  "b": 791,
+  "h": 96,
+  "quelle": "https://www.chapoutier.com/chapoutier/images/logo.svg",
+  "farbe": "assets/img/logo-weingut/f-chapoutier.webp",
+  "fb": 791,
+  "fh": 96
+ },
+ "Yann Chave": {
+  "logo": "assets/img/logo-weingut/m-yann-chave.webp",
+  "b": 189,
+  "h": 96,
+  "quelle": "https://cdn.prod.website-files.com/6810a8c28d96a04b420cdcd7/690373ae903146fd8bf3274d_YC%20Logo%20Small%20Black.svg",
+  "farbe": "assets/img/logo-weingut/f-yann-chave.webp",
+  "fb": 189,
+  "fh": 96
+ },
+ "Weingut Joh. Jos. Prüm": {
+  "logo": "assets/img/logo-weingut/m-joh-jos-pruem.webp",
+  "b": 103,
+  "h": 96,
+  "quelle": "https://www.jjpruem.com/img/logo_facebook.png",
+  "farbe": "assets/img/logo-weingut/f-joh-jos-pruem.webp",
+  "fb": 103,
+  "fh": 96
+ },
+ "Weingut Heidi Schröck": {
+  "logo": "assets/img/logo-weingut/m-heidi-schroeck.webp",
+  "b": 142,
+  "h": 96,
+  "quelle": "https://www.heidischroeckundsoehne.com/templates/heidischroeck/images/logo-heidi-schroeck.png",
+  "farbe": "assets/img/logo-weingut/f-heidi-schroeck.webp",
+  "fb": 144,
+  "fh": 96
+ },
+ "Weinlaubenhof Kracher": {
+  "logo": "assets/img/logo-weingut/m-weinlaubenhof-kracher.webp",
+  "b": 143,
+  "h": 96,
+  "quelle": "https://www.kracher.at/fileadmin/templates/images/logo.png",
+  "farbe": "assets/img/logo-weingut/f-weinlaubenhof-kracher.webp",
+  "fb": 143,
+  "fh": 96
+ }
+}

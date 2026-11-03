@@ -1,0 +1,243 @@
+[
+ {
+  "id": "fuss-handy",
+  "pfad": "/",
+  "unten": true,
+  "marks": [
+   {
+    "sel": "img[src*='GM15']"
+   },
+   {
+    "sel": "img[src*='MICHELIN']"
+   }
+  ]
+ },
+ {
+  "id": "start-rechner",
+  "pfad": "/",
+  "desk": true,
+  "oben": true,
+  "clip": [
+   0,
+   1250
+  ],
+  "marks": [
+   {
+    "t": "Reservation"
+   }
+  ]
+ },
+ {
+  "id": "karten-handy",
+  "pfad": "/karten",
+  "zentriere": "Speisekarte",
+  "hoch": 0.42,
+  "marks": [
+   {
+    "t": "Speisekarte"
+   },
+   {
+    "t": "Lästermeile"
+   }
+  ]
+ },
+ {
+  "id": "bankett-handy",
+  "pfad": "/karten",
+  "zentriere": "auf zwei Etagen",
+  "hoch": 0.3,
+  "marks": [
+   {
+    "t": "auf zwei Etagen Platz für jeweils bis zu 26 Personen"
+   },
+   {
+    "t": "Bankettanfrage"
+   }
+  ]
+ },
+ {
+  "id": "gutschein-handy",
+  "pfad": "/",
+  "klick": "Gutschein",
+  "innen": "Betrag",
+  "marks": [
+   {
+    "t": "Betrag"
+   },
+   {
+    "t": "vor dem Senden ankreuzen"
+   }
+  ]
+ },
+ {
+  "id": "newsletter-handy",
+  "pfad": "/kontakt",
+  "zentriere": "Melde dich mit",
+  "hoch": 0.4,
+  "marks": [
+   {
+    "t": "Abonnieren"
+   },
+   {
+    "t": "Melde dich mit deiner E-Mail-Adresse"
+   },
+   {
+    "t": "Registrieren"
+   }
+  ]
+ },
+ {
+  "id": "team-handy",
+  "pfad": "/uber-uns",
+  "zentriere": "Monika Huber",
+  "hoch": 0.45,
+  "marks": [
+   {
+    "t": "Monika Huber"
+   },
+   {
+    "t": "Küchenchefin"
+   }
+  ]
+ },
+ {
+  "id": "kreuzfahrt-handy",
+  "pfad": "/events-2-1/excellence-g-ourmetkreuzfahrt",
+  "zentriere": "Villa Joya",
+  "hoch": 0.4,
+  "marks": [
+   {
+    "t": "Villa Joya"
+   }
+  ]
+ },
+ {
+  "id": "events-handy",
+  "pfad": "/events-2-1",
+  "zentriere": "Bevorstehende",
+  "hoch": 0.12,
+  "marks": [
+   {
+    "t": "Bevorstehende Events & Termine"
+   },
+   {
+    "t": "Excellence Gourmetkreuzfahrt",
+    "i": 0
+   }
+  ]
+ },
+ {
+  "id": "ehemalige-handy",
+  "pfad": "/events-2-1/zqff5xzr7qhnfnil32eokk5dy6gi5q",
+  "zentriere": "Weggefährten",
+  "hoch": 0.3,
+  "marks": [
+   {
+    "t": "Weggefährten"
+   }
+  ]
+ },
+ {
+  "id": "datenschutz-handy",
+  "pfad": "/datenschutzerklarung",
+  "zentriere": "Google AdSense",
+  "hoch": 0.3,
+  "marks": [
+   {
+    "t": "Google AdSense",
+    "i": 0
+   },
+   {
+    "t": "Wir verwenden auf dieser Website Google AdSense"
+   }
+  ]
+ },
+ {
+  "id": "shop-handy",
+  "pfad": "/datenschutzerklarung",
+  "zentriere": "Onlineshop / Webshop",
+  "hoch": 0.3,
+  "marks": [
+   {
+    "t": "Onlineshop / Webshop"
+   },
+   {
+    "t": "Bestellvorgänge in unserem Online-Shop"
+   }
+  ]
+ },
+ {
+  "id": "cookie-handy",
+  "pfad": "/",
+  "cookie": "lassen",
+  "oben": true,
+  "warte": 7000,
+  "marks": [
+   {
+    "t": "erklärst du dich"
+   },
+   {
+    "t": "dir ein tolles Erlebnis"
+   }
+  ]
+ },
+ {
+  "id": "leiste-rechner",
+  "pfad": "/impressionen-1",
+  "desk": true,
+  "oben": true,
+  "marks": [
+   {
+    "t": "Kontakt & Öffnungszeiten"
+   },
+   {
+    "t": "Home"
+   }
+  ]
+ },
+ {
+  "id": "fuss-rechner",
+  "pfad": "/",
+  "desk": true,
+  "unten": true,
+  "marks": [
+   {
+    "t": "Datenschutz"
+   },
+   {
+    "t": "AGB`s"
+   }
+  ]
+ },
+ {
+  "id": "plakette-handy",
+  "pfad": "/kontakt",
+  "zentriere": "Besuchen Sie auch unser Partner",
+  "hoch": 0.62,
+  "marks": [
+   {
+    "sel": "img[src*='Michelin+18']"
+   },
+   {
+    "sel": "img[src*='IMG_0299']"
+   }
+  ]
+ },
+ {
+  "id": "start-handy-2",
+  "pfad": "/",
+  "zentriere": "Lunch-Menü",
+  "hoch": 0.5,
+  "marks": [
+   {
+    "t": "Reservation"
+   }
+  ]
+ },
+ {
+  "id": "start-handy-1",
+  "pfad": "/",
+  "oben": true,
+  "marks": []
+ }
+]

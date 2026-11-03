@@ -1,0 +1,73 @@
+{
+  "station": "02",
+  "name": "Kunden analysieren",
+  "rolle": "Späher",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "bestätigt",
+  "beginn": "2026-10-18T22:04+07:00",
+  "ende": "2026-10-18T22:36+07:00",
+  "verbrauch": {
+    "budget_vorher": 61.0,
+    "budget_nachher": 63.0,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Agentur oder Person, die die Squarespace-Seite gebaut hat und pflegt: nirgends genannt",
+      "wo": "Fuss, Impressum, Quelltext aller 15 Seiten, 18.10.2026"
+    },
+    {
+      "punkt": "Squarespace-Abo des Hauses und Preis in Franken",
+      "wo": "squarespace.com/pricing zeigt von hier aus nur Baht"
+    },
+    {
+      "punkt": "Unterschriebener Vertrag mit Squarespace (Laufzeit, Verlängerung): ungeprüft, im Gespräch zu klären",
+      "wo": "öffentlich nur die Terms of Service vom 27.03.2025"
+    },
+    {
+      "punkt": "Bei wem die Adresse schloessli-bottighofen.ch registriert ist",
+      "wo": "DNS: Namensserver ns14.net, Whois für .ch nicht öffentlich"
+    },
+    {
+      "punkt": "Alter und Geschichte des Gebäudes Schlössli",
+      "wo": "Seite sagt nichts; Wanderführer nennen 17. Jh.; Gemeindeschrift 1994 im Staatsarchiv Thurgau"
+    },
+    {
+      "punkt": "TripAdvisor-Eintrag «Schlössli» Bottighofen (3,1 bei 9): heutige Wirtschaft oder frühere Strandwirtschaft?",
+      "wo": "tripadvisor.ch Suche, 18.10.2026"
+    },
+    {
+      "punkt": "Falstaff-Bewertung an der Quelle",
+      "wo": "falstaff.com antwortet 403"
+    },
+    {
+      "punkt": "Weitere Organe der Taverne zum Schäfli AG und Eigentum der Aktien",
+      "wo": "Zefix zeigt nur Christian Kuchler (SHAB 22.11.2019)"
+    },
+    {
+      "punkt": "Ob die Michelin-Empfehlung 2026 gilt (Plakette im Fuss sagt 2025)",
+      "wo": "guide.michelin.com listet das Haus ohne Jahr, 18.10.2026"
+    }
+  ],
+  "paket": [
+    "befund.md",
+    "seitenliste.json",
+    "einordnung.json",
+    "befund.html",
+    "bau_befund.py"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/_kette/02-spaeher/befund.html",
+  "briefing": "briefing.html",
+  "notiz": "Befund liegt vor: passt als Studie, weil es zur Familie Kuchler gehört; Seite jung (Squarespace seit 2024), keine Agentur, Auszeichnung und Geschichte fehlen.",
+  "bestaetigt": {
+    "zeit": "2026-10-18T22:53+07:00",
+    "wort": "Robert 18.10.2026 im Oberchef-Chat: «Beide Befunde passen, bestätige sie und starte Station 03 für beide, nacheinander»"
+  },
+  "rueckgaben": [],
+  "pausen": [
+    {
+      "von": "2026-10-18T22:13+07:00",
+      "bis": "2026-10-18T22:14+07:00"
+    }
+  ]
+}

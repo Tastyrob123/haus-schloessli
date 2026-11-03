@@ -1,0 +1,436 @@
+{
+ "id": "speisekarte",
+ "gilt": {
+  "von": "",
+  "bis": ""
+ },
+ "fassungen": {},
+ "herkunft": {
+  "original": "_quelle/website/pdf/Speisekarte-Oktober.pdf",
+  "sha256": "45ad6a6eb7d2c571b54289debf9b77a73409787b7392e9f29daa6abc2c3c8757",
+  "adresse": "https://www.schloessli-bottighofen.ch/s/Speisekarte-Oktober.pdf",
+  "abgerufen": "2026-10-19",
+  "gelesen_mit": "_karten/lesen.py"
+ },
+ "offen": [
+  "Zeitraum: Titel der Datei «Speisekarte-Oktober», die Karte selbst nennt keinen Monat und kein Jahr. PDF erstellt 30.09.2026.",
+  "Deckblatt: das Original hat keins; «Speisekarte» ist der Name, unter dem die Seite /karten die Datei verlinkt.",
+  "Allergene: das Haus schreibt Kürzel (G, L, E, F, S, So, En, N, Se) und VEG/OVEG; sie stehen wörtlich im Feld «zusatz». Nicht in die 14 Allergene von La Carte übertragen, weil «L = Laktose» und «S = Schalen- und Weichtiere» nicht deckungsgleich mit deren Feldern sind."
+ ],
+ "karte": {
+  "ziel": "speisekarte",
+  "name": "Speisekarte Oktober",
+  "gruppe": "Restaurant",
+  "format": [
+   210,
+   297
+  ],
+  "kl": "",
+  "fuss": "Alle Preise verstehen sich in Schweizer Franken inkl. 8,1% MwSt.",
+  "teile": [
+   {
+    "art": "deckel",
+    "titel": "Speisekarte",
+    "unter": "",
+    "zeilen": []
+   },
+   {
+    "art": "inhalt",
+    "posten": [
+     {
+      "t": "rubrik",
+      "titel": "FRANKREICH",
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "THON",
+      "zusatz": "L/E/F",
+      "zeilen": [
+       {
+        "text": "Balfego Thunfisch – Aprikose – Fenchel"
+       }
+      ],
+      "preise": [
+       "40"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "PAIN PERDU DE CÈPE",
+      "zusatz": "VEG/G/L/E/N/SE",
+      "zeilen": [
+       {
+        "text": "French toast – Steinpilz – Belper Knolle – karamellisierte Zwiebelsauce"
+       }
+      ],
+      "preise": [
+       "35"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "SOLE",
+      "zusatz": "G/L/F/SE",
+      "zeilen": [
+       {
+        "text": "Seezunge – Spinat – Beurre Rouge"
+       }
+      ],
+      "preise": [
+       "45",
+       "65"
+      ],
+      "einheiten": [
+       "",
+       "Hauptgang"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "ENTRECÔTE DE BOEUF",
+      "zusatz": "G/L/SE",
+      "zeilen": [
+       {
+        "text": "Fourme d´Ambert (Blauschimmelkäse) – Schalotten – Kartoffel"
+       }
+      ],
+      "preise": [
+       "60"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "PRUNE",
+      "zusatz": "G/L/E/N",
+      "zeilen": [
+       {
+        "text": "Zwetschge – Mohn – Quark"
+       }
+      ],
+      "preise": [
+       "20"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 1
+     },
+     {
+      "t": "rubrik",
+      "titel": "ITALIEN",
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "QUINTO QUARTO",
+      "zusatz": "G/L/N",
+      "zeilen": [
+       {
+        "text": "Kalbskopf – Zunge – Milke – Nüsslisalat – bunte Beete"
+       }
+      ],
+      "preise": [
+       "35"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "CAVATELLI",
+      "zusatz": "OVEG/G/L/N/SE",
+      "zeilen": [
+       {
+        "text": "Buchenpilze – Pfaffenschnittchen – Sellerie – schwarze Zitrone"
+       }
+      ],
+      "preise": [
+       "35",
+       "50"
+      ],
+      "einheiten": [
+       "",
+       "Hauptgang"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "PARMIGIANA DI MELANZANE",
+      "zusatz": "VEG/G/L/SE",
+      "zeilen": [
+       {
+        "text": "Aubergine – Tomate – Mozzarella"
+       },
+       {
+        "text": "(20 MIN. WARTEZEIT)"
+       }
+      ],
+      "preise": [
+       "35",
+       "50"
+      ],
+      "einheiten": [
+       "",
+       "Hauptgang"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "CARRÉ DI CERVO",
+      "zusatz": "G/L/E/N/SE",
+      "zeilen": [
+       {
+        "text": "Hirschkarree – Rosenkohl – Preiselbeere – Polentaknödel"
+       }
+      ],
+      "preise": [
+       "60"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "NERGI",
+      "zusatz": "G/L/E/N",
+      "zeilen": [
+       {
+        "text": "Kiwibeere – Zitrone – Vanille"
+       }
+      ],
+      "preise": [
+       "20"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 1
+     },
+     {
+      "t": "notiz",
+      "text": "VEG = vegetarisch, OVEG = als vegetarische Option verfügbar",
+      "s": 1
+     },
+     {
+      "t": "notiz",
+      "text": "Für weitere vegetarische Optionen berät Sie gerne unser Service.",
+      "s": 1
+     },
+     {
+      "t": "rubrik",
+      "titel": "IBERISCHE HALBINSEL",
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "PEIXE GALO",
+      "zusatz": "G/L/F",
+      "zeilen": [
+       {
+        "text": "Petersfisch – Schwarzwurzel – Schmortomate"
+       }
+      ],
+      "preise": [
+       "45",
+       "65"
+      ],
+      "einheiten": [
+       "",
+       "Hauptgang"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "CHIPIRONES RELLENOS",
+      "zusatz": "G/L/S/SE",
+      "zeilen": [
+       {
+        "text": "Gefüllte Calamari – Kürbis – Reis – Pimentón de la Vera"
+       }
+      ],
+      "preise": [
+       "40",
+       "55"
+      ],
+      "einheiten": [
+       "",
+       "Hauptgang"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "BOCHECHA DE JAVALI",
+      "zusatz": "L/N/SE",
+      "zeilen": [
+       {
+        "text": "Wildschweinbacke – BBQ Hollandaise – buntes Wurzelgemüse"
+       }
+      ],
+      "preise": [
+       "55"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "CEREJA",
+      "zusatz": "G/L/E/N",
+      "zeilen": [
+       {
+        "text": "Kirsche – Buchweizen – dunkle Schokolade"
+       }
+      ],
+      "preise": [
+       "22"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 2
+     },
+     {
+      "t": "rubrik",
+      "titel": "KLASSIKER",
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "SALADE MAISON",
+      "zusatz": "VEG/G/L/N",
+      "zeilen": [
+       {
+        "text": "Bunte Salatschüssel zum Teilen – Kürbiskernöldressing"
+       }
+      ],
+      "preise": [
+       "30"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "VITELLO TONNATO",
+      "zusatz": "G/E",
+      "zeilen": [
+       {
+        "text": "Kalb – Risina Bohne – Olivenöl"
+       }
+      ],
+      "preise": [
+       "30"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "TORTELLONI",
+      "zusatz": "VEG/G/L/E/SE",
+      "zeilen": [
+       {
+        "text": "Tomate – Burrata – Taggiasca Olive"
+       }
+      ],
+      "preise": [
+       "35",
+       "50"
+      ],
+      "einheiten": [
+       "",
+       "Hauptgang"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "MOULES FRITES",
+      "zusatz": "L/E/S/SE",
+      "zeilen": [
+       {
+        "text": "Miesmuschel – Pommes – Sauce Rouille"
+       }
+      ],
+      "preise": [
+       "25",
+       "40"
+      ],
+      "einheiten": [
+       "",
+       "Hauptgang"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "KALBSKOTELETT (CA 350G)",
+      "zusatz": "G/L/E/SE",
+      "zeilen": [
+       {
+        "text": "Lauch Gratin – Gnocchi fritti"
+       }
+      ],
+      "preise": [
+       "70"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "TIRAMISU",
+      "zusatz": "G/L/E",
+      "zeilen": [
+       {
+        "text": "klassisch wie bei der italienischen Oma"
+       }
+      ],
+      "preise": [
+       "13"
+      ],
+      "einheiten": [
+       ""
+      ],
+      "s": 2
+     },
+     {
+      "t": "notiz",
+      "text": "G = Gluten, L = Laktose, E = Eier, F = Fische, S = Schalen- und Weichtiere, So = Soja, En = Erdnüsse, N = Nüsse, Se = Sellerie",
+      "s": 2
+     }
+    ]
+   }
+  ]
+ }
+}

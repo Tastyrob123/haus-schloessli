@@ -1,0 +1,310 @@
+<!doctype html><html lang="de-CH"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Karten · Wirtschaft am Schlössli</title><meta name="description" content="Station 10, Kartenmacher: alle Karten des Hauses als Daten mit PDF, gegen das Original geprüft.">
+<link rel="icon" href="../05-markenbauer/marke/zeichen/zeiger.svg"><style>
+@font-face{font-family:'Open Sans';src:url(../05-markenbauer/marke/schriften/OpenSans-var.woff2) format('woff2');font-weight:300 800;font-stretch:75% 100%;font-display:swap}
+@font-face{font-family:'Open Sans Ersatz';src:local('Arial');size-adjust:105%;ascent-override:102%;descent-override:28%}
+@font-face{font-family:'Instrument Sans';src:url(../05-markenbauer/marke/schriften/InstrumentSans-normal-400_600.woff2) format('woff2');font-weight:400 600;font-display:swap}
+@font-face{font-family:'DM Mono';src:url(../05-markenbauer/marke/schriften/DMMono-normal-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Gilda Display';src:url(../05-markenbauer/marke/schriften/GildaDisplay-latin.woff2) format('woff2');font-weight:400;font-display:swap}
+:root,[data-welt=a]{--nacht:#062531;--tief:#0A3A4C;--mittel:#116788;--kalk:#E7F0F3;--kalk2:#D0E2E7;--ak:#A2C6CF;--ak-h:#C5DCE1;--ak-t:#0F5B78;--tinte:#041B23;--signal:#FD9964;--titel-h:#0A3E52;--ak-text:#0B2530;--ak-titel:#A2C6CF}[data-welt=b]{--nacht:#242423;--tief:#31322F;--mittel:#424340;--kalk:#E6E4E2;--kalk2:#D2CEC8;--ak:#F7AD04;--ak-h:#FACE68;--ak-t:#8F6402;--tinte:#1E1E1D;--signal:#116788;--titel-h:#2E2F2D;--ak-text:#2A1C00;--ak-titel:#EBB946}
+[data-welt=a]{--tap-d:url(../05-markenbauer/marke/tapete-a-dunkel.svg);--tap-h:url(../05-markenbauer/marke/tapete-a-hell.svg)}
+[data-welt=b]{--tap-d:url(../05-markenbauer/marke/tapete-b-dunkel.svg);--tap-h:url(../05-markenbauer/marke/tapete-b-hell.svg)}
+:root{--titel:'Open Sans','Open Sans Ersatz',Arial,sans-serif;--lauf:'Instrument Sans',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,Menlo,monospace;
+  --sperr:.205em;--rand:clamp(16px,5vw,64px);--e1:cubic-bezier(.16,1,.3,1);--rund:clamp(22px,2.6vw,34px)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--kalk);color:var(--tinte);font:400 17px/1.62 var(--lauf);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.innen{max-width:1180px;margin:0 auto;padding:0 var(--rand)}
+.dunkel{background-color:var(--nacht);background-image:var(--tap-d);background-size:168px;color:#EEF2F2}
+.hell{background-color:var(--kalk);background-image:var(--tap-h);background-size:168px}
+.matt{background:var(--kalk2)}
+.blatt{position:relative;border-radius:var(--rund) var(--rund) 0 0;margin-top:calc(var(--rund)*-1);padding:clamp(72px,9vw,120px) 0}
+.mono{font-family:var(--mono);font-size:11.5px;letter-spacing:.17em;text-transform:uppercase}
+.vers{font-family:var(--titel);font-weight:400;text-transform:uppercase;letter-spacing:var(--sperr)}
+.kopf{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:clamp(36px,5vw,64px)}
+.kopf .z{width:38px;height:auto;color:var(--ak-t);margin-bottom:18px}
+.dunkel .kopf .z{color:var(--ak)}
+.kopf h2{font:400 clamp(1.7rem,3.4vw,2.9rem)/1.16 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:14px 0 0;color:var(--titel-h);max-width:24ch;text-wrap:balance}
+.dunkel .kopf h2{color:#F2F5F5}
+.kopf h2 em{font-style:normal;color:var(--ak-t)}
+.dunkel .kopf h2 em{color:var(--ak-titel)}
+.kopf .mono{color:var(--ak-t)}
+.dunkel .kopf .mono{color:var(--ak-h)}
+.kopf p{max-width:60ch;margin:18px auto 0;opacity:.86}
+/* Knopf: Pille mit rundem Knauf, Tiefe und Glanz (Master 2.6) */
+.knopf{position:relative;display:inline-flex;align-items:center;gap:18px;height:54px;padding:0 6px 0 26px;border-radius:27px;overflow:hidden;
+  font:400 11.5px/1 var(--mono);letter-spacing:.17em;text-transform:uppercase;text-decoration:none;color:var(--ak-text);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--ak-titel) 55%,#fff),var(--ak-titel) 58%,color-mix(in srgb,var(--ak-titel) 80%,#000));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -2px 0 rgba(0,0,0,.18),0 22px 34px -20px rgba(0,0,0,.6);
+  transition:transform .5s var(--e1),box-shadow .5s var(--e1)}
+.knopf::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-120%);pointer-events:none}
+.knopf:hover{transform:translateY(-2px)}
+.knopf:hover::after{transform:translateX(120%);transition:transform .9s var(--e1)}
+.knopf:active{transform:translateY(1px)}
+.knopf .kn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,var(--tief),var(--nacht));color:var(--ak-h);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 6px 12px -6px rgba(0,0,0,.6)}
+.knopf .pf{width:16px;height:10px;stroke:currentColor;fill:none;stroke-width:1.3}
+.knopf--dunkel{color:#F2F5F5;background:linear-gradient(180deg,var(--mittel),var(--tief) 60%,var(--nacht));box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -2px 0 rgba(0,0,0,.35),0 22px 34px -20px rgba(0,0,0,.6)}
+.knopf--dunkel .kn{background:linear-gradient(180deg,var(--ak-h),var(--ak));color:var(--ak-text)}
+/* Auftritt: von unten, deckend, satt an den Platz; startet, sobald ein Fünftel im Bild ist */
+.js [data-a]{opacity:0;transform:translateY(40px) scale(1.02);transition:opacity .85s var(--e1),transform 1.3s var(--e1)}
+.js [data-a].da{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js [data-a]{opacity:1;transform:none;transition:none}}
+
+.hz{position:absolute;left:0;right:0;height:1px;background:var(--ak);opacity:.75;transform:scaleX(0);transform-origin:0 50%;transition:transform 1.6s var(--e1) .35s}
+.da .hz,.hz.da{transform:scaleX(1)}
+.pr{position:relative;padding:clamp(90px,10vw,140px) 0 clamp(110px,12vw,160px);overflow:hidden}
+.pr .innen{max-width:1400px;position:relative}
+.pr__g{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(28px,4.6vw,72px);align-items:start;position:relative}
+.pr__bild{position:relative;margin:0;border-radius:var(--rund);overflow:hidden;box-shadow:0 60px 90px -50px rgba(0,0,0,.8)}
+.pr__bild img{width:100%;aspect-ratio:3/2;object-fit:cover;transform:scale(1.06);transition:transform 2.4s var(--e1)}
+.pr__bild.da img{transform:none}
+.pr .hz{top:calc(var(--h-oben) + var(--h-bild) * .287)}
+.pr__t{padding-top:calc(var(--h-bild) * .287 - 4.2em)}
+.pr__t .z{width:44px;height:auto;color:var(--ak);margin-bottom:20px}
+.pr__t .mono{color:var(--ak-h)}
+.pr__t h1{font:400 clamp(1.7rem,3.1vw,2.9rem)/1.18 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:16px 0 34px;color:#F2F5F5;text-wrap:balance}
+.pr__t h1 em{font-style:normal;color:var(--ak-titel)}
+.pr__t p.l{margin:0 0 26px;color:rgba(238,242,242,.9);max-width:44ch}
+.pr__u{display:flex;flex-direction:column;align-items:flex-end;margin:0 0 30px;max-width:44ch}
+.pr__u q{font:400 1rem/1.4 var(--titel);text-transform:uppercase;letter-spacing:.14em;color:#F2F5F5;quotes:"«" "»";text-align:right}
+.pr__u small{color:var(--ak-h);margin-top:8px}
+.pr__k{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:center}
+.leise{font:400 11.5px/1 var(--mono);letter-spacing:.17em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--ak);padding-bottom:5px}
+.dunkel .leise{color:#F2F5F5}
+.mm{position:relative;padding:clamp(90px,10vw,140px) 0;overflow:hidden}
+.mm__g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:center;position:relative}
+.mm .hz{background:var(--mittel);top:auto;bottom:clamp(150px,16vw,210px);opacity:.5}
+.mm h2{font:400 clamp(1.6rem,3vw,2.6rem)/1.2 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:14px 0 22px;color:var(--titel-h)}
+.mm h2 em{font-style:normal;color:var(--ak-t)}
+.mm .mono{color:var(--ak-t)}
+.mm .laender{display:flex;flex-wrap:wrap;gap:12px 28px;margin:30px 0 0;padding:0;list-style:none;font:400 .95rem/1.2 var(--titel);text-transform:uppercase;letter-spacing:.22em;color:var(--titel-h)}
+.mm .laender li:nth-child(2){color:var(--ak-t)}
+.mm figure{margin:0;position:relative;border-radius:var(--rund);overflow:hidden;box-shadow:0 50px 80px -50px rgba(0,0,0,.5)}
+.mm figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 60%}
+.mm figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 26px 22px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55))}
+.mm figcaption b{display:block;font:400 1rem/1.2 var(--titel);text-transform:uppercase;letter-spacing:.2em}
+.mm figcaption span{font-size:15px;opacity:.92}
+.lm{position:relative;padding:clamp(90px,10vw,140px) 0 clamp(110px,12vw,150px);overflow:hidden}
+.lm__g{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(28px,5vw,80px);align-items:center}
+.lm h2{font:400 clamp(1.6rem,3vw,2.6rem)/1.2 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:14px 0 22px;color:#F2F5F5}
+.lm h2 em{font-style:normal;color:var(--ak-titel)}
+.lm .mono{color:var(--ak-h)}
+.lm .tapas{margin:26px 0 30px;padding:0;list-style:none;display:grid;gap:10px}
+.lm .tapas li{display:flex;justify-content:space-between;gap:20px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.12)}
+.lm .tapas b{font:400 .95rem/1.3 var(--titel);text-transform:uppercase;letter-spacing:.14em;font-weight:400}
+.lm .tapas span{font-family:var(--mono);font-size:13px;color:var(--ak-h)}
+.lm__b{display:grid;grid-template-columns:1.25fr 1fr;gap:14px;align-items:end}
+.lm__b figure{margin:0;border-radius:var(--rund);overflow:hidden;box-shadow:0 50px 80px -50px rgba(0,0,0,.8)}
+.lm__b img{width:100%;object-fit:cover}
+.lm__b figure:first-child img{aspect-ratio:3/4}
+.lm__b figure:last-child img{aspect-ratio:1/1}
+.probe-wahl{position:fixed;right:16px;top:16px;z-index:9;display:flex;gap:6px;padding:6px;border-radius:30px;background:var(--nacht);box-shadow:0 14px 30px -14px rgba(0,0,0,.6),inset 0 0 0 1px color-mix(in srgb,var(--ak) 40%,transparent)}
+.probe-wahl button{all:unset;cursor:pointer;padding:11px 16px;border-radius:24px;font:400 11px/1 var(--mono);letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+.probe-wahl button[aria-pressed=true]{color:var(--ak-text);background:linear-gradient(180deg,var(--ak-h),var(--ak))}
+.pfuss{padding:40px 0 110px;text-align:center;font-size:13.5px}
+.pfuss p{opacity:.75;margin:0}
+@media(max-width:900px){.pr__g,.mm__g,.lm__g{grid-template-columns:1fr}.pr__t{padding-top:0}.pr .hz{top:auto;bottom:clamp(60px,8vw,90px)}.pr__u{align-items:flex-start}.pr__u q{text-align:left}.mm .hz{bottom:60px}}
+@media(max-width:520px){.probe-wahl{left:16px;right:16px;justify-content:center}.probe-wahl button{padding:11px 12px}}
+[data-welt=a]{--nacht:#0B1D3D;--tief:#0A234C;--mittel:#113D88;--kalk:#E7ECF3;--kalk2:#D0DAE7;--ak:#A2B6CF;--ak-h:#C5D2E1;--ak-t:#0F3678;--tinte:#041023;--titel-h:#0A2552;--ak-text:#0A2552;--ak-titel:#A2B6CF;--tap-d:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjgiIGhlaWdodD0iMTY4IiB2aWV3Qm94PSIwIDAgMTY4IDE2OCI+PGcgZmlsbD0iI0EyQjZDRiIgZmlsbC1vcGFjaXR5PSIwLjIyIj48Y2lyY2xlIGN4PSIxNCIgY3k9IjE0IiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxNCIgY3k9IjQyIiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxNCIgY3k9IjcwIiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxNCIgY3k9Ijk4IiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxNCIgY3k9IjEyNiIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTQiIGN5PSIxNTQiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iMTQiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iNDIiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iNzAiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iOTgiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iMTI2IiByPSIxLjEiLz48Y2lyY2xlIGN4PSI0MiIgY3k9IjE1NCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iNzAiIGN5PSIxNCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iNzAiIGN5PSI0MiIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iNzAiIGN5PSIxMjYiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjcwIiBjeT0iMTU0IiByPSIxLjEiLz48Y2lyY2xlIGN4PSI5OCIgY3k9IjE0IiByPSIxLjEiLz48Y2lyY2xlIGN4PSI5OCIgY3k9IjQyIiByPSIxLjEiLz48Y2lyY2xlIGN4PSI5OCIgY3k9IjEyNiIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iOTgiIGN5PSIxNTQiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjEyNiIgY3k9IjE0IiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxMjYiIGN5PSI0MiIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTI2IiBjeT0iNzAiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjEyNiIgY3k9Ijk4IiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxMjYiIGN5PSIxMjYiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjEyNiIgY3k9IjE1NCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTU0IiBjeT0iMTQiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjE1NCIgY3k9IjQyIiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxNTQiIGN5PSI3MCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTU0IiBjeT0iOTgiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjE1NCIgY3k9IjEyNiIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTU0IiBjeT0iMTU0IiByPSIxLjEiLz48L2c+PHN2ZyB4PSI3MS44OSIgeT0iNjQuMDAiIHdpZHRoPSIyNC4yMiIgaGVpZ2h0PSI0MC4wMCIgdmlld0JveD0iNjMwIDE2IDcxOCAxMTg2IiBmaWxsPSIjQTJCNkNGIiBmaWxsLW9wYWNpdHk9IjAuMTIiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDE1NjMuMDAwMDAwKSBzY2FsZSgwLjEwMDAwMCwtMC4xMDAwMDApIj48cGF0aCBkPSJNODE4OCAxNDk5MyBjLTc1IC0xODYgLTI4MyAtNzA1IC00NjMgLTExNTMgLTE4MCAtNDQ4IC0zNDMgLTg1MyAtMzYyIC05MDAgbC0zNCAtODUgMzkgLTk1IGMyMiAtNTIgMzggLTk4IDM1IC0xMDIgLTIgLTUgLTIwIC04IC0zOSAtOCAtNTEgMCAtMzE0IC0zOCAtNDI5IC02MSAtNTUgLTEyIC0xNjggLTQzIC0yNTIgLTcwIC0xNjUgLTU0IC0yMTMgLTg0IC0yMTMgLTEzMyAwIC0yNiAzOSAtNzYgNTkgLTc2IDYgMCA0NCAxMyA4NCAyOSA0MSAxNiA5OCAzNiAxMjggNDUgNjAgMTcgNDEzIDUzIDYxOSA2MiBsMTM1IDYgNzcgLTE5MyBjNDMgLTEwNyAxMTggLTI5NSAxNjkgLTQxOSA5MiAtMjI4IDM2NCAtOTAyIDQ5MCAtMTIxNiBsNjkgLTE3MiAwIC0xNzQ0IDAgLTE3NDQgLTY2IC0xMSBjLTEzMSAtMjMgLTIzNiAtOTggLTI5MyAtMjEwIC04NCAtMTY3IC04MCAtNDUwIDkgLTU5NCAxNiAtMjcgMzAgLTUzIDMwIC01NyAwIC00IC0yMjYgLTIzMyAtNTAyIC01MDkgbC01MDMgLTUwMiAtNjQgMzEgYy01MiAyNiAtNzUgMzIgLTEzMCAzMiAtMTgzIC0xIC0zNDEgLTE1NSAtMzQxIC0zMzQgMCAtMTEzIDYzIC0yMjEgMTYxIC0yNzUgNDkgLTI3IDYyIC0zMCAxNDkgLTMwIDEwNiAwIDE1MyAxNiAyMjYgNzkgMTExIDk1IDE0NCAyOTIgNjggNDA4IC0xMyAyMSAtMjQgNDMgLTI0IDUwIDAgNyAyMjUgMjM4IDQ5OSA1MTIgbDUwMCA1MDAgMzggLTI3IGM1NiAtMzggMTI4IC02NiAxODkgLTczIGw1NCAtNyAwIC03NzIgYzAgLTgzNCAzIC03ODUgLTQ4IC03ODUgLTI4IDAgLTk0IC0zOSAtMTQwIC04MyAtMTc0IC0xNjkgLTExMyAtNDY2IDExNCAtNTUzIDYzIC0yNCAxODcgLTE2IDI0MCAxNiA2MCAzNSAxMTMgOTAgMTQyIDE0NSAyNCA0NSAyNyA2MCAyNyAxNTUgMCA5MCAtMyAxMTEgLTIzIDE0NyAtNDcgODkgLTExNyAxNDcgLTIwMiAxNjkgbC00NSAxMSAtMyA3NzUgLTIgNzc1IDU3IDYgYzEyMyAxMyAyNTAgMTAzIDMwOSAyMTkgNzIgMTQyIDgwIDM2OSAxOCA1MjMgbC0yNCA2MCA2OTAgNjkwIDY5MCA2OTAgMzY4IDE0NyBjMjAyIDgxIDU1OCAyMjUgNzkyIDMxOSAyMzQgOTQgNTg5IDIzNyA3ODkgMzE4IGwzNjUgMTQ2IDUwIDEyNyBjMjggNzAgNTMgMTI0IDU3IDEyMCAzIC00IDQ0IC0xMTkgOTAgLTI1NyAxMDYgLTMxNiAxNDEgLTM3MiAyMjMgLTM1MSA0NiAxMSA0NyAzOCAxMCAyMTkgLTQxIDE5OCAtNzQgMzAzIC0xNjAgNDk3IC0zNSA4MCAtNjQgMTQ5IC02NCAxNTQgMCA0IDE2NSA0MjAgMzY2IDkyMyAyMDEgNTAzIDM2NCA5MTYgMzYxIDkxOSAtMiAzIC03OCAtMjUgLTE2OCAtNjIgLTE0OSAtNjAgLTExMDggLTQ0NiAtMTIzOSAtNDk5IGwtNTYgLTIyIC02NSA2MSBjLTM2IDM0IC04NyA5MyAtMTEyIDEzMSAtNjQgOTggLTEyMiAxNjAgLTMxOSAzNDIgLTM5MSAzNjEgLTQ3OCA0MzIgLTc0NSA2MDcgLTUxNCAzMzcgLTgxMyA0NzUgLTExNzMgNTQxIC03NCAxNCAtMTU3IDMyIC0xODUgNDEgLTI3IDkgLTU1IDE3IC02MiAxOSAtNyAyIDggNTEgNDMgMTM3IDMwIDczIDU0IDEzOCA1NCAxNDUgMCA2IC02MCAxNjIgLTEzNCAzNDUgLTMyMiA4MDIgLTcxNCAxNzc3IC03NzggMTkzOCAtMzkgOTYgLTc0IDE3OCAtNzcgMTgzIC00IDQgLTY4IC0xNDUgLTE0MyAtMzMweiBtOTk3IC0yODA1IGM0NCAtMTYgMTU4IC01NiAyNTMgLTg5IDk2IC0zMyAyNjUgLTEwMiAzNzcgLTE1NCAxMTEgLTUyIDI3NiAtMTI2IDM2NiAtMTY1IDM4MSAtMTY1IDY4NiAtMzQ0IDg4NSAtNTE3IDU2IC00OCAxNTUgLTEzMSAyMjAgLTE4NSA2NSAtNTMgMTczIC0xNTEgMjM4IC0yMTggbDExOSAtMTIyIC0zOSAtMTcgYy0yMSAtMTAgLTE2NSAtNjggLTMyMCAtMTMwIGwtMjgxIC0xMTIgLTQ1NCAtMTEzNSAtNDU0IC0xMTM0IC02OTkgLTcwNSAtNjk4IC03MDUgLTUwIDQ1IGMtNTkgNTYgLTEzNiA5MyAtMjI0IDEwOCBsLTY0IDExIDAgMTc1MyAwIDE3NTMgMzQgODIgYzE5IDQ2IDEwNSAyNTkgMTkxIDQ3MyAxNjAgMzk4IDIzNiA1ODQgMzkwIDk2NSA0OCAxMTggODkgMjIxIDkyIDIyOCAzIDggMTMgMTAgMjIgNyA5IC00IDUyIC0yMCA5NiAtMzd6IG0tODg3IC01MzQwIGMtMyAtNyAtMjUgLTE2IC00OSAtMTkgLTI0IC00IC02MSAtMTQgLTgyIC0yMiAtNDggLTIxIC00MCAtNSAxMCAxOSA2NSAzMCAxMjcgNDIgMTIxIDIyeiBtMTg4IC0xOSBjMjMgLTExIDQ5IC0yOCA1OSAtMzkgMTYgLTE4IDE1IC0xOCAtMjYgMiAtMjQgMTIgLTY4IDI3IC05OCAzMyAtMzAgNiAtNTcgMTcgLTU5IDI0IC02IDE4IDY5IDYgMTI0IC0yMHoiLz48L2c+PC9zdmc+PC9zdmc+);--tap-h:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjgiIGhlaWdodD0iMTY4IiB2aWV3Qm94PSIwIDAgMTY4IDE2OCI+PGcgZmlsbD0iIzExNjc4OCIgZmlsbC1vcGFjaXR5PSIwLjIiPjxjaXJjbGUgY3g9IjE0IiBjeT0iMTQiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjE0IiBjeT0iNDIiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjE0IiBjeT0iNzAiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjE0IiBjeT0iOTgiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjE0IiBjeT0iMTI2IiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxNCIgY3k9IjE1NCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iNDIiIGN5PSIxNCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iNDIiIGN5PSI0MiIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iNDIiIGN5PSI3MCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iNDIiIGN5PSI5OCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iNDIiIGN5PSIxMjYiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iMTU0IiByPSIxLjEiLz48Y2lyY2xlIGN4PSI3MCIgY3k9IjE0IiByPSIxLjEiLz48Y2lyY2xlIGN4PSI3MCIgY3k9IjQyIiByPSIxLjEiLz48Y2lyY2xlIGN4PSI3MCIgY3k9IjEyNiIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iNzAiIGN5PSIxNTQiIHI9IjEuMSIvPjxjaXJjbGUgY3g9Ijk4IiBjeT0iMTQiIHI9IjEuMSIvPjxjaXJjbGUgY3g9Ijk4IiBjeT0iNDIiIHI9IjEuMSIvPjxjaXJjbGUgY3g9Ijk4IiBjeT0iMTI2IiByPSIxLjEiLz48Y2lyY2xlIGN4PSI5OCIgY3k9IjE1NCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTI2IiBjeT0iMTQiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjEyNiIgY3k9IjQyIiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxMjYiIGN5PSI3MCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTI2IiBjeT0iOTgiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjEyNiIgY3k9IjEyNiIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTI2IiBjeT0iMTU0IiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxNTQiIGN5PSIxNCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTU0IiBjeT0iNDIiIHI9IjEuMSIvPjxjaXJjbGUgY3g9IjE1NCIgY3k9IjcwIiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxNTQiIGN5PSI5OCIgcj0iMS4xIi8+PGNpcmNsZSBjeD0iMTU0IiBjeT0iMTI2IiByPSIxLjEiLz48Y2lyY2xlIGN4PSIxNTQiIGN5PSIxNTQiIHI9IjEuMSIvPjwvZz48c3ZnIHg9IjcxLjg5IiB5PSI2NC4wMCIgd2lkdGg9IjI0LjIyIiBoZWlnaHQ9IjQwLjAwIiB2aWV3Qm94PSI2MzAgMTYgNzE4IDExODYiIGZpbGw9IiMxMTY3ODgiIGZpbGwtb3BhY2l0eT0iMC4wODUiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDE1NjMuMDAwMDAwKSBzY2FsZSgwLjEwMDAwMCwtMC4xMDAwMDApIj48cGF0aCBkPSJNODE4OCAxNDk5MyBjLTc1IC0xODYgLTI4MyAtNzA1IC00NjMgLTExNTMgLTE4MCAtNDQ4IC0zNDMgLTg1MyAtMzYyIC05MDAgbC0zNCAtODUgMzkgLTk1IGMyMiAtNTIgMzggLTk4IDM1IC0xMDIgLTIgLTUgLTIwIC04IC0zOSAtOCAtNTEgMCAtMzE0IC0zOCAtNDI5IC02MSAtNTUgLTEyIC0xNjggLTQzIC0yNTIgLTcwIC0xNjUgLTU0IC0yMTMgLTg0IC0yMTMgLTEzMyAwIC0yNiAzOSAtNzYgNTkgLTc2IDYgMCA0NCAxMyA4NCAyOSA0MSAxNiA5OCAzNiAxMjggNDUgNjAgMTcgNDEzIDUzIDYxOSA2MiBsMTM1IDYgNzcgLTE5MyBjNDMgLTEwNyAxMTggLTI5NSAxNjkgLTQxOSA5MiAtMjI4IDM2NCAtOTAyIDQ5MCAtMTIxNiBsNjkgLTE3MiAwIC0xNzQ0IDAgLTE3NDQgLTY2IC0xMSBjLTEzMSAtMjMgLTIzNiAtOTggLTI5MyAtMjEwIC04NCAtMTY3IC04MCAtNDUwIDkgLTU5NCAxNiAtMjcgMzAgLTUzIDMwIC01NyAwIC00IC0yMjYgLTIzMyAtNTAyIC01MDkgbC01MDMgLTUwMiAtNjQgMzEgYy01MiAyNiAtNzUgMzIgLTEzMCAzMiAtMTgzIC0xIC0zNDEgLTE1NSAtMzQxIC0zMzQgMCAtMTEzIDYzIC0yMjEgMTYxIC0yNzUgNDkgLTI3IDYyIC0zMCAxNDkgLTMwIDEwNiAwIDE1MyAxNiAyMjYgNzkgMTExIDk1IDE0NCAyOTIgNjggNDA4IC0xMyAyMSAtMjQgNDMgLTI0IDUwIDAgNyAyMjUgMjM4IDQ5OSA1MTIgbDUwMCA1MDAgMzggLTI3IGM1NiAtMzggMTI4IC02NiAxODkgLTczIGw1NCAtNyAwIC03NzIgYzAgLTgzNCAzIC03ODUgLTQ4IC03ODUgLTI4IDAgLTk0IC0zOSAtMTQwIC04MyAtMTc0IC0xNjkgLTExMyAtNDY2IDExNCAtNTUzIDYzIC0yNCAxODcgLTE2IDI0MCAxNiA2MCAzNSAxMTMgOTAgMTQyIDE0NSAyNCA0NSAyNyA2MCAyNyAxNTUgMCA5MCAtMyAxMTEgLTIzIDE0NyAtNDcgODkgLTExNyAxNDcgLTIwMiAxNjkgbC00NSAxMSAtMyA3NzUgLTIgNzc1IDU3IDYgYzEyMyAxMyAyNTAgMTAzIDMwOSAyMTkgNzIgMTQyIDgwIDM2OSAxOCA1MjMgbC0yNCA2MCA2OTAgNjkwIDY5MCA2OTAgMzY4IDE0NyBjMjAyIDgxIDU1OCAyMjUgNzkyIDMxOSAyMzQgOTQgNTg5IDIzNyA3ODkgMzE4IGwzNjUgMTQ2IDUwIDEyNyBjMjggNzAgNTMgMTI0IDU3IDEyMCAzIC00IDQ0IC0xMTkgOTAgLTI1NyAxMDYgLTMxNiAxNDEgLTM3MiAyMjMgLTM1MSA0NiAxMSA0NyAzOCAxMCAyMTkgLTQxIDE5OCAtNzQgMzAzIC0xNjAgNDk3IC0zNSA4MCAtNjQgMTQ5IC02NCAxNTQgMCA0IDE2NSA0MjAgMzY2IDkyMyAyMDEgNTAzIDM2NCA5MTYgMzYxIDkxOSAtMiAzIC03OCAtMjUgLTE2OCAtNjIgLTE0OSAtNjAgLTExMDggLTQ0NiAtMTIzOSAtNDk5IGwtNTYgLTIyIC02NSA2MSBjLTM2IDM0IC04NyA5MyAtMTEyIDEzMSAtNjQgOTggLTEyMiAxNjAgLTMxOSAzNDIgLTM5MSAzNjEgLTQ3OCA0MzIgLTc0NSA2MDcgLTUxNCAzMzcgLTgxMyA0NzUgLTExNzMgNTQxIC03NCAxNCAtMTU3IDMyIC0xODUgNDEgLTI3IDkgLTU1IDE3IC02MiAxOSAtNyAyIDggNTEgNDMgMTM3IDMwIDczIDU0IDEzOCA1NCAxNDUgMCA2IC02MCAxNjIgLTEzNCAzNDUgLTMyMiA4MDIgLTcxNCAxNzc3IC03NzggMTkzOCAtMzkgOTYgLTc0IDE3OCAtNzcgMTgzIC00IDQgLTY4IC0xNDUgLTE0MyAtMzMweiBtOTk3IC0yODA1IGM0NCAtMTYgMTU4IC01NiAyNTMgLTg5IDk2IC0zMyAyNjUgLTEwMiAzNzcgLTE1NCAxMTEgLTUyIDI3NiAtMTI2IDM2NiAtMTY1IDM4MSAtMTY1IDY4NiAtMzQ0IDg4NSAtNTE3IDU2IC00OCAxNTUgLTEzMSAyMjAgLTE4NSA2NSAtNTMgMTczIC0xNTEgMjM4IC0yMTggbDExOSAtMTIyIC0zOSAtMTcgYy0yMSAtMTAgLTE2NSAtNjggLTMyMCAtMTMwIGwtMjgxIC0xMTIgLTQ1NCAtMTEzNSAtNDU0IC0xMTM0IC02OTkgLTcwNSAtNjk4IC03MDUgLTUwIDQ1IGMtNTkgNTYgLTEzNiA5MyAtMjI0IDEwOCBsLTY0IDExIDAgMTc1MyAwIDE3NTMgMzQgODIgYzE5IDQ2IDEwNSAyNTkgMTkxIDQ3MyAxNjAgMzk4IDIzNiA1ODQgMzkwIDk2NSA0OCAxMTggODkgMjIxIDkyIDIyOCAzIDggMTMgMTAgMjIgNyA5IC00IDUyIC0yMCA5NiAtMzd6IG0tODg3IC01MzQwIGMtMyAtNyAtMjUgLTE2IC00OSAtMTkgLTI0IC00IC02MSAtMTQgLTgyIC0yMiAtNDggLTIxIC00MCAtNSAxMCAxOSA2NSAzMCAxMjcgNDIgMTIxIDIyeiBtMTg4IC0xOSBjMjMgLTExIDQ5IC0yOCA1OSAtMzkgMTYgLTE4IDE1IC0xOCAtMjYgMiAtMjQgMTIgLTY4IDI3IC05OCAzMyAtMzAgNiAtNTcgMTcgLTU5IDI0IC02IDE4IDY5IDYgMTI0IC0yMHoiLz48L2c+PC9zdmc+PC9zdmc+)}
+.kb{position:relative;padding:clamp(90px,10vw,140px) 0;overflow:hidden}
+.kb .hz{top:clamp(150px,15vw,210px)}
+.kb__g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(28px,5vw,80px);align-items:start;position:relative}
+.kb h2{font:400 clamp(1.6rem,3vw,2.6rem)/1.2 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:14px 0 26px;color:var(--titel-h)}
+.kb h2 em{font-style:normal;color:var(--ak-t)}
+.kb .mono{color:var(--ak-t)}
+.dunkel.kb h2{color:#F2F5F5}.dunkel.kb h2 em{color:var(--ak-titel)}.dunkel.kb .mono{color:var(--ak-h)}
+.zahlen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 22px}
+.zahlen div{padding:16px 18px;border-radius:18px;background:var(--kalk2);box-shadow:inset 0 2px 6px rgba(4,27,35,.14),inset 0 -1px 0 rgba(255,255,255,.7)}
+.dunkel .zahlen div{background:var(--tief);box-shadow:inset 0 2px 8px rgba(0,0,0,.45),inset 0 -1px 0 rgba(255,255,255,.06)}
+.zahlen dt{font:400 10.5px/1.3 var(--mono);letter-spacing:.15em;text-transform:uppercase;opacity:.8}
+.zahlen dd{margin:6px 0 0;font:400 clamp(1.25rem,2vw,1.75rem)/1 var(--titel);letter-spacing:.04em;white-space:nowrap}
+.zahlen .rot dd{color:var(--signal)}
+.beleg{font-size:15px;opacity:.86;margin:0 0 26px}
+.offen{margin-top:28px}
+.offen summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:10px}
+.offen summary::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--signal)}
+.offen ul{margin:14px 0 0;padding-left:18px;font-size:15px;line-height:1.5}
+.offen li{margin-bottom:8px}
+.kb__b{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.kb__b figure{margin:0;border-radius:var(--rund);overflow:hidden}
+.kb__b .seite{background:#fff;box-shadow:0 40px 70px -40px rgba(0,0,0,.55),0 0 0 1px rgba(4,27,35,.08)}
+.kb__b .seite img{width:100%;height:auto}
+.dunkel .kb__b .seite{box-shadow:0 40px 70px -40px rgba(0,0,0,.8),0 0 0 1px color-mix(in srgb,var(--ak) 55%,transparent)}
+.kb__b .zwei{margin-top:48px}
+.kb__b .foto{grid-column:1 / -1;box-shadow:0 50px 80px -50px rgba(0,0,0,.6)}
+.kb__b .foto img{width:100%;aspect-ratio:16/7;object-fit:cover}
+.kb__b.quer .seite{grid-column:1 / -1}
+.web{position:relative;padding:clamp(90px,10vw,140px) 0}
+.web__g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:start}
+.web h2{font:400 clamp(1.6rem,3vw,2.6rem)/1.2 var(--titel);text-transform:uppercase;letter-spacing:.16em;margin:14px 0 22px;color:var(--titel-h)}
+.web h2 em{font-style:normal;color:var(--ak-t)}
+.web .mono{color:var(--ak-t)}
+.web pre{margin:0;padding:24px;border-radius:22px;background:var(--nacht);box-shadow:inset 0 2px 10px rgba(0,0,0,.5);font:400 13px/1.6 var(--mono);color:#DCE8EA;white-space:pre-wrap;word-break:break-word}
+.web ul{margin:22px 0 0;padding-left:18px}
+.web code{font-family:var(--mono);font-size:13px}
+.inhalt{display:flex;flex-wrap:wrap;gap:10px 24px;margin:34px 0 0;padding:0;list-style:none}
+.inhalt a{font:400 .9rem/1.2 var(--titel);text-transform:uppercase;letter-spacing:.2em;text-decoration:none;color:#F2F5F5;border-bottom:1px solid var(--ak);padding-bottom:4px}
+@media(max-width:900px){.kb__g,.web__g{grid-template-columns:1fr}.kb .hz{display:none}}
+@media(max-width:520px){.zahlen{grid-template-columns:1fr 1fr}.zahlen div{padding:12px 14px}.kb__b .zwei{margin-top:24px}}
+</style></head><body data-welt="a">
+<section class="pr dunkel" aria-label="Karten des Hauses"><span class="hz" aria-hidden="true"></span><div class="innen pr__g">
+  <figure class="pr__bild" data-a><img src="../../website/assets/img/tortelloni-800.webp" alt="Tortelloni mit Tomate, Burrata und Taggiasca-Olive"></figure>
+  <div class="pr__t" data-a>
+    <svg class="z" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="630 16 718 1186" fill="currentColor"><g transform="translate(0.000000,1563.000000) scale(0.100000,-0.100000)"><path d="M8188 14993 c-75 -186 -283 -705 -463 -1153 -180 -448 -343 -853 -362 -900 l-34 -85 39 -95 c22 -52 38 -98 35 -102 -2 -5 -20 -8 -39 -8 -51 0 -314 -38 -429 -61 -55 -12 -168 -43 -252 -70 -165 -54 -213 -84 -213 -133 0 -26 39 -76 59 -76 6 0 44 13 84 29 41 16 98 36 128 45 60 17 413 53 619 62 l135 6 77 -193 c43 -107 118 -295 169 -419 92 -228 364 -902 490 -1216 l69 -172 0 -1744 0 -1744 -66 -11 c-131 -23 -236 -98 -293 -210 -84 -167 -80 -450 9 -594 16 -27 30 -53 30 -57 0 -4 -226 -233 -502 -509 l-503 -502 -64 31 c-52 26 -75 32 -130 32 -183 -1 -341 -155 -341 -334 0 -113 63 -221 161 -275 49 -27 62 -30 149 -30 106 0 153 16 226 79 111 95 144 292 68 408 -13 21 -24 43 -24 50 0 7 225 238 499 512 l500 500 38 -27 c56 -38 128 -66 189 -73 l54 -7 0 -772 c0 -834 3 -785 -48 -785 -28 0 -94 -39 -140 -83 -174 -169 -113 -466 114 -553 63 -24 187 -16 240 16 60 35 113 90 142 145 24 45 27 60 27 155 0 90 -3 111 -23 147 -47 89 -117 147 -202 169 l-45 11 -3 775 -2 775 57 6 c123 13 250 103 309 219 72 142 80 369 18 523 l-24 60 690 690 690 690 368 147 c202 81 558 225 792 319 234 94 589 237 789 318 l365 146 50 127 c28 70 53 124 57 120 3 -4 44 -119 90 -257 106 -316 141 -372 223 -351 46 11 47 38 10 219 -41 198 -74 303 -160 497 -35 80 -64 149 -64 154 0 4 165 420 366 923 201 503 364 916 361 919 -2 3 -78 -25 -168 -62 -149 -60 -1108 -446 -1239 -499 l-56 -22 -65 61 c-36 34 -87 93 -112 131 -64 98 -122 160 -319 342 -391 361 -478 432 -745 607 -514 337 -813 475 -1173 541 -74 14 -157 32 -185 41 -27 9 -55 17 -62 19 -7 2 8 51 43 137 30 73 54 138 54 145 0 6 -60 162 -134 345 -322 802 -714 1777 -778 1938 -39 96 -74 178 -77 183 -4 4 -68 -145 -143 -330z m997 -2805 c44 -16 158 -56 253 -89 96 -33 265 -102 377 -154 111 -52 276 -126 366 -165 381 -165 686 -344 885 -517 56 -48 155 -131 220 -185 65 -53 173 -151 238 -218 l119 -122 -39 -17 c-21 -10 -165 -68 -320 -130 l-281 -112 -454 -1135 -454 -1134 -699 -705 -698 -705 -50 45 c-59 56 -136 93 -224 108 l-64 11 0 1753 0 1753 34 82 c19 46 105 259 191 473 160 398 236 584 390 965 48 118 89 221 92 228 3 8 13 10 22 7 9 -4 52 -20 96 -37z m-887 -5340 c-3 -7 -25 -16 -49 -19 -24 -4 -61 -14 -82 -22 -48 -21 -40 -5 10 19 65 30 127 42 121 22z m188 -19 c23 -11 49 -28 59 -39 16 -18 15 -18 -26 2 -24 12 -68 27 -98 33 -30 6 -57 17 -59 24 -6 18 69 6 124 -20z"/></g></svg>
+    <p class="mono">Station 10 · Kartenmacher · 19.10.2026</p>
+    <h1>Die Karten <em>des Hauses.</em></h1>
+    <p class="l">Sechs Karten aus den PDF der heutigen Website, Wort für Wort und Zahl für Zahl gegen das Original gelesen: 526 Einträge, 546 Preise, 0 Abweichungen. Aus diesen Daten lesen La Carte, die Website und die neuen PDF.</p>
+    <div class="pr__k"><a class="knopf" href="#speisekarte">Zu den Karten <span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></a><a class="leise" href="pruefung.md" target="_blank" rel="noopener">Prüfbericht</a><a class="leise" href="../../_karten/haus.json" target="_blank" rel="noopener">Alle Daten</a></div>
+    <ul class="inhalt"><li><a href="#speisekarte">Speisekarte Oktober</a></li><li><a href="#lunch">Lunch-Menü</a></li><li><a href="#laestermeile">Lästermeile</a></li><li><a href="#weinkarte">Weinkarte</a></li><li><a href="#bankett">Bankettmenü</a></li><li><a href="#vier-haende">4-Hands-Lunch mit Patrick Stier</a></li></ul>
+  </div>
+</div></section>
+
+<section class="kb blatt hell" id="speisekarte" aria-label="Speisekarte Oktober"><span class="hz" aria-hidden="true"></span><div class="innen kb__g">
+  <div class="kb__t" data-a>
+    <p class="mono">Restaurant · 3 Seiten A4</p>
+    <h2>Die <em>Speisekarte.</em></h2>
+    <dl class="zahlen">
+      <div><dt>Einträge</dt><dd>20</dd></div>
+      <div><dt>Preise</dt><dd>27</dd></div>
+      <div><dt>Wörter Original · Daten</dt><dd>281 · 281</dd></div>
+      <div class=""><dt>Abweichungen</dt><dd>0</dd></div>
+    </dl>
+    <p class="beleg">Neue PDF Wort für Wort gleich den Daten. Gelesen aus <a href="../../_quelle/website/pdf/Speisekarte-Oktober.pdf" target="_blank" rel="noopener">Speisekarte-Oktober.pdf</a>.</p>
+    <div class="pr__k"><a class="knopf" href="../../_karten/pdf/speisekarte.pdf" target="_blank" rel="noopener">Neue PDF <span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></a>
+      <a class="leise" href="../../_quelle/website/pdf/Speisekarte-Oktober.pdf" target="_blank" rel="noopener">Original</a>
+      <a class="leise" href="../../_karten/stand/speisekarte.json" target="_blank" rel="noopener">Daten</a></div>
+    <details class="offen"><summary class="mono">Drei Punkte offen</summary><ul><li>Zeitraum: Titel der Datei «Speisekarte-Oktober», die Karte selbst nennt keinen Monat und kein Jahr. PDF erstellt 30.09.2026.</li><li>Deckblatt: das Original hat keins; «Speisekarte» ist der Name, unter dem die Seite /karten die Datei verlinkt.</li><li>Allergene: das Haus schreibt Kürzel (G, L, E, F, S, So, En, N, Se) und VEG/OVEG; sie stehen wörtlich im Feld «zusatz». Nicht in die 14 Allergene von La Carte übertragen, weil «L = Laktose» und «S = Schalen- und Weichtiere» nicht deckungsgleich mit deren Feldern sind.</li></ul></details>
+  </div>
+  <div class="kb__b" data-a>
+    <figure class="seite"><a href="../../_karten/pdf/speisekarte.pdf" target="_blank" rel="noopener"><img src="bilder/speisekarte.png" alt="Erste Seite der neuen PDF «Speisekarte Oktober»" loading="lazy"></a></figure>
+    <figure class="seite zwei"><img src="bilder/speisekarte-innen.png" alt="Zweite Seite der neuen PDF «Speisekarte Oktober»" loading="lazy"></figure>
+    <figure class="foto"><img src="../../website/assets/img/tortelloni-800.webp" alt="Tortelloni mit Tomate, Burrata und Taggiasca-Olive" loading="lazy"></figure>
+  </div>
+</div></section>
+<section class="kb blatt dunkel" id="lunch" aria-label="Lunch-Menü"><span class="hz" aria-hidden="true"></span><div class="innen kb__g">
+  <div class="kb__t" data-a>
+    <p class="mono">Restaurant · 1 Seite A4 quer</p>
+    <h2>Das <em>Lunch-Menü.</em></h2>
+    <dl class="zahlen">
+      <div><dt>Einträge</dt><dd>3</dd></div>
+      <div><dt>Preise</dt><dd>0</dd></div>
+      <div><dt>Wörter Original · Daten</dt><dd>37 · 37</dd></div>
+      <div class=""><dt>Abweichungen</dt><dd>0</dd></div>
+    </dl>
+    <p class="beleg">Neue PDF Wort für Wort gleich den Daten. Gelesen aus <a href="../../_quelle/website/pdf/Lunch_261019.pdf" target="_blank" rel="noopener">Lunch_261019.pdf</a>.</p>
+    <div class="pr__k"><a class="knopf knopf--dunkel" href="../../_karten/pdf/lunch.pdf" target="_blank" rel="noopener">Neue PDF <span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></a>
+      <a class="leise" href="../../_quelle/website/pdf/Lunch_261019.pdf" target="_blank" rel="noopener">Original</a>
+      <a class="leise" href="../../_karten/stand/lunch.json" target="_blank" rel="noopener">Daten</a></div>
+    <details class="offen"><summary class="mono">Drei Punkte offen</summary><ul><li>Zeitraum: die Karte nennt keinen Tag. Datei «Lunch_261019» (PDF erstellt 18.10.2026, 23:44); ob 261019 der 19.10.2026 ist, sagt das Haus nicht.</li><li>Wochentage und Uhrzeit des Lunchs nennt die PDF nicht.</li><li>Die Karte wechselt (Startseite verlinkt jeweils die aktuelle Datei); diese Daten sind der Stand vom 19.10.2026.</li></ul></details>
+  </div>
+  <div class="kb__b quer" data-a>
+    <figure class="seite"><a href="../../_karten/pdf/lunch.pdf" target="_blank" rel="noopener"><img src="bilder/lunch.png" alt="Erste Seite der neuen PDF «Lunch-Menü»" loading="lazy"></a></figure>
+    
+    <figure class="foto"><img src="../../website/assets/img/suppe-800.webp" alt="Eine Suppe aus der Küche des Hauses" loading="lazy"></figure>
+  </div>
+</div></section>
+<section class="kb blatt hell" id="laestermeile" aria-label="Lästermeile"><span class="hz" aria-hidden="true"></span><div class="innen kb__g">
+  <div class="kb__t" data-a>
+    <p class="mono">Bar · 2 Seiten A4</p>
+    <h2>Die <em>Lästermeile.</em></h2>
+    <dl class="zahlen">
+      <div><dt>Einträge</dt><dd>9</dd></div>
+      <div><dt>Preise</dt><dd>9</dd></div>
+      <div><dt>Wörter Original · Daten</dt><dd>103 · 103</dd></div>
+      <div class=""><dt>Abweichungen</dt><dd>0</dd></div>
+    </dl>
+    <p class="beleg">Neue PDF Wort für Wort gleich den Daten. Gelesen aus <a href="../../_quelle/website/pdf/Lastermeile-Homepage-2339.pdf" target="_blank" rel="noopener">Lastermeile-Homepage-2339.pdf</a>.</p>
+    <div class="pr__k"><a class="knopf" href="../../_karten/pdf/laestermeile.pdf" target="_blank" rel="noopener">Neue PDF <span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></a>
+      <a class="leise" href="../../_quelle/website/pdf/Lastermeile-Homepage-2339.pdf" target="_blank" rel="noopener">Original</a>
+      <a class="leise" href="../../_karten/stand/laestermeile.json" target="_blank" rel="noopener">Daten</a></div>
+    <details class="offen"><summary class="mono">Fünf Punkte offen</summary><ul><li>Zeitraum: die Karte nennt keinen; PDF erstellt 14.10.2026.</li><li>Öffnungszeit «11:30 Uhr - 21:00 Uhr» steht nur auf der Seite /karten, nicht in der PDF; nicht in die Karte übernommen.</li><li>Die Seite /karten verlinkt beim Titel «Lästermeile» eine zweite Datei (/s/Lastermeile-Homepage-2tbd.pdf), die nicht im Paket liegt; gelesen ist die Fassung 2339.</li><li>Währung: die Karte nennt keine (Preise ohne CHF).</li><li>Allergen-Kürzel stehen wörtlich im Feld «zusatz», wie in der Speisekarte.</li></ul></details>
+  </div>
+  <div class="kb__b" data-a>
+    <figure class="seite"><a href="../../_karten/pdf/laestermeile.pdf" target="_blank" rel="noopener"><img src="bilder/laestermeile.png" alt="Erste Seite der neuen PDF «Lästermeile»" loading="lazy"></a></figure>
+    <figure class="seite zwei"><img src="bilder/laestermeile-innen.png" alt="Zweite Seite der neuen PDF «Lästermeile»" loading="lazy"></figure>
+    <figure class="foto"><img src="../../website/assets/img/bar-800.webp" alt="An der Bar der Lästermeile" loading="lazy"></figure>
+  </div>
+</div></section>
+<section class="kb blatt dunkel" id="weinkarte" aria-label="Weinkarte"><span class="hz" aria-hidden="true"></span><div class="innen kb__g">
+  <div class="kb__t" data-a>
+    <p class="mono">Restaurant · 25 Seiten A4</p>
+    <h2>Die <em>Weinkarte.</em></h2>
+    <dl class="zahlen">
+      <div><dt>Einträge</dt><dd>468</dd></div>
+      <div><dt>Preise</dt><dd>495</dd></div>
+      <div><dt>Wörter Original · Daten</dt><dd>3568 · 3568</dd></div>
+      <div class=""><dt>Abweichungen</dt><dd>0</dd></div>
+    </dl>
+    <p class="beleg">Neue PDF Wort für Wort gleich den Daten. Gelesen aus <a href="../../_quelle/website/pdf/20261014_Weinkarte.pdf" target="_blank" rel="noopener">20261014_Weinkarte.pdf</a>.</p>
+    <div class="pr__k"><a class="knopf knopf--dunkel" href="../../_karten/pdf/weinkarte.pdf" target="_blank" rel="noopener">Neue PDF <span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></a>
+      <a class="leise" href="../../_quelle/website/pdf/20261014_Weinkarte.pdf" target="_blank" rel="noopener">Original</a>
+      <a class="leise" href="../../_karten/stand/weinkarte.json" target="_blank" rel="noopener">Daten</a></div>
+    <details class="offen"><summary class="mono">Sechs Punkte offen</summary><ul><li>Stand: Datei «20261014_Weinkarte» (PDF erstellt 14.10.2026); die Karte nennt kein Datum.</li><li>Offenausschank (Weine im Glas) hat die Weinkarte nicht; eine Getränke- oder Barkarte mit Bier, Aperitifs, Spirituosen und Kaffee ist online nicht zu finden.</li><li>«M wSt.» schreibt das Haus so in jeder Fusszeile (im Bild geprüft); nicht berichtigt.</li><li>Seitenzahlen des Originals beginnen mit «– 2 –» auf Seite 1; ein Deckblatt fehlt in der PDF.</li><li>Weingut-Zeilen tragen das Feld «weingut»: true (Zwischentitel der Art «zw»), das Datenmodell von La Carte kennt keine eigene Art für den Erzeuger.</li><li>Jahrgang steht im eigenen Feld «jahr», die Flaschengrösse in «einheiten» neben dem Preis.</li></ul></details>
+  </div>
+  <div class="kb__b" data-a>
+    <figure class="seite"><a href="../../_karten/pdf/weinkarte.pdf" target="_blank" rel="noopener"><img src="bilder/weinkarte.png" alt="Erste Seite der neuen PDF «Weinkarte»" loading="lazy"></a></figure>
+    <figure class="seite zwei"><img src="bilder/weinkarte-innen.png" alt="Zweite Seite der neuen PDF «Weinkarte»" loading="lazy"></figure>
+    <figure class="foto"><img src="../../website/assets/img/wein-800.webp" alt="Wein im Glas auf der Terrasse" loading="lazy"></figure>
+  </div>
+</div></section>
+<section class="kb blatt hell" id="bankett" aria-label="Bankettmenü"><span class="hz" aria-hidden="true"></span><div class="innen kb__g">
+  <div class="kb__t" data-a>
+    <p class="mono">Banketts &amp; Gruppen · 3 Seiten A4</p>
+    <h2>Das <em>Bankettmenü.</em></h2>
+    <dl class="zahlen">
+      <div><dt>Einträge</dt><dd>15</dd></div>
+      <div><dt>Preise</dt><dd>15</dd></div>
+      <div><dt>Wörter Original · Daten</dt><dd>187 · 187</dd></div>
+      <div class=""><dt>Abweichungen</dt><dd>0</dd></div>
+    </dl>
+    <p class="beleg">Neue PDF Wort für Wort gleich den Daten. Gelesen aus <a href="../../_quelle/website/pdf/Bankettmenuvorschlage.pdf" target="_blank" rel="noopener">Bankettmenuvorschlage.pdf</a>.</p>
+    <div class="pr__k"><a class="knopf" href="../../_karten/pdf/bankett.pdf" target="_blank" rel="noopener">Neue PDF <span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></a>
+      <a class="leise" href="../../_quelle/website/pdf/Bankettmenuvorschlage.pdf" target="_blank" rel="noopener">Original</a>
+      <a class="leise" href="../../_karten/stand/bankett.json" target="_blank" rel="noopener">Daten</a></div>
+    <details class="offen"><summary class="mono">Drei Punkte offen</summary><ul><li>Stand: PDF erstellt 29.04.2025; ob Gerichte und Preise noch gelten, sagt das Haus nicht (auch beim Baumeister offen).</li><li>Ein Wintermenü hat das Original nicht.</li><li>Die Preise der Gerichte nennen keine Währung; die Menüpreise stehen als «(175 CHF)» im Titel.</li></ul></details>
+  </div>
+  <div class="kb__b" data-a>
+    <figure class="seite"><a href="../../_karten/pdf/bankett.pdf" target="_blank" rel="noopener"><img src="bilder/bankett.png" alt="Erste Seite der neuen PDF «Bankettmenü»" loading="lazy"></a></figure>
+    <figure class="seite zwei"><img src="bilder/bankett-innen.png" alt="Zweite Seite der neuen PDF «Bankettmenü»" loading="lazy"></figure>
+    <figure class="foto"><img src="../../website/assets/img/anguria-800.webp" alt="Das Gericht «Anguria» auf dem blauen Platzteller" loading="lazy"></figure>
+  </div>
+</div></section>
+<section class="kb blatt dunkel" id="vier-haende" aria-label="4-Hands-Lunch mit Patrick Stier"><span class="hz" aria-hidden="true"></span><div class="innen kb__g">
+  <div class="kb__t" data-a>
+    <p class="mono">Events · 1 Seite A4 quer</p>
+    <h2>Der <em>4-Hands-Lunch.</em></h2>
+    <dl class="zahlen">
+      <div><dt>Einträge</dt><dd>11</dd></div>
+      <div><dt>Preise</dt><dd>0</dd></div>
+      <div><dt>Wörter Original · Daten</dt><dd>85 · 85</dd></div>
+      <div class=""><dt>Abweichungen</dt><dd>0</dd></div>
+    </dl>
+    <p class="beleg">Neue PDF Wort für Wort gleich den Daten. Gelesen aus <a href="../../_quelle/website/pdf/4_Hands-_Stier.pdf" target="_blank" rel="noopener">4_Hands-_Stier.pdf</a>.</p>
+    <div class="pr__k"><a class="knopf knopf--dunkel" href="../../_karten/pdf/vier-haende.pdf" target="_blank" rel="noopener">Neue PDF <span class="kn"><svg class="pf" viewBox="0 0 16 10"><path d="M0 5h14M10 1l4 4-4 4"/></svg></span></a>
+      <a class="leise" href="../../_quelle/website/pdf/4_Hands-_Stier.pdf" target="_blank" rel="noopener">Original</a>
+      <a class="leise" href="../../_karten/stand/vier-haende.json" target="_blank" rel="noopener">Daten</a></div>
+    <details class="offen"><summary class="mono">Zwei Punkte offen</summary><ul><li>Vorbei: Anlass am 22.02.2026, 12 Uhr (Seite /events-2-1/event-two-yf5k9). Die Karte steht nur noch als Beleg; ob sie auf La Carte gehört, entscheidet das Haus.</li><li>Die Seite des Anlasses nennt ein «6-Gang-Menü», die PDF zählt neun durch *** getrennte Gänge; so übernommen, wie es die PDF schreibt.</li></ul></details>
+  </div>
+  <div class="kb__b quer" data-a>
+    <figure class="seite"><a href="../../_karten/pdf/vier-haende.pdf" target="_blank" rel="noopener"><img src="bilder/vier-haende.png" alt="Erste Seite der neuen PDF «4-Hands-Lunch mit Patrick Stier»" loading="lazy"></a></figure>
+    
+    <figure class="foto"><img src="../../website/assets/img/stier-800.webp" alt="Zum 4-Hands-Lunch mit Patrick Stier" loading="lazy"></figure>
+  </div>
+</div></section>
+<section class="web blatt hell" id="website" aria-label="Für die Website"><div class="innen web__g">
+  <div data-a><p class="mono">Für Station 14 · eine Quelle</p><h2>Die Website liest <em>dieselben Daten.</em></h2>
+    <p>Jede Karte liegt als eigene Datei unter <code>_karten/stand/</code>. Ein Satz zeichnet sie in eine Seite, Schrift und Farbe kommen aus der Seite selbst. Ändert sich eine Karte, wird nur die Datei getauscht; PDF und Website stimmen danach überein.</p>
+    <ul><li><code>_karten/stand/speisekarte.json</code></li><li><code>_karten/stand/lunch.json</code></li><li><code>_karten/stand/laestermeile.json</code></li><li><code>_karten/stand/weinkarte.json</code></li><li><code>_karten/stand/bankett.json</code></li><li><code>_karten/stand/vier-haende.json</code></li></ul></div>
+  <div data-a><pre>&lt;div id=&quot;karte&quot;&gt;&lt;/div&gt;
+&lt;script src=&quot;../_karten/karte.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;SchloessliKarte.lade(&#x27;#karte&#x27;, &#x27;../_karten/stand/speisekarte.json&#x27;)&lt;/script&gt;</pre><p class="beleg" style="margin-top:18px">La Carte liest alle Karten als ein Dokument: <code>_karten/haus.json</code> (Haus «schloessli», geprüft mit dem Datenmodell von La Carte).</p></div>
+</div></section>
+<footer class="pfuss dunkel"><p>Station 10 der Kette · Designstudie von Tasty Studios, nicht die offizielle Website · Karten und Fotos: Wirtschaft am Schlössli · 22 Punkte offen</p></footer>
+<script>document.documentElement.classList.add('js');(function(){var g=document.querySelector('.pr__bild'),s=document.querySelector('.pr');
+function setz(){var r=g.getBoundingClientRect(),q=s.getBoundingClientRect();s.style.setProperty('--h-bild',r.height+'px');s.style.setProperty('--h-oben',(r.top-q.top)+'px')}
+setz();addEventListener('resize',setz);if(document.fonts)document.fonts.ready.then(setz);
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('da');io.unobserve(x.target)}})},{threshold:.2});
+document.querySelectorAll('[data-a],.hz').forEach(function(h){io.observe(h)})})()</script>
+</body></html>

@@ -1,0 +1,260 @@
+{
+ "id": "bankett",
+ "gilt": {
+  "von": "",
+  "bis": ""
+ },
+ "fassungen": {},
+ "herkunft": {
+  "original": "_quelle/website/pdf/Bankettmenuvorschlage.pdf",
+  "sha256": "9c712942445a190af87e986a2eae442f1144b34413cbfdb1608867b18ace1433",
+  "adresse": "https://www.schloessli-bottighofen.ch/s/Bankettmenuvorschlage.pdf",
+  "abgerufen": "2026-10-19",
+  "gelesen_mit": "_karten/lesen.py"
+ },
+ "offen": [
+  "Stand: PDF erstellt 29.04.2025; ob Gerichte und Preise noch gelten, sagt das Haus nicht (auch beim Baumeister offen).",
+  "Ein Wintermenü hat das Original nicht.",
+  "Die Preise der Gerichte nennen keine Währung; die Menüpreise stehen als «(175 CHF)» im Titel."
+ ],
+ "karte": {
+  "ziel": "bankett",
+  "name": "Bankettmenü",
+  "gruppe": "Banketts & Gruppen",
+  "format": [
+   210,
+   297
+  ],
+  "kl": "",
+  "fuss": "",
+  "teile": [
+   {
+    "art": "deckel",
+    "titel": "Bankettmenü",
+    "unter": "",
+    "zeilen": [],
+    "aus_original": true
+   },
+   {
+    "art": "inhalt",
+    "posten": [
+     {
+      "t": "rubrik",
+      "titel": "FRÜHLING (175 CHF)",
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "RINDSTATAR",
+      "zeilen": [
+       {
+        "text": "Mit Parmesanstreusel, Rucolapesto und Aceto Balsamico di Modena"
+       }
+      ],
+      "preise": [
+       "30"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "KRÄUTERRISOTTO",
+      "zeilen": [
+       {
+        "text": "Mit gegrilltem Kaisergranat, eingelegten Taggiasche Oliven und Burrata"
+       }
+      ],
+      "preise": [
+       "30"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "SEEZUNGENRÖLLCHEN",
+      "zeilen": [
+       {
+        "text": "Süßsaures Zucchiniragout mit Salzzitrone und Sauce Choron"
+       }
+      ],
+      "preise": [
+       "40"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "HÜHNCHEN „PIRI PIRI“",
+      "zeilen": [
+       {
+        "text": "Leicht scharf mariniertes Grillhühnchen mit Tomatensalat, Oregano und Pommes frites"
+       }
+      ],
+      "preise": [
+       "50"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "SCHOKOLADENTARTE MIT 68% BOLIVIA COUVERTURE VON FELCHLIN",
+      "zeilen": [
+       {
+        "text": "Haselnusspraliné und exotische Früchte"
+       }
+      ],
+      "preise": [
+       "25"
+      ],
+      "s": 1
+     },
+     {
+      "t": "rubrik",
+      "titel": "SOMMER (185 CHF)",
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "KREVETTENCOCKTAIL „SCHLÖSSLI STYLE“",
+      "zeilen": [
+       {
+        "text": "Hausgemachte Cocktailsauce, bunte Salate und Avocado"
+       }
+      ],
+      "preise": [
+       "30"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "MANGOLD-GNOCCHI",
+      "zeilen": [
+       {
+        "text": "Mit glasierten Sot-l´y-laisse und cremiger Ricotta"
+       }
+      ],
+      "preise": [
+       "30"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "MOSCARDINI ALL´ ARRABIATA",
+      "zeilen": [
+       {
+        "text": "Geschmorte kleine Kraken in würziger Tomatensauce mit knusprigen Knoblauchbrot"
+       }
+      ],
+      "preise": [
+       "40"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "KALBSHOHRÜCKEN",
+      "zeilen": [
+       {
+        "text": "Gebraten, mit buntem Sommergemüse und Kräuterpolenta"
+       }
+      ],
+      "preise": [
+       "60"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "VANILLECREMETÖRTCHEN",
+      "zeilen": [
+       {
+        "text": "Thurgauer Beeren & Meringue"
+       }
+      ],
+      "preise": [
+       "25"
+      ],
+      "s": 2
+     },
+     {
+      "t": "rubrik",
+      "titel": "HERBST (175 CHF)",
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "REHCARPACCIO",
+      "zeilen": [
+       {
+        "text": "Mit Pilzen der Saison, gerösteten Nüssen und Preiselbeeren"
+       }
+      ],
+      "preise": [
+       "30"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "CREPES",
+      "zeilen": [
+       {
+        "text": "Gefüllt mit Artischocke und Salsiccia - mit Scamorza überbacken"
+       }
+      ],
+      "preise": [
+       "30"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "FREGOLA SARDA",
+      "zeilen": [
+       {
+        "text": "Mit Venusmuschel, Miesmuschel und frischem Fenchelsalat"
+       }
+      ],
+      "preise": [
+       "40"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "OSSOBUCCHI",
+      "zeilen": [
+       {
+        "text": "Geschmort, mit frischer Kräuter-Gremolata und cremigem Kartoffel-Rosmarin-Püree"
+       }
+      ],
+      "preise": [
+       "50"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "BEIGNETS MIT ZIMTZUCKER",
+      "zeilen": [
+       {
+        "text": "Quark-Rum-Eis und eingelegte Zwetschgen"
+       }
+      ],
+      "preise": [
+       "25"
+      ],
+      "s": 2
+     },
+     {
+      "t": "notiz",
+      "text": "Aus den Menüs können 3-5 Gerichte ausgewählt werden. Nach Belieben können die Menüs auch gemischt werden (soweit es saisonal möglich ist) oder auch einzelne Gerichte ausgetauscht oder individuell angepasst werden.",
+      "s": 2
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,401 @@
+﻿Art;Tag;Uhrzeit;Land;Ort;Region;Gerät;Sprache des Browsers;Gekommen über;Geblieben (Sekunden);Seiten;Weg durch die Website;Fenster «Reservation» geöffnet;Tisch angefragt;«Direkt buchen» gewählt;Bankettanfrage geöffnet;Anfrage abgeschickt;Telefonnummer gewählt;Mail-Adresse angeklickt;Weiter zum Schäfli;Route zum Hafen geöffnet
+Beispiel;20.10.2026;20:34;Deutschland;Konstanz;BW;Tablet;Deutsch;Direkt aufgerufen;29;1;Startseite (29 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;18:43;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;171;2;Startseite (54 s) > Ihr Abend (117 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;18:42;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;354;3;Startseite (24 s) > Die Karte (186 s) > Banketts & Gruppen (144 s);nein;nein;nein;ja;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;18:21;Schweiz;Zürich;ZH;Handy;Deutsch;Facebook;256;3;Startseite (70 s) > Weinkarte (104 s) > Banketts & Gruppen (82 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;18:05;Schweiz;St. Gallen;SG;Rechner;Deutsch;Guide Michelin;335;2;Banketts & Gruppen (161 s) > Die Karte (174 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;17:53;Schweiz;Romanshorn;TG;Rechner;Deutsch;Taverne zum Schäfli;62;2;Startseite (39 s) > Gutschein (23 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;17:19;Österreich;Bregenz;8;Handy;Deutsch;Google;447;4;Startseite (43 s) > Gutschein (53 s) > Events & Termine (97 s) > Weinkarte (254 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;17:12;Schweiz;Winterthur;ZH;Handy;Deutsch;Direkt aufgerufen;293;2;Über uns (142 s) > Die Karte (151 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;17:05;Deutschland;Konstanz;BW;Handy;Deutsch;Gemeinde Bottighofen;35;1;Startseite (35 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;16:43;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Direkt aufgerufen;212;2;Startseite (68 s) > Die Karte (144 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;16:25;Schweiz;Münsterlingen;TG;Tablet;Deutsch;Google;325;3;Banketts & Gruppen (67 s) > Gutschein (103 s) > Die Karte (155 s);nein;nein;nein;ja;ja;nein;nein;nein;nein
+Beispiel;20.10.2026;16:12;Schweiz;Winterthur;ZH;Handy;Deutsch;Direkt aufgerufen;392;4;Startseite (126 s) > Kontakt & Öffnungszeiten (17 s) > Banketts & Gruppen (48 s) > Weinkarte (201 s);nein;nein;nein;nein;nein;nein;ja;nein;nein
+Beispiel;20.10.2026;14:44;Schweiz;Schaffhausen;SH;Handy;Deutsch;Direkt aufgerufen;320;3;Weinkarte (97 s) > Ihr Abend (85 s) > Über uns (138 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;20.10.2026;14:21;Deutschland;Konstanz;BW;Handy;Deutsch;Google;241;2;Startseite (142 s) > Events & Termine (99 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;14:08;Schweiz;Winterthur;ZH;Handy;Deutsch;Bing;36;1;Startseite (36 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;13:56;Schweiz;St. Gallen;SG;Handy;Deutsch;Google;204;2;Startseite (92 s) > Die Karte (112 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;13:51;Schweiz;Romanshorn;TG;Rechner;Deutsch;Direkt aufgerufen;146;1;Startseite (146 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;13:31;Deutschland;Konstanz;BW;Rechner;Deutsch;Tripadvisor;332;5;Events & Termine (94 s) > Gutschein (19 s) > Über uns (80 s) > Ihr Abend (103 s) > Über uns (36 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;20.10.2026;13:30;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;GaultMillau;128;2;Startseite (77 s) > Impressum (51 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;09:48;Schweiz;Schaffhausen;SH;Handy;Deutsch;Thurgau Bodensee Tourismus;334;4;Startseite (64 s) > Gutschein (69 s) > Ihr Abend (52 s) > Die Karte (149 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;20.10.2026;09:18;Schweiz;Romanshorn;TG;Rechner;Deutsch;Facebook;72;2;Startseite (43 s) > Ihr Abend (29 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;22:08;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;53;1;Startseite (53 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;21:26;Schweiz;Schaffhausen;SH;Rechner;Deutsch;Gemeinde Bottighofen;232;2;Banketts & Gruppen (25 s) > Weinkarte (207 s);nein;nein;nein;ja;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;21:03;Schweiz;Zürich;ZH;Tablet;Deutsch;Google;238;3;Startseite (101 s) > Banketts & Gruppen (100 s) > Events & Termine (37 s);nein;nein;nein;ja;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;20:00;Schweiz;St. Gallen;SG;Handy;Deutsch;Google;304;3;Startseite (40 s) > Weinkarte (165 s) > Events & Termine (99 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;19:34;Schweiz;Zürich;ZH;Handy;Deutsch;Tripadvisor;485;6;Startseite (88 s) > Ihr Abend (25 s) > Die Karte (201 s) > Events & Termine (70 s) > Gutschein (64 s) > Kontakt & Öffnungszeiten (37 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;19:32;Schweiz;Arbon;TG;Handy;Deutsch;Google;152;3;Startseite (17 s) > Weinkarte (89 s) > Über uns (46 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;18:28;Deutschland;Konstanz;BW;Handy;Deutsch;Google;258;4;Banketts & Gruppen (92 s) > Kontakt & Öffnungszeiten (105 s) > Gutschein (32 s) > Kontakt & Öffnungszeiten (29 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;18:00;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Google;1013;8;Startseite (139 s) > Banketts & Gruppen (20 s) > Weinkarte (133 s) > Banketts & Gruppen (114 s) > Ihr Abend (141 s) > Kontakt & Öffnungszeiten (95 s) > Weinkarte (114 s) > Die Karte (257 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;16:57;Schweiz;St. Gallen;SG;Handy;Deutsch;Google;326;3;Startseite (143 s) > Events & Termine (67 s) > Kontakt & Öffnungszeiten (116 s);nein;nein;nein;nein;nein;nein;nein;nein;ja
+Beispiel;19.10.2026;16:56;Deutschland;München;BY;Tablet;Deutsch;Taverne zum Schäfli;32;1;Startseite (32 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;16:55;Deutschland;Konstanz;BW;Handy;Deutsch;Tripadvisor;106;2;Startseite (90 s) > Kontakt & Öffnungszeiten (16 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;16:31;Schweiz;Kreuzlingen;TG;Handy;Deutsch;GaultMillau;83;1;Events & Termine (83 s);nein;nein;nein;nein;nein;ja;nein;nein;nein
+Beispiel;19.10.2026;16:06;Schweiz;St. Gallen;SG;Handy;Deutsch;Facebook;242;4;Startseite (124 s) > Banketts & Gruppen (32 s) > Events & Termine (36 s) > Kontakt & Öffnungszeiten (50 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;15:31;Schweiz;Schaffhausen;SH;Handy;Deutsch;Direkt aufgerufen;276;3;Startseite (50 s) > Weinkarte (198 s) > Banketts & Gruppen (28 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;15:26;Deutschland;Konstanz;BW;Handy;Deutsch;Direkt aufgerufen;634;8;Startseite (86 s) > Über uns (99 s) > Ihr Abend (68 s) > Events & Termine (29 s) > Ihr Abend (41 s) > Die Karte (165 s) > Events & Termine (49 s) > Die Karte (97 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;14:11;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Direkt aufgerufen;137;3;Startseite (49 s) > Banketts & Gruppen (44 s) > Ihr Abend (44 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;13:38;Schweiz;Zürich;ZH;Rechner;Deutsch;Instagram;35;1;Startseite (35 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;12:55;Schweiz;Weinfelden;TG;Handy;Deutsch;Google;91;2;Events & Termine (71 s) > Banketts & Gruppen (20 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;12:55;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Tripadvisor;159;1;Startseite (159 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;12:42;Schweiz;Frauenfeld;TG;Handy;Deutsch;Direkt aufgerufen;210;3;Startseite (72 s) > Events & Termine (16 s) > Weinkarte (122 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;12:39;Deutschland;Stuttgart;BW;Handy;Deutsch;Thurgau Bodensee Tourismus;418;4;Startseite (74 s) > Die Karte (120 s) > Weinkarte (170 s) > Events & Termine (54 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;12:29;Schweiz;Bottighofen;TG;Handy;Deutsch;Google;83;1;Startseite (83 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;12:28;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;48;1;Startseite (48 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;12:09;Deutschland;Stuttgart;BW;Handy;Deutsch;Instagram;309;3;Startseite (47 s) > Weinkarte (181 s) > Banketts & Gruppen (81 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;11:52;Schweiz;Weinfelden;TG;Handy;Deutsch;Google;322;3;Über uns (42 s) > Ihr Abend (51 s) > Weinkarte (229 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;11:08;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;65;1;Startseite (65 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;19.10.2026;10:53;Schweiz;Winterthur;ZH;Handy;Deutsch;Direkt aufgerufen;454;5;Startseite (27 s) > Weinkarte (97 s) > Kontakt & Öffnungszeiten (45 s) > Über uns (162 s) > Weinkarte (123 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;19.10.2026;09:11;Schweiz;Frauenfeld;TG;Rechner;Deutsch;Direkt aufgerufen;667;8;Startseite (51 s) > Events & Termine (104 s) > Banketts & Gruppen (129 s) > Die Karte (62 s) > Ihr Abend (53 s) > Weinkarte (112 s) > Ihr Abend (20 s) > Weinkarte (136 s);nein;nein;nein;ja;ja;nein;nein;nein;nein
+Beispiel;19.10.2026;07:29;Schweiz;St. Gallen;SG;Rechner;Deutsch;Direkt aufgerufen;201;2;Startseite (69 s) > Die Karte (132 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;20:43;Österreich;Wien;9;Rechner;Deutsch;Google;222;3;Startseite (44 s) > Die Karte (144 s) > Ihr Abend (34 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;19:25;Schweiz;Arbon;TG;Handy;Deutsch;Direkt aufgerufen;60;2;Kontakt & Öffnungszeiten (36 s) > Gutschein (24 s);nein;nein;nein;nein;ja;nein;nein;nein;nein
+Beispiel;18.10.2026;19:03;Schweiz;Zürich;ZH;Rechner;Deutsch;Instagram;238;2;Startseite (65 s) > Weinkarte (173 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;18:19;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;152;2;Banketts & Gruppen (49 s) > Ihr Abend (103 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;17:56;Schweiz;Frauenfeld;TG;Handy;Deutsch;Direkt aufgerufen;244;2;Startseite (54 s) > Die Karte (190 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;17:26;Schweiz;Amriswil;TG;Handy;Deutsch;Google;211;3;Startseite (98 s) > Events & Termine (96 s) > Kontakt & Öffnungszeiten (17 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;16:56;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;473;3;Weinkarte (162 s) > Die Karte (106 s) > Weinkarte (205 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;16:49;Grossbritannien;London;ENG;Handy;Englisch;Tripadvisor;448;3;Startseite (166 s) > Die Karte (142 s) > Ihr Abend (140 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;16:38;Schweiz;Amriswil;TG;Handy;Deutsch;Google;375;3;Startseite (94 s) > Weinkarte (184 s) > Gutschein (97 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;16:22;Schweiz;Bottighofen;TG;Handy;Deutsch;Google;174;3;Startseite (24 s) > Banketts & Gruppen (22 s) > Die Karte (128 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;16:19;Schweiz;Zürich;ZH;Handy;Deutsch;Google;338;3;Startseite (165 s) > Banketts & Gruppen (30 s) > Die Karte (143 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;15:56;Schweiz;Amriswil;TG;Handy;Deutsch;Direkt aufgerufen;82;1;Banketts & Gruppen (82 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;15:56;Schweiz;St. Gallen;SG;Handy;Deutsch;Direkt aufgerufen;193;3;Startseite (103 s) > Events & Termine (27 s) > Weinkarte (63 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;15:30;Schweiz;Amriswil;TG;Handy;Deutsch;Direkt aufgerufen;454;5;Startseite (107 s) > Kontakt & Öffnungszeiten (31 s) > Die Karte (149 s) > Gutschein (69 s) > Die Karte (98 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;15:02;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;30;1;Startseite (30 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;14:53;Schweiz;Bottighofen;TG;Tablet;Deutsch;Google;217;2;Startseite (69 s) > Die Karte (148 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;14:41;Schweiz;Bottighofen;TG;Handy;Deutsch;Google;192;2;Events & Termine (63 s) > Weinkarte (129 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;14:14;Deutschland;Konstanz;BW;Handy;Deutsch;Google;358;4;Startseite (65 s) > Weinkarte (161 s) > Die Karte (62 s) > Events & Termine (70 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;13:48;Schweiz;Amriswil;TG;Handy;Deutsch;Direkt aufgerufen;526;4;Über uns (67 s) > Weinkarte (233 s) > Banketts & Gruppen (61 s) > Weinkarte (165 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;11:53;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Direkt aufgerufen;148;2;Startseite (62 s) > Kontakt & Öffnungszeiten (86 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;11:49;Deutschland;Konstanz;BW;Rechner;Deutsch;Google;99;1;Startseite (99 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;11:10;Schweiz;Frauenfeld;TG;Handy;Deutsch;GaultMillau;101;1;Startseite (101 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;10:14;Deutschland;Friedrichshafen;BW;Handy;Deutsch;Direkt aufgerufen;34;1;Banketts & Gruppen (34 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;18.10.2026;10:04;Schweiz;Zürich;ZH;Handy;Deutsch;Direkt aufgerufen;437;4;Startseite (97 s) > Weinkarte (127 s) > Kontakt & Öffnungszeiten (51 s) > Die Karte (162 s);ja;nein;nein;nein;nein;nein;nein;nein;ja
+Beispiel;18.10.2026;09:46;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Tripadvisor;285;3;Startseite (166 s) > Banketts & Gruppen (95 s) > Kontakt & Öffnungszeiten (24 s);nein;nein;nein;ja;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;22:03;Schweiz;Zürich;ZH;Tablet;Deutsch;Google;337;3;Startseite (66 s) > Weinkarte (167 s) > Events & Termine (104 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;19:58;Schweiz;Winterthur;ZH;Rechner;Deutsch;Tripadvisor;72;1;Über uns (72 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;19:08;Österreich;Wien;9;Handy;Deutsch;Thurgau Bodensee Tourismus;278;4;Startseite (42 s) > Events & Termine (29 s) > Kontakt & Öffnungszeiten (105 s) > Weinkarte (102 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;18:50;Schweiz;Winterthur;ZH;Handy;Deutsch;Google;45;1;Startseite (45 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;18:39;Schweiz;Winterthur;ZH;Handy;Deutsch;Direkt aufgerufen;42;1;Über uns (42 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;17:52;Schweiz;Zürich;ZH;Handy;Deutsch;Tripadvisor;220;1;Die Karte (220 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;17:44;Schweiz;St. Gallen;SG;Handy;Deutsch;Direkt aufgerufen;96;1;Startseite (96 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;17:38;Schweiz;Schaffhausen;SH;Rechner;Deutsch;GaultMillau;179;2;Kontakt & Öffnungszeiten (58 s) > Die Karte (121 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;17:19;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;355;4;Startseite (37 s) > Gutschein (106 s) > Über uns (97 s) > Events & Termine (115 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;16:59;Schweiz;Bern;BE;Handy;Deutsch;Google;39;1;Startseite (39 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;16:48;Schweiz;Zürich;ZH;Handy;Deutsch;ChatGPT;316;3;Banketts & Gruppen (127 s) > Über uns (45 s) > Events & Termine (144 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;16:40;Schweiz;Romanshorn;TG;Rechner;Deutsch;Google;454;5;Startseite (35 s) > Weinkarte (122 s) > Ihr Abend (79 s) > Kontakt & Öffnungszeiten (21 s) > Weinkarte (197 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;16:35;Schweiz;St. Gallen;SG;Handy;Deutsch;Direkt aufgerufen;212;3;Startseite (68 s) > Events & Termine (95 s) > Gutschein (49 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;16:16;Schweiz;St. Gallen;SG;Rechner;Deutsch;Google;529;5;Events & Termine (50 s) > Über uns (49 s) > Die Karte (170 s) > Über uns (23 s) > Die Karte (237 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;16:13;Deutschland;München;BY;Handy;Deutsch;Google;72;1;Startseite (72 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;16:02;Deutschland;München;BY;Handy;Deutsch;Direkt aufgerufen;134;1;Startseite (134 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;15:37;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;208;2;Startseite (35 s) > Weinkarte (173 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;15:23;Schweiz;Kreuzlingen;TG;Tablet;Deutsch;Google;89;1;Startseite (89 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;15:15;Schweiz;Zürich;ZH;Handy;Deutsch;Google;395;3;Startseite (26 s) > Banketts & Gruppen (136 s) > Die Karte (233 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;15:11;Schweiz;Schaffhausen;SH;Rechner;Deutsch;Google;403;4;Startseite (110 s) > Ihr Abend (143 s) > Banketts & Gruppen (69 s) > Kontakt & Öffnungszeiten (81 s);nein;nein;nein;nein;nein;ja;nein;nein;nein
+Beispiel;17.10.2026;15:03;Schweiz;Schaffhausen;SH;Handy;Deutsch;Taverne zum Schäfli;219;2;Startseite (33 s) > Weinkarte (186 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;15:00;Schweiz;Zürich;ZH;Handy;Deutsch;Google;37;2;Banketts & Gruppen (12 s) > Kontakt & Öffnungszeiten (25 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;14:56;Deutschland;Konstanz;BW;Rechner;Deutsch;Instagram;118;2;Banketts & Gruppen (34 s) > Events & Termine (84 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;14:46;Deutschland;Konstanz;BW;Handy;Deutsch;Guide Michelin;188;2;Startseite (121 s) > Gutschein (67 s);nein;nein;nein;nein;ja;nein;nein;nein;nein
+Beispiel;17.10.2026;14:15;Deutschland;Konstanz;BW;Rechner;Deutsch;Direkt aufgerufen;46;1;Startseite (46 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;14:09;Deutschland;Stuttgart;BW;Handy;Deutsch;Google;86;1;Über uns (86 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;14:06;Schweiz;Schaffhausen;SH;Tablet;Deutsch;Google;200;3;Startseite (34 s) > Banketts & Gruppen (104 s) > Über uns (62 s);nein;nein;nein;ja;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;13:59;Schweiz;Winterthur;ZH;Rechner;Deutsch;GaultMillau;451;4;Weinkarte (134 s) > Events & Termine (138 s) > Ihr Abend (66 s) > Über uns (113 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;17.10.2026;13:48;Schweiz;Frauenfeld;TG;Rechner;Deutsch;Direkt aufgerufen;191;3;Startseite (36 s) > Über uns (94 s) > Ihr Abend (61 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;13:35;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;112;1;Startseite (112 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;13:34;Schweiz;Zürich;ZH;Handy;Deutsch;Direkt aufgerufen;204;3;Startseite (57 s) > Ihr Abend (39 s) > Über uns (108 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;13:31;Österreich;Bregenz;8;Rechner;Deutsch;Direkt aufgerufen;476;4;Startseite (143 s) > Weinkarte (215 s) > Events & Termine (95 s) > Kontakt & Öffnungszeiten (23 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;13:25;Schweiz;Bottighofen;TG;Rechner;Deutsch;Direkt aufgerufen;143;2;Startseite (29 s) > Weinkarte (114 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;12:58;Schweiz;Zürich;ZH;Rechner;Deutsch;Direkt aufgerufen;39;1;Startseite (39 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;12:31;Deutschland;Konstanz;BW;Handy;Deutsch;Taverne zum Schäfli;172;2;Startseite (120 s) > Events & Termine (52 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;12:21;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;246;3;Startseite (38 s) > Events & Termine (47 s) > Banketts & Gruppen (161 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;12:10;Deutschland;Konstanz;BW;Rechner;Deutsch;Google;322;5;Startseite (87 s) > Gutschein (42 s) > Ihr Abend (101 s) > Kontakt & Öffnungszeiten (21 s) > Gutschein (71 s);nein;nein;nein;nein;ja;nein;nein;nein;nein
+Beispiel;17.10.2026;12:01;Italien;Milano;25;Handy;Italienisch;Google;90;2;Startseite (43 s) > Gutschein (47 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;11:54;Schweiz;Zürich;ZH;Handy;Deutsch;GaultMillau;155;2;Startseite (118 s) > Kontakt & Öffnungszeiten (37 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;10:58;Schweiz;Schaffhausen;SH;Handy;Deutsch;Google;320;4;Startseite (97 s) > Weinkarte (119 s) > Events & Termine (16 s) > Weinkarte (88 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;10:51;Schweiz;Romanshorn;TG;Handy;Deutsch;Direkt aufgerufen;89;1;Startseite (89 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;17.10.2026;10:34;Schweiz;Kreuzlingen;TG;Tablet;Deutsch;Direkt aufgerufen;228;3;Startseite (134 s) > Banketts & Gruppen (28 s) > Weinkarte (66 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;21:23;Schweiz;Zürich;ZH;Handy;Deutsch;Instagram;279;2;Startseite (163 s) > Weinkarte (116 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;21:14;Schweiz;Arbon;TG;Handy;Deutsch;Direkt aufgerufen;139;3;Startseite (76 s) > Banketts & Gruppen (29 s) > Kontakt & Öffnungszeiten (34 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;21:03;Schweiz;St. Gallen;SG;Rechner;Deutsch;Google;493;5;Startseite (76 s) > Über uns (8 s) > Gutschein (120 s) > Ihr Abend (126 s) > Weinkarte (163 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;20:46;Schweiz;Winterthur;ZH;Handy;Deutsch;Google;283;2;Startseite (56 s) > Weinkarte (227 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;19:55;Schweiz;Romanshorn;TG;Rechner;Deutsch;Google;151;2;Startseite (66 s) > Über uns (85 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;19:53;Schweiz;Münsterlingen;TG;Handy;Deutsch;Direkt aufgerufen;200;3;Die Karte (120 s) > Events & Termine (26 s) > Banketts & Gruppen (54 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;19:43;Schweiz;Arbon;TG;Handy;Deutsch;Google;214;2;Startseite (65 s) > Die Karte (149 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;19:26;Schweiz;St. Gallen;SG;Handy;Deutsch;Direkt aufgerufen;67;2;Startseite (55 s) > Banketts & Gruppen (12 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;19:16;Schweiz;Bottighofen;TG;Handy;Deutsch;Thurgau Bodensee Tourismus;406;3;Startseite (145 s) > Gutschein (127 s) > Kontakt & Öffnungszeiten (134 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;19:14;Schweiz;Basel;BS;Rechner;Deutsch;Google;286;4;Startseite (67 s) > Kontakt & Öffnungszeiten (74 s) > Ihr Abend (22 s) > Weinkarte (123 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;19:06;Österreich;Bregenz;8;Handy;Deutsch;Direkt aufgerufen;180;2;Startseite (77 s) > Ihr Abend (103 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;18:44;Schweiz;St. Gallen;SG;Handy;Deutsch;Direkt aufgerufen;82;2;Startseite (53 s) > Über uns (29 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;18:42;Schweiz;Zürich;ZH;Handy;Deutsch;Instagram;85;1;Startseite (85 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;18:12;Schweiz;Winterthur;ZH;Tablet;Deutsch;Google;69;2;Startseite (41 s) > Kontakt & Öffnungszeiten (28 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;17:51;Schweiz;Zürich;ZH;Handy;Deutsch;Direkt aufgerufen;438;4;Startseite (137 s) > Banketts & Gruppen (80 s) > Die Karte (122 s) > Ihr Abend (99 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;17:30;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Direkt aufgerufen;340;4;Startseite (98 s) > Die Karte (93 s) > Weinkarte (85 s) > Die Karte (64 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;16:59;Schweiz;Zürich;ZH;Handy;Deutsch;Google;31;1;Startseite (31 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;16:46;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Direkt aufgerufen;152;1;Über uns (152 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;15:48;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;209;3;Startseite (33 s) > Weinkarte (139 s) > Kontakt & Öffnungszeiten (37 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;15:40;Deutschland;Konstanz;BW;Handy;Deutsch;Direkt aufgerufen;312;4;Die Karte (123 s) > Über uns (91 s) > Gutschein (64 s) > Ihr Abend (34 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;15:27;Schweiz;Münsterlingen;TG;Handy;Deutsch;Direkt aufgerufen;275;3;Startseite (60 s) > Die Karte (159 s) > Events & Termine (56 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;15:26;Schweiz;Zürich;ZH;Handy;Deutsch;Google;405;2;Weinkarte (234 s) > Die Karte (171 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;15:16;Schweiz;Zürich;ZH;Rechner;Deutsch;Google;348;5;Startseite (81 s) > Events & Termine (30 s) > Ihr Abend (51 s) > Gutschein (19 s) > Die Karte (167 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;14:54;Schweiz;Winterthur;ZH;Handy;Deutsch;Google;421;3;Startseite (106 s) > Weinkarte (135 s) > Die Karte (180 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;14:39;Schweiz;Zürich;ZH;Rechner;Deutsch;Bing;98;1;Startseite (98 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;14:31;Schweiz;Kreuzlingen;TG;Handy;Deutsch;GaultMillau;88;1;Events & Termine (88 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;14:27;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;73;2;Events & Termine (53 s) > Ihr Abend (20 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;14:07;Schweiz;Bern;BE;Rechner;Deutsch;Direkt aufgerufen;223;2;Startseite (113 s) > Weinkarte (110 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;13:49;Schweiz;Arbon;TG;Handy;Deutsch;Google;569;4;Startseite (10 s) > Die Karte (265 s) > Über uns (135 s) > Die Karte (159 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;13:31;Schweiz;Zürich;ZH;Rechner;Deutsch;Google;393;2;Weinkarte (230 s) > Die Karte (163 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;13:29;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;123;1;Startseite (123 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;13:23;Österreich;Bregenz;8;Handy;Deutsch;Direkt aufgerufen;168;2;Die Karte (144 s) > Impressum (24 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;13:17;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;228;2;Startseite (55 s) > Weinkarte (173 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;13:10;Schweiz;Zürich;ZH;Rechner;Deutsch;Tripadvisor;245;4;Startseite (45 s) > Kontakt & Öffnungszeiten (125 s) > Events & Termine (51 s) > Gutschein (24 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;12:30;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Bing;90;1;Startseite (90 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;12:17;Schweiz;Weinfelden;TG;Handy;Deutsch;Tripadvisor;294;3;Events & Termine (150 s) > Gutschein (65 s) > Weinkarte (79 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;12:12;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;203;2;Kontakt & Öffnungszeiten (103 s) > Events & Termine (100 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;12:07;Schweiz;Weinfelden;TG;Handy;Deutsch;Google;139;1;Die Karte (139 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;11:52;Schweiz;Amriswil;TG;Handy;Deutsch;Instagram;556;5;Kontakt & Öffnungszeiten (152 s) > Weinkarte (142 s) > Gutschein (41 s) > Kontakt & Öffnungszeiten (51 s) > Die Karte (170 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;10:26;Schweiz;Bern;BE;Handy;Deutsch;Google;267;3;Startseite (61 s) > Die Karte (165 s) > Events & Termine (41 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;10:19;Schweiz;Schaffhausen;SH;Handy;Deutsch;Direkt aufgerufen;78;2;Startseite (38 s) > Events & Termine (40 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;10:19;Schweiz;Münsterlingen;TG;Handy;Deutsch;Direkt aufgerufen;237;2;Startseite (133 s) > Events & Termine (104 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;09:37;Schweiz;Kreuzlingen;TG;Handy;Deutsch;ChatGPT;106;1;Startseite (106 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;16.10.2026;08:56;Schweiz;Weinfelden;TG;Handy;Deutsch;Direkt aufgerufen;33;1;Startseite (33 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;22:23;Schweiz;Romanshorn;TG;Handy;Deutsch;Direkt aufgerufen;68;1;Startseite (68 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;21:02;Deutschland;Konstanz;BW;Rechner;Deutsch;Direkt aufgerufen;767;8;Startseite (51 s) > Ihr Abend (68 s) > Banketts & Gruppen (73 s) > Ihr Abend (19 s) > Die Karte (177 s) > Events & Termine (131 s) > Die Karte (205 s) > Banketts & Gruppen (43 s);ja;nein;nein;ja;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;20:39;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;148;1;Über uns (148 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;19:47;Schweiz;Arbon;TG;Rechner;Deutsch;Google;142;2;Banketts & Gruppen (120 s) > Über uns (22 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;15.10.2026;19:08;Schweiz;St. Gallen;SG;Handy;Deutsch;Direkt aufgerufen;118;2;Banketts & Gruppen (67 s) > Events & Termine (51 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;18:03;Schweiz;Winterthur;ZH;Rechner;Deutsch;Instagram;112;1;Weinkarte (112 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;17:50;Schweiz;Lausanne;VD;Handy;Französisch;Direkt aufgerufen;202;3;Startseite (85 s) > Ihr Abend (26 s) > Weinkarte (91 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;17:48;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;199;3;Startseite (41 s) > Banketts & Gruppen (86 s) > Ihr Abend (72 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;16:58;Deutschland;Stuttgart;BW;Handy;Deutsch;Google;24;1;Startseite (24 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;16:42;Schweiz;Zürich;ZH;Handy;Deutsch;Google;26;1;Banketts & Gruppen (26 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;16:28;Schweiz;Weinfelden;TG;Rechner;Deutsch;Thurgau Bodensee Tourismus;89;2;Startseite (28 s) > Kontakt & Öffnungszeiten (61 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;16:12;Schweiz;Bottighofen;TG;Rechner;Deutsch;Tripadvisor;82;1;Startseite (82 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;16:11;Schweiz;Winterthur;ZH;Rechner;Deutsch;Google;121;1;Events & Termine (121 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;16:07;Schweiz;St. Gallen;SG;Tablet;Deutsch;Google;21;1;Startseite (21 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;15:52;Schweiz;Arbon;TG;Handy;Deutsch;Instagram;476;6;Startseite (64 s) > Die Karte (102 s) > Banketts & Gruppen (30 s) > Ihr Abend (77 s) > Events & Termine (123 s) > Weinkarte (80 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;15:48;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;44;1;Startseite (44 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;14:50;Schweiz;Amriswil;TG;Handy;Deutsch;Tripadvisor;229;2;Startseite (77 s) > Die Karte (152 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;14:46;Schweiz;Weinfelden;TG;Rechner;Deutsch;Google;73;1;Startseite (73 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;14:32;Deutschland;München;BY;Handy;Deutsch;Google;158;3;Startseite (49 s) > Kontakt & Öffnungszeiten (73 s) > Gutschein (36 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;14:30;Schweiz;Münsterlingen;TG;Rechner;Deutsch;Google;249;3;Startseite (26 s) > Ihr Abend (64 s) > Die Karte (159 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;14:16;Schweiz;Zürich;ZH;Tablet;Deutsch;Google;288;3;Startseite (79 s) > Weinkarte (143 s) > Gutschein (66 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;13:13;Deutschland;Konstanz;BW;Tablet;Deutsch;Instagram;389;3;Startseite (53 s) > Events & Termine (68 s) > Weinkarte (268 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;12:33;Schweiz;Zürich;ZH;Handy;Deutsch;ChatGPT;271;2;Die Karte (202 s) > Events & Termine (69 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;12:30;Schweiz;Zürich;ZH;Handy;Deutsch;Google;398;6;Über uns (23 s) > Events & Termine (117 s) > Weinkarte (95 s) > Über uns (111 s) > Ihr Abend (23 s) > Kontakt & Öffnungszeiten (29 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;15.10.2026;12:29;Schweiz;Weinfelden;TG;Handy;Deutsch;Gemeinde Bottighofen;111;2;Startseite (65 s) > Kontakt & Öffnungszeiten (46 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;11:14;Schweiz;Frauenfeld;TG;Handy;Deutsch;Direkt aufgerufen;135;1;Events & Termine (135 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;11:14;Schweiz;St. Gallen;SG;Handy;Deutsch;Tripadvisor;141;2;Startseite (39 s) > Ihr Abend (102 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;10:13;Schweiz;Amriswil;TG;Handy;Deutsch;Guide Michelin;215;2;Banketts & Gruppen (53 s) > Weinkarte (162 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;09:55;Österreich;Bregenz;8;Handy;Deutsch;Facebook;276;1;Weinkarte (276 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;15.10.2026;08:20;Schweiz;Bottighofen;TG;Handy;Deutsch;Google;291;3;Startseite (78 s) > Events & Termine (81 s) > Kontakt & Öffnungszeiten (132 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;22:01;Schweiz;Amriswil;TG;Rechner;Deutsch;Direkt aufgerufen;148;2;Startseite (127 s) > Banketts & Gruppen (21 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;21:37;Schweiz;Münsterlingen;TG;Handy;Deutsch;Google;185;2;Kontakt & Öffnungszeiten (39 s) > Weinkarte (146 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;18:39;Schweiz;Münsterlingen;TG;Tablet;Deutsch;Google;32;1;Startseite (32 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;17:38;Schweiz;Amriswil;TG;Rechner;Deutsch;Taverne zum Schäfli;498;5;Kontakt & Öffnungszeiten (82 s) > Gutschein (66 s) > Banketts & Gruppen (138 s) > Über uns (68 s) > Die Karte (144 s);nein;nein;nein;ja;ja;ja;nein;ja;nein
+Beispiel;14.10.2026;17:02;Schweiz;Schaffhausen;SH;Tablet;Deutsch;Direkt aufgerufen;253;3;Events & Termine (150 s) > Über uns (82 s) > Kontakt & Öffnungszeiten (21 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;16:33;Deutschland;Konstanz;BW;Rechner;Deutsch;Google;157;2;Startseite (94 s) > Events & Termine (63 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;16:21;Deutschland;Konstanz;BW;Rechner;Deutsch;Google;618;7;Die Karte (102 s) > Events & Termine (154 s) > Weinkarte (86 s) > Events & Termine (75 s) > Banketts & Gruppen (82 s) > Kontakt & Öffnungszeiten (51 s) > Die Karte (68 s);nein;nein;nein;nein;nein;nein;ja;nein;nein
+Beispiel;14.10.2026;16:11;Schweiz;Weinfelden;TG;Rechner;Deutsch;Google;426;3;Startseite (149 s) > Banketts & Gruppen (112 s) > Die Karte (165 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;16:06;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;408;5;Startseite (33 s) > Die Karte (143 s) > Kontakt & Öffnungszeiten (96 s) > Gutschein (111 s) > Ihr Abend (25 s);nein;nein;nein;nein;nein;nein;nein;nein;ja
+Beispiel;14.10.2026;16:04;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;232;3;Startseite (83 s) > Events & Termine (19 s) > Die Karte (130 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;15:55;Deutschland;Konstanz;BW;Handy;Deutsch;Google;38;1;Startseite (38 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;14:39;Frankreich;Paris;IDF;Rechner;Französisch;Instagram;295;2;Kontakt & Öffnungszeiten (87 s) > Die Karte (208 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;14:17;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;86;1;Banketts & Gruppen (86 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;14:08;Deutschland;Konstanz;BW;Handy;Deutsch;Google;62;1;Events & Termine (62 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;14:02;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;260;3;Startseite (59 s) > Die Karte (176 s) > Events & Termine (25 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;12:42;Deutschland;Konstanz;BW;Rechner;Deutsch;Direkt aufgerufen;471;5;Startseite (25 s) > Ihr Abend (67 s) > Events & Termine (85 s) > Banketts & Gruppen (41 s) > Weinkarte (253 s);ja;ja;nein;nein;nein;ja;nein;nein;nein
+Beispiel;14.10.2026;11:47;Schweiz;Schaffhausen;SH;Rechner;Deutsch;Facebook;221;2;Startseite (62 s) > Banketts & Gruppen (159 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;11:37;Schweiz;Frauenfeld;TG;Handy;Deutsch;Gemeinde Bottighofen;91;1;Startseite (91 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;11:17;Schweiz;Weinfelden;TG;Rechner;Deutsch;Google;25;1;Banketts & Gruppen (25 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;10:48;Deutschland;Konstanz;BW;Handy;Deutsch;Taverne zum Schäfli;24;1;Startseite (24 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;10:43;Deutschland;Konstanz;BW;Handy;Deutsch;Direkt aufgerufen;433;2;Weinkarte (236 s) > Die Karte (197 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;10:40;Schweiz;Zürich;ZH;Rechner;Deutsch;Thurgau Bodensee Tourismus;122;1;Startseite (122 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;10:13;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;176;1;Die Karte (176 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;14.10.2026;09:20;Schweiz;Kreuzlingen;TG;Tablet;Deutsch;Google;960;8;Startseite (135 s) > Events & Termine (63 s) > Weinkarte (170 s) > Ihr Abend (148 s) > Weinkarte (155 s) > Kontakt & Öffnungszeiten (14 s) > Events & Termine (62 s) > Die Karte (213 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;21:05;Deutschland;Lindau;BY;Handy;Deutsch;Instagram;719;5;Startseite (101 s) > Die Karte (215 s) > Weinkarte (175 s) > Kontakt & Öffnungszeiten (43 s) > Die Karte (185 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;20:57;Schweiz;Winterthur;ZH;Handy;Deutsch;Direkt aufgerufen;634;4;Weinkarte (273 s) > Ihr Abend (39 s) > Die Karte (177 s) > Kontakt & Öffnungszeiten (145 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;18:34;Schweiz;Zürich;ZH;Handy;Deutsch;Google;634;7;Startseite (78 s) > Kontakt & Öffnungszeiten (79 s) > Die Karte (196 s) > Über uns (27 s) > Banketts & Gruppen (38 s) > Gutschein (31 s) > Die Karte (185 s);ja;nein;ja;nein;nein;nein;ja;ja;nein
+Beispiel;13.10.2026;18:29;Deutschland;Friedrichshafen;BW;Rechner;Deutsch;Google;458;4;Über uns (64 s) > Gutschein (136 s) > Über uns (90 s) > Weinkarte (168 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;17:47;Schweiz;Schaffhausen;SH;Handy;Deutsch;Direkt aufgerufen;17;1;Kontakt & Öffnungszeiten (17 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;17:28;Österreich;Wien;9;Rechner;Deutsch;Google;141;3;Über uns (46 s) > Gutschein (45 s) > Banketts & Gruppen (50 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;17:25;Schweiz;Frauenfeld;TG;Rechner;Deutsch;Google;61;1;Startseite (61 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;17:25;Schweiz;Amriswil;TG;Handy;Deutsch;Guide Michelin;125;2;Startseite (49 s) > Weinkarte (76 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;16:33;Frankreich;Paris;IDF;Handy;Französisch;Instagram;602;3;Die Karte (178 s) > Weinkarte (269 s) > Die Karte (155 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;16:24;Schweiz;Frauenfeld;TG;Handy;Deutsch;Direkt aufgerufen;840;7;Die Karte (170 s) > Weinkarte (136 s) > Die Karte (193 s) > Ihr Abend (145 s) > Banketts & Gruppen (24 s) > Events & Termine (45 s) > Weinkarte (127 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;16:16;Deutschland;München;BY;Handy;Deutsch;Direkt aufgerufen;7;1;Startseite (7 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;15:51;Schweiz;Lausanne;VD;Handy;Französisch;Instagram;342;2;Über uns (116 s) > Die Karte (226 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;15:09;Schweiz;Romanshorn;TG;Handy;Deutsch;Direkt aufgerufen;139;2;Banketts & Gruppen (46 s) > Events & Termine (93 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;14:21;Deutschland;Stuttgart;BW;Handy;Deutsch;GaultMillau;110;1;Kontakt & Öffnungszeiten (110 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;12:56;Schweiz;Amriswil;TG;Rechner;Deutsch;Direkt aufgerufen;120;2;Startseite (71 s) > Gutschein (49 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;12:39;Deutschland;Friedrichshafen;BW;Rechner;Deutsch;Taverne zum Schäfli;88;2;Startseite (22 s) > Kontakt & Öffnungszeiten (66 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;12:09;Schweiz;Zürich;ZH;Handy;Deutsch;Direkt aufgerufen;551;6;Kontakt & Öffnungszeiten (36 s) > Events & Termine (142 s) > Ihr Abend (96 s) > Events & Termine (115 s) > Banketts & Gruppen (54 s) > Die Karte (108 s);nein;nein;nein;nein;nein;ja;nein;nein;nein
+Beispiel;13.10.2026;11:41;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;GaultMillau;650;5;Banketts & Gruppen (25 s) > Weinkarte (116 s) > Die Karte (193 s) > Über uns (81 s) > Die Karte (235 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;13.10.2026;11:19;Schweiz;Weinfelden;TG;Rechner;Deutsch;Direkt aufgerufen;265;3;Events & Termine (35 s) > Kontakt & Öffnungszeiten (44 s) > Weinkarte (186 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;10:28;Schweiz;Bottighofen;TG;Handy;Deutsch;Guide Michelin;42;1;Startseite (42 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;13.10.2026;09:02;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Facebook;91;1;Startseite (91 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;21:08;Schweiz;Schaffhausen;SH;Rechner;Deutsch;Google;318;3;Startseite (58 s) > Weinkarte (120 s) > Die Karte (140 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;19:03;Schweiz;Zürich;ZH;Rechner;Deutsch;Direkt aufgerufen;479;4;Weinkarte (141 s) > Kontakt & Öffnungszeiten (103 s) > Banketts & Gruppen (78 s) > Die Karte (157 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;18:56;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;73;1;Startseite (73 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;18:44;Schweiz;St. Gallen;SG;Handy;Deutsch;Direkt aufgerufen;90;1;Startseite (90 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;18:29;Schweiz;Münsterlingen;TG;Handy;Deutsch;Google;245;2;Banketts & Gruppen (77 s) > Weinkarte (168 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;17:48;Schweiz;Weinfelden;TG;Rechner;Deutsch;Direkt aufgerufen;113;1;Events & Termine (113 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;17:43;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Google;36;1;Startseite (36 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;17:33;Italien;Milano;25;Handy;Italienisch;Google;49;1;Startseite (49 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;17:03;Schweiz;Frauenfeld;TG;Rechner;Deutsch;Direkt aufgerufen;279;3;Startseite (38 s) > Kontakt & Öffnungszeiten (112 s) > Die Karte (129 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;16:48;Italien;Milano;25;Handy;Italienisch;Instagram;139;2;Startseite (76 s) > Gutschein (63 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;16:36;Deutschland;Friedrichshafen;BW;Rechner;Deutsch;ChatGPT;23;1;Startseite (23 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;16:29;Schweiz;Frauenfeld;TG;Handy;Deutsch;Direkt aufgerufen;418;4;Über uns (86 s) > Banketts & Gruppen (87 s) > Über uns (90 s) > Die Karte (155 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;16:13;Schweiz;Schaffhausen;SH;Rechner;Deutsch;Google;51;1;Startseite (51 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;15:54;Deutschland;Konstanz;BW;Handy;Deutsch;Direkt aufgerufen;219;3;Startseite (50 s) > Banketts & Gruppen (75 s) > Events & Termine (94 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;15:49;Schweiz;Arbon;TG;Handy;Deutsch;Google;57;1;Startseite (57 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;15:28;Schweiz;St. Gallen;SG;Handy;Deutsch;Google;440;5;Startseite (108 s) > Gutschein (83 s) > Weinkarte (111 s) > Über uns (93 s) > Events & Termine (45 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;15:25;Deutschland;Stuttgart;BW;Handy;Deutsch;Gemeinde Bottighofen;194;2;Startseite (111 s) > Events & Termine (83 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;15:16;Schweiz;Arbon;TG;Rechner;Deutsch;Taverne zum Schäfli;519;3;Startseite (84 s) > Die Karte (168 s) > Weinkarte (267 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;14:17;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Google;47;1;Startseite (47 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;13:56;Schweiz;Zürich;ZH;Handy;Deutsch;GaultMillau;103;1;Startseite (103 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;13:48;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Thurgau Bodensee Tourismus;108;2;Banketts & Gruppen (31 s) > Events & Termine (77 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;13:39;Schweiz;St. Gallen;SG;Handy;Deutsch;Taverne zum Schäfli;97;3;Startseite (39 s) > Kontakt & Öffnungszeiten (23 s) > Über uns (35 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;13:14;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;262;2;Die Karte (126 s) > Über uns (136 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;12:58;Schweiz;Arbon;TG;Handy;Deutsch;Facebook;331;3;Startseite (93 s) > Gutschein (35 s) > Die Karte (203 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;12:36;Schweiz;Romanshorn;TG;Handy;Deutsch;Instagram;30;1;Startseite (30 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;11:48;Schweiz;St. Gallen;SG;Handy;Deutsch;Direkt aufgerufen;208;2;Startseite (100 s) > Gutschein (108 s);nein;nein;nein;nein;ja;nein;nein;nein;nein
+Beispiel;12.10.2026;11:00;Schweiz;St. Gallen;SG;Rechner;Deutsch;Direkt aufgerufen;607;7;Startseite (68 s) > Banketts & Gruppen (132 s) > Ihr Abend (34 s) > Die Karte (202 s) > Kontakt & Öffnungszeiten (32 s) > Banketts & Gruppen (11 s) > Weinkarte (128 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;09:59;Schweiz;Winterthur;ZH;Rechner;Deutsch;Direkt aufgerufen;281;2;Startseite (55 s) > Weinkarte (226 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;12.10.2026;09:35;Deutschland;Konstanz;BW;Handy;Deutsch;Direkt aufgerufen;456;5;Startseite (55 s) > Events & Termine (65 s) > Über uns (63 s) > Ihr Abend (83 s) > Weinkarte (190 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;20:59;Deutschland;Friedrichshafen;BW;Rechner;Deutsch;Direkt aufgerufen;217;2;Startseite (18 s) > Die Karte (199 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;20:56;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;462;5;Startseite (18 s) > Die Karte (187 s) > Über uns (57 s) > Weinkarte (155 s) > Ihr Abend (45 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;20:14;Schweiz;St. Gallen;SG;Handy;Deutsch;Google;399;5;Events & Termine (53 s) > Gutschein (31 s) > Weinkarte (214 s) > Über uns (24 s) > Kontakt & Öffnungszeiten (77 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;20:10;Deutschland;Konstanz;BW;Rechner;Deutsch;Direkt aufgerufen;81;1;Startseite (81 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;19:53;Schweiz;Winterthur;ZH;Handy;Deutsch;Google;752;5;Die Karte (158 s) > Weinkarte (233 s) > Über uns (127 s) > Die Karte (177 s) > Kontakt & Öffnungszeiten (57 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;19:24;Schweiz;Zürich;ZH;Rechner;Deutsch;Google;91;1;Banketts & Gruppen (91 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;19:00;Schweiz;Zürich;ZH;Rechner;Deutsch;Bing;88;1;Über uns (88 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;18:55;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Direkt aufgerufen;693;8;Startseite (158 s) > Über uns (17 s) > Banketts & Gruppen (39 s) > Über uns (22 s) > Die Karte (161 s) > Kontakt & Öffnungszeiten (112 s) > Weinkarte (168 s) > Events & Termine (16 s);nein;nein;nein;ja;nein;nein;ja;nein;nein
+Beispiel;11.10.2026;18:09;Schweiz;Arbon;TG;Handy;Deutsch;Google;91;1;Startseite (91 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;18:07;Schweiz;Zürich;ZH;Handy;Deutsch;Google;412;2;Weinkarte (192 s) > Die Karte (220 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;18:01;Italien;Milano;25;Rechner;Italienisch;GaultMillau;229;4;Kontakt & Öffnungszeiten (110 s) > Über uns (14 s) > Gutschein (11 s) > Banketts & Gruppen (94 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;17:45;Schweiz;Bottighofen;TG;Rechner;Deutsch;Direkt aufgerufen;205;4;Startseite (24 s) > Die Karte (110 s) > Events & Termine (46 s) > Banketts & Gruppen (25 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;17:44;Schweiz;Weinfelden;TG;Rechner;Deutsch;Guide Michelin;535;6;Startseite (139 s) > Events & Termine (74 s) > Die Karte (71 s) > Ihr Abend (61 s) > Über uns (122 s) > Weinkarte (68 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;17:38;Schweiz;St. Gallen;SG;Tablet;Deutsch;Instagram;24;1;Startseite (24 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;17:24;Deutschland;München;BY;Handy;Deutsch;Gemeinde Bottighofen;372;4;Startseite (145 s) > Kontakt & Öffnungszeiten (117 s) > Events & Termine (82 s) > Kontakt & Öffnungszeiten (28 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;17:17;Deutschland;Lindau;BY;Handy;Deutsch;Instagram;43;1;Startseite (43 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;16:59;Deutschland;Konstanz;BW;Rechner;Deutsch;Google;383;4;Startseite (30 s) > Weinkarte (196 s) > Ihr Abend (63 s) > Gutschein (94 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;16:51;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Instagram;192;3;Startseite (44 s) > Gutschein (43 s) > Über uns (105 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;16:34;Schweiz;Bottighofen;TG;Handy;Deutsch;Falstaff;26;1;Startseite (26 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;16:25;Deutschland;Konstanz;BW;Handy;Deutsch;Thurgau Bodensee Tourismus;25;1;Startseite (25 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;16:25;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;149;3;Kontakt & Öffnungszeiten (33 s) > Banketts & Gruppen (62 s) > Kontakt & Öffnungszeiten (54 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;16:00;Deutschland;Konstanz;BW;Rechner;Deutsch;Guide Michelin;242;3;Banketts & Gruppen (45 s) > Die Karte (165 s) > Banketts & Gruppen (32 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;15:52;Grossbritannien;London;ENG;Handy;Englisch;Direkt aufgerufen;286;2;Startseite (101 s) > Die Karte (185 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;15:46;Schweiz;Kreuzlingen;TG;Tablet;Deutsch;Google;163;2;Startseite (101 s) > Banketts & Gruppen (62 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;15:31;Deutschland;Konstanz;BW;Handy;Deutsch;Instagram;574;6;Startseite (116 s) > Gutschein (41 s) > Weinkarte (250 s) > Über uns (32 s) > Kontakt & Öffnungszeiten (103 s) > Ihr Abend (32 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;14:55;Schweiz;Zürich;ZH;Handy;Deutsch;Direkt aufgerufen;135;3;Startseite (42 s) > Über uns (52 s) > Ihr Abend (41 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;13:52;Schweiz;Bottighofen;TG;Tablet;Deutsch;Direkt aufgerufen;51;1;Events & Termine (51 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;13:16;Schweiz;Romanshorn;TG;Handy;Deutsch;GaultMillau;317;5;Startseite (42 s) > Die Karte (166 s) > Banketts & Gruppen (29 s) > Über uns (43 s) > Kontakt & Öffnungszeiten (37 s);nein;nein;nein;nein;nein;ja;nein;nein;nein
+Beispiel;11.10.2026;11:30;Schweiz;Zürich;ZH;Rechner;Deutsch;Google;88;2;Banketts & Gruppen (32 s) > Ihr Abend (56 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;10:44;Schweiz;Romanshorn;TG;Handy;Deutsch;Google;415;3;Startseite (63 s) > Banketts & Gruppen (97 s) > Die Karte (255 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;10:41;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;77;1;Startseite (77 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;10:25;Schweiz;Romanshorn;TG;Rechner;Deutsch;Tripadvisor;316;3;Kontakt & Öffnungszeiten (42 s) > Weinkarte (165 s) > Kontakt & Öffnungszeiten (109 s);ja;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;10:03;Schweiz;Weinfelden;TG;Handy;Deutsch;Direkt aufgerufen;208;2;Startseite (21 s) > Die Karte (187 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;11.10.2026;09:07;Schweiz;Romanshorn;TG;Handy;Deutsch;Google;266;2;Über uns (104 s) > Die Karte (162 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;18:43;Schweiz;Lausanne;VD;Rechner;Französisch;Google;498;4;Startseite (138 s) > Ihr Abend (110 s) > Weinkarte (210 s) > Ihr Abend (40 s);nein;nein;nein;nein;nein;ja;nein;nein;nein
+Beispiel;10.10.2026;17:17;Schweiz;Romanshorn;TG;Handy;Deutsch;Google;426;4;Die Karte (156 s) > Banketts & Gruppen (72 s) > Events & Termine (163 s) > Ihr Abend (35 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;17:10;Schweiz;Amriswil;TG;Handy;Deutsch;Guide Michelin;146;2;Events & Termine (19 s) > Die Karte (127 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;17:09;Schweiz;Zürich;ZH;Rechner;Deutsch;Taverne zum Schäfli;104;1;Startseite (104 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;17:01;Italien;Milano;25;Handy;Italienisch;Instagram;825;7;Startseite (79 s) > Die Karte (251 s) > Banketts & Gruppen (32 s) > Gutschein (112 s) > Weinkarte (131 s) > Gutschein (33 s) > Weinkarte (187 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;16:55;Deutschland;Konstanz;BW;Handy;Deutsch;Google;852;8;Banketts & Gruppen (91 s) > Weinkarte (196 s) > Events & Termine (89 s) > Ihr Abend (112 s) > Events & Termine (26 s) > Weinkarte (185 s) > Über uns (71 s) > Weinkarte (82 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;10.10.2026;16:55;Deutschland;Konstanz;BW;Rechner;Deutsch;Direkt aufgerufen;397;6;Startseite (32 s) > Gutschein (81 s) > Banketts & Gruppen (56 s) > Events & Termine (49 s) > Ihr Abend (45 s) > Die Karte (134 s);nein;nein;nein;nein;nein;nein;ja;nein;nein
+Beispiel;10.10.2026;16:43;Deutschland;Friedrichshafen;BW;Handy;Deutsch;Google;368;5;Events & Termine (26 s) > Über uns (61 s) > Banketts & Gruppen (56 s) > Weinkarte (135 s) > Banketts & Gruppen (90 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;16:22;Schweiz;Zürich;ZH;Handy;Deutsch;Google;131;1;Startseite (131 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;16:01;Schweiz;Bottighofen;TG;Handy;Deutsch;Google;20;1;Startseite (20 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;15:50;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;94;2;Startseite (35 s) > Banketts & Gruppen (59 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;15:36;Schweiz;Münsterlingen;TG;Rechner;Deutsch;Bing;449;4;Startseite (148 s) > Gutschein (22 s) > Kontakt & Öffnungszeiten (99 s) > Die Karte (180 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;15:16;Schweiz;Zürich;ZH;Tablet;Deutsch;Facebook;138;1;Startseite (138 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;15:06;Schweiz;Münsterlingen;TG;Handy;Deutsch;Google;475;5;Startseite (78 s) > Die Karte (118 s) > Events & Termine (68 s) > Impressum (97 s) > Weinkarte (114 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;14:54;Schweiz;Lausanne;VD;Rechner;Französisch;Gemeinde Bottighofen;267;3;Startseite (120 s) > Kontakt & Öffnungszeiten (87 s) > Gutschein (60 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;14:46;Deutschland;Friedrichshafen;BW;Handy;Deutsch;Thurgau Bodensee Tourismus;790;7;Weinkarte (186 s) > Kontakt & Öffnungszeiten (99 s) > Die Karte (179 s) > Weinkarte (124 s) > Die Karte (58 s) > Kontakt & Öffnungszeiten (83 s) > Events & Termine (61 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;14:42;Deutschland;München;BY;Handy;Deutsch;Google;111;2;Startseite (89 s) > Gutschein (22 s);nein;nein;nein;nein;ja;nein;nein;nein;nein
+Beispiel;10.10.2026;14:15;Schweiz;Basel;BS;Rechner;Deutsch;Direkt aufgerufen;332;3;Startseite (123 s) > Die Karte (98 s) > Weinkarte (111 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;14:10;Österreich;Wien;9;Handy;Deutsch;Instagram;98;1;Startseite (98 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;14:08;Schweiz;Arbon;TG;Handy;Deutsch;Google;106;2;Banketts & Gruppen (24 s) > Events & Termine (82 s);nein;nein;nein;nein;nein;nein;ja;nein;nein
+Beispiel;10.10.2026;14:01;Deutschland;Stuttgart;BW;Handy;Deutsch;Direkt aufgerufen;252;4;Startseite (34 s) > Weinkarte (140 s) > Gutschein (29 s) > Banketts & Gruppen (49 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;13:56;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;239;2;Kontakt & Öffnungszeiten (85 s) > Banketts & Gruppen (154 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;13:47;Deutschland;Konstanz;BW;Handy;Deutsch;Direkt aufgerufen;267;2;Startseite (127 s) > Die Karte (140 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;13:12;Deutschland;Konstanz;BW;Rechner;Deutsch;Falstaff;127;1;Die Karte (127 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;12:49;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;247;3;Startseite (33 s) > Die Karte (117 s) > Banketts & Gruppen (97 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;12:14;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;872;6;Weinkarte (195 s) > Die Karte (137 s) > Weinkarte (150 s) > Kontakt & Öffnungszeiten (117 s) > Banketts & Gruppen (110 s) > Weinkarte (163 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;12:12;Deutschland;Stuttgart;BW;Rechner;Deutsch;Google;93;2;Startseite (48 s) > Gutschein (45 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;11:50;Schweiz;Bottighofen;TG;Handy;Deutsch;Google;349;4;Banketts & Gruppen (47 s) > Weinkarte (79 s) > Ihr Abend (52 s) > Die Karte (171 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;10:45;Schweiz;Bern;BE;Rechner;Deutsch;Google;91;2;Startseite (70 s) > Kontakt & Öffnungszeiten (21 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;10:39;Schweiz;Münsterlingen;TG;Handy;Deutsch;Direkt aufgerufen;250;4;Über uns (42 s) > Ihr Abend (36 s) > Gutschein (47 s) > Weinkarte (125 s);ja;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;10.10.2026;10:13;Deutschland;Konstanz;BW;Handy;Deutsch;Direkt aufgerufen;547;4;Startseite (97 s) > Die Karte (136 s) > Kontakt & Öffnungszeiten (97 s) > Weinkarte (217 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;10.10.2026;08:32;Schweiz;St. Gallen;SG;Rechner;Deutsch;Instagram;89;1;Über uns (89 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;21:28;Schweiz;Zürich;ZH;Handy;Deutsch;Google;571;5;Weinkarte (104 s) > Datenschutzerklärung (126 s) > Events & Termine (102 s) > Gutschein (113 s) > Weinkarte (126 s);nein;nein;nein;nein;ja;nein;nein;nein;nein
+Beispiel;09.10.2026;20:11;Deutschland;Konstanz;BW;Handy;Deutsch;Direkt aufgerufen;404;4;Startseite (67 s) > Gutschein (54 s) > Events & Termine (86 s) > Weinkarte (197 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;19:46;Deutschland;München;BY;Handy;Deutsch;Direkt aufgerufen;288;4;Startseite (40 s) > Über uns (117 s) > Ihr Abend (71 s) > Gutschein (60 s);nein;nein;nein;nein;ja;nein;nein;nein;nein
+Beispiel;09.10.2026;19:39;Schweiz;St. Gallen;SG;Handy;Deutsch;Google;536;6;Banketts & Gruppen (48 s) > Kontakt & Öffnungszeiten (23 s) > Banketts & Gruppen (105 s) > Über uns (61 s) > Weinkarte (260 s) > Ihr Abend (39 s);nein;nein;nein;ja;ja;nein;nein;ja;nein
+Beispiel;09.10.2026;19:09;Deutschland;Stuttgart;BW;Handy;Deutsch;Google;137;1;Startseite (137 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;19:07;Schweiz;Arbon;TG;Handy;Deutsch;Guide Michelin;257;2;Startseite (88 s) > Die Karte (169 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;19:02;Schweiz;Zürich;ZH;Rechner;Deutsch;Instagram;185;2;Events & Termine (45 s) > Datenschutzerklärung (140 s);nein;nein;nein;nein;nein;nein;ja;nein;nein
+Beispiel;09.10.2026;19:01;Schweiz;Münsterlingen;TG;Handy;Deutsch;Google;278;4;Startseite (87 s) > Gutschein (39 s) > Ihr Abend (100 s) > Events & Termine (52 s);nein;nein;nein;nein;nein;nein;ja;nein;nein
+Beispiel;09.10.2026;18:36;Schweiz;Zürich;ZH;Handy;Deutsch;Facebook;747;6;Startseite (112 s) > Weinkarte (243 s) > Ihr Abend (132 s) > Gutschein (119 s) > Events & Termine (28 s) > Gutschein (113 s);ja;nein;nein;nein;ja;nein;nein;nein;nein
+Beispiel;09.10.2026;18:27;Schweiz;Zürich;ZH;Rechner;Deutsch;Guide Michelin;279;4;Startseite (144 s) > Events & Termine (88 s) > Banketts & Gruppen (16 s) > Ihr Abend (31 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;18:20;Schweiz;Winterthur;ZH;Handy;Deutsch;Google;70;1;Startseite (70 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;17:30;Deutschland;Konstanz;BW;Handy;Deutsch;Direkt aufgerufen;17;1;Startseite (17 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;16:56;Schweiz;Kreuzlingen;TG;Tablet;Deutsch;Taverne zum Schäfli;80;1;Events & Termine (80 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;16:54;Italien;Milano;25;Handy;Italienisch;Google;208;2;Startseite (92 s) > Gutschein (116 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;16:09;Deutschland;Konstanz;BW;Rechner;Deutsch;Direkt aufgerufen;210;3;Über uns (27 s) > Gutschein (144 s) > Events & Termine (39 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;09.10.2026;16:07;Schweiz;Romanshorn;TG;Rechner;Deutsch;Facebook;456;5;Startseite (120 s) > Gutschein (20 s) > Die Karte (89 s) > Banketts & Gruppen (38 s) > Die Karte (189 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;15:55;Schweiz;Kreuzlingen;TG;Tablet;Deutsch;Direkt aufgerufen;42;3;Startseite (11 s) > Über uns (25 s) > Banketts & Gruppen (6 s);nein;nein;nein;ja;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;15:11;Schweiz;Kreuzlingen;TG;Tablet;Deutsch;Direkt aufgerufen;387;6;Events & Termine (57 s) > Weinkarte (137 s) > Kontakt & Öffnungszeiten (24 s) > Ihr Abend (79 s) > Banketts & Gruppen (57 s) > Ihr Abend (33 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;14:12;Frankreich;Paris;IDF;Handy;Französisch;Taverne zum Schäfli;331;3;Weinkarte (114 s) > Die Karte (193 s) > Über uns (24 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;09.10.2026;14:01;Deutschland;Lindau;BY;Handy;Deutsch;Thurgau Bodensee Tourismus;747;8;Startseite (49 s) > Kontakt & Öffnungszeiten (139 s) > Events & Termine (115 s) > Kontakt & Öffnungszeiten (67 s) > Über uns (18 s) > Datenschutzerklärung (26 s) > Banketts & Gruppen (137 s) > Weinkarte (196 s);nein;nein;nein;nein;nein;ja;ja;nein;ja
+Beispiel;09.10.2026;13:54;Schweiz;Romanshorn;TG;Handy;Deutsch;Google;203;2;Startseite (65 s) > Ihr Abend (138 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;13:44;Schweiz;Zürich;ZH;Rechner;Deutsch;Direkt aufgerufen;201;2;Startseite (55 s) > Die Karte (146 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;13:30;Österreich;Wien;9;Tablet;Deutsch;Google;146;1;Weinkarte (146 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;12:50;Deutschland;Konstanz;BW;Handy;Deutsch;Google;87;1;Banketts & Gruppen (87 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;12:38;Deutschland;Konstanz;BW;Rechner;Deutsch;Direkt aufgerufen;98;1;Startseite (98 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;09.10.2026;11:59;Schweiz;Weinfelden;TG;Handy;Deutsch;Google;166;3;Kontakt & Öffnungszeiten (46 s) > Events & Termine (78 s) > Kontakt & Öffnungszeiten (42 s);nein;nein;nein;nein;nein;nein;ja;nein;nein
+Beispiel;09.10.2026;08:59;Schweiz;Zürich;ZH;Rechner;Deutsch;Direkt aufgerufen;146;2;Startseite (63 s) > Kontakt & Öffnungszeiten (83 s);nein;nein;nein;nein;nein;ja;nein;nein;nein
+Beispiel;09.10.2026;08:48;Deutschland;München;BY;Rechner;Deutsch;Google;220;3;Kontakt & Öffnungszeiten (114 s) > Gutschein (31 s) > Kontakt & Öffnungszeiten (75 s);nein;nein;nein;nein;nein;ja;nein;nein;nein
+Beispiel;08.10.2026;21:17;Schweiz;St. Gallen;SG;Rechner;Deutsch;Instagram;153;3;Startseite (33 s) > Gutschein (31 s) > Banketts & Gruppen (89 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;19:56;Schweiz;Arbon;TG;Handy;Deutsch;Google;198;3;Startseite (68 s) > Ihr Abend (75 s) > Über uns (55 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;19:51;Schweiz;St. Gallen;SG;Handy;Deutsch;Instagram;342;3;Die Karte (125 s) > Banketts & Gruppen (113 s) > Die Karte (104 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;18:55;Schweiz;Bottighofen;TG;Handy;Deutsch;Falstaff;91;2;Startseite (65 s) > Über uns (26 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;18:39;Schweiz;Zürich;ZH;Handy;Deutsch;GaultMillau;73;1;Über uns (73 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;18:10;Schweiz;Bottighofen;TG;Handy;Deutsch;Taverne zum Schäfli;97;1;Startseite (97 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;18:07;Schweiz;Weinfelden;TG;Handy;Deutsch;Direkt aufgerufen;395;3;Startseite (134 s) > Die Karte (138 s) > Über uns (123 s);nein;nein;nein;nein;nein;nein;nein;ja;nein
+Beispiel;08.10.2026;17:08;Grossbritannien;London;ENG;Rechner;Englisch;Guide Michelin;423;5;Startseite (40 s) > Gutschein (66 s) > Weinkarte (210 s) > Banketts & Gruppen (30 s) > Events & Termine (77 s);nein;nein;nein;nein;ja;nein;ja;nein;nein
+Beispiel;08.10.2026;16:51;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Direkt aufgerufen;234;2;Kontakt & Öffnungszeiten (38 s) > Weinkarte (196 s);ja;nein;ja;nein;nein;ja;nein;nein;nein
+Beispiel;08.10.2026;16:05;Schweiz;Frauenfeld;TG;Rechner;Deutsch;Google;182;3;Startseite (55 s) > Die Karte (95 s) > Über uns (32 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;14:07;Deutschland;Konstanz;BW;Handy;Deutsch;Google;174;2;Startseite (23 s) > Kontakt & Öffnungszeiten (151 s);nein;nein;nein;nein;nein;ja;nein;nein;nein
+Beispiel;08.10.2026;13:30;Schweiz;Winterthur;ZH;Handy;Deutsch;Guide Michelin;203;2;Kontakt & Öffnungszeiten (38 s) > Die Karte (165 s);ja;ja;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;13:03;Deutschland;Stuttgart;BW;Handy;Deutsch;Google;299;2;Startseite (75 s) > Weinkarte (224 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;12:24;Deutschland;Konstanz;BW;Handy;Deutsch;Google;40;1;Startseite (40 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;12:10;Schweiz;Winterthur;ZH;Rechner;Deutsch;Google;224;3;Weinkarte (92 s) > Kontakt & Öffnungszeiten (50 s) > Die Karte (82 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;12:10;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Google;168;3;Events & Termine (56 s) > Banketts & Gruppen (65 s) > Ihr Abend (47 s);nein;nein;nein;ja;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;12:07;Schweiz;Winterthur;ZH;Rechner;Deutsch;Guide Michelin;190;3;Startseite (82 s) > Kontakt & Öffnungszeiten (78 s) > Events & Termine (30 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;11:56;Schweiz;Zürich;ZH;Rechner;Deutsch;Tripadvisor;249;2;Startseite (17 s) > Weinkarte (232 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;11:34;Deutschland;Konstanz;BW;Handy;Deutsch;Google;122;1;Startseite (122 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;08.10.2026;11:23;Schweiz;Münsterlingen;TG;Handy;Deutsch;Direkt aufgerufen;232;4;Startseite (51 s) > Kontakt & Öffnungszeiten (109 s) > Gutschein (26 s) > Kontakt & Öffnungszeiten (46 s);nein;nein;nein;nein;nein;nein;nein;nein;ja
+Beispiel;07.10.2026;20:35;Schweiz;Bottighofen;TG;Handy;Deutsch;Direkt aufgerufen;434;4;Startseite (81 s) > Kontakt & Öffnungszeiten (11 s) > Events & Termine (143 s) > Weinkarte (199 s);ja;nein;ja;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;20:28;Schweiz;Romanshorn;TG;Handy;Deutsch;Google;46;1;Startseite (46 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;20:26;Deutschland;München;BY;Tablet;Deutsch;Taverne zum Schäfli;580;5;Startseite (72 s) > Events & Termine (107 s) > Die Karte (187 s) > Impressum (88 s) > Weinkarte (126 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;19:33;Schweiz;Basel;BS;Tablet;Deutsch;Google;41;1;Startseite (41 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;18:26;Deutschland;Stuttgart;BW;Handy;Deutsch;Google;614;5;Startseite (25 s) > Weinkarte (231 s) > Die Karte (119 s) > Weinkarte (192 s) > Kontakt & Öffnungszeiten (47 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;17:35;Schweiz;Zürich;ZH;Rechner;Deutsch;Direkt aufgerufen;261;3;Startseite (88 s) > Banketts & Gruppen (34 s) > Weinkarte (139 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;16:12;Schweiz;Münsterlingen;TG;Rechner;Deutsch;Direkt aufgerufen;115;1;Startseite (115 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;16:11;Schweiz;Zürich;ZH;Rechner;Deutsch;Google;293;3;Startseite (110 s) > Banketts & Gruppen (78 s) > Über uns (105 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;16:02;Schweiz;Arbon;TG;Handy;Deutsch;Gemeinde Bottighofen;320;3;Startseite (38 s) > Gutschein (104 s) > Die Karte (178 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;15:42;Frankreich;Paris;IDF;Handy;Französisch;Direkt aufgerufen;200;2;Die Karte (91 s) > Über uns (109 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;14:15;Schweiz;St. Gallen;SG;Handy;Deutsch;Direkt aufgerufen;81;1;Startseite (81 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;14:03;Schweiz;Weinfelden;TG;Handy;Deutsch;Instagram;79;1;Startseite (79 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;12:58;Schweiz;Frauenfeld;TG;Tablet;Deutsch;Direkt aufgerufen;188;4;Startseite (24 s) > Über uns (44 s) > Impressum (57 s) > Über uns (63 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;12:34;Schweiz;Romanshorn;TG;Handy;Deutsch;Thurgau Bodensee Tourismus;312;2;Die Karte (232 s) > Gutschein (80 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;11:17;Deutschland;Friedrichshafen;BW;Handy;Deutsch;Instagram;16;1;Startseite (16 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;07.10.2026;10:41;Schweiz;Kreuzlingen;TG;Handy;Deutsch;Thurgau Bodensee Tourismus;114;2;Startseite (19 s) > Weinkarte (95 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;06.10.2026;20:39;Schweiz;Romanshorn;TG;Rechner;Deutsch;Google;506;5;Weinkarte (148 s) > Kontakt & Öffnungszeiten (49 s) > Banketts & Gruppen (56 s) > Weinkarte (159 s) > Über uns (94 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;06.10.2026;20:28;Frankreich;Paris;IDF;Rechner;Französisch;Google;149;2;Weinkarte (102 s) > Über uns (47 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;06.10.2026;20:14;Deutschland;Konstanz;BW;Handy;Deutsch;Google;109;2;Startseite (31 s) > Kontakt & Öffnungszeiten (78 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;06.10.2026;17:14;Schweiz;Kreuzlingen;TG;Rechner;Deutsch;Google;31;1;Startseite (31 s);nein;nein;nein;nein;nein;nein;nein;nein;nein
+Beispiel;06.10.2026;16:41;Schweiz;Frauenfeld;TG;Handy;Deutsch;Google;379;3;Weinkarte (165 s) > Über uns (145 s) > Ihr Abend (69 s);nein;nein;nein;nein;nein;nein;nein;nein;nein

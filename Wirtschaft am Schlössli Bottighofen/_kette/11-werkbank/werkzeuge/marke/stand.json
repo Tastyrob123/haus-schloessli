@@ -1,0 +1,70 @@
+{
+  "station": "11",
+  "name": "Le Livre / Das Hausbuch",
+  "rolle": "Werkbank-Bauer + Werkzeug-Anpasser ×7",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "teil": "marke",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T22:53+07:00",
+  "ende": "2026-10-20T00:13+07:00",
+  "verbrauch": {
+    "budget_vorher": 31.0,
+    "budget_nachher": 31.0,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Flüssigkeit nur unter Rechnerlast 16–31 gemessen (Regel 55: unter 8). Ohne Bild über 33 ms am Rechner 4×, einzelne Ausreisser am Handy 6× im Bildarchiv; Nachmessung bei ruhigem Rechner offen",
+      "wo": "_werkzeuge/livre/pruefung/ergebnisse/fluss.jsonl"
+    },
+    {
+      "punkt": "21 Bilder der Website haben fremde Rechte (Tripadvisor-Gäste, Excellence, Papageno, Kitchen Party, Guide Michelin, «Bildrecht Keller», Heft der Gemeinde). Im Hausbuch gekennzeichnet; für Werbung Erlaubnis holen oder durch Fotos des Hauses ersetzen",
+      "wo": "_werkzeuge/livre/livre.json › fotos[art=fremd]"
+    },
+    {
+      "punkt": "Fotograf der Website-Fotos nicht belegt: Dateinamen «FHF», Metadaten nennen nur bei einem Foto Andreas Fahrni; das Impressum nennt die Taverne zum Schäfli AG als Rechteinhaberin",
+      "wo": "_quelle/fotografen-aus-metadaten.json · _quelle/website/text/impressum.md"
+    },
+    {
+      "punkt": "marke.json (Station 05) trägt noch die Farben vor «Ton in Ton»; das Hausbuch zeigt die gedrehten Werte der Website und nennt die Herkunft. Markenbuch der Station 05 nachziehen oder so lassen: Entscheid Chef-Chat",
+      "wo": "_kette/05-markenbauer/marke.json › farbwelten · website/farbwelt.py"
+    },
+    {
+      "punkt": "Logo nur als PNG (1563 px), kein Vektor: beim Haus anfragen; Schrift der Wortmarke (Open Sans) nur gemessen, nicht vom Haus bestätigt",
+      "wo": "_kette/05-markenbauer/marke.json › wortmarke"
+    },
+    {
+      "punkt": "Markenprüfung mit Claude nur auf Roberts Wort (LIVRE_KI=1, Kosten); Beispiel mit echter Rückmeldung und Monatsgrenze der KI-Kosten offen",
+      "wo": "_werkzeuge/livre/livre.py · beispiel/pruefung.json"
+    },
+    {
+      "punkt": "Sprachplan des Hauses nicht entschieden: Oberfläche nur Deutsch (Station 15a)",
+      "wo": "_kette/03-sammler/sprachen.json"
+    },
+    {
+      "punkt": "Zwei abweichende Kleider: website/assets/oberflaeche/kleid/schloessli.css und _werkzeuge/oberflaeche/kleid/schloessli.css; das Hausbuch nimmt das unter _werkzeuge/. Welches gilt, entscheidet der Werkbank-Bauer",
+      "wo": "Notiz schloessli-werkzeuge-wege.md"
+    },
+    {
+      "punkt": "Für Die Stube: Stand-Weg und Bildschirme noch nicht eingetragen (stand_wege.json gehört der Stube; Werte in der gemeinsamen Notiz), Bildschirme mit pruefung/schirm.js",
+      "wo": "_werkzeuge/maison/stand_wege.json"
+    },
+    {
+      "punkt": "Vor der Auslieferung: Anmeldung und Rollen; online nichts hochgeladen, braucht api/_speicher.py des gemeinsamen Online-Wegs",
+      "wo": "_werkzeuge/livre/online.json"
+    },
+    {
+      "punkt": "Firefox und echtes iPhone nicht geprüft (Chromium und Safari-Kern, 1440 und 390 bedient)",
+      "wo": "_werkzeuge/livre/pruefung/ergebnisse/bedienen-*.txt"
+    }
+  ],
+  "paket": [
+    "werkzeuge/<schlüssel>/STAND.md",
+    "../../werkbank/"
+  ],
+  "adresse": "http://127.0.0.1:9049/_werkzeuge/livre/",
+  "briefing": "briefing.html?teil=marke",
+  "notiz": "Das Bildarchiv: 68 Fotos (drei Doppelte zusammengeführt), Farben und Schriften jetzt mit Bildern, Markenbuch wie die anderen; bedient in Chromium und Safari-Kern, 1440 und 390, alles grün. Server :9049.",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

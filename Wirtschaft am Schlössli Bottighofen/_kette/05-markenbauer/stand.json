@@ -1,0 +1,64 @@
+{
+  "station": "05",
+  "name": "Markenbuch und Designidentität",
+  "rolle": "Markenbauer",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "bestätigt",
+  "beginn": "2026-10-19T11:53+07:00",
+  "ende": "2026-10-19T12:21+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Titelschrift ist eine Grotesk, weil die Wortmarke in Open Sans gesetzt ist (Messung); steht gegen «Groteske als Titel: nicht fertig». Gegenstück wäre Gilda Display der heutigen Seite (nicht im Logo)",
+      "wo": "marke/markenbuch.html#wortmarke, #schrift; _bau/match.py"
+    },
+    {
+      "punkt": "Schrift der Wortmarke nur gemessen (Deckung 0,954 mit Open Sans 400), vom Haus nicht bestätigt; Logo nur als PNG 1563 px, eine Vektordatei ist nicht öffentlich",
+      "wo": "_quelle/extern/logo/schloessli-logo-transparent.png; Quelltext beider Seiten"
+    },
+    {
+      "punkt": "Zeichen ohne Schrift ist aus dem Logo geschnitten (potrace), vom Haus nicht als eigene Fassung belegt; Mindestbreite 240 px und Schutzraum (eine Kugel) gerechnet, nicht vom Haus vorgegeben",
+      "wo": "_bau/zeichen.py, marke/logo-richtig-falsch/"
+    },
+    {
+      "punkt": "Bildrechte: Fotografen der verwendeten Hausfotos nicht genannt, Impressum nennt die Taverne zum Schäfli AG",
+      "wo": "_quelle/fotografen-aus-metadaten.json, _quelle/website/text/impressum.md"
+    },
+    {
+      "punkt": "Geschichte (Hans Conrad Hafen, Wirt im «Haus am See», Besen statt Schild, 1699 Tagsatzung) aus der Texterkennung der Gemeindeschrift 1994; Wortlaut am PDF prüfen",
+      "wo": "_quelle/presse/pdf-text/…_OCR.txt, PDF-Seiten 110–111"
+    },
+    {
+      "punkt": "Erster Durchgang ohne Werkbank-Kit und ohne Blender (Robert 18./19.10.); nicht neben die Rivage-Werkbank gelegt; UI-Fundus für die Horizont-Idee nicht geöffnet, Neuheit nur gegen die Markenbücher und CSS der Nachbarhäuser geprüft",
+      "wo": "marke/markenbuch.html, marke.json › darstellungsidee"
+    },
+    {
+      "punkt": "Geprüft unsichtbar in Chromium und WebKit bei 1440 und 390 px (keine Konsolenfehler, keine kaputten Bilder, nichts läuft seitlich über); echtes iPhone und gedrosselte Leitung nicht geprüft",
+      "wo": "_bau/aufnahme.js, _qa/"
+    },
+    {
+      "punkt": "PT Serif (Lauftext der heutigen Seite) nur benannt, Datei nicht im Paket",
+      "wo": "marke/markenbuch.html#schrift"
+    },
+    {
+      "punkt": "Verbrauch: Wochenwert vorher nicht abgelesen (leer); nachher 2 % Wochenbudget alle Modelle, gilt fürs ganze Konto",
+      "wo": "Nutzungsanzeige 19.10.2026"
+    }
+  ],
+  "paket": [
+    "marke/",
+    "marke.json"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/_kette/05-markenbauer/marke/markenbuch.html",
+  "briefing": "briefing.html",
+  "notiz": "Markenbuch auf Farbwelt A «Stuhl und See» veredelt (Robert 19.10.: «schlössli a»): Probe, Tapeten und Logo-Seiten in A, B nur noch als verworfene Wahl im Anhang; Zeichen als Vektor, Titelschrift Open Sans aus der Wortmarke, Farben mit Foto und Fundstelle, Ton und eigene Welt.",
+  "bestaetigt": {
+    "zeit": "2026-10-19T12:33+07:00",
+    "wort": "Markenbuch Schlössli ist bestätigt."
+  },
+  "rueckgaben": []
+}

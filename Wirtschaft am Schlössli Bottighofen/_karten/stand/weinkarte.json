@@ -1,0 +1,7134 @@
+{
+ "id": "weinkarte",
+ "gilt": {
+  "von": "",
+  "bis": ""
+ },
+ "fassungen": {},
+ "herkunft": {
+  "original": "_quelle/website/pdf/20261014_Weinkarte.pdf",
+  "sha256": "d3155264d2b982c650aee24102d61e9d9060062d90b4887f31ae341249386b0e",
+  "adresse": "https://www.schloessli-bottighofen.ch/s/20261014_Weinkarte.pdf",
+  "abgerufen": "2026-10-19",
+  "gelesen_mit": "_karten/lesen.py"
+ },
+ "offen": [
+  "Stand: Datei «20261014_Weinkarte» (PDF erstellt 14.10.2026); die Karte nennt kein Datum.",
+  "Offenausschank (Weine im Glas) hat die Weinkarte nicht; eine Getränke- oder Barkarte mit Bier, Aperitifs, Spirituosen und Kaffee ist online nicht zu finden.",
+  "«M wSt.» schreibt das Haus so in jeder Fusszeile (im Bild geprüft); nicht berichtigt.",
+  "Seitenzahlen des Originals beginnen mit «– 2 –» auf Seite 1; ein Deckblatt fehlt in der PDF.",
+  "Weingut-Zeilen tragen das Feld «weingut»: true (Zwischentitel der Art «zw»), das Datenmodell von La Carte kennt keine eigene Art für den Erzeuger.",
+  "Jahrgang steht im eigenen Feld «jahr», die Flaschengrösse in «einheiten» neben dem Preis."
+ ],
+ "karte": {
+  "ziel": "weinkarte",
+  "name": "Weinkarte",
+  "gruppe": "Restaurant",
+  "format": [
+   210,
+   297
+  ],
+  "kl": "wein",
+  "fuss": "Alle Preise in Schweizer Franken inkl. 8,1% M wSt. · Alle Weine enthalten Sulfite",
+  "teile": [
+   {
+    "art": "deckel",
+    "titel": "Weinkarte",
+    "unter": "",
+    "zeilen": []
+   },
+   {
+    "art": "inhalt",
+    "posten": [
+     {
+      "t": "rubrik",
+      "titel": "CHAMPAGNER/SCHAUMWEIN",
+      "s": 1
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Roses de Jeanne – Cédric Bouchard",
+      "weingut": true,
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Champagne pas dosé a VV «2023»",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Champagne pas dosé a VV «2024»",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Champagne pas dosé UR 2022",
+      "preise": [
+       "280"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Champagne pas dosé CE BLANC 2022",
+      "preise": [
+       "320"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Ulysse Collin",
+      "weingut": true,
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Les Roises Blanc de Blancs",
+      "preise": [
+       "450"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1,
+      "zeilen": [
+       {
+        "text": "Extra brut – Base 2017 – 72 moins sur lie – Dég: 2024"
+       }
+      ]
+     },
+     {
+      "t": "gericht",
+      "name": "Jardin d’Ulysse",
+      "preise": [
+       "420"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1,
+      "zeilen": [
+       {
+        "text": "Extra brut – Base 2017 – 72 moins sur lie – Dég: 2024"
+       }
+      ]
+     },
+     {
+      "t": "gericht",
+      "name": "Les Maillons Blanc de Noirs",
+      "preise": [
+       "280"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1,
+      "zeilen": [
+       {
+        "text": "Extra brut – Base 2021 – 48 moins sur lie – Dég: 2026"
+       }
+      ]
+     },
+     {
+      "t": "gericht",
+      "name": "Les Perrières Blanc de Blancs",
+      "preise": [
+       "300"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1,
+      "zeilen": [
+       {
+        "text": "Extra brut – Base 2021 – 48 moins sur lie – Dég: 2026"
+       }
+      ]
+     },
+     {
+      "t": "gericht",
+      "name": "Jardin d’Ulysse",
+      "preise": [
+       "420"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1,
+      "zeilen": [
+       {
+        "text": "Extra brut – Base 2018 – 72 moins sur lie – Dég: 2025"
+       }
+      ]
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Romain Henin – La Bulle Libre",
+      "weingut": true,
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Brut Nature «Odyssée Pétillante Chapitre 2»",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Gosset",
+      "weingut": true,
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Grand Rosé Brut",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Grand Blanc de Blancs Brut",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Valentin Leflaive",
+      "weingut": true,
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Extra Brut Blanc de Blancs",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Extra Brut Blanc de Blancs Grand Cru Les Peignottes",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Extra Brut Rosé Grand Cru Les Marquises",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Ruinart",
+      "weingut": true,
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Rosé Brut",
+      "preise": [
+       "175"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 1
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Dom Pérignon",
+      "weingut": true,
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Dom Pérignon",
+      "preise": [
+       "320"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2,
+      "jahr": "2012"
+     },
+     {
+      "t": "gericht",
+      "name": "Dom Pérignon",
+      "preise": [
+       "300"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2,
+      "jahr": "2013"
+     },
+     {
+      "t": "gericht",
+      "name": "Dom Pérignon Rosé",
+      "preise": [
+       "560"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2,
+      "jahr": "2009"
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Agrapart et fils",
+      "weingut": true,
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "7 Crus Extra Brut",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Terroirs Extra Brut Blanc de Blancs Grand Cru",
+      "preise": [
+       "155"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Mineral Extra Brut Blanc de Blancs Grand Cru",
+      "preise": [
+       "210"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2,
+      "jahr": "2019"
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Laurent-Perrier",
+      "weingut": true,
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "La Cuvée",
+      "preise": [
+       "100",
+       "1100",
+       "1750"
+      ],
+      "einheiten": [
+       "0.7l",
+       "6.0l",
+       "9.0l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Millésimé",
+      "preise": [
+       "140",
+       "300"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 2,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Blanc de Blancs",
+      "preise": [
+       "300"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Grand Siècle It. No.27",
+      "preise": [
+       "270"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Grand Siècle It. No.24",
+      "preise": [
+       "550"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Cuvée Rosé Brut",
+      "preise": [
+       "140",
+       "300"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Delamotte",
+      "weingut": true,
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Brut",
+      "preise": [
+       "100",
+       "210",
+       "430"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l",
+       "3.0l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Blanc de Blancs",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Blanc de Blancs Millésimé",
+      "preise": [
+       "130",
+       "270"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 2,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Rosé Brut",
+      "preise": [
+       "270"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Taittinger",
+      "weingut": true,
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Brut Rosé",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2
+     },
+     {
+      "t": "gericht",
+      "name": "Brut Millésimé",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2,
+      "jahr": "2016"
+     },
+     {
+      "t": "gericht",
+      "name": "Comtes de Champagne Blanc de Blancs",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2,
+      "jahr": "2013"
+     },
+     {
+      "t": "gericht",
+      "name": "Comtes de Champagne Rosé",
+      "preise": [
+       "300"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 2,
+      "jahr": "2011"
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Louis Roederer",
+      "weingut": true,
+      "s": 3
+     },
+     {
+      "t": "gericht",
+      "name": "Cristal Brut",
+      "preise": [
+       "360"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3,
+      "jahr": "2014"
+     },
+     {
+      "t": "gericht",
+      "name": "Cristal Brut",
+      "preise": [
+       "360"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3,
+      "jahr": "2015"
+     },
+     {
+      "t": "gericht",
+      "name": "Cristal Rosé",
+      "preise": [
+       "820"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3,
+      "jahr": "2013"
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Bollinger",
+      "weingut": true,
+      "s": 3
+     },
+     {
+      "t": "gericht",
+      "name": "Special Cuvee Brut",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3
+     },
+     {
+      "t": "zw",
+      "text": "Champagne André Clouet",
+      "weingut": true,
+      "s": 3
+     },
+     {
+      "t": "gericht",
+      "name": "Grande Réserve Grand Cru Brut",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3
+     },
+     {
+      "t": "gericht",
+      "name": "Brut Rosé Grand Cru",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Legras & Haas",
+      "weingut": true,
+      "s": 3
+     },
+     {
+      "t": "gericht",
+      "name": "Intuition Rosé",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Huré Frères",
+      "weingut": true,
+      "s": 3
+     },
+     {
+      "t": "gericht",
+      "name": "Invitation Brut (B.2021) [Deg.25]",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3
+     },
+     {
+      "t": "gericht",
+      "name": "4 Eléments Chardonnay [Deg. 04/25]",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "4 Eléments Pinot Noir [Deg 04/25]",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3,
+      "jahr": "2019"
+     },
+     {
+      "t": "zw",
+      "text": "Champagne Nicolas Maillard",
+      "weingut": true,
+      "s": 3
+     },
+     {
+      "t": "gericht",
+      "name": "Extra Brut 1er Cru Platine",
+      "preise": [
+       "210"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 3
+     },
+     {
+      "t": "gericht",
+      "name": "Brut Rosé 1er Cru",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 3
+     },
+     {
+      "t": "zw",
+      "text": "Diverse Schaumweine",
+      "weingut": true,
+      "s": 4
+     },
+     {
+      "t": "zw",
+      "text": "Schweiz",
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Schlossgut Bachtobel – Mousseux (Deg: 03/24)",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Schlossgut Bachtobel – Mousseux (Deg: 03/26)",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Adank`s Brut",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Scadenagut Wegelin – Scampagna (BdN)",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Obrecht Brut Nature Blanc (Tirage 2022)",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Obrecht Brut Rosé",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Obrecht Brut Rosé",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Donatsch Extra Brut – Blanc de Blancs",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Donatsch Extra Brut – Blanc de Blancs",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Deutschland",
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Johannes Aufricht – Blanc de Blancs Brut nature",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Bernhard Huber – Blanc de Blancs Brut nature",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Bernhard Huber – Blanc de Noir Brut nature",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Weingut Keller - Grande Cuvée Brut nature No. 002",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Benjamin Lanz – Sprudeldicke Dirn Brut nature",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Italien",
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Ferrari Perlé Rosé Riserva",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Ferrari Maximum Blanc de Blancs",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "zw",
+      "text": "Spanien",
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Cava Gilmas Brut Reserva",
+      "preise": [
+       "65"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "zw",
+      "text": "Frankreich",
+      "s": 4
+     },
+     {
+      "t": "gericht",
+      "name": "Domaine Trapet Alsace Richovila Crémant extra brut",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 4
+     },
+     {
+      "t": "rubrik",
+      "titel": "WEISSWEIN - SCHWEIZ",
+      "s": 5
+     },
+     {
+      "t": "zw",
+      "text": "THURGAU",
+      "s": 5
+     },
+     {
+      "t": "zw",
+      "text": "Schlossgut Bachtobel",
+      "weingut": true,
+      "s": 5
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Gris",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Gris",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Gris",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Weisser Riesling",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Weisser Riesling",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Müller-Thurgau",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Müller-Thurgau",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2025"
+     },
+     {
+      "t": "zw",
+      "text": "Forster Weinbau",
+      "weingut": true,
+      "s": 5
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignac",
+      "preise": [
+       "70"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Solaris",
+      "preise": [
+       "70"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2025"
+     },
+     {
+      "t": "zw",
+      "text": "ZÜRICH",
+      "s": 5
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Familie Zahner",
+      "weingut": true,
+      "s": 5
+     },
+     {
+      "t": "gericht",
+      "name": "Langenmooser Gewürztraminer",
+      "preise": [
+       "75"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "GRAUBÜNDEN",
+      "s": 5
+     },
+     {
+      "t": "zw",
+      "text": "Hansruedi Adank",
+      "weingut": true,
+      "s": 5
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling-Sylvaner",
+      "preise": [
+       "70"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Gris",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay am Berg",
+      "preise": [
+       "220"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay am Berg",
+      "preise": [
+       "220"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Christian & Francisca Obrecht - Weingut zur Sonne",
+      "weingut": true,
+      "s": 5
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Sylvaner Schiefer",
+      "preise": [
+       "75"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Martha & Daniel Gantenbein",
+      "weingut": true,
+      "s": 5
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Roman Hermann",
+      "weingut": true,
+      "s": 5
+     },
+     {
+      "t": "gericht",
+      "name": "Completer Grand Maitre",
+      "preise": [
+       "115"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 5,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Martin Donatsch – Weingut zum Ochsen",
+      "weingut": true,
+      "s": 6
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Passion",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Completer",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Completer",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Completer",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Unique",
+      "preise": [
+       "220"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Unique",
+      "preise": [
+       "220"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Wegelin - Scadenagut",
+      "weingut": true,
+      "s": 6
+     },
+     {
+      "t": "gericht",
+      "name": "Malanser Weissburgunder",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Weissburgunder Scadena",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Malanser Chardonnay",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Frassa",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Bothmarhalde",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Malanser Completer",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Thomas Studach",
+      "weingut": true,
+      "s": 6
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Weinkellerei Giani Boner",
+      "weingut": true,
+      "s": 6
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Gris",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 6,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc",
+      "preise": [
+       "185"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 6,
+      "jahr": "2022"
+     },
+     {
+      "t": "land",
+      "text": "DEUTSCHLAND",
+      "s": 7
+     },
+     {
+      "t": "zw",
+      "text": "BAYRISCHER BODENSEE",
+      "s": 7
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Seehaldenhof – Simon Hornstein",
+      "weingut": true,
+      "s": 7
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Sonnenbichl",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Seehalde",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Sonnenbichl",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Gundelsberg",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Jonas Kurek",
+      "weingut": true,
+      "s": 7
+     },
+     {
+      "t": "gericht",
+      "name": "Weissburgunder Seehalde",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Seehalde",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Sonnenbichl",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "BADEN",
+      "s": 7
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Bernhard Huber",
+      "weingut": true,
+      "s": 7
+     },
+     {
+      "t": "gericht",
+      "name": "Breisgau Weiss (CHA&WB)",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Malterdingen Chardonnay",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Alte Reben Chardonnay",
+      "preise": [
+       "125"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Bienenberg GG",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Schlossberg GG",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Vollmayer",
+      "weingut": true,
+      "s": 7
+     },
+     {
+      "t": "gericht",
+      "name": "Grauburgunder Höchste Lage",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Höchste Lage",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Johannes Aufricht",
+      "weingut": true,
+      "s": 7
+     },
+     {
+      "t": "gericht",
+      "name": "Bodensxx Aligoté",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2025"
+     },
+     {
+      "t": "zw",
+      "text": "MOSEL",
+      "s": 7
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Achim Molitor",
+      "weingut": true,
+      "s": 7
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Spätlese trocken Piesporter Goldtröpfchen",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2015"
+     },
+     {
+      "t": "zw",
+      "text": "PFALZ",
+      "s": 7
+     },
+     {
+      "t": "zw",
+      "text": "Weingut von Winning",
+      "weingut": true,
+      "s": 7
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Kirchenstück GG",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Marmar",
+      "preise": [
+       "170",
+       "350"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Dr. Bürklin-Wolf",
+      "weingut": true,
+      "s": 7
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Hohenmorgen G.C.",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 7,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut A. Christmann",
+      "weingut": true,
+      "s": 8
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Königsbacher Idig GG",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Königsbacher Idig GG",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "NAHE",
+      "s": 8
+     },
+     {
+      "t": "zw",
+      "text": "Hermann Dönnhoff",
+      "weingut": true,
+      "s": 8
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Niederhäuser Hermannshöhle GG",
+      "preise": [
+       "130",
+       "280"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 8,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Niederhäuser Hermannshöhle GG",
+      "preise": [
+       "130",
+       "280"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 8,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Norheimer Dellchen GG",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Schäfer-Fröhlich",
+      "weingut": true,
+      "s": 8
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Halenberg GG",
+      "preise": [
+       "130",
+       "270"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 8,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Frühlingsplätzchen GG",
+      "preise": [
+       "115",
+       "240"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 8,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Stromberg GG",
+      "preise": [
+       "270"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 8,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "RHEINGAU",
+      "s": 8
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Robert Weil",
+      "weingut": true,
+      "s": 8
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Kiedrich Gräfenberg GG",
+      "preise": [
+       "115",
+       "240"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 8,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Monte Vacano",
+      "preise": [
+       "270"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Monte Nostrum",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Spätlese Rheingau",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Künstler",
+      "weingut": true,
+      "s": 8
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Hochheim Kirchenstück GG",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2016"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Hochheim Kirchenstück GG",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2017"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut von Oetinger",
+      "weingut": true,
+      "s": 8
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Hohenrain GG",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Hohenrain GG",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Siegelsberg GG",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Siegelsberg GG",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Siegelsberg GG",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 8,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "RHEINHESSEN",
+      "s": 9
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Wittmann",
+      "weingut": true,
+      "s": 9
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Westhofen Kirchspiel GG",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Westhofen Kirchspiel GG",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Westhofen Aulerde GG",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Battenfeld-Spanier",
+      "weingut": true,
+      "s": 9
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Zellerweg am Schwarzer Herrgott GG",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Frauenberg GG",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "C.O. Steinlinden Liquid Earth",
+      "preise": [
+       "320"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Kühling-Gillot",
+      "weingut": true,
+      "s": 9
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Hipping GG",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Katharina Wechsler",
+      "weingut": true,
+      "s": 9
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Kirchspiel Grosse Lage",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Klaus Peter Keller",
+      "weingut": true,
+      "s": 9
+     },
+     {
+      "t": "gericht",
+      "name": "Weisser Burgunder & Chardonnay",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Westhofen Sylvaner",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Sylvaner „Feuervogel“",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling „von der Fels“",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Westhofen Kirchspiel GG",
+      "preise": [
+       "240"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Dalsheim Oberer Hubacker GG",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Dalsheim Hubacker GG",
+      "preise": [
+       "370"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2012"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Westhofen Kirchspiel GG",
+      "preise": [
+       "340"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 9,
+      "jahr": "2017"
+     },
+     {
+      "t": "land",
+      "text": "ÖSTERREICH",
+      "s": 10
+     },
+     {
+      "t": "zw",
+      "text": "WACHAU",
+      "s": 10
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Emmerich Knoll",
+      "weingut": true,
+      "s": 10
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Loibner Ried Loibenberg Smaragd",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Ried Schütt Smaragd",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Grüner Veltliner Smaragd Loibner",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Veyder-Malberg",
+      "weingut": true,
+      "s": 10
+     },
+     {
+      "t": "gericht",
+      "name": "Grüner Veltliner Weitenberg",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Bruck",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Buschenberg",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Brandstatt",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Franz Hirtzberger",
+      "weingut": true,
+      "s": 10
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Smaragd Ried Setzberg",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Smaragd Ried Hochrain",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Smaragd Ried Singerriedel",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "KREMSTAL",
+      "s": 10
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Josef & Philipp Bründlmayer",
+      "weingut": true,
+      "s": 10
+     },
+     {
+      "t": "gericht",
+      "name": "Neuburger Ried Vordernberg Reserve",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "SÜDSTEIERMARK",
+      "s": 10
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Tement",
+      "weingut": true,
+      "s": 10
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc Ehrenhausen",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 10,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Walter Polz",
+      "weingut": true,
+      "s": 10
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc Stone White",
+      "preise": [
+       "85",
+       "175"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 10,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc Ried Hochgrassnitzberg",
+      "preise": [
+       "95",
+       "195"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 10,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc Ried Obegg",
+      "preise": [
+       "195"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 10,
+      "jahr": "2023"
+     },
+     {
+      "t": "land",
+      "text": "ITALIEN",
+      "s": 11
+     },
+     {
+      "t": "zw",
+      "text": "SÜDTIROL",
+      "s": 11
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Tiefenbrunner",
+      "weingut": true,
+      "s": 11
+     },
+     {
+      "t": "gericht",
+      "name": "Müller-Thurgau Feldmarschall",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc Riserva Rachtl",
+      "preise": [
+       "115"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Sauvignon Blanc Riserva Rachtl «Ad Tempus»",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2014"
+     },
+     {
+      "t": "zw",
+      "text": "Tenuta Alois Lageder",
+      "weingut": true,
+      "s": 11
+     },
+     {
+      "t": "gericht",
+      "name": "Chardonnay Löwengang",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 11,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "PIEMONT",
+      "s": 11
+     },
+     {
+      "t": "zw",
+      "text": "Angelo Gaja",
+      "weingut": true,
+      "s": 11
+     },
+     {
+      "t": "gericht",
+      "name": "Gaja & Rey",
+      "preise": [
+       "320"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Bruno Giacosa",
+      "weingut": true,
+      "s": 11
+     },
+     {
+      "t": "gericht",
+      "name": "Roero Arneis",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2025"
+     },
+     {
+      "t": "zw",
+      "text": "TOSKANA",
+      "s": 11
+     },
+     {
+      "t": "zw",
+      "text": "Tenuta dell’Ornellaia",
+      "weingut": true,
+      "s": 11
+     },
+     {
+      "t": "gericht",
+      "name": "Poggio alle Gazze dell’Ornellaia",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Ornellaia Bianco",
+      "preise": [
+       "270"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "UMBRIEN",
+      "s": 11
+     },
+     {
+      "t": "zw",
+      "text": "Castello della Sala",
+      "weingut": true,
+      "s": 11
+     },
+     {
+      "t": "gericht",
+      "name": "Conte della Vipera",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Cervaro della Sala",
+      "preise": [
+       "135"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2024"
+     },
+     {
+      "t": "land",
+      "text": "SPANIEN - RIOJA",
+      "s": 11
+     },
+     {
+      "t": "zw",
+      "text": "Bodegas Muga",
+      "weingut": true,
+      "s": 11
+     },
+     {
+      "t": "gericht",
+      "name": "Flor de Muga Reserva Blanco",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "RIAS BAIXAS",
+      "s": 11
+     },
+     {
+      "t": "zw",
+      "text": "Miguel Torres",
+      "weingut": true,
+      "s": 11
+     },
+     {
+      "t": "gericht",
+      "name": "Pazo das Bruxas Albarinho",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 11,
+      "jahr": "2025"
+     },
+     {
+      "t": "land",
+      "text": "FRANKREICH",
+      "s": 12
+     },
+     {
+      "t": "zw",
+      "text": "CHABLIS",
+      "s": 12
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Christian Moreau",
+      "weingut": true,
+      "s": 12
+     },
+     {
+      "t": "gericht",
+      "name": "Chablis AC",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2025"
+     },
+     {
+      "t": "gericht",
+      "name": "Chablis 1er Cru Vaillon",
+      "preise": [
+       "115"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chablis Grand Cru Valmur",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Chablis Grand Cru Clos des Hospices",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Francois Raveneau",
+      "weingut": true,
+      "s": 12
+     },
+     {
+      "t": "gericht",
+      "name": "Chablis 1er Cru Monts Mains",
+      "preise": [
+       "240"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Chablis 1er Cru Vaillons",
+      "preise": [
+       "240"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Chablis 1er Cru Montée de Tonnerre",
+      "preise": [
+       "290"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Chablis Grand Cru Valmur",
+      "preise": [
+       "350"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "BURGUND",
+      "s": 12
+     },
+     {
+      "t": "zw",
+      "text": "Maison Meyer",
+      "weingut": true,
+      "s": 12
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Blanc Chardonnay",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Aligoté",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Lorenzon",
+      "weingut": true,
+      "s": 12
+     },
+     {
+      "t": "gericht",
+      "name": "Montagny Blanc Le May",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Montagny Blanc 1er Cru Les Truffières",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Mercurey Blanc 1er Cru Champs Martin",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Olivier Leflaive",
+      "weingut": true,
+      "s": 12
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Blanc Les Sétilles",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Auxey-Duresses La Macabrée",
+      "preise": [
+       "125"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault 1er Cru Sous le Dos d’Âne",
+      "preise": [
+       "300"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault 1er Cru Les Caillerets",
+      "preise": [
+       "210"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Chassagne-Montrachet 1er Cru Clos Saint-Marc",
+      "preise": [
+       "290"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "Maison Glandien",
+      "weingut": true,
+      "s": 12
+     },
+     {
+      "t": "gericht",
+      "name": "L’Ouverture Blanc",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Hubert Lamy",
+      "weingut": true,
+      "s": 12
+     },
+     {
+      "t": "gericht",
+      "name": "Saint-Aubin 1er Cru Les Frionnes",
+      "preise": [
+       "145"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Saint-Aubin 1er Cru En Remilly",
+      "preise": [
+       "195"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Laurent Ponsot",
+      "weingut": true,
+      "s": 12
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault Charmes 1er Cru «Cuvée de la Centauré»",
+      "preise": [
+       "300"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Corton-Charlemagne G.C. «Cuvée du Kalimeris»",
+      "preise": [
+       "450"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 12,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "Vignoble des Cabottes",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault Les Clous",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault 1er Cru Les Genevrières",
+      "preise": [
+       "300"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault 1er Cru Charmes",
+      "preise": [
+       "320"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Corton-Charlemagne Grand Cru",
+      "preise": [
+       "450"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Paul Pillot",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Chassagne-Montrachet Les Mazures",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Saint Aubin 1er Cru «Les Charmois»",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Jacques-Frédéric Mugnier",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Nuits-Saint-Georges 1er Cru Clos de la Maréchale",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Joseph Collin",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Chassagne-Montrachet 1er Cru Vide Bourse",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Bastian Wolber",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Blanc Chardonnay",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine des Lambrays",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Puligny-Montrachet 1er Cru Les Folatières",
+      "preise": [
+       "290"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Puligny-Montrachet 1er Cru Les Folatières",
+      "preise": [
+       "320"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Arnaud Baillot",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Blanc Bourgogne Côte d’Or",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Chassagne-Montrachet",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Puligny-Montrachet",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Puligny-Montrachet",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Rémi Jobard",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault Les Chevalières",
+      "preise": [
+       "170",
+       "350"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Benjamin Leroux",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Blanc",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Saint-Romain blanc «Sous le Château»",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Chassagne-Montrachet 1er Cru Les Baudines",
+      "preise": [
+       "220"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault 1er Cru Les Genevrières",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "Fernand & Laurent Pillot",
+      "weingut": true,
+      "s": 13
+     },
+     {
+      "t": "gericht",
+      "name": "Chassagne-Montrachet 1er Cru Vide Bourse",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Chassagne-Montrachet 1er Cru Les Vergers",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Chassagne-Montrachet 1er Cru Champs Gain",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 13,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Cassiopée",
+      "weingut": true,
+      "s": 14
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Aligoté Mitancherie",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Florence Cholet",
+      "weingut": true,
+      "s": 14
+     },
+     {
+      "t": "gericht",
+      "name": "Auxey-Duresses",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Jobard-Morey",
+      "weingut": true,
+      "s": 14
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Blanc",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Meursault 1er Cru Charmes",
+      "preise": [
+       "210"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine de Villaine",
+      "weingut": true,
+      "s": 14
+     },
+     {
+      "t": "gericht",
+      "name": "Bouzeron",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Les Clous Aimé Côte Chalonnaise",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Les Clous Aimé Côte Chalonnaise",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Rully blanc Gresigny 1er Cru",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Rully blanc Les Margotés 1er Cru",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Rully blanc Montpalais 1er Cru",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Verget (J.M. Guffens-Heynen)",
+      "weingut": true,
+      "s": 14
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Blanc Grand Elevage",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Pouilly-Fuissé Les Combes Vieilles Vignes",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Pouilly-Fuissé 1er Cru Sur la Roche",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "LOIRE",
+      "s": 14
+     },
+     {
+      "t": "zw",
+      "text": "Jean-Phillipe Agisson",
+      "weingut": true,
+      "s": 14
+     },
+     {
+      "t": "gericht",
+      "name": "Pouilly-Fumé La Belle Endormie",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Vacheron",
+      "weingut": true,
+      "s": 14
+     },
+     {
+      "t": "gericht",
+      "name": "Sancerre",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2025"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Chatelain",
+      "weingut": true,
+      "s": 14
+     },
+     {
+      "t": "gericht",
+      "name": "Pouilly Fumé",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 14,
+      "jahr": "2023"
+     },
+     {
+      "t": "rubrik",
+      "titel": "ROSÉ WEINE",
+      "s": 15
+     },
+     {
+      "t": "land",
+      "text": "SCHWEIZ GRAUBÜNDEN",
+      "s": 15
+     },
+     {
+      "t": "zw",
+      "text": "Christian & Francisca Obrecht – Weingut zur Sonne",
+      "weingut": true,
+      "s": 15
+     },
+     {
+      "t": "gericht",
+      "name": "Blanc de Noir Schiefer",
+      "preise": [
+       "70"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 15,
+      "jahr": "2025"
+     },
+     {
+      "t": "land",
+      "text": "SCHWEIZ NEUCHÂTEL",
+      "s": 15
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Ruedin by Jacques Tatasciore",
+      "weingut": true,
+      "s": 15
+     },
+     {
+      "t": "gericht",
+      "name": "Oeil-de-Perdrix",
+      "preise": [
+       "75"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 15,
+      "jahr": "2023"
+     },
+     {
+      "t": "land",
+      "text": "FRANKREICH PROVENCE",
+      "s": 15
+     },
+     {
+      "t": "zw",
+      "text": "Levant 32",
+      "weingut": true,
+      "s": 15
+     },
+     {
+      "t": "gericht",
+      "name": "Levant Rosé",
+      "preise": [
+       "75"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 15,
+      "jahr": "2025"
+     },
+     {
+      "t": "zw",
+      "text": "Miraval",
+      "weingut": true,
+      "s": 15
+     },
+     {
+      "t": "gericht",
+      "name": "Miraval Rosé",
+      "preise": [
+       "70",
+       "310",
+       "640"
+      ],
+      "einheiten": [
+       "0.7l",
+       "3.0l",
+       "6.0l"
+      ],
+      "s": 15,
+      "jahr": "2025"
+     },
+     {
+      "t": "land",
+      "text": "SPANIEN RIOJA",
+      "s": 15
+     },
+     {
+      "t": "zw",
+      "text": "Bodegas Muga",
+      "weingut": true,
+      "s": 15
+     },
+     {
+      "t": "gericht",
+      "name": "Flor de Muga Rosado",
+      "preise": [
+       "75"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 15,
+      "jahr": "2024"
+     },
+     {
+      "t": "land",
+      "text": "DEUTSCHLAND BAYERISCHER BODENSEE",
+      "s": 15
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Benjamin Lanz",
+      "weingut": true,
+      "s": 15
+     },
+     {
+      "t": "gericht",
+      "name": "Nonnenhorner Rosé",
+      "preise": [
+       "75"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 15,
+      "jahr": "2023"
+     },
+     {
+      "t": "land",
+      "text": "DEUTSCHLAND BADEN",
+      "s": 15
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Bernhard Huber",
+      "weingut": true,
+      "s": 15
+     },
+     {
+      "t": "gericht",
+      "name": "Malterdinger Rosé",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 15,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Vollmayer",
+      "weingut": true,
+      "s": 15
+     },
+     {
+      "t": "gericht",
+      "name": "Höhenrausch Rosé",
+      "preise": [
+       "65"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 15,
+      "jahr": "2024"
+     },
+     {
+      "t": "rubrik",
+      "titel": "ROTWEIN - SCHWEIZ",
+      "s": 16
+     },
+     {
+      "t": "zw",
+      "text": "THURGAU",
+      "s": 16
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Schlossgut Bachtobel",
+      "weingut": true,
+      "s": 16
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir No 1",
+      "preise": [
+       "65"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir No 2",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir No 3",
+      "preise": [
+       "210"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 16,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir No 3",
+      "preise": [
+       "100",
+       "210"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 16,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir No 4",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "BÜNDNER HERRSCHAFT",
+      "s": 16
+     },
+     {
+      "t": "zw",
+      "text": "Weinkellerei Giani Boner",
+      "weingut": true,
+      "s": 16
+     },
+     {
+      "t": "gericht",
+      "name": "Malanser Pinot Noir",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Malanser Pinot Noir",
+      "preise": [
+       "185"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 16,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Malanser Pinot Noir Grand Cru",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Malanser Pinot Noir Grand Cru",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 16,
+      "jahr": "2019"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut zum Ochsen - Martin Donatsch",
+      "weingut": true,
+      "s": 16
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Passion",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 16,
+      "jahr": "2014"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Passion",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 16,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Passion",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Unique",
+      "preise": [
+       "220"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Unique",
+      "preise": [
+       "440"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 16,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Unique",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Unique",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Tradition",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2025"
+     },
+     {
+      "t": "zw",
+      "text": "Martha & Daniel Gantenbein",
+      "weingut": true,
+      "s": 16
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Joel Nänni",
+      "weingut": true,
+      "s": 16
+     },
+     {
+      "t": "gericht",
+      "name": "Jeninser Pinot Noir",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Hansruedi Adank",
+      "weingut": true,
+      "s": 16
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Spondis",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Herrenacker",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Eichholz – Irene Grünenfelder",
+      "weingut": true,
+      "s": 16
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir Eichholz",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 16,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Thomas Studach",
+      "weingut": true,
+      "s": 17
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Pinot Noir",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "NEUCHATEL",
+      "s": 17
+     },
+     {
+      "t": "zw",
+      "text": "Jacques Tatasciore",
+      "weingut": true,
+      "s": 17
+     },
+     {
+      "t": "gericht",
+      "name": "Vieilles Vignes",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Vieilles Vignes",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Les Virgas",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Les Virgas",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Les Margiles",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Les Margiles",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Les Rissieux",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Les Rissieux",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Les Chypres",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Ruedin by Jacques Tatasciore",
+      "weingut": true,
+      "s": 17
+     },
+     {
+      "t": "gericht",
+      "name": "Neuchâtel Rouge Les Ratenets",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Neuchâtel Rouge «Valentin»",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Neuchâtel Rouge «Valentin Vase N 2»",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Deutschland",
+      "s": 17
+     },
+     {
+      "t": "zw",
+      "text": "BAYERISCHER BODENSEE",
+      "s": 17
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Jonas Kurek",
+      "weingut": true,
+      "s": 17
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Seehalde",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Seehalde",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Seehaldenhof – Simon Hornstein",
+      "weingut": true,
+      "s": 17
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Seehalde",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Seehalde",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Hummler",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Schmidt am Bodensee",
+      "weingut": true,
+      "s": 17
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Gundelsberg",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Gundelsberg",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "FRANKEN",
+      "s": 17
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Rudolf Fürst",
+      "weingut": true,
+      "s": 17
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Centgrafenberg",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 17,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Hundsrück GG",
+      "preise": [
+       "220"
+      ],
+      "einheiten": [
+       "0,7l"
+      ],
+      "s": 17,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "BADEN",
+      "s": 18
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Bernhard Huber",
+      "weingut": true,
+      "s": 18
+     },
+     {
+      "t": "gericht",
+      "name": "Malterdingen Spätburgunder",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Malterdingen Spätburgunder",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Malterdingen Spätburgunder",
+      "preise": [
+       "90",
+       "190"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 18,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Alte Reben Spätburgunder",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Alte Reben Spätburgunder",
+      "preise": [
+       "110",
+       "220"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 18,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Hecklingen Spätburgunder",
+      "preise": [
+       "110",
+       "220"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 18,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Sommerhalde Spätburgunder GG",
+      "preise": [
+       "180",
+       "380"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 18,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Alte Burg Spätburgunder GG",
+      "preise": [
+       "200",
+       "400"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 18,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Bienenberg Spätburgunder GG",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Bienenberg Spätburgunder GG",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Bienenberg Spätburgunder GG",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Schlossberg Spätburgunder GG",
+      "preise": [
+       "240"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Wildenstein Spätburgunder GG",
+      "preise": [
+       "320"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Vollmayer",
+      "weingut": true,
+      "s": 18
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Berglage",
+      "preise": [
+       "65"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Höchste Lage",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Cuvée Cabernet Berglage",
+      "preise": [
+       "75"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "RHEINHESSEN",
+      "s": 18
+     },
+     {
+      "t": "zw",
+      "text": "Klaus Peter Keller",
+      "weingut": true,
+      "s": 18
+     },
+     {
+      "t": "gericht",
+      "name": "Spätburgunder Réserve",
+      "preise": [
+       "125"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 18,
+      "jahr": "2023"
+     },
+     {
+      "t": "rubrik",
+      "titel": "ROTWEIN - ITALIEN",
+      "s": 19
+     },
+     {
+      "t": "zw",
+      "text": "LOMBARDEI",
+      "s": 19
+     },
+     {
+      "t": "zw",
+      "text": "Torre San Quirico",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Sommoclivo Nebbiolo",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2014"
+     },
+     {
+      "t": "zw",
+      "text": "CALABRIA",
+      "s": 19
+     },
+     {
+      "t": "zw",
+      "text": "Cantine Statti Lamezia Terme",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Cauro",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "PIEMONT",
+      "s": 19
+     },
+     {
+      "t": "zw",
+      "text": "Cantina Vietti",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Barolo Castiglione",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Barolo Ravera",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "Bruno Giacosa",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Barolo «Falletto»",
+      "preise": [
+       "410"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2016"
+     },
+     {
+      "t": "gericht",
+      "name": "Barolo «Falletto»",
+      "preise": [
+       "360"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "Castrum Roche",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Langhe Nebbiolo",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Langhe Nebbiolo",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2025"
+     },
+     {
+      "t": "zw",
+      "text": "San Barnaba",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Langhe Nebbiolo",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2025"
+     },
+     {
+      "t": "zw",
+      "text": "Piero Busso",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Barbaresco «Albesani»",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Barbaresco «Albesani»",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Barbaresco «San Stunet»",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "TOSKANA",
+      "s": 19
+     },
+     {
+      "t": "zw",
+      "text": "Tua Rita",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Giusto di Notri",
+      "preise": [
+       "145"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Redigaffi",
+      "preise": [
+       "560"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 19,
+      "jahr": "2017"
+     },
+     {
+      "t": "zw",
+      "text": "Tenuta Tignanello",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Tignanello",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Tignanello",
+      "preise": [
+       "880"
+      ],
+      "einheiten": [
+       "3.0l"
+      ],
+      "s": 19,
+      "jahr": "2018"
+     },
+     {
+      "t": "zw",
+      "text": "Tenuta Guado al Tasso",
+      "weingut": true,
+      "s": 19
+     },
+     {
+      "t": "gericht",
+      "name": "Cont’Ugo",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Guado al Tasso",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 19,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "Monteverro",
+      "weingut": true,
+      "s": 20
+     },
+     {
+      "t": "gericht",
+      "name": "Tinata",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2019"
+     },
+     {
+      "t": "zw",
+      "text": "Castello Tricerchi",
+      "weingut": true,
+      "s": 20
+     },
+     {
+      "t": "gericht",
+      "name": "Rosso di Montalcino",
+      "preise": [
+       "75"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Brunello di Montalcino «Castello Tricerchi»",
+      "preise": [
+       "105"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "Tenuta dell’ Ornellaia",
+      "weingut": true,
+      "s": 20
+     },
+     {
+      "t": "gericht",
+      "name": "Le Serre Nuove",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Ornellaia",
+      "preise": [
+       "380"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Ornellaia",
+      "preise": [
+       "380"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Massetino",
+      "preise": [
+       "450"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "Le Mortelle",
+      "weingut": true,
+      "s": 20
+     },
+     {
+      "t": "gericht",
+      "name": "Ampio delle Mortelle",
+      "preise": [
+       "290"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Ampio delle Mortelle",
+      "preise": [
+       "280"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2019"
+     },
+     {
+      "t": "zw",
+      "text": "Tenuta San Guido",
+      "weingut": true,
+      "s": 20
+     },
+     {
+      "t": "gericht",
+      "name": "Sassicaia",
+      "preise": [
+       "420"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2015"
+     },
+     {
+      "t": "gericht",
+      "name": "Sassicaia",
+      "preise": [
+       "820"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 20,
+      "jahr": "2017"
+     },
+     {
+      "t": "gericht",
+      "name": "Sassicaia",
+      "preise": [
+       "380"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Sassicaia",
+      "preise": [
+       "380"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Sassicaia",
+      "preise": [
+       "380",
+       "800"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l"
+      ],
+      "s": 20,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Sassicaia",
+      "preise": [
+       "380"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "Tenuta di Biserno",
+      "weingut": true,
+      "s": 20
+     },
+     {
+      "t": "gericht",
+      "name": "Biserno",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Biserno",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Biserno",
+      "preise": [
+       "520"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 20,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Il Pino",
+      "preise": [
+       "105"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Il Pino",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Tenuta Luce – Marchesi Frescobaldi",
+      "weingut": true,
+      "s": 20
+     },
+     {
+      "t": "gericht",
+      "name": "Lucente",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Luce",
+      "preise": [
+       "165",
+       "330",
+       "660"
+      ],
+      "einheiten": [
+       "0.7l",
+       "1.5l",
+       "3.0l"
+      ],
+      "s": 20,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Fontodi",
+      "weingut": true,
+      "s": 20
+     },
+     {
+      "t": "gericht",
+      "name": "Flaccianello",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Flaccianello",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 20,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "Castello dei Rampola",
+      "weingut": true,
+      "s": 21
+     },
+     {
+      "t": "gericht",
+      "name": "Sammarco",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Sammarco",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Vigna d’Alceo",
+      "preise": [
+       "210"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Vigna d’Alceo",
+      "preise": [
+       "210"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "Tenuta Argentiera",
+      "weingut": true,
+      "s": 21
+     },
+     {
+      "t": "gericht",
+      "name": "Argentiera",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "San Giusto a Rentennano",
+      "weingut": true,
+      "s": 21
+     },
+     {
+      "t": "gericht",
+      "name": "Percarlo",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2021"
+     },
+     {
+      "t": "land",
+      "text": "PORTUGAL",
+      "s": 21
+     },
+     {
+      "t": "zw",
+      "text": "DOURO",
+      "s": 21
+     },
+     {
+      "t": "zw",
+      "text": "Dos Luciadas",
+      "weingut": true,
+      "s": 21
+     },
+     {
+      "t": "gericht",
+      "name": "Eleivera",
+      "preise": [
+       "70"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2018"
+     },
+     {
+      "t": "land",
+      "text": "SPANIEN",
+      "s": 21
+     },
+     {
+      "t": "zw",
+      "text": "CATALUNYA",
+      "s": 21
+     },
+     {
+      "t": "zw",
+      "text": "Clos d`Agon",
+      "weingut": true,
+      "s": 21
+     },
+     {
+      "t": "gericht",
+      "name": "Clos d`Agon «Selección Especial»",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "CALATAYUD",
+      "s": 21
+     },
+     {
+      "t": "zw",
+      "text": "Bodegas Ateca",
+      "weingut": true,
+      "s": 21
+     },
+     {
+      "t": "gericht",
+      "name": "Atteca Old Vine",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "JUMILLA",
+      "s": 21
+     },
+     {
+      "t": "zw",
+      "text": "Bodegas El Nido",
+      "weingut": true,
+      "s": 21
+     },
+     {
+      "t": "gericht",
+      "name": "Corteo",
+      "preise": [
+       "240"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "PENEDES",
+      "s": 21
+     },
+     {
+      "t": "zw",
+      "text": "Mas la Plana – Familia Torres",
+      "weingut": true,
+      "s": 21
+     },
+     {
+      "t": "gericht",
+      "name": "Mas la Plana",
+      "preise": [
+       "115"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2019"
+     },
+     {
+      "t": "zw",
+      "text": "RIOJA",
+      "s": 21
+     },
+     {
+      "t": "zw",
+      "text": "R. López de Heredia – Viña Tondonia",
+      "weingut": true,
+      "s": 21
+     },
+     {
+      "t": "gericht",
+      "name": "Viña Tondonia Rioja Reserva",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2001"
+     },
+     {
+      "t": "gericht",
+      "name": "Viña Tondonia Rioja Reserva",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2011"
+     },
+     {
+      "t": "gericht",
+      "name": "Viña Tondonia Rioja Gran Reserva",
+      "preise": [
+       "350"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 21,
+      "jahr": "2004"
+     },
+     {
+      "t": "zw",
+      "text": "Bodegas Artadi",
+      "weingut": true,
+      "s": 22
+     },
+     {
+      "t": "gericht",
+      "name": "Viñas de Gain Álava",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Viñas de Gain Álava",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 22,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Valdeginés",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Bodegas Javier San Pedro Ortega",
+      "weingut": true,
+      "s": 22
+     },
+     {
+      "t": "gericht",
+      "name": "Viuda Negra Crianza",
+      "preise": [
+       "70"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Viuda Negra Arca de Asa",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2020"
+     },
+     {
+      "t": "gericht",
+      "name": "Viuda Negra Arca de Asa",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "RIBERA DEL DUERO",
+      "s": 22
+     },
+     {
+      "t": "zw",
+      "text": "Dominio de Pingus",
+      "weingut": true,
+      "s": 22
+     },
+     {
+      "t": "gericht",
+      "name": "Flor de Pingus",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "Bodegas y Vinedos Alnardo",
+      "weingut": true,
+      "s": 22
+     },
+     {
+      "t": "gericht",
+      "name": "PSI",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Bodegas Vega Sicilia",
+      "weingut": true,
+      "s": 22
+     },
+     {
+      "t": "gericht",
+      "name": "Valbuena 5°",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Unico Gran Reserva",
+      "preise": [
+       "520"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2012"
+     },
+     {
+      "t": "gericht",
+      "name": "Unico Gran Reserva",
+      "preise": [
+       "540"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2014"
+     },
+     {
+      "t": "zw",
+      "text": "PRIORAT",
+      "s": 22
+     },
+     {
+      "t": "zw",
+      "text": "Alvaro Palacios",
+      "weingut": true,
+      "s": 22
+     },
+     {
+      "t": "gericht",
+      "name": "Les Terrasses",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 22,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "MALLORCA",
+      "s": 22
+     },
+     {
+      "t": "zw",
+      "text": "Ses Talaioles",
+      "weingut": true,
+      "s": 22
+     },
+     {
+      "t": "gericht",
+      "name": "Sestal",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "1.5l"
+      ],
+      "s": 22,
+      "jahr": "2019"
+     },
+     {
+      "t": "land",
+      "text": "FRANKREICH",
+      "s": 23
+     },
+     {
+      "t": "zw",
+      "text": "BURGUND",
+      "s": 23
+     },
+     {
+      "t": "zw",
+      "text": "Arnaud Baillot",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Gevrey-Chambertin",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Vignoble des Cabottes",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Beaune 1er Cru Clos de la Mousse",
+      "preise": [
+       "150"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Beaune 1er Cru Vigne de l’Enfant Jésus Les Grèves",
+      "preise": [
+       "290"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Corton Le Corton Grand Cru",
+      "preise": [
+       "260"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Bastian Wolber",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Santenay 1er Cru «Beauregard»",
+      "preise": [
+       "145"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2024"
+     },
+     {
+      "t": "gericht",
+      "name": "Beaune 1er Cru «Beauregard»",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Cellier aux Moines",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Givry Le Petit Cellier",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Givry 1er Cru Clos du Cellier aux Moines",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Benjamin Leroux",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Nuits St-Georges",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2016"
+     },
+     {
+      "t": "gericht",
+      "name": "Vosne Romanée",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2017"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Laurent Ponsot",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Bourgogne Rouge «Cuvée des Peupliers»",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine de la Romanée-Conti",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Romanée-St-Vivant",
+      "preise": [
+       "2900"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Romanée-St-Vivant",
+      "preise": [
+       "2900"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Maison Glandien",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "L’Ouverture Rouge",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Guilbert Gillet",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Chorey-lès-Beaune «Les Beaumonts» Vieille Vignes",
+      "preise": [
+       "200"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Jacques-Frédéric Mugnier",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Nuits-Saint-Georges 1er Cru «Clos de la Maréchale»",
+      "preise": [
+       "240"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Michel Noëllat",
+      "weingut": true,
+      "s": 23
+     },
+     {
+      "t": "gericht",
+      "name": "Nuits-Saint-Georges",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Chambolle Musigny",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 23,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "Fernand & Laurent Pillot",
+      "weingut": true,
+      "s": 24
+     },
+     {
+      "t": "gericht",
+      "name": "Beaune Rouge 1er Cru Boucherottes",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Pommard Rouge 1er Cru Les Charmots",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2022"
+     },
+     {
+      "t": "gericht",
+      "name": "Pommard Rouge 1er Cru Clos de Verger",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "LOIRE",
+      "s": 24
+     },
+     {
+      "t": "zw",
+      "text": "Domaine Guiberteau",
+      "weingut": true,
+      "s": 24
+     },
+     {
+      "t": "gericht",
+      "name": "Saumur Rouge",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "RHONE",
+      "s": 24
+     },
+     {
+      "t": "zw",
+      "text": "M. Chapoutier",
+      "weingut": true,
+      "s": 24
+     },
+     {
+      "t": "gericht",
+      "name": "Côte-Rôtie Les Bécasses",
+      "preise": [
+       "170"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2021"
+     },
+     {
+      "t": "gericht",
+      "name": "Côte-Rôtie Neve",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2017"
+     },
+     {
+      "t": "zw",
+      "text": "Pierre Gonon",
+      "weingut": true,
+      "s": 24
+     },
+     {
+      "t": "gericht",
+      "name": "Saint Joseph Rouge",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Saint Joseph Rouge",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2024"
+     },
+     {
+      "t": "zw",
+      "text": "Yann Chave",
+      "weingut": true,
+      "s": 24
+     },
+     {
+      "t": "gericht",
+      "name": "Saint-Joseph Rouge",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "BORDEAUX",
+      "s": 24
+     },
+     {
+      "t": "zw",
+      "text": "ST. JULIEN",
+      "s": 24
+     },
+     {
+      "t": "gericht",
+      "name": "Château Léoville-Poyferré",
+      "preise": [
+       "240"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2015"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Léoville-Poyferré",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2017"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Lagrange",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2016"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Langoa-Barton",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2014"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Moulin Riche",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Léoville-Barton",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2014"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Léoville-Barton",
+      "preise": [
+       "190"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2015"
+     },
+     {
+      "t": "zw",
+      "text": "ST.-EMILLION/FRONSAC",
+      "s": 24
+     },
+     {
+      "t": "gericht",
+      "name": "Château Bernon Bécot",
+      "preise": [
+       "75"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Rocheyron",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Troplong-Mondot",
+      "preise": [
+       "180"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Château La Mondotte Comtes de Neipperg",
+      "preise": [
+       "300"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 24,
+      "jahr": "1999"
+     },
+     {
+      "t": "zw",
+      "text": "ST.-ESTEPHE",
+      "s": 25
+     },
+     {
+      "t": "gericht",
+      "name": "Château Montrose",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2001"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Montrose",
+      "preise": [
+       "280"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2014"
+     },
+     {
+      "t": "gericht",
+      "name": "La Dame de Montrose",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2015"
+     },
+     {
+      "t": "gericht",
+      "name": "La Dame de Montrose",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Marbuzet",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "1995"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Cos d’Estournel",
+      "preise": [
+       "320"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2000"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Phélan-Ségur",
+      "preise": [
+       "105"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2014"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Phélan-Ségur",
+      "preise": [
+       "105"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2019"
+     },
+     {
+      "t": "zw",
+      "text": "PESSAC-LEOGNAN",
+      "s": 25
+     },
+     {
+      "t": "gericht",
+      "name": "Château Haut-Bailly",
+      "preise": [
+       "300"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "1996"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Haut-Bailly",
+      "preise": [
+       "320"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2009"
+     },
+     {
+      "t": "gericht",
+      "name": "Haut Bailly II",
+      "preise": [
+       "95"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2023"
+     },
+     {
+      "t": "zw",
+      "text": "MARGAUX",
+      "s": 25
+     },
+     {
+      "t": "gericht",
+      "name": "Château Mille Roses",
+      "preise": [
+       "85"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2019"
+     },
+     {
+      "t": "zw",
+      "text": "MOULIS – HAUT-MEDOC",
+      "s": 25
+     },
+     {
+      "t": "gericht",
+      "name": "Château Cantemerle",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Cantemerle",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Belgrave",
+      "preise": [
+       "100"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Poujeaux",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2019"
+     },
+     {
+      "t": "zw",
+      "text": "PAUILLAC",
+      "s": 25
+     },
+     {
+      "t": "gericht",
+      "name": "Château Pichon-Longueville-Baron",
+      "preise": [
+       "350"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Réserve de la Comtesse",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2016"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Pichon-Comtesse de Lalande",
+      "preise": [
+       "400"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Pichon-Comtesse de Lalande",
+      "preise": [
+       "370"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Lynch-Bages",
+      "preise": [
+       "440"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2000"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Lynch-Bages",
+      "preise": [
+       "240"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2010"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Lynch-Bages",
+      "preise": [
+       "330"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2018"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Latour Les Forts de Latour",
+      "preise": [
+       "380"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2000"
+     },
+     {
+      "t": "gericht",
+      "name": "Château d’Armailhac",
+      "preise": [
+       "160"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2016"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Pontet-Canet",
+      "preise": [
+       "250"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2014"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Pontet-Canet",
+      "preise": [
+       "230"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2017"
+     },
+     {
+      "t": "gericht",
+      "name": "Château Grand-Puy-Lacoste",
+      "preise": [
+       "140"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2015"
+     },
+     {
+      "t": "zw",
+      "text": "CÔTES DE BORDEAUX / BORDEAUX SUPERIEUR",
+      "s": 25
+     },
+     {
+      "t": "gericht",
+      "name": "Château Grand Village",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 25,
+      "jahr": "2021",
+      "zusatz": "Rouge"
+     },
+     {
+      "t": "rubrik",
+      "titel": "SÜSSWEINE",
+      "s": 26
+     },
+     {
+      "t": "land",
+      "text": "DEUTSCHLAND - NAHE",
+      "s": 26
+     },
+     {
+      "t": "zw",
+      "text": "Hermann Dönnhoff",
+      "weingut": true,
+      "s": 26
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Oberhäuser Brücke Spätlese",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.7l"
+      ],
+      "s": 26,
+      "jahr": "2023"
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Auslese Hermannshöhle",
+      "preise": [
+       "90"
+      ],
+      "einheiten": [
+       "0.375l"
+      ],
+      "s": 26,
+      "jahr": "2022"
+     },
+     {
+      "t": "zw",
+      "text": "MOSEL",
+      "s": 26
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Joh. Jos. Prüm",
+      "weingut": true,
+      "s": 26
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Auslese Goldkapsel Wehlener Sonnenuhr",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.375l"
+      ],
+      "s": 26,
+      "jahr": "2020"
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Achim Molitor",
+      "weingut": true,
+      "s": 26
+     },
+     {
+      "t": "gericht",
+      "name": "Riesling Beerenauslese Piesporter Falkenberg",
+      "preise": [
+       "110"
+      ],
+      "einheiten": [
+       "0.375l"
+      ],
+      "s": 26,
+      "jahr": "2018"
+     },
+     {
+      "t": "land",
+      "text": "FRANKREICH - BORDEAUX",
+      "s": 26
+     },
+     {
+      "t": "zw",
+      "text": "Château Lafaurie-Peyraguey",
+      "weingut": true,
+      "s": 26
+     },
+     {
+      "t": "gericht",
+      "name": "Sauternes 1er Grand Cru Classé",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.375l"
+      ],
+      "s": 26,
+      "jahr": "2021"
+     },
+     {
+      "t": "zw",
+      "text": "Château de Rayne Vigneau",
+      "weingut": true,
+      "s": 26
+     },
+     {
+      "t": "gericht",
+      "name": "Sauternes",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.375l"
+      ],
+      "s": 26,
+      "jahr": "2021"
+     },
+     {
+      "t": "land",
+      "text": "ÖSTERREICH - BURGENLAND",
+      "s": 26
+     },
+     {
+      "t": "zw",
+      "text": "Weingut Heidi Schröck",
+      "weingut": true,
+      "s": 26
+     },
+     {
+      "t": "gericht",
+      "name": "Ruster Ausbruch „Auf den Flügeln der Morgenröte“",
+      "preise": [
+       "80"
+      ],
+      "einheiten": [
+       "0.375l"
+      ],
+      "s": 26,
+      "jahr": "2018"
+     },
+     {
+      "t": "zw",
+      "text": "Weinlaubenhof Kracher",
+      "weingut": true,
+      "s": 26
+     },
+     {
+      "t": "gericht",
+      "name": "TBA Welschriesling No. 6 „Zwischen den Seen“",
+      "preise": [
+       "130"
+      ],
+      "einheiten": [
+       "0.375l"
+      ],
+      "s": 26,
+      "jahr": "2019"
+     },
+     {
+      "t": "gericht",
+      "name": "TBA Grande Cuvee No. 4 „Nouvelle Vague»",
+      "preise": [
+       "120"
+      ],
+      "einheiten": [
+       "0.375l"
+      ],
+      "s": 26,
+      "jahr": "2020"
+     }
+    ]
+   }
+  ]
+ }
+}

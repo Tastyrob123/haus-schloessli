@@ -1,0 +1,82 @@
+[
+ {
+  "ziel": "speisekarte",
+  "quelle": "../_quelle/website/pdf/Speisekarte-Oktober.pdf",
+  "name": "Die Karte nach Ländern",
+  "gruppe": "Restaurant",
+  "seiten": 2,
+  "b": 210,
+  "h": 297,
+  "dazu": "Wirtschaft am Schlössli · Seestrasse 50 · 8598 Bottighofen Wirtschaft am Schlössli · Seestrasse 50 · 8598 Bottighofen",
+  "fehlt": ""
+ },
+ {
+  "ziel": "laestermeile",
+  "quelle": "../_quelle/website/pdf/Lastermeile-Homepage-2339.pdf",
+  "name": "Lästermeile",
+  "gruppe": "Bar",
+  "seiten": 1,
+  "b": 210,
+  "h": 297,
+  "dazu": "Wirtschaft am Schlössli · Seestrasse 50 · 8598 Bottighofen Pickles",
+  "fehlt": "Pickels"
+ },
+ {
+  "ziel": "lunch",
+  "quelle": "../_quelle/website/pdf/Lunch_261019.pdf",
+  "name": "Lunch-Menü",
+  "gruppe": "Restaurant",
+  "seiten": 1,
+  "b": 297,
+  "h": 210,
+  "dazu": "Wirtschaft am Schlössli · Seestrasse 50 · 8598 Bottighofen",
+  "fehlt": ""
+ },
+ {
+  "ziel": "bankett",
+  "quelle": "../_quelle/website/pdf/Bankettmenuvorschlage.pdf",
+  "name": "Bankettmenüvorschläge",
+  "gruppe": "Banketts & Gruppen",
+  "seiten": 2,
+  "b": 210,
+  "h": 297,
+  "dazu": "Wirtschaft am Schlössli · Seestrasse 50 · 8598 Bottighofen Wirtschaft am Schlössli · Seestrasse 50 · 8598 Bottighofen Süsssaures knusprigem Knoblauchbrot",
+  "fehlt": "Süßsaures knusprigen Knoblauchbrot"
+ },
+ {
+  "ziel": "weinkarte",
+  "quelle": "../_quelle/website/pdf/20261014_Weinkarte.pdf",
+  "name": "Weinkarte",
+  "gruppe": "Restaurant",
+  "seiten": 23,
+  "b": 210,
+  "h": 297,
+  "dazu": "mois sur lie mois sur lie mois sur lie mois sur lie mois sur lie Adank’s Clos d’Agon Clos d’Agon ST.-ÉMILION/FRONSAC MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt. MwSt.",
+  "fehlt": "moins sur lie moins sur lie moins sur lie moins sur lie moins sur lie Adank`s Clos d`Agon Clos d`Agon ST.-EMILLION/FRONSAC M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. M wSt. A 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 Alle Preise in Schweizer Franken inkl. 8,1% M wSt. Alle Weine enthalten Sulfite Alle Preise in Schweizer Franken inkl. 8,1% M wSt. Alle Weine enthalten Sulfite Alle Preise in Schweizer Franken inkl. 8,1% M wSt. Alle Weine enthalten Sulfite",
+  "alt_seiten": [
+   1,
+   2,
+   3,
+   5,
+   5,
+   7,
+   8,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   23,
+   24,
+   25,
+   26
+  ]
+ }
+]

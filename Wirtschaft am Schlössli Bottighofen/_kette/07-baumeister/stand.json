@@ -1,0 +1,133 @@
+{
+  "station": "07",
+  "name": "Website bauen",
+  "rolle": "Baumeister",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T14:47+07:00",
+  "ende": "2026-10-19T17:41+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Kein eigenes Foto des Hauses von aussen; gezeigt wird das freie Commons-Foto von 2016 (frühere Betreiber, Schild «Bar Wirtschaft», Möblierung von damals)",
+      "wo": "_quelle/Material-Übersicht.md (Lücken)"
+    },
+    {
+      "punkt": "Keine Fotos der zwei Bankett-Etagen; Startseite und feiern.html zeigen dort Teller statt Säle",
+      "wo": "_quelle/website/bilder, Seite «Karten»"
+    },
+    {
+      "punkt": "Bar-Foto b49b5b nur 900 px breit, deshalb in der Lästermeile klein gesetzt; Originale liegen beim Haus",
+      "wo": "_quelle/website/bilder"
+    },
+    {
+      "punkt": "Teller der Küstenlinie (Thunfisch, schwarze Pasta, Salat) tragen keine Gerichtsnamen; sie stehen über den Ländern ohne belegte Zuordnung, nur die Tortelloni sind benannt",
+      "wo": "_quelle/website/bilder (Dateinamen), Speisekarte-Oktober.txt"
+    },
+    {
+      "punkt": "Patissière Theresa Hermann fehlt auf «Über uns»; Marco Reisinger und Ole Sass ohne Porträt (team.html zeigt sie als Zeile)",
+      "wo": "_quelle/website/text/uber-uns.md, presse/gaultmillau-zwei-koeniginnen.md"
+    },
+    {
+      "punkt": "Bildrechte und Fotografen der Hausfotos ungeklärt; zwei Bilder von Schweiz Tourismus (Lounge, Sauce). Vier freie Bilder von Wikimedia Commons (Haus 2016, Bootshafen, Luftbild 1954, Morgen am See) stehen mit Namensnennung unter dem Foto und im Impressum",
+      "wo": "_quelle/fotografen-aus-metadaten.json, extern/wikipedia-commons/bilder/herkunft.json"
+    },
+    {
+      "punkt": "Sätze von uns, nicht vom Haus: beide Fenster-Sätze, Titel «Vier Länder auf einer Karte», «Bis 23 Uhr unter der Platane», «Ein Besen statt eines Schilds», «Zwei Etagen, je bis zu 26 Gäste», die drei Besen-Sätze, der Weg von Moni Huber, der Zusatz zur Lästermeile, die Familienzeile im Fuss, die Kopfsätze von Gutschein und Events, «Was war.»",
+      "wo": "website/inhalt/haus.json, website/bau.py"
+    },
+    {
+      "punkt": "Wortlaut der Klage von damals («… lasse er keinen Schildt …») aus der Texterkennung der Gemeindeschrift, am PDF gegenprüfen",
+      "wo": "_quelle/presse/pdf-text/…_OCR.txt Zeile 327, PDF-Seite 110"
+    },
+    {
+      "punkt": "Bankettmenüs vom 29.04.2025: ob Preise und Gerichte noch gelten",
+      "wo": "_quelle/website/pdf-text/Bankettmenuvorschlage.txt"
+    },
+    {
+      "punkt": "Bankettanfrage und Gutschein schicken in der Studie nichts ab; wohin Anfragen später gehen (Mail, Studio) und Gutschein mit Bezahlung online sind offen, Gutschein-Beträge nennt das Haus nicht",
+      "wo": "website/bau.py › fenster_dialoge, fakten.json › gutschein"
+    },
+    {
+      "punkt": "Datenschutzerklärung im Wortlaut des Hauses übernommen; sie nennt Squarespace und gastronovi nicht (Reservation läuft im Fenster über gastronovi)",
+      "wo": "_quelle/website/text/datenschutzerklarung.md"
+    },
+    {
+      "punkt": "Startseite misst am Rechner 16,3 Bildschirme statt rund 24 wie beim Rivage",
+      "wo": "website/_qa/pruefen.js, konzept.json › offen"
+    },
+    {
+      "punkt": "UI-Fundus lokal fortgeschrieben (Bereiche, Aufnahmen, Baustein «Anlegen am Horizont»), nicht hochgeladen, weil nichts online geht",
+      "wo": "_UI-Fundus/bereiche.py, bau.py, site/style.css"
+    },
+    {
+      "punkt": "Entwurfs-Maschine nicht gezogen und keine Varianten-Seiten gebaut: durchgebaut nach dem Drehbuch des bestätigten Konzepts (Freigabe 19.10.2026)",
+      "wo": "website/_varianten (leer)"
+    },
+    {
+      "punkt": "Fotos nicht per KI nachgeschärft (Station 8, kostet Guthaben)",
+      "wo": "Regel 54, Master 2.4a"
+    },
+    {
+      "punkt": "Messung auf Akku bei Last um 5 (Stromsparmodus aus), Bildrate im unsichtbaren Chromium; am Netzteil und in echtem Safari nachmessen",
+      "wo": "website/_qa/messung-*.json"
+    },
+    {
+      "punkt": "Speisekarte, Lunch-Menü und Lästermeile als Stand Oktober 2026 eingelesen; sie wechseln (Lunch wöchentlich) und gehören später an La Carte",
+      "wo": "website/karten_lesen.py, inhalt/*.json"
+    },
+    {
+      "punkt": "Nutzungsanzeige vorher und nachher nicht ablesbar",
+      "wo": "Nutzungsanzeige 19.10.2026"
+    },
+    {
+      "punkt": "Vier Instagram-Bilder des Hauses (Promenade, Herd, Pass, Tortelloni) liegen nur in 360 bis 480 px vor und sind deshalb klein gesetzt; grössere Fassungen beim Haus",
+      "wo": "_quelle/extern/ig"
+    },
+    {
+      "punkt": "Wetter auf der Seite nicht gebaut: «Kein Wetter-Block» gilt überall (Website-Briefing 6.13); gezeigt werden nur Sonnenuntergang und ob die Terrasse offen ist",
+      "wo": "Website-Briefing — Roberts Standard.md 6.13"
+    },
+    {
+      "punkt": "Weinberater: Geschmack (frisch/kräftig, Frucht/Holz) und «passt zu» stehen nicht in der Weinkarte und werden nicht gezeigt; Angaben dazu müsste Jonas Volpert liefern",
+      "wo": "_quelle/website/pdf-text/20261014_Weinkarte.txt"
+    },
+    {
+      "punkt": "Keine Flaschenfotos: belegte Herstellerbilder liegen nicht vor; die Wein-Kärtchen kommen ohne Bild aus",
+      "wo": "_quelle/website/bilder"
+    },
+    {
+      "punkt": "Wein zum Gang: die Zuordnung nach Herkunft (Klassiker: Schweiz) ist eine Idee von uns, nicht vom Haus",
+      "wo": "website/assets/js/funktionen.js"
+    },
+    {
+      "punkt": "Gutschein für beide Häuser (Schlössli und Schäfli): ob das Haus das anbietet, ist offen; auf der Seite als Idee gekennzeichnet",
+      "wo": "website/funktionen.py › gutschein_inhalt"
+    },
+    {
+      "punkt": "Seenachtfest 2027: Datum offen; im Kalender vergangene Anlässe nur zum Vormerken",
+      "wo": "_quelle/website/text/events-2-1*.md"
+    },
+    {
+      "punkt": "Anreise mit dem Boot: ob ein Kursschiff anlegt und wo Gäste festmachen dürfen, ist nicht belegt; die Seite verweist auf Nachfrage",
+      "wo": "fakten.json › anreise › schiff"
+    },
+    {
+      "punkt": "Werkbank des Schlössli gibt es noch nicht (Station 11); die neuen Funktionen dort nachziehen, sobald sie gebaut wird",
+      "wo": "_kette/11-werkbank"
+    }
+  ],
+  "paket": [
+    "abschnitte.json",
+    "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html",
+  "briefing": "briefing.html",
+  "notiz": "Website liegt lokal vor, dazu die elf Gäste-Funktionen: Weinberater mit Wein-Kärtchen, Flasche und Allergien in der Reservierung, Wein zum Gang, Abend zusammenstellen, Gutschein als Karte, Kalender, Blick in die Küche, Schäfli, der See heute.",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

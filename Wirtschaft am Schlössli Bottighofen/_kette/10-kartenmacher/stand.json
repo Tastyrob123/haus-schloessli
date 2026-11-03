@@ -1,0 +1,68 @@
+{
+  "station": "10",
+  "name": "Speisekarten",
+  "rolle": "Kartenmacher",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "bestätigt",
+  "beginn": "2026-10-19T22:50+07:00",
+  "ende": "2026-10-20T00:09+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Keine Getränke- oder Barkarte online (Bier, Aperitif, Spirituosen, Kaffee, Wein im Glas); Aperitif-Karte 2024 nur im Web-Archiv, nicht übernommen",
+      "wo": "_quelle/website/pdf, _quelle/web-archiv/text/2024_speisekarten__aperitif-karte.md"
+    },
+    {
+      "punkt": "Zeitraum keiner Karte belegt: Speisekarte nur «Oktober» im Dateinamen, Lunch «261019» im Dateinamen ohne Tag, Lästermeile und Weinkarte ohne Datum",
+      "wo": "_quelle/website/pdf/*.pdf (Textschicht und Dateiname)"
+    },
+    {
+      "punkt": "Bankettmenü vom 29.04.2025: ob Gerichte und Preise noch gelten",
+      "wo": "_quelle/website/pdf/Bankettmenuvorschlage.pdf"
+    },
+    {
+      "punkt": "4-Hands-Lunch ist vorbei (22.02.2026); ob die Karte auf La Carte bleibt, entscheidet das Haus. Seite nennt 6 Gänge, PDF zeigt neun",
+      "wo": "_quelle/website/text/events-2-1__event-two-yf5k9.md, 4_Hands-_Stier.pdf"
+    },
+    {
+      "punkt": "Zweite Lästermeile-Datei (Lastermeile-Homepage-2tbd.pdf) ist auf /karten verlinkt, liegt aber nicht im Paket; gelesen ist die Fassung 2339",
+      "wo": "_quelle/website/html/karten.html, herkunft.json"
+    },
+    {
+      "punkt": "Allergene stehen als Kürzel des Hauses im Feld «zusatz» (G, L, E, F, S, So, En, N, Se, VEG/OVEG), nicht in den 14 Feldern von La Carte, weil die Begriffe nicht deckungsgleich sind",
+      "wo": "_karten/stand/speisekarte.json, laestermeile.json; modell.py ALLERGENE"
+    },
+    {
+      "punkt": "Weinkarte: Erzeuger als Zwischentitel mit «weingut»: true, Jahrgang im Feld «jahr»; das Datenmodell von La Carte kennt beides nicht als eigene Art, der Satz von La Carte muss es lesen lernen",
+      "wo": "_karten/stand/weinkarte.json, _Werkzeuge/werkzeuge/karten/modell.py"
+    },
+    {
+      "punkt": "Deckblätter der neuen PDF (Speisekarte, Lästermeile, Weinkarte) hat das Original nicht; Titel ist der Name, unter dem /karten die Datei verlinkt",
+      "wo": "_karten/stand/*.json › teile[deckel]"
+    },
+    {
+      "punkt": "Lästermeile und Bankett-Gerichte nennen keine Währung; Lästermeile-Öffnungszeit steht nur auf /karten, nicht in der PDF",
+      "wo": "_quelle/website/text/karten.md"
+    },
+    {
+      "punkt": "Nutzungsanzeige des Abos in diesem Chat nicht ablesbar, Verbrauch nicht eingetragen",
+      "wo": "Station 10"
+    }
+  ],
+  "paket": [
+    "karten.json",
+    "../../_karten/stand/"
+  ],
+  "adresse": "http://127.0.0.1:8982/unterlagen/",
+  "briefing": "briefing.html",
+  "notiz": "Robert 20.10.2026: «Okay, passt.» Fünf Karten in der Machart des Hauses verfeinert, Weinkarte durchlaufend mit Flaggen, Wortlaut 5 von 5 gleich.",
+  "bestaetigt": {
+    "zeit": "2026-10-20T00:11+07:00",
+    "wort": "Robert 20.10.2026 im Chat: «Okay, passt.» · «Doch, ich habe sie jetzt bei dir freigegeben.»"
+  },
+  "rueckgaben": []
+}

@@ -1,0 +1,20 @@
+[
+ [
+  "01",
+  "01-reservation",
+  "Ihre Reservation",
+  "Kommt gleich nach der Anfrage im Fenster: Tag, Uhrzeit, Personen, Platz und die bereitgelegte Flasche zum Nachlesen."
+ ],
+ [
+  "02",
+  "02-bankett",
+  "Ihr Bankett",
+  "Kommt nach der Bankettanfrage: Datum, Personen, Etage und Menü, und der Satz, dass wir uns melden."
+ ],
+ [
+  "03",
+  "03-gutschein",
+  "Ihr Gutschein",
+  "Kommt nach der Bestellung des Gutscheins. Die Karte selbst hängt als PDF an der Mail."
+ ]
+]

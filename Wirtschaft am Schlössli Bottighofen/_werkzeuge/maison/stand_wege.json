@@ -1,0 +1,55 @@
+{
+ "_hinweis": "Je Werkzeug: Stand-Weg ab der Wurzel seines Servers (lokal über /_weiter/<werkzeug>/), Anleitung, Ordner mit seinem Code (Knopf-Namen der Tafel). Gelesen aus der Lieferung des Werkzeugs (STAND.md im Paket der Kette).",
+ "bureau": {
+  "stand": "/api/x/website/ueberblick/schloessli",
+  "pruefung": "http://127.0.0.1:9035/werkzeuge/website/pruefung.html?haus=schloessli",
+  "code": [
+   "~/Desktop/Website-Projekte/Wirtschaft am Schlössli Bottighofen/_werkzeuge/bureau",
+   "~/Desktop/Website-Projekte/_Werkzeuge/werkzeuge/website"
+  ],
+  "quelle": "_kette/11-werkbank/werkzeuge/website/STAND.md (Stand-Weg für La Maison / Die Stube)"
+ },
+ "livre": {
+  "stand": "/marke/livre.json",
+  "livre_json": "_werkzeuge/livre/livre.json",
+  "code": [
+   "~/Desktop/Website-Projekte/Wirtschaft am Schlössli Bottighofen/_werkzeuge/livre"
+  ],
+  "anleitung": "http://127.0.0.1:9049/_werkzeuge/livre/anleitung.html",
+  "quelle": "_kette/11-werkbank/werkzeuge/marke/STAND.md"
+ },
+ "reception": {
+  "stand": "/_werkzeuge/reception/api/ueberblick",
+  "code": [
+   "~/Desktop/Website-Projekte/Wirtschaft am Schlössli Bottighofen/_werkzeuge/reception"
+  ],
+  "anleitung": "http://127.0.0.1:9047/_werkzeuge/reception/anleitung.html",
+  "quelle": "_kette/11-werkbank/werkzeuge/gaeste/STAND.md",
+  "beispiel": true
+ },
+ "carte": {
+  "stand": "/_werkzeuge/carte/api/status",
+  "code": [
+   "~/Desktop/Website-Projekte/Wirtschaft am Schlössli Bottighofen/_werkzeuge/carte"
+  ],
+  "anleitung": "http://127.0.0.1:9031/_werkzeuge/carte/anleitung.html",
+  "quelle": "_kette/11-werkbank/werkzeuge/karten/STAND.md"
+ },
+ "registre": {
+  "stand": [
+   "/api/registre?tage=30&beispiel=1"
+  ],
+  "code": [
+   "~/Desktop/Website-Projekte/Wirtschaft am Schlössli Bottighofen/_werkzeuge/registre"
+  ],
+  "anleitung": "http://127.0.0.1:8988/_werkzeuge/registre/anleitung.html",
+  "quelle": "_kette/11-werkbank/werkzeuge/besuche/STAND.md"
+ },
+ "imprimerie": {
+  "stand": "/_werkzeuge/imprimerie/haeuser/schloessli/vorlagen/index.json",
+  "code": [
+   "~/Desktop/Website-Projekte/Wirtschaft am Schlössli Bottighofen/_werkzeuge/imprimerie"
+  ],
+  "quelle": "_kette/11-werkbank/werkzeuge/druck/STAND.md"
+ }
+}

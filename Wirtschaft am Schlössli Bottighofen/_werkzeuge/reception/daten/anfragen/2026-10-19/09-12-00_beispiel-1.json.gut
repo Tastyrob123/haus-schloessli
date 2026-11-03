@@ -1,0 +1,40 @@
+{
+ "zeit": "2026-10-19T09:12:00+02:00",
+ "art": "tisch",
+ "name": "Sandra Keller",
+ "kontakt": "sandra.keller@example.com",
+ "datum": "Do, 22. Oktober 2026",
+ "personen": 2,
+ "anliegen": "Reservation mit Wünschen, Draussen auf der Terrasse",
+ "sprache": "de",
+ "gespraech": "beispiel-1",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Startseite): Datum: Do, 22. Oktober 2026\nUhrzeit: 12:00 Uhr\nPersonen: 2\nPlatz: Draussen auf der Terrasse\nAllergien: Nüsse\nWünsche: Wir feiern unseren Hochzeitstag."
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "an": "kontakt@schloessli-bottighofen.ch",
+ "abteilung": "Reservation",
+ "seite": "/index.html",
+ "seite_name": "Startseite",
+ "web": true,
+ "nachricht": "Datum: Do, 22. Oktober 2026\nUhrzeit: 12:00 Uhr\nPersonen: 2\nPlatz: Draussen auf der Terrasse\nAllergien: Nüsse\nWünsche: Wir feiern unseren Hochzeitstag.",
+ "formular": "reservation",
+ "allergene": [
+  "N"
+ ],
+ "uhrzeit": "12:00 Uhr",
+ "platz": "Draussen auf der Terrasse",
+ "entwurf": {
+  "betreff": "Ihre Anfrage in der Wirtschaft am Schlössli (Probe)",
+  "text": "Guten Tag Sandra Keller\n\nVielen Dank für Ihre Anfrage. Dies ist ein Probe-Brief ohne KI, damit sich Gestalten, PDF und Text prüfen lassen.\n\nFür Ihr Datum [Verfügbarkeit prüfen] und [Tisch bestätigen].\n\nIhre Angaben zu Allergien (Nüsse) geben wir an die Küche weiter [Küche informieren].\n\nDamit wir alles in Ruhe vorbereiten können:\n- Uhrzeit\n- Anzahl Personen\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Probe ohne KI\nOffen: Verfügbarkeit, Bestätigung",
+  "vorlage": "",
+  "absender": "kontakt@schloessli-bottighofen.ch",
+  "zeit": "2026-10-20T01:02:40+07:00",
+  "fassung": 1
+ }
+}

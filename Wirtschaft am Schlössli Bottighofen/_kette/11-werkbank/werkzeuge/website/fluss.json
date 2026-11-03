@@ -1,0 +1,40 @@
+{
+ "adresse": "http://127.0.0.1:9035/_werkzeuge/bureau/",
+ "zeit": "2026-10-19T16:24:36.542Z",
+ "last": "20.4",
+ "werte": [
+  {
+   "rate": 1,
+   "oeffnen_ms": 102,
+   "scroll": {
+    "p95_ms": 9.1,
+    "laengster_ms": 9.4
+   },
+   "bereich_liste_ms": 54,
+   "bereich_seite_ms": 119,
+   "zeiten_preise_ms": 133
+  },
+  {
+   "rate": 4,
+   "oeffnen_ms": 220,
+   "scroll": {
+    "p95_ms": 9.2,
+    "laengster_ms": 9.3
+   },
+   "bereich_liste_ms": 132,
+   "bereich_seite_ms": 240,
+   "zeiten_preise_ms": 327
+  },
+  {
+   "rate": 6,
+   "oeffnen_ms": 334,
+   "scroll": {
+    "p95_ms": 8.9,
+    "laengster_ms": 9.2
+   },
+   "bereich_liste_ms": 208,
+   "bereich_seite_ms": 316,
+   "zeiten_preise_ms": 549
+  }
+ ]
+}

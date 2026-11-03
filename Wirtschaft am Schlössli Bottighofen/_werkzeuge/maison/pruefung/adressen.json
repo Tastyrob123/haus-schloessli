@@ -1,0 +1,32 @@
+{
+ "bureau": {
+  "teil": "website",
+  "zustand": "liegt vor",
+  "adresse": "http://127.0.0.1:9035/_werkzeuge/bureau/"
+ },
+ "carte": {
+  "teil": "karten",
+  "zustand": "liegt vor",
+  "adresse": "http://127.0.0.1:9031/_werkzeuge/carte/"
+ },
+ "imprimerie": {
+  "teil": "druck",
+  "zustand": "liegt vor",
+  "adresse": "http://127.0.0.1:9053/_werkzeuge/imprimerie/"
+ },
+ "reception": {
+  "teil": "gaeste",
+  "zustand": "liegt vor",
+  "adresse": "http://127.0.0.1:9047/_werkzeuge/reception/"
+ },
+ "livre": {
+  "teil": "marke",
+  "zustand": "liegt vor",
+  "adresse": "http://127.0.0.1:9049/_werkzeuge/livre/"
+ },
+ "registre": {
+  "teil": "besuche",
+  "zustand": "liegt vor",
+  "adresse": "http://127.0.0.1:8988/_werkzeuge/registre/"
+ }
+}

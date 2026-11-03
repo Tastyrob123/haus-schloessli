@@ -1,0 +1,3594 @@
+[
+ {
+  "seite": "404.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "404.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "abend.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "agb.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "https://www.excellence.ch/flusskreuzfahrten/gourmetfestival-dieter-koschina-monika-huber-eobas88-gf",
+  "ziel": "https://www.excellence.ch/flusskreuzfahrten/gourmetfestival-dieter-koschina-monika-huber-eobas88-gf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "https://www.schaefli-wigoltingen.ch/kitchenparty-2026",
+  "ziel": "https://www.schaefli-wigoltingen.ch/kitchenparty-2026",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "anlaesse.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "datenschutz.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Apfelbl%C3%BCte_am_Bodensee_2014.JPG",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Apfelbl%C3%BCte_am_Bodensee_2014.JPG",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Johannisbeeren_rot.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Johannisbeeren_rot.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Zwetschgen_am_Baum_in_den_Struth%C3%A4ckern.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Zwetschgen_am_Baum_in_den_Struth%C3%A4ckern.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "unterlagen/pdf/bankett.pdf",
+  "ziel": "http://127.0.0.1:8982/unterlagen/pdf/bankett.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feiern.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "gutschein.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File%3ABar_Wirtschaft_%22Schl%C3%B6ssli%22_am_Bodensee_in_Bottighofen_TG_%282016%29.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File%3ABar_Wirtschaft_%22Schl%C3%B6ssli%22_am_Bodensee_in_Bottighofen_TG_%282016%29.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File%3ABootshafen_mit_Wirtschaft_und_Schl%C3%B6ssli_-_MG_0679.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File%3ABootshafen_mit_Wirtschaft_und_Schl%C3%B6ssli_-_MG_0679.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File%3ABottighofen_TG_-_Schiffl%C3%A4nde_und_Bootstankstelle.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File%3ABottighofen_TG_-_Schiffl%C3%A4nde_und_Bootstankstelle.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File%3AETH-BIB-Bottighofen%2C_Strandhotel_Schl%C3%B6ssli-LBS_H1-017018.tif",
+  "ziel": "https://commons.wikimedia.org/wiki/File%3AETH-BIB-Bottighofen%2C_Strandhotel_Schl%C3%B6ssli-LBS_H1-017018.tif",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File%3AMorgen_am_Bodensee_mit_Schiffl%C3%A4nde_Bottighofen_%282012%29.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File%3AMorgen_am_Bodensee_mit_Schiffl%C3%A4nde_Bottighofen_%282012%29.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Abendschiff_vor_dem_S%C3%A4ntis-Massiv.JPG",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Abendschiff_vor_dem_S%C3%A4ntis-Massiv.JPG",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Apfelbl%C3%BCte_am_Bodensee_2014.JPG",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Apfelbl%C3%BCte_am_Bodensee_2014.JPG",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Ausblick_vom_Bodensee_bis_zum_S%C3%A4ntis_-_panoramio.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Ausblick_vom_Bodensee_bis_zum_S%C3%A4ntis_-_panoramio.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Johannisbeeren_rot.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Johannisbeeren_rot.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Sonnenuntergang_am_SeeRhein_in_Gottlieben_(Thurgau,_2015).jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Sonnenuntergang_am_SeeRhein_in_Gottlieben_%28Thurgau%2C_2015%29.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Zwetschgen_am_Baum_in_den_Struth%C3%A4ckern.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Zwetschgen_am_Baum_in_den_Struth%C3%A4ckern.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://www.bottighofen.ch/_doc/87701",
+  "ziel": "https://www.bottighofen.ch/_doc/87701",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "impressum.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://commons.wikimedia.org/wiki/File%3ABottighofen_TG_-_Schiffl%C3%A4nde_und_Bootstankstelle.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File%3ABottighofen_TG_-_Schiffl%C3%A4nde_und_Bootstankstelle.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://commons.wikimedia.org/wiki/File%3AETH-BIB-Bottighofen%2C_Strandhotel_Schl%C3%B6ssli-LBS_H1-017018.tif",
+  "ziel": "https://commons.wikimedia.org/wiki/File%3AETH-BIB-Bottighofen%2C_Strandhotel_Schl%C3%B6ssli-LBS_H1-017018.tif",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Apfelbl%C3%BCte_am_Bodensee_2014.JPG",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Apfelbl%C3%BCte_am_Bodensee_2014.JPG",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Ausblick_vom_Bodensee_bis_zum_S%C3%A4ntis_-_panoramio.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Ausblick_vom_Bodensee_bis_zum_S%C3%A4ntis_-_panoramio.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Johannisbeeren_rot.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Johannisbeeren_rot.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Sonnenuntergang_am_SeeRhein_in_Gottlieben_(Thurgau,_2015).jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Sonnenuntergang_am_SeeRhein_in_Gottlieben_%28Thurgau%2C_2015%29.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://commons.wikimedia.org/wiki/File:Zwetschgen_am_Baum_in_den_Struth%C3%A4ckern.jpg",
+  "ziel": "https://commons.wikimedia.org/wiki/File:Zwetschgen_am_Baum_in_den_Struth%C3%A4ckern.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "kontakt.html#see",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "weinkarte.html#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "index.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "unterlagen/pdf/laestermeile.pdf",
+  "ziel": "http://127.0.0.1:8982/unterlagen/pdf/laestermeile.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "unterlagen/pdf/lunch.pdf",
+  "ziel": "http://127.0.0.1:8982/unterlagen/pdf/lunch.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "unterlagen/pdf/speisekarte.pdf",
+  "ziel": "http://127.0.0.1:8982/unterlagen/pdf/speisekarte.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "karte.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "https://www.openstreetmap.org/?mlat=47.6442147&mlon=9.212147#map=17/47.6442147/9.212147",
+  "ziel": "https://www.openstreetmap.org/?mlat=47.6442147&mlon=9.212147",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "https://www.openstreetmap.org/directions?to=47.6442147%2C9.212147",
+  "ziel": "https://www.openstreetmap.org/directions?to=47.6442147%2C9.212147",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "kontakt.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservation/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservation/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "https://www.schaefli-wigoltingen.ch/",
+  "ziel": "https://www.schaefli-wigoltingen.ch/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "team.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "agb.html",
+  "ziel": "http://127.0.0.1:8982/agb.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "datenschutz.html",
+  "ziel": "http://127.0.0.1:8982/datenschutz.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "feiern.html#etagen",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "feiern.html#menues",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "http://127.0.0.1:8953/",
+  "ziel": "http://127.0.0.1:8953/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "ziel": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "ziel": "https://services.gastronovi.com/restaurants/118851/reservierung/widget",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "https://www.instagram.com/schloessli_bottighofen/",
+  "ziel": "https://www.instagram.com/schloessli_bottighofen/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "index.html#besen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "index.html#keller",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "index.html#kueche",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "index.html#willkommen",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "karte.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "karte.html#mittag",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "unterlagen/pdf/weinkarte.pdf",
+  "ziel": "http://127.0.0.1:8982/unterlagen/pdf/weinkarte.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "weinkarte.html",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "weinkarte.html",
+  "link": "weinkarte.html?von=abend#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html?von=abend",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../abend.html",
+  "ziel": "http://127.0.0.1:8982/abend.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../anlaesse.html",
+  "ziel": "http://127.0.0.1:8982/anlaesse.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../drucksachen/index.html",
+  "ziel": "http://127.0.0.1:8982/drucksachen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../feed/index.html",
+  "ziel": "http://127.0.0.1:8982/feed/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../gutschein.html",
+  "ziel": "http://127.0.0.1:8982/gutschein.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../kontakt.html",
+  "ziel": "http://127.0.0.1:8982/kontakt.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../mails/01-reservation/index.html",
+  "ziel": "http://127.0.0.1:8982/mails/01-reservation/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../mails/02-bankett/index.html",
+  "ziel": "http://127.0.0.1:8982/mails/02-bankett/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../mails/03-gutschein/index.html",
+  "ziel": "http://127.0.0.1:8982/mails/03-gutschein/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../mails/index.html",
+  "ziel": "http://127.0.0.1:8982/mails/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../material/index.html",
+  "ziel": "http://127.0.0.1:8982/material/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../potenzialanalyse/index.html",
+  "ziel": "http://127.0.0.1:8982/potenzialanalyse/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../team.html",
+  "ziel": "http://127.0.0.1:8982/team.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../unterlagen/index.html",
+  "ziel": "http://127.0.0.1:8982/unterlagen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../unterlagen/index.html#bankett",
+  "ziel": "http://127.0.0.1:8982/unterlagen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../unterlagen/index.html#laestermeile",
+  "ziel": "http://127.0.0.1:8982/unterlagen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../unterlagen/index.html#lunch",
+  "ziel": "http://127.0.0.1:8982/unterlagen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../unterlagen/index.html#speisekarte",
+  "ziel": "http://127.0.0.1:8982/unterlagen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../untersetzer/index.html",
+  "ziel": "http://127.0.0.1:8982/untersetzer/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "../weinkarte.html#berater",
+  "ziel": "http://127.0.0.1:8982/weinkarte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "geprueft/index.html",
+  "ziel": "http://127.0.0.1:8982/werkbank/geprueft/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "http://127.0.0.1:8987/_werkzeuge/maison/",
+  "ziel": "http://127.0.0.1:8987/_werkzeuge/maison/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "http://127.0.0.1:8988/_werkzeuge/registre/",
+  "ziel": "http://127.0.0.1:8988/_werkzeuge/registre/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "http://127.0.0.1:9031/_werkzeuge/carte/",
+  "ziel": "http://127.0.0.1:9031/_werkzeuge/carte/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "http://127.0.0.1:9035/_werkzeuge/bureau/",
+  "ziel": "http://127.0.0.1:9035/_werkzeuge/bureau/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "http://127.0.0.1:9047/_werkzeuge/reception/",
+  "ziel": "http://127.0.0.1:9047/_werkzeuge/reception/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "http://127.0.0.1:9049/_werkzeuge/livre/",
+  "ziel": "http://127.0.0.1:9049/_werkzeuge/livre/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "http://127.0.0.1:9053/_werkzeuge/imprimerie/",
+  "ziel": "http://127.0.0.1:9053/_werkzeuge/imprimerie/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "impressum.html",
+  "ziel": "http://127.0.0.1:8982/werkbank/impressum.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "ki.html",
+  "ziel": "http://127.0.0.1:8982/werkbank/ki.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/index.html",
+  "link": "vorschlag-wirtschaft-am-schloessli.pdf",
+  "ziel": "http://127.0.0.1:8982/werkbank/vorschlag-wirtschaft-am-schloessli.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/geprueft/index.html",
+  "link": "../index.html",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/geprueft/index.html",
+  "link": "../index.html#geprueft",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/impressum.html",
+  "link": "https://ec.europa.eu/consumers/odr/",
+  "ziel": "https://ec.europa.eu/consumers/odr/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "werkbank/impressum.html",
+  "link": "index.html",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "unterlagen/index.html",
+  "link": "../drucksachen/index.html",
+  "ziel": "http://127.0.0.1:8982/drucksachen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "unterlagen/index.html",
+  "link": "../untersetzer/index.html",
+  "ziel": "http://127.0.0.1:8982/untersetzer/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "unterlagen/index.html",
+  "link": "../werkbank/index.html",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "unterlagen/index.html",
+  "link": "../werkbank/index.html#unterlagen",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "unterlagen/index.html",
+  "link": "http://127.0.0.1:8970/werkzeuge/karten/?haus=schloessli",
+  "ziel": "http://127.0.0.1:8970/werkzeuge/karten/?haus=schloessli",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "unterlagen/index.html",
+  "link": "http://127.0.0.1:9031/_werkzeuge/carte/",
+  "ziel": "http://127.0.0.1:9031/_werkzeuge/carte/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "../unterlagen/index.html",
+  "ziel": "http://127.0.0.1:8982/unterlagen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "../untersetzer/index.html",
+  "ziel": "http://127.0.0.1:8982/untersetzer/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "../werkbank/index.html",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "../werkbank/index.html#papier",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "http://127.0.0.1:9053/_werkzeuge/imprimerie/",
+  "ziel": "http://127.0.0.1:9053/_werkzeuge/imprimerie/",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "pdf/wirtschaft-am-schloessli-ansichtskarten.pdf",
+  "ziel": "http://127.0.0.1:8982/drucksachen/pdf/wirtschaft-am-schloessli-ansichtskarten.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "pdf/wirtschaft-am-schloessli-aushang.pdf",
+  "ziel": "http://127.0.0.1:8982/drucksachen/pdf/wirtschaft-am-schloessli-aushang.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "pdf/wirtschaft-am-schloessli-briefpapier.pdf",
+  "ziel": "http://127.0.0.1:8982/drucksachen/pdf/wirtschaft-am-schloessli-briefpapier.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "pdf/wirtschaft-am-schloessli-gutschein.pdf",
+  "ziel": "http://127.0.0.1:8982/drucksachen/pdf/wirtschaft-am-schloessli-gutschein.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "pdf/wirtschaft-am-schloessli-menuekarte.pdf",
+  "ziel": "http://127.0.0.1:8982/drucksachen/pdf/wirtschaft-am-schloessli-menuekarte.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "drucksachen/index.html",
+  "link": "pdf/wirtschaft-am-schloessli-tischkarte.pdf",
+  "ziel": "http://127.0.0.1:8982/drucksachen/pdf/wirtschaft-am-schloessli-tischkarte.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "untersetzer/index.html",
+  "link": "../drucksachen/index.html",
+  "ziel": "http://127.0.0.1:8982/drucksachen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "untersetzer/index.html",
+  "link": "../unterlagen/index.html",
+  "ziel": "http://127.0.0.1:8982/unterlagen/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "untersetzer/index.html",
+  "link": "../werkbank/index.html",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "untersetzer/index.html",
+  "link": "../werkbank/index.html#papier",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "untersetzer/index.html",
+  "link": "pdf/wirtschaft-am-schloessli-untersetzer-druckbogen-a3.pdf",
+  "ziel": "http://127.0.0.1:8982/untersetzer/pdf/wirtschaft-am-schloessli-untersetzer-druckbogen-a3.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "untersetzer/index.html",
+  "link": "pdf/wirtschaft-am-schloessli-untersetzer-einzeln.pdf",
+  "ziel": "http://127.0.0.1:8982/untersetzer/pdf/wirtschaft-am-schloessli-untersetzer-einzeln.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "feed/index.html",
+  "link": "../werkbank/index.html#feed",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "../werkbank/index.html",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "../werkbank/index.html#material",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "01 Unterlagen/Wirtschaft am Schlössli Bankettmenüvorschläge.pdf",
+  "ziel": "http://127.0.0.1:8982/material/01%20Unterlagen/Wirtschaft%20am%20Schl%C3%B6ssli%20Bankettmen%C3%BCvorschl%C3%A4ge.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "01 Unterlagen/Wirtschaft am Schlössli Die Karte nach Ländern.pdf",
+  "ziel": "http://127.0.0.1:8982/material/01%20Unterlagen/Wirtschaft%20am%20Schl%C3%B6ssli%20Die%20Karte%20nach%20L%C3%A4ndern.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "01 Unterlagen/Wirtschaft am Schlössli Lunch-Menü.pdf",
+  "ziel": "http://127.0.0.1:8982/material/01%20Unterlagen/Wirtschaft%20am%20Schl%C3%B6ssli%20Lunch-Men%C3%BC.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "01 Unterlagen/Wirtschaft am Schlössli Lästermeile.pdf",
+  "ziel": "http://127.0.0.1:8982/material/01%20Unterlagen/Wirtschaft%20am%20Schl%C3%B6ssli%20L%C3%A4stermeile.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "01 Unterlagen/Wirtschaft am Schlössli Weinkarte.pdf",
+  "ziel": "http://127.0.0.1:8982/material/01%20Unterlagen/Wirtschaft%20am%20Schl%C3%B6ssli%20Weinkarte.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "02 Drucksachen/Wirtschaft am Schlössli Ansichtskarten.pdf",
+  "ziel": "http://127.0.0.1:8982/material/02%20Drucksachen/Wirtschaft%20am%20Schl%C3%B6ssli%20Ansichtskarten.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "02 Drucksachen/Wirtschaft am Schlössli Aushang Betriebsferien.pdf",
+  "ziel": "http://127.0.0.1:8982/material/02%20Drucksachen/Wirtschaft%20am%20Schl%C3%B6ssli%20Aushang%20Betriebsferien.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "02 Drucksachen/Wirtschaft am Schlössli Briefpapier.pdf",
+  "ziel": "http://127.0.0.1:8982/material/02%20Drucksachen/Wirtschaft%20am%20Schl%C3%B6ssli%20Briefpapier.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "02 Drucksachen/Wirtschaft am Schlössli Gutschein.pdf",
+  "ziel": "http://127.0.0.1:8982/material/02%20Drucksachen/Wirtschaft%20am%20Schl%C3%B6ssli%20Gutschein.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "02 Drucksachen/Wirtschaft am Schlössli Menükarte für Ihre Feier.pdf",
+  "ziel": "http://127.0.0.1:8982/material/02%20Drucksachen/Wirtschaft%20am%20Schl%C3%B6ssli%20Men%C3%BCkarte%20f%C3%BCr%20Ihre%20Feier.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "02 Drucksachen/Wirtschaft am Schlössli Tischkarte.pdf",
+  "ziel": "http://127.0.0.1:8982/material/02%20Drucksachen/Wirtschaft%20am%20Schl%C3%B6ssli%20Tischkarte.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "03 Untersetzer der Lästermeile/Wirtschaft am Schlössli Untersetzer der Lästermeile Druckbogen A3.pdf",
+  "ziel": "http://127.0.0.1:8982/material/03%20Untersetzer%20der%20L%C3%A4stermeile/Wirtschaft%20am%20Schl%C3%B6ssli%20Untersetzer%20der%20L%C3%A4stermeile%20Druckbogen%20A3.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "03 Untersetzer der Lästermeile/Wirtschaft am Schlössli Untersetzer der Lästermeile einzeln.pdf",
+  "ziel": "http://127.0.0.1:8982/material/03%20Untersetzer%20der%20L%C3%A4stermeile/Wirtschaft%20am%20Schl%C3%B6ssli%20Untersetzer%20der%20L%C3%A4stermeile%20einzeln.pdf",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "04 Zeichen/Wirtschaft am Schlössli Zeichen.svg",
+  "ziel": "http://127.0.0.1:8982/material/04%20Zeichen/Wirtschaft%20am%20Schl%C3%B6ssli%20Zeichen.svg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "05 Ansichten der neuen Website/Handy/Startseite.jpg",
+  "ziel": "http://127.0.0.1:8982/material/05%20Ansichten%20der%20neuen%20Website/Handy/Startseite.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "05 Ansichten der neuen Website/Rechner/Startseite.jpg",
+  "ziel": "http://127.0.0.1:8982/material/05%20Ansichten%20der%20neuen%20Website/Rechner/Startseite.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "06 Instagram/Beiträge/Beitrag 01.jpg",
+  "ziel": "http://127.0.0.1:8982/material/06%20Instagram/Beitr%C3%A4ge/Beitrag%2001.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "06 Instagram/Profilbild.jpg",
+  "ziel": "http://127.0.0.1:8982/material/06%20Instagram/Profilbild.jpg",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "material/index.html",
+  "link": "06 Instagram/Texte zu den Beiträgen.txt",
+  "ziel": "http://127.0.0.1:8982/material/06%20Instagram/Texte%20zu%20den%20Beitr%C3%A4gen.txt",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "mails/index.html",
+  "link": "../feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "mails/index.html",
+  "link": "../index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "mails/index.html",
+  "link": "../karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "mails/index.html",
+  "link": "../werkbank/index.html#papier",
+  "ziel": "http://127.0.0.1:8982/werkbank/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "mails/02-bankett/index.html",
+  "link": "../../feiern.html",
+  "ziel": "http://127.0.0.1:8982/feiern.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "mails/01-reservation/index.html",
+  "link": "../../karte.html",
+  "ziel": "http://127.0.0.1:8982/karte.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ },
+ {
+  "seite": "mails/03-gutschein/index.html",
+  "link": "../../index.html",
+  "ziel": "http://127.0.0.1:8982/index.html",
+  "antwort": 200,
+  "alt_design": false,
+  "mailto": false
+ }
+]

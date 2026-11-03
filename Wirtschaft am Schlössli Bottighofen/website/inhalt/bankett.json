@@ -1,0 +1,100 @@
+{
+ "stand": "Bankettmenüvorschläge, PDF vom 29.04.2025",
+ "quelle": "_quelle/website/pdf/Bankettmenuvorschlage.pdf",
+ "menues": [
+  {
+   "name": "Frühling",
+   "preis": 175,
+   "gerichte": [
+    {
+     "name": "RINDSTATAR",
+     "preis": 30,
+     "text": "Mit Parmesanstreusel, Rucolapesto und Aceto Balsamico di Modena"
+    },
+    {
+     "name": "KRÄUTERRISOTTO",
+     "preis": 30,
+     "text": "Mit gegrilltem Kaisergranat, eingelegten Taggiasche Oliven und Burrata"
+    },
+    {
+     "name": "SEEZUNGENRÖLLCHEN",
+     "preis": 40,
+     "text": "Süßsaures Zucchiniragout mit Salzzitrone und Sauce Choron"
+    },
+    {
+     "name": "HÜHNCHEN „PIRI PIRI“",
+     "preis": 50,
+     "text": "Leicht scharf mariniertes Grillhühnchen mit Tomatensalat, Oregano und Pommes frites"
+    },
+    {
+     "name": "SCHOKOLADENTARTE MIT 68% BOLIVIA COUVERTURE VON FELCHLIN",
+     "preis": 25,
+     "text": "Haselnusspraliné und exotische Früchte"
+    }
+   ]
+  },
+  {
+   "name": "Sommer",
+   "preis": 185,
+   "gerichte": [
+    {
+     "name": "KREVETTENCOCKTAIL „SCHLÖSSLI STYLE“",
+     "preis": 30,
+     "text": "Hausgemachte Cocktailsauce, bunte Salate und Avocado"
+    },
+    {
+     "name": "MANGOLD-GNOCCHI",
+     "preis": 30,
+     "text": "Mit glasierten Sot-l´y-laisse und cremiger Ricotta"
+    },
+    {
+     "name": "MOSCARDINI ALL´ ARRABIATA",
+     "preis": 40,
+     "text": "Geschmorte kleine Kraken in würziger Tomatensauce mit knusprigen Knoblauchbrot"
+    },
+    {
+     "name": "KALBSHOHRÜCKEN",
+     "preis": 60,
+     "text": "Gebraten, mit buntem Sommergemüse und Kräuterpolenta"
+    },
+    {
+     "name": "VANILLECREMETÖRTCHEN",
+     "preis": 25,
+     "text": "Thurgauer Beeren & Meringue"
+    }
+   ]
+  },
+  {
+   "name": "Herbst",
+   "preis": 175,
+   "gerichte": [
+    {
+     "name": "REHCARPACCIO",
+     "preis": 30,
+     "text": "Mit Pilzen der Saison, gerösteten Nüssen und Preiselbeeren"
+    },
+    {
+     "name": "CREPES",
+     "preis": 30,
+     "text": "Gefüllt mit Artischocke und Salsiccia - mit Scamorza überbacken"
+    },
+    {
+     "name": "FREGOLA SARDA",
+     "preis": 40,
+     "text": "Mit Venusmuschel, Miesmuschel und frischem Fenchelsalat"
+    },
+    {
+     "name": "OSSOBUCCHI",
+     "preis": 50,
+     "text": "Geschmort, mit frischer Kräuter-Gremolata und cremigem Kartoffel-Rosmarin-Püree"
+    },
+    {
+     "name": "BEIGNETS MIT ZIMTZUCKER",
+     "preis": 25,
+     "text": "Quark-Rum-Eis und eingelegte Zwetschgen"
+    }
+   ]
+  }
+ ],
+ "hinweis": "Aus den Menüs können 3-5 Gerichte ausgewählt werden. Nach Belieben können die Menüs auch gemischt werden (soweit es saisonal möglich ist) oder auch einzelne Gerichte ausgetauscht oder individuell angepasst werden."
+}

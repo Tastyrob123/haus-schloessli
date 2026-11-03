@@ -1,0 +1,68 @@
+{
+ "hinweis": "Eindeutige Tippfehler des Originals, NICHT angewendet. Veröffentlicht bleibt der Wortlaut des Hauses; La Carte kann sie als Entwurf anbieten (wie Gasterntal). Namen, Mundart und Preise bleiben unverändert (Master Website-Bau Abschnitt 8).",
+ "stellen": [
+  {
+   "karte": "weinkarte",
+   "alt": "M wSt.",
+   "neu": "MwSt.",
+   "grund": "Leerzeichen im Wort, in der Fusszeile jeder Seite",
+   "stellen": 1
+  },
+  {
+   "karte": "weinkarte",
+   "alt": "moins sur lie",
+   "neu": "mois sur lie",
+   "grund": "Französisch «mois» (Monate auf der Hefe)",
+   "stellen": 5
+  },
+  {
+   "karte": "weinkarte",
+   "alt": "ST.-EMILLION/FRONSAC",
+   "neu": "ST.-ÉMILION/FRONSAC",
+   "grund": "Ortsname Saint-Émilion",
+   "stellen": 1
+  },
+  {
+   "karte": "weinkarte",
+   "alt": "Adank`s",
+   "neu": "Adank’s",
+   "grund": "Gravis statt Apostroph",
+   "stellen": 1
+  },
+  {
+   "karte": "weinkarte",
+   "alt": "Clos d`Agon",
+   "neu": "Clos d’Agon",
+   "grund": "Gravis statt Apostroph",
+   "stellen": 2
+  },
+  {
+   "karte": "laestermeile",
+   "alt": "Pickels",
+   "neu": "Pickles",
+   "grund": "Tippfehler",
+   "stellen": 1
+  },
+  {
+   "karte": "vier-haende",
+   "alt": "Opera schnitte",
+   "neu": "Operaschnitte",
+   "grund": "zusammengeschrieben",
+   "stellen": 1
+  },
+  {
+   "karte": "bankett",
+   "alt": "knusprigen Knoblauchbrot",
+   "neu": "knusprigem Knoblauchbrot",
+   "grund": "Grammatik (mit knusprigem)",
+   "stellen": 1
+  },
+  {
+   "karte": "bankett",
+   "alt": "Süßsaures",
+   "neu": "Süsssaures",
+   "grund": "Schweizer Schreibung ohne ß (Markenbuch, Ton: «ß» nie)",
+   "stellen": 1
+  }
+ ]
+}

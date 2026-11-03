@@ -1,0 +1,25 @@
+{
+  "art": "studie",
+  "passt": true,
+  "grund": "Gehört zur Familie von Christian Kuchler und der Taverne zum Schäfli (18 Punkte), deshalb kommt es mit (Robert 17.10.2026: «Die Familie steht über den Sternen»). Inhabergeführt: Betreiberin CK Gastro Consulting GmbH, Christian Kuchler hält 199 von 200 Stammanteilen (SHAB 04.05.2021), kein Kettenbetrieb, Schweiz. Das Haus ist stärker als seine Seite: 15 Punkte und «Entdeckung des Jahres 2026» bei GaultMillau, Michelin «Favorit der Inspektoren», Terrasse unter Platanen direkt am Hafen. Die Seite zeigt davon nur ein kleines Siegel im Fuss, erzählt weder das Schlössli noch Monika Hubers Weg, führt die Karten nur als PDF und Bankette per Mail-Link. Echtes Material ist da (40 Bilder auf der Seite, Originale bis 5504 × 8256 px aus Fotoserien von August 2025 und Mai 2026, aktuelle Speise-, Wein- und Lunchkarten). Vorbehalt: Die Seite ist jung (Squarespace, angelegt 12.09.2024, Neueröffnung April 2025) und hat starke Fotos. Der Abstand muss über Erlebnis, Geschichte und Auszeichnung kommen, nicht über Technik. Kein laufender Relaunch erkennbar.",
+  "betreuung": "Squarespace (Baukasten mit Abo, Vorlage 7.1, templateId 5c5a519771c10ba3470d8101). Keine Agentur genannt: weder im Fuss noch im Impressum noch im Quelltext (geprüft 18.10.2026). Wer die Seite gebaut hat und pflegt: offen. Das Schwesterhaus schaefli-wigoltingen.ch läuft auf derselben Vorlage mit demselben Impressum-Wortlaut (angelegt 30.05.2024), vermutlich dieselbe Hand: ungeprüft.",
+  "familie": [
+    {"name": "Taverne zum Schäfli", "ort": "Oberdorfstrasse 8, 8556 Wigoltingen", "website": "https://www.schaefli-wigoltingen.ch/", "gastgeber": "Christian Kuchler; Betreiberin Taverne zum Schäfli AG, CHE-101.884.667", "system": "Squarespace 7.1, gleiche Vorlage; Reservation über Zenchef; 18 Punkte GaultMillau"}
+  ],
+  "firmen": [
+    {"name": "CK Gastro Consulting GmbH", "uid": "CHE-139.373.932", "sitz": "Oberdorfstrasse 8, 8556 Wigoltingen", "rolle": "Betreiberin der Wirtschaft am Schlössli (Impressum, AGB «Ausgabe April 2025»)", "personen": "Christian Kuchler (Gesellschafter, Vorsitz der Geschäftsführung, 199 Stammanteile), Ramona Gubler (Gesellschafterin, Geschäftsführerin, 1 Stammanteil)", "quelle": "SHAB 04.05.2021 über Zefix, abgerufen 18.10.2026"},
+    {"name": "Taverne zum Schäfli AG", "uid": "CHE-101.884.667", "sitz": "Wigoltingen", "rolle": "Betreiberin der Taverne zum Schäfli; laut Impressum des Schlössli Inhaberin der Urheberrechte an Inhalten und Bildern der Schlössli-Seite", "personen": "Christian Kuchler, Mitglied mit Einzelunterschrift (SHAB 22.11.2019); weitere Organe: offen", "quelle": "Zefix, abgerufen 18.10.2026"}
+  ],
+  "schon_gebaut": [],
+  "website_ordner": "website/",
+  "buchung": {
+    "system": "gastronovi (Reservations-Widget, Restaurant 118851)",
+    "link": "https://services.gastronovi.com/restaurants/118851/reservation/widget"
+  },
+  "angebot": {
+    "zimmer": "keine (Restaurant; weder Seite noch GaultMillau noch Michelin nennen Zimmer)",
+    "anlaesse": "Banketts und Gruppen auf zwei Etagen für je bis zu 26 Personen, Tavolata oder gesetztes Menü, Bankettmenüvorschläge als PDF, Anfrage per Mail-Link (Seite «Karten», 18.10.2026)",
+    "seeterrasse": "ja: Terrasse direkt am Hafen, auf der Startseite mit dem Satz «Die schönste Terrasse am Bodensee» (Christian Kuchler); GaultMillau: «Terrasse im Schatten prächtiger Platanen und Blick auf den Bodensee»; Michelin: «Favorit der Inspektoren»",
+    "dazu": "Lunch-Menü (PDF), durchgehend die Karte der «Lästermeile», eigene Anlässe (4-Hands-Lunch, Gourmetkreuzfahrt), Gutscheine per Formular"
+  }
+}

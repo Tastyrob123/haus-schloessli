@@ -1,0 +1,23 @@
+{
+  "station": "09",
+  "name": "Prüfen auf Herz und Nieren",
+  "rolle": "Prüfer",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "wartet",
+  "beginn": null,
+  "ende": null,
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+    "pruefung-website.md"
+  ],
+  "adresse": null,
+  "briefing": "briefing.html",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

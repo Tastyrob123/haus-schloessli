@@ -1,0 +1,209 @@
+{
+ "id": "vier-haende",
+ "gilt": {
+  "von": "2026-02-22",
+  "bis": "2026-02-22"
+ },
+ "fassungen": {},
+ "herkunft": {
+  "original": "_quelle/website/pdf/4_Hands-_Stier.pdf",
+  "sha256": "81dbd091a9c32487a96d9ec2c5795252487f1df0095a5317253cf9948098f261",
+  "adresse": "https://www.schloessli-bottighofen.ch/s/4_Hands-_Stier.pdf",
+  "abgerufen": "2026-10-19",
+  "gelesen_mit": "_karten/lesen.py"
+ },
+ "offen": [
+  "Vorbei: Anlass am 22.02.2026, 12 Uhr (Seite /events-2-1/event-two-yf5k9). Die Karte steht nur noch als Beleg; ob sie auf La Carte gehört, entscheidet das Haus.",
+  "Die Seite des Anlasses nennt ein «6-Gang-Menü», die PDF zählt neun durch *** getrennte Gänge; so übernommen, wie es die PDF schreibt."
+ ],
+ "karte": {
+  "ziel": "vier-haende",
+  "name": "4-Hands-Lunch mit Patrick Stier",
+  "gruppe": "Events",
+  "format": [
+   297,
+   210
+  ],
+  "kl": "",
+  "fuss": "",
+  "teile": [
+   {
+    "art": "inhalt",
+    "posten": [
+     {
+      "t": "rubrik",
+      "titel": "4-Hands-Lunch",
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Sellerie-Ceviche mit Blutorange, Estragon und Bulgur",
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Pata Negra Croquettas mit Peperoni",
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Trüffelcappuccino",
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Tatar vom Rind",
+      "zeilen": [
+       {
+        "text": "Kürbischutney – Belper Knolle – eingelegte Pilze"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Jakobsmuschel",
+      "zeilen": [
+       {
+        "text": "Jalapenovinaigrette – Mango – Pastinake"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Seezungenröllchen",
+      "zeilen": [
+       {
+        "text": "Safranschaum – Artischocke – Fenchel"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Sacchettini",
+      "zeilen": [
+       {
+        "text": "Melanzane – Gamba rosso – Kapern"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Sauerampfer Sorbet",
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Barbarie Entenbrust",
+      "zeilen": [
+       {
+        "text": "Pfefferhollandaise – Sesamschwarzwurzel – Mandelbällchen"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Rotweinbirne",
+      "zeilen": [
+       {
+        "text": "Dunkle Schokolade – Vanille – Nuss"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Opera schnitte",
+      "zeilen": [
+       {
+        "text": "Spagatkrapfen – Heidelbeere – Zitrone – Mascarpone"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "notiz",
+      "text": "170.- pro Person inklusive 1 Glas Champagner, Kaffee & Wasser",
+      "s": 1
+     }
+    ]
+   }
+  ]
+ }
+}

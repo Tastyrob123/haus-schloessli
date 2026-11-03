@@ -1,0 +1,258 @@
+{
+ "fuss-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   642
+  ]
+ },
+ "start-rechner": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "desk": true,
+  "ganz": [
+   1600,
+   1389
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   306
+  ]
+ },
+ "karten-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/karten",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   1120
+  ]
+ },
+ "bankett-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/karten",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   1032
+  ]
+ },
+ "gutschein-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   708
+  ]
+ },
+ "newsletter-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/kontakt",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   1266
+  ]
+ },
+ "team-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/uber-uns",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   516
+  ]
+ },
+ "kreuzfahrt-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1/excellence-g-ourmetkreuzfahrt",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   498
+  ]
+ },
+ "events-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   2100
+  ]
+ },
+ "ehemalige-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1/zqff5xzr7qhnfnil32eokk5dy6gi5q",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   426
+  ]
+ },
+ "datenschutz-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/datenschutzerklarung",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-19",
+  "nah": [
+   1170,
+   696
+  ]
+ },
+ "shop-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/datenschutzerklarung",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-19",
+  "nah": [
+   1170,
+   913
+  ]
+ },
+ "cookie-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   642
+  ]
+ },
+ "leiste-rechner": {
+  "url": "https://www.schloessli-bottighofen.ch/impressionen-1",
+  "desk": true,
+  "ganz": [
+   1600,
+   1000
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1200,
+   232
+  ]
+ },
+ "fuss-rechner": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "desk": true,
+  "ganz": [
+   1600,
+   1000
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1200,
+   255
+  ]
+ },
+ "plakette-handy": {
+  "url": "https://www.schloessli-bottighofen.ch/kontakt",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   537
+  ]
+ },
+ "start-handy-2": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18",
+  "nah": [
+   1170,
+   444
+  ]
+ },
+ "start-handy-1": {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-18"
+ },
+ "michelin-en": {
+  "url": "https://guide.michelin.com/ch/en/thurgau/bottighofen_1149146/restaurant/wirtschaft-am-schlossli",
+  "desk": true,
+  "ganz": [
+   1600,
+   1000
+  ],
+  "zeit": "2026-10-19",
+  "nah": [
+   1200,
+   386
+  ]
+ },
+ "speisekarte-pdf": {
+  "url": "https://www.schloessli-bottighofen.ch/s/Speisekarte-Oktober.pdf",
+  "desk": false,
+  "ganz": [
+   900,
+   1948
+  ],
+  "zeit": "2026-10-19",
+  "nah": [
+   1170,
+   353
+  ]
+ }
+}

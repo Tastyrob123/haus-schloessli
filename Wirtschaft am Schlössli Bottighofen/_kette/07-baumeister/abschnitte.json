@@ -1,0 +1,842 @@
+[
+  {
+    "station": "07",
+    "name": "Auftakt",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "auftakt",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#auftakt",
+    "briefing": "briefing.html?teil=auftakt",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Name auf dem Horizont (neu): ganzes Startfoto, Linie verlängert den Seehorizont, Name steigt aus der Linie, Reservation als Platte",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.3 ms · 6× 120 Bilder/s, p95 9.2 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Terrasse",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "terrasse",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#terrasse",
+    "briefing": "briefing.html?teil=terrasse",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Das Zitat an der Linie (neu): Platanenfoto legt mit dem Horizont an, Satz des Pächters sitzt auf der Linie; Anlegen, Zeilen-Maske",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.2 ms · 6× 120 Bilder/s, p95 9.2 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Hafen",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "hafen",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T16:13+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#hafen",
+    "briefing": "briefing.html?teil=hafen",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Zwei Horizonte, eine Linie (neu): das Haus von aussen (Commons 2016) und der Bootshafen legen mit ihren Seehorizonten an derselben Linie an, Titel rechts auf ihr, Namensnennung unter jedem Foto",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.2 ms · 6× 120 Bilder/s, p95 9.3 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Fenster Gaststube",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "fenster-hafen",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#fenster-hafen",
+    "briefing": "briefing.html?teil=fenster-hafen",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Fenster (Fundus, Bauart ohne Beschneiden)",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.3 ms · 6× 120 Bilder/s, p95 9.2 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Lästermeile",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "laestermeile",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#laestermeile",
+    "briefing": "briefing.html?teil=laestermeile",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Die Schwelle (neu, Fassung 2 nach Roberts Rückmeldung 19.10.): Titel teilt sich genau zwischen «Läster» (weiss) und «meile.» (Tinte), Zitat GaultMillau gross und mittig, Bilder stehen ganz auf dem Fliesenband, Tapas in zwei Spalten, Foto der Promenade aus Instagram",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.1 ms · 6× 119 Bilder/s, p95 9.3 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Fenster Alpen",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "fenster-alpen",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T16:13+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#fenster-alpen",
+    "briefing": "briefing.html?teil=fenster-alpen",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Fenster (Fundus, Bauart ohne Beschneiden), Satz des Hauses, Foto Commons mit Namensnennung",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.2 ms · 6× 120 Bilder/s, p95 9.2 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Die Karte",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "karte",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#karte",
+    "briefing": "briefing.html?teil=karte",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Die Küstenlinie (neu): vier Teller auf der Linie, darunter die Karte mittig gesetzt wie eine gedruckte Menükarte; Lunch als dunkle Platte mit grossem Foto und den drei Sternen aus dem Druck des Hauses",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.2 ms · 6× 120 Bilder/s, p95 9.2 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Küche",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "kueche",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#kueche",
+    "briefing": "briefing.html?teil=kueche",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Die Auszeichnung als Titel: Zitat GaultMillau gross über dem Titel, Sauce und Porträt stehen auf der Linie, 15 und 91 zählen hoch, drei Bilder aus der Küche (Instagram) neben dem Team",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9 ms · 6× 120 Bilder/s, p95 9.2 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Keller",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "keller",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#keller",
+    "briefing": "briefing.html?teil=keller",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Das Glas auf dem Horizont: Glas kommt von weiter unten und legt an, 468 Weine zählen hoch, Satz von Jonas Volpert zum Schwerpunkt",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.2 ms · 6× 120 Bilder/s, p95 9.2 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Fenster Abend",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "fenster-abend",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#fenster-abend",
+    "briefing": "briefing.html?teil=fenster-abend",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Fenster (Fundus): neues Bild, die Platane mit der Lichterkette über dem See",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.1 ms · 6× 120 Bilder/s, p95 9.3 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Besen",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "besen",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#besen",
+    "briefing": "briefing.html?teil=besen",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Luftbild 1954 gross auf der Linie, Titel daneben, die Klage von damals als Inschrift über die Breite, Geschichte in drei Spalten",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.1 ms · 6× 120 Bilder/s, p95 9.2 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Feiern",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "feiern",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#feiern",
+    "briefing": "briefing.html?teil=feiern",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Zwei Linien: je Etage 26 (zählt hoch), die Wahl des Hauses mit Anfrage, Teller auf der Linie; darunter die drei Bankettmenüs der Jahreszeiten mit Preis",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.2 ms · 6× 120 Bilder/s, p95 9.3 ms · Handy 390 6× 119 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Abend",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "abend",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#abend",
+    "briefing": "briefing.html?teil=abend",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Der letzte Blick: Apéro in der blauen Stunde legt an der Linie an, Woche und Tag als Linien, die sich füllen (Ruhetage, Küchenzeiten, Lästermeile)",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.2 ms · 6× 120 Bilder/s, p95 9.2 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Fuss",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "fuss",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T15:28+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#fuss",
+    "briefing": "briefing.html?teil=fuss",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Fuss mit Familienzeile: Punkt-Tapete, Logo des Hauses, vier Spalten, eine Zeile zum Schäfli",
+    "messwert": "4× gedrosselt 120 Bilder/s, p95 9.2 ms · 6× 120 Bilder/s, p95 9.1 ms · Handy 390 6× 120 Bilder/s · 0 Bilder über 50 ms · Springen beim Laden 0 · Seite bis load 1369 KB (Akku, Stromsparmodus aus)"
+  },
+  {
+    "station": "07",
+    "name": "Seite Karte",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "s-karte",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/karte.html#kopf",
+    "briefing": "briefing.html?teil=s-karte",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "karte.html",
+    "baustein": "Seitenkopf mit Titel auf der Linie, Karte je Land mit Allergenen, Lunch, Lästermeile, Drucken",
+    "messwert": "4× gedrosselt mind. 117 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 332 KB"
+  },
+  {
+    "station": "07",
+    "name": "Seite Weinkarte",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "s-weinkarte",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/weinkarte.html#kopf",
+    "briefing": "briefing.html?teil=s-weinkarte",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "weinkarte.html",
+    "baustein": "Seitenkopf, Reiter je Gruppe, Regionen und Erzeuger in zwei Spalten, alle 495 Preise aus dem Original",
+    "messwert": "4× gedrosselt mind. 117 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 300 KB"
+  },
+  {
+    "station": "07",
+    "name": "Seite Banketts & Gruppen",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "s-feiern",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/feiern.html#kopf",
+    "briefing": "briefing.html?teil=s-feiern",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "feiern.html",
+    "baustein": "Seitenkopf, zwei Linien der Etagen, drei Bankettmenüs nebeneinander, Anfrage im Fenster",
+    "messwert": "4× gedrosselt mind. 117 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 457 KB"
+  },
+  {
+    "station": "07",
+    "name": "Seite Events",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "s-anlaesse",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/anlaesse.html#kopf",
+    "briefing": "briefing.html?teil=s-anlaesse",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "anlaesse.html",
+    "baustein": "Seitenkopf, der nächste Termin gross, Rückblick mit dem Foto von Patrick Stier",
+    "messwert": "4× gedrosselt mind. 117 Bilder/s, p95 höchstens 9.2 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 235 KB"
+  },
+  {
+    "station": "07",
+    "name": "Seite Team",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "s-team",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/team.html#kopf",
+    "briefing": "briefing.html?teil=s-team",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "team.html",
+    "baustein": "Seitenkopf, drei Porträts, zwei ohne Porträt als Zeile",
+    "messwert": "4× gedrosselt mind. 117 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 442 KB"
+  },
+  {
+    "station": "07",
+    "name": "Seite Kontakt",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "s-kontakt",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/kontakt.html#kopf",
+    "briefing": "briefing.html?teil=s-kontakt",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "kontakt.html",
+    "baustein": "Seitenkopf, Tafel mit Zeiten, Ferien, Kontakt, Anfahrt im Wortlaut, Foto vom Bootshafen (Commons)",
+    "messwert": "4× gedrosselt mind. 118 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 387 KB"
+  },
+  {
+    "station": "07",
+    "name": "Seite Gutschein",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "s-gutschein",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T17:18+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/gutschein.html#kopf",
+    "briefing": "briefing.html?teil=s-gutschein",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "gutschein.html",
+    "baustein": "Seitenkopf, Gutschein im Fenster mit den Feldern des heutigen Formulars",
+    "messwert": "4× gedrosselt mind. 116 Bilder/s, p95 höchstens 9.2 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 260 KB"
+  },
+  {
+    "station": "07",
+    "name": "Rechtstexte",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "s-recht",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T15:28+07:00",
+    "ende": "2026-10-19T16:13+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/impressum.html#kopf",
+    "briefing": "briefing.html?teil=s-recht",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "impressum.html",
+    "baustein": "Impressum, Datenschutzerklärung, AGB im Wortlaut des Hauses · Bildnachweis der freien Bilder unter dem Impressum",
+    "messwert": "4× gedrosselt mind. 119 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 198 KB"
+  },
+  {
+    "station": "07",
+    "name": "Weinberater und Wein-Kärtchen",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "f-weinberater",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T17:41+07:00",
+    "ende": "2026-10-19T17:41+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/weinkarte.html#berater",
+    "briefing": "briefing.html?teil=f-weinberater",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "weinkarte.html",
+    "baustein": "Weinberater (neu): Art, Herkunft, Rebsorte, Preis, Flasche als Chips; alle 468 Weine der Karte als einheitliche Wein-Kärtchen, Ansicht im Fenster, «zur Reservierung bereitlegen»",
+    "messwert": "6× gedrosselt mind. 119 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 366 KB"
+  },
+  {
+    "station": "07",
+    "name": "Reservierung mit Flasche, Platz, Allergien",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "f-reservierung",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T17:41+07:00",
+    "ende": "2026-10-19T17:41+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/index.html#auftakt",
+    "briefing": "briefing.html?teil=f-reservierung",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "index.html",
+    "baustein": "Reservation im Fenster mit zwei Reitern: Anfrage mit Datum, Uhrzeit, Personen, Platz, bereitgelegter Flasche, Allergenen der Karte und Wünschen; Buchungsmaske des Hauses unter «Direkt buchen»",
+    "messwert": "6× gedrosselt mind. 118 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 320 KB"
+  },
+  {
+    "station": "07",
+    "name": "Wein zum Gang",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "f-wein-zum-gang",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T17:41+07:00",
+    "ende": "2026-10-19T17:41+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/karte.html#wein-zum-gang",
+    "briefing": "briefing.html?teil=f-wein-zum-gang",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "karte.html",
+    "baustein": "Gericht antippen, drei Flaschen aus derselben Gegend (Klassiker: Schweiz) als Wein-Kärtchen",
+    "messwert": "6× gedrosselt mind. 118 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 349 KB"
+  },
+  {
+    "station": "07",
+    "name": "Abend zusammenstellen",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "f-abend",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T17:41+07:00",
+    "ende": "2026-10-19T17:41+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/abend.html#zusammenstellen",
+    "briefing": "briefing.html?teil=f-abend",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "abend.html",
+    "baustein": "Neue Seite: Anlass, Tag, Personen, Platz, Menü (à la carte, Lunch, Bankettmenüs), Flasche, Allergien; Zettel rechnet den Richtwert aus den Preisen der Karte mit",
+    "messwert": "6× gedrosselt mind. 118 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 320 KB"
+  },
+  {
+    "station": "07",
+    "name": "Gutschein als Karte",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "f-gutschein",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T17:41+07:00",
+    "ende": "2026-10-19T17:41+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/gutschein.html#gestalten",
+    "briefing": "briefing.html?teil=f-gutschein",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "gutschein.html",
+    "baustein": "Gutschein gestalten: Betrag, Haus (Schlössli, Schäfli, beide), Für, Von, Satz; Karte im Kleid des Hauses, drucken, bestellen im Fenster",
+    "messwert": "6× gedrosselt mind. 118 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 326 KB"
+  },
+  {
+    "station": "07",
+    "name": "Kalender mit Plätze-Anfrage",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "f-kalender",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T17:41+07:00",
+    "ende": "2026-10-19T17:41+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/anlaesse.html#kalender",
+    "briefing": "briefing.html?teil=f-kalender",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "anlaesse.html",
+    "baustein": "Das Jahr am Hafen: elf Monate als Band, Termine als Platten, Angaben und Plätze-Anfrage im Fenster, vergangene zum Vormerken",
+    "messwert": "6× gedrosselt mind. 118 Bilder/s, p95 höchstens 9.3 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 348 KB"
+  },
+  {
+    "station": "07",
+    "name": "Blick in die Küche und Schwesterhaus",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "f-kueche-schaefli",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T17:41+07:00",
+    "ende": "2026-10-19T17:41+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/team.html#kueche",
+    "briefing": "briefing.html?teil=f-kueche-schaefli",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "team.html",
+    "baustein": "Blick in die Küche mit vier Bildern und dem Satz zu Christian Kuchler; Taverne zum Schäfli mit Sternen, Punkten und Gutschein für beide Häuser",
+    "messwert": "6× gedrosselt mind. 117 Bilder/s, p95 höchstens 9.2 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 578 KB"
+  },
+  {
+    "station": "07",
+    "name": "Der See heute",
+    "rolle": "Baumeister",
+    "haus": "Wirtschaft am Schlössli Bottighofen",
+    "teil": "f-see",
+    "zustand": "liegt vor",
+    "beginn": "2026-10-19T17:41+07:00",
+    "ende": "2026-10-19T17:41+07:00",
+    "verbrauch": {
+      "budget_vorher": null,
+      "budget_nachher": null,
+      "guthaben": []
+    },
+    "offen": [],
+    "paket": [
+      "abschnitte.json",
+      "../../website/"
+    ],
+    "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/kontakt.html#see",
+    "briefing": "briefing.html?teil=f-see",
+    "notiz": "",
+    "bestaetigt": null,
+    "rueckgaben": [],
+    "seite": "kontakt.html",
+    "baustein": "Sonnenuntergang heute aus dem Sonnenstand gerechnet, Terrasse offen oder Ruhetag nach Zeiten und Ferien, Platz draussen wünschen, Anreise über das Wasser mit der Schifflände",
+    "messwert": "6× gedrosselt mind. 119 Bilder/s, p95 höchstens 9.2 ms, 0 Bilder über 50 ms · Springen beim Laden 0 · bis load 519 KB"
+  }
+]

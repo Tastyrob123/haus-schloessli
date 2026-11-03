@@ -1,0 +1,132 @@
+[
+ {
+  "vor": [
+   0,
+   10,
+   20
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Habt ihr am Dienstag offen?",
+  "antwort": "Dienstag und Mittwoch ist Ruhetag. Geöffnet ist Donnerstag bis Montag:\n- Restaurant: 11:30 bis 23:00 Uhr\n- Küche à la carte: 11:30 bis 13:30 und 18:00 bis 20:00 Uhr\n- Lästermeile: die Tapas-Karte den ganzen Tag",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   0,
+   8,
+   55
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Was kostet der Lunch?",
+  "antwort": "Das Lunch-Menü hat drei Gänge für 35 Franken:\n- Kürbissuppe mit Wachtelei und Serrano Schinken\n- Risi e bisi mit Miesmuschel, Erbsen und Spinat\n- Joghurt Panna Cotta mit Apfelcrumble",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   1,
+   19,
+   5
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Wie viele Personen passen für ein Bankett?",
+  "antwort": "Auf zwei Etagen hat es Platz für jeweils bis zu 26 Personen.\n- Speisenform: Tavolata oder gesetztes Menue\n- Bankettmenüs: Frühling 175, Sommer 185, Herbst 175 Franken\n- Aus den Menüs können 3 bis 5 Gerichte ausgewählt werden",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   1,
+   13,
+   40
+  ],
+  "sprache": "en",
+  "belegt": true,
+  "frage": "Are the Tortelloni vegetarian?",
+  "antwort": "Yes, the Tortelloni are marked vegetarian on the October menu.\n- Price: CHF 35, as a main course CHF 50\n- Allergens: gluten, lactose, eggs, celery\nThe kitchen will gladly discuss any allergy with you.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   2,
+   17,
+   25
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Gibt es Tapas ohne Gluten?",
+  "antwort": "Auf der Karte der Lästermeile tragen diese Tapas kein G:\n- Pimientos de Padrón: 8 Franken\n- Patatine fritte: 8 Franken (L, E)\n- Kalamata Oliven: 8 Franken (N)\nDie Küche stimmt es gerne mit Ihnen ab.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   2,
+   9,
+   10
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Wann habt ihr Ferien?",
+  "antwort": "Das Restaurant ist zweimal geschlossen:\n- 13. bis 15. November 2026: das Team ist auf der Excellence Gourmetkreuzfahrt\n- 22. Dezember 2026 bis 10. Februar 2027",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   3,
+   12,
+   30
+  ],
+  "sprache": "de",
+  "belegt": false,
+  "frage": "Haben Sie einen Kinderstuhl?",
+  "antwort": "Dazu steht nichts in meinen Unterlagen. Das Team hilft Ihnen gerne weiter: +41 71 688 90 92 oder kontakt@schloessli-bottighofen.ch.",
+  "thema": "Kinderstuhl",
+  "buchung": false
+ },
+ {
+  "vor": [
+   3,
+   15,
+   45
+  ],
+  "sprache": "de",
+  "belegt": false,
+  "frage": "Kann man mit dem Schiff zu euch kommen?",
+  "antwort": "Dazu steht nichts in meinen Unterlagen. Das Team hilft Ihnen gerne weiter: +41 71 688 90 92 oder kontakt@schloessli-bottighofen.ch.",
+  "thema": "Anreise mit dem Schiff",
+  "buchung": false
+ },
+ {
+  "vor": [
+   4,
+   11,
+   0
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Wo kann ich parkieren?",
+  "antwort": "Das Restaurant hat einen eigenen Parkplatz mit ausreichend Plätzen.\n- Anfahrt: am Kreisverkehr beim Restaurant Bären in die Seestrasse Richtung Hafen, über den Bahnübergang, der Strasse folgen\n- Mit dem Zug: Bahnhof Bottighofen in der Nähe",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   4,
+   18,
+   20
+  ],
+  "sprache": "fr",
+  "belegt": true,
+  "frage": "Les chiens sont-ils admis sur la terrasse ?",
+  "antwort": "Oui, les chiens sont les bienvenus. Pour toute autre question, l’équipe vous aide volontiers : +41 71 688 90 92.",
+  "thema": "",
+  "buchung": false
+ }
+]

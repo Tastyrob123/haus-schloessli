@@ -1,0 +1,65 @@
+[
+ {
+  "name": "Karten, neu gesetzt (Unterlagen)",
+  "datei": "unterlagen/index.html",
+  "knopf": "#k4 «Unterlagen durchblättern»",
+  "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/unterlagen/",
+  "geprueft": true
+ },
+ {
+  "name": "Drucksachen (6: Ansichtskarten, Gutschein, Tischkarte, Menükarte für Ihre Feier, Aushang Betriebsferien, Briefpapier)",
+  "datei": "drucksachen/index.html",
+  "knopf": "#k6 Papier",
+  "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/drucksachen/",
+  "geprueft": true
+ },
+ {
+  "name": "Untersetzer der Lästermeile (12, Gegenstück zum Sticker)",
+  "datei": "untersetzer/index.html",
+  "knopf": "#k6 Papier",
+  "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/untersetzer/",
+  "geprueft": true
+ },
+ {
+  "name": "Mailvorlagen (3, nur Text, nicht verschickt)",
+  "datei": "mails/index.html",
+  "knopf": "#k6 Papier, dritte Karte",
+  "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/mails/",
+  "geprueft": true
+ },
+ {
+  "name": "Instagram-Feed als Handy-Vorschau (Feed-Planer-Chat)",
+  "datei": "feed/index.html",
+  "knopf": "#k6 Feed",
+  "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/feed/",
+  "geprueft": true
+ },
+ {
+  "name": "Dateien (Material-Ordner, lokal; Drive erst auf Roberts Wort)",
+  "datei": "material/index.html",
+  "knopf": "#k6 Dateien",
+  "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/material/",
+  "geprueft": true
+ },
+ {
+  "name": "Potentialanalyse als Kopie neben der Website",
+  "datei": "potenzialanalyse/index.html",
+  "knopf": "#k1 «Die ganze Analyse ansehen»",
+  "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/potenzialanalyse/",
+  "geprueft": true
+ },
+ {
+  "name": "Prüfbericht in Alltagssprache",
+  "datei": "werkbank/geprueft/index.html",
+  "knopf": "#k7",
+  "ziel": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/werkbank/geprueft/",
+  "geprueft": true
+ },
+ {
+  "name": "Studio und Anleitung",
+  "datei": null,
+  "knopf": "als nächster Schritt (Werkzeuge im Laptop)",
+  "ziel": null,
+  "geprueft": false
+ }
+]

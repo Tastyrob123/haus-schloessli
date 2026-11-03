@@ -1,0 +1,195 @@
+{
+ "haus": "Walk on the Wild Side Hannover",
+ "quelle": "Aus ziele-culinarium.json (gleiche Ports, gleiche Schlüssel), Namen und Stilblatt des Hauses Walk on the Wild Side (Oberchef 31.10.2026)",
+ "gefahr": "l[öo]sch|entfern|senden|abschick|verschick|ver[öo]ffentlich|hochlad|online stellen|abmeld|zur[üu]cksetz|leeren|drucken|druckfertig|herunterlad|download|speicher|[üu]bernehm|best[äa]tig|freigeb|bezahl|verwerf|archivier|logout|ausloggen|ki fragen|erzeugen|generier|neu laden|entw[üu]rfe anlegen|f[üu]nf entw|anlegen und|export|als tabelle|als pdf|probe-pdf|pdf|zip|kopieren|in die zwischenablage|teilen|anrufen|ausprobieren|chat ausprobieren|abbrechen|r[üu]ckg[äa]ngig|wiederholen|undo|redo",
+ "dokument": "\\s(blatt|papier|bogen|dokument|druckseite|a4-seite|brief-seite|karte-blatt|seite-blatt)\\s",
+ "dokumentNicht": "\\sfl\\s",
+ "stil": {
+  "trenner": "|",
+  "trennerFalsch": "[A-Za-zÄÖÜäöü]\\s+/\\s+[A-Za-zÄÖÜäöü]",
+  "versalienNur": "Hanken",
+  "versalienErlaubt": "Hanken|Anton|plakat|marke|wortmarke",
+  "grund": "Wild Side: Etiketten in Hanken 500 gesperrt und in Versalien (website/assets/wild.css, 22× text-transform:uppercase); Titel in Prata nie in Versalien. Gilt, solange stilblatt.json fehlt; sonst zählen dessen Rollen."
+ },
+ "stilblatt": "/Users/robertreff/Cloud-Haeuser/wildside/Walk on the Wild Side Hannover/_werkzeuge/imprimerie/haeuser/wildside/stilblatt.json",
+ "ziele": [
+  {
+   "k": "tresen",
+   "name": "Der Tresen",
+   "url": "http://127.0.0.1:9091/_werkzeuge/maison/",
+   "tiefe": 7,
+   "startExtra": [
+    "http://127.0.0.1:9091/_werkzeuge/maison/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte"
+  },
+  {
+   "k": "schaufenster",
+   "name": "Das Schaufenster",
+   "url": "http://127.0.0.1:9092/_werkzeuge/bureau/",
+   "startExtra": [
+    "http://127.0.0.1:9092/_werkzeuge/bureau/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte",
+   "tiefe": 6
+  },
+  {
+   "k": "schaufenster-anleitung",
+   "name": "Das Schaufenster · Anleitung",
+   "url": "http://127.0.0.1:9092/_werkzeuge/bureau/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "pairing-karte",
+   "name": "Die Pairing-Karte",
+   "url": "http://127.0.0.1:9093/_werkzeuge/carte/",
+   "startExtra": [
+    "http://127.0.0.1:9093/_werkzeuge/carte/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte",
+   "tiefe": 6
+  },
+  {
+   "k": "pairing-karte-anleitung",
+   "name": "Die Pairing-Karte · Anleitung",
+   "url": "http://127.0.0.1:9093/_werkzeuge/carte/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "gaestebuch",
+   "name": "Das Gästebuch",
+   "url": "http://127.0.0.1:9094/_werkzeuge/reception/",
+   "startExtra": [
+    "http://127.0.0.1:9094/_werkzeuge/reception/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte",
+   "tiefe": 6
+  },
+  {
+   "k": "gaestebuch-anleitung",
+   "name": "Das Gästebuch · Anleitung",
+   "url": "http://127.0.0.1:9094/_werkzeuge/reception/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "plakatarchiv",
+   "name": "Das Markenbuch",
+   "url": "http://127.0.0.1:9095/_werkzeuge/livre/"
+  },
+  {
+   "k": "plakatarchiv-buch",
+   "name": "Das Markenbuch · Hausregeln",
+   "url": "http://127.0.0.1:9095/_werkzeuge/livre/buch.html"
+  },
+  {
+   "k": "plakatarchiv-anleitung",
+   "name": "Das Markenbuch · Anleitung",
+   "url": "http://127.0.0.1:9095/_werkzeuge/livre/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "besucherliste",
+   "name": "Die Besucherliste",
+   "url": "http://127.0.0.1:9096/_werkzeuge/registre/",
+   "startExtra": [
+    "http://127.0.0.1:9096/_werkzeuge/registre/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte",
+   "tiefe": 6
+  },
+  {
+   "k": "besucherliste-anleitung",
+   "name": "Die Besucherliste · Anleitung",
+   "url": "http://127.0.0.1:9096/_werkzeuge/registre/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "plakatwerkstatt",
+   "name": "Die Plakatwerkstatt",
+   "url": "http://127.0.0.1:9097/_werkzeuge/imprimerie/",
+   "localStorage": {
+    "ds-wildside-willkommen": "1",
+    "ds-culinarium-willkommen": "1"
+   },
+   "max": 700,
+   "gefahrExtra": "führung am studio",
+   "gefahrExtra_grund": "Die Führung sperrt alle Klicks ausser Weiter/Beenden; das Inventar bleibt dort hängen. Führung wird gesondert geprüft (Tor 1, 30.10.)"
+  },
+  {
+   "k": "plakatwerkstatt-mail",
+   "name": "Die Plakatwerkstatt · Mail",
+   "url": "http://127.0.0.1:9097/_werkzeuge/imprimerie/mail.html"
+  },
+  {
+   "k": "werkbank",
+   "name": "Die Werkbank",
+   "url": "http://127.0.0.1:9098/werkbank/index.html",
+   "bereich": "http://127.0.0.1:9098/"
+  },
+  {
+   "k": "werkbank-ki",
+   "name": "Die Werkbank · KI",
+   "url": "http://127.0.0.1:9098/werkbank/ki.html"
+  },
+  {
+   "k": "werkbank-karte",
+   "name": "Die Werkbank · Karte",
+   "url": "http://127.0.0.1:9098/werkbank/karte.html"
+  },
+  {
+   "k": "werkbank-geprueft",
+   "name": "Die Werkbank · Geprüft",
+   "url": "http://127.0.0.1:9098/werkbank/geprueft/index.html"
+  },
+  {
+   "k": "werkbank-befund",
+   "name": "Die Werkbank · Befund",
+   "url": "http://127.0.0.1:9098/befund/index.html"
+  },
+  {
+   "k": "werkbank-unterlagen",
+   "name": "Die Werkbank · Unterlagen",
+   "url": "http://127.0.0.1:9098/unterlagen/index.html"
+  },
+  {
+   "k": "werkbank-drucksachen",
+   "name": "Die Werkbank · Drucksachen",
+   "url": "http://127.0.0.1:9098/drucksachen/index.html"
+  },
+  {
+   "k": "werkbank-untersetzer",
+   "name": "Die Werkbank · Untersetzer",
+   "url": "http://127.0.0.1:9098/untersetzer/index.html"
+  },
+  {
+   "k": "werkbank-sticker",
+   "name": "Die Werkbank · Sticker",
+   "url": "http://127.0.0.1:9098/sticker/index.html"
+  },
+  {
+   "k": "werkbank-postkarten",
+   "name": "Die Werkbank · Postkarten",
+   "url": "http://127.0.0.1:9098/postkarten/index.html"
+  },
+  {
+   "k": "werkbank-beigaben",
+   "name": "Die Werkbank · Beigaben",
+   "url": "http://127.0.0.1:9098/beigaben/index.html"
+  },
+  {
+   "k": "werkbank-feed",
+   "name": "Die Werkbank · Feed",
+   "url": "http://127.0.0.1:9098/feed/index.html"
+  },
+  {
+   "k": "werkbank-mails",
+   "name": "Die Werkbank · Mails",
+   "url": "http://127.0.0.1:9098/mails/index.html"
+  },
+  {
+   "k": "werkbank-material",
+   "name": "Die Werkbank · Material",
+   "url": "http://127.0.0.1:9098/material/index.html"
+  }
+ ]
+}

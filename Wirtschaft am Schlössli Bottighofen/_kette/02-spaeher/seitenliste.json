@@ -1,0 +1,186 @@
+[
+ {
+  "url": "https://www.schloessli-bottighofen.ch/",
+  "titel": "Home (Startseite)",
+  "sprache": "de",
+  "art": "start",
+  "bild_rechner": "../../_qa/spaeher/start-rechner.jpg",
+  "bild_handy": "../../_qa/spaeher/start-handy.jpg"
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/home-1",
+  "titel": "Home (zweite Adresse derselben Startseite, nicht in der Leiste)",
+  "sprache": "de",
+  "art": "start",
+  "bild_rechner": "../../_qa/spaeher/home-1-rechner.jpg",
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/karten",
+  "titel": "Karten · Banketts & Gruppen",
+  "sprache": "de",
+  "art": "restaurant",
+  "bild_rechner": "../../_qa/spaeher/karten-rechner.jpg",
+  "bild_handy": "../../_qa/spaeher/karten-handy.jpg"
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1",
+  "titel": "Events & Termine",
+  "sprache": "de",
+  "art": "angebote",
+  "bild_rechner": "../../_qa/spaeher/events-2-1-rechner.jpg",
+  "bild_handy": "../../_qa/spaeher/events-2-1-handy.jpg"
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1/excellence-g-ourmetkreuzfahrt",
+  "titel": "Excellence Gourmetkreuzfahrt (13.–15.11.2026)",
+  "sprache": "de",
+  "art": "angebote",
+  "bild_rechner": "../../_qa/spaeher/events-2-1_excellence-g-ourmetkreuzfahrt-rechner.jpg",
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1/zqff5xzr7qhnfnil32eokk5dy6gi5q",
+  "titel": "Ehemaligen Lunch (6.9.2026, vorbei)",
+  "sprache": "de",
+  "art": "angebote",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1/fantastical-seenachtfest",
+  "titel": "Fantastical / Seenachtfest (7.–8.8.2026, vorbei)",
+  "sprache": "de",
+  "art": "angebote",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1/event-three-6jzsc",
+  "titel": "Kitchen Party im Schäfli (30.4.2026, vorbei, findet in Wigoltingen statt)",
+  "sprache": "de",
+  "art": "angebote",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/events-2-1/event-two-yf5k9",
+  "titel": "4-Hands-Lunch mit Patrick Stier (22.2.2026, vorbei)",
+  "sprache": "de",
+  "art": "angebote",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/uber-uns",
+  "titel": "Über uns · Das Team",
+  "sprache": "de",
+  "art": "sonst",
+  "bild_rechner": "../../_qa/spaeher/uber-uns-rechner.jpg",
+  "bild_handy": "../../_qa/spaeher/uber-uns-handy.jpg"
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/kontakt",
+  "titel": "Kontakt & Öffnungszeiten",
+  "sprache": "de",
+  "art": "kontakt",
+  "bild_rechner": "../../_qa/spaeher/kontakt-rechner.jpg",
+  "bild_handy": "../../_qa/spaeher/kontakt-handy.jpg"
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/impressionen-1",
+  "titel": "Impressionen (nur in der Sitemap, nicht in der Leiste)",
+  "sprache": "de",
+  "art": "sonst",
+  "bild_rechner": "../../_qa/spaeher/impressionen-1-rechner.jpg",
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/impressum",
+  "titel": "Impressum",
+  "sprache": "de",
+  "art": "rechtstext",
+  "bild_rechner": "../../_qa/spaeher/impressum-rechner.jpg",
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/datenschutzerklarung",
+  "titel": "Datenschutzerklärung",
+  "sprache": "de",
+  "art": "rechtstext",
+  "bild_rechner": "../../_qa/spaeher/datenschutzerklarung-rechner.jpg",
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/agbs",
+  "titel": "AGB`s",
+  "sprache": "de",
+  "art": "rechtstext",
+  "bild_rechner": "../../_qa/spaeher/agbs-rechner.jpg",
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/s/Speisekarte-Oktober.pdf",
+  "titel": "Speisekarte Oktober (PDF, auf «Karten»)",
+  "sprache": "de",
+  "art": "restaurant",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/s/20261014_Weinkarte.pdf",
+  "titel": "Weinkarte, Stand 14.10.2026 (PDF)",
+  "sprache": "de",
+  "art": "restaurant",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/s/Lunch_261015.pdf",
+  "titel": "Lunch-Menü (PDF, Startseite)",
+  "sprache": "de",
+  "art": "restaurant",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/s/Lastermeile-Homepage-2339.pdf",
+  "titel": "Karte der Lästermeile (PDF)",
+  "sprache": "de",
+  "art": "restaurant",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/s/Lastermeile-Homepage-2tbd.pdf",
+  "titel": "Karte der Lästermeile, zweite Datei (PDF)",
+  "sprache": "de",
+  "art": "restaurant",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/s/Bankettmenuvorschlage.pdf",
+  "titel": "Bankettmenüvorschläge (PDF)",
+  "sprache": "de",
+  "art": "angebote",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://www.schloessli-bottighofen.ch/s/4_Hands-_Stier.pdf",
+  "titel": "Menü 4-Hands-Lunch Patrick Stier (PDF)",
+  "sprache": "de",
+  "art": "restaurant",
+  "bild_rechner": null,
+  "bild_handy": null
+ },
+ {
+  "url": "https://services.gastronovi.com/restaurants/118851/reservation/widget",
+  "titel": "Reservation (gastronovi, fremder Dienst)",
+  "sprache": "de",
+  "art": "kontakt",
+  "bild_rechner": null,
+  "bild_handy": null
+ }
+]

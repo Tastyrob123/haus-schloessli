@@ -1,0 +1,41 @@
+{
+  "station": "11",
+  "name": "Werkbank und Werkzeuge",
+  "rolle": "Werkbank-Bauer + Werkzeug-Anpasser ×7",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T22:50+07:00",
+  "ende": "2026-10-20T02:09+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Werkbank-Brief stellt Robert vor; die Werkbank des Schäfli (gleicher Empfänger) darf die Vorstellung und keinen Satz des Briefs wiederholen (Master 13.5 Nr. 14)",
+      "wo": "website/_werkbank/haus.py › BRIEF"
+    },
+    {
+      "punkt": "Das Schaufenster nennt im Werkzeug «11 Seiten», die Werkbank zählt 9 Seiten ohne das Rechtliche (Impressum, Datenschutz, AGB); Zählung angleichen (Master 1, Regel 11)",
+      "wo": "http://127.0.0.1:9035/_werkzeuge/bureau/ Übersicht «Wie gebaut» · website/_werkbank/haus.py › SEITEN"
+    },
+    {
+      "punkt": "Flüssigkeit der Werkbank gedrosselt noch nicht gemessen: Rechnerlast über 15 durch andere Chats",
+      "wo": "B=http://127.0.0.1:8982/ node _Werkbank-Kit/mess.js werkbank/ 6 1440 900"
+    },
+    {
+      "punkt": "KI-Kosten je Aufruf fürs Schlössli nicht gemessen; ki.html nennt sie als «messe ich beim ersten Lauf mit Ihrem Konto» (Fundstelle: website/_werkbank/sb_ki.py KOSTEN_OFFEN)",
+      "wo": ""
+    }
+  ],
+  "paket": [
+    "werkzeuge/<schlüssel>/STAND.md",
+    "../../werkbank/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/werkbank/",
+  "briefing": "briefing.html",
+  "notiz": "Werkbank in acht Kapiteln steht; warten auf La Maison, La Carte, La Réception, Le Registre, L’Imprimerie und den Feed",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

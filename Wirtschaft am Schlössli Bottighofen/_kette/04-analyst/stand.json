@@ -1,0 +1,61 @@
+{
+  "station": "04",
+  "name": "Potentialanalyse",
+  "rolle": "Analyst",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T01:42+07:00",
+  "ende": "2026-10-19T10:46+07:00",
+  "verbrauch": {
+    "budget_vorher": 76.0,
+    "budget_nachher": 99.0,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Ob Anmeldungen im Newsletter-Feld «Abonnieren» ankommen: nur von innen (Squarespace-Konto) prüfbar; öffentlich sichtbar ist nur der leere Speicherort",
+      "wo": "Quelltext /kontakt Zeile 3227 und 3245, 19.10.2026 (_bau/roh/kontakt.html)"
+    },
+    {
+      "punkt": "Squarespace: gebuchtes Abo, Preis in Franken, wer die Seite baut und pflegt, unterschriebener Vertrag (Analyse nennt es als Frage fürs Gespräch)",
+      "wo": "_kette/02-spaeher/stand.json; Terms of Service 27.03.2025 am 19.10.2026 selbst gelesen"
+    },
+    {
+      "punkt": "Halter der Adresse schloessli-bottighofen.ch",
+      "wo": "Namensserver ns14.net, Whois für .ch nicht öffentlich (Späher 18.10.2026)"
+    },
+    {
+      "punkt": "Bildrechte: Impressum nennt die Taverne zum Schäfli AG, Fotografen nicht in den Dateien; ob das Haus die Fotos für eine neue Seite nutzen darf",
+      "wo": "_quelle/website/text/impressum.md; _quelle/fotografen-aus-metadaten.json"
+    },
+    {
+      "punkt": "Postkarten aus der Gemeindeschrift 1994 (Befund 08): nur zur Anschauung, Zustimmung der Gemeinde Bottighofen für eine Nutzung offen",
+      "wo": "_quelle/presse/heft-bilder/heft2-seite-124.jpg; Gemeinde Bottighofen"
+    },
+    {
+      "punkt": "Michelin-Selektion 2026 erscheint am 02.11.2026: Befund 01 und «Selbst beheben» (Plakette 2025) dann neu prüfen",
+      "wo": "_quelle/extern/portale/michelin-beleg.md"
+    },
+    {
+      "punkt": "Gäste-Sprachen auf keinem Portal ablesbar; Befund 13 (Englisch) stützt sich nur auf die englische Michelin-Seite",
+      "wo": "_kette/03-sammler/sprachen.json; guide.michelin.com/ch/en"
+    },
+    {
+      "punkt": "Reservationsweg im gastronovi-Widget selbst nicht durchgeklickt (nichts abgeschickt); nur Lage und Aussehen des Knopfs geprüft",
+      "wo": "https://services.gastronovi.com/restaurants/118851/reservation/widget"
+    },
+    {
+      "punkt": "Speisekarte am Telefon (Befund 03): Abbild aus der PDF-Datei in Telefonbreite gerendert, nicht im Safari des iPhones aufgenommen (Headless-Browser zeigen keine PDFs)",
+      "wo": "_bau/belege.py, _bau/pdf/Speisekarte-Oktober.pdf"
+    }
+  ],
+  "paket": [
+    "potential/",
+    "potential.json"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/_kette/04-analyst/potential/",
+  "briefing": "briefing.html",
+  "notiz": "Entwurf ohne Blender: 13 Befunde mit eigenen Aufnahmen vom 19.10.2026 (roter Kreis, ganz und nah, Quelltext-Zeilen), dazu Was gut ist, Selbst beheben, Ihre Seite heute (Squarespace) und Was möglich ist; wartet auf Roberts Auswahl.",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

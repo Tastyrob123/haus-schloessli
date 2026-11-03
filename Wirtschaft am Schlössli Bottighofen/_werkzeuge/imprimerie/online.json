@@ -1,0 +1,80 @@
+{
+ "name": "L’Imprimerie (Die Werkstatt)",
+ "hinweis": "sb-imprimerie (Die Werkstatt), 17.10.2026 (Form wie Carlton, Doldenhorn und Ruedihus _werkzeuge/imprimerie/online.json). Oberfläche statisch unter /werkzeuge/imprimerie/, das Hausbuch (Le Livre) daneben unter /werkzeuge/livre/ (livre.json, dateien/, Fotos über «fl» = /assets/img/). KI-Funktion api/imprimerie_entwurf.py aus api/entwurf.py (Wissen und Marke als lib); ohne ANTHROPIC_API_KEY am Vercel-Projekt melden nur «Fünf Entwürfe» und Bildtext «nicht erreichbar», Vorlagen, Editor und PDF gehen. Schlüssel nur auf Roberts Wort (Regel 54). Kein Blob-Speicher: die Werkstatt legt alles im Browser des Hauses ab. Die grossen Fotos (haeuser/schloessli/bilder) gehen nur unter «zusatz» mit (I08): mit dem Hausbuch online braucht sie niemand. Mail-Bilder (haeuser/schloessli/mail) zeigen in verschickten Mails auf diese Adresse: nach dem ersten Versand nie mehr entfernen (Regel 61, versand_schutz.py merken). Werkzeug-Oberfläche «Die Bühne» (UMSTELLUNG.md): Paket assets/oberflaeche unter statik (geht mit, wie bei jedem umgestellten Werkzeug), Hausschicht haeuser/schloessli/oberflaeche.*.",
+ "funktionen": {
+  "api/imprimerie_entwurf.py": {
+   "von": "_werkzeuge/imprimerie/api/entwurf.py",
+   "dauer": 60,
+   "includeFiles": "api/_lib/imprimerie/**"
+  }
+ },
+ "lib": {
+  "_werkzeuge/imprimerie/api/_daten": "api/_lib/imprimerie/_daten"
+ },
+ "statik": {
+  "assets/oberflaeche": "assets/oberflaeche",
+  "_werkzeuge/imprimerie/index.html": "werkzeuge/imprimerie/index.html",
+  "_werkzeuge/imprimerie/mail.html": "werkzeuge/imprimerie/mail.html",
+  "_werkzeuge/imprimerie/pruefung.html": "werkzeuge/imprimerie/pruefung.html",
+  "_werkzeuge/imprimerie/satz.js": "werkzeuge/imprimerie/satz.js",
+  "_werkzeuge/imprimerie/eigene.js": "werkzeuge/imprimerie/eigene.js",
+  "_werkzeuge/imprimerie/vorlagen.js": "werkzeuge/imprimerie/vorlagen.js",
+  "_werkzeuge/imprimerie/druck.js": "werkzeuge/imprimerie/druck.js",
+  "_werkzeuge/imprimerie/studio.js": "werkzeuge/imprimerie/studio.js",
+  "_werkzeuge/imprimerie/instagram.js": "werkzeuge/imprimerie/instagram.js",
+  "_werkzeuge/imprimerie/lelivre.js": "werkzeuge/imprimerie/lelivre.js",
+  "_werkzeuge/imprimerie/katalog.js": "werkzeuge/imprimerie/katalog.js",
+  "_werkzeuge/imprimerie/siegel.js": "werkzeuge/imprimerie/siegel.js",
+  "_werkzeuge/imprimerie/start.js": "werkzeuge/imprimerie/start.js",
+  "_werkzeuge/imprimerie/fuehrung.js": "werkzeuge/imprimerie/fuehrung.js",
+  "_werkzeuge/imprimerie/mail.js": "werkzeuge/imprimerie/mail.js",
+  "_werkzeuge/imprimerie/mail-satz.js": "werkzeuge/imprimerie/mail-satz.js",
+  "_werkzeuge/imprimerie/zur-werkbank.js": "werkzeuge/imprimerie/zur-werkbank.js",
+  "_werkzeuge/imprimerie/studio.css": "werkzeuge/imprimerie/studio.css",
+  "_werkzeuge/imprimerie/ms-bureau.css": "werkzeuge/imprimerie/ms-bureau.css",
+  "_werkzeuge/imprimerie/mail.css": "werkzeuge/imprimerie/mail.css",
+  "_werkzeuge/imprimerie/lib": "werkzeuge/imprimerie/lib",
+  "_werkzeuge/imprimerie/haeuser/schloessli/marke.json": "werkzeuge/imprimerie/haeuser/schloessli/marke.json",
+  "_werkzeuge/imprimerie/haeuser/schloessli/druck.json": "werkzeuge/imprimerie/haeuser/schloessli/druck.json",
+  "_werkzeuge/imprimerie/haeuser/schloessli/buehne.js": "werkzeuge/imprimerie/haeuser/schloessli/buehne.js",
+  "_werkzeuge/imprimerie/haeuser/schloessli/feder.js": "werkzeuge/imprimerie/haeuser/schloessli/feder.js",
+  "_werkzeuge/imprimerie/haeuser/schloessli/feder.css": "werkzeuge/imprimerie/haeuser/schloessli/feder.css",
+  "_werkzeuge/imprimerie/haeuser/schloessli/hell.css": "werkzeuge/imprimerie/haeuser/schloessli/hell.css",
+  "_werkzeuge/imprimerie/haeuser/schloessli/tapete-dunkel.webp": "werkzeuge/imprimerie/haeuser/schloessli/tapete-dunkel.webp",
+  "_werkzeuge/imprimerie/haeuser/schloessli/tapete-hell.webp": "werkzeuge/imprimerie/haeuser/schloessli/tapete-hell.webp",
+  "_werkzeuge/imprimerie/haeuser/schloessli/tapete-ui-dunkel.webp": "werkzeuge/imprimerie/haeuser/schloessli/tapete-ui-dunkel.webp",
+  "_werkzeuge/imprimerie/haeuser/schloessli/tapete-ui-hell.webp": "werkzeuge/imprimerie/haeuser/schloessli/tapete-ui-hell.webp",
+  "_werkzeuge/imprimerie/haeuser/schloessli/schriften": "werkzeuge/imprimerie/haeuser/schloessli/schriften",
+  "_werkzeuge/imprimerie/haeuser/schloessli/vorlagen": "werkzeuge/imprimerie/haeuser/schloessli/vorlagen",
+  "_werkzeuge/imprimerie/haeuser/schloessli/kopf": "werkzeuge/imprimerie/haeuser/schloessli/kopf",
+  "_werkzeuge/imprimerie/haeuser/schloessli/mini": "werkzeuge/imprimerie/haeuser/schloessli/mini",
+  "_werkzeuge/imprimerie/haeuser/schloessli/mail": "werkzeuge/imprimerie/haeuser/schloessli/mail",
+  "_werkzeuge/imprimerie/haeuser/schloessli/oberflaeche.js": "werkzeuge/imprimerie/haeuser/schloessli/oberflaeche.js",
+  "_werkzeuge/imprimerie/haeuser/schloessli/oberflaeche.css": "werkzeuge/imprimerie/haeuser/schloessli/oberflaeche.css"
+ },
+ "zusatz": {
+  "_": "Nur nötig, wenn das Hausbuch online fehlt. Wie beim Carlton in ein Zusatz-Projekt, falls das Hauptprojekt zu gross wird; Umleitung unten. Name ohne Nummer (-2 bis -4 vergibt die Website-Aufteilung von online.py).",
+  "schloessli-bottighofen-werkstatt": {
+   "_werkzeuge/imprimerie/haeuser/schloessli/bilder": "werkzeuge/imprimerie/haeuser/schloessli/bilder"
+  }
+ },
+ "umleitungen": [
+  {
+   "source": "/werkzeuge/imprimerie/api/entwurf",
+   "destination": "/api/imprimerie_entwurf"
+  },
+  {
+   "source": "/_werkzeuge/imprimerie/:pfad*",
+   "destination": "/werkzeuge/imprimerie/:pfad*"
+  },
+  {
+   "source": "/werkzeuge/imprimerie/haeuser/schloessli/bilder/:pfad*",
+   "destination": "https://schloessli-bottighofen-werkstatt.vercel.app/werkzeuge/imprimerie/haeuser/schloessli/bilder/:pfad*"
+  }
+ ],
+ "stand": "",
+ "pruefung": {
+  "weg": "/werkzeuge/imprimerie/",
+  "kurz": true
+ }
+}

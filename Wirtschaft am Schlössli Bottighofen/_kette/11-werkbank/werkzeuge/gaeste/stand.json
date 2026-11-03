@@ -1,0 +1,50 @@
+{
+  "station": "11",
+  "name": "La Réception / Der Gastgeber",
+  "rolle": "Werkbank-Bauer + Werkzeug-Anpasser ×7",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "teil": "gaeste",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T22:54+07:00",
+  "ende": "2026-10-20T00:16+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Baustein der Formulare noch nicht auf der Website; Weg formular lokal von :8982 an :9047 reichen, Datenschutz-Absatz",
+      "wo": "_werkzeuge/reception/baustein/ANLEITUNG.md (Station 14)"
+    },
+    {
+      "punkt": "Echte KI (Brief, Übersetzen, Chat, Wissen einlesen) nicht geprüft, nur Probe-Antworten",
+      "wo": "Kostenrunde auf Roberts Wort; _kette/11-werkbank/werkzeuge/gaeste/STAND.md"
+    },
+    {
+      "punkt": "Online-Fassung fehlt (online.json, Funktionen noch die des Ruedihus als Vorlage)",
+      "wo": "_werkzeuge/reception/_bau/vorlage-ruedihus/online/ (vor Station 16)"
+    },
+    {
+      "punkt": "Prüfpunkte offen: Backend, Anmeldung, Rechte, Backups ausserhalb, Deployment, KI-Kosten, Datenschutz, Monitoring",
+      "wo": "_kette/11-werkbank/werkzeuge/gaeste/STAND.md, Abschnitt Prüfpunkte"
+    },
+    {
+      "punkt": "Firefox und 320 px nicht gelaufen",
+      "wo": "Station 12"
+    },
+    {
+      "punkt": "Flüssigkeit 4×: 114 Bilder/s, ein Bild 91 ms (ruhig); unter Last 64 und Akku längstes 183 ms (4×), 258 ms (6×), beim Ansichtswechsel",
+      "wo": "_kette/11-werkbank/werkzeuge/gaeste/STAND.md, Abschnitt Geprüft"
+    }
+  ],
+  "paket": [
+    "werkzeuge/<schlüssel>/STAND.md",
+    "../../werkbank/"
+  ],
+  "adresse": "http://127.0.0.1:9047/_werkzeuge/reception/",
+  "briefing": "briefing.html?teil=gaeste",
+  "notiz": "Das Reservationsbuch fürs Restaurant: Reservation, Bankett (zwei Etagen à 26), Anlass, Gutschein; Hinweise Ruhetag/Ferien/Etagen/Allergien; Bilder in jeder Liste; Namen aus dem gemeinsamen Kleid; Formulare der Website als Baustein; ohne KI. 4 Läufe grün.",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

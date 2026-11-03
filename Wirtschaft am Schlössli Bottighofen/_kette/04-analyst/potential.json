@@ -1,0 +1,307 @@
+{
+ "stand": "19. Oktober 2026",
+ "entwurf": "erster Entwurf ohne Blender (Robert 19.10.2026); Aufnahmen in _bau/stellen/, Belege in potential/belege/",
+ "befunde": [
+  {
+   "nr": "01",
+   "was": "Die Entdeckung des Jahres steht nirgends auf Ihrer Seite",
+   "wo": "Startseite, ganz unten im Fuss. Am Telefon nach fast sechs Bildschirmhöhen (Siegel bei 4868 von 5466 Pixeln).",
+   "nutzen": "Gäste: Der Grund, der sie neugierig gemacht hat, fehlt genau dort, wo sie nachsehen. Haus: Drei Auszeichnungen in einem Jahr arbeiten auf der eigenen Seite nicht mit. Was wir tun würden: Auszeichnungen mit Satz und Quelle oben auf die Startseite und zu Monika Huber, die Plakette mit dem richtigen Jahr.",
+   "beleg": "potential/belege/fuss-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/",
+   "quellen": [
+    "https://www.gaultmillau.ch/restaurants/wirtschaft-am-schlossli-844948",
+    "_quelle/presse/tz-14-punkte.md (08.10.2025)",
+    "_quelle/extern/portale/falstaff-restaurant.md",
+    "Suche in allen 15 Seitentexten nach «Entdeckung» und «Falstaff»: kein Treffer (19.10.2026)"
+   ]
+  },
+  {
+   "nr": "02",
+   "was": "«Reservation» sieht nicht aus wie ein Knopf und kommt erst nach dem Wischen",
+   "wo": "Startseite, unter dem grossen Foto. Am Telefon und am Rechner liegt sie unterhalb des ersten Bildschirms.",
+   "nutzen": "Gäste: Der kürzeste Weg zum Tisch ist der unauffälligste auf der Seite. Haus: Reservierungen hängen an einem Wort, das wie eine Überschrift aussieht. Was wir tun würden: Reservieren im ersten Bildschirm, als klarer Knopf, am Telefon immer erreichbar. Reserviert wird weiter über gastronovi.",
+   "beleg": "potential/belege/start-handy-1-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/; potential/belege/start-handy-2-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/; potential/belege/start-rechner-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/; _bau/roh/start.html Zeilen 2544, 2548, 2549, 2608, 2612, 2613",
+   "quellen": [
+    "Aufnahmen iPhone 390 × 844 und Rechner 1440 × 900, Chromium, 19.10.2026",
+    "In Safari-Technik (WebKit) gemessen: Reservation ohne Rahmen («0px none»), Lunch-Menü «2px solid»"
+   ]
+  },
+  {
+   "nr": "03",
+   "was": "Ihre Karten sind aktuell, aber nur als PDF zu lesen",
+   "wo": "Menü «Karten», dann «Speisekarte», «Weinkarte» oder «Lästermeile». Dazu «Lunch-Menü» auf der Startseite.",
+   "nutzen": "Gäste: Die Küche, für die man kommt, macht am Telefon weniger Lust, als sie sollte. Haus: Thon, Quinto Quarto, Parmigiana: die Gerichte stehen nirgends als Text auf der Seite, auch nicht für Google. Was wir tun würden: Jede Karte als eigene Seite, am Telefon lesbar, das PDF zum Ausdrucken bleibt; beides aus einer Liste, die Sie selbst pflegen.",
+   "beleg": "potential/belege/karten-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/karten; potential/belege/speisekarte-pdf-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/s/Speisekarte-Oktober.pdf",
+   "quellen": [
+    "https://www.schloessli-bottighofen.ch/karten",
+    "https://www.schloessli-bottighofen.ch/s/Speisekarte-Oktober.pdf (erstellt 30.09.2026, 2 Seiten A4)",
+    "https://www.schloessli-bottighofen.ch/s/20261014_Weinkarte.pdf (26 Seiten A4)",
+    "https://www.schloessli-bottighofen.ch/s/Lunch_261019.pdf"
+   ]
+  },
+  {
+   "nr": "04",
+   "was": "Eine Bankettanfrage öffnet das Mail-Programm, die zwei Etagen sieht man nicht",
+   "wo": "Menü «Karten», Abschnitt «Banketts & Gruppen», Knopf «Bankettanfrage».",
+   "nutzen": "Gäste: Wer feiern will, plant mit Bildern und einem Formular, nicht mit einem leeren Mail. Haus: Anlässe sind die grossen Tische. Heute hängt jede Anfrage am Mail-Programm des Gastes. Was wir tun würden: Beide Etagen mit Bildern und Plätzen, dazu eine Anfrage mit Datum und Personenzahl direkt auf der Seite.",
+   "beleg": "potential/belege/bankett-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/karten; _quelle/website/text/karten.md",
+   "quellen": [
+    "https://www.schloessli-bottighofen.ch/karten",
+    "_quelle/website/text/karten.md («auf zwei Etagen Platz für jeweils bis zu 26 Personen»)"
+   ]
+  },
+  {
+   "nr": "05",
+   "was": "Einen Gutschein bestellt man mit einem Formular und wartet auf Post",
+   "wo": "Startseite, «Gutschein» unter dem grossen Foto.",
+   "nutzen": "Gäste: Ein Geschenk, das man sofort haben möchte, bleibt offen. Haus: Jede Bestellung kommt als Formular an und wird von Hand bearbeitet, das Geld kommt später. Was wir tun würden: Gutscheine mit Betrag zum Auswählen, gleich bezahlt und sofort als schönes PDF da.",
+   "beleg": "potential/belege/gutschein-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/",
+   "quellen": [
+    "Formular «Gutschein» im Quelltext der Startseite (formFields, «vor dem Senden ankreuzen», formSubmissionMessage), 19.10.2026"
+   ]
+  },
+  {
+   "nr": "06",
+   "was": "Das Feld «Abonnieren» hat keinen Ort, an dem Anmeldungen ankommen",
+   "wo": "Menü «Kontakt & Öffnungszeiten», nach der Anfahrt.",
+   "nutzen": "Gäste: Wer Ihnen folgen will, bekommt womöglich nie Post. Haus: Ob Anmeldungen ankommen, lässt sich nur von innen prüfen. Sichtbar ist: eingerichtet ist der Baustein nicht. Was wir tun würden: Ein Newsletter, der ankommt, oder das Feld weg, bis es einen gibt.",
+   "beleg": "potential/belege/newsletter-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/kontakt; _bau/roh/kontakt.html Zeilen 3227, 3245",
+   "quellen": [
+    "https://www.schloessli-bottighofen.ch/kontakt",
+    "Nachtrag zum Befund vom 18.10.2026: dort als «für Gäste unsichtbar» notiert; am 19.10.2026 am Telefon sichtbar (Aufnahme)"
+   ]
+  },
+  {
+   "nr": "07",
+   "was": "Monika Hubers Weg steht im Text einer Kreuzfahrt, nicht bei ihr",
+   "wo": "Menü «Über uns». Der Weg steht unter «Events & Termine», Excellence Gourmetkreuzfahrt.",
+   "nutzen": "Gäste: Die Menschen, für die man kommt, bleiben ohne Geschichte. Haus: Ein Weg von der Algarve über das Schäfli an den See ist erzählt, nur an der falschen Stelle, und nach dem 15. November ist die Kreuzfahrt vorbei. Was wir tun würden: Eine Seite über Küche und Gastgeber mit ihren Wegen, dazu die Patisserie.",
+   "beleg": "potential/belege/team-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/uber-uns; potential/belege/kreuzfahrt-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/events-2-1/excellence-g-ourmetkreuzfahrt",
+   "quellen": [
+    "https://www.schloessli-bottighofen.ch/uber-uns",
+    "https://www.schloessli-bottighofen.ch/events-2-1/excellence-g-ourmetkreuzfahrt",
+    "_quelle/presse/gaultmillau-zwei-koeniginnen.md (30.03.2025, Theresa Hermann)"
+   ]
+  },
+  {
+   "nr": "08",
+   "was": "Der Ort hat 350 Jahre Gastgeber-Geschichte, die Seite keinen Satz davon",
+   "wo": "Startseite und «Über uns»: kein Wort zum Schlössli, zum Hafen oder zum Haus.",
+   "nutzen": "Gäste: Man sitzt an einem Ort mit Geschichte und erfährt nichts davon. Haus: Ein Pächter, der am See Gäste bewirtet, wie schon um 1690: diese Geschichte gehört nur Ihnen. Was wir tun würden: Ein kurzes Kapitel zum Ort, mit den Postkarten des alten Hotels, wenn die Gemeinde zustimmt.",
+   "beleg": "bilder/postkarte-720.webp",
+   "quellen": [
+    "_quelle/presse/pdf-text/Bottighofen_Heft_2_Schloessli_S103-128_OCR.txt (S. 104–124)",
+    "_quelle/presse/gemeinde-bottighofen-geschichte.md («im ehemaligen Hafenmeistergebäude»)",
+    "Suche in allen 15 Seitentexten nach «Geschichte», «1676», «1888», «Hafenmeister»: kein Treffer"
+   ]
+  },
+  {
+   "nr": "09",
+   "was": "Nach dem Datum verschwinden Ihre Anlässe von der Seite",
+   "wo": "Menü «Events & Termine».",
+   "nutzen": "Gäste: Ein lebendiges Haus wirkt zwischen zwei Anlässen still. Haus: Der Ehemaligen Lunch mit Weggefährten aus London, Gonten und Weinfelden ist eine Geschichte, die bleiben dürfte. Was wir tun würden: Anlässe mit Datum, die danach von selbst in einen Rückblick wandern.",
+   "beleg": "potential/belege/events-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/events-2-1; potential/belege/ehemalige-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/events-2-1/zqff5xzr7qhnfnil32eokk5dy6gi5q",
+   "quellen": [
+    "https://www.schloessli-bottighofen.ch/events-2-1",
+    "https://www.schloessli-bottighofen.ch/events-2-1/zqff5xzr7qhnfnil32eokk5dy6gi5q",
+    "sitemap.xml (Befund 18.10.2026)"
+   ]
+  },
+  {
+   "nr": "10",
+   "was": "Google liest bei Ihren Bildern «Bierkrug» und «deutsches Fachwerkhaus»",
+   "wo": "Kontaktseite (Plakette und Foto des Schäfli) und Startseite (die acht Teller).",
+   "nutzen": "Gäste: Die Teller auf der Startseite bleiben namenlos, man weiss nicht, was man da sieht. Haus: Die Auszeichnung des Schwesterhauses steht für Suchmaschinen als Bierkrug da. Was wir tun würden: Jedes Bild mit dem, was es zeigt: Gericht, Ort, Person.",
+   "beleg": "potential/belege/plakette-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/kontakt; _bau/roh/kontakt.html Zeilen 3820, 4140; _bau/roh/start.html Zeilen 3790, 4370",
+   "quellen": [
+    "https://www.schloessli-bottighofen.ch/kontakt",
+    "https://www.schloessli-bottighofen.ch/"
+   ]
+  },
+  {
+   "nr": "11",
+   "was": "Ihre schönste Bilderseite ist im Menü nicht zu finden",
+   "wo": "Leiste oben: fünf Punkte. Die Seite «Impressionen» liegt unter /impressionen-1, eine zweite Startseite unter /home-1.",
+   "nutzen": "Gäste: Die stärksten Bilder des Hauses sieht kaum jemand. Haus: Professionelle Fotografie bleibt ungenutzt. Was wir tun würden: Die Bilder dort zeigen, wo man über Küche und Terrasse liest; doppelte Seiten weg.",
+   "beleg": "potential/belege/leiste-rechner-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/impressionen-1",
+   "quellen": [
+    "https://www.schloessli-bottighofen.ch/impressionen-1",
+    "https://www.schloessli-bottighofen.ch/home-1",
+    "sitemap.xml (Befund 18.10.2026)"
+   ]
+  },
+  {
+   "nr": "12",
+   "was": "Die Datenschutzerklärung beschreibt Dienste, die Ihre Seite nicht lädt",
+   "wo": "Fuss jeder Seite, «Datenschutz».",
+   "nutzen": "Gäste: Die Erklärung beantwortet nicht, was ein Gast über Ihre Seite wissen möchte. Haus: Das «Privacy Shield» hat der Europäische Gerichtshof im Juli 2020 für ungültig erklärt. Ob die Erklärung rechtlich genügt, beurteilt eine Juristin; sichtbar ist, dass sie nicht zu Ihrer Seite passt. Was wir tun würden: Eine Erklärung, die genau die Dienste nennt, die die Seite lädt, und mit jedem neuen mitwächst.",
+   "beleg": "potential/belege/datenschutz-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/datenschutzerklarung; potential/belege/shop-handy-ganz.webp (+ -nah.webp), https://www.schloessli-bottighofen.ch/datenschutzerklarung; messung",
+   "quellen": [
+    "https://www.schloessli-bottighofen.ch/datenschutzerklarung",
+    "_quelle/website/text/datenschutzerklarung.md",
+    "Messung mit Playwright, Cookie-Fenster abgelehnt, 19.10.2026"
+   ]
+  },
+  {
+   "nr": "13",
+   "was": "Ihre Seite spricht nur Deutsch, der Guide Michelin auch Englisch",
+   "wo": "Alle Seiten, alle Karten.",
+   "nutzen": "Gäste: Wer kein Deutsch liest, findet sich nur mit Mühe zurecht. Haus: Welche Sprachen Ihre Gäste sprechen, war auf keinem Portal abzulesen; Englisch ist der naheliegende Anfang. Was wir tun würden: Die Seite auch auf Englisch, umschaltbar an derselben Stelle, auf Wunsch Französisch.",
+   "beleg": "potential/belege/michelin-en-ganz.webp (+ -nah.webp), https://guide.michelin.com/ch/en/thurgau/bottighofen_1149146/restaurant/wirtschaft-am-schlossli",
+   "quellen": [
+    "Quelltext lang=\"de-CH\", keine weitere Sprache (Befund 18.10.2026)",
+    "_quelle/extern/portale/guide-michelin-en.md",
+    "_kette/03-sammler/sprachen.json"
+   ]
+  }
+ ],
+ "chancen": [
+  {
+   "was": "Die Geschichte des Ortes: 1676 das «Haus am See», um 1690 der erste Wirt als Pächter, 1888 «Hotel und Pension Schlössli», die Fischenz im Konstanzer Trichter; dazu die Postkarten aus der Gemeindeschrift.",
+   "beleg": "_quelle/presse/pdf-text/Bottighofen_Heft_2_Schloessli_S103-128_OCR.txt"
+  },
+  {
+   "was": "Monika Hubers Weg: Vila Joya an der Algarve, Sous-Chefin im Schäfli, Entdeckung des Jahres, 15. Punkt. Daneben Theresa Hermann (Patisserie) und Jonas Volpert, dessen Weinkeller laut GaultMillau «manches Fine-Dining-Restaurant» neidisch machen dürfte.",
+   "beleg": "_quelle/extern/portale/gaultmillau.md"
+  },
+  {
+   "was": "Terrasse und Lästermeile: Die Terrasse «im Schatten prächtiger Platanen» (GaultMillau), die Lästermeile als eigene Terrasse an der Hafenpromenade mit Tapas den ganzen Tag (Michelin).",
+   "beleg": "_quelle/extern/portale/guide-michelin-de.md"
+  },
+  {
+   "was": "Die Familie mit dem Schäfli: Beide Seiten verweisen schon aufeinander; der Ehemaligen Lunch hat die Weggefährten aus Wigoltingen an den See geholt.",
+   "beleg": "https://www.schloessli-bottighofen.ch/kontakt"
+  },
+  {
+   "was": "Anlässe mit Rückblick: Gourmetkreuzfahrt, Seenachtfest mit «beste Sicht» auf das Feuerwerk, 4-Hands-Lunch: ein Jahr voller Anlässe, das sichtbar bleiben kann.",
+   "beleg": "https://www.schloessli-bottighofen.ch/events-2-1"
+  },
+  {
+   "was": "Hunde willkommen: Falstaff nennt es, das Tagblatt erzählt vom Napf, der aus der Champagnerflasche gefüllt wird. Auf der Seite steht es nicht.",
+   "beleg": "_quelle/presse/tagblatt-zu-tisch.md"
+  }
+ ],
+ "zahlen": [
+  {
+   "wert": "15",
+   "einheit": "Punkte GaultMillau",
+   "quelle": "Guide 2027, gaultmillau.ch, 19.10.2026"
+  },
+  {
+   "wert": "2026",
+   "einheit": "Entdeckung des Jahres",
+   "quelle": "GaultMillau für Monika Huber, Oktober 2025"
+  },
+  {
+   "wert": "91",
+   "einheit": "Punkte Falstaff",
+   "quelle": "Falstaff Magazine Schweiz Nr. 5/2026"
+  },
+  {
+   "wert": "4,2",
+   "einheit": "bei Google, 85 Bewertungen",
+   "quelle": "Google Maps, 19.10.2026"
+  },
+  {
+   "wert": 26,
+   "einheit": "Personen je Etage (zwei Etagen)",
+   "quelle": "https://www.schloessli-bottighofen.ch/karten, 19.10.2026"
+  },
+  {
+   "wert": 26,
+   "einheit": "Seiten Weinkarte vom 14.10.2026",
+   "quelle": "pdfinfo _bau/pdf/20261014_Weinkarte.pdf"
+  },
+  {
+   "wert": 2601,
+   "einheit": "Follower @schloessli_bottighofen",
+   "quelle": "_quelle/extern/ig/profil.txt (19.10.2026)"
+  },
+  {
+   "wert": "12.09.2024",
+   "einheit": "Anlage der Squarespace-Seite",
+   "quelle": "Späher-Befund 18.10.2026"
+  },
+  {
+   "wert": "03.04.2025",
+   "einheit": "Eröffnung",
+   "quelle": "_quelle/presse/gaultmillau-zwei-koeniginnen.md"
+  },
+  {
+   "wert": "27.03.2025",
+   "einheit": "gültig ab: Terms of Service Squarespace",
+   "quelle": "https://www.squarespace.com/terms-of-service, 19.10.2026"
+  }
+ ],
+ "selbst_beheben": [
+  {
+   "was": "Michelin-Plakette",
+   "text": "Im Fuss steht «2025». Die Selektion 2026 erscheint am 2. November; danach die Jahreszahl prüfen.",
+   "beleg": "https://guide.michelin.com/ch/de/thurgau/bottighofen_1149146/restaurant/wirtschaft-am-schlossli"
+  },
+  {
+   "was": "Schweiz Tourismus",
+   "text": "Der Eintrag auf myswitzerland.com nennt noch «14 Punkte».",
+   "beleg": "_quelle/extern/myswitzerland/seite-text.md"
+  },
+  {
+   "was": "Du und Sie",
+   "text": "Cookie-Fenster («erklärst du dich»), Newsletter («Melde dich») und das Häkchen in den Formularen («Registriere dich») sprechen per Du, die Seite sonst per Sie.",
+   "beleg": "cookie-handy"
+  },
+  {
+   "was": "Schweizer Schreibung",
+   "text": "«Genießen» in der Beschreibung, die Google anzeigt, «Straße und Hausnummer» im Gutschein-Formular, «Menue» bei den Banketten.",
+   "beleg": "https://www.schloessli-bottighofen.ch/karten"
+  },
+  {
+   "was": "Instagram",
+   "text": "2’601 Menschen folgen @schloessli_bottighofen. Das Konto ist im Quelltext hinterlegt, im Fuss fehlt das Zeichen.",
+   "beleg": "fuss-rechner"
+  },
+  {
+   "was": "Pflicht-Häkchen",
+   "text": "«vor dem Senden ankreuzen» im Gutschein- und im Kontaktformular sagt nicht, wozu.",
+   "beleg": "https://www.schloessli-bottighofen.ch/kontakt"
+  }
+ ],
+ "nachtraege_zum_befund_02": [
+  {
+   "datum": "19.10.2026",
+   "punkt": "Seite «Karten» trägt jetzt die Überschrift «Karten» mit Speisekarte, Weinkarte, Lästermeile und Zeiten; am 18.10. nur «Banketts & Gruppen»",
+   "beleg": "stellen/karten-handy.png"
+  },
+  {
+   "datum": "19.10.2026",
+   "punkt": "Newsletter-Baustein «Abonnieren» auf /kontakt ist für Gäste sichtbar (Befund 18.10.: unsichtbar); Speicherort weiter leer",
+   "beleg": "stellen/newsletter-handy.png, roh/kontakt.html Z. 3227, 3245"
+  },
+  {
+   "datum": "19.10.2026",
+   "punkt": "Kontaktseite hat einen Knopf «Kontaktformular» (Formular mit Pflicht-Häkchen «vor dem Senden ankreuzen»)",
+   "beleg": "probe/m-kontaktform.png"
+  }
+ ],
+ "geprueft_wie_schaefli": [
+  {
+   "punkt": "Reservieren-Knopf auf dem Cookie-Hinweis (Schäfli 01)",
+   "ergebnis": "gilt beim Schlössli nicht: kein fester Knopf, «ablehnen» frei",
+   "beleg": "_bau/probe/m-erst.png, potential/belege/cookie-handy-ganz.webp"
+  },
+  {
+   "punkt": "Karten nur als PDF (Schäfli 02)",
+   "ergebnis": "gilt auch hier, Befund 03",
+   "beleg": "karten-handy, speisekarte-pdf"
+  },
+  {
+   "punkt": "Datenschutz passt nicht zur Seite (Schäfli 10)",
+   "ergebnis": "gilt auch hier, Befund 12, mit eigener Messung",
+   "beleg": "datenschutz-handy, shop-handy"
+  },
+  {
+   "punkt": "Gutschein als Formular (Schäfli 07)",
+   "ergebnis": "gilt auch hier, Befund 05, dazu Pflicht-Häkchen ohne Text",
+   "beleg": "gutschein-handy"
+  }
+ ]
+}

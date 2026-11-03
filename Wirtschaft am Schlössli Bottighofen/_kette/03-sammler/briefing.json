@@ -1,0 +1,38 @@
+{
+  "titel": "Recherche",
+  "untertitel": "Wirtschaft am Schlössli Bottighofen · Station 03 · Sammler",
+  "stand": "Sammlung liegt vor als eigene Seite: Material in _quelle/, Fakten mit Quelle, Gäste-Sprachen, Bau-Prompt; Geschichte des Ortes aus der Gemeindeschrift 1994.",
+  "luecken": [
+    "TripAdvisor: Note, Anzahl, Fotos und Sprachen nicht gelesen (Chrome mit Claude-Erweiterung nicht verbunden, nach Auftrag nicht anders versucht); ob der Eintrag «Schlössli» d33091733 zur heutigen Wirtschaft gehört, Späher-Wert 3,1 / 9 nur aus der Suchvorschau",
+    "Gäste-Sprachen nach Anzahl auf keinem Portal ablesbar; Reihenfolge de, en, fr nur aus Lage und Sprachen der Tourismusbüros abgeleitet",
+    "Michelin: empfohlen in der Selektion 2025; die Selektion 2026 wird am 02.11.2026 verkündet, dann neu prüfen",
+    "Baujahr und Geschichte des ehemaligen Hafenmeistergebäudes, in dem die Wirtschaft liegt (die Geschichte des Schlössli seit 1676 ist belegt, das Schlössli ist heute ein Wohnhaus)",
+    "Wem die Liegenschaft gehört und zu welchen Bedingungen Christian Kuchler sie gepachtet hat",
+    "Fotografen der Serien «Schloessli_August2025», «2026-05-22 … Schlössli SM», «FHF_», «_DSC»: in den Dateien kein Name; ob das Haus die Bildrechte für eine neue Seite hat",
+    "Grosse Bildoriginale: Squarespace liefert höchstens 2500 px, die Originale bis 5504 × 8256 px liegen beim Haus oder den Fotografen",
+    "Namen und Plätze der zwei Bankett-Etagen und der Terrasse; kein Foto der Etagen",
+    "Patissière Theresa Hermann: GaultMillau 2025 und 2026 nennen sie, «Über uns» nicht",
+    "Bedeutung des Zeichens (Kreis mit zwei Zeigern) nirgends erklärt",
+    "Filme: kein eigener Kanal, keine Filme Dritter gefunden; die Instagram-Reels lassen sich ohne Anmeldung nicht laden",
+    "Thurgauer Zeitung 08.10.2025 und 06.10.2026, Südkurier 23.12.2025: nur Anriss (Bezahlschranke)",
+    "Squarespace: gebuchter Plan, Franken-Preis, wer die Seite baut oder pflegt, unterschriebener Vertrag (vom Späher übernommen)",
+    "Halter der Adresse schloessli-bottighofen.ch (vom Späher übernommen)",
+    "Aktionäre der Taverne zum Schäfli AG (Inhaberin der Urheberrechte laut Impressum): stehen im Aktienbuch, nicht öffentlich; Verwaltungsrat aus der Schäfli-Sammlung belegt"
+  ],
+  "bilder": [],
+  "messwerte": [],
+  "abschnitte": [],
+  "links": [
+    {
+      "text": "Sammlung öffnen",
+      "ziel": "sammlung.html"
+    },
+    {
+      "text": "Material-Übersicht",
+      "ziel": "../../_quelle/material.html"
+    }
+  ],
+  "frage": "Lücken gesehen?",
+  "knopf_ja": "Lücken gesehen, weiter",
+  "knopf_nein": "Zurückschicken"
+}

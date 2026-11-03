@@ -1,0 +1,170 @@
+{
+ "index.html": {
+  "name": "Startseite",
+  "rechner": 8,
+  "stellen": [
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    0.5
+   ],
+   [
+    11,
+    0
+   ]
+  ],
+  "handy": 8
+ },
+ "karte.html": {
+  "name": "Die Karte",
+  "rechner": 5,
+  "stellen": [
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    0.2
+   ],
+   [
+    1,
+    0.4
+   ],
+   [
+    4,
+    0
+   ]
+  ],
+  "handy": 5
+ },
+ "weinkarte.html": {
+  "name": "Weinkarte",
+  "rechner": 4,
+  "stellen": [
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    0.3333333333333333
+   ],
+   [
+    2,
+    0.972972972972973
+   ]
+  ],
+  "handy": 4
+ },
+ "feiern.html": {
+  "name": "Banketts & Gruppen",
+  "rechner": 4,
+  "stellen": [
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    0.5
+   ]
+  ],
+  "handy": 4
+ },
+ "anlaesse.html": {
+  "name": "Events",
+  "rechner": 4,
+  "stellen": [
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ]
+  ],
+  "handy": 4
+ },
+ "team.html": {
+  "name": "Über uns",
+  "rechner": 3,
+  "stellen": [
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    0
+   ]
+  ],
+  "handy": 3
+ },
+ "kontakt.html": {
+  "name": "Kontakt",
+  "rechner": 3,
+  "stellen": [
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    0
+   ]
+  ],
+  "handy": 3
+ },
+ "gutschein.html": {
+  "name": "Gutschein",
+  "rechner": 1,
+  "stellen": [],
+  "handy": 1
+ },
+ "abend.html": {
+  "name": "Ihr Abend",
+  "rechner": 2,
+  "stellen": [
+   [
+    1,
+    0
+   ]
+  ],
+  "handy": 2
+ },
+ "impressum.html": {
+  "name": "Rechtliches",
+  "rechner": 1,
+  "stellen": [],
+  "handy": 1
+ }
+}

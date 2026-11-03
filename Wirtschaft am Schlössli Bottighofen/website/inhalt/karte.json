@@ -1,0 +1,192 @@
+{
+ "stand": "Speisekarte Oktober, PDF vom 30.09.2026",
+ "quelle": "_quelle/website/pdf/Speisekarte-Oktober.pdf",
+ "laender": [
+  {
+   "land": "Frankreich",
+   "gerichte": [
+    {
+     "name": "THON",
+     "allergene": "L/E/F",
+     "preis": 40,
+     "text": "Balfego Thunfisch – Aprikose – Fenchel",
+     "haupt": null,
+     "hinweis": null
+    },
+    {
+     "name": "PAIN PERDU DE CÈPE",
+     "allergene": "VEG/G/L/E/N/SE",
+     "preis": 35,
+     "text": "French toast – Steinpilz – Belper Knolle – karamellisierte Zwiebelsauce",
+     "haupt": null,
+     "hinweis": null
+    },
+    {
+     "name": "SOLE",
+     "allergene": "G/L/F/SE",
+     "preis": 45,
+     "text": "Seezunge – Spinat – Beurre Rouge",
+     "haupt": 65,
+     "hinweis": null
+    },
+    {
+     "name": "ENTRECÔTE DE BOEUF",
+     "allergene": "G/L/SE",
+     "preis": 60,
+     "text": "Fourme d´Ambert (Blauschimmelkäse) – Schalotten – Kartoffel",
+     "haupt": null,
+     "hinweis": null
+    },
+    {
+     "name": "PRUNE",
+     "allergene": "G/L/E/N",
+     "preis": 20,
+     "text": "Zwetschge – Mohn – Quark",
+     "haupt": null,
+     "hinweis": null
+    }
+   ]
+  },
+  {
+   "land": "Italien",
+   "gerichte": [
+    {
+     "name": "QUINTO QUARTO",
+     "allergene": "G/L/N",
+     "preis": 35,
+     "text": "Kalbskopf – Zunge – Milke – Nüsslisalat – bunte Beete",
+     "haupt": null,
+     "hinweis": null
+    },
+    {
+     "name": "CAVATELLI",
+     "allergene": "OVEG/G/L/N/SE",
+     "preis": 35,
+     "text": "Buchenpilze – Pfaffenschnittchen – Sellerie – schwarze Zitrone",
+     "haupt": 50,
+     "hinweis": null
+    },
+    {
+     "name": "PARMIGIANA DI MELANZANE",
+     "allergene": "VEG/G/L/SE",
+     "preis": 35,
+     "text": "Aubergine – Tomate – Mozzarella",
+     "haupt": 50,
+     "hinweis": "(20 MIN. WARTEZEIT)"
+    },
+    {
+     "name": "CARRÉ DI CERVO",
+     "allergene": "G/L/E/N/SE",
+     "preis": 60,
+     "text": "Hirschkarree – Rosenkohl – Preiselbeere – Polentaknödel",
+     "haupt": null,
+     "hinweis": null
+    },
+    {
+     "name": "NERGI",
+     "allergene": "G/L/E/N",
+     "preis": 20,
+     "text": "Kiwibeere – Zitrone – Vanille",
+     "haupt": null,
+     "hinweis": null
+    }
+   ]
+  },
+  {
+   "land": "Iberische Halbinsel",
+   "gerichte": [
+    {
+     "name": "PEIXE GALO",
+     "allergene": "G/L/F",
+     "preis": 45,
+     "text": "Petersfisch – Schwarzwurzel – Schmortomate",
+     "haupt": 65,
+     "hinweis": null
+    },
+    {
+     "name": "CHIPIRONES RELLENOS",
+     "allergene": "G/L/S/SE",
+     "preis": 40,
+     "text": "Gefüllte Calamari – Kürbis – Reis – Pimentón de la Vera",
+     "haupt": 55,
+     "hinweis": null
+    },
+    {
+     "name": "BOCHECHA DE JAVALI",
+     "allergene": "L/N/SE",
+     "preis": 55,
+     "text": "Wildschweinbacke – BBQ Hollandaise – buntes Wurzelgemüse",
+     "haupt": null,
+     "hinweis": null
+    },
+    {
+     "name": "CEREJA",
+     "allergene": "G/L/E/N",
+     "preis": 22,
+     "text": "Kirsche – Buchweizen – dunkle Schokolade",
+     "haupt": null,
+     "hinweis": null
+    }
+   ]
+  },
+  {
+   "land": "Klassiker",
+   "gerichte": [
+    {
+     "name": "SALADE MAISON",
+     "allergene": "VEG/G/L/N",
+     "preis": 30,
+     "text": "Bunte Salatschüssel zum Teilen – Kürbiskernöldressing",
+     "haupt": null,
+     "hinweis": null
+    },
+    {
+     "name": "VITELLO TONNATO",
+     "allergene": "G/E",
+     "preis": 30,
+     "text": "Kalb – Risina Bohne – Olivenöl",
+     "haupt": null,
+     "hinweis": null
+    },
+    {
+     "name": "TORTELLONI",
+     "allergene": "VEG/G/L/E/SE",
+     "preis": 35,
+     "text": "Tomate – Burrata – Taggiasca Olive",
+     "haupt": 50,
+     "hinweis": null
+    },
+    {
+     "name": "MOULES FRITES",
+     "allergene": "L/E/S/SE",
+     "preis": 25,
+     "text": "Miesmuschel – Pommes – Sauce Rouille",
+     "haupt": 40,
+     "hinweis": null
+    },
+    {
+     "name": "KALBSKOTELETT (CA 350G)",
+     "allergene": "G/L/E/SE",
+     "preis": 70,
+     "text": "Lauch Gratin – Gnocchi fritti",
+     "haupt": null,
+     "hinweis": null
+    },
+    {
+     "name": "TIRAMISU",
+     "allergene": "G/L/E",
+     "preis": 13,
+     "text": "klassisch wie bei der italienischen Oma",
+     "haupt": null,
+     "hinweis": null
+    }
+   ]
+  }
+ ],
+ "fuss": {
+  "mwst": "Alle Preise verstehen sich in Schweizer Franken inkl. 8,1% MwSt.",
+  "veg": "VEG = vegetarisch, OVEG = als vegetarische Option verfügbar",
+  "veg2": "Für weitere vegetarische Optionen berät Sie gerne unser Service.",
+  "allergene": "G = Gluten, L = Laktose, E = Eier, F = Fische, S = Schalen- und Weichtiere, So = Soja, En = Erdnüsse, N = Nüsse, Se = Sellerie"
+ }
+}

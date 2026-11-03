@@ -1,0 +1,226 @@
+{
+ "Stuhlblau": {
+  "hex": "#116788",
+  "median": "#126B8A",
+  "abstand": 3,
+  "pixel": 99307,
+  "datei": "_quelle/website/bilder/8cc68d_32_-_FHF_2573.jpg",
+  "box": [
+   1262,
+   987,
+   1987,
+   1400
+  ],
+  "filter": "blau"
+ },
+ "Seespiegel": {
+  "hex": "#B9C5C4",
+  "median": "#B4C1C1",
+  "abstand": 4,
+  "pixel": 206250,
+  "datei": "_quelle/website/bilder/8cc68d_32_-_FHF_2573.jpg",
+  "box": [
+   0,
+   525,
+   1375,
+   675
+  ],
+  "filter": "alle"
+ },
+ "Seehimmel": {
+  "hex": "#A2C6CF",
+  "median": "#A8C5CA",
+  "abstand": 6,
+  "pixel": 481250,
+  "datei": "_quelle/website/bilder/8cc68d_32_-_FHF_2573.jpg",
+  "box": [
+   0,
+   50,
+   1375,
+   400
+  ],
+  "filter": "alle"
+ },
+ "Ufersand": {
+  "hex": "#AD8A5A",
+  "median": "#967868",
+  "abstand": 22,
+  "pixel": 191250,
+  "datei": "_quelle/website/bilder/8cc68d_32_-_FHF_2573.jpg",
+  "box": [
+   0,
+   950,
+   850,
+   1175
+  ],
+  "filter": "alle"
+ },
+ "Platanenlaub": {
+  "hex": "#717D41",
+  "median": "#83933B",
+  "abstand": 21,
+  "pixel": 54180,
+  "datei": "_quelle/website/bilder/178109_IMG_1967.jpeg",
+  "box": [
+   333,
+   100,
+   1266,
+   866
+  ],
+  "filter": "gruen"
+ },
+ "Schirmrot": {
+  "hex": "#FD9964",
+  "median": "#FC9965",
+  "abstand": 1,
+  "pixel": 27295,
+  "datei": "_quelle/website/bilder/178109_IMG_1967.jpeg",
+  "box": [
+   1466,
+   1166,
+   2333,
+   1283
+  ],
+  "filter": "orange"
+ },
+ "Kies": {
+  "hex": "#747B7B",
+  "median": "#828989",
+  "abstand": 13,
+  "pixel": 197336,
+  "datei": "_quelle/website/bilder/178109_IMG_1967.jpeg",
+  "box": [
+   1600,
+   2333,
+   2500,
+   3333
+  ],
+  "filter": "licht"
+ },
+ "Abendrot": {
+  "hex": "#F6C57E",
+  "median": "#D19E68",
+  "abstand": 38,
+  "pixel": 152041,
+  "datei": "_quelle/website/bilder/28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg",
+  "box": [
+   333,
+   1560,
+   2333,
+   1640
+  ],
+  "filter": "abendrot"
+ },
+ "Blaue Stunde": {
+  "hex": "#4D7DB9",
+  "median": "#4877B1",
+  "abstand": 8,
+  "pixel": 242639,
+  "datei": "_quelle/website/bilder/28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg",
+  "box": [
+   1266,
+   1000,
+   2333,
+   1266
+  ],
+  "filter": "nachtblau"
+ },
+ "Lichterkette": {
+  "hex": "#F7AD04",
+  "median": "#F9AD08",
+  "abstand": 3,
+  "pixel": 185288,
+  "datei": "_quelle/website/bilder/28f071_2026-05-22_220420_Schl_C3_B6ssli_SM_blurred.jpg",
+  "box": [
+   1800,
+   0,
+   2500,
+   830
+  ],
+  "filter": "gold"
+ },
+ "Fliese Terrakotta": {
+  "hex": "#957458",
+  "median": "#9D785A",
+  "abstand": 7,
+  "pixel": 19574,
+  "datei": "_quelle/website/bilder/7c2036_IMG_2037.jpeg",
+  "box": [
+   325,
+   0,
+   800,
+   582
+  ],
+  "filter": "terra2"
+ },
+ "Fliese Graublau": {
+  "hex": "#A1B1B7",
+  "median": "#9FAFB4",
+  "abstand": 2,
+  "pixel": 43619,
+  "datei": "_quelle/website/bilder/7c2036_IMG_2037.jpeg",
+  "box": [
+   1450,
+   0,
+   1975,
+   582
+  ],
+  "filter": "graublau"
+ },
+ "Fliese Anthrazit": {
+  "hex": "#424340",
+  "median": "#3E3931",
+  "abstand": 15,
+  "pixel": 95067,
+  "datei": "_quelle/website/bilder/7c2036_IMG_2037.jpeg",
+  "box": [
+   0,
+   0,
+   2500,
+   582
+  ],
+  "filter": "dunkel"
+ },
+ "Fliese Kalk": {
+  "hex": "#D1D3D1",
+  "median": "#D4D6D3",
+  "abstand": 3,
+  "pixel": 247295,
+  "datei": "_quelle/website/bilder/7c2036_IMG_2037.jpeg",
+  "box": [
+   0,
+   0,
+   2500,
+   582
+  ],
+  "filter": "kalk"
+ },
+ "Mint der heutigen Seite": {
+  "hex": "#E0FEFB",
+  "median": "#E0FEFB",
+  "abstand": 0,
+  "pixel": 137280,
+  "datei": "_quelle/website/bilder/afd0fc_2b500a48-0faf-4743-ad9a-ccd5e7c54e6d.jpeg",
+  "box": [
+   0,
+   0,
+   1144,
+   120
+  ],
+  "filter": "alle"
+ },
+ "Tellerblau": {
+  "hex": "#436496",
+  "median": "#4B6C9D",
+  "abstand": 8,
+  "pixel": 1500000,
+  "datei": "_quelle/website/bilder/7f6b93_Anguria.jpg",
+  "box": [
+   0,
+   0,
+   2500,
+   600
+  ],
+  "filter": "alle"
+ }
+}

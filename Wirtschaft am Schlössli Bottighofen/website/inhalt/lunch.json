@@ -1,0 +1,21 @@
+{
+ "stand": "Lunch-Menü, PDF «Lunch_261019» vom 18.10.2026",
+ "quelle": "_quelle/website/pdf/Lunch_261019.pdf",
+ "titel": "Lunch – Menü",
+ "gaenge": [
+  {
+   "name": "Kürbissuppe",
+   "text": "Wachtelei – Serrano Schinken"
+  },
+  {
+   "name": "Risi e bisi",
+   "text": "Reis – Miesmuschel – Erbsen – Spinat"
+  },
+  {
+   "name": "Joghurt Panna Cotta",
+   "text": "Apfelcrumble"
+  }
+ ],
+ "preis": "3 – Gänge – 35.- Chf",
+ "preis_zahl": 35
+}

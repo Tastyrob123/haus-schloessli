@@ -1,0 +1,39 @@
+{
+ "zeit": "2026-10-18T09:30:00+02:00",
+ "art": "bankett",
+ "name": "Nadine Wyss",
+ "kontakt": "nadine.wyss@example.com",
+ "datum": "Fr, 4. Dezember 2026",
+ "personen": 18,
+ "anliegen": "Ihr Abend: Firmenanlass",
+ "sprache": "de",
+ "gespraech": "beispiel-7",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Ihr Abend): Anlass: Firmenanlass\nTag: Fr, 4. Dezember 2026\nUhrzeit: 18:00 Uhr\nPersonen: 18\nPlatz: Drinnen in der Gaststube\nMenü: Bankettmenü Herbst, 175 Franken\nWein: noch keine Flasche\nAllergien: Gluten\nRichtwert für das Essen, ohne Getränke: 3150 Franken aus den Preisen der Karte"
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "an": "kontakt@schloessli-bottighofen.ch",
+ "abteilung": "Bankett",
+ "seite": "/abend.html",
+ "seite_name": "Ihr Abend",
+ "web": true,
+ "nachricht": "Anlass: Firmenanlass\nTag: Fr, 4. Dezember 2026\nUhrzeit: 18:00 Uhr\nPersonen: 18\nPlatz: Drinnen in der Gaststube\nMenü: Bankettmenü Herbst, 175 Franken\nWein: noch keine Flasche\nAllergien: Gluten\nRichtwert für das Essen, ohne Getränke: 3150 Franken aus den Preisen der Karte",
+ "formular": "abend",
+ "allergene": [
+  "G"
+ ],
+ "uhrzeit": "18:00 Uhr",
+ "platz": "Drinnen in der Gaststube",
+ "entwurf": {
+  "betreff": "Ihr Firmenanlass am Freitag, 4. Dezember",
+  "text": "Guten Tag Frau Wyss\n\nvielen Dank für Ihre Anfrage. Gerne bewirten wir Ihr Team am Freitag, 4. Dezember, ab 18:00 Uhr [Verfügbarkeit prüfen].\n\nFür 18 Personen reicht eine unserer zwei Etagen, jede hat Platz für bis zu 26 Personen [Etage wählen]. Mit dem Bankettmenü Herbst zu 175 Franken pro Person wählen Sie aus den Menüs 3 bis 5 Gerichte; einzelne Gerichte lassen sich austauschen oder anpassen.\n\nDie Unverträglichkeit Gluten geben wir an die Küche weiter [Küche informieren].\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Karten (zwei Etagen für jeweils bis zu 26 Personen), Bankettmenüvorschläge (Herbst 175 CHF, 3–5 Gerichte, «einzelne Gerichte ausgetauscht oder individuell angepasst»), Formular «Ihr Abend» (Richtwert 18 × 175 = 3150 Franken).\nOffen: Etage, Gerichte, Anzahlung nach AGB Ziffer 7 ab CHF 1000 möglich.",
+  "vorlage": "bankett",
+  "absender": "kontakt@schloessli-bottighofen.ch",
+  "zeit": "2026-10-18T09:30:00+02:00"
+ }
+}

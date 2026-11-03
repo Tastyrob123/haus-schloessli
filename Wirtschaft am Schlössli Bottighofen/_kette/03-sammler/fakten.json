@@ -1,0 +1,449 @@
+{
+ "_stand": "19.10.2026, Station 03 Sammler. Pfade relativ zum Projektordner. Abgelesene Werte mit Datum; was keine Quelle hat, heisst «offen».",
+ "name": {
+  "wert": "Wirtschaft am Schlössli",
+  "quelle": "_quelle/website/text/start.md («Willkommen in der Wirtschaft am Schlössli!»), Seitentitel; _quelle/website/text/impressum.md",
+  "varianten": [
+   {
+    "wert": "SCHLÖSSLI WIRTSCHAFT · by Christian Kuchler (Logo)",
+    "quelle": "_quelle/website/bilder/afd0fc_2b500a48-0faf-4743-ad9a-ccd5e7c54e6d.jpeg; _quelle/extern/logo/schloessli-logo-transparent.png"
+   },
+   {
+    "wert": "«Schlössli» (Kurzname in Presse und GaultMillau)",
+    "quelle": "_quelle/presse/gaultmillau-zwei-koeniginnen.md; _quelle/extern/portale/gaultmillau.md"
+   },
+   {
+    "wert": "SCHLÖSSLI (TripAdvisor-Eintrag)",
+    "quelle": "https://www.tripadvisor.ch/Restaurant_Review-g6908343-d33091733-Reviews-Schlossli-Bottighofen_Canton_of_Thurgau.html (nur Suchtreffer, 19.10.2026)"
+   },
+   {
+    "wert": "Strandwirtschaft Schlössli (Vorgängerin bis 2024, anderer Betrieb)",
+    "quelle": "_quelle/web-archiv/text/2023_impressum-datenschutz.md, 20240908_start.md"
+   }
+  ]
+ },
+ "art": {
+  "wert": "Restaurant, mediterrane Küche (Karte in «Frankreich», «Italien», «Iberische Halbinsel», «Klassiker»), Seeterrasse, Bar «Lästermeile» mit Tapas den ganzen Tag; keine Zimmer",
+  "quelle": "_quelle/website/text/start.md, kontakt.md; _quelle/website/pdf-text/Speisekarte-Oktober.txt, Lastermeile-Homepage-2339.txt; Michelin «Mediterran, Französisch», Preis «€€€» (_quelle/extern/portale/guide-michelin-de.md)"
+ },
+ "rechtstraeger": {
+  "wert": "CK Gastro Consulting GmbH, Oberdorfstrasse 8, 8556 Wigoltingen, CHE-139.373.932 (eingetragen 29.04.2021, Stammkapital CHF 20’000, Zweck «Beratung im Gastronomiebereich»)",
+  "quelle": "_quelle/website/text/impressum.md; _quelle/website/text/agbs.md Ziffer 1; _quelle/presse/handelsregister-2026-10-19.md (Zefix und tg.chregister.ch, 19.10.2026)"
+ },
+ "pacht": {
+  "wert": "Christian Kuchler hat das Restaurant gepachtet («Pächter Kuchler»)",
+  "quelle": "_quelle/presse/gaultmillau-zwei-koeniginnen.md (30.03.2025); _quelle/presse/tz-14-punkte.md (08.10.2025, «Pächter und Sternekoch Christian Kuchler»)",
+  "eigentuemer_liegenschaft": {
+   "wert": null,
+   "quelle": "offen",
+   "gesucht": "Wem Gebäude und Grund gehören und zu welchen Bedingungen gepachtet ist: nirgends öffentlich (Seite, Impressum, Presse, Gemeinde)"
+  }
+ },
+ "urheberrechte": {
+  "wert": "«Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich der Taverne zum Schäfli Ag oder den speziell genannten Rechtsinhabern.»",
+  "quelle": "_quelle/website/text/impressum.md"
+ },
+ "adresse": {
+  "wert": "Seestrasse 50, 8598 Bottighofen",
+  "quelle": "_quelle/website/text/kontakt.md; GaultMillau, Michelin, Falstaff gleich"
+ },
+ "lage": {
+  "wert": "«Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen»; im ehemaligen Hafenmeistergebäude, das Schlössli daneben ist heute ein Wohnhaus",
+  "quelle": "_quelle/website/text/start.md; _quelle/presse/gemeinde-bottighofen-geschichte.md; _quelle/extern/wikipedia-commons/wikitext-Bottighofen.txt",
+  "koordinaten": {
+   "wert": "47.6442147, 9.212147",
+   "quelle": "Google Maps, 19.10.2026"
+  }
+ },
+ "telefon": {
+  "wert": "+41 71 688 90 92",
+  "quelle": "_quelle/website/text/kontakt.md («Tel.: +41 71 688 90 92»; Impressum «+41 716889092»)"
+ },
+ "mail": {
+  "wert": "kontakt@schloessli-bottighofen.ch",
+  "quelle": "_quelle/website/text/kontakt.md, impressum.md"
+ },
+ "website": {
+  "wert": "https://www.schloessli-bottighofen.ch",
+  "quelle": "Squarespace 7.1 seit 12.09.2024 (Späher, _kette/02-spaeher/befund.md)"
+ },
+ "zimmer": {
+  "anzahl": {
+   "wert": 0,
+   "quelle": "keine Zimmer: Seite, GaultMillau, Michelin, Falstaff nennen keine (19.10.2026)"
+  },
+  "kategorien": [],
+  "frueher": {
+   "wert": "Am selben Ort früher «Hotel und Pension Schlössli» (ab 1888) und «Strandhotel Schlössli» (bis nach 1988) – im Schlössli selbst, heute Wohnhaus",
+   "quelle": "_quelle/presse/pdf-text/Bottighofen_Heft_2_Schloessli_S103-128_OCR.txt (PDF-Seiten 123–124)"
+  }
+ },
+ "preise_ab": {
+  "waehrung": "CHF inkl. 8,1 % MwSt. («Alle Preise verstehen sich in Schweizer Franken inkl. 8,1% MwSt.»)",
+  "a_la_carte": {
+   "wert": "Gerichte 25–70 (Moules frites 25 bis Kalbskotelett 70), sieben davon wahlweise als Hauptgang 40–65; Desserts 13–22",
+   "quelle": "_quelle/website/pdf-text/Speisekarte-Oktober.txt (PDF vom 30.09.2026)"
+  },
+  "lunch": {
+   "wert": "3 Gänge CHF 35 (Kürbissuppe, Risi e bisi, Joghurt Panna Cotta)",
+   "quelle": "_quelle/website/pdf-text/Lunch_261019.txt (PDF vom 18.10.2026); GaultMillau 30.03.2025 «Dreigänger für 35 Franken»"
+  },
+  "laestermeile": {
+   "wert": "Tapas 7–9, Prato 30, Tarte flambée und Crespelle 20",
+   "quelle": "_quelle/website/pdf-text/Lastermeile-Homepage-2339.txt (PDF vom 14.10.2026)"
+  },
+  "bankettmenues": {
+   "wert": "Frühling 175 · Sommer 185 · Herbst 175 («Aus den Menüs können 3-5 Gerichte ausgewählt werden»)",
+   "quelle": "_quelle/website/pdf-text/Bankettmenuvorschlage.txt (PDF vom 29.04.2025)"
+  },
+  "wein": {
+   "wert": "Weinkarte mit 26 Seiten, Stand 14.10.2026; Schaumwein von 100 bis 1750 (9 l)",
+   "quelle": "_quelle/website/pdf-text/20261014_Weinkarte.txt"
+  },
+  "anlaesse": {
+   "wert": "4-Hands-Lunch Patrick Stier 170 (22.02.2026), Ehemaligen Lunch 190 (06.09.2026), Kitchen Party im Schäfli 390",
+   "quelle": "_quelle/website/text/events-2-1.md"
+  }
+ },
+ "restaurants": [
+  {
+   "wert": {
+    "name": "Wirtschaft am Schlössli (Restaurant und Seeterrasse)",
+    "art": "mediterrane Küche à la carte, Lunch-Menü",
+    "zeiten": "Do–Mo, Küche 11:30–13:30 und 18:00–20:00"
+   },
+   "quelle": "_quelle/website/text/kontakt.md, start.md"
+  },
+  {
+   "wert": {
+    "name": "Lästermeile",
+    "art": "Bar «die von drinnen nach draussen führt», Tapas-Karte durchgehend; Hausdrink «Lästerschirmchen» (2025: 15 Franken)",
+    "zeiten": "durchgehend während der Öffnungszeit"
+   },
+   "quelle": "_quelle/website/text/kontakt.md; _quelle/presse/tagblatt-zu-tisch.md (24.04.2025); Michelin: «separate Terrasse an der Yachthafen-Promenade» (_quelle/extern/portale/guide-michelin-de.md)",
+   "frueher": {
+    "wert": "«Läschtermeile Charte» schon bei der Strandwirtschaft 2024",
+    "quelle": "_quelle/web-archiv/text/2024_aktionskarten__laeschtermeile-charte.md"
+   }
+  }
+ ],
+ "raeume": {
+  "wert": "«auf zwei Etagen Platz für jeweils bis zu 26 Personen», Seeterrasse, Bar Lästermeile",
+  "quelle": "_quelle/website/text/karten.md",
+  "namen": {
+   "wert": null,
+   "quelle": "offen",
+   "gesucht": "Namen und Plätze der Etagen und der Terrasse: nicht genannt (Seite, Presse)"
+  }
+ },
+ "oeffnungszeiten": {
+  "wert": "Donnerstag–Montag 11:30–23:00, Dienstag und Mittwoch Ruhetag; Küche à la carte 11:30–13:30 und 18:00–20:00; Karte der Lästermeile den ganzen Tag",
+  "quelle": "_quelle/website/text/kontakt.md (19.10.2026); Falstaff und Schweiz Tourismus gleich"
+ },
+ "saison": {
+  "wert": "Ferien 13.–15. November 2026 (Excellence Gourmetkreuzfahrt, «unser Team geschlossen mit an Board») und 22. Dezember 2026 – 10. Februar 2027",
+  "quelle": "_quelle/website/text/kontakt.md, events-2-1.md (19.10.2026)"
+ },
+ "noten": [
+  {
+   "wert": {
+    "portal": "Google Maps",
+    "wert": "4,2 von 5",
+    "anzahl": 85,
+    "verteilung": "5★ 62 · 4★ 5 · 3★ 4 · 2★ 1 · 1★ 13",
+    "fotos": 138,
+    "datum": "19.10.2026",
+    "adresse": "https://www.google.com/maps/place/Wirtschaft+am+Schl%C3%B6ssli/@47.6442147,9.212147,17z"
+   },
+   "quelle": "eingebauter Browser, 19.10.2026; Späher am 18.10.: 4,2 / 85"
+  },
+  {
+   "wert": {
+    "portal": "GaultMillau",
+    "wert": "15 Punkte (Guide 2027)",
+    "anzahl": null,
+    "datum": "19.10.2026",
+    "adresse": "https://www.gaultmillau.ch/restaurants/wirtschaft-am-schlossli-844948"
+   },
+   "quelle": "_quelle/extern/portale/gaultmillau-punkte-beleg.md (Zeichen «Points15»)"
+  },
+  {
+   "wert": {
+    "portal": "Guide Michelin",
+    "wert": "empfohlen, «Favorit der Inspektoren», Selektion 2025",
+    "anzahl": null,
+    "datum": "19.10.2026",
+    "adresse": "https://guide.michelin.com/ch/de/thurgau/bottighofen_1149146/restaurant/wirtschaft-am-schlossli",
+    "hinweis": "Selektion 2026 am 02.11.2026"
+   },
+   "quelle": "_quelle/extern/portale/michelin-beleg.md"
+  },
+  {
+   "wert": {
+    "portal": "Falstaff",
+    "wert": "91 von 100 (Essen 44/50, Service 19/20, Wein 19/20, Stil 9/10)",
+    "anzahl": null,
+    "datum": "19.10.2026",
+    "adresse": "https://www.falstaff.com/en/restaurants/wirtschaft-am-schloessli-bottighofen"
+   },
+   "quelle": "_quelle/extern/portale/falstaff-restaurant.md («Falstaff Magazine Switzerland No. 5/2026»)"
+  },
+  {
+   "wert": {
+    "portal": "Der Feinschmecker",
+    "wert": "2,5 von 5",
+    "anzahl": null,
+    "datum": "19.10.2026",
+    "adresse": "https://www.feinschmecker.de/restaurant/ch/bottighofen/wirtschaft-am-schl%C3%B6ssli-e5"
+   },
+   "quelle": "_quelle/presse/feinschmecker.md"
+  },
+  {
+   "wert": null,
+   "quelle": "offen",
+   "gesucht": "TripAdvisor: Chrome-Erweiterung nicht verbunden (list_connected_browsers leer, 19.10.2026); Eintrag «Schlössli» d33091733 nur als Suchtreffer; Späher-Wert 3,1 / 9 aus der Suchvorschau",
+   "portal": "TripAdvisor"
+  },
+  {
+   "wert": {
+    "portal": "Booking.com",
+    "wert": "betrifft nicht"
+   },
+   "quelle": "keine Zimmer"
+  }
+ ],
+ "auszeichnungen": [
+  {
+   "wert": "GaultMillau 15 Punkte (Guide 2027): «Wir gratulieren mit dem 15. Punkt»",
+   "quelle": "_quelle/extern/portale/gaultmillau.md, gaultmillau-punkte-beleg.md (19.10.2026); _quelle/presse/tz-weiterer-punkt.md (06.10.2026)"
+  },
+  {
+   "wert": "GaultMillau «Entdeckung des Jahres 2026» (Monika Huber) mit 14 Punkten im Guide 2026, «Deutschschweizer Entdeckung des Jahres», eine von fünf Entdeckungen",
+   "quelle": "_quelle/extern/portale/gaultmillau.md; _quelle/presse/tz-14-punkte.md (08.10.2025); _quelle/presse/suedkurier-fruehstueck.md (23.12.2025)"
+  },
+  {
+   "wert": "Guide Michelin: empfohlenes Restaurant, Selektion 2025, «Favorit der Inspektoren», «Schöne Terrasse»; Plakette «MICHELIN 2025» im Fuss der Seite",
+   "quelle": "_quelle/extern/portale/michelin-beleg.md; _quelle/website/bilder/bf71c5_MICHELIN_Empfohlenes_restaurant_2025_Rund_Rot.png"
+  },
+  {
+   "wert": "Falstaff 91 Punkte",
+   "quelle": "_quelle/extern/portale/falstaff-restaurant.md"
+  }
+ ],
+ "geschichte": [
+  {
+   "wert": "1676: Untermüller Hans Conrad Hafen-Schedler erhält vom Kloster Münsterlingen die Erlaubnis, für seinen Sohn ein «Haus am See» zu bauen (später «Seeburg», dann «Schlössli»), unter der Bedingung, dass darin nicht gewirtet wird",
+   "quelle": "_quelle/presse/pdf-text/Bottighofen_Heft_2_Schloessli_S103-128_OCR.txt, PDF-Seiten 104–108"
+  },
+  {
+   "wert": "Um 1690: Hafen-Peron setzt einen Wirt als Pächter ein, der Schiffsleute bewirtet und beherbergt; 1699 verliert er vor der Tagsatzung, nur noch Wein aus Eigenbau",
+   "quelle": "ebd., PDF-Seiten 110–111"
+  },
+  {
+   "wert": "1869: die Fischenz (seit 1373 bei der Untern Mühle) wird «einziges privates Fischereirecht am Bodensee» im Eigentum des Schlössli-Besitzers",
+   "quelle": "ebd., PDF-Seite 122"
+  },
+  {
+   "wert": "1800: Beschiessung im Koalitionskrieg, das Schlössli teils neu und massiv gemauert",
+   "quelle": "ebd., PDF-Seite 122"
+  },
+  {
+   "wert": "Juni 1888: «Hotel und Pension Schlössli» eröffnet (Bachmann); 1910–1928 privat (Louis Pernod); danach «Strandhotel Schlössli», 1937 renoviert; 1962–1973 Hörler-Breu, 1973–1988 Keller-Oderbolz, 1988 Strandhotel Schlössli AG",
+   "quelle": "ebd., PDF-Seiten 123–124"
+  },
+  {
+   "wert": "Heute: das Schlössli ist ein Wohnhaus, die Wirtschaft am Schlössli liegt im ehemaligen Hafenmeistergebäude",
+   "quelle": "_quelle/presse/gemeinde-bottighofen-geschichte.md (Gemeinde Bottighofen, 19.10.2026)"
+  },
+  {
+   "wert": "2023 bis 08.09.2024: «Strandwirtschaft Schlössli» der GASTRO GROUP 5 AG am selben Ort",
+   "quelle": "_quelle/web-archiv/text/2023_impressum-datenschutz.md, 2023_start.md, 20240908_start.md"
+  },
+  {
+   "wert": "29.04.2021: CK Gastro Consulting GmbH eingetragen",
+   "quelle": "_quelle/presse/handelsregister-2026-10-19.md"
+  },
+  {
+   "wert": "12.09.2024: Squarespace-Seite angelegt; 08.12.2024 «Neueröffnung April 2025»",
+   "quelle": "_kette/02-spaeher/befund.md; _quelle/web-archiv/text/20241208_start.md"
+  },
+  {
+   "wert": "3. April 2025: Eröffnung",
+   "quelle": "_quelle/presse/gaultmillau-zwei-koeniginnen.md (30.03.2025: «Testlauf für die Eröffnung am 3. April»)"
+  },
+  {
+   "wert": "Oktober 2025: 14 GaultMillau-Punkte und «Entdeckung des Jahres 2026»; Oktober 2026: 15 Punkte",
+   "quelle": "_quelle/presse/tz-14-punkte.md, tz-weiterer-punkt.md"
+  },
+  {
+   "wert": null,
+   "quelle": "offen",
+   "gesucht": "Baujahr des ehemaligen Hafenmeistergebäudes: weder Gemeinde noch Heft 1994 noch Presse nennen es",
+   "jahr": "Hafenmeistergebäude"
+  }
+ ],
+ "personen": [
+  {
+   "wert": {
+    "name": "Christian Kuchler",
+    "rolle": "Pächter («by Christian Kuchler» im Logo), Gesellschafter und Vorsitzender der Geschäftsführung der CK Gastro Consulting GmbH; Patron der Taverne zum Schäfli"
+   },
+   "quelle": "_quelle/presse/handelsregister-2026-10-19.md; _quelle/presse/gaultmillau-zwei-koeniginnen.md"
+  },
+  {
+   "wert": {
+    "name": "Monika Huber («Moni»)",
+    "rolle": "Küchenchefin",
+    "werdegang": "Südtirolerin; Vila Joya an der Algarve bei Dieter Koschina (dort seit 2018 mit Theresa Hermann); Sous-Chefin von Christian Kuchler im Schäfli; führt im Schlössli erstmals selbst eine Küche"
+   },
+   "quelle": "_quelle/website/text/uber-uns.md, start.md, events-2-1__excellence-g-ourmetkreuzfahrt.md; _quelle/presse/gaultmillau-zwei-koeniginnen.md; «Südtirolerin»: Suchvorschau Thurgauer Zeitung 08.10.2025"
+  },
+  {
+   "wert": {
+    "name": "Theresa Hermann",
+    "rolle": "Patissière",
+    "werdegang": "früher Patissière im «Magdalena», Uccelin-Programm von Andreas Caminada, Vila Joya"
+   },
+   "quelle": "_quelle/presse/gaultmillau-zwei-koeniginnen.md; _quelle/extern/portale/gaultmillau.md (nicht auf «Über uns»)"
+  },
+  {
+   "wert": {
+    "name": "Jonas Volpert",
+    "rolle": "Gastgeber, Restaurantleiter und Sommelier (aus dem Schäfli gewechselt)"
+   },
+   "quelle": "_quelle/website/text/uber-uns.md, start.md; _quelle/presse/gaultmillau-zwei-koeniginnen.md; Tagblatt 24.04.2025"
+  },
+  {
+   "wert": {
+    "name": "Lukas Siebel",
+    "rolle": "Sous-Chef"
+   },
+   "quelle": "_quelle/website/text/uber-uns.md"
+  },
+  {
+   "wert": {
+    "name": "Marco Reisinger",
+    "rolle": "Entremetier"
+   },
+   "quelle": "_quelle/website/text/uber-uns.md"
+  },
+  {
+   "wert": {
+    "name": "Ole Sass",
+    "rolle": "Service"
+   },
+   "quelle": "_quelle/website/text/uber-uns.md"
+  },
+  {
+   "wert": {
+    "name": "Ramona Gubler",
+    "rolle": "Gesellschafterin und Geschäftsführerin der CK Gastro Consulting GmbH (Handelsregister); auf der Seite nicht genannt"
+   },
+   "quelle": "_quelle/presse/handelsregister-2026-10-19.md"
+  },
+  {
+   "wert": {
+    "name": "Wolfgang und Marlis Kuchler",
+    "rolle": "Eltern von Christian Kuchler, «stehen mit Rat und Tat bereit»"
+   },
+   "quelle": "_quelle/presse/tagblatt-zu-tisch.md; _quelle/presse/gaultmillau-zwei-koeniginnen.md"
+  }
+ ],
+ "anreise": {
+  "wert": "Auto: «Am Kreisverkehr beim Restaurant Bären Abfahrt in die Seestrasse in Richtung Hafen, über den Bahnübergang … direkt zu unserem Parkplatz»; «ausreichend Parkplätze und eine nahe Anbindung zum Zugverkehr mit dem Bahnhof Bottighofen»",
+  "quelle": "_quelle/website/text/kontakt.md, karten.md",
+  "schiff": {
+   "wert": null,
+   "quelle": "offen",
+   "gesucht": "Ob ein Kursschiff heute in Bottighofen anlegt: nicht gesucht über Fahrplan; das Heft 1994 nennt nur frühere Dampfboote"
+  }
+ },
+ "buchungsweg": {
+  "wert": {
+   "system": "gastronovi, Restaurant 118851",
+   "link": "https://services.gastronovi.com/restaurants/118851/reservation/widget",
+   "bankett": "Mail-Link «Bankettanfrage» an kontakt@schloessli-bottighofen.ch",
+   "events": "Mail-Link je Anlass"
+  },
+  "quelle": "_quelle/website/text/start.md, kontakt.md, karten.md, events-2-1.md"
+ },
+ "gutschein": {
+  "wert": "Formular «Gutschein» auf der Startseite (Name Käufer, E-Mail, Adresse, Betrag); «Wir senden Ihnen eine Bestätigung, sobald der Gutschein versendet wurde»; keine Bezahlung online",
+  "quelle": "_quelle/website/html/start.html (formFields)"
+ },
+ "hausregeln": {
+  "wert": "Hunde willkommen (Falstaff «Dogs allowed»; Tagblatt: Wassernapf aus der Champagnerflasche); Zahlung bar, Debit, Kredit, NFC; Gruppen ab 6 Personen nach AGB",
+  "quelle": "_quelle/extern/portale/falstaff-restaurant.md; _quelle/presse/tagblatt-zu-tisch.md; _quelle/website/text/agbs.md Ziffer 3"
+ },
+ "sprachen_website": {
+  "wert": [
+   "de"
+  ],
+  "quelle": "Quelltext lang=\"de-CH\", keine weiteren Sprachen (Späher 02); alle Karten nur deutsch"
+ },
+ "rechtstexte": {
+  "impressum": {
+   "wert": "_quelle/website/text/impressum.md",
+   "quelle": "https://www.schloessli-bottighofen.ch/impressum"
+  },
+  "datenschutz": {
+   "wert": "_quelle/website/text/datenschutzerklarung.md",
+   "quelle": "https://www.schloessli-bottighofen.ch/datenschutzerklarung"
+  },
+  "agb": {
+   "wert": "_quelle/website/text/agbs.md («Allgemeine Geschäftsbedingungen Wirtschaft am Schlössli», Gerichtsstand Frauenfeld)",
+   "quelle": "https://www.schloessli-bottighofen.ch/agbs"
+  },
+  "widerruf": {
+   "wert": "keine eigene Seite; Annullationsbestimmungen in den AGB (Ziffer 8 und 9)",
+   "quelle": "_quelle/website/text/agbs.md"
+  }
+ },
+ "weitere_haeuser": [
+  {
+   "wert": {
+    "name": "Taverne zum Schäfli",
+    "ort": "Oberdorfstrasse 8, 8556 Wigoltingen",
+    "website": "https://www.schaefli-wigoltingen.ch",
+    "betreiberin": "Taverne zum Schäfli AG, CHE-101.884.667 (Verwaltungsrat Wolfgang Kuchler, Marlis Kuchler-Weber, Christian Kuchler)",
+    "noten": "zwei Michelin-Sterne, 18 GaultMillau-Punkte, Falstaff 98",
+    "ordner": "~/Desktop/Website-Projekte/Taverne zum Schäfli Wigoltingen/ (Sammlung 03 liegt vor)"
+   },
+   "quelle": "_quelle/website/text/kontakt.md (Foto und Plakette «2** Michelin 18 Punkte», verlinkt); Taverne zum Schäfli Wigoltingen/_kette/03-sammler/fakten.json"
+  }
+ ],
+ "social": [
+  {
+   "wert": "https://www.instagram.com/schloessli_bottighofen/ (2’601 Follower, 46 Beiträge, 19.10.2026)",
+   "quelle": "_quelle/website/links-nach-aussen.json; _quelle/extern/ig/profil.txt"
+  },
+  {
+   "wert": "https://www.instagram.com/christiankuchler85/ (persönliches Konto des Pächters, Gemeinschaftsbeiträge)",
+   "quelle": "_quelle/extern/ig/herkunft.json"
+  },
+  {
+   "wert": null,
+   "quelle": "offen",
+   "gesucht": "Facebook: nicht verlinkt (im Quelltext nur der Namensraum facebook.com/2008/fbml); YouTube: kein Kanal gefunden (yt-dlp-Suche 19.10.2026)"
+  }
+ ],
+ "zeichen": {
+  "wert": "Logo: Kreis mit zwei Zeigern (Uhr oder Kompass) und Punkten, Schriftzug «SCHLÖSSLI WIRTSCHAFT», darunter «BY CHRISTIAN KUCHLER»; schwarz, transparent 1563 × 1563 px",
+  "quelle": "_quelle/extern/logo/schloessli-logo-transparent.png (von der Schäfli-Seite); _quelle/website/bilder/afd0fc_2b500a48-0faf-4743-ad9a-ccd5e7c54e6d.jpeg (auf Mint, Teilen-Bild)",
+  "bedeutung": {
+   "wert": null,
+   "quelle": "offen",
+   "gesucht": "Was die Zeiger meinen: nirgends erklärt"
+  }
+ },
+ "schrift_farbe_heute": {
+  "wert": "Gilda Display (Titel), PT Serif; Grund Mint #d8fffc, Knöpfe Nachtblau #213c4f, Text #0f3538; Stühle der Terrasse blau",
+  "quelle": "_kette/02-spaeher/befund.md (Quelltext und Aufnahme); Bilder _quelle/website/bilder/"
+ },
+ "fotografen": {
+  "wert": null,
+  "quelle": "offen",
+  "gesucht": "In den Dateien kein Name (ausser Andreas Fahrni bei einem Schäfli-Bild); Serien «Schloessli_August2025», «2026-05-22 … Schlössli SM», «FHF_», «_DSC»",
+  "quelle_liste": "_quelle/fotografen-aus-metadaten.json"
+ }
+}

@@ -1,0 +1,54 @@
+{
+  "station": "11",
+  "name": "La Carte / Die Tafel",
+  "rolle": "Werkbank-Bauer + Werkzeug-Anpasser ×7",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "teil": "karten",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T22:52+07:00",
+  "ende": "2026-10-20T01:57+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Anschluss an die Website fehlt: die Seiten zeigen die Karten aus website/inhalt/*.json, keine Seite verlinkt eine PDF. Die Tafel schreibt nicht in website/ (Station 14 verbindet)",
+      "wo": "_werkzeuge/carte/web.py, carte.py _anschluss"
+    },
+    {
+      "punkt": "Lunch-Menü: Wochentage und Uhrzeit nennt die PDF des Hauses nicht (Feld Zeiten leer); Gänge nach Reihenfolge als Vorspeise, Hauptgang, Dessert benannt (die Namen stehen nicht auf der Karte)",
+      "wo": "_karten/stand/lunch.json, Lunch_261019.pdf"
+    },
+    {
+      "punkt": "Online-Fassung nicht gebaut und nicht hochgeladen (online.json aus der Vorlage, Speicher-Schicht api/_speicher.py fehlt im Haus); Veröffentlichen online in der Demo ohnehin aus",
+      "wo": "_werkzeuge/carte/online.json"
+    },
+    {
+      "punkt": "Kein Passwort, Rollen ohne Anmeldung, keine Kopie ausserhalb des Rechners, keine Überwachung (Prüfpunkte 7a, bei Auslieferung)",
+      "wo": "_kette/11-werkbank/werkzeuge/karten/STAND.md"
+    },
+    {
+      "punkt": "Die 9 Berichtigungen von Station 10 (Tippfehler des Originals, z. B. «Pickels» → «Pickles», «M wSt.» → «MwSt.») stehen im Satz der Werkbank schon im Grundstand; beim Gasterntal lagen sie als Entwurf zur Freigabe im Werkzeug. Roberts Wort, ob so oder als Entwurf",
+      "wo": "website/_werkbank/berichtigt.json, _karten/berichtigt.json"
+    },
+    {
+      "punkt": "Der gemeinsame Rahmen liegt zweimal: _werkzeuge/oberflaeche/ und website/assets/oberflaeche/ (beide am 20.10. gleich nachgezogen). Station 14 entscheidet, welcher bleibt",
+      "wo": "_werkzeuge/oberflaeche/kleid/schloessli.js, website/assets/oberflaeche/kleid/schloessli.js"
+    },
+    {
+      "punkt": "Flaschenbilder der Weinkarte (172) kommen aus dem Weinberater der Website (Vivino); Rechte dort offen, nur zur Anschauung",
+      "wo": "website/wein_bilder.py, _werkzeuge/carte/satz/weinbilder.json"
+    }
+  ],
+  "paket": [
+    "werkzeuge/<schlüssel>/STAND.md",
+    "../../werkbank/"
+  ],
+  "adresse": "http://127.0.0.1:9031/_werkzeuge/carte/",
+  "briefing": "briefing.html?teil=karten",
+  "notiz": "Robert 20.10.2026: «Okay, passt.» zum Stand nach den Beanstandungen 01:00, 01:18, 01:24",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

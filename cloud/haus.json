@@ -1,0 +1,23 @@
+{
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "kurz": "schloessli",
+  "ordner": "Wirtschaft am Schlössli Bottighofen",
+  "tor_ziele": "_Werkzeuge/abnahme-tor/ziele-schloessli.json",
+  "mess_ziele": "_Werkzeuge/messlauf/ziele-schloessli.json",
+  "tor_groessen": [
+    "1280x800",
+    "1000x650",
+    "390x844"
+  ],
+  "mess_groessen": [
+    "1440",
+    "1280",
+    "1000",
+    "390"
+  ],
+  "browser": [
+    "chromium",
+    "webkit"
+  ],
+  "server": []
+}

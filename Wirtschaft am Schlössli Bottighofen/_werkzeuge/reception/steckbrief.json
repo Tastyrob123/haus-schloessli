@@ -1,0 +1,425 @@
+{
+ "stand": 1792426150.5612853,
+ "bereiche": [
+  {
+   "bereich": "Das Haus",
+   "gruppen": [
+    {
+     "gruppe": "Auf einen Blick",
+     "zeilen": [
+      {
+       "fid": "ebd4b78067",
+       "was": "Adresse",
+       "angabe": "Seestrasse 50, 8598 Bottighofen",
+       "beleg": "Wirtschaft am Schlössli Seestrasse 50 8598 Bottighofen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b75f262d66",
+       "was": "Telefon und E-Mail",
+       "angabe": "+41 71 688 90 92, kontakt@schloessli-bottighofen.ch",
+       "beleg": "Tel.: +41 71 688 90 92",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "kontakt@schloessli-bottighofen.ch"
+       ]
+      },
+      {
+       "fid": "2440fcc729",
+       "was": "Lage",
+       "angabe": "direkt im Hafen von Bottighofen, mit Blick aufs Wasser und die Alpen",
+       "beleg": "Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "aaf30e2416",
+       "was": "Küche",
+       "angabe": "mediterran, mit frischen, hochwertigen Zutaten",
+       "beleg": "Hier erwartet Sie eine kulinarische Reise in die Welt der mediterranen Küche, die mit frischen, hochwertigen Zutaten und kreativen Rezepten zubereitet wird.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "fbf100f545",
+       "was": "Terrasse",
+       "angabe": "«Die schönste Terrasse am Bodensee», sagt Christian Kuchler",
+       "beleg": "„Die schönste Terrasse am Bodensee“ — Christian Kuchler",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "5714c388b3",
+       "was": "Hunde",
+       "angabe": "willkommen (Falstaff, Tagblatt)",
+       "beleg": "Hunde willkommen (Falstaff «Dogs allowed»",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      },
+      {
+       "fid": "52a742ce6b",
+       "was": "Zahlung",
+       "angabe": "bar, Debit, Kredit, NFC",
+       "beleg": "Zahlung bar, Debit, Kredit, NFC",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Das Team",
+     "zeilen": [
+      {
+       "fid": "ce0b92b0e0",
+       "was": "Gastgeber und Sommelier",
+       "angabe": "Jonas Volpert",
+       "beleg": "## Jonas Volpert Gastgeber & Sommelier",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "4c78bbbd8f",
+       "was": "Küchenchefin",
+       "angabe": "Monika Huber",
+       "beleg": "## Monika Huber Küchenchefin",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "7e5aad4cb3",
+       "was": "Sous-Chef",
+       "angabe": "Lukas Siebel",
+       "beleg": "## Lukas Siebel Sous-Chef",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "c331d2fd6b",
+       "was": "Entremetier",
+       "angabe": "Marco Reisinger",
+       "beleg": "## Marco Reisinger Entremetier",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "3d6e962134",
+       "was": "Service",
+       "angabe": "Ole Sass",
+       "beleg": "## Ole Sass Service",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Öffnungszeiten & Reservation",
+   "gruppen": [
+    {
+     "gruppe": "Wann offen ist",
+     "zeilen": [
+      {
+       "fid": "236dea6f92",
+       "was": "Restaurant",
+       "angabe": "Donnerstag bis Montag, 11:30 bis 23:00 Uhr",
+       "beleg": "Donnerstag - Montag Dienstag & Mittwoch Ruhetag 11:30 Uhr - 23:00 Uhr",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "25ab30414f",
+       "was": "Ruhetage",
+       "angabe": "Dienstag und Mittwoch",
+       "beleg": "Dienstag & Mittwoch Ruhetag",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "0071f1a01c",
+       "was": "Küche à la carte",
+       "angabe": "11:30 bis 13:30 und 18:00 bis 20:00 Uhr",
+       "beleg": "Die Küchenzeiten betreffen unsere grosse A-la-carte-Karte und die Bestellungsannahme. 11:30 Uhr - 13:30 Uhr 18:00 Uhr - 20:00 Uhr",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "e90d933cab",
+       "was": "Lästermeile",
+       "angabe": "die Karte der Lästermeile den ganzen Tag",
+       "beleg": "Den ganzen Tag durchgängig bieten wir die Karte der Lästermeile an.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "bab058e25c",
+       "was": "Ferien",
+       "angabe": "13. bis 15. November (Excellence Gourmetkreuzfahrt) und 22. Dezember 2026 bis 10. Februar 2027",
+       "beleg": "- 13. - 15. November (Excellence Gourmetkreuzfahrt) - 22. Dezember 2026 - 10. Februar 2027",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Reservieren",
+     "zeilen": [
+      {
+       "fid": "21c286b14e",
+       "was": "Online",
+       "angabe": "über gastronovi, Restaurant 118851",
+       "beleg": "Reservation online: https://services.gastronovi.com/restaurants/118851/reservation/widget (System gastronovi)",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b008588637",
+       "was": "Gruppen",
+       "angabe": "ab 6 gebuchten Personen gilt eine Reservation als Gruppe (AGB)",
+       "beleg": "Gruppen im Sinne dieser AGB sind Gruppen mit einer Mindestzahl von 6 gebuchten Personen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Karte & Lunch",
+   "gruppen": [
+    {
+     "gruppe": "Die Karte",
+     "zeilen": [
+      {
+       "fid": "d372ce73b4",
+       "was": "Aufbau",
+       "angabe": "Frankreich, Italien, Iberische Halbinsel und Klassiker",
+       "beleg": "FRANKREICH",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "ITALIEN",
+        "IBERISCHE HALBINSEL"
+       ]
+      },
+      {
+       "fid": "63a9964c91",
+       "was": "Vegetarisch",
+       "angabe": "VEG = vegetarisch, OVEG = als vegetarische Option verfügbar; weitere vegetarische Optionen berät der Service",
+       "beleg": "VEG = vegetarisch, OVEG = als vegetarische Option verfügbar Für weitere vegetarische Optionen berät Sie gerne unser Service.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "baf9e60f4c",
+       "was": "Tortelloni",
+       "angabe": "vegetarisch, CHF 35",
+       "beleg": "TORTELLONI VEG/G/L/E/SE 35",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Lunch",
+     "zeilen": [
+      {
+       "fid": "65bbd328ae",
+       "was": "Lunch-Menü",
+       "angabe": "3 Gänge, CHF 35",
+       "beleg": "(3 – Gänge – 35.- Chf)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Lästermeile",
+   "gruppen": [
+    {
+     "gruppe": "Tapas und mehr",
+     "zeilen": [
+      {
+       "fid": "ed1c8d742e",
+       "was": "Tapas",
+       "angabe": "durchgehend",
+       "beleg": "TAPAS DURCHGEHEND",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "f55bb008ab",
+       "was": "Prato",
+       "angabe": "Aufschnitt, Käse, Pickels und Focaccia, CHF 30",
+       "beleg": "PRATO 30 Aufschnitt, Käse, Pickels und Focaccia",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "f38ce54981",
+       "was": "Tarte flambée",
+       "angabe": "vegetarisch oder mit Speck, CHF 20",
+       "beleg": "TARTE FLAMBÉE 20 Vegetarisch oder mit Speck",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "6b2a1c7262",
+       "was": "Allergene",
+       "angabe": "G Gluten, L Laktose, E Eier, F Fische, S Schalen- und Weichtiere, So Soja, En Erdnüsse, N Nüsse, Se Sellerie",
+       "beleg": "G = Gluten, L = Laktose, E = Eier, F = Fische, S = Schalen- und Weichtiere, So = Soja, En = Erdnüsse, N = Nüsse, Se = Sellerie",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Bankette & Gruppen",
+   "gruppen": [
+    {
+     "gruppe": "Platz und Form",
+     "zeilen": [
+      {
+       "fid": "879f7c0610",
+       "was": "Plätze",
+       "angabe": "zwei Etagen für jeweils bis zu 26 Personen",
+       "beleg": "Wir haben auf zwei Etagen Platz für jeweils bis zu 26 Personen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "4cad6496f8",
+       "was": "Speisenform",
+       "angabe": "Tavolata oder gesetztes Menue",
+       "beleg": "Sie geben den Rahmen vor - ob Tavolata oder gesetztes Menue!",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "eeef9f15fc",
+       "was": "Besprechen",
+       "angabe": "unkompliziert, gerne auch vor Ort in Ruhe",
+       "beleg": "wir können das sehr gerne auch vor Ort in Ruhe besprechen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Bankettmenüs",
+     "zeilen": [
+      {
+       "fid": "6e8daa0791",
+       "was": "Frühling",
+       "angabe": "CHF 175",
+       "beleg": "FRÜHLING (175 CHF)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "6ea986652e",
+       "was": "Sommer",
+       "angabe": "CHF 185",
+       "beleg": "SOMMER (185 CHF)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "70d656c5f6",
+       "was": "Herbst",
+       "angabe": "CHF 175",
+       "beleg": "HERBST (175 CHF)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "ddb3035b4c",
+       "was": "Auswahl",
+       "angabe": "3 bis 5 Gerichte aus den Menüs, mischen und anpassen möglich",
+       "beleg": "Aus den Menüs können 3-5 Gerichte ausgewählt werden. Nach Belieben können die Menüs auch gemischt werden",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Hausregeln (AGB)",
+   "gruppen": [
+    {
+     "gruppe": "Veranstaltungen",
+     "zeilen": [
+      {
+       "fid": "a24149851c",
+       "was": "Teilnehmerzahl",
+       "angabe": "verbindlich spätestens 2 Werktage vorher",
+       "beleg": "die verbindliche Teilnehmerzahl für eine Veranstaltung spätestens 2 Werktage vor dem Veranstaltungstermin mitzuteilen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "755610edb9",
+       "was": "Anzahlung",
+       "angabe": "ab CHF 1000 Reservationsbetrag kann das Restaurant 50 % Anzahlung verlangen",
+       "beleg": "ab einem Reservationsbetrag von CHF 1000.- kann das Restaurant eine Anzahlung von 50% des gesamten Buchungsbetrags verlangen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Lage, Anreise & Geschichte",
+   "gruppen": [
+    {
+     "gruppe": "Anreise",
+     "zeilen": [
+      {
+       "fid": "d4d42cf383",
+       "was": "Mit dem Auto",
+       "angabe": "am Kreisverkehr beim Restaurant Bären in die Seestrasse Richtung Hafen, über den Bahnübergang zum Parkplatz",
+       "beleg": "Am Kreisverkehr beim Restaurant Bären Abfahrt in die Seestrasse in Richtung Hafen, über den Bahnübergang hinweg gelangen Sie der Strasse immer weiter folgend direkt zu unserem Parkplatz.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "52f5a93bc9",
+       "was": "Parkplatz und Zug",
+       "angabe": "ausreichend Parkplätze, Bahnhof Bottighofen in der Nähe",
+       "beleg": "ausreichend Parkplätze und eine nahe Anbindung zum Zugverkehr mit dem Bahnhof Bottighofen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Geschichte",
+     "zeilen": [
+      {
+       "fid": "6ea1c178bf",
+       "was": "1676",
+       "angabe": "Erlaubnis für ein «Haus am See», das spätere Schlössli, unter der Bedingung, dass darin nicht gewirtet wird",
+       "beleg": "1676: Untermüller Hans Conrad Hafen-Schedler erhält vom Kloster Münsterlingen die Erlaubnis",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      },
+      {
+       "fid": "87bb586c74",
+       "was": "Heute",
+       "angabe": "das Schlössli ist ein Wohnhaus, die Wirtschaft liegt im ehemaligen Hafenmeistergebäude",
+       "beleg": "Heute: das Schlössli ist ein Wohnhaus, die Wirtschaft am Schlössli liegt im ehemaligen Hafenmeistergebäude",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

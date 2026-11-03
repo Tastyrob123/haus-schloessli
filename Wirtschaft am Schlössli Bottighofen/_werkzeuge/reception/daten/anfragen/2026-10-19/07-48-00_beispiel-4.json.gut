@@ -1,0 +1,47 @@
+{
+ "zeit": "2026-10-19T07:48:00+02:00",
+ "art": "tisch",
+ "name": "Emma Clarke",
+ "kontakt": "emma.clarke@example.com",
+ "datum": "Di, 27. Oktober 2026",
+ "personen": 4,
+ "anliegen": "Reservation mit Wünschen, An der Lästermeile",
+ "sprache": "en",
+ "gespraech": "beispiel-4",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Startseite): Datum: Di, 27. Oktober 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nPlatz: An der Lästermeile\nAllergien: vegetarisch\nWünsche: Two of us are vegetarian. We would love to sit at the bar."
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "an": "kontakt@schloessli-bottighofen.ch",
+ "abteilung": "Reservation",
+ "seite": "/index.html",
+ "seite_name": "Startseite",
+ "web": true,
+ "nachricht": "Datum: Di, 27. Oktober 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nPlatz: An der Lästermeile\nAllergien: vegetarisch\nWünsche: Two of us are vegetarian. We would love to sit at the bar.",
+ "formular": "reservation",
+ "allergene": [
+  "VEG"
+ ],
+ "uhrzeit": "19:00 Uhr",
+ "platz": "An der Lästermeile",
+ "entwurf": {
+  "betreff": "Your table at the Lästermeile",
+  "text": "Dear Ms Clarke\n\nThank you very much for your request. On Tuesdays and Wednesdays the restaurant is closed, so we cannot welcome you on 27 October. Would Thursday, 29 October suit you instead? [Verfügbarkeit prüfen]\n\nAt the Lästermeile, our bar, the tapas menu is served all day, with a vegetarian Tarte flambée and vegetarian Crespelle. On our main menu the Tortelloni are vegetarian as well.\n\nWe look forward to hearing from you.\n\nKind regards\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Kontakt (Donnerstag bis Montag, Dienstag und Mittwoch Ruhetag; Karte der Lästermeile den ganzen Tag), Karte der Lästermeile (Tarte flambée «Vegetarisch oder mit Speck», Crespelle «Vegetarisch alla parmigiana»), Speisekarte Oktober (Tortelloni VEG).\nOffen: Ersatztag, Platz an der Bar.",
+  "vorlage": "",
+  "absender": "kontakt@schloessli-bottighofen.ch",
+  "zeit": "2026-10-19T07:48:00+02:00",
+  "deutsch": {
+   "betreff": "Ihr Tisch an der Lästermeile",
+   "text": "Liebe Frau Clarke\n\nVielen Dank für Ihre Anfrage. Dienstags und mittwochs ist das Restaurant geschlossen, deshalb können wir Sie am 27. Oktober nicht empfangen. Würde Ihnen stattdessen Donnerstag, 29. Oktober passen? [Verfügbarkeit prüfen]\n\nAn der Lästermeile, unserer Bar, gibt es den ganzen Tag die Tapas-Karte, mit einer vegetarischen Tarte flambée und vegetarischen Crespelle. Auf unserer grossen Karte sind auch die Tortelloni vegetarisch.\n\nWir freuen uns, von Ihnen zu hören.\n\nFreundliche Grüsse\n\n[Name]\nWirtschaft am Schlössli",
+   "quelle": "abb2214f4246"
+  }
+ },
+ "verlauf_de": [
+  "Über ein Formular der Website (Seite Startseite): Datum: Di, 27. Oktober 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nPlatz: An der Lästermeile\nAllergien: vegetarisch\nWünsche: Zwei von uns essen vegetarisch. Wir würden gern an der Bar sitzen."
+ ]
+}

@@ -1,0 +1,249 @@
+[
+ {
+  "vor": [
+   0,
+   9,
+   12
+  ],
+  "art": "tisch",
+  "status": "neu",
+  "abteilung": "Reservation",
+  "name": "Sandra Keller",
+  "kontakt": "sandra.keller@example.com",
+  "datum": "Do, 22. Oktober 2026",
+  "uhrzeit": "12:00 Uhr",
+  "personen": 2,
+  "platz": "Draussen auf der Terrasse",
+  "allergene": [
+   "N"
+  ],
+  "sprache": "de",
+  "anliegen": "Reservation mit Wünschen, Draussen auf der Terrasse",
+  "betreff": "",
+  "text": "",
+  "team": "",
+  "web": true,
+  "an": "kontakt@schloessli-bottighofen.ch",
+  "formular": "reservation",
+  "seite": "/index.html",
+  "seite_name": "Startseite",
+  "nachricht": "Datum: Do, 22. Oktober 2026\nUhrzeit: 12:00 Uhr\nPersonen: 2\nPlatz: Draussen auf der Terrasse\nAllergien: Nüsse\nWünsche: Wir feiern unseren Hochzeitstag.",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Startseite): Datum: Do, 22. Oktober 2026\nUhrzeit: 12:00 Uhr\nPersonen: 2\nPlatz: Draussen auf der Terrasse\nAllergien: Nüsse\nWünsche: Wir feiern unseren Hochzeitstag."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   1,
+   16,
+   40
+  ],
+  "art": "bankett",
+  "status": "gelesen",
+  "abteilung": "Bankett",
+  "name": "Thomas Brunner",
+  "kontakt": "+41 79 000 00 00",
+  "datum": "Sa, 14. November 2026",
+  "uhrzeit": "18:30 Uhr",
+  "personen": 30,
+  "sprache": "de",
+  "anliegen": "Bankettanfrage, Tavolata",
+  "betreff": "Ihre Feier zum 70. Geburtstag am 14. November",
+  "text": "Guten Tag Herr Brunner\n\nvielen Dank für Ihre Anfrage, gerne übernehmen wir die Bewirtung zum 70. Geburtstag Ihrer Mutter.\n\nAm 14. November ist unser Team allerdings geschlossen mit an Bord der Excellence Gourmetkreuzfahrt, das Restaurant bleibt vom 13. bis 15. November zu. Dürfen wir Ihnen einen anderen Tag vorschlagen? [Neues Datum vorschlagen]\n\nFür 30 Personen brauchen wir mehr als eine Etage, jede fasst bis zu 26 Personen [Etagen klären]. Als Tavolata mit vier Gängen stellen wir Ihnen gerne aus unseren Bankettmenüs zusammen, aus den Menüs können 3 bis 5 Gerichte ausgewählt werden. Das Herbstmenü liegt bei 175 Franken.\n\nDass Ihre Mutter keine Laktose verträgt, geben wir an die Küche weiter [Küche informieren].\n\nAm einfachsten besprechen wir alles in Ruhe vor Ort oder am Telefon.\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Kontakt (Ferien 13.–15. November, Excellence Gourmetkreuzfahrt), Karten (zwei Etagen für jeweils bis zu 26 Personen, «Tavolata oder gesetztes Menue»), Bankettmenüvorschläge (Herbst 175 CHF, «Aus den Menüs können 3-5 Gerichte ausgewählt werden»), Mail-Link «Bankettanfrage».\nOffen: neues Datum, beide Etagen frei, Budget von etwa 150 Franken gegen das Menü (Herbst 175) klären.",
+  "web": true,
+  "an": "kontakt@schloessli-bottighofen.ch",
+  "formular": "bankett",
+  "seite": "/feiern.html",
+  "seite_name": "Feiern",
+  "nachricht": "Datum: Sa, 14. November 2026\nUhrzeit: 18:30 Uhr\nPersonenzahl: 30\nGewünschte Speisenform: Tavolata\nAnzahl Gänge: 4\nRicht-Budget: etwa 150 Franken pro Person\nGericht, Allergien: Meine Mutter feiert ihren 70. Geburtstag und verträgt keine Laktose.",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Feiern): Datum: Sa, 14. November 2026\nUhrzeit: 18:30 Uhr\nPersonenzahl: 30\nGewünschte Speisenform: Tavolata\nAnzahl Gänge: 4\nRicht-Budget: etwa 150 Franken pro Person\nGericht, Allergien: Meine Mutter feiert ihren 70. Geburtstag und verträgt keine Laktose."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   3,
+   10,
+   5
+  ],
+  "art": "gutschein",
+  "status": "erledigt",
+  "abteilung": "Gutschein",
+  "name": "Lea Graf",
+  "kontakt": "lea.graf@example.com",
+  "datum": "",
+  "personen": null,
+  "sprache": "de",
+  "anliegen": "Gutschein über 150 Franken",
+  "betreff": "Ihr Gutschein über 150 Franken",
+  "text": "Guten Tag Frau Graf\n\nvielen Dank für Ihre Bestellung. Ihr Gutschein über 150 Franken für die Wirtschaft am Schlössli geht an Musterweg 4, 8590 Romanshorn [Versand bestätigen].\n\nWir senden Ihnen eine Bestätigung, sobald der Gutschein versendet wurde.\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Gutschein-Formular der Website (Name Käufer, E-Mail, Adresse, Betrag; Satz «Wir senden Ihnen eine Bestätigung, sobald der Gutschein versendet wurde»).\nOffen: Zahlung und Versand (online wird nichts bezahlt).",
+  "web": true,
+  "an": "kontakt@schloessli-bottighofen.ch",
+  "formular": "gutschein",
+  "seite": "/gutschein.html",
+  "seite_name": "Gutschein",
+  "nachricht": "Name Käufer: Lea Graf\nE-Mail: lea.graf@example.com\nAdresse: Musterweg 4, 8590 Romanshorn\nBetrag in Franken: 150",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Gutschein): Name Käufer: Lea Graf\nE-Mail: lea.graf@example.com\nAdresse: Musterweg 4, 8590 Romanshorn\nBetrag in Franken: 150"
+   ]
+  ]
+ },
+ {
+  "vor": [
+   0,
+   7,
+   48
+  ],
+  "art": "tisch",
+  "status": "neu",
+  "abteilung": "Reservation",
+  "name": "Emma Clarke",
+  "kontakt": "emma.clarke@example.com",
+  "datum": "Di, 27. Oktober 2026",
+  "uhrzeit": "19:00 Uhr",
+  "personen": 4,
+  "platz": "An der Lästermeile",
+  "allergene": [
+   "VEG"
+  ],
+  "sprache": "en",
+  "anliegen": "Reservation mit Wünschen, An der Lästermeile",
+  "betreff": "Your table at the Lästermeile",
+  "text": "Dear Ms Clarke\n\nThank you very much for your request. On Tuesdays and Wednesdays the restaurant is closed, so we cannot welcome you on 27 October. Would Thursday, 29 October suit you instead? [Verfügbarkeit prüfen]\n\nAt the Lästermeile, our bar, the tapas menu is served all day, with a vegetarian Tarte flambée and vegetarian Crespelle. On our main menu the Tortelloni are vegetarian as well.\n\nWe look forward to hearing from you.\n\nKind regards\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Kontakt (Donnerstag bis Montag, Dienstag und Mittwoch Ruhetag; Karte der Lästermeile den ganzen Tag), Karte der Lästermeile (Tarte flambée «Vegetarisch oder mit Speck», Crespelle «Vegetarisch alla parmigiana»), Speisekarte Oktober (Tortelloni VEG).\nOffen: Ersatztag, Platz an der Bar.",
+  "deutsch": {
+   "betreff": "Ihr Tisch an der Lästermeile",
+   "text": "Liebe Frau Clarke\n\nVielen Dank für Ihre Anfrage. Dienstags und mittwochs ist das Restaurant geschlossen, deshalb können wir Sie am 27. Oktober nicht empfangen. Würde Ihnen stattdessen Donnerstag, 29. Oktober passen? [Verfügbarkeit prüfen]\n\nAn der Lästermeile, unserer Bar, gibt es den ganzen Tag die Tapas-Karte, mit einer vegetarischen Tarte flambée und vegetarischen Crespelle. Auf unserer grossen Karte sind auch die Tortelloni vegetarisch.\n\nWir freuen uns, von Ihnen zu hören.\n\nFreundliche Grüsse\n\n[Name]\nWirtschaft am Schlössli"
+  },
+  "verlauf_de": [
+   "Über ein Formular der Website (Seite Startseite): Datum: Di, 27. Oktober 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nPlatz: An der Lästermeile\nAllergien: vegetarisch\nWünsche: Zwei von uns essen vegetarisch. Wir würden gern an der Bar sitzen."
+  ],
+  "web": true,
+  "an": "kontakt@schloessli-bottighofen.ch",
+  "formular": "reservation",
+  "seite": "/index.html",
+  "seite_name": "Startseite",
+  "nachricht": "Datum: Di, 27. Oktober 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nPlatz: An der Lästermeile\nAllergien: vegetarisch\nWünsche: Two of us are vegetarian. We would love to sit at the bar.",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Startseite): Datum: Di, 27. Oktober 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nPlatz: An der Lästermeile\nAllergien: vegetarisch\nWünsche: Two of us are vegetarian. We would love to sit at the bar."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   2,
+   20,
+   15
+  ],
+  "art": "anlass",
+  "status": "neu",
+  "abteilung": "Bankett",
+  "name": "Peter Huber",
+  "kontakt": "peter.huber@example.com",
+  "datum": "",
+  "personen": 2,
+  "sprache": "de",
+  "anliegen": "Plätze für 4-Hands-Lunch mit Patrick Stier (nächstes Mal)",
+  "betreff": "",
+  "text": "",
+  "team": "",
+  "web": true,
+  "an": "kontakt@schloessli-bottighofen.ch",
+  "formular": "plaetze",
+  "seite": "/anlaesse.html",
+  "seite_name": "Anlässe",
+  "nachricht": "Anlass: 4-Hands-Lunch mit Patrick Stier (nächstes Mal)\nPersonen: 2\nWünsche, Allergien: Bitte melden Sie sich, sobald es wieder einen gibt.",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Anlässe): Anlass: 4-Hands-Lunch mit Patrick Stier (nächstes Mal)\nPersonen: 2\nWünsche, Allergien: Bitte melden Sie sich, sobald es wieder einen gibt."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   0,
+   11,
+   2
+  ],
+  "art": "tisch",
+  "status": "neu",
+  "abteilung": "Reservation",
+  "name": "Marco Frei",
+  "kontakt": "marco.frei@example.com",
+  "datum": "So, 25. Oktober 2026, 18:30 Uhr",
+  "personen": 8,
+  "sprache": "de",
+  "anliegen": "Tisch für acht Personen am Sonntag, 25. Oktober, 18:30 Uhr, mit Hund, gerne auf der Terrasse.",
+  "betreff": "",
+  "text": "",
+  "team": "",
+  "verlauf": [
+   [
+    "user",
+    "Habt ihr am Sonntag, 25. Oktober um 18:30 Platz für 8 Personen? Wir bringen unseren Hund mit."
+   ],
+   [
+    "assistant",
+    "Die Reservation online zeigt die freien Tische. Hunde sind willkommen. Ab 6 Personen gelten Sie als Gruppe; gerne gebe ich Ihre Anfrage an das Team weiter, dafür brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer."
+   ],
+   [
+    "user",
+    "Marco Frei, marco.frei@example.com, gerne auf der Terrasse."
+   ],
+   [
+    "assistant",
+    "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Haus, sie liegt nur zur Ansicht im Gastgeber."
+   ]
+  ],
+  "an": "kontakt@schloessli-bottighofen.ch"
+ },
+ {
+  "vor": [
+   1,
+   9,
+   30
+  ],
+  "art": "bankett",
+  "status": "gelesen",
+  "abteilung": "Bankett",
+  "name": "Nadine Wyss",
+  "kontakt": "nadine.wyss@example.com",
+  "datum": "Fr, 4. Dezember 2026",
+  "uhrzeit": "18:00 Uhr",
+  "personen": 18,
+  "platz": "Drinnen in der Gaststube",
+  "allergene": [
+   "G"
+  ],
+  "sprache": "de",
+  "anliegen": "Ihr Abend: Firmenanlass",
+  "betreff": "Ihr Firmenanlass am Freitag, 4. Dezember",
+  "text": "Guten Tag Frau Wyss\n\nvielen Dank für Ihre Anfrage. Gerne bewirten wir Ihr Team am Freitag, 4. Dezember, ab 18:00 Uhr [Verfügbarkeit prüfen].\n\nFür 18 Personen reicht eine unserer zwei Etagen, jede hat Platz für bis zu 26 Personen [Etage wählen]. Mit dem Bankettmenü Herbst zu 175 Franken pro Person wählen Sie aus den Menüs 3 bis 5 Gerichte; einzelne Gerichte lassen sich austauschen oder anpassen.\n\nDie Unverträglichkeit Gluten geben wir an die Küche weiter [Küche informieren].\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Karten (zwei Etagen für jeweils bis zu 26 Personen), Bankettmenüvorschläge (Herbst 175 CHF, 3–5 Gerichte, «einzelne Gerichte ausgetauscht oder individuell angepasst»), Formular «Ihr Abend» (Richtwert 18 × 175 = 3150 Franken).\nOffen: Etage, Gerichte, Anzahlung nach AGB Ziffer 7 ab CHF 1000 möglich.",
+  "web": true,
+  "an": "kontakt@schloessli-bottighofen.ch",
+  "formular": "abend",
+  "seite": "/abend.html",
+  "seite_name": "Ihr Abend",
+  "nachricht": "Anlass: Firmenanlass\nTag: Fr, 4. Dezember 2026\nUhrzeit: 18:00 Uhr\nPersonen: 18\nPlatz: Drinnen in der Gaststube\nMenü: Bankettmenü Herbst, 175 Franken\nWein: noch keine Flasche\nAllergien: Gluten\nRichtwert für das Essen, ohne Getränke: 3150 Franken aus den Preisen der Karte",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Ihr Abend): Anlass: Firmenanlass\nTag: Fr, 4. Dezember 2026\nUhrzeit: 18:00 Uhr\nPersonen: 18\nPlatz: Drinnen in der Gaststube\nMenü: Bankettmenü Herbst, 175 Franken\nWein: noch keine Flasche\nAllergien: Gluten\nRichtwert für das Essen, ohne Getränke: 3150 Franken aus den Preisen der Karte"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,115 @@
+{
+ "_hinweis": "Tafeln «So geht’s» mit den echten Knopf-Namen («…»), gelesen im Code des Werkzeugs; bau.py prüft jeden Namen gegen den Code (stand_wege.json → code).",
+ "bureau": [
+  [
+   "stift",
+   "Text oder Foto ändern",
+   "Links den Bereich wählen, in der Seite rechts auf einen Text oder ein Foto klicken, neu schreiben oder «Foto tauschen», dann «Speichern»."
+  ],
+  [
+   "uhr",
+   "Zeiten und Hinweis",
+   "Unter «Zeiten & Preise» stehen Öffnungs- und Küchenzeiten einmal für alle Seiten. Ferien oder ein geschlossener Tag gehen unter «Hinweis für Gäste»."
+  ],
+  [
+   "waage",
+   "Online stellen",
+   "Gespeichert ist erst ein Entwurf. «Vorher, nachher» zeigt den Unterschied, «Veröffentlichen» bringt ihn auf die Website. Die Karten pflegt das Kartenpult."
+  ]
+ ],
+ "livre": [
+  [
+   "foto",
+   "Ein Foto holen",
+   "Unter «Fotos» ein Foto anklicken und die Grösse wählen: «Instagram-Beitrag», Website oder Druck. Jedes Foto trägt seine Herkunft."
+  ],
+  [
+   "datei",
+   "Wortmarke weitergeben",
+   "Unter «Logo & Dateien» liegen Wortmarke, Zeiger, Farben und Schriften. «Alle Dateien (ZIP)» gibt alles in einem Paket an Agentur oder Druckerei."
+  ],
+  [
+   "farbe",
+   "Einen Entwurf prüfen",
+   "In der «Markenprüfung» mit «Datei wählen» ein Plakat oder einen Flyer laden. Sie sagt Punkt für Punkt, was zum Haus passt."
+  ]
+ ],
+ "reception": [
+  [
+   "eingang",
+   "Anfragen beantworten",
+   "Reservation, Bankett, Anlass oder Gutschein: jede Anfrage aus den Formularen der Website steht im «Eingang», mit Hinweisen zu Ruhetag, Ferien und Allergien und einem Brief im Ton des Hauses. «Text kopieren» oder «Als PDF speichern», verschickt wird nur, was Sie selbst schicken."
+  ],
+  [
+   "blase",
+   "Den Chat ausprobieren",
+   "Mit «Chat ausprobieren» fragen Sie wie ein Gast und sehen, was er aus Ihren Seiten und Karten antwortet."
+  ],
+  [
+   "liste",
+   "Lücken schliessen",
+   "Wusste der Chat etwas nicht, steht die Frage unter «Das wurde gefragt». Mit «Antwort nachtragen» einmal eintragen, ab dann antwortet er selbst."
+  ]
+ ],
+ "carte": [
+  [
+   "stift",
+   "Gericht oder Preis ändern",
+   "Die Karte wählen, im Modus «Einfach» den Eintrag anklicken, Name, Beschreibung oder Preis überschreiben. Daneben steht sofort die Karte."
+  ],
+  [
+   "liste",
+   "Neues Gericht",
+   "Mit «Neuer Eintrag» oder bei der Rubrik mit «Eintrag hinzufügen» anlegen und an die richtige Stelle schieben."
+  ],
+  [
+   "zurueck",
+   "Vorübergehend weg",
+   "Gibt es ein Gericht gerade nicht, nehmen Sie es mit «Ausblenden» heraus. Es bleibt gespeichert und kommt später zurück."
+  ],
+  [
+   "pdf",
+   "Neue Karte drucken",
+   "«Probe-PDF» zeigt die Karte vorab, «Veröffentlichen» setzt die PDF neu. Die Karten auf der Website kommen aus derselben Quelle."
+  ]
+ ],
+ "registre": [
+  [
+   "karte",
+   "Woher die Gäste kommen",
+   "Unter «Herkunft» stehen Länder und Orte der Besuche, ohne Cookies und nie mit Namen. Oben wählen Sie den «Zeitraum»."
+  ],
+  [
+   "uhr",
+   "Weiter zur Reservation",
+   "«Zur Reservation» zeigt, wie oft ein Besuch zum Fenster «Reservation» führt, zu «Direkt buchen» bei gastronovi oder zu einer Tisch-Anfrage ans Haus."
+  ],
+  [
+   "liste",
+   "Zahlen weitergeben",
+   "«Als Tabelle sichern» legt alle Besuche als Tabelle ab, zum Beispiel für die Buchhaltung oder eine Agentur."
+  ]
+ ],
+ "imprimerie": [
+  [
+   "satz",
+   "Sagen, was Sie brauchen",
+   "Oben einen Satz schreiben, etwa: Aushang für den Ruhetag, und «Fünf Entwürfe» drücken. Oder unter «Arten und Vorlagen» eine der fertigen Vorlagen mit Texten des Hauses nehmen."
+  ],
+  [
+   "fuenf",
+   "Einen Entwurf wählen",
+   "Sie bekommen fünf Entwürfe im Stil des Hauses. Den passenden anklicken."
+  ],
+  [
+   "stift",
+   "Anpassen",
+   "Im Blatt auf einen Text oder ein Foto klicken und ändern. Unter «Fotos des Hauses» liegen alle Bilder der Website."
+  ],
+  [
+   "druck",
+   "Drucken",
+   "Druckfertig als PDF speichern, mit Beschnitt für die Druckerei, oder selbst drucken."
+  ]
+ ]
+}

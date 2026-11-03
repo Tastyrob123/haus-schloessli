@@ -1,0 +1,105 @@
+{
+ "id": "lunch",
+ "gilt": {
+  "von": "",
+  "bis": ""
+ },
+ "fassungen": {},
+ "herkunft": {
+  "original": "_quelle/website/pdf/Lunch_261019.pdf",
+  "sha256": "b889d627b043b13b3c88011494eb0330b4b816c1c65f3a9f9abb0930d79fce35",
+  "adresse": "https://www.schloessli-bottighofen.ch/s/Lunch_261019.pdf",
+  "abgerufen": "2026-10-19",
+  "gelesen_mit": "_karten/lesen.py"
+ },
+ "offen": [
+  "Zeitraum: die Karte nennt keinen Tag. Datei «Lunch_261019» (PDF erstellt 18.10.2026, 23:44); ob 261019 der 19.10.2026 ist, sagt das Haus nicht.",
+  "Wochentage und Uhrzeit des Lunchs nennt die PDF nicht.",
+  "Die Karte wechselt (Startseite verlinkt jeweils die aktuelle Datei); diese Daten sind der Stand vom 19.10.2026."
+ ],
+ "karte": {
+  "ziel": "lunch",
+  "name": "Lunch-Menü",
+  "gruppe": "Restaurant",
+  "format": [
+   297,
+   210
+  ],
+  "kl": "mittag",
+  "fuss": "",
+  "teile": [
+   {
+    "art": "inhalt",
+    "posten": [
+     {
+      "t": "rubrik",
+      "titel": "Lunch – Menü",
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "Herzlich Willkommen in der Wirtschaft am Schlössli!"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Kürbissuppe",
+      "zeilen": [
+       {
+        "text": "Wachtelei – Serrano Schinken"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Risi e bisi",
+      "zeilen": [
+       {
+        "text": "Reis – Miesmuschel – Erbsen – Spinat"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "frei",
+      "zeilen": [
+       {
+        "text": "***"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "gericht",
+      "name": "Joghurt Panna Cotta",
+      "zeilen": [
+       {
+        "text": "Apfelcrumble"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "t": "notiz",
+      "text": "(3 – Gänge – 35.- Chf)",
+      "s": 1
+     }
+    ]
+   }
+  ]
+ }
+}

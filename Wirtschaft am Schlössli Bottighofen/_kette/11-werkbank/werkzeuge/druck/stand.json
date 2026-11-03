@@ -1,0 +1,54 @@
+{
+  "station": "11",
+  "name": "L’Imprimerie / Die Werkstatt",
+  "rolle": "Werkbank-Bauer + Werkzeug-Anpasser ×7",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "teil": "druck",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-19T22:53+07:00",
+  "ende": "2026-10-20T01:59+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Online-Anschluss und Hochladen (online.json bereit, Adresse des Online-Projekts noch nicht angelegt)",
+      "wo": "_werkzeuge/imprimerie/online.json · _qa/schloessli_anpassen.py ONLINE"
+    },
+    {
+      "punkt": "Hausserver :8982 kennt /_werkzeuge/ nicht; die Werkstatt läuft bis Station 14 auf eigenem Server :9053 (launch.json werkstatt-schloessli)",
+      "wo": "website/serve.py · _kette/11-werkbank/werkzeuge/druck/STAND.md"
+    },
+    {
+      "punkt": "Echte KI («Fünf Entwürfe», Bildtext, Markenprüfung) ungeprüft: nur mit Guthaben und Roberts Wort",
+      "wo": "_werkzeuge/imprimerie/serve.py IMPRIMERIE_KI"
+    },
+    {
+      "punkt": "Titel auf den Blättern gemischt statt in Versalien wie im Markenbuch (Kern aller Häuser), Urteil offen",
+      "wo": "_kette/05-markenbauer/marke.json schriften · satz.js"
+    },
+    {
+      "punkt": "Hausbuch führt Gästefotos und KI-Bilder im Archiv; die Werkstatt filtert sie, das Fach im Editor zeigt das Archiv des Hausbuchs",
+      "wo": "_werkzeuge/livre/livre.json · bau.py RAUS"
+    },
+    {
+      "punkt": "Nach Auftrag: Firefox, echte Geräte, Druck auf Papier, Schnittmarken je Format, Rollen und Anmeldung",
+      "wo": "_kette/11-werkbank/werkzeuge/druck/STAND.md"
+    },
+    {
+      "punkt": "Verbrauch: Nutzung vor dem Start nicht abgelesen; nach dem Bau 20.10.2026 ~01:10 Woche 41 %, 5 Stunden 66 %",
+      "wo": "get_usage"
+    }
+  ],
+  "paket": [
+    "werkzeuge/<schlüssel>/STAND.md",
+    "../../werkbank/"
+  ],
+  "adresse": "http://127.0.0.1:9053/_werkzeuge/imprimerie/",
+  "briefing": "briefing.html?teil=druck",
+  "notiz": "Die Hausdruckerei (Namen aus dem Kleid des Hauses) fürs Restaurant am Hafen: 248 Vorlagen in 23 Arten, jeder Satz aus den Texten des Hauses, keine Preise, keine Zimmer- und Kofferkarten; jede Liste mit Bild, Doppelte zusammengeführt. PDFs ohne Befund, alle Bedien-Läufe in Chromium und Safari-Kern grün (20.10.2026), flüssig gemessen. Lokal, nichts hochgeladen, keine KI.",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

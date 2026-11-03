@@ -1,0 +1,92 @@
+{
+  "station": "06",
+  "name": "Konzept-Board",
+  "rolle": "Konzepter",
+  "haus": "Wirtschaft am Schlössli Bottighofen",
+  "zustand": "bestätigt",
+  "beginn": "2026-10-19T12:35+07:00",
+  "ende": "2026-10-19T12:53+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Kein Foto des Hauses von aussen mit Namen; der Auftakt nimmt deshalb den Blick vom Stuhl",
+      "wo": "_quelle/Material-Übersicht.md (Lücken), Prompt Abschnitt 4"
+    },
+    {
+      "punkt": "Keine Fotos der zwei Bankett-Etagen",
+      "wo": "_quelle/website/bilder, Seite «Karten»"
+    },
+    {
+      "punkt": "Bar-Foto b49b5b nur 900 px, Regal de97ff 1920 px; Squarespace liefert höchstens 2500 px, Originale bis 8256 px liegen beim Haus",
+      "wo": "_quelle/website/bilder, _kette/02-spaeher/befund.md"
+    },
+    {
+      "punkt": "Welche Gerichte die Fotos vom August 2025 zeigen und ob sie auf der Karte vom 30.09.2026 stehen; ausser Tortelloni tragen sie keine Gerichtsnamen",
+      "wo": "_quelle/website/bilder (Dateinamen), pdf-text/Speisekarte-Oktober.txt"
+    },
+    {
+      "punkt": "Patissière Theresa Hermann: kein Foto, nicht auf «Über uns»; Marco Reisinger und Ole Sass ohne Porträt",
+      "wo": "_quelle/website/text/uber-uns.md, presse/gaultmillau-zwei-koeniginnen.md"
+    },
+    {
+      "punkt": "Bildrechte und Fotografen der Hausfotos; Urheberrechte laut Impressum bei der Taverne zum Schäfli AG; zwei Bilder von Schweiz Tourismus",
+      "wo": "_quelle/fotografen-aus-metadaten.json, website/text/impressum.md, extern/myswitzerland/herkunft.json"
+    },
+    {
+      "punkt": "Besen-Geschichte: Wortlaut aus der Texterkennung, am PDF prüfen; Zeitpunkt «Ende 17. Jahrhundert», 1699 Revers-Brief",
+      "wo": "_quelle/presse/pdf-text/…_OCR.txt, PDF-Seiten 110–111"
+    },
+    {
+      "punkt": "Bankettmenüs vom 29.04.2025: ob Preise und Gerichte noch gelten",
+      "wo": "_quelle/website/pdf-text/Bankettmenuvorschlage.txt"
+    },
+    {
+      "punkt": "Sätze der zwei Fenster und Kapiteltitel «Vier Länder auf einer Karte», «Bis 23 Uhr unter der Platane», «Ein Besen statt eines Schilds» sind vom Konzepter, nicht vom Haus",
+      "wo": "konzept.json"
+    },
+    {
+      "punkt": "Horizont-Höhe je Foto nur am Bild abgelesen (Startbild rund 30 %, Glas 50 %, Abend 52 %, Platanen 45 %), beim Bau messen",
+      "wo": "_bau/inhalt.py"
+    },
+    {
+      "punkt": "Bildmaterial reicht für rund 18 bis 20 Bildschirme, nicht 24 wie beim Rivage",
+      "wo": "_quelle/Material-Übersicht.md (33 Bilder der Seite, davon 8 Logos und Bänder)"
+    },
+    {
+      "punkt": "Gutschein mit Bezahlung: Anbieter und Weg offen",
+      "wo": "_kette/04-analyst/potential.json, Befund 05"
+    },
+    {
+      "punkt": "Angaben zu den bisherigen Häusern aus UI-Fundus, Werdegang der Abschnitte und den Zurbriggen-Konzepten; Seiten nicht neu aufgenommen, Entwurfs-Maschine nicht gezogen",
+      "wo": "_UI-Fundus/bereiche.py, Tasty-Sprache — Werdegang der Abschnitte.md"
+    },
+    {
+      "punkt": "Familie-Machart: Das Schäfli hat noch keine abgenommenen Seiten, deshalb keine Machart übernommen",
+      "wo": "Taverne zum Schäfli Wigoltingen/_kette/06-konzepter (leer)"
+    },
+    {
+      "punkt": "Erster Durchgang ohne Blender und ohne Werkbank-Kit; Board baut auf dem bestätigten Markenbuch (Schrift, Farbwelt A, Tapete)",
+      "wo": "Auftrag 19.10.2026"
+    },
+    {
+      "punkt": "Nutzungsanzeige vorher und nachher nicht ablesbar",
+      "wo": "Nutzungsanzeige 19.10.2026"
+    }
+  ],
+  "paket": [
+    "konzept.html",
+    "konzept.json"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/_kette/06-konzepter/konzept.html",
+  "briefing": "briefing.html",
+  "notiz": "Konzept-Board liegt vor: ein Platz am Hafen, an dem alles an einen Tisch kommt, geordnet am Horizont des Sees; zwölf Szenen mit Überleitungen, acht Unterseiten, Gestrichenes und Offenes.",
+  "bestaetigt": {
+    "zeit": "2026-10-19T14:45+07:00",
+    "wort": "Jetzt alles schon weitermachen, bis zur Website. Bei beiden."
+  },
+  "rueckgaben": []
+}
