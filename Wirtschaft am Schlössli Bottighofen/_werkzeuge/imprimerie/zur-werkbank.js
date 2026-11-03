@@ -147,7 +147,7 @@
        Im Stylesheet bleiben nur die Schrift und der Druck. */
     var lage = document.createElement('style');
     lage.textContent =
-      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/schrift/DMMono-normal-400.woff2') + '")}' +
+      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/fonts/DMMono-normal-400.woff2') + '")}' +
       '@media print{#zur-werkbank{display:none!important}}';
     document.head.appendChild(lage);
     var setz = function (k, v) { wirt.style.setProperty(k, v, 'important'); };

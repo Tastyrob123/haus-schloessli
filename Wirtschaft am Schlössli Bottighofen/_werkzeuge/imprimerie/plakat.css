@@ -115,3 +115,9 @@
 .ev-raster .wo--breit .wo__n>*{max-width:100%;min-width:0;align-self:stretch}
 #startWochen>.wo:not(:first-child){grid-template-columns:minmax(100px,38%) minmax(0,1fr)}
 #startWochen>.wo:not(:first-child) .wo__n b{font-size:clamp(16px,1.3vw,21px)}
+#startHilfe span{position:relative;top:.9px}
+#start .ms-fuss .ms-wege{gap:4px!important}
+#start .ms-fuss .ms-wege a{padding:0 7px!important;margin:0!important}
+@media (max-width:1100px){#startWochen{grid-template-columns:1fr}#startWochen>.wo:first-child{grid-row:auto}#startWochen>.wo:first-child .wo__k{min-height:0;aspect-ratio:16/9}#startWochen>.wo:not(:first-child){grid-template-columns:minmax(140px,34%) minmax(0,1fr)}}
+@media (max-width:1180px){#startZu{width:36px!important;min-width:36px;height:36px}}
+@media (max-width:1100px){.ms-suche input{font-size:16px!important}}

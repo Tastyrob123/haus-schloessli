@@ -625,7 +625,7 @@
     $('#msDetail').innerHTML = `<button class="ms-lnk ms-lnk--zurueck" data-ansicht="${detailVon}"><svg viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></svg><span>${zurueck}</span></button>
       <div class="kd">
         <div class="wo kd__bild"><span class="wo__k"><span class="wo__bild" style="background-image:url('${DS.bildFuer(DS.M, foto, kdBreite())}')"></span><span class="wo__licht"></span>${ev ? `<span class="wo__datum">${esc(a.z)}</span>` : ''}</span></div>
-        <div class="kd__text">${ev ? `<em class="kd__wo">${WO[a.wo]} · ${esc(a.ort)}</em>` : ''}<h1>${esc(ev ? anlassTitel(a) : a.t)}</h1><p>${esc(a.satz)}</p>
+        <div class="kd__text">${ev ? `<em class="kd__wo">${WO[a.wo]} · ${esc(a.ort)}</em>` : ''}<h1>${zus(ev ? anlassTitel(a) : a.t)}</h1><p>${esc(a.satz)}</p>
           <div class="kd__zahl"><b>${zahlDE(liste.length + mehr)}</b><span>${ev ? `${liste.length === 1 ? 'Motiv' : 'Motive'}, fertig gesetzt im Stil des Hauses${liste.length ? ': ' + [...new Set(liste.map(x => x.art || x.n))].join(', ') : ''}` : 'Vorlagen für diese Abteilung, fertig gesetzt im Stil des Hauses'}</span></div>
           <div class="ms-feld ms-feld--klein"><span class="ms-feld__ic"><svg viewBox="0 0 24 24"><path d="M12 3l1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/></svg></span><textarea id="kampFrei" rows="1" placeholder="Etwas anderes? Kurz beschreiben …"></textarea><button class="kn knopf--voll glanz-kn" data-st="kfrei"><span>Fünf Entwürfe</span><i>${PFEIL_SVG}</i></button></div></div>
       </div>
@@ -655,9 +655,17 @@
   function kurzPlatz(t) {
     if (!t) return; t.dataset.lang = t.dataset.lang || t.placeholder;
     const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')); c.font = `${g.fontWeight} ${g.fontSize} ${g.fontFamily}`;
-    t.placeholder = [t.dataset.lang, 'Etwa: ein Plakat', 'Beschreiben …'].find(x => c.measureText(x).width * 1.1 + 8 <= t.clientWidth) || 'Beschreiben …';   // Tor 2: nie zweizeilig (Rand für Sperrung und Rundung)
+    t.placeholder = [t.dataset.lang, 'Etwa: ein Plakat', 'Beschreiben …'].find(x => c.measureText(x).width * 1.1 + 8 <= t.clientWidth - parseFloat(g.paddingLeft) - parseFloat(g.paddingRight)) || 'Beschreiben …';   // Tor 2: nie zweizeilig (Rand für Sperrung und Rundung)
   }
   ['startFrei', 'startDirekt'].forEach(id => { const t = document.getElementById(id); if (!t) return; kurzPlatz(t); if (window.ResizeObserver) new ResizeObserver(() => kurzPlatz(t)).observe(t); if (document.fonts) document.fonts.ready.then(() => kurzPlatz(t)); });
+  /* Schnelle Prüfung 3.11.2026: auch das Suchfeld und das Auftragsfeld der Arten kürzen ihren Platzhalter, wenn das Fenster schmaler wird (nicht nur beim Öffnen) */
+  function suchPlatz() {
+    const t = document.getElementById('startSuche'); if (!t || !t.clientWidth) return;
+    const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')); c.font = `${g.fontWeight} ${g.fontSize} ${g.fontFamily}`;
+    const frei = t.clientWidth - parseFloat(g.paddingLeft) - parseFloat(g.paddingRight), passt = x => c.measureText(x).width * 1.1 + 8 <= frei;
+    if (!passt(t.placeholder)) { const k = t.placeholder.replace(/:.*$/, ' …'); t.placeholder = passt(k) ? k : 'Suchen …'; }
+  }
+  addEventListener('resize', () => { clearTimeout(suchPlatz.r); suchPlatz.r = setTimeout(() => { suchPlatz(); const ta = document.getElementById('startAuftrag'); if (ta) kurzPlatz(ta); }, 80); });
   /* Schnell anlegen: Arten mit echten Proportionen */
   function zeichneSchnell() {
     $('#startSchnell').innerHTML = ARTEN.filter(a => !a.leer).slice(0, 8).map((a, i) => { const f = DS.FORMATE[a.format], k = 46 / Math.max(f.b, f.h);
@@ -672,7 +680,7 @@
     /* Fundliste 15: eine Zahl je Sache, überall dieselbe (Leiste, dieser Satz, Editor «Alle Fotos»): Fotos = vom Haus + weitere der Website; Motive vom See eigens */
     const fz = fotoZahlen(B);
     $('#fotoZahl').textContent = fz.fotos;
-    $('#fotoSatz').textContent = `${fz.fotos} Fotos: ${fz.haus} vom Haus${fz.weitere ? ` und ${fz.weitere} weitere der Website` : ''}. Hafen, Terrasse und See stehen auch unter «Motive vom See». Ein Foto wählen, das Studio baut das Medium darum herum.`;
+    $('#fotoSatz').textContent = `${fz.weitere ? `${fz.fotos} Fotos: ${fz.haus} vom Haus und ${fz.weitere} weitere der Website` : `${fz.fotos} Fotos des Hauses`}. Hafen, Terrasse und See stehen auch unter «Motive vom See». Ein Foto wählen, das Studio baut das Medium darum herum.`;
     const reihe = (art, titel, werte) => `<div class="fo-reihe"><span class="fo-reihe__t">${titel}</span>${[['alle', 'Alle'], ...werte].map(([k, t]) => `<button data-f${art}="${k}" class="${fotoF[art] === k ? 'an' : ''}">${esc(t)}</button>`).join('')}</div>`;
     $('#fotoGruppen').innerHTML = `<div class="fo-reihe">${L ? '<span class="fo-reihe__t">Bereich</span>' : ''}${gr.map(g => `<button data-fgruppe="${esc(g)}" class="${g === fotoGruppe ? 'an' : ''}">${esc(g)}</button>`).join('')}</div>`
       + (L ? reihe('s', 'Saison', Object.entries(T.s)) + reihe('f', 'Format', Object.entries(T.f).filter(([k]) => B.some(b => b.format === k))) + reihe('h', 'Herkunft', Object.entries(T.h)) : '');
@@ -693,7 +701,7 @@
     const kurzName = n => String(n || '');
     const livreFarben = L ? `<div class="mb__p mb__p--farben"><h3>Farben</h3><div class="mb__farben">${farbenEinmal.map(c => `<span title="${esc(c.r || '')}"><i style="background:${c.h}"></i><b>${esc(kurzName(c.n))}</b><small>${esc(c.h)}</small></span>`).join('')}</div></div>` : '';
     const livreDateien = L ? `<div class="mb__p mb__p--dateien"><h3>Logo, Zeichen, Wortmarke, Tapete</h3><div class="mb__dateien">${L.dateien.filter(d => d.var && d.var.length && d.var[0].dateien.some(x => /\.(svg|png|webp|jpe?g)$/i.test(x))).map(d => { const v = d.var[0], datei = v.dateien.find(x => x.endsWith('.svg')) || v.dateien[0]; return `<a class="mb__datei ${v.grund === 'dunkel' ? 'mb__datei--d' : ''}" href="${DS.livreUrl('dateien/')}${encodeURIComponent(v.dateien[v.dateien.length - 1])}" download><span${d.k === 'tapete' ? ` style="background-image:url('${DS.livreUrl('dateien/')}${encodeURIComponent(datei)}')"` : ''}>${d.k === 'tapete' ? '' : `<img src="${DS.livreUrl('dateien/')}${encodeURIComponent(datei)}" alt="" loading="lazy">`}</span><b>${esc({ logo: 'Logo', quer: 'Logo quer', zeichen: 'Zeichen', zeiger: 'Wappen', name: 'Name', website: 'Original', ehre: 'Auszeichnungen', wortmarke: 'Wortmarke', tapete: 'Tapete', zeile: 'Zeile' }[d.k] || d.k)}</b><small>${d.var.length} ${d.var.length === 1 ? 'Fassung' : 'Fassungen'}</small></a>`; }).join('')}</div></div>` : '';
-    $('#msMarke').innerHTML = `<div class="ms-titel"><h1>Farben &amp; Schriften</h1><span class="ms-leise">${L ? 'Aus dem Markenbuch des Hauses. ' : ''}Jedes Medium entsteht aus diesen Farben, Schriften, Zeichen und Fotos. Niemand muss sie kennen, das Studio hält sich daran.</span></div>
+    $('#msMarke').innerHTML = `<div class="ms-titel"><h1>Farben &amp;&nbsp;Schriften</h1><span class="ms-leise">${L ? 'Aus dem Markenbuch des Hauses. ' : ''}Jedes Medium entsteht aus diesen Farben, Schriften, Zeichen und Fotos. Niemand muss sie kennen, das Studio hält sich daran.</span></div>
       <a class="mb-livre" href="${LS}" target="_blank" rel="noopener"><span class="mb-livre__z">${DS.zeichenSvg(M, 'currentColor')}</span><span><b>Das Markenbuch öffnen</b><small>Das Markenbuch: alle ${L ? L.fotos.length : (M.bilder || []).length} Fotos in jeder Grösse, Logos, Farben, Tapete und die Markenprüfung</small></span><i>${PFEIL_SVG}</i></a>
       <div class="mb">
         <div class="mb__p mb__p--zeichen"><span class="mb__z">${DS.zeichenSvg(M, 'currentColor')}</span><b>${esc(M.voll || M.name)}</b><small>${esc(M.zeile || '')}</small></div>
@@ -755,7 +763,7 @@
     if (a === 'marke') zeichneMarke();
     if ((a === 'abend' || a === 'motive') && window.DSPlakat) DSPlakat.zeige(a);
     if (a === 'freigegeben') zeichneFreigegeben();
-    $('#startSuche').placeholder = innerWidth < 700 ? 'Suchen' : innerWidth < 1100 ? (a === 'neu' ? 'Arten suchen …' : a === 'fotos' || a === 'livre' ? 'Fotos suchen …' : 'Medien suchen …') : a === 'neu' ? 'Arten suchen: Plakat, Menükarte, Story …' : a === 'fotos' || a === 'livre' ? 'Fotos suchen: Hafen, Terrasse, Teller …' : `In Ihren ${zahl} Medien suchen …`;
+    $('#startSuche').placeholder = innerWidth < 700 ? 'Suchen' : innerWidth < 1100 ? (a === 'neu' ? 'Arten suchen …' : a === 'fotos' || a === 'livre' ? 'Fotos suchen …' : 'Medien suchen …') : a === 'neu' ? 'Arten suchen: Plakat, Menükarte, Story …' : a === 'fotos' || a === 'livre' ? 'Fotos suchen: Hafen, Terrasse, Teller …' : `In Ihren ${zahl} Medien suchen …`; requestAnimationFrame(suchPlatz);
     filtern();
   }
   async function bibliothekAktion(akt, id, karte) {
@@ -832,7 +840,7 @@
     zeichneVorlagen();
     $('#start .ms-haupt').scrollTo({ top: 0 });
     const sf = w.querySelector('#startFormat'); if (sf) sf.addEventListener('change', e => { fk = e.target.value; zeichneVorlagen(); });
-    const ta = w.querySelector('#startAuftrag');
+    const ta = w.querySelector('#startAuftrag'); if (ta) requestAnimationFrame(() => kurzPlatz(ta));
     if (ta) ta.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); entwirf(); } });
   }
 
