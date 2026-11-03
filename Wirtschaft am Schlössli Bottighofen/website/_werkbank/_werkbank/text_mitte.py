@@ -27,7 +27,7 @@ def anwenden(root):
     n = 0
     for f in glob.glob(os.path.join(root, '**', '*.html'), recursive=True):
         rel = os.path.relpath(f, root)
-        if rel.startswith(('_werkbank', '_sicherung', 'node_modules')) or '.vor-' in rel or '</body>' not in open(f, encoding='utf-8', errors='ignore').read():
+        if rel.startswith(('_werkbank', '_sicherung', 'node_modules', 'assets')) or '.vor-' in rel or not os.path.realpath(f).startswith(os.path.realpath(root) + os.sep) or '</body>' not in open(f, encoding='utf-8', errors='ignore').read():
             continue
         s = open(f, encoding='utf-8').read()
         s = re.sub(r'<style id="text-mitte">.*?</style><script id="text-mitte-js">.*?</script>', '', s, flags=re.S)
