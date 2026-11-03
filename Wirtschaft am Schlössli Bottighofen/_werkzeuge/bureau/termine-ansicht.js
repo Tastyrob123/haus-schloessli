@@ -310,13 +310,21 @@
   window.WS_EIGEN.termine = {
     name: 'Termine', gruppe: 'Das Haus', aufgabe: ['Ferien eintragen', 'Ferien des Hauses eintragen, verschieben oder von der Seite nehmen.'],
     bereit: function () { return ruf('GET', '').then(function (a) { uebernehmen(a, false); }); },
-    zeichne: async function (ort, h) { H = h; if (h.opt && h.opt.neuLaden) await neuLaden(true); zeichne(ort, h); },
+    zeichne: async function (ort, h) {
+      H = h;
+      try { if (!L) await neuLaden(false); else if (h.opt && h.opt.neuLaden) await neuLaden(true); }
+      catch (e) {   /* Server antwortet nicht (Grenze je Minute, Netz weg): eine Meldung statt eines Skriptfehlers, die Ansicht lädt beim nächsten Öffnen neu */
+        (ort || document.getElementById('ws-mitte')).append(h.titel('Ferien und Anlässe', 'Termine', 'pflegen.', 'Die Ferien lassen sich gerade nicht laden. Bitte die Seite in einer Minute neu laden; nichts ist verloren.', []));
+        h.fehler(e); return;
+      }
+      zeichne(ort, h);
+    },
     offen: offen,
     wartet: function () { return L && L.wartet ? unterschiede(L.stand, L.entwurf).length : 0; },
-    speichern: function () { if (!H) return Promise.resolve(false); return speichern(); },
+    speichern: function () { if (!H || !L) return Promise.resolve(false); return speichern(); },
     zeilen: function () { return L && L.wartet ? unterschiede(L.stand, L.entwurf).map(zeile) : []; },
     veroeffentlichen: async function (notiz) {
-      var n = this.wartet();
+      var n = this.wartet(); if (!n) return 0;
       uebernehmen(await ruf('POST', 'veroeffentlichen', { erwartet: L.kennung, notiz: notiz }), true);
       if (istHier()) zeichne(document.getElementById('ws-mitte'), H);
       return n;
@@ -372,7 +380,7 @@
   /* Lange einzeilige Felder (Google-Titel, Instagram-Adresse): ein Eingabefeld zeigt 60 Zeichen nie ganz («gekürzt», am Handy schon gar nicht). Daneben steht
      ein mitwachsendes Feld, das jede Eingabe an das Feld des Stamms weitergibt (Wert und input-Ereignis); das Feld des Stamms bleibt der einzige Speicherweg. */
   function langFelder() {
-    document.querySelectorAll('.ws-gt input[id^="ws-gt-t-"]:not([data-lang]), #ws-ang-instagram:not([data-lang])').forEach(function (i) {
+    document.querySelectorAll('.ws-gt input[id^="ws-gt-t-"]:not([data-lang]), #ws-ang-instagram:not([data-lang]), #ws-alt:not([data-lang])').forEach(function (i) {
       i.setAttribute('data-lang', '');
       var c = getComputedStyle(i), t = document.createElement('textarea');
       t.className = 'ws-langfeld ' + i.className; t.rows = 1; t.value = i.value; t.spellcheck = false;
@@ -392,6 +400,18 @@
     });
   }
   var plan = 0;
-  function alles() { plan = 0; fest(); ganz(); ohneX(); titelFest(); langFelder(); }
+  /* K7: Bildtitel im Fenster «Foto tauschen» («… im ehemaligen Hafenmeistergebäude») ohne einzelnes Wort in der letzten Zeile: die letzten zwei Wörter
+     bleiben zusammen, wenn sie gemeinsam in die Zeile passen (sonst bleibt der Umbruch, wie er ist) */
+  function bildtitelFest() {
+    document.querySelectorAll('.ws-fwahl__t:not([data-fest2])').forEach(function (t) {
+      if (t.children.length || !t.isConnected || !t.clientWidth) return;
+      t.setAttribute('data-fest2', '');
+      var s = t.textContent, i = s.trimEnd().lastIndexOf(' ');
+      if (i < 0 || s.trim().split(/\s+/).length < 3) return;
+      t.textContent = s.slice(0, i) + ' ' + s.slice(i + 1);
+      if (t.scrollWidth > t.clientWidth + 1) t.textContent = s;
+    });
+  }
+  function alles() { plan = 0; fest(); ganz(); ohneX(); titelFest(); langFelder(); bildtitelFest(); }
   if (window.MutationObserver) new MutationObserver(function () { if (!plan) plan = requestAnimationFrame(alles); }).observe(document.documentElement, { childList: true, subtree: true, characterData: true });
 })();

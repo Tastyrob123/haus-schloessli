@@ -28,3 +28,4 @@ body.an{margin:0;background:var(--wo-papier);color:var(--wo-tinte);font:16px/1.6
 /* Abnahme-Tor 2, 30.10.2026 (S1): «Zurück zum Werkzeug» einzeilig und mittig */
 .an-zurueck{white-space:nowrap;text-align:center;display:inline-flex;align-items:center;justify-content:center}
 @media (max-width:420px){.an-zurueck{letter-spacing:.1em;padding:10px 10px}}
+@media (max-width:420px){.an-text h2{font-size:20px}}
