@@ -130,3 +130,6 @@
 .stueck--vorlage .stueck__nimm{display:none;position:absolute;left:50%;bottom:0;margin:0;transform:translate(-50%,4px)}
 .stueck--vorlage:hover .stueck__nimm,.stueck--vorlage:focus-visible .stueck__nimm{display:inline-block;visibility:visible;animation:nimmAuf .45s var(--e1) both}
 @keyframes nimmAuf{from{opacity:0;transform:translate(-50%,4px)}to{opacity:1;transform:translate(-50%,0)}}
+/* Leiste: beim Zeigen nur der Grund, nichts rückt aus der gemeinsamen Kante (Kriterium 6) */
+@media (hover:hover){.start.ms .ms-nav button:hover:not(.an),.start.ms .ms-fuss button:hover{transform:none}}
+.ms-nav button:hover svg,.ms-fuss button:hover svg{transform:none}
