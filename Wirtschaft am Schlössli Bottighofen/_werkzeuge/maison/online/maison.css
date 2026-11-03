@@ -398,8 +398,15 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 .m-f5__zeile .m-f5__heute>span:first-child{margin-right:12px;font:400 10.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-h)}
 @media (max-width:800px){.m-f5__zeile>.hz-z{display:block;flex-basis:100%;margin-top:6px}.m-f5__zeile>.rw-pkt{display:none}}
 /* Eck-Knöpfe der Leiste (46 px): Schrift optisch mittig (gemessen, Regel text-mitte) */
-.m-oben__ecke.knopf{padding-top:2.5px}
+/* (ersetzt durch text-box an .knopf__t, siehe unten) */
 /* Fensterleiste der Bildschirme am Handy: «Werkzeug · Bereich» passt ganz hinein (Tor 390: Reservationsbuch · Chat ausprobieren) */
 @media (max-width:700px){.m-schirm__leiste{padding:0 10px}.m-schirm__leiste span{font-size:8.5px;letter-spacing:.04em}}
 @media (max-width:800px){.m-f5 .rw-kopf__bsp{display:block}.m-f5 .rw-kopf__bsp .rw-pkt{display:none}}
 .m-saal__satz{text-wrap:balance}
+/* Kriterium 35 (Cloud-Prüfung WebKit 3.11.2026: Eck-Knöpfe 0,8 px zu tief, Chromium sauber): die Beschriftung steht in .knopf__t und wird mit text-box
+   auf Versalhöhe und Grundlinie zugeschnitten; der Knopf zentriert dann genau die Buchstaben, in WebKit und Chromium gleich. Keine feste Verschiebung. */
+.knopf>.knopf__t{text-box:trim-both cap alphabetic}
+@supports (text-box:trim-both cap alphabetic){.knopf--klein,.m-oben__ecke.knopf{padding-top:0}}
+/* Nach dem Zuschneiden misst die Regel text-mitte die Versalhöhe am «H» der DM Mono: es steht 0,45 px über der Versalhöhe aus den Schriftdaten, die text-box nutzt.
+   Das liegt an der Schrift, nicht am Browser; beide Kerne schneiden gleich zu, darum gilt der Ausgleich für beide (nur mit text-box). */
+@supports (text-box:trim-both cap alphabetic){.knopf>.knopf__t{position:relative;top:.45px}}

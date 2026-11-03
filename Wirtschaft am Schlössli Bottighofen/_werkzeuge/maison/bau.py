@@ -359,7 +359,7 @@ def knopf(t, href, cls='', neu=False):
     if not href:
         return f'<span class="m-hinweis">{e(t.replace("öffnen", "folgt"))}, sobald es vorliegt.</span>'
     z = ' target="_blank" rel="noopener"' if neu else ''
-    return f'<a class="knopf {cls}" href="{e(href)}"{z}>{e(t)}<i>{PF}</i></a>'
+    return f'<a class="knopf {cls}" href="{e(href)}"{z}><span class="knopf__t">{e(t)}</span><i>{PF}</i></a>'
 
 
 def saal_kopf(k, nr):
@@ -556,15 +556,15 @@ def seite(online, v):
 <script src="fehler.js?v={v['fehler.js']}"></script>
 </head>
 <body class="ma">
-<div class="m-tuer" id="tuer" role="alert" hidden><p class="m-tuer__t">{e(ZENTRALE)} startet nicht.</p><p id="tuer-t">&nbsp;</p>{pruef}<a class="knopf knopf--klein" href="">Neu laden<i>{PF}</i></a></div>
+<div class="m-tuer" id="tuer" role="alert" hidden><p class="m-tuer__t">{e(ZENTRALE)} startet nicht.</p><p id="tuer-t">&nbsp;</p>{pruef}<a class="knopf knopf--klein" href=""><span class="knopf__t">Neu laden</span><i>{PF}</i></a></div>
 
 <header class="m-oben">
-  <a class="knopf knopf--klein m-oben__ecke m-oben__ecke--l" href="#fuss">Anleitungen<i>{PF}</i></a>
+  <a class="knopf knopf--klein m-oben__ecke m-oben__ecke--l" href="#fuss"><span class="knopf__t">Anleitungen</span><i>{PF}</i></a>
   <nav class="m-insel" aria-label="Werkzeuge">
     <a class="m-ecke" href="#oben"><span class="m-ecke__ring">{zeichen("m-ecke__z")}</span><span class="m-ecke__t"><b>{e(ZENTRALE)}</b><small>Alle Werkzeuge · {e(NAME)}</small></span></a>
     <span class="m-insel__wege">{insel}</span>
   </nav>
-  <a class="knopf knopf--klein m-oben__ecke" href="{web}" target="_blank" rel="noopener">Website ansehen<i>{PF}</i></a>
+  <a class="knopf knopf--klein m-oben__ecke" href="{web}" target="_blank" rel="noopener"><span class="knopf__t">Website ansehen</span><i>{PF}</i></a>
 </header>
 
 <main>
