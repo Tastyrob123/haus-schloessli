@@ -32,6 +32,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 
 - 20:20 UTC: **Container-Neustart.** Dateien erhalten (auch uncommittete Stände), Prozesse weg. 20:25: Server neu gestartet (`bash cloud/server.sh`), Warter neu gesetzt, zwei neue Agenten für Hausdruckerei (ab Commit 54c8970 + Platte) und Werkbank-Kern (ab ba6ff61 + Platte).
 
+- 20:50 UTC: Sammelprüfung WebKit (Lauf 42ab779, 204 Zustände, 84 Funde: Knopfschrift, Einzelwörter, lazy Bilder, Kopf-Marke am Handy) → alle sechs Werkzeug-Agenten haben nachgebessert (68ce5c3, 228a7e7, 2e73590, 28bed90, f21dd52, b25a5f3). Kriterium 34 war auf dem Runner überall rot → `bewegung-tor.js` misst jetzt die Grundlinie des Rechners (0467813). Nachprüfung aller sechs läuft.
+
 ## Was offen ist (Reihenfolge)
 1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
 2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.
