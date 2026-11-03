@@ -614,15 +614,15 @@ function buchung() {
   const auf = z => z === 1 ? 'Aufruf' : 'Aufrufen';
   const mal_ = z => z === 1 ? 'einmal' : n(z) + ' Mal';
   aus += `<div class="werte">
-    ${k('start', 'Von der Startseite zur Reservation', x => n(x.zahl) + ' von ' + n(x.von) + ' ' + auf(x.von) + ' der Startseite in Besuchen, die danach zur Reservation führten', 'Die Startseite wurde noch nicht geöffnet.')}
-    ${k('karte', 'Von Karte und Weinkarte zur Reservation', x => n(x.zahl) + ' von ' + n(x.von) + ' ' + auf(x.von) + ' der Karte und der Weinkarte in Besuchen, die danach zur Reservation führten', 'Karte und Weinkarte wurden noch nicht geöffnet.')}
-    ${k('booking', '«Direkt buchen» (gastronovi)', x => n(x.zahl) + ' von ' + n(x.von) + ' Schritten zur Reservation, ' + mal(x.anfrage, 'eine Tisch-Anfrage', 'Tisch-Anfragen') + ' mit Wünschen ans Haus', 'Noch niemand ging zur Reservation.')}
-    ${k('abbruch', 'Fenster ohne nächsten Schritt', x => n(x.zahl) + ' von ' + n(x.von) + (x.von === 1 ? ' geöffneten Fenster' : ' geöffneten Fenstern') + ' ohne Anfrage und ohne «Direkt buchen»', 'Das Fenster «Reservation» wurde noch nicht geöffnet.')}
-    ${k('tisch', 'Bankettanfrage geöffnet', x => mal_(x.zahl) + ' geöffnet bei ' + n(x.von) + ' ' + auf(x.von) + ', davon ' + n(x.essen) + ' auf «Banketts & Gruppen»', 'Noch kein Aufruf.')}
-    ${k('anfrage', 'Anfrage abgeschickt', x => mal(x.zahl, 'eine Anfrage', 'Anfragen') + ' bei ' + n(x.von) + ' ' + auf(x.von) + ', davon ' + n(x.essen) + ' Bankett von «Banketts & Gruppen», ' + n(x.feste) + ' Gutschein', 'Noch kein Aufruf.')}
-    ${k('kontakt', 'Anruf oder Mail', x => mal_(x.anruf) + ' die Nummer, ' + mal_(x.mail) + ' die Mail-Adresse, bei ' + n(x.von) + ' ' + auf(x.von), 'Noch kein Aufruf.')}
-    ${k('chat', 'Weiter zum Schäfli', x => mal_(x.zahl) + ' angeklickt, bei ' + n(x.von) + ' ' + auf(x.von), 'Noch kein Aufruf.')}
-    ${k('route', 'Route zum Hafen', x => mal_(x.zahl) + ' geöffnet, bei ' + n(x.von) + ' ' + auf(x.von) + ', davon ' + n(x.weg) + ' von «Kontakt & Öffnungszeiten»', 'Noch kein Aufruf.')}
+    ${k('start', 'Von der Startseite', x => n(x.zahl) + ' von ' + n(x.von) + ' ' + auf(x.von) + ' der Startseite führten zur Reservation', 'Die Startseite wurde noch nicht geöffnet.')}
+    ${k('karte', 'Von Karte und Weinkarte', x => n(x.zahl) + ' von ' + n(x.von) + ' ' + auf(x.von) + ' der beiden Karten führten zur Reservation', 'Karte und Weinkarte wurden noch nicht geöffnet.')}
+    ${k('booking', '«Direkt buchen»', x => n(x.zahl) + ' von ' + n(x.von) + ' gingen zu gastronovi, ' + n(x.anfrage) + ' fragten einen Tisch an', 'Noch niemand ging zur Reservation.')}
+    ${k('abbruch', 'Fenster ohne nächsten Schritt', x => n(x.zahl) + ' von ' + n(x.von) + ' Mal geöffnet, ohne Anfrage und ohne «Direkt buchen»', 'Das Fenster «Reservation» wurde noch nicht geöffnet.')}
+    ${k('tisch', 'Bankettanfrage geöffnet', x => mal_(x.zahl) + ' geöffnet, davon ' + mal_(x.essen) + ' auf «Banketts & Gruppen»', 'Noch kein Aufruf.')}
+    ${k('anfrage', 'Anfrage abgeschickt', x => n(x.zahl) + ' abgeschickt: ' + n(x.essen) + ' für ein Bankett, ' + n(x.feste) + ' für einen Gutschein', 'Noch kein Aufruf.')}
+    ${k('kontakt', 'Anruf oder Mail', x => mal_(x.anruf) + ' die Nummer gewählt, ' + mal_(x.mail) + ' die Mail-Adresse angeklickt', 'Noch kein Aufruf.')}
+    ${k('chat', 'Weiter zum Schäfli', x => mal_(x.zahl) + ' geklickt, weiter zur Taverne zum Schäfli in Wigoltingen', 'Noch kein Aufruf.')}
+    ${k('route', 'Route zum Hafen', x => mal_(x.zahl) + ' geöffnet, davon ' + mal_(x.weg) + ' auf «Kontakt & Öffnungszeiten»', 'Noch kein Aufruf.')}
   </div>
   <div class="zwei zwei--fuell">
     <section class="blatt"><header><h3>Welche Seiten vor der Reservation lagen</h3></header>
