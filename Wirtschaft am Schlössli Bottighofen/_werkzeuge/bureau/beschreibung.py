@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Beschreibung von Culinarium für den Schreibtisch des Stamms (Le Bureau · Website pflegen), 28.10.2026.
+"""Beschreibung der Wirtschaft am Schlössli für den Schreibtisch des Stamms (Das Schaufenster · Website pflegen), Nachtbau 3.11.2026
+(Aufbau aus dem Culinarium vom 28.10.2026, Inhalt aus dem Stand des Schlössli vom 19.–21.10.2026).
    python3 _werkzeuge/bureau/beschreibung.py          schreibt beide Dateien neu und legt die Probe-Kopie an, falls sie fehlt
    python3 _werkzeuge/bureau/beschreibung.py --pruef  zeigt nur, was geschrieben würde
 
-Schreibt (Muster Schäfli 21.10.2026, Master Werkzeug-Bau 4.2 L17/L18):
-  ~/Desktop/Website-Projekte/_Werkzeuge/haeuser/culinarium/haus.json                 Kennung, Name, Welt, Quelle
-  ~/Desktop/Website-Projekte/_Werkzeuge/werkzeuge/website/haeuser/culinarium.json    Seiten, Bereiche, Angaben, Abende
-Nichts wird abgetippt: Seiten aus dem Menü der gebauten Website, Telefon, Adresse und Links aus dem Fuss von index.html,
-die Welt aus _kette/05-markenbauer/marke.json. Die Website selbst (website/) wird nur gelesen."""
+Schreibt (Master Werkzeug-Bau 4.2 L17/L18):
+  _Werkzeuge/haeuser/schloessli/haus.json                 Kennung, Name, Welt, Quelle
+  _Werkzeuge/werkzeuge/website/haeuser/schloessli.json    Seiten, Bereiche, Angaben
+Nichts wird abgetippt: Seiten aus website/*.html (jede gebaute Seite ausser 404), Telefon, Adresse und Instagram aus
+website/inhalt/haus.json und nur, wenn sie auf der gebauten Startseite stehen; die Welt aus _kette/05-markenbauer/marke.json;
+die Namen der anderen Werkzeuge aus _werkzeuge/oberflaeche/kleid/schloessli.js (eine Stelle). Die Website selbst wird nur gelesen."""
 import json
 import re
 import subprocess
@@ -17,93 +19,100 @@ from pathlib import Path
 HIER = Path(__file__).resolve().parent
 PROJEKT = HIER.parent.parent
 WEB = PROJEKT / 'website'
-STAMM = Path.home() / 'Desktop/Website-Projekte/_Werkzeuge'
-HAUS = 'culinarium'
-FOTO_SEITE = {'impressum.html': 'kanister', 'datenschutz.html': 'schildnah'}   # Seiten ohne eigenes Foto: Bild für Google-Texte und Listen (Fotos der Website)
-# Zeiten und Preise: Muster des Stamms (api.py › ZAHL) mit «EUR», denn die Website schreibt Preise als «89,00 EUR» (Stamm kennt CHF, Fr., €)
-ZAHL_EUR = (r'(CHF|Fr\.|€|\bEUR\b|\bUhr\b|\d+\s?(Minuten|Min\.|m²|m2|Personen|Pers\.|Nächte?|Nacht|Betten|Plätze|Gänge|Drinks|km|m ü\. M\.)'
-            r'|\d{1,2}[.:]\d{2}\s?(?:[–-]|bis)\s?\d{1,2}[.:]\d{2}|\d{1,2}[.:]\d{2}\s?Uhr)')
+STAMM = PROJEKT.parent / '_Werkzeuge'
+HAUS = 'schloessli'
+REIHE = ['index.html', 'abend.html', 'karte.html', 'weinkarte.html', 'feiern.html', 'anlaesse.html', 'team.html', 'kontakt.html', 'gutschein.html',
+         'impressum.html', 'datenschutz.html', 'agb.html']
+FOTO_SEITE = {'impressum.html': 'bootshafen', 'datenschutz.html': 'morgen', 'agb.html': 'regal'}   # Seiten ohne eigenes Foto: Bild für Google-Texte und Listen (Hausfotos der Website)
 
 
-def lies(name):
-    return (WEB / name).read_text(encoding='utf-8')
+def namen():
+    roh = (PROJEKT / '_werkzeuge' / 'oberflaeche' / 'kleid' / 'schloessli.js').read_text(encoding='utf-8')
+    m = re.search(r'namen:\s*\{([^}]*)\}', roh)
+    return dict(re.findall(r"(\w+):\s*'([^']*)'", m.group(1))) if m else {}
+
+
+def im_satz(n):
+    return re.sub(r'^(Der|Die|Das) ', lambda m: m.group(1).lower() + ' ', n or '')
 
 
 def seiten():
-    """Jede Seite, die das Menü der Website nennt, dazu Impressum und Datenschutz aus dem Fuss. Wahlseiten und termine-pflege.html
-    (Vorschau-Werkzeug der Website) gehören nicht dazu."""
-    start = lies('index.html')
-    menue = re.search(r'<div class="menue" id="menue".*?</nav>', start, re.S).group(0)
-    namen = ['index.html'] + [d for d in re.findall(r'href="([a-z-]+\.html)"', menue) if d != 'index.html']
-    namen += [d for d in re.findall(r'href="((?:impressum|datenschutz)\.html)"', start) if d not in namen]
-    for d in namen:
-        if not (WEB / d).is_file():
-            sys.exit(f'{d} steht im Menü, liegt aber nicht in website/.')
-    return list(dict.fromkeys(namen))
+    da = {p.name for p in WEB.glob('*.html')} - {'404.html'}
+    fremd = da - set(REIHE)
+    if fremd:
+        sys.exit('Neue Seite ohne Platz in der Beschreibung: ' + ', '.join(sorted(fremd)))
+    return [d for d in REIHE if d in da]
 
 
 def angaben():
-    h = lies('index.html')
-    tel = re.search(r'href="tel:(\+\d+)">([^<]+)</a>', h)
-    ort = re.search(r'<p class="menue-ort">Walk on the Wild Side · ([^·<]+?) · ([^<]+?)</p>', h)
-    ig = re.findall(r'href="(https://www\.instagram\.com/[^"/]+/)"', h)
-    if not (tel and ort and ig):
-        sys.exit('Telefon, Adresse oder Instagram stehen nicht mehr im Fuss/Menü von index.html: Beschreibung nicht geschrieben.')
-    q = 'website/index.html (gebaut aus website/bau.py › fuss(), kopf())'
-    aus = [{'key': 'telefon', 'label': 'Telefon der Bar', 'art': 'telefon', 'wert': tel.group(2).strip(), 'link': 'tel:' + tel.group(1), 'quelle': q},
-           {'key': 'strasse', 'label': 'Strasse', 'art': 'text', 'wert': ort.group(1).strip(), 'quelle': q},
-           {'key': 'ort', 'label': 'PLZ und Ort', 'art': 'text', 'wert': ort.group(2).strip(), 'quelle': q}]
-    namen = {'culinarium_hannover': 'Instagram Culinarium', 'walkonthewildside_hannover': 'Instagram der Bar', 'dirtychicken.hannover': 'Instagram Dirty Chicken'}
-    reihe = list(namen)
-    for u in sorted(dict.fromkeys(ig), key=lambda u: reihe.index(u.rstrip('/').rsplit('/', 1)[1]) if u.rstrip('/').rsplit('/', 1)[1] in reihe else 9):
-        k = u.rstrip('/').rsplit('/', 1)[1]
-        aus.append({'key': 'ig-' + re.sub(r'[^a-z]', '', k)[:20], 'label': namen.get(k, 'Instagram ' + k), 'art': 'link', 'wert': u, 'quelle': q})
-    return aus
+    h = json.loads((WEB / 'inhalt' / 'haus.json').read_text(encoding='utf-8'))
+    start = (WEB / 'index.html').read_text(encoding='utf-8')
+    q = 'website/inhalt/haus.json (gebaut in alle Seiten von website/bau.py)'
+    aus = [{'key': 'telefon', 'label': 'Telefon', 'art': 'telefon', 'wert': h['telefon'], 'link': 'tel:' + h['telefon_href'], 'quelle': q},
+           {'key': 'strasse', 'label': 'Strasse', 'art': 'text', 'wert': h['strasse'], 'quelle': q},
+           {'key': 'ort', 'label': 'PLZ und Ort', 'art': 'text', 'wert': h['ort'], 'quelle': q},
+           {'key': 'mail', 'label': 'E-Mail', 'art': 'text', 'wert': h['mail'], 'quelle': q},
+           {'key': 'instagram', 'label': 'Instagram', 'art': 'link', 'wert': h['instagram'], 'quelle': q}]
+    return [a for a in aus if a['wert'] in start]
 
 
 def beschreibung():
     s = seiten()
-    rechts = [d for d in s if d in ('impressum.html', 'datenschutz.html')]
+    n = namen()
+    karten = im_satz(n.get('karten', ''))
     website = [
-        ('start', 'Startseite', 'Der erste Eindruck: was Culinarium ist, das Haus in Linden, das erste Glas, die Gänge, die Plakate und die Leute.', ['index.html'], 'tafelleer'),
-        ('abend', 'Der Abend', 'Wie ein Abend abläuft, was auf den Tisch kommt, wann und wie viel, die nächsten Termine und die Warteliste. Die Termine selbst pflegst du unter «Termine».', ['abend.html'], 'beete'),
-        ('abende', 'Alle Abende', 'Jeder Abend seit 2023 mit Plakat, Datum und Preis, in Vitrinen nach Jahr.', ['abende.html'], 'p_DbYnkdkjrNy'),
-        ('haus', 'Das Haus', 'Das Walk on the Wild Side: die Bar, ihre Geschichte und ihre Zeiten.', ['bar.html'], 'theke'),
-        ('leute', 'Team', 'Die Menschen hinter Culinarium und der Bar, mit ihren Aufgaben.', ['leute.html'], 'team_alle'),
-        ('weg', 'Der Weg', 'Adresse, Anfahrt und wann die Bar offen hat.', ['weg.html'], 'wg_schildnacht'),
-        ('dirty-chicken', 'Dirty Chicken', 'Das Pop-up aus der Familie der Bar: Essen, Nacht, das erste Pop-up.', ['dirty-chicken.html'], 'dc_tisch'),
-        ('recht', 'Rechtliches', 'Impressum und Datenschutz im Wortlaut des Hauses.', rechts, 'barneg'),
+        ('start', 'Startseite', 'Der erste Eindruck am Hafen: Willkommen, Lästermeile, Küche, Keller, Besen, Feiern und der Abend unter der Platane.', ['index.html'], 'start'),
+        ('abend', 'Ihr Abend', 'Der Abend am Tisch: wie er abläuft, was auf den Tisch kommt, und der Weg zur Reservation.', ['abend.html'], 'abend'),
+        ('essen', 'Karte & Wein', f'Texte und Fotos rund um Speisekarte, Lunch, Lästermeile und Weinkarte. Gerichte, Preise und Weine pflegen Sie im {karten[4:] if karten.startswith("das ") else karten}.', ['karte.html', 'weinkarte.html'], 'tortelloni'),
+        ('feiern', 'Feiern', f'Banketts und Gruppen: die zwei Etagen und die Anfrage. Die Bankettmenüs pflegen Sie im {karten[4:] if karten.startswith("das ") else karten}.', ['feiern.html'], 'gaststube'),
+        ('anlaesse', 'Events & Termine', 'Der nächste Anlass und der Rückblick. Die Ferien des Hauses pflegen Sie unter «Termine».', ['anlaesse.html'], 'platanen'),
+        ('team', 'Team', 'Die Menschen in Küche und Service, mit Name, Aufgabe und Foto.', ['team.html'], 'team'),
+        ('kontakt', 'Kontakt & Gutschein', 'Adresse, Öffnungszeiten, Anfahrt, der Weg über das Wasser und der Gutschein.', ['kontakt.html', 'gutschein.html'], 'schild'),
+        ('recht', 'Rechtliches', 'Impressum, Datenschutz und AGB im Wortlaut des Hauses.', [d for d in s if d in ('impressum.html', 'datenschutz.html', 'agb.html')], 'haus'),
     ]
     fehlt = set(s) - {d for w in website for d in w[3]}
     if fehlt:
         sys.exit('Seiten ohne Bereich: ' + ', '.join(sorted(fehlt)))
     return {
-        '_lies_mich': 'Beschreibung des Hauses für das Werkzeug «website» (Le Bureau · Website pflegen). Culinarium Hannover: Food-Pairing-Abende im Walk on the Wild Side, '
-                      'nur Deutsch. Jeder Text, jede Zahl, jedes Foto wird aus den gebauten Seiten gelesen (website/ des Projekts). Läuft im Rahmen des Hauses: '
-                      'http://127.0.0.1:9282/_werkzeuge/bureau/ (Culinarium Hannover/_werkzeuge/bureau/). Geschrieben von _werkzeuge/bureau/beschreibung.py, nie von Hand ändern.',
+        '_lies_mich': 'Beschreibung des Hauses für das Werkzeug «website» (Das Schaufenster · Website pflegen). Wirtschaft am Schlössli, Bottighofen: Restaurant am Hafen, '
+                      'keine Zimmer, nur Deutsch. Jeder Text, jede Zahl, jedes Foto wird aus den gebauten Seiten gelesen (website/ des Projekts). Läuft im Rahmen des Hauses: '
+                      'http://127.0.0.1:9282/_werkzeuge/bureau/ (Wirtschaft am Schlössli Bottighofen/_werkzeuge/bureau/). Geschrieben von _werkzeuge/bureau/beschreibung.py, nie von Hand ändern.',
         'seiten': [dict({'datei': d}, **({'foto': FOTO_SEITE[d]} if d in FOTO_SEITE else {})) for d in s],
         'sprachen': [],
-        'kopie': {'unter': 'website', 'ordner': ['assets']},
-        'gesperrt': [],
-        'auslassen': ['[data-termine]', '.tb-dialog', 'img[src^="assets/ueberleitung/"]', 'img[src^="assets/abend-auftakt/"]', 'img[src*="team_alle_vorn"]'],   # Termine: eigene Ansicht; Einzelbilder der Scroll-Filme und die freigestellten Leute im Team-Kopf (Ebene über dem Foto) sind keine tauschbaren Fotos
+        'kopie': {'unter': 'website', 'ordner': ['assets', 'unterlagen'] if (WEB / 'unterlagen').is_dir() else ['assets']},
+        'gesperrt': [   # Karten, Lunch, Lästermeile, Weine und Bankettmenüs pflegt das Kartenpult (Stand 21.10.2026, Wähler gegen die gebauten Seiten geprüft 3.11.2026)
+            {'wahl': '#karte .ka14, #mittag-start, #feiern .mk-tisch', 'werkzeug': 'karten'},
+            {'wahl': '#laender .ka__wechsel, #laender .karte-fuss, #wein-zum-gang .wzg4__r, #mittag .lum__m, #laestermeile .lmk__set', 'werkzeug': 'karten'},
+            {'wahl': '#berater .keller, #berater .wf-raster, #weine .wl__filter, #weine .wk__gruppe, #weine .karte-fuss, #kopf .wkb__seite', 'werkzeug': 'karten'},
+            {'wahl': '#etagen .bm, #menues .mk-tisch', 'werkzeug': 'karten'}],
+        # Fuss: Karte der Schwester (Taverne zum Schäfli) pflegt das Schlössli nicht; Ferien-Zeile: eigene Ansicht «Termine» (Daten, nicht Text)
+        'auslassen': ['.fz__h.b', '.ab__ferien'],
         'vorschau': {'ohne_skripte': [], 'zusatz_css': '.fenster{overflow:clip}@media (hover:none){[data-ws-e],img[data-ws-b]{cursor:pointer}}'},
         'bereiche': {
             **{k: {'an': False} for k in ('zimmer', 'preisstufen', 'packages', 'saele', 'unterlagen', 'stellen')},
-            'abende': {
-                'name': 'Archiv der Abende',
-                'satz': 'Jeder Abend seit 2023 mit Datum, Preis und Plakat, so wie er auf der Seite «Alle Abende» steht. Was nicht mehr gezeigt werden soll, blendest du aus.',
-                'quellen': [{'seite': 'abende.html', 'jedes': '.vitrinen figure.vit-p', 'felder': [
-                    {'key': 'datum', 'label': 'Datum', 'art': 'text', 'wo': '.vit-datum', 'titel': True},
-                    {'key': 'preis', 'label': 'Preis und Zusatz', 'art': 'zahl', 'wo': '.vit-mono'},
-                    {'key': 'mit', 'label': 'Zeile auf dem Plakat', 'art': 'text', 'wo': '.vit-mit'},
-                    {'key': 'bild', 'label': 'Plakat', 'art': 'bild', 'wo': '.vit-rahmen img', 'kann_fehlen': True}]}]},
+            'anlaesse': {
+                'name': 'Anlässe',
+                'satz': 'Der nächste Anlass am Hafen mit Titel, Datum, Text und Fotos, so wie er auf der Seite «Events & Termine» steht.',
+                'quellen': [{'seite': 'anlaesse.html', 'jedes': '#naechster', 'felder': [
+                    {'key': 'titel', 'label': 'Titel', 'art': 'text', 'wo': '.tz__titel', 'titel': True},
+                    {'key': 'ort', 'label': 'Ort und Datum', 'art': 'text', 'wo': 'p.mono'},
+                    {'key': 'namen', 'label': 'Namen', 'art': 'text', 'wo': '.tz__namen'},
+                    {'key': 'texte', 'label': 'Text', 'art': 'liste', 'wo': 'p.lauf'},
+                    {'key': 'zeit', 'label': 'Zeit', 'art': 'zahl', 'wo': '.tz__zeit'},
+                    {'key': 'bilder', 'label': 'Fotos', 'art': 'bilder', 'wo': '.tz__bild'}]}]},
+            'team': {
+                'name': 'Team',
+                'satz': 'Jeder Mensch auf der Seite «Über uns» mit Name, Aufgabe und Foto.',
+                'quellen': [{'seite': 'team.html', 'jedes': '#menschen .mensch', 'felder': [
+                    {'key': 'name', 'label': 'Name', 'art': 'text', 'wo': 'h3', 'titel': True},
+                    {'key': 'rolle', 'label': 'Aufgabe', 'art': 'text', 'wo': '.schild p'},
+                    {'key': 'bild', 'label': 'Foto', 'art': 'bild', 'wo': 'img', 'kann_fehlen': True}]}]},
         },
-        'zahlen': {'muster': ZAHL_EUR},
-        'kleid': {'foto': 'fassade'},
-        'website': [{'key': k, 'name': n, 'satz': t, 'seiten': sei, 'foto': f} for k, n, t, sei, f in website],
+        'kleid': {'zeichen': 'assets/svg/zeichen.svg', 'zeichen_art': 'maske', 'tapete': 'assets/svg/tapete-a-hell.svg', 'tapete_breite': 168, 'foto': 'start'},
+        'website': [{'key': k, 'name': nm, 'satz': t, 'seiten': sei, 'foto': f} for k, nm, t, sei, f in website],
         'angaben': angaben(),
         'google': {'an': True},
-        'hochladen': {'an': True, 'ordner': 'assets/bild'},
+        'hochladen': {'an': True, 'ordner': 'assets/img'},
         'funktionen': ['leiste_klar', 'team_wer'],
         'anleitung': '/_werkzeuge/bureau/anleitung.html',
     }
@@ -111,12 +120,12 @@ def beschreibung():
 
 def haus():
     try:
-        welt = json.loads((PROJEKT / '_kette/05-markenbauer/marke.json').read_text(encoding='utf-8')).get('welt') or 'grand'
+        welt = json.loads((PROJEKT / '_kette/05-markenbauer/marke.json').read_text(encoding='utf-8')).get('welt') or 'land'
     except (OSError, ValueError):
-        welt = 'grand'
-    return {'kennung': HAUS, 'name': 'Culinarium', 'welt': welt, 'quelle': '~/Desktop/Website-Projekte/Culinarium Hannover',
-            'hinweis': 'Food-Pairing-Abende «Momo x Rudi» im Walk on the Wild Side, Hannover-Linden. Nur Deutsch. Welt aus _kette/05-markenbauer/marke.json. '
-                       'Angelegt 28.10.2026 vom Bau-Chat Le Bureau (culinarium-bureau) mit _werkzeuge/bureau/beschreibung.py. Die Quelle wird nur gelesen, nie beschrieben.'}
+        welt = 'land'
+    return {'kennung': HAUS, 'name': 'Wirtschaft am Schlössli', 'welt': welt, 'quelle': '~/Desktop/Website-Projekte/Wirtschaft am Schlössli Bottighofen',
+            'hinweis': 'Restaurant am Hafen von Bottighofen, keine Zimmer, nur Deutsch. Welt aus _kette/05-markenbauer/marke.json. '
+                       'Geschrieben von _werkzeuge/bureau/beschreibung.py (Nachtbau 3.11.2026). Die Quelle wird nur gelesen, nie beschrieben.'}
 
 
 def schreib(p, d):

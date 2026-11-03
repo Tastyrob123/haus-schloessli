@@ -1,15 +1,18 @@
-"""Termine von Culinarium im Le Bureau (28.10.2026): die nächsten Abende als Daten, nie als Text.
+"""Termine der Wirtschaft am Schlössli im Schaufenster (Nachtbau 3.11.2026, Aufbau aus dem Culinarium vom 28.10.2026): die Ferien des Hauses als Daten, nie als Text.
 
-Die Website zeichnet die Terminplakate auf «Der Abend» aus einer Liste in website/assets/buchen.js (BEISPIEL, gebaut von
-website/buchen.py, Vorschau ohne echte Buchung). Diese Liste ist der Ursprung: sie wird gelesen, nie abgetippt und nie verändert.
-Hier liegen dazu Entwurf, veröffentlichter Stand und Verlauf (Master Werkzeug-Bau 2.2), in einer Datei mit Sicherung der letzten
-guten Fassung (.gut). Ausgeliefert wird der Stand, indem der Server des Bureau buchen.js der Probe-Kopie beim Ausliefern mit
-dem Stand füllt (fuelle()); ohne Änderung bleibt die Datei Byte für Byte, wie die Website sie gebaut hat.
+Die Website trägt die Ferien an zwei Stellen: als Daten in jedem Reservationsfenster (data-zu="2026-11-13/2026-11-15,…": an diesen Tagen lässt der
+Kalender keinen Tisch wählen) und als Zeile «Ferien …» unter den Öffnungszeiten der Startseite (.ab__ferien). Beides baut website/bau.py aus
+website/inhalt/haus.json › ferien_iso und ferien. Diese Angaben sind der Ursprung: sie werden gelesen, nie abgetippt und nie verändert.
+Hier liegen dazu Entwurf, veröffentlichter Stand und Verlauf (Master Werkzeug-Bau 2.2), in einer Datei mit Sicherung der letzten guten Fassung (.gut).
+Ausgeliefert wird der Stand, indem der Server des Schaufensters die Seiten der Probe-Kopie beim Ausliefern mit ihm füllt (fuelle()); ohne Änderung
+bleibt jede Seite Byte für Byte, wie die Website sie gebaut hat. Die Anlässe (haus.json › anlaesse) zeigt die Ansicht zum Nachschlagen; ihre Texte
+und Fotos pflegt der Bereich «Anlässe» des Stamms.
 
 Jede Anfrage, die den Entwurf ersetzt, trägt dessen Fingerabdruck (erwartet); passt er nicht mehr: KONFLIKT (409, L13).
 Meldungen in der Form STICHWORT · Text (Master 2.6), jedes Stichwort steht im Lexikon der Prüfseite (pruefung-haus.js)."""
 import datetime
 import hashlib
+import html
 import json
 import os
 import re
@@ -18,14 +21,16 @@ import time
 from pathlib import Path
 
 HIER = Path(__file__).resolve().parent
-QUELLE = HIER.parent.parent / 'website' / 'assets' / 'buchen.js'
+QUELLE = HIER.parent.parent / 'website' / 'inhalt' / 'haus.json'
 DATEN = Path(os.environ['WERKZEUGE_DATEN']) / 'bureau-termine' if os.environ.get('WERKZEUGE_DATEN') else HIER / '_daten'
 DATEI = DATEN / 'termine.json'
-WER = 'Team Culinarium'
-HOECHSTENS = 40
+WER = 'Team Schlössli'
+HOECHSTENS = 12
+LAENGSTENS = 120   # Tage je Ferienblock
+MONATE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
 _SCHLOSS = threading.Lock()
-MUSTER = re.compile(r'(var BEISPIEL = )(\[.*?\])(;)', re.S)
-KEY = re.compile(r"(var KEY = ')([\w-]+)(';)")
+ZU = re.compile(r'data-zu="[^"]*"')
+ZEILE = re.compile(r'(<p class="ab__ferien[^"]*"[^>]*><b>Ferien</b> )(.*?)(</p>)', re.S)
 
 
 class Fehler(Exception):
@@ -34,68 +39,93 @@ class Fehler(Exception):
         self.status, self.stichwort, self.text = status, stichwort, text
 
 
+def _haus():
+    try:
+        return json.loads(QUELLE.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        raise Fehler(503, 'termine-quelle', 'TERMINE · website/inhalt/haus.json ist nicht lesbar.')
+
+
 def ursprung():
-    """Die Termine, wie die Website sie gebaut hat: die Liste BEISPIEL aus buchen.js, als JSON gelesen (Schlüssel ohne Anführungszeichen)."""
-    try:
-        roh = QUELLE.read_text(encoding='utf-8')
-    except OSError:
-        raise Fehler(503, 'termine-quelle', 'TERMINE · website/assets/buchen.js ist nicht lesbar.')
-    m = MUSTER.search(roh)
-    if not m:
-        raise Fehler(503, 'termine-quelle', 'TERMINE · In buchen.js steht keine Liste «BEISPIEL» mehr. Die Website wurde umgebaut; die Termine lassen sich erst wieder pflegen, wenn die Liste da ist.')
-    js = re.sub(r"([{,]\s*)([a-z]+)\s*:", r'\1"\2":', m.group(2)).replace("'", '"')
-    try:
-        return [pruefe_einen(t, i) for i, t in enumerate(json.loads(js))]
-    except (ValueError, Fehler) as e:
-        raise Fehler(503, 'termine-quelle', f'TERMINE · Die Liste in buchen.js ist nicht lesbar ({e}).')
+    """Die Ferien, wie die Website sie gebaut hat: haus.json › ferien_iso (von, bis), der Anlass in Klammern aus haus.json › ferien."""
+    h = _haus()
+    iso, text = h.get('ferien_iso'), h.get('ferien') or []
+    if not isinstance(iso, list):
+        raise Fehler(503, 'termine-quelle', 'TERMINE · In haus.json stehen keine Ferien («ferien_iso») mehr. Die Website wurde umgebaut; die Ferien lassen sich erst wieder pflegen, wenn die Angabe da ist.')
+    aus = []
+    for i, paar in enumerate(iso):
+        m = re.search(r'\(([^)]*)\)', text[i]) if i < len(text) else None
+        try:
+            aus.append(pruefe_einen({'id': f'f{i + 1}', 'von': paar[0], 'bis': paar[1], 'grund': m.group(1) if m else ''}, i))
+        except (Fehler, IndexError, TypeError) as e:
+            raise Fehler(503, 'termine-quelle', f'TERMINE · Die Ferien in haus.json sind nicht lesbar ({getattr(e, "text", e)}).')
+    return aus
+
+
+def anlaesse():
+    """Die Anlässe des Hauses zum Nachschlagen (Titel, Datum, Zeit, ob bevorstehend), nur gelesen."""
+    return [{'titel': a.get('titel', ''), 'datum': a.get('datum', ''), 'zeit': a.get('zeit', ''), 'bevorstehend': bool(a.get('bevorstehend'))}
+            for a in _haus().get('anlaesse') or []]
 
 
 def fingerabdruck(liste):
     return hashlib.sha1(json.dumps(liste, ensure_ascii=False, sort_keys=True).encode('utf-8')).hexdigest()[:12]
 
 
+def _tag(s, nr, was):
+    try:
+        return datetime.date.fromisoformat(str(s or ''))
+    except ValueError:
+        raise Fehler(400, 'termin-datum', 'DATUM · ' + nr + f'Der Tag «{was}» fehlt oder gibt es nicht.')
+
+
 def pruefe_einen(t, i=0):
-    """Ein Termin: Datum, Beginn, Preis, Plätze, vergebene Plätze. Alles andere wird abgelehnt (keine fremden Felder auf die Website)."""
+    """Ein Ferienblock: erster und letzter Tag, Anlass (frei, kurz). Alles andere wird abgelehnt (keine fremden Felder auf die Website)."""
     if not isinstance(t, dict):
-        raise Fehler(400, 'termin-falsch', 'TERMIN · Ein Eintrag ist kein Termin.')
-    nr = f'Termin {i + 1}: '
+        raise Fehler(400, 'termin-falsch', 'FERIEN · Ein Eintrag ist kein Ferienblock.')
+    nr = f'Ferien {i + 1}: '
     tid = str(t.get('id') or '')
     if not re.fullmatch(r'[a-z0-9-]{1,24}', tid):
-        raise Fehler(400, 'termin-falsch', 'TERMIN · ' + nr + 'Kennung fehlt.')
-    d = str(t.get('datum') or '')
-    try:
-        datetime.date.fromisoformat(d)
-    except ValueError:
-        raise Fehler(400, 'termin-datum', 'DATUM · ' + nr + 'Das Datum fehlt oder gibt es nicht.')
-    z = str(t.get('zeit') or '')
-    if not re.fullmatch(r'([01]\d|2[0-3]):[0-5]\d', z):
-        raise Fehler(400, 'termin-zeit', 'BEGINN · ' + nr + 'Bitte die Uhrzeit als Stunden und Minuten, zum Beispiel 19:00.')
-    try:
-        preis = float(t.get('preis'))
-        plaetze = int(t.get('plaetze'))
-        gebucht = int(t.get('gebucht') or 0)
-    except (TypeError, ValueError):
-        raise Fehler(400, 'termin-zahl', 'ZAHL · ' + nr + 'Preis und Plätze brauchen eine Zahl.')
-    if not (0 < preis <= 999) or round(preis * 100) != preis * 100:
-        raise Fehler(400, 'termin-preis', 'PREIS · ' + nr + 'Der Preis liegt zwischen 1 und 999 Euro, höchstens mit Cent.')
-    if not (1 <= plaetze <= 40):
-        raise Fehler(400, 'termin-plaetze', 'PLÄTZE · ' + nr + 'Ein Abend hat zwischen 1 und 40 Plätze.')
-    if not (0 <= gebucht <= plaetze):
-        raise Fehler(400, 'termin-plaetze', 'PLÄTZE · ' + nr + 'Es sind mehr Plätze vergeben, als der Abend hat.')
-    return {'id': tid, 'datum': d, 'zeit': z, 'preis': int(preis) if preis == int(preis) else preis, 'plaetze': plaetze, 'gebucht': gebucht}
+        raise Fehler(400, 'termin-falsch', 'FERIEN · ' + nr + 'Kennung fehlt.')
+    von, bis = _tag(t.get('von'), nr, 'von'), _tag(t.get('bis'), nr, 'bis')
+    if bis < von:
+        raise Fehler(400, 'termin-reihe', 'REIHENFOLGE · ' + nr + 'Der letzte Tag liegt vor dem ersten.')
+    if (bis - von).days + 1 > LAENGSTENS:
+        raise Fehler(400, 'termin-lang', f'DAUER · {nr}Ein Ferienblock dauert höchstens {LAENGSTENS} Tage.')
+    grund = re.sub(r'\s+', ' ', str(t.get('grund') or '')).strip()
+    if len(grund) > 60:
+        raise Fehler(400, 'termin-grund', 'ANLASS · ' + nr + 'Der Anlass ist länger als 60 Zeichen.')
+    if re.search(r'[<>{}()\[\]]', grund):
+        raise Fehler(400, 'termin-grund', 'ANLASS · ' + nr + 'Im Anlass stehen Zeichen, die auf der Website nicht stehen dürfen (Klammern, < >).')
+    return {'id': tid, 'von': von.isoformat(), 'bis': bis.isoformat(), 'grund': grund}
 
 
 def pruefe(liste):
     if not isinstance(liste, list):
-        raise Fehler(400, 'termin-falsch', 'TERMIN · Die Anfrage enthält keine Liste von Terminen.')
+        raise Fehler(400, 'termin-falsch', 'FERIEN · Die Anfrage enthält keine Liste.')
     if len(liste) > HOECHSTENS:
-        raise Fehler(400, 'termin-viele', f'TERMINE · Höchstens {HOECHSTENS} Termine stehen gleichzeitig auf der Website.')
-    aus = [pruefe_einen(t, i) for i, t in enumerate(liste)]
+        raise Fehler(400, 'termin-viele', f'FERIEN · Höchstens {HOECHSTENS} Ferienblöcke stehen gleichzeitig auf der Website.')
+    aus = sorted((pruefe_einen(t, i) for i, t in enumerate(liste)), key=lambda t: (t['von'], t['bis']))
     if len({t['id'] for t in aus}) != len(aus):
-        raise Fehler(400, 'termin-falsch', 'TERMIN · Zwei Termine tragen dieselbe Kennung.')
-    if len({(t['datum'], t['zeit']) for t in aus}) != len(aus):
-        raise Fehler(400, 'termin-doppelt', 'DOPPELT · Zwei Termine stehen am selben Tag zur selben Zeit.')
-    return sorted(aus, key=lambda t: (t['datum'], t['zeit']))
+        raise Fehler(400, 'termin-falsch', 'FERIEN · Zwei Einträge tragen dieselbe Kennung.')
+    for a, b in zip(aus, aus[1:]):
+        if b['von'] <= a['bis']:
+            raise Fehler(400, 'termin-doppelt', 'ÜBERSCHNEIDUNG · Zwei Ferienblöcke überschneiden sich. Bitte zu einem zusammenlegen.')
+    return aus
+
+
+def text(t):
+    """Wie die Website einen Block schreibt: «22. Dezember 2026 bis 10. Februar 2027», im selben Monat «13. bis 15. November 2026», Anlass in Klammern."""
+    a, b = datetime.date.fromisoformat(t['von']), datetime.date.fromisoformat(t['bis'])
+    if a == b:
+        s = f'{a.day}. {MONATE[a.month - 1]} {a.year}'
+    elif (a.year, a.month) == (b.year, b.month):
+        s = f'{a.day}. bis {b.day}. {MONATE[b.month - 1]} {b.year}'
+    elif a.year == b.year:
+        s = f'{a.day}. {MONATE[a.month - 1]} bis {b.day}. {MONATE[b.month - 1]} {b.year}'
+    else:
+        s = f'{a.day}. {MONATE[a.month - 1]} {a.year} bis {b.day}. {MONATE[b.month - 1]} {b.year}'
+    return s + (f' ({t["grund"]})' if t.get('grund') else '')
 
 
 def _leer():
@@ -113,7 +143,7 @@ def lade():
             except ValueError:
                 continue
     if DATEI.is_file():
-        raise Fehler(500, 'termine-speicher', 'SPEICHER · Die Datei der Termine und ihre Sicherung sind beide unlesbar. Prüfung öffnen.')
+        raise Fehler(500, 'termine-speicher', 'SPEICHER · Die Datei der Ferien und ihre Sicherung sind beide unlesbar. Prüfung öffnen.')
     return _leer()
 
 
@@ -135,7 +165,7 @@ def jetzt():
 
 
 def lage(d=None):
-    """Was die Ansicht braucht: Ursprung, Stand (veröffentlicht), Entwurf (falls einer wartet), Verlauf, Fingerabdruck des Entwurfs."""
+    """Was die Ansicht braucht: Ursprung, Stand (veröffentlicht), Entwurf (falls einer wartet), Verlauf, Fingerabdruck des Entwurfs, Anlässe."""
     d = d or lade()
     u = ursprung()
     stand = d['stand'] if d['stand'] is not None else u
@@ -144,11 +174,12 @@ def lage(d=None):
             'kennung': fingerabdruck(entwurf if entwurf is not None else stand),
             'zuletzt': next((v for v in reversed(d['verlauf']) if v.get('art') == 'veroeffentlicht'), None),
             'verlauf': [{'nr': i, 'zeit': v['zeit'], 'art': v['art'], 'notiz': v.get('notiz', ''), 'zahl': len(v['termine'])} for i, v in enumerate(d['verlauf'])][::-1],
-            'quelle': 'website/assets/buchen.js › BEISPIEL'}
+            'anlaesse': anlaesse(), 'heute': datetime.date.today().isoformat(),
+            'quelle': 'website/inhalt/haus.json › ferien_iso, ferien'}
 
 
 def wartend(l):
-    """Wie viele Termine sich zwischen Stand und Entwurf unterscheiden (neu, geändert, entfällt), wie die Ansicht sie zählt."""
+    """Wie viele Ferienblöcke sich zwischen Stand und Entwurf unterscheiden (neu, geändert, entfällt), wie die Ansicht sie zählt."""
     if not l['wartet']:
         return 0
     alt, neu = {t['id']: t for t in l['stand']}, {t['id']: t for t in l['entwurf']}
@@ -158,7 +189,7 @@ def wartend(l):
 def _bewache(d, erwartet):
     l = lage(d)
     if erwartet != l['kennung']:
-        raise Fehler(409, 'konflikt', 'KONFLIKT · In einem anderen Fenster wurden die Termine inzwischen geändert. Die Liste lädt neu, deine Eingaben bleiben stehen.')
+        raise Fehler(409, 'konflikt', 'KONFLIKT · In einem anderen Fenster wurden die Ferien inzwischen geändert. Die Liste lädt neu, Ihre Eingaben bleiben stehen.')
     return l
 
 
@@ -175,7 +206,7 @@ def speichern(liste, erwartet):
         if neu == alt:
             return {'nichts': True, 'meldung': 'Nichts geändert, nichts gespeichert.', **lage(d)}
         d['entwurf'] = None if neu == l['stand'] else neu
-        _protokoll(d, 'Termine im Entwurf gespeichert')
+        _protokoll(d, 'Ferien im Entwurf gespeichert')
         schreib(d)
         return {'vorher': alt, **lage(d)}
 
@@ -189,7 +220,7 @@ def veroeffentlichen(erwartet, notiz=''):
         d['stand'] = l['entwurf']
         d['entwurf'] = None
         d['verlauf'] = (d['verlauf'] + [{'zeit': jetzt(), 'art': 'veroeffentlicht', 'notiz': str(notiz or '')[:200], 'termine': d['stand']}])[-60:]
-        _protokoll(d, 'Termine veröffentlicht')
+        _protokoll(d, 'Ferien veröffentlicht')
         schreib(d)
         return lage(d)
 
@@ -200,7 +231,7 @@ def verwerfen(erwartet):
         _bewache(d, erwartet)
         vorher = d['entwurf']
         d['entwurf'] = None
-        _protokoll(d, 'Entwurf der Termine verworfen')
+        _protokoll(d, 'Entwurf der Ferien verworfen')
         schreib(d)
         return {'vorher': vorher, **lage(d)}
 
@@ -218,20 +249,20 @@ def zurueckholen(nr, erwartet):
             except (ValueError, IndexError, TypeError):
                 raise Fehler(404, 'fassung-unbekannt', 'FASSUNG · Diese frühere Fassung gibt es nicht.')
         d['entwurf'] = None if t == l['stand'] else t
-        _protokoll(d, 'Frühere Fassung der Termine in den Entwurf geholt')
+        _protokoll(d, 'Frühere Fassung der Ferien in den Entwurf geholt')
         schreib(d)
         return lage(d)
 
 
 def fuelle(roh, liste, u):
-    """buchen.js mit einer Liste füllen. Gleich wie der Ursprung: unverändert zurück. Sonst die Liste und ein eigener Schlüssel für den
-    Speicher des Browsers (sonst überdeckt eine alte Vorschau aus termine-pflege.html den veröffentlichten Stand)."""
+    """Eine Seite der Website mit einer Liste füllen: data-zu der Reservationsfenster und die Zeile «Ferien» der Startseite.
+    Gleich wie der Ursprung: unverändert zurück (Byte für Byte, wie gebaut)."""
     if liste == u:
         return roh
-    js = '[\n' + ',\n'.join('    ' + json.dumps(t, ensure_ascii=False).replace('"id"', 'id').replace('"datum"', 'datum').replace('"zeit"', 'zeit')
-                             .replace('"preis"', 'preis').replace('"plaetze"', 'plaetze').replace('"gebucht"', 'gebucht') for t in liste) + '\n  ]'
-    roh = MUSTER.sub(lambda m: m.group(1) + js + m.group(3), roh, 1)
-    return KEY.sub(lambda m: m.group(1) + m.group(2) + '-' + fingerabdruck(liste) + m.group(3), roh, 1)
+    zu = ','.join(f'{t["von"]}/{t["bis"]}' for t in liste)
+    roh = ZU.sub(f'data-zu="{zu}"', roh)
+    zeile = ' <i>·</i> '.join(f'<span>{html.escape(text(t), quote=False)}</span>' for t in liste) or '<span>Zurzeit sind keine Betriebsferien geplant</span>'
+    return ZEILE.sub(lambda m: m.group(1) + zeile + m.group(3), roh)
 
 
 def ausliefern(roh, welche='stand'):
@@ -245,15 +276,15 @@ def pruefung():
     p = []
     try:
         u = ursprung()
-        p.append({'gut': True, 'titel': 'Termine der Website', 'text': f'{len(u)} Termine in website/assets/buchen.js gelesen.'})
+        p.append({'gut': True, 'titel': 'Ferien der Website', 'text': f'{len(u)} Ferienblöcke in website/inhalt/haus.json gelesen.'})
     except Fehler as e:
-        return [{'gut': False, 'titel': 'Termine der Website', 'text': e.text, 'stichwort': e.stichwort}]
+        return [{'gut': False, 'titel': 'Ferien der Website', 'text': e.text, 'stichwort': e.stichwort}]
     try:
         d = lade()
         for k in ('stand', 'entwurf'):
             if d[k] is not None:
                 pruefe(d[k])
-        p.append({'gut': True, 'titel': 'Speicher der Termine', 'text': 'lesbar' + (', Sicherung der letzten guten Fassung liegt daneben' if DATEI.with_suffix('.json.gut').is_file() else ', noch nichts gespeichert') + '.'})
+        p.append({'gut': True, 'titel': 'Speicher der Ferien', 'text': 'lesbar' + (', Sicherung der letzten guten Fassung liegt daneben' if DATEI.with_suffix('.json.gut').is_file() else ', noch nichts gespeichert') + '.'})
     except Fehler as e:
-        p.append({'gut': False, 'titel': 'Speicher der Termine', 'text': e.text, 'stichwort': e.stichwort})
+        p.append({'gut': False, 'titel': 'Speicher der Ferien', 'text': e.text, 'stichwort': e.stichwort})
     return p

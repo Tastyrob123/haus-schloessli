@@ -1,46 +1,44 @@
-/* pruefung-haus.js · Prüfseite im Rahmen von Culinarium (28.10.2026, aus dem Vorbild Schäfli): Name des Werkzeugs aus der einen Stelle, «Zum Werkzeug» führt in dieses Werkzeug, nicht in den Stamm. */
+/* pruefung-haus.js · Prüfseite im Rahmen der Wirtschaft am Schlössli (Nachtbau 3.11.2026, Aufbau aus dem Culinarium): Name des Werkzeugs aus der einen Stelle, «Zum Werkzeug» führt in dieses Werkzeug, nicht in den Stamm. */
 (function () {
   var z = document.getElementById('wsp-zurueck'); if (z) z.href = '/_werkzeuge/bureau/';
   var n = window.WO_HAUS && WO_HAUS.namen && WO_HAUS.namen.website;
-  if (n) { document.querySelectorAll('[data-werkzeug]').forEach(function (e) { e.textContent = n; }); document.title = 'Prüfung · ' + n + ' · ' + WO_HAUS.name; }
+  if (n) { document.querySelectorAll('[data-werkzeug]').forEach(function (e) { e.textContent = n; e.removeAttribute('data-werkzeug'); });   /* ohne das Merkmal füllt welt.js den Namen des Stamms («Der Schreibtisch») nicht nachträglich ein */ document.title = 'Prüfung · ' + n + ' · ' + WO_HAUS.name; }
 })();
-/* Termine (Culinarium 28.10.2026): eigener Teil der Prüfung (Quelle buchen.js, Speicher, Sicherung) und die Lexikon-Einträge der Stichworte aus
+/* Termine (Schlössli 3.11.2026): eigener Teil der Prüfung (Quelle haus.json › ferien_iso, Speicher, Sicherung) und die Lexikon-Einträge der Stichworte aus
    termine.py und termine-ansicht.js. Das Lexikon des Stamms bleibt unverändert; diese Einträge stehen darunter mit eigener Kennung lex-<stichwort>
    und öffnen sich, wenn «Was tun?» dorthin führt. */
 (function () {
   var LEX = [
-    { id: 'termine-quelle', titel: 'Die Termine der Website sind nicht lesbar', sehen: 'Die Ansicht «Termine» startet nicht, oder hier steht «Termine der Website» rot.',
-      grund: 'Die Termine stehen auf der Website als Liste «BEISPIEL» in website/assets/buchen.js. Die Website wurde umgebaut und die Liste fehlt oder hat eine neue Form.',
-      tun: 'Nichts ist verloren: Entwurf und veröffentlichte Termine liegen im Speicher des Werkzeugs. Den Website-Chat bitten, die Liste wieder so zu bauen (website/buchen.py), dann diese Seite neu laden.' },
-    { id: 'termine-speicher', titel: 'Der Speicher der Termine ist beschädigt', sehen: 'Meldung «SPEICHER · Die Datei der Termine und ihre Sicherung sind beide unlesbar».',
+    { id: 'termine-quelle', titel: 'Die Ferien der Website sind nicht lesbar', sehen: 'Die Ansicht «Termine» startet nicht, oder hier steht «Ferien der Website» rot.',
+      grund: 'Die Ferien stehen in website/inhalt/haus.json als «ferien_iso» (erster und letzter Tag). Die Website wurde umgebaut und die Angabe fehlt oder hat eine neue Form.',
+      tun: 'Nichts ist verloren: Entwurf und veröffentlichte Ferien liegen im Speicher des Werkzeugs. Die Angabe in haus.json wieder so bauen lassen, dann diese Seite neu laden.' },
+    { id: 'termine-speicher', titel: 'Der Speicher der Ferien ist beschädigt', sehen: 'Meldung «SPEICHER · Die Datei der Ferien und ihre Sicherung sind beide unlesbar».',
       grund: 'Die Datei _werkzeuge/bureau/_daten/termine.json und ihre Sicherung termine.json.gut sind beide kaputt (zum Beispiel von Hand geändert).',
-      tun: 'Die Website zeigt weiter die Termine, wie sie gebaut ist. Die Datei aus einer Sicherung des Rechners zurückholen oder beide Dateien entfernen: dann gilt wieder der ursprüngliche Stand.' },
-    { id: 'termin-datum', titel: 'Diesen Tag gibt es nicht', sehen: 'Meldung «DATUM · Das Datum fehlt oder gibt es nicht», die Karte zeigt «Diesen Tag gibt es nicht».',
+      tun: 'Die Website zeigt weiter die Ferien, wie sie gebaut ist. Die Datei aus einer Sicherung des Rechners zurückholen oder beide Dateien entfernen: dann gilt wieder der ursprüngliche Stand.' },
+    { id: 'termin-datum', titel: 'Diesen Tag gibt es nicht', sehen: 'Meldung «DATUM · Der Tag fehlt oder gibt es nicht», die Karte zeigt «Den ersten Tag gibt es nicht».',
       grund: 'Tag und Monat passen nicht zusammen, zum Beispiel der 31. November.', tun: 'Tag, Monat und Jahr neu wählen, dann speichern.' },
-    { id: 'termin-zeit', titel: 'Der Beginn ist keine Uhrzeit', sehen: 'Meldung «BEGINN · Bitte die Uhrzeit als Stunden und Minuten».',
-      grund: 'Die Uhrzeit kam in einer anderen Form an als 19:00.', tun: 'Beim Abend unter «Beginn» eine Zeit aus der Liste wählen.' },
-    { id: 'termin-zahl', titel: 'Preis oder Plätze ohne Zahl', sehen: 'Meldung «ZAHL · Preis und Plätze brauchen eine Zahl».',
-      grund: 'Im Feld steht ein Wort oder nichts.', tun: 'Nur Ziffern eintragen, beim Preis mit Komma für die Cent (zum Beispiel 89 oder 89,50).' },
-    { id: 'termin-preis', titel: 'Der Preis liegt ausserhalb', sehen: 'Meldung «PREIS · Der Preis liegt zwischen 1 und 999 Euro».',
-      grund: 'Der Preis ist 0, negativ, über 999 Euro oder hat mehr als zwei Stellen nach dem Komma.', tun: 'Den Preis pro Person eintragen, wie er auf dem Plakat steht.' },
-    { id: 'termin-plaetze', titel: 'Zu wenige oder zu viele Plätze', sehen: 'Meldung «PLÄTZE · Ein Abend hat zwischen 1 und 40 Plätze» oder «Es sind mehr Plätze vergeben, als der Abend hat».',
-      grund: 'Die Zahl ist 0, über 40, oder kleiner als die Plätze, die schon vergeben sind.', tun: 'Die Plätze an der Tafel eintragen. Sind schon mehr vergeben, die Zahl nicht darunter setzen.' },
-    { id: 'termin-doppelt', titel: 'Zwei Abende zur selben Zeit', sehen: 'Meldung «DOPPELT · Zwei Termine stehen am selben Tag zur selben Zeit».',
-      grund: 'Ein Abend wurde zweimal angelegt oder auf den Tag eines anderen verschoben.', tun: 'Bei einem der beiden den Tag oder den Beginn ändern, oder ihn mit «Wieder entfernen» herausnehmen.' },
-    { id: 'termin-viele', titel: 'Zu viele Termine', sehen: 'Meldung «TERMINE · Höchstens 40 Termine stehen gleichzeitig auf der Website».',
-      grund: 'Die Seite «Der Abend» zeigt jeden Termin als Plakat; mehr als 40 machen sie unlesbar.', tun: 'Vergangene Abende «Von der Seite nehmen», dann speichern.' },
-    { id: 'termin-falsch', titel: 'Ein Termin ist unvollständig', sehen: 'Meldung «TERMIN · …» mit Kennung oder Liste.',
-      grund: 'Die Anfrage kam nicht aus dem Werkzeug oder wurde unterwegs verändert.', tun: 'Die Seite neu laden und die Eingabe wiederholen. Bleibt es, den Wortlaut der Meldung deinem Ansprechpartner schicken.' },
+    { id: 'termin-reihe', titel: 'Der letzte Tag liegt vor dem ersten', sehen: 'Meldung «REIHENFOLGE · Der letzte Tag liegt vor dem ersten».',
+      grund: 'Beim Verschieben wurde nur der erste Tag geändert.', tun: 'Den letzten Tag nach dem ersten wählen, dann speichern.' },
+    { id: 'termin-lang', titel: 'Ferien länger als 120 Tage', sehen: 'Meldung «DAUER · Ein Ferienblock dauert höchstens 120 Tage».',
+      grund: 'Erster und letzter Tag liegen mehr als vier Monate auseinander, meist ein falsches Jahr.', tun: 'Jahr des letzten Tags prüfen. Längere Ferien als zwei Blöcke eintragen.' },
+    { id: 'termin-grund', titel: 'Der Anlass passt nicht', sehen: 'Meldung «ANLASS · …».',
+      grund: 'Der Anlass ist länger als 60 Zeichen oder enthält Klammern. Er steht auf der Website schon in Klammern hinter den Tagen.', tun: 'Kurz und ohne Klammern schreiben, zum Beispiel «Excellence Gourmetkreuzfahrt».' },
+    { id: 'termin-doppelt', titel: 'Zwei Ferienblöcke überschneiden sich', sehen: 'Meldung «ÜBERSCHNEIDUNG · Zwei Ferienblöcke überschneiden sich».',
+      grund: 'Ein Block wurde zweimal angelegt oder in einen anderen hinein verschoben.', tun: 'Die Tage eines der beiden ändern, ihn mit «Wieder entfernen» herausnehmen oder beide zu einem Block zusammenlegen.' },
+    { id: 'termin-viele', titel: 'Zu viele Ferienblöcke', sehen: 'Meldung «FERIEN · Höchstens 12 Ferienblöcke stehen gleichzeitig auf der Website».',
+      grund: 'Die Zeile «Ferien» auf der Startseite wird mit mehr als zwölf Blöcken unlesbar.', tun: 'Vergangene Ferien «Von der Seite nehmen», dann speichern.' },
+    { id: 'termin-falsch', titel: 'Ein Eintrag ist unvollständig', sehen: 'Meldung «FERIEN · …» mit Kennung oder Liste.',
+      grund: 'Die Anfrage kam nicht aus dem Werkzeug oder wurde unterwegs verändert.', tun: 'Die Seite neu laden und die Eingabe wiederholen. Bleibt es, den Wortlaut der Meldung Ihrem Ansprechpartner schicken.' },
     { id: 'fassung-unbekannt', titel: 'Diese frühere Fassung gibt es nicht mehr', sehen: 'Meldung «FASSUNG · Diese frühere Fassung gibt es nicht».',
       grund: 'Die Liste der früheren Fassungen hält die letzten 60; ältere fallen heraus.', tun: 'Die Seite neu laden und eine Fassung aus der Liste wählen, oder den ursprünglichen Stand.' },
     { id: 'netz', titel: 'Der Server antwortet nicht', sehen: 'Meldung «NETZ · Der Server des Werkzeugs antwortet nicht».',
-      grund: 'Die Verbindung ist weg oder der Server des Werkzeugs läuft nicht.', tun: 'Deine Eingaben bleiben stehen. Verbindung prüfen, dann noch einmal «Speichern». Läuft der Server nicht: python3 _werkzeuge/bureau/serve.py 9282 im Projektordner.' }
+      grund: 'Die Verbindung ist weg oder der Server des Werkzeugs läuft nicht.', tun: 'Ihre Eingaben bleiben stehen. Verbindung prüfen, dann noch einmal «Speichern». Läuft der Server nicht: python3 _werkzeuge/bureau/serve.py 9282 im Hausordner.' }
   ];
   function el(tag, attrs, kinder) { var e = document.createElement(tag); Object.keys(attrs || {}).forEach(function (k) { e.setAttribute(k, attrs[k]); }); (kinder || []).forEach(function (k) { e.append(k); }); return e; }
   var lex = document.querySelector('[aria-labelledby="wsp-t4"]');
   if (!lex) return;
   var teil = el('section', { class: 'wsp-teil', 'aria-labelledby': 'wsp-t-termine', 'data-cu-pruefung': 'termine' }, [
-    el('div', {}, [el('p', { class: 'kap' }, [el('span', {}, ['Viertens'])]), el('h2', { class: 't-zwischen', id: 'wsp-t-termine' }, ['Termine der Abende'])]),
+    el('div', {}, [el('p', { class: 'kap' }, [el('span', {}, ['Viertens'])]), el('h2', { class: 't-zwischen', id: 'wsp-t-termine' }, ['Ferien des Hauses'])]),
     el('div', { class: 'platte wsp-punkte', id: 'cu-termine-punkte' }, [el('p', { class: 'wsp-wartet' }, ['Wird geprüft …'])])]);
   lex.parentNode.insertBefore(teil, lex);
   var ort = el('div', { class: 'wsp-lexikon', id: 'cu-lexikon' });

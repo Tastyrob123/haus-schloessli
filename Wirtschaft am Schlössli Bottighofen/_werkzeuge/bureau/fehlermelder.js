@@ -1,4 +1,4 @@
-/* fehlermelder.js · Le Bureau (Culinarium, aus dem Vorbild Schäfli), Master Werkzeug-Bau R03: vor allem anderen geladen. Skriptfehler gehen an den Server des Werkzeugs
+/* fehlermelder.js · Das Schaufenster (Wirtschaft am Schlössli, Aufbau aus dem Culinarium), Master Werkzeug-Bau R03: vor allem anderen geladen. Skriptfehler gehen an den Server des Werkzeugs
    (/_werkzeuge/bureau/api/fehler, dort unter einem Schloss angehängt) und in den Browser (localStorage «ws-fehler», liest die Prüfseite).
    Netzfehler werden nie gemeldet, höchstens 20 je Seite, ein eigener Fehlschlag wird nie erneut gemeldet (Safari-Schleife 15.10.: 9'969 Fehler). */
 (function () {
@@ -9,7 +9,7 @@
     n++;
     try {
       var l = JSON.parse(localStorage.getItem('ws-fehler') || '[]');
-      l.push({ zeit: new Date().toISOString(), text: String(text).slice(0, 400), stichwort: 'skript', wo: location.hash || 'start', haus: 'culinarium' });
+      l.push({ zeit: new Date().toISOString(), text: String(text).slice(0, 400), stichwort: 'skript', wo: location.hash || 'start', haus: 'schloessli' });
       localStorage.setItem('ws-fehler', JSON.stringify(l.slice(-30)));
     } catch (e) { /* gesperrter Speicher */ }
     try {

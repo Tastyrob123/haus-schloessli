@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fassungsnummern von Le Bureau (Culinarium) aus dem Inhalt setzen (Master Werkzeug-Bau M20: ?v= nie von Hand, nie nach Datum).
+"""Fassungsnummern des Schaufensters (Wirtschaft am Schlössli) aus dem Inhalt setzen (Master Werkzeug-Bau M20: ?v= nie von Hand, nie nach Datum).
    python3 _werkzeuge/bureau/bau.py      nach jeder Änderung an einer Datei, die index.html oder anleitung.html lädt.
 Schreibt nur index.html und anleitung.html dieses Ordners, und nur die Zahl hinter ?v=."""
 import hashlib
@@ -7,8 +7,8 @@ import re
 from pathlib import Path
 
 HIER = Path(__file__).resolve().parent
-QUELLEN = {'/assets/oberflaeche/': HIER.parent / 'oberflaeche', '/werkzeuge/website/': Path.home() / 'Desktop/Website-Projekte/_Werkzeuge/werkzeuge/website',
-           '/stamm/': Path.home() / 'Desktop/Website-Projekte/_Werkzeuge/stamm'}
+QUELLEN = {'/assets/oberflaeche/': HIER.parent / 'oberflaeche', '/werkzeuge/website/': HIER.parent.parent.parent / '_Werkzeuge/werkzeuge/website',
+           '/stamm/': HIER.parent.parent.parent / '_Werkzeuge/stamm'}
 
 
 def datei(adr):
