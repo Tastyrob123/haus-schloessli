@@ -589,7 +589,13 @@ function fenster(html, breit) {
   f.hidden = false;
   f.onclick = ev => { if (ev.target === f || ev.target.closest('[data-zu]')) zu(); };
   const erst = $('input:not([type=hidden]),textarea', f); if (erst) setTimeout(() => erst.focus(), 30);
+  feldWachsen(); requestAnimationFrame(() => feldWachsen());
 }
+/* Felder des Fensters wachsen mit dem Text, nie abgeschnitten; einzeilige Felder nehmen keinen Zeilenumbruch an (Enter speichert nicht, bricht nicht um) */
+function feldWachsen(el) { (el ? [el] : $$('#fenster textarea.wachs')).forEach(t => { t.style.height = 'auto'; t.style.height = (t.scrollHeight + 2) + 'px'; }); }
+document.addEventListener('input', ev => { if (ev.target.matches && ev.target.matches('#fenster textarea.wachs')) feldWachsen(ev.target); });
+document.addEventListener('keydown', ev => { if (ev.key === 'Enter' && ev.target.matches && ev.target.matches('#fenster textarea.einzeilig')) ev.preventDefault(); });
+window.addEventListener('resize', () => feldWachsen());
 let BEIM_ZU = null;
 function zu() { const f = $('#fenster'); f.hidden = true; f.innerHTML = ''; f.oninput = null; f.onclick = null; if (BEIM_ZU) { const b = BEIM_ZU; BEIM_ZU = null; b(); } }
 function frage(titel, text, ja, f) {
@@ -616,7 +622,8 @@ function eintragFenster(pfad, neu) {
   const sy = symbole(), zeichenOk = sy.length && SATZ.hatZeichenOrt(n), zAlt = zeichenOk ? SATZ.zeichenVon(n) : [];
   let zWahl = zAlt.slice();
   const rub = (() => { const r = zeilenSeite(+pfad.split('.')[1]); let t = ''; for (const z of r) { if (z.pfad === pfad) break; if (z.art === 'rubrik') t = titelVon(z.n, 'rubrik'); } return t; })();
-  const feld = (f, i) => { const lang = LANG.test(f.name) || String(f.wert).length > 64; return `<label class="feld"><span>${h(f.name)}</span>${lang ? `<textarea id="f-${i}" rows="${Math.min(6, Math.max(2, Math.ceil(String(f.wert).length / 70)))}">${h(f.wert)}</textarea>` : `<input id="f-${i}" value="${h(f.wert)}"${f.preis ? ' inputmode="decimal"' : ''}>`}</label>`; };
+  /* Jedes Feld wächst mit seinem Inhalt (Tor K2, 4.11.2026: ein langer Name stand im einzeiligen Feld abgeschnitten): kurze Felder sind einzeilig, brechen aber um statt zu kürzen */
+  const feld = (f, i) => { const lang = LANG.test(f.name) || String(f.wert).length > 64; return `<label class="feld"><span>${h(f.name)}</span><textarea class="wachs${lang ? '' : ' einzeilig'}" id="f-${i}" rows="${lang ? 2 : 1}"${f.preis ? ' inputmode="decimal"' : ''}>${h(f.wert)}</textarea></label>`; };
   fenster(`<h2>${neu ? (art === 'rubrik' ? 'Neue <em>Rubrik.</em>' : 'Neuer <em>Eintrag.</em>') : `${h(FN[art] || 'Eintrag')} <em>bearbeiten.</em>`}</h2>
     <p class="satz">${rub ? `Rubrik «${h(rub)}». ` : ''}${neu ? 'Dieser Eintrag ist eine Kopie, damit er genau dasselbe Format hat wie die anderen. Ändern Sie, was anders sein soll.' : 'Rechts in der Karte sehen Sie den Eintrag, sobald Sie speichern.'} Ein leeres Feld nimmt die Zeile aus dem Eintrag.</p>
     <div class="zwei"><div class="felder">${fe.map(feld).join('') || '<p class="satz">Dieser Eintrag hat keinen Text.</p>'}

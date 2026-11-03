@@ -356,3 +356,6 @@ aside.wo-rand .wo-rand__wege button{padding-left:0;padding-right:0}
 .lc .vorschau{will-change:transform;contain:layout paint style}
 .lc .vorschau__f,.lc #web-f{will-change:transform}
 .lc #liste > .teil{content-visibility:auto;contain-intrinsic-size:auto 640px}
+/* Mitwachsende Felder im Fenster (keine feste Mindesthöhe, kein Ziehgriff; einzeilige so hoch wie ein Eingabefeld) */
+.lc .feld textarea.wachs{resize:none;min-height:0;overflow:hidden;white-space:pre-wrap}
+.lc .feld textarea.einzeilig{min-height:46px}
