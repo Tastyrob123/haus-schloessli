@@ -36,6 +36,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 
 - 21:35 UTC: Nachprüfung WebKit (Lauf 0d296ae, 230 Zustände): Messfunde 0 in allen sechs Werkzeugen; übrig 13 Bildfunde (Reservationsbuch Listenbilder leer, Schaufenster Monogramm-Kacheln/Weinkarte-Gruppe, Besucherliste Loch in Kennzahl-Blättern) → an die drei Agenten; Grundlinie für K34 jetzt mit animierten Fotos (Textseite war auf dem Runner glatt, jedes Werkzeug mit Fotos nicht). Oberchef hat 18 Zustandsbilder (1440, WebKit) mit dem Auge gesehen: Kleid, Inhalt, Fotos des Hauses, nichts Culinarium.
 
+- 21:55 UTC: **Werkbank fertig** (Kern: 14 Seiten, lokal 0 Funde; Commits 1090e2b…b68053b), Reservationsbuch und Schaufenster nachgebessert (80a19df, 7388744). Prüfung über alles gestartet (`[schnell]`); Hausdruckerei (Agent nach Neustart) noch in Arbeit, Besucherliste richtet die Kennzahl-Blätter auf eine Linie.
+
 ## Was offen ist (Reihenfolge)
 1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
 2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.
