@@ -1,11 +1,14 @@
 {
  "index.html": "Startseite",
- "abend.html": "Der Abend",
- "abende.html": "Alle Abende",
- "bar.html": "Das Haus",
- "leute.html": "Team",
- "weg.html": "Der Weg",
- "dirty-chicken.html": "Dirty Chicken",
+ "abend.html": "Ihr Abend",
+ "agb.html": "AGB",
+ "anlaesse.html": "Events & Termine",
+ "datenschutz.html": "Datenschutzerklärung",
+ "feiern.html": "Banketts & Gruppen",
+ "gutschein.html": "Gutschein",
  "impressum.html": "Impressum",
- "datenschutz.html": "Datenschutz"
+ "karte.html": "Die Karte",
+ "kontakt.html": "Kontakt & Öffnungszeiten",
+ "team.html": "Über uns",
+ "weinkarte.html": "Weinkarte"
 }

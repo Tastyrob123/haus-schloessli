@@ -1,7 +1,7 @@
-/* Das Besucherbuch · Culinarium Hannover: Anschluss an die Oberfläche der Häuser (28.10.2026, aus der Taverne zum Schäfli übernommen, dort mit den Funden des
-   Demo-Checks 21.10.2026). Rahmen, Kopf, Rand, Leiste und Startbild kommen aus /assets/oberflaeche/ (grund.css, rahmen-buehne.css, kleid/schloessli.css).
-   Hier steht nur, was das Besucherbuch darin eigen hat: die Kennzahlen im Startbild wie Zahlen auf einem Plakat (Fraunces, darunter die Marke in DM Mono und
-   Kerzenlicht), der Zeitraum, das «C» der Wortmarke als Zeichen, der Raum ohne eigene Scrollfläche. Geladen nach dem Kleid.
+/* Die Besucherliste · Wirtschaft am Schlössli: Anschluss an die Oberfläche der Häuser (Nachtbau 3.11.2026, Aufbau aus dem jüngsten Stamm, mit den Funden der
+   Demo-Checks und Abnahme-Tore). Rahmen, Kopf, Rand, Leiste und Startbild kommen aus /assets/oberflaeche/ (grund.css, rahmen-buehne.css, kleid/schloessli.css).
+   Hier steht nur, was das Besucherbuch darin eigen hat: die Kennzahlen im Startbild (Open Sans, darunter die Marke in DM Mono und
+   Seehimmel), der Zeitraum, die Zeiger der Wortmarke als Zeichen, der Raum ohne eigene Scrollfläche. Geladen nach dem Kleid.
    Keine Pillen-Reihen: Wahlen und Knöpfe mit der Kante der Website (10 px). Bewegung nur über transform und opacity (Regel 55). */
 
 /* Raum: die Seite scrollt als Ganzes, nie eine Fläche für sich (UMSTELLUNG.md, Prüfen Punkt 3) */
@@ -15,8 +15,8 @@
 .rg .rand__titel::before{display:none}
 .rg .rand__haus{margin:14px 10px 2px;padding-top:12px}
 
-/* Startbild: das gemeinsame Startbild der Oberfläche, nichts eigen gestaltet. Die vier Kennzahlen stehen wie Zahlen auf einem Plakat des Hauses
-   (Zahl in der Titelschrift, darunter die Marke in Mono und Kerzenlicht), dazu der Zeitraum als Segment-Wahl des Pakets. */
+/* Startbild: das gemeinsame Startbild der Oberfläche, nichts eigen gestaltet. Die vier Kennzahlen stehen auf einer Grundlinie
+   (Zahl in der Titelschrift, darunter die Marke in Mono und Seehimmel), dazu der Zeitraum als Segment-Wahl des Pakets. */
 .wo-sb .wo-sb__kn{align-items:center}
 .wo-sb .buehne__chips{display:flex;flex-wrap:wrap;gap:26px;margin:0 0 0 12px;padding:0;list-style:none}
 .wo-sb .buehne__chips li{display:flex;flex-direction:column;list-style:none}
@@ -54,11 +54,11 @@
    Jetzt steht die Schrift dunkel auf hellem Grund, der Balken läuft als schmale Spur darunter; lesbar bei 1 % wie bei 100 %. */
 .trichter li{padding:12px 16px 22px!important}
 .trichter li i{inset:auto 16px 9px 16px!important;height:6px!important;border-radius:3px!important;background:var(--nacht)!important}
-.trichter li::after{content:'';position:absolute;left:16px;right:16px;bottom:9px;height:6px;border-radius:3px;background:rgba(38,36,45,.1);z-index:-1}
+.trichter li::after{content:'';position:absolute;left:16px;right:16px;bottom:9px;height:6px;border-radius:3px;background:rgba(4,16,35,.1);z-index:-1}
 .trichter span,.trichter b{color:var(--tinte)!important;mix-blend-mode:normal!important}
-.trichter em{color:rgba(38,36,45,.66)!important;mix-blend-mode:normal!important}
+.trichter em{color:rgba(4,16,35,.66)!important;mix-blend-mode:normal!important}
 
-/* Handy: die Zierzeile «Le Registre · Culinarium» bricht um statt abgeschnitten zu enden (am Rechner passt sie in eine Zeile) */
+/* Handy: die Zierzeile «Die Besucherliste · Wirtschaft am Schlössli» bricht um statt abgeschnitten zu enden (am Rechner passt sie in eine Zeile) */
 @media (max-width:600px){
   .wo-sb .wo-sb__zier span{white-space:normal;overflow:visible;line-height:1.6}
   .wo-sb .wo-sb__zier i{display:none}
@@ -85,13 +85,13 @@
   .rg .wahl3.wo-seg.wahl3--filter{display:grid;grid-template-columns:1fr 1fr;width:100%;border-radius:var(--wo-r1)}
   .rg .wahl3.wo-seg.wahl3--filter button{border-radius:var(--wo-r2);white-space:normal;text-align:center;padding:11px 8px;line-height:1.25}
   .rg .wahl3.wo-seg.wahl3--filter button:first-child{grid-column:1/-1}
-  /* Weg durch die Website: Bild über dem Namen, damit Namen wie «Dirty Chicken» nie mitten im Wort brechen (Fehlerbuch 10a: Wörter nie mitten getrennt) */
+  /* Weg durch die Website: Bild über dem Namen, damit Namen wie «Kontakt & Öffnungszeiten» nie mitten im Wort brechen (Fehlerbuch 10a: Wörter nie mitten getrennt) */
   .rg .weg .mit-bild{flex-direction:column;align-items:flex-start;gap:8px}
   .rg .weg .mit-bild>span{overflow-wrap:normal;word-break:normal;hyphens:manual}
 }
 
 /* Verlauf, «Woche für Woche»: bei 920–1180 px (zwei Blätter nebeneinander, Rand offen) war die Zeile 328 px breit und ragte bis zu 59 px aus dem Fenster
-   (selbst gefunden 21.10.2026, auch in der Vorlage des Schlössli). Jetzt rückt «n zum Platz» unter den Balken, nichts ragt hinaus. */
+   (selbst gefunden 21.10.2026, auch in der Vorlage des Schlössli). Jetzt rückt «n zur Reservation» unter den Balken, nichts ragt hinaus. */
 .rg .zwei>*{min-width:0}
 @media (min-width:701px) and (max-width:1180px){
   .rg .wochen li{grid-template-columns:96px minmax(24px,1fr) 40px;gap:4px 10px}
@@ -119,10 +119,10 @@
   .wo-sb .wo-sb__zier i{display:none}
 }
 
-/* Culinarium: das «C» der Wortmarke als Zeichen (fast quadratisch, nicht hoch wie das Lamm der Vorlage) */
-.rg .zt{width:30px;height:32px}
-/* Trichter «Der Weg zum Platz»: Balken in Nacht auf hellem Grund (Linie in Tinte), Text dunkel; Werte nur aus dem Kleid */
-.trichter li::after{background:rgba(38,36,45,.1)}
+/* Schlössli: die Zeiger der Wortmarke als Zeichen (hoch, Verhältnis 718 : 1186) */
+.rg .zt{width:22px;height:36px}
+/* Trichter «Der Weg zum Tisch»: Balken in Nacht auf hellem Grund (Linie in Tinte), Text dunkel; Werte nur aus dem Kleid */
+.trichter li::after{background:rgba(4,16,35,.1)}
 .trichter em{color:var(--wo-leise)!important}
 
 /* ===== Abnahme-Tor 6, 30.10.2026 ===== */
@@ -187,7 +187,7 @@
 }
 /* 15 Besuche-Liste: Zeit in der ersten Zeile, Seiten und Dauer darunter, bei jeder Breite (die Liste ist auch am Rechner schmal); nie ein «·» am Zeilenende */
 .rg .besuch__n small .besuch__w{display:block}.rg .besuch__n small .besuch__t{display:none}
-/* 22 Niedrige Fenster (bis 760 px hoch, z. B. 1000 × 650): die Leiste «Du siehst Beispielwerte» kommt erst nach dem ersten Scrollen, vorher deckte sie Zeitraum-Wahl und Zahlen im Startbild */
+/* 22 Niedrige Fenster (bis 760 px hoch, z. B. 1000 × 650): die Leiste «Sie sehen Beispielwerte» kommt erst nach dem ersten Scrollen, vorher deckte sie Zeitraum-Wahl und Zahlen im Startbild */
 @media (max-height:760px){
   .rg #leiste{transition:transform .5s var(--wo-feder,cubic-bezier(.2,.8,.2,1))}
   .rg:not(.rg-gerollt) #leiste{transform:translateY(calc(100% + 40px))}
@@ -199,7 +199,7 @@
   .rg .rang:not(:has(.mit-bild))>li{grid-column:1/-1;grid-template-columns:subgrid}
   .rg .rang:not(:has(.mit-bild)) .rang__n{white-space:nowrap}
 }
-/* 24 Kennzahlen «Zum Platz» bei 621–1240 px: jedes Etikett hat zwei Zeilen Platz, die Zahlen stehen auf einer Linie */
+/* 24 Kennzahlen «Zur Reservation» bei 621–1240 px: jedes Etikett hat zwei Zeilen Platz, die Zahlen stehen auf einer Linie */
 @media (min-width:621px) and (max-width:1240px){.rg .werte .wert>.mono{min-height:2lh}}
 /* 6 Während des Rundgangs liegt die Leiste nicht über dem Gezeigten */
 .rg:has(.rdg-karte) #leiste{transform:translateY(calc(100% + 40px))}
@@ -216,11 +216,11 @@
 .rg .rang:has(.mit-bild)>li{grid-column:1/-1;grid-template-columns:subgrid}
 .rg .rang__n:has(.mit-bild) .mit-bild>span{white-space:nowrap}
 @media (max-width:620px){.rg .rang:has(.mit-bild){grid-template-columns:auto minmax(28px,1fr) auto 34px;column-gap:8px}}
-/* 28 Kennzahlen «Zum Platz»: die Etiketten einer Reihe sind gleich hoch (Raster der Reihe), die Zahlen stehen auf einer Linie, auch wenn ein Etikett drei Zeilen braucht */
+/* 28 Kennzahlen «Zur Reservation»: die Etiketten einer Reihe sind gleich hoch (Raster der Reihe), die Zahlen stehen auf einer Linie, auch wenn ein Etikett drei Zeilen braucht */
 @media (min-width:621px){.rg .werte .wert{grid-row:span 3;grid-template-rows:subgrid;row-gap:6px;align-content:normal}.rg .werte .wert>.mono{min-height:0;align-self:start}}
 /* Fund 30: Meldung steht, Rundgang-Schild tritt so lange zurück */
 .rg:has(#meldung .quit) .rdg-schild{visibility:hidden;pointer-events:none}
-/* Tor 6 Fund 31: Etikett aus zwei Teilen («Bar · Dirty Chicken»), am Handy übereinander ohne Trenner */
+/* Tor 6 Fund 31: Etikett aus zwei Teilen, am Handy übereinander ohne Trenner */
 .rg .besuch__z .besuch__m+.besuch__m::before{content:'\00a0·\00a0'}
 .rg button.besuch{container-type:inline-size}
 @container (max-width:440px){.rg .besuch__z .besuch__m{display:block}.rg .besuch__z .besuch__m+.besuch__m::before{content:none}}
@@ -229,3 +229,9 @@
 .rg .besuch__n small .besuch__r{display:flex;flex-wrap:wrap;margin-left:-14px;clip-path:inset(-6px -6px -6px 14px)}
 .rg .besuch__n small .besuch__s{white-space:nowrap}
 .rg .besuch__n small .besuch__s::before{content:'·';display:inline-block;width:14px;text-align:center}
+/* Schlössli 3.11.2026: «Zur Reservation» ist länger als «Zum Platz»: letzte Spalte der Seiten-Tabelle am Rechner breiter; dazwischen bricht ihr Kopf in zwei Zeilen */
+@media (min-width:1241px){.rg .zeile{grid-template-columns:minmax(0,2fr) 76px minmax(60px,1.3fr) 150px 132px}}
+@media (min-width:621px) and (max-width:1240px){.rg .zeile--kopf>span:nth-child(5){white-space:normal;line-height:1.35}}
+/* Ranglisten mit Bild: Platz für den längsten Seitennamen («Kontakt & Öffnungszeiten») in einer Zeile; am Handy entfällt der Balken (der Anteil steht daneben), der Name bricht vor den letzten zwei Wörtern */
+@media (min-width:621px){.rg .rang:has(.mit-bild){grid-template-columns:fit-content(320px) minmax(60px,1fr) auto 42px}}
+@media (max-width:620px){.rg .rang:has(.mit-bild){grid-template-columns:minmax(0,1fr) auto 34px}.rg .rang:has(.mit-bild) .rang__b{display:none}.rg .rang__n:has(.mit-bild) .mit-bild>span{white-space:normal}}

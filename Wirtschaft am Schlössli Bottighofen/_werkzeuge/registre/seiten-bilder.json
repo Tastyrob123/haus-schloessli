@@ -1,11 +1,14 @@
 {
- "index.html": "assets/bild/tafelleer-640.webp",
- "abend.html": "assets/bild/beete-640.webp",
- "abende.html": "assets/bild/schaumglas-640.webp",
- "bar.html": "assets/bild/barneg-640.webp",
- "leute.html": "assets/bild/team_alle-640.webp",
- "weg.html": "assets/bild/barlicht-640.webp",
- "dirty-chicken.html": "assets/bild/dn_burger-640.webp",
- "impressum.html": "assets/bild/schildnacht-640.webp",
- "datenschutz.html": "assets/bild/kerze2-640.webp"
+ "index.html": "assets/img/teller-480.webp",
+ "abend.html": "assets/img/torte-480.webp",
+ "agb.html": "assets/img/tortelloni-480.webp",
+ "anlaesse.html": "assets/img/platanen-480.webp",
+ "datenschutz.html": "assets/img/gaststube-480.webp",
+ "feiern.html": "assets/img/regal-480.webp",
+ "gutschein.html": "assets/img/bar-480.webp",
+ "impressum.html": "assets/img/wein-480.webp",
+ "karte.html": "assets/img/suppe-480.webp",
+ "kontakt.html": "assets/img/schild-480.webp",
+ "team.html": "assets/img/team-480.webp",
+ "weinkarte.html": "assets/img/glas-480.webp"
 }

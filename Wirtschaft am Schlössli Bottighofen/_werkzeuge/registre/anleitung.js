@@ -1,4 +1,4 @@
-/* Anleitung Das Besucherbuch · Culinarium Hannover: Bild gross mit Klick, Esc schliesst; das Zeichen des Hauses (das «C» der Wortmarke, oberflaeche/kleid/schloessli-zeichen.svg)
+/* Anleitung Die Besucherliste · Wirtschaft am Schlössli: Bild gross mit Klick, Esc schliesst; das Zeichen des Hauses (die Zeiger der Wortmarke, oberflaeche/kleid/schloessli-zeichen.svg)
    (eigene Datei: online laufen eingebettete Skripte ohne Prüfsumme nicht). */
 (function () {
   var g = document.getElementById('gross'), im = g.querySelector('img');

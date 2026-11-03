@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Das Besucherbuch (Le Registre) · Culinarium Hannover, lokaler Server (Port 9286): liefert aus dem Projekt von Culinarium nur, was das Werkzeug braucht (lesend),
+"""Das Besucherbuch (Le Registre) · Wirtschaft am Schlössli, lokaler Server (Port 9286): liefert aus dem Projekt des Schlössli nur, was das Werkzeug braucht (lesend),
 und /api/registre.   python3 server.py [port]      danach http://127.0.0.1:9286/_werkzeuge/registre/
 Kopie des server.py des Besucherbuchs der Taverne zum Schäfli (dort nach Schlössli, Gasterntal, Doldenhorn und Carlton-Europe gebaut, nur kopiert).
 Die Website liegt in website/ neben _werkzeuge/. /_werkzeuge/… kommt aus dem Projekt, alles andere (/assets/, die Seiten) aus website/.
-Die Oberfläche der Häuser (/assets/oberflaeche/) liegt unter _werkzeuge/oberflaeche/ (Kleid culinarium, gemeinsam für alle Werkzeuge des Hauses,
-einziger Schreiber ist der Chat der Zentrale «culinarium-maison»). Sie gewinnt auch, wenn in website/assets/oberflaeche/ eine Kopie liegt; website/ ist nur Rückfall.
+Die Oberfläche der Häuser (/assets/oberflaeche/) liegt unter _werkzeuge/oberflaeche/ (Kleid schloessli, gemeinsam für alle Werkzeuge des Hauses,
+einziger Schreiber ist der Chat der Zentrale «schloessli-maison»). Sie gewinnt auch, wenn in website/assets/oberflaeche/ eine Kopie liegt; website/ ist nur Rückfall.
 
 GET  /api/registre?tage=30       Vorführ-Betrieb: jeder bekommt Beispielwerte (als Beispiel gekennzeichnet).
-     &k=<Schlüssel>              echte Werte (Schlüssel nur in ~/Desktop/Website-Projekte/_Schluessel/culinarium-hannover.txt; seine Prüfsumme steht in anschluss.py).
+     &k=<Schlüssel>              echte Werte (Schlüssel nur in ~/Desktop/Website-Projekte/_Schluessel/schloessli-bottighofen.txt; seine Prüfsumme steht in anschluss.py).
 POST /api/registre               eine Zeile von messung.js (lokal zum Ausprobieren; schreibt in _daten/).
 Nur Anfragen vom eigenen Rechner werden beantwortet (Master 7a: lokales Werkzeug).
 Sicherheit (Prüfung 16.10.2026, Werkzeug-Master 5.2): Anfragen einer fremden Seite (Origin ≠ diese Adresse) 403, mehr als GRENZE Anfragen je Minute 429,
@@ -16,9 +16,9 @@ POST /api/registre?fehler=1      Skriptfehler des Werkzeugs (Fehlermelder in ind
 import collections, hashlib, http.server, json, os, re, socketserver, sys, threading, time, urllib.parse
 
 HIER = os.path.dirname(os.path.abspath(__file__))
-WURZEL = os.path.dirname(os.path.dirname(HIER))          # Projektordner von Culinarium: _werkzeuge/ liegt dort
+WURZEL = os.path.dirname(os.path.dirname(HIER))          # Projektordner des Schlössli: _werkzeuge/ liegt dort
 PROJ = os.path.join(WURZEL, 'website')                   # die Website: Schriften, Fotos, Seiten
-STAMM_OF = os.path.join(WURZEL, '_werkzeuge', 'oberflaeche')   # Oberfläche der Häuser mit dem Kleid von Culinarium, bis Station 14 sie nach website/assets/ legt
+STAMM_OF = os.path.join(WURZEL, '_werkzeuge', 'oberflaeche')   # Oberfläche der Häuser mit dem Kleid des Schlössli, bis Station 14 sie nach website/assets/ legt
 sys.path.insert(0, HIER)
 import anschluss as AN  # noqa: E402   Dienst /api/registre (dieselben Antworten wie der Hausserver serve.py, Patch in LIEFERUNG.md); Schalter VORFUEHRUNG und Schlüssel dort
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 9286
@@ -135,5 +135,5 @@ class S(socketserver.ThreadingMixIn, http.server.HTTPServer):
 
 
 if __name__ == '__main__':
-    print(f'Das Besucherbuch · Culinarium Hannover: http://127.0.0.1:{PORT}/_werkzeuge/registre/', flush=True)
+    print(f'Die Besucherliste · Wirtschaft am Schlössli: http://127.0.0.1:{PORT}/_werkzeuge/registre/', flush=True)
     S(('127.0.0.1', PORT), H).serve_forever()
