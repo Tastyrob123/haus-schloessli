@@ -485,7 +485,7 @@
     Object.entries(attr).forEach(([k, v]) => b.dataset[k] = v);
     const bu = document.createElement('span'); bu.className = 'stueck__buehne'; bu.style.height = Math.ceil(H + 36) + 'px';
     const sa = document.createElement('span'); sa.className = 'stueck__satz'; blaetter.forEach(x => x && sa.appendChild(x)); bu.appendChild(sa); b.appendChild(bu);
-    b.insertAdjacentHTML('beforeend', `<b class="zl__name">${esc(name)}</b><em class="stueck__format">${esc(info)}</em>${nimm ? `<small class="stueck__satztext stueck__nimm">${esc(nimm)}</small>` : ''}`);
+    b.insertAdjacentHTML('beforeend', `<b class="zl__name">${zus(name)}</b><em class="stueck__format">${esc(info)}</em>${nimm ? `<small class="stueck__satztext stueck__nimm">${esc(nimm)}</small>` : ''}`);
     return b;
   }
   function leerStueck(attr, f, basis, info) {
@@ -654,14 +654,14 @@
   /* Fundliste 29.10., 03: der Platzhalter der grossen Felder steht einzeilig; wird das Feld zu schmal, gilt die kurze Fassung «Zum Beispiel: Plakat» */
   function kurzPlatz(t) {
     if (!t) return; t.dataset.lang = t.dataset.lang || t.placeholder;
-    const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')); c.font = `${g.fontWeight} ${g.fontSize} ${g.fontFamily}`;
-    t.placeholder = [t.dataset.lang, 'Etwa: ein Plakat', 'Beschreiben …'].find(x => c.measureText(x).width * 1.1 + 8 <= t.clientWidth - parseFloat(g.paddingLeft) - parseFloat(g.paddingRight)) || 'Beschreiben …';   // Tor 2: nie zweizeilig (Rand für Sperrung und Rundung)
+    const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')), pg = getComputedStyle(t, "::placeholder"); c.font = `${pg.fontStyle} ${pg.fontWeight} ${pg.fontSize} ${pg.fontFamily}`;
+    t.placeholder = [t.dataset.lang, 'Etwa: ein Plakat', 'Beschreiben …'].find(x => c.measureText(x).width * 1.2 + 6 <= t.clientWidth - parseFloat(g.paddingLeft) - parseFloat(g.paddingRight)) || 'Beschreiben …';   // Tor 2: nie zweizeilig (Rand für Sperrung und Rundung)
   }
   ['startFrei', 'startDirekt'].forEach(id => { const t = document.getElementById(id); if (!t) return; kurzPlatz(t); if (window.ResizeObserver) new ResizeObserver(() => kurzPlatz(t)).observe(t); if (document.fonts) document.fonts.ready.then(() => kurzPlatz(t)); });
   /* Schnelle Prüfung 3.11.2026: auch das Suchfeld und das Auftragsfeld der Arten kürzen ihren Platzhalter, wenn das Fenster schmaler wird (nicht nur beim Öffnen) */
   function suchPlatz() {
     const t = document.getElementById('startSuche'); if (!t || !t.clientWidth) return;
-    const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')); c.font = `${g.fontWeight} ${g.fontSize} ${g.fontFamily}`;
+    const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')); const pg = getComputedStyle(t, '::placeholder'); c.font = `${pg.fontStyle} ${pg.fontWeight} ${pg.fontSize} ${pg.fontFamily}`;
     const frei = t.clientWidth - parseFloat(g.paddingLeft) - parseFloat(g.paddingRight), passt = x => c.measureText(x).width * 1.1 + 8 <= frei;
     if (!passt(t.placeholder)) { const k = t.placeholder.replace(/:.*$/, ' …'); t.placeholder = passt(k) ? k : 'Suchen …'; }
   }

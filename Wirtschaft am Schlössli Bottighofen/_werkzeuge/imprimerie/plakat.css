@@ -121,3 +121,6 @@
 @media (max-width:1100px){#startWochen{grid-template-columns:1fr}#startWochen>.wo:first-child{grid-row:auto}#startWochen>.wo:first-child .wo__k{min-height:0;aspect-ratio:16/9}#startWochen>.wo:not(:first-child){grid-template-columns:minmax(140px,34%) minmax(0,1fr)}}
 @media (max-width:1180px){#startZu{width:36px!important;min-width:36px;height:36px}}
 @media (max-width:1100px){.ms-suche input{font-size:16px!important}}
+.stueck__nimm{visibility:hidden;transition:opacity .4s,transform .5s var(--e1),visibility 0s .4s}
+.stueck:hover .stueck__nimm,.stueck:focus-visible .stueck__nimm{visibility:visible;transition:opacity .4s,transform .5s var(--e1),visibility 0s}
+@media (max-width:600px){#startWochen>.wo:not(:first-child){display:block}#startWochen>.wo:not(:first-child) .wo__k{aspect-ratio:16/9}#startWochen>.wo:not(:first-child) .wo__n{margin:14px 8px 0 10px;padding-right:0}#startWochen>.wo:not(:first-child) .wo__n b{font-size:21px}}
