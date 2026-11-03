@@ -30,6 +30,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 
 - 20:20 UTC: Kartenpult Kriterium 34 (Scrollen ruckelt in WebKit auf dem Runner, 22 Bilder > 50 ms) → Vorschau auf eigener Ebene, content-visibility, kleinere Schatten (251bf66); Nachprüfung läuft.
 
+- 20:20 UTC: **Container-Neustart.** Dateien erhalten (auch uncommittete Stände), Prozesse weg. 20:25: Server neu gestartet (`bash cloud/server.sh`), Warter neu gesetzt, zwei neue Agenten für Hausdruckerei (ab Commit 54c8970 + Platte) und Werkbank-Kern (ab ba6ff61 + Platte).
+
 ## Was offen ist (Reihenfolge)
 1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
 2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.
