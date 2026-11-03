@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Vorschau-Server der Werkbank Culinarium (Werkbank-Chat 28.10.2026), nur lokal:  python3 website/_werkbank/serve.py [port], Standard 9288.
+"""Vorschau-Server der Werkbank (Wirtschaft am Schlössli, Nachtbau 3.11.2026; Vorlage Culinarium 28.10.2026), nur lokal:  python3 website/_werkbank/serve.py [port], Standard 9288.
 Zwei Wurzeln, damit alles der Werkbank im eigenen Revier website/_werkbank/ bleibt und die Wege trotzdem wie beim Schäfli sind:
 zuerst website/_werkbank/ (werkbank/, unterlagen/, drucksachen/, feed/, mails/, material/ …), sonst website/ (die Website selbst, nur gelesen).
 Mehrfädig, ohne Zwischenspeicher. Die Quellen der Werkbank (_werkbank/_werkbank/) werden nicht ausgeliefert."""
