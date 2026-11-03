@@ -23,7 +23,7 @@
   const url = k => DS.M.basis + 'vorschau-dok/' + k + '.webp';
 
   const css = document.createElement('style');
-  css.textContent = '.vbild{display:block;position:absolute;inset:0;background:var(--vb,#f4eeec);overflow:hidden}'
+  css.textContent = '.vbild{display:block;position:absolute;inset:0;background:var(--vb,#eceff4);overflow:hidden}'
     + '.vbild>img{display:block;width:100%;height:100%;opacity:0;transition:opacity .25s ease}.vbild.da>img{opacity:1}'
     + '@media (prefers-reduced-motion:reduce){.vbild>img{transition:none}}'
     + '#start .vb__block{content-visibility:auto;contain-intrinsic-size:auto 900px}';

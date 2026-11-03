@@ -5,96 +5,90 @@
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   const PFEIL = '<svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';
-  const WEB = 'https://www.instagram.com/culinarium_hannover/', TEL = WEB, MAIL = WEB;
+  const WEB = 'https://www.instagram.com/schloessli_bottighofen/', TEL = 'tel:+41716889092', MAIL = 'mailto:kontakt@schloessli-bottighofen.ch', RES = 'https://services.gastronovi.com/restaurants/118851/reservation/widget';
   const LOKAL = location.origin + location.pathname.replace(/[^/]*$/, '');
   let M = null;
 
   /* ---------- Vorlagen: Fakten aus katalog.js (NEWSLETTER), dort gepflegt ---------- */
   const NL = n => ((window.DSKATALOG && DSKATALOG.NEWSLETTER || []).find(x => x.n === n) || {}).inhalt || {};
   const VORLAGEN = [
-    { key: "abend", n: "Der nächste Abend", wo: "an alle Gäste", foto: "anstossen", bau() {
-      const i = NL("Der nächste Abend");
-      return { betreff: "Culinarium am 27.–28. November", vorschau: "Vierzehn Gäste an einer Tafel, drei Gänge aus der Küche und dazu fünf Signature Drinks, passend zum Essen. Momo erklärt am Tisch, was im Glas ist.", versand: "mailchimp",
-        kopf: { foto: "anstossen", alt: "Am Tisch wird bei Kerzen angestoßen" }, fuss: { abmelden: true },
+    { key: "kreuzfahrt", n: "Four-Hands auf dem Rhein", wo: "an alle Gäste", foto: "moni", bau() {
+      return { betreff: "Four-Hands an Bord: die Excellence Gourmetkreuzfahrt", vorschau: "Monika Huber kocht mit ihrem Mentor Dieter Koschina auf der Excellence Countess, vom 13. bis 15. November 2026.", versand: "mailchimp",
+        kopf: { foto: "moni", alt: "Monika Huber, Küchenchefin, auf der Terrasse" }, fuss: { abmelden: true },
         bloecke: [
-          {"typ": "titel", "ueber": "A UNiQUE EXPERiENCE BY MOMO X RUDI", "titel": "Der nächste Abend", "unter": ""},
-          {"typ": "text", "text": "Hallo [Name],\n\nDas Menü ändert sich mit jedem Abend. Rudi kocht drei Gänge, dazu kommen fünf Signature Drinks von Momo, mit Tasting und einer kleinen Schulung am Tisch.", "ausr": "mitte"},
-          {"typ": "termine", "titel": "", "eintraege": [{"wann": "27.–28. November", "was": "Culinarium", "wo": "Walk on the Wild Side · Haasemannstraße 13"}]},
-          {"typ": "foto", "foto": "lauch", "alt": "Lauch, Blumenkohl und Chipotle auf dem Teller", "unterschrift": "LAUCH / BLUMENKOHL / CHIPOTLE", "voll": false},
-          {"typ": "text", "text": "Tickets ausschließlich per Vorverkauf über PayPal. Schreibt uns hierzu gerne eine Nachricht.", "ausr": "mitte"},
-          {"typ": "knopf", "text": "Nachricht schreiben", "link": WEB},
+          {"typ": "titel", "ueber": "Excellence Gourmetkreuzfahrt", "titel": "Four-Hands an Bord", "unter": "13. bis 15. November 2026"},
+          {"typ": "text", "text": "Guten Tag [Name]\n\nGemeinsam mit einem ihrer grossen Mentoren, Dieter Koschina, geht unsere Küchenchefin Monika Huber an Bord der Excellence Countess. Start ist am Freitag in Basel, über Nacht geht es nach Strassburg, am Samstag denselben Weg zurück.", "ausr": "mitte"},
+          {"typ": "termine", "titel": "", "eintraege": [{"wann": "Freitag, 13. November · 15:00", "was": "Start in Basel", "wo": "Excellence Countess"}, {"wann": "Sonntag, 15. November · 14:00", "was": "Ankunft in Basel", "wo": ""}]},
+          {"typ": "foto", "foto": "iberia", "alt": "Fisch in grüner Sauce in einer gerippten Schale, daneben ein Weinglas", "unterschrift": "Welcome-Apéro, Live-Musik, Gala-Dinner und DJ", "voll": false},
+          {"typ": "text", "text": "Unser Restaurant ist über diese drei Tage geschlossen, da unser Team geschlossen mit an Bord ist.", "ausr": "mitte"},
+          {"typ": "knopf", "text": "Zur Reise auf excellence.ch", "link": "https://www.excellence.ch/flusskreuzfahrten/gourmetfestival-dieter-koschina-monika-huber-eobas88-gf"},
         ] };
     } },
-    { key: "warteliste", n: "Warteliste: Platz frei", wo: "an die Warteliste", foto: "kerze2", bau() {
-      const i = NL("Warteliste: Platz frei");
-      return { betreff: "Ein Platz an der Tafel ist frei", vorschau: "Vierzehn Plätze an einer Tafel, und der letzte Abend war ausgebucht. Trag dich ein: Sobald der nächste Termin feststeht, erfährst du es vor allen anderen.", versand: "mailchimp",
-        kopf: { foto: "kerze2", alt: "Gäste und Kerzen an der Tafel" }, fuss: { abmelden: true },
+    { key: "ferien", n: "Wir machen Ferien", wo: "an alle Gäste", foto: "morgen", bau() {
+      return { betreff: "Betriebsferien vom 22. Dezember bis 10. Februar", vorschau: "Danke für dieses Jahr am See. Ab dem 11. Februar 2027 sind wir wieder für Sie da.", versand: "mailchimp",
+        kopf: { foto: "morgen", alt: "Morgen am Bodensee, hinten die Alpen und die Schifflände Bottighofen" }, fuss: { abmelden: true },
         bloecke: [
-          {"typ": "titel", "ueber": "Culinarium", "titel": "Ein Platz ist frei", "unter": ""},
-          {"typ": "text", "text": "Hallo [Name],\n\nVierzehn Plätze an einer Tafel, und der letzte Abend war ausgebucht. Trag dich ein: Sobald der nächste Termin feststeht, erfährst du es vor allen anderen.", "ausr": "mitte"},
-          {"typ": "termine", "titel": "", "eintraege": [{"wann": "27.–28. November", "was": "Culinarium", "wo": "Walk on the Wild Side · Haasemannstraße 13"}]},
-          {"typ": "knopf", "text": "Platz sichern", "link": WEB},
-        ] };
-    } },
-    { key: "rueckblick", n: "Rückblick auf den Abend", wo: "an alle Gäste", foto: "tafelleer", bau() {
-      const i = NL("Danke für den Abend");
-      return { betreff: "Rückblick: ein Abend an der Tafel", vorschau: "Der Abend ist ausgebucht, bevor er beginnt.", versand: "mailchimp",
-        kopf: { foto: "tafelleer", alt: "Die lange Tafel mit Kerzen, gedeckt" }, fuss: { abmelden: true },
-        bloecke: [
-          {"typ": "titel", "ueber": "Culinarium", "titel": "Und das war nur ein Abend", "unter": ""},
-          {"typ": "text", "text": "Das Menü wechselt mit jedem Abend. Ein paar Teller und Drinks aus den letzten Ausgaben.", "ausr": "mitte"},
+          {"typ": "titel", "ueber": "Betriebsferien", "titel": "Wir machen Ferien", "unter": "22. Dezember 2026 - 10. Februar 2027"},
+          {"typ": "text", "text": "Guten Tag [Name]\n\nDanke für dieses Jahr am See. Vom 22. Dezember 2026 bis zum 10. Februar 2027 bleibt die Wirtschaft am Schlössli geschlossen.", "ausr": "mitte"},
           {"typ": "trenner"},
-          {"typ": "foto", "foto": "roq1", "alt": "Blumenkohl mit Roquefort, Kapern und Quinoa, daneben der Drink", "unterschrift": "BLUMENKOHL / ROQUEFORT / KAPERN / QUINOA", "voll": false},
-          {"typ": "text", "text": "Seit September 2023 bekommt jeder Culinarium-Abend ein eigenes Plakat. Zusammen sehen sie aus wie die Ausgaben eines Magazins.", "ausr": "mitte"},
-          {"typ": "knopf", "text": "Alle Abende ansehen", "link": WEB},
+          {"typ": "termine", "titel": "", "eintraege": [{"wann": "Ab 11. Februar 2027", "was": "Wieder für Sie da", "wo": "Donnerstag - Montag · 11:30 Uhr - 23:00 Uhr"}]},
+          {"typ": "knopf", "text": "Tisch reservieren", "link": RES},
         ] };
     } },
-    { key: "einladung", n: "Einladung an Stammgäste", wo: "an ausgewählte Gäste", foto: "kerze3", bau() {
-      const i = NL("Der nächste Abend");
-      return { betreff: "Einladung: Culinarium am 27.–28. November", vorschau: "Die Abende an der langen Tafel des Walk on the Wild Side: drei Gänge, fünf Drinks, vierzehn Plätze.", versand: "mailchimp",
-        kopf: { foto: "kerze3", alt: "Blick durch die Tür auf die Tafel" }, fuss: { abmelden: true },
+    { key: "lunch", n: "Das Lunch-Menü", wo: "an Stammgäste", foto: "tortelloni", bau() {
+      return { betreff: "Lunch am See: drei Gänge am Mittag", vorschau: "Kürbissuppe, Risi e bisi und Joghurt Panna Cotta, Donnerstag bis Montag am Mittag.", versand: "mailchimp",
+        kopf: { foto: "tortelloni", alt: "Tortelloni mit Tomate, Burrata und Taggiasca-Olive" }, fuss: { abmelden: true },
         bloecke: [
-          {"typ": "titel", "ueber": "A UNiQUE EXPERiENCE BY MOMO X RUDI", "titel": "Ein Abend an der Tafel", "unter": ""},
-          {"typ": "text", "text": "Hallo [Name],\n\nDie Abende an der langen Tafel des Walk on the Wild Side: drei Gänge, fünf Drinks, vierzehn Plätze. Und wer dir erklärt, was auf dem Teller und im Glas ist.", "ausr": "mitte"},
-          {"typ": "termine", "titel": "", "eintraege": [{"wann": "27.–28. November", "was": "Culinarium", "wo": "Walk on the Wild Side · Haasemannstraße 13"}]},
-          {"typ": "text", "text": "Freitags ab 19 Uhr, samstags ab 17 Uhr.", "ausr": "mitte"},
-          {"typ": "knopf", "text": "Platz anfragen", "link": WEB},
+          {"typ": "titel", "ueber": "Am Mittag", "titel": "Lunch am See", "unter": "Drei Gänge"},
+          {"typ": "text", "text": "Guten Tag [Name]\n\nAm Mittag gibt es bei uns ein Lunch-Menü mit drei Gängen, direkt im Hafen von Bottighofen.", "ausr": "mitte"},
+          {"typ": "termine", "titel": "", "eintraege": [{"wann": "Kürbissuppe", "was": "Wachtelei · Serrano Schinken", "wo": ""}, {"wann": "Risi e bisi", "was": "Reis · Miesmuschel · Erbsen · Spinat", "wo": ""}, {"wann": "Joghurt Panna Cotta", "was": "Apfelcrumble", "wo": ""}]},
+          {"typ": "text", "text": "Küche 11:30 Uhr - 13:30 Uhr. Dienstag & Mittwoch Ruhetag.", "ausr": "mitte"},
+          {"typ": "knopf", "text": "Tisch reservieren", "link": RES},
         ] };
     } },
-    { key: "ticket", n: "Dein Platz an der Tafel", wo: "Bestätigungsmail", foto: "fassade", bau() {
-      const i = NL("Danke für den Abend");
-      return { betreff: "Dein Platz an der Tafel", vorschau: "27.–28. November · Walk on the Wild Side · Haasemannstraße 13", versand: "anderes",
-        kopf: { foto: "fassade", alt: "Die Fenster der Bar am Abend" }, fuss: { abmelden: false },
+    { key: "bankett", n: "Banketts & Gruppen", wo: "an Anfragen", foto: "gaststube", bau() {
+      return { betreff: "Ihr Fest in der Wirtschaft am Schlössli", vorschau: "Auf zwei Etagen für jeweils bis zu 26 Personen, Tavolata oder gesetztes Menü.", versand: "anderes",
+        kopf: { foto: "gaststube", alt: "Die Gaststube mit grossen Fenstern zum Hafen" }, fuss: { abmelden: false },
         bloecke: [
-          {"typ": "titel", "ueber": "Culinarium", "titel": "Dein Platz an der Tafel", "unter": ""},
-          {"typ": "text", "text": "Hallo [Name],\n\ndein Platz steht."},
-          {"typ": "termine", "titel": "", "eintraege": [{"wann": "27.–28. November", "was": "Freitags ab 19 Uhr, samstags ab 17 Uhr.", "wo": ""}, {"wann": "Wo", "was": "Haasemannstraße 13 · 30449 Hannover-Linden", "wo": ""}]},
-          {"typ": "text", "text": "Da die Plätze begrenzt sind, bitten wir um Verständnis, dass Tickets nicht rückerstattet werden können."},
-          {"typ": "knopf", "text": "So findest du hin", "link": WEB},
+          {"typ": "titel", "ueber": "Banketts & Gruppen", "titel": "Ihr Fest am See", "unter": ""},
+          {"typ": "text", "text": "Guten Tag [Name]\n\nGerne übernehmen wir die Bewirtung Ihrer Familien- oder Firmenfeier. Sie geben den Rahmen vor, ob Tavolata oder gesetztes Menü. Welches Gericht darf auf keinen Fall fehlen, welche Allergien müssen wir bedenken?", "ausr": "mitte"},
+          {"typ": "termine", "titel": "", "eintraege": [{"wann": "Zwei Etagen", "was": "für jeweils bis zu 26 Personen", "wo": ""}, {"wann": "Menüs", "was": "Frühling, Sommer, Herbst: drei bis fünf Gerichte nach Wahl", "wo": ""}]},
+          {"typ": "text", "text": "Wir richten uns individuell nach Ihnen und Ihren Wünschen und besprechen alles gerne auch vor Ort in Ruhe.", "ausr": "mitte"},
+          {"typ": "knopf", "text": "Anfrage per Telefon", "link": TEL},
         ] };
     } },
-    { key: "danke", n: "Danke für den Abend", wo: "Dankesmail", foto: "toast", bau() {
-      const i = NL("Danke für den Abend");
-      return { betreff: "Danke für den Abend", vorschau: "Nichts wäre all das ohne unsere tollen Gäste! Danke an alle, die da waren.", versand: "anderes",
-        kopf: { foto: "toast", alt: "Am Tisch wird angestoßen" }, fuss: { abmelden: false },
+    { key: "reservation", n: "Ihr Tisch am See", wo: "Bestätigungsmail", foto: "platanen", bau() {
+      return { betreff: "Ihr Tisch in der Wirtschaft am Schlössli", vorschau: "[Datum] · [Uhrzeit] · Seestrasse 50 · 8598 Bottighofen", versand: "anderes",
+        kopf: { foto: "platanen", alt: "Gedeckte Tische unter den Platanen, Sonnenschirme, dahinter der Hafen" }, fuss: { abmelden: false },
         bloecke: [
-          {"typ": "titel", "ueber": "Culinarium", "titel": "Danke für den Abend", "unter": "A UNiQUE EXPERiENCE BY MOMO X RUDI"},
-          {"typ": "text", "text": "Hallo [Name],\n\nNichts wäre all das ohne unsere tollen Gäste! Danke an alle, die da waren.", "ausr": "mitte"},
+          {"typ": "titel", "ueber": "Wirtschaft am Schlössli", "titel": "Ihr Tisch am See", "unter": ""},
+          {"typ": "text", "text": "Guten Tag [Name]\n\nwir freuen uns auf Ihren Besuch."},
+          {"typ": "termine", "titel": "", "eintraege": [{"wann": "[Datum · Uhrzeit]", "was": "[Personen]", "wo": ""}, {"wann": "Wo", "was": "Seestrasse 50 · 8598 Bottighofen", "wo": ""}]},
+          {"typ": "text", "text": "Am Kreisverkehr beim Restaurant Bären in die Seestrasse Richtung Hafen, über den Bahnübergang bis zu unserem Parkplatz."},
+          {"typ": "knopf", "text": "Bei Fragen anrufen", "link": TEL},
+        ] };
+    } },
+    { key: "danke", n: "Danke für Ihren Besuch", wo: "Dankesmail", foto: "abend", bau() {
+      return { betreff: "Danke für Ihren Besuch", vorschau: "Schön, dass Sie bei uns am Hafen waren.", versand: "anderes",
+        kopf: { foto: "abend", alt: "Abend unter der Platane mit Lichterkette, Gäste am Tisch über dem See" }, fuss: { abmelden: false },
+        bloecke: [
+          {"typ": "titel", "ueber": "Wirtschaft am Schlössli", "titel": "Danke für Ihren Besuch", "unter": ""},
+          {"typ": "text", "text": "Guten Tag [Name]\n\nSchön, dass Sie bei uns am Hafen waren. Wir freuen uns, Sie bald wieder auf der Terrasse oder an der Lästermeile zu sehen.", "ausr": "mitte"},
           {"typ": "trenner"},
-          {"typ": "text", "text": "Vierzehn Plätze an einer Tafel, und der letzte Abend war ausgebucht. Trag dich ein: Sobald der nächste Termin feststeht, erfährst du es vor allen anderen.", "ausr": "mitte"},
-          {"typ": "knopf", "text": "Auf die Warteliste", "link": WEB},
+          {"typ": "text", "text": "Donnerstag - Montag · 11:30 Uhr - 23:00 Uhr. Dienstag & Mittwoch Ruhetag.", "ausr": "mitte"},
+          {"typ": "knopf", "text": "Wieder reservieren", "link": RES},
         ] };
     } },
     { key: 'leer', n: 'Leere E-Mail', wo: 'selbst aufbauen', foto: '', bau() {
       return { betreff: '', vorschau: '', versand: 'mailchimp', kopf: { foto: '' }, fuss: { abmelden: true },
-        bloecke: [{ typ: 'titel', ueber: 'Culinarium', titel: 'Titel', unter: '' }, { typ: 'text', text: 'Dein Text.' }] };
+        bloecke: [{ typ: 'titel', ueber: 'Wirtschaft am Schlössli', titel: 'Titel', unter: '' }, { typ: 'text', text: 'Ihr Text.' }] };
     } },
   ];
 
   const ARTEN = {
-    titel: { n: 'Titel', ic: '<path d="M5 6h14M12 6v13"/>', neu: () => ({ typ: 'titel', ueber: 'Culinarium', titel: 'Titel', unter: '' }) },
-    text: { n: 'Text', ic: '<path d="M4 6h16M4 10h16M4 14h16M4 18h10"/>', neu: () => ({ typ: 'text', text: 'Dein Text.' }) },
-    foto: { n: 'Foto', ic: '<path d="M4 5h16v14H4zM4 16l5-5 4 4 2.5-2.5L20 17"/>', neu: () => ({ typ: 'foto', foto: 'fassade', alt: 'Die Fenster der Bar am Abend', unterschrift: '', voll: false }) },
+    titel: { n: 'Titel', ic: '<path d="M5 6h14M12 6v13"/>', neu: () => ({ typ: 'titel', ueber: 'Wirtschaft am Schlössli', titel: 'Titel', unter: '' }) },
+    text: { n: 'Text', ic: '<path d="M4 6h16M4 10h16M4 14h16M4 18h10"/>', neu: () => ({ typ: 'text', text: 'Ihr Text.' }) },
+    foto: { n: 'Foto', ic: '<path d="M4 5h16v14H4zM4 16l5-5 4 4 2.5-2.5L20 17"/>', neu: () => ({ typ: 'foto', foto: 'start', alt: 'Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen', unterschrift: '', voll: false }) },
     knopf: { n: 'Knopf mit Link', ic: '<rect x="3" y="8" width="18" height="8" rx="4"/><path d="M14 12h3m-1.5-1.5L17 12l-1.5 1.5"/>', neu: () => ({ typ: 'knopf', text: 'Mehr erfahren', link: WEB }) },
     termine: { n: 'Termine', ic: '<path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/>', neu: () => ({ typ: 'termine', titel: '', eintraege: [{ wann: '[Datum · Zeit]', was: '[Anlass]', wo: '[Ort]' }] }) },
     liste: { n: 'Preisliste', ic: '<path d="M4 7h11M4 12h11M4 17h11M18 7h2M18 12h2M18 17h2"/>', neu: () => ({ typ: 'liste', titel: '', eintraege: [{ name: '[Name]', detail: '[Beschreibung]', preis: 'CHF [Preis]' }] }) },
@@ -180,12 +174,12 @@
     const box = $('#mlFelder'), n = (doc.bloecke || []).length;
     if (wahl == null || wahl === 'mail') {
       box.innerHTML = `<div class="ml-kopfzeile"><h2><small>Einstellungen</small>Die E-Mail</h2></div>
-        ${feld('name', 'Name in deiner Ablage', doc.name || '')}
+        ${feld('name', 'Name in Ihrer Ablage', doc.name || '')}
         ${feld('betreff', 'Betreff', doc.betreff || '')}
         ${feld('vorschau', 'Vorschauzeile (erscheint im Posteingang nach dem Betreff)', doc.vorschau || '', 'textarea', 2)}
         <label class="ml-f"><span>Verschickt mit</span><select data-k="versand">${Object.entries(DSMAIL.VERSAND).map(([k, v]) => `<option value="${k}"${doc.versand === k ? ' selected' : ''}>${v.name}</option>`).join('')}</select></label>
-        <p class="ml-leise ml-versand">Die Werkstatt verschickt selbst nichts. Wähl hier das Programm, mit dem ihr euren Newsletter schon verschickt: Die Werkstatt setzt den Abmeldelink so, wie dieses Programm ihn braucht, und gibt dir die fertige Mail zum Einfügen dort. Habt ihr kein solches Programm, wähl «Anderes Programm»: Dann steht im Fuss [Abmeldelink], den ersetzt du vor dem Versand durch euren eigenen Link.</p>
-        <p class="ml-leise ml-tipp">Tipp: Tippst du in der Vorschau einen Teil der E-Mail an, öffnet er sich hier zum Bearbeiten.</p>`;   // Versand und Bearbeiten getrennt erklärt (Robert 29.10.2026)
+        <p class="ml-leise ml-versand">Die Werkstatt verschickt selbst nichts. Wählen Sie hier das Programm, mit dem Sie Ihren Newsletter schon verschicken: Die Werkstatt setzt den Abmeldelink so, wie dieses Programm ihn braucht, und gibt Ihnen die fertige Mail zum Einfügen dort. Haben Sie kein solches Programm, wählen Sie «Anderes Programm»: Dann steht im Fuss [Abmeldelink], den ersetzen Sie vor dem Versand.</p>
+        <p class="ml-leise ml-tipp">Tipp: Tippen Sie in der Vorschau einen Teil der E-Mail an, öffnet er sich hier zum Bearbeiten.</p>`;   // Versand und Bearbeiten getrennt erklärt (Robert 29.10.2026)
     } else if (wahl === 'kopf') {
       box.innerHTML = `<div class="ml-kopfzeile"><h2><small>Teil der E-Mail</small>Kopf</h2></div><p class="ml-leise">Oben stehen Zeichen und Name des Hauses, darunter das Kopfbild.</p>${fotoFeld(doc.kopf || {}, true)}`;
     } else if (wahl === 'fuss') {
@@ -251,7 +245,7 @@
   function fotoRaster() {
     const q = $('#mlFotoSuche').value.trim().toLowerCase(), z = ziel() || {};
     const l = M.bilder.filter(b => (fGruppe === 'Alle' || b.gruppe === fGruppe) && (!q || (b.alt + ' ' + b.key + ' ' + b.gruppe).toLowerCase().includes(q)));
-    $('#mlFotoRaster').innerHTML = l.map(b => `<button data-foto="${b.key}" class="${z.foto === b.key && !z.url ? 'an' : ''}" title="${esc(b.alt)}"><img loading="lazy" src="haeuser/culinarium/mini/${b.key}.webp" alt=""><span>${esc(b.alt)}</span></button>`).join('') || '<p class="ml-leise">Nichts gefunden.</p>';
+    $('#mlFotoRaster').innerHTML = l.map(b => `<button data-foto="${b.key}" class="${z.foto === b.key && !z.url ? 'an' : ''}" title="${esc(b.alt)}"><img loading="lazy" src="haeuser/schloessli/mini/${b.key}.webp" alt=""><span>${esc(b.alt)}</span></button>`).join('') || '<p class="ml-leise">Nichts gefunden.</p>';
   }
 
   /* ---------- Prüfung, Ausgabe ---------- */
@@ -278,7 +272,7 @@
 
   /* ---------- Linke Platte: Vorlagen, Meine E-Mails, Teile ---------- */
   function zeichneVorlagen() {
-    $('#mlVorlagen').innerHTML = VORLAGEN.map(v => `<button data-vorlage="${v.key}"><span class="ml-vb"${v.foto ? ` style="background-image:url('haeuser/culinarium/mini/${v.foto}.webp')"` : ''}></span><span><b>${esc(v.n).replace(/ (\S+)$/, '\u00a0$1')}</b><small>${esc(v.wo)}</small></span></button>`).join('');
+    $('#mlVorlagen').innerHTML = VORLAGEN.map(v => `<button data-vorlage="${v.key}"><span class="ml-vb"${v.foto ? ` style="background-image:url('haeuser/schloessli/mini/${v.foto}.webp')"` : ''}></span><span><b>${esc(v.n).replace(/ (\S+)$/, '\u00a0$1')}</b><small>${esc(v.wo)}</small></span></button>`).join('');
   }
   function zeichneMeine() {
     const l = lies(); $('#mlMeineZahl').textContent = l.length; $('#mlMeineBox').hidden = !l.length;
@@ -290,7 +284,7 @@
   }
 
   async function los() {
-    M = await (await fetch('haeuser/culinarium/marke.json')).json();
+    M = await (await fetch('haeuser/schloessli/marke.json')).json();
     const z = M.zeichen, svg = `<svg viewBox="${z.vb.join(' ')}">${z.pfade.map(d => `<path d="${d}"/>`).join('')}</svg>`;
     $('#mlZeichen').innerHTML = svg; $('#mlKapitelZeichen').innerHTML = svg;
     zeichneVorlagen(); zeichneMeine();

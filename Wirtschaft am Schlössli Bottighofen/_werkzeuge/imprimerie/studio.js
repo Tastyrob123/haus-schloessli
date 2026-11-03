@@ -1,7 +1,7 @@
 /* Drucksachen-Studio · Oberfläche: Entwerfen (KI), Vorlagen, Fotos, Ablage, Bearbeiten wie auf dem Papier, druckfertig speichern. */
 (function () {
   const DS = window.DS;
-  const HAUS = new URLSearchParams(location.search).get('haus') || 'culinarium';
+  const HAUS = new URLSearchParams(location.search).get('haus') || 'schloessli';
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   const B = DS.B;
   const ST = { M: null, doc: null, seite: 0, sel: null, S: 3, zoom: 1, hist: [], zukunft: [], modus: null, urform: {}, seitePanel: false };
@@ -28,7 +28,7 @@
     });
   }
 
-  /* Ersatzfoto, wenn ein Entwurf ein unbekanntes Foto nennt: ein Foto des Hauses (vorher fest «haus-aare», ein Foto des Grand Beau-Rivage, Prüfung 16.10.2026) */
+  /* Ersatzfoto, wenn ein Entwurf ein unbekanntes Foto nennt: ein Foto des Hauses (Prüfung 16.10.2026) */
   DS.ersatzFoto = M => (M.bildIndex[M.ersatz || 'haus-tag'] ? (M.ersatz || 'haus-tag') : ((M.bilder.find(b => !b.eigen) || M.bilder[0] || {}).key));
   /* ---------- Ablage ---------- */
   const alleDocs = () => lies(LS.docs, {});
@@ -43,7 +43,7 @@
     if (da && ST.stand && (da.geaendert || 0) > ST.stand) {
       const k = JSON.parse(JSON.stringify(ST.doc)); k.id = 'd' + Date.now().toString(36); k.name = (k.name || 'Drucksache') + ' (zweites Fenster)'; ST.doc = k;
       $('#docName').value = k.name;
-      setTimeout(() => melde(`KONFLIKT · Diese Drucksache wurde in einem anderen Fenster geändert. Nichts ist überschrieben: Deine Fassung steht als «${k.name}» in Meine Medien.`, 12000), 0);
+      setTimeout(() => melde(`KONFLIKT · Diese Drucksache wurde in einem anderen Fenster geändert. Nichts ist überschrieben: Ihre Fassung steht als «${k.name}» in Meine Medien.`, 12000), 0);
     }
     ST.doc.geaendert = Date.now(); ST.stand = ST.doc.geaendert;
     d[ST.doc.id] = ST.doc;
@@ -75,7 +75,7 @@
     const d = ST.doc, gespeichert = !!alleDocs()[d.id];
     const seit = Date.now() - (parseInt(String(d.id).slice(1), 36) || Date.now());
     const lange = gespeichert && (seit > 10 * 60000 || ST.hist.length >= 10);
-    const a = await dialog(`<h2>Diesen Entwurf verwerfen?</h2><p class="leise">${gespeichert ? 'Er wird aus deinen Drucksachen entfernt.' : 'Er ist noch nicht gespeichert und verschwindet einfach.'}${lange ? ' Du hast länger daran gearbeitet. Wenn du ihn noch brauchen könntest, behalte ihn als Kopie.' : ''}</p>`,
+    const a = await dialog(`<h2>Diesen Entwurf verwerfen?</h2><p class="leise">${gespeichert ? 'Er wird aus Ihren Drucksachen entfernt.' : 'Er ist noch nicht gespeichert und verschwindet einfach.'}${lange ? ' Sie haben länger daran gearbeitet. Wenn Sie ihn noch brauchen könnten, behalten Sie ihn als Kopie.' : ''}</p>`,
       [{ t: 'Behalten', v: false }, ...(lange ? [{ t: 'Stattdessen als Kopie behalten', v: 'kopie' }] : []), { t: 'Verwerfen', v: true, haupt: true }]);
     if (!a) return;
     const alle = alleDocs();
@@ -83,7 +83,7 @@
     delete alle[d.id]; schreib(LS.docs, alle);
     oeffne(leer('a5h', true)); zeichneAblage();
     if (window.DSStart) DSStart.zeige('meine');
-    melde(a === 'kopie' ? 'Als Kopie in deinen Drucksachen behalten.' : 'Entwurf verworfen.');
+    melde(a === 'kopie' ? 'Als Kopie in Ihren Drucksachen behalten.' : 'Entwurf verworfen.');
   }
   function zurueck() { if (document.activeElement && document.activeElement.id === 'eText') document.activeElement.blur();   // erst das Tippen abschliessen (löst «change» aus), dann zurück
     if (eTextVor) { ST.hist.push(eTextVor); eTextVor = null; }   // Tippen im Feld «Inhalt» ohne Verlassen des Felds
@@ -180,7 +180,7 @@
   }
 
   /* ---------- Eigenschaften ---------- */
-  const farbKnoepfe = (aktiv, art) => `<div class="farben">${Object.entries(ST.M.farben).map(([k, v]) => `<button data-farbe="${k}" data-art="${art}" title="${esc(ST.M.farbnamen[k] || k)}" style="background:${v}" class="${aktiv === k ? 'an' : ''}"></button>`).join('')}</div>`;
+  const farbKnoepfe = (aktiv, art) => `<div class="farben">${Object.entries(ST.M.farben).filter(([k, v], i, l) => l.findIndex(x => String(x[1]).toLowerCase() === String(v).toLowerCase()) === i).map(([k, v]) => `<button data-farbe="${k}" data-art="${art}" title="${esc(ST.M.farbnamen[k] || k)}" style="background:${v}" class="${aktiv === k ? 'an' : ''}"></button>`).join('')}</div>`;
   const regler = (name, wert, min, max, schritt, anzeige) => `<div class="regler"><input type="range" data-regler="${name}" min="${min}" max="${max}" step="${schritt}" value="${wert}"><output>${anzeige}</output></div>`;
   const masse = (el, felder) => `<div class="masse">${felder.map(([k, t]) => `<label>${t}<input type="number" step="0.5" data-mass="${k}" value="${r2(el[k])}"></label>`).join('')}</div>`;
   const ROLLEN = [['titel', 'Titel'], ['kapitale', 'Kapitale'], ['text', 'Text'], ['kursiv', 'Betont'], ['mono', 'Zeile'], ['plakat', 'Plakatzeile']];
@@ -211,9 +211,9 @@
         <div class="gruppe"><label>Format</label><select id="eFormat">${Object.entries(DS.FORMATE).map(([k, f]) => `<option value="${k}" ${k === ST.doc.formatKey ? 'selected' : ''}>${f.name.replace(/ /g, '\u00a0')}\u00a0· ${f.b} auf ${f.h} mm</option>`).join('')}</select>
           <p class="klein">Beim Wechsel wird jede Seite im neuen Format neu gesetzt. Texte und Fotos bleiben.</p></div>
         ${q ? `<div class="gruppe"><button class="knopf knopf--voll" data-tu="neuSetzen" style="height:42px">Seite neu setzen<i><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4"/></svg></i></button>
-          <p class="klein">Setzt die Seite mit deinen geänderten Texten und Fotos neu, Abstände stimmen danach wieder.</p></div>` : ''}
+          <p class="klein">Setzt die Seite mit Ihren geänderten Texten und Fotos neu, Abstände stimmen danach wieder.</p></div>` : ''}
         <div class="gruppe"><label>Aufbau</label><select id="eVorlage"><option value="">${q ? '' : 'Frei gestaltet'}</option>${Object.entries(DS.VORLAGEN).map(([k, v]) => `<option value="${k}" ${q && q.vorlage === k ? 'selected' : ''}>${v.name}</option>`).join('')}</select></div>
-        <div class="gruppe"><label>Grund</label><div class="segment" id="eTon">${[['dunkel', 'Nacht'], ['hell', 'Warmweiss'], ['creme', 'Plakatpapier'], ['dc', 'Violett']].map(([k, t]) => `<button data-ton="${k}" class="${q && q.ton === k ? 'an' : ''}">${t}</button>`).join('')}</div>
+        <div class="gruppe"><label>Grund</label><div class="segment" id="eTon">${[['dunkel', 'Stuhlblau'], ['hell', 'Blatt'], ['creme', 'Papier']].map(([k, t]) => `<button data-ton="${k}" class="${q && q.ton === k ? 'an' : ''}">${t}</button>`).join('')}</div>
           <div style="margin-top:10px">${farbKnoepfe(s.grund, 'grund')}</div>
           <label style="margin:14px 0 8px">Tapete</label><div class="segment" id="eTapete">${[['', 'Ohne Tapete'], ['dunkel', 'Dunkel'], ['hell', 'Hell']].map(([k, t]) => `<button data-tapete="${k}" class="${(s.tapete || '') === k ? 'an' : ''}">${t}</button>`).join('')}</div></div>
         <div class="gruppe"><label>Seiten</label><div class="knoepfe">${sozial() ? '' : '<button data-tu="rueckseite">Rückseite anlegen</button>'}<button data-tu="seiteKopie">${sozial() ? 'Bild kopieren' : 'Seite kopieren'}</button>
@@ -226,7 +226,7 @@
       h += `<div class="gruppe gestalten"><label>Schrift</label><div class="segment segment--schrift">${SCHRIFTEN.filter(([k]) => M.schriften[k]).map(([k, t]) => `<button data-rolle="${k}" class="${(el.rolle === 'kursiv' ? 'text' : el.rolle) === k ? 'an' : ''}" style="font-family:'DS-${k}'">${esc(M.schriften[k].familie || t).replace(/ (\S+)$/, '\u00a0$1')}</button>`).join('')}</div></div>
         <div class="gruppe"><label>Grösse</label><div class="groesse"><button data-grschritt="-1" aria-label="Kleiner">−</button><input type="number" min="4" max="400" step="0.5" data-grpt="1" value="${r2(el.gr * PT)}"><span>pt</span><button data-grschritt="1" aria-label="Grösser">+</button></div>
           ${regler('gr', el.gr, .8, Math.max(40, el.gr), .05, r2(el.gr * PT) + ' pt')}</div>
-        <div class="gruppe"><label>Textart</label><div class="segment">${[['normal', 'Normal'], ['kursiv', 'Betont'], ['versal', 'Versalien gesperrt']].map(([k, t]) => `<button data-textart="${k}" class="${textart(el) === k ? 'an' : ''}" ${k === 'kursiv' && !kursivGeht(el) ? 'disabled title="Kursiv gibt es in der Hausschrift nur für Instrument Sans"' : ''}>${t}</button>`).join('')}</div></div>
+        <div class="gruppe"><label>Textart</label><div class="segment">${[['normal', 'Normal'], ['kursiv', 'Betont'], ['versal', 'Versalien gesperrt']].map(([k, t]) => `<button data-textart="${k}" class="${textart(el) === k ? 'an' : ''}" ${k === 'kursiv' && !kursivGeht(el) ? 'disabled title="Das Haus setzt nie kursiv, Betonung über Stärke"' : ''}>${t}</button>`).join('')}</div></div>
         <div class="gruppe"><label>Farbe</label>${farbKnoepfe(el.farbe, 'el')}</div>
         <div class="gruppe"><label>Ausrichtung</label><div class="segment">${[['l', 'Links'], ['c', 'Mitte'], ['r', 'Rechts']].map(([k, t]) => `<button data-ausr="${k}" class="${(el.ausr || 'l') === k ? 'an' : ''}">${t}</button>`).join('')}</div></div>
         <div class="gruppe"><label>Abstände</label><label class="unter">Sperrung</label>${regler('sperr', el.sperr || 0, -.03, .45, .01, (el.sperr || 0).toFixed(2))}
@@ -357,7 +357,7 @@
   async function umsetzenSeite(neu) {
     const s = seite();
     const q = s.quelle || { vorlage: 'deckel', ton: 'dunkel', inhalt: ausSeiteInhalt(s) };
-    if (s.frei && !(await frag('Die Seite wird mit dem neuen Aufbau neu gesetzt. Texte und Fotos bleiben, deine Verschiebungen auf dieser Seite gehen dabei verloren.'))) return zeichne();
+    if (s.frei && !(await frag('Die Seite wird mit dem neuen Aufbau neu gesetzt. Texte und Fotos bleiben, Ihre Verschiebungen auf dieser Seite gehen dabei verloren.'))) return zeichne();
     ST.auftritt = true;
     aendern(() => { ST.doc.seiten[ST.seite] = DS.setze(ST.M, ST.doc.formatKey, neu.vorlage || q.vorlage, neu.ton || q.ton, q.inhalt, q.stil); }, false);
     ST.sel = null; zeichne();
@@ -389,7 +389,7 @@
     const k = Math.pow(Math.sqrt(f.b * f.h / (105 * 148)), .8), id = DS.neueId(), w = f.b * .7, x = (f.b - w) / 2, y = f.h * .4;
     const E = {
       titel: { typ: 'text', rolle: 'titel', text: 'Neuer Titel', gr: 8 * k, farbe: T.titel, ausr: 'c', x, y, w, ...DS.STIL.titel },
-      text: { typ: 'text', rolle: 'text', text: 'Dein Text', gr: 2.8 * k, farbe: T.text, ausr: 'c', x, y, w, ...DS.STIL.text },
+      text: { typ: 'text', rolle: 'text', text: 'Ihr Text', gr: 2.8 * k, farbe: T.text, ausr: 'c', x, y, w, ...DS.STIL.text },
       zeile: { typ: 'text', rolle: 'mono', text: 'Eine Zeile', gr: 1.9 * k, farbe: T.mono, ausr: 'c', x, y, w, ...DS.STIL.mono },
       bild: (() => { const bb = ST.M.bildIndex[bildKey || DS.ersatzFoto(ST.M)] || { w: 3, h: 2 }; let w = f.b * .7, h = w * bb.h / bb.w; if (h > f.h * .7) { h = f.h * .7; w = h * bb.w / bb.h; } return { typ: 'bild', bild: bildKey || DS.ersatzFoto(ST.M), x: (f.b - w) / 2, y: (f.h - h) / 2, w, h, fx: .5, fy: .5, zoom: 1 }; })(),
       zeichen: { typ: 'zeichen', x: (f.b - 18 * k) / 2, y: f.h * .2, w: 18 * k, farbe: T.zeichen },
@@ -621,20 +621,20 @@
       box.appendChild(b);
     }
   }
-  const GRUPPEN = ["Eigene Fotos", "Plakat-Motive", "Plakate", "Der Abend & die Tafel", "Teller & Küche", "Drinks & Bar", "Die Leute", "Linden & das Haus", "Dirty Chicken"];
+  const GRUPPEN = ["Eigene Fotos", "Hafen & Terrasse", "Küche & Teller", "Bar & Lästermeile", "Wein", "Team", "Bodensee & Geschichte", "Instagram des Hauses"];
   const lageVon = b => b.w > b.h * 1.1 ? 'quer' : b.h > b.w * 1.1 ? 'hoch' : 'quadrat';
   function fotoListe() {
     const q = $('#fotoSuche').value.trim().toLowerCase();
     const W = q.split(/\s+/).filter(Boolean), g = ST.fotoGruppe || 'alle', lage = ST.fotoLage || 'alle';
     const T = DS.LIVRE_TEXT, mehr = b => b.saison ? ' ' + T.s[b.saison] + ' ' + T.h[b.herkunft] + (b.ki ? ' ki' : '') : '';
-    return ST.M.bilder.filter(b => (g === 'alle' ? b.bereich !== 'motive' : b.gruppe === g) && (lage === 'alle' || lageVon(b) === lage || (lage === 'hoch' && lageVon(b) === 'quadrat'))
+    return ST.M.bilder.filter(b => (g === 'alle' ? true : b.gruppe === g) && (lage === 'alle' || lageVon(b) === lage || (lage === 'hoch' && lageVon(b) === 'quadrat'))
       && (!W.length || W.every(w => (b.alt + ' ' + b.key + ' ' + (b.gruppe || '') + mehr(b)).toLowerCase().includes(w))));
   }
   function fotoHinweis(n) { return `${n} ${n === 1 ? 'Foto' : 'Fotos'}. ` + (ST.sel && elById(ST.sel)?.typ === 'bild' ? 'Ein Klick tauscht das gewählte Foto.' : 'Ein Klick legt das Foto aufs Blatt.'); }
   function zeichneFotos() {
     const zahl = {}; ST.M.bilder.forEach(b => zahl[b.gruppe] = (zahl[b.gruppe] || 0) + 1);
     const g = ST.fotoGruppe || 'alle';
-    $('#fotoFilter').innerHTML = `<button data-gruppe="alle" class="${g === 'alle' ? 'an' : ''}">Alle Fotos<i>${ST.M.bilder.filter(b => b.bereich !== 'motive').length}</i></button>` +
+    $('#fotoFilter').innerHTML = `<button data-gruppe="alle" class="${g === 'alle' ? 'an' : ''}">Alle Fotos<i>${ST.M.bilder.length}</i></button>` +
       (ST.M.livre ? [DS.eigene.GRUPPE, ...Object.values(DS.LIVRE_TEXT.b), 'Neue Vorschläge'] : [...GRUPPEN, 'Neue Vorschläge']).filter(x => zahl[x]).map(x => `<button data-gruppe="${esc(x)}" class="${g === x ? 'an' : ''}">${esc(x)}<i>${zahl[x]}</i></button>`).join('');
     $$('#fotoLage button').forEach(b => b.classList.toggle('an', b.dataset.lage === (ST.fotoLage || 'alle')));
     const l = fotoListe();
@@ -647,7 +647,7 @@
     try {
       const keys = await DS.eigene.hinzu(ST.M, dateien, t => melde(t, 30000));
       if (!keys.length) { melde('Keine Bilddatei gefunden. Bitte JPG, PNG oder HEIC wählen.'); return; }
-      melde((keys.length === 1 ? 'Foto hinzugefügt. Es liegt unter «Eigene Fotos».' : `${keys.length} Fotos hinzugefügt. Sie liegen unter «Eigene Fotos».`) + (keys.fluechtig ? ' Dieser Browser legt Fotos nicht ab (privates Fenster?): es bleibt nur, bis du die Plakatwerkstatt schliesst. Für immer: als Arbeitsdatei sichern.' : ''), keys.fluechtig ? 10000 : 4000);
+      melde((keys.length === 1 ? 'Foto hinzugefügt. Es liegt unter «Eigene Fotos».' : `${keys.length} Fotos hinzugefügt. Sie liegen unter «Eigene Fotos».`) + (keys.fluechtig ? ' Dieser Browser legt Fotos nicht ab (privates Fenster?): es bleibt nur, bis Sie die Hausdruckerei schliessen. Für immer: als Arbeitsdatei sichern.' : ''), keys.fluechtig ? 10000 : 4000);
       ST.fotoGruppe = DS.eigene.GRUPPE; ST.fotoLage = 'alle'; $('#fotoSuche').value = '';
       if (aufsBlatt) {
         const el = ST.sel && elById(ST.sel);
@@ -700,7 +700,7 @@
       if (w) {
         e.stopPropagation();
         const k = w.dataset.weg, benutzt = Object.values(alleDocs()).some(d => d.seiten.some(s => s.el.some(x => x.bild === k)));
-        dialog(`<h2>Foto entfernen?</h2><p>«${esc(ST.M.bildIndex[k].alt)}» wird aus deinen eigenen Fotos gelöscht.${benutzt ? ' Es steckt in mindestens einer Drucksache, dort bleibt dann eine leere Fläche.' : ''}</p>`, [{ t: 'Behalten', v: false }, { t: 'Entfernen', v: true, haupt: true }])
+        dialog(`<h2>Foto entfernen?</h2><p>«${esc(ST.M.bildIndex[k].alt)}» wird aus Ihren eigenen Fotos gelöscht.${benutzt ? ' Es steckt in mindestens einer Drucksache, dort bleibt dann eine leere Fläche.' : ''}</p>`, [{ t: 'Behalten', v: false }, { t: 'Entfernen', v: true, haupt: true }])
           .then(async ja => { if (!ja) return; await DS.eigene.loeschen(ST.M, k); zeichneFotos(); zeichne(); });
         return;
       }
@@ -745,14 +745,14 @@
 
   /* ---------- Entwerfen über die KI ---------- */
   const IDEEN = [
-    'Plakat für den nächsten Abend, vorne die Illustration, hinten die Daten',
-    'Menükarte am Tisch: Gang, Teller und Drink, schmal',
-    'Plakat A3 für die Wand neben der Bar',
-    'Instagram-Beitrag: der Abend ist ausgebucht',
-    'Platzkarten mit Namen für die Tafel',
-    'Story: was Fett, Milch und Enzyme mit einem Drink machen',
-    'Aushang: die lange Tafel ist heute reserviert, A4',
-    'Flyer für das Pop-up Dirty Chicken',
+    'Aushang A4: Betriebsferien vom 22. Dezember bis 10. Februar',
+    'Menükarte am Tisch: das Lunch-Menü mit drei Gängen',
+    'Plakat A3: die schönste Terrasse am Bodensee',
+    'Instagram-Beitrag: die Lästermeile mit Blick auf den Hafen',
+    'Tischkarten «Reserviert» für die Terrasse',
+    'Story: Four-Hands an Bord der Excellence Countess',
+    'Weinempfehlung: Pinot Noir aus der Bündner Herrschaft',
+    'Flyer: Banketts & Gruppen auf zwei Etagen',
   ];
   async function entwerfen(o = {}) {
     if (o instanceof Event) o = {};
@@ -825,10 +825,10 @@
   function zeichneDna() {
     const M = ST.M;
     $('#dna').innerHTML = `<div class="dna__zeichen">${DS.zeichenSvg(M, 'currentColor')}</div>
-      <div class="dna__farben">${Object.entries(M.farben).map(([k, v]) => `<div><span style="background:${v}"></span>${esc(M.farbnamen[k])}<br>${v}</div>`).join('')}</div>
+      <div class="dna__farben">${Object.entries(M.farben).filter(([k, v], i, l) => l.findIndex(x => String(x[1]).toLowerCase() === String(v).toLowerCase()) === i).map(([k, v]) => `<div><span style="background:${v}"></span>${esc(M.farbnamen[k])}<br>${v}</div>`).join('')}</div>
       ${Object.entries(M.schriften).map(([k, s]) => `<div class="dna__schrift" style="font-family:'DS-${k}';font-size:${k === 'titel' ? 22 : k === 'mono' ? 12 : 15}px;${k === 'mono' || k === 'kapitale' ? 'text-transform:uppercase;letter-spacing:.16em' : ''}">${esc(M.name)}<small style="font-family:'DS-text';text-transform:none;letter-spacing:0">${esc(s.familie)} · ${esc(s.wofuer)}</small></div>`).join('')}
       <ul>${M.regeln.map(r => DS.regelSichtbar(r)).filter(Boolean).map(r => `<li>${esc(r)}</li>`).join('')}</ul>
-      <p class="klein">${M.bilder.length} Fotos des Hauses mit Beschreibung, dazu der Wortlaut der Website und der Unterlagen (Karten, Treatment-Menü, Veranstaltungen).</p>`;
+      <p class="klein">${M.bilder.length} Fotos des Hauses mit Beschreibung, dazu der Wortlaut der Website und der Karten des Hauses (Speisekarte, Lunch, Lästermeile, Wein, Bankett).</p>`;
   }
 
   /* ---------- Speichern als Datei ---------- */
@@ -870,7 +870,7 @@
   async function start() {
     const M = await DS.ladeMarke(HAUS);
     ST.M = M;
-    document.title = `Die Plakatwerkstatt · ${M.name}`;
+    document.title = `${DS.NAME()} · ${M.name}`;
     $('#kopfName').textContent = M.name;
     $('#kopfZeichen').innerHTML = DS.zeichenSvg(M, 'currentColor');
     $('#inselZeichen').innerHTML = DS.zeichenSvg(M, 'currentColor');

@@ -1,0 +1,254 @@
+{
+ "key": "schloessli",
+ "name": "Wirtschaft am Schlössli",
+ "voll": "Wirtschaft am Schlössli Bottighofen",
+ "ort": "Bottighofen",
+ "artikel": "die",
+ "zeile": "Direkt im Hafen von Bottighofen",
+ "satz": "Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen.",
+ "adr": "Seestrasse 50 · 8598 Bottighofen",
+ "tel": "+41 71 688 90 92",
+ "mail": "kontakt@schloessli-bottighofen.ch",
+ "web": "@schloessli_bottighofen",
+ "zeiten": "Donnerstag - Montag · 11:30 Uhr - 23:00 Uhr",
+ "kueche": "11:30 Uhr - 13:30 Uhr und 18:00 Uhr - 20:00 Uhr",
+ "ruhetag": "Dienstag & Mittwoch Ruhetag",
+ "ferien": [
+  "13. - 15. November (Excellence Gourmetkreuzfahrt)",
+  "22. Dezember 2026 - 10. Februar 2027"
+ ],
+ "farben": {
+  "navy": "#113d88",
+  "nacht": "#0b1d3d",
+  "blau": "#0a234c",
+  "tinte": "#041023",
+  "papier": "#e7ecf3",
+  "creme": "#d0dae7",
+  "weiss": "#f4f6f9",
+  "gold": "#a2b6cf",
+  "taupe": "#0f3678",
+  "messing": "#0f3678",
+  "tanne": "#0a234c",
+  "kander": "#c5d2e1",
+  "laden": "#0a234c",
+  "punkt": "#fd9964",
+  "leise": "#3d4a5e"
+ },
+ "farbnamen": {
+  "navy": "Stuhlblau",
+  "nacht": "Nacht über dem See",
+  "blau": "Tief",
+  "tinte": "Tinte",
+  "papier": "Papier",
+  "creme": "Seespiegel",
+  "weiss": "Blatt",
+  "gold": "Seehimmel",
+  "taupe": "Seehimmel tief",
+  "messing": "Seehimmel tief",
+  "tanne": "Tief",
+  "kander": "Seehimmel hell",
+  "laden": "Tief",
+  "punkt": "Schirmrot (nur als Punkt)",
+  "leise": "Tinte leise"
+ },
+ "toene": {
+  "dunkel": {
+   "grund": "navy",
+   "tapete": "dunkel",
+   "titel": "weiss",
+   "text": "papier",
+   "mono": "gold",
+   "linie": "gold",
+   "zeichen": "gold",
+   "schild": "papier",
+   "schild_text": "navy"
+  },
+  "hell": {
+   "grund": "weiss",
+   "tapete": null,
+   "titel": "blau",
+   "text": "tinte",
+   "mono": "taupe",
+   "linie": "taupe",
+   "zeichen": "navy",
+   "schild": "navy",
+   "schild_text": "weiss"
+  },
+  "creme": {
+   "grund": "papier",
+   "tapete": "hell",
+   "titel": "blau",
+   "text": "tinte",
+   "mono": "taupe",
+   "linie": "taupe",
+   "zeichen": "navy",
+   "schild": "navy",
+   "schild_text": "weiss"
+  }
+ },
+ "schriften": {
+  "titel": {
+   "familie": "Open Sans",
+   "datei": "OpenSans-400.ttf",
+   "wofuer": "Titel in Versalien gesperrt, Open Sans 400 wie die Wortmarke: nie fett, nie kursiv"
+  },
+  "kapitale": {
+   "familie": "DM Mono",
+   "datei": "DMMono-400.ttf",
+   "wofuer": "Gerichte wie auf der Karte in Versalien (THON, CAVATELLI, TORTELLONI), gesperrt"
+  },
+  "text": {
+   "familie": "Instrument Sans",
+   "datei": "InstrumentSans-400.ttf",
+   "wofuer": "Lesetext wie die Website"
+  },
+  "kursiv": {
+   "familie": "Instrument Sans 500",
+   "datei": "InstrumentSans-500.ttf",
+   "wofuer": "Betont (das Haus setzt nie kursiv, Betonung über Stärke)"
+  },
+  "mono": {
+   "familie": "DM Mono",
+   "datei": "DMMono-400.ttf",
+   "wofuer": "Etiketten, Zeiten, Daten, Kopf- und Fusszeile in Versalien gesperrt"
+  },
+  "plakat": {
+   "familie": "Open Sans 500",
+   "datei": "OpenSans-500.ttf",
+   "wofuer": "Zeile unter der Wortmarke («DIREKT IM HAFEN VON BOTTIGHOFEN») in Versalien"
+  },
+  "plakatfett": {
+   "familie": "Instrument Sans 600",
+   "datei": "InstrumentSans-600.ttf",
+   "wofuer": "Zahlen und Daten gross (Aushang, Ferien)"
+  },
+  "kopf": {
+   "familie": "Open Sans",
+   "datei": "OpenSans-400.ttf",
+   "wofuer": "Kopfzeile in Versalien wie die Wortmarke"
+  },
+  "detail": {
+   "familie": "Instrument Sans",
+   "datei": "InstrumentSans-400.ttf",
+   "wofuer": "Zeile unter dem Gericht"
+  }
+ },
+ "tapete": {
+  "dunkel": "tapete-dunkel.webp",
+  "hell": "tapete-hell.webp",
+  "rapport_mm": 14
+ },
+ "abende": [],
+ "betriebe": [
+  [
+   "Das Restaurant",
+   "mediterrane Küche à la carte, Küche 11:30 - 13:30 und 18:00 - 20:00"
+  ],
+  [
+   "Die Lästermeile",
+   "die Bar mit durchgehender Karte, Zementfliesen und Blick auf den See"
+  ],
+  [
+   "Die Seeterrasse",
+   "direkt im Hafen von Bottighofen, unter den Platanen"
+  ],
+  [
+   "Banketts & Gruppen",
+   "auf zwei Etagen für jeweils bis zu 26 Personen"
+  ],
+  [
+   "Anlässe",
+   "Four-Hands-Dinner, Excellence Gourmetkreuzfahrt"
+  ]
+ ],
+ "regeln": [
+  "Anrede «Sie», herzlich und unkompliziert, wie das Haus auf seiner Seite schreibt («Mehr Wirtschaft, weniger feine Pinkel»). Nie werblich laut, keine Ausrufezeichen im Titel.",
+  "Schweizer Schreibung: ss statt ß, Anführungszeichen «…».",
+  "Titel in Open Sans 400, Versalien gesperrt wie die Wortmarke, nie fett, nie kursiv. Gerichte wie auf der Karte in Versalien (THON, CAVATELLI, TORTELLONI) in DM Mono, die Zeile darunter in Instrument Sans.",
+  "Keine Preise auf Drucksachen der Werkstatt: Preise stehen nur auf den Karten des Hauses (Das Kartenpult).",
+  "Zeiten wie auf der Seite des Hauses: «Donnerstag - Montag», «11:30 Uhr - 23:00 Uhr», Küche «11:30 Uhr - 13:30 Uhr» und «18:00 Uhr - 20:00 Uhr», Dienstag & Mittwoch Ruhetag.",
+  "Trenner «·», eine Achse mittig. Dunkle Flächen in Stuhlblau oder Nacht mit dem Punktraster; Seehimmel nur für Zeichen, Linien und kleine Zeilen; Schirmrot höchstens als Punkt.",
+  "Ansichtskarten zeigen nur den Hafen, die Terrasse am See oder den See, Titel = Ort («Bottighofen», «Bodensee»).",
+  "Das Haus heisst «Wirtschaft am Schlössli», es liegt direkt im Hafen von Bottighofen am Bodensee. Kein Hotel, keine Zimmer."
+ ],
+ "bilder": [
+  "start | quer | Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen",
+  "start-hoch | hoch | Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen",
+  "platanen | hoch | Gedeckte Tische unter den Platanen, Sonnenschirme, dahinter der Hafen",
+  "abend | hoch | Abend unter der Platane mit Lichterkette, Gäste am Tisch über dem See",
+  "apero | hoch | Ein Spritz und ein Bier auf einem blauen Tisch in der blauen Stunde",
+  "gaststube | quer | Die Gaststube mit grossen Fenstern zum Hafen",
+  "glas | hoch | Ein Glas Weisswein und ein Wasserglas vor dem See",
+  "thon | hoch | Thunfisch in Scheiben in einer gerippten Schale",
+  "tortelloni | hoch | Tortelloni mit Tomate, Burrata und Taggiasca-Olive",
+  "pasta | hoch | Schwarze Pasta mit Garnelen und Meeresfrüchten",
+  "iberia | hoch | Fisch in grüner Sauce in einer gerippten Schale, daneben ein Weinglas",
+  "anguria | hoch | Ein Teller von oben auf dem blauen Platzteller",
+  "dessert | hoch | Dessert mit Beeren auf einem blauen Teller, dahinter ein Wasserglas",
+  "fisch | hoch | Fischfilet mit Sauce in einer gerippten Schale, dahinter ein blauer Stuhl",
+  "fleisch | hoch | Gefülltes Fleisch mit Blättern und Blüten auf einem geriffelten Teller",
+  "salat | hoch | Ein Salat auf einem gerippten silbernen Teller",
+  "suppe | hoch | Grüne Suppe in einer blauen Schale",
+  "torte | hoch | Schichttorte mit Beeren auf einem blauen Teller",
+  "bar | quer | An der Bar wird ein Bier gezapft, unter der Theke die Zementfliesen",
+  "fliesen | quer | Die Zementfliesen an der Bar",
+  "regal | quer | Flaschen im Regal an der Bar, durch die Scheibe der See",
+  "schild | hoch | Wegweiser zur A-la-carte-Restaurant-Terrasse und zur Lästermeile",
+  "wein | hoch | Weinflaschen im Regal",
+  "jonas | hoch | Jonas Volpert, Gastgeber und Sommelier, auf der Terrasse",
+  "moni | hoch | Monika Huber, Küchenchefin, auf der Terrasse",
+  "lukas | hoch | Lukas Siebel, Sous-Chef, auf der Terrasse",
+  "team | quer | Das Team der Wirtschaft am Schlössli vor der Holzwand",
+  "bootshafen | quer | Der Bootshafen, dahinter die Wirtschaft und das Schlössli",
+  "saentis | quer | Blick über den Bodensee bis zum Säntis",
+  "morgen | quer | Morgen am Bodensee, hinten die Alpen und die Schifflände Bottighofen",
+  "abendschiff | quer | Ein Kursschiff im Abendlicht auf dem Bodensee, dahinter das Säntis-Massiv",
+  "schifflaende | quer | Die Schifflände und die Bootstankstelle am Hafen von Bottighofen",
+  "haus | quer | Das ehemalige Hafenmeistergebäude mit der Wirtschaft am Hafen von Bottighofen, 2016",
+  "luft1954 | quer | Das Strandhotel Schlössli am See aus der Luft, 1954",
+  "ig-hafen | hoch | Die Wirtschaft am Hafen vom Wasser aus",
+  "ig-luft | hoch | Die Terrasse am Abend von oben, davor der Hafen",
+  "ig-terrasse | hoch | Gäste auf den Stühlen an der Promenade, dahinter die Wirtschaft",
+  "ig-abend | hoch | Dämmerung über dem See, am Ufer die Lichter",
+  "ig-teller | hoch | Am Pass werden die Teller angerichtet",
+  "ig-pasta | hoch | Tortelloni werden von Hand geformt",
+  "ig-herd | hoch | In der Küche am Herd",
+  "ig-dessert | hoch | In der Küche wird ein Dessert auf den Teller gesetzt"
+ ],
+ "raus": [
+  "abend-hafen",
+  "baum",
+  "lounge",
+  "mi-teller",
+  "sauce",
+  "teller",
+  "stier",
+  "schaefli",
+  "schaefli-strasse",
+  "feuerwerk",
+  "feuerwerk-ki",
+  "kp-party",
+  "pa-teller",
+  "kf-anrichten",
+  "kf-deck-abend",
+  "kf-teller",
+  "tb-dunkel",
+  "tb-fisch",
+  "tb-glas",
+  "tb-hafen",
+  "tb-teller",
+  "jz-fruehling",
+  "jz-herbst",
+  "jz-sommer",
+  "ch-anzeige",
+  "ch-luftkarte",
+  "ch-mann",
+  "ch-portal",
+  "ch-postkarte",
+  "ch-strandhotel",
+  "ch-ufer",
+  "ch-zeichnung"
+ ],
+ "ersatz": "start",
+ "doppelt": {}
+}

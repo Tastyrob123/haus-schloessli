@@ -3,7 +3,7 @@
    dazu eine Miniatur für die Auswahl. Im Studio heissen sie «eigen-…» und stehen in M.bilder wie die Fotos des Hauses (Gruppe «Eigene Fotos»). */
 (function () {
   const DS = window.DS;
-  const HAUS = new URLSearchParams(location.search).get('haus') || 'culinarium';
+  const HAUS = new URLSearchParams(location.search).get('haus') || 'schloessli';
   const DBNAME = 'ds-' + HAUS + '-fotos', GRUPPE = 'Eigene Fotos';
   let dbp;
   const db = () => dbp || (dbp = new Promise((ok, nein) => {

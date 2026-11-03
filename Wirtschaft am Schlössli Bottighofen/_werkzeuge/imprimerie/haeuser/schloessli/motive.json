@@ -1,0 +1,122 @@
+[
+ {
+  "key": "bootshafen",
+  "titel": "Der Bootshafen",
+  "ort": "Bottighofen",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Der Bootshafen, dahinter die Wirtschaft und das Schlössli",
+  "w": 1800,
+  "h": 1200
+ },
+ {
+  "key": "start",
+  "titel": "Terrasse am Mittag",
+  "ort": "Bodensee",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen",
+  "w": 1800,
+  "h": 1200
+ },
+ {
+  "key": "saentis",
+  "titel": "Bis zum Säntis",
+  "ort": "Bodensee",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Blick über den Bodensee bis zum Säntis",
+  "w": 1800,
+  "h": 814
+ },
+ {
+  "key": "morgen",
+  "titel": "Morgen am See",
+  "ort": "Bottighofen",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Morgen am Bodensee, hinten die Alpen und die Schifflände Bottighofen",
+  "w": 1800,
+  "h": 1012
+ },
+ {
+  "key": "abendschiff",
+  "titel": "Das Abendschiff",
+  "ort": "Bodensee",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Ein Kursschiff im Abendlicht auf dem Bodensee, dahinter das Säntis-Massiv",
+  "w": 1800,
+  "h": 1350
+ },
+ {
+  "key": "platanen",
+  "titel": "Unter den Platanen",
+  "ort": "Bottighofen",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Gedeckte Tische unter den Platanen, Sonnenschirme, dahinter der Hafen",
+  "w": 1800,
+  "h": 2400
+ },
+ {
+  "key": "abend",
+  "titel": "Abend unter der Platane",
+  "ort": "Bottighofen",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Abend unter der Platane mit Lichterkette, Gäste am Tisch über dem See",
+  "w": 1800,
+  "h": 2400
+ },
+ {
+  "key": "schifflaende",
+  "titel": "Die Schifflände",
+  "ort": "Bottighofen",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Die Schifflände und die Bootstankstelle am Hafen von Bottighofen",
+  "w": 1800,
+  "h": 1286
+ },
+ {
+  "key": "ig-hafen",
+  "titel": "Vom Wasser aus",
+  "ort": "Bottighofen",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Die Wirtschaft am Hafen vom Wasser aus",
+  "w": 524,
+  "h": 640
+ },
+ {
+  "key": "ig-luft",
+  "titel": "Die Terrasse von oben",
+  "ort": "Bottighofen",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Die Terrasse am Abend von oben, davor der Hafen",
+  "w": 360,
+  "h": 640
+ },
+ {
+  "key": "haus",
+  "titel": "Am Hafen",
+  "ort": "Bottighofen",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Das ehemalige Hafenmeistergebäude mit der Wirtschaft am Hafen von Bottighofen, 2016",
+  "w": 1800,
+  "h": 1200
+ },
+ {
+  "key": "luft1954",
+  "titel": "Das Schlössli 1954",
+  "ort": "Bottighofen",
+  "quelle": "foto",
+  "schrift": false,
+  "alt": "Das Strandhotel Schlössli am See aus der Luft, 1954",
+  "w": 1800,
+  "h": 1259
+ }
+]

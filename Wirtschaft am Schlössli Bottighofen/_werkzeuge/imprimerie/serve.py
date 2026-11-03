@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""L’Imprimerie · Culinarium Hannover, eigener Prüfserver:  python3 serve.py [port]   (Standard 9287) → http://127.0.0.1:9287/_werkzeuge/imprimerie/
-Bildet die Wege des Hauses nach (Vorlage: Prüfserver der Werkstatt der Taverne zum Schäfli, dort nur gelesen), damit L’Imprimerie hier genau so läuft wie unter /_werkzeuge/imprimerie/
-und online (/werkzeuge/imprimerie/): Le Livre liegt daneben unter /_werkzeuge/livre/, die Fotos der Website unter /assets/bild/, das Oberflächen-Paket unter
-/assets/oberflaeche/ (_werkzeuge/oberflaeche/, Chat «culinarium-maison»), Schriften und Zeichen der Website unter /assets/schrift/ und /assets/zeichen/. Alles nur lesend, nur diese Wege.
+"""L’Imprimerie · Wirtschaft am Schlössli Bottighofen, eigener Prüfserver:  python3 serve.py [port]   (Standard 9287) → http://127.0.0.1:9287/_werkzeuge/imprimerie/
+Bildet die Wege des Hauses nach (Vorlage: Prüfserver der Plakatwerkstatt des Stammhauses), damit L’Imprimerie hier genau so läuft wie unter /_werkzeuge/imprimerie/
+und online (/werkzeuge/imprimerie/): Le Livre liegt daneben unter /_werkzeuge/livre/, die Fotos der Website unter /assets/img/, das Oberflächen-Paket unter
+/assets/oberflaeche/ (_werkzeuge/oberflaeche/, Chat «schloessli-maison»), Schriften der Website unter /assets/fonts/ und die Zeichen der Wortmarke unter /assets/svg/. Alles nur lesend, nur diese Wege.
 
 KI: Ohne ausdrückliches IMPRIMERIE_KI=1 antwortet /api/entwurf mit einer Probe-Antwort aus den Vorlagen des Hauses (kostet nichts, Regel 54).
 Ein Schlüssel wird nie aus dem Vault gelesen; nur ANTHROPIC_API_KEY aus der Umgebung, und nur zusammen mit IMPRIMERIE_KI=1.
@@ -13,12 +13,11 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import unquote
 
 HIER = os.path.dirname(os.path.abspath(__file__))
-DH = os.path.dirname(os.path.dirname(HIER))                   # Culinarium Hannover (Projektordner)
+DH = os.path.dirname(os.path.dirname(HIER))                   # Wirtschaft am Schlössli Bottighofen (Projektordner)
 WEB = os.path.join(DH, 'website')                              # die Website des Hauses (nur gelesen)
 LIVRE = os.path.join(DH, '_werkzeuge', 'livre')
 sys.path.insert(0, os.path.join(HIER, 'api'))
 import entwurf as E  # noqa: E402
-import plakat as P  # noqa: E402   (Abend beschreiben → Vorschläge, Probe aus der Motiv-Sammlung)
 
 WEG = '/_werkzeuge/imprimerie/'
 KI = os.environ.get('IMPRIMERIE_KI') == '1' and bool(os.environ.get('ANTHROPIC_API_KEY'))
@@ -27,11 +26,11 @@ NUR_LESEN = {   # Weg → Ordner, nur diese Dateiarten
     '/_werkzeuge/livre/livre.json': (os.path.join(LIVRE, 'livre.json'), None),
     '/_werkzeuge/livre/dateien/': (os.path.join(LIVRE, 'dateien'), r'\.(png|svg|webp|jpg|css|json|ase|zip|ttf|woff2?)$'),
     '/_werkzeuge/livre/fotos/': (os.path.join(LIVRE, 'fotos'), r'\.(webp|jpg|png)$'),
-    '/assets/bild/': (os.path.join(WEB, 'assets', 'bild'), r'\.(webp|jpg|png|svg)$'),
-    # Werkzeug-Oberfläche «Die Bühne» des Hauses: _werkzeuge/oberflaeche/ (einziger Schreiber Chat «culinarium-maison»), solange es website/assets/oberflaeche/ nicht gibt
+    '/assets/img/': (os.path.join(WEB, 'assets', 'img'), r'\.(webp|jpg|png|svg)$'),
+    # Werkzeug-Oberfläche «Die Bühne» des Hauses: _werkzeuge/oberflaeche/ (einziger Schreiber Chat «schloessli-maison»), solange es website/assets/oberflaeche/ nicht gibt
     '/assets/oberflaeche/': (os.path.join(WEB, 'assets', 'oberflaeche') if os.path.isdir(os.path.join(WEB, 'assets', 'oberflaeche')) else os.path.join(DH, '_werkzeuge', 'oberflaeche'), r'\.(css|js|svg)$'),
-    '/assets/schrift/': (os.path.join(WEB, 'assets', 'schrift'), r'\.(woff2?|ttf)$'),
-    '/assets/zeichen/': (os.path.join(WEB, 'assets', 'zeichen'), r'\.svg$'),
+    '/assets/fonts/': (os.path.join(WEB, 'assets', 'fonts'), r'\.(woff2?|ttf)$'),
+    '/assets/svg/': (os.path.join(WEB, 'assets', 'svg'), r'\.svg$'),
 }
 
 
@@ -52,12 +51,12 @@ def menue_kommt(ueber):
 
 def probe(daten):
     """Nachgestellte Antwort im Format der KI, gebaut aus den geprüften Vorlagen des Hauses (Wörter des Auftrags gegen Titel und Text)."""
-    if str(daten.get('haus') or 'culinarium') != 'culinarium':
+    if str(daten.get('haus') or 'schloessli') != 'schloessli':
         raise ValueError('Unbekanntes Haus')
     if daten.get('bildtext'):
-        return {'bildtext': {'text': '[Bildtext der KI] · Probe ohne KI: ' + str(daten['bildtext'].get('art') or 'Beitrag'), 'hashtags': ['#Hannover', '#Linden'],
+        return {'bildtext': {'text': '[Bildtext der KI] · Probe ohne KI: ' + str(daten['bildtext'].get('art') or 'Beitrag'), 'hashtags': ['#Bottighofen', '#Bodensee'],
                              'hinweise': ['Beispiel: So sieht der Bildtext aus; mit eingeschalteter KI schreibt das Studio ihn zum Bild.'], 'sprache': daten['bildtext'].get('sprache', 'de')}, 'verbrauch': {}}
-    if str(daten.get('haus') or 'culinarium') != 'culinarium':   # wie api/entwurf.py: nur das eigene Haus
+    if str(daten.get('haus') or 'schloessli') != 'schloessli':   # wie api/entwurf.py: nur das eigene Haus
         raise ValueError('Unbekanntes Haus')
     auftrag = str(daten.get('auftrag') or '').strip()[:1500]
     if len(auftrag) < 4:
@@ -66,18 +65,18 @@ def probe(daten):
     woerter = {w for w in re.findall(r'[a-zäöüé]{4,}', a_low)}
     # Abnahme-Tor 29.10.: Wortstamm statt nur ganzes Wort («Platzkarten» findet «Platzkarte»), Arten auch über ihre Alltagsnamen
     ART_WORT = {'tischkarte': ('platzkarte', 'tischkarte', 'namensschild', 'tischnummer'), 'menuekarte': ('menükarte', 'menuekarte', 'speisekarte'),
-                'abendplakat': ('plakat des abends',), 'plakat': ('plakat', 'aushang an der wand'), 'flyer': ('flyer',), 'story': ('story',), 'instagram': ('instagram', 'beitrag'),
+                'menuekarte': ('menükarte', 'menuekarte', 'menü', 'lunch'), 'weinempfehlung': ('wein', 'weinempfehlung'), 'postkarte': ('postkarte', 'ansichtskarte'), 'ferien': ('ferien', 'betriebsferien', 'geschlossen'), 'plakat': ('plakat', 'aushang an der wand'), 'flyer': ('flyer',), 'story': ('story',), 'instagram': ('instagram', 'beitrag'),
                 'gutschein': ('gutschein',), 'einladung': ('einladung',), 'aushang': ('aushang',), 'hinweiskarte': ('hinweis',), 'newsletter': ('newsletter', 'e-mail')}
     trifft = lambda w, t: w in t or (len(w) > 6 and (w[:-1] in t or w[:-2] in t))
-    dc = 'dirty chicken' in a_low or 'dirty-chicken' in a_low   # Dirty-Chicken-Aufträge nehmen immer die Dirty-Chicken-Marke (Ton «dc», Zeichen 3)
+    dc = False   # keine Sondermarke im Schlössli
     beste = []
-    for f in glob.glob(os.path.join(HIER, 'haeuser', 'culinarium', 'vorlagen', '*.json')):
+    for f in glob.glob(os.path.join(HIER, 'haeuser', 'schloessli', 'vorlagen', '*.json')):
         if f.endswith('index.json'):
             continue
         d = json.load(open(f, encoding='utf-8'))
         if daten.get('format') and d['format'] != daten['format']:
             continue
-        art = os.path.basename(f)[:-5]   # nennt der Auftrag die Art («Flyer», «Plakat», «Platzkarten» …), geht diese vor (Demo-Check Schlössli 21.10.2026)
+        art = os.path.basename(f)[:-5]   # nennt der Auftrag die Art («Flyer», «Plakat», «Platzkarten» …), geht diese vor (Demo-Check 21.10.2026)
         art_bonus = 3 if art in a_low or any(x in a_low for x in ART_WORT.get(art, ())) else 0
         for v in d['vorlagen']:
             if v['vorlage'] == 'menue' and menue_kommt(v['inhalt'].get('ueber', '')):
@@ -95,7 +94,7 @@ def probe(daten):
         if vorlage == v['vorlage']:
             return v['inhalt']
         i = dict(text_inhalt); i.pop('liste', None) if vorlage not in ('karte', 'menue', 'programm') else None
-        if v['inhalt'].get('bild') and not (str(v['inhalt']['bild']).startswith(('pl_', 'po_')) and text_inhalt.get('bild')): i['bild'] = v['inhalt']['bild']   # Rudis Illustrationen gibt es nur klein: in grossen Fotoaufbauten das Foto der Textvorlage
+        if v['inhalt'].get('bild') and not (str(v['inhalt']['bild']).startswith(('p-', 'wp-', 'uw-pl-')) and text_inhalt.get('bild')): i['bild'] = v['inhalt']['bild']   # ganze Plakate nie als Foto in anderen Aufbauten
         return i
     NAMEN = ['Lena Brandt', 'Jonas Albers', 'Mira Okafor', 'Paul Wendt', 'Sophie Krüger']   # Platzkarten mit Namen: je Entwurf ein Beispielname
     def seite(vorlage, ton, n=0):
@@ -109,9 +108,9 @@ def probe(daten):
         grund = dict(v.get('stil') or {})
         def mstil(ausr, rahmen): return dict(grund, ausr=ausr, rahmen=rahmen)
         def mseite(ton, st): return {'vorlage': 'menue', 'ton': 'dc' if dc else ton, 'inhalt': v['inhalt'], 'stil': st}
-        A = {'l': 'links', 'c': 'mittig'}; R = {'ohne': 'ohne Rahmen', 'einfach': 'mit Rahmen'}; T = {'hell': 'Warmweiss', 'creme': 'Plakatpapier', 'dunkel': 'Nacht'}
+        A = {'l': 'links', 'c': 'mittig'}; R = {'ohne': 'ohne Rahmen', 'einfach': 'mit Rahmen'}; T = {'hell': 'Blatt', 'creme': 'Papier', 'dunkel': 'Stuhlblau'}
         # Abnahme-Tor 30.10.2026: die fünf waren fast gleich (der Aufbau «menue» setzt Ausrichtung und Rahmen selbst). Jetzt verschieden in Aufbau, Gewichtung
-        # und Satz, immer derselbe Abend: Menükarte, Menükarte im anderen Ton, Teller und Drinks als Liste, nur die Drinks, die Teller in Rudis Zeilen
+        # und Satz, immer derselbe Abend: Menükarte, Menükarte im anderen Ton, Teller und Drinks als Liste, nur die Drinks, eine zweite Menükarte
         mi = v['inhalt']; L = [e for e in mi.get('liste', []) if e.get('name') or e.get('detail')]
         def kseite(ton, inhalt): return {'vorlage': 'karte', 'ton': 'dc' if dc else ton, 'inhalt': dict(inhalt, fuss=mi.get('fuss', ''), akzent=mi.get('akzent'))}
         teller = [e for e in L if e.get('name')]
@@ -123,11 +122,11 @@ def probe(daten):
                          liste=[dict(name=e.get('gang', ''), detail=e['detail'], preis='') for e in L if e.get('detail')]))]}
                      if sum(1 for e in L if e.get('detail')) >= 3 else
                      {'titel': 'Menükarte, ' + ('Violett' if dc else T['creme' if v['ton'] != 'creme' else 'hell']), 'seiten': [mseite('creme' if v['ton'] != 'creme' else 'hell', grund)]}]
-        rudi = teller and all('|' in e['name'] and len(e['name']) <= 44 and all(len(x.strip()) <= 22 for x in e['name'].split('|')) for e in teller)   # nur kurze Zeilen wie Rudis eigene
-        if not rudi:
+        versalzeilen = False   # Versalzeilen mit «/» gibt es im Schlössli nicht
+        if not versalzeilen:
             varianten.append({'titel': 'Menükarte, ' + ('Violett' if dc else T['creme' if v['ton'] != 'creme' else 'hell']), 'seiten': [mseite('creme' if v['ton'] != 'creme' else 'hell', grund)]})
-        else:   # Rudis Zeilen: Versalien mit «/» (Hausregel)
-            varianten.append({'titel': 'Die Teller in Rudis Zeilen, ' + ('Violett' if dc else T['dunkel']), 'seiten': [kseite('dunkel', dict(ueber=mi.get('ueber', ''), titel='Vom Pass',
+        else:
+            varianten.append({'titel': 'Die Drinks in Versalien, ' + ('Violett' if dc else T['dunkel']), 'seiten': [kseite('dunkel', dict(ueber=mi.get('ueber', ''), titel='Vom Pass',
                 liste=[dict(name=' / '.join(x.strip() for x in re.split(r'\s*[|·]\s*', e['name'])).upper(), detail=e.get('detail', ''), preis='') for e in teller]))]})   # mit dem Drink darunter, sonst bleibt unten ein Loch
         return {'entwuerfe': {'name': v['titel'], 'format': fmt, 'varianten': varianten, 'hinweise': hinweis}, 'verbrauch': {}}
     if daten.get('varianten'):
@@ -137,15 +136,15 @@ def probe(daten):
             if len(varianten) == 5:
                 break
             if (a, t) != (v['vorlage'], v['ton']) and not (dc and a == v['vorlage']) and (a not in ('buehne', 'fenster', 'geteilt') or v['inhalt'].get('bild') or text_inhalt.get('bild')):
-                varianten.append({'titel': {'buehne': 'Foto gross', 'fenster': 'Ruhig im Rahmen', 'geteilt': 'Foto und Text', 'aushang': 'Nur Schrift', 'deckel': 'Titelblatt'}[a] + ', ' + ('Violett' if dc else {'dunkel': 'Nacht', 'creme': 'Plakatpapier', 'hell': 'Warmweiss'}[t]), 'seiten': [seite(a, t, len(varianten))]})
+                varianten.append({'titel': {'buehne': 'Foto gross', 'fenster': 'Ruhig im Rahmen', 'geteilt': 'Foto und Text', 'aushang': 'Nur Schrift', 'deckel': 'Titelblatt'}[a] + ', ' + ('Violett' if dc else {'dunkel': 'Stuhlblau', 'creme': 'Papier', 'hell': 'Blatt'}[t]), 'seiten': [seite(a, t, len(varianten))]})
         schon = {(x['seiten'][0]['vorlage'], x['seiten'][0]['ton']) for x in varianten}   # auffüllen ohne Doppel: Titelblatt und Nur Schrift in den Tönen, die noch fehlen
         for a, t in [('deckel', 'hell'), ('deckel', 'dunkel'), ('aushang', 'creme'), ('aushang', 'hell'), ('deckel', 'creme')]:
             if len(varianten) == 5: break
             if (a, 'dc' if dc else t) in schon: continue
             schon.add((a, 'dc' if dc else t))
-            varianten.append({'titel': {'aushang': 'Nur Schrift', 'deckel': 'Titelblatt'}[a] + ', ' + ('Violett' if dc else {'dunkel': 'Nacht', 'creme': 'Plakatpapier', 'hell': 'Warmweiss'}[t]), 'seiten': [seite(a, t, len(varianten))]})
+            varianten.append({'titel': {'aushang': 'Nur Schrift', 'deckel': 'Titelblatt'}[a] + ', ' + ('Violett' if dc else {'dunkel': 'Stuhlblau', 'creme': 'Papier', 'hell': 'Blatt'}[t]), 'seiten': [seite(a, t, len(varianten))]})
         while len(varianten) < 5:
-            varianten.append({'titel': 'Titelblatt, ' + ('Violett' if dc else 'Warmweiss'), 'seiten': [seite('deckel', 'hell', len(varianten))]})
+            varianten.append({'titel': 'Titelblatt, Blatt', 'seiten': [seite('deckel', 'hell', len(varianten))]})
         return {'entwuerfe': {'name': v['titel'], 'format': fmt, 'varianten': varianten, 'hinweise': hinweis}, 'verbrauch': {}}
     return {'entwurf': {'name': v['titel'], 'format': fmt, 'seiten': [seite(v['vorlage'], v['ton'])], 'hinweise': hinweis}, 'verbrauch': {}}
 
@@ -164,7 +163,7 @@ def entwurf_antwort(kopf, ip, roh):
         return 502, {'fehler': str(e)}
 
 
-DOK_VB = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'haeuser', 'culinarium', 'vorschau-dok')   # fertige Vorschaubilder der Galerien (29.10.)
+DOK_VB = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'haeuser', 'schloessli', 'vorschau-dok')   # fertige Vorschaubilder der Galerien (29.10.)
 VB_INDEX = os.path.join(DOK_VB, 'index.json')
 import threading  # noqa: E402
 VB_SPERRE = threading.Lock()
@@ -211,28 +210,6 @@ class H(SimpleHTTPRequestHandler):
         self.send_response(code); self.send_header('content-type', 'application/json; charset=utf-8'); self.send_header('content-length', str(len(b))); self.end_headers()
         self.wfile.write(b)
 
-    def _plakat_mit_lebenszeichen(self, daten):
-        """Antwort sofort beginnen (200), während des Malens Leerzeichen schicken (JSON erlaubt sie vorn), am Ende das Ergebnis oder {fehler}."""
-        import threading
-        erg = {}
-        def arbeit():
-            try:
-                erg['out'] = P.antwort(daten, live=os.environ.get('PLAKAT_KI', '1') != '0')
-            except Exception as e:
-                erg['out'] = {'fehler': str(e)}
-        t = threading.Thread(target=arbeit, daemon=True); t.start()
-        self.close_connection = True
-        try:
-            self.send_response(200); self.send_header('content-type', 'application/json; charset=utf-8'); self.send_header('connection', 'close'); self.end_headers()
-            self.wfile.flush()
-            while t.is_alive():
-                t.join(5)
-                if t.is_alive():
-                    self.wfile.write(b' '); self.wfile.flush()
-            self.wfile.write(json.dumps(erg['out'], ensure_ascii=False).encode('utf-8')); self.wfile.flush()
-        except (BrokenPipeError, ConnectionResetError):
-            t.join()   # Browser weg: fertig malen lassen, die Bilder liegen danach in den Fotos des Hauses
-
     def translate_path(self, path):
         p = unquote(path.split('?')[0].split('#')[0])
         for weg, (ziel, art) in NUR_LESEN.items():
@@ -250,7 +227,7 @@ class H(SimpleHTTPRequestHandler):
         teile = [x for x in unquote(self.path.split('?')[0].split('#')[0]).split('/') if x]
         if teile[:2] == ['_werkzeuge', 'imprimerie']:
             innen = teile[2:]
-            if any(x.startswith('.') or x == '__pycache__' for x in innen) or (innen and innen[0] in ('_qa', 'api', '_archiv-ki-2810')) or (innen and innen[-1].endswith(('.py', '.pyc', '.md'))):
+            if any(x.startswith('.') or x == '__pycache__' for x in innen) or (innen and innen[0] in ('_qa', 'api', '_bau')) or (innen and innen[-1].endswith(('.py', '.pyc', '.md'))):
                 self.send_error(404); return None
         return super().send_head()
 
@@ -262,11 +239,6 @@ class H(SimpleHTTPRequestHandler):
             return self._json(200, {'ok': True, 'modell': E.MODELL, 'schluessel': KI, 'probe': not KI})
         if p == WEG + 'api/vorschau':   # welche Galerie-Vorschauen fertig liegen: {schlüssel: farbe}
             return self._json(200, vb_index())
-        if p == WEG + 'api/plakat':   # alle schon entstandenen Vorschläge für «Abend beschreiben» (Robert 29.10.)
-            try:
-                return self._json(200, P.alle())
-            except Exception as e:
-                return self._json(502, {'fehler': str(e)})
         if self._gezippt():
             return
         return super().do_GET()
@@ -334,17 +306,6 @@ class H(SimpleHTTPRequestHandler):
                 code, b = 502, json.dumps({'fehler': 'LIVRE · Le Livre ist nicht erreichbar (' + str(e)[:80] + ')'}, ensure_ascii=False).encode('utf-8')
             self.send_response(code); self.send_header('content-type', 'application/json; charset=utf-8'); self.send_header('content-length', str(len(b))); self.end_headers()
             return self.wfile.write(b)
-        if p == WEG + 'api/plakat' and '"nr"' in (roh or b'').decode('utf-8', 'replace'):   # ein Vorschlag malt minutenlang: sofort antworten, alle 5 s ein Leerzeichen
-            return self._plakat_mit_lebenszeichen(json.loads(roh or b'{}'))                       # als Lebenszeichen, sonst gibt Safari nach 60 s auf (29.10.)
-        if p == WEG + 'api/plakat':   # Abend beschreiben: neue Motive live, sobald der Schlüssel am Server liegt (Robert 28.10.); PLAKAT_KI=0 schaltet ab
-            try:
-                out, code = P.antwort(json.loads(roh or b'{}'), live=os.environ.get('PLAKAT_KI', '1') != '0'), 200
-            except ValueError as e:
-                out, code = {'fehler': str(e)}, 400
-            except Exception as e:
-                out, code = {'fehler': str(e)}, 502
-            time.sleep(.6)
-            return self._json(code, out)
         if p != WEG + 'api/entwurf':
             return self.send_error(404)
         try:
@@ -365,5 +326,5 @@ class H(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 9287
-    print(f'L’Imprimerie · Culinarium Hannover: http://127.0.0.1:{port}{WEG}  (KI: {"echt" if KI else "Probe, ohne Kosten"})')
+    print(f'L’Imprimerie · Wirtschaft am Schlössli Bottighofen: http://127.0.0.1:{port}{WEG}  (KI: {"echt" if KI else "Probe, ohne Kosten"})')
     ThreadingHTTPServer(('127.0.0.1', port), H).serve_forever()

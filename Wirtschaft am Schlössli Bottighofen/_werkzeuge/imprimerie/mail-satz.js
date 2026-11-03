@@ -2,13 +2,13 @@
    Erzeugt echte, versendbare HTML-Mails: 600 px, Tabellen, alle Stile inline, damit Gmail, Apple Mail und Outlook sie gleich zeigen.
    Hausschriften laden nur Apple Mail und iOS; Gmail und Outlook nehmen die sicheren Ersatzschriften (Georgia, Helvetica/Arial).
    Zeichen und Wortmarke sind Bilder (_kopf.png, _fuss.png), weil kein Mailprogramm SVG zuverlässig zeigt.
-   Fotos als JPG (haeuser/culinarium/mail/, 1200 px, Outlook kann kein WebP), öffentliche Adressen auf der Studio-Seite.
+   Fotos als JPG (haeuser/schloessli/mail/, 1200 px, Outlook kann kein WebP), öffentliche Adressen auf der Studio-Seite.
    Kein Mailprogramm führt Skripte aus; alles hier ist reines HTML. DSMAIL.html(doc, {editor}) → vollständiges Dokument. */
 (function () {
-  const ONLINE = 'https://culinarium-hannover-entwurf.vercel.app/werkzeuge/imprimerie/';   // öffentliche Adresse der Bilder in den Mails (Fotos, Kopf, Fuss)
-  const C = { navy: '#16151a', papier: '#f3ecea', creme: '#e9e0de', weiss: '#faf4f4', sand: '#e9e0de', gold: '#f5a689', messing: '#ef7649', taupe: '#b15736', tief: '#3a3845', tinte: '#26242d' };
+  const ONLINE = (location.origin && /^https:/.test(location.origin) ? location.origin + location.pathname.replace(/[^/]*$/, '') : '');   // öffentliche Adresse der Bilder: die Adresse, unter der die Werkstatt läuft
+  const C = { navy: '#091526', papier: '#eaeef3', creme: '#dde2ea', weiss: '#f4f6fa', sand: '#dde2ea', gold: '#9ab8e4', messing: '#6391d5', taupe: '#486b9f', tief: '#183765', tinte: '#0f2342' };
   const F = {
-    serif: "Fraunces,Georgia,'Times New Roman',serif",
+    serif: "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
     sans: "'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
     mono: "'DM Mono','Helvetica Neue',Helvetica,Arial,sans-serif",
   };
@@ -24,7 +24,7 @@
     anderes: { name: 'Anderes Programm', abmelden: '[Abmeldelink]', online: '' },
   };
 
-  function bildUrl(key, basis) { return basis + 'haeuser/culinarium/mail/' + key + '.jpg'; }
+  function bildUrl(key, basis) { return basis + 'haeuser/schloessli/mail/' + key + '.jpg'; }
   function fotoQuelle(b, basis) { return (b.url || '').trim() || (b.foto ? bildUrl(b.foto, basis) : ''); }
   function fotoMass(M, b) { const x = M && b.foto && !b.url && M.bilder.find(y => y.key === b.foto); return x ? x.h / x.w : 2 / 3; }
 
@@ -72,7 +72,7 @@
           + (x.detail ? `<div style="margin-top:4px;font-family:${F.sans};font-size:15px;line-height:22px;color:#4a4b52">${zeilen(x.detail)}</div>` : '')
           + `</td><td valign="top" align="right" style="padding:22px 0 0;border-top:1px solid ${C.sand};white-space:nowrap"><span class="mono" style="font-family:${F.mono};font-size:12px;line-height:18px;letter-spacing:1px;color:${C.tief}">${zeilen(x.preis)}</span></td></tr>`).join('') + `</table>`;
     },
-    trenner(b, o) { return `<img src="${o.basis}haeuser/culinarium/mail/_trenner.png" width="190" height="30" alt="" style="display:block;margin:0 auto;width:190px;height:30px;border:0">`; },
+    trenner(b, o) { return `<img src="${o.basis}haeuser/schloessli/mail/_trenner.png" width="190" height="30" alt="" style="display:block;margin:0 auto;width:190px;height:30px;border:0">`; },
   };
   const ABSTAND = { titel: [44, 8], text: [14, 14], foto: [18, 18], knopf: [22, 26], termine: [18, 18], liste: [18, 18], trenner: [26, 26] };
 
@@ -80,7 +80,7 @@
   function html(doc, o = {}) {
     const basis = o.basis || ONLINE, ed = !!o.editor, M = o.M;
     const v = VERSAND[doc.versand] || VERSAND.mailchimp;
-    const tap = basis + 'haeuser/culinarium/mail/_tapete.jpg';
+    const tap = basis + 'haeuser/schloessli/mail/_tapete.jpg';
     const k = doc.kopf || {}, f = doc.fuss || {};
     const bl = doc.bloecke || [];
     let karte = '';
@@ -100,11 +100,11 @@
 
     const abm = f.abmelden !== false;
     const fuss = `<tr><td${ed ? ' data-b="fuss"' : ''} align="center" style="padding:40px 24px 48px;text-align:center">
-<img src="${basis}haeuser/culinarium/mail/_fuss.png" width="60" height="54" alt="" style="display:block;margin:0 auto 14px;width:60px;height:54px;border:0">
-<div class="mono" style="font-family:${F.mono};font-size:11px;line-height:18px;letter-spacing:3px;text-transform:uppercase;color:${C.gold}">Culinarium</div>
-<div style="margin-top:10px;font-family:${F.sans};font-size:13px;line-height:21px;color:#e9e0de">Walk on the Wild Side<br>Haasemannstraße 13 &middot; 30449&nbsp;Hannover<br><a href="https://www.instagram.com/culinarium_hannover/" target="_blank" style="color:${C.gold};text-decoration:none">Instagram @culinarium_hannover</a></div>
-${f.text ? `<div style="margin-top:18px;font-family:${F.sans};font-size:12px;line-height:19px;color:#f4c2b0">${zeilen(f.text)}</div>` : ''}
-${abm || v.online ? `<div style="margin-top:18px;font-family:${F.sans};font-size:12px;line-height:19px;color:#f4c2b0">${[v.online && abm ? `<a href="${v.online}" target="_blank" style="color:#f4c2b0;text-decoration:underline">Im Browser ansehen</a>` : '', abm ? `<a href="${v.abmelden}" target="_blank" style="color:#f4c2b0;text-decoration:underline">Vom Newsletter abmelden</a>` : ''].filter(Boolean).join(' &middot; ')}</div>` : ''}
+<img src="${basis}haeuser/schloessli/mail/_fuss.png" width="44" height="54" alt="" style="display:block;margin:0 auto 14px;width:44px;height:54px;border:0">
+<div class="mono" style="font-family:${F.mono};font-size:11px;line-height:18px;letter-spacing:3px;text-transform:uppercase;color:${C.gold}">Wirtschaft am Schlössli</div>
+<div style="margin-top:10px;font-family:${F.sans};font-size:13px;line-height:21px;color:#dde2ea">Direkt im Hafen von Bottighofen<br>Seestrasse 50 &middot; 8598&nbsp;Bottighofen<br>+41&nbsp;71&nbsp;688&nbsp;90&nbsp;92 &middot; <a href="https://www.instagram.com/schloessli_bottighofen/" target="_blank" style="color:${C.gold};text-decoration:none">@schloessli_bottighofen</a></div>
+${f.text ? `<div style="margin-top:18px;font-family:${F.sans};font-size:12px;line-height:19px;color:#bacdea">${zeilen(f.text)}</div>` : ''}
+${abm || v.online ? `<div style="margin-top:18px;font-family:${F.sans};font-size:12px;line-height:19px;color:#bacdea">${[v.online && abm ? `<a href="${v.online}" target="_blank" style="color:#bacdea;text-decoration:underline">Im Browser ansehen</a>` : '', abm ? `<a href="${v.abmelden}" target="_blank" style="color:#bacdea;text-decoration:underline">Vom Newsletter abmelden</a>` : ''].filter(Boolean).join(' &middot; ')}</div>` : ''}
 </td></tr>`;
 
     const pre = String(doc.vorschau || '').trim();
@@ -118,25 +118,25 @@ ${abm || v.online ? `<div style="margin-top:18px;font-family:${F.sans};font-size
 <meta name="format-detection" content="telephone=no,address=no,email=no,date=no">
 <meta name="color-scheme" content="light only">
 <meta name="supported-color-schemes" content="light">
-<title>${esc(doc.betreff || doc.name || 'Culinarium')}</title>
-<!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><style>.ser,h1,h2{font-family:Georgia,'Times New Roman',serif!important}.san,.mono,p,div,td,a{font-family:Arial,Helvetica,sans-serif!important}</style><![endif]-->
-<!--[if !mso]><!--><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@340&family=DM+Mono&family=Instrument+Sans&display=swap" rel="stylesheet"><!--<![endif]-->
+<title>${esc(doc.betreff || doc.name || 'Wirtschaft am Schlössli')}</title>
+<!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><style>.ser,h1,h2{font-family:Arial,Helvetica,sans-serif!important}.san,.mono,p,div,td,a{font-family:Arial,Helvetica,sans-serif!important}</style><![endif]-->
+<!--[if !mso]><!--><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=DM+Mono&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet"><!--<![endif]-->
 <style>
 body{margin:0!important;padding:0!important;width:100%!important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 table{border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0}img{-ms-interpolation-mode:bicubic}
 a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important}
 @media screen and (max-width:620px){.px{padding-left:26px!important;padding-right:26px!important}.h1{font-size:33px!important;line-height:37px!important}.voll{width:100%!important;height:auto!important}.aussen{padding-left:0!important;padding-right:0!important}}
-${ed ? `[data-b]{cursor:pointer;transition:box-shadow .2s}[data-b]:hover{box-shadow:inset 0 0 0 1.5px rgba(239,118,73,.75)}[data-b].an{box-shadow:inset 0 0 0 2px #ef7649,inset 0 0 0 5px rgba(245,166,137,.25)}html{scrollbar-width:none}` : ''}
+${ed ? `[data-b]{cursor:pointer;transition:box-shadow .2s}[data-b]:hover{box-shadow:inset 0 0 0 1.5px rgba(99,145,213,.75)}[data-b].an{box-shadow:inset 0 0 0 2px #6391d5,inset 0 0 0 5px rgba(154,184,228,.25)}html{scrollbar-width:none}` : ''}
 </style>
 </head>
 <body style="margin:0;padding:0;background:${C.navy}" bgcolor="${C.navy}">
 <!--[if gte mso 9]><v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t"><v:fill type="tile" src="${tap}" color="${C.navy}"/></v:background><![endif]-->
-${pre ? `<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;color:${C.navy}">${esc(pre)}${'&#8199;&#847; '.repeat(60)}</div>` : ''}
+${pre ? `<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;color:${C.navy}">${esc(pre)}${'&#8199;&#496083; '.repeat(60)}</div>` : ''}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${C.navy}" background="${tap}" style="background:${C.navy} url('${tap}') repeat">
 <tr><td align="center" class="aussen" style="padding:0 12px">
 <!--[if mso]><table role="presentation" width="${BREITE}" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:${BREITE}px;margin:0 auto">
-<tr><td${ed ? ' data-b="kopf"' : ''} align="center" style="padding:40px 0 34px"><a href="https://www.instagram.com/culinarium_hannover/" target="_blank" style="text-decoration:none"><img src="${basis}haeuser/culinarium/mail/_kopf.png" width="278" height="64" alt="Culinarium · A UNiQUE EXPERiENCE BY MOMO X RUDI" style="display:block;margin:0 auto;width:278px;height:64px;border:0;color:${C.gold};font-family:Georgia,serif;font-size:18px;letter-spacing:4px"></a></td></tr>
+<tr><td${ed ? ' data-b="kopf"' : ''} align="center" style="padding:40px 0 34px"><a href="https://www.instagram.com/schloessli_bottighofen/" target="_blank" style="text-decoration:none"><img src="${basis}haeuser/schloessli/mail/_kopf.png" width="340" height="40" alt="Wirtschaft am Schlössli" style="display:block;margin:0 auto;width:340px;height:40px;border:0;color:${C.gold};font-family:Arial,sans-serif;font-size:18px;letter-spacing:4px"></a></td></tr>
 <tr><td style="padding:0">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${C.papier}" style="background:${C.papier};border-radius:6px">
 ${karte}

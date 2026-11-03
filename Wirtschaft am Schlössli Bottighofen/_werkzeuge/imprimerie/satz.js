@@ -2,14 +2,16 @@
    Alle Masse in Millimetern. Ursprung (0,0) = obere linke Ecke des Endformats, der Beschnitt (3 mm) liegt davor. */
 (function () {
   const DS = window.DS = window.DS || {};
+  /* Name der Werkstatt nur aus dem Kleid des Hauses (WO.name('druck'), eine Stelle: kleid/schloessli.js) */
+  DS.NAME = () => (window.WO && WO.name && WO.name('druck')) || (window.WO_HAUS && WO_HAUS.namen && WO_HAUS.namen.druck) || 'Die Werkstatt';
   DS.B = 3;          // Beschnitt
   DS.SICHER = 4;     // Abstand vom Rand, in dem Text sicher bleibt
 
-  /* Tiefe der Kopfzeile wie Rudis gedruckter Schriftzug (Robert 29.10.2026: «ist das unscharf …?»): scharfe Buchstabenkante, darunter ein harter, leicht
+  /* Tiefe der Kopfzeile wie ein gedruckter Schriftzug (Robert 29.10.2026: «ist das unscharf …?»): scharfe Buchstabenkante, darunter ein harter, leicht
      versetzter Schatten in einem dunkleren Ton der Schriftfarbe, ohne Weichzeichner. Leuchten nur auf dunklem Grund (Bühne, Nacht) und nur ausserhalb der Kante:
      ein weiter, schwacher Hof, den die Schrift darüber vollständig deckt. Gilt gleich für Bildschirm (satz.js), PNG und PDF (druck.js). */
   DS.kopfTiefe = (hex, art, gr) => {
-    const h = String(hex || '#d6262b').replace('#', ''), c = [0, 2, 4].map(i => parseInt(h.slice(i, i + 2), 16) || 0);
+    const h = String(hex || '#4072bc').replace('#', ''), c = [0, 2, 4].map(i => parseInt(h.slice(i, i + 2), 16) || 0);
     const mix = (z, a) => '#' + c.map((v, i) => Math.round(v + (z[i] - v) * a).toString(16).padStart(2, '0')).join('');
     return { dx: +(gr * .022).toFixed(3), dy: +(gr * .04).toFixed(3), hart: mix([20, 6, 6], .55), glow: art === 'leuchten' ? mix([255, 214, 196], .35) + '6b' : null, blur: +(gr * .5).toFixed(3) };
   };
@@ -41,7 +43,7 @@
     const M = await (await fetch(basis + 'marke.json')).json();
     M.basis = basis;
     M.eigeneMini = new Set(M.bilder.map(b => b.key));
-    /* Die Kopfzeile (Anton) steht immer in Versalien: ihr woff2 trägt nur die Grossbuchstaben (bau.py), alles andere kommt aus der TTF, die erst geladen wird,
+    /* Die Kopfzeile steht immer in Versalien: ihr woff2 trägt nur die Grossbuchstaben (bau.py), alles andere kommt aus der TTF, die erst geladen wird,
        wenn ein solches Zeichen vorkommt (30.10.2026, Start gedrosselt) */
     const GROSS = 'U+20-60,U+7B-7E,U+A0,U+AB,U+B7,U+BB,U+C0-DE,U+1E9E,U+2010-2026,U+20AC', REST = 'U+0-1F,U+61-7A,U+7F-9F,U+A1-AA,U+AC-B6,U+B8-BA,U+BC-BF,U+DF-1E9D,U+1E9F-200F,U+2027-20AB,U+20AD-10FFFF';   // REST = alles ausser GROSS: Chromium lädt sonst beide
     const css = Object.entries(M.schriften).map(([rolle, s]) => rolle === 'kopf'
@@ -56,14 +58,14 @@
       /* Le Livre nennt die Grösse des Originals; gedruckt wird die Datei unter dem Weg «fl» des Markenbuchs, deren Mass in marke.json steht.
          Mit dem Original rechnete die Druckprüfung zu viele dpi (haus-winter: 186 statt 88 dpi auf A3). */
       const px = Object.fromEntries(M.bilder.map(b => [b.key, b]));
-      const culinarium = /Culinarium/.test(L.haus || '');
-      if (culinarium) {   // Das Markenbuch des Culinarium (Chat «culinarium-livre»): die Bereiche nennt es selbst in livre.json; die Dateien liegen dort, wohin «fl» und «fs» zeigen
+      const sonderweg = false;   // Sonderweg eines anderen Markenbuchs, hier nicht gebraucht
+      if (sonderweg) {
       }
       M.bilder = L.fotos.filter(f => !(M.raus || []).includes(f.k) && f.art !== 'ki').map(f => ({ key: f.k, alt: (f.t && (f.t.de || Object.values(f.t)[0])) || f.k, w: (px[f.k] || f).w, h: (px[f.k] || f).h, gruppe: DS.LIVRE_TEXT.b[f.b] || 'Haus',
         bereich: f.b, saison: f.s, format: f.f, herkunft: f.art, ki: !!f.ki, quelle: f.q, fl: f.fl, fs: f.fs }));
       /* Fotos, die nur diese Kopie kennt (Gastbetriebe im Haus, Hunde, Packages …), bleiben als «Weitere Fotos» dabei */
       const da = new Set(M.bilder.map(b => b.key)), mehr = Object.values(px).filter(b => !da.has(b.key) && !(M.raus || []).includes(b.key));
-      if (culinarium && mehr.length) { DS.LIVRE_TEXT.b = Object.assign({ motive: 'Plakat-Motive' }, DS.LIVRE_TEXT.b, { weitere: 'Weitere Fotos' }); M.bilder = M.bilder.concat(mehr.filter(b => b.gruppe !== 'Plakat-Motive').map(b => Object.assign({}, b, { gruppe: 'Weitere Fotos', bereich: 'weitere', herkunft: 'haus', ki: false })), mehr.filter(b => b.gruppe === 'Plakat-Motive').map(b => Object.assign({}, b, { bereich: 'motive', herkunft: 'haus', ki: false })));   /* Robert 29.10.: Fotos zuerst, Plakate nur unter «Plakat-Motive» */ }
+      if (sonderweg && mehr.length) { DS.LIVRE_TEXT.b = Object.assign({ motive: 'Plakat-Motive' }, DS.LIVRE_TEXT.b, { weitere: 'Weitere Fotos' }); M.bilder = M.bilder.concat(mehr.filter(b => b.gruppe !== 'Plakat-Motive').map(b => Object.assign({}, b, { gruppe: 'Weitere Fotos', bereich: 'weitere', herkunft: 'haus', ki: false })), mehr.filter(b => b.gruppe === 'Plakat-Motive').map(b => Object.assign({}, b, { bereich: 'motive', herkunft: 'haus', ki: false })));   /* Robert 29.10.: Fotos zuerst, Plakate nur unter «Plakat-Motive» */ }
     }
     M.bildIndex = Object.fromEntries(M.bilder.map(b => [b.key, b]));
     /* Druckfassungen (_qa/druckfassungen.py): dasselbe Foto in mehr Pixeln, nur für PDF/Bild und Druckprüfung, nicht für den Bildschirm */
@@ -108,7 +110,7 @@
     const reihe = (STUFEN.find(r => r[0] === +ms[1]) || [+ms[1]]).filter(w => w <= +ml[2]), ziel = breite * 1.6;
     return DS.livreUrl(ml[1] + '-' + (reihe.find(w => w >= ziel) || +ml[2]) + '.webp');
   };
-  DS.livreSeite = () => location.port === '9287' ? 'http://127.0.0.1:9285/_werkzeuge/livre/' : DS.ALLEIN ? 'https://culinarium-hannover-entwurf.vercel.app/werkzeuge/livre/' : DS.LIVRE;
+  DS.livreSeite = () => location.port === '9287' ? 'http://127.0.0.1:9285/_werkzeuge/livre/' : DS.LIVRE;
   /* Logo, Logo quer und Wortmarke aus Le Livre: Bildschirm SVG, Blatt und PDF PNG (bis 3000 px, mit Transparenz) */
   DS.livreDateien = M => (M.livre ? M.livre.dateien : []).filter(d => ['logo', 'quer', 'wortmarke'].includes(d.k) && d.var).flatMap(d => {
     const vb = (d.vb || '0 0 4 3').split(' ').map(Number), N = { logo: 'Logo', quer: 'Logo quer', wortmarke: 'Wortmarke' }[d.k];
@@ -122,7 +124,9 @@
       const r = await fetch(DS.LIVRE + 'livre.json');   // der Server sagt no-cache; so trifft der Abruf das Vorladen in index.html (30.10.)
       if (!r.ok || !(r.headers.get('content-type') || '').includes('json')) return null;
       const L = await r.json();
-      if (!/Culinarium/.test(L.haus || '')) throw new Error('Markenbuch eines anderen Hauses');
+      /* Schlössli (3.11.2026): die Hausdruckerei arbeitet mit ihrer eigenen Kopie der Fotos (haeuser/schloessli/, bau.py aus website/assets/img);
+         das Markenbuch liefert nur dann Fotos, wenn es ausdrücklich dieses Haus nennt und dieselben Schlüssel kennt */
+      if (!/Schl[öo]ssli/.test(L.haus || '') || !L.plakatwerkstatt) throw new Error('Markenbuch eines anderen Hauses');
       return L && Array.isArray(L.fotos) && L.fotos.length ? L : null;
     } catch (e) { return null; }
   };
@@ -177,7 +181,7 @@
         img.decoding = 'async';
         img.style.cssText = `position:absolute;left:${a.x * S}px;top:${a.y * S}px;width:${a.bw * S}px;height:${a.bh * S}px;max-width:none;pointer-events:none;`;
         d.appendChild(img);
-      } else st += 'background:#cfc6b6;';
+      } else st += 'background:#b2bfd3;';
     } else if (el.typ === 'flaeche') {
       st += `width:${el.w * S}px;height:${el.h * S}px;background-color:${DS.farbe(M, el.farbe)};opacity:${el.deck ?? 1};border-radius:${(el.r || 0) * S}px;`;
       if (el.tapete) st += tapeteCss(M, el.tapete, S, el.x, el.y);

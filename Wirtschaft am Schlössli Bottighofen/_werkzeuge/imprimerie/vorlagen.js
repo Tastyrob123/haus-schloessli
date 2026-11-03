@@ -466,160 +466,11 @@
   };
 
 
-  /* ---------- Culinarium Hannover (28.10.2026): die Plakat-Sprache der echten Plakate seit 2023 und die Menükarte am Tisch ----------
-     Ausgemessen an den Plakaten in _quelle/extern/ig/ (DFqbLG2s_dc, 1440 × 1432): warmweisser Rand 4 % seitlich und 2,6 % oben, Bildfeld bis 74,5 %,
-     darunter der Kasten mit der Wortmarke CULINARIUM (75,2–91,4 %, Wortmarke 75 % der Breite) und das Band mit der Zeile (92,3–98,7 %),
-     beide mit feiner grauer Linie. Rückseite (…-2.jpg): Bild randlos, oben links «WALK / ON THE / WILD SIDE», unten die Daten «25 / 09 / 26» mit Uhrzeit,
-     rechts daneben «3 GÄNGE MENÜ / 5 SiGNATURE DRiNKS», alles warmweiss in der Plakatschrift. Jeder Abend trägt seine Akzentfarbe (i.akzent):
-     als Linie unter der Kopfzeile (vorn); die Rückseite bleibt wie die echten ohne Linie. Alle Masse in Anteilen der Breite, damit dasselbe Plakat
-     als Instagram-Quadrat, als A3-Aushang und als Story stimmt. Wortmarke = zweites Zeichen (el.z = 2, Rudis Original-Logo). */
-  STIL.plakat = { zeile: 1.22, sperr: .08 };   // Sperrung höchstens .08 em, sonst zerfallen die Wörter im PDF (Fehlerbuch 10a, pdftotext)
-  STIL.kopf = { zeile: 1, sperr: .005, gross: true };   // Kopfzeile wie Rudi (Anton): eine Zeile, Versalien, kaum gesperrt; auch beim Wechsel der Schriftart im Editor
-  const PL_LINIE = '#bdb8b8';                  // graue Linie der Kästen, gemessen (190,186,186 / 180,178,183)
-  const plMass = (c, el, breite, hoehe) => {   // Text so gross setzen, dass er die Breite füllt, aber nicht höher als «hoehe» wird
-    const m = DS.mess(Object.assign({}, el, { gr: 10, w: 100000 })).bw || 1;
-    el.gr = +Math.min(10 * breite / m, hoehe).toFixed(2); el.h = DS.mess(el).h; return el;
-  };
-  /* Kopfzeile wie Rudi (Robert 29.10.2026: «auf den Plakaten von Rudi ist der Schriftzug Walk on the Wild Side immer … in dicken Buchstaben, wir arbeiten
-     aber nur mit so einer weissen hässlichen Schrift»). Abgelesen an Rudis acht Plakaten mit gemalter Kopfzeile: sehr fett und schmal, Versalien, mittig,
-     70–85 % der Motivbreite, 2–7 % unter der Oberkante, fast immer Rot (auf Rot und Pink Ton in Ton, auf dunkler Bühne leuchtend), leichter Schatten,
-     kein Strich darunter. Schrift: Anton (OFL), Rolle «kopf». Farbe und Schatten je Bild aus der Kopfzone (kopfzone.rudi_kopf → kopf_rudi im Bild bzw. Motiv);
-     eine ausdrückliche Hex-Farbe geht vor, die alten Namen 'weiss'/'navy' gelten nicht mehr. Baustein für alle Aufbauten: DS.kopfzeileRudi(c, text, o). */
-  DS.kopfRudi = (M, bild, farbe, schatten) => {
-    if (/^#/.test(farbe || '')) return { farbe, schatten: schatten || 'dunkel' };
-    const b = (M.bildIndex || {})[bild], mo = window.DSPlakat && DSPlakat.motive ? DSPlakat.motive().find(x => x.key === bild || x.ganz === bild) : null;
-    return (b && b.kopf_rudi) || (mo && mo.kopf_rudi) || { farbe: '#d6262b', schatten: 'dunkel' };
-  };
-  DS.kopfzeileRudi = (c, text, o) => {   // o: { x, y, w, h } = Motivfeld; bild, farbe, schatten, anteil (Breite, Standard 0,8)
-    const k = DS.kopfRudi(c.M, o.bild, o.farbe, o.schatten);
-    const t = tx(c, 'kopf', String(text || '').toUpperCase(), o.w, o.h * .16, k.farbe, { slot: o.slot || 'ueber', zeile: 1, sperr: .005, x: o.x });
-    plMass(c, t, o.w * (o.anteil || .8), o.h * .16);
-    t.y = +(o.y + o.h * .035 - t.gr * .06).toFixed(2); t.schatten = k.schatten;
-    return t;
-  };
-  V.plakat = {
-    name: 'Plakat des Abends', wofuer: 'Plakat je Abend in der Sprache der Culinarium-Plakate: Bild oben, Wortmarke im Kasten, Band mit der Zeile, Akzentfarbe des Abends',
-    slots: ['bild*', 'ueber', 'zeile'],
-    bau(c, i, seite) {
-      const dunkel = c.ton === 'dunkel', u = c.w, B = DS.B;
-      grund(c, seite, dunkel ? 'navy' : 'weiss', dunkel ? 'dunkel' : null);
-      const sx = u * .0415, top = Math.min(u, c.h) * .0275;
-      const yBand1 = c.h - u * .013, yBand0 = c.h - u * .0775, yBox1 = c.h - u * .0855, yBox0 = c.h - u * .248, yBild = c.h - u * .2565;
-      foto(c, i.bild, sx, top, u - 2 * sx, yBild - top);
-      if (i.ueber) c.el.push(DS.kopfzeileRudi(c, i.ueber, { x: sx, y: top, w: u - 2 * sx, h: yBild - top, bild: i.bild, farbe: i.ueberfarbe, schatten: i.kopfschatten }));   // wie Rudi, ohne Strich darunter (29.10.)
-      const linie = dunkel ? 'gold' : PL_LINIE, st = Math.max(.25, u * .0035);
-      c.el.push({ id: neueId(), typ: 'rahmen', x: sx, y: yBox0, w: u - 2 * sx, h: yBox1 - yBox0, staerke: st, r: 0, farbe: linie, deck: dunkel ? .7 : 1 });
-      c.el.push({ id: neueId(), typ: 'rahmen', x: sx, y: yBand0, w: u - 2 * sx, h: yBand1 - yBand0, staerke: st, r: 0, farbe: linie, deck: dunkel ? .7 : 1 });
-      const Z2 = c.M.zeichen2, farbe = dunkel ? 'weiss' : (Z2 ? Z2.farben.zeichen : 'tanne');
-      if (Z2) {
-        const zw = u * .75, zh = zw * Z2.verh;
-        c.el.push({ id: neueId(), typ: 'zeichen', z: 2, x: (u - zw) / 2, y: +((yBox0 + yBox1 - zh) / 2).toFixed(2), w: zw, farbe, deck: 1 });
-      } else {
-        const t = tx(c, 'titel', 'CULINARIUM', u * .75, u * .09, farbe, { slot: null }); t.y = (yBox0 + yBox1 - t.h) / 2; c.el.push(t);
-      }
-      const z = tx(c, 'plakatfett', i.zeile || c.M.zeile || '', u - 2 * sx - u * .02, u * .03, farbe, { slot: 'zeile', zeile: 1, sperr: .06 });   // Feld so breit wie das Band, damit eine längere Zeile (Gastkoch) nie umbricht
-      plMass(c, z, u * .84, (yBand1 - yBand0) * .5);   /* wie auf den echten Plakaten: fett, das Band fast in voller Breite */ z.y = +((yBand0 + yBand1 - z.h) / 2 + z.gr * .04).toFixed(2); c.el.push(z);
-      void B;
-    },
-  };
-  /* Plakat des Abends in hohen Formaten (Abnahme-Tor 29.10.: in A3 und Story stand das Motiv klein in der Mitte, oben und unten leere Farbfläche).
-     Wie das Plakat, nur hoch: Papiergrund, das Motiv in voller Breite und ganz (Seitenverhältnis des Bilds, nichts angeschnitten), darauf die Kopfzeile wie Rudi,
-     darunter Wortmarke im Kasten und das Band, dann die Daten des Abends in den Buchstaben der Rückseiten. Die übrige Höhe teilt sich gleich auf die Abstände
-     (höchstens 2,4 Textzeilen, sonst Loch); was dann noch frei ist, macht die Daten grösser. */
-  V.plakathoch = {
-    name: 'Plakat des Abends, hoch', wofuer: 'Plakat je Abend in hohen Formaten (A3, A4, A5, Story, 4:5): Motiv gross und ganz, Wortmarke, Band und die Daten des Abends',
-    slots: ['bild*', 'ueber', 'zeile', 'tag1', 'zeit1', 'tag2', 'zeit2', 'text'],
-    formate: ['a6h', 'a5h', 'a4h', 'a3h', 'insta', 'story', 'dlh'],   // hohe Formate; plakat.js setzt ihn selbst nur bis Seitenverhältnis 1,9 (dlh nur über den Reiter «Vorlagen»)
-    bau(c, i, seite) {
-      /* Ohne Daten des Abends (das Plakat aus dem Reiter «Vorlagen» in Story oder A3) bliebe ein Drittel leer (Abnahme-Tor 29.10.): dann stehen die Daten
-         aus dem Beispiel darin, als Felder zum Überschreiben, wie auf jedem Plakat, das die Werkstatt für einen Abend anlegt */
-      if (!i.tag1 && !i.text && DS.BEISPIEL && DS.BEISPIEL.plakathoch) { const B0 = DS.BEISPIEL.plakathoch; i = Object.assign({ tag1: B0.tag1, zeit1: B0.zeit1, tag2: B0.tag2, zeit2: B0.zeit2, text: B0.text }, i); }
-      const dunkel = c.ton === 'dunkel', u = c.w, CAP = .72;
-      grund(c, seite, dunkel ? 'navy' : 'weiss', dunkel ? 'dunkel' : null);
-      const sx = Math.max(u * .0415, DS.SICHER + .5), bw = u - 2 * sx, b = (c.M.bildIndex || {})[i.bild] || { w: 5, h: 4 };
-      const digital = (Object.values(DS.FORMATE).find(F => F.b === c.w && F.h === c.h) || {}).digital;
-      const mw = +Math.min(bw, digital || !b.w || b.w < 50 ? bw : b.w / 152 * 25.4).toFixed(2), mx = +((u - mw) / 2).toFixed(2);   // im Druck nie unter 152 dpi: Rudis Bilder gibt es nur in Instagram-Grösse
-      const mh = +(mw * b.h / b.w).toFixed(2), farbe = dunkel ? 'weiss' : 'tinte', linie = dunkel ? 'gold' : PL_LINIE, st = Math.max(.25, u * .0035);
-      const boxH = u * .163, bandH = u * .0645, Z2 = c.M.zeichen2, zFarbe = dunkel ? 'weiss' : (Z2 ? Z2.farben.zeichen : 'tanne');
-      const daten = (f) => {   // Daten des Abends, mittig, fett wie auf den Rückseiten
-        const z = [], gT = u * .042 * f / CAP, gS = u * .026 * f / CAP;
-        [[i.tag1, i.zeit1, 1], [i.tag2, i.zeit2, 2]].filter(d => d[0]).forEach(([tag, zeit, n]) => z.push(tx(c, 'plakatfett', tag + (zeit ? '  ·  ' + zeit : ''), bw, gT, farbe, { slot: 'tag' + n, zeile: 1.05, sperr: .04 })));
-        if (i.text) z.push(tx(c, 'plakatfett', String(i.text).replace(/\n/g, '  ·  '), bw, gS, farbe, { slot: 'text', zeile: 1.1, sperr: .04 }));
-        z.forEach(t => plMass(c, t, bw * .94, t.gr)); return z;   // etwas Luft, sonst bricht die Sperrung die Zeile um
-      };
-      let f = 1, d = daten(f);
-      const hoehe = () => mh + boxH + bandH + d.reduce((m, t) => m + t.h, 0) + Math.max(0, d.length - 1) * u * .012;
-      const zeile = ((DS.STIL && (DS.STIL.mindestgrade_mm || {})[c.M && c.formatKey] || {}).text || 3) * 1.35, cap = 2.4 * Math.max(zeile, u * .03);
-      const luecken = 4, frei = () => c.h - 2 * sx - hoehe();
-      while (frei() / luecken > cap && f < 1.8) { f += .1; d = daten(f); }
-      const g = Math.max(u * .015, Math.min(cap, frei() / luecken));
-      let y = sx + Math.max(0, (frei() - g * luecken) / 2);
-      foto(c, i.bild, mx, +y.toFixed(2), mw, mh);
-      if (i.ueber) c.el.push(DS.kopfzeileRudi(c, i.ueber, { x: mx, y, w: mw, h: mh, bild: i.bild, farbe: i.ueberfarbe, schatten: i.kopfschatten }));
-      y += mh + g;
-      c.el.push({ id: neueId(), typ: 'rahmen', x: sx, y: +y.toFixed(2), w: bw, h: +boxH.toFixed(2), staerke: st, r: 0, farbe: linie, deck: dunkel ? .7 : 1 });
-      if (Z2) { const zw = bw * .78, zh = zw * Z2.verh; c.el.push({ id: neueId(), typ: 'zeichen', z: 2, x: +((u - zw) / 2).toFixed(2), y: +(y + (boxH - zh) / 2).toFixed(2), w: zw, farbe: zFarbe, deck: 1 }); }
-      y += boxH + u * .008;
-      c.el.push({ id: neueId(), typ: 'rahmen', x: sx, y: +y.toFixed(2), w: bw, h: +bandH.toFixed(2), staerke: st, r: 0, farbe: linie, deck: dunkel ? .7 : 1 });
-      const zl = tx(c, 'plakatfett', i.zeile || c.M.zeile || '', bw - u * .02, u * .03, zFarbe, { slot: 'zeile', zeile: 1, sperr: .06 });
-      plMass(c, zl, bw * .9, bandH * .5); zl.y = +(y + (bandH - zl.h) / 2 + zl.gr * .04).toFixed(2); c.el.push(zl);
-      y += bandH + g;
-      d.forEach((t, k) => { t.y = +y.toFixed(2); c.el.push(t); y += t.h + (k < d.length - 1 ? u * .012 : 0); });
-    },
-  };
-  V.plakatrueck = {
-    name: 'Plakat, Rückseite mit Daten', wofuer: 'Rückseite des Abend-Plakats wie die echten Rückseiten: ruhiger, satter Grund in der Farbwelt der Vorderseite (oder ein Bild randlos), «WALK / ON THE / WILD SIDE» oben links, Daten mit Uhrzeit unten links, Gänge und Drinks rechts, fette runde Versalien, keine Linie, kein Schleier',
-    slots: ['bild', 'ueber', 'tag1', 'zeit1', 'tag2', 'zeit2', 'text'],
-    /* Ausgemessen an den echten Rückseiten (DPwlqcfiKcA-2, DJw8OqGMY1G-2, DVjkofijp6R-2, DbYnkdkjrNy-2, 900 px breit): Rand links 3,3 %, «WALK» oben bei 6,7 %,
-       Versalhöhe 3,6 %, Zeilenschritt 7,8 %; Daten Versalhöhe 3,7 %, Uhrzeit 1,9 %, unterste Zeile 4,5 % über dem Rand; rechte Spalte ab 58,7 %, Versalhöhe 2,8 %,
-       Zeilenschritt 4,7 %. Kein Schleier, keine Titelzeile: das Bild ist ein eigenes, sattes Begleitmotiv. Schrift weiss, auf hellem Bild dunkel (i.dunkel). */
-    bau(c, i, seite) {
-      const u = c.w, B = DS.B, CAP = .72;   // Versalhöhe von Urbanist in Teilen der Schriftgrösse
-      grund(c, seite, i.grund || 'navy', null);   // ohne Bild: ruhiger Grund in der Farbwelt der Illustration vorn (Roberts Entscheid 28.10.: keine KI-Bilder)
-      if (i.bild) foto(c, i.bild, -B, -B, c.w + 2 * B, c.h + 2 * B);
-      const farbe = i.dunkel ? 'tinte' : 'weiss', x0 = Math.max(u * .033, DS.SICHER + .5), R = 'plakatfett';   // nie näher als der sichere Rand (Abnahme-Tor 29.10.: A3 rechts unter 4 mm)
-      if (i.ueber) {
-        const t = tx(c, R, i.ueber, u * .6, u * .036 / CAP, farbe, { slot: 'ueber', ausr: 'l', x: x0, zeile: (u * .078) / (u * .036 / CAP), sperr: .02 });
-        t.y = +(u * .067 - (u * .036 / CAP) * .16).toFixed(2); c.el.push(t);
-      }
-      const gT = u * .037 / CAP, gZ = u * .019 / CAP, unten = c.h - u * .045;
-      const daten = [[i.tag1, i.zeit1, 1], [i.tag2, i.zeit2, 2]].filter(d => d[0]);
-      // von unten nach oben setzen, damit die unterste Uhrzeit wie auf den Plakaten 4,5 % über dem Rand steht
-      const bloecke = daten.map(([tag, zeit, n]) => {
-        const t = tx(c, R, tag, u * .5, gT, farbe, { slot: 'tag' + n, ausr: 'l', x: x0, zeile: 1.02, sperr: .04 });
-        const z = zeit ? tx(c, R, zeit, u * .4, gZ, farbe, { slot: 'zeit' + n, ausr: 'l', x: x0 + u * .003, zeile: 1.1, sperr: .04 }) : null;
-        return { t, z };
-      });
-      let y = unten;
-      for (let k = bloecke.length - 1; k >= 0; k--) {
-        const { t, z } = bloecke[k];
-        if (z) { y -= z.h; z.y = +y.toFixed(2); y -= u * .012; }
-        y -= t.h; t.y = +y.toFixed(2); y -= u * .028;
-      }
-      const yOben = bloecke.length ? bloecke[0].t.y : unten - u * .2;
-      bloecke.forEach(({ t, z }) => { c.el.push(t); if (z) c.el.push(z); });
-      if (i.text) {
-        const t = tx(c, R, i.text, u - u * .587 - x0, u * .028 / CAP, farbe, { slot: 'text', ausr: 'l', x: u * .587, zeile: (u * .047) / (u * .028 / CAP), sperr: .03 });
-        plMass(c, t, u - u * .587 - x0, u * .028 / CAP);   // passt in die Spalte bis zum sicheren Rand
-        t.y = +yOben.toFixed(2); c.el.push(t);
-      }
-      void B;
-    },
-  };
-  V.plakatganz = {
-    name: 'Plakat aus dem Archiv, ganz', wofuer: 'Ein echtes Plakat seit 2023 als ganzes Bild, nichts angeschnitten, mit warmweissem Rand; die Schrift steht schon im Plakat',
-    slots: ['bild*'],
-    /* Auftrag Oberchef 28.10.: echte Plakate mit eingebauter Schrift nie als Motiv unter neuer Schrift und nie angeschnitten, nur ganz im Archiv */
-    bau(c, i, seite) {
-      grund(c, seite, 'weiss', null);
-      const rand = Math.min(c.w, c.h) * .04, fw = c.w - 2 * rand, fh = c.h - 2 * rand;
-      const b = (c.M.bildIndex || {})[i.bild], ia = b && b.w && b.h ? b.w / b.h : 1;
-      const w = Math.min(fw, fh * ia), h = w / ia;
-      foto(c, i.bild, (c.w - w) / 2, (c.h - h) / 2, w, h);
-    },
-  };
+  /* ---------- Menükarte am Tisch (Stamm 28.10.2026): Wortmarke des Hauses (zweites Zeichen), Zeile, Titel, Datum, je Gang Gericht und Zeile ---------- */
+  STIL.plakat = { zeile: 1.22, sperr: .08, gross: true };   // Zeile unter der Wortmarke; Sperrung höchstens .08 em, sonst zerfallen die Wörter im PDF
+  STIL.kopf = { zeile: 1, sperr: .06, gross: true };
   V.menue = {
-    name: 'Menükarte am Tisch', wofuer: 'Karte des Abends am Platz: Wortmarke, Datum, je Gang Teller und Drink, wie die Karten der Abende auf der Website',
+    name: 'Menükarte am Tisch', wofuer: 'Menü am Platz: Wortmarke, Datum, je Gang das Gericht wie auf der Karte und die Zeile darunter',
     slots: ['ueber', 'titel', 'liste*', 'text', 'fuss'],
     bau(c, i, seite) {
       const dunkel = c.ton === 'dunkel';
@@ -693,6 +544,6 @@
     };
   };
 
-  /* Beispielinhalte im Wortlaut des Culinarium (geprüft in _qa/vorlagen_culinarium.py, eingesetzt von _qa/culinarium_anpassen.py) */
-  DS.BEISPIEL = {"deckel": {"ueber": "A UNiQUE EXPERiENCE BY MOMO X RUDI", "titel": "Culinarium", "unter": "Walk on the Wild Side · Haasemannstraße 13", "text": "Food-Pairing-Abende im Walk on the Wild Side in Linden: ein Menü mit fünf passenden Drinks an einer langen Tafel für vierzehn Gäste."}, "buehne": {"bild": "tafelleer", "ueber": "Culinarium", "titel": "An der langen Tafel", "text": "Die Abende an der langen Tafel des Walk on the Wild Side: drei Gänge, fünf Drinks, vierzehn Plätze. Und wer dir erklärt, was auf dem Teller und im Glas ist.", "aktion": "Walk on the Wild Side · Haasemannstraße 13"}, "ansicht": {"bild": "barnacht", "titel": "Walk on the Wild Side", "unter": "Hannover-Linden"}, "karte": {"ueber": "Culinarium", "titel": "Vom Pass", "text": "Das Menü wechselt mit jedem Abend. Ein paar Teller und Drinks aus den letzten Ausgaben.", "liste": [{"name": "LAUCH / BLUMENKOHL / CHIPOTLE", "detail": "", "preis": ""}, {"name": "BLUMENKOHL / ROQUEFORT / KAPERN / QUINOA", "detail": "", "preis": ""}, {"name": "HOKKAIDO / KÜRBISKERNÖL / HASELNUSS", "detail": "", "preis": ""}, {"name": "SPAGHETTI-EIS / KIWI / WEISSE SCHOKOLADE", "detail": "", "preis": ""}], "fuss": "Walk on the Wild Side · Haasemannstraße 13"}, "einladung": {"ueber": "Culinarium", "titel": "Ein Abend an der Tafel", "wann": "27.–28. November", "wo": "Walk on the Wild Side · Haasemannstraße 13", "text": "Vierzehn Gäste an einer Tafel, drei Gänge aus der Küche und dazu fünf Signature Drinks, passend zum Essen. Momo erklärt am Tisch, was im Glas ist.", "aktion": "@culinarium_hannover"}, "programm": {"ueber": "Culinarium", "titel": "Die nächsten Abende", "termine": [{"wann": "27.–28. November", "was": "Culinarium", "wo": "Walk on the Wild Side · Haasemannstraße 13"}, {"wann": "18.–19. Dezember", "was": "Culinarium", "wo": "Walk on the Wild Side · Haasemannstraße 13"}]}, "fenster": {"bild": "trio2", "ueber": "Culinarium", "titel": "Immer dieselben Leute", "unter": "A UNiQUE EXPERiENCE BY MOMO X RUDI", "text": "Hinter den Plakaten stehen dieselben Leute, Abend für Abend."}, "geteilt": {"bild": "schaumglas", "ueber": "Am Tisch erklärt", "titel": "Fatwashing", "text": "Die Spirituose nimmt den Geschmack eines Fetts an; kalt gestellt, wird das Fett wieder abgehoben.", "aktion": "Culinarium"}, "gutschein": {"titel": "Dein Platz an der Tafel", "unter": "A UNiQUE EXPERiENCE BY MOMO X RUDI", "wert": "Culinarium", "text": "Die Abende an der langen Tafel des Walk on the Wild Side: drei Gänge, fünf Drinks, vierzehn Plätze."}, "aushang": {"ueber": "Culinarium", "titel": "Heute ausgebucht", "text": "Der Abend ist ausgebucht, bevor er beginnt.", "aktion": "@culinarium_hannover"}, "rueckseite": {"text": "Food-Pairing-Abende im Walk on the Wild Side in Linden: ein Menü mit fünf passenden Drinks an einer langen Tafel für vierzehn Gäste."}, "kartengruss": {"titel": "Walk on the Wild Side", "text": "Und wer dir erklärt, was auf dem Teller und im Glas ist."}, "plakat": {"bild": "pl_CyT32RTMB4d", "ueber": "", "ueberfarbe": "weiss", "zeile": "A UNiQUE EXPERiENCE BY MOMO X RUDI", "akzent": "#13606a"}, "plakatrueck": {"grund": "#0d545d", "ueber": "WALK\nON THE\nWILD SIDE", "tag1": "27 / 11 / 26", "zeit1": "19:00 UHR", "text": "3 GÄNGE MENÜ\n5 SiGNATURE DRiNKS", "tag2": "28 / 11 / 26", "zeit2": "17:00 UHR"}, "menue": {"titel": "Menü", "ueber": "Fr 21. und Sa 22. Februar 2025", "liste": [{"gang": "Apéritif", "name": "Sauerteig | Tomate | Butter", "detail": "Cognac | Toasted Pumpkin Samen | Limette | Champagner"}, {"gang": "Vorspeise", "name": "Miso | Sellerie | Röstzwiebeln", "detail": "Vodka | Tom Yam | Guava | Cocos | Acids | Soda"}, {"gang": "Hauptgang", "name": "Spinat | braune Butter | Parmesan", "detail": "Tequila | lakto-fermentierte Tomate | Agave | Limette"}, {"gang": "Dessert", "name": "Kaffee | Molke | Amaretto", "detail": "Vodka | Cacao | Matcha | Mango"}, {"gang": "Absacker", "name": "", "detail": "Gin | Turmeric | Ingwer"}], "akzent": "#ef7648", "fuss": "Walk on the Wild Side · Haasemannstraße 13"}, "plakathoch": {"bild": "pl_DPwlqcfiKcA", "ueber": "WALK ON THE WILD SIDE", "ueberfarbe": "#d6262b", "kopfschatten": "leuchten", "zeile": "A UNiQUE EXPERiENCE BY MOMO X RUDI", "tag1": "27 / 11 / 26", "zeit1": "19:00 UHR", "tag2": "28 / 11 / 26", "zeit2": "17:00 UHR", "text": "3 GÄNGE MENÜ\n5 SiGNATURE DRiNKS"}};
+  /* Beispielinhalte im Wortlaut des Hauses (geschrieben und geprüft von bau_vorlagen.py) */
+  DS.BEISPIEL = {"deckel": {"ueber": "Wirtschaft am Schlössli", "titel": "Direkt im Hafen von Bottighofen", "unter": "Seestrasse 50 · 8598 Bottighofen", "text": "Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen."}, "buehne": {"bild": "start", "ueber": "Die Seeterrasse", "titel": "Die schönste Terrasse am Bodensee", "text": "Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen.", "aktion": "Seestrasse 50 · 8598 Bottighofen"}, "ansicht": {"bild": "bootshafen", "titel": "Bottighofen", "unter": "Wirtschaft am Schlössli · Am Hafen"}, "karte": {"ueber": "Immer auf der Karte", "titel": "Die Klassiker", "text": "", "liste": [{"name": "SALADE MAISON", "detail": "Bunte Salatschüssel zum Teilen · Kürbiskernöldressing", "preis": ""}, {"name": "VITELLO TONNATO", "detail": "Kalb · Risina Bohne · Olivenöl", "preis": ""}, {"name": "TORTELLONI", "detail": "Tomate · Burrata · Taggiasca Olive", "preis": ""}, {"name": "MOULES FRITES", "detail": "Miesmuschel · Pommes · Sauce Rouille", "preis": ""}], "fuss": ""}, "einladung": {"ueber": "Banketts & Gruppen", "titel": "Unser Fest am See", "wann": "Datum · Uhrzeit", "wo": "Seestrasse 50 · 8598 Bottighofen", "text": "Auf zwei Etagen für jeweils bis zu 26 Personen, Tavolata oder gesetztes Menü.", "aktion": "+41 71 688 90 92"}, "programm": {"ueber": "Excellence Gourmetkreuzfahrt", "titel": "Die Reise", "termine": [{"wann": "Freitag, 13. November · 15:00", "was": "Start in Basel, über Nacht nach Strassburg", "wo": "Excellence Countess"}, {"wann": "Samstag, 14. November", "was": "Den selben Weg wieder zurück, Gala-Dinner mit Four-Hands", "wo": "Monika Huber · Dieter Koschina"}, {"wann": "Sonntag, 15. November · 14:00", "was": "Ankunft in Basel", "wo": ""}]}, "fenster": {"bild": "platanen", "ueber": "Die Seeterrasse", "titel": "Unter den Platanen", "unter": "Bottighofen", "text": "Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen."}, "geteilt": {"bild": "fliesen", "ueber": "Die Bar am Hafen", "titel": "Die Lästermeile", "text": "Zementfliesen, eine Reihe Stühle und der Blick auf den Bootshafen.", "aktion": "Wirtschaft am Schlössli"}, "gutschein": {"titel": "Ein Essen am See", "unter": "Wirtschaft am Schlössli", "wert": "", "text": "Für einen Tisch auf der Terrasse oder in der Gaststube, direkt im Hafen von Bottighofen."}, "gutscheinrueck": {"text": "Einzulösen in der Wirtschaft am Schlössli. Reservation unter +41 71 688 90 92."}, "aushang": {"ueber": "22. Dezember 2026 - 10. Februar 2027", "titel": "Wir machen Ferien", "text": "Vom 22. Dezember 2026 bis zum 10. Februar 2027 bleibt die Wirtschaft am Schlössli geschlossen. Ab dem 11. Februar sind wir wieder für Sie da.", "aktion": "@schloessli_bottighofen"}, "rueckseite": {"text": "Donnerstag - Montag · 11:30 Uhr - 23:00 Uhr"}, "kartengruss": {"titel": "Grüsse vom See", "text": "Direkt im Hafen von Bottighofen, mit Blick aufs Wasser und die Alpen."}, "menue": {"titel": "Lunch-Menü", "ueber": "Drei Gänge am Mittag", "liste": [{"gang": "", "name": "Kürbissuppe", "detail": "Wachtelei · Serrano Schinken"}, {"gang": "", "name": "Risi e bisi", "detail": "Reis · Miesmuschel · Erbsen · Spinat"}, {"gang": "", "name": "Joghurt Panna Cotta", "detail": "Apfelcrumble"}], "fuss": "Seestrasse 50 · 8598 Bottighofen"}};
 })();

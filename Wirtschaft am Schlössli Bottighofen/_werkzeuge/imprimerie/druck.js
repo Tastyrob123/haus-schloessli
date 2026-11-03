@@ -136,7 +136,7 @@
     const { PDFDocument, rgb, cmyk } = PDFLib;
     const pdf = await PDFDocument.create();
     pdf.registerFontkit(fontkit);
-    pdf.setTitle(doc.name); pdf.setAuthor(M.name); pdf.setCreator('Die Plakatwerkstatt · Tasty Studios'); pdf.setProducer('Die Plakatwerkstatt');
+    pdf.setTitle(doc.name); pdf.setAuthor(M.name); pdf.setCreator(DS.NAME() + ' · Tasty Studios'); pdf.setProducer(DS.NAME());
     const B = DS.B, R = o.marken ? 10 : 0, f = doc.format;
     const fonts = {}, zeichensatz = {};
     const font = async rolle => {
@@ -169,7 +169,7 @@
           for (const d of DS.zz(M, op).pfade) page.drawSvgPath(d, { x: X(op.x), y: Y(op.y), scale: op.k * MM, color: rgb(...hex(op.farbe)), opacity: op.deck });
         } else if (op.art === 'text') {
           const fo = await font(op.rolle);
-          /* Kopfzeile wie Rudi (29.10.): Leuchten als weicher Hof aus Kopien auf drei Ringen ausserhalb der Kante, dann der harte Schatten, dann die Schrift scharf darüber */
+          /* Kopfzeile mit Schatten (29.10.): Leuchten als weicher Hof aus Kopien auf drei Ringen ausserhalb der Kante, dann der harte Schatten, dann die Schrift scharf darüber */
           const T = op.schatten ? DS.kopfTiefe(op.farbe, op.schatten, 1) : null, SCH = [];
           if (T && T.glow) for (const r of [.26, .19, .12]) for (let w = 0; w < 16; w++) SCH.push([Math.cos(w * Math.PI / 8) * r, Math.sin(w * Math.PI / 8) * r, T.glow.slice(0, 7), .016]);
           if (T) SCH.push([T.dx, T.dy, T.hart, 1]);
@@ -217,7 +217,7 @@
         for (const d of DS.zz(M, op).pfade) g.fill(new Path2D(d));
       } else if (op.art === 'text') {
         g.fillStyle = op.farbe; g.font = `${op.gr}px 'DS-${op.rolle}'`; g.textBaseline = 'alphabetic';
-        if (op.schatten) {   // Kopfzeile wie Rudi (29.10.): Hof weit ausserhalb, harter Schatten, Schrift ohne Weichzeichner darüber
+        if (op.schatten) {   // Kopfzeile mit Schatten (29.10.): Hof weit ausserhalb, harter Schatten, Schrift ohne Weichzeichner darüber
           const T = DS.kopfTiefe(op.farbe, op.schatten, op.gr);
           if (T.glow) { g.save(); g.shadowColor = T.glow; g.shadowBlur = T.blur * k; g.shadowOffsetX = 9999 * k; g.fillStyle = '#000'; for (const gl of op.glyphen) g.fillText(gl.ch, gl.x - 9999, gl.base); g.restore(); }
           g.save(); g.fillStyle = T.hart; for (const gl of op.glyphen) g.fillText(gl.ch, gl.x + T.dx, gl.base + T.dy); g.restore();
@@ -230,7 +230,7 @@
   };
 
   /* ---------- Druckprüfung ---------- */
-  /* Lage der gemalten Kopfzeile in Rudis Illustrationen und ganzen Plakaten (motive.json, kopf_box/ganz_kopf_box; Robert 29.10.2026: «dann macht es ja keinen
+  /* Lage der gemalten Kopfzeile in Plakat-Motiven und ganzen Plakaten (motive.json, kopf_box/ganz_kopf_box; Robert 29.10.2026: «dann macht es ja keinen
      Sinn, jetzt die Schrift da so abzuschneiden»). Anteile des Bilds, oben links 0 0. */
   DS.kopfBox = key => { const l = (window.DSPlakat && DSPlakat.motive && DSPlakat.motive()) || []; for (const m of l) { if (m.key === key) return m.kopf_box; if (m.ganz === key) return m.ganz_kopf_box; } return null; };
   /* Stilprüfung gegen das Stilblatt des Hauses (haeuser/<haus>/stilblatt.json, Gestaltungs-Chat; Robert 29.10.2026: «Das ist ja gar nicht der Stil, wieso haben wir
@@ -254,12 +254,12 @@
       for (const el of texte) {
         const t = String(el.text), buch = t.replace(/[^A-Za-zÄÖÜäöüß]/g, '');
         if (!erlaubt.includes(el.rolle)) rot(el, `${kurz(el)} hat eine fremde Schriftrolle (${el.rolle || 'keine'})`);
-        if ((st.verboten && st.verboten.versalien_in_rolle || []).includes(el.rolle) && buch.length >= 4 && buch === buch.toUpperCase()) rot(el, `${kurz(el)} steht in Versalien; Titel und Gerichte setzt das Haus nie in Versalien`);
-        if (['titel', 'text', 'kursiv'].includes(el.rolle) && / \/ /.test(t)) rot(el, `${kurz(el)} trennt mit «/»; «/» gehört nur in Rudis Zeilen, Gänge trennt das Haus mit «|»`);
-        const z = ZIER.find(c => t.includes(c)); if (z) rot(el, `${kurz(el)} enthält das Zierzeichen «${z}»; Schmuck ist nur das «C» des Hauses`);
-        // «x» nie als Zier- oder Trennzeichen (Stilblatt 29.10.); erlaubt nur als Teil eines Namens in Versalien («MOMO X RUDI»)
-        const ohneNamen = t.replace(/\bmomo\s+[x×]\s+[A-Za-zÄÖÜäöüß]+/gi, '');   // Namen des Bands: «MOMO X RUDI», «Momo x Christoph» (Oberchef 29.10.)
-        if (/(^|\s)[xX×](\s|$)/.test(ohneNamen)) rot(el, `${kurz(el)} trennt mit «x»; «x» ist im Haus kein Zier- oder Trennzeichen (nur im Namen MOMO X RUDI)`);
+        if ((st.verboten && st.verboten.versalien_in_rolle || []).includes(el.rolle) && buch.length >= 4 && buch === buch.toUpperCase()) rot(el, `${kurz(el)} steht in Versalien; diese Rolle setzt das Haus nie in Versalien`);
+        if (['titel', 'text', 'kursiv'].includes(el.rolle) && / \/ /.test(t)) rot(el, `${kurz(el)} trennt mit «/»; Glieder trennt das Haus mit «·»`);
+        const z = ZIER.find(c => t.includes(c)); if (z) rot(el, `${kurz(el)} enthält das Zierzeichen «${z}»; Schmuck ist nur das Zeichen des Hauses`);
+        // «x» nie als Zier- oder Trennzeichen (Stilblatt)
+        const ohneNamen = t;
+        if (/(^|\s)[xX×](\s|$)/.test(ohneNamen)) rot(el, `${kurz(el)} trennt mit «x»; «x» ist im Haus kein Zier- oder Trennzeichen`);
       }
       // eine Achse: Text mittig (ausser in den Aufbauten mit eigener Achse und Zeitleisten in DM Mono)
       const ach = st.achse || {}; if (!(ach.ausnahmen_aufbau || []).includes(aufbau)) {
@@ -295,7 +295,7 @@
         .map(el => ({ el, a: Math.max(o, el.y), b: Math.min(u, el.y + (el.h || DS.elHoehe(M, el) || 0)) })).filter(x => x.b > x.a).sort((p, q) => p.a - q.a);
       const txt = texte.filter(el => KLASSE[el.rolle] === 'text').map(el => el.gr).sort((p, q) => p - q), zeile = (txt.length ? txt[Math.floor(txt.length / 2)] : (min ? min.text : 3)) * 1.35;
       /* Kopf- oder Fusszeile ist eine Zeile in DM Mono nur, wenn sie höchstens 12 % der kurzen Seite vom Rahmen steht und mehr als 2,5 Textzeilen Abstand zur
-         nächsten Zeile hat; ein Etikett mitten in der Gruppe («CULINARIUM» unter dem C, «@culinarium_hannover») gehört zur Gruppe (Gestaltung 29.10.) */
+         nächsten Zeile hat; ein Etikett mitten in der Gruppe (Etikett unter dem Zeichen, «@schloessli_bottighofen») gehört zur Gruppe (Gestaltung 29.10.) */
       const kurzS = Math.min(f.b, f.h), lm0 = ko.loch_max_textzeilen || 2.5;
       const istMono = x => x && x.el.typ === 'text' && x.el.rolle === 'mono' && (x.b - x.a) < 3 * zeile;
       let innen = belegt, oben = o, unten = u;
@@ -356,7 +356,7 @@
             const u = x => (x - el.x - a.x) / a.bw, v = y => (y - el.y - a.y) / a.bh, t = .004;
             const u0 = u(Math.max(el.x, 0)), u1 = u(Math.min(el.x + el.w, f.b)), v0 = v(Math.max(el.y, 0)), v1 = v(Math.min(el.y + h, f.h));
             if (kb[0] < u0 - t || kb[2] > u1 + t || kb[1] < v0 - t || kb[3] > v1 + t)
-              out.push({ stufe: 'rot', id: el.id, seite: i, text: `${seite}Die gemalte Kopfzeile «WALK ON THE WILD SIDE» im Motiv ist angeschnitten. Motiv kleiner ziehen oder den Ausschnitt verschieben, bis sie ganz zu sehen ist` });
+              out.push({ stufe: 'rot', id: el.id, seite: i, text: `${seite}Die Schrift im Motiv ist angeschnitten. Motiv kleiner ziehen oder den Ausschnitt verschieben, bis sie ganz zu sehen ist` });
           }
           const plakat = Math.min(f.b, f.h) >= 297;   // ab A3: Plakat, wird aus Abstand gesehen, 150 dpi genügen (so sagt es der gelbe Hinweis selbst)
           if (dpi < 150) out.push({ stufe: 'rot', id: el.id, seite: i, text: `${seite}Foto «${b.key}» hat im Druck nur ${Math.round(dpi)} dpi und wird unscharf (kleiner ziehen oder weniger vergrössern)` });
