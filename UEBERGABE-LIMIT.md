@@ -38,6 +38,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 
 - 21:55 UTC: **Werkbank fertig** (Kern: 14 Seiten, lokal 0 Funde; Commits 1090e2b…b68053b), Reservationsbuch und Schaufenster nachgebessert (80a19df, 7388744). Prüfung über alles gestartet (`[schnell]`); Hausdruckerei (Agent nach Neustart) noch in Arbeit, Besucherliste richtet die Kennzahl-Blätter auf eine Linie.
 
+- 22:10 UTC: **Hausdruckerei fertig** (89 Vorlagen, 34 Drucksachen, Stilblatt, Anleitung neu; Commit b95d728); Prüfregel «Text zerfällt» lässt Karten mit gesetztem Blatt aus (Beleg: Postkarten-Vorschauen). Besucherliste-Blätter auf einer Linie (8f13c29). Alle zehn Reviere fertig gemeldet.
+
 ## Was offen ist (Reihenfolge)
 1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
 2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.
