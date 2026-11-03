@@ -98,7 +98,7 @@ for kz, tz, ks in THEMEN:
   <div class="kap__t"><span class="mono">{nr} · {e(bereich)}</span><h2>{zusammen(e(titel))}</h2><p class="einl">{e(einl)}</p>
     <ol class="schritte">{li}</ol>
     <p class="wissen"><b>Gut zu wissen</b>{e(wissen)}</p></div>
-  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: {e(titel)}"><img src="anleitung/{bild}.jpg?v={_v(bild)}" width="1200" height="714" loading="lazy" decoding="async" alt="{e(NAMEN['marke'])}, {e(bereich)}: {e(titel)}"></button>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: {e(titel)}"><img src="anleitung/{bild}.jpg?v={_v(bild)}" width="1200" height="714" loading="eager" decoding="sync" alt="{e(NAMEN['marke'])}, {e(bereich)}: {e(titel)}"></button>
     <figcaption><span>{e(NAMEN['marke'].split(' ', 1)[1].lower())} / {e(bereich.lower())}</span><span>Grösser ansehen</span></figcaption></figure>
 </article>''')
     inhalt.append(f'<section class="thema"><h3><small>{e(kz)}</small>{e(tz)}<em>{len(ks)} Kapitel</em></h3><ol>{"".join(zeilen)}</ol></section>')

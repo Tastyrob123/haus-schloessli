@@ -31,6 +31,11 @@ UMBENENNEN_KARTE = {'Seespiegel': 'Wasser am Mittag'}
 WELT_NAMEN = {'Fläche': 'Stuhlblau', 'Hell': 'Papier', 'Hell 2': 'Seespiegel', 'Linie': 'Seehimmel', 'Schrift': 'Tinte', 'Punkt': 'Schirmrot'}
 
 
+def kw(t):
+    """Beschriftung der Knöpfe in eigenem span (Tor WebKit 3.11.2026: text-box statt festem Versatz)."""
+    return re.sub(r'(<(?:a|span) class="knopf[^"]*"[^>]*>)\s*([^<]+?)\s*(<span class="kn">)', r'\1<span class="kw">\2</span>\3', t)
+
+
 def _v(n):
     p = os.path.join(HIER, n)
     return hashlib.sha1(open(p, 'rb').read()).hexdigest()[:10] if os.path.exists(p) else '1'
@@ -102,7 +107,7 @@ def fuer_den_kunden(s, gedreht, daten):
         raise SystemExit('Hausregeln: «Nicht bei uns» nicht gefunden')
     # Kapitel «Die Hausregeln»
     z = re.search(r'<svg class="z".*?</svg>', s, re.S).group(0)
-    regeln = ''.join(f'<li data-a><span class="hr__n mono">{n:02d}</span><h3>{e(t)}</h3><p>{e(x)}</p></li>' for n, (t, x) in enumerate(REGELN, 1))
+    regeln = ''.join(f'<li data-a><span class="hr__n mono">{n:02d}</span><h3>{e(t).rsplit(" ", 1)[0] + "&nbsp;" + e(t).rsplit(" ", 1)[1] if " " in t else e(t)}</h3><p>{e(x)}</p></li>' for n, (t, x) in enumerate(REGELN, 1))
     kap = (f'<section class="blatt matt" id="regeln"><div class="innen">\n  <div class="kopf" data-a>{z}<p class="mono">Die Hausregeln</p>'
            f'<h2>Zehn Regeln für <em>jeden Text.</em></h2>\n  <p>Für jeden Aushang, jede Karte, jeden Beitrag und jede Mail des Hauses, ob aus dem Team oder von einer Agentur.</p></div>\n'
            f'  <ol class="hr">{regeln}</ol>\n</div></section>\n\n')
@@ -194,11 +199,15 @@ def aus_station5(st5, web, gedreht, daten):
     s = re.sub(r'<link rel="icon"[^>]*>', '', s)
     s = s.replace('</head>', css + '<link rel="icon" href="/assets/oberflaeche/kleid/schloessli-zeichen.svg" type="image/svg+xml"></head>', 1)
     # Tor 3.11.2026: Schrift im Knopf optisch mittig (1,3 px tiefer), Pfeil im Knauf mittig; Titel nie mit einem Wort allein in der letzten Zeile
-    s = s.replace('</head>', '<style>.knopf{padding-top:2.6px}.knopf .kn{margin-top:-2.6px}.knopf .pf{translate:1px 0}</style></head>', 1)
+    s = s.replace('</head>', '<style>.knopf>.kw{text-box:trim-both cap alphabetic}.knopf .pf{translate:1px 0}@supports (interpolate-size:allow-keywords){.knopf>.kw{translate:0 0px}}</style>' + '</head>', 1)
+    s = kw(s)
     s = re.sub(r'(<figcaption>)([^<]*)(</figcaption>)', lambda m: m.group(1) + re.sub(r' (?=\S+\s*$)', '&nbsp;', m.group(2), count=1) + m.group(3), s)
     s = ersetze(s, '<h2>Der Name in weit <em>gesperrten Versalien.</em></h2>', '<h2>Der Name, <em>weit gesperrt.</em></h2>')
     def zus(t):   # letzte zwei Wörter zusammen, wenn sie zusammen kurz genug für eine Handyzeile sind
         m = re.search(r'(\S+) ([^ <>]+(?:</em>)?\s*)$', t)
+        if not m:
+            m2 = re.search(r'(\S+) (<em>[^ <]+</em>\s*)$', t)
+            return t[:m2.start()] + m2.group(1) + '&nbsp;' + m2.group(2) if m2 and len(re.sub(r'<[^>]+>', '', m2.group(1) + m2.group(2))) <= 15 else t
         return t[:m.start()] + m.group(1) + '&nbsp;' + m.group(2) if m and len(re.sub(r'<[^>]+>', '', m.group(1) + m.group(2))) <= 15 else t
     s = re.sub(r'(<(h2|h3)\b[^>]*>)(.*?)(</\2>)', lambda m: m.group(1) + zus(m.group(3)) + m.group(4), s, flags=re.S)
     s = re.sub(r'<title>[^<]*</title>', '<title>Die Hausregeln · Wirtschaft am Schlössli</title>', s, count=1)
@@ -236,7 +245,8 @@ def aus_station5(st5, web, gedreht, daten):
     r = re.sub(r'<title>[^<]*</title>', '<title>Logo richtig und falsch · Wirtschaft am Schlössli</title>', r, count=1)
     r = re.sub(r'<link rel="icon"[^>]*>', '<link rel="icon" href="/assets/oberflaeche/kleid/schloessli-zeichen.svg" type="image/svg+xml">', r, count=1)
     r = re.sub(r'(<h2>)([^<]*)(</h2>)', lambda m: m.group(1) + re.sub(r' (?=\S+$)', '&nbsp;', m.group(2), count=1) + m.group(3), r)
-    r = r.replace('</head>', '<style>.knopf{padding-top:2.6px}.knopf .kn{margin-top:-2.6px}.knopf .pf{translate:1px 0}.mass{left:16px}</style></head>', 1)
+    r = r.replace('</head>', '<style>.knopf>.kw{text-box:trim-both cap alphabetic}.knopf .pf{translate:1px 0}@supports (interpolate-size:allow-keywords){.knopf>.kw{translate:0 0px}}</style>' + '<style>.mass{left:16px}</style></head>', 1)
+    r = kw(r)
     lg = Image.open(os.path.join(ziel, 'logo', 'logo-transparent-1563.png'))
     lg.resize((1563, round(1563 / 1.786)), Image.LANCZOS).save(os.path.join(ziel, 'logo-richtig-falsch', 'falsch-verzerrt-logo.png'), optimize=True)
     alt_ = '<img src="../logo/logo-transparent-1563.png" alt="" style="width:86%;height:56%">'

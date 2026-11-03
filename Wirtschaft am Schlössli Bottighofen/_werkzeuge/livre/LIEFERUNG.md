@@ -32,3 +32,9 @@ Mit dem Auge: rund 30 Zustandsbilder (1440 und 390): Fotos ganz, Reihen auf eine
 ## Offen
 - Markenprüfung mit Claude: aus, bis Robert den Schalter freigibt (Probe-Antwort).
 - Cloud-Prüfung in WebKit: stösst der Oberchef an.
+
+## Cloud-Prüfung WebKit (Lauf 42ab779), nachgezogen
+- Knöpfe der Hausregeln: Beschriftung in `span.kw` mit `text-box: trim-both cap alphabetic` statt festem Versatz (WebKit 0,8 px zu tief); in Chromium ohne Ausgleich mittig.
+- Einzelwörter: «Wie das Haus spricht.», Titel der zehn Regeln, Titel der Rundgang-Karte mit geschütztem Leerzeichen.
+- Anleitung: Kapitelbilder `loading="eager" decoding="sync"` (WebKit malte lazy Bilder in Ganzseiten-Aufnahmen nicht).
+- Lokal danach (Chromium, vier Breiten): plakatarchiv 0, plakatarchiv-buch 0, plakatarchiv-anleitung 0 Funde.

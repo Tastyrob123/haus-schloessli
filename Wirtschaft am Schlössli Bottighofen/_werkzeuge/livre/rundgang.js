@@ -141,7 +141,7 @@
       if (!s.oben && r.top < 70 || r.bottom > innerHeight - 20) ziel.scrollIntoView({ block: r.height > innerHeight * .7 ? 'start' : 'center', behavior: 'instant' });
       var weg = ''; for (var i = 0; i < schritte.length; i++) weg += '<b' + (i <= n ? ' class="da"' : '') + '></b>';
       karte.innerHTML = '<div class="rdg-zier"><span>' + g.name + ' · ' + (n + 1) + ' von ' + schritte.length + '</span><i></i></div>' +
-        '<h3>' + s.titel + '</h3><p>' + s.text + '</p>' +
+        '<h3>' + String(s.titel).replace(/ (\S+)$/, '\u00a0$1') + '</h3><p>' + s.text + '</p>' +
         '<div class="rdg-fuss"><div class="rdg-weg" aria-hidden="true">' + weg + '</div>' +
         (letzt ? '' : '<button type="button" class="rdg-zu">Überspringen</button>') +
         '<button type="button" class="rdg-los"><span>' + (letzt ? 'Los geht’s' : 'Weiter') + '</span>' + PFEIL + '</button></div>';
