@@ -22,7 +22,7 @@ status: entwurf
 
 ## Geprüft
 
-Schnelle Prüfung lokal (Chromium, 1440/1280/1000/390, höchstens 40 Zustände, zwei Ebenen): `plakatwerkstatt` und `plakatwerkstatt-mail`; Zustandsbilder und Drucksachen mit dem Auge angesehen. Ergebnis siehe Commit-Nachricht.
+Schnelle Prüfung lokal (Chromium, 1440/1280/1000/390, höchstens 40 Zustände, zwei Ebenen), sieben Runden: `plakatwerkstatt` 40 + 120 Zustände, `plakatwerkstatt-mail` 40 + 145 Zustände, nichts «nicht erreicht», keine Skriptfehler. Letzte Runde: 3 Funde (je Schlüssel dieselben), alle von derselben Art: «Text zerfällt» an drei Postkarten-Karten in der Abteilung «Hafen & Terrasse», deren Knopf das ganze Blatt (Vorder- und Rückseite, live gesetzt) enthält — die Regel zählt die Zeilen des Blatts als Lesetext (in `seite.js` sind Vorlagen-Knöpfe erst ab 40 Elementen ausgenommen, die Postkarte hat 28). PDFs: alle Schriften CID TrueType eingebettet, kein Type 3. Mit dem Auge: Übersicht, Anlässe, Abteilung, Motive, Fotos, Alle Vorlagen, Studio, Newsletter-Seite in 1440/1280/1000/390 und 10 Drucksachen.
 
 ## Offen
 
