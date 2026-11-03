@@ -343,3 +343,6 @@ aside.wo-rand .wo-rand__wege button{padding-left:0;padding-right:0}
 @media (max-width:600px){ .lc #leiste .wo-leiste__t b{font-size:13px;letter-spacing:0} }
 /* Die Beschriftung steht im Rahmen der Vorschau, über dem gesetzten Eintrag */
 .lc .mini__t{margin:2px 4px 10px}
+/* Zustand einer Rubrik oder eines Titels (Neu, Geändert, Ausgeblendet) steht als eigene Zeile unter dem Titel */
+.lc .r__t p.r__u--chip{margin-top:4px}
+.lc .r__t p.r__u--chip .chip{margin-left:0;margin-right:6px}
