@@ -7,7 +7,8 @@ const { chromium } = require(path.join(process.env.HOME, 'Desktop/Apps & Tools/T
 const HIER = __dirname, PROJEKT = path.join(HIER, '..', '..', '..');   // _werkbank liegt in website/_werkbank
 const TEIL = { maison: 'zentrale', bureau: 'website', carte: 'karten', reception: 'gaeste', livre: 'marke', registre: 'besuche', imprimerie: 'druck' };
 // die zweite Aufnahme zeigt eine eigene Ansicht, wo das Werkzeug eine hat (sonst eine Bildschirmhöhe weiter)
-const ZWEITE = {};   // Schlössli: zweite Aufnahme eine Bildschirmhöhe weiter, bis die Werkzeug-Agenten eigene Ansichten melden
+const ZWEITE = {};
+const KLICK = { imprimerie: 'Arten und Vorlagen' };   // zweite Ansicht über die Seitenleiste des Werkzeugs (nur ansehen)   // Schlössli: zweite Aufnahme eine Bildschirmhöhe weiter, bis die Werkzeug-Agenten eigene Ansichten melden
 const AUFNAHME = { registre: '?gruss=tag' };   // Rechner 1440 × 932 = Bildschirm des Laptops (geraete/laptop.json); bei 900 schnitt rh_werkzeuge links und rechts je 24 px ab (Tresen-Kacheln am Rand, 30.10.)
 // zweite Ansicht aus der Lieferung des Werkzeugs (das Werkzeug scrollt in einer Fläche, eine Bildschirmhöhe weiter zeigte dasselbe)
 const ZWEITE_BILD = {};
@@ -33,6 +34,7 @@ const arg = process.argv.slice(2), alle = arg.includes('--alle'), nur = arg.filt
         await p.screenshot({ path: path.join(HIER, 'ansichten', art, k + '.jpg'), quality: 88 });
         if (art === 'Werkzeuge') {
           if (ZWEITE_BILD[k] && fs.existsSync(ZWEITE_BILD[k])) { await p.goto('file://' + ZWEITE_BILD[k]); await p.setViewportSize({ width: 1440, height: 900 }); await p.waitForTimeout(500); }
+          else if (KLICK[k]) { await p.getByText(KLICK[k], { exact: true }).first().click(); await p.waitForTimeout(3500); }
           else if (ZWEITE[k]) { await p.goto(st.adresse.replace(/\/?$/, '/') + ZWEITE[k], { waitUntil: 'load', timeout: 30000 }); await p.evaluate(() => document.fonts && document.fonts.ready); await p.waitForTimeout(3500); }
           else { await p.evaluate(() => scrollTo(0, innerHeight * .9)); await p.waitForTimeout(3500); }   // Tresen 30.10.: Zoom und Zählen erst nach 3 s fertig
           await p.screenshot({ path: path.join(HIER, 'ansichten', art, k + '-2.jpg'), quality: 88 });

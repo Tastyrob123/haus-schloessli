@@ -87,7 +87,7 @@ WERKZEUGE = [
      [('registre', 'Übersicht'), ('registre-2', 'Herkunft und Seiten')], _weg('registre'), '', 'schloessli-registre'),
     ('imprimerie', 'L’Imprimerie', 'Papier und Instagram', 'Ein Aushang für die Betriebsferien, die Einladung zum nächsten Four-Hands-Dinner, eine Menükarte für eine Feier: Vorlagen mit Ihren Texten und Fotos, auf dem Blatt geändert und als PDF für die Druckerei.',
      ['Vorlagen für Terrasse, Lästermeile, Banketts und Anlässe', 'Aushang, Einladung, Menükarte, Tischkarte und Instagram', 'Die PDF kommt mit Beschnitt, wie die Druckerei sie will'],
-     [('imprimerie', 'Übersicht'), ('imprimerie-2', 'Eine Vorlage')], _weg('imprimerie'), '', 'schloessli-imprimerie'),
+     [('imprimerie', 'Übersicht'), ('imprimerie-2', 'Arten und Vorlagen')], _weg('imprimerie'), '', 'schloessli-imprimerie'),
 ]
 # Die Namen der sieben Werkzeuge fürs Schlössli, eine Stelle: das Kleid der Werkzeuge (_werkzeuge/oberflaeche/kleid/schloessli.js, WO_HAUS.namen, Schreiber: schloessli-maison).
 # Bis Robert gewählt hat, stehen dort die Arbeitsnamen; die Liste hier gilt nur, wenn das Kleid fehlt. Schlüssel, Dateinamen und Adressen bleiben die des Stamms.

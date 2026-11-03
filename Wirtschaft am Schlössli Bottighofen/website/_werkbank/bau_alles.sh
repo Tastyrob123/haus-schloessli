@@ -20,21 +20,9 @@ if [ -z "$OHNE" ]; then
   timeout 900 node _werkbank/sb_werkzeuge.js                         # Bildschirme der sieben Werkzeuge (Adressen aus _werkbank/werkzeuge.json)
 fi
 python3 _werkbank/sb_heute.py                                        # heute (Website vom 19.10.2026) und neu
-timeout 300 python3 _werkbank/sb_karten.py                           # die fünf Karten des Hauses (Station 10) nach unterlagen/pdf
 if [ -z "$NURKERN" ]; then
-  # ---------- Papier (Werkbank Papier) ----------
-  if [ -f _werkbank/papier_alles.sh ]; then bash _werkbank/papier_alles.sh
-  else
-    timeout 300 python3 _werkbank/papier.py "$P"
-    timeout 900 node "$K/papier_druck.js" "$P" > /dev/null
-    timeout 300 python3 "$K/papier_seiten.py" "$P" | grep -v "Schrift fehlt" || true
-    [ -d unterlagen/pdf ] && (timeout 600 python3 "$K/unterlagen.py" "$P" | grep -v "Schrift fehlt" || true)
-    timeout 120 python3 _werkbank/sticker.py "$P"; timeout 120 python3 _werkbank/beigaben.py "$P"
-    timeout 900 node _werkbank/sticker_druck.js "$P" > /dev/null
-    timeout 300 python3 _werkbank/sticker.py "$P" --seite; timeout 300 python3 _werkbank/beigaben.py "$P" --seite
-    timeout 120 python3 _werkbank/postkarten.py "$P"; timeout 900 node _werkbank/postkarten_druck.js "$P" > /dev/null; timeout 300 python3 _werkbank/postkarten.py "$P" --seite
-    timeout 120 python3 _werkbank/papier_nach.py
-  fi
+  # ---------- Papier (Werkbank Papier, 3.11.2026: eigenes Bauskript, vor den Dateien) ----------
+  timeout 1800 bash _werkbank/papier_bau.sh
   # ---------- Feed, Mails, Dateien (Werkbank Feed) ----------
   timeout 1800 bash _werkbank/feed_alles.sh feed mails               # Feed und Mails (Werkbank Feed, 3.11.2026: eigenes Bauskript mit feed_kleid.py)
   node _werkbank/geraete/schirme.js feed || true                     # Feed im Handy der Werkbank (feed_buehne.py braucht geraete/schirm-feed-sb.png)

@@ -269,6 +269,16 @@ MATERIAL = dict(
     zeichen=[('Die Zeiger', '../../_werkzeuge/oberflaeche/kleid/schloessli-zeichen.svg', 'Wirtschaft am Schlössli Zeichen.svg')],
     zeichen_satz='Die Zeiger als Zeichnung, die in jeder Grösse scharf bleibt.',
     auslage=[])
+# Papier-Werte von Werkbank Papier (papier_haus.py, eine Stelle für Unterlagen, Drucksachen, Untersetzer; Meldung 3.11.2026). Die Lage der Stücke im
+# Kapitel VI (orte_e, orte_d) und die Pflege-Zeile bleiben von hier; der Fächer der Karten liest die echten Dateinamen aus unterlagen.json (oben).
+try:
+    import papier_haus as _ph
+    PAPIER = {**PAPIER, **_ph.PAPIER_W}
+    PAPIER_SEITE = {**PAPIER_SEITE, **_ph.PAPIER_SEITE}
+    UNTERLAGEN = {**UNTERLAGEN, **_ph.UNTERLAGEN}
+    ETIKETTEN = dict(_ph.ETIKETTEN)
+except Exception as _f:   # ohne Werkbank Papier gelten die Werte oben
+    print('papier_haus nicht geladen:', _f)
 AUSBLICK = dict(text='Ein paar Dinge fehlen noch.', gross=('', '', ''), punkte=[], studio='')
 SCHLUSS = dict(bild=bild('abend'))
 KAPITEL = {
@@ -372,7 +382,7 @@ b,strong{font-weight:500}
 @media(max-width:480px){.t2.zt,h2.zt{font-size:min(1.85rem,7.2vw)!important;letter-spacing:.07em!important}.t1.zt,h1.zt{font-size:min(2.3rem,8.6vw)!important;letter-spacing:.07em!important}}
 @media(max-width:600px){.auftakt__fuss .runter i{display:none}.auftakt__fuss .runter{gap:0}}
 .sag-h{display:block!important}.sag-h span{display:inline-block;margin-right:16px}
-.rgc-p{letter-spacing:0!important}.rgc-p[data-i="3"]{padding-left:9.1px!important;padding-right:10.9px!important}.rgc-p[data-i="7"]{padding-left:10.6px!important;padding-right:9.4px!important}
+.rgc-p{letter-spacing:0!important}.rgc-p[data-i="3"]{padding-left:9.1px!important;padding-right:10.9px!important}.rgc-p[data-i="5"],.rgc-p[data-i="6"]{padding-left:10.7px!important;padding-right:9.3px!important}.rgc-p[data-i="7"]{padding-left:10.6px!important;padding-right:9.4px!important}
 @media(max-width:640px){#handschrift .hs2-her{grid-template-columns:minmax(0,1fr)!important}}
 .sag-h::before{content:attr(data-n);display:inline-block;margin-right:16px;font-family:var(--mono);font-size:clamp(.78rem,.9vw,.92rem);letter-spacing:.16em;color:var(--blau);vertical-align:.3em}
 @media(max-width:480px){.faecher .blattk span{flex-direction:column;gap:3px;font-size:9.5px;letter-spacing:.08em;white-space:nowrap}}
@@ -540,4 +550,7 @@ CSS_SEITEN = '''
 .upaar{align-items:center}
 .ublatt--alt .ublatt__b{aspect-ratio:1/1.414!important}
 .ublatt--alt .ublatt__b img{width:100%;height:100%;object-fit:cover}
+/* Versaltitel des Schlössli: unter 1040 px eine Spalte, nichts wird breiter als seine Spalte; am Handy kleinere Sperrung (Werkbank Papier 3.11.2026, global für alle Beigaben) */
+@media(max-width:1039px){.sk .in,.stueck .in{grid-template-columns:minmax(0,1fr)}.sk .in>*,.stueck .in>*,.kopfzeile>*{min-width:0}}
+@media(max-width:560px){.sk h1.t1{font-size:clamp(1.7rem,8vw,2.5rem)!important;letter-spacing:.06em!important}.kopfzeile h2.t2,.stueck__t h2.t2{font-size:clamp(1.4rem,6.6vw,2.1rem)!important;letter-spacing:.06em!important}}
 '''
