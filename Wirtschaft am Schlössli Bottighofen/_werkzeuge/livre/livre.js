@@ -1,6 +1,6 @@
-/* Das Hausbuch (Le Livre) · Wirtschaft am Schlössli, Bottighofen. Die Marke des Hauses zum Arbeiten (Nachbau von Le Livre des Grand Beau-Rivage, des Carlton-Europe,
-   des Waldhotel Doldenhorn und des Landgasthof Ruedihus, dort nur gelesen): Bildarchiv mit fertigen Grössen, Dateien (Zeichen, Zeiger, Logo, Name, Tapete, Farben, Schriften), Markenprüfung, Markenbuch (buch.html).
-   Namen der Welt Landhaus (_Werkzeuge/stamm/welt.js): Das Hausbuch, Die Stube, Die Werkstatt.
+/* Le Livre (Marke) · Culinarium Hannover. Die Marke zum Arbeiten (Nachbau von Le Livre der Taverne zum Schäfli, dort nur gelesen): Bildarchiv mit fertigen
+   Grössen, Dateien (Rudis Wortmarke, Zeile, Dirty Chicken, Tapeten, Farben, Schriften), Markenprüfung, Markenbuch (buch.html).
+   Namen der Werkzeuge nur aus WO_HAUS.namen (kleid/schloessli.js, eine Stelle; Arbeitsnamen, bis Robert wählt).
    Daten: livre.json (gebaut von bau.py), Downloads und Prüfung über den Server-Teil (server.py lokal, online/livre_online.py). Gespeichert wird nichts,
    ausser «Ergebnis sichern» legt auf Wunsch eine Datei auf diesem Rechner ab. Fehlermelder, Ladezeichen und Startfehler laufen vorher in start.js. */
 'use strict';
@@ -10,78 +10,80 @@ const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&a
 const PF = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg>';
 const PU = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v9M3.8 7 8 11.2 12.2 7M3 14h10"/></svg>';
 const PO = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 12V3M3.8 7 8 2.8 12.2 7M3 14h10"/></svg>';
-const ZU = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg>';
+const ZU = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 9.67 2.67 6.33 6 3M2.67 6.33h7.33a3.33 3.33 0 0 1 0 6.67h-2"/></svg>';   // Robert 30.10.2026: kein «×», auch nicht zum Schliessen; der Zurück-Pfeil wie «Verwerfen» in der Pairing-Karte
 const LUPE = '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3.5 3.5"/></svg>';
 const KOPIE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="8.5" height="8.5" rx="1.6"/><path d="M3 10.5V3.8A1.3 1.3 0 0 1 4.3 2.5H10.5"/></svg>';
 const BUCH = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.2c2-.8 3.8-.6 5.5.6 1.7-1.2 3.5-1.4 5.5-.6v9.6c-2-.8-3.8-.6-5.5.6-1.7-1.2-3.5-1.4-5.5-.6z"/><path d="M8 3.8v9.6"/></svg>';
 const HAUS = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 7.2 8 2.8l5.5 4.4V13.5h-11z"/><path d="M6.4 13.5V9.6h3.2v3.9"/></svg>';
 const PFEIL = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg>';
-const S_ = 'wirtschaft-am-schloessli';
-const ZEICHEN = `<img src="dateien/${S_}-zeiger-himmel.svg" alt="" width="24" height="40" decoding="async">`;
-const ZEICHEN_N = `<img src="dateien/${S_}-zeiger-nacht.svg" alt="" width="24" height="40" decoding="async">`;
+const S_ = 'culinarium-hannover';
+const ZEICHEN_N = `<img src="/assets/oberflaeche/kleid/schloessli-zeichen.svg" alt="" width="40" height="40" decoding="async">`;
 const MARKE = 'buch.html', DAT = 'dateien/', ORIG = 'original/';
-const MAISON = /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';   // lokal _werkzeuge/maison/, online /maison/ (nach Adresse, nie fest; Notiz La Maison 17.10.2026)
+/* Wege zu den anderen Werkzeugen: lokal auf ihren eigenen Servern (WO_HAUS.ports, immer 127.0.0.1, Fehlerbuch 10a), online relativ */
+const LOKAL_W = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && window.WO_HAUS && WO_HAUS.ports;
+const WEG_ZU = (teil, pfad) => LOKAL_W ? `http://127.0.0.1:${WO_HAUS.ports[teil]}${pfad}` : pfad;
+const MAISON = WEG_ZU('zentrale', '/_werkzeuge/maison/');
 const WEBSITE = '/';
-const IMPRIMERIE = '../imprimerie/';      // immer relativ, nie nach Port (F18): lokal _werkzeuge/imprimerie/, online werkzeuge/imprimerie/
+const IMPRIMERIE = WEG_ZU('druck', '/_werkzeuge/imprimerie/');
 const okey = k => k.replace(/\//g, '-');
 
 /* ---------------------------------------------------------------- Sprachen der Oberfläche
-   Freigeschaltet ist Deutsch. Ein Sprachplan des Hauses ist noch nicht entschieden (Station 03: sprachen.json, «Nichts entschieden», Station 15a). Übersetzt wird erst auf
+   Freigeschaltet ist Deutsch. Ein Sprachplan ist noch nicht entschieden (Station 15a). Übersetzt wird erst auf
    Roberts Wort; dann kommt je Sprache nur ein Eintrag in SPRACHEN und ein Block in T dazu (fehlende Schlüssel fallen auf Deutsch zurück, keine Sprache
    von rechts nach links). Mit ?sprachen=probe erscheint eine Probe-Sprache, die jeden Text in ‹ › setzt: so lässt sich der Wechsel prüfen. */
 const SPRACHPLAN = [['de', 'DE', 'Deutsch']];
 const SPRACHEN = SPRACHPLAN.filter(([k]) => k === 'de');   // freigeschaltet; später: SPRACHPLAN.filter(([k]) => T[k])
 const T = {
 de: {
-  name: '{marke}', unter: 'Marke · Wirtschaft am Schlössli', start: 'Übersicht', arbeiten: 'Arbeiten', nachschlagen: 'Nachschlagen', bilder: 'Fotos', dateien: 'Logo & Dateien', pruefung: 'Markenprüfung', buch: 'Markenbuch',
+  name: '{marke}', unter: 'Marke · Culinarium', start: 'Übersicht', arbeiten: 'Arbeiten', nachschlagen: 'Nachschlagen', bilder: 'Fotos', dateien: 'Logo & Dateien', pruefung: 'Markenprüfung', buch: 'Die Hausregeln',
   anleitung: 'Anleitung', maison: '{zentrale}', website: 'Website ansehen', sprache: 'Sprache', rundgang: 'Kurzer Rundgang', bereiche: 'Bereiche',
-  morgen: 'Guten Morgen.', tag: 'Guten Tag.', abend: 'Guten Abend.', frage: 'Was brauchen Sie heute?',
-  start_satz: '{marke} ist die Marke des Hauses zum Arbeiten: alle Fotos in fertigen Grössen für Instagram, Website und Druck, die Zeiger, das Logo, die Tapete und die Farben als Dateien, und eine Prüfung für Entwürfe von Agenturen und aus dem Haus.',
-  k_bilder: 'Alle Fotos der Website, nach Bereich, Saison und Format. Jedes Foto als Beitrag, Story, für die Website oder den Druck.',
-  k_dateien: 'Das Zeichen, die Zeiger, das Logo und der Name für helle und dunkle Flächen, die Punkt-Tapete und die Farbwerte zum Kopieren.',
-  k_pruefung: 'Ein Entwurf als Bild oder PDF. {marke} sagt, was zum Haus passt und was nicht, Punkt für Punkt.',
-  k_buch: 'Zeichen, Farben und ihre Herkunft im Haus, Schriften, Tapete, Bilder und Ton, nach denen alles gestaltet ist.',
+  morgen: 'Guten Morgen.', tag: 'Guten Tag.', abend: 'Guten Abend.', frage: 'Schön, dass du da bist. Womit fangen wir an?',
+  start_satz: '{marke} ist die Marke von Culinarium zum Arbeiten: alle Fotos der Abende in fertigen Grössen für Instagram, Plakat und Druck, Rudis Wortmarke, das Logo von Dirty Chicken, die Tapeten und die Farben als Dateien, und eine Prüfung für Entwürfe von Agenturen und aus dem Team.',
+  k_bilder: 'Alle Fotos der Website, nach Bereich, Format und Herkunft. Jedes Foto als Beitrag, Story, für die Website oder den Druck.',
+  k_dateien: 'Rudis Wortmarke und die Zeile für helle und dunkle Flächen, das Logo von Dirty Chicken, die Tapeten und die Farbwerte zum Kopieren.',
+  k_pruefung: 'Ein Entwurf als Bild oder PDF. {marke} sagt, was zu Culinarium passt und was nicht, Punkt für Punkt.',
+  k_buch: 'Die Wortmarke, Farben und ihre Herkunft, die Farbe jedes Abends, Schriften, Tapete, Bilder und der Ton, nach denen alles gestaltet ist.',
   oeffnen: 'Öffnen', lesen: 'Lesen',
-  ue_kurz: 'nachgeschärft', z_haus: 'Fotos des Hauses', z_frei: 'frei lizenziert', z_ki: 'mit KI erzeugt', z_fremd: 'mit fremden Rechten', z_ue: 'nachgeschärft, mit Vorher', z_dateien: 'Dateien',
+  ue_kurz: 'nachgeschärft', z_haus: 'von Culinarium', z_frei: 'frei lizenziert', z_ki: 'mit KI verändert', z_fremd: 'von der Bar', z_ue: 'nachgeschärft, mit Vorher', z_dateien: 'Dateien', formate: 'Formate',
   stand: '{0} Fotos · {1} Dateien',
-  recht_t: 'Bildrechte', recht: 'Die Fotos gehören der Wirtschaft am Schlössli und den jeweiligen Fotografen. Frei lizenzierte Fotos nur mit dem genannten Namen und der Lizenz. Fotos mit fremden Rechten nur mit Erlaubnis der Rechteinhaber.',
+  recht_t: 'Bildrechte', recht: 'Die Fotos gehören Culinarium, Rudi und den jeweiligen Fotografen. Fotos der Bar Walk on the Wild Side nur mit ihrer Erlaubnis.',
   alles_zip: 'Alle Dateien (ZIP)',
-  b_titel: 'Alle Fotos', b_satz: 'Ein Klick auf ein Foto öffnet es. Dort laden Sie es in der Grösse, die Sie brauchen, und wählen bei Beitrag und Story den Ausschnitt.',
-  suchen: 'Suchen, zum Beispiel «Terrasse» oder «Tortelloni»', bereich: 'Bereich', saison: 'Saison', format: 'Format', herkunft: 'Herkunft', alle: 'Alle',
-  b_terrasse: 'Terrasse am See', b_essen: 'Küche & Teller', b_bar: 'Gaststube & Bar', b_team: 'Team', b_hafen: 'Haus & Hafen', b_see: 'See & Jahreszeiten', b_geschichte: 'Geschichte', b_anlaesse: 'Anlässe & Gäste-Köche', b_familie: 'Schwesterhaus',
+  b_titel: 'Alle Fotos', b_satz: 'Ein Klick auf ein Foto öffnet es. Dort lädst du es in der Grösse, die du brauchst, und wählst bei Beitrag und Story den Ausschnitt.',
+  suchen: 'Suchen: Tafel, Drink, Plakat', bereich: 'Bereich', saison: 'Saison', format: 'Format', herkunft: 'Herkunft', alle: 'Alle',
+  b_ort: 'Die Bar in Linden', b_tafel: 'An der Tafel', b_teller: 'Rudis Teller', b_drinks: 'Momos Drinks', b_pass: 'Am Pass', b_team: 'Die Leute', b_plakate: 'Plakate', b_abende: 'Bilder der Abende', b_dc: 'Dirty Chicken', b_wildside: 'Walk on the Wild Side',
   s_sommer: 'Sommer', s_winter: 'Winter', s_jahr: 'Ganzjährig', f_hoch: 'Hochformat', f_quer: 'Querformat', f_quadrat: 'Quadrat',
-  h_haus: 'Fotos des Hauses', h_frei: 'Frei lizenziert', h_ki: 'Mit KI erzeugt', h_fremd: 'Fremde Rechte',
-  im_titel: 'In {druck_in} gestalten', im_beitrag: 'Als Instagram-Beitrag', im_story: 'Als Story', im_satz: 'Öffnet {druck} mit diesem Foto und Ihrem Ausschnitt.',
+  h_haus: 'Von Culinarium', h_frei: 'Frei lizenziert', h_ki: 'Mit KI verändert', h_fremd: 'Von der Bar',
+  im_titel: 'In {druck_in} gestalten', im_beitrag: 'Als Instagram-Beitrag', im_story: 'Als Story', im_satz: 'Öffnet das Foto mit deinem Ausschnitt in {druck_in}.',
   treffer: '{0} von {1} Fotos', keine: 'Kein Foto passt. Ein Filter weniger hilft.', mehr: 'Mehr zeigen', zuruecksetzen: 'Filter zurücksetzen',
-  ki: 'KI', fremd: 'Rechte', fremd_lang: 'Fremde Rechte', fremd_satz: 'Dieses Bild gehört nicht dem Haus. Es steht auf der Website nur für die Demo. Für Werbung, Druck oder Beiträge nur mit Erlaubnis der Rechteinhaber, sonst durch ein Foto des Hauses ersetzen.', ki_lang: 'Mit KI erzeugt', ki_satz: 'Dieses Bild ist mit KI erzeugt und kein Foto des Hauses. Es steht als Platzhalter auf der Website, bis das Haus eigene Fotos hat. Für Werbung nur mit diesem Hinweis oder nach einem echten Foto.',
+  ki: 'KI', fremd: 'Bar', fremd_lang: 'Foto der Bar', fremd_satz: 'Dieses Foto stammt von der Bar Walk on the Wild Side, dem Ort der Abende, nicht von Culinarium. Die Rechte liegen bei der Bar.', ki_lang: 'Mit KI verändert', ki_satz: 'Ein Foto des Hauses, mit KI verändert (Dinge entfernt oder Himmel ergänzt). Für Werbung nur mit diesem Hinweis. «Vorher» zeigt das Foto, aus dem es entstanden ist.',
   frei_satz: 'Frei lizenziert: verwenden nur mit dem Namen des Fotografen und der Lizenz, wie unter «Quelle» genannt.',
   ue_satz: 'Licht und Schärfe sind mit KI überarbeitet, der Inhalt ist das echte Foto.', archiv: 'Aus dem Archiv, gemeinfrei. Nicht einfärben, nicht überarbeiten.',
   quelle: 'Quelle', quelle_link: 'Quelle ansehen', original: 'Grösste Fassung', laden: 'Laden', grossen: 'Grössen', ausschnitt: 'Ausschnitt: das Feld im Bild ziehen.',
   g_instagram: 'Instagram-Beitrag', g_story: 'Story', g_web: 'Website', g_druck: 'Druck',
-  i_instagram: '1080 × 1350, JPG', i_story: '1080 × 1920, JPG', i_web: 'längste Seite 2000 px, JPG', i_druck: 'volle Auflösung, {0} × {1}, JPG', i_druck_web: 'in Website-Grösse (Original nicht hinterlegt), JPG',
+  i_instagram: '1080 auf 1350, JPG', i_story: '1080 auf 1920, JPG', i_web: 'längste Seite 2000 px, JPG', i_druck: 'volle Auflösung, {0} auf {1}, JPG', i_druck_web: 'in Website-Grösse (Original nicht hinterlegt), JPG',
   ohne_server: 'Fertige Grössen brauchen den Server-Teil. Ohne ihn lädt der Knopf das Foto in Website-Grösse.',
-  vn_vorher: 'Vorher', vn_nachher: 'Nachher', vn_schieber: 'Schieber', vn_t_vorher: 'Vorher · so geliefert', vn_t_nachher: 'Nachher · nachgeschärft', vn_t_schieber: 'Vorher links · nachher rechts',
-  vn_hilfe: 'Mit «Vorher» sehen Sie das Foto, wie das Haus es geliefert hat.', vn_orig: 'Vorher laden',
-  d_titel: 'Logo & Dateien', d_satz: 'Alles, was eine Agentur oder eine Druckerei braucht. SVG bleibt in jeder Grösse scharf, PNG hat einen durchsichtigen Grund.',
-  d_logo: 'Logo', d_logo_s: 'Das Logo des Hauses, Pixel für Pixel das Original: Kreis, Zeiger, SCHLÖSSLI mit dem Ö als Nabe, WIRTSCHAFT und BY CHRISTIAN KUCHLER. Nur als Bild vorhanden, nicht als Vektor. Die Form bleibt, nur die Farbe wechselt.',
-  d_zeichen: 'Das Zeichen', d_zeichen_s: 'Kreis, zwei Zeiger, zwei Kugeln, ohne Buchstaben aus dem Logo nachgezeichnet: Siegel, Stempel, Profilbild. In Nacht, Stuhlblau, Seehimmel oder Weiss.', d_zeiger: 'Die Zeiger', d_zeiger_s: 'Die zwei Zeiger allein, so wie in der Leiste der Website und als Medaillon in der Tapete.',
-  d_name: 'Name', d_name_s: 'Der Name in Versalien in Open Sans, der Schrift der Wortmarke, weit gesperrt: lang und kurz.',
-  d_website: 'Original und heutige Website', d_website_s: 'Das Logo in Schwarz, wie es das Haus geliefert hat, und das Bild, das die heutige Website beim Teilen zeigt. Unverändert, zum Nachschlagen.',
-  d_tapete: 'Tapete', d_tapete_s: 'Ein feines Punktraster mit den Zeigern als Medaillon, Ton in Ton, so wie die Website es zeigt: auf Nacht und auf Kalk.',
-  d_farben: 'Farben', d_farben_s: 'Ein Klick kopiert den Wert. Seehimmel zeichnet und schreibt nie den Lesetext. Schirmrot nur als Punkt.', d_schriften: 'Schriften',
-  d_schriften_s: 'Vier Schriften, frei lizenziert. Für die Website als WOFF2, für Druck und Programme als ZIP mit TTF und Hinweis.',
-  hell: 'für helle Flächen', dunkel: 'für dunkle Flächen', kopiert: 'Kopiert', regeln: 'Regeln im Markenbuch',
-  v_nacht: 'Nacht', v_stuhl: 'Stuhlblau', v_himmel: 'Seehimmel', v_weiss: 'Weiss', v_schwarz: 'Schwarz', v_original: 'Original', v_heute: 'Heutige Website', v_alle: 'Alle',
-  'v_kurz-nacht': 'Kurz · Nacht', 'v_kurz-weiss': 'Kurz · Weiss', 'v_kurz-himmel': 'Kurz · Seehimmel', v_dunkel: 'Auf Nacht', v_hell: 'Auf Kalk', v_t_dunkel: 'Auf Nacht',
-  p_titel: 'Markenprüfung', p_satz: 'Laden Sie einen Entwurf hoch, etwa ein Plakat, einen Beitrag oder den Flyer einer Agentur. Die Farben werden gemessen, Bild, Schrift, Zeichen und Ton beurteilt Claude.',
+  vn_vorher: 'Vorher', vn_nachher: 'Nachher', vn_schieber: 'Schieber', vn_t_vorher: 'Vorher · so geliefert', vn_t_nachher: 'Nachher · nachgeschärft', vn_t_vorher_ki: 'Vorher · das Foto', vn_t_nachher_ki: 'Nachher · mit KI verändert', vn_t_schieber: 'Vorher links · nachher rechts',
+  vn_hilfe: 'Mit «Vorher» siehst du das Foto, wie es geliefert wurde.', vn_orig: 'Vorher laden',
+  d_titel: 'Logo & Dateien', d_satz: 'Alles, was eine Agentur oder eine Druckerei braucht. SVG bleibt in jeder Grösse scharf, PNG hat einen durchsichtigen Grund, PDF ist Rudis Original.',
+  d_logo: 'Wortmarke mit Zeile', d_logo_s: 'Rudis Original (Oktober 2026): CULINARIUM, darunter linksbündig «A UNiQUE EXPERiENCE». Unverändert wie im PDF, dazu einfarbig in Schiefer für helle und in Warmweiss für dunkle Flächen. Nur diese Farben, nie neu gesetzt, nie mit Schatten.',
+  d_wortmarke: 'Die Wortmarke allein', d_wortmarke_s: 'Ohne Zeile, wo wenig Platz ist: in der Leiste, auf Etiketten, im Fuss. Ab 120 Pixel Breite.',
+  d_zeile: 'Die Zeile', d_zeile_s: '«A UNiQUE EXPERiENCE» aus Rudis Original, mit dem kleinen i. Steht unter der Wortmarke, nie darüber.',
+  d_dc: 'Dirty Chicken', d_dc_s: 'Rudis zweite Küche: das Logo und das D mit dem Hühnerfuss, beide Rudis Originale auf Violett. Nie umfärben, nie nachzeichnen, nur dort, wo es um Dirty Chicken geht.',
+  d_website: 'Heute auf Instagram', d_website_s: 'So zeigt sich Culinarium heute im Profil auf Instagram. Unverändert, zum Nachschlagen.',
+  d_tapete: 'Tapete', d_tapete_s: 'Die doppelte Linie der Plakate als feines Gitter, in jedem Feld das C, Ton in Ton, so wie die Website sie zeigt: auf Nacht und auf Warmweiss. Dazu die Tapete von Dirty Chicken.',
+  d_farben: 'Farben', d_farben_s: 'Ein Klick kopiert den Wert. Kerze betont und schreibt nie den Lesetext. Violett nur für Dirty Chicken.', d_schriften: 'Schriften',
+  d_schriften_s: 'Vier Schriften, frei lizenziert, genau die Dateien der Website. Für die Website als WOFF2, für Druck und Programme als ZIP mit TTF und Lizenz.',
+  hell: 'für helle Flächen', dunkel: 'für dunkle Flächen', kopiert: 'Kopiert', regeln: 'In den Hausregeln nachschlagen',
+  v_original: 'Original · wie im PDF', v_schiefer: 'Schiefer · auf Hell', v_weiss: 'Warmweiss · auf Dunkel', 'v_dc-logo': 'Logo', 'v_dc-d': 'Das D', v_heute: 'Profilbild', v_alle: 'Alle',
+  v_dunkel: 'Auf Nacht', v_hell: 'Auf Warmweiss', v_dc: 'Dirty Chicken', v_t_dunkel: 'Auf Nacht',
+  p_titel: 'Markenprüfung', p_satz: 'Lad einen Entwurf hoch, etwa ein Plakat für den nächsten Abend, einen Beitrag oder den Flyer einer Agentur. Die Farben werden gemessen, Bild, Schrift, Zeichen und Ton beurteilt Claude.',
   p_feld: 'Entwurf hierher ziehen', p_feld2: 'oder wählen · Bild oder PDF, bis 30 MB', p_waehlen: 'Datei wählen', p_pruefen: 'Prüfen', p_beispiel: 'Beispiel ansehen',
   p_beispiel_h: 'Dieser Entwurf ist eigens gezeichnet, so wie ihn eine Agentur schicken könnte. Die Farben sind gemessen; die Urteile zu Schrift, Zeichen, Bild und Ton sind ein Beispiel, so wie die Prüfung antwortet.',
-  p_probe: 'Probe-Antwort ohne Claude: Die Farben sind wirklich gemessen. Schrift, Zeichen, Bild und Ton sind nicht beurteilt; die echte Prüfung antwortet im selben Aufbau, sobald sie eingeschaltet ist.',
   p_privat: 'Nichts wird gespeichert. Der Entwurf geht nur für die Prüfung an den Server und ist danach weg.',
   p_schritt1: 'Farben messen', p_schritt2: 'Entwurf ansehen', p_schritt3: 'Rückmeldung schreiben', p_dauer: 'Das dauert meist eine halbe Minute.',
-  p_gesamt: 'Insgesamt', p_punkte: 'Punkt für Punkt', p_farben: 'Gemessene Farben', p_farben_s: 'Ohne KI gemessen, gegen die Palette des Hauses. Fotos im Entwurf zählen mit.',
-  p_rahmen: '{0} % der Fläche in den Farben des Hauses', p_ton: 'Im Ton des Hauses', p_neu: 'Neuen Entwurf prüfen', p_sichern: 'Ergebnis sichern', p_kopie: 'Als Text kopieren',
-  p_gleich: 'gleich', p_nah: 'nah', p_fremd: 'fremd', p_naechste: 'nächste Hausfarbe', p_schwarz: 'Reines Schwarz auf {0} % der Fläche. Geschrieben wird in Tinte #041023.',
+  p_gesamt: 'Insgesamt', p_punkte: 'Punkt für Punkt', p_farben: 'Gemessene Farben', p_farben_s: 'Ohne KI gemessen, gegen die Farben von Culinarium. Fotos im Entwurf zählen mit.',
+  p_rahmen: '{0} % der Fläche in den Farben von Culinarium', p_ton: 'Im Ton von Culinarium', p_neu: 'Neuen Entwurf prüfen', p_sichern: 'Ergebnis sichern', p_kopie: 'Als Text kopieren',
+  p_gleich: 'gleich', p_nah: 'nah', p_fremd: 'fremd', p_naechste: 'nächste Farbe der Marke', p_schwarz: 'Reines Schwarz auf {0} % der Fläche. Geschrieben wird in Tinte #2A2833, dunkle Flächen sind Nacht #16151A.',
   u_passt: 'passt', u_achten: 'achten', u_passt_nicht: 'passt nicht',
   ber: { farben: 'Farben', schrift: 'Schrift', zeichen: 'Zeichen', abstand: 'Abstand', bild: 'Bild', ton: 'Ton' },
   p_ki_fehler: 'Die Beurteilung durch Claude war gerade nicht möglich ({0}). Die Messung der Farben steht links.', p_fehler: 'Die Prüfung ging nicht durch',
@@ -96,15 +98,15 @@ if (/[?&]sprachen=probe\b/.test(location.search)) {   // nur für die Prüfung d
   const um = x => typeof x === 'string' ? '‹' + x + '›' : x && typeof x === 'object' ? Object.fromEntries(Object.entries(x).map(([k, v]) => [k, um(v)])) : x;
   T.pr = um(T.de);
 }
-let SP = (() => { try { const q = new URLSearchParams(location.search).get('sprache'); if (q && T[q]) return q; const m = localStorage.getItem('sl-livre-sprache'); return m && T[m] ? m : 'de'; } catch (e) { return 'de'; } })();
-/* Namen der Werkzeuge des Schlössli: eine Stelle, WO_HAUS.namen im gemeinsamen Kleid (livre.json trägt eine Kopie vom Bau, falls das Kleid fehlt) */
-let NAMEN = {};
+let SP = (() => { try { const q = new URLSearchParams(location.search).get('sprache'); if (q && T[q]) return q; const m = localStorage.getItem('cu-livre-sprache'); return m && T[m] ? m : 'de'; } catch (e) { return 'de'; } })();
+/* Namen der Werkzeuge von Culinarium: eine Stelle, WO_HAUS.namen im gemeinsamen Kleid (livre.json trägt eine Kopie vom Bau, falls das Kleid fehlt) */
+let NAMEN = Object.assign({}, (window.WO_HAUS && WO_HAUS.namen) || {});   // sofort aus dem Kleid, damit auch die Startfehler-Tür den Namen trägt (nie «{marke}»)
 const inDat = n => n.replace(/^Das /, 'dem ').replace(/^Die /, 'der ').replace(/^Der /, 'dem ');
 const mitNamen = s => s.replace(/\{(zentrale|website|karten|gaeste|marke|besuche|druck)(_in)?\}/g, (m, k, d) => NAMEN[k] ? (d ? inDat(NAMEN[k]) : NAMEN[k]) : m);
 /* Kopf, Rand und Startbild baut das Paket mit den Landhaus-Namen (welt.js): hier gegen die Namen des Hauses getauscht */
 const umbenannt = html => { if (!window.WO || !WO.namen) return html; let h = html; for (const k in WO.namen) if (NAMEN[k]) h = h.split(WO.namen[k][1]).join(NAMEN[k]); return h; };
 const t = (k, ...a) => { let s = (T[SP] && T[SP][k] != null ? T[SP][k] : T.de[k]); if (typeof s === 'string') { a.forEach((x, i) => { s = s.split('{' + i + '}').join(x); }); s = mitNamen(s); } return s; };
-const zahl = n => Number(n).toLocaleString('de-CH');
+const zahl = n => Number(n).toLocaleString('de-DE');
 
 /* ---------------------------------------------------------------- Zustand */
 const S = { d: null, server: null, ansicht: 'start', f: { q: '', b: 'alle', s: 'alle', f: 'alle', h: 'alle' }, n: 48, datei: null, ergebnis: null };
@@ -113,7 +115,7 @@ const FORMATE = { instagram: [1080, 1350], story: [1080, 1920] };
 
 /* ---------------------------------------------------------------- Grundgerüst */
 /* Werkzeug-Oberfläche «Die Bühne» (oberflaeche.py) */
-/* Kopf, Rand und Leiste aus dem Paket der Werkzeuge des Hauses (assets/oberflaeche, Rahmen «Die Bühne», kleid/schloessli.*), gleich wie in den anderen Werkzeugen */
+/* Kopf, Rand und Leiste aus dem Paket der Werkzeuge (assets/oberflaeche, Rahmen «Die Bühne», kleid/culinarium.*), gleich wie in den anderen Werkzeugen */
 const UNTER = () => String(t('unter')).split(' · ')[0];   // «Marke»; den Namen des Hauses setzt das Paket dazu
 function kopf() {
   const titel = { start: t('start'), bilder: t('bilder'), dateien: t('dateien'), pruefung: t('pruefung') }[S.ansicht];
@@ -153,23 +155,23 @@ function leiste() {
 
 function gehe(a) {
   S.ansicht = a;
-  try { localStorage.setItem('sl-livre-ansicht', a); } catch (e) { /* privat */ }
+  try { localStorage.setItem('cu-livre-ansicht', a); } catch (e) { /* privat */ }
   history.replaceState(null, '', location.pathname + location.search + '#' + a);
   kopf(); rand(); zeichne();
   scrollTo({ top: 0 });
 }
 function wechsle(sp) {
   SP = sp;
-  try { localStorage.setItem('sl-livre-sprache', sp); } catch (e) { /* privat */ }
-  document.documentElement.lang = sp === 'de' ? 'de-CH' : sp;
+  try { localStorage.setItem('cu-livre-sprache', sp); } catch (e) { /* privat */ }
+  document.documentElement.lang = sp;
   kopf(); rand(); leiste(); zeichne(true);
 }
 
 /* Startbild einer Ansicht: WO.startbild als Bühne mit dem Foto der Ansicht (dieselben Fotos wie bisher, unbearbeitet), Zahlen darunter als wo-lage */
-const SB_FOTO = { bilder: 'platanen', dateien: 'fliesen', pruefung: 'apero' };
+const SB_FOTO = { bilder: 'kerze2', dateien: 'karte', pruefung: 'pass' };
 /* Foto der Bühne in 1200 Breite (Robert 18.10.: «Wieso ist da links nichts? Das lädt zu lange.»), sonst die grösste Fassung */
 const grossVon = k => { const f = (S.d && S.d.fotos.find(x => x.k === k)) || {}; return f.fm || f.fl || ''; };
-const buehneVon = a => grossVon(SB_FOTO[a] || 'start').replace(/^(\.\.\/)+/, '/');
+const buehneVon = a => grossVon(SB_FOTO[a] || 'fassade').replace(/^(\.\.\/)+/, '/');
 function titel(ansicht, h1, satz, kn = '', stats = []) {
   const z = h1.length > 1 ? `${esc(h1.slice(0, -1).join(' '))} <em>${esc(h1[h1.length - 1])}</em>` : esc(h1[0]);
   return umbenannt(WO.startbild({ werkzeug: 'marke', art: 'buehne', foto: buehneVon(ansicht), h1: z, satz: esc(satz), knoepfe: woKn(kn) }))
@@ -177,7 +179,8 @@ function titel(ansicht, h1, satz, kn = '', stats = []) {
 }
 /* Knöpfe in den Startbildern im Stil des Pakets (gleiche Ziele und Attribute) */
 const woKn = h => String(h || '').replace(/class="kn kn--(gold|linie)( kn--hell)?"/g, (m, a) => `class="wo-kn wo-kn--${a === 'gold' ? 'gold' : 'hell'}"`)
-  .replace(/class="kn"/g, 'class="wo-kn wo-kn--hell"').replace(/(<(?:a|button) class="wo-kn[^"]*"[^>]*>)([^<]+)<i>/g, '$1<span>$2</span><i>');
+  .replace(/class="kn"/g, 'class="wo-kn wo-kn--hell"').replace(/(<(?:a|button) class="wo-kn[^"]*"[^>]*>)([^<]+)<i>/g, '$1<span>$2</span><i>')
+  .replace(/<i><svg viewBox/g, '<i><svg class="wo-ic" viewBox');   /* Zeichen im Knopf wie im Paket (nur Linie, nie gefüllt) */
 
 function teile(s) { const i = s.lastIndexOf(' '); return i > 0 ? [s.slice(0, i), s.slice(i + 1)] : [s]; }
 
@@ -210,20 +213,20 @@ function start() {
   const klein = k => esc(foto(k));
   const lg = (ic, mk, b, p, ziel) => `<div class="wo-lg"><i class="wo-lg__z">${WO.ic(ic)}</i><span class="wo-mk">${esc(mk)}</span><b>${b}</b><p>${esc(p)}</p><a class="wo-lk" href="#${ziel}" data-gehe="${ziel}">${esc(t('oeffnen'))}</a></div>`;
   const ag = (ziel, img, ic, name, satz, i, href) => `<${href ? `a href="${href}"` : `button type="button" data-gehe="${ziel}"`} class="wo-ag" data-r style="--i:${i}">
-      <span class="wo-ag__b">${img}</span><span class="wo-ag__t"><i class="wo-ag__z">${WO.ic(ic)}</i><b>${esc(name)}</b><span>${esc(satz)}</span></span></${href ? 'a' : 'button'}>`;
+      <span class="wo-ag__b">${img}</span><span class="wo-ag__t"><i class="wo-ag__z">${WO.ic(ic)}</i><b>${esc(name)}</b><span>${esc(satz).replace(/ (\S+)$/, '&nbsp;$1')}</span></span></${href ? 'a' : 'button'}>`;
   return `${umbenannt(WO.startbild({ werkzeug: 'marke', art: 'voll', h1: `${esc(gruss)} <em>${esc(t('frage'))}</em>`, satz: esc(t('start_satz')),
       knoepfe: WO.knopf(esc(t('anleitung')), 'buch', 'gold', { href: 'anleitung.html', neu: true }) + WO.knopf(esc(t('buch')), 'pfeil', 'glas', { href: MARKE }) }))}
     <div class="wo-lage" data-r>
-      ${lg('foto', t('bilder'), zahl(st.fotos), `${zahl(st.haus)} ${t('z_haus')} · ${zahl(st.frei)} ${t('z_frei')} · ${zahl(st.fremd)} ${t('z_fremd')}`, 'bilder')}
+      ${lg('foto', t('bilder'), zahl(st.fotos), `${zahl(st.haus)} ${t('z_haus')} · ${zahl(st.fremd)} ${t('z_fremd')}`, 'bilder')}
       ${lg('kopie', t('z_dateien'), zahl(st.dateien), t('k_dateien'), 'dateien')}
       ${lg('auge', t('pruefung'), 'ΔE 2000', t('k_pruefung'), 'pruefung')}
     </div>
     <h2 class="wo-zw">${esc(t('arbeiten'))}</h2>
     <div class="wo-aufg li-aufg">
-      ${ag('bilder', `<span class="li-stapel"><img src="${klein('start')}" alt="" decoding="async"><img src="${klein('tortelloni')}" alt="" decoding="async"><img src="${klein('abend')}" alt="" decoding="async"></span>`, 'foto', t('bilder'), t('k_bilder'), 0)}
-      ${ag('dateien', `<span class="li-logo li-tapete-d"><img src="${DAT}${S_}-logo-weiss.png" alt="" decoding="async"></span>`, 'kopie', t('dateien'), t('k_dateien'), 1)}
-      ${ag('pruefung', `<span class="li-pr-bild"><span class="li-pr-f">${S.d.farben.filter(x => x.g !== 'druck').slice(0, 9).map(x => `<i style="background:${x.h}"></i>`).join('')}</span><span class="li-pr-de"><b>ΔE</b><small>2000</small></span></span>`, 'auge', t('pruefung'), t('k_pruefung'), 2)}
-      ${ag('', `<img src="${klein('platanen')}" alt="" loading="lazy" decoding="async">`, 'buch', t('buch'), t('k_buch'), 3, MARKE)}
+      ${ag('bilder', `<span class="li-stapel"><img src="${klein('lauch')}" alt="" decoding="async"><img src="${klein('glas')}" alt="" decoding="async"><img src="${klein('tafelleer')}" alt="" decoding="async"></span>`, 'foto', t('bilder'), t('k_bilder'), 0)}
+      ${ag('dateien', `<span class="li-logo li-tapete-d"><img src="${DAT}${S_}-logo-weiss.svg" alt="" decoding="async"></span>`, 'kopie', t('dateien'), t('k_dateien'), 1)}
+      ${ag('pruefung', `<span class="li-pr-bild"><span class="li-pr-f">${S.d.farben.filter(x => x.g !== 'abende' && x.g !== 'dc').slice(0, 9).map(x => `<i style="background:${x.h}"></i>`).join('')}</span><span class="li-pr-de"><b>ΔE</b><small>2000</small></span></span>`, 'auge', t('pruefung'), t('k_pruefung'), 2)}
+      ${ag('', `<img src="${klein('schildnacht')}" alt="" loading="lazy" decoding="async">`, 'buch', t('buch'), t('k_buch'), 3, MARKE)}
     </div>`;
 }
 function startLeben() { $$('#ansicht [data-gehe]').forEach(b => b.onclick = e => { e.preventDefault(); gehe(b.dataset.gehe); }); }
@@ -244,7 +247,7 @@ function bilder() {
     <div class="platte li-filter" data-r>
       <label class="suche li-suche">${LUPE}<input type="search" id="li-q" value="${esc(S.f.q)}" placeholder="${esc(t('suchen'))}" autocomplete="off" maxlength="200"></label>
       ${wahl('b', S.d.bereiche.map(b => [b, t('b_' + b)]))}
-      <div class="li-wahl-reihe">${wahl('s', [['sommer', t('s_sommer')], ['winter', t('s_winter')], ['jahr', t('s_jahr')]].filter(([w]) => S.d.fotos.some(f => f.s === w)))}${wahl('f', [['hoch', t('f_hoch')], ['quer', t('f_quer')]])}</div>
+      <div class="li-wahl-reihe">${new Set(S.d.fotos.map(f => f.s)).size > 1 ? wahl('s', [['sommer', t('s_sommer')], ['winter', t('s_winter')], ['jahr', t('s_jahr')]].filter(([w]) => S.d.fotos.some(f => f.s === w))) : ''}${wahl('f', [['hoch', t('f_hoch')], ['quer', t('f_quer')]])}</div>
       ${wahl('h', [['haus', t('h_haus')], ['frei', t('h_frei')], ['ki', t('h_ki')], ['fremd', t('h_fremd')]].filter(([w]) => S.d.fotos.some(f => f.art === w)))}
       <p class="li-treffer"><span id="li-n"></span><button class="link" type="button" id="li-reset">${esc(t('zuruecksetzen'))}</button></p>
     </div>
@@ -252,7 +255,7 @@ function bilder() {
     <div class="li-mehr" id="li-mehr"></div>`;
 }
 function kachel(f, i) {
-  return `<button class="li-f li-f--${f.f}" type="button" data-k="${esc(f.k)}" data-r style="--i:${i % 6}" aria-label="${esc(titelVon(f))}">
+  return `<button class="li-f li-f--${f.f}${f.b === 'plakate' ? ' li-f--plakat' : ''}" type="button" data-k="${esc(f.k)}" data-r style="--i:${i % 6}" aria-label="${esc(titelVon(f))}">
     <img src="${esc(f.fs)}" alt="" loading="lazy" decoding="async" draggable="false">
     ${f.art === 'ki' ? `<span class="li-ki" title="${esc(t('ki_lang'))}">${esc(t('ki'))}</span>` : f.art === 'fremd' ? `<span class="li-ki li-ki--fremd" title="${esc(t('fremd_lang'))}">${esc(t('fremd'))}</span>` : ''}
     <span class="li-f__n">${esc(titelVon(f))}</span></button>`;
@@ -285,26 +288,29 @@ function bilderLeben() {
 }
 
 /* Detail: grosses Bild, Herkunft, Grössen, Ausschnitt für Beitrag und Story, bei nachgeschärften Fotos Vorher/Nachher (L09) */
+/* Tor 3 Q (30.10.2026): die letzten zwei Wörter eines Fenstertitels bleiben zusammen, nie ein Wort allein in der letzten Zeile */
+const zusammen = t => { const w = esc(t).split(' '); if (w.length < 2) return w.join(' '); const n = w.length < 3 ? 1 : 2;   // bei zwei Wörtern bleibt das letzte (mit Bindestrich) ganz
+  return w.slice(0, -n).join(' ') + ' <span class="li-zus">' + w.slice(-n).join('&nbsp;').replace(/-/g, '&#8209;') + '</span>'; };   // festes Leerzeichen: WebKit bricht vor einem nowrap-Teil nicht um
 function detail(k) {
   const f = S.d.fotos.find(x => x.k === k); if (!f) return;
   const fx = { instagram: { x: .5, y: .5 }, story: { x: .5, y: .5 } };
   let aktiv = 'instagram';
-  const imp = g => `${IMPRIMERIE}?haus=schloessli&foto=${encodeURIComponent(k)}&art=${g === 'story' ? 'story' : 'insta'}&x=${fx[g].x.toFixed(3)}&y=${fx[g].y.toFixed(3)}`;
+  const imp = g => `${IMPRIMERIE}?haus=culinarium&foto=${encodeURIComponent(k)}&art=${g === 'story' ? 'story' : 'insta'}&x=${fx[g].x.toFixed(3)}&y=${fx[g].y.toFixed(3)}`;
   const link = g => S.server ? `api/bild?k=${encodeURIComponent(k)}&f=${g}${fx[g] ? `&x=${fx[g].x.toFixed(3)}&y=${fx[g].y.toFixed(3)}` : ''}` : f.fl;
   const nurWeb = S.nurWeb === true || (S.nurWeb && S.nurWeb.has(k));
   const zeile = g => `<li class="li-gr" data-g="${g}"><span><b>${esc(t('g_' + g))}</b><small>${esc(g === 'druck' ? (nurWeb ? t('i_druck_web') : t('i_druck', zahl(f.w), zahl(f.h))) : t('i_' + g))}</small></span>
     <a class="kn kn--klein" href="${esc(link(g))}" download data-laden="${g}">${esc(t('laden'))}<i>${PU}</i></a></li>`;
   const art = f.art === 'ki' ? `<p class="li-hinweis li-hinweis--ki"><b>${esc(t('ki_lang'))}</b>${esc(t('ki_satz'))}</p>` : f.art === 'fremd' ? `<p class="li-hinweis li-hinweis--ki"><b>${esc(t('fremd_lang'))}</b>${esc(t('fremd_satz'))}</p>${f.ue ? `<p class="li-hinweis li-hinweis--leise">${esc(t('ue_satz'))}${f.vn ? ' ' + esc(t('vn_hilfe')) : ''}</p>` : ''}` : f.alt ? `<p class="li-hinweis">${esc(t('archiv'))}</p>` : f.art === 'frei' ? `<p class="li-hinweis">${esc(t('frei_satz'))}</p>` : f.ue ? `<p class="li-hinweis li-hinweis--leise">${esc(t('ue_satz'))}${f.vn ? ' ' + esc(t('vn_hilfe')) : ''}</p>` : '';
-  const vn = f.vn ? `<img class="li-vn__v" src="${ORIG}${esc(okey(k))}.webp" alt="" decoding="async" draggable="false"><span class="li-vn__gr"><i><svg viewBox="0 0 20 12" width="20" height="12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 1 1 6l5 5M14 1l5 5-5 5"/></svg></i></span><span class="li-vn__t" id="li-vnt">${esc(t('vn_t_nachher'))}</span>
+  const vn = f.vn ? `<img class="li-vn__v" src="${ORIG}${esc(okey(k))}.webp" alt="" decoding="async" draggable="false"><span class="li-vn__gr"><i><svg viewBox="0 0 20 12" width="20" height="12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 1 1 6l5 5M14 1l5 5-5 5"/></svg></i></span><span class="li-vn__t" id="li-vnt">${esc(t(f.art === 'ki' ? 'vn_t_nachher_ki' : 'vn_t_nachher'))}</span>
       <div class="li-vn__bar" role="group" aria-label="${esc(t('vn_vorher') + ' / ' + t('vn_nachher'))}"><button type="button" data-vn="vorher" aria-pressed="false">${esc(t('vn_vorher'))}</button><button type="button" data-vn="nachher" aria-pressed="true">${esc(t('vn_nachher'))}</button><button type="button" data-vn="schieber" aria-pressed="false">${esc(t('vn_schieber'))}</button></div>` : '';
   fenster(`<div class="li-det">
-    <div class="li-det__b"><div class="li-det__bild" id="li-bild" data-m="nachher" tabindex="-1"><img src="${esc(f.fl)}" alt="${esc(titelVon(f))}" decoding="async" draggable="false"><span class="li-rahmen" id="li-rahmen" hidden></span>${vn}</div>
+    <div class="li-det__b"><div class="li-det__bild" id="li-bild" data-m="nachher"${f.art === 'ki' ? ' data-ki="1"' : ''} tabindex="-1"><img src="${esc(f.fl)}" alt="${esc(titelVon(f))}" decoding="async" draggable="false"><span class="li-rahmen" id="li-rahmen" hidden></span>${vn}</div>
       <p class="leise li-det__hilfe">${esc(t('ausschnitt'))}</p></div>
     <div class="li-det__t">
-      <p class="mono">${esc(t('b_' + f.b))} · ${esc(t('s_' + f.s))} · ${esc(t('f_' + f.f))}</p>
-      <h2>${esc(titelVon(f))}</h2>
+      <p class="mono">${esc(t('b_' + f.b))} · ${esc(t('f_' + f.f))}</p>
+      <h2>${zusammen(titelVon(f))}</h2>
       ${art}
-      <dl class="li-meta"><dt>${esc(t('quelle'))}</dt><dd>${esc(f.q)}${f.u ? ` <a class="link" href="${esc(f.u)}" target="_blank" rel="noopener noreferrer">${esc(t('quelle_link'))}</a>` : ''}</dd><dt>${esc(t('original'))}</dt><dd>${zahl(f.w)} × ${zahl(f.h)} px</dd></dl>
+      <dl class="li-meta"><dt>${esc(t('quelle'))}</dt><dd>${esc(f.q)}${f.u ? ` <a class="link" href="${esc(f.u)}" target="_blank" rel="noopener noreferrer">${esc(t('quelle_link'))}</a>` : ''}</dd><dt>${esc(t('original'))}</dt><dd>${zahl(f.w)} auf ${zahl(f.h)} px</dd></dl>
       <p class="mono li-det__gr">${esc(t('grossen'))}</p>
       <ul class="li-grl">${['instagram', 'story', 'web', 'druck'].map(zeile).join('')}</ul>
       ${f.vn ? `<p class="li-orig"><a class="kn kn--klein kn--linie" href="${ORIG}${esc(okey(k))}.webp" download="${S_}-${esc(okey(k))}-vorher.webp">${esc(t('vn_orig'))}<i>${PU}</i></a></p>` : ''}
@@ -313,7 +319,21 @@ function detail(k) {
         <div class="li-imp__k"><a class="kn kn--klein" data-imp="instagram" href="${esc(imp('instagram'))}" target="_blank" rel="noopener">${esc(t('im_beitrag'))}<i>${PF}</i></a><a class="kn kn--klein kn--linie" data-imp="story" href="${esc(imp('story'))}" target="_blank" rel="noopener">${esc(t('im_story'))}<i>${PF}</i></a></div>
         <p class="leise">${esc(t('im_satz'))}</p></div>
     </div></div>`);
+  { const z = $('.li-det__t h2 .li-zus'); if (z && z.offsetWidth > z.parentElement.clientWidth) z.replaceWith(z.textContent.replace(/\u00a0/g, ' ').replace(/\u2011/g, '-')); }   // zu lang für eine Zeile: frei umbrechen
   const bildEl = $('#li-bild'), rahmen = $('#li-rahmen'), img = $('img', bildEl);
+  /* Tor 3 T (30.10.2026): Beschriftung bleibt im Rahmen und frei vom runden Zurück-Knopf; zu schmal → Name und Mass untereinander, ohne Trenner; reicht das nicht, rutscht sie unter den Knopf */
+  function beschrifte(name, mass, tx, ty, w) {
+    const cs = getComputedStyle(rahmen, '::after'), c = (beschrifte.c ||= document.createElement('canvas').getContext('2d'));
+    c.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+    const ls = parseFloat(cs.letterSpacing) || 0, pad = 18 + 4, br = s => Math.max(...s.split('\n').map(z => c.measureText(z.toUpperCase()).width + z.length * ls)) + pad;
+    const zu = $('.fenster__zu'), b = bildEl.getBoundingClientRect(), l = b.left + tx + 10, o = b.top + ty + 10;
+    const k = zu && zu.getBoundingClientRect(), imWeg = (x, hoch) => k && k.left - 10 < l + x && k.bottom + 8 > o && k.top < o + hoch;
+    let txt = name + ' · ' + mass, unten = 0;
+    if (br(txt) > w - 20 || imWeg(br(txt), 26)) txt = name + '\n' + mass;
+    if (br(txt) > w - 20) txt = name + '\n' + mass.replace(/\u00a0(auf|on|×)\u00a0/, '\u00a0$1\n');   // sehr schmal (Story am Handy): Mass in zwei Zeilen
+    if (imWeg(br(txt), 14 * txt.split('\n').length)) unten = Math.ceil(k.bottom + 8 - o);
+    rahmen.dataset.g = txt; rahmen.style.setProperty('--lt', (10 + Math.max(0, unten)) + 'px');
+  }
   function setze() {
     const g = FORMATE[aktiv];
     if (!img.naturalWidth || !document.body.contains(bildEl)) { rahmen.hidden = true; return; }
@@ -322,11 +342,12 @@ function detail(k) {
     if (W / H > ziel) w = H * ziel; else h = W / ziel;
     const p = fx[aktiv] || { x: .5, y: .5 };
     rahmen.classList.toggle('li-rahmen--ganz', !g);
-    rahmen.style.transform = `translate(${(W - w) * p.x}px,${(H - h) * p.y}px)`;
-    const sk = Math.min(1, 2000 / Math.max(f.w, f.h)), masse = g ? `${g[0]} × ${g[1]}` : aktiv === 'web' ? `${Math.round(f.w * sk)} × ${Math.round(f.h * sk)}` : `${zahl(f.w)} × ${zahl(f.h)}`;
-    if (w > W - 6 && h > H - 6) { w -= 12; h -= 12; rahmen.style.transform = 'translate(6px,6px)'; }
+    let tx = (W - w) * p.x, ty = (H - h) * p.y;
+    rahmen.style.transform = `translate(${tx}px,${ty}px)`;
+    const sk = Math.min(1, 2000 / Math.max(f.w, f.h)), masse = g ? `${g[0]} auf ${g[1]}` : aktiv === 'web' ? `${Math.round(f.w * sk)} auf ${Math.round(f.h * sk)}` : `${zahl(f.w)} auf ${zahl(f.h)}`;
+    if (w > W - 6 && h > H - 6) { w -= 12; h -= 12; tx = ty = 6; rahmen.style.transform = 'translate(6px,6px)'; }
     rahmen.style.width = w + 'px'; rahmen.style.height = h + 'px';
-    rahmen.dataset.g = t('g_' + aktiv) + ' · ' + masse + ' px';
+    beschrifte(t('g_' + aktiv), (masse + ' px').replace(/ /g, '\u00a0'), tx, ty, w);
     rahmen.classList.remove('blitz'); void rahmen.offsetWidth; rahmen.classList.add('blitz');
     rahmen.hidden = false;
     $$('[data-laden]').forEach(a => a.href = link(a.dataset.laden));
@@ -356,7 +377,7 @@ function detail(k) {
 /* Vorher / Nachher: Knöpfe unten im Bild, Schieber zieht eine Kante über das Bild (folgt Maus und Finger, auch in Firefox, F32) */
 function vorherNachher(v, setze) {
   function modus(m) {
-    v.setAttribute('data-m', m); $('#li-vnt').textContent = t('vn_t_' + m);
+    v.setAttribute('data-m', m); $('#li-vnt').textContent = t('vn_t_' + m + (v.dataset.ki && m !== 'schieber' ? '_ki' : ''));
     $$('[data-vn]', v).forEach(b => b.setAttribute('aria-pressed', b.dataset.vn === m ? 'true' : 'false'));
     if (m === 'schieber') v.style.setProperty('--p', '50%');
     if (m === 'nachher') setze();
@@ -380,27 +401,29 @@ function dateien() {
   const vname = (g, v) => g === 'tapete' && v.k === 'dunkel' ? t('v_t_dunkel') : t('v_' + v.k);
   const tafeln = (g, breit) => `<div class="li-tafeln ${breit ? 'li-tafeln--breit' : ''}">${D[g].var.map(v => `<figure class="li-tafel li-tafel--${v.grund}">
       <div class="li-tafel__f"><img src="${DAT}${esc(v.dateien.find(x => x.endsWith('.svg')) || v.dateien[0])}" alt="" loading="lazy" decoding="async"></div>
-      <figcaption><span><b>${esc(vname(g, v))}</b><small>${v.px ? zahl(v.px[0]) + ' × ' + zahl(v.px[1]) + ' px' : ''}</small></span><span class="li-kn">${knoepfe(v.dateien)}</span></figcaption></figure>`).join('')}</div>`;
+      <figcaption><span><b>${esc(vname(g, v))}</b><small>${v.px ? zahl(v.px[0]) + ' auf ' + zahl(v.px[1]) + ' px' : ''}</small></span><span class="li-kn">${knoepfe(v.dateien)}</span></figcaption></figure>`).join('')}</div>`;
   const gruppen = S.d.gruppen.map(g => {
     const fs = S.d.farben.filter(f => f.g === g.k); if (!fs.length) return '';
-    return `<div class="li-fg${g.k === 'druck' ? ' li-fg--druck' : ''}${g.bild ? ' li-fg--bild' : ''}">${g.bild ? `<figure class="li-fg__b${/^listen\//.test(g.bild) ? ' li-fg__b--text' : ''}"><img src="${esc(g.bild)}" alt="" loading="lazy" decoding="async"><figcaption>${esc(g.bild_t || '')}</figcaption></figure>` : ''}<div class="li-fg__t"><h3>${esc(g.n)}</h3><p class="leise">${esc(g.s)}</p><div class="li-farben">${fs.map((f, i) => `<button class="li-farbe" type="button" data-kopie="${f.h}" style="--c:${f.h};--i:${i % 6}">
+    return `<div class="li-fg${g.k === 'druck' ? ' li-fg--druck' : ''}${g.bild ? ' li-fg--bild' : ''}">${g.bild ? `<figure class="li-fg__b${/^listen\//.test(g.bild) ? ' li-fg__b--text' : ''}"><img src="${esc(g.bild)}" alt="" loading="lazy" decoding="async"><figcaption>${esc(g.bild_t || '')}</figcaption></figure>` : ''}<div class="li-fg__t"><h3>${esc(g.n)}</h3><p class="leise">${esc(g.s)}</p><div class="li-farben">${fs.map((f, i) => `<button class="li-farbe${f.b ? ' li-farbe--bild' : ''}" type="button" data-kopie="${f.h}" style="--c:${f.h};--i:${i % 6}">${f.b ? `<span class="li-farbe__b"><img src="${esc(f.b)}" alt="" loading="lazy" decoding="async"></span>` : ''}
       <span class="li-farbe__f"><span class="li-farbe__ok">${esc(t('kopiert'))}</span></span>
-      <span class="li-farbe__n"><b>${esc(f.n)}</b><small>${esc(f.r)}</small></span>
-      <span class="li-farbe__w"><span data-kopie-w="${f.h}">${f.h}</span><span data-kopie-w="rgb(${f.rgb.join(', ')})">RGB ${f.rgb.join(' · ')}</span></span></button>`).join('')}</div></div></div>`;
+      <span class="li-farbe__n"><b>${esc(f.n)}</b><small>${esc(f.r).replace(/\//g, '/<wbr>')}</small></span>
+      <span class="li-farbe__w"><span data-kopie-w="${f.h}">${f.h}</span><span class="li-farbe__rgb" data-kopie-w="rgb(${f.rgb.join(', ')})">RGB <i>${f.rgb.join(' · ')}</i></span></span></button>`).join('')}</div></div></div>`;
   }).join('');
-  const schriften = S.d.schriften.map(s => `<li class="li-schrift">${s.bild ? `<span class="li-schrift__b"><img src="${esc(s.bild)}" alt="${esc(s.n)} auf der Website" loading="lazy" decoding="async"></span>` : ''}<span class="li-schrift__p f-${esc(s.k)}">${esc(s.p)}</span><span><b>${esc(s.n)}</b><small>${esc(s.r)} · ${esc(s.e)}</small></span>
-      <a class="kn kn--klein kn--linie" href="../../assets/fonts/${esc(s.d)}" download>${esc(s.d.split('.').pop().toUpperCase())}<i>${PU}</i></a></li>`).join('');
-  const n_dat = S.d.dateien.filter(g => ['logo', 'zeichen', 'zeiger', 'name', 'website', 'tapete'].includes(g.k)).reduce((n, g) => n + g.var.length, 0);
-  return `${titel('dateien', teile(t('d_titel')), t('d_satz'), `<a class="kn kn--gold" href="${DAT}${S_}-marke.zip" download>${esc(t('alles_zip'))}<i>${PU}</i></a><a class="kn kn--linie kn--hell" href="${MARKE}#zeichen">${esc(t('regeln'))}<i>${PF}</i></a>`, [[n_dat, t('z_dateien')], ['SVG', 'PNG']])}
-    ${block('zeichen', t('d_zeichen'), t('d_zeichen_s'), tafeln('zeichen'), 0)}
-    ${block('zeiger', t('d_zeiger'), t('d_zeiger_s'), tafeln('zeiger'), 1)}
-    ${block('logo', t('d_logo'), t('d_logo_s'), tafeln('logo'), 0)}
-    ${block('name', t('d_name'), t('d_name_s'), tafeln('name', true), 1)}
+  /* Tor 3 S (30.10.2026): Muster mit Trenner (« / », « · ») in ganze Glieder geteilt; der Trenner steht nur zwischen zwei Gliedern derselben Zeile (livre.css .li-teile) */
+  const glieder = p => { const m = p.match(/ ([\/·]) /); if (!m) return esc(p).replace(/ (\S+)$/, '&nbsp;$1'); return `<span class="li-teile" style="--tr:'${m[1]}'">${p.split(' ' + m[1] + ' ').map(x => `<i>${esc(x).replace(/ /g, '&nbsp;')}</i>`).join('')}</span>`; };
+  const schriften = S.d.schriften.map(s => `<li class="li-schrift">${s.bild ? `<span class="li-schrift__b"><img src="${esc(s.bild)}" alt="${esc(s.n)} auf der Website" loading="lazy" decoding="async"></span>` : ''}<span class="li-schrift__p f-${esc(s.k)}">${glieder(s.p)}</span><span class="li-schrift__t"><b>${esc(s.n)}</b><small class="li-teile" style="--tr:'·'"><i>${esc(s.r)}</i><i>${esc(s.e).replace(/ (\S+)$/, '&nbsp;$1')}</i></small></span>
+      <a class="kn kn--klein kn--linie" href="../../assets/schrift/${esc(s.d)}" download>${esc(s.d.split('.').pop().toUpperCase())}<i>${PU}</i></a></li>`).join('');
+  const n_dat = S.d.dateien.filter(g => ['logo', 'wortmarke', 'zeile', 'dc', 'website', 'tapete'].includes(g.k)).reduce((n, g) => n + g.var.length, 0);
+  return `${titel('dateien', teile(t('d_titel')), t('d_satz'), `<a class="kn kn--gold" href="${DAT}${S_}-marke.zip" download>${esc(t('alles_zip'))}<i>${PU}</i></a><a class="kn kn--linie kn--hell" href="${MARKE}#logo">${esc(t('regeln'))}<i>${PF}</i></a>`, [[zahl(S.d.stand.dateien), t('z_dateien')], ['SVG · PNG · PDF', t('formate')]])}
+    ${block('logo', t('d_logo'), t('d_logo_s'), tafeln('logo', true), 0)}
+    ${block('wortmarke', t('d_wortmarke'), t('d_wortmarke_s'), tafeln('wortmarke', true), 1)}
+    ${block('zeile', t('d_zeile'), t('d_zeile_s'), tafeln('zeile', true), 0)}
     ${block('tapete', t('d_tapete'), t('d_tapete_s'), `<div class="li-tafeln">${D.tapete.var.map(v => `<figure class="li-tafel li-tafel--${v.grund}"><div class="li-tafel__f li-tapete" style="background-image:url(${DAT}${esc(v.dateien.find(x => x.endsWith('.webp')))})"></div>
-      <figcaption><span><b>${esc(vname('tapete', v))}</b><small>${v.px[0]} × ${v.px[1]} px</small></span><span class="li-kn">${knoepfe(v.dateien.filter(x => !x.endsWith('.webp')))}</span></figcaption></figure>`).join('')}</div>`, 1)}
+      <figcaption><span><b>${esc(vname('tapete', v))}</b><small>${v.px[0]} auf ${v.px[1]} px</small></span><span class="li-kn">${knoepfe(v.dateien.filter(x => !x.endsWith('.webp')))}</span></figcaption></figure>`).join('')}</div>`, 1)}
     ${block('farben', t('d_farben'), t('d_farben_s'), `${gruppen}<div class="li-kn li-kn--mitte">${knoepfe(D.farben.var[0].dateien)}</div>`, 0)}
     ${block('schriften', t('d_schriften'), t('d_schriften_s'), `<ul class="li-schriften">${schriften}</ul><div class="li-kn li-kn--mitte">${knoepfe(D.schriften.var[0].dateien)}</div>`, 1)}
-    ${block('website', t('d_website'), t('d_website_s'), tafeln('website'), 0)}`;
+    ${block('dc', t('d_dc'), t('d_dc_s'), tafeln('dc'), 0)}
+    ${block('website', t('d_website'), t('d_website_s'), tafeln('website'), 1)}`;
 }
 function zwei(s) { const i = s.lastIndexOf(' '); return i > 0 ? `${esc(s.slice(0, i))} <em>${esc(s.slice(i + 1))}</em>` : esc(s); }
 function kopiere(w, el) {
@@ -536,7 +559,6 @@ function ergebnis(j, ziel) {
     </aside>
     <div class="li-erg__r">
       ${j.beispiel ? `<p class="platte li-hinweis li-hinweis--bsp" data-r><b>Beispiel</b>${esc(t('p_beispiel_h'))}</p>` : ''}
-      ${j.probe && !j.beispiel ? `<p class="platte li-hinweis li-hinweis--probe" data-r><b>Probe</b>${esc(t('p_probe'))}</p>` : ''}
       ${j.ki_fehler ? `<p class="platte li-hinweis li-hinweis--ki" data-r>${esc(t('p_ki_fehler', String(j.ki_fehler).replace(/^[A-ZÄÖÜ-]+ · /, '')))}</p>` : `
       <section class="platte li-gesamt" data-r><p class="mono">${esc(t('p_gesamt'))}${k.art ? ' · ' + esc(k.art) : ''}</p><p class="li-gesamt__s">${esc(k.gesamt || '')}</p></section>
       <h3 class="li-erg__h">${esc(t('p_punkte'))}</h3><ol class="li-punkte">${punkte}</ol>
@@ -554,7 +576,6 @@ function alsText(j) {
   const m = j.messung, k = j.ki || {};
   const z = [`${t('name')} · ${t('pruefung')} · ${j.name}`, ''];
   if (j.beispiel) z.push(t('p_beispiel_h'), '');
-  if (j.probe) z.push(t('p_probe'), '');
   if (k.gesamt) z.push(k.gesamt, '');
   (k.punkte || []).forEach(p => z.push(`· ${(t('ber')[p.bereich]) || p.bereich} – ${t('u_' + p.urteil) || p.urteil}: ${p.titel}. ${p.text}`));
   z.push('', t('p_farben') + ':');
@@ -564,12 +585,12 @@ function alsText(j) {
 }
 function sichere(j) {
   // nur auf ausdrücklichen Wunsch: eine Datei auf diesem Rechner, nichts auf dem Server
-  const html = `<!doctype html><meta charset="utf-8"><title>${esc(t('name'))} · ${esc(j.name)}</title><body style="font:15px/1.6 system-ui;max-width:820px;margin:40px auto;color:#041023;background:#e7ecf3;padding:0 20px">
-    <h1 style="font:400 26px/1.2 'Open Sans',Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:#0a2552">${esc(t('pruefung'))}: ${esc(j.name)}</h1><img src="${j.vorschau}" style="max-width:360px;border-radius:12px"><pre style="white-space:pre-wrap;font:14px/1.6 system-ui">${esc(alsText(j))}</pre>
-    <p style="color:#0a2552;font-size:12px">${esc(t('name'))} · Wirtschaft am Schlössli, Bottighofen · ${new Date().toLocaleString('de-CH')}</p></body>`;
+  const html = `<!doctype html><meta charset="utf-8"><title>${esc(t('name'))} · ${esc(j.name)}</title><body style="font:15px/1.6 system-ui;max-width:820px;margin:40px auto;color:#2A2833;background:#FAF4F4;padding:0 20px">
+    <h1 style="font:340 30px/1.15 Georgia,serif;color:#3A3845">${esc(t('pruefung'))}: ${esc(j.name)}</h1><img src="${j.vorschau}" style="max-width:360px;border-radius:12px"><pre style="white-space:pre-wrap;font:14px/1.6 system-ui">${esc(alsText(j))}</pre>
+    <p style="color:#B15736;font-size:12px">${esc(t('name'))} · Culinarium Hannover · ${new Date().toLocaleString('de-DE')}</p></body>`;
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
-  a.download = 'hausbuch-pruefung-' + (j.name.replace(/\.[a-z0-9]+$/i, '').replace(/[^a-z0-9äöü_-]+/gi, '-').toLowerCase().slice(0, 60) || 'entwurf') + '.html';
+  a.download = 'markenpruefung-culinarium-' + (j.name.replace(/\.[a-z0-9]+$/i, '').replace(/[^a-z0-9äöü_-]+/gi, '-').toLowerCase().slice(0, 60) || 'entwurf') + '.html';
   document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
 }
 
@@ -601,7 +622,7 @@ function melde(text, fehl = false) {
 }
 
 /* ---------------------------------------------------------------- Start */
-/* Startfehler-Tür (R04): statt einer leeren Fläche sagt das Hausbuch, dass und warum es nicht startet */
+/* Startfehler-Tür (R04): statt einer leeren Fläche sagt Le Livre, dass und warum es nicht startet */
 function startfehler(grund) {
   window.LIVRE_BEREIT = true; clearTimeout(window.LIVRE_LADE);
   $('#ansicht').innerHTML = `<div class="platte li-tuer" role="alert"><span class="li-tuer__z">${ZEICHEN_N}</span><h1>${esc(t('tuer_t'))}</h1>
@@ -621,7 +642,7 @@ function bereit(ansicht) {
   return Promise.race([Promise.all([document.fonts ? document.fonts.ready : 0, bild]), new Promise(r => setTimeout(r, 2500))]);
 }
 (async function () {
-  document.documentElement.lang = SP === 'de' ? 'de-CH' : SP;
+  document.documentElement.lang = SP;
   try {
     const vorgeladen = $('link[rel="preload"][as="fetch"]');
     try {
@@ -631,12 +652,12 @@ function bereit(ansicht) {
       if (!S.d || !Array.isArray(S.d.fotos) || !S.d.stand || !Array.isArray(S.d.farben)) throw new Error('Form');
       NAMEN = Object.assign({}, S.d.namen || {}, (window.WO_HAUS && WO_HAUS.namen) || {});
       window.LIVRE_NAMEN = NAMEN;
-      document.title = `${NAMEN.marke || 'Das Hausbuch'} · Wirtschaft am Schlössli`;
+      document.title = `${NAMEN.marke || 'Le Livre'} · Culinarium Hannover`;
     } catch (e) { return startfehler(t('fehler_json') + ' (' + (/Failed to fetch|Load failed|NetworkError/.test(e.message) ? 'offline' : e.message) + ')'); }
     const h = location.hash.slice(1);
     try {
       const ausMaison = /\/maison\/?(index\.html)?([?#].*)?$/.test(document.referrer) && ((performance.getEntriesByType('navigation')[0] || {}).type !== 'reload');
-      S.ansicht = ANSICHTEN.includes(h) ? h : ausMaison ? (localStorage.removeItem('sl-livre-ansicht'), 'start') : (ANSICHTEN.includes(localStorage.getItem('sl-livre-ansicht')) ? localStorage.getItem('sl-livre-ansicht') : 'start');
+      S.ansicht = ANSICHTEN.includes(h) ? h : ausMaison ? (localStorage.removeItem('cu-livre-ansicht'), 'start') : (ANSICHTEN.includes(localStorage.getItem('cu-livre-ansicht')) ? localStorage.getItem('cu-livre-ansicht') : 'start');
     } catch (e) { S.ansicht = 'start'; }
     await bereit(S.ansicht);
     clearTimeout(window.LIVRE_LADE);

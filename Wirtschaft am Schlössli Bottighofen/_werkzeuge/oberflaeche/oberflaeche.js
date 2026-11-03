@@ -28,14 +28,14 @@
     buch: 'M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3zM21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z', pfeil: 'M7 17L17 7M8 7h9v9',
     rechts: 'M5 12h14M13 6l6 6-6 6', links: 'M19 12H5M11 6l-6 6 6 6', plus: 'M12 5v14M5 12h14', suche: 'M11 4a7 7 0 1 0 0 14a7 7 0 1 0 0-14zM20 20l-4-4',
     chat: 'M4 5h16v11H9l-5 4z', pdf: 'M6 3h9l3 3v15H6zM9 13h6M9 17h6M14 3v4h4', zurueck: 'M9 14L4 9l5-5M4 9h11a5 5 0 0 1 0 10h-3', haken: 'M5 12l5 5 9-10',
-    x: 'M6 6l12 12M18 6L6 18', menue: 'M4 7h16M4 12h16M4 17h16', siegel: 'M12 3a6 6 0 1 0 0 12a6 6 0 1 0 0-12zM9 14.5L8 21l4-2 4 2-1-6.5',
+    x: 'M9 14.5 4 9.5 9 4.5M4 9.5h11a5 5 0 0 1 0 10h-3', menue: 'M4 7h16M4 12h16M4 17h16', siegel: 'M12 3a6 6 0 1 0 0 12a6 6 0 1 0 0-12zM9 14.5L8 21l4-2 4 2-1-6.5',
     balken: 'M5 20v-9M12 20V5M19 20v-6M3 20h18', druck: 'M7 8V3h10v5M6 17H4v-7h16v7h-2M7 14h10v7H7z', blatt: 'M5 19c0-8 5-14 14-14 0 9-6 14-14 14zM5 19l7-7',
     auge: 'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12zM12 9a3 3 0 1 0 0 6a3 3 0 1 0 0-6z', hoch: 'M12 19V5M6 11l6-6 6 6',
     kopie: 'M8 8h11v13H8zM5 16V3h11', verlauf: 'M3 12a9 9 0 1 0 3-6.7M3 4v5h5M12 8v4l3 2', ziehen: 'M9 5h.01M15 5h.01M9 12h.01M15 12h.01M9 19h.01M15 19h.01'
   };
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function ic(n, k) { return '<svg class="wo-ic' + (k ? ' ' + k : '') + '" viewBox="0 0 24 24" aria-hidden="true"><path d="' + (I[n] || I.pfeil) + '"/></svg>'; }
-  function name(k) { if (H.namen && H.namen[k]) return H.namen[k]; var n = NAMEN[k]; return n ? n[H.welt === 'land' ? 1 : 0] : k; }   // Schlössli 19.10.2026: eigene Namen des Hauses (WO_HAUS.namen) gehen vor
+  function name(k) { if (H.namen && H.namen[k]) return H.namen[k]; var n = NAMEN[k]; return n ? n[H.welt === 'land' ? 1 : 0] : k; }   // anderes Haus 19.10.2026: eigene Namen des Hauses (WO_HAUS.namen) gehen vor
   function zeichen() {
     return '<span class="wo-zeichen" aria-hidden="true" style="aspect-ratio:' + (H.zeichenMass || 1) + ';background:currentColor;-webkit-mask:url(' + H.zeichen + ') center/contain no-repeat;mask:url(' + H.zeichen + ') center/contain no-repeat"></span>';
   }
@@ -63,10 +63,22 @@
       + '<span class="wo-trenn"></span>' + knopf('Website ansehen', 'welt', 'gold', { href: o.website || '/', neu: true, klein: true }) + '</div>'
       + '<button class="wo-kopf__ber" type="button" aria-expanded="false" data-wo-rand-knopf>' + ic('menue') + '<span>Bereiche</span></button>';
   }
+  /* Foto des Startbilds (Oberchef 29.10.2026, Leistung): srcset aus den Grössen der Website (640/1000, bei 2× höchstens rund 2× die Anzeigebreite),
+     das erste Startbild einer Seite mit Vorrang, jedes weitere (verborgene Ansichten) erst bei Bedarf; Platzhalter in der Motivfarbe (WO_HAUS.fotoFarbe). */
+  var sbZahl = 0;
+  function sbFoto(f, srcset, sizes) {
+    var m = /^(.*\/assets\/bild\/[^\/]+?)-(\d+)\.webp$/.exec(f || ''), vorn = sbZahl++ === 0;
+    var lade = vorn ? ' fetchpriority="high"' : ' loading="lazy"';
+    var farbe = H.fotoFarbe ? ' style="background-color:' + H.fotoFarbe + '"' : '';
+    /* eigene Fotos eines Werkzeugs (z. B. die Köpfe der Plakatwerkstatt) bringen ihr srcset/sizes selbst mit (30.10.2026) */
+    if (!m) return '<img src="' + f + '"' + (srcset ? ' srcset="' + srcset + '" sizes="' + (sizes || '50vw') + '"' : '') + ' alt="Das ' + esc(H.name) + ' von aussen" decoding="async"' + lade + farbe + '>';
+    return '<img src="' + m[1] + '-1000.webp" srcset="' + m[1] + '-640.webp 640w, ' + m[1] + '-1000.webp 1000w" sizes="(max-width:900px) 100vw, 46vw" '
+      + 'alt="Das ' + esc(H.name) + ' von aussen" decoding="async"' + lade + farbe + '>';
+  }
   function startbild(o) {
     var art = o.art || 'voll';
     return '<section class="wo-sb wo-sb--' + art + '" aria-label="Startbild">'
-      + '<figure class="wo-sb__foto"><img src="' + (o.foto || H.foto) + '" alt="Das ' + esc(H.name) + ' von aussen" decoding="async"><figcaption>' + zeichen() + '<span><b>' + esc(H.name) + '</b>' + esc(H.ort || '') + '</span></figcaption></figure>'
+      + '<figure class="wo-sb__foto">' + sbFoto(o.foto || H.foto, o.srcset, o.sizes) + '<figcaption>' + zeichen() + '<span><b>' + esc(H.name) + '</b>' + esc(H.ort || '') + '</span></figcaption></figure>'
       + '<div class="wo-sb__text"><p class="wo-sb__zier">' + zeichen() + '<span>' + (o.zier || esc(name(o.werkzeug) + ' · ' + (H.voll || H.name))) + '</span><i></i></p>'
       + '<h1 class="wo-sb__h">' + o.h1 + '</h1>' + (o.satz ? '<p class="wo-sb__satz">' + o.satz + '</p>' : '')
       + (o.knoepfe ? '<div class="wo-sb__kn">' + o.knoepfe + '</div>' : '') + '</div></section>';
@@ -106,6 +118,115 @@
     if (e.target.closest && e.target.closest('.wo-rand a, .wo-rand button')) document.documentElement.classList.remove('wo-rand-auf');
   }, true);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') document.documentElement.classList.remove('wo-rand-auf'); });
-  window.WO = { haus: H, namen: NAMEN, reihe: REIHE, esc: esc, ic: ic, name: name, zeichen: zeichen, gruss: gruss, knopf: knopf, kopf: kopf, startbild: startbild, rand: rand, leiste: leiste, bereit: bereit };
+  /* Handy (Tor 5, 30.10.2026): der Kopf blendet seine Knöpfe rechts aus, darum stehen sie im Rand unter «Im Kopf» noch einmal.
+     Links tragen ihr Ziel mit, Knöpfe lösen den Knopf im Kopf aus (der behält seine Wirkung); was der Rand schon als Weg führt, steht nicht doppelt da. */
+  function kopfImRand() {
+    var r = document.querySelector('.wo-kopf .wo-kopf__r'), rd = document.querySelectorAll('.wo-rand');
+    if (!r || !rd.length) return;
+    var teile = [], sig = '';
+    Array.prototype.forEach.call(r.children, function (k) {
+      if (!/^(A|BUTTON)$/.test(k.tagName)) return;
+      var t = (k.getAttribute('aria-label') || k.getAttribute('title') || k.textContent || '').replace(/\s+/g, ' ').trim();
+      if (!t) return;
+      teile.push({ k: k, t: t, href: k.tagName === 'A' ? k.href : '' }); sig += t + '|' + (k.tagName === 'A' ? k.href : '') + ';';
+    });
+    Array.prototype.forEach.call(rd, function (rand) {
+      var da = rand.querySelector(':scope > .wo-rand__kopf');
+      if (da && da.getAttribute('data-sig') === sig) return;
+      var hat = {};
+      var wort = {};   /* auch gleichlautende Einträge zählen (Knopf statt Link, z. B. «Chat ausprobieren» im Gästebuch, Tor 3) */
+      Array.prototype.forEach.call(rand.querySelectorAll('a[href]'), function (a) { if (!a.closest('.wo-rand__kopf')) hat[a.href] = 1; });
+      Array.prototype.forEach.call(rand.querySelectorAll('a, button'), function (a) { if (!a.closest('.wo-rand__kopf')) wort[(a.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase()] = 1; });
+      var s = '';
+      teile.forEach(function (x, i) {
+        if (wort[x.t.toLowerCase()]) return;
+        if (x.href) { if (!hat[x.href]) s += '<a href="' + x.k.getAttribute('href') + '"' + (x.k.target ? ' target="' + x.k.target + '" rel="noopener"' : '') + '>' + esc(x.t) + ic('pfeil') + '</a>'; }
+        else s += '<button type="button" data-wo-kopf-nr="' + i + '">' + esc(x.t) + ic('pfeil') + '</button>';
+      });
+      if (!s) { if (da) da.remove(); return; }
+      if (!da) { da = document.createElement('div'); da.className = 'wo-rand__wege wo-rand__kopf'; da.setAttribute('aria-label', 'Im Kopf'); }
+      da.setAttribute('data-sig', sig); da.innerHTML = s;
+      if (da.parentNode !== rand || da.nextSibling) rand.appendChild(da);
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.wo-rand__kopf [data-wo-kopf-nr]');
+    if (!b) return;
+    var k = document.querySelector('.wo-kopf .wo-kopf__r'), z = 0, nr = +b.getAttribute('data-wo-kopf-nr');
+    if (k) Array.prototype.some.call(k.children, function (c) {
+      if (!/^(A|BUTTON)$/.test(c.tagName) || !(c.getAttribute('aria-label') || c.getAttribute('title') || c.textContent || '').trim()) return false;
+      if (z++ === nr) { c.click(); return true; } return false;
+    });
+  });
+  var kiWartet = 0;
+  function kiBald() { if (kiWartet) return; kiWartet = requestAnimationFrame(function () { kiWartet = 0; kopfImRand(); }); }
+  function kiLos() {
+    kopfImRand();
+    if (window.MutationObserver) new MutationObserver(function (m) {
+      for (var i = 0; i < m.length; i++) { var t = m[i].target; if (!(t.closest && t.closest('.wo-rand__kopf'))) return kiBald(); }
+    }).observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ['href', 'title', 'aria-label'] });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', kiLos); else kiLos();
+  /* Rundgang am Handy (Tor 5, 30.10.2026): liegt ein Ziel im zugeklappten Rand, klappt der Rundgang ihn erst auf und zeigt dann darauf.
+     Er klappt ihn wieder zu, sobald ein Schritt ausserhalb folgt oder der Rundgang endet; einen vom Gast geöffneten Rand lässt er offen. */
+  function randKnopf() { return document.querySelector('[data-wo-rand-knopf]'); }
+  function randZiel(e) {
+    var rand = e && e.closest && e.closest('.wo-rand'), k = randKnopf(), h = document.documentElement;
+    if (!rand || !k || getComputedStyle(k).display === 'none') return null;
+    if (!h.classList.contains('wo-rand-auf')) { h.classList.add('wo-rand-auf'); h.setAttribute('data-wo-rand-rdg', ''); k.setAttribute('aria-expanded', 'true'); }
+    var b = e.getBoundingClientRect();
+    return b.width > 4 && b.height > 4 ? e : null;
+  }
+  /* Rundgang am Handy (Tor 2, 30.10.2026): die Karte liegt unten über der Seite, der Kopf oben. Liegt das Ziel nicht ganz im freien Feld dazwischen,
+     rückt die Seite es dort in die Mitte (ist es höher als das Feld, an dessen oberen Rand). Feste Leisten bleiben, wo sie sind. */
+  function rdgHandy(z, karte) {
+    if (!z || !karte || innerWidth > 700) return;
+    karte.style.bottom = '';
+    for (var a = z; a && a.nodeType === 1; a = a.parentElement) {
+      var pos = getComputedStyle(a).position;
+      if (pos === 'sticky') return;
+      if (pos === 'fixed') {   /* feste Leiste unten (Tor 2, R3): die Karte steigt darüber, die Leiste bleibt ganz sichtbar */
+        var l = z.getBoundingClientRect();
+        if (l.top > innerHeight / 2) karte.style.bottom = Math.round(innerHeight - l.top + 14) + 'px';
+        return;
+      }
+    }
+    var k = document.querySelector('.wo-kopf'), kb = k ? k.getBoundingClientRect().bottom : 0;
+    var oben = Math.max(72, kb) + 12, unten = karte.getBoundingClientRect().top - 12, r = z.getBoundingClientRect();
+    if (unten - oben < 80 || (r.top >= oben && r.bottom <= unten)) return;
+    var soll = r.height <= unten - oben ? oben + (unten - oben - r.height) / 2 : oben;
+    window.scrollBy({ top: r.top - soll, behavior: 'instant' });
+  }
+  function randZurueck(ziel) {
+    var h = document.documentElement, k = randKnopf();
+    if (!h.hasAttribute('data-wo-rand-rdg') || (ziel && ziel.closest && ziel.closest('.wo-rand'))) return;
+    h.classList.remove('wo-rand-auf'); h.removeAttribute('data-wo-rand-rdg'); if (k) k.setAttribute('aria-expanded', 'false');
+  }
+  window.WO = { haus: H, namen: NAMEN, reihe: REIHE, esc: esc, ic: ic, name: name, zeichen: zeichen, gruss: gruss, knopf: knopf, kopf: kopf, startbild: startbild, rand: rand, leiste: leiste, bereit: bereit, randZiel: randZiel, randZurueck: randZurueck, rdgHandy: rdgHandy };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bereit); else bereit();
+})();
+
+/* Gestaltung 28.10.2026 (Prüfchat Gestaltung): der Rand läuft mit (rahmen-buehne.css, position:sticky). Passt er ganz ins Fenster, bleibt er unter dem Kopf stehen;
+   ist er länger, scrollt er erst mit und bleibt dann mit seinem unteren Ende stehen. So steht links nie eine leere Fläche und nie ein abgeschnittener Eintrag. */
+(function () {
+  var KOPF = 96, LUFT = 24;
+  function setze() {
+    var r = document.querySelectorAll('.wo-rand');
+    for (var i = 0; i < r.length; i++) { var h = r[i].offsetHeight; if (!h) continue; var v = Math.min(KOPF, innerHeight - h - LUFT) + 'px'; if (r[i].style.getPropertyValue('--wo-rand-top') !== v) r[i].style.setProperty('--wo-rand-top', v); }
+  }
+  var wartet = 0;
+  function bald() { if (wartet) return; wartet = requestAnimationFrame(function () { wartet = 0; setze(); }); }
+  function los() {
+    setze(); addEventListener('resize', setze);
+    /* 30.10.2026: kein ResizeObserver mehr am Rand (WebKit meldete beim Laden «ResizeObserver loop completed», sobald die Bewegung im selben Bild
+       Titel und Zahlen setzt). Der Rand ändert seine Höhe nur, wenn sich sein Inhalt ändert oder eine Gruppe auf- und zuklappt: das melden Mutation und Übergang. */
+    var r = document.querySelectorAll('.wo-rand');
+    for (var i = 0; i < r.length; i++) {
+      if (window.MutationObserver) new MutationObserver(bald).observe(r[i], { childList: true, subtree: true, attributes: true, characterData: true });
+      r[i].addEventListener('transitionend', bald); r[i].addEventListener('toggle', bald, true);
+    }
+    addEventListener('load', bald);
+    setTimeout(setze, 600); setTimeout(setze, 2000);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', los); else los();
 })();

@@ -1,6 +1,6 @@
 {
- "name": "Das Hausbuch",
- "hinweis": "schloessli-livre, 19.10.2026 (Form wie Ruedihus, Carlton und Doldenhorn _werkzeuge/livre/online.json). Funktion api/livre.py aus _werkzeuge/livre/online/livre_online.py, Logik und Daten als lib. Oberfläche statisch unter /werkzeuge/livre/ (keine Quellen, kein _quellen.json, keine Prüfordner). Speichert nichts, kein Blob. Braucht api/_speicher.py des gemeinsamen Online-Wegs (baut der Werkbank-Chat). Downloads online in Website-Grösse (Originale nur lokal). KI nur mit ANTHROPIC_API_KEY am Vercel-Projekt und LIVRE_KI=1 (Roberts Wort, Regel 54), sonst Probe-Antwort; requirements: Pillow, PyMuPDF. Fotos aus /assets/img/, Schriften /assets/fonts/ (OpenSans-var, Instrument Sans, DM Mono, Caveat), Kleid der Werkzeuge aus _werkzeuge/oberflaeche/ unter /assets/oberflaeche/. Nichts davon ist hochgeladen.",
+ "name": "Le Livre",
+ "hinweis": "culinarium-livre, 28.10.2026 (Form wie Schäfli _werkzeuge/livre/online.json). Funktion api/livre.py aus _werkzeuge/livre/online/livre_online.py, Logik und Daten als lib. Oberfläche statisch unter /werkzeuge/livre/ (keine Quellen, kein _quellen.json, kein _register-vor-schaerfen.json, keine Prüfordner). Speichert nichts, kein Blob. Downloads online in Website-Grösse (Originale nur lokal). KI nur mit ANTHROPIC_API_KEY am Vercel-Projekt und LIVRE_KI=1 (Roberts Wort, Regel 54), sonst Probe-Antwort; requirements: Pillow, PyMuPDF. Fotos aus /assets/bild/, Schriften /assets/schrift/ (Fraunces, Urbanist, Instrument Sans, DM Mono), Zeichen /assets/zeichen/, Kleid aus _werkzeuge/oberflaeche/ unter /assets/oberflaeche/. Nichts davon ist hochgeladen.",
  "funktionen": {
   "api/livre.py": {
    "von": "_werkzeuge/livre/online/livre_online.py",
@@ -21,18 +21,15 @@
   "_werkzeuge/livre/zur-werkbank.js": "werkzeuge/livre/zur-werkbank.js",
   "_werkzeuge/livre/livre.json": "werkzeuge/livre/livre.json",
   "_werkzeuge/livre/buch.html": "werkzeuge/livre/buch.html",
-  "_werkzeuge/livre/buch.css": "werkzeuge/livre/buch.css",
   "_werkzeuge/livre/buch.js": "werkzeuge/livre/buch.js",
   "_werkzeuge/livre/anleitung.html": "werkzeuge/livre/anleitung.html",
   "_werkzeuge/livre/anleitung.js": "werkzeuge/livre/anleitung.js",
-  "_werkzeuge/livre/hero-start.webp": "werkzeuge/livre/hero-start.webp",
-  "_werkzeuge/livre/hero-bilder.webp": "werkzeuge/livre/hero-bilder.webp",
-  "_werkzeuge/livre/hero-dateien.webp": "werkzeuge/livre/hero-dateien.webp",
-  "_werkzeuge/livre/hero-pruefung.webp": "werkzeuge/livre/hero-pruefung.webp",
   "_werkzeuge/livre/dateien": "werkzeuge/livre/dateien",
   "_werkzeuge/livre/beispiel": "werkzeuge/livre/beispiel",
   "_werkzeuge/livre/anleitung": "werkzeuge/livre/anleitung",
-  "_werkzeuge/livre/original": "werkzeuge/livre/original"
+  "_werkzeuge/livre/original": "werkzeuge/livre/original",
+  "_werkzeuge/livre/buch": "werkzeuge/livre/buch",
+  "_werkzeuge/livre/listen": "werkzeuge/livre/listen"
  },
  "umleitungen": [
   {

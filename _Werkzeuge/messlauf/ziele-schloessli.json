@@ -1,0 +1,150 @@
+[
+ {
+  "k": "tresen",
+  "name": "Das Hafenbüro",
+  "url": "http://127.0.0.1:9281/_werkzeuge/maison/"
+ },
+ {
+  "k": "schaufenster",
+  "name": "Das Schaufenster",
+  "url": "http://127.0.0.1:9282/_werkzeuge/bureau/"
+ },
+ {
+  "k": "schaufenster-anleitung",
+  "name": "Das Schaufenster · Anleitung",
+  "url": "http://127.0.0.1:9282/_werkzeuge/bureau/anleitung.html",
+  "rundgang": false,
+  "nav": 0
+ },
+ {
+  "k": "pairing-karte",
+  "name": "Das Kartenpult",
+  "url": "http://127.0.0.1:9283/_werkzeuge/carte/"
+ },
+ {
+  "k": "pairing-karte-anleitung",
+  "name": "Das Kartenpult · Anleitung",
+  "url": "http://127.0.0.1:9283/_werkzeuge/carte/anleitung.html",
+  "rundgang": false,
+  "nav": 0
+ },
+ {
+  "k": "gaestebuch",
+  "name": "Das Reservationsbuch",
+  "url": "http://127.0.0.1:9284/_werkzeuge/reception/"
+ },
+ {
+  "k": "gaestebuch-anleitung",
+  "name": "Das Reservationsbuch · Anleitung",
+  "url": "http://127.0.0.1:9284/_werkzeuge/reception/anleitung.html",
+  "rundgang": false,
+  "nav": 0
+ },
+ {
+  "k": "markenbuch",
+  "name": "Das Markenbuch",
+  "url": "http://127.0.0.1:9285/_werkzeuge/livre/"
+ },
+ {
+  "k": "markenbuch-buch",
+  "name": "Das Markenbuch · Die Hausregeln",
+  "url": "http://127.0.0.1:9285/_werkzeuge/livre/buch.html",
+  "rundgang": false
+ },
+ {
+  "k": "markenbuch-anleitung",
+  "name": "Das Markenbuch · Anleitung",
+  "url": "http://127.0.0.1:9285/_werkzeuge/livre/anleitung.html",
+  "rundgang": false,
+  "nav": 0
+ },
+ {
+  "k": "besucherliste",
+  "name": "Die Besucherliste",
+  "url": "http://127.0.0.1:9286/_werkzeuge/registre/"
+ },
+ {
+  "k": "besucherliste-anleitung",
+  "name": "Die Besucherliste · Anleitung",
+  "url": "http://127.0.0.1:9286/_werkzeuge/registre/anleitung.html",
+  "rundgang": false,
+  "nav": 0
+ },
+ {
+  "k": "plakatwerkstatt",
+  "name": "Die Hausdruckerei",
+  "url": "http://127.0.0.1:9287/_werkzeuge/imprimerie/"
+ },
+ {
+  "k": "plakatwerkstatt-mail",
+  "name": "Die Hausdruckerei · Mail",
+  "url": "http://127.0.0.1:9287/_werkzeuge/imprimerie/mail.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank",
+  "name": "Die Werkbank",
+  "url": "http://127.0.0.1:9288/werkbank/index.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-ki",
+  "name": "Die Werkbank · KI",
+  "url": "http://127.0.0.1:9288/werkbank/ki.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-karte",
+  "name": "Die Werkbank · Karte",
+  "url": "http://127.0.0.1:9288/werkbank/karte.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-geprueft",
+  "name": "Die Werkbank · Geprüft",
+  "url": "http://127.0.0.1:9288/werkbank/geprueft/index.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-befund",
+  "name": "Die Werkbank · Befund",
+  "url": "http://127.0.0.1:9288/befund/index.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-unterlagen",
+  "name": "Die Werkbank · Unterlagen",
+  "url": "http://127.0.0.1:9288/unterlagen/index.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-drucksachen",
+  "name": "Die Werkbank · Drucksachen",
+  "url": "http://127.0.0.1:9288/drucksachen/index.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-untersetzer",
+  "name": "Die Werkbank · Untersetzer",
+  "url": "http://127.0.0.1:9288/untersetzer/index.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-feed",
+  "name": "Die Werkbank · Feed",
+  "url": "http://127.0.0.1:9288/feed/index.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-mails",
+  "name": "Die Werkbank · Mails",
+  "url": "http://127.0.0.1:9288/mails/index.html",
+  "rundgang": false
+ },
+ {
+  "k": "werkbank-material",
+  "name": "Die Werkbank · Material",
+  "url": "http://127.0.0.1:9288/material/index.html",
+  "rundgang": false
+ }
+]

@@ -1,9 +1,9 @@
-/* Die Tafel (La Carte) · Wirtschaft am Schlössli Bottighofen — Satz der Karte (19.10.2026, Kopie aus der Tafel des Berghotel Gasterntal, dort aus dem
+/* La Carte · Culinarium Hannover — Satz der Karte (28.10.2026, Kopie aus der Tafel im Schäfli, dort aus Schlössli, Gasterntal,
    Ruedihus und Doldenhorn). Eine Datei für drei Stellen: die Vorschau im Werkzeug, die Druckseite (PDF) und die Prüfung im Rundlauf (node).
-   Die Karte liegt als Baum aus dem Satz vor, den satz_bau.py aus den Karten-Daten von Station 10 setzt (einlesen.py): Seiten, Elemente mit ihren
-   Merkmalen, Texte und feste Teile (Zeichen des Hauses). Aus denselben Daten entsteht hier Zeichen für Zeichen dasselbe HTML wie in satz/u-<karte>.html
+   Die Karte liegt als Baum aus dem Satz vor, den satz_bau.py aus den Daten des Hauses setzt (einlesen.py): Seiten, Elemente mit ihren Merkmalen,
+   Texte und feste Teile (Wortmarke). Aus denselben Daten entsteht hier Zeichen für Zeichen dasselbe HTML wie in satz/u-<karte>.html
    (geprüft mit pruefe.py rund). Gestalten (Fortgeschritten) legt sich als Stil über ein Element, ohne den Satz zu ändern.
-   Mittagsmenü (C08) in der Form des Hauses: ein Lunch-Menü mit drei Gängen je Woche (Teil MITTAG unten). Ohne Bibliothek. */
+   «Der nächste Abend» (C08/C24 in der Form des Hauses): Gänge mit Rudis Teller und Momos Drink, Datum, Preis (Teil ABEND unten). Ohne Bibliothek. */
 (function (G) {
   'use strict';
   var A = '', Z = '', M0 = '', M1 = '', M2 = '';
@@ -18,9 +18,10 @@
      lage = { x, y (mm), s (Faktor) · f Schrift · t Schriftgrösse (Faktor) · a Textart · c Farbe · al Ausrichtung · z Zeilenabstand · mt, mb (mm) · aus ·
      lin {x, y, b, d, c, aus} } an einem Element. Verschoben per transform (Ursprung oben links), der Satz bleibt. Ohne lage ist das HTML das alte. */
   function zahl(x) { return String(Math.round((+x || 0) * 100) / 100); }
-  var SCHRIFT = { titel: "'Open Sans',Arial,sans-serif", instrument: "'Instrument Sans',Arial,sans-serif", mono: "'DM Mono',Menlo,monospace" };
-  // Farben des Hauses (assets/css/main.css :root, Werte der Website; das Rot der Fensterläden nur als Punkt)
-  var FARBE = { tinte: '#041023', nacht: '#0b1d3d', tief: '#0A234C', stuhl: '#113d88', himmelt: '#0F3678', himmel: '#A2B6CF', himmelh: '#C5D2E1', kalk: '#E7ECF3', papier: '#F3F6F9', punkt: '#FD9964', weiss: '#ffffff' };   // Schlössli: Farben der Website (assets/css/haus.css :root)
+  // Schriften des Satzes (satz/satz.css, feste Schnitte aus fonts_statisch.py): Titel und Rudis Zeilen in Fraunces, Lauf Instrument Sans, Etiketten Urbanist, Daten DM Mono
+  var SCHRIFT = { titel: "'Fraunces Titel',Georgia,serif", zeile: "'Fraunces Zeile',Georgia,serif", instrument: "'Instrument Sans',Arial,sans-serif", etikett: "Urbanist,Arial,sans-serif", mono: "'DM Mono',Menlo,monospace" };
+  // Farben des Hauses (website/assets/culinarium.css :root): Nacht, Schiefer, Tinte, leise, Kerze (tief, hell), Warmweiss
+  var FARBE = { nacht: '#16151A', schiefer: '#3A3845', tinte: '#26242D', leise: '#5B5763', kerze: '#EF7649', kerzet: '#B15736', kerzeh: '#F5A689', papier: '#FAF4F4', weiss: '#ffffff' };
   var ALIGN = { links: ['left', 'flex-start'], mitte: ['center', 'center'], rechts: ['right', 'flex-end'] };
   function lageStil(l) {
     if (!l) return '';
@@ -35,7 +36,7 @@
     if (l.aus) st.push('visibility:hidden');
     if (SCHRIFT[l.f]) { st.push('--gf:' + SCHRIFT[l.f]); at += ' data-gf=""'; }
     if (FARBE[l.c]) { st.push('--gc:' + FARBE[l.c]); at += ' data-gc=""'; }
-    if (/^(normal|kursiv|versal|medium)$/.test(l.a || '')) at += ' data-ga="' + l.a + '"';
+    if (/^(normal|versal)$/.test(l.a || '')) at += ' data-ga="' + l.a + '"';   // nie fett, nie kursiv (Kleid des Culinarium)
     if (ALIGN[l.al]) { st.push('--gal:' + ALIGN[l.al][0] + ';--gai:' + ALIGN[l.al][1]); at += ' data-gal=""'; }
     if (+l.z) { st.push('--gz:' + zahl(+l.z)); at += ' data-gz=""'; }
     if (+l.t && Math.abs(+l.t - 1) > 0.004) at += ' data-gt="' + zahl(+l.t) + '"';
@@ -57,15 +58,16 @@
      titel: Titel einer Seite · text: Absatz · null: Behälter (die Liste geht hinein) · fest: gehört zum Rahmen der Seite (Fusszeile, Bild) */
   /* Gasterntal (Satz _werkbank/satz_daten.py): re Getränk mit Preisspalten · po Gericht mit Übersetzung und Preisen · rubrik Rubrik ·
      zw Zwischentitel (Weisse, Rote, Rosé) · h3 im Kasten Jugendschutz Zwischentitel · Absätze des Deckels, der Rubriken und des Kastens Text */
-  var EINHEIT = /(^| )(re|po|sb-g|sb-m|sb-wein)( |$)/;   // Schlössli 20.10.2026: Bausteine des Werkbank-Satzes (website/_werkbank/satz_daten.py)
-  var KIND_EINHEIT = /(^| )(nie-vorhanden)( |$)/;   // Kinder dieser Behälter sind je ein Eintrag (im Schlössli keine)
-  var RUBRIK = /(^| )(rubrik|sb-h|sb-band|sb-saison|sb-wart)( |$)/;
-  var ZWISCHEN = /(^| )(zw|sb-gut|sb-land|sb-region|sb-lr)( |$)/;
+  var EINHEIT = /(^| )(sb-g|sb-m)( |$)/;   // Culinarium 28.10.2026: Bausteine des Satzes (satz_bau.py): Gang (sb-m), Ticketpreis (sb-g)
+  var KIND_EINHEIT = /(^| )(nie-vorhanden)( |$)/;   // Kinder dieser Behälter sind je ein Eintrag (im Culinarium keine)
+  var RUBRIK = /(^| )(sb-h|sb-wart)( |$)/;   // Culinarium: der Titel des Abends (h2.sb-band) ist Titel, keine Rubrik
+  var ZWISCHEN = /(^| )(sb-gut|sb-land|sb-region)( |$)/;
+  var FEST = /(^| )(sb-zeichen|sb-gang)( |$)/;   // Rahmen der Seite: Wortmarke, Strich zwischen den Gängen
   function klasse(n) { var m = /\sclass="([^"]*)"/.exec(n.a[1] || ''); return m ? m[1] : ''; }
   function art(n, eltern) {
     if (!n || typeof n !== 'object' || n.fn !== 'el') return null;
     var tag = n.a[0], kl = klasse(n), ek = eltern ? klasse(eltern) : '';
-    if (tag === 'footer' || tag === 'img' || tag === 'svg') return 'fest';
+    if (tag === 'footer' || tag === 'img' || tag === 'svg' || FEST.test(kl)) return 'fest';
     if (EINHEIT.test(kl) || (eltern && eltern.fn === 'el' && KIND_EINHEIT.test(ek) && tag === 'div')) return 'eintrag';
     if (RUBRIK.test(kl)) return 'rubrik';
     if (ZWISCHEN.test(kl) || (tag === 'h3' && !kl)) return 'zwischen';
@@ -86,7 +88,20 @@
     var in_ = function (re) { return kette.some(function (k) { return re.test(k); }); };
     var preisSpalte = /^(span|b) .*\b(rk|pz)\b|^span (rk|pz)$/;
     if (tag === 'h1') return 'Titel';
-    // Schlössli 20.10.2026: Felder der Bausteine des Werkbank-Satzes
+    // Culinarium 28.10.2026: Felder eines Gangs (satz_bau.py): Gang, Rudis Teller, Momos Drink
+    if (/(^| )sb-gn( |$)/.test(kl)) return 'Gang';
+    if (tag === 'p' && /(^| )sb-n( |$)/.test(kl) && in_(/^div sb-m/)) return 'Teller';
+    if (/(^| )sb-dr( |$)/.test(kl)) return 'Drink';
+    if (/(^| )(sb-datum|sb-mit)( |$)/.test(kl)) return 'Text';
+    // Schäfli 21.10.2026: Felder der Bausteine (satz_bau.py)
+    if (/(^| )sb-pn( |$)/.test(kl)) return 'Name';
+    if (/(^| )sb-pr( |$)/.test(kl)) return 'Rolle';
+    if (/(^| )sb-rn( |$)/.test(kl)) return 'Nummer';
+    if (/(^| )sb-hinweis( |$)/.test(kl)) return 'Hinweis';
+    if (tag === 'span' && in_(/^h3 sb-land/)) return 'Land';
+    if (tag === 'small' && in_(/^p sb-p/)) return 'Währung';
+    if (tag === 'p' && /(^| )sb-n( |$)/.test(kl)) return 'Name';
+    if (tag === 'p' && /(^| )(sb-gruss|sb-satz|sb-unter|sb-zeiten)( |$)/.test(kl)) return 'Text';
     if (/(^| )sb-mp( |$)/.test(kl)) return 'Preis';                            // Lästermeile: Preis am Namen
     if (tag === 'b' && in_(/^p sb-menupreis/)) return 'Preis';                // Bankett: Menüpreis
     if (tag === 'em' && in_(/^p sb-p/)) return 'Angabe';                      // «Hauptgang» vor dem zweiten Preis
@@ -111,7 +126,7 @@
   }
   /* ---- Schlössli 20.10.2026: Kapitälchen und Kürzel wie website/_werkbank/satz_daten.py (_kk, kuerzel) ---- */
   function istKl(y) { return y && y.fn === 'el' && y.a[0] === 'span' && klasse(y) === 'kl'; }
-  function istKap(x) { return x && x.fn === 'el' && /^(p|h2)$/.test(x.a[0]) && /(^| )(sb-n|sb-h)( |$)/.test(klasse(x)) && !/(^| )sb-n--gross( |$)/.test(klasse(x)); }
+  function istKap(x) { return false; }   // Culinarium (wie Schäfli): keine Kapitälchen im Satz (Namen stehen als ganzer Text, Versalien wie auf der Karte des Hauses)
   function kapText(x) { return x.a.slice(2).map(function (y) { return typeof y === 'string' ? y : istKl(y) ? y.a.slice(2).filter(function (z) { return typeof z === 'string'; }).join('') : ''; }).join('').replace(/\s+/g, ' ').trim(); }
   function kapBau(t, nurErstes) {   // _kk(): erster Buchstabe gross, Rest des Worts in span.kl; bei Namen nur das erste Wort, danach jedes Wort ganz in span.kl
     var aus = [], erstes = true;
@@ -281,7 +296,7 @@
   function marken(h) { return h.replace(new RegExp(M0 + '([^' + M1 + ']*)' + M1, 'g'), function (m, p) { return '<k-t data-k="' + p + '">'; }).split(M2).join('</k-t>'); }
 
   function seiten(d, opt) {
-    var dd = d.art === 'mittag' ? mittagAnwenden(JSON.parse(JSON.stringify(d))) : d, sz = new Satz(dd, opt), aus = [];
+    var dd = d.art === 'abend' ? abendAnwenden(JSON.parse(JSON.stringify(d))) : d, sz = new Satz(dd, opt), aus = [];
     (dd.seiten || []).forEach(function (n, i) {
       if (n.aus) return;
       var h = teileLos(sz.seite(n, i, aus.length + 1), dd.teile);
@@ -293,84 +308,89 @@
   function dokument(d) { return d.kopf + seiten(d, {}).join('') + d.fuss; }
   function kopfCss(d) {
     var f = d.format || [210, 297];
-    return '@page{size:' + f[0] + 'mm ' + f[1] + 'mm;margin:0}' + (d.art === 'mittag' ? MT_CSS : '');
+    return '@page{size:' + f[0] + 'mm ' + f[1] + 'mm;margin:0}' + (d.art === 'abend' ? MT_CSS : '');
   }
 
-  /* ---------------------------------------------------------------- Mittagsmenü (C08) · Lunch der Woche, Wirtschaft am Schlössli (19.10.2026)
-     Das Haus hat kein Tagesmenü mit Salat, Vegi, Fleisch, Fisch, sondern ein Lunch-Menü mit drei Gängen, das wechselt (Original
-     _quelle/website/pdf/Lunch_261019.pdf: links der Gruss, rechts «Lunch – Menü» zwischen zwei Linien, drei Gänge mit «***» dazwischen, darunter der Preis).
-     Deshalb hier je Woche EIN Menü (woche.tage hat ein Element, die Woche), Gang = Gericht + Zeile darunter, Blatt A4 quer wie das Original.
-     Felder: woche = { ab, titel, gruss, zeiten, preis, zusatz, spruch, fuss, beispiel, tage: [{ zu, hinweis, vorspeise, vorspeise_z, haupt, haupt_z, dessert, dessert_z }] } */
+  /* ---------------------------------------------------------------- Der nächste Abend (C08/C24) · Culinarium Hannover (28.10.2026)
+     Das Haus hat kein Tagesmenü, sondern je Abend (Freitag und Samstag) ein Menü mit festen Gängen: zu jedem Gang Rudis Teller und Momos Drink
+     (Karte am Platz, Foto _quelle/extern/ig-highlights/2025-02-22_highlight-4865-06.jpg). Darum EIN Menü (abend.tage hat ein Element), Gang = Teller +
+     Drink; das Blatt ist gebaut wie die Karten der früheren Abende (satz_bau.py), A4 hoch, mittig: Wortmarke, Titel, Datum, «BY MOMO X RUDI», die Gänge,
+     unten der Ticketpreis. Felder: abend = { ab, titel, motto, mit, preis, zusatz, hinweis, fuss, beispiel, tage: [{ zu, hinweis, amuse, amuse_z,
+     aperitif, aperitif_z, vorspeise, vorspeise_z, haupt, haupt_z, dessert, dessert_z, absacker, absacker_z }] } */
   var TAGE = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
+  var KURZ = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
   var MONATE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
-  var GAENGE = [['vorspeise', 'Vorspeise', 'Vorspeise'], ['haupt', 'Hauptgang', 'Hauptgang'], ['dessert', 'Dessert', 'Dessert']];
+  var GAENGE = [['amuse', 'Amuse Bouche'], ['aperitif', 'Apéritif'], ['vorspeise', 'Vorspeise'], ['haupt', 'Hauptgang'], ['dessert', 'Dessert'], ['absacker', 'Absacker']];
   function datum(ab, plus) { var x = String(ab || '').split('-').map(Number); return new Date(x[0], (x[1] || 1) - 1, (x[2] || 1) + (plus || 0), 12); }
   function iso(dt) { return dt.getFullYear() + '-' + String(dt.getMonth() + 1).padStart(2, '0') + '-' + String(dt.getDate()).padStart(2, '0'); }
-  function montag(ab) { var dt = datum(ab); dt.setDate(dt.getDate() - ((dt.getDay() + 6) % 7)); return iso(dt); }
-  function tagName(ab, i) { var dt = datum(ab, i); return TAGE[(i % 7)] + ', ' + dt.getDate() + '. ' + MONATE[dt.getMonth()]; }
-  function spanne(ab, n) {
-    var a = datum(ab), b = datum(ab, (n || 7) - 1);
-    if (a.getFullYear() !== b.getFullYear()) return a.getDate() + '. ' + MONATE[a.getMonth()] + ' ' + a.getFullYear() + ' – ' + b.getDate() + '. ' + MONATE[b.getMonth()] + ' ' + b.getFullYear();
-    if (a.getMonth() !== b.getMonth()) return a.getDate() + '. ' + MONATE[a.getMonth()] + ' – ' + b.getDate() + '. ' + MONATE[b.getMonth()] + ' ' + b.getFullYear();
-    return a.getDate() + '. – ' + b.getDate() + '. ' + MONATE[b.getMonth()] + ' ' + b.getFullYear();
+  function freitag(ab) { var dt = datum(ab); dt.setDate(dt.getDate() + ((5 - dt.getDay() + 7) % 7)); return iso(dt); }   // der nächste Freitag ab diesem Tag (oder er selbst)
+  function tagName(ab, i) { var dt = datum(ab, i); return TAGE[(dt.getDay() + 6) % 7] + ', ' + dt.getDate() + '. ' + MONATE[dt.getMonth()] + ' ' + dt.getFullYear(); }
+  /* «Fr 27. und Sa 28. März 2026» wie die Plakate und website/bau.py ABENDE: der Abend am Freitag und am Samstag danach */
+  function spanne(ab) {
+    var a = datum(ab), b = datum(ab, 1), k = function (d) { return KURZ[(d.getDay() + 6) % 7] + ' ' + d.getDate() + '.'; };
+    if (a.getMonth() !== b.getMonth()) return k(a) + ' ' + MONATE[a.getMonth()] + ' und ' + k(b) + ' ' + MONATE[b.getMonth()] + ' ' + b.getFullYear();
+    return k(a) + ' und ' + k(b) + ' ' + MONATE[b.getMonth()] + ' ' + b.getFullYear();
   }
   var leer = function (x) { return !String(x || '').trim(); };
   function tagLeer(tg) { return !tg.zu && GAENGE.every(function (g) { return leer(tg[g[0]]) && leer(tg[g[0] + '_z']); }); }
   function leererTag() { var tg = { zu: false, hinweis: '' }; GAENGE.forEach(function (g) { tg[g[0]] = ''; tg[g[0] + '_z'] = ''; }); return tg; }
-  var MT_CSS = '';   // Schlössli 20.10.2026: das Blatt trägt die Klassen des Werkbank-Satzes (satz.css aus website/_werkbank/satz/), keine eigenen Stile
-  var SEITE_AT = ' data-max="1.51" class="blatt sb-haus" data-b="297" data-h="210" style="width:297mm;height:210mm"';
+  var MT_CSS = '';   // das Blatt trägt die Klassen des Satzes (satz/satz.css), keine eigenen Stile
+  var SEITE_AT = ' data-max="1.8" class="blatt cu" data-b="210" data-h="297" style="width:210mm;height:297mm"';
+  function rudi(t) { return String(t).trim().replace(/\s*\|\s*/g, ' / '); }   // Rudis Teller mit Schrägstrich wie in seinen Beiträgen (satz_bau.py rudi)
   function el(tag, kl, kinder, mehr) { var n = { fn: 'el', a: [tag, kl ? ' class="' + kl + '"' : ''].concat(kinder || []) }; if (mehr) Object.keys(mehr).forEach(function (k) { n[k] = mehr[k]; }); return n; }
-  function preisMarke(t, P) {   // wie satz_daten.py menupreis(): «(3 – Gänge – 35.- Chf)» als Preis-Marke, der Wortlaut bleibt
-    var m = /^\((\d+)\s*–\s*(Gänge)\s*–\s*(\d+)(\.-)\s*(\w+)\)$/.exec(t);
-    if (!m) return P(t, 'sb-preis', 'preis');
-    return el('div', 'sb-lunchpreis', [el('span', 'g', [m[1] + ' ' + m[2]]), el('i', '', []), el('span', 'z', [m[3], el('small', '', [m[4]])]), el('span', 'w', [m[5]])], { w: 'preis' });
+  function preisMarke(t) {   // «89,00 EUR» als Marke: Angabe «Ticket», Zahl gross, Währung klein; der Wortlaut bleibt
+    var m = /^\s*([\d.,]+)\s*(.*?)\s*$/.exec(t), kinder = [el('em', '', ['Ticket'])].concat(m ? [el('b', '', [m[1]])].concat(m[2] ? [el('small', '', [m[2]])] : []) : [el('b', '', [t])]);
+    return el('div', 'sb-g sb-lunchpreis', [el('p', 'sb-p', [el('span', '', kinder)])], { w: 'preis' });
   }
-  function mittagSeiten(w) {
+  function abendSeiten(w) {
     var aus = [];
     var P = function (text, kl, feld) { return el('p', kl, [text], feld ? { w: feld } : null); };
     (w.tage || []).slice(0, 1).forEach(function (tg, i) {
-      var mitte = [el('span', 'uz sb-zeichen', [{ fn: 'roh', a: [ZEICHEN.ZEICHEN] }]), P(leer(w.titel) ? 'Lunch – Menü' : w.titel.trim(), 'sb-band', leer(w.titel) ? null : 'titel')];
-      mitte[1].a[0] = 'h2';
-      if (!leer(w.zeiten)) mitte.push(P(w.zeiten.trim(), 'sb-t', 'zeiten'));
-      if (tg.zu) mitte.push(el('div', 'sb-m', [P(leer(tg.hinweis) ? 'Diese Woche gibt es kein Lunch-Menü.' : tg.hinweis.trim(), 'sb-n sb-n--gross', leer(tg.hinweis) ? null : 'tage.' + i + '.hinweis')]));
+      var titel = !leer(w.motto) ? w.motto.trim() : !leer(w.titel) ? w.titel.trim() : 'Menü';
+      var oben = [el('span', 'uz sb-zeichen', [{ fn: 'roh', a: [ZEICHEN.WORTMARKE || ZEICHEN.ZEICHEN] }]),
+        el('h2', 'sb-band', [titel], !leer(w.motto) ? { w: 'motto' } : !leer(w.titel) ? { w: 'titel' } : null),
+        P(spanne(w.ab), 'sb-datum')];
+      if (!leer(w.mit)) oben.push(P(w.mit.trim(), 'sb-mit', 'mit'));
+      var unten = [];
+      if (!tg.zu && !leer(w.preis)) unten.push(preisMarke(w.preis.trim()));
+      if (!leer(w.zusatz)) unten.push(P(w.zusatz.trim(), 'sb-zusatz', 'zusatz'));
+      if (!leer(w.hinweis)) unten.push(P(w.hinweis.trim(), 'sb-hinweis', 'hinweis'));
+      var mitte = [];
+      if (tg.zu) mitte.push(el('div', 'sb-m', [P(leer(tg.hinweis) ? 'Die Gänge dieses Abends folgen.' : tg.hinweis.trim(), 'sb-n', leer(tg.hinweis) ? null : 'tage.' + i + '.hinweis')]));
       else {
         var erst = true;
         GAENGE.forEach(function (g) {
           if (leer(tg[g[0]]) && leer(tg[g[0] + '_z'])) return;
-          if (!erst) mitte.push(el('div', 'sb-gang', [{ fn: 'roh', a: [ZEICHEN.BLATT || ''] }]));
+          if (!erst) mitte.push(el('div', 'sb-gang', [{ fn: 'roh', a: [ZEICHEN.BLATT || '<i></i>'] }]));
           erst = false;
-          var m = [];
-          if (!leer(tg[g[0]])) m.push(P(tg[g[0]].trim(), 'sb-n sb-n--gross', 'tage.' + i + '.' + g[0]));
-          if (!leer(tg[g[0] + '_z'])) m.push(P(tg[g[0] + '_z'].trim(), 'sb-t', 'tage.' + i + '.' + g[0] + '_z'));
+          var m = [P(g[1], 'sb-gn')];
+          if (!leer(tg[g[0]])) m.push(P(rudi(tg[g[0]]), 'sb-n', 'tage.' + i + '.' + g[0]));
+          if (!leer(tg[g[0] + '_z'])) m.push(P(tg[g[0] + '_z'].trim(), 'sb-dr', 'tage.' + i + '.' + g[0] + '_z'));
           mitte.push(el('div', 'sb-m', m));
         });
-        if (erst) mitte.push(el('div', 'sb-m', [P('Die Gerichte dieser Woche folgen.', 'sb-t')]));
-        if (!leer(w.preis)) mitte.push(preisMarke(w.preis.trim(), P));
-        if (!leer(w.zusatz)) mitte.push(P(w.zusatz.trim(), 'sb-t', 'zusatz'));
+        if (erst) mitte.push(el('div', 'sb-m', [P('Die Gänge dieses Abends folgen.', 'sb-dr')]));
       }
-      if (!leer(w.spruch)) mitte.push(P(w.spruch.trim(), 'sb-t', 'spruch'));
-      if (w.beispiel) mitte.push(P('Beispiel · bitte die Gerichte der Woche eintragen', 'sb-t'));
-      var links = el('div', 'sb-links', leer(w.gruss) ? [] : [P(w.gruss.trim(), 'sb-gruss', 'gruss')]);
-      var menue = el('div', 'sb-menue', mitte);
-      var fuss = leer(w.fuss) ? el('footer', 'ufuss2', [ZEICHEN.FUSS || 'Wirtschaft am Schlössli']) : el('footer', 'ufuss2', [w.fuss.trim()], { w: 'fuss' });
+      /* Gestaltung 28.10.2026: keine Anweisung auf der Karte selbst; dass es ein Beispiel ist, sagt einmal der Kopf des Werkzeugs (.kopf__bsp) */
+      var obenEl = el('div', 'sb-oben', oben), menue = el('div', 'sb-menue', mitte), untenEl = el('div', 'sb-unten', unten);
+      var fuss = leer(w.fuss) ? el('footer', 'ufuss2', [ZEICHEN.FUSS || 'Culinarium']) : el('footer', 'ufuss2', [w.fuss.trim()], { w: 'fuss' });
       var zaehl = {}, WL = w.lage || {};
-      var alle = [links, menue, fuss].concat(links.a.slice(2), mitte);
+      var alle = [obenEl, menue, untenEl, fuss].concat(oben, mitte, unten);
       alle.forEach(function (x) {
-        var k = x.w ? x.w.replace(/^tage\.\d+\./, '') : /sb-gang/.test(x.a[1]) ? 'blatt' : /sb-zeichen/.test(x.a[1]) ? 'zeichen' : /sb-links/.test(x.a[1]) ? 'links' : /sb-menue/.test(x.a[1]) ? 'menue' : x.a[0] === 'footer' ? 'fuss' : 'text';
+        var k = x.w ? x.w.replace(/^tage\.\d+\./, '') : /sb-gang/.test(x.a[1]) ? 'strich' : /sb-zeichen/.test(x.a[1]) ? 'zeichen' : /sb-oben/.test(x.a[1]) ? 'oben' : /sb-unten/.test(x.a[1]) ? 'unten' : /sb-menue/.test(x.a[1]) ? 'menue' : /sb-datum/.test(x.a[1]) ? 'datum' : x.a[0] === 'footer' ? 'fuss' : 'text';
         zaehl[k] = (zaehl[k] || 0) + 1; x.lk = 't0.' + k + (zaehl[k] > 1 ? zaehl[k] : '');
         if (WL[x.lk]) x.lage = JSON.parse(JSON.stringify(WL[x.lk]));
       });
-      aus.push({ fn: 'seite', a: [SEITE_AT, el('div', 'inhalt', [el('div', 'sb-quer', [links, menue, el('div', '', [])])]), fuss] });
+      aus.push({ fn: 'seite', a: [SEITE_AT, el('div', 'inhalt', [el('div', 'sb-quer', [obenEl, menue, untenEl])]), fuss] });
     });
-    if (!aus.length) aus.push({ fn: 'seite', a: [SEITE_AT, el('div', 'inhalt', [el('div', 'sb-quer', [el('div', 'sb-links', []), el('div', 'sb-menue', [P(w.titel || 'Lunch – Menü', 'sb-band'), P('Die Gerichte dieser Woche folgen.', 'sb-t')]), el('div', '', [])])])] });
+    if (!aus.length) aus.push({ fn: 'seite', a: [SEITE_AT, el('div', 'inhalt', [el('div', 'sb-quer', [el('div', 'sb-oben', [el('h2', 'sb-band', [w.titel || 'Menü'])]), el('div', 'sb-menue', [P('Die Gänge dieses Abends folgen.', 'sb-dr')])])])] });
     return aus;
   }
-  function mittagAnwenden(d) { d.seiten = mittagSeiten(d.woche); d.teile = []; return d; }
+  function abendAnwenden(d) { d.seiten = abendSeiten(d.abend); d.teile = []; return d; }
 
   G.SATZ = {
     zeichen: function (z) { ZEICHEN = z; }, seiten: seiten, dokument: dokument, kopfCss: kopfCss, lageStil: lageStil, gestalt: gestalt, SCHRIFT: SCHRIFT, FARBE: FARBE,
     art: art, felder: felder, setzeFeld: setzeFeld, kapBau: kapBau, zeichenVon: zeichenVon, setzeZeichen: setzeZeichen, hatZeichenOrt: hatZeichenOrt, textVon: textVon, klasse: klasse, esc: esc, wahr: wahr, lies: lies,
-    MITTAG: { TAGE: TAGE, MONATE: MONATE, GAENGE: GAENGE, datum: datum, iso: iso, montag: montag, tagName: tagName, spanne: spanne, leererTag: leererTag, tagLeer: tagLeer, seiten: mittagSeiten, anwenden: mittagAnwenden, CSS: MT_CSS },
+    ABEND: { TAGE: TAGE, MONATE: MONATE, GAENGE: GAENGE, datum: datum, iso: iso, freitag: freitag, tagName: tagName, spanne: spanne, leererTag: leererTag, tagLeer: tagLeer, rudi: rudi, seiten: abendSeiten, anwenden: abendAnwenden, CSS: MT_CSS },
   };
   if (typeof module !== 'undefined') module.exports = G.SATZ;
 })(typeof window !== 'undefined' ? window : globalThis);

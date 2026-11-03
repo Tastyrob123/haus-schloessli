@@ -44,12 +44,12 @@
   if (window.__zurWerkbank) return; window.__zurWerkbank = 1;
 
   var SPRACHEN = ['de', 'en', 'fr', 'zh', 'ko', 'ar'];
-  var TEXT = { de: 'Alles auf einen Blick', en: 'Everything at a glance', fr: 'Tout en un coup d’œil',   /* 17.10.2026: für das Haus heisst die Werkbank so */
+  var TEXT = { de: 'Zur Werkbank', en: 'To the workbench', fr: 'Vers l’atelier',   /* Demo-Check Schäfli 21.10.2026: wie die anderen sechs Werkzeuge des Hauses */
                 zh: '前往工作台', ko: '작업대로', ar: 'إلى منضدة العمل' };
   var OHNE_SPRACHE = /^(control|_?werkzeuge|studio|mission-control|reception|marke|maison|imprimerie|mails|werkbank\/anleitung)\/|^mappe/;   // gibt es nur deutsch: Sprache der Werkbank gilt
   var FREMD_ZIEL = /^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):8963$/;   // L’Imprimerie auf eigener Adresse
   var HERKUNFT = /^https:\/\/[a-z0-9-]+\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/;   // von wo eine Werkbank herkommen darf
-  var SCHL = 'rh-wb';
+  var SCHL = 'culinarium-wb';
 
   var tag = document.currentScript || document.querySelector('script[src*="zur-werkbank.js"]');
   var src = tag && tag.src || '';
@@ -75,8 +75,8 @@
     if (!eigen && !f) return;
     if (/\.(pdf|zip|png|jpe?g|webp|svg|mp4)$/i.test(u.pathname)) return;
     var w = sp + (anker ? '.' + anker : '');
-    if (u.searchParams.get('wb') === w) return;
     u.searchParams.set('wb', w);
+    /* Höhe (wie die Stube, Demo-Check 21.10.2026) */ var yy = mein.y != null ? String(mein.y) : ''; if (/^\d{1,6}$/.test(yy)) u.searchParams.set('wy', yy); else u.searchParams.delete('wy');
     if (f && !eigen) u.searchParams.set('wbo', mein.o || location.origin);
     a.href = u.href;
   }
@@ -108,22 +108,24 @@
   if (roh) {
     var t = /^(de|en|fr|zh|ko|ar)(?:\.([a-z0-9-]{1,40}))?$/.exec(roh);
     var o = q.get('wbo') || '';
-    if (t && (!fremd || HERKUNFT.test(o) || /^\/imprimerie\//.test(location.pathname))) merke({ sp: t[1], anker: t[2] || '', o: fremd && HERKUNFT.test(o) ? o : '' });
-    try { q.delete('wb'); q.delete('wbo'); var rest = q.toString(); history.replaceState(history.state, '', location.pathname + (rest ? '?' + rest : '') + location.hash); } catch (e) {}
+    if (t && (!fremd || HERKUNFT.test(o) || /^\/imprimerie\//.test(location.pathname))) merke({ sp: t[1], anker: t[2] || '', o: HERKUNFT.test(o) && (fremd || o !== location.origin) ? o : '', y: /^\d{1,6}$/.test(q.get('wy') || '') ? q.get('wy') : '' });
+    try { q.delete('wb'); q.delete('wbo'); q.delete('wy'); var rest = q.toString(); history.replaceState(history.state, '', location.pathname + (rest ? '?' + rest : '') + location.hash); } catch (e) {}
   }
   var von = lies();
   if (!von) return;                       // kein Besuch aus der Werkbank: nichts zeigen
   if (window.self !== window.top) return; // eingebettet: nichts zeigen
-  mein.o = von.o || '';
+  mein.o = von.o || ''; mein.y = von.y || '';
 
-  var basis = fremd ? (von.o ? von.o + '/' : (/^\/imprimerie\//.test(location.pathname) ? location.origin + '/' : '')) : WURZEL;
+  var basis = fremd ? (von.o ? von.o + '/' : (/^\/imprimerie\//.test(location.pathname) ? location.origin + '/' : '')) : (von.o ? von.o + '/' : WURZEL);
   if (!basis) return;
 
   /* Sprache: die der Seite, wo es Sprachfassungen gibt; bei den Werkzeugen (nur deutsch) die der Werkbank, aus der man kam */
   var imPfad = /(?:^|\/)(en|fr|zh|ko|ar)\//.exec(pfad);
   var sp = fremd || OHNE_SPRACHE.test(pfad) ? von.sp : (imPfad ? imPfad[1] : 'de');
   if (sp !== von.sp) { von.sp = sp; merke(von); }
-  var ziel = basis + 'werkbank/' + (sp === 'de' ? '' : sp + '/') + 'index.html' + (von.anker ? '#' + von.anker : '');
+  var ziel = basis + 'werkbank/' + (sp === 'de' ? '' : sp + '/') + 'index.html' + (von.y ? '?y=' + von.y : (von.anker ? '#' + von.anker : ''));
+  /* wie die Stube (Robert 19.10.2026 01:18): ein Werkzeug öffnet im neuen Tab; «Zur Werkbank» schliesst ihn wieder, die Werkbank steht im ersten Tab noch an derselben Stelle */
+  document.addEventListener('click', function (ev) { var w = document.getElementById('zur-werkbank'); if (!w || !ev.composedPath || ev.composedPath().indexOf(w) < 0) return; if (history.length <= 1) { ev.preventDefault(); ev.stopPropagation(); try { window.close(); } catch (x) {} setTimeout(function () { location.href = ziel; }, 400); } }, true);
 
   function baue() {
     if (document.getElementById('zur-werkbank')) return;
@@ -145,7 +147,7 @@
        Im Stylesheet bleiben nur die Schrift und der Druck. */
     var lage = document.createElement('style');
     lage.textContent =
-      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/fonts/DMMono-normal-400.woff2') + '")}' +
+      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/schrift/dmmono.woff2') + '")}' +
       '@media print{#zur-werkbank{display:none!important}}';
     document.head.appendChild(lage);
     var setz = function (k, v) { wirt.style.setProperty(k, v, 'important'); };
@@ -174,18 +176,18 @@
       ':host{direction:ltr}' +
       'a{position:relative;overflow:hidden;isolation:isolate;box-sizing:border-box;display:inline-flex;align-items:center;gap:11px;height:44px;padding:0 20px 0 5px;border-radius:999px;' +
       'font:400 11.5px/1 "ZW Mono","DM Mono",ui-monospace,"SF Mono",Menlo,"PingFang SC","Apple SD Gothic Neo","Geeza Pro",monospace;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap;text-decoration:none;' +
-      'color:#0a1424;background:linear-gradient(180deg,#f4f6fa 0%,#d8dde6 46%,#b5bfd0 100%);cursor:pointer;-webkit-tap-highlight-color:transparent;' +
-      'box-shadow:inset 0 1px 0 #fff,inset 0 -3px 0 rgba(43,82,149,.32),inset 0 0 0 1px rgba(97,120,158,.62),0 0 0 1px rgba(9,17,39,.28),0 12px 22px -12px rgba(9,17,39,.6);' +
+      'color:#15141a;background:linear-gradient(180deg,#f9f6f5 0%,#e4dcda 46%,#cebbb7 100%);cursor:pointer;-webkit-tap-highlight-color:transparent;' +
+      'box-shadow:inset 0 1px 0 #fff,inset 0 -3px 0 rgba(146,73,46,.32),inset 0 0 0 1px rgba(201,93,54,.62),0 0 0 1px rgba(22,21,27,.28),0 12px 22px -12px rgba(22,21,27,.6);' +
       'transition:transform .55s cubic-bezier(.32,.72,0,1)}' +
       'a::after{content:"";position:absolute;z-index:-1;top:-20%;bottom:-20%;left:0;width:38%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.85) 50%,transparent 100%);transform:translateX(-180%) skewX(-18deg);transition:transform 0s}' +
-      'i{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#1b345f,#050d1a);color:#e5e9ef;' +
-      'box-shadow:inset 0 1px 0 rgba(190,206,255,.4),inset 0 -2px 0 rgba(0,0,0,.4),0 0 0 1px rgba(175,191,217,.45);transition:transform .6s cubic-bezier(.32,.72,0,1)}' +
+      'i{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#393644,#0e0e11);color:#eee8e7;' +
+      'box-shadow:inset 0 1px 0 rgba(231,217,214,.4),inset 0 -2px 0 rgba(0,0,0,.4),0 0 0 1px rgba(244,173,148,.45);transition:transform .6s cubic-bezier(.32,.72,0,1)}' +
       'svg{display:block;width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}' +
       'span{display:block;padding-top:1px}' +
       ':host([lang="zh"]) a,:host([lang="ko"]) a,:host([lang="ar"]) a{letter-spacing:.04em;font-size:13px;text-transform:none}' +
       '@media (hover:hover){a:hover{transform:translateY(-2px)}a:hover i{transform:translateX(-2px) scale(1.05)}a:hover::after{transform:translateX(360%) skewX(-18deg);transition:transform 1s cubic-bezier(.16,1,.3,1)}}' +
       'a:active{transform:translateY(1px) scale(.985)}' +
-      'a:focus-visible{outline:2px solid #afbfd9;outline-offset:3px}' +
+      'a:focus-visible{outline:2px solid #f4ad94;outline-offset:3px}' +
       '@media (max-width:560px){a{height:40px;gap:9px;padding:0 16px 0 4px;font-size:10.5px}i{width:32px;height:32px}:host([lang="zh"]) a,:host([lang="ko"]) a,:host([lang="ar"]) a{font-size:12px}}' +
       '@media (prefers-reduced-motion:reduce){a,i,a::after{transition:none!important}}' +
       '</style>' +

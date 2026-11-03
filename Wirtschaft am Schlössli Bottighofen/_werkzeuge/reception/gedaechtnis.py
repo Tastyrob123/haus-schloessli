@@ -1,7 +1,7 @@
-"""Das weiss der Chat · La Réception (Der Gastgeber), Wirtschaft am Schlössli Bottighofen (Kopie aus dem Ruedihus, 19.10.2026) (Robert 16.10.2026: «so eine Art Gehirn, was man sich anschauen kann»).
+"""Das weiss der Chat · La Réception, Culinarium Hannover (28.10.2026, Kopie aus der Taverne zum Schäfli, dort aus dem Schlössli und Ruedihus) (Robert 16.10.2026: «so eine Art Gehirn, was man sich anschauen kann»).
 
 Alles, was die Rezeption im Chat über das Haus und die Umgebung weiss, an einem Ort, für das Team lesbar und korrigierbar:
-  Grundlage    gast_wissen.txt (Seiten und Unterlagen der Website des Hauses, _bau/schloessli_wissen.py) und gast_umgebung.txt (Lage, Anreise, Geschichte),
+  Grundlage    gast_wissen.txt (Seiten und Unterlagen der Website des Hauses, _bau/culinarium_wissen.py) und gast_umgebung.txt (Lage, Anreise, Geschichte),
                in Abschnitte zerlegt (Seite → Überschrift; Unterlagen ohne Überschriften nach Seiten der PDF). Diese Dateien bleiben
                unverändert, das Team legt Berichtigungen darüber: einen Abschnitt neu fassen, ausblenden oder zurück auf die Website.
   Ergänzt      Einträge des Teams (Bereich, Titel, Text, gültig bis) und Einträge aus Links (Veranstaltung, Seite eines Anbieters):
@@ -17,22 +17,20 @@ Speicher: _gast/daten/gedaechtnis/ (korrekturen.json · eintraege.json · links.
 import base64, datetime, hashlib, html, ipaddress, json, os, re, shutil, socket, threading, time, urllib.error, urllib.parse, urllib.request
 
 HIER = os.path.dirname(os.path.abspath(__file__))
-WEB = os.path.join(os.path.dirname(os.path.dirname(HIER)), 'website')   # die Website des Schlössli (Überschriften der Seiten)
-WISSEN_DIR = os.path.join(HIER, 'gast')    # gast_wissen.txt und gast_umgebung.txt (_bau/schloessli_wissen.py)
+WEB = os.path.join(os.path.dirname(os.path.dirname(HIER)), 'website')   # die Website des Culinarium (Überschriften der Seiten)
+WISSEN_DIR = os.path.join(HIER, 'gast')    # gast_wissen.txt und gast_umgebung.txt (_bau/culinarium_wissen.py)
 DATEN = os.path.join(os.environ.get('RECEPTION_DATEN') or os.environ.get('REZEPTION_DATEN') or os.path.join(HIER, 'daten'), 'gedaechtnis')
 SCHLOSS = threading.RLock()
 QUELLEN = (('gast_wissen.txt', 'WISSEN'), ('gast_umgebung.txt', 'TALWISSEN'))
-BEREICHE = ['Das Haus', 'Öffnungszeiten & Reservation', 'Karte & Lunch', 'Lästermeile', 'Wein', 'Bankette & Gruppen', 'Anlässe & Events',
-            'Hausregeln (AGB)', 'Lage, Anreise & Geschichte', 'Veranstaltungen', 'Fragen & Antworten']
-# Seite bzw. Unterlage → Bereich (Kopfzeile im Wissen: «=== Seite: … (Entwurf: x.html; Quelle …) ===» bzw. «=== Unterlage des Hauses: name (PDF auf der Website: …) ===»)
-SEITE_BEREICH = [(r'Entwurf: kontakt\.html', 'Öffnungszeiten & Reservation'), (r'Entwurf: karte\.html', 'Bankette & Gruppen'), (r'Entwurf: anlaesse\.html', 'Anlässe & Events'),
-                 (r'Entwurf: agb\.html', 'Hausregeln (AGB)'), (r'Entwurf: (index|team)\.html', 'Das Haus'),
-                 (r'Unterlage des Hauses: Bankettmenu', 'Bankette & Gruppen'), (r'Unterlage des Hauses: Lastermeile', 'Lästermeile'),
-                 (r'Unterlage des Hauses: [\w.-]*Weinkarte', 'Wein'), (r'Unterlage des Hauses: 4_Hands', 'Anlässe & Events'),
-                 (r'Unterlage des Hauses: (Speisekarte|Lunch)', 'Karte & Lunch'), (r'^Talwissen', 'Lage, Anreise & Geschichte')]
-UNTERLAGE_NAME = {'Speisekarte-Oktober': 'Speisekarte Oktober', 'Lunch_261019': 'Lunch-Menü', 'Lastermeile-Homepage-2339': 'Karte der Lästermeile',
-                  'Bankettmenuvorschlage': 'Bankettmenüvorschläge', '4_Hands-_Stier': '4-Hands-Lunch mit Patrick Stier', '20261014_Weinkarte': 'Weinkarte vom 14.10.2026'}
-PREISZEILE = re.compile(r'^\s*Alle Preise in CHF', re.I)
+BEREICHE = ['Culinarium', 'Der Abend & Warteliste', 'Tickets & Preise', 'Drinks & Küche', 'Kontakt', 'Das Haus (Bar)', 'Team', 'Der Weg', 'Dirty Chicken',
+            'Alle Abende', 'Veranstaltungen', 'Fragen & Antworten']
+# Seite bzw. Teil des Wissens → Bereich (Kopfzeile im Wissen: «=== Seite: … (Website: x.html; …) ===», in der Umgebung «=== Tickets … ===», «=== Kontakt … ===», «=== Lage … ===»)
+SEITE_BEREICH = [(r'Website: index\.html', 'Culinarium'), (r'Website: abend\.html', 'Der Abend & Warteliste'), (r'Website: abende\.html', 'Alle Abende'),
+                 (r'Website: bar\.html', 'Das Haus (Bar)'), (r'Website: leute\.html', 'Team'), (r'Website: weg\.html', 'Der Weg'),
+                 (r'Website: dirty-chicken\.html', 'Dirty Chicken'), (r'Fuss jeder Seite', 'Culinarium'), (r'Tickets für einen Abend', 'Tickets & Preise'),
+                 (r'^Kontakt', 'Kontakt'), (r'^Lage', 'Der Weg'), (r'^Talwissen', 'Der Weg')]
+UNTERLAGE_NAME = {}
+PREISZEILE = re.compile(r'^\s*Alle Preise in EUR', re.I)
 
 
 # ---------------------------------------------------------------- Dateien
@@ -120,7 +118,7 @@ def _kopf_schoen(roh):
 def _block_name(kopf):
     m = re.match(r'Seite: (.+?) · ', kopf)
     if m:
-        return 'Website', _schoen(m.group(1)), (re.search(r'Entwurf: ([\w.-]+)', kopf) or [None, ''])[1]
+        return 'Website', _schoen(m.group(1)), (re.search(r'(?:Entwurf|Website): ([\w.-]+)', kopf) or [None, ''])[1]
     m = re.match(r'Unterlage des Hauses: (.+?) \(PDF', kopf)
     if m:
         return 'Unterlage', UNTERLAGE_NAME.get(m.group(1), m.group(1).replace('-', ' ')), m.group(1)
@@ -360,16 +358,16 @@ def _hole(url):
                 continue
     return roh.decode('utf-8', 'replace')
 
-AUSZUG = """Du hilfst dem Team der Wirtschaft am Schlössli in Bottighofen (Restaurant im Hafen, keine Zimmer), das Wissen des Chats auf der Website aktuell zu halten. Das Team gibt dir neues Material:
+AUSZUG = """Du hilfst dem Team von Culinarium in Hannover-Linden (Food-Pairing-Abende an der langen Tafel in der Bar Walk on the Wild Side, dazu das Pop-up Dirty Chicken), das Wissen des Chats auf der Website aktuell zu halten. Das Team gibt dir neues Material:
 eigenen Text, Seiten aus Links (Veranstaltung, Angebot eines Anbieters in der Region), Dokumente (zum Beispiel eine neue Karte, ein Programm) oder Fotos
-(zum Beispiel ein Plakat, ein Aushang, eine Tafel). Zieh daraus heraus, was ein Gast des Restaurants wissen will, und gib es als Einträge zurück.
+(zum Beispiel das Plakat eines Abends, ein Aushang, die Karte am Platz). Zieh daraus heraus, was ein Gast von Culinarium wissen will, und gib es als Einträge zurück.
 
 Regeln:
 - Nur, was wörtlich im Material steht oder auf dem Foto lesbar ist. Nichts ergänzen, nichts schätzen, kein Wissen von ausserhalb. Fehlt eine Angabe (Uhrzeit, Preis), lässt du sie weg. Unleserliches lässt du weg.
 - Schreibt das Team selbst etwas (TEXT DES TEAMS), gilt das als Angabe des Hauses, auch wenn es kurz ist.
 - Je Veranstaltung, Angebot oder Thema ein Eintrag. Höchstens 12 Einträge; bei langen Programmen oder Karten die für Gäste wichtigsten, Karten als ein Eintrag je Abschnitt mit den Preisen.
-- titel: kurz, wie ein Gast danach fragen würde («Seenachtfest 2027», «Lunch im November»).
-- text: auf Deutsch in Schweizer Schreibung (ss statt ß), zwei bis sechs ganze Sätze, sachlich, mit Datum, Uhrzeit, Ort, Preis, Anmeldung und Ansprechstelle, soweit vorhanden. Keine Werbesprache.
+- titel: kurz, wie ein Gast danach fragen würde («Der Abend im November», «Dirty Chicken im Dezember»).
+- text: auf Deutsch, wie die Website schreibt (ss statt ß, Namen wie Haasemannstraße bleiben), zwei bis sechs ganze Sätze, sachlich, mit Datum, Uhrzeit, Ort, Preis, Anmeldung und Ansprechstelle, soweit vorhanden. Keine Werbesprache.
 - bereich: einer aus der Liste. Veranstaltungen mit Datum sind «Veranstaltungen». Wählt das Team einen Bereich (BEREICH DES TEAMS), nimm ihn.
 - gueltig_bis: bei Veranstaltungen und befristeten Angaben der letzte Tag (JJJJ-MM-TT), sonst null. Jahr nur, wenn es dasteht oder eindeutig folgt; sonst null.
 - Ist im Material nichts, was Gäste brauchen, gib eine leere Liste und in grund einen Satz, warum.
@@ -600,7 +598,7 @@ def _von(d):
     """Name der Person, die etwas einträgt (Robert 16.10.2026: «dass man weiss, wer das eingetragen hat»). Pflicht bei allem, was das Wissen ändert."""
     v = re.sub(r'\s+', ' ', str(d.get('von') or '')).strip()[:60]
     if len(v) < 2:
-        raise ValueError('NAME · Bitte Ihren Namen eintragen, damit das Team weiss, wer das geändert hat.')
+        raise ValueError('NAME · Bitte deinen Namen eintragen, damit das Team weiss, wer das geändert hat.')
     return v
 
 def _abschnitt(aid):

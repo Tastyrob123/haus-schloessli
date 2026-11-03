@@ -1,4 +1,4 @@
-/* Schlössli 19.10.2026: Namen der Werkzeuge aus der einen Stelle (kleid/schloessli.js, WO_HAUS.namen). Jedes Element mit data-wo-name="<schlüssel>"
+/* Namen der Werkzeuge aus der einen Stelle (kleid/schloessli.js, WO_HAUS.namen). Dazu der Titel der Seite: «… · Culinarium» mit dem Namen der Pairing-Karte vorn. Jedes Element mit data-wo-name="<schlüssel>"
    bekommt den Namen; im HTML steht derselbe Name als Ersatz, falls das Kleid nicht lädt. data-wo-name-klein setzt den Artikel klein, data-wo-name-ohne lässt ihn weg («zum Kartenpult»). */
 (function () {
   var N = (window.WO_HAUS && window.WO_HAUS.namen) || {};
@@ -10,5 +10,6 @@
       el.textContent = n;
     });
   }
+  if (N.karten) document.title = document.title.replace(/^[^·]+·/, N.karten + ' ·');
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setze); else setze();
 })();

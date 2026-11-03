@@ -1,16 +1,16 @@
-/* Bilder für die Anleitung (anleitung.html): ein Bildschirmfoto je Kapitel aus dem echten Hausbuch (Safari-Kern), 1512 × 900 → 1200 px breit.
-   node _werkzeuge/livre/anleitung_bilder.js [basis]   (Server: python3 _werkzeuge/livre/server.py 9049) */
+/* Bilder für die Anleitung (anleitung.html), Le Livre · Culinarium Hannover: ein Bildschirmfoto je Kapitel aus dem echten Werkzeug (Safari-Kern), 1512 × 900 → 1200 px breit.
+   node _werkzeuge/livre/anleitung_bilder.js [basis]   (Server: python3 _werkzeuge/livre/server.py 9285) */
 const path = require('path'), fs = require('fs');
 const PW = require(path.join(process.env.HOME, 'Aussen-Pruefung/node_modules/playwright'));
-const A = process.argv[2] || 'http://127.0.0.1:9049/_werkzeuge/livre/';
+const A = process.argv[2] || 'http://127.0.0.1:9285/_werkzeuge/livre/';
 const AUS = path.join(__dirname, 'anleitung');
 const w = (p, ms) => p.waitForTimeout(ms);
 const K = [
   ['k01', 'start', null],
-  ['k02', 'bilder', async p => { await p.fill('#li-q', 'terrasse'); await w(p, 900); }],
-  ['k03', 'bilder', async p => { await p.evaluate(() => document.querySelector('#li-raster .li-f[data-k="platanen"]').scrollIntoView({ block: 'center' })); await w(p, 300); await p.locator('#li-raster .li-f[data-k="platanen"]').click({ force: true }); await p.waitForSelector('#fenster .li-det'); await w(p, 900); await p.locator('#fenster .li-gr').nth(0).hover(); await w(p, 700); }],
+  ['k02', 'bilder', async p => { await p.fill('#li-q', 'tafel'); await w(p, 900); }],
+  ['k03', 'bilder', async p => { await p.evaluate(() => document.querySelector('#li-raster .li-f[data-k="anstossen"]').scrollIntoView({ block: 'center' })); await w(p, 300); await p.locator('#li-raster .li-f[data-k="anstossen"]').click({ force: true }); await p.waitForSelector('#fenster .li-det'); await w(p, 900); await p.locator('#fenster .li-gr').nth(0).hover(); await w(p, 700); }],
   ['k04', 'bilder', async p => { await p.locator('[data-f="h"][data-w="fremd"]').click(); await w(p, 700); await p.evaluate(() => document.querySelector('#li-raster .li-f').scrollIntoView({ block: 'center' })); await w(p, 300); await p.locator('#li-raster .li-f').first().click({ force: true }); await p.waitForSelector('#fenster .li-det'); await w(p, 900); }],
-  ['k05', 'dateien', async p => { await p.evaluate(() => document.querySelector('#d-zeichen').scrollIntoView()); await w(p, 1200); }],
+  ['k05', 'dateien', async p => { await p.evaluate(() => document.querySelector('#d-logo').scrollIntoView()); await w(p, 1200); }],
   ['k06', 'dateien', async p => { await p.evaluate(() => document.querySelector('#d-farben').scrollIntoView()); await w(p, 1200); }],
   ['k07', 'pruefung', null],
   ['k08', 'pruefung', async p => { await p.locator('#li-bsp').click(); await w(p, 1600); await p.evaluate(() => document.querySelector('.li-erg').scrollIntoView()); await w(p, 1000); }],

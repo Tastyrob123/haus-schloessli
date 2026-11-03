@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Steckbrief für «Das weiss der Chat» der Wirtschaft am Schlössli, Bottighofen (Kopie des Bauskripts des Ruedihus, 19.10.2026; Muster Grand Beau-Rivage).
+"""Steckbrief für «Das weiss der Chat» von Culinarium Hannover (28.10.2026, Kopie des Bauskripts der Taverne zum Schäfli; Muster Grand Beau-Rivage).
 
-Jede Zeile: Stichwort, Angabe, Beleg. Der Beleg ist eine Stelle, die wörtlich in `gast/gast_wissen.txt` (Seiten und Karten des Hauses) oder
-`gast/gast_umgebung.txt` (Lage, Anreise, Geschichte aus der Sammlung, Station 3) steht; dieses Skript bricht ab, wenn ein Beleg dort nicht vorkommt
-oder eine Zahl der Angabe nicht im Umfeld des Belegs steht (nichts abgetippt oder verschönert). Bewusst NICHT im Steckbrief, weil die Quellen es
-nicht sagen: Kinderstuhl, Anreise mit dem Schiff, Rollstuhl, Namen der zwei Etagen. «Veranstaltungen» und «Fragen & Antworten» füllt das Team selbst.
-Ergebnis: steckbrief.json daneben, gelesen von gedaechtnis.py. Nach jedem neuen Wissen (python3 _bau/schloessli_wissen.py) erneut laufen lassen.
+Jede Zeile: Stichwort, Angabe, Beleg. Der Beleg ist eine Stelle, die wörtlich in `gast/gast_wissen.txt` (Wortlaut der Website) oder
+`gast/gast_umgebung.txt` (Tickets laut Instagram, Kontaktwege, Lage) steht; dieses Skript bricht ab, wenn ein Beleg dort nicht vorkommt
+oder eine Zahl der Angabe nicht im Umfeld des Belegs steht (nichts abgetippt oder verschönert).
+Bewusst NICHT im Steckbrief, weil die Quellen es nicht sagen: Allergien und Unverträglichkeiten (die Website sagt dazu nichts; der Chat gibt die Frage
+an das Team, die Küche klärt es), vegetarisch oder vegan (kein Merkmal mehr, Rückmeldung Rudi 26.10.2026), Kinder, Hunde, Barrierefreiheit,
+Haltestelle und Parkplatz, Gutscheine, der Termin des nächsten Abends (steht noch nicht fest). Die Beispieltermine auf «Der Abend» sind keine Angaben des Hauses.
+«Veranstaltungen» und «Fragen & Antworten» füllt das Team selbst.
+Ergebnis: steckbrief.json daneben, gelesen von gedaechtnis.py. Nach jedem neuen Wissen (python3 _bau/culinarium_wissen.py) erneut laufen lassen.
 Aufruf: python3 _werkzeuge/reception/steckbrief_bau.py"""
 import hashlib, json, os, re, sys
 
@@ -15,85 +18,99 @@ DATEIEN = ('gast_wissen.txt', 'gast_umgebung.txt')
 
 # Bereich → Gruppen → Zeilen (Stichwort, Angabe, Beleg)
 S = [
- ('Das Haus', [
+ ('Culinarium', [
   ('Auf einen Blick', [
-   ('Adresse', 'Seestrasse 50, 8598 Bottighofen', 'Wirtschaft am Schlössli Seestrasse 50 8598 Bottighofen'),
-   ('Telefon und E-Mail', '+41 71 688 90 92, kontakt@schloessli-bottighofen.ch', 'Tel.: +41 71 688 90 92', 'kontakt@schloessli-bottighofen.ch'),
-   ('Lage', 'direkt im Hafen von Bottighofen, mit Blick aufs Wasser und die Alpen', 'Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen.'),
-   ('Küche', 'mediterran, mit frischen, hochwertigen Zutaten', 'Hier erwartet Sie eine kulinarische Reise in die Welt der mediterranen Küche, die mit frischen, hochwertigen Zutaten und kreativen Rezepten zubereitet wird.'),
-   ('Terrasse', '«Die schönste Terrasse am Bodensee», sagt Christian Kuchler', '„Die schönste Terrasse am Bodensee“ — Christian Kuchler'),
-   ('Hunde', 'willkommen (Falstaff, Tagblatt)', 'Hunde willkommen (Falstaff «Dogs allowed»'),
-   ('Zahlung', 'bar, Debit, Kredit, NFC', 'Zahlung bar, Debit, Kredit, NFC'),
-  ]),
-  ('Das Team', [
-   ('Gastgeber und Sommelier', 'Jonas Volpert', '## Jonas Volpert Gastgeber & Sommelier'),
-   ('Küchenchefin', 'Monika Huber', '## Monika Huber Küchenchefin'),
-   ('Sous-Chef', 'Lukas Siebel', '## Lukas Siebel Sous-Chef'),
-   ('Entremetier', 'Marco Reisinger', '## Marco Reisinger Entremetier'),
-   ('Service', 'Ole Sass', '## Ole Sass Service'),
+   ('Was es ist', 'Food-Pairing-Abende an der langen Tafel im Walk on the Wild Side, Hannover-Linden', 'Food-Pairing-Abende an der langen Tafel im Walk on the Wild Side, Hannover-Linden.'),
+   ('Am Abend', 'ein Menü mit fünf passenden Drinks an einer langen Tafel', 'ein Menü mit fünf passenden Drinks an einer langen Tafel für vierzehn Gäste'),
+   ('Wann', 'an einzelnen Wochenenden, meist ein Freitag und der Samstag danach', 'Culinarium gibt es an einzelnen Wochenenden, meist ein Freitag und der Samstag danach.'),
+   ('Beginn', 'Freitag ab 19 Uhr, Samstag ab 17 Uhr', 'Freitags ab 19 Uhr, samstags ab 17 Uhr.'),
+   ('Plätze', 'vierzehn an einer langen Tafel', 'Vierzehn Gäste an einer langen Tafel.'),
+   ('Seit wann', 'seit 2023: aus einem Pop-up an der Bar sind ausgebuchte Abende geworden', 'Aus einem Pop-up an der Bar sind ausgebuchte Abende geworden.'),
   ]),
  ]),
- ('Öffnungszeiten & Reservation', [
-  ('Wann offen ist', [
-   ('Restaurant', 'Donnerstag bis Montag, 11:30 bis 23:00 Uhr', 'Donnerstag - Montag Dienstag & Mittwoch Ruhetag 11:30 Uhr - 23:00 Uhr'),
-   ('Ruhetage', 'Dienstag und Mittwoch', 'Dienstag & Mittwoch Ruhetag'),
-   ('Küche à la carte', '11:30 bis 13:30 und 18:00 bis 20:00 Uhr', 'Die Küchenzeiten betreffen unsere grosse A-la-carte-Karte und die Bestellungsannahme. 11:30 Uhr - 13:30 Uhr 18:00 Uhr - 20:00 Uhr'),
-   ('Lästermeile', 'die Karte der Lästermeile den ganzen Tag', 'Den ganzen Tag durchgängig bieten wir die Karte der Lästermeile an.'),
-   ('Ferien', '13. bis 15. November (Excellence Gourmetkreuzfahrt) und 22. Dezember 2026 bis 10. Februar 2027', '- 13. - 15. November (Excellence Gourmetkreuzfahrt) - 22. Dezember 2026 - 10. Februar 2027'),
+ ('Der Abend & Warteliste', [
+  ('So läuft ein Abend', [
+   ('Aperitif', 'zum Ankommen', 'Aperitif', 'zum Ankommen'),
+   ('Drei Gänge', 'von Rudi, an jedem Abend neu', 'von Rudi, an jedem Abend neu'),
+   ('Fünf Drinks', 'Momos Signature Drinks, passend zum Essen', 'Momos Signature Drinks, passend zum Essen'),
+   ('Tasting und Schulung', 'Momo erklärt jeden Drink am Tisch: Fatwashing, Milkwashing, Klärung mit Enzymen', 'Momo erklärt jeden Drink am Tisch: Fatwashing, Milkwashing, Klärung mit Enzymen'),
+   ('Das Menü', 'ändert sich mit jedem Abend; was es gibt, steht auf der Karte an deinem Platz', 'Das Menü ändert sich mit jedem Abend.', 'Was genau es gibt, steht auf der Karte an deinem Platz.'),
   ]),
-  ('Reservieren', [
-   ('Online', 'über gastronovi, Restaurant 118851', 'Reservation online: https://services.gastronovi.com/restaurants/118851/reservation/widget (System gastronovi)'),
-   ('Gruppen', 'ab 6 gebuchten Personen gilt eine Reservation als Gruppe (AGB)', 'Gruppen im Sinne dieser AGB sind Gruppen mit einer Mindestzahl von 6 gebuchten Personen.'),
-  ]),
- ]),
- ('Karte & Lunch', [
-  ('Die Karte', [
-   ('Aufbau', 'Frankreich, Italien, Iberische Halbinsel und Klassiker', 'FRANKREICH', 'ITALIEN', 'IBERISCHE HALBINSEL'),
-   ('Vegetarisch', 'VEG = vegetarisch, OVEG = als vegetarische Option verfügbar; weitere vegetarische Optionen berät der Service', 'VEG = vegetarisch, OVEG = als vegetarische Option verfügbar Für weitere vegetarische Optionen berät Sie gerne unser Service.'),
-   ('Tortelloni', 'vegetarisch, CHF 35', 'TORTELLONI VEG/G/L/E/SE 35'),
-  ]),
-  ('Lunch', [
-   ('Lunch-Menü', '3 Gänge, CHF 35', '(3 – Gänge – 35.- Chf)'),
+  ('Der nächste Abend', [
+   ('Termin', 'steht noch nicht fest', 'Der nächste Termin steht noch nicht fest.'),
+   ('Warteliste', 'wer sich einträgt, erfährt den nächsten Termin vor allen anderen', 'Trag dich ein: Sobald der nächste Termin feststeht, erfährst du es vor allen anderen.'),
+   ('Eintragen', 'auf «Der Abend»: Tag (Freitag, Samstag oder egal), Plätze, Name und E-Mail; im Fuss jeder Seite mit der E-Mail vormerken', 'Egal', 'Dein Platz am nächsten Abend.'),
   ]),
  ]),
- ('Lästermeile', [
-  ('Tapas und mehr', [
-   ('Tapas', 'durchgehend', 'TAPAS DURCHGEHEND'),
-   ('Prato', 'Aufschnitt, Käse, Pickels und Focaccia, CHF 30', 'PRATO 30 Aufschnitt, Käse, Pickels und Focaccia'),
-   ('Tarte flambée', 'vegetarisch oder mit Speck, CHF 20', 'TARTE FLAMBÉE 20 Vegetarisch oder mit Speck'),
-   ('Allergene', 'G Gluten, L Laktose, E Eier, F Fische, S Schalen- und Weichtiere, So Soja, En Erdnüsse, N Nüsse, Se Sellerie', 'G = Gluten, L = Laktose, E = Eier, F = Fische, S = Schalen- und Weichtiere, So = Soja, En = Erdnüsse, N = Nüsse, Se = Sellerie'),
+ ('Tickets & Preise', [
+  ('Preis', [
+   ('Zuletzt', '89,00 EUR am 25. und 26. September 2026, ausgebucht', 'Zuletzt 89,00 EUR am 25. und 26. September 2026.'),
+   ('Darin', 'drei Gänge, fünf Drinks, Tasting und Schulung', 'Angekündigt waren drei Gänge, fünf Drinks, Tasting und Schulung.'),
+  ]),
+  ('Tickets', [
+   ('Vorverkauf', 'Tickets gibt es bisher nur im Vorverkauf, per PayPal; dazu eine Nachricht an @culinarium_hannover', 'Tickets gibt es bisher nur im Vorverkauf.', 'Tickets ausschließlich per Vorverkauf über PayPal.'),
+   ('Zurückgeben', 'nicht möglich: Tickets werden nicht rückerstattet', 'Da die Plätze begrenzt sind, bitten wir um Verständnis, dass Tickets nicht rückerstattet werden können.'),
   ]),
  ]),
- ('Bankette & Gruppen', [
-  ('Platz und Form', [
-   ('Plätze', 'zwei Etagen für jeweils bis zu 26 Personen', 'Wir haben auf zwei Etagen Platz für jeweils bis zu 26 Personen'),
-   ('Speisenform', 'Tavolata oder gesetztes Menue', 'Sie geben den Rahmen vor - ob Tavolata oder gesetztes Menue!'),
-   ('Besprechen', 'unkompliziert, gerne auch vor Ort in Ruhe', 'wir können das sehr gerne auch vor Ort in Ruhe besprechen.'),
+ ('Drinks & Küche', [
+  ('Die Drinks', [
+   ('Wer', 'Momo (Mohamed Ben Khelifa) mixt die Signature Drinks hinter der Bar des Hauses', 'Die Drinks mixt Momo, hinter der Bar des Hauses.'),
+   ('Fatwashing', 'die Spirituose nimmt den Geschmack eines Fetts an, kalt gestellt wird das Fett wieder abgehoben', 'Die Spirituose nimmt den Geschmack eines Fetts an; kalt gestellt, wird das Fett wieder abgehoben.'),
+   ('Milkwashing', 'Milch bindet die Trübstoffe und wird abgefiltert, der Drink wird klar und weich', 'Milch bindet die Trübstoffe und wird abgefiltert, der Drink wird klar und weich.'),
+   ('Enzyme', 'lösen die Trübung aus Fruchtsaft, der Geschmack bleibt', 'Enzyme lösen die Trübung aus Fruchtsaft, der Geschmack bleibt.'),
   ]),
-  ('Bankettmenüs', [
-   ('Frühling', 'CHF 175', 'FRÜHLING (175 CHF)'),
-   ('Sommer', 'CHF 185', 'SOMMER (185 CHF)'),
-   ('Herbst', 'CHF 175', 'HERBST (175 CHF)'),
-   ('Auswahl', '3 bis 5 Gerichte aus den Menüs, mischen und anpassen möglich', 'Aus den Menüs können 3-5 Gerichte ausgewählt werden. Nach Belieben können die Menüs auch gemischt werden'),
-  ]),
- ]),
- ('Hausregeln (AGB)', [
-  ('Veranstaltungen', [
-   ('Teilnehmerzahl', 'verbindlich spätestens 2 Werktage vorher', 'die verbindliche Teilnehmerzahl für eine Veranstaltung spätestens 2 Werktage vor dem Veranstaltungstermin mitzuteilen'),
-   ('Anzahlung', 'ab CHF 1000 Reservationsbetrag kann das Restaurant 50 % Anzahlung verlangen', 'ab einem Reservationsbetrag von CHF 1000.- kann das Restaurant eine Anzahlung von 50% des gesamten Buchungsbetrags verlangen'),
+  ('Die Küche', [
+   ('Wer', 'Rudi Napieraj kocht die drei Gänge', 'In der Küche steht Rudi Napieraj.'),
+   ('Rudis Zeilen', 'LAUCH / BLUMENKOHL / CHIPOTLE, so schreibt er seine Teller', 'LAUCH / BLUMENKOHL / CHIPOTLE', 'Seine Teller schreibt er in drei, vier Wörtern, so stehen sie auch hier.'),
+   ('Gemüse', 'steht bei ihm oft im Mittelpunkt: Lauch, Blumenkohl, Kürbis, Rote Bete', 'Gemüse steht bei ihm oft im Mittelpunkt: Lauch, Blumenkohl, Kürbis, Rote Bete.'),
   ]),
  ]),
- ('Lage, Anreise & Geschichte', [
-  ('Anreise', [
-   ('Mit dem Auto', 'am Kreisverkehr beim Restaurant Bären in die Seestrasse Richtung Hafen, über den Bahnübergang zum Parkplatz', 'Am Kreisverkehr beim Restaurant Bären Abfahrt in die Seestrasse in Richtung Hafen, über den Bahnübergang hinweg gelangen Sie der Strasse immer weiter folgend direkt zu unserem Parkplatz.'),
-   ('Parkplatz und Zug', 'ausreichend Parkplätze, Bahnhof Bottighofen in der Nähe', 'ausreichend Parkplätze und eine nahe Anbindung zum Zugverkehr mit dem Bahnhof Bottighofen'),
+ ('Kontakt', [
+  ('So erreichst du das Team', [
+   ('Culinarium', 'keine eigene Telefonnummer und keine E-Mail-Adresse; Fragen zu einem Abend per Nachricht an @culinarium_hannover auf Instagram', 'Culinarium hat keine eigene Telefonnummer und keine eigene E-Mail-Adresse.'),
+   ('Die Bar', 'Telefon +49 163 3909578; reservieren per Nachricht oder Telefon', 'Telefon +49 163 3909578.', 'Reservieren geht per Nachricht oder Telefon.'),
+   ('Instagram', '@culinarium_hannover, @walkonthewildside_hannover, @dirtychicken.hannover', 'Instagram: @culinarium_hannover (Culinarium), @walkonthewildside_hannover (die Bar), @dirtychicken.hannover (Dirty Chicken).'),
   ]),
-  ('Geschichte', [
-   ('1676', 'Erlaubnis für ein «Haus am See», das spätere Schlössli, unter der Bedingung, dass darin nicht gewirtet wird', '1676: Untermüller Hans Conrad Hafen-Schedler erhält vom Kloster Münsterlingen die Erlaubnis'),
-   ('Heute', 'das Schlössli ist ein Wohnhaus, die Wirtschaft liegt im ehemaligen Hafenmeistergebäude', 'Heute: das Schlössli ist ein Wohnhaus, die Wirtschaft am Schlössli liegt im ehemaligen Hafenmeistergebäude'),
+ ]),
+ ('Das Haus (Bar)', [
+  ('Walk on the Wild Side', [
+   ('Was', 'eine Nachbarschafts-Mixology-Bar in Linden, Haasemannstraße 13: Drinks, Events, private Veranstaltungen und Tastings', 'eine Nachbarschafts-Mixology-Bar in Linden, Haasemannstraße 13. Drinks, Events, private Veranstaltungen und Tastings.'),
+   ('Ohne Karte', 'wer an die Theke kommt, erzählt, was er mag, und bekommt seinen eigenen Drink', 'Eine Getränkekarte gibt es im Walk on the Wild Side nicht.'),
+   ('Geöffnet', 'Donnerstag 19 bis 1 Uhr, Freitag und Samstag 19 bis 2 Uhr; Sonntag bis Mittwoch geschlossen', 'Donnerstag 19 bis 1 Uhr · Freitag und Samstag 19 bis 2 Uhr', 'Sonntag bis Mittwoch'),
+   ('Eigene Feier', 'die lange Tafel für eure eigene Feier; dazu Konzerte, DJ-Abende, Gastschichten', 'die lange Tafel für eure eigene Feier'),
+   ('Seit', 'Ende Oktober 2017 in Linden; seit dem Reopening am 9. November 2023 führt Derya Ivkin die Bar', 'Christoph Elbert und Verena Schindler eröffneten die Bar Ende Oktober 2017 in Linden', 'Seit dem Reopening am 9. November 2023 führt Derya Ivkin sie.'),
+  ]),
+ ]),
+ ('Team', [
+  ('Drei Leute, ein Haus', [
+   ('Derya Ivkin', 'führt die Bar, das Haus von Culinarium, seit dem Reopening im November 2023', 'Führt das Walk on the Wild Side, das Haus von Culinarium, seit dem Reopening im November 2023.'),
+   ('Momo', 'Mohamed Ben Khelifa, mixt die Signature Drinks und erklärt jeden selbst', 'Steht hinter der Bar und mixt die Signature Drinks, auch die fünf eines Culinarium-Abends, und erklärt jeden selbst.'),
+   ('Rudi Napieraj', 'kocht seit 2024 bei Culinarium und steht beim Pop-up Dirty Chicken in der Küche', 'Kocht seit 2024 bei Culinarium, drei Gänge an der langen Tafel, und steht beim Pop-up Dirty Chicken in der Küche.'),
+  ]),
+ ]),
+ ('Der Weg', [
+  ('Hinfinden', [
+   ('Adresse', 'Walk on the Wild Side, Haasemannstraße 13, 30449 Hannover', 'Haasemannstraße 13', '30449 Hannover'),
+   ('Ecke', 'Haasemannstraße, Ecke Rampenstraße, am Schild über der Hausecke', 'Haasemannstraße, Ecke Rampenstraße', 'Am Schild über der Hausecke erkennst du die Bar schon von weitem.'),
+   ('Plus Code', '9PC7+49 Hannover', '9PC7+49 Hannover'),
+  ]),
+ ]),
+ ('Dirty Chicken', [
+  ('Das Pop-up', [
+   ('Was', 'Fried Chicken im Brötchen mit Paprika-Honig-Mayo und eingelegten Zwiebeln, Chunks mit Spicy Glaze und grüner Sauce, Pommes, Krautsalat, Dirty Drinks und Musik', 'Im Brötchen mit Paprika-Honig-Mayo und eingelegten Zwiebeln, als Chunks mit Spicy Glaze und grüner Sauce.'),
+   ('Wann', 'nur an einzelnen Tagen; die Termine stehen auf Instagram @dirtychicken.hannover', 'Nur an einzelnen Tagen.', '@dirtychicken.hannover'),
+   ('Opening', '30. Mai 2026, 14 bis 22 Uhr, im AM:PM Café im Tiedthof, Goseriede 4', '30. Mai 2026, 14 bis 22 Uhr', 'AM:PM Café im Tiedthof, Goseriede 4'),
+  ]),
+ ]),
+ ('Alle Abende', [
+  ('Bisher', [
+   ('Erstes Pop-up', '20. Mai 2023 mit Momo', 'Das erste Pop-up gab es am 20. Mai 2023 mit Momo.'),
+   ('Name', '2023 «by Momo x Christoph», seit Juli 2024 «by Momo x Rudi»', '2023 hiessen die Abende „by Momo x Christoph“, seit Juli 2024 „by Momo x Rudi“.'),
+   ('Plakate', 'seit September 2023 bekommt jeder Abend ein eigenes Plakat', 'Seit September 2023 bekommt jeder Culinarium-Abend ein eigenes Plakat.'),
   ]),
  ]),
 ]
+
 
 def norm(t):
     return re.sub(r'\s+', ' ', t).strip()

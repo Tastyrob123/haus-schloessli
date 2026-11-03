@@ -1,7 +1,7 @@
 /* Nur die Flüssigkeit (Regel 55): node mess.js [basis] [rate] — Chrome, Hauptfaden 4× (oder 6×) gedrosselt, Ansichtswechsel + Scrollen; je Breite dreimal, einmal mit reduzierter Bewegung zum Vergleich */
 const path = require('path');
 const PW = require(path.join(process.env.HOME, 'Desktop/Apps & Tools/Tasty Website Builder/node_modules/playwright'));
-const BASIS = process.argv[2] || 'http://localhost:8988/_werkzeuge/registre/';
+const BASIS = process.argv[2] || 'http://127.0.0.1:9286/_werkzeuge/registre/';
 const RATE = +(process.argv[3] || 4);
 const q = (a, p) => { const s = [...a].sort((x, y) => x - y); return s[Math.min(s.length - 1, Math.floor(p * s.length))]; };
 (async () => {

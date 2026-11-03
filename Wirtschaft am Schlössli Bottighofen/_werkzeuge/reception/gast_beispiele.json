@@ -5,244 +5,256 @@
    9,
    12
   ],
-  "art": "tisch",
+  "art": "warteliste",
   "status": "neu",
-  "abteilung": "Reservation",
-  "name": "Sandra Keller",
-  "kontakt": "sandra.keller@example.com",
-  "datum": "Do, 22. Oktober 2026",
-  "uhrzeit": "12:00 Uhr",
+  "abteilung": "Warteliste",
+  "name": "Lena Hoffmann",
+  "kontakt": "lena.hoffmann@example.com",
+  "datum": "Freitag",
+  "uhrzeit": "ab 19:00",
   "personen": 2,
-  "platz": "Draussen auf der Terrasse",
-  "allergene": [
-   "N"
-  ],
   "sprache": "de",
-  "anliegen": "Reservation mit Wünschen, Draussen auf der Terrasse",
+  "anliegen": "Warteliste: Freitag, 2 Plätze",
   "betreff": "",
   "text": "",
   "team": "",
+  "formular": "warteliste",
   "web": true,
-  "an": "kontakt@schloessli-bottighofen.ch",
-  "formular": "reservation",
-  "seite": "/index.html",
-  "seite_name": "Startseite",
-  "nachricht": "Datum: Do, 22. Oktober 2026\nUhrzeit: 12:00 Uhr\nPersonen: 2\nPlatz: Draussen auf der Terrasse\nAllergien: Nüsse\nWünsche: Wir feiern unseren Hochzeitstag.",
+  "an": "Telefon der Bar +49 163 3909578 · Instagram @culinarium_hannover",
+  "seite": "/abend.html#warteliste",
+  "seite_name": "Der Abend",
+  "nachricht": "Tag: Freitag, ab 19:00\nPlätze: 2",
   "verlauf": [
    [
     "user",
-    "Über ein Formular der Website (Seite Startseite): Datum: Do, 22. Oktober 2026\nUhrzeit: 12:00 Uhr\nPersonen: 2\nPlatz: Draussen auf der Terrasse\nAllergien: Nüsse\nWünsche: Wir feiern unseren Hochzeitstag."
+    "Über ein Formular der Website (Seite Der Abend): Tag: Freitag, ab 19:00\nPlätze: 2"
    ]
   ]
  },
  {
   "vor": [
    1,
-   16,
-   40
-  ],
-  "art": "bankett",
-  "status": "gelesen",
-  "abteilung": "Bankett",
-  "name": "Thomas Brunner",
-  "kontakt": "+41 79 000 00 00",
-  "datum": "Sa, 14. November 2026",
-  "uhrzeit": "18:30 Uhr",
-  "personen": 30,
-  "sprache": "de",
-  "anliegen": "Bankettanfrage, Tavolata",
-  "betreff": "Ihre Feier zum 70. Geburtstag am 14. November",
-  "text": "Guten Tag Herr Brunner\n\nvielen Dank für Ihre Anfrage, gerne übernehmen wir die Bewirtung zum 70. Geburtstag Ihrer Mutter.\n\nAm 14. November ist unser Team allerdings geschlossen mit an Bord der Excellence Gourmetkreuzfahrt, das Restaurant bleibt vom 13. bis 15. November zu. Dürfen wir Ihnen einen anderen Tag vorschlagen? [Neues Datum vorschlagen]\n\nFür 30 Personen brauchen wir mehr als eine Etage, jede fasst bis zu 26 Personen [Etagen klären]. Als Tavolata mit vier Gängen stellen wir Ihnen gerne aus unseren Bankettmenüs zusammen, aus den Menüs können 3 bis 5 Gerichte ausgewählt werden. Das Herbstmenü liegt bei 175 Franken.\n\nDass Ihre Mutter keine Laktose verträgt, geben wir an die Küche weiter [Küche informieren].\n\nAm einfachsten besprechen wir alles in Ruhe vor Ort oder am Telefon.\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
-  "team": "Grundlage: Kontakt (Ferien 13.–15. November, Excellence Gourmetkreuzfahrt), Karten (zwei Etagen für jeweils bis zu 26 Personen, «Tavolata oder gesetztes Menue»), Bankettmenüvorschläge (Herbst 175 CHF, «Aus den Menüs können 3-5 Gerichte ausgewählt werden»), Mail-Link «Bankettanfrage».\nOffen: neues Datum, beide Etagen frei, Budget von etwa 150 Franken gegen das Menü (Herbst 175) klären.",
-  "web": true,
-  "an": "kontakt@schloessli-bottighofen.ch",
-  "formular": "bankett",
-  "seite": "/feiern.html",
-  "seite_name": "Feiern",
-  "nachricht": "Datum: Sa, 14. November 2026\nUhrzeit: 18:30 Uhr\nPersonenzahl: 30\nGewünschte Speisenform: Tavolata\nAnzahl Gänge: 4\nRicht-Budget: etwa 150 Franken pro Person\nGericht, Allergien: Meine Mutter feiert ihren 70. Geburtstag und verträgt keine Laktose.",
-  "verlauf": [
-   [
-    "user",
-    "Über ein Formular der Website (Seite Feiern): Datum: Sa, 14. November 2026\nUhrzeit: 18:30 Uhr\nPersonenzahl: 30\nGewünschte Speisenform: Tavolata\nAnzahl Gänge: 4\nRicht-Budget: etwa 150 Franken pro Person\nGericht, Allergien: Meine Mutter feiert ihren 70. Geburtstag und verträgt keine Laktose."
-   ]
-  ]
- },
- {
-  "vor": [
-   3,
-   10,
+   20,
    5
   ],
-  "art": "gutschein",
-  "status": "erledigt",
-  "abteilung": "Gutschein",
-  "name": "Lea Graf",
-  "kontakt": "lea.graf@example.com",
-  "datum": "",
-  "personen": null,
+  "art": "warteliste",
+  "status": "gelesen",
+  "abteilung": "Warteliste",
+  "name": "Jonas Albers",
+  "kontakt": "jonas.albers@example.com",
+  "datum": "Freitag oder Samstag",
+  "uhrzeit": "",
+  "personen": 4,
   "sprache": "de",
-  "anliegen": "Gutschein über 150 Franken",
-  "betreff": "Ihr Gutschein über 150 Franken",
-  "text": "Guten Tag Frau Graf\n\nvielen Dank für Ihre Bestellung. Ihr Gutschein über 150 Franken für die Wirtschaft am Schlössli geht an Musterweg 4, 8590 Romanshorn [Versand bestätigen].\n\nWir senden Ihnen eine Bestätigung, sobald der Gutschein versendet wurde.\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
-  "team": "Grundlage: Gutschein-Formular der Website (Name Käufer, E-Mail, Adresse, Betrag; Satz «Wir senden Ihnen eine Bestätigung, sobald der Gutschein versendet wurde»).\nOffen: Zahlung und Versand (online wird nichts bezahlt).",
+  "anliegen": "Warteliste: Freitag oder Samstag, 4 Plätze",
+  "formular": "warteliste",
+  "betreff": "Dein Platz an der Tafel",
+  "text": "Hallo Jonas,\n\ndanke, dass du dich eingetragen hast. Du stehst mit vier Plätzen auf der Warteliste, Freitag oder Samstag ist dir beides recht.\n\nDer nächste Abend steht noch nicht fest. Sobald es so weit ist, erfährst du es vor allen anderen [Termin eintragen]. An der Tafel gibt es nur wenige Plätze, und Tickets gibt es bisher nur im Vorverkauf [Plätze prüfen].\n\nFreitags geht es ab 19 Uhr los, samstags ab 17 Uhr: ein Aperitif zum Ankommen, drei Gänge von Rudi und fünf Drinks von Momo, der dir jeden am Tisch erklärt.\n\nBis bald an der Tafel\n\n[Name]\nCulinarium im Walk on the Wild Side",
+  "team": "Grundlage: Der Abend (Warteliste, «Der nächste Termin steht noch nicht fest»), Startseite «Gut zu wissen» (Vorverkauf, Freitag ab 19, Samstag ab 17).\nOffen: Termin des nächsten Abends, ob vier Plätze zusammen frei sind.",
   "web": true,
-  "an": "kontakt@schloessli-bottighofen.ch",
-  "formular": "gutschein",
-  "seite": "/gutschein.html",
-  "seite_name": "Gutschein",
-  "nachricht": "Name Käufer: Lea Graf\nE-Mail: lea.graf@example.com\nAdresse: Musterweg 4, 8590 Romanshorn\nBetrag in Franken: 150",
+  "an": "Telefon der Bar +49 163 3909578 · Instagram @culinarium_hannover",
+  "seite": "/abend.html#warteliste",
+  "seite_name": "Der Abend",
+  "nachricht": "Tag: Freitag oder Samstag, beides geht\nPlätze: 4",
   "verlauf": [
    [
     "user",
-    "Über ein Formular der Website (Seite Gutschein): Name Käufer: Lea Graf\nE-Mail: lea.graf@example.com\nAdresse: Musterweg 4, 8590 Romanshorn\nBetrag in Franken: 150"
+    "Über ein Formular der Website (Seite Der Abend): Tag: Freitag oder Samstag, beides geht\nPlätze: 4"
    ]
   ]
  },
  {
   "vor": [
-   0,
-   7,
-   48
+   1,
+   11,
+   30
   ],
-  "art": "tisch",
-  "status": "neu",
-  "abteilung": "Reservation",
-  "name": "Emma Clarke",
-  "kontakt": "emma.clarke@example.com",
-  "datum": "Di, 27. Oktober 2026",
-  "uhrzeit": "19:00 Uhr",
-  "personen": 4,
-  "platz": "An der Lästermeile",
-  "allergene": [
-   "VEG"
-  ],
-  "sprache": "en",
-  "anliegen": "Reservation mit Wünschen, An der Lästermeile",
-  "betreff": "Your table at the Lästermeile",
-  "text": "Dear Ms Clarke\n\nThank you very much for your request. On Tuesdays and Wednesdays the restaurant is closed, so we cannot welcome you on 27 October. Would Thursday, 29 October suit you instead? [Verfügbarkeit prüfen]\n\nAt the Lästermeile, our bar, the tapas menu is served all day, with a vegetarian Tarte flambée and vegetarian Crespelle. On our main menu the Tortelloni are vegetarian as well.\n\nWe look forward to hearing from you.\n\nKind regards\n\n[Name]\nWirtschaft am Schlössli",
-  "team": "Grundlage: Kontakt (Donnerstag bis Montag, Dienstag und Mittwoch Ruhetag; Karte der Lästermeile den ganzen Tag), Karte der Lästermeile (Tarte flambée «Vegetarisch oder mit Speck», Crespelle «Vegetarisch alla parmigiana»), Speisekarte Oktober (Tortelloni VEG).\nOffen: Ersatztag, Platz an der Bar.",
-  "deutsch": {
-   "betreff": "Ihr Tisch an der Lästermeile",
-   "text": "Liebe Frau Clarke\n\nVielen Dank für Ihre Anfrage. Dienstags und mittwochs ist das Restaurant geschlossen, deshalb können wir Sie am 27. Oktober nicht empfangen. Würde Ihnen stattdessen Donnerstag, 29. Oktober passen? [Verfügbarkeit prüfen]\n\nAn der Lästermeile, unserer Bar, gibt es den ganzen Tag die Tapas-Karte, mit einer vegetarischen Tarte flambée und vegetarischen Crespelle. Auf unserer grossen Karte sind auch die Tortelloni vegetarisch.\n\nWir freuen uns, von Ihnen zu hören.\n\nFreundliche Grüsse\n\n[Name]\nWirtschaft am Schlössli"
-  },
-  "verlauf_de": [
-   "Über ein Formular der Website (Seite Startseite): Datum: Di, 27. Oktober 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nPlatz: An der Lästermeile\nAllergien: vegetarisch\nWünsche: Zwei von uns essen vegetarisch. Wir würden gern an der Bar sitzen."
-  ],
-  "web": true,
-  "an": "kontakt@schloessli-bottighofen.ch",
-  "formular": "reservation",
-  "seite": "/index.html",
-  "seite_name": "Startseite",
-  "nachricht": "Datum: Di, 27. Oktober 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nPlatz: An der Lästermeile\nAllergien: vegetarisch\nWünsche: Two of us are vegetarian. We would love to sit at the bar.",
+  "art": "abend",
+  "status": "gelesen",
+  "abteilung": "Abende",
+  "name": "Mira Schulte",
+  "kontakt": "mira.schulte@example.com",
+  "datum": "",
+  "personen": 2,
+  "sprache": "de",
+  "anliegen": "Zwei Plätze am nächsten Abend; eine Person hat eine Nussallergie.",
+  "betreff": "Zwei Plätze an der Tafel und deine Nussallergie",
+  "text": "Hallo Mira,\n\ndanke für deine Nachricht. Für den nächsten Abend merken wir dich mit zwei Plätzen vor; der Termin steht noch nicht fest [Termin eintragen].\n\nDass eine von euch keine Nüsse verträgt, gibt das Team an Rudi in der Küche weiter. Er stimmt mit dir ab, was auf euren Tellern landet [Küche fragen].\n\nZuletzt kostete der Abend 89,00 EUR, mit drei Gängen, fünf Drinks, Tasting und Schulung [Preis bestätigen]. Tickets gibt es nur im Vorverkauf.\n\nBis bald an der Tafel\n\n[Name]\nCulinarium im Walk on the Wild Side",
+  "team": "Grundlage: Startseite «Gut zu wissen» (89,00 EUR zuletzt, Vorverkauf), Der Abend (drei Gänge, fünf Drinks). Allergien: dazu sagt die Website nichts.\nOffen: Termin, Preis des nächsten Abends, Nussallergie mit Rudi klären.",
   "verlauf": [
    [
     "user",
-    "Über ein Formular der Website (Seite Startseite): Datum: Di, 27. Oktober 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nPlatz: An der Lästermeile\nAllergien: vegetarisch\nWünsche: Two of us are vegetarian. We would love to sit at the bar."
+    "Hallo, wir möchten gern zu zweit zum nächsten Culinarium. Eine von uns hat eine Nussallergie."
+   ],
+   [
+    "assistant",
+    "Der nächste Termin steht noch nicht fest; auf der Warteliste erfährst du ihn zuerst. Zur Nussallergie sagt die Website nichts, Rudi in der Küche klärt das mit dir. Magst du mir deinen Namen und eine E-Mail-Adresse geben?"
+   ],
+   [
+    "user",
+    "Mira Schulte, mira.schulte@example.com"
+   ],
+   [
+    "assistant",
+    "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Team, sie liegt nur zur Ansicht im Gästebuch."
    ]
   ]
  },
  {
   "vor": [
    2,
-   20,
-   15
+   18,
+   45
   ],
-  "art": "anlass",
+  "art": "feier",
   "status": "neu",
-  "abteilung": "Bankett",
-  "name": "Peter Huber",
-  "kontakt": "peter.huber@example.com",
-  "datum": "",
-  "personen": 2,
+  "abteilung": "Feiern",
+  "name": "Kai Brandt",
+  "kontakt": "+49 151 2345678",
+  "datum": "Samstag, 13. März 2027",
+  "personen": 12,
   "sprache": "de",
-  "anliegen": "Plätze für 4-Hands-Lunch mit Patrick Stier (nächstes Mal)",
+  "anliegen": "Die lange Tafel für den 40. Geburtstag, 12 Personen.",
   "betreff": "",
   "text": "",
   "team": "",
-  "web": true,
-  "an": "kontakt@schloessli-bottighofen.ch",
-  "formular": "plaetze",
-  "seite": "/anlaesse.html",
-  "seite_name": "Anlässe",
-  "nachricht": "Anlass: 4-Hands-Lunch mit Patrick Stier (nächstes Mal)\nPersonen: 2\nWünsche, Allergien: Bitte melden Sie sich, sobald es wieder einen gibt.",
   "verlauf": [
    [
     "user",
-    "Über ein Formular der Website (Seite Anlässe): Anlass: 4-Hands-Lunch mit Patrick Stier (nächstes Mal)\nPersonen: 2\nWünsche, Allergien: Bitte melden Sie sich, sobald es wieder einen gibt."
+    "Kann man die lange Tafel auch für eine eigene Feier haben? Ich werde 40, wir wären 12."
+   ],
+   [
+    "assistant",
+    "Ja, die lange Tafel gibt es auch für eure eigene Feier; reservieren geht bei der Bar per Nachricht oder Telefon. Wenn du magst, gebe ich deine Anfrage weiter: Wie heisst du, und wie erreicht dich das Team?"
+   ],
+   [
+    "user",
+    "Kai Brandt, 0151 2345678, am liebsten Samstag, 13. März 2027"
+   ],
+   [
+    "assistant",
+    "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Team, sie liegt nur zur Ansicht im Gästebuch."
    ]
   ]
  },
  {
   "vor": [
-   0,
-   11,
-   2
+   3,
+   14,
+   10
   ],
-  "art": "tisch",
-  "status": "neu",
-  "abteilung": "Reservation",
-  "name": "Marco Frei",
-  "kontakt": "marco.frei@example.com",
-  "datum": "So, 25. Oktober 2026, 18:30 Uhr",
-  "personen": 8,
+  "art": "feier",
+  "status": "gelesen",
+  "abteilung": "Feiern",
+  "name": "Tim Becker",
+  "kontakt": "tim.becker@example.com",
+  "datum": "Freitag, 4. Dezember 2026",
+  "personen": 18,
   "sprache": "de",
-  "anliegen": "Tisch für acht Personen am Sonntag, 25. Oktober, 18:30 Uhr, mit Hund, gerne auf der Terrasse.",
+  "anliegen": "Weihnachtsfeier der Firma an der langen Tafel, 18 Personen.",
   "betreff": "",
   "text": "",
   "team": "",
   "verlauf": [
    [
     "user",
-    "Habt ihr am Sonntag, 25. Oktober um 18:30 Platz für 8 Personen? Wir bringen unseren Hund mit."
+    "Wir sind 18 Kollegen und suchen etwas für die Weihnachtsfeier am 4. Dezember. Geht das bei euch?"
    ],
    [
     "assistant",
-    "Die Reservation online zeigt die freien Tische. Hunde sind willkommen. Ab 6 Personen gelten Sie als Gruppe; gerne gebe ich Ihre Anfrage an das Team weiter, dafür brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer."
+    "Die lange Tafel gibt es auch für eure eigene Feier; ob es für 18 passt, klärt das Team mit dir. Wie heisst du, und wie erreicht dich das Team?"
    ],
    [
     "user",
-    "Marco Frei, marco.frei@example.com, gerne auf der Terrasse."
+    "Tim Becker, tim.becker@example.com"
    ],
    [
     "assistant",
-    "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Haus, sie liegt nur zur Ansicht im Gastgeber."
+    "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Team, sie liegt nur zur Ansicht im Gästebuch."
    ]
-  ],
-  "an": "kontakt@schloessli-bottighofen.ch"
+  ]
  },
  {
   "vor": [
-   1,
-   9,
-   30
+   4,
+   10,
+   20
   ],
-  "art": "bankett",
-  "status": "gelesen",
-  "abteilung": "Bankett",
-  "name": "Nadine Wyss",
-  "kontakt": "nadine.wyss@example.com",
-  "datum": "Fr, 4. Dezember 2026",
-  "uhrzeit": "18:00 Uhr",
-  "personen": 18,
-  "platz": "Drinnen in der Gaststube",
-  "allergene": [
-   "G"
-  ],
+  "art": "nachricht",
+  "status": "erledigt",
+  "abteilung": "Nachrichten",
+  "name": "Sophie Wagner",
+  "kontakt": "sophie.wagner@example.com",
+  "datum": "",
+  "personen": 1,
   "sprache": "de",
-  "anliegen": "Ihr Abend: Firmenanlass",
-  "betreff": "Ihr Firmenanlass am Freitag, 4. Dezember",
-  "text": "Guten Tag Frau Wyss\n\nvielen Dank für Ihre Anfrage. Gerne bewirten wir Ihr Team am Freitag, 4. Dezember, ab 18:00 Uhr [Verfügbarkeit prüfen].\n\nFür 18 Personen reicht eine unserer zwei Etagen, jede hat Platz für bis zu 26 Personen [Etage wählen]. Mit dem Bankettmenü Herbst zu 175 Franken pro Person wählen Sie aus den Menüs 3 bis 5 Gerichte; einzelne Gerichte lassen sich austauschen oder anpassen.\n\nDie Unverträglichkeit Gluten geben wir an die Küche weiter [Küche informieren].\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
-  "team": "Grundlage: Karten (zwei Etagen für jeweils bis zu 26 Personen), Bankettmenüvorschläge (Herbst 175 CHF, 3–5 Gerichte, «einzelne Gerichte ausgetauscht oder individuell angepasst»), Formular «Ihr Abend» (Richtwert 18 × 175 = 3150 Franken).\nOffen: Etage, Gerichte, Anzahlung nach AGB Ziffer 7 ab CHF 1000 möglich.",
-  "web": true,
-  "an": "kontakt@schloessli-bottighofen.ch",
-  "formular": "abend",
-  "seite": "/abend.html",
-  "seite_name": "Ihr Abend",
-  "nachricht": "Anlass: Firmenanlass\nTag: Fr, 4. Dezember 2026\nUhrzeit: 18:00 Uhr\nPersonen: 18\nPlatz: Drinnen in der Gaststube\nMenü: Bankettmenü Herbst, 175 Franken\nWein: noch keine Flasche\nAllergien: Gluten\nRichtwert für das Essen, ohne Getränke: 3150 Franken aus den Preisen der Karte",
+  "anliegen": "Kann am gebuchten Abend nicht kommen und fragt, ob sie ihr Ticket zurückgeben kann.",
+  "betreff": "Dein Ticket",
+  "text": "Hallo Sophie,\n\nschade, dass du nicht kommen kannst. Da die Plätze an der Tafel begrenzt sind, können Tickets nicht rückerstattet werden; so steht es auch beim Vorverkauf.\n\nWenn jemand deinen Platz übernehmen möchte, schreib uns kurz, wer kommt [Weitergabe klären].\n\nBis bald in Linden\n\n[Name]\nCulinarium im Walk on the Wild Side",
+  "team": "Grundlage: Startseite «Gut zu wissen» und der Beitrag zum letzten Abend («Tickets nicht rückerstattet»).\nOffen: ob ein Platz weitergegeben werden darf (steht nirgends).",
   "verlauf": [
    [
     "user",
-    "Über ein Formular der Website (Seite Ihr Abend): Anlass: Firmenanlass\nTag: Fr, 4. Dezember 2026\nUhrzeit: 18:00 Uhr\nPersonen: 18\nPlatz: Drinnen in der Gaststube\nMenü: Bankettmenü Herbst, 175 Franken\nWein: noch keine Flasche\nAllergien: Gluten\nRichtwert für das Essen, ohne Getränke: 3150 Franken aus den Preisen der Karte"
+    "Ich habe ein Ticket, kann aber nicht kommen. Kann ich es zurückgeben?"
+   ],
+   [
+    "assistant",
+    "Tickets werden nicht rückerstattet, weil die Plätze an der Tafel begrenzt sind. Magst du dem Team schreiben? Dann brauche ich deinen Namen und eine E-Mail-Adresse."
+   ],
+   [
+    "user",
+    "Sophie Wagner, sophie.wagner@example.com"
+   ],
+   [
+    "assistant",
+    "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Team, sie liegt nur zur Ansicht im Gästebuch."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   5,
+   21,
+   15
+  ],
+  "art": "abend",
+  "status": "gelesen",
+  "abteilung": "Abende",
+  "name": "Emma Clarke",
+  "kontakt": "emma.clarke@example.com",
+  "datum": "",
+  "personen": 2,
+  "sprache": "en",
+  "anliegen": "Visiting Hannover with her partner and would like two seats at the next evening.",
+  "betreff": "Two seats at the table",
+  "text": "Hi Emma,\n\nthank you for your message. The next evening has not been fixed yet [Termin eintragen]; once it is, you will be among the first to know.\n\nOn Fridays we start at 7 pm, on Saturdays at 5 pm: an aperitif, three courses from Rudi and five drinks from Momo, who explains each one at the table. There are only a few seats, and tickets are sold in advance only [Plätze prüfen].\n\nSee you at the table\n\n[Name]\nCulinarium im Walk on the Wild Side",
+  "team": "Grundlage: Startseite «Gut zu wissen» (Freitag ab 19, Samstag ab 17, Vorverkauf), Der Abend (Aperitif, drei Gänge, fünf Drinks).\nOffen: Termin, Plätze.",
+  "deutsch": {
+   "betreff": "Zwei Plätze an der Tafel",
+   "text": "Hallo Emma,\n\ndanke für deine Nachricht. Der nächste Abend steht noch nicht fest [Termin eintragen]; sobald er feststeht, erfährst du es mit als Erste.\n\nFreitags beginnen wir um 19 Uhr, samstags um 17 Uhr: ein Aperitif, drei Gänge von Rudi und fünf Drinks von Momo, der jeden am Tisch erklärt. Es gibt nur wenige Plätze, Tickets gibt es nur im Vorverkauf [Plätze prüfen].\n\nBis bald an der Tafel\n\n[Name]\nCulinarium im Walk on the Wild Side"
+  },
+  "verlauf_de": [
+   "Hallo, wir sind im Frühjahr in Hannover und würden gern zu zweit zum nächsten Abend kommen. Ist das möglich?",
+   "Der nächste Termin steht noch nicht fest; auf der Warteliste erfährst du ihn zuerst. Magst du mir deinen Namen und eine E-Mail-Adresse geben?",
+   "Emma Clarke, emma.clarke@example.com",
+   "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Team, sie liegt nur zur Ansicht im Gästebuch."
+  ],
+  "verlauf": [
+   [
+    "user",
+    "Hi, we are visiting Hannover in spring and would love two seats at the next evening. Is that possible?"
+   ],
+   [
+    "assistant",
+    "The next date has not been fixed yet; on the waiting list you hear about it first. Could you give me your name and an email address?"
+   ],
+   [
+    "user",
+    "Emma Clarke, emma.clarke@example.com"
+   ],
+   [
+    "assistant",
+    "Thank you. This is a draft by Tasty Studios: your request does not go to the team, it is only kept for viewing in the host tool."
    ]
   ]
  }

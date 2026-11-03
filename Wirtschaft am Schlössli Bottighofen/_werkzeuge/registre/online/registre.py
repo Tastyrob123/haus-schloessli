@@ -1,8 +1,8 @@
-"""Das Besucherbuch (Le Registre) · Wirtschaft am Schlössli online (Vercel-Funktion /api/registre, 19.10.2026). Kopie des Berghotel Gasterntal
+"""Das Besucherbuch (Le Registre) · Culinarium Hannover online (Vercel-Funktion /api/registre, 28.10.2026). Kopie der Taverne zum Schäfli, dort nach Schlössli und Berghotel Gasterntal
 (_werkzeuge/registre/online/registre.py, dort nach Doldenhorn und Carlton-Europe, nur kopiert), Vorbild Grand Beau-Rivage api/registre.py (dort nur gelesen).
 GET   ?tage=30            Vorführ-Betrieb: Beispielwerte (registre.ablage_heute, dieselbe Rechnung wie das Werkzeug ohne Server-Teil und die Stube)
-      &k=<Schlüssel>      echte Werte (Prüfsumme unten; Schlüssel nur in ~/Desktop/Website-Projekte/_Schluessel/schloessli-bottighofen.txt)
-POST                      eine Zeile von assets/js/messung.js (Website, Vorschlag vorschlag/messung.js, noch nicht eingebaut); ?fehler=1 Skriptfehler des Werkzeugs, nur ins Protokoll
+      &k=<Schlüssel>      echte Werte (Prüfsumme unten; Schlüssel nur in ~/Desktop/Website-Projekte/_Schluessel/culinarium-hannover.txt)
+POST                      eine Zeile von assets/js/messung.js (Website, Quelle vorschlag/messung.js); ?fehler=1 Skriptfehler des Werkzeugs, nur ins Protokoll
 Speicher: nur ein EIGENER privater Blob-Speicher mit REGISTRE_READ_WRITE_TOKEN (Master 4.6: damit Le Registre die anderen Werkzeuge nicht scharf
 schaltet und nie in deren Speicher schreibt). Fehlt er: Ordner unter /tmp (nichts hält), echte Werte gibt es dann keine.
 Sicherheit: POST nur von der eigenen Adresse (Origin) sonst 403, Zeile über 300 Zeichen 413, je Instanz höchstens 120 POST und 600 GET je
@@ -18,12 +18,12 @@ if os.environ.get('REGISTRE_READ_WRITE_TOKEN'):
     os.environ.pop('BLOB_LOKAL', None)
 else:   # nie in den gemeinsamen Speicher der anderen Werkzeuge
     os.environ['BLOB_READ_WRITE_TOKEN'] = ''
-    os.environ['BLOB_LOKAL'] = '/tmp/schloessli-bottighofen-registre-demo'
+    os.environ['BLOB_LOKAL'] = '/tmp/culinarium-hannover-registre-demo'
 os.environ['REGISTRE_GEHEIM'] = hashlib.sha256(('registre|' + os.environ.get('REGISTRE_READ_WRITE_TOKEN', 'ohne')).encode()).hexdigest()
 import _speicher as SP  # noqa: E402
 
 VORFUEHRUNG = True
-SCHLUESSEL = '541c4101eb4e988ce8e19c8a84966cbc2decf17fa2c15c4991c5f066894e73e9'   # SHA-256 des eigenen Schlüssels des Schlössli (wie anschluss.py, G09)
+SCHLUESSEL = 'f04c5cb0b86365e3510f65ef03e89c959d16338e9d8717a0c6f9fcb57638b8b7'   # SHA-256 des eigenen Schlüssels von Culinarium (wie anschluss.py, G09)
 GRENZE = {'GET': 600, 'POST': 120}
 
 import importlib.util  # noqa: E402

@@ -1,0 +1,195 @@
+{
+ "haus": "Wirtschaft am Schlössli Bottighofen",
+ "quelle": "Aus ziele-wildside.json / ziele-culinarium.json (gleiche Ports 9281–9288, gleiche Schlüssel), Namen und Stilblatt der Wirtschaft am Schlössli (Oberchef Nachtbau 3.11.2026)",
+ "gefahr": "l[öo]sch|entfern|senden|abschick|verschick|ver[öo]ffentlich|hochlad|online stellen|abmeld|zur[üu]cksetz|leeren|drucken|druckfertig|herunterlad|download|speicher|[üu]bernehm|best[äa]tig|freigeb|bezahl|verwerf|archivier|logout|ausloggen|ki fragen|erzeugen|generier|neu laden|entw[üu]rfe anlegen|f[üu]nf entw|anlegen und|export|als tabelle|als pdf|probe-pdf|pdf|zip|kopieren|in die zwischenablage|teilen|anrufen|ausprobieren|chat ausprobieren|abbrechen|r[üu]ckg[äa]ngig|wiederholen|undo|redo",
+ "dokument": "\\s(blatt|papier|bogen|dokument|druckseite|a4-seite|brief-seite|karte-blatt|seite-blatt)\\s",
+ "dokumentNicht": "\\sfl\\s",
+ "stil": {
+  "trenner": "·",
+  "trennerFalsch": "[A-Za-zÄÖÜäöü]\\s+/\\s+[A-Za-zÄÖÜäöü]",
+  "versalienNur": "Open Sans|Titel WS|W Mono|DM Mono|Mono",
+  "versalienErlaubt": "Open Sans|Titel WS|W Mono|DM Mono|Mono|plakat|marke|wortmarke",
+  "grund": "Schlössli: Titel in Open Sans 400 gesperrt in Versalien wie die Wortmarke (kleid/schloessli.css, marke.json «Titel kurz … in Versalien gesetzt wie die Wortmarke»); Etiketten und Gerichte in DM Mono gesperrt. Gilt, solange stilblatt.json fehlt; sonst zählen dessen Rollen."
+ },
+ "stilblatt": "/Users/robertreff/Desktop/Website-Projekte/Wirtschaft am Schlössli Bottighofen/_werkzeuge/imprimerie/haeuser/schloessli/stilblatt.json",
+ "ziele": [
+  {
+   "k": "tresen",
+   "name": "Das Hafenbüro",
+   "url": "http://127.0.0.1:9281/_werkzeuge/maison/",
+   "tiefe": 7,
+   "startExtra": [
+    "http://127.0.0.1:9281/_werkzeuge/maison/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte"
+  },
+  {
+   "k": "schaufenster",
+   "name": "Das Schaufenster",
+   "url": "http://127.0.0.1:9282/_werkzeuge/bureau/",
+   "startExtra": [
+    "http://127.0.0.1:9282/_werkzeuge/bureau/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte",
+   "tiefe": 6
+  },
+  {
+   "k": "schaufenster-anleitung",
+   "name": "Das Schaufenster · Anleitung",
+   "url": "http://127.0.0.1:9282/_werkzeuge/bureau/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "pairing-karte",
+   "name": "Das Kartenpult",
+   "url": "http://127.0.0.1:9283/_werkzeuge/carte/",
+   "startExtra": [
+    "http://127.0.0.1:9283/_werkzeuge/carte/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte",
+   "tiefe": 6
+  },
+  {
+   "k": "pairing-karte-anleitung",
+   "name": "Das Kartenpult · Anleitung",
+   "url": "http://127.0.0.1:9283/_werkzeuge/carte/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "gaestebuch",
+   "name": "Das Reservationsbuch",
+   "url": "http://127.0.0.1:9284/_werkzeuge/reception/",
+   "startExtra": [
+    "http://127.0.0.1:9284/_werkzeuge/reception/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte",
+   "tiefe": 6
+  },
+  {
+   "k": "gaestebuch-anleitung",
+   "name": "Das Reservationsbuch · Anleitung",
+   "url": "http://127.0.0.1:9284/_werkzeuge/reception/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "plakatarchiv",
+   "name": "Das Markenbuch",
+   "url": "http://127.0.0.1:9285/_werkzeuge/livre/"
+  },
+  {
+   "k": "plakatarchiv-buch",
+   "name": "Das Markenbuch · Hausregeln",
+   "url": "http://127.0.0.1:9285/_werkzeuge/livre/buch.html"
+  },
+  {
+   "k": "plakatarchiv-anleitung",
+   "name": "Das Markenbuch · Anleitung",
+   "url": "http://127.0.0.1:9285/_werkzeuge/livre/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "besucherliste",
+   "name": "Die Besucherliste",
+   "url": "http://127.0.0.1:9286/_werkzeuge/registre/",
+   "startExtra": [
+    "http://127.0.0.1:9286/_werkzeuge/registre/?rundgang"
+   ],
+   "einstiegWarte": ".rdg-karte",
+   "tiefe": 6
+  },
+  {
+   "k": "besucherliste-anleitung",
+   "name": "Die Besucherliste · Anleitung",
+   "url": "http://127.0.0.1:9286/_werkzeuge/registre/anleitung.html",
+   "nav": 0
+  },
+  {
+   "k": "plakatwerkstatt",
+   "name": "Die Hausdruckerei",
+   "url": "http://127.0.0.1:9287/_werkzeuge/imprimerie/",
+   "localStorage": {
+    "ds-schloessli-willkommen": "1",
+    "ds-culinarium-willkommen": "1"
+   },
+   "max": 700,
+   "gefahrExtra": "führung am studio",
+   "gefahrExtra_grund": "Die Führung sperrt alle Klicks ausser Weiter/Beenden; das Inventar bleibt dort hängen. Führung wird gesondert geprüft (Tor 1, 30.10.)"
+  },
+  {
+   "k": "plakatwerkstatt-mail",
+   "name": "Die Hausdruckerei · Mail",
+   "url": "http://127.0.0.1:9287/_werkzeuge/imprimerie/mail.html"
+  },
+  {
+   "k": "werkbank",
+   "name": "Die Werkbank",
+   "url": "http://127.0.0.1:9288/werkbank/index.html",
+   "bereich": "http://127.0.0.1:9288/"
+  },
+  {
+   "k": "werkbank-ki",
+   "name": "Die Werkbank · KI",
+   "url": "http://127.0.0.1:9288/werkbank/ki.html"
+  },
+  {
+   "k": "werkbank-karte",
+   "name": "Die Werkbank · Karte",
+   "url": "http://127.0.0.1:9288/werkbank/karte.html"
+  },
+  {
+   "k": "werkbank-geprueft",
+   "name": "Die Werkbank · Geprüft",
+   "url": "http://127.0.0.1:9288/werkbank/geprueft/index.html"
+  },
+  {
+   "k": "werkbank-befund",
+   "name": "Die Werkbank · Befund",
+   "url": "http://127.0.0.1:9288/befund/index.html"
+  },
+  {
+   "k": "werkbank-unterlagen",
+   "name": "Die Werkbank · Unterlagen",
+   "url": "http://127.0.0.1:9288/unterlagen/index.html"
+  },
+  {
+   "k": "werkbank-drucksachen",
+   "name": "Die Werkbank · Drucksachen",
+   "url": "http://127.0.0.1:9288/drucksachen/index.html"
+  },
+  {
+   "k": "werkbank-untersetzer",
+   "name": "Die Werkbank · Untersetzer",
+   "url": "http://127.0.0.1:9288/untersetzer/index.html"
+  },
+  {
+   "k": "werkbank-sticker",
+   "name": "Die Werkbank · Sticker",
+   "url": "http://127.0.0.1:9288/sticker/index.html"
+  },
+  {
+   "k": "werkbank-postkarten",
+   "name": "Die Werkbank · Postkarten",
+   "url": "http://127.0.0.1:9288/postkarten/index.html"
+  },
+  {
+   "k": "werkbank-beigaben",
+   "name": "Die Werkbank · Beigaben",
+   "url": "http://127.0.0.1:9288/beigaben/index.html"
+  },
+  {
+   "k": "werkbank-feed",
+   "name": "Die Werkbank · Feed",
+   "url": "http://127.0.0.1:9288/feed/index.html"
+  },
+  {
+   "k": "werkbank-mails",
+   "name": "Die Werkbank · Mails",
+   "url": "http://127.0.0.1:9288/mails/index.html"
+  },
+  {
+   "k": "werkbank-material",
+   "name": "Die Werkbank · Material",
+   "url": "http://127.0.0.1:9288/material/index.html"
+  }
+ ]
+}

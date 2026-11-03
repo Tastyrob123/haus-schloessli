@@ -106,7 +106,7 @@
   if (roh) {
     var t = /^(de|en|fr|zh|ko|ar)(?:\.([a-z0-9-]{1,40}))?$/.exec(roh);
     var o = q.get('wbo') || '';
-    if (t && (!fremd || HERKUNFT.test(o) || /^\/imprimerie\//.test(location.pathname))) merke({ sp: t[1], anker: t[2] || '', o: fremd && HERKUNFT.test(o) ? o : '', y: /^\d{1,6}$/.test(q.get('wy') || '') ? q.get('wy') : '' });
+    if (t && (!fremd || HERKUNFT.test(o) || /^\/imprimerie\//.test(location.pathname))) merke({ sp: t[1], anker: t[2] || '', o: HERKUNFT.test(o) && (fremd || o !== location.origin) ? o : '', y: /^\d{1,6}$/.test(q.get('wy') || '') ? q.get('wy') : '' });
     try { q.delete('wb'); q.delete('wbo'); q.delete('wy'); var rest = q.toString(); history.replaceState(history.state, '', location.pathname + (rest ? '?' + rest : '') + location.hash); } catch (e) {}
   }
   var von = lies();
@@ -114,7 +114,7 @@
   if (window.self !== window.top) return; // eingebettet: nichts zeigen
   mein.o = von.o || ''; mein.y = von.y || '';
 
-  var basis = fremd ? (von.o ? von.o + '/' : (/^\/imprimerie\//.test(location.pathname) ? location.origin + '/' : '')) : WURZEL;
+  var basis = fremd ? (von.o ? von.o + '/' : (/^\/imprimerie\//.test(location.pathname) ? location.origin + '/' : '')) : (von.o ? von.o + '/' : WURZEL);
   if (!basis) return;
 
   /* Sprache: die der Seite, wo es Sprachfassungen gibt; bei den Werkzeugen (nur deutsch) die der Werkbank, aus der man kam */
@@ -145,7 +145,7 @@
        Im Stylesheet bleiben nur die Schrift und der Druck. */
     var lage = document.createElement('style');
     lage.textContent =
-      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/fonts/DMMono-normal-400.woff2') + '")}' +
+      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/schrift/DMMono-normal-400.woff2') + '")}' +
       '@media print{#zur-werkbank{display:none!important}}';
     document.head.appendChild(lage);
     var setz = function (k, v) { wirt.style.setProperty(k, v, 'important'); };

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Das Hausbuch (Le Livre) · Wirtschaft am Schlössli, lokaler Server (Port 9049): liefert die Website des Hauses (website/) unter / und das Hausbuch
+"""Le Livre (Marke) · Culinarium Hannover, lokaler Server (Port 9285; Nachbau des Schäfli, dort nur gelesen): liefert die Website (website/) unter / und Le Livre
 (_werkzeuge/livre/) nur lesend aus, das gemeinsame Kleid der Werkzeuge (_werkzeuge/oberflaeche/) unter /assets/oberflaeche/, und beantwortet /api/…:
-   python3 _werkzeuge/livre/server.py [port]           danach http://localhost:9049/_werkzeuge/livre/
+   python3 _werkzeuge/livre/server.py [port]           danach http://127.0.0.1:9285/_werkzeuge/livre/
    LIVRE_KI=1 python3 _werkzeuge/livre/server.py       Markenprüfung mit Claude (nur auf Roberts Wort, Regel 54); ohne den Schalter Probe-Antwort
 
 GET  /_werkzeuge/livre/api/stand                                   Zahlen für La Maison (Fotos, Dateien), Fotos ohne Original
@@ -16,16 +16,16 @@ von der eigenen Seite (Origin/Sec-Fetch-Site, 403), Grenzen je Minute nur auf di
 import collections, http.server, json, os, socketserver, sys, threading, time, urllib.parse
 
 HIER = os.path.dirname(os.path.abspath(__file__))
-PROJ = os.path.dirname(os.path.dirname(HIER))            # Wirtschaft am Schlössli Bottighofen
+PROJ = os.path.dirname(os.path.dirname(HIER))            # Culinarium Hannover
 WURZEL = os.path.join(PROJ, 'website')                   # die Website, nur gelesen
-# Wege ausserhalb der Website: das Hausbuch selbst, die Nachbarn (Die Stube, Die Werkstatt) und das gemeinsame Kleid
-# (nur die Oberflächen der Nachbarn, ihre Server-Teile laufen auf ihren eigenen Servern; Der Schreibtisch ist noch nicht gebaut)
+# Wege ausserhalb der Website: Le Livre selbst, die Nachbarn (nur ihre Oberflächen) und das gemeinsame Kleid
+# (nur die Oberflächen der Nachbarn, ihre Server-Teile laufen auf ihren eigenen Servern)
 UMLEITEN = {'/_werkzeuge/livre/': HIER, '/assets/oberflaeche/': os.path.join(PROJ, '_werkzeuge', 'oberflaeche'),
             **{f'/_werkzeuge/{w}/': os.path.join(PROJ, '_werkzeuge', w) for w in ('maison', 'imprimerie', 'carte', 'reception', 'registre', 'bureau')}}
 sys.path.insert(0, HIER)
 import livre as LV  # noqa: E402
 
-PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 9049
+PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 9285
 API = ('/_werkzeuge/livre/api/', '/marke/api/')
 OFFEN_MIT_STRICH = ('/_werkzeuge/livre/', '/_werkzeuge/imprimerie/', '/_werkzeuge/maison/', '/_werkzeuge/carte/', '/_werkzeuge/reception/', '/_werkzeuge/registre/', '/_werkzeuge/bureau/')   # die einzigen Ordner mit _ am Anfang, die ausgeliefert werden
 GESPERRT_ENDUNG = ('.py', '.pyc', '.md', '.log', '.jsonl', '.sh', '.env', '.gut', '.bak', '.diff')
@@ -100,7 +100,7 @@ class H(http.server.SimpleHTTPRequestHandler):
     def _wache(self, schreiben=False):
         """None, wenn die Anfrage durch darf, sonst (Code, Meldung)."""
         if self.client_address[0] not in ('127.0.0.1', '::1', '::ffff:127.0.0.1'):
-            return 403, 'HERKUNFT · Das Hausbuch antwortet nur auf diesem Rechner.'
+            return 403, 'HERKUNFT · Le Livre antwortet nur auf diesem Rechner.'
         host = (self.headers.get('Host') or '').lower()
         if host not in (f'localhost:{PORT}', f'127.0.0.1:{PORT}', f'[::1]:{PORT}'):
             return 421, 'HOST · Unbekannte Adresse.'
@@ -185,5 +185,5 @@ class S(socketserver.ThreadingMixIn, http.server.HTTPServer):
 
 
 if __name__ == '__main__':
-    print(f'Das Hausbuch auf http://localhost:{PORT}/_werkzeuge/livre/' + ('' if LV._ki_an() else '  (Markenprüfung ohne Claude: Probe-Antwort)'), flush=True)
+    print(f'Le Livre auf http://127.0.0.1:{PORT}/_werkzeuge/livre/' + ('' if LV._ki_an() else '  (Markenprüfung ohne Claude: Probe-Antwort)'), flush=True)
     S(('127.0.0.1', PORT), H).serve_forever()

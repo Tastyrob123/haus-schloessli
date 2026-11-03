@@ -2,9 +2,9 @@
 <html lang="de">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Muster · Werkzeug-Oberfläche</title><meta name="robots" content="noindex, nofollow">
-<!-- Musterseite des Pakets: jeder Baustein einmal, im Kleid des Hauses. Im Haus unter /assets/oberflaeche/muster.html?haus=<carlton|doldenhorn|ruedihus|gasterntal>.
+<!-- Musterseite des Pakets: jeder Baustein einmal, im Kleid des Hauses. Im Haus unter /assets/oberflaeche/muster.html?haus=culinarium.
      So wird auch jedes Werkzeug eingebunden: 1. kleid/<haus>.js  2. grund.css  3. rahmen-<inseln|buehne>.css  4. kleid/<haus>.css  5. oberflaeche.js -->
-<script>var WOH = (new URLSearchParams(location.search).get('haus') || 'carlton').replace(/[^a-z]/g, ''); document.write('<script src="kleid/' + WOH + '.js"><\/script>');</script>
+<script>var WOH = (new URLSearchParams(location.search).get('haus') || 'culinarium').replace(/[^a-z]/g, ''); document.write('<script src="kleid/' + WOH + '.js"><\/script>');</script>
 <script>document.write('<link rel="stylesheet" href="grund.css"><link rel="stylesheet" href="rahmen-' + WO_HAUS.rahmen + '.css"><link rel="stylesheet" href="kleid/' + WOH + '.css"><script src="oberflaeche.js"><\/script>');</script>
 </head>
 <body class="wo-app">
@@ -29,7 +29,7 @@
   document.getElementById('raum').innerHTML =
     WO.startbild({ werkzeug: 'website', h1: '<span data-wo-gruss>' + WO.gruss() + '</span> <em>Was ändern wir heute?</em>', satz: 'Das Startbild ist in allen sechs Werkzeugen eines Hauses gleich: Gruss nach Tageszeit, ein Satz, was das Werkzeug tut, Knopf «Anleitung», das Haus von aussen.',
       knoepfe: WO.knopf('Anleitung', 'buch', 'gold', { href: '#' }) + WO.knopf('Zweiter Weg', 'chat', 'glas', { href: '#' }) })
-    + '<div class="wo-lage"><div class="wo-lg"><i class="wo-lg__z">' + WO.ic('stift') + '</i><span class="wo-mk">Leerer Zustand</span><b>Nichts offen</b><p>Was Sie speichern, sammelt sich hier.</p></div>'
+    + '<div class="wo-lage"><div class="wo-lg"><i class="wo-lg__z">' + WO.ic('stift') + '</i><span class="wo-mk">Leerer Zustand</span><b>Nichts offen</b><p>Was du speicherst, sammelt sich hier.</p></div>'
     + '<div class="wo-lg"><i class="wo-lg__z">' + WO.ic('welt') + '</i><span class="wo-mk">Lage</span><b>Wie gebaut</b><p>Ein Satz zum Stand.</p><a class="wo-lk" href="#">Weg dorthin</a></div>'
     + '<div class="wo-lg"><i class="wo-lg__z">' + WO.ic('karte') + '</i><span class="wo-mk">Lage</span><b>Drei Fächer</b><p>Immer drei, am Handy untereinander.</p><a class="wo-lk" href="#">Weg dorthin</a></div></div>'
     + '<h2 class="wo-zw">Kacheln <em>mit Foto</em></h2><div class="wo-aufg">' + kachel('Einen Text ändern', 'Kurzer Satz, wozu.', 'stift') + kachel('Foto tauschen', 'Kurzer Satz, wozu.', 'foto') + kachel('Hinweis für Gäste', 'Kurzer Satz, wozu.', 'glocke') + kachel('Telefon oder E-Mail', 'Kurzer Satz, wozu.', 'tel') + '</div>'

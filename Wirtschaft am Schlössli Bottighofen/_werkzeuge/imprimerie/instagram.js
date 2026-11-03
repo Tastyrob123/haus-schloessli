@@ -18,7 +18,7 @@
     mehr: '<svg viewBox="0 0 24 24"><circle cx="5.5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="18.5" cy="12" r="1.4"/></svg>',
     links: '<svg viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></svg>',
     rechts: '<svg viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></svg>',
-    zu: '<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+    zu: '<svg viewBox="0 0 24 24"><path d="M9 14.5 4 9.5l5-5M4 9.5h11a5 5 0 0 1 0 10h-3"/></svg>',
     pfeil: '<svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>',
     kopie: '<svg viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/></svg>',
     feder: '<svg viewBox="0 0 24 24"><path d="M12 3l1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>',
@@ -38,7 +38,7 @@
       <button class="ig-tuer" data-ig="vorschau"><span class="ig-tuer__handy" aria-hidden="true"><i></i></span><span class="ig-tuer__t"><b>Handy-Vorschau und Bildtext</b><small>${esc(satz)}</small></span><i class="ig-tuer__k">${IC.pfeil}</i></button>
       ${bt ? `<p class="ig-kurz">${esc(bt.split('\n')[0]).slice(0, 140)}</p>` : '<p class="klein">Noch kein Bildtext. In der Handy-Vorschau schreibt das Studio ihn in einer von sechs Sprachen.</p>'}</div>`;
     if (!istStory(doc)) h += `<div class="gruppe"><label>Karussell</label>
-      <p class="klein">Bis zu ${MAX} Bilder im gleichen Stil als ein Beitrag. Jedes Bild 1080 × 1350.</p>
+      <p class="klein">Bis zu ${MAX} Bilder im gleichen Stil als ein Beitrag. Jedes Bild 1080 auf 1350.</p>
       <div class="knoepfe ig-knoepfe"><button data-ig="anfuegen">Bild im gleichen Stil anfügen</button><button data-ig="ki">Karussell von der KI entwerfen</button></div>
       ${n > 1 ? `<button class="ig-zip" data-ig="zip"><i>${IC.ab}</i><span><b>Alle ${n} Bilder speichern</b><small>Nummerierte PNGs in einer ZIP-Datei, mit Bildtext</small></span></button>` : ''}</div>`;
     return h;
@@ -159,11 +159,11 @@
         <p class="leise">${story ? 'Zeilen zum Teilen der Story, mit Hashtags.' : 'Die Zeilen unter dem Beitrag, mit Hashtags.'} Im Ton des Hauses, Angaben nur aus den Unterlagen. Danach frei bearbeiten und mit einem Klick kopieren.</p>
         <div class="ig-zeile"><label>Sprache<select id="igSprache">${SPRACHEN.map(([k, t]) => `<option value="${k}" ${(bt.sprache || 'de') === k ? 'selected' : ''}>${t}</option>`).join('')}</select></label>
           <button class="kn knopf--voll glanz-kn ig-schreiben" data-ig="schreiben"><span>${bt.text ? 'Neu schreiben' : story ? 'Text schreiben' : 'Bildtext schreiben'}</span><i>${IC.feder}</i></button></div>
-        <div class="ig-feldtext"><textarea id="igBildtext" rows="11" placeholder="Hier erscheint der Bildtext. Sie können ihn auch selbst schreiben." dir="auto">${esc(bt.text || '')}</textarea>
+        <div class="ig-feldtext"><textarea id="igBildtext" rows="11" placeholder="Hier erscheint der Bildtext. Du kannst ihn auch selbst schreiben." dir="auto">${esc(bt.text || '')}</textarea>
           <span class="ig-schreibt" id="igSchreibt" hidden><span class="ig-schreibt__z">${DS.zeichenSvg(M, 'currentColor')}</span><b>Das Studio schreibt</b><small>im Ton des Hauses</small></span></div>
         <div class="ig-fuss"><span class="ig-zeichen" id="igZeichen"></span><button class="kn kn--klein ig-kopieren" data-ig="kopieren"><span>Kopieren</span><i>${IC.kopie}</i></button></div>
         <div class="hinweise ig-hinweise" id="igHinweise" hidden></div>
-        ${!story && n > 1 ? `<button class="ig-zip" data-ig="zip"><i>${IC.ab}</i><span><b>Alle ${n} Bilder speichern</b><small>1080 × 1350, nummerierte PNGs in einer ZIP-Datei, mit Bildtext</small></span></button>` : ''}
+        ${!story && n > 1 ? `<button class="ig-zip" data-ig="zip"><i>${IC.ab}</i><span><b>Alle ${n} Bilder speichern</b><small>1080 auf 1350, nummerierte PNGs in einer ZIP-Datei, mit Bildtext</small></span></button>` : ''}
       </div>
     </div>`;
     document.body.appendChild(raum);
@@ -255,7 +255,7 @@
   async function schreiben(btn) {
     const st = S(), doc = st.doc(), feld = $('#igBildtext'), alt = feld.value.trim();
     if (alt && doc.bildtext && doc.bildtext.selbst) {
-      const ok = await st.dialog('<h2>Bildtext neu schreiben?</h2><p class="leise">Ihr bearbeiteter Text wird dabei ersetzt. Kopieren Sie ihn vorher, wenn Sie ihn behalten möchten.</p>',
+      const ok = await st.dialog('<h2>Bildtext neu schreiben?</h2><p class="leise">Dein bearbeiteter Text wird dabei ersetzt. Kopier ihn vorher, wenn du ihn behalten möchtest.</p>',
         [{ t: 'Behalten', v: false }, { t: 'Neu schreiben', v: true, haupt: true }]);
       if (!ok) return;
     }

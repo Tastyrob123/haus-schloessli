@@ -11,9 +11,9 @@ body.frei [data-k]:focus{background:rgba(214,187,150,.38);box-shadow:0 0 0 .6mm 
 body.frei [data-k].geaendert{background:rgba(214,187,150,.45)}
 body.vorschau .blitz{animation:blitz 2s cubic-bezier(.16,1,.3,1)}
 @keyframes blitz{0%,45%{background:rgba(214,187,150,.95);box-shadow:0 0 0 1.4mm rgba(214,187,150,.95)}100%{background:transparent;box-shadow:0 0 0 1.4mm rgba(214,187,150,0)}}
-body.vorschau .nr-zeile{display:flex;justify-content:center;gap:10px;margin:-14px 0 22px;font:500 10.5px/1 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#5f6a6e}
-body.vorschau .nr-zeile b{font-weight:500;color:#1d2224}
-body.vorschau .nr-zeile.warn b{color:#c5000f}
+body.vorschau .nr-zeile{display:flex;justify-content:center;gap:10px;margin:-14px 0 22px;font:500 10.5px/1 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:rgba(250,244,244,.74)}   /* Tor 5 30.10.2026 (K8/K2): hell auf dem dunklen Rahmen der Vorschau */
+body.vorschau .nr-zeile b{font-weight:500;color:#F5A689}
+body.vorschau .nr-zeile.warn b{color:#FF9C8F}
 /* Gestalten: Rahmen um die Auswahl, Griffe zum Verschieben (oben links) und Vergrössern (unten rechts) */
 .ovrahmen{position:absolute;z-index:50;border:1.5px dashed #a3865c;border-radius:6px;pointer-events:none;box-shadow:0 0 0 4px rgba(214,187,150,.22)}
 .ovrahmen--band{border-color:#d6bb96;box-shadow:0 0 0 4px rgba(214,187,150,.35)}
@@ -28,16 +28,13 @@ body.frei [data-n] [data-k]{cursor:text}
 [data-gc],[data-gc] *{color:var(--gc)!important}
 .mt-strich[data-gc]{border-top-color:var(--gc)!important}
 [data-ga=kursiv],[data-ga=kursiv] *{font-style:italic!important}
-[data-ga=versal],[data-ga=versal] *{text-transform:uppercase!important;letter-spacing:.14em!important}
+[data-ga=versal],[data-ga=versal] *{text-transform:uppercase!important;letter-spacing:.08em!important}
 [data-ga=medium],[data-ga=medium] *{font-weight:500!important}
 [data-ga=normal],[data-ga=normal] *{font-style:normal!important;text-transform:none!important;font-weight:400!important}
 [data-gal],[data-gal] *{text-align:var(--gal)!important}
 .rub[data-gal],.g-k[data-gal],.hin[data-gal]{justify-content:var(--gai)!important}
 .rub[data-gal] .rub-u{flex:none}
 [data-gz],[data-gz] *{line-height:var(--gz)!important}
-@font-face{font-family:'Montserrat CE';font-style:normal;font-weight:400;src:url('/assets/fonts/montserrat-400-latin.woff2') format('woff2')}
-@font-face{font-family:'Montserrat CE';font-style:normal;font-weight:500;src:url('/assets/fonts/montserrat-500-latin.woff2') format('woff2')}
-@font-face{font-family:'Montserrat CE';font-style:normal;font-weight:600;src:url('/assets/fonts/montserrat-600-latin.woff2') format('woff2')}
 /* ---------------------------------------------------------------- Anordnen (nur Vorschau): Rahmen und Griffe wie in L’Imprimerie, Gold, Hilfslinien rot */
 body.anr-an #seiten [data-n]{cursor:move}
 body.anr-an #seiten [contenteditable="true"]{cursor:text;outline:2px solid #a3865c;background:rgba(214,187,150,.28)}

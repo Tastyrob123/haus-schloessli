@@ -1,23 +1,13 @@
-=== Talwissen: Lage und Anreise · Quelle _kette/03-sammler/fakten.json · gelesen 19.10.2026 ===
-Lage: «Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen»; im ehemaligen Hafenmeistergebäude, das Schlössli daneben ist heute ein Wohnhaus (_quelle/website/text/start.md; _quelle/presse/gemeinde-bottighofen-geschichte.md; _quelle/extern/wikipedia-commons/wikitext-Bottighofen.txt)
-Adresse: Seestrasse 50, 8598 Bottighofen
-Anfahrt mit dem Auto und Parkplatz: Auto: «Am Kreisverkehr beim Restaurant Bären Abfahrt in die Seestrasse in Richtung Hafen, über den Bahnübergang … direkt zu unserem Parkplatz»; «ausreichend Parkplätze und eine nahe Anbindung zum Zugverkehr mit dem Bahnhof Bottighofen» (_quelle/website/text/kontakt.md, karten.md)
-Hunde, Zahlung, Gruppen: Hunde willkommen (Falstaff «Dogs allowed»; Tagblatt: Wassernapf aus der Champagnerflasche); Zahlung bar, Debit, Kredit, NFC; Gruppen ab 6 Personen nach AGB (_quelle/extern/portale/falstaff-restaurant.md; _quelle/presse/tagblatt-zu-tisch.md; _quelle/website/text/agbs.md Ziffer 3)
-Reservation online: https://services.gastronovi.com/restaurants/118851/reservation/widget (System gastronovi); Bankette und Anlässe über kontakt@schloessli-bottighofen.ch
-Ferien: Ferien 13.–15. November 2026 (Excellence Gourmetkreuzfahrt, «unser Team geschlossen mit an Board») und 22. Dezember 2026 – 10. Februar 2027 (_quelle/website/text/kontakt.md, events-2-1.md (19.10.2026))
+=== Tickets für einen Abend (Beitrag von @culinarium_hannover zum Abend am 25. und 26. September 2026, veröffentlicht 29.07.2026, Wortlaut) ===
+Tickets ausschließlich per Vorverkauf über PayPal.
+Schreibt uns hierzu gerne eine Nachricht (gemeint: eine Nachricht an @culinarium_hannover auf Instagram)
+Da die Plätze begrenzt sind, bitten wir um Verständnis, dass Tickets nicht rückerstattet werden können.
 
-=== Talwissen: Geschichte des Ortes · Quelle _quelle/presse (Heft Bottighofen 1994, Gemeinde Bottighofen) · gelesen 19.10.2026 ===
-- 1676: Untermüller Hans Conrad Hafen-Schedler erhält vom Kloster Münsterlingen die Erlaubnis, für seinen Sohn ein «Haus am See» zu bauen (später «Seeburg», dann «Schlössli»), unter der Bedingung, dass darin nicht gewirtet wird (_quelle/presse/pdf-text/Bottighofen_Heft_2_Schloessli_S103-128_OCR.txt, PDF-Seiten 104–108)
-- Um 1690: Hafen-Peron setzt einen Wirt als Pächter ein, der Schiffsleute bewirtet und beherbergt; 1699 verliert er vor der Tagsatzung, nur noch Wein aus Eigenbau (ebd., PDF-Seiten 110–111)
-- 1869: die Fischenz (seit 1373 bei der Untern Mühle) wird «einziges privates Fischereirecht am Bodensee» im Eigentum des Schlössli-Besitzers (ebd., PDF-Seite 122)
-- 1800: Beschiessung im Koalitionskrieg, das Schlössli teils neu und massiv gemauert (ebd., PDF-Seite 122)
-- Juni 1888: «Hotel und Pension Schlössli» eröffnet (Bachmann); 1910–1928 privat (Louis Pernod); danach «Strandhotel Schlössli», 1937 renoviert; 1962–1973 Hörler-Breu, 1973–1988 Keller-Oderbolz, 1988 Strandhotel Schlössli AG (ebd., PDF-Seiten 123–124)
-- Heute: das Schlössli ist ein Wohnhaus, die Wirtschaft am Schlössli liegt im ehemaligen Hafenmeistergebäude (_quelle/presse/gemeinde-bottighofen-geschichte.md (Gemeinde Bottighofen, 19.10.2026))
-- 2023 bis 08.09.2024: «Strandwirtschaft Schlössli» der GASTRO GROUP 5 AG am selben Ort (_quelle/web-archiv/text/2023_impressum-datenschutz.md, 2023_start.md, 20240908_start.md)
-- 29.04.2021: CK Gastro Consulting GmbH eingetragen (_quelle/presse/handelsregister-2026-10-19.md)
-- 12.09.2024: Squarespace-Seite angelegt; 08.12.2024 «Neueröffnung April 2025» (_kette/02-spaeher/befund.md; _quelle/web-archiv/text/20241208_start.md)
-- 3. April 2025: Eröffnung (_quelle/presse/gaultmillau-zwei-koeniginnen.md (30.03.2025: «Testlauf für die Eröffnung am 3. April»))
-- Oktober 2025: 14 GaultMillau-Punkte und «Entdeckung des Jahres 2026»; Oktober 2026: 15 Punkte (_quelle/presse/tz-14-punkte.md, tz-weiterer-punkt.md)
+=== Kontakt (Recherche des Hauses, 25.10.2026, _kette/03-sammler/fakten.json) ===
+Culinarium hat keine eigene Telefonnummer und keine eigene E-Mail-Adresse. Fragen zu einem Abend: eine Nachricht an @culinarium_hannover auf Instagram.
+Die Bar Walk on the Wild Side, in der Culinarium stattfindet: Telefon +49 163 3909578. Reservieren geht per Nachricht oder Telefon.
+Instagram: @culinarium_hannover (Culinarium), @walkonthewildside_hannover (die Bar), @dirtychicken.hannover (Dirty Chicken).
 
-=== Talwissen: Das Schwesterhaus · Quelle _kette/03-sammler/fakten.json · gelesen 19.10.2026 ===
-Taverne zum Schäfli, Oberdorfstrasse 8, 8556 Wigoltingen, https://www.schaefli-wigoltingen.ch · zwei Michelin-Sterne, 18 GaultMillau-Punkte, Falstaff 98 · Patron Christian Kuchler (Pächter der Wirtschaft am Schlössli)
+=== Lage (Google Maps, 25.10.2026) ===
+Walk on the Wild Side, Haasemannstraße 13, 30449 Hannover (Linden-Mitte), Ecke Rampenstraße. Plus Code 9PC7+49 Hannover.
+Weitere Angaben zur Anreise (Haltestelle, Parkplatz) stehen in keiner Quelle des Hauses.

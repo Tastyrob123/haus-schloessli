@@ -77,7 +77,8 @@
     var e; try { e = document.querySelector(sel); } catch (x) { return null; }
     if (!e) return null;
     var r = e.getBoundingClientRect();
-    return r.width > 4 && r.height > 4 ? e : null;
+    if (r.width > 4 && r.height > 4) return e;
+    return window.WO && WO.randZiel ? WO.randZiel(e) : null;   /* Handy: Ziel im zugeklappten Rand, das Kleid klappt ihn auf (30.10.2026) */
   }
   function finde(liste) { for (var i = 0; i < liste.length; i++) { var e = sichtbar(liste[i]); if (e) return e; } return null; }
 
@@ -100,6 +101,10 @@
       var r = ziel.getBoundingClientRect(), pad = 8, vw = innerWidth, vh = innerHeight;
       var x = Math.max(4, r.left - pad), y = Math.max(4, r.top - pad);
       var b = Math.min(vw - 8, r.right + pad) - x, h = Math.min(vh - 8, Math.min(Math.max(r.bottom, r.top + (schritte[nr].min || 0)), r.top + (schritte[nr].max || 1e5)) + pad) - y;   /* max: nur die erste Reihe einer langen Fläche */   /* min: Fläche, die erst nach dem Laden wächst (Kartenvorschau) */
+      if (vw <= 700) {   /* Handy (Oberchef 30.10.2026): die Karte überdeckt nie das Markierte; ein Ziel höher als das freie Feld wird bis über die Karte markiert */
+        var kt = vh - (parseFloat(getComputedStyle(karte).bottom) || 16) - karte.offsetHeight - 18;
+        if (y < kt && y + h > kt) h = Math.max(40, kt - y);
+      }
       kegel.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
       kegel.style.width = Math.max(0, b) + 'px'; kegel.style.height = Math.max(0, h) + 'px';
       if (vw <= 700) return;
@@ -119,6 +124,7 @@
       if (n < 0 || n >= schritte.length) return ende();
       nr = n; gerueckt = false; var s = schritte[n], letzt = n === schritte.length - 1;
       ziel = finde(s.ziel);
+      if (window.WO && WO.randZurueck) WO.randZurueck(ziel);   /* Schritt ausserhalb des Rands: der Rundgang klappt ihn wieder zu */
       if (s.oben) scrollTo({ top: 0, behavior: 'instant' });   /* die Kopfzeile versteckt sich beim Scrollen */
       var r = ziel.getBoundingClientRect();
       if (!s.oben && r.top < 70 || r.bottom > innerHeight - 20) ziel.scrollIntoView({ block: r.height > innerHeight * .7 ? 'start' : 'center', behavior: 'instant' });
@@ -129,7 +135,16 @@
         (letzt ? '' : '<button type="button" class="rdg-zu">Überspringen</button>') +
         '<button type="button" class="rdg-los">' + (letzt ? 'Los geht’s' : 'Weiter') + PFEIL + '</button></div>';
       karte.style.animation = 'none'; void karte.offsetWidth; karte.style.animation = '';   /* Karte kommt je Schritt neu herauf, deckend ab dem ersten Bild */
-      lege(); setTimeout(lege, 450);   /* Kopf- und Fussleisten fahren nach dem Scrollen noch herein */
+      var handy = function () {   /* Handy: Ziel ins freie Feld zwischen Kopf und Karte (30.10.2026); der Tresen lädt das Kleid nicht und rechnet selbst (Tor 1) */
+        if (window.WO && WO.rdgHandy) return WO.rdgHandy(ziel, karte);
+        if (!ziel || innerWidth > 700) return;
+        for (var a = ziel; a && a.nodeType === 1; a = a.parentElement) { var pos = getComputedStyle(a).position; if (pos === 'fixed' || pos === 'sticky') return; }
+        var ob = document.querySelector('.m-oben'), kb = ob ? ob.getBoundingClientRect().bottom : 0;
+        var oben = Math.max(16, kb) + 24, unten = karte.getBoundingClientRect().top - 24, r = ziel.getBoundingClientRect();   /* 24: Leuchtrahmen mit Schein */
+        if (unten - oben < 80 || (r.top >= oben && r.bottom <= unten)) return;
+        scrollBy({ top: r.top - (r.height <= unten - oben ? oben + (unten - oben - r.height) / 2 : oben), behavior: 'instant' });
+      };
+      handy(); lege(); setTimeout(function () { handy(); lege(); }, 450);   /* Kopf- und Fussleisten fahren nach dem Scrollen noch herein */
       var zu = karte.querySelector('.rdg-zu'); if (zu) zu.onclick = ende;
       var los = karte.querySelector('.rdg-los'); los.onclick = function () { letzt ? ende() : zeige(n + 1); };
       try { los.focus({ preventScroll: true }); } catch (e) { }
@@ -147,6 +162,7 @@
       if (k !== zuletzt) { zuletzt = k; neu(); }
     }, 120);
     function ende() {
+      if (window.WO && WO.randZurueck) WO.randZurueck(null);
       merk(w); lauf = null;
       removeEventListener('resize', neu); removeEventListener('scroll', neu, true); document.removeEventListener('keydown', taste, true);
       clearInterval(wacht); sperre.remove(); kegel.remove(); karte.remove();
@@ -206,15 +222,24 @@
     '.rdg-schild .rdg-los svg{width:13px;height:13px;fill:none;stroke:#2c3136;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
     '.rdg-schild__zu{flex:none;width:26px;height:26px;margin:0 2px 0 -4px!important;padding:0!important;border:0!important;border-radius:50%;background:none!important;box-shadow:none!important;cursor:pointer;color:#7c8386;font:16px/1 system-ui!important}' +
     '.rdg-schild__zu:hover{color:#2c3136}' +
+    '.rdg-schild__zu{display:grid;place-items:center}.rdg-schild__zu svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}' +   /* kein «×» (Robert 30.10.2026): Zurück-Pfeil wie «Verwerfen» */
     '@media (max-width:700px){.rdg-schild{right:16px;left:auto}}' +
     '@media (prefers-reduced-motion:reduce){.rdg-schild{animation:none;transition:none}}';
 
   function schild(w) {
     if (document.querySelector('.rdg-schild')) return;
+    /* Tresen 29.10.2026 (Oberchef, Kriterium 5): im ersten Bildschirm liegt das Schild nie auf den Fenstern des Empfangs.
+       Es kommt erst, wenn die Knopfreihe der Fenster über dem Platz des Schilds steht, also nach dem ersten Scrollen. */
+    var empfang = document.querySelector('.m-f5');
+    if (empfang && !schild.frei) {
+      var frei = function () { return empfang.getBoundingClientRect().bottom <= innerHeight - 110; };
+      if (!frei()) { var spaeter = function () { if (frei()) { removeEventListener('scroll', spaeter); schild.frei = true; if (aktuell() === w) schild(w); } };
+        addEventListener('scroll', spaeter, { passive: true }); return; }
+    }
     if (!document.getElementById('rdg-schild-css')) { var st = document.createElement('style'); st.id = 'rdg-schild-css'; st.textContent = SCHILD_CSS; document.head.appendChild(st); }
     var s = document.createElement('div'); s.className = 'rdg-schild'; s.setAttribute('role', 'status');
     s.innerHTML = '<span class="rdg-schild__t"><small>' + GAENGE[w].name + '</small><b>Kurzer Rundgang</b></span>' +
-      '<button type="button" class="rdg-los">Zeigen' + PFEIL + '</button><button type="button" class="rdg-schild__zu" aria-label="Schliessen">×</button>';
+      '<button type="button" class="rdg-los">Zeigen' + PFEIL + '</button><button type="button" class="rdg-schild__zu" aria-label="Schliessen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 9.67 2.67 6.33 6 3M2.67 6.33h7.33a3.33 3.33 0 0 1 0 6.67h-2"/></svg></button>';
     /* über die Leiste unten (Speichern, Veröffentlichen) setzen, nie darauf */
     /* Fehlerbuch 10a, 20.10.2026: fest unten rechts über einer Leiste, einmal gesetzt, neu nur bei geänderter Fenstergrösse, nie nach dem Inhalt darunter */
     function platz() {

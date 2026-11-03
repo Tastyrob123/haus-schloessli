@@ -1,2 +1,0 @@
-{"zeit": "2026-10-20 00:18:05", "text": "SyntaxError: Unexpected token ';'. Expected ')' to end an argument list. · carte.js?v=6:676", "seite": "index.html"}
-{"zeit": "2026-10-20 00:20:17", "text": "Uncaught SyntaxError: missing ) after argument list · carte.js?v=6:676", "seite": "index.html"}

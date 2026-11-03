@@ -3,7 +3,7 @@
    Vorschau (im Werkzeug, als Rahmen): Daten kommen per postMessage, Text ist markiert (data-k), Klicks und Geschriebenes gehen zurück.
    Danach wird jede Seite so gross gesetzt, wie ihr Inhalt es zulässt (wie _werkbank/satz_druck_datei.js, mit dem die PDFs der Website gedruckt sind).
    Doldenhorn 17.10.2026: Kopie aus La Carte des Carlton-Europe, auf den Satz der Unterlagen des Waldhotel Doldenhorn umgestellt.
-   Gasterntal 17.10.2026: Kopie aus der Tafel des Ruedihus. Schlössli 19.10.2026: Schriften des Hauses (Open Sans, Instrument Sans, DM Mono). */
+   Gasterntal 17.10.2026: Kopie aus der Tafel des Ruedihus. Schäfli 21.10.2026. Culinarium 28.10.2026: Schriften des Hauses (Fraunces, Instrument Sans, Urbanist, DM Mono). */
 (function () {
   'use strict';
   var q = new URLSearchParams(location.search), ZEICHEN = null, D = null, MODUS = 'einfach', ZOOM = 0.62, ZOOM_EIGEN = false, N = 0, DATEN = null;
@@ -90,6 +90,32 @@
   var CACHE = { karte: null, css: null, html: [], bericht: [] };
   // Eine Seite, die direkt in der Vorschau verändert wurde (Ziehen, Pfeile, Schreiben), gilt beim nächsten Satz als geändert
   function schmutzig(el) { var bl = el && el.closest && el.closest('.blatt'); if (!bl) return; var i = [].indexOf.call(document.querySelectorAll('#seiten > .blatt'), bl); if (i >= 0) CACHE.html[i] = null; }
+  /* Gestaltung 30.10.2026 (Tor K12, Stilblatt): Trenner « / », « · » in Rudis Zeilen und « | » in Momos Zeilen entfallen am Zeilenende und am Zeilenanfang.
+     Nach dem Einpassen wird jeder Trenner gemessen; bricht die Zeile an ihm, wird er zum Zeilenumbruch (Text bleibt im Element, nur unsichtbar). */
+  function trennerAmRand(wurzeln) {
+    // nur Trenner, an denen die Zeile wirklich bricht, bekommen ein Element; alle anderen bleiben reiner Text (Schreiben in der Vorschau, Proben)
+    function oben(t, a, b) { var r = document.createRange(); r.setStart(t, a); r.setEnd(t, b); var q = r.getClientRects(); return q.length ? q[q.length - 1].top : null; }
+    wurzeln.forEach(function (w) {
+      [].forEach.call(w.querySelectorAll('.sb-n,.sb-dr'), function (p) {
+        for (var runde = 0; runde < 4; runde++) {
+          var tw = document.createTreeWalker(p, NodeFilter.SHOW_TEXT), knoten = [], n, neu = 0;
+          while ((n = tw.nextNode())) if (!(n.parentNode.classList && n.parentNode.classList.contains('sb-tr')) && /\s[\/|·]\s/.test(n.nodeValue)) knoten.push(n);
+          knoten.forEach(function (t) {
+            var re = /\s[\/|·]\s/g, m, treffer = [];
+            while ((m = re.exec(t.nodeValue))) if (m.index > 0 && m.index + 3 < t.nodeValue.length) treffer.push(m.index);
+            for (var k = treffer.length - 1; k >= 0; k--) {
+              var at = treffer[k], a = oben(t, at - 1, at), b = oben(t, at + 3, at + 4);
+              if (a === null || b === null || Math.abs(b - a) <= 2) continue;
+              var rest = t.splitText(at), nach = rest.splitText(3), sp = document.createElement('span');
+              sp.className = 'sb-tr bruch'; rest.parentNode.replaceChild(sp, rest); sp.appendChild(rest); neu++;
+              void nach; break;   // Lage hat sich geändert: in der nächsten Runde neu messen
+            }
+          });
+          if (!neu) break;
+        }
+      });
+    });
+  }
   function setze(d, opt) {
     var css = SATZ.kopfCss(d), cssEl = document.getElementById('karte-css');
     if (cssEl.textContent !== css) cssEl.textContent = css;
@@ -104,7 +130,7 @@
     CACHE.karte = opt.vorschau ? d.ziel : null; CACHE.css = css; CACHE.html = s.slice();
     // Doldenhorn 17.10.2026: die Schriften des Satzes ausdrücklich laden, bevor eingepasst wird. «fonts.ready» allein meldet fertig, solange noch
     // keine Schrift angefragt ist; dann wurde mit der Ersatzschrift gemessen und eine Seite (Bistro S. 2, am Handy) fälschlich als «zu hoch» gemeldet.
-    var SCHRIFTEN = ['300 12px "Open Sans"', '400 12px "Open Sans"', '400 12px "Instrument Sans"', '500 12px "Instrument Sans"', '600 12px "Instrument Sans"', '400 12px "DM Mono"'];
+    var SCHRIFTEN = ['340 12px "Fraunces Titel"', '320 12px "Fraunces Zeile"', '400 12px "Fraunces Zeile"', '400 12px "Instrument Sans"', '500 12px "Instrument Sans"', '500 12px Urbanist', '600 12px Urbanist', '400 12px "DM Mono"'];
     return Promise.all(SCHRIFTEN.map(function (f) { return document.fonts.load(f).catch(function () { return null; }); })).then(function () { return document.fonts.ready; }).then(function () {
       if (opt.vorschau) return null;   // Vorschau: Bilder haben feste Masse, der Satz steht schon, sie laden nach (Slow 4G: Text zuerst)
       return Promise.all([].map.call(document.images, function (i) { return i.complete ? 0 : new Promise(function (r) { i.onload = i.onerror = r; }); }));
@@ -116,6 +142,7 @@
       var bewegt = [].concat.apply([], wurzeln.map(function (w) { return [].slice.call(w.querySelectorAll('[style*="transform"]')); })).filter(function (e) { return e.style.transform && e.style.transform !== 'none'; });
       var vorher = bewegt.map(function (e) { var v = e.style.transform; e.style.transform = 'none'; return v; });
       var neuBericht = passe(wurzeln), bericht = [];
+      trennerAmRand(wurzeln);
       blaetter.forEach(function (bl, i) { var k = neu.indexOf(i); bericht.push(k >= 0 ? neuBericht[k] : CACHE.bericht[i]); });
       bericht.forEach(function (b, i) { b.seite = i + 1; });
       bewegt.forEach(function (e, i) {
@@ -138,7 +165,7 @@
     zeichen().then(function () {
       return fetch('/_werkzeuge/carte/api/druckdaten?z=' + encodeURIComponent(q.get('z') || '') + '&q=' + encodeURIComponent(q.get('q') || 'stand'), { cache: 'no-store' });
     }).then(function (r) { if (!r.ok) throw new Error('Daten ' + r.status); return r.json(); }).then(function (d) {
-      document.title = d.name + ' · Wirtschaft am Schlössli';
+      document.title = d.name + ' · Culinarium';
       return setze(d, {});
     }).then(function (b) { window.CARTE_FERTIG = b; document.documentElement.dataset.fertig = '1'; })
       .catch(function (e) { window.CARTE_FEHLER = String(e && e.stack || e); });
@@ -161,9 +188,22 @@
         return document.fonts.ready;
       }).then(function () {
         var b = document.querySelector('.blatt'); if (!b) return;
-        var w = parseFloat(getComputedStyle(b).width), z = Math.min(1, (document.documentElement.clientWidth - 4) / w);
-        b.style.transformOrigin = '0 0'; b.style.transform = 'scale(' + z + ')'; b.style.margin = '0';
-        an('mini-hoehe', { h: Math.ceil(b.offsetHeight * z) + 4 });
+        /* Tor 5 30.10.2026 (K4/K8): gezeigt wird nur der Eintrag, so gross, dass er die Vorschau füllt (gesetzt bleibt er wie in der PDF, nur das Bild wird
+           vergrössert und auf den Eintrag zugeschnitten); vorher stand er winzig auf dem ganzen, fast leeren Blatt */
+        b.style.margin = '0'; b.style.transformOrigin = '0 0'; b.style.transform = 'none';
+        document.documentElement.style.overflow = document.body.style.overflow = 'hidden';
+        // Umriss des Texts (Linien und Rahmen der Seite zählen nicht mit, sonst bleibt die Schrift winzig)
+        var B = b.getBoundingClientRect(), cw = document.documentElement.clientWidth, rand = 14, R = null, tw = document.createTreeWalker(b, NodeFilter.SHOW_TEXT), t;
+        while ((t = tw.nextNode())) {
+          if (!/\S/.test(t.nodeValue)) continue;
+          var rg = document.createRange(); rg.selectNodeContents(t);
+          [].forEach.call(rg.getClientRects(), function (q) { if (!q.width) return; R = R ? { left: Math.min(R.left, q.left), top: Math.min(R.top, q.top), right: Math.max(R.right, q.right), bottom: Math.max(R.bottom, q.bottom) } : { left: q.left, top: q.top, right: q.right, bottom: q.bottom }; });
+        }
+        if (!R) R = { left: B.left, top: B.top, right: B.right, bottom: B.bottom };
+        R.width = R.right - R.left; R.height = R.bottom - R.top;
+        var z = Math.min(1.35, (cw - 2 * rand) / R.width), tx = (cw - R.width * z) / 2 - (R.left - B.left) * z, ty = rand - (R.top - B.top) * z;
+        b.style.transform = 'translate(' + tx.toFixed(1) + 'px,' + ty.toFixed(1) + 'px) scale(' + z.toFixed(4) + ')';
+        an('mini-hoehe', { h: Math.ceil(R.height * z + 2 * rand) });
       });
     });
     return;
@@ -176,7 +216,8 @@
     [].forEach.call(document.querySelectorAll('.blatt'), function (b) {
       var w = parseFloat(b.dataset.b) * 96 / 25.4, h = b.offsetHeight;
       // Doldenhorn 17.10.2026: «+» darf über die Breite der Vorschau hinaus vergrössern (am Handy sonst nie lesbar), dann schiebt man seitlich
-      var passt = Math.max(0.25, (vw - 16) / w), z = ZOOM_EIGEN ? ZOOM : Math.min(ZOOM, passt), off = Math.max(0, (vw - w * z) / 2);
+      // Tor 5 30.10.2026 (K5/K13): ohne eigenen Zoom passt das ganze Blatt in die Höhe der Vorschau, nichts unten angeschnitten
+      var vh = document.documentElement.clientHeight, passt = Math.max(0.25, Math.min((vw - 16) / w, MODUS === 'frei' ? 9 : (vh - 64) / h)), z = ZOOM_EIGEN ? ZOOM : Math.min(ZOOM, passt), off = Math.max(0, (vw - w * z) / 2);
       b.style.transformOrigin = '0 0';
       b.style.transform = 'translateX(' + off.toFixed(1) + 'px) scale(' + z.toFixed(4) + ')';
       b.style.margin = '0 0 ' + (-(h * (1 - z)) + 26).toFixed(1) + 'px 0';
@@ -448,8 +489,8 @@
     }
     function schreibbar(t) {   // Text, der direkt in der Karte geändert werden darf
       if (!t || t.querySelector('[data-k]')) return false;
-      if (DATEN && DATEN.art === 'mittag') {   // Mittagsmenü: nur Texte aus einem Feld der Woche (Tag und Gänge setzt die Woche)
-        var gen = { seiten: SATZ.MITTAG.seiten(DATEN.woche) }, kk = t.dataset.k.split('.'), node = lies(gen, kk.slice(0, -2).join('.'));
+      if (DATEN && DATEN.art === 'abend') {   // Der nächste Abend: nur Texte aus einem Feld des Abends (Datum und Gang-Namen setzt der Abend)
+        var gen = { seiten: SATZ.ABEND.seiten(DATEN.abend) }, kk = t.dataset.k.split('.'), node = lies(gen, kk.slice(0, -2).join('.'));
         return !!(node && node.w);
       }
       var kp = /^(.*)~kap\d$/.exec(t.dataset.k); if (kp) { var e = lies(DATEN || {}, kp[1]); return !!(e && e.fn === 'el'); }   // Kapitälchen: ein Text

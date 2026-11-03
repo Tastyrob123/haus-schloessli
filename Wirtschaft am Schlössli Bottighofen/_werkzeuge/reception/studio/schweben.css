@@ -25,4 +25,5 @@ h2[data-sw],[data-sw="k"]{--weg:clamp(30px,3.2vw,48px);--kl:.97}
 [data-sw="z"].sw-da{opacity:1;scale:1}
 /* Später dazugekommene Teile (Eingabe, Neuzeichnen): sofort ruhig an ihrem Platz */
 .sw-ruhig,.sw-ruhig.sw-da{animation:none!important;transition:none!important;translate:none!important;scale:none!important;opacity:1!important}
-@media (prefers-reduced-motion:reduce){[data-sw],[data-swz]{animation:none!important;transition:none!important;translate:none!important;scale:none!important;opacity:1!important}}
+@media (prefers-reduced-motion:reduce){[data-sw] img,[data-sw].sw-da img{animation:none!important;scale:none!important}   /* auch das Foto im Blatt zoomt dann nicht (Bewegungs-Tor 30.10.2026) */
+  [data-sw],[data-swz]{animation:none!important;transition:none!important;translate:none!important;scale:none!important;opacity:1!important}}

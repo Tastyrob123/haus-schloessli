@@ -7,10 +7,10 @@
   ],
   "sprache": "de",
   "belegt": true,
-  "frage": "Habt ihr am Dienstag offen?",
-  "antwort": "Dienstag und Mittwoch ist Ruhetag. Geöffnet ist Donnerstag bis Montag:\n- Restaurant: 11:30 bis 23:00 Uhr\n- Küche à la carte: 11:30 bis 13:30 und 18:00 bis 20:00 Uhr\n- Lästermeile: die Tapas-Karte den ganzen Tag",
-  "thema": "",
-  "buchung": false
+  "frage": "Wann ist der nächste Abend?",
+  "buchung": true,
+  "antwort": "Der nächste Termin steht noch nicht fest. Wer auf der Warteliste steht, erfährt ihn zuerst.\n- Freitag: ab 19 Uhr\n- Samstag: ab 17 Uhr\n- Plätze: wenige, an einer Tafel",
+  "thema": ""
  },
  {
   "vor": [
@@ -20,8 +20,8 @@
   ],
   "sprache": "de",
   "belegt": true,
-  "frage": "Was kostet der Lunch?",
-  "antwort": "Das Lunch-Menü hat drei Gänge für 35 Franken:\n- Kürbissuppe mit Wachtelei und Serrano Schinken\n- Risi e bisi mit Miesmuschel, Erbsen und Spinat\n- Joghurt Panna Cotta mit Apfelcrumble",
+  "frage": "Was kostet ein Abend?",
+  "antwort": "Zuletzt kostete ein Abend 89,00 EUR, am 25. und 26. September 2026.\n- Darin: drei Gänge, fünf Drinks, Tasting und Schulung\n- Tickets: nur im Vorverkauf",
   "thema": "",
   "buchung": false
  },
@@ -33,8 +33,8 @@
   ],
   "sprache": "de",
   "belegt": true,
-  "frage": "Wie viele Personen passen für ein Bankett?",
-  "antwort": "Auf zwei Etagen hat es Platz für jeweils bis zu 26 Personen.\n- Speisenform: Tavolata oder gesetztes Menue\n- Bankettmenüs: Frühling 175, Sommer 185, Herbst 175 Franken\n- Aus den Menüs können 3 bis 5 Gerichte ausgewählt werden",
+  "frage": "Was ist Fatwashing?",
+  "antwort": "Die Spirituose nimmt den Geschmack eines Fetts an; kalt gestellt, wird das Fett wieder abgehoben. Momo erklärt jeden Drink am Tisch.",
   "thema": "",
   "buchung": false
  },
@@ -44,11 +44,11 @@
    13,
    40
   ],
-  "sprache": "en",
-  "belegt": true,
-  "frage": "Are the Tortelloni vegetarian?",
-  "antwort": "Yes, the Tortelloni are marked vegetarian on the October menu.\n- Price: CHF 35, as a main course CHF 50\n- Allergens: gluten, lactose, eggs, celery\nThe kitchen will gladly discuss any allergy with you.",
-  "thema": "",
+  "sprache": "de",
+  "belegt": false,
+  "thema": "Nussallergie",
+  "frage": "Ich habe eine Nussallergie, geht das?",
+  "antwort": "Dazu steht nichts in meinen Unterlagen; Rudi in der Küche klärt es mit dir. Frag am besten direkt:\n- Telefon der Bar: +49 163 3909578\n- Instagram: @culinarium_hannover",
   "buchung": false
  },
  {
@@ -59,8 +59,8 @@
   ],
   "sprache": "de",
   "belegt": true,
-  "frage": "Gibt es Tapas ohne Gluten?",
-  "antwort": "Auf der Karte der Lästermeile tragen diese Tapas kein G:\n- Pimientos de Padrón: 8 Franken\n- Patatine fritte: 8 Franken (L, E)\n- Kalamata Oliven: 8 Franken (N)\nDie Küche stimmt es gerne mit Ihnen ab.",
+  "frage": "Kann ich mein Ticket zurückgeben?",
+  "antwort": "Tickets werden nicht rückerstattet, weil die Plätze an der Tafel begrenzt sind.",
   "thema": "",
   "buchung": false
  },
@@ -72,8 +72,8 @@
   ],
   "sprache": "de",
   "belegt": true,
-  "frage": "Wann habt ihr Ferien?",
-  "antwort": "Das Restaurant ist zweimal geschlossen:\n- 13. bis 15. November 2026: das Team ist auf der Excellence Gourmetkreuzfahrt\n- 22. Dezember 2026 bis 10. Februar 2027",
+  "frage": "Wo ist das genau?",
+  "antwort": "Im Walk on the Wild Side in Linden.\n- Adresse: Haasemannstraße 13, 30449 Hannover\n- Ecke: Haasemannstraße, Ecke Rampenstraße\n- Plus Code: 9PC7+49 Hannover",
   "thema": "",
   "buchung": false
  },
@@ -85,9 +85,9 @@
   ],
   "sprache": "de",
   "belegt": false,
-  "frage": "Haben Sie einen Kinderstuhl?",
-  "antwort": "Dazu steht nichts in meinen Unterlagen. Das Team hilft Ihnen gerne weiter: +41 71 688 90 92 oder kontakt@schloessli-bottighofen.ch.",
-  "thema": "Kinderstuhl",
+  "thema": "Alkoholfrei",
+  "frage": "Gibt es den Abend auch alkoholfrei?",
+  "antwort": "Dazu steht nichts in meinen Unterlagen. Frag am besten direkt:\n- Telefon der Bar: +49 163 3909578\n- Instagram: @culinarium_hannover",
   "buchung": false
  },
  {
@@ -96,11 +96,11 @@
    15,
    45
   ],
-  "sprache": "de",
-  "belegt": false,
-  "frage": "Kann man mit dem Schiff zu euch kommen?",
-  "antwort": "Dazu steht nichts in meinen Unterlagen. Das Team hilft Ihnen gerne weiter: +41 71 688 90 92 oder kontakt@schloessli-bottighofen.ch.",
-  "thema": "Anreise mit dem Schiff",
+  "sprache": "en",
+  "belegt": true,
+  "frage": "What time does the evening start?",
+  "antwort": "On Fridays from 7 pm, on Saturdays from 5 pm. Culinarium takes place on single weekends, usually a Friday and the Saturday after.",
+  "thema": "",
   "buchung": false
  },
  {
@@ -111,8 +111,8 @@
   ],
   "sprache": "de",
   "belegt": true,
-  "frage": "Wo kann ich parkieren?",
-  "antwort": "Das Restaurant hat einen eigenen Parkplatz mit ausreichend Plätzen.\n- Anfahrt: am Kreisverkehr beim Restaurant Bären in die Seestrasse Richtung Hafen, über den Bahnübergang, der Strasse folgen\n- Mit dem Zug: Bahnhof Bottighofen in der Nähe",
+  "frage": "Wann gibt es wieder Dirty Chicken?",
+  "antwort": "Dirty Chicken gibt es nur an einzelnen Tagen; die Termine stehen auf Instagram bei @dirtychicken.hannover.",
   "thema": "",
   "buchung": false
  },
@@ -122,10 +122,10 @@
    18,
    20
   ],
-  "sprache": "fr",
+  "sprache": "de",
   "belegt": true,
-  "frage": "Les chiens sont-ils admis sur la terrasse ?",
-  "antwort": "Oui, les chiens sont les bienvenus. Pour toute autre question, l’équipe vous aide volontiers : +41 71 688 90 92.",
+  "frage": "Kann ich die lange Tafel für meinen Geburtstag haben?",
+  "antwort": "Ja, die lange Tafel gibt es auch für eure eigene Feier.\n- Reservieren: bei der Bar per Nachricht oder Telefon\n- Telefon der Bar: +49 163 3909578",
   "thema": "",
   "buchung": false
  }

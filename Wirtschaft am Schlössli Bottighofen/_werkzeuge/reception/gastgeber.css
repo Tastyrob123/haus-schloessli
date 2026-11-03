@@ -24,5 +24,14 @@
    war mit 9,5 px Beige auf Beige kaum lesbar (1,9:1) */
 .re-mehr{position:relative;z-index:3;margin-top:26px!important}
 .re-qliste{position:relative;z-index:1}
-.gs-hinweis .gs-werk__stand{font-size:11px!important;font-weight:600;letter-spacing:.14em;color:#213f72!important}
-.gs-hinweis .gs-werk__stand.laeuft{color:#0d182b!important}
+.gs-hinweis .gs-werk__stand{font-size:11px!important;font-weight:400;letter-spacing:.14em;color:#444152!important}
+.gs-hinweis .gs-werk__stand.laeuft{color:#1a191f!important}
+
+/* Culinarium Hannover 21.10.2026 (lädt als letztes, deshalb hier) */
+/* Kopf (Fehlerbuch 10a «Titel überdeckt nie einen Knopf»): La Réception hat rechts zusätzlich «Chat ausprobieren»; der Titel in der Mitte nimmt deshalb
+   in jeder Breite nur den freien Platz zwischen Marke und Knöpfen und kürzt notfalls mit «…» (gemessen 21.10.2026: «Vom Team nachgetragen» lief bei 1440 unter den Knopf). */
+@media (min-width:901px){
+  .wo-kopf{grid-template-columns:auto minmax(0,1fr) auto}
+  .wo-kopf__mitte{min-width:0;max-width:100%}
+  .wo-kopf__mitte b,.wo-kopf__mitte small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+}

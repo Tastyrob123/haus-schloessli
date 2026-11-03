@@ -1,6 +1,6 @@
 {
  "name": "Das Besucherbuch",
- "hinweis": "Wirtschaft am Schlössli, 19.10.2026 (Form wie Berghotel Gasterntal _werkzeuge/registre/online.json). Oberfläche statisch unter /werkzeuge/registre/ (Vorführung liest beispiel/*.json, braucht keinen Dienst); /api/registre für Die Stube (Beispielwerte, dieselbe Rechnung) und für echte Werte mit Schlüssel. Eigener Speicher nur über REGISTRE_READ_WRITE_TOKEN (fehlt er: /tmp/schloessli-bottighofen-registre-demo, nie der gemeinsame Speicher, nie der des Schäfli). Braucht api/_speicher.py des gemeinsamen Online-Wegs (Station 14/16). Rahmen aus der Oberfläche der Häuser (assets/oberflaeche/, Kleid schloessli): bis Station 14 unter _werkzeuge/oberflaeche/, dann nach website/assets/oberflaeche/. Bühnenfotos aus /assets/img/ der Website (start, platanen, schild, abend, regal, baum, glas, gaststube, haus, je -1200.webp), Schriften /assets/fonts/. Die Zählung der Website (assets/js/messung.js, Vorschlag vorschlag/messung.js) sendet an /api/registre. Wege relativ zum Projektordner; die Website liegt in website/.",
+ "hinweis": "Culinarium Hannover, 28.10.2026 (Form wie Taverne zum Schäfli _werkzeuge/registre/online.json). Oberfläche statisch unter /werkzeuge/registre/ (Vorführung liest beispiel/*.json, braucht keinen Dienst); /api/registre für die Zentrale (Beispielwerte, dieselbe Rechnung) und für echte Werte mit Schlüssel. Eigener Speicher nur über REGISTRE_READ_WRITE_TOKEN (fehlt er: /tmp/culinarium-hannover-registre-demo, nie der gemeinsame Speicher eines anderen Werkzeugs oder Hauses). Braucht api/_speicher.py des gemeinsamen Online-Wegs. Rahmen aus der Oberfläche der Häuser (assets/oberflaeche/, Kleid culinarium): unter _werkzeuge/oberflaeche/, beim Hochladen nach assets/oberflaeche/. Bühnenfotos aus /assets/bild/ der Website (service, schildtag, glasnacht, plakatwand, kueche, anstossen, tablett, je -1600.webp; Aussenfoto fassade aus dem Kleid), Seitenbilder -640.webp, Schriften /assets/schrift/, Zeichen /assets/oberflaeche/kleid/schloessli-zeichen.svg. Die Zählung der Website (assets/messung.js, Quelle vorschlag/messung.js) sendet an /api/registre. Nichts ist online (Stand 28.10.2026).",
  "funktionen": {
   "api/registre.py": {
    "von": "_werkzeuge/registre/online/registre.py",
@@ -25,8 +25,8 @@
   "_werkzeuge/registre/anleitung.js": "werkzeuge/registre/anleitung.js",
   "_werkzeuge/registre/anleitung": "werkzeuge/registre/anleitung",
   "_werkzeuge/registre/beispiel": "werkzeuge/registre/beispiel",
-  "_werkzeuge/registre/schloessli.css": "werkzeuge/registre/schloessli.css",
-  "_werkzeuge/registre/seiten-bilder.json": "werkzeuge/registre/seiten-bilder.json"
+  "_werkzeuge/registre/seiten-bilder.json": "werkzeuge/registre/seiten-bilder.json",
+  "_werkzeuge/registre/culinarium.css": "werkzeuge/registre/culinarium.css"
  },
  "umleitungen": [],
  "stand": "/api/registre?tage=30&beispiel=1",

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Die Tafel (La Carte) · Wirtschaft am Schlössli — eigener Server (17.10.2026, Kopie aus der Tafel des Landgasthof Ruedihus, dort aus dem
-Waldhotel Doldenhorn und La Carte des Carlton-Europe). python3 _werkzeuge/carte/serve.py [port]   (Standard 9031)
+"""La Carte · Culinarium Hannover — eigener Server (28.10.2026, Kopie aus der Tafel im Schäfli, dort aus Schlössli, Ruedihus,
+Waldhotel Doldenhorn und La Carte des Carlton-Europe). python3 _werkzeuge/carte/serve.py [port]   (Standard 9283)
 
 Liefert das Werkzeug (/_werkzeuge/carte/, darin auch Satz, Schriften und Fotos der Karte; die Werkzeug-Oberfläche kommt aus dem Haus unter
 /assets/oberflaeche/), die Wege /_werkzeuge/carte/api/… (carte.py) und,
@@ -13,14 +13,13 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 HIER = os.path.dirname(os.path.realpath(__file__))   # realpath: sonst liefert ein Projekt hinter einem Verweis (z. B. /var → /private/var) jede Datei als 404
 WURZEL = os.path.dirname(os.path.dirname(HIER))   # Ordner, in dem _werkzeuge/ liegt
-# Schlössli 19.10.2026: die Website liegt in website/ neben _werkzeuge/ (bei den Kandertal-Häusern ist das Projekt selbst die Website).
-# Zieht das Werkzeug später nach website/_werkzeuge/ um, ist WURZEL die Website und es gilt dasselbe.
-PROJ = WURZEL if os.path.isfile(os.path.join(WURZEL, 'bau.py')) else os.path.join(WURZEL, 'website')
+# Culinarium: die Website liegt in website/ neben _werkzeuge/
+PROJ = os.path.join(WURZEL, 'website')
 OBERFLAECHE = os.path.join(WURZEL, '_werkzeuge', 'oberflaeche')   # gemeinsamer Rahmen der Werkzeuge, bis Station 14 ihn nach website/assets/ legt
 sys.path.insert(0, HIER)
 import carte  # noqa: E402
 
-PORT = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get('CARTE_PORT', '9031'))
+PORT = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get('CARTE_PORT', '9283'))
 os.environ['CARTE_PORT'] = str(PORT)
 GROSS = 3_000_000
 # was aus dem Projekt gelesen werden darf (nur Dateien darunter, nie Python, nie Daten)
@@ -172,7 +171,7 @@ class Weg(BaseHTTPRequestHandler):
                     return self._webseite(q)
                 if was == 'export':
                     b = json.dumps(carte.export(), ensure_ascii=False, indent=1).encode('utf-8')
-                    name = time.strftime('die-tafel-wirtschaft-am-schloessli-%Y-%m-%d.json')
+                    name = time.strftime('la-carte-culinarium-hannover-%Y-%m-%d.json')
                     self._kopf(200, 'application/json; charset=utf-8', len(b), {'Cache-Control': 'no-store', 'Content-Disposition': f'attachment; filename="{name}"'})
                     return self.wfile.write(b)
                 return self._json(200, carte.get(was, q, *self._wer()))
@@ -201,18 +200,12 @@ class Weg(BaseHTTPRequestHandler):
         return self._json(200, d)
 
     def _webseite(self, q):
-        """Ansicht «Website» (C07): die Restaurant-Seite mit dem Entwurf der Karte, gesetzt vom Bau des Hauses in einen Wegwerf-Ordner (web.py).
-        Liest der Bau La Carte noch nicht (Patch fehlt) oder ist es keine Karte mit Restaurant-Seite: weiter zur Seite, wie sie heute ist."""
-        import web
+        """Ansicht «Website» (C07): die Seite der Website, wie sie heute gebaut ist (abende.html zeigt die Menükarte im Fenster des Abends; das Werkzeug
+        öffnet dort den Abend der Karte). Die Website liest La Carte erst mit dem Einbau von karten.json in ihren Bau (web.py, offen); bis dahin zeigt
+        die Ansicht den Stand der Website, der Entwurf steht in der Ansicht «Karte»."""
         z, seite = (q.get('z') or [''])[0], (q.get('seite') or [''])[0]
         carte._ziel(z)
         h = None
-        if WEBSEITE.match(seite):
-            k = carte.karte(z)
-            try:
-                h = web.seite_mit(z, k['entwurf'] or k['stand'], seite)
-            except Exception as e:  # noqa: BLE001  die Ansicht fällt auf die heutige Seite zurück
-                carte.fehler_log(f'Website-Ansicht {z}/{seite}: {e!r}')
         if not h:
             self.send_response(302)
             self.send_header('Location', '/' + (seite if WEBSEITE.match(seite) else ''))
@@ -230,7 +223,7 @@ class Weg(BaseHTTPRequestHandler):
         if art not in ('live', 'probe'):
             return self._fehler(404, 'DATEI', 'Diese PDF gibt es nicht.')
         p = os.path.join(carte.K, art, z + '.pdf')
-        if not os.path.isfile(p) and art == 'live':   # noch nichts veröffentlicht: die PDF, die heute auf der Website liegt (Lunch-Menü: lunch.pdf)
+        if not os.path.isfile(p) and art == 'live':   # noch nichts veröffentlicht: die PDF, die heute auf der Website liegt 
             p = next((os.path.join(PROJ, r) for r in carte.website_pdfs(z) if os.path.isfile(os.path.join(PROJ, r))), os.path.join(PROJ, 'unterlagen', 'pdf', z + '.pdf'))
         if not os.path.isfile(p):
             return self._fehler(404, 'DATEI', 'Diese PDF gibt es noch nicht. Sie entsteht beim ersten Veröffentlichen.' if art == 'live' else 'Noch keine Probe gedruckt.')
@@ -288,5 +281,5 @@ if __name__ == '__main__':
         carte.fehler_log(f'Sicherung beim Start: {e!r}')
     srv = ThreadingHTTPServer(('127.0.0.1', PORT), Weg)
     srv.daemon_threads = True
-    print(f'Das Kartenpult (La Carte) · Wirtschaft am Schlössli: http://127.0.0.1:{PORT}/_werkzeuge/carte/', flush=True)
+    print(f'La Carte · Culinarium Hannover: http://127.0.0.1:{PORT}/_werkzeuge/carte/', flush=True)
     srv.serve_forever()

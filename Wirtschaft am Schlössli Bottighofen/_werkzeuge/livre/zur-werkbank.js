@@ -1,9 +1,9 @@
-/* «Zur Werkbank» (R19) · Das Hausbuch der Wirtschaft am Schlössli: Kopie des Bausteins der Häuser (Schlüssel des Hauses «sb-wb», wie Die Stube); geändert nur: Adresse des Hauses auch aus _werkzeuge/livre/ und werkzeuge/livre/ (online, F78). */
+/* «Zur Werkbank» (R19) · Le Livre Culinarium Hannover: Kopie aus Le Livre der Taverne zum Schäfli (dort nur gelesen), Schlüssel des Hauses «culinarium-wb», 28.10.2026; geändert nur: Adresse des Hauses auch aus _werkzeuge/livre/ und werkzeuge/livre/ (online, F78). */
 /* «Zur Werkbank» (Robert 12.10.2026): ein Knopf unten links auf jeder Seite, die man aus der Werkbank heraus öffnet.
    Eine Datei für alle Seiten, sie bringt Aussehen und Verhalten selbst mit (eigener Schattenbaum, kein Stylesheet der Seite greift hinein).
 
    In der Werkbank selbst (werkbank/, werkbank/en/ …) zeigt sie nichts, sondern hängt an jeden Link, der hinausführt, die Herkunft:
-   ?wb=<Sprache>.<Abschnitt>. Die Zielseite merkt sich das für die Sitzung (sessionStorage «sb-wb»), nimmt den Zusatz wieder aus der Adresse
+   ?wb=<Sprache>.<Abschnitt>. Die Zielseite merkt sich das für die Sitzung (sessionStorage «culinarium-wb»), nimmt den Zusatz wieder aus der Adresse
    und zeigt den Knopf, auch über alle weiteren Klicks. Ohne diese Herkunft erscheint nichts: ein Gast des Hauses sieht den Knopf nie.
    Eingebettet (Laptop der Werkbank, Vorschau in Le Bureau) erscheint er auch nicht.
 
@@ -43,22 +43,22 @@
 
   var SPRACHEN = ['de', 'en', 'fr', 'zh', 'ko', 'ar'];
   var TEXT = { de: 'Zur Werkbank', en: 'To the workbench', fr: 'Vers l’atelier', zh: '前往工作台', ko: '작업대로', ar: 'إلى منضدة العمل' };
-  var OHNE_SPRACHE = /^(control|_?werkzeuge|studio|mission-control|reception|marke|maison|imprimerie|mails|werkbank\/anleitung)\/|^mappe/;   // gibt es nur deutsch: Sprache der Werkbank gilt
-  var FREMD_ZIEL = /^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):8963$/;   // L’Imprimerie auf eigener Adresse
-  var HERKUNFT = /^https:\/\/[a-z0-9-]+\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/;   // von wo eine Werkbank herkommen darf
-  var SCHL = 'sb-wb';
+  var OHNE_SPRACHE = /^(control|_werkzeuge|studio|mission-control|reception|marke|maison|imprimerie|mails|werkbank\/anleitung)\/|^mappe/;   // gibt es nur deutsch: Sprache der Werkbank gilt
+  var FREMD_ZIEL = /^https:\/\/[a-z0-9-]+-analyse\.tastystudios\.ch$|^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):8963$/;   // L’Imprimerie auf eigener Adresse
+  var HERKUNFT = /^https:\/\/[a-z0-9-]+\.tastystudios\.ch$|^https:\/\/[a-z0-9-]+\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/;   // von wo eine Werkbank herkommen darf
+  var SCHL = 'culinarium-wb';
 
   var tag = document.currentScript || document.querySelector('script[src*="zur-werkbank.js"]');
   var src = tag && tag.src || '';
   var fremd = !!(tag && tag.hasAttribute('data-fremd'));
-  var WURZEL = fremd ? null : src.replace(/(?:assets\/js|control|studio|_?werkzeuge\/(?:maison|livre)(?:\/online)?|maison)\/zur-werkbank\.js.*$/, '');   // Adresse des Hauses mit Schrägstrich am Ende
+  var WURZEL = fremd ? null : src.replace(/(?:assets\/js|control|studio|_?werkzeuge\/(?:maison|livre)(?:\/online)?|maison|werkzeuge\/livre)\/zur-werkbank\.js.*$/, '');   // Adresse des Hauses mit Schrägstrich am Ende
   var hier = location.href.split(/[?#]/)[0];
   var pfad = WURZEL && hier.indexOf(WURZEL) === 0 ? hier.slice(WURZEL.length) : location.pathname.replace(/^\//, '');
 
   /* Auf der Website des Hauses selbst erscheint der Knopf nie (Robert 13.10.2026: «auf der Website niemals die Zurück-zur-Werkbank-Buttons, das
      beeinträchtigt das Erlebnis dort»). Website = die Seiten in der Wurzel und in den Sprachordnern, samt Zimmermappe. Die Herkunft wird dort
      weiter gemerkt und an neue Reiter mitgegeben, damit der Knopf auf den Beigaben und Werkzeugen danach wieder da ist. */
-  var WEBSITE = !fremd && /^(?:(?:en|fr|zh|ko|ar)\/)?(?:[a-z0-9-]+\.html)?$/.test(pfad);   // seit Fassung 8 auch die Zimmermappe (Robert 13.10.2026: «ja», dort auch weg)
+  var WEBSITE = !fremd && /^(?:(?:en|fr|zh|ko|ar)\/)?(?:[a-z0-9-]+\.html)?$/.test(pfad) && !/^mappe\.html$/.test(pfad);   // seit Fassung 8 auch die Zimmermappe (Robert 13.10.2026: «ja», dort auch weg)
 
   function lies() { try { var d = JSON.parse(sessionStorage.getItem(SCHL) || 'null'); return d && SPRACHEN.indexOf(d.sp) >= 0 ? d : null; } catch (e) { return null; } }
   function merke(d) { try { sessionStorage.setItem(SCHL, JSON.stringify(d)); } catch (e) {} }
@@ -72,8 +72,8 @@
     if (!eigen && !f) return;
     if (/\.(pdf|zip|png|jpe?g|webp|svg|mp4)$/i.test(u.pathname)) return;
     var w = sp + (anker ? '.' + anker : '');
-    if (u.searchParams.get('wb') === w) return;
     u.searchParams.set('wb', w);
+    /* Höhe (Robert 18.10.2026 23:00, Tab 01:18) */ var yy = mein.y != null ? String(mein.y) : ''; if (/^\d{1,6}$/.test(yy)) u.searchParams.set('wy', yy); else u.searchParams.delete('wy');
     if (f && !eigen) u.searchParams.set('wbo', mein.o || location.origin);
     a.href = u.href;
   }
@@ -93,6 +93,7 @@
       if (u.origin === location.origin && /\/werkbank\/(?:(en|fr|zh|ko|ar)\/)?(?:index\.html)?$/.test(u.pathname)) return;   // Sprachwechsel, Sprung in der Werkbank
       var ort = a.closest('section[id]');
       if (!ort) { var m = document.elementFromPoint(innerWidth / 2, innerHeight / 2); ort = m && m.closest && m.closest('section[id]'); }
+      mein.y = Math.round(window.scrollY || window.pageYOffset || 0); try { sessionStorage.setItem('wb-y', String(mein.y)); } catch (x) {}
       haenge(a, wsp, ort && /^[a-z0-9-]+$/.test(ort.id) ? ort.id : '');
     };
     ['pointerdown', 'mousedown', 'click', 'auxclick', 'contextmenu', 'keydown', 'touchstart'].forEach(function (n) { window.addEventListener(n, beimLink, { capture: true, passive: true }); });
@@ -105,22 +106,24 @@
   if (roh) {
     var t = /^(de|en|fr|zh|ko|ar)(?:\.([a-z0-9-]{1,40}))?$/.exec(roh);
     var o = q.get('wbo') || '';
-    if (t && (!fremd || HERKUNFT.test(o) || /^\/imprimerie\//.test(location.pathname))) merke({ sp: t[1], anker: t[2] || '', o: fremd && HERKUNFT.test(o) ? o : '' });
-    try { q.delete('wb'); q.delete('wbo'); var rest = q.toString(); history.replaceState(history.state, '', location.pathname + (rest ? '?' + rest : '') + location.hash); } catch (e) {}
+    if (t && (!fremd || HERKUNFT.test(o) || /^\/imprimerie\//.test(location.pathname))) merke({ sp: t[1], anker: t[2] || '', o: HERKUNFT.test(o) && (fremd || o !== location.origin) ? o : '', y: /^\d{1,6}$/.test(q.get('wy') || '') ? q.get('wy') : '' });
+    try { q.delete('wb'); q.delete('wbo'); q.delete('wy'); var rest = q.toString(); history.replaceState(history.state, '', location.pathname + (rest ? '?' + rest : '') + location.hash); } catch (e) {}
   }
   var von = lies();
   if (!von) return;                       // kein Besuch aus der Werkbank: nichts zeigen
   if (window.self !== window.top) return; // eingebettet: nichts zeigen
-  mein.o = von.o || '';
+  mein.o = von.o || ''; mein.y = von.y || '';
 
-  var basis = fremd ? (von.o ? von.o + '/' : (/^\/imprimerie\//.test(location.pathname) ? location.origin + '/' : '')) : WURZEL;
+  var basis = fremd ? (von.o ? von.o + '/' : (/^\/imprimerie\//.test(location.pathname) ? location.origin + '/' : '')) : (von.o ? von.o + '/' : WURZEL);
   if (!basis) return;
 
   /* Sprache: die der Seite, wo es Sprachfassungen gibt; bei den Werkzeugen (nur deutsch) die der Werkbank, aus der man kam */
   var imPfad = /(?:^|\/)(en|fr|zh|ko|ar)\//.exec(pfad);
   var sp = fremd || OHNE_SPRACHE.test(pfad) ? von.sp : (imPfad ? imPfad[1] : 'de');
   if (sp !== von.sp) { von.sp = sp; merke(von); }
-  var ziel = basis + 'werkbank/' + (sp === 'de' ? '' : sp + '/') + 'index.html' + (von.anker ? '#' + von.anker : '');
+  var ziel = basis + 'werkbank/' + (sp === 'de' ? '' : sp + '/') + 'index.html' + (von.y ? '?y=' + von.y : (von.anker ? '#' + von.anker : ''));
+  /* Robert 19.10.2026 01:18: ein Werkzeug öffnet im neuen Tab; «Zur Werkbank» schliesst ihn wieder, die Werkbank steht im ersten Tab noch an derselben Stelle */
+  document.addEventListener('click', function (ev) { var w = document.getElementById('zur-werkbank'); if (!w || !ev.composedPath || ev.composedPath().indexOf(w) < 0) return; if (history.length <= 1) { ev.preventDefault(); ev.stopPropagation(); try { window.close(); } catch (x) {} setTimeout(function () { location.href = ziel; }, 400); } }, true);
 
   function baue() {
     if (document.getElementById('zur-werkbank')) return;
@@ -142,7 +145,7 @@
        Im Stylesheet bleiben nur die Schrift und der Druck. */
     var lage = document.createElement('style');
     lage.textContent =
-      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/fonts/DMMono-normal-400.woff2') + '")}' +
+      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/schrift/DMMono-normal-400.woff2') + '")}' +
       '@media print{#zur-werkbank{display:none!important}}';
     document.head.appendChild(lage);
     var setz = function (k, v) { wirt.style.setProperty(k, v, 'important'); };
@@ -175,7 +178,7 @@
       'box-shadow:inset 0 1px 0 #fff,inset 0 -3px 0 rgba(130,108,53,.32),inset 0 0 0 1px rgba(176,147,79,.62),0 0 0 1px rgba(9,17,39,.28),0 12px 22px -12px rgba(9,17,39,.6);' +
       'transition:transform .55s cubic-bezier(.32,.72,0,1)}' +
       'a::after{content:"";position:absolute;z-index:-1;top:-20%;bottom:-20%;left:0;width:38%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.85) 50%,transparent 100%);transform:translateX(-180%) skewX(-18deg);transition:transform 0s}' +
-      'i{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#55361c,#2a180a);color:#f7efdd;' +
+      'i{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#7D433A,#301916);color:#f7efdd;' +
       'box-shadow:inset 0 1px 0 rgba(190,206,255,.4),inset 0 -2px 0 rgba(0,0,0,.4),0 0 0 1px rgba(230,210,162,.45);transition:transform .6s cubic-bezier(.32,.72,0,1)}' +
       'svg{display:block;width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}' +
       'span{display:block;padding-top:1px}' +

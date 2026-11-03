@@ -253,7 +253,7 @@ body.wo-app{margin:0;overflow-x:hidden}
 .wo-rand .wo-mk{padding:0 14px;margin:0 0 8px}
 .wo-rand__g+.wo-rand__g{margin-top:22px}
 .wo-re{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 14px;border-radius:var(--wo-r3);font-size:14.5px;color:var(--wo-tinte)}
-.wo-re .wo-zahl{font-size:11px;min-width:22px;height:22px;display:grid;place-items:center;border-radius:var(--wo-rk);color:var(--wo-tief);background:linear-gradient(180deg,var(--wo-g1),var(--wo-g2))}
+.wo-re .wo-zahl{font-size:11px;min-width:22px;height:22px;padding:0 7px;box-sizing:border-box;letter-spacing:.02em;display:grid;place-items:center;border-radius:var(--wo-rk);color:var(--wo-tief);background:linear-gradient(180deg,var(--wo-g1),var(--wo-g2))}
 .wo-re.wo-an,.wo-re[aria-current="true"],.wo-re[aria-current="page"]{color:var(--wo-weiss);background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht));box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 10px 18px -12px rgba(0,0,0,.6)}
 @media (hover:hover) and (pointer:fine){ .wo-re:not(.wo-an):hover{background:var(--wo-papier)} }
 .wo-rk{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:12px;align-items:center;padding:7px 10px 7px 7px;border-radius:var(--wo-r3)}
@@ -265,8 +265,14 @@ body.wo-app{margin:0;overflow-x:hidden}
 .wo-rand__wege{display:flex;flex-direction:column;gap:2px;margin-top:24px;padding-top:16px;border-top:1px solid var(--wo-linie)}
 .wo-rand__wege a{display:flex;align-items:center;gap:8px;padding:7px 14px;font-size:13.5px;color:var(--wo-leise)}
 .wo-rand__wege .wo-ic{width:13px;height:13px}
+/* Handy: die Knöpfe aus dem Kopf (oberflaeche.js kopfImRand), nur wenn der Kopf sie ausblendet */
+.wo-rand__kopf{display:none}
+.wo-rand__kopf button{display:flex;align-items:center;gap:8px;width:100%;padding:7px 14px;border:0;background:none;cursor:pointer;font:inherit;font-size:13.5px;color:var(--wo-leise);text-align:left}
+.wo-rand__wege+.wo-rand__kopf{margin-top:2px;padding-top:0;border-top:0}
+@media (max-width:900px){.wo-rand__kopf{display:flex}}
 
 .wo-re em.wo-rand__z{font:400 9.5px/1 var(--wo-mono);letter-spacing:.12em;text-transform:uppercase;font-style:normal;color:var(--wo-leise);margin-left:auto}
+/* Gestaltung 28.10.2026: Zahl im Knauf mit Luft zur Kante; ab drei Ziffern wird der Kreis zur Kapsel, die Zahl klebt nie am Rand */
 .wo-re .wo-zahl+em.wo-rand__z{margin-left:8px}
 /* Leiste unten: Grundform */
 .wo-leiste{display:flex;align-items:center;justify-content:space-between;gap:14px;color:var(--wo-weiss)}

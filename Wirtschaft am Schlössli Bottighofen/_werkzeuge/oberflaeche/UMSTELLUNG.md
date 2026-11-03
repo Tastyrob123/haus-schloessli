@@ -3,124 +3,55 @@ tags: [projekt, website]
 status: aktiv
 ---
 
-# Werkzeug-Oberfläche · Umstellung der sechs Werkzeuge je Haus
+# Werkzeug-Oberfläche · Culinarium Hannover
 
-Angelegt am 17.10.2026 (Chat «Werkzeug-Oberfläche», Auftrag Oberchef · vier Hotels). Vorlage mit allen Bildschirmen: `~/Desktop/Website-Projekte/_Werkzeug-Oberflaeche/` (http://127.0.0.1:8995/).
+Angelegt am 28.10.2026 vom Chat `culinarium-maison` (Zentrale), dem **einzigen Schreiber dieses Ordners**. Paket = Stamm der Häuser (`grund.css`, `rahmen-buehne.css`, `rahmen-inseln.css`, `oberflaeche.js`, `muster.html`, Klon aus dem Schäfli, unverändert), Kleid eigen: `kleid/schloessli.js` + `kleid/schloessli.css` + `kleid/schloessli-zeichen.svg` (das «C» der Wortmarke, unverändert aus `website/assets/zeichen/marke.svg #wm`, die die Website aus Rudis Original `_quelle/logo/original/culinarium-logo-original.svg` baut). Rahmen «Die Bühne»: Kopf dunkel, Raum hell (Werkzeuge hell).
 
-## Was Robert entschieden hat
+## Einbinden (jedes Werkzeug gleich)
 
-- Innerhalb eines Hauses sehen **Le Bureau, La Carte, La Réception, Le Livre, Le Registre und L’Imprimerie** gleich aus: gleicher Kopf, gleiche Navigation, gleiches Startbild, gleiche Knöpfe, Listen, Felder, Meldungen. Nur der Inhalt wechselt. Bei **La Carte** darf der Arbeitsbereich mit der Karte anders sein, Rahmen und Startbild nicht.
-- **La Maison bleibt je Haus eigen** («das kannst du sehr individuell für jedes Hotel halten»). Sie wird nicht umgestellt; jedes Werkzeug erreicht sie über das Zeichen bzw. den Haus-Knopf im Kopf.
-- **Je Haus eine eigene Stilfassung** bei gleichem Aufbau und gleichen Wegen («dass man jedes der Tools für jedes Hotel stilistisch anpasst»): Formen, Ornamente, Kanten, Bildbehandlung, Schriftmischung.
-- **Rahmen je Haus:** Carlton-Europe = «Die Inseln» · Waldhotel Doldenhorn und Landgasthof Ruedihus = «Die Bühne» («bei doldenhof und ruedlihaus die bühne»). **Berghotel Gasterntal = «Die Bühne»** (nicht von Robert gewählt; gesetzt wie die beiden anderen Häuser im Kandertal, Wechsel = eine Zeile in `kleid/gasterntal.js`).
+Der Server des Werkzeugs liefert `/assets/oberflaeche/…` aus **diesem Ordner** und `/assets/…` sonst aus `website/assets/` (Fotos `/assets/bild/<schlüssel>-<breite>.webp`, Schriften `/assets/schrift/`, Wortmarke und Tapeten `/assets/zeichen/`). Muster: `_werkzeuge/maison/server.py` (`translate_path`, Port 9281).
 
-## Was im Paket liegt
-
-| Datei | Was |
-|---|---|
-| `grund.css` | alle Bausteine: Schrift, Knöpfe (mit Speichern-Zuständen grau/gelb/grün), Segment-Wahl, Felder, Wahl, Marke «Entwurf», Startbild, Lage (drei Fächer), Kacheln mit Foto, Bereich-Liste, Eingang, Brief, Karten-Liste, Feld-Fenster, Quittung, Rand, Leiste, Kopf-Marke, Handy |
-| `rahmen-inseln.css` | wo was sitzt, «Die Inseln» |
-| `rahmen-buehne.css` | wo was sitzt, «Die Bühne» |
-| `kleid/<haus>.css` | Farben, Schriften, Rundungen, Tapete und Stil des Hauses (carlton, doldenhorn, ruedihus, gasterntal) |
-| `kleid/<haus>.js` | Hauswerte: Name, Ort, Welt (Grandhotel- oder Landhaus-Namen), Rahmen, Aussenfoto, Zeichen, Wege der Werkzeuge. Setzt `data-wo-haus` und `data-wo-rahmen` am `<html>` |
-| `kleid/*-zeichen.svg`, `doldenhorn-tanne(n).svg` | Zeichen der Häuser, Tannenreihe des Doldenhorn |
-| `oberflaeche.js` | baut Kopf, Startbild, Rand, Leiste, Knöpfe als HTML (`WO.kopf`, `WO.startbild`, `WO.rand`, `WO.leiste`, `WO.knopf`, `WO.ic`, `WO.zeichen`, `WO.gruss`, `WO.name`) und klappt am Handy den Rand auf und nach der Wahl wieder zu |
-| `muster.html` | jeder Baustein einmal: `/assets/oberflaeche/muster.html?haus=<haus>` |
-
-Alle Klassen und Werte tragen die Vorsilbe `wo-`. Dadurch kann das Paket neben dem bisherigen CSS eines Werkzeugs liegen, ohne etwas zu verschieben: was umgestellt ist, nimmt `wo-`-Klassen, alles andere bleibt, wie es war.
-
-## Ins Haus legen (einmal je Haus)
-
-1. Sicherung: `cp -cR "<Haus>/assets" "<Haus>/_sicherung/vor-oberflaeche-<datum>/assets"` (APFS-Klon) und je Werkzeug den Ordner, der geändert wird.
-2. Paket kopieren: `rsync -a ~/Desktop/Website-Projekte/_Werkzeuge/stamm/oberflaeche/ "<Haus>/assets/oberflaeche/"`. Der Weg ist lokal und online derselbe (`/assets/oberflaeche/…`).
-3. Prüfen: `/assets/oberflaeche/muster.html?haus=<haus>` im Haus öffnen (unsichtbar, Abschnitt Prüfen). Alles hat Schrift, Tapete, Zeichen und Foto; keine 404.
-4. `kleid/<haus>.js`: die Wege der Werkzeuge mit dem Haus abgleichen (Stand 17.10.: Carlton `/control/`, `/maison/`, sonst `/_werkzeuge/<werkzeug>/`; Doldenhorn, Ruedihus, Gasterntal Le Bureau unter `/studio/`, La Maison unter `/_werkzeuge/maison/`).
-
-## Ein Werkzeug umstellen (gilt für alle sechs)
-
-**Was ersetzt wird:** der Rahmen (Kopf, Rand, Leiste), das Startbild jeder Ansicht und die Übersicht-Bausteine (Lage, Kacheln, Bereich-Listen, Knöpfe in Kopf, Startbild und Leiste). **Was bleibt:** jede Funktion, jeder Weg (`/api/…`), alle Daten, alle Ids, `data-`-Attribute und Klick-Handler, die Arbeitsflächen im Inneren (Seite bearbeiten mit Vorschau, Karten-Satz, Brief-Editor, Bildarchiv, Statistiken, Canva-Fläche), Fenster (`#fenster`), Quittungen (`#meldung`), Fehlermelder, Startfehler-Tür, Rundgang, «Zur Werkbank».
-
-1. **Kopf der Seite** (`index.html`), in dieser Reihenfolge:
-   ```html
-   <script src="/assets/oberflaeche/kleid/<haus>.js?v=1"></script>          <!-- vor allem anderen, ohne defer -->
-   … bisheriges CSS des Werkzeugs …
-   <link rel="stylesheet" href="/assets/oberflaeche/grund.css?v=1">
-   <link rel="stylesheet" href="/assets/oberflaeche/rahmen-<inseln|buehne>.css?v=1">
-   <link rel="stylesheet" href="/assets/oberflaeche/kleid/<haus>.css?v=1">
-   ```
-   Vor dem Skript des Werkzeugs: `<script src="/assets/oberflaeche/oberflaeche.js?v=1"></script>`.
-2. **Gerüst** (`index.html`): Ids bleiben, nur die Klassen wechseln.
-   ```html
-   <body class="… wo-app">
-     <header class="wo-kopf" id="kopf"></header>
-     <aside  class="wo-rand" id="rand"></aside>      <!-- Reihenfolge egal, der Rahmen ordnet -->
-     <main   class="wo-raum" id="haupt">…</main>
-     <footer class="wo-leiste" id="leiste"></footer>
-   ```
-   Ein Behälter darum (`<div class="wo-app">`) geht auch. Skripte, die das Startbild selbst bauen (`buehne.js`), fallen weg. In `schweben.js`-Aufrufen und im Rundgang die Wähler auf die neuen Klassen setzen (`.wo-sb`, `.wo-lage`, `.wo-aufg > .wo-ag`, `.wo-ber > .wo-bk`, `#rand`).
-3. **Zeichen-Funktionen** des Werkzeugs (Namen am Carlton): Ausgabe durch das Paket ersetzen, Handler danach wie bisher setzen.
-   - `kopfLeiste()` → `$('#kopf').innerHTML = WO.kopf({ werkzeug, unter, titel, stand, pruefung, anleitung, website, marke: 'data-gehe="start"' })`; beim Klick auf die Marke `e.preventDefault()`.
-   - `rand()` → `$('#rand').innerHTML = WO.rand([{ titel, eintraege: [{ text, zahl, an, attr: 'data-gehe="…"', extra }] }], { website, anleitung, pruefung })`. Eigene «Bereiche»-Knöpfe fürs Handy entfernen, das Paket bringt sie im Kopf mit.
-   - `leiste()` → `$('#leiste').innerHTML = WO.leiste({ titel, satz, entwurf, knoepfe })` mit `WO.knopf(text, zeichen, art, { id, klein: true, disabled })`. Speichern: `art` = `'glas'` (nichts offen), `'wartet'` (Eingaben offen, gelb), `'fertig'` («Gespeichert», grün). Ids wie `#l-sp`, `#l-vgl`, `#l-raus` bleiben.
-   - `kopf(…)` / Startbild → `WO.startbild({ werkzeug, zier, h1, satz, knoepfe, art: 'voll' | 'buehne', foto })`. Übersicht = `'voll'` mit dem Aussenfoto (ohne `foto`), jede andere Ansicht = `'buehne'` (darf ein eigenes Foto tragen). Gruss nach Tageszeit mit `WO.gruss()`. `zier` ist HTML (schon maskiert).
-   - Übersicht: `.lage/.lg` → `wo-lage/wo-lg` (Text im `<p>`, Weg als `wo-lk`), Kacheln → `<button class="wo-ag" data-gehe><span class="wo-ag__b"><img></span><span class="wo-ag__t"><i class="wo-ag__z">…</i><b>…</b><span>…</span></span></button>` in `wo-aufg`, Bereiche → `wo-bk` in `wo-ber`. Überschriften `<h2 class="wo-zw">Häufig <em>gebraucht</em></h2>`. Fertige Form zum Abschreiben: `muster.html` und die Vorlage `_Werkzeug-Oberflaeche/bau.py`.
-4. **Fassungsnummern hochzählen** (`?v=`) an jeder geänderten Datei, sonst zeigt Vercel die alte.
-
-### Je Werkzeug (Stand Carlton 17.10.2026; Doldenhorn und Ruedihus haben dieselben Funktionsnamen, vor dem Umbau nachsehen)
-
-| Werkzeug | Dateien | Zeichen-Funktionen | Besonderheit | Zeit (ungefähr) |
-|---|---|---|---|---|
-| **Le Bureau** | `control/index.html`, `bureau.js`, `rundgang.js` (Doldenhorn/Ruedihus: `studio/…`) | `kopfLeiste`, `rand`, `leiste`, `kopf`, `start` | Probelauf gemacht (unten). Die Ansicht «Bereich» (Stellen + Seitenvorschau) bleibt innen unverändert | 20 min |
-| **La Réception** | `_werkzeuge/reception/index.html`, `reception.js` | `kopfLeiste`, `rand`, `leiste`, `kopf`, `start` | gleicher Bau wie Le Bureau. Leiste: «Text kopieren», «Als PDF speichern»; Brief-Editor und Eingang bleiben innen, die Eingangsliste darf `wo-eing`/`wo-an` nehmen | 30 min |
-| **Le Registre** | `_werkzeuge/registre/index.html`, `registre.js` | `kopfLeiste`, `rand`, `leiste`, `kopf`, `start` | Rand steht im HTML vor dem Kopf (egal, der Rahmen ordnet). Zahlen-Kacheln bleiben eigene Bausteine | 30 min |
-| **Le Livre** | `_werkzeuge/livre/index.html`, `livre.js` | `kopf`, `rand`, `leiste`, Startbild in `titel(ansicht, mono, h1, satz, kn, stats)` («li-hero») | das eigene Startbild «li-hero» weicht `WO.startbild`, die Zahlen (`stats`) stehen darunter als `wo-lage`; sechs Sprachen: Texte der Oberfläche wie bisher aus den Sprachdaten übergeben | 40 min |
-| **La Carte** | `_werkzeuge/carte/index.html`, `carte.js`, `carte.css` | `rand`, `kopf`, `leiste`; Gerüst mit `#oben` (Kopf) und `#kopf` (Kopf der Arbeitsfläche) | `#oben` wird `wo-kopf`, `#kopf` wird das Startbild als `'buehne'`. Karten im Rand mit Foto: `WO.rand`-Einträge mit `extra` (oder `wo-rk`-Zeilen wie in der Vorlage). **Arbeitsbereich (Liste, Vorschau, Fortgeschritten) bleibt**, nur Knöpfe und Felder dürfen `wo-` nehmen | 45 min |
-| **L’Imprimerie** | `_werkzeuge/imprimerie/index.html`, `start.js`, `studio.js`, `studio.css` | eigenes Gerüst (`header.kopf`, `main.studio`, `aside.links`, `aside.rechts`) | Kopf → `WO.kopf`, `aside.links` → `wo-rand`, Startseite bekommt `WO.startbild('voll')`. Die Canva-Fläche (Bearbeiten) bleibt; dort nur Kopf und Knöpfe tauschen | 60 min |
-
-Dazu je Werkzeug die eigene Prüfung (unten). **La Maison wird nicht angefasst.** Ein Haus mit sechs Werkzeugen braucht so etwa vier Stunden, die Prüfung eingeschlossen.
-
-### Online (`online.json` je Werkzeug)
-
-Das Paket liegt unter `assets/`. Damit es sicher mitgeht, trägt jedes umgestellte Werkzeug in seiner Andock-Datei unter `statik` ein:
-
-```json
-"statik": { "assets/oberflaeche": "assets/oberflaeche", … bisherige Einträge … }
+```html
+<script src="/assets/oberflaeche/kleid/schloessli.js?v=1"></script>          <!-- vor allem anderen, ohne defer -->
+<link rel="preload" href="/assets/schrift/fraunces-soft.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/oberflaeche/grund.css?v=1">
+<link rel="stylesheet" href="/assets/oberflaeche/rahmen-buehne.css?v=1">
+<link rel="stylesheet" href="/assets/oberflaeche/kleid/schloessli.css?v=1">
+<!-- eigenes CSS des Werkzeugs danach -->
+<script src="/assets/oberflaeche/oberflaeche.js?v=1"></script>            <!-- vor dem Skript des Werkzeugs -->
 ```
 
-Mehrere Werkzeuge dürfen das gleich eintragen (es wird nur kopiert). Sonst ändert sich nichts an `online.json`: keine neuen Funktionen, Wege oder Umleitungen. Nach `werkzeuge_online.py stell` liegt `assets/oberflaeche/grund.css` im Online-Ordner.
+`?v=` beim Bau aus dem Inhalt bilden (M20), nie von Hand. Gerüst und Zeichen-Funktionen (`WO.kopf`, `WO.startbild`, `WO.rand`, `WO.leiste`, `WO.knopf`, `WO.name`) wie im Schäfli. Musterseite mit jedem Baustein: http://127.0.0.1:9281/assets/oberflaeche/muster.html?haus=culinarium (Server von La Maison).
 
-## Prüfen (je Werkzeug, vor dem Melden)
+## Werte des Hauses (nur lesen, nie abtippen)
 
-Unsichtbar (Playwright headless, nie ein Fenster auf Roberts Bildschirm, `mailto:`/`tel:` abfangen), **1440 × 900 und 390 × 844, Chromium und Safari-Kern (WebKit)**:
+- **Namen der Werkzeuge:** nur `WO.name('<teil>')` bzw. `WO_HAUS.namen` (Teile: zentrale, website, karten, gaeste, marke, besuche, druck). Robert hat am 28.10.2026 Satz A gewählt: Der Tresen · Das Schaufenster · Die Pairing-Karte · Das Gästebuch · Das Markenbuch · Die Besucherliste · Die Plakatwerkstatt; dazu je Werkzeug ein Satz in `WO_HAUS.saetze`. Nirgends Namen fest schreiben. Python-Seiten lesen sie aus `kleid/schloessli.js` (Regex auf `namen:`). Wechseln die Namen, ändert sich nur diese eine Zeile.
+- **Wege und Ports:** `WO_HAUS.wege` (`/_werkzeuge/<werkzeug>/`), `WO_HAUS.ports` (9281 Zentrale … 9287 Drucksachen, 9288 Werkbank, 8765 Website). Wege zu anderen Werkzeugen immer `http://127.0.0.1:<port>/…`, nie `localhost` (Fehlerbuch 10a); die Zentrale: `http://127.0.0.1:9281/_werkzeuge/maison/`.
+- **Farben:** nur die Variablen. Dunkle Flächen `--wo-nacht` (#1C1B21 Strasse), `--wo-nacht2` (#3A3845 Schiefer), `--wo-tief` (#16151A Nacht); Licht `--wo-kerze` (#EF7649), `--wo-gold` (#F5A689 Kerze hell, Linien und Zeichen auf Dunkel), `--wo-akzent` (#B15736 Kerze tief, Betonung auf Hell); Raum `--wo-papier`, `--wo-blatt` (#FAF4F4 Warmweiss), `--wo-weiss`; Schrift `--wo-tinte` (#26242D), `--wo-leise` (#5B5763). Dirty Chicken: Klasse `.wo-dc` setzt Akzent auf Violett #8953A9, **nur** wo es um Dirty Chicken geht. Keine eigenen Hexwerte für dunkle Flächen (Fehlerbuch 10a). Werte stammen aus `website/assets/culinarium.css` (gebaut), nicht aus dem Entwurf (`CHARAKTER.md` nennt Kerze #CF7233, verbaut ist #EF7649; Oberchef 28.10.2026: die gebaute Website gilt).
+- **Schrift:** Titel `var(--wo-titel)` = Fraunces, wght 340 (300–420), `font-variation-settings:"SOFT" 100` (in `.wo-sb__h`, `.wo-zw` schon gesetzt); Rudis Zeilen Klasse `.wo-rudi` (Versalien, Schrägstrich als Trenner im Text: «LAUCH / BLUMENKOHL / CHIPOTLE»); Lauf `var(--wo-sans)` = Instrument Sans (wie der Fliesstext der Website); Etiketten `var(--wo-etikett)` = Urbanist; Zahlen und Daten `var(--wo-mono)` = DM Mono (`.wo-zahl`). **Nie fett, nie kursiv** (die kursiven Stamm-Stellen sind im Kleid aufrecht gestellt).
+- **Form:** Flächen wie angeschlagene Plakate (Radius 10 px wie die Website, oben eine Kante in Kerzenlicht); einziges Ornament = das «x» von «Momo x Rudi» zwischen zwei Linien (`--cu-x`, über jedem `.wo-zw`); Zeichen = das «C» der Wortmarke im Ring; Knopf = dunkle Platte mit rundem Knauf in Kerze. Keine Einkerbungen, keine Punkt-Etiketten, keine Pillen-Reihen, nicht das warmweisse Band mit Doppelrahmen (abgelehnt 26.10.).
+- **Ganze Wortmarke** (wo das Werkzeug sie braucht, z. B. Briefkopf): `<svg viewBox="0 0 364.78 40.36"><use href="/assets/zeichen/marke.svg#wm"/></svg>`, Farbe über `color`. Nie neu zeichnen, nie aus dem Profilbild, nie eine eigene Nachzeichnung.
+- **Aussenfoto des Startbilds:** `WO_HAUS.foto` = `/assets/bild/fassade-1600.webp` (Schlüssel `fassade`, «Die Fenster der Bar am Abend»). Weitere Fotos nur aus dem Register `BILD` in `website/bau.py` (der Bilder-Chat schärft, die Pfade bleiben).
+- **Texte:** Besucher kennen Rudi, Momo und das Konzept nicht: kein Insider-Wort ohne Erklärung. Jeder Satz wertet auf (Sorgfalt, Handarbeit, der einzelne Gast), Zahlen nur als Exklusivität (wenige Plätze), nie als Menge.
 
-1. Laden ohne Skriptfehler und ohne 404 (auch Schrift, Tapete, Zeichen, Foto).
-2. Kein seitliches Verrutschen (`scrollWidth - innerWidth = 0`, auch bei 320).
-3. **Senkrecht hängt nichts:** kein Element mit eigener senkrechter Scrollfläche (`overflow-y:auto|scroll` und `scrollHeight > clientHeight`); das Mausrad läuft immer an die Seite weiter. Seitliche Bänder dürfen bleiben.
-4. **Jede Hauptfunktion einmal bedienen**, nicht nur laden: im Rand einen Bereich wählen (Titel im Kopf wechselt), eine Eingabe machen (Speichern wird gelb), speichern (Leiste zeigt den Entwurf, «Vorher, nachher» wird aktiv), über die Marke zurück zur Übersicht, eine Arbeitsfläche öffnen. Je Werkzeug zusätzlich das Eigene: La Réception eine Anfrage öffnen und den Brief als PDF; La Carte einen Eintrag ändern und die Probe-PDF; Le Livre ein Bild herunterladen; Le Registre Zeitraum wechseln; L’Imprimerie eine Vorlage öffnen.
-5. Am Handy: «Bereiche» klappt den Rand auf, eine Wahl klappt ihn zu.
-6. Bild ansehen: Startbild gleich wie in den anderen Werkzeugen des Hauses (gleiche Form, Grösse, Foto), Rot nur für «Entwurf».
+## Änderungen
 
-Vorlage für den Prüflauf: `~/Desktop/Website-Projekte/_Werkzeug-Oberflaeche/_qa/probe.js` (Le Bureau, 13 Prüfpunkte je Lauf, vier Läufe). Geprüft wird an einer Kopie oder einem eigenen Port mit Wegwerf-Daten, nie gegen die echten Daten des Hauses.
+Nur `culinarium-maison` schreibt hier. Wer etwas am Kleid braucht, meldet es per SendMessage an `culinarium-maison` (oder über den Oberchef); nie in diesem Ordner selbst ändern. Jede Änderung mit Sicherung `*.vor-<was>-<datum>` und Eintrag unten.
 
-## Probelauf Le Bureau · Carlton-Europe (17.10.2026)
+| Datum | Was | Für wen |
+|---|---|---|
+| 28.10.2026 | Angelegt: Paket aus dem Schäfli, Kleid Culinarium, Zeichen «C» | alle sieben |
+| 28.10.2026 | `kleid/schloessli.js`: lokal zeigen `WO_HAUS.wege` der anderen Werkzeuge auf `http://127.0.0.1:<port>/…` (Fund culinarium-reception); online relativ. Eigene Umschreibungen in den Werkzeugen nur noch für Wege, die mit «/» beginnen, oder ganz weg. Sicherung `kleid/schloessli.js.vor-wege-2026-10-28` | alle sechs |
+| 28.10.2026 | Namen nach Roberts Wahl (Satz A «An der Bar») in `kleid/schloessli.js` (`namen`, neu `saetze`); Sicherung `kleid/schloessli.js.vor-namen-2026-10-28` | alle sieben |
+| 29.10.2026 | `kleid/schloessli.js`: `namen.marke` heisst jetzt «Das Markenbuch» (Robert, über den Oberchef); Sicherung `kleid/schloessli.js.vor-markenbuch-2026-10-29` | alle sieben |
+| 29.10.2026 | Startbild-Foto: srcset 640/1000 aus den Grössen der Website (bei 2× höchstens rund 2× die Anzeigebreite), erstes Startbild mit Vorrang, weitere (verborgene Ansichten) lazy, Platzhalter `WO_HAUS.fotoFarbe`; `WO_HAUS.foto` jetzt fassade-1000 statt -1600 (wer es vorlädt, lädt dasselbe Bild) | Oberchef, Leistung |
+| 29.10.2026 | Bewegung für alle Werkzeuge: `bewegung.js` (vom Kleid async nachgeladen) lässt Zwischentitel, Karten, Blätter, Kacheln (`.wo-zw .wo-ag .wo-bk .wo-lage .wo-re .wo-bl .blatt .besuch .re-a .mw-t .wo__k`) gestaffelt heraufschweben, Fotos darin zoomen, Zahlen zoomen; Startbild-Auftritt in `kleid/schloessli.css` ruhiger und länger (Foto zoomt 2,6 s, Parallaxe per Scroll-Zeitachse), Knöpfe geben beim Drücken nach. Was eigene Bewegung hat (data-sw, data-r, laufende Animation), bleibt unberührt. Abschalten je Element: `data-wo-bw-nie` | Robert über Oberchef |
+| 30.10.2026 | Bewegung vollständig (Kriterium 37): `kleid/schloessli.js` neu `WO_ZEILEN(el)` (Titel in Wörter mit Zeilennummer, bleibt ein Block, wenn sich der Umbruch ändern würde) und das Teilen des Startbild-Titels vor dem ersten Bild; `kleid/schloessli.css` Startbild-Titel Zeile für Zeile (0,11 s Staffel); `bewegung.js?v=2`: Zwischentitel (`.wo-zw`, `main h2`, `.wo-app h2`, `.ms-zeile > h2`) Zeile für Zeile, grosse Zahlen (ab 22 px, keine Jahreszahl) laufen von null hoch (Zwilling hält die Breite, schreibt das Werkzeug neu, gilt sein Wert), neu als Kacheln `.mk`, `.pk-karte` (Plakatwerkstatt), `.kap__b`, `.thema` (Anleitungen). Nie doppelt: alles in oder unter `[data-fd]`, `[data-r]`, `[data-sw]` bleibt dem Werkzeug, auch wenn es seine Bewegung erst später setzt. Gemessen: Tafel `_Oberchef/zeigen/culinarium/tresen-3010/`. Abschalten je Zahl: `data-wo-zl-nie` | Robert über Oberchef |
+| 30.10.2026 | `bewegung.js?v=3`: `.blatt` aus der Liste genommen. In Plakatwerkstatt und Pairing-Karte ist `.blatt` das gesetzte Druckblatt, das vermessen wird (Fund culinarium-imprimerie: Schrift im PDF 3–5 mm daneben). Die Kennzahl-Blätter der Besucherliste bewegen sich selbst | alle sieben |
 
-- Kopie: `~/Desktop/Website-Projekte/_Probe Carlton Oberflaeche 1710/` (APFS-Klon), Server `python3 serve.py 8997`. Das Haus selbst ist unberührt.
-- Geändert in der Kopie: `control/index.html` (18 Zeilen), `control/bureau.js` (Kopf, Rand, Leiste, Startbild, Übersicht; rund 100 Zeilen), `control/rundgang.js` (3 Wähler). Paket unter `assets/oberflaeche/`.
-- Ergebnis `_qa/probe.js`: Chromium und WebKit, 1440 und 390, je 13 Prüfpunkte grün (Übersicht mit Startbild, 3 Fächern, 8 Kacheln, 12 Bereichen; sechs Werkzeuge im Kopf; kein Verrutschen; keine Scrollfläche; Handy-Rand auf und zu; Angaben mit Bühne und Titel; Eingabe gelb; Speichern legt in den Entwurf; «Vorher, nachher» aktiv; Marke zurück; Bereich mit Seitenvorschau).
-- Zeit: rund 10 Minuten Einlesen in `bureau.js`, 9 Minuten Umbau und vier Prüfläufe. Speichern dauert in Le Bureau rund 8 Sekunden (setzt die Seiten neu), Prüfläufe darauf warten lassen.
+## 30.10.2026 (Abend) · Rand ohne ResizeObserver
+- oberflaeche.js: Die Höhe des Randes (--wo-rand-top) wird nicht mehr über einen ResizeObserver nachgeführt, sondern über Mutation, Übergangsende, Aufklappen, load und Fenstergrösse (alles über ein requestAnimationFrame gebündelt, Wert nur geschrieben, wenn er sich ändert). Grund: WebKit meldete beim Laden des Schaufensters «ResizeObserver loop completed …», zusammen mit der neuen Bewegung; der Bedienlauf fiel auf 87/88. Danach 88/88 WebKit und Chromium 1440, 89/89 WebKit 390. Sicherung: oberflaeche.js.vor-ro-2026-10-30.
 
-## Fallen, die schon einmal Zeit gekostet haben
-
-- `url()` in einer CSS-Variable wird dort aufgelöst, wo die Variable **benutzt** wird (in `grund.css`), nicht wo sie steht. Deshalb steht die Tapete in den Kleidern mit absolutem Weg (`/assets/img/…`).
-- Werkzeuge zeichnen den Rand beim Klick sofort neu; das Zuklappen am Handy läuft deshalb in der Fangphase (`oberflaeche.js`). Nicht auf `bubble` zurückbauen.
-- Einträge als `<button>` bekommen sonst Rahmen und Grund des Browsers; `grund.css` setzt sie zurück. Eigene Knopf-Klassen im Rand nicht wieder einführen.
-- `zier` im Startbild ist HTML; schon maskierte Namen («Zimmer &amp; Suiten») nicht noch einmal maskieren.
-- Ein Leerzeichen am Ende ist «nichts geändert» (R10): zum Prüfen ein echtes Zeichen tippen.
-
-## Gasterntal
-
-Die Werkzeuge des Gasterntal werden noch gebaut und entstehen direkt mit diesem Paket: `kleid/gasterntal.js` + `kleid/gasterntal.css` (Fels, Kander, Tanne; Barlow Semi, Lauben-Raute, Tannengrün als Akzent, Holz als Gold, Rot nur für «Entwurf»), Rahmen «Die Bühne». Das Gerüst und die Zeichen-Funktionen von Anfang an wie oben bauen, kein eigener Kopf und kein eigenes Startbild.
-
-## Zurück
-
-Jede Änderung ist auf die Zeilen in Abschnitt «Ein Werkzeug umstellen» begrenzt. Zurück: die Sicherung aus Schritt 1 zurückkopieren oder die fünf Kopf-Zeilen entfernen und die Zeichen-Funktionen aus der Sicherung nehmen; Funktionen und Daten waren nie betroffen.
+## Handy: Kopf-Knöpfe im Rand, Rundgang klappt den Rand auf (30.10.2026, Tor 5)
+- `oberflaeche.js` `kopfImRand()`: Was der Kopf bis 900 px ausblendet (`.wo-kopf__r`), steht im Rand als `.wo-rand__kopf` noch einmal. Links mit Ziel, Knöpfe lösen den Kopf-Knopf aus. Was der Rand schon als Weg führt, steht nicht doppelt da. Den Block baut ein MutationObserver neu, wenn ein Werkzeug Kopf oder Rand neu zeichnet. Sichtbar ist er nur bis 900 px (`grund.css`).
+- `WO.randZiel(e)` / `WO.randZurueck(ziel)`: Die Rundgänge (carte, bureau, registre, livre, reception/studio, maison/quelle/rundgang-vorlage) rufen sie in `sichtbar()`, in `zeige()` und in `ende()` auf. Liegt ein Ziel im zugeklappten Rand, klappt der Rundgang ihn auf. Ein kleines Ziel rückt dabei über die Karte. Beim nächsten Schritt ausserhalb des Rands und am Ende klappt der Rundgang ihn wieder zu. Einen Rand, den der Gast selbst geöffnet hat, lässt er offen.

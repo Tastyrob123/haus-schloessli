@@ -1,6 +1,6 @@
 {
- "name": "L’Imprimerie (Die Werkstatt)",
- "hinweis": "sb-imprimerie (Die Werkstatt), 17.10.2026 (Form wie Carlton, Doldenhorn und Ruedihus _werkzeuge/imprimerie/online.json). Oberfläche statisch unter /werkzeuge/imprimerie/, das Hausbuch (Le Livre) daneben unter /werkzeuge/livre/ (livre.json, dateien/, Fotos über «fl» = /assets/img/). KI-Funktion api/imprimerie_entwurf.py aus api/entwurf.py (Wissen und Marke als lib); ohne ANTHROPIC_API_KEY am Vercel-Projekt melden nur «Fünf Entwürfe» und Bildtext «nicht erreichbar», Vorlagen, Editor und PDF gehen. Schlüssel nur auf Roberts Wort (Regel 54). Kein Blob-Speicher: die Werkstatt legt alles im Browser des Hauses ab. Die grossen Fotos (haeuser/schloessli/bilder) gehen nur unter «zusatz» mit (I08): mit dem Hausbuch online braucht sie niemand. Mail-Bilder (haeuser/schloessli/mail) zeigen in verschickten Mails auf diese Adresse: nach dem ersten Versand nie mehr entfernen (Regel 61, versand_schutz.py merken). Werkzeug-Oberfläche «Die Bühne» (UMSTELLUNG.md): Paket assets/oberflaeche unter statik (geht mit, wie bei jedem umgestellten Werkzeug), Hausschicht haeuser/schloessli/oberflaeche.*.",
+ "name": "L’Imprimerie",
+ "hinweis": "cu-imprimerie (L’Imprimerie des Culinarium Hannover), 28.10.2026, Form wie die Werkstatt der Taverne zum Schäfli (dort nur gelesen). Oberfläche statisch unter /werkzeuge/imprimerie/, das Hausbuch (Le Livre) daneben unter /werkzeuge/livre/ (livre.json, Fotos über «fl» = /assets/bild/). KI-Funktion api/imprimerie_entwurf.py aus api/entwurf.py (Wissen und Marke als lib); ohne ANTHROPIC_API_KEY am Vercel-Projekt melden nur «Fünf Entwürfe» und Bildtext «KI-FREIGABE», Vorlagen, Editor und PDF gehen. Schlüssel nur auf Roberts Wort (Regel 54). Kein Blob-Speicher: alles im Browser des Hauses. Die grossen Fotos (haeuser/culinarium/bilder) nur unter «zusatz» (I08). Mail-Bilder (haeuser/culinarium/mail): nach dem ersten Versand nie mehr entfernen. NICHT ANGESCHLOSSEN: das Online-Projekt des Hauses gibt es noch nicht (Name vorläufig culinarium-hannover-entwurf), nichts hochgeladen.",
  "funktionen": {
   "api/imprimerie_entwurf.py": {
    "von": "_werkzeuge/imprimerie/api/entwurf.py",
@@ -34,28 +34,28 @@
   "_werkzeuge/imprimerie/ms-bureau.css": "werkzeuge/imprimerie/ms-bureau.css",
   "_werkzeuge/imprimerie/mail.css": "werkzeuge/imprimerie/mail.css",
   "_werkzeuge/imprimerie/lib": "werkzeuge/imprimerie/lib",
-  "_werkzeuge/imprimerie/haeuser/schloessli/marke.json": "werkzeuge/imprimerie/haeuser/schloessli/marke.json",
-  "_werkzeuge/imprimerie/haeuser/schloessli/druck.json": "werkzeuge/imprimerie/haeuser/schloessli/druck.json",
-  "_werkzeuge/imprimerie/haeuser/schloessli/buehne.js": "werkzeuge/imprimerie/haeuser/schloessli/buehne.js",
-  "_werkzeuge/imprimerie/haeuser/schloessli/feder.js": "werkzeuge/imprimerie/haeuser/schloessli/feder.js",
-  "_werkzeuge/imprimerie/haeuser/schloessli/feder.css": "werkzeuge/imprimerie/haeuser/schloessli/feder.css",
-  "_werkzeuge/imprimerie/haeuser/schloessli/hell.css": "werkzeuge/imprimerie/haeuser/schloessli/hell.css",
-  "_werkzeuge/imprimerie/haeuser/schloessli/tapete-dunkel.webp": "werkzeuge/imprimerie/haeuser/schloessli/tapete-dunkel.webp",
-  "_werkzeuge/imprimerie/haeuser/schloessli/tapete-hell.webp": "werkzeuge/imprimerie/haeuser/schloessli/tapete-hell.webp",
-  "_werkzeuge/imprimerie/haeuser/schloessli/tapete-ui-dunkel.webp": "werkzeuge/imprimerie/haeuser/schloessli/tapete-ui-dunkel.webp",
-  "_werkzeuge/imprimerie/haeuser/schloessli/tapete-ui-hell.webp": "werkzeuge/imprimerie/haeuser/schloessli/tapete-ui-hell.webp",
-  "_werkzeuge/imprimerie/haeuser/schloessli/schriften": "werkzeuge/imprimerie/haeuser/schloessli/schriften",
-  "_werkzeuge/imprimerie/haeuser/schloessli/vorlagen": "werkzeuge/imprimerie/haeuser/schloessli/vorlagen",
-  "_werkzeuge/imprimerie/haeuser/schloessli/kopf": "werkzeuge/imprimerie/haeuser/schloessli/kopf",
-  "_werkzeuge/imprimerie/haeuser/schloessli/mini": "werkzeuge/imprimerie/haeuser/schloessli/mini",
-  "_werkzeuge/imprimerie/haeuser/schloessli/mail": "werkzeuge/imprimerie/haeuser/schloessli/mail",
-  "_werkzeuge/imprimerie/haeuser/schloessli/oberflaeche.js": "werkzeuge/imprimerie/haeuser/schloessli/oberflaeche.js",
-  "_werkzeuge/imprimerie/haeuser/schloessli/oberflaeche.css": "werkzeuge/imprimerie/haeuser/schloessli/oberflaeche.css"
+  "_werkzeuge/imprimerie/haeuser/culinarium/marke.json": "werkzeuge/imprimerie/haeuser/culinarium/marke.json",
+  "_werkzeuge/imprimerie/haeuser/culinarium/druck.json": "werkzeuge/imprimerie/haeuser/culinarium/druck.json",
+  "_werkzeuge/imprimerie/haeuser/culinarium/buehne.js": "werkzeuge/imprimerie/haeuser/culinarium/buehne.js",
+  "_werkzeuge/imprimerie/haeuser/culinarium/feder.js": "werkzeuge/imprimerie/haeuser/culinarium/feder.js",
+  "_werkzeuge/imprimerie/haeuser/culinarium/feder.css": "werkzeuge/imprimerie/haeuser/culinarium/feder.css",
+  "_werkzeuge/imprimerie/haeuser/culinarium/hell.css": "werkzeuge/imprimerie/haeuser/culinarium/hell.css",
+  "_werkzeuge/imprimerie/haeuser/culinarium/tapete-dunkel.webp": "werkzeuge/imprimerie/haeuser/culinarium/tapete-dunkel.webp",
+  "_werkzeuge/imprimerie/haeuser/culinarium/tapete-hell.webp": "werkzeuge/imprimerie/haeuser/culinarium/tapete-hell.webp",
+  "_werkzeuge/imprimerie/haeuser/culinarium/tapete-ui-dunkel.webp": "werkzeuge/imprimerie/haeuser/culinarium/tapete-ui-dunkel.webp",
+  "_werkzeuge/imprimerie/haeuser/culinarium/tapete-ui-hell.webp": "werkzeuge/imprimerie/haeuser/culinarium/tapete-ui-hell.webp",
+  "_werkzeuge/imprimerie/haeuser/culinarium/schriften": "werkzeuge/imprimerie/haeuser/culinarium/schriften",
+  "_werkzeuge/imprimerie/haeuser/culinarium/vorlagen": "werkzeuge/imprimerie/haeuser/culinarium/vorlagen",
+  "_werkzeuge/imprimerie/haeuser/culinarium/kopf": "werkzeuge/imprimerie/haeuser/culinarium/kopf",
+  "_werkzeuge/imprimerie/haeuser/culinarium/mini": "werkzeuge/imprimerie/haeuser/culinarium/mini",
+  "_werkzeuge/imprimerie/haeuser/culinarium/mail": "werkzeuge/imprimerie/haeuser/culinarium/mail",
+  "_werkzeuge/imprimerie/haeuser/culinarium/oberflaeche.js": "werkzeuge/imprimerie/haeuser/culinarium/oberflaeche.js",
+  "_werkzeuge/imprimerie/haeuser/culinarium/oberflaeche.css": "werkzeuge/imprimerie/haeuser/culinarium/oberflaeche.css"
  },
  "zusatz": {
   "_": "Nur nötig, wenn das Hausbuch online fehlt. Wie beim Carlton in ein Zusatz-Projekt, falls das Hauptprojekt zu gross wird; Umleitung unten. Name ohne Nummer (-2 bis -4 vergibt die Website-Aufteilung von online.py).",
-  "schloessli-bottighofen-werkstatt": {
-   "_werkzeuge/imprimerie/haeuser/schloessli/bilder": "werkzeuge/imprimerie/haeuser/schloessli/bilder"
+  "culinarium-hannover-werkstatt": {
+   "_werkzeuge/imprimerie/haeuser/culinarium/bilder": "werkzeuge/imprimerie/haeuser/culinarium/bilder"
   }
  },
  "umleitungen": [
@@ -68,8 +68,8 @@
    "destination": "/werkzeuge/imprimerie/:pfad*"
   },
   {
-   "source": "/werkzeuge/imprimerie/haeuser/schloessli/bilder/:pfad*",
-   "destination": "https://schloessli-bottighofen-werkstatt.vercel.app/werkzeuge/imprimerie/haeuser/schloessli/bilder/:pfad*"
+   "source": "/werkzeuge/imprimerie/haeuser/culinarium/bilder/:pfad*",
+   "destination": "https://culinarium-hannover-werkstatt.vercel.app/werkzeuge/imprimerie/haeuser/culinarium/bilder/:pfad*"
   }
  ],
  "stand": "",

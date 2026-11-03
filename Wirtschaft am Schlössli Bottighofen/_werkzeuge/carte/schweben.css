@@ -1,4 +1,4 @@
-/* La Carte · Waldhotel Doldenhorn (über La Carte des Carlton-Europe): Kopie von studio/schweben.css des Grand Beau-Rivage (16.10.2026), unverändert in der Wirkung. */
+/* La Carte · Culinarium Hannover (über die Tafeln des Schäfli und des Doldenhorn und La Carte des Carlton-Europe): Kopie von studio/schweben.css des Grand Beau-Rivage (16.10.2026), unverändert in der Wirkung. */
 /* Schweben, Pulsieren, Zoom für die Werkzeuge (Gefühl der Carlton-Seiten, wie in Le Registre). Gehört zu schweben.js.
    Jedes Blatt trägt data-sw. Wo der Browser Scroll-Zeitachsen kann, wird es am Scrollen aus der Tiefe hochgeführt (sw-zug, gebunden an den Einzug
    entry 0% bis 100%, nichts bleibt am Seitenende hängen); im Bild (.sw-da) federt es zusätzlich nach der Uhr in seine Grösse (sw-puls).
@@ -26,4 +26,4 @@ h2[data-sw],[data-sw="k"]{--weg:clamp(30px,3.2vw,48px);--kl:.97}
 [data-sw="z"].sw-da{opacity:1;scale:1}
 /* Später dazugekommene Teile (Eingabe, Neuzeichnen): sofort ruhig an ihrem Platz */
 .sw-ruhig,.sw-ruhig.sw-da{animation:none!important;transition:none!important;translate:none!important;scale:none!important;opacity:1!important}
-@media (prefers-reduced-motion:reduce){[data-sw],[data-swz]{animation:none!important;transition:none!important;translate:none!important;scale:none!important;opacity:1!important}}
+@media (prefers-reduced-motion:reduce){[data-sw],[data-sw] img,[data-swz]{animation:none!important;transition:none!important;translate:none!important;scale:none!important;opacity:1!important}}

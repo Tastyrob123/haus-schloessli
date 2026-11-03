@@ -1,4 +1,4 @@
-/* rahmen-inseln.css · Rahmen «Die Inseln» (Robert 17.10.2026, Carlton-Europe). Heller Grund, alles liegt als Platte darauf:
+/* rahmen-inseln.css · Rahmen «Die Inseln». Heller Grund, alles liegt als Platte darauf:
    Kopf als dunkle Insel mit den sechs Werkzeugen, Rand als weisse Platte, Startbild als Hausfoto mit Einkerbung + dunkle Tafel nebeneinander,
    Leiste als schwebende Insel unten. Markup wie in UMSTELLUNG.md (gleich für beide Rahmen), html trägt data-wo-rahmen="inseln". */
 .wo-app{display:grid;grid-template-columns:270px minmax(0,1fr);grid-template-areas:"kopf kopf" "rand raum";column-gap:24px;align-items:start;

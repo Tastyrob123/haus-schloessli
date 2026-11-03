@@ -19,5 +19,63 @@
     "chromium",
     "webkit"
   ],
-  "server": []
+  "server": [
+    {
+      "port": 9281,
+      "wo": "_werkzeuge/maison",
+      "befehl": "python3 server.py 9281",
+      "pruef": "/_werkzeuge/maison/"
+    },
+    {
+      "port": 9282,
+      "wo": ".",
+      "befehl": "python3 _werkzeuge/bureau/serve.py 9282",
+      "pruef": "/_werkzeuge/bureau/"
+    },
+    {
+      "port": 9283,
+      "wo": ".",
+      "befehl": "python3 _werkzeuge/carte/serve.py 9283",
+      "pruef": "/_werkzeuge/carte/"
+    },
+    {
+      "port": 9284,
+      "wo": ".",
+      "befehl": "python3 _werkzeuge/reception/server.py 9284",
+      "pruef": "/_werkzeuge/reception/"
+    },
+    {
+      "port": 9285,
+      "wo": "_werkzeuge/livre",
+      "befehl": "python3 server.py 9285",
+      "pruef": "/_werkzeuge/livre/"
+    },
+    {
+      "port": 9286,
+      "wo": ".",
+      "befehl": "python3 _werkzeuge/registre/server.py 9286",
+      "pruef": "/_werkzeuge/registre/"
+    },
+    {
+      "port": 9287,
+      "wo": "_werkzeuge/imprimerie",
+      "befehl": "python3 serve.py 9287",
+      "pruef": "/_werkzeuge/imprimerie/"
+    },
+    {
+      "port": 9288,
+      "wo": ".",
+      "befehl": "python3 website/_werkbank/serve.py 9288",
+      "pruef": "/werkbank/index.html"
+    }
+  ],
+  "namen": {
+    "markenbuch": "plakatarchiv",
+    "bildarchiv": "plakatarchiv",
+    "hafenbuero": "tresen",
+    "kartenpult": "pairing-karte",
+    "reservationsbuch": "gaestebuch",
+    "hausdruckerei": "plakatwerkstatt"
+  },
+  "hinweis": "Server wie beim Culinarium und Wild Side (Ports 9281–9288, gleicher Stamm); Ziellisten ziele-schloessli.json aus den Wild-Side-Listen (Oberchef Nachtbau 3.11.2026: Ports und Schlüssel gleich, Namen und Stilblatt des Hauses)."
 }

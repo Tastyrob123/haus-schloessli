@@ -1,7 +1,7 @@
-"""Das Hausbuch (Le Livre) online · Wirtschaft am Schlössli (Vercel-Funktion api/livre.py; Vorbild online/livre_online.py des Carlton und api/livre.py des Rivage, dort nur gelesen).
+"""Le Livre online · Culinarium Hannover (Vercel-Funktion api/livre.py; Kopie von online/livre_online.py des Schäfli, dort nur gelesen). Vorbereitet, nicht hochgeladen.
 Wege (vercel.json → /api/livre?__weg=…): /werkzeuge/livre/api/stand|bild|pruefen|fehler, /_werkzeuge/livre/api/… und /marke/api/… (L’Imprimerie).
 Logik unverändert in api/_lib/livre/livre.py (= _werkzeuge/livre/livre.py), Daten aus api/_lib/livre/livre.json (= _werkzeuge/livre/livre.json). Unterschiede zum Rechner:
-- Fotos zum Herunterladen kommen aus der Website selbst (/assets/img/… und /werkzeuge/livre/fotos/…), nicht aus den Originalen (die liegen nicht online);
+- Fotos zum Herunterladen kommen aus der Website selbst (/assets/bild/… und /werkzeuge/livre/fotos/…), nicht aus den Originalen (die liegen nicht online);
   «Druck» liefert deshalb die Website-Grösse, Dateiname und Fenster sagen es («websitegroesse», api/stand → nur_website).
 - PDFs werden mit PyMuPDF gelesen (requirements.txt), nicht mit pdftoppm.
 - Gespeichert wird nichts, der Speicher (Blob) wird nicht gebraucht.
@@ -18,7 +18,7 @@ import _speicher as SP  # noqa: E402
 
 LIB = os.path.join(HIER, '_lib', 'livre')
 os.environ.setdefault('LIVRE_JSON', os.path.join(LIB, 'livre.json'))
-os.environ.setdefault('LIVRE_FEHLER', '/tmp/schloessli-livre-fehler.jsonl')
+os.environ.setdefault('LIVRE_FEHLER', '/tmp/culinarium-livre-fehler.jsonl')
 os.environ['LIVRE_KI'] = '1' if os.environ.get('ANTHROPIC_API_KEY') and os.environ.get('LIVRE_KI') != '0' else '0'
 _spec = importlib.util.spec_from_file_location('livre_kern', os.path.join(LIB, 'livre.py'))   # nach Pfad laden: nie mit dieser Datei verwechseln (F10)
 LV = importlib.util.module_from_spec(_spec)

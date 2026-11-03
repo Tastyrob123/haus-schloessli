@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Das Hausbuch (Le Livre) · Wirtschaft am Schlössli, Bottighofen, Server-Teil (Nachbau von livre.py des Grand Beau-Rivage, des Carlton-Europe, des Waldhotel Doldenhorn und des Landgasthof Ruedihus, dort nur gelesen). Aufgerufen von
+"""Le Livre · Culinarium Hannover, Server-Teil (Nachbau von livre.py der Taverne zum Schäfli, dort nur gelesen). Aufgerufen von
 server.py (lokal) und online/livre_online.py (Vercel) unter …/api/<was>:
 
    GET  bild?k=<foto>&f=instagram|story|web|druck[&x=0..1][&y=0..1]   das Foto in fertiger Grösse als Download
@@ -7,7 +7,7 @@ server.py (lokal) und online/livre_online.py (Vercel) unter …/api/<was>:
    POST pruefen  {name, typ, daten (data-URL), sprache}                 Markenprüfung eines Entwurfs
    POST fehler   {zeit, art, text, wo, seite, browser}                  Skriptfehler aus dem Browser (R03)
 
-Farben werden ohne KI gemessen (gegen die Palette aus livre.json, gebaut aus assets/css/haus.css, Abstand nach CIEDE2000). Bild, Schrift, Zeichen und Ton
+Farben werden ohne KI gemessen (gegen die Palette aus livre.json, gebaut aus website/assets/culinarium.css, Abstand nach CIEDE2000). Bild, Schrift, Zeichen und Ton
 beurteilt Claude, aber nur mit LIVRE_KI=1 (Regel 54: der Schlüssel ist gesperrt, ohne Roberts Wort kein Aufruf). Ohne den Schalter antwortet eine
 Probe-Antwort in derselben Form, gerechnet aus der Messung und überall als Probe beschriftet. Gespeichert wird nichts: der Entwurf lebt nur im
 Arbeitsspeicher und in einem Zwischenordner, der nach der Antwort gelöscht wird."""
@@ -18,18 +18,18 @@ from PIL import Image, ImageOps, ImageFile, ImageFilter, ImageChops
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 Image.MAX_IMAGE_PIXELS = None
 HIER = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.join(os.path.dirname(os.path.dirname(HIER)), 'website')   # die Website des Schlössli (Werkzeug liegt in _werkzeuge/livre/)
+ROOT = os.path.join(os.path.dirname(os.path.dirname(HIER)), 'website')   # die Website von Culinarium (Werkzeug liegt in _werkzeuge/livre/)
 PROJEKTE = os.path.dirname(os.path.dirname(ROOT))
 LIVRE_JSON = next((x for x in (os.environ.get('LIVRE_JSON'), os.path.join(HIER, 'livre.json')) if x and os.path.exists(x)), os.path.join(HIER, 'livre.json'))
 QUELLEN_JSON = os.path.join(HIER, '_quellen.json')       # nur lokal: wo das Original je Foto liegt (geht nie online)
 FEHLER_LOG = os.environ.get('LIVRE_FEHLER') or os.path.join(HIER, '_qa', 'fehler.jsonl')
-WEB_WURZEL = os.environ.get('LIVRE_WEB') or ROOT          # online: Ordner mit assets/img (Vercel legt die Website neben die Funktion)
+WEB_WURZEL = os.environ.get('LIVRE_WEB') or ROOT          # online: Ordner mit assets/bild (Vercel legt die Website neben die Funktion)
 HOECHST_PIXEL = 120_000_000
-SCHLUESSEL = 'wirtschaft-am-schloessli'
+SCHLUESSEL = 'culinarium-hannover'
 MODELL = 'claude-sonnet-5-5'
 FORMATE = {'instagram': (1080, 1350, 'Instagram 1080 × 1350'), 'story': (1080, 1920, 'Story 1080 × 1920'),
            'web': (2000, None, 'Web, längste Seite 2000 px'), 'druck': (None, None, 'Druck, volle Auflösung')}
-PAPIER = (241, 236, 226)
+PAPIER = (245, 243, 239)
 try:   # lokal: überarbeitete Fassungen gehen dem Original vor (ki_quelle.py der Website); online gibt es keine Quellen
     sys.path.insert(0, ROOT)
     _roh = Image.open
@@ -104,7 +104,7 @@ def bild(k, f, x=.5, y=.5):
         raise ValueError('FORMAT · Unbekannte Grösse.')
     d = _eintrag(k)
     im, mit_orig = _quelle_bild(k)
-    name = f'{SCHLUESSEL}-{k.replace("/", "-")}' + ('-mit-ki-erzeugt' if d['art'] == 'ki' else '')
+    name = f'{SCHLUESSEL}-{k.replace("/", "-")}' + ('-mit-ki-veraendert' if d['art'] == 'ki' else '')
     if f == 'druck':
         b = io.BytesIO(); im.save(b, 'JPEG', quality=95, subsampling=0, dpi=(300, 300))
         return b.getvalue(), 'image/jpeg', f'{name}-{"" if mit_orig else "websitegroesse-"}druck-{im.size[0]}x{im.size[1]}.jpg'
@@ -205,31 +205,31 @@ def farben(im, n=28):
 # ---------------------------------------------------------------- Regeln für die Beurteilung (aus der Website und dem Markenbuch buch.html)
 def regeln():
     L = _livre()
-    pal = '\n'.join(f"- {f['n']} {f['h']} ({f['r']})" for f in L['farben'] if f.get('g') != 'druck')
-    return f'''MARKE WIRTSCHAFT AM SCHLÖSSLI, BOTTIGHOFEN (Markenbuch, Oktober 2026)
+    pal = '\n'.join(f"- {f['n']} {f['h']} ({f['r']})" for f in L['farben'] if f.get('g') != 'abende')
+    abende = ', '.join(f"{f['n']} {f['h']} ({f['r']})" for f in L['farben'] if f.get('g') == 'abende')
+    return f'''MARKE CULINARIUM HANNOVER (Hausregeln, Oktober 2026)
 
-Das Haus: Restaurant im ehemaligen Hafenmeistergebäude direkt im Hafen von Bottighofen am Bodensee, Seestrasse 50, 8598 Bottighofen. Terrasse unter Platanen mit blauen Stühlen auf Kies, Blick aufs Wasser und die Alpen, Bar «Lästermeile» mit Zementfliesen, die von drinnen nach draussen führt. Küche: Monika Huber, mediterran (Frankreich, Italien, Iberische Halbinsel, Klassiker), 15 Punkte GaultMillau. Schwesterhaus: Taverne zum Schäfli in Wigoltingen (Familie Kuchler).
+Was Culinarium ist: Food-Pairing-Abende «Momo x Rudi» in der Bar Walk on the Wild Side, Haasemannstraße 13, Hannover-Linden. Rudi kocht ein Menü, Momo stellt fünf Signature Drinks dazu und erklärt jeden; wenige Plätze an einer langen Tafel, Kerzenlicht. Jeder Abend hat sein eigenes Plakat in einer eigenen Farbe. Dazu Rudis zweite Küche Dirty Chicken (Fried Chicken, Sandwiches) mit eigenem violettem Logo.
 
-Farben (aus der Gestaltung der neuen Website, assets/css/haus.css; Farbwelt A «Stuhl und See», seit 19.10.2026 «Ton in Ton» auf das Blau des Platztellers gedreht):
+Farben (aus der Gestaltung der Website, culinarium.css; Farbwelt «Plakat»):
 {pal}
-Regeln: Nacht, Tief und Stuhlblau tragen die dunklen Flächen, immer mit der Punkt-Tapete. Kalk und Papier tragen den Lesetext. Seehimmel zeichnet Linie und Zeichen und betont in Titeln, schreibt nie den Lesetext. Geschrieben wird in Tinte (#041023), nie in reinem Schwarz. Schirmrot nur als Punkt, nie als Fläche. Kein Gold, kein Grün (Grün ist das Schwesterhaus).
+Farben der Abende (je Plakat eine, gemessen an der Illustration): {abende}
+Regeln: Nacht, Strasse, Bar, Tafel und Schiefer tragen die dunklen Flächen, so wie die Bar am Abend. Warmweiss trägt den Lesetext, geschrieben in Tinte, nie in reinem Schwarz. Kerze ist die Farbe des Abends: sie betont (Schrägstrich in Rudis Zeilen, Knauf am Knopf, Linien), schreibt nie den Lesetext. Ein Plakat darf die Farbe seines Abends tragen. Violett gehört nur zu Dirty Chicken, nie zu den Abenden von Culinarium.
 
-Schriften: Open Sans 400 in gesperrten Versalien für Titel und Namen (die Schrift der Wortmarke), Betonung nur über Farbe, nie fett oder kursiv. Instrument Sans für den Lesetext. DM Mono in Versalien, rund 16 % gesperrt, für kleine Angaben (Zeiten, Adressen) und Knöpfe. Caveat nur für einzelne Wörter in Handschrift. Keine anderen Schriften.
+Schriften: Fraunces mit weichen Enden (SOFT 100), leicht (Titel 340, Rudis Zeilen 300 in Versalien), nie fett, nie kursiv. Rudis Zeilen in Versalien mit Schrägstrich: «LAUCH / BLUMENKOHL / CHIPOTLE». Urbanist für Etiketten und Knöpfe in Versalien, gesperrt. Instrument Sans für den Lesetext. DM Mono für Zeiten, Daten und Preise. Keine anderen Schriften.
 
-Zeichen und Name: Das Logo des Hauses ist ein Kreis mit zwei Zeigern und zwei Kugeln, die Nabe ist das Ö im Namen SCHLÖSSLI, darunter WIRTSCHAFT und BY CHRISTIAN KUCHLER. Das Zeichen allein (Kreis, Zeiger, Kugeln) und die Zeiger allein sind daraus nachgezeichnet. Gerade, unverändert, nicht umgefärbt ausser in Nacht, Schwarz, Weiss oder Seehimmel. Der Name steht in weit gesperrten Versalien: WIRTSCHAFT AM SCHLÖSSLI, kurz SCHLÖSSLI.
+Zeichen: Die Wortmarke ist Rudis Original: CULINARIUM in einer breiten Display-Schrift der 70er mit tropfenförmigen Enden, darunter linksbündig «A UNiQUE EXPERiENCE» (das i klein). Sie steht in Schiefer auf Warmweiss oder in Warmweiss auf Dunkel, gerade, unverzerrt, nie neu gesetzt, nie mit Schatten oder Leuchten, nie auf einem unruhigen Foto. Das C der Wortmarke ist das Zeichen. Das Logo von Dirty Chicken (das D mit dem Hühnerfuss) steht nur im Original auf Violett.
 
-Tapete: feines Punktraster im Abstand von 28 px, in der Mitte jedes Felds die Zeiger als Medaillon, Ton in Ton (Seehimmel auf Nacht, Stuhlblau auf Kalk). Nie ein freies Motiv.
+Tapete: Gitter aus der doppelten Linie der Plakate, das C in jedem Feld, Ton in Ton, auf Nacht und auf Warmweiss. Nie ein freies Motiv.
 
-Ordnung: der Horizont des Sees als feine Linie über die ganze Breite, Titel und Bild sitzen an ihr.
+Bilder: zeigen, was ein Gast an einem Abend erlebt: Teller und Glas, die Tafel bei Kerzenlicht, die Bar, Rudi und Momo bei der Arbeit. Warmes Licht bleibt warm. Nie ein erzeugtes Bild als ersten Eindruck, keine Fotos der Bar ohne ihre Freigabe, keine Gäste aus Instagram, nie hineinzoomen, bis es unscharf wird.
 
-Bilder: zeigen, was der Gast vorfindet: Terrasse, See, Teller, Bar, Team. Nie ein erzeugtes Bild als ersten Eindruck, nie Gästefotos für Werbung, nie hineinzoomen, bis es unscharf wird.
+Bausteine: Knopf als dunkle Platte mit rundem Knauf in Kerze, Urbanist in Versalien. Keine Einkerbungen, keine Pillen-Reihen, kein gerahmtes Schild auf einem Foto.
 
-Bausteine: Knöpfe als Pille mit DM-Mono-Versalien und rundem Knauf mit Pfeil in der Gegenfarbe, Tiefe in drei Stufen, Lichtkante oben, Schattenkante unten. Keine Einkerbungen. Keine Systemauswahl des Browsers.
-
-Ton der Texte: ruhig, herzlich, unkompliziert, «mehr Wirtschaft, weniger feine Pinkel», in der Sie-Form, Schweizer Schreibung (ss statt ß). Wörter des Hauses: {', '.join(L['ton']['eigene_worte'])}. Nicht: {', '.join(L['ton']['nicht'])}. Keine Ausrufezeichen, keine Superlative und Werbefloskeln, keine künstliche Dringlichkeit, keine Emojis. Lieber eine echte Angabe (Zeit, Ort, Preis) als ein Adjektiv.'''
+Ton der Texte: Du, herzlich, knapp, ein bisschen Strasse; nie Werbesprache. Jeder Satz wertet auf: Sorgfalt, Handarbeit, der einzelne Gast. Zahlen nur als Exklusivität (wenige Plätze), nie als Menge. Wörter des Hauses: {', '.join(L['ton']['eigene_worte'])}. Nicht: {', '.join(L['ton']['nicht'])}. Keine Emojis, keine Superlative. Lieber eine echte Angabe (Tag, Ort, Preis) als ein Adjektiv.'''
 
 
-SPRACHE = {'de': 'Deutsch in Schweizer Schreibung (ss statt ß)', 'en': 'Englisch', 'fr': 'Französisch', 'ko': 'Koreanisch', 'zh': 'Chinesisch (vereinfacht)', 'ja': 'Japanisch'}   # Sprachplan des Hauses
+SPRACHE = {'de': 'Deutsch (Deutschland, mit ß), im Du'}   # die Website spricht Deutsch; weitere Sprachen erst mit Schritt 15a
 
 
 def _ki_an():
@@ -273,7 +273,7 @@ Regeln: 5 bis 9 Punkte, je Bereich höchstens zwei. Nur, was im Bild wirklich zu
             'ton': {'type': 'array', 'items': {'type': 'object', 'required': ['stelle', 'vorschlag'], 'properties': {
                 'stelle': {'type': 'string', 'description': 'wörtlich aus dem Entwurf'}, 'vorschlag': {'type': 'string', 'description': 'Fassung im Ton des Hauses'}}}}}}}
     koerper = {'model': MODELL, 'max_tokens': 4000, 'tools': [werkzeug], 'tool_choice': {'type': 'tool', 'name': 'rueckmeldung'},
-               'system': 'Du bist die Markenprüfung im Markenbuch der Wirtschaft am Schlössli in Bottighofen. Du beurteilst Entwürfe von Agenturen und Mitarbeitenden ruhig, konkret und Punkt für Punkt gegen diese Regeln. Sprich vom Haus oder von der Marke des Hauses, nie von «Le Livre» oder vom «Hausbuch».\n\n' + regeln(),
+               'system': 'Du bist die Markenprüfung im Markenbuch von Culinarium Hannover. Du beurteilst Entwürfe von Agenturen und vom Team ruhig, konkret und Punkt für Punkt gegen diese Regeln. Sprich von Culinarium oder von der Marke, nie von «Le Livre» oder vom Werkzeug.\n\n' + regeln(),
                'messages': [{'role': 'user', 'content': inhalt}]}
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=json.dumps(koerper).encode('utf-8'), method='POST',
                                  headers={'content-type': 'application/json', 'x-api-key': os.environ['ANTHROPIC_API_KEY'], 'anthropic-version': '2023-06-01',
@@ -286,21 +286,21 @@ Regeln: 5 bis 9 Punkte, je Bereich höchstens zwei. Nur, was im Bild wirklich zu
     raise ValueError('KI · Die Beurteilung kam ohne lesbares Ergebnis zurück.')
 
 
-def _farbe_urteil(messung):
-    """Querprüfung 21.10.2026 (Demo-Check Schäfli): Weiss und reines Schwarz trugen die Zahl allein (Neon-Flyer auf Weiss «88 %, passt»).
-    Reines Schwarz zählt nicht als Hausfarbe, farbige Töne (Buntheit über 12) werden für sich gezählt, grelle fremde Töne (Neon) und viel reines
-    Schwarz heissen «passt nicht»."""
+def _probe(messung, seiten, groesse):
+    """Probe-Antwort ohne Claude (LIVRE_KI aus): dieselbe Form wie die echte Rückmeldung, nur aus der Messung gerechnet, jede Zeile als Probe beschriftet."""
+    # Demo-Check 21.10.2026: Weiss und reines Schwarz trugen die Zahl allein (Neon-Flyer auf Weiss «88 %, passt»). Jetzt zählt reines Schwarz nicht
+    # als Hausfarbe, farbige Töne (Buntheit über 12) werden für sich gezählt, grelle fremde Töne (Neon) und viel reines Schwarz heissen «passt nicht».
     def buntheit(t):
         L, a, b = _lab(tuple(int(t['hex'][i:i + 2], 16) for i in (1, 3, 5)))
         return math.hypot(a, b)
-    pr = max(0, round(((messung.get('im_rahmen') or 0) - (messung.get('schwarz') or 0)) * 100))
+    pr = max(0, round((messung['im_rahmen'] - messung['schwarz']) * 100))
     fremd = [t for t in messung['toene'] if t['urteil'] == 'fremd' and t['anteil'] >= .03]
     farbig = [t for t in messung['toene'] if buntheit(t) > 12]
     f_ges = sum(t['anteil'] for t in farbig)
     f_pr = round(sum(t['anteil'] for t in farbig if t['urteil'] != 'fremd') / f_ges * 100) if f_ges >= .03 else None
     gross = fremd[0]['anteil'] if fremd else 0
-    grell = sum(t['anteil'] for t in messung['toene'] if t['urteil'] == 'fremd' and buntheit(t) > 85)
-    if grell >= .06 or (messung.get('schwarz') or 0) > .3:
+    grell = sum(t['anteil'] for t in messung['toene'] if t['urteil'] == 'fremd' and buntheit(t) > 85)   # Neon und Signaltöne, die das Haus nie trägt (Fotos des Hauses bleiben darunter)
+    if grell >= .06 or messung['schwarz'] > .3:
         urteil = 'passt_nicht'
     elif gross >= .05 or pr < 80 or (f_pr is not None and f_pr < 80):
         urteil = 'achten'
@@ -310,23 +310,17 @@ def _farbe_urteil(messung):
     if f_pr is not None:
         text += f' Von den farbigen Flächen sind es {f_pr}\u00a0%.'
     if fremd:
-        text += f' Am grössten ist der fremde Ton {fremd[0]["hex"].upper()} mit {round(gross * 100)}\u00a0%, die nächste Hausfarbe wäre {fremd[0].get("name", "")}.'
+        text += f' Am grössten ist der fremde Ton {fremd[0]["hex"].upper()} mit {round(gross * 100)}\u00a0%, die nächste Hausfarbe wäre {fremd[0]["name"]}.'
     titel = {'passt': f'{pr}\u00a0% in den Farben des Hauses', 'achten': 'Farben teils fremd', 'passt_nicht': 'Farben fremd'}[urteil]
+    punkte = [dict(bereich='farben', urteil=urteil, titel=titel, text=text)]
+    if messung['schwarz'] > .01:
+        punkte.append(dict(bereich='farben', urteil='passt_nicht', titel='Reines Schwarz', text=f'Auf {round(messung["schwarz"] * 100)}\u00a0% der Fläche steht reines Schwarz. Geschrieben wird in Tinte #2A2833, dunkle Flächen sind Nacht #16151A.'))
     satz = {'passt': f'Die Farben sind gemessen und liegen zu {pr}\u00a0% in der Palette des Hauses.',
             'achten': 'Die Farben sind gemessen: ein Teil liegt ausserhalb der Palette des Hauses.',
             'passt_nicht': 'Die Farben sind gemessen und passen nicht zum Haus.'}[urteil]
-    return pr, urteil, titel, text, satz
-
-
-def _probe(messung, seiten, groesse):
-    """Probe-Antwort ohne Claude (LIVRE_KI aus): dieselbe Form wie die echte Rückmeldung, nur aus der Messung gerechnet, jede Zeile als Probe beschriftet."""
-    pr, urteil, titel, text, satz = _farbe_urteil(messung)
-    punkte = [dict(bereich='farben', urteil=urteil, titel=titel, text=text)]
-    if messung['schwarz'] > .01:
-        punkte.append(dict(bereich='farben', urteil='passt_nicht', titel='Reines Schwarz', text=f'Auf {round(messung["schwarz"] * 100)} % der Fläche steht reines Schwarz. Geschrieben wird in Tinte #041023, dunkle Flächen sind Nacht #0B1D3D.'))
     for b in ('schrift', 'zeichen', 'bild', 'ton'):
         punkte.append(dict(bereich=b, urteil='achten', titel='Probe: nicht beurteilt', text='Diese Zeile ist eine Probe-Antwort ohne Claude. Schrift, Zeichen, Bild und Ton beurteilt erst die echte Prüfung.'))
-    return dict(art=f'Entwurf, {seiten} Seite(n), {groesse[0]} × {groesse[1]} px', gesamt=f'Probe-Antwort ohne Claude: {satz} Der Rest ist nicht beurteilt.',
+    return dict(art=f'Entwurf, {seiten} Seite(n), {groesse[0]} × {groesse[1]} px', gesamt=f'Probe-Antwort ohne Claude: {satz} Schrift, Zeichen, Bild und Ton sind nicht beurteilt.',
                 punkte=punkte, text='', ton=[])
 
 

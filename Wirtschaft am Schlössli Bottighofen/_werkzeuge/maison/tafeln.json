@@ -1,115 +1,71 @@
 {
- "_hinweis": "Tafeln «So geht’s» mit den echten Knopf-Namen («…»), gelesen im Code des Werkzeugs; bau.py prüft jeden Namen gegen den Code (stand_wege.json → code).",
+ "_hinweis": "Knopf-Namen der Tafeln «So geht’s» je Werkzeug, erst nach der Lieferung aus dem Code des Werkzeugs gelesen (M20). Leer bis dahin.",
  "bureau": [
   [
    "stift",
    "Text oder Foto ändern",
-   "Links den Bereich wählen, in der Seite rechts auf einen Text oder ein Foto klicken, neu schreiben oder «Foto tauschen», dann «Speichern»."
+   "Den Bereich wählen, in der Vorschau auf den Text oder das Foto klicken und ändern, oder «Eigenes Foto hochladen». «Speichern» legt es in den Entwurf."
   ],
   [
    "uhr",
-   "Zeiten und Hinweis",
-   "Unter «Zeiten & Preise» stehen Öffnungs- und Küchenzeiten einmal für alle Seiten. Ferien oder ein geschlossener Tag gehen unter «Hinweis für Gäste»."
+   "Einen Abend ankündigen",
+   "Unter Termine mit «Neuer Abend» Datum, Uhrzeit und Plätze eintragen. Ist er vorbei oder ausgebucht: «Von der Seite nehmen»."
   ],
   [
    "waage",
-   "Online stellen",
-   "Gespeichert ist erst ein Entwurf. «Vorher, nachher» zeigt den Unterschied, «Veröffentlichen» bringt ihn auf die Website. Die Karten pflegt das Kartenpult."
-  ]
- ],
- "livre": [
-  [
-   "foto",
-   "Ein Foto holen",
-   "Unter «Fotos» ein Foto anklicken und die Grösse wählen: «Instagram-Beitrag», Website oder Druck. Jedes Foto trägt seine Herkunft."
-  ],
-  [
-   "datei",
-   "Wortmarke weitergeben",
-   "Unter «Logo & Dateien» liegen Wortmarke, Zeiger, Farben und Schriften. «Alle Dateien (ZIP)» gibt alles in einem Paket an Agentur oder Druckerei."
-  ],
-  [
-   "farbe",
-   "Einen Entwurf prüfen",
-   "In der «Markenprüfung» mit «Datei wählen» ein Plakat oder einen Flyer laden. Sie sagt Punkt für Punkt, was zum Haus passt."
+   "Erst ansehen, dann online",
+   "«Vorher, nachher» zeigt beide Stände nebeneinander, «Veröffentlichen» stellt sie auf die Website. Jeder frühere Stand lässt sich mit «Zurückholen» wieder holen."
   ]
  ],
  "reception": [
   [
-   "eingang",
-   "Anfragen beantworten",
-   "Reservation, Bankett, Anlass oder Gutschein: jede Anfrage aus den Formularen der Website steht im «Eingang», mit Hinweisen zu Ruhetag, Ferien und Allergien und einem Brief im Ton des Hauses. «Text kopieren» oder «Als PDF speichern», verschickt wird nur, was Sie selbst schicken."
+   "blase",
+   "Gäste fragen im Chat",
+   "Auf jeder Seite der Website können Gäste fragen. Mit «Chat ausprobieren» siehst du, was der Chat antwortet, wenn ein Gast nach Plätzen oder Unverträglichkeiten fragt."
   ],
   [
-   "blase",
-   "Den Chat ausprobieren",
-   "Mit «Chat ausprobieren» fragen Sie wie ein Gast und sehen, was er aus Ihren Seiten und Karten antwortet."
+   "eingang",
+   "Anfragen beantworten",
+   "Im «Eingang» steht jede Anfrage mit einem Brief im Ton des Culinarium. «Text kopieren» oder «Als PDF speichern», verschickt wird nur, was du selbst schickst."
   ],
   [
    "liste",
    "Lücken schliessen",
-   "Wusste der Chat etwas nicht, steht die Frage unter «Das wurde gefragt». Mit «Antwort nachtragen» einmal eintragen, ab dann antwortet er selbst."
+   "Wusste der Chat etwas nicht, steht die Frage offen. Mit «Antwort nachtragen» ergänzt du es einmal; unter «Das weiss der Chat» siehst du, woraus er antwortet."
   ]
  ],
  "carte": [
   [
    "stift",
-   "Gericht oder Preis ändern",
-   "Die Karte wählen, im Modus «Einfach» den Eintrag anklicken, Name, Beschreibung oder Preis überschreiben. Daneben steht sofort die Karte."
-  ],
-  [
-   "liste",
-   "Neues Gericht",
-   "Mit «Neuer Eintrag» oder bei der Rubrik mit «Eintrag hinzufügen» anlegen und an die richtige Stelle schieben."
-  ],
-  [
-   "zurueck",
-   "Vorübergehend weg",
-   "Gibt es ein Gericht gerade nicht, nehmen Sie es mit «Ausblenden» heraus. Es bleibt gespeichert und kommt später zurück."
+   "Den nächsten Abend anlegen",
+   "Mit «Nächsten Abend anlegen» entsteht die Karte des Abends; jeder Gang steht mit seinem Drink daneben, ein weiterer kommt mit «Neuer Eintrag» dazu."
   ],
   [
    "pdf",
-   "Neue Karte drucken",
-   "«Probe-PDF» zeigt die Karte vorab, «Veröffentlichen» setzt die PDF neu. Die Karten auf der Website kommen aus derselben Quelle."
-  ]
- ],
- "registre": [
-  [
-   "karte",
-   "Woher die Gäste kommen",
-   "Unter «Herkunft» stehen Länder und Orte der Besuche, ohne Cookies und nie mit Namen. Oben wählen Sie den «Zeitraum»."
+   "Erst ansehen",
+   "«Probe-PDF» zeigt die Karte genau so, wie sie am Platz liegt. «Vorher, nachher» vergleicht mit dem letzten Stand."
   ],
   [
-   "uhr",
-   "Weiter zur Reservation",
-   "«Zur Reservation» zeigt, wie oft ein Besuch zum Fenster «Reservation» führt, zu «Direkt buchen» bei gastronovi oder zu einer Tisch-Anfrage ans Haus."
-  ],
-  [
-   "liste",
-   "Zahlen weitergeben",
-   "«Als Tabelle sichern» legt alle Besuche als Tabelle ab, zum Beispiel für die Buchhaltung oder eine Agentur."
+   "zurueck",
+   "Speichern und zeigen",
+   "«Speichern» legt den Entwurf ab, «Veröffentlichen» setzt die PDF neu. Unter «Frühere Fassungen» liegt jeder frühere Abend bereit."
   ]
  ],
  "imprimerie": [
   [
    "satz",
-   "Sagen, was Sie brauchen",
-   "Oben einen Satz schreiben, etwa: Aushang für den Ruhetag, und «Fünf Entwürfe» drücken. Oder unter «Arten und Vorlagen» eine der fertigen Vorlagen mit Texten des Hauses nehmen."
+   "Den Abend beschreiben",
+   "Unter «Abend beschreiben» Thema, Konzept, Gastkoch und Wochenende eintragen, drei, vier oder fünf Vorschläge wählen und «Vorschläge anlegen»."
   ],
   [
    "fuenf",
-   "Einen Entwurf wählen",
-   "Sie bekommen fünf Entwürfe im Stil des Hauses. Den passenden anklicken."
-  ],
-  [
-   "stift",
-   "Anpassen",
-   "Im Blatt auf einen Text oder ein Foto klicken und ändern. Unter «Fotos des Hauses» liegen alle Bilder der Website."
+   "Neue Plakate, eigene Ideen",
+   "Jeder Vorschlag ist ein ganz neues Plakat im Stil von Rudis Plakaten, mit eigener Bildidee, vorn und hinten. Den passenden mit «Diesen bearbeiten» öffnen und im Editor fertig machen. Rudis Illustrationen liegen unter «Plakat-Motive»."
   ],
   [
    "druck",
    "Drucken",
-   "Druckfertig als PDF speichern, mit Beschnitt für die Druckerei, oder selbst drucken."
+   "«Druckfertig speichern» legt das Plakat als PDF für die Druckerei ab, dazu Bilder für Beitrag und Story."
   ]
  ]
 }

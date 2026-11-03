@@ -2,7 +2,7 @@
    Demo-Video mit Kapiteln, Tastenkürzel. Alles jederzeit über «Hilfe» oben wieder aufrufbar. */
 (function () {
   const $ = s => document.querySelector(s);
-  const HAUS = new URLSearchParams(location.search).get('haus') || 'schloessli';
+  const HAUS = new URLSearchParams(location.search).get('haus') || 'culinarium';
   const GESEHEN = `ds-${HAUS}-willkommen`;
   const merk = () => { try { localStorage.setItem(GESEHEN, '1'); } catch (e) { } };
   const gesehen = () => { try { return localStorage.getItem(GESEHEN) === '1'; } catch (e) { return true; } };
@@ -12,39 +12,39 @@
 
   /* ---------- Schritte der Führung ---------- */
   const SCHRITTE = [
-    { ziel: '#btnNeu', film: 'schritt-neu', titel: 'Übersicht und neue Drucksache',
-      text: 'Über «Übersicht» kommen Sie zur Startseite. Dort liegen alle Ihre Drucksachen zum Öffnen, Umbenennen, Kopieren oder als PDF. Oben beschreiben Sie in einem Satz, was neu entstehen soll, und das Studio legt fünf Entwürfe an. Sie nehmen den, der Ihnen am besten gefällt.' },
-    { ziel: '#auftrag', film: 'schritt-1', vor: () => tab('entwerfen'), titel: 'Sagen, was Sie brauchen',
-      text: 'Schreiben Sie hier in einem Satz, welche Drucksache entstehen soll, zum Beispiel «Ein Flyer für die Lästermeile». Farben, Schriften, Fotos und Angaben des Hauses kennt das Studio schon.',
-      extra: { t: 'Beispiel einsetzen', tu: () => { $('#auftrag').value = 'Ein A5-Flyer für die Lästermeile, vorne ein Foto, hinten die Adresse'; } } },
+    { ziel: '#btnNeu', film: null, titel: 'Übersicht und neue Drucksache',
+      text: 'Über «Übersicht» kommst du zur Startseite. Dort liegen alle deine Drucksachen zum Öffnen, Umbenennen, Kopieren oder als PDF. Oben beschreibst du in einem Satz, was neu entstehen soll, und das Studio legt fünf Entwürfe an. Du nimmst den, der dir am besten gefällt.' },
+    { ziel: '#auftrag', film: 'schritt-1', vor: () => tab('entwerfen'), titel: 'Sagen, was du brauchst',
+      text: 'Schreib hier in einem Satz, welche Drucksache entstehen soll, zum Beispiel «Ein Plakat für den nächsten Abend». Farben, Schriften, Fotos und Angaben des Hauses kennt das Studio schon.',
+      extra: { t: 'Beispiel einsetzen', tu: () => { $('#auftrag').value = 'Ein Plakat für den nächsten Abend, vorne die Illustration, hinten die Daten'; } } },
     { ziel: '#btnEntwerfen', film: 'schritt-2', titel: 'Fünf Entwürfe, einer gewinnt',
-      text: 'Ein Klick, und nach etwa zwanzig Sekunden stehen fünf Entwürfe nebeneinander: gleiche Angaben, verschiedene Gestaltung. Sie klicken den schönsten an und arbeiten darin weiter. Gefällt keiner, holen Sie fünf neue.' },
+      text: 'Ein Klick, und nach etwa zwanzig Sekunden stehen fünf Entwürfe nebeneinander: gleiche Angaben, verschiedene Gestaltung. Du klickst den schönsten an und arbeitest darin weiter. Gefällt keiner, holst du fünf neue.' },
     { ziel: '#wirt', film: 'schritt-3', titel: 'Das Blatt',
-      text: 'Hier liegt Ihre Drucksache. Einmal klicken wählt einen Teil aus, mit gedrückter Maus verschieben Sie ihn. Doppelklick auf einen Text, und Sie schreiben direkt hinein. Der dunkle Rand ist der Beschnitt: Was dort liegt, schneidet die Druckerei ab.' },
+      text: 'Hier liegt deine Drucksache. Einmal klicken wählt einen Teil aus, mit gedrückter Maus verschiebst du ihn. Doppelklick auf einen Text, und du schreibst direkt hinein. Der dunkle Rand ist der Beschnitt: Was dort liegt, schneidet die Druckerei ab.' },
     { ziel: '#rechts', film: 'schritt-4', titel: 'Anpassen',
-      text: 'Rechts ändern Sie, was Sie ausgewählt haben: Schrift, Grösse, Farbe oder das Foto. Ist nichts ausgewählt, stellen Sie hier das Format und den Aufbau der ganzen Seite um. Es gibt nur die Farben und Schriften des Hauses, so bleibt alles im Stil.' },
+      text: 'Rechts änderst du, was du ausgewählt hast: Schrift, Grösse, Farbe oder das Foto. Ist nichts ausgewählt, stellst du hier das Format und den Aufbau der ganzen Seite um. Es gibt nur die Farben und Schriften des Hauses, so bleibt alles im Stil.' },
     { ziel: '#werkzeug', film: 'schritt-5', titel: 'Etwas hinzufügen',
-      text: 'Ein neuer Titel, ein Text, ein Foto, das Zeichen des Hauses oder eine Linie: ein Klick, und es liegt auf dem Blatt. Oben rechts in dieser Leiste wechseln Sie zwischen Vorder- und Rückseite.' },
+      text: 'Ein neuer Titel, ein Text, ein Foto, das Zeichen des Hauses oder eine Linie: ein Klick, und es liegt auf dem Blatt. Oben rechts in dieser Leiste wechselst du zwischen Vorder- und Rückseite.' },
     { ziel: '.reiter', film: 'schritt-6', titel: 'Vorlagen, Fotos und Ablage',
-      text: 'Unter «Fotos» liegen alle Bilder des Hauses, nach Bereichen sortiert, dazu Ihre eigenen: hochladen oder einfach aufs Blatt ziehen. Unter «Vorlagen» finden Sie fertige Aufbauten, in der «Ablage» alles, was Sie gemacht haben. Gespeichert wird von selbst.' },
+      text: 'Unter «Fotos» liegen alle Bilder des Hauses, nach Bereichen sortiert, dazu deine eigenen: hochladen oder einfach aufs Blatt ziehen. Unter «Vorlagen» findest du fertige Aufbauten, in der «Ablage» alles, was du gemacht hast. Gespeichert wird von selbst.' },
     { ziel: '#btnZurueck', film: 'schritt-7', titel: 'Ein Schritt zurück',
       text: 'Etwas verrutscht oder gelöscht? Dieser Pfeil macht den letzten Schritt rückgängig, der daneben holt ihn zurück. Auf der Tastatur geht das mit ⌘ Z.' },
     { ziel: '#btnPruefen', film: 'schritt-8', titel: 'Die Druckprüfung',
-      text: 'Das Studio prüft für Sie, ob alles druckbereit ist: offene Lücken wie [Preis], Text zu nah am Rand, Fotos, die zu unscharf würden. Steht hier eine Null, ist alles in Ordnung. Ein Klick zeigt, was noch fehlt.' },
+      text: 'Das Studio prüft für dich, ob alles druckbereit ist: offene Lücken wie [Preis], Text zu nah am Rand, Fotos, die zu unscharf würden. Steht hier eine Null, ist alles in Ordnung. Ein Klick zeigt, was noch fehlt.' },
     { ziel: '#btnSpeichern', film: 'schritt-9', titel: 'Druckfertig speichern',
-      text: 'Zum Schluss speichern Sie die Drucksache als PDF für die Druckerei. Beschnitt, Schriften und Fotos sind schon richtig eingestellt, Sie geben die Datei einfach weiter. Für Instagram gibt es hier auch ein Bild.' },
+      text: 'Zum Schluss speicherst du die Drucksache als PDF für die Druckerei. Beschnitt, Schriften und Fotos sind schon richtig eingestellt, du gibst die Datei einfach weiter. Für Instagram gibt es hier auch ein Bild.' },
   ];
 
   /* ---------- Begrüssung ---------- */
   function willkommen() {
     const M = window.DS && DS.M;
-    schicht(`<div class="hk hk--gross" role="dialog" aria-modal="true" aria-label="Willkommen">
+    schicht(`<div class="hk hk--gross hk--ecke" role="dialog" aria-label="Willkommen">
       <div class="hk__zeichen">${M ? DS.zeichenSvg(M, 'currentColor') : ''}</div>
-      <h2>Willkommen in der Hausdruckerei</h2>
-      <p class="hk__unter">Flyer, Karten, Aushänge und Gutscheine im Stil ${M ? 'der ' + M.name : 'des Hauses'}, ganz ohne Grafikprogramm.</p>
+      <h2>Willkommen in der Plakatwerkstatt</h2>
+      <p class="hk__unter">Flyer, Karten, Aushänge und Gutscheine im Stil des ${M ? M.name : 'Hauses'}, ganz ohne Grafikprogramm.</p>
       <div class="hk__drei">
-        <div><span class="hk__bild"><svg viewBox="0 0 48 48"><path d="M10 34h28M10 26h20M10 18h28"/><path d="m33 30 7-7 3 3-7 7-4 1z"/></svg></span><b>Sagen</b><p>In einem Satz beschreiben, was Sie brauchen.</p></div>
-        <div><span class="hk__bild"><svg viewBox="0 0 48 48"><rect x="6" y="14" width="10" height="14" rx="1.5"/><rect x="19" y="10" width="10" height="14" rx="1.5"/><rect x="32" y="14" width="10" height="14" rx="1.5"/><path d="m20 33 4 4 7-8"/></svg></span><b>Wählen</b><p>Fünf Entwürfe im Stil des Hauses, Sie nehmen den schönsten.</p></div>
+        <div><span class="hk__bild"><svg viewBox="0 0 48 48"><path d="M10 34h28M10 26h20M10 18h28"/><path d="m33 30 7-7 3 3-7 7-4 1z"/></svg></span><b>Sagen</b><p>In einem Satz beschreiben, was du brauchst.</p></div>
+        <div><span class="hk__bild"><svg viewBox="0 0 48 48"><rect x="6" y="14" width="10" height="14" rx="1.5"/><rect x="19" y="10" width="10" height="14" rx="1.5"/><rect x="32" y="14" width="10" height="14" rx="1.5"/><path d="m20 33 4 4 7-8"/></svg></span><b>Wählen</b><p>Fünf Entwürfe im Stil des Hauses, du nimmst den schönsten.</p></div>
         <div><span class="hk__bild"><svg viewBox="0 0 48 48"><rect x="11" y="8" width="26" height="34" rx="2"/><path d="M17 16h14M17 22h10"/><path d="m27 30 9 3-4 1.5-1.5 4z"/></svg></span><b>Anpassen</b><p>Texte, Fotos und Format direkt auf dem Blatt ändern.</p></div>
         <div><span class="hk__bild"><svg viewBox="0 0 48 48"><path d="M14 18V8h20v10"/><rect x="8" y="18" width="32" height="14" rx="3"/><path d="M14 28h20v12H14z"/><path d="M19 33h10M19 37h6"/></svg></span><b>Drucken</b><p>Als PDF speichern und der Druckerei geben.</p></div>
       </div>
@@ -53,7 +53,7 @@
         <button class="hk__video" data-hk="video">${PLAY}<span>Demo-Video ansehen</span></button>
       </div>
       <button class="hk__leise" data-hk="los">Gleich loslegen</button>
-    </div>`, true);
+    </div>`, false);   /* K33 (Tor 30.10.2026): als ruhige Karte an der Ecke wie beim Rivage, die Seite bleibt hell und bedienbar */
     merk();
   }
 
@@ -101,8 +101,8 @@
       addEventListener('resize', setze); document.addEventListener('keydown', taste);
     }
     const k = ebene.querySelector('.hk--tour');
-    const film = `hilfe/${s.film}`;
-    k.innerHTML = `<div class="hk__film"><video src="${film}.mp4" poster="${film}.jpg" autoplay muted loop playsinline preload="auto"></video></div>
+    const film = s.film ? `hilfe/${s.film}` : '';   // Schritt ohne Film zeigt keinen (Fundliste 22: schritt-neu fehlte, 404)
+    k.innerHTML = `${film ? `<div class="hk__film"><video src="${film}.mp4" poster="${film}.jpg" autoplay muted loop playsinline preload="auto"></video></div>` : ''}
       <div class="hk__fort"><span style="width:${(nr + 1) / SCHRITTE.length * 100}%"></span></div>
       <small>Schritt ${nr + 1} von ${SCHRITTE.length}</small>
       <h3>${s.titel}</h3><p>${s.text}</p>
@@ -113,11 +113,11 @@
         ${nr ? '<button class="leicht" data-hk="zurueck">Zurück</button>' : ''}
         <button class="knopf" data-hk="weiter">${nr === SCHRITTE.length - 1 ? 'Fertig' : 'Weiter'}${PFEIL}</button>
       </div>`;
-    const v = k.querySelector('video');
-    v.addEventListener('error', () => k.querySelector('.hk__film').remove());
+    const v = k.querySelector('video') || document.createElement('video');
+    v.addEventListener('error', () => k.querySelector('.hk__film')?.remove());
     v.addEventListener('loadedmetadata', setze);
     v.play().catch(() => { });
-    k.querySelector('.hk__film').addEventListener('click', () => v.paused ? v.play() : v.pause());
+    k.querySelector('.hk__film')?.addEventListener('click', () => v.paused ? v.play() : v.pause());
     setze();
     k.querySelector('[data-hk="weiter"]').focus({ preventScroll: true });
   }
@@ -150,7 +150,7 @@
     schicht(`<div class="hk hk--gross" role="dialog" aria-modal="true">
       <div class="hk__zeichen">${DS.zeichenSvg(DS.M, 'currentColor')}</div>
       <h2>Mehr braucht es nicht</h2>
-      <p class="hk__unter">Sagen, wählen, anpassen, drucken. Alle Ihre Drucksachen finden Sie oben unter «Übersicht». Führung und Video finden Sie jederzeit unter «Hilfe».</p>
+      <p class="hk__unter">Sagen, wählen, anpassen, drucken. Alle deine Drucksachen findest du oben unter «Übersicht». Führung und Video findest du jederzeit unter «Hilfe».</p>
       <div class="hk__knoepfe">
         <button class="knopf knopf--voll" data-hk="los">Loslegen${PFEIL}</button>
         <button class="hk__video" data-hk="video">${PLAY}<span>Demo-Video ansehen</span></button>
@@ -164,7 +164,7 @@
     try { kapitel = await (await fetch('hilfe/kapitel.json', { cache: 'no-store' })).json(); } catch (e) { }
     const fmt = t => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
     schicht(`<div class="hk hk--video" role="dialog" aria-modal="true" aria-label="Demo-Video">
-      <div class="hk__kopf"><h2>So arbeitet das Studio</h2><button class="hk__x" data-hk="los" aria-label="Schliessen"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="hk__kopf"><h2>So arbeitet das Studio</h2><button class="hk__x" data-hk="los" aria-label="Schliessen"><svg viewBox="0 0 24 24"><path d="M9 14.5 4 9.5l5-5M4 9.5h11a5 5 0 0 1 0 10h-3"/></svg></button></div>
       <video src="hilfe/demo.mp4" poster="hilfe/demo-poster.jpg" controls playsinline preload="metadata"></video>
       ${kapitel.length ? `<div class="hk__kapitel">${kapitel.map(k => `<button data-hk="kapitel" data-t="${k.t}"><b>${k.titel}</b><span>${fmt(k.t)}</span></button>`).join('')}</div>` : ''}
       <div class="hk__knoepfe hk__knoepfe--zeile"><button class="leicht" data-hk="fuehrung">Führung am Studio starten</button><button class="knopf" data-hk="los">Selbst ausprobieren${PFEIL}</button></div>
@@ -178,8 +178,8 @@
   /* ---------- Hilfe-Menü ---------- */
   function hilfeMenue() {
     schicht(`<div class="hk hk--menue" role="dialog" aria-modal="true" aria-label="Hilfe">
-      <div class="hk__kopf"><h2>Hilfe</h2><button class="hk__x" data-hk="los" aria-label="Schliessen"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
-      <button class="hk__zeile" data-hk="video"><span class="hk__ic">${PLAY}</span><span><b>Demo-Video ansehen</b><small>Zwei Minuten: ein Flyer vom Satz bis zum PDF</small></span></button>
+      <div class="hk__kopf"><h2>Hilfe</h2><button class="hk__x" data-hk="los" aria-label="Schliessen"><svg viewBox="0 0 24 24"><path d="M9 14.5 4 9.5l5-5M4 9.5h11a5 5 0 0 1 0 10h-3"/></svg></button></div>
+      <button class="hk__zeile" data-hk="video"><span class="hk__ic">${PLAY}</span><span><b>Demo-Video ansehen</b><small>Gut eine Minute: ein Flyer vom Satz bis zum PDF</small></span></button>
       <button class="hk__zeile" data-hk="fuehrung"><span class="hk__ic"><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span><span><b>Führung am Studio</b><small>Zehn kurze Schritte, direkt an den Knöpfen</small></span></button>
       <h3>Auf der Tastatur</h3>
       <dl class="hk__tasten">
