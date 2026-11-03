@@ -133,3 +133,5 @@
 /* Leiste: beim Zeigen nur der Grund, nichts rückt aus der gemeinsamen Kante (Kriterium 6) */
 @media (hover:hover){.start.ms .ms-nav button:hover:not(.an),.start.ms .ms-fuss button:hover{transform:none}}
 .ms-nav button:hover svg,.ms-fuss button:hover svg{transform:none}
+.reiter{text-align:center}   /* Reiter sind mittig beschriftete Segmente */
+.pk-blaetter{text-align:center}   /* Vorschau als mittige Komposition (Vorder- und Rückseite) */
