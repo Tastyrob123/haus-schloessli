@@ -7,7 +7,7 @@ import html, os
 HIER = os.path.dirname(os.path.abspath(__file__))
 THEMEN = [
  ('Grundlagen', 'So geht {N_es}', [
-  ('k01', 'Übersicht', 'So ist {N_es} aufgebaut.', '{N} ist die Marke der Wirtschaft am Schlössli zum Arbeiten. Drei Teile für den Alltag, dazu die Hausregeln zum Nachschlagen.',
+  ('k01', 'Übersicht', 'Der Aufbau.', '{N} ist die Marke der Wirtschaft am Schlössli zum Arbeiten. Drei Teile für den Alltag, dazu die Hausregeln zum Nachschlagen.',
    ['Links die Teile: «Fotos», «Logo & Dateien» und «Markenprüfung». Darunter die Hausregeln.',
     'Oben rechts stehen «{zentrale}», die Anleitung und «Website ansehen». Unten steht immer der Hinweis zu den Bildrechten, daneben laden Sie alle Dateien der Marke auf einmal.',
     'Auf dem Handy öffnet der Knopf «Bereiche» die Teile als Menü und schliesst sich nach der Wahl.'],
@@ -51,7 +51,7 @@ THEMEN = [
     '«Als Text kopieren» gibt Ihnen die Rückmeldung für die Mail an die Agentur. «Ergebnis sichern» legt sie als Datei auf Ihren Rechner, nur wenn Sie es wollen.'],
    'Das Beispiel ist eigens gezeichnet. Die Farben darin sind wirklich gemessen; die Urteile zu Schrift, Zeichen, Bild und Ton sind ein Beispiel, so wie die Prüfung antwortet.')]),
  ('Nachschlagen', 'Die Hausregeln', [
-  ('k09', 'Hausregeln', 'In den Hausregeln nachschlagen.', 'Die Hausregeln erklären Blatt für Blatt, wie das Haus aussieht und spricht: Zeichen, Wortmarke und Titelschrift, Schriften, Farben und ihre Herkunft am Hafen, die Farbwelt, Logo richtig und falsch, der Ton, zehn Regeln für jeden Text und die eigene Welt.',
+  ('k09', 'Hausregeln', 'Nachschlagen.', 'Die Hausregeln erklären Blatt für Blatt, wie das Haus aussieht und spricht: Zeichen, Wortmarke und Titelschrift, Schriften, Farben und ihre Herkunft am Hafen, die Farbwelt, Logo richtig und falsch, der Ton, zehn Regeln für jeden Text und die eigene Welt.',
    ['Links «Die Hausregeln» oder auf der Übersicht «Lesen» drücken.', 'Oben in den Hausregeln führt der Name zurück ins Markenbuch. «Als PDF sichern» legt die Hausregeln als PDF ab.'],
    'Die Markenprüfung prüft nach denselben Regeln. Ändert sich etwas an der Marke, wird beides zusammen neu gebaut.')])]
 
@@ -60,7 +60,7 @@ def zusammen(t):
     """Tor 3 R (30.10.2026): die letzten zwei Wörter eines Kapiteltitels mit festem Leerzeichen, nie ein Wort allein in der letzten Zeile."""
     w = t.split(' ')
     # in einem nowrap-Teil: das Kleid (WO_ZEILEN) teilt Titel in Wort-Blöcke, zwischen denen auch ein festes Leerzeichen umbricht
-    return t if len(w) < 3 else ' '.join(w[:-2]) + ' <span style="white-space:nowrap">' + '&nbsp;'.join(w[-2:]) + '</span>'
+    return t if len(w) < 3 or len(w[-2]) + len(w[-1]) > 16 else ' '.join(w[:-2]) + ' <span style="white-space:nowrap">' + '&nbsp;'.join(w[-2:]) + '</span>'
 
 
 def e(s): return html.escape(s, quote=False)

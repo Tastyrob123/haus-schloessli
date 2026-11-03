@@ -80,18 +80,18 @@ def gedreht(hx):
 FA = next(w for w in MJ['farbwelten'] if w['kennung'] == 'a')
 # (Schlüssel, Name, Variable in haus.css, Wert in Farbwelt A oder None, Rolle, Gruppe); Namen wie im Kleid der Werkzeuge
 FARBEN = [
-    ('nacht', 'Nacht', 'nacht', FA['flaechen'][0], 'Nacht über dem See: Grund der dunklen Flächen, immer mit der Punkt-Tapete', 'dunkel'),
-    ('tief', 'Tief', 'tief', FA['flaechen'][1], 'zweite dunkle Fläche, Platten auf Nacht', 'dunkel'),
-    ('stuhl', 'Stuhlblau', 'stuhl', FA['flaechen'][2], 'das Blau der Terrassenstühle: Knöpfe, Linien und Flächen', 'dunkel'),
-    ('papier', 'Papier', 'kalk', FA['flaechen'][3], 'Grund der hellen Flächen, mit der Punkt-Tapete', 'hell'),
-    ('seespiegel', 'Seespiegel', 'kalk2', FA['flaechen'][4], 'zweite helle Fläche, Felder und Linien', 'hell'),
-    ('blatt', 'Blatt', 'papier', None, 'ruhige helle Abschnitte ohne Tapete', 'hell'),
-    ('himmel', 'Seehimmel', 'himmel', FA['akzent'], 'Linie, Zeichen und Knauf auf Dunkel, der Horizont', 'himmel'),
-    ('himmel-h', 'Seehimmel hell', 'himmel-h', FA['akzent_hell'], 'Betonung in Titeln auf Dunkel', 'himmel'),
-    ('himmel-t', 'Seehimmel tief', 'himmel-t', FA['akzent_tief'], 'Betonung in Titeln auf Hell', 'himmel'),
-    ('tinte', 'Tinte', 'tinte', FA['schrift'], 'Schrift auf hellen Flächen, nie reines Schwarz', 'schrift'),
-    ('titel', 'Titelblau', 'titel-h', None, 'Titel in Versalien auf Hell', 'schrift'),
-    ('punkt', 'Schirmrot', 'punkt', FA['punkt'], 'nur als Punkt: Stempel, Markierung, Nabe der Zeiger, nie als Fläche', 'punkt'),
+    ('nacht', 'Nacht', 'nacht', FA['flaechen'][0], 'Grund der dunklen Flächen', 'dunkel'),
+    ('tief', 'Tief', 'tief', FA['flaechen'][1], 'zweite dunkle Fläche', 'dunkel'),
+    ('stuhl', 'Stuhlblau', 'stuhl', FA['flaechen'][2], 'Knöpfe, Linien, Flächen', 'dunkel'),
+    ('papier', 'Papier', 'kalk', FA['flaechen'][3], 'Grund der hellen Flächen', 'hell'),
+    ('seespiegel', 'Seespiegel', 'kalk2', FA['flaechen'][4], 'zweite helle Fläche', 'hell'),
+    ('blatt', 'Blatt', 'papier', None, 'ruhige helle Abschnitte', 'hell'),
+    ('himmel', 'Seehimmel', 'himmel', FA['akzent'], 'Linie und Zeichen auf Dunkel', 'himmel'),
+    ('himmel-h', 'Seehimmel hell', 'himmel-h', FA['akzent_hell'], 'Betonung auf Dunkel', 'himmel'),
+    ('himmel-t', 'Seehimmel tief', 'himmel-t', FA['akzent_tief'], 'Betonung auf Hell', 'himmel'),
+    ('tinte', 'Tinte', 'tinte', FA['schrift'], 'Lesetext, nie reines Schwarz', 'schrift'),
+    ('titel', 'Titelblau', 'titel-h', None, 'Titel auf Hell', 'schrift'),
+    ('punkt', 'Schirmrot', 'punkt', FA['punkt'], 'nur als Punkt, nie als Fläche', 'punkt'),
 ]
 GRUPPEN = [('dunkel', 'Nacht und Stuhlblau', 'Die dunklen Flächen, aus dem Blau der Terrassenstühle, Ton in Ton auf das Blau des Platztellers gestimmt. Sie tragen immer die Punkt-Tapete.'),
            ('hell', 'Papier und Seespiegel', 'Die hellen Flächen, auf denen gelesen wird: der helle Himmel über dem See. Papier mit der Punkt-Tapete, Blatt ruhig.'),
@@ -139,6 +139,14 @@ GRUPPE_FOTOS = {
     'instagram': ['ig-terrasse', 'ig-luft', 'ig-hafen', 'ig-abend', 'ig-herd', 'ig-teller', 'ig-pasta', 'ig-dessert'],
 }
 BEREICHE = list(GRUPPE_FOTOS)
+# Kurzer Name auf der Kachel (der ganze Satz steht im Fenster); sonst der Satz bis zum ersten Komma
+KURZ = {'start': 'Die Terrasse am Mittag', 'haus': 'Die Wirtschaft am Hafen', 'schifflaende': 'Die Schifflände am Hafen', 'thon': 'Thunfisch in Scheiben',
+        'iberia': 'Fisch in grüner Sauce', 'anguria': 'Auf dem blauen Platzteller', 'fisch': 'Fischfilet mit Sauce', 'fleisch': 'Gefülltes Fleisch',
+        'salat': 'Salat auf silbernem Teller', 'sauce': 'Die Sauce wird angegossen', 'dessert': 'Dessert mit Beeren', 'torte': 'Schichttorte mit Beeren',
+        'gaststube': 'Die Gaststube', 'bar': 'Ein Bier wird gezapft', 'schild': 'Wegweiser zur Lästermeile', 'apero': 'Spritz und Bier am Abend',
+        'glas': 'Ein Glas Weisswein', 'team': 'Das Team', 'saentis': 'Blick bis zum Säntis', 'abendschiff': 'Kursschiff im Abendlicht',
+        'luft1954': 'Der Hafen aus der Luft, 1954', 'ig-terrasse': 'Gäste an der Promenade', 'ig-hafen': 'Vom Wasser aus', 'ig-dessert': 'Ein Dessert entsteht',
+        'moni': 'Monika Huber, Küchenchefin', 'jonas': 'Jonas Volpert, Gastgeber', 'lukas': 'Lukas Siebel, Sous-Chef'}
 SOMMER = {'start', 'platanen', 'lounge', 'glas', 'apero', 'abend', 'ig-terrasse', 'ig-luft', 'jz-sommer'}
 NICHT = re.compile(r'^(tb-|kf-|ch-|feuerwerk)|^(baum|pa-teller|kp-party|stier|mi-teller|schaefli|start-hoch|teller)$')
 INSTAGRAM = 'https://www.instagram.com/schloessli_bottighofen/'
@@ -182,7 +190,7 @@ def katalog():
                 w, h = im.size
             f = 'hoch' if h > w * 1.04 else 'quer' if w > h * 1.04 else 'quadrat'
             art, q, u = herkunft(k, b)
-            aus.append(dict(k=k, t={'de': b['alt']}, b=g, s='sommer' if k in SOMMER else 'jahr', f=f, w=w, h=h, art=art, q=q, u=u, ue=False, alt=False, vn=False,
+            aus.append(dict(k=k, t={'de': b['alt']}, n=KURZ.get(k) or b['alt'].split(', ')[0], b=g, s='sommer' if k in SOMMER else 'jahr', f=f, w=w, h=h, art=art, q=q, u=u, ue=False, alt=False, vn=False,
                             fl=f'../../assets/img/{k}-{gr}.webp', fm=f'../../assets/img/{k}-{mi}.webp', fs=f'../../assets/img/{k}-{kl}.webp'))
     return aus
 

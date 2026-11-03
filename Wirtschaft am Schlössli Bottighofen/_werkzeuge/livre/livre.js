@@ -64,7 +64,7 @@ de: {
   ohne_server: 'Fertige Grössen brauchen den Server-Teil. Ohne ihn lädt der Knopf das Foto in der grössten Fassung.',
   vn_vorher: 'Vorher', vn_nachher: 'Nachher', vn_schieber: 'Schieber', vn_t_vorher: 'Vorher · so geliefert', vn_t_nachher: 'Nachher · nachgeschärft', vn_t_vorher_ki: 'Vorher · das Foto', vn_t_nachher_ki: 'Nachher · mit KI verändert', vn_t_schieber: 'Vorher links · nachher rechts',
   vn_hilfe: 'Mit «Vorher» sehen Sie das Foto, wie das Haus es geliefert hat.', vn_orig: 'Vorher laden',
-  d_titel: 'Logo & Dateien', d_satz: 'Alles, was eine Agentur oder eine Druckerei braucht. SVG bleibt in jeder Grösse scharf, PNG hat einen durchsichtigen Grund.',
+  d_titel: 'Logo &\u00a0Dateien', d_satz: 'Alles, was eine Agentur oder eine Druckerei braucht. SVG bleibt in jeder Grösse scharf, PNG hat einen durchsichtigen Grund.',
   d_logo: 'Logo', d_logo_s: 'Das Logo des Hauses, Pixel für Pixel das Original: Kreis, Zeiger, SCHLÖSSLI mit dem Ö als Nabe, WIRTSCHAFT und BY CHRISTIAN KUCHLER. Die Form bleibt, nur die Farbe wechselt: Nacht, Schwarz, Weiss oder Seehimmel.',
   d_zeichen: 'Das Zeichen', d_zeichen_s: 'Kreis, zwei Zeiger, zwei Kugeln, ohne Buchstaben aus dem Logo nachgezeichnet: Siegel, Stempel, Profilbild. In Nacht, Stuhlblau, Seehimmel oder Weiss.', d_zeiger: 'Die Zeiger', d_zeiger_s: 'Die zwei Zeiger allein, so wie in der Leiste der Website und als Medaillon in der Tapete.',
   d_name: 'Name', d_name_s: 'WIRTSCHAFT AM SCHLÖSSLI in Versalien in Open Sans, der Schrift der Wortmarke, weit gesperrt: lang und kurz.',
@@ -257,7 +257,7 @@ function kachel(f, i) {
   return `<button class="li-f li-f--${f.f}${f.b === 'plakate' ? ' li-f--plakat' : ''}" type="button" data-k="${esc(f.k)}" data-r style="--i:${i % 6}" aria-label="${esc(titelVon(f))}">
     <img src="${esc(f.fs)}" alt="" loading="lazy" decoding="async" draggable="false">
     ${f.art === 'ki' ? `<span class="li-ki" title="${esc(t('ki_lang'))}">${esc(t('ki'))}</span>` : f.art === 'fremd' ? `<span class="li-ki li-ki--fremd" title="${esc(t('fremd_lang'))}">${esc(t('fremd'))}</span>` : ''}
-    <span class="li-f__n">${esc(titelVon(f))}</span></button>`;
+    <span class="li-f__n">${esc(f.n || titelVon(f))}</span></button>`;
 }
 function raster(neu = false, mehr = false) {
   const L = gefiltert();
@@ -395,7 +395,7 @@ function vorherNachher(v, setze) {
 function dateien() {
   const D = Object.fromEntries(S.d.dateien.map(x => [x.k, x]));
   const gr = n => { const b = S.d.groessen[n]; return b ? (b > 1e6 ? (b / 1e6).toFixed(1).replace('.', ',') + ' MB' : Math.max(1, Math.round(b / 1024)) + ' KB') : ''; };
-  const knoepfe = liste => liste.filter(n => !n.endsWith('.webp') || liste.length === 1).map(n => `<a class="kn kn--klein ${/\.(png|json|ase|css)$/.test(n) ? 'kn--linie' : ''}" href="${DAT}${esc(n)}" download title="${esc(n)} · ${gr(n)}">${esc(n.split('.').pop().toUpperCase())}<i>${PU}</i></a>`).join('');
+  const knoepfe = liste => liste.filter(n => !n.endsWith('.webp') || liste.length === 1).map(n => `<a class="kn kn--klein ${/\.(png|json|ase|css)$/.test(n) ? 'kn--linie' : ''}" href="${DAT}${esc(n)}" download title="${esc(n)} · ${gr(n)}">${esc(n.split('.').pop().toUpperCase())}${liste.length === 1 ? ' laden' : ''}<i>${PU}</i></a>`).join('');
   const block = (k, titel, satz, inhalt, i) => `<section class="li-d" id="d-${k}" data-r style="--i:${i % 2}"><header><h2 class="li-d__t">${zwei(titel)}</h2><p class="leise">${esc(satz)}</p></header>${inhalt}</section>`;
   const vname = (g, v) => g === 'tapete' && v.k === 'dunkel' ? t('v_t_dunkel') : t('v_' + v.k);
   const tafeln = (g, breit) => `<div class="li-tafeln ${breit ? 'li-tafeln--breit' : ''}">${D[g].var.map(v => `<figure class="li-tafel li-tafel--${v.grund}">

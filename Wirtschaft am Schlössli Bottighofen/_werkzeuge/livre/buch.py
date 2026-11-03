@@ -167,11 +167,13 @@ def aus_station5(st5, web, gedreht, daten):
     s = re.sub(r'(src|href)="(\./)?(bilder|logo|zeichen|logo-richtig-falsch)/', r'\1="buch/\3/', s)
     s = s.replace('url(./schriften/', 'url(buch/schriften/').replace('url(./tapete-', 'url(buch/tapete-')
     # Leiste oben: zurück ins Werkzeug, Kapitel, Als PDF sichern (Knopf des Hauses: Nacht, DM Mono, heller Knauf)
-    kap = [(m.group(1), re.sub(r'<[^>]+>', '', m.group(2))) for m in re.finditer(r'<section class="blatt[^"]*" id="([a-z]+)">.*?<p class="mono">([^<]*)</p>', s, re.S)]
+    kap = [(m.group(1), re.sub(r'<[^>]+>', '', m.group(2))) for m in re.finditer(r'<section class="(?:blatt|kapitel)[^"]*" id="([a-z]+)">.*?<p class="mono">([^<]*)</p>', s, re.S)]
     zu = re.sub(r'^Das ', 'zum ', name) if name.startswith('Das ') else 'zu ' + name
     pfeil = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v10M3.5 7.5 8 12l4.5-4.5M3 14h10"/></svg>'
-    leiste = ('<nav class="lb-leiste" aria-label="Die Hausregeln"><a class="lb-zur" href="./" title="Zurück ' + e(zu) + '"><img src="/assets/oberflaeche/kleid/schloessli-zeichen.svg" alt="" width="26" height="26"><span><b>' + e(name) + '</b><small>Die Hausregeln</small></span></a><span class="lb-kap">'
+    leiste = ('<nav class="lb-leiste" aria-label="Die Hausregeln"><a class="lb-zur" href="./" title="Zurück ' + e(zu) + '"><img src="dateien/wirtschaft-am-schloessli-zeiger-himmel.svg" alt="" width="26" height="26"><span><b>' + e(name) + '</b><small>Die Hausregeln</small></span></a><span class="lb-kap">'
               + ''.join(f'<a href="#{k}">{e(t)}</a>' for k, t in kap) + '</span><button type="button" id="bu-pdf"><span>Als PDF sichern</span><i>' + pfeil + '</i></button></nav>')
+    s = re.sub(r'(<section class=")blatt\b', r'\1kapitel', s)
+    s = re.sub(r'(<style[^>]*>)(.*?)(</style>)', lambda m: m.group(1) + re.sub(r'\.blatt\b', '.kapitel', m.group(2)) + m.group(3), s, flags=re.S)
     s = s.replace('<body', '<body data-livre', 1)
     s = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + leiste, s, count=1)
     css = ('<style>.lb-leiste{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:18px;min-height:64px;padding:8px clamp(14px,2.4vw,32px);'
@@ -185,12 +187,20 @@ def aus_station5(st5, web, gedreht, daten):
            'font:inherit;letter-spacing:inherit;text-transform:inherit;color:#fff;background:#113d88;box-shadow:inset 0 0 0 1px rgba(162,182,207,.35)}'
            '#bu-pdf span{text-box:trim-both cap alphabetic}#bu-pdf i{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#E7ECF3;color:#0b1d3d}'
            '#bu-pdf svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}'
-           '@media (max-width:1679px){.lb-kap{display:none}.lb-leiste{justify-content:space-between}}.lb-kap{flex-wrap:nowrap}'
+           '@media (max-width:620px){.lb-zur small{display:none}.lb-zur b{font-size:11px}#bu-pdf{width:44px;padding:0;justify-content:center}#bu-pdf span{display:none}#bu-pdf i{width:34px;height:34px}}@media (max-width:1679px){.lb-kap{display:none}.lb-leiste{justify-content:space-between}}.lb-kap{flex-wrap:nowrap}'
            'h1,h2,h3,h4,figcaption{text-wrap:balance}'
            '@page{size:A4 landscape;margin:10mm}@media print{.lb-leiste{display:none}[data-a]{opacity:1!important;transform:none!important}'
-           '.blatt,.auftakt,.fuss{-webkit-print-color-adjust:exact;print-color-adjust:exact}.blatt{break-before:page}.blatt{padding:34px 0 26px;margin-top:0;border-radius:0}.auftakt{min-height:0;padding:90px 0}.kopf{margin-bottom:24px}.fz,.wt,.wv,figure,.zg__gross,.zg__fass,.gruppe>p,.ton li,.hr li{break-inside:avoid}.mitte:has(.knopf){display:none}.fuss{break-before:avoid;padding:24px 0}}</style>')
+           '.kapitel,.auftakt,.fuss{-webkit-print-color-adjust:exact;print-color-adjust:exact}.kapitel{break-before:page}.kapitel{padding:34px 0 26px;margin-top:0;border-radius:0}.auftakt{min-height:0;padding:90px 0}.kopf{margin-bottom:24px}.fz,.wt,.wv,figure,.zg__gross,.zg__fass,.gruppe>p,.ton li,.hr li{break-inside:avoid}.mitte:has(.knopf){display:none}.fuss{break-before:avoid;padding:24px 0}}</style>')
     s = re.sub(r'<link rel="icon"[^>]*>', '', s)
     s = s.replace('</head>', css + '<link rel="icon" href="/assets/oberflaeche/kleid/schloessli-zeichen.svg" type="image/svg+xml"></head>', 1)
+    # Tor 3.11.2026: Schrift im Knopf optisch mittig (1,3 px tiefer), Pfeil im Knauf mittig; Titel nie mit einem Wort allein in der letzten Zeile
+    s = s.replace('</head>', '<style>.knopf{padding-top:2.6px}.knopf .kn{margin-top:-2.6px}.knopf .pf{translate:1px 0}</style></head>', 1)
+    s = re.sub(r'(<figcaption>)([^<]*)(</figcaption>)', lambda m: m.group(1) + re.sub(r' (?=\S+\s*$)', '&nbsp;', m.group(2), count=1) + m.group(3), s)
+    s = ersetze(s, '<h2>Der Name in weit <em>gesperrten Versalien.</em></h2>', '<h2>Der Name, <em>weit gesperrt.</em></h2>')
+    def zus(t):   # letzte zwei Wörter zusammen, wenn sie zusammen kurz genug für eine Handyzeile sind
+        m = re.search(r'(\S+) ([^ <>]+(?:</em>)?\s*)$', t)
+        return t[:m.start()] + m.group(1) + '&nbsp;' + m.group(2) if m and len(re.sub(r'<[^>]+>', '', m.group(1) + m.group(2))) <= 15 else t
+    s = re.sub(r'(<(h2|h3)\b[^>]*>)(.*?)(</\2>)', lambda m: m.group(1) + zus(m.group(3)) + m.group(4), s, flags=re.S)
     s = re.sub(r'<title>[^<]*</title>', '<title>Die Hausregeln · Wirtschaft am Schlössli</title>', s, count=1)
     s = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="Die Hausregeln der Wirtschaft am Schlössli, Bottighofen: Zeichen, Wortmarke, Schrift, Farben, Farbwelt, Logo richtig und falsch, Ton, zehn Regeln für jeden Text.">', s, count=1)
     # Bewegung des Kleids (Robert 1.11.2026: auch auf den Hausregeln): das Kleid lädt bewegung.js nach
@@ -225,5 +235,13 @@ def aus_station5(st5, web, gedreht, daten):
     r = r.replace('Zurück zum Markenbuch', 'Zurück zu den Hausregeln').replace('Markenbuch', 'Die Hausregeln').replace('MARKENBUCH', 'DIE HAUSREGELN')
     r = re.sub(r'<title>[^<]*</title>', '<title>Logo richtig und falsch · Wirtschaft am Schlössli</title>', r, count=1)
     r = re.sub(r'<link rel="icon"[^>]*>', '<link rel="icon" href="/assets/oberflaeche/kleid/schloessli-zeichen.svg" type="image/svg+xml">', r, count=1)
+    r = re.sub(r'(<h2>)([^<]*)(</h2>)', lambda m: m.group(1) + re.sub(r' (?=\S+$)', '&nbsp;', m.group(2), count=1) + m.group(3), r)
+    r = r.replace('</head>', '<style>.knopf{padding-top:2.6px}.knopf .kn{margin-top:-2.6px}.knopf .pf{translate:1px 0}.mass{left:16px}</style></head>', 1)
+    lg = Image.open(os.path.join(ziel, 'logo', 'logo-transparent-1563.png'))
+    lg.resize((1563, round(1563 / 1.786)), Image.LANCZOS).save(os.path.join(ziel, 'logo-richtig-falsch', 'falsch-verzerrt-logo.png'), optimize=True)
+    alt_ = '<img src="../logo/logo-transparent-1563.png" alt="" style="width:86%;height:56%">'
+    if r.count(alt_) != 1:
+        raise SystemExit('Logo richtig und falsch: verzerrtes Logo nicht gefunden')
+    r = r.replace(alt_, '<img src="falsch-verzerrt-logo.png" alt="" style="width:86%;height:auto;aspect-ratio:1.786">')
     open(os.path.join(ziel, 'logo-richtig-falsch', 'index.html'), 'w', encoding='utf-8').write(r)
     return [k for k, t in kap]

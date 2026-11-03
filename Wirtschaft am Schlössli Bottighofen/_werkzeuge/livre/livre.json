@@ -7,6 +7,7 @@
    "t": {
     "de": "Blaue Stühle auf der Terrasse am Mittag, dahinter der Bodensee und die Alpen"
    },
+   "n": "Die Terrasse am Mittag",
    "b": "hafen",
    "s": "sommer",
    "f": "quer",
@@ -27,6 +28,7 @@
    "t": {
     "de": "Gedeckte Tische unter den Platanen, Sonnenschirme, dahinter der Hafen"
    },
+   "n": "Gedeckte Tische unter den Platanen",
    "b": "hafen",
    "s": "sommer",
    "f": "hoch",
@@ -47,6 +49,7 @@
    "t": {
     "de": "Abend unter der Platane mit Lichterkette, Gäste am Tisch über dem See"
    },
+   "n": "Abend unter der Platane mit Lichterkette",
    "b": "hafen",
    "s": "sommer",
    "f": "hoch",
@@ -67,6 +70,7 @@
    "t": {
     "de": "Lounge mit Champagner am Ufer, dahinter der See und die Alpen"
    },
+   "n": "Lounge mit Champagner am Ufer",
    "b": "hafen",
    "s": "sommer",
    "f": "quer",
@@ -87,6 +91,7 @@
    "t": {
     "de": "Das ehemalige Hafenmeistergebäude mit der Wirtschaft am Hafen von Bottighofen, 2016"
    },
+   "n": "Die Wirtschaft am Hafen",
    "b": "hafen",
    "s": "jahr",
    "f": "quer",
@@ -107,6 +112,7 @@
    "t": {
     "de": "Der Bootshafen, dahinter die Wirtschaft und das Schlössli"
    },
+   "n": "Der Bootshafen",
    "b": "hafen",
    "s": "jahr",
    "f": "quer",
@@ -127,6 +133,7 @@
    "t": {
     "de": "Die Schifflände und die Bootstankstelle am Hafen von Bottighofen"
    },
+   "n": "Die Schifflände am Hafen",
    "b": "hafen",
    "s": "jahr",
    "f": "quer",
@@ -147,6 +154,7 @@
    "t": {
     "de": "Tortelloni mit Tomate, Burrata und Taggiasca-Olive"
    },
+   "n": "Tortelloni mit Tomate",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -167,6 +175,7 @@
    "t": {
     "de": "Thunfisch in Scheiben in einer gerippten Schale"
    },
+   "n": "Thunfisch in Scheiben",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -187,6 +196,7 @@
    "t": {
     "de": "Fisch in grüner Sauce in einer gerippten Schale, daneben ein Weinglas"
    },
+   "n": "Fisch in grüner Sauce",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -207,6 +217,7 @@
    "t": {
     "de": "Schwarze Pasta mit Garnelen und Meeresfrüchten"
    },
+   "n": "Schwarze Pasta mit Garnelen und Meeresfrüchten",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -227,6 +238,7 @@
    "t": {
     "de": "Ein Teller von oben auf dem blauen Platzteller"
    },
+   "n": "Auf dem blauen Platzteller",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -247,6 +259,7 @@
    "t": {
     "de": "Fischfilet mit Sauce in einer gerippten Schale, dahinter ein blauer Stuhl"
    },
+   "n": "Fischfilet mit Sauce",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -267,6 +280,7 @@
    "t": {
     "de": "Gefülltes Fleisch mit Blättern und Blüten auf einem geriffelten Teller"
    },
+   "n": "Gefülltes Fleisch",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -287,6 +301,7 @@
    "t": {
     "de": "Ein Salat auf einem gerippten silbernen Teller"
    },
+   "n": "Salat auf silbernem Teller",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -307,6 +322,7 @@
    "t": {
     "de": "Grüne Suppe in einer blauen Schale"
    },
+   "n": "Grüne Suppe in einer blauen Schale",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -327,6 +343,7 @@
    "t": {
     "de": "Die Sauce wird mit dem Löffel angegossen"
    },
+   "n": "Die Sauce wird angegossen",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -347,6 +364,7 @@
    "t": {
     "de": "Dessert mit Beeren auf einem blauen Teller, dahinter ein Wasserglas"
    },
+   "n": "Dessert mit Beeren",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -367,6 +385,7 @@
    "t": {
     "de": "Schichttorte mit Beeren auf einem blauen Teller"
    },
+   "n": "Schichttorte mit Beeren",
    "b": "kueche",
    "s": "jahr",
    "f": "hoch",
@@ -387,6 +406,7 @@
    "t": {
     "de": "Die Gaststube mit grossen Fenstern zum Hafen"
    },
+   "n": "Die Gaststube",
    "b": "bar",
    "s": "jahr",
    "f": "quer",
@@ -407,6 +427,7 @@
    "t": {
     "de": "An der Bar wird ein Bier gezapft, unter der Theke die Zementfliesen"
    },
+   "n": "Ein Bier wird gezapft",
    "b": "bar",
    "s": "jahr",
    "f": "quer",
@@ -427,6 +448,7 @@
    "t": {
     "de": "Die Zementfliesen an der Bar"
    },
+   "n": "Die Zementfliesen an der Bar",
    "b": "bar",
    "s": "jahr",
    "f": "quer",
@@ -447,6 +469,7 @@
    "t": {
     "de": "Wegweiser zur A-la-carte-Restaurant-Terrasse und zur Lästermeile"
    },
+   "n": "Wegweiser zur Lästermeile",
    "b": "bar",
    "s": "jahr",
    "f": "hoch",
@@ -467,6 +490,7 @@
    "t": {
     "de": "Ein Spritz und ein Bier auf einem blauen Tisch in der blauen Stunde"
    },
+   "n": "Spritz und Bier am Abend",
    "b": "bar",
    "s": "sommer",
    "f": "hoch",
@@ -487,6 +511,7 @@
    "t": {
     "de": "Weinflaschen im Regal"
    },
+   "n": "Weinflaschen im Regal",
    "b": "wein",
    "s": "jahr",
    "f": "hoch",
@@ -507,6 +532,7 @@
    "t": {
     "de": "Ein Glas Weisswein und ein Wasserglas vor dem See"
    },
+   "n": "Ein Glas Weisswein",
    "b": "wein",
    "s": "sommer",
    "f": "hoch",
@@ -527,6 +553,7 @@
    "t": {
     "de": "Flaschen im Regal an der Bar, durch die Scheibe der See"
    },
+   "n": "Flaschen im Regal an der Bar",
    "b": "wein",
    "s": "jahr",
    "f": "quer",
@@ -547,6 +574,7 @@
    "t": {
     "de": "Das Team der Wirtschaft am Schlössli vor der Holzwand"
    },
+   "n": "Das Team",
    "b": "team",
    "s": "jahr",
    "f": "quer",
@@ -567,6 +595,7 @@
    "t": {
     "de": "Monika Huber, Küchenchefin, auf der Terrasse"
    },
+   "n": "Monika Huber, Küchenchefin",
    "b": "team",
    "s": "jahr",
    "f": "hoch",
@@ -587,6 +616,7 @@
    "t": {
     "de": "Jonas Volpert, Gastgeber und Sommelier, auf der Terrasse"
    },
+   "n": "Jonas Volpert, Gastgeber",
    "b": "team",
    "s": "jahr",
    "f": "hoch",
@@ -607,6 +637,7 @@
    "t": {
     "de": "Lukas Siebel, Sous-Chef, auf der Terrasse"
    },
+   "n": "Lukas Siebel, Sous-Chef",
    "b": "team",
    "s": "jahr",
    "f": "hoch",
@@ -627,6 +658,7 @@
    "t": {
     "de": "Morgen am Bodensee, hinten die Alpen und die Schifflände Bottighofen"
    },
+   "n": "Morgen am Bodensee",
    "b": "see",
    "s": "jahr",
    "f": "quer",
@@ -647,6 +679,7 @@
    "t": {
     "de": "Blick über den Bodensee bis zum Säntis"
    },
+   "n": "Blick bis zum Säntis",
    "b": "see",
    "s": "jahr",
    "f": "quer",
@@ -667,6 +700,7 @@
    "t": {
     "de": "Ein Kursschiff im Abendlicht auf dem Bodensee, dahinter das Säntis-Massiv"
    },
+   "n": "Kursschiff im Abendlicht",
    "b": "see",
    "s": "jahr",
    "f": "quer",
@@ -687,6 +721,7 @@
    "t": {
     "de": "Sonnenuntergang am Seerhein in Gottlieben, Laternen und Pfähle am Ufer"
    },
+   "n": "Sonnenuntergang am Seerhein in Gottlieben",
    "b": "see",
    "s": "jahr",
    "f": "quer",
@@ -707,6 +742,7 @@
    "t": {
     "de": "Apfelblüte am Bodensee im April"
    },
+   "n": "Apfelblüte am Bodensee im April",
    "b": "see",
    "s": "jahr",
    "f": "quer",
@@ -727,6 +763,7 @@
    "t": {
     "de": "Reife rote Johannisbeeren am Strauch"
    },
+   "n": "Reife rote Johannisbeeren am Strauch",
    "b": "see",
    "s": "sommer",
    "f": "quer",
@@ -747,6 +784,7 @@
    "t": {
     "de": "Reife Zwetschgen am Baum"
    },
+   "n": "Reife Zwetschgen am Baum",
    "b": "see",
    "s": "jahr",
    "f": "quer",
@@ -767,6 +805,7 @@
    "t": {
     "de": "Das Strandhotel Schlössli am See aus der Luft, 1954"
    },
+   "n": "Der Hafen aus der Luft, 1954",
    "b": "see",
    "s": "jahr",
    "f": "quer",
@@ -787,6 +826,7 @@
    "t": {
     "de": "Gäste auf den Stühlen an der Promenade, dahinter die Wirtschaft"
    },
+   "n": "Gäste an der Promenade",
    "b": "instagram",
    "s": "sommer",
    "f": "hoch",
@@ -807,6 +847,7 @@
    "t": {
     "de": "Die Terrasse am Abend von oben, davor der Hafen"
    },
+   "n": "Die Terrasse am Abend von oben",
    "b": "instagram",
    "s": "sommer",
    "f": "hoch",
@@ -827,6 +868,7 @@
    "t": {
     "de": "Die Wirtschaft am Hafen vom Wasser aus"
    },
+   "n": "Vom Wasser aus",
    "b": "instagram",
    "s": "jahr",
    "f": "hoch",
@@ -847,6 +889,7 @@
    "t": {
     "de": "Dämmerung über dem See, am Ufer die Lichter"
    },
+   "n": "Dämmerung über dem See",
    "b": "instagram",
    "s": "jahr",
    "f": "hoch",
@@ -867,6 +910,7 @@
    "t": {
     "de": "In der Küche am Herd"
    },
+   "n": "In der Küche am Herd",
    "b": "instagram",
    "s": "jahr",
    "f": "hoch",
@@ -887,6 +931,7 @@
    "t": {
     "de": "Am Pass werden die Teller angerichtet"
    },
+   "n": "Am Pass werden die Teller angerichtet",
    "b": "instagram",
    "s": "jahr",
    "f": "hoch",
@@ -907,6 +952,7 @@
    "t": {
     "de": "Tortelloni werden von Hand geformt"
    },
+   "n": "Tortelloni werden von Hand geformt",
    "b": "instagram",
    "s": "jahr",
    "f": "hoch",
@@ -927,6 +973,7 @@
    "t": {
     "de": "In der Küche wird ein Dessert auf den Teller gesetzt"
    },
+   "n": "Ein Dessert entsteht",
    "b": "instagram",
    "s": "jahr",
    "f": "hoch",
@@ -1260,7 +1307,7 @@
     29,
     61
    ],
-   "r": "Nacht über dem See: Grund der dunklen Flächen, immer mit der Punkt-Tapete",
+   "r": "Grund der dunklen Flächen",
    "g": "dunkel",
    "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
   },
@@ -1273,7 +1320,7 @@
     35,
     76
    ],
-   "r": "zweite dunkle Fläche, Platten auf Nacht",
+   "r": "zweite dunkle Fläche",
    "g": "dunkel",
    "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
   },
@@ -1286,7 +1333,7 @@
     61,
     136
    ],
-   "r": "das Blau der Terrassenstühle: Knöpfe, Linien und Flächen",
+   "r": "Knöpfe, Linien, Flächen",
    "g": "dunkel",
    "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
   },
@@ -1299,7 +1346,7 @@
     236,
     243
    ],
-   "r": "Grund der hellen Flächen, mit der Punkt-Tapete",
+   "r": "Grund der hellen Flächen",
    "g": "hell",
    "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
   },
@@ -1312,7 +1359,7 @@
     218,
     231
    ],
-   "r": "zweite helle Fläche, Felder und Linien",
+   "r": "zweite helle Fläche",
    "g": "hell",
    "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
   },
@@ -1325,7 +1372,7 @@
     246,
     249
    ],
-   "r": "ruhige helle Abschnitte ohne Tapete",
+   "r": "ruhige helle Abschnitte",
    "g": "hell",
    "woher": "Wert der Website des Hauses"
   },
@@ -1338,7 +1385,7 @@
     182,
     207
    ],
-   "r": "Linie, Zeichen und Knauf auf Dunkel, der Horizont",
+   "r": "Linie und Zeichen auf Dunkel",
    "g": "himmel",
    "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
   },
@@ -1351,7 +1398,7 @@
     210,
     225
    ],
-   "r": "Betonung in Titeln auf Dunkel",
+   "r": "Betonung auf Dunkel",
    "g": "himmel",
    "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
   },
@@ -1364,7 +1411,7 @@
     54,
     120
    ],
-   "r": "Betonung in Titeln auf Hell",
+   "r": "Betonung auf Hell",
    "g": "himmel",
    "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
   },
@@ -1377,7 +1424,7 @@
     16,
     35
    ],
-   "r": "Schrift auf hellen Flächen, nie reines Schwarz",
+   "r": "Lesetext, nie reines Schwarz",
    "g": "schrift",
    "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
   },
@@ -1390,7 +1437,7 @@
     37,
     82
    ],
-   "r": "Titel in Versalien auf Hell",
+   "r": "Titel auf Hell",
    "g": "schrift",
    "woher": "Wert der Website des Hauses"
   },
@@ -1403,7 +1450,7 @@
     153,
     100
    ],
-   "r": "nur als Punkt: Stempel, Markierung, Nabe der Zeiger, nie als Fläche",
+   "r": "nur als Punkt, nie als Fläche",
    "g": "punkt",
    "woher": "Farbwelt «Stuhl und See», unverändert"
   }
@@ -1448,14 +1495,14 @@
  "glanz": [],
  "groessen": {
   "wirtschaft-am-schloessli-farben.ase": 546,
-  "wirtschaft-am-schloessli-farben.css": 1109,
-  "wirtschaft-am-schloessli-farben.json": 2980,
+  "wirtschaft-am-schloessli-farben.css": 843,
+  "wirtschaft-am-schloessli-farben.json": 2714,
   "wirtschaft-am-schloessli-logo-himmel.png": 67947,
   "wirtschaft-am-schloessli-logo-nacht.png": 67944,
   "wirtschaft-am-schloessli-logo-original.png": 34776,
   "wirtschaft-am-schloessli-logo-schwarz.png": 64018,
   "wirtschaft-am-schloessli-logo-weiss.png": 67564,
-  "wirtschaft-am-schloessli-marke.zip": 1138835,
+  "wirtschaft-am-schloessli-marke.zip": 1138566,
   "wirtschaft-am-schloessli-name-himmel.png": 23532,
   "wirtschaft-am-schloessli-name-himmel.svg": 12355,
   "wirtschaft-am-schloessli-name-kurz-himmel.png": 14037,
@@ -1468,7 +1515,7 @@
   "wirtschaft-am-schloessli-name-nacht.svg": 12355,
   "wirtschaft-am-schloessli-name-weiss.png": 23436,
   "wirtschaft-am-schloessli-name-weiss.svg": 12355,
-  "wirtschaft-am-schloessli-schriften.zip": 415274,
+  "wirtschaft-am-schloessli-schriften.zip": 415273,
   "wirtschaft-am-schloessli-tapete-dunkel.png": 4126,
   "wirtschaft-am-schloessli-tapete-dunkel.svg": 3681,
   "wirtschaft-am-schloessli-tapete-dunkel.webp": 1010,

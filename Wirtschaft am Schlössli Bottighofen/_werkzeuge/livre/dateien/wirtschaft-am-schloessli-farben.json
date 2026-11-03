@@ -7,7 +7,7 @@
    29,
    61
   ],
-  "rolle": "Nacht über dem See: Grund der dunklen Flächen, immer mit der Punkt-Tapete",
+  "rolle": "Grund der dunklen Flächen",
   "gruppe": "dunkel",
   "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
  },
@@ -19,7 +19,7 @@
    35,
    76
   ],
-  "rolle": "zweite dunkle Fläche, Platten auf Nacht",
+  "rolle": "zweite dunkle Fläche",
   "gruppe": "dunkel",
   "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
  },
@@ -31,7 +31,7 @@
    61,
    136
   ],
-  "rolle": "das Blau der Terrassenstühle: Knöpfe, Linien und Flächen",
+  "rolle": "Knöpfe, Linien, Flächen",
   "gruppe": "dunkel",
   "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
  },
@@ -43,7 +43,7 @@
    236,
    243
   ],
-  "rolle": "Grund der hellen Flächen, mit der Punkt-Tapete",
+  "rolle": "Grund der hellen Flächen",
   "gruppe": "hell",
   "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
  },
@@ -55,7 +55,7 @@
    218,
    231
   ],
-  "rolle": "zweite helle Fläche, Felder und Linien",
+  "rolle": "zweite helle Fläche",
   "gruppe": "hell",
   "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
  },
@@ -67,7 +67,7 @@
    246,
    249
   ],
-  "rolle": "ruhige helle Abschnitte ohne Tapete",
+  "rolle": "ruhige helle Abschnitte",
   "gruppe": "hell",
   "woher": "Wert der Website des Hauses"
  },
@@ -79,7 +79,7 @@
    182,
    207
   ],
-  "rolle": "Linie, Zeichen und Knauf auf Dunkel, der Horizont",
+  "rolle": "Linie und Zeichen auf Dunkel",
   "gruppe": "himmel",
   "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
  },
@@ -91,7 +91,7 @@
    210,
    225
   ],
-  "rolle": "Betonung in Titeln auf Dunkel",
+  "rolle": "Betonung auf Dunkel",
   "gruppe": "himmel",
   "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
  },
@@ -103,7 +103,7 @@
    54,
    120
   ],
-  "rolle": "Betonung in Titeln auf Hell",
+  "rolle": "Betonung auf Hell",
   "gruppe": "himmel",
   "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
  },
@@ -115,7 +115,7 @@
    16,
    35
   ],
-  "rolle": "Schrift auf hellen Flächen, nie reines Schwarz",
+  "rolle": "Lesetext, nie reines Schwarz",
   "gruppe": "schrift",
   "woher": "Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt"
  },
@@ -127,7 +127,7 @@
    37,
    82
   ],
-  "rolle": "Titel in Versalien auf Hell",
+  "rolle": "Titel auf Hell",
   "gruppe": "schrift",
   "woher": "Wert der Website des Hauses"
  },
@@ -139,7 +139,7 @@
    153,
    100
   ],
-  "rolle": "nur als Punkt: Stempel, Markierung, Nabe der Zeiger, nie als Fläche",
+  "rolle": "nur als Punkt, nie als Fläche",
   "gruppe": "punkt",
   "woher": "Farbwelt «Stuhl und See», unverändert"
  }

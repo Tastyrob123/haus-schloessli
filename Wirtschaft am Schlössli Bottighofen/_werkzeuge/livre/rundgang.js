@@ -59,8 +59,8 @@
     '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #A2B6CF;outline-offset:3px}' +
     /* Werkzeug-Stile (La Carte vergrössert Knöpfe und Schrift) dürfen die Karte nicht verändern */
     '.rdg-karte,.rdg-karte *{box-sizing:border-box!important}' +
-    '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:uppercase!important}' +
-    '.rdg-karte h3{font:400 20px/1.25 "Open Sans",Arial,sans-serif!important;letter-spacing:.12em!important;text-transform:uppercase!important;text-transform:uppercase!important}' +
+    '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important}' +
+    '.rdg-karte h3{font:400 20px/1.25 "Open Sans",Arial,sans-serif!important;letter-spacing:.12em!important;text-transform:uppercase!important}' +
     '.rdg-karte .rdg-fuss{flex-wrap:nowrap!important}' +
     '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 10px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
     '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#0F3678!important}' +
