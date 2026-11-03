@@ -339,3 +339,7 @@ aside.wo-rand .wo-rand__wege button{padding-left:0;padding-right:0}
 /* Handy: Frühere Fassungen ragten rechts aus dem Fenster (Knopf «In den Entwurf holen» neben dem Text); der Knopf steht jetzt unter dem Text */
 .fenster__k{min-width:0;max-width:100%}
 @media (max-width:600px){ .lc .verlauf__z{flex-wrap:wrap} .lc .verlauf__z > div:last-child{flex-basis:100%;justify-content:flex-start;padding-left:0} .lc .verlauf{overflow-x:hidden} }
+/* Handy: «Entwurf: 10 Änderungen» passt neben die fünf Knöpfe der Leiste (vorher rechts angeschnitten) */
+@media (max-width:600px){ .lc #leiste .wo-leiste__t b{font-size:13px;letter-spacing:0} }
+/* Die Beschriftung steht im Rahmen der Vorschau, über dem gesetzten Eintrag */
+.lc .mini__t{margin:2px 4px 10px}

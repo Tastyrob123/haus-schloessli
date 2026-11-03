@@ -617,7 +617,7 @@ function eintragFenster(pfad, neu) {
   let zWahl = zAlt.slice();
   const rub = (() => { const r = zeilenSeite(+pfad.split('.')[1]); let t = ''; for (const z of r) { if (z.pfad === pfad) break; if (z.art === 'rubrik') t = titelVon(z.n, 'rubrik'); } return t; })();
   const feld = (f, i) => { const lang = LANG.test(f.name) || String(f.wert).length > 64; return `<label class="feld"><span>${h(f.name)}</span>${lang ? `<textarea id="f-${i}" rows="${Math.min(6, Math.max(2, Math.ceil(String(f.wert).length / 70)))}">${h(f.wert)}</textarea>` : `<input id="f-${i}" value="${h(f.wert)}"${f.preis ? ' inputmode="decimal"' : ''}>`}</label>`; };
-  fenster(`<h2>${neu ? 'Neuer <em>Eintrag.</em>' : `${h(FN[art] || 'Eintrag')} <em>bearbeiten.</em>`}</h2>
+  fenster(`<h2>${neu ? (art === 'rubrik' ? 'Neue <em>Rubrik.</em>' : 'Neuer <em>Eintrag.</em>') : `${h(FN[art] || 'Eintrag')} <em>bearbeiten.</em>`}</h2>
     <p class="satz">${rub ? `Rubrik «${h(rub)}». ` : ''}${neu ? 'Dieser Eintrag ist eine Kopie, damit er genau dasselbe Format hat wie die anderen. Ändern Sie, was anders sein soll.' : 'Rechts in der Karte sehen Sie den Eintrag, sobald Sie speichern.'} Ein leeres Feld nimmt die Zeile aus dem Eintrag.</p>
     <div class="zwei"><div class="felder">${fe.map(feld).join('') || '<p class="satz">Dieser Eintrag hat keinen Text.</p>'}
     ${zeichenOk ? `<div class="feld"><span>Zeichen des Hauses</span><div class="chips" id="f-z">${sy.map(([t, nm]) => `<button type="button" data-t="${t}" aria-pressed="${zWahl.includes(t)}">${h(nm)}</button>`).join('')}</div></div>` : ''}
@@ -655,7 +655,7 @@ function eintragFenster(pfad, neu) {
   });
 }
 /* «So steht es auf der Karte» (GBR mini()): der Eintrag allein, gesetzt wie in der PDF, im kleinen Rahmen rechts im Fenster */
-function miniHTML() { return `<div><p class="mono" style="margin:0 0 8px">So steht es auf der Karte</p><div class="mini"><iframe id="f-mini" title="Der Eintrag, wie er in der PDF steht" src="/_werkzeuge/carte/satz/blatt.html?mini=1"></iframe></div></div>`; }
+function miniHTML() { return `<div><div class="mini"><p class="mono mini__t">So steht es auf der Karte</p><iframe id="f-mini" title="Der Eintrag, wie er in der PDF steht" src="/_werkzeuge/carte/satz/blatt.html?mini=1"></iframe></div></div>`; }
 let MINI_LETZT = null;
 function miniSenden(x) {
   MINI_LETZT = x;
