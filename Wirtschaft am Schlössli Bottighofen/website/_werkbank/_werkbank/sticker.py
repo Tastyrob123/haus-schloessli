@@ -127,7 +127,7 @@ def alle():
         g = 4.2 if max(len(z) for z in zl) < 10 else 3.4
         innen = ''.join(ti(25, 25 + j * (g + 1.4) - (len(zl) - 1) * (g + 1.4) / 2 + g / 2.6, z, g, schrift, .1) for j, z in enumerate(zl)) + horizont(25, 33 + (len(zl) - 1) * 2, 14, linie)
         innen += mo(25, 13, 'Tapas', 1.8, linie, .24)
-        kr(50, farbe, innen, nm.title(), 'Rund, 50 mm. Ein Gericht der Lästermeile, Name wie auf der Karte.', linie)
+        kr(50, farbe, innen, PH.gross_klein(nm), 'Rund, 50 mm. Ein Gericht der Lästermeile, Name wie auf der Karte.', linie)
     # 15–20 die Zeilen der Website
     kr(52, STUHL, ti(26, 25, 'Direkt', 5.6, WEISS, .16) + ti(26, 32, 'im Hafen', 5.6, HIMMELH, .16) + horizont(26, 37, 16, HIMMELH), 'Direkt im Hafen', 'Rund, 52 mm. Aus Ihrem Satz zur Lage.')
     ka(112, 22, BLATT, mo(56, 12.6, HJ['satz_lage'].split(' gelegen ')[1].rstrip('.'), 3.2, STUHL, .08), 'Mit Blick aufs Wasser und die Alpen', 'Kapsel, 112 mm. Der zweite Teil Ihres Satzes zur Lage.')

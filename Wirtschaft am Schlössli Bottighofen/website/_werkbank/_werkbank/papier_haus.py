@@ -62,6 +62,13 @@ def ganz(s):
     return ss(re.sub(r'\s+', ' ', s).replace('„', '«').replace('“', '»').replace('´', '’')).strip()
 
 
+def gross_klein(n):
+    """PIMIENTOS DE PADRÓN → Pimientos de Padrón (Namen der Karte in gemischter Schreibung für Bildzeilen)"""
+    if not n.isupper():
+        return n
+    return ' '.join(w.lower() if w.lower() in ('de', 'di', 'al', 'alla', 'la', 'del', 'e') and i else w.capitalize() for i, w in enumerate(n.split(' ')))
+
+
 def vers(text):
     return e(ss(text).upper())
 

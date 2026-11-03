@@ -339,7 +339,7 @@ def untersetzer_alle():
         gr = 6.2 if max(len(z) for z in zl) < 9 else (5 if max(len(z) for z in zl) < 12 else 4.2)
         innen = hzz(R_, R_ - 22, 8, linie) + ''.join(ts(R_, R_ + 2 + j * (gr + 1.6) - (len(zl) - 1) * (gr + 1.6) / 2, z, gr, schrift, .12) for j, z in enumerate(zl))
         innen += horizont(R_ + 10 + (len(zl) - 1) * 3, 22, linie) + ms(R_, R_ + 19 + (len(zl) - 1) * 3, 'Lästermeile', 2.4, linie, .26)
-        U.append(us(f'u{7 + i:02d}', grund, linie, innen, n.title() if n.isupper() else n, 'Ein Gericht der Lästermeile, Name wie auf der Karte.'))
+        U.append(us(f'u{7 + i:02d}', grund, linie, innen, PH.gross_klein(n), 'Ein Gericht der Lästermeile, Name wie auf der Karte.'))
     U.append(us('u11', NACHT, HIMMEL, ms(R_, R_ - 9, 'Zur Stärkung', 4, BLATT, .16) + ts(R_, R_ + 1.5, '& Süsses', 6.4, HIMMEL, .14) + horizont(R_ + 8, 22, HIMMEL) + ring('u11', 'Lästermeile · Bottighofen', HIMMEL),
                 'Zur Stärkung & Süsses', 'Die zweite Spalte der Karte der Lästermeile.'))
     U.append(us('u12', BLATT, STUHL, ts(R_, R_ - 3, 'Die schönste', 4.8, STUHL, .12) + ts(R_, R_ + 4.4, 'Terrasse', 4.8, STUHL, .12) + ts(R_, R_ + 11.8, 'am Bodensee', 4.8, STUHL, .12)
@@ -355,7 +355,7 @@ HD_TEXT = {   # Titel und Satz je Drucksache der Hausdruckerei (Inhalt aus ihrer
     'aushang-oeffnungszeiten': (['Die', 'Öffnungszeiten.'], 'Donnerstag bis Montag, die Zeiten der Küche und der Ruhetag auf einem Blatt A4 für die Tür.'),
     'aushang-ruhetag': (['Heute', 'ist Ruhetag.'], 'Ein kleines Blatt A5 für die Tür an den Ruhetagen Dienstag und Mittwoch.'),
     'aushang-besen': (['Statt eines Schilds', 'ein Besen.'], 'Die Geschichte vom Haus am See als Aushang A4, zum Lesen im Eingang.'),
-    'plakat-terrasse': (['Die schönste', 'Terrasse.'], 'Ein Plakat A3 mit der Terrasse am Mittag, für das Fenster oder den Steg.'),
+    'plakat-terrasse': (['Die', 'schönste Terrasse.'], 'Ein Plakat A3 mit der Terrasse am Mittag, für das Fenster oder den Steg.'),
     'einladung-gourmetkreuzfahrt': (['Four Hands', 'an Bord.'], 'Die Einladung zum Four-Hands-Dinner mit Dieter Koschina auf der Excellence, quadratisch zum Verschicken.'),
     'programm-die-reise': (['Die', 'Reise.'], 'Das Programm der Gourmetkreuzfahrt auf A5: von Basel nach Strassburg und zurück.'),
     'flyer-banketts': (['Banketts', 'und Gruppen.'], 'Das Angebotsblatt A5 für Feiern auf zwei Etagen mit je bis zu 26 Personen.'),
@@ -366,10 +366,10 @@ HD_TEXT = {   # Titel und Satz je Drucksache der Hausdruckerei (Inhalt aus ihrer
     'einleger-klassiker': (['Die', 'Klassiker.'], 'Ein Einleger A5 mit den Klassikern der Karte, ohne Preise.'),
     'wein-buendner-herrschaft': (['Ein Glas aus der', 'Bündner Herrschaft.'], 'Die Weinempfehlung als schmale Karte: ein Pinot Noir aus der Bündner Herrschaft.'),
     'wein-burgund': (['Ein Glas', 'aus dem Burgund.'], 'Die Weinempfehlung als schmale Karte: ein Weisswein aus dem Burgund.'),
-    'wein-champagne': (['Ein Glas', 'Champagne.'], 'Die Weinempfehlung als schmale Karte für den Champagner zum Apéro.'),
+    'wein-champagne': (['Ein Glas aus', 'der Champagne.'], 'Die Weinempfehlung als schmale Karte für den Champagner zum Apéro.'),
     'laestermeile-tapas': (['Die Karte', 'der Lästermeile.'], 'Die Karte der Lästermeile auf A5, für die Tische an der Promenade.'),
     'hinweiskarte-laestermeile': (['Den ganzen', 'Tag geöffnet.'], 'Ein Aufsteller A6: die Karte der Lästermeile gibt es den ganzen Tag.'),
-    'hinweiskarte-allergien': (['Was dürfen wir', 'weglassen?'], 'Eine Hinweiskarte A6 am Tisch mit den Allergenen, wie sie auf Ihren Karten stehen.'),
+    'hinweiskarte-allergien': (['Was dürfen', 'wir weglassen?'], 'Eine Hinweiskarte A6 am Tisch mit den Allergenen, wie sie auf Ihren Karten stehen.'),
     'tischkarte-reserviert': (['Dieser Tisch', 'ist reserviert.'], 'Die Tischkarte A7 für reservierte Tische in der Gaststube und an der Lästermeile.'),
     'tischkarte-terrasse': (['Reserviert', 'auf der Terrasse.'], 'Dieselbe Tischkarte für die Tische auf der Seeterrasse.'),
     'gutschein': (['Ein Gutschein', 'zum Verschenken.'], 'Der Gutschein in DL quer, vorne die Zeiger, hinten für wen, von wem und der Betrag.'),
