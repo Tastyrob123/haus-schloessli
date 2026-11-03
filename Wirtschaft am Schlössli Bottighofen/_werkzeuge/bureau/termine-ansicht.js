@@ -433,6 +433,11 @@
       if (t.scrollWidth > t.clientWidth + 1) t.textContent = s;
     });
   }
-  function alles() { plan = 0; fest(); ganz(); ohneX(); titelFest(); langFelder(); bildtitelFest(); }
+  /* Cloud-Prüfung WebKit 3.11.2026 (K4 leer-bild): WebKit malt spät geladene Bilder ausserhalb des Fensters nicht, auch nicht in aufgeklappten Einträgen.
+     Bilder der Arbeitsfläche und der Fenster (Fotokacheln, Aufgaben, Bereiche, «Foto tauschen») laden sofort; die Vorschau der Seiten (iframe) bleibt, wie sie ist. */
+  function sofort() {
+    document.querySelectorAll('#ws-mitte img[loading="lazy"], #ws-fenster img[loading="lazy"]').forEach(function (i) { i.loading = 'eager'; i.decoding = 'sync'; });
+  }
+  function alles() { plan = 0; sofort(); fest(); ganz(); ohneX(); titelFest(); langFelder(); bildtitelFest(); }
   if (window.MutationObserver) new MutationObserver(function () { if (!plan) plan = requestAnimationFrame(alles); }).observe(document.documentElement, { childList: true, subtree: true, characterData: true });
 })();

@@ -245,3 +245,9 @@ body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapet
 /* K5 Frühere Fassungen, Beispielzeile: drei Teile in drei Spalten (die Notiz drückte die Zeit auf null Breite) */
 .cu-vl__z--beispiel{grid-template-columns:96px minmax(0,190px) minmax(0,1fr)}
 @media (max-width:860px){.cu-vl__z--beispiel{grid-template-columns:1fr}}
+
+/* Cloud-Prüfung WebKit 3.11.2026 (K4 leer-bild): Fotokacheln tragen bis zum Laden einen Platzhalter in Hausfarbe (Nacht mit Punkt-Tapete), nie eine leere helle Fläche */
+.ws.wo-app .ws-foto{background:var(--wo-tapete),linear-gradient(180deg,var(--wo-nacht),var(--wo-tief))}
+/* Fenster unter dem Kopf: die Rundknöpfe des Kopfs bleiben sichtbar und liegen nie halb unter dem Blatt */
+.ws.wo-app .ws-fenster{top:var(--ws-kopf)}
+.ws.wo-app .ws-fenster__blatt{max-height:calc(100dvh - var(--ws-kopf) - 32px)}
