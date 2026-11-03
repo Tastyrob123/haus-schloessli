@@ -29,10 +29,15 @@ Agent `schloessli-carte`. Aufbau und Funktionen der Tafel aus dem Stamm (Liste l
 
 ## Prüfstand
 
-PRUEFSTAND
+- `tor-schnell.js … --nur pairing-karte --browser chromium --max 40 --tiefe 2 --breiten 1440,1280,1000,390`: STAND_WERKZEUG
+- dasselbe mit `--nur pairing-karte-anleitung` (Anleitung, Prüfseite und von dort das Werkzeug): STAND_ANLEITUNG
+- Repariert auf dem Weg (frühere Läufe): Server lieferte `/assets/oberflaeche/` aus dem alten Stand in `website/assets/oberflaeche/` (Knöpfe 1,3 px zu hoch, alte Namen) → jetzt immer `_werkzeuge/oberflaeche/`; Knöpfe der Fenster und Marke «Entwurf» optisch mittig; Einzelwort in Titeln der Bühne, der Fenster und der Listenzeilen; Kante der Kopf-Knöpfe im Rand am Handy; Prüfseite am Handy ohne Anschnitt; Frühere Fassungen am Handy ohne Überstand; Leiste am Handy ohne angeschnittenen Titel; Mini-Vorschau («So steht es auf der Karte») mit Beschriftung im Rahmen und lesbarer Weinzeile.
+- Mit dem Auge (Read) angesehen: über 30 Zustandsbilder 1440 und 390 (alle fünf Karten, Fortgeschritten, alle Fenster, Rundgang, Website-Ansicht, Anleitung, Prüfseite) und jede Druckseite der Karte, Lunch, Lästermeile, Bankett sowie Weinkarte S. 1, 2, 9 und 20: keine Löcher, Block in der optischen Mitte, Schrift nach Zweck (Karte aus Armlänge), nichts Culinarium-Haftes.
 
 ## Offen, mit Grund
 
 - **Website liest das Kartenpult noch nicht:** die Website baut ihre Karten aus `website/inhalt/*.json` (Revier `website/`, nicht das Kartenpult); bis zum Einbau von `karten.json` bleibt sie, wie sie ist.
 - **Vier-Hände-Lunch** (`_karten/stand/vier-haende.json`) ist vorbei und nicht in `website/inhalt/`; nicht im Werkzeug.
 - **Online** nicht gebaut und nicht hochgeladen (Auftrag).
+- **WebKit** läuft hier nicht (Browser fehlt in der Sitzung); die Cloud-Prüfung in WebKit stösst der Oberchef an.
+- **Weine ohne Jahrgang** (in der Quelle leer): im Fenster gibt es dafür kein Feld «Jahrgang»; ein Jahrgang lässt sich dort über «Daten der Karte» (Fortgeschritten) eintragen.

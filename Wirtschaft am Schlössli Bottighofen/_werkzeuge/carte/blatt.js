@@ -174,9 +174,15 @@
   /* ---------------------------------------------------------------- Mini (Fenster «So steht es auf der Karte»): ein Eintrag allein, gesetzt wie in der PDF */
   if (q.get('mini')) {
     document.body.className = 'mini';
+    /* Schlössli 3.11.2026: dreht sich das Gerät oder ändert sich die Breite, wird der Eintrag neu eingepasst (sonst ragt eine Weinzeile rechts hinaus) */
+    var MINI_LETZT = null, MINI_T = null;
+    window.addEventListener('resize', function () { if (!MINI_LETZT) return; clearTimeout(MINI_T); MINI_T = setTimeout(function () { miniSetze(MINI_LETZT); }, 120); });
     window.addEventListener('message', function (ev) {
       if (ev.origin !== location.origin || !ev.data || ev.data.carte !== 'mini') return;
-      var m = ev.data, d = m.karte;
+      MINI_LETZT = ev.data; miniSetze(ev.data);
+    });
+    function miniSetze(m) {
+      var d = m.karte;
       zeichen().then(function () {
         // der Eintrag allein, in seinen Behältern (Seite, Inhalt …), damit er genau so gesetzt ist wie in der PDF
         var innen = m.knoten;
@@ -206,7 +212,7 @@
         b.style.transform = 'translate(' + tx.toFixed(1) + 'px,' + ty.toFixed(1) + 'px) scale(' + z.toFixed(4) + ')';
         an('mini-hoehe', { h: Math.ceil(R.height * z + 2 * rand) });
       });
-    });
+    }
     return;
   }
   /* ---------------------------------------------------------------- Vorschau im Werkzeug */
