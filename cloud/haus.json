@@ -66,7 +66,8 @@
       "port": 9288,
       "wo": ".",
       "befehl": "python3 website/_werkbank/serve.py 9288",
-      "pruef": "/werkbank/index.html"
+      "pruef": "/",
+      "hinweis": "Prüfweg / (die Website), damit der Server-Start nicht an einer noch nicht eingecheckten Werkbank-Seite scheitert (Oberchef 3.11.2026)"
     }
   ],
   "namen": {
