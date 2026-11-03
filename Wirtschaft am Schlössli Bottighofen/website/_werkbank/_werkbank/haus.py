@@ -89,7 +89,7 @@ SEITEN = [   # alle Seiten, die ein Gast als Seite wahrnimmt, dazu das Rechtlich
     ('abend.html', 'Ihr Abend', 2, 'Anlass, Tag, Personen, Platz und Menü wählen, der Zettel rechnet mit den Preisen der Karte.', ''),
     ('impressum.html', 'Rechtliches', 1, 'Impressum, Datenschutz, AGB und der Bildnachweis.', 'recht'),
 ]
-LANG = {'Startseite': 'Startseite', 'Banketts & Gruppen': 'Banketts und Gruppen', 'Rechtliches': 'Rechtliches und Bildnachweis'}
+LANG = {'Startseite': 'Startseite', 'Banketts & Gruppen': 'Banketts und Gruppen', 'Rechtliches': 'Rechtliches und\u00a0Bildnachweis'}
 KURZNAME = {'Banketts & Gruppen': 'Banketts'}
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -242,7 +242,7 @@ PAPIER = dict(
     etik_text='An der Lästermeile gehen den ganzen Tag Gläser über die Theke. Dazu passen Untersetzer: zwölf Ideen mit Ihren Fliesen, den Zeigern und den Tapas der Karte.',
     druck_text='Von der Tischkarte bis zum Aushang für die Betriebsferien, dazu <a href="../sticker/index.html" target="_blank" rel="noopener">Sticker</a> und <a href="../beigaben/index.html" target="_blank" rel="noopener">Beigaben</a>.',
     orte_e=[(3, 6, 28, -3), (36, 6, 28, 2), (69, 6, 28, -2), (3, 54, 28, 2), (36, 54, 28, -3), (69, 54, 28, 3)],   # drei mal zwei mit Abstand, nichts überdeckt (Robert 29.10.2026)
-    orte_d=[('menuekarte', 3, 16, 29, -3, 0), ('tischkarte', 35.5, 16, 29, 2, 0), ('einladung', 68, 16, 29, -2, 0)])   # drei Blätter nebeneinander (Robert 29.10.2026)
+    orte_d=[('platzkarte', 4, 6, 44, -3, 0), ('couvert', 50, 18, 46, 2, 0), ('visitenkarte', 20, 50, 42, -2, 0)])   # Stücke, die Werkbank Papier in roh/papier ablegt   # drei Blätter nebeneinander (Robert 29.10.2026)
 PAPIER_SEITE = dict(
     breit={'gutschein', 'gutschein-r', 'tischkarte', 'tischkarte-r', 'couvert', 'briefbogen', 'menuekarte', 'menuekarte-r', 'aushang'},
     formen=set(),
@@ -385,7 +385,7 @@ b,strong{font-weight:500}
 .rgc-p{letter-spacing:0!important}.rgc-p[data-i="3"]{padding-left:9.1px!important;padding-right:10.9px!important}.rgc-p[data-i="5"],.rgc-p[data-i="6"]{padding-left:10.7px!important;padding-right:9.3px!important}.rgc-p[data-i="7"]{padding-left:10.6px!important;padding-right:9.4px!important}
 @media(max-width:640px){#handschrift .hs2-her{grid-template-columns:minmax(0,1fr)!important}}
 .sag-h::before{content:attr(data-n);display:inline-block;margin-right:16px;font-family:var(--mono);font-size:clamp(.78rem,.9vw,.92rem);letter-spacing:.16em;color:var(--blau);vertical-align:.3em}
-@media(max-width:480px){.faecher .blattk span{flex-direction:column;gap:3px;font-size:9.5px;letter-spacing:.08em;white-space:nowrap}}
+@media(max-width:480px){.faecher .blattk span{font-size:9.5px;letter-spacing:.08em;white-space:nowrap}.faecher .blattk span b{display:none}}
 @supports (interpolate-size:allow-keywords){.ki-knoepfe .kn--klein>.tm{top:.5px!important}}   /* nur Chromium (Wild Side 1.11.: WebKit unter Linux kennt -apple-system-body nicht) */
 /* «Läuft im Entwurf»: sieben Werkzeuge als Raster mit dem Zeichen vor jedem Namen, kein Trenner am Zeilenanfang */
 @media(min-width:760px){#k8 .sag-sp--2 ul{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 clamp(18px,2vw,34px)}

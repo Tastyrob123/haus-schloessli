@@ -1074,7 +1074,7 @@ b,strong{font-weight:500}
 .rgc-p{letter-spacing:0!important}.rgc-p[data-i="3"]{padding-left:9.1px!important;padding-right:10.9px!important}.rgc-p[data-i="5"],.rgc-p[data-i="6"]{padding-left:10.7px!important;padding-right:9.3px!important}.rgc-p[data-i="7"]{padding-left:10.6px!important;padding-right:9.4px!important}
 @media(max-width:640px){#handschrift .hs2-her{grid-template-columns:minmax(0,1fr)!important}}
 .sag-h::before{content:attr(data-n);display:inline-block;margin-right:16px;font-family:var(--mono);font-size:clamp(.78rem,.9vw,.92rem);letter-spacing:.16em;color:var(--blau);vertical-align:.3em}
-@media(max-width:480px){.faecher .blattk span{flex-direction:column;gap:3px;font-size:9.5px;letter-spacing:.08em;white-space:nowrap}}
+@media(max-width:480px){.faecher .blattk span{font-size:9.5px;letter-spacing:.08em;white-space:nowrap}.faecher .blattk span b{display:none}}
 @supports (interpolate-size:allow-keywords){.ki-knoepfe .kn--klein>.tm{top:.5px!important}}   /* nur Chromium (Wild Side 1.11.: WebKit unter Linux kennt -apple-system-body nicht) */
 /* «Läuft im Entwurf»: sieben Werkzeuge als Raster mit dem Zeichen vor jedem Namen, kein Trenner am Zeilenanfang */
 @media(min-width:760px){#k8 .sag-sp--2 ul{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 clamp(18px,2vw,34px)}

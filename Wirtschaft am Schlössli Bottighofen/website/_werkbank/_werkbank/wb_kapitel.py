@@ -161,7 +161,7 @@ def schluss():
   {bild('sb-schluss', klasse='schluss__b')}
   <div class="in">
     <p class="kap kap--z" data-a="auf">{ZEICHEN}<span>Bis bald</span></p>
-    {K.titel(['Der Tisch', 'am Wasser wartet.'], 'h2', 't1')}
+    {K.titel(['Der Tisch', 'ist gedeckt.'], 'h2', 't1')}
     <div class="lauf">
       <p data-a="worte">Was hier liegt, ist für die Wirtschaft am Schlössli gemacht: die Seite, die Werkzeuge, jedes Blatt. Öffnen Sie es, so oft Sie mögen, und sagen Sie mir, wo es noch nicht nach Ihrem Haus aussieht.</p>
     </div>
