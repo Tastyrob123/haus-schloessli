@@ -18,7 +18,7 @@ Agent `schloessli-carte`. Aufbau und Funktionen der Tafel aus dem Stamm (Liste l
 - **Ansicht Website:** Karte, Weinkarte, Banketts, Startseite. Der Server liefert `/assets/oberflaeche/` immer aus `_werkzeuge/oberflaeche/` (vorher den alten Stand aus `website/assets/oberflaeche/`).
 - **Anleitung** neu mit Hausinhalt und drei neuen Aufnahmen (`bilder/kartenpult-1440.webp`, `kartenpult-weinkarte-1440.webp`, `kartenpult-handy-390.webp`), Rundgang mit Hausinhalt.
 - **Demo-Sperre:** Datei `DEMO` liegt; das Kartenpult schreibt nie in `website/`. Nach jedem Veröffentlichen `anschluss/karten.json` (je Karte die Einträge in der Form der Website, `web.py`).
-- Culinarium-Abende, -Plakate, -Fotos, `karten_lesen.py` und Fraunces/Urbanist sind gelöscht.
+- Abende, Plakate, Fotos und Schriften der Vorlage sowie `karten_lesen.py` sind gelöscht.
 
 ## Starten und prüfen
 
@@ -29,8 +29,8 @@ Agent `schloessli-carte`. Aufbau und Funktionen der Tafel aus dem Stamm (Liste l
 
 ## Prüfstand
 
-- `tor-schnell.js … --nur pairing-karte --browser chromium --max 40 --tiefe 2 --breiten 1440,1280,1000,390`: STAND_WERKZEUG
-- dasselbe mit `--nur pairing-karte-anleitung` (Anleitung, Prüfseite und von dort das Werkzeug): STAND_ANLEITUNG
+- `tor-schnell.js … --nur pairing-karte --browser chromium --max 40 --tiefe 2 --breiten 1440,1280,1000,390`: 27 Zustände (390: 36 mit offenem Rand), je 1440, 1280, 1000, 390: **0 Funde, nichts «nicht erreicht»** (Lauf 3.11.2026 18:35–18:43).
+- dasselbe mit `--nur pairing-karte-anleitung` (Anleitung, Prüfseite und von dort das Werkzeug): 16 Zustände (390: 22), alle vier Breiten: **0 Funde, nichts «nicht erreicht»**.
 - Repariert auf dem Weg (frühere Läufe): Server lieferte `/assets/oberflaeche/` aus dem alten Stand in `website/assets/oberflaeche/` (Knöpfe 1,3 px zu hoch, alte Namen) → jetzt immer `_werkzeuge/oberflaeche/`; Knöpfe der Fenster und Marke «Entwurf» optisch mittig; Einzelwort in Titeln der Bühne, der Fenster und der Listenzeilen; Kante der Kopf-Knöpfe im Rand am Handy; Prüfseite am Handy ohne Anschnitt; Frühere Fassungen am Handy ohne Überstand; Leiste am Handy ohne angeschnittenen Titel; Mini-Vorschau («So steht es auf der Karte») mit Beschriftung im Rahmen und lesbarer Weinzeile.
 - Mit dem Auge (Read) angesehen: über 30 Zustandsbilder 1440 und 390 (alle fünf Karten, Fortgeschritten, alle Fenster, Rundgang, Website-Ansicht, Anleitung, Prüfseite) und jede Druckseite der Karte, Lunch, Lästermeile, Bankett sowie Weinkarte S. 1, 2, 9 und 20: keine Löcher, Block in der optischen Mitte, Schrift nach Zweck (Karte aus Armlänge), nichts Culinarium-Haftes.
 
