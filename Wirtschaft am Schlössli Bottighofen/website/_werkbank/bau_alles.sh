@@ -36,7 +36,7 @@ timeout 900 python3 "$K/bau.py" "$P" | grep -v "Schrift fehlt"        # die Werk
 timeout 900 node _werkbank/sb_strom.js || true
 timeout 600 python3 _werkbank/objekte_bau.py "$P"
 timeout 900 python3 "$K/bau.py" "$P" | grep -v "Schrift fehlt"
-python3 _werkbank/ruecksprung.py "$P" || true                         # zuletzt: Rücksprung auf die alte Höhe in jeder Seite (auch nach den Bauten der Beigaben)
+python3 "$K/ruecksprung.py" "$P" || true                         # zuletzt: Rücksprung (Kit-Fassung mit Merkpunkt, Robert 1.11.2026) in jede Seite, auch nach den Bauten der Beigaben
 # letzte Kontrolle (Oberchef 3.11.2026): kein Schritt hat die Website selbst geändert (website/*.html, website/assets/ …), nur website/_werkbank/
 draussen="$(git -C "$P/../.." status --short -- website | grep -v "website/_werkbank/" || true)"
 if [ -n "$draussen" ]; then echo "ACHTUNG, ausserhalb von website/_werkbank/ geändert:"; echo "$draussen"; exit 1; fi
