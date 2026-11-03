@@ -350,3 +350,9 @@ aside.wo-rand .wo-rand__wege button{padding-left:0;padding-right:0}
 /* Zustand einer Rubrik oder eines Titels (Neu, Geändert, Ausgeblendet) steht als eigene Zeile unter dem Titel */
 .lc .r__t p.r__u--chip{margin-top:4px}
 .lc .r__t p.r__u--chip .chip{margin-left:0;margin-right:6px}
+/* Kriterium 34 (Cloud-Prüfung WebKit, 4.11.2026: Scrollen ruckelte): die stehende Vorschau mit der gesetzten Karte bekommt eine eigene Ebene und wird beim
+   Scrollen der Seite nicht neu gemalt; Listenblöcke ausserhalb des Bildes werden weder gesetzt noch gemalt (lange Weinkarte: 20 Blöcke)
+   Bewegt wird weiterhin nur transform/opacity. */
+.lc .vorschau{will-change:transform;contain:layout paint style}
+.lc .vorschau__f,.lc #web-f{will-change:transform}
+.lc #liste > .teil{content-visibility:auto;contain-intrinsic-size:auto 640px}
