@@ -1,9 +1,8 @@
-/* La Carte · Blatt: setzt eine Karte mit satz.js. Zwei Arten:
+/* Das Kartenpult · Blatt: setzt eine Karte mit satz.js. Zwei Arten:
    Druck   blatt.html?z=<karte>&q=stand|entwurf|grundstand|verlauf:<datei>&druck=1 → window.CARTE_FERTIG für drucke.js
    Vorschau (im Werkzeug, als Rahmen): Daten kommen per postMessage, Text ist markiert (data-k), Klicks und Geschriebenes gehen zurück.
    Danach wird jede Seite so gross gesetzt, wie ihr Inhalt es zulässt (wie _werkbank/satz_druck_datei.js, mit dem die PDFs der Website gedruckt sind).
-   Doldenhorn 17.10.2026: Kopie aus La Carte des Carlton-Europe, auf den Satz der Unterlagen des Waldhotel Doldenhorn umgestellt.
-   Gasterntal 17.10.2026: Kopie aus der Tafel des Ruedihus. Schäfli 21.10.2026. Culinarium 28.10.2026: Schriften des Hauses (Fraunces, Instrument Sans, Urbanist, DM Mono). */
+   Schlössli, Nachtbau 3.11.2026: Schriften des Hauses (Open Sans, Instrument Sans, DM Mono). */
 (function () {
   'use strict';
   var q = new URLSearchParams(location.search), ZEICHEN = null, D = null, MODUS = 'einfach', ZOOM = 0.62, ZOOM_EIGEN = false, N = 0, DATEN = null;
@@ -41,7 +40,7 @@
       }
       var rest = zuviel(), fehler = [];
       if (rest > 1.005) fehler.push('zu hoch');
-      // Doldenhorn 17.10.2026: ragt ein Text seitlich aus dem Blatt (sehr langes Wort), schneidet das Blatt ihn in der PDF ab
+      // 17.10.2026: ragt ein Text seitlich aus dem Blatt (sehr langes Wort), schneidet das Blatt ihn in der PDF ab
       var rb = bl.getBoundingClientRect();
       [].forEach.call(inh.querySelectorAll('h1,h2,h3,h4,p,span,b,em,i,li'), function (e) {
         if (e.closest('[style*="transform"]')) return;
@@ -84,13 +83,13 @@
       el.appendChild(i);
     });
   }
-  /* Vorschau: nur Seiten, deren Satz sich geändert hat, werden neu gesetzt und eingepasst (Doldenhorn 17.10.2026, Flüssigkeit: vorher wurde bei jeder
+  /* Vorschau: nur Seiten, deren Satz sich geändert hat, werden neu gesetzt und eingepasst (17.10.2026, Flüssigkeit: vorher wurde bei jeder
      Eingabe die ganze Karte neu eingepasst, gedrosselt 4–5 s). Unveränderte Seiten behalten ihr Element, ihr Schriftmass und ihren Bericht; das
      Ergebnis ist dasselbe wie beim vollen Satz (gleiche Seite, gleicher Ablauf des Einpassens). Druck und Mini setzen immer alles. */
   var CACHE = { karte: null, css: null, html: [], bericht: [] };
   // Eine Seite, die direkt in der Vorschau verändert wurde (Ziehen, Pfeile, Schreiben), gilt beim nächsten Satz als geändert
   function schmutzig(el) { var bl = el && el.closest && el.closest('.blatt'); if (!bl) return; var i = [].indexOf.call(document.querySelectorAll('#seiten > .blatt'), bl); if (i >= 0) CACHE.html[i] = null; }
-  /* Gestaltung 30.10.2026 (Tor K12, Stilblatt): Trenner « / », « · » in Rudis Zeilen und « | » in Momos Zeilen entfallen am Zeilenende und am Zeilenanfang.
+  /* Gestaltung 30.10.2026 (Tor K12, Stilblatt): Trenner « · » in den Namen der Gerichte entfallen am Zeilenende und am Zeilenanfang.
      Nach dem Einpassen wird jeder Trenner gemessen; bricht die Zeile an ihm, wird er zum Zeilenumbruch (Text bleibt im Element, nur unsichtbar). */
   function trennerAmRand(wurzeln) {
     // nur Trenner, an denen die Zeile wirklich bricht, bekommen ein Element; alle anderen bleiben reiner Text (Schreiben in der Vorschau, Proben)
@@ -128,9 +127,9 @@
       s.forEach(function (h, i) { if (CACHE.html[i] !== h) { var t = document.createElement('div'); t.innerHTML = h; S.replaceChild(t.firstElementChild, alt[i]); neu.push(i); } });
     } else { S.innerHTML = s.join(''); neu = s.map(function (x, i) { return i; }); CACHE.bericht = []; }
     CACHE.karte = opt.vorschau ? d.ziel : null; CACHE.css = css; CACHE.html = s.slice();
-    // Doldenhorn 17.10.2026: die Schriften des Satzes ausdrücklich laden, bevor eingepasst wird. «fonts.ready» allein meldet fertig, solange noch
+    // 17.10.2026: die Schriften des Satzes ausdrücklich laden, bevor eingepasst wird. «fonts.ready» allein meldet fertig, solange noch
     // keine Schrift angefragt ist; dann wurde mit der Ersatzschrift gemessen und eine Seite (Bistro S. 2, am Handy) fälschlich als «zu hoch» gemeldet.
-    var SCHRIFTEN = ['340 12px "Fraunces Titel"', '320 12px "Fraunces Zeile"', '400 12px "Fraunces Zeile"', '400 12px "Instrument Sans"', '500 12px "Instrument Sans"', '500 12px Urbanist', '600 12px Urbanist', '400 12px "DM Mono"'];
+    var SCHRIFTEN = ['300 12px "Open Sans"', '400 12px "Open Sans"', '400 12px "Instrument Sans"', '600 12px "Instrument Sans"', '400 12px "DM Mono"'];
     return Promise.all(SCHRIFTEN.map(function (f) { return document.fonts.load(f).catch(function () { return null; }); })).then(function () { return document.fonts.ready; }).then(function () {
       if (opt.vorschau) return null;   // Vorschau: Bilder haben feste Masse, der Satz steht schon, sie laden nach (Slow 4G: Text zuerst)
       return Promise.all([].map.call(document.images, function (i) { return i.complete ? 0 : new Promise(function (r) { i.onload = i.onerror = r; }); }));
@@ -165,7 +164,7 @@
     zeichen().then(function () {
       return fetch('/_werkzeuge/carte/api/druckdaten?z=' + encodeURIComponent(q.get('z') || '') + '&q=' + encodeURIComponent(q.get('q') || 'stand'), { cache: 'no-store' });
     }).then(function (r) { if (!r.ok) throw new Error('Daten ' + r.status); return r.json(); }).then(function (d) {
-      document.title = d.name + ' · Culinarium';
+      document.title = d.name + ' · Wirtschaft am Schlössli';
       return setze(d, {});
     }).then(function (b) { window.CARTE_FERTIG = b; document.documentElement.dataset.fertig = '1'; })
       .catch(function (e) { window.CARTE_FEHLER = String(e && e.stack || e); });
@@ -215,7 +214,7 @@
     var vw = document.documentElement.clientWidth;
     [].forEach.call(document.querySelectorAll('.blatt'), function (b) {
       var w = parseFloat(b.dataset.b) * 96 / 25.4, h = b.offsetHeight;
-      // Doldenhorn 17.10.2026: «+» darf über die Breite der Vorschau hinaus vergrössern (am Handy sonst nie lesbar), dann schiebt man seitlich
+      // 17.10.2026: «+» darf über die Breite der Vorschau hinaus vergrössern (am Handy sonst nie lesbar), dann schiebt man seitlich
       // Tor 5 30.10.2026 (K5/K13): ohne eigenen Zoom passt das ganze Blatt in die Höhe der Vorschau, nichts unten angeschnitten
       var vh = document.documentElement.clientHeight, passt = Math.max(0.25, Math.min((vw - 16) / w, MODUS === 'frei' ? 9 : (vh - 64) / h)), z = ZOOM_EIGEN ? ZOOM : Math.min(ZOOM, passt), off = Math.max(0, (vw - w * z) / 2);
       b.style.transformOrigin = '0 0';
@@ -288,7 +287,7 @@
     document.execCommand('insertText', false, (ev.clipboardData.getData('text/plain') || '').replace(/\s+/g, ' '));
   });
   document.addEventListener('focusout', function (ev) { if (ev.target.closest && ev.target.closest('[data-k]')) an('fertig-geschrieben', {}); });
-  /* ---------------------------------------------------------------- Freie Anordnung im Modus «Fortgeschritten» (1:1 nach La Carte des Grand Beau-Rivage,
+  /* ---------------------------------------------------------------- Freie Anordnung im Modus «Fortgeschritten» (1:1 nach dem Stamm der Werkzeuge,
      anordnen.js 15./16.10.2026). Ein Klick wählt ein Element der Seite (Rubrik, Gericht, Zeile, Hinweis, Text, Linie, Logo, Band, Kopfzeile, Zeichen,
      Fusszeile). Ziehen verschiebt es, mit Einrasten an Seitenmitte, Satzspiegel, Seitenrand und den anderen Elementen (rote Hilfslinien, Alt hält es an).
      Die vier Ecken machen es grösser oder kleiner im Verhältnis (40–300 %), die gegenüberliegende Ecke bleibt stehen; Linien haben Griffe an den Enden
@@ -489,10 +488,6 @@
     }
     function schreibbar(t) {   // Text, der direkt in der Karte geändert werden darf
       if (!t || t.querySelector('[data-k]')) return false;
-      if (DATEN && DATEN.art === 'abend') {   // Der nächste Abend: nur Texte aus einem Feld des Abends (Datum und Gang-Namen setzt der Abend)
-        var gen = { seiten: SATZ.ABEND.seiten(DATEN.abend) }, kk = t.dataset.k.split('.'), node = lies(gen, kk.slice(0, -2).join('.'));
-        return !!(node && node.w);
-      }
       var kp = /^(.*)~kap\d$/.exec(t.dataset.k); if (kp) { var e = lies(DATEN || {}, kp[1]); return !!(e && e.fn === 'el'); }   // Kapitälchen: ein Text
       return typeof lies(DATEN || {}, t.dataset.k) === 'string';
     }

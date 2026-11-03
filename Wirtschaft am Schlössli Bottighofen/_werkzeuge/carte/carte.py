@@ -1,7 +1,6 @@
-"""La Carte · Culinarium Hannover — Server-Teil (28.10.2026). Kopie der Tafel im Schäfli (dort aus dem Schlössli, Gasterntal, Ruedihus, Waldhotel
-Doldenhorn, La Carte des Carlton-Europe und mission_control.py des Grand Beau-Rivage), auf die Menükarten des Culinarium umgeschrieben: je Abend eine
-Karte (Gänge mit Rudis Teller und Momos Drink; Satz aus den Daten der Website, karten_lesen.py → satz_bau.py → einlesen.py) und «Der nächste Abend»
-als Abend mit festen Gängen (C08/C24 in der Form des Hauses). Eingehängt in _werkzeuge/carte/serve.py unter /_werkzeuge/carte/api/.
+"""Das Kartenpult · Wirtschaft am Schlössli — Server-Teil (Nachtbau 3.11.2026). Kopie der Tafel im Schäfli, auf die
+fünf Karten des Hauses umgeschrieben: Karte nach Ländern, Lunch, Lästermeile, Weinkarte und Bankett (Satz aus den Daten der Website,
+satz_bau.py → einlesen.py). Eingehängt in _werkzeuge/carte/serve.py unter /_werkzeuge/carte/api/.
 
 Ablage (_daten/, nur dieses Werkzeug schreibt dort):
   stand/<karte>.json        was veröffentlicht ist (die Wahrheit der Karte, eingelesen mit einlesen.py)
@@ -23,26 +22,27 @@ import datetime, html, json, os, re, shutil, subprocess, tarfile, threading, tim
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 _WURZEL = os.path.dirname(os.path.dirname(HIER))
-PROJ = os.path.join(_WURZEL, 'website')   # Culinarium: Website in website/
+PROJ = os.path.join(_WURZEL, 'website')   # Schlössli: Website in website/
 K = os.environ.get('CARTE_DATEN') or os.path.join(HIER, '_daten')
 SCHEMA = 1
 # Demo vor dem Auftrag (Demo-Check 21.10.2026): liegt die Datei DEMO neben carte.py, schreibt das Werkzeug nie in die Website (Anschluss gesperrt, Meldung «Demo»)
 DEMO = os.path.exists(os.path.join(HIER, 'DEMO')) and not os.environ.get('CARTE_ECHT')
-# «Der nächste Abend» und je früherem Abend mit überlieferter Karte eine Menükarte (karten_lesen.py legt sie in _daten/quelle/ an, neueste zuerst)
-ZIELE = ['abend'] + sorted((f[:-5] for f in os.listdir(os.path.join(HIER, '_daten', 'quelle')) if f.startswith('abend-') and f.endswith('.json')), reverse=True)
+# Die fünf Karten des Hauses (einlesen.py KARTEN), in der Reihenfolge der Seitenleiste
+ZIELE = ['speisekarte', 'lunch', 'laestermeile', 'weinkarte', 'bankett']
 ROLLEN = {'kueche': 'Küche', 'service': 'Service', 'direktion': 'Direktion'}
 RECHTE = {   # wer darf welchen Weg (Lesen dürfen alle)
     'entwurf': {'kueche', 'service', 'direktion'}, 'verwerfen': {'kueche', 'service', 'direktion'}, 'probe': {'kueche', 'service', 'direktion'},
     'veroeffentlichen': {'direktion'}, 'zurueckholen': {'direktion'}, 'einstellungen': {'direktion'}, 'reparatur': {'direktion'},
 }
-# Culinarium: keine Speise-, Wein- oder Spa-Karte (C19 betrifft nicht), sondern Menükarten je Abend. Küche (Rudi) und Service (Momo, Bar) ändern
-# alle Karten und drucken Proben; die Karte des nächsten Abends darf die Küche auch veröffentlichen (sie wechselt jeden Abend), die früheren die Direktion.
+# Küche und Service ändern alle Karten und drucken Proben; das Lunch-Menü wechselt jede Woche, darum darf die Küche es selbst veröffentlichen,
+# die übrigen Karten die Direktion (C19: die Weinkarte pflegt der Service mit, veröffentlicht wird sie von der Direktion).
 NUR = {}
-KUECHE_LIVE = {'abend'}   # was die Küche selbst veröffentlichen darf
+KUECHE_LIVE = {'lunch'}   # was die Küche selbst veröffentlichen darf
 _SCHLOSS = threading.RLock()
 BAU = {'laeuft': False, 'ziel': '', 'schritt': '', 'schritte': [], 'fehler': '', 'fertig': '', 'start': 0, 'ende': 0, 'bericht': {}}
 START = time.time()
-NODE_PW = os.path.join(os.path.expanduser('~'), 'Desktop/Apps & Tools/Tasty Website Builder/node_modules/playwright')
+NODE_PW = next((w for w in ('/Users/robertreff/Aussen-Pruefung/node_modules/playwright', os.path.join(os.path.expanduser('~'), 'Aussen-Pruefung/node_modules/playwright')) if os.path.isdir(w)),
+               '/Users/robertreff/Aussen-Pruefung/node_modules/playwright')
 PORT_STD = '9283'
 
 
@@ -155,7 +155,7 @@ def _ziel(z):
 
 def _recht(rolle, weg, z=''):
     if rolle not in ROLLEN:
-        raise Fehler('ROLLE', 'Trag zuerst oben rechts ein, wer du bist und in welcher Rolle du arbeitest.', 403)
+        raise Fehler('ROLLE', 'Bitte zuerst oben rechts eintragen, wer Sie sind und in welcher Rolle Sie arbeiten.', 403)
     if rolle == 'kueche' and weg in ('veroeffentlichen', 'zurueckholen') and z in KUECHE_LIVE:
         return
     if rolle not in RECHTE[weg]:
@@ -246,10 +246,10 @@ def _knoten_ok(n, wo, B, tiefe=0):
 
 
 LAGE_ZAHL = {'x': (-400, 400), 'y': (-400, 400), 's': (0.2, 5), 't': (0.2, 6), 'z': (0.5, 4), 'mt': (-40, 100), 'mb': (-40, 100), 'b': (0.5, 450), 'd': (0.05, 5), 'h': (3, 150)}
-# Schäfli 21.10.2026: Schriften und Farben genau die von satz/satz.js (SCHRIFT, FARBE). Im Schlössli standen hier noch die des Gasterntal: jede Farbe
+# Schäfli 21.10.2026: Schriften und Farben genau die von satz/satz.js (SCHRIFT, FARBE). Standen hier andere, wurde jede Farbe
 # und die Titelschrift aus «Gestalten» wurde beim Speichern abgewiesen (PRUEF). Prüfung: pruef/gleich.js speichert eine Gestaltung.
-# Culinarium 28.10.2026: Schriften und Farben genau die von satz/satz.js (SCHRIFT, FARBE); nie fett, nie kursiv (Textart nur normal oder Versalien).
-LAGE_WAHL = {'f': {'titel', 'zeile', 'instrument', 'etikett', 'mono'}, 'c': {'nacht', 'schiefer', 'tinte', 'leise', 'kerze', 'kerzet', 'kerzeh', 'papier', 'weiss'},
+# Schlössli 3.11.2026: Schriften und Farben genau die von satz/satz.js (SCHRIFT, FARBE); nie fett, nie kursiv (Textart nur normal oder Versalien).
+LAGE_WAHL = {'f': {'titel', 'lauf', 'mono'}, 'c': {'tinte', 'leise', 'stuhl', 'tief', 'nacht', 'himmel', 'blatt', 'weiss'},
              'a': {'normal', 'versal'}, 'al': {'links', 'mitte', 'rechts'}}
 
 
@@ -302,30 +302,10 @@ def pruefe(d, z):
         return 'Die Karte hat keine Daten.'
     if d.get('ziel') != z:
         return 'Die Daten gehören zu einer anderen Karte.'
-    f = _gestalt_ok({'seiten': d.get('seiten'), 'abend': d.get('abend')})
+    f = _gestalt_ok({'seiten': d.get('seiten')})
     if f:
         return f
     art = d.get('art')
-    if art != ('abend' if z == 'abend' else 'satz'):   # Ruedihus 17.10.2026 (im Gasterntal übernommen): vorher entschied die Art in den Daten, ob die Satz-Prüfung lief (Lücke)
-        return 'Unbekannte Art von Karte.'
-    if art == 'abend':
-        w = d.get('abend')
-        if not isinstance(w, dict) or not re.fullmatch(r'\d{4}-\d\d-\d\d', str(w.get('ab', ''))) or not isinstance(w.get('tage'), list) or len(w['tage']) != 1:
-            return 'Datum oder Menü des Abends fehlen.'
-        for i, t in enumerate(w['tage']):
-            for k, v in t.items():
-                if k not in GAENGE_FELDER + ('zu', 'hinweis'):
-                    return f'Menü: unbekanntes Feld «{k}».'
-                f = _text_ok(v, 'Menü')
-                if f or not isinstance(v, (str, bool)):
-                    return f or 'Menü: falsche Angabe.'
-        if set(w) - {'ab', 'titel', 'motto', 'mit', 'preis', 'zusatz', 'hinweis', 'fuss', 'tage', 'beispiel', 'lage'}:
-            return 'Der Abend hat ein unbekanntes Feld.'
-        for k in ('titel', 'motto', 'mit', 'preis', 'zusatz', 'hinweis', 'fuss'):
-            f = _text_ok(w.get(k, ''), k)
-            if f:
-                return f
-        return ''
     if not isinstance(d.get('seiten'), list) or not d['seiten']:
         return 'Die Karte hat keine Seiten.'
     if len(d['seiten']) > 60:
@@ -372,24 +352,16 @@ def status():
         if not live:   # noch nichts veröffentlicht: die PDF, die heute auf der Website liegt (website_pdfs)
             pdf = next((os.path.join(PROJ, r) for r in website_pdfs(z) if os.path.exists(os.path.join(PROJ, r))), os.path.join(PROJ, 'unterlagen', 'pdf', z + '.pdf'))
         aus.append(dict(live=live, ziel=z, name=s.get('name', z), unter=s.get('unter', ''), gruppe=s.get('gruppe', ''), art=s.get('art'), format=s.get('format'),
-                        seiten=len([x for x in s.get('seiten', []) if not x.get('aus')]) if s.get('art') != 'abend' else 1, ab=(s.get('abend') or {}).get('ab') or s.get('ab', ''),
+                        seiten=len([x for x in s.get('seiten', []) if not x.get('aus')]),
                         entwurf=bool(e) and _inhalt(e) != _inhalt(s), entwurf_zeit=(e or {}).get('gespeichert', '') if e else '', entwurf_wer=(e or {}).get('wer', '') if e else '',
                         pdf_zeit=datetime.datetime.fromtimestamp(os.path.getmtime(pdf)).strftime('%d.%m.%Y %H:%M') if os.path.exists(pdf) else '',
                         stand_zeit=s.get('veroeffentlicht', ''), stand_wer=s.get('wer', ''), verlauf=len(verlauf(z))))
     return dict(karten=aus, bau=dict(BAU), einstellungen=einstellungen(), rollen=ROLLEN, rechte={k: sorted(v) for k, v in RECHTE.items()})
 
 
-# Gänge eines Abends (satz.js ABEND): Feld = Rudis Teller, Feld_z = Momos Drink dazu
-GAENGE_FELDER = ('amuse', 'amuse_z', 'aperitif', 'aperitif_z', 'vorspeise', 'vorspeise_z', 'haupt', 'haupt_z', 'dessert', 'dessert_z', 'absacker', 'absacker_z')
-
-
-def _tag_leer(t):
-    return not t.get('zu') and not any(str(t.get(k, '')).strip() for k in GAENGE_FELDER)
-
-
 def _inhalt(d):
     """Was zählt, wenn Entwurf und Stand verglichen werden"""
-    return json.dumps({k: d.get(k) for k in ('seiten', 'abend', 'css')}, ensure_ascii=False, sort_keys=True)
+    return json.dumps({k: d.get(k) for k in ('seiten', 'css')}, ensure_ascii=False, sort_keys=True)
 
 
 def karte(z):
@@ -419,7 +391,7 @@ def entwurf(z, d, was, wer, rolle, erwartet=None):
         # erwartet: Zeitstempel, den der Browser zuletzt gesehen hat ('' = noch nie veröffentlicht und kein Entwurf). 16.10.2026: vorher wurde ein leerer
         # Stempel gar nicht geprüft, dann überschrieb das zweite Fenster das erste still, solange eine Karte nie veröffentlicht war.
         if erwartet is not None and alt and (alt.get('gespeichert') or alt.get('veroeffentlicht') or '') != (erwartet or ''):
-            raise Fehler('KONFLIKT', f'Inzwischen hat {alt.get("wer") or "jemand"} diese Karte geändert ({alt.get("gespeichert") or alt.get("veroeffentlicht")}). Bitte neu laden; deine Eingabe ist nicht verloren, sie steht noch im Fenster.', 409)
+            raise Fehler('KONFLIKT', f'Inzwischen hat {alt.get("wer") or "jemand"} diese Karte geändert ({alt.get("gespeichert") or alt.get("veroeffentlicht")}). Bitte neu laden; Ihre Eingabe ist nicht verloren, sie steht noch im Fenster.', 409)
         if alt and _inhalt(alt) == _inhalt(d):
             return dict(ok=True, geaendert=False, zeit=alt.get('gespeichert', alt.get('veroeffentlicht', '')))
         if os.path.exists(_p('entwurf', z)):
@@ -506,11 +478,6 @@ LEISE = re.compile(r'^[\s·*|–\-]*$')
 
 def texte(d):
     """Jeder Text, der auf der Karte steht (für «PDF = Daten»): alle Texte sichtbarer Elemente, ausgeblendete und leere zählen nicht"""
-    if d.get('art') == 'abend':
-        w = d['abend']
-        aus = [v for t in w['tage'] if not t.get('zu') for k, v in t.items() if k in GAENGE_FELDER and str(v).strip()]
-        aus += [t['hinweis'] for t in w['tage'] if t.get('zu') and str(t.get('hinweis', '')).strip()]
-        return aus + [w[k] for k in ('titel', 'motto', 'mit', 'preis', 'zusatz', 'hinweis', 'fuss') if str(w.get(k, '')).strip()]
     aus = []
 
     def geh(x):
@@ -554,7 +521,7 @@ def _woerter(t):
 
 
 def pdf_gleich_text(d, text, layout=''):
-    """Steht jeder Text der Daten in der PDF? Doldenhorn 17.10.2026: Wort für Wort, unabhängig von der Reihenfolge im PDF. Die Karten stehen in
+    """Steht jeder Text der Daten in der PDF? 17.10.2026: Wort für Wort, unabhängig von der Reihenfolge im PDF. Die Karten stehen in
     Spalten und Kästen; ein Absatz, der umbricht, liegt im Text der PDF nicht am Stück (pdftotext und PyMuPDF lesen Spalten verschieden). Darum:
     jedes Wort jedes Textes muss in der PDF vorkommen, und zusammen nicht öfter, als die PDF es enthält (gezählt). Wo das nicht reicht (gesperrte
     Versalien, senkrechte Schrift, Trennung), muss der Text ohne Zwischenräume am Stück in der PDF stehen."""
@@ -654,10 +621,9 @@ def _veroeffentlichen(z, e, s, wer, rolle):
             os.remove(tmp)
 
 
-# Wo die Website die PDF der Karte zeigen würde: website/unterlagen/pdf/<karte>.pdf, eine Quelle für Werkzeug, Website und PDF (Robert 17.10.2026:
-# «La Carte ist die eine Quelle der Speisekarten»). Die Website des Culinarium verlinkt heute keine Karten-PDF; sie zeigt die Menükarte im Abend
-# (abende.html) aus website/abende_info.py KARTEN. Mit Anschluss liest sie die Karten aus karten.json (C27, Einbau in website/ offen, Revier der Website).
-WEBSITE_PDF = {z: (None, None) for z in ZIELE}   # kein Feld «… als PDF» in der Website des Culinarium
+# Wo die Website die PDF der Karte zeigen würde: website/unterlagen/pdf/<karte>.pdf, eine Quelle für Werkzeug, Website und PDF. Die Website
+# des Schlössli zeigt die Karten heute aus ihren eigenen Daten (website/inhalt/*.json); eine PDF der Karte verlinkt sie nicht.
+WEBSITE_PDF = {z: (None, None) for z in ZIELE}   # kein Feld «… als PDF» in der Website des Hauses
 
 
 def website_pdfs(z):
@@ -678,7 +644,7 @@ def website_pdfs(z):
 def _anschluss(z, live):
     """Nach dem Veröffentlichen: karten.json im Revier des Werkzeugs immer neu (web.py, C27: die Karten in der Form der Website). Mit Anschluss geht
     die PDF zusätzlich nach website/unterlagen/pdf/<karte>.pdf (die vorige liegt im Verlauf). Solange die Datei DEMO liegt oder der Anschluss aus ist
-    (Standard: die Website ist eine Designstudie und wird nicht still verändert), schreibt La Carte nie in website/."""
+    (Standard: die Website ist eine Designstudie und wird nicht still verändert), schreibt das Kartenpult nie in website/."""
     try:
         import web
         teil = web.anschliessen(K, ZIELE, _lies)
@@ -695,7 +661,7 @@ def _anschluss(z, live):
         ziel = os.path.join(PROJ, rel)
         os.makedirs(os.path.dirname(ziel), exist_ok=True)
         if os.path.exists(ziel):
-            sd = os.path.join(K, 'verlauf', z, 'website-' + zeit + '-' + rel.replace('/', '_'))   # Gasterntal 17.10.2026: zwei Namen, die sich nur in Gross/Klein unterscheiden, sind auf dem Mac dieselbe Datei
+            sd = os.path.join(K, 'verlauf', z, 'website-' + zeit + '-' + rel.replace('/', '_'))   # 17.10.2026: zwei Namen, die sich nur in Gross/Klein unterscheiden, sind auf dem Mac dieselbe Datei
             os.makedirs(os.path.dirname(sd), exist_ok=True)
             shutil.copy2(ziel, sd)
         shutil.copy2(live, ziel + '.neu')
@@ -823,15 +789,15 @@ def pruefung():
 def werkzeugname():
     """Name des Werkzeugs aus der einen Stelle (_werkzeuge/oberflaeche/kleid/schloessli.js, WO_HAUS.namen.karten); Ersatz der Arbeitsname"""
     try:
-        with open(os.path.join(_WURZEL, '_werkzeuge', 'oberflaeche', 'kleid', 'culinarium.js'), encoding='utf-8') as f:
+        with open(os.path.join(_WURZEL, '_werkzeuge', 'oberflaeche', 'kleid', 'schloessli.js'), encoding='utf-8') as f:
             m = re.search(r"namen:\s*\{[^}]*?karten:\s*'([^']+)'", f.read())
-        return m.group(1) if m else 'La Carte'
+        return m.group(1) if m else 'Das Kartenpult'
     except OSError:
-        return 'La Carte'
+        return 'Das Kartenpult'
 
 
 def export():
-    """Alle Daten von La Carte in einer Datei (Master 9d Nr. 21): je Karte Stand, Entwurf und Ursprung, dazu Verlauf, Einstellungen, Protokoll."""
+    """Alle Daten des Kartenpults in einer Datei (Master 9d Nr. 21): je Karte Stand, Entwurf und Ursprung, dazu Verlauf, Einstellungen, Protokoll."""
     karten = {}
     for z in ZIELE:
         try:
@@ -839,7 +805,7 @@ def export():
                              verlauf={x['datei']: version(z, x['datei']) for x in verlauf(z)})
         except Fehler as e:
             karten[z] = dict(fehler=e.text)
-    return dict(werkzeug=f'{werkzeugname()} · Culinarium Hannover', zeit=_jetzt(), schema=SCHEMA, karten=karten, einstellungen=einstellungen(), protokoll=protokoll_lesen(10000))
+    return dict(werkzeug=f'{werkzeugname()} · Wirtschaft am Schlössli Bottighofen', zeit=_jetzt(), schema=SCHEMA, karten=karten, einstellungen=einstellungen(), protokoll=protokoll_lesen(10000))
 
 
 def reparatur(d, wer, rolle):

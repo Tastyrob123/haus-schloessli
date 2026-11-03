@@ -1,75 +1,110 @@
-/* La Carte · Culinarium Hannover — Satz der Menükarten (28.10.2026, satz_bau.py und satz.js ABEND). Eine Datei für Vorschau, PDF und Werkbank.
-   Farben und Schriften der Website (website/assets/culinarium.css :root): Warmweiss, Nacht, Schiefer, Kerze; Fraunces mit weichen Enden,
-   Instrument Sans, Urbanist, DM Mono. Nie fett, nie kursiv. Masse in mm, Schrift in pt über --s (blatt.js passt je Seite an, damit nichts überläuft).
-   Feste Schnitte statt variabler Schriften (fonts_statisch.py): Chromium bettet variable Schriften als «Type 3» ein, die Apple-Vorschau zeigt sie weich
-   (Fehlerbuch 10a, 21.10.2026). Gesperrte Versalien höchstens .08em, sonst liest pdftotext Buchstabe für Buchstabe (Abschnitt 9). */
-@font-face{font-family:'Fraunces Titel';src:url('../fonts/Fraunces-titel-340.ttf') format('truetype');font-weight:340;font-style:normal;font-display:block}
-@font-face{font-family:'Fraunces Zeile';src:url('../fonts/Fraunces-zeile-320.ttf') format('truetype');font-weight:320;font-style:normal;font-display:block}
-@font-face{font-family:'Fraunces Zeile';src:url('../fonts/Fraunces-zeile-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
-@font-face{font-family:'Instrument Sans';src:url('../fonts/Instrument-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
-@font-face{font-family:'Instrument Sans';src:url('../fonts/Instrument-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:block}
-@font-face{font-family:Urbanist;src:url('../fonts/Urbanist-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:block}
-@font-face{font-family:Urbanist;src:url('../fonts/Urbanist-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:block}
+/* Das Kartenpult · Wirtschaft am Schlössli — Satz der Karten des Hauses (Nachtbau 3.11.2026, satz_bau.py). Eine Datei für Vorschau, PDF und Werkbank.
+   Farben und Schriften der Website (website/assets/css/haus.css :root, kleid/schloessli.css): Blatt, Tinte, Stuhlblau, Seehimmel tief als Betonung,
+   Seehimmel als Linie, Schirmrot nur als Punkt (Nabe). Titel Open Sans in Versalien gesperrt wie die Wortmarke, Gerichte in DM Mono gesperrt
+   (THON · CAVATELLI), die Zeile darunter in Instrument Sans. Nie fett, nie kursiv. Masse in mm, Schrift in pt über --s (blatt.js passt je Seite an).
+   Feste Schnitte statt variabler Schriften (fonts_statisch.py aus /assets/fonts/): sonst bettet Chromium «Type 3» ein. */
+@font-face{font-family:'Open Sans';src:url('../fonts/OpenSans-300.ttf') format('truetype');font-weight:300;font-style:normal;font-display:block}
+@font-face{font-family:'Open Sans';src:url('../fonts/OpenSans-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Instrument Sans';src:url('../fonts/InstrumentSans-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Instrument Sans';src:url('../fonts/InstrumentSans-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Instrument Sans';src:url('../fonts/InstrumentSans-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:block}
 @font-face{font-family:'DM Mono';src:url('../fonts/DMMono-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
-:root{--papier:#FAF4F4;--nacht:#16151A;--schiefer:#3A3845;--tinte:#26242D;--leise:#5B5763;--kerze:#EF7649;--kerze-tief:#B15736;--kerze-hell:#F5A689;--linie:rgba(58,56,69,.22)}
+:root{--blatt:#F4F6F9;--tinte:#041023;--leise:#3B4A60;--stuhl:#113D88;--tief:#0F3678;--nacht:#0B1D3D;--himmel:#A2B6CF;--himmel-h:#C5D2E1;--schirm:#FD9964;--linie:rgba(15,54,120,.22)}
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:#3A3845;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.blatt{--s:1;position:relative;overflow:hidden;margin:8mm auto;background:var(--papier);color:var(--tinte);display:flex;flex-direction:column;
-  font-family:'Instrument Sans',Arial,sans-serif;font-weight:400;font-size:calc(9.2pt*var(--s));line-height:1.45;font-feature-settings:'locl' 0;page-break-after:always;break-after:page}
+html,body{margin:0;padding:0;background:#0B1D3D;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.blatt{--s:1;position:relative;overflow:hidden;margin:8mm auto;background:var(--blatt);color:var(--tinte);display:flex;flex-direction:column;
+  font-family:'Instrument Sans',Arial,sans-serif;font-weight:400;font-size:calc(9.6pt*var(--s));line-height:1.42;font-feature-settings:'locl' 0;page-break-after:always;break-after:page}
 :where(.blatt) :where(h1,h2,h3,h4,p){margin:0;padding:0;font-weight:inherit}
-:where(.blatt) b{font-weight:400}   /* nie fett (Kleid des Hauses) */
-/* oben eine Kante in Kerzenlicht wie die angeschlagenen Plakate der Bar, sonst ruhiges Warmweiss */
-.blatt::before{content:'';position:absolute;left:0;right:0;top:0;height:2.2mm;background:var(--kerze);pointer-events:none}
-.inhalt{position:relative;z-index:1;flex:1;min-height:0;padding:20mm 22mm 4mm;display:flex;flex-direction:column}
-.ufuss2{position:relative;z-index:1;flex:none;margin:0 22mm;padding:3mm 0 12mm;border-top:.2mm solid var(--linie);font-family:'DM Mono',Menlo,monospace;font-size:6.6pt;letter-spacing:.04em;text-align:center;color:var(--leise)}   /* ohne Versalien: «ß» bliebe sonst nicht «ß» */
+:where(.blatt) b{font-weight:400}
+:where(.blatt) em{font-style:normal}
+.inhalt{position:relative;z-index:1;flex:1;min-height:0;padding:14mm 20mm 4mm;display:flex;flex-direction:column}
+.ufuss2{position:relative;z-index:1;flex:none;margin:0 20mm;padding:2.6mm 0 9mm;border-top:.2mm solid var(--linie);font-family:'DM Mono',Menlo,monospace;font-size:6.6pt;letter-spacing:.04em;text-align:center;color:var(--leise)}
 
-/* Kopf: Wortmarke, Titel des Abends (Motto oder «Menü»), Datum, «BY MOMO X RUDI» */
-.sb-quer{flex:1 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:space-evenly;text-align:center}
-.sb-oben{display:flex;flex-direction:column;align-items:center}
-.sb-zeichen{display:block;color:var(--nacht)}
-.cu-wm{display:block;width:calc(96mm*min(var(--s),1.12));height:auto}   /* die Wortmarke wächst bei kurzen Karten nur wenig mit */
-.sb-band{font-family:'Fraunces Titel',Georgia,serif;font-weight:340;font-size:calc(30pt*var(--s));line-height:1.04;letter-spacing:-.01em;color:var(--nacht);margin-top:calc(7mm*var(--s))}
-.sb-datum{font-family:'DM Mono',Menlo,monospace;font-size:calc(8pt*var(--s));letter-spacing:.06em;text-transform:uppercase;color:var(--kerze-tief);margin-top:calc(3.4mm*var(--s))}
-.sb-mit{font-family:Urbanist,Arial,sans-serif;font-weight:600;font-size:calc(7.4pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--schiefer);margin-top:calc(1.4mm*var(--s))}
+/* Kopf: das Zeichen (die Zeiger) und die Wortmarke «WIRTSCHAFT AM SCHLÖSSLI», darunter der Titel der Karte und der Horizont des Sees */
+.sb-kopf{display:flex;align-items:center;justify-content:center;gap:2.6mm;color:var(--stuhl);margin-bottom:calc(6mm*var(--s))}
+.sb-zeichen{display:block;line-height:0}
+.sb-zeichen svg.sb-z{display:block;width:auto;height:calc(7mm*min(var(--s),1.1))}
+.sb-zeichen svg.sb-wm{display:block;width:calc(56mm*min(var(--s),1.1));height:auto}
+.sb-titel{font-family:'Open Sans',Arial,sans-serif;font-weight:300;font-size:calc(21pt*var(--s));line-height:1.1;letter-spacing:.14em;text-transform:uppercase;text-align:center;color:var(--tief);text-wrap:balance}
+.sb-horizont{height:0;border-top:.25mm solid var(--himmel);margin:calc(4.5mm*var(--s)) -20mm calc(7mm*var(--s))}
 
-/* Gänge: Etikett des Gangs, Rudis Teller in Versalien, darunter Momos Drink; das «x» von «Momo x Rudi» dazwischen, senkrechter Strich zwischen den Gängen */
-.sb-menue{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:calc(4mm*var(--s)) 0;width:100%}
-.sb-m{break-inside:avoid;max-width:150mm}
-.sb-gn{font-family:Urbanist,Arial,sans-serif;font-weight:600;font-size:calc(7.6pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--kerze-tief);margin-bottom:calc(1.6mm*var(--s))}
-.sb-n,.sb-band,.sb-dr{text-wrap:balance}   /* ausgewogene Zeilen: kein «FETA-» allein am Zeilenende */
-.sb-n{font-family:'Fraunces Zeile',Georgia,serif;font-weight:400;font-size:calc(12.6pt*var(--s));letter-spacing:.06em;text-transform:uppercase;color:var(--nacht);line-height:1.3}
-.sb-dr{font-size:calc(8.8pt*var(--s));color:var(--leise);line-height:1.45;margin-top:calc(1.4mm*var(--s))}
-.sb-dr::before{content:'';display:block;width:calc(1.5mm*var(--s));height:calc(1.5mm*var(--s));border-radius:50%;background:var(--kerze);margin:calc(.9mm*var(--s)) auto calc(2.2mm*var(--s))}   /* Robert 30.10.2026: kein «x» auf der ganzen Seite; ruhiger Punkt in Kerze wie im Fuss der Website (.fu-x) */
-.sb-gn+.sb-dr::before{display:none}   /* ohne Teller (Absacker) kein Punkt */
-.sb-tr.bruch{display:block;height:0;overflow:hidden;font-size:0;line-height:0}   /* Trenner, an dem die Zeile bricht (blatt.js trennerAmRand) */
-.sb-gang{display:flex;justify-content:center;padding:calc(3.6mm*var(--s)) 0}
-.sb-gang i{display:block;width:.25mm;height:calc(6mm*var(--s));background:var(--kerze)}
-/* Upgrade nach Wahl (erstes Wochenende 2023) */
-.sb-upg{margin-top:calc(7mm*var(--s));padding-top:calc(4mm*var(--s));border-top:.2mm solid var(--linie);width:100%;max-width:130mm}
-.sb-up{font-family:Urbanist,Arial,sans-serif;font-weight:600;font-size:calc(7.6pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--kerze-tief);margin-bottom:calc(2mm*var(--s))}
-.sb-m--up{padding:calc(.8mm*var(--s)) 0}
-.sb-n--satz{font-size:calc(9.6pt*var(--s));letter-spacing:.02em;text-transform:none;font-weight:320}
-/* Hinweis und Zusatz unter dem Menü */
-.sb-hinweis{margin-top:calc(3mm*var(--s));font-size:calc(9pt*var(--s));color:var(--leise)}
-.sb-zusatz{margin-top:calc(2.4mm*var(--s));font-size:calc(8.6pt*var(--s));color:var(--leise)}
+/* Rubrik (Land, Gruppe, Menü): Open Sans in Versalien, kleine Nabe davor */
+.sb-r{break-inside:avoid}
+.sb-h{display:flex;align-items:center;gap:3mm;font-family:'Open Sans',Arial,sans-serif;font-weight:400;font-size:calc(11.5pt*var(--s));letter-spacing:.16em;text-transform:uppercase;color:var(--tief);margin:calc(6mm*var(--s)) 0 calc(3.6mm*var(--s));break-after:avoid}
+.sb-h::after{content:'';flex:1;border-top:.2mm solid var(--linie)}
+.sb-r:first-of-type .sb-h,.sb-horizont+.sb-h,.sb-horizont+.sb-r .sb-h{margin-top:0}
 
-/* Ticketpreis als ruhige Marke: Angabe klein in Urbanist, Zahl in Fraunces, Währung in DM Mono */
-.sb-unten{display:flex;flex-direction:column;align-items:center}
-.sb-lunchpreis{display:block;padding:calc(2.2mm*var(--s)) 10mm;border-top:.2mm solid var(--linie);border-bottom:.2mm solid var(--linie)}
-.sb-lunchpreis .sb-p{display:flex;justify-content:center}
-.sb-lunchpreis .sb-p>span{display:flex;align-items:baseline;gap:2.4mm}
-.sb-p em{font-style:normal;font-family:Urbanist,Arial,sans-serif;font-weight:600;font-size:calc(7pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--kerze-tief)}
-.sb-p b{font-family:'Fraunces Titel',Georgia,serif;font-weight:340;font-size:calc(17pt*var(--s));line-height:1;color:var(--nacht)}
-.sb-p small{font-family:'DM Mono',Menlo,monospace;font-size:calc(7pt*var(--s));letter-spacing:.06em;color:var(--leise)}
+/* Gericht: Name in DM Mono gesperrt (wie auf der Karte des Hauses), Zeile darunter in Instrument Sans, Preise rechts */
+.sb-g{display:grid;grid-template-columns:1fr calc(30mm*var(--s));column-gap:5mm;align-items:baseline;margin-bottom:calc(4.2mm*var(--s));break-inside:avoid}
+.sb-n{grid-column:1;font-family:'DM Mono',Menlo,monospace;font-size:calc(10.4pt*var(--s));letter-spacing:.07em;text-transform:uppercase;color:var(--stuhl);line-height:1.3;text-wrap:balance}
+.sb-t{grid-column:1;font-size:calc(9.8pt*var(--s));color:var(--tinte);margin-top:calc(.8mm*var(--s));text-wrap:pretty}
+.sb-al{grid-column:1;font-family:'DM Mono',Menlo,monospace;font-size:calc(6.8pt*var(--s));letter-spacing:.08em;color:var(--leise);margin-top:calc(.7mm*var(--s))}
+.sb-w{grid-column:1;font-family:'DM Mono',Menlo,monospace;font-size:calc(6.8pt*var(--s));letter-spacing:.06em;color:var(--tief);margin-top:calc(.5mm*var(--s))}
+.sb-p{grid-column:2;grid-row:1 / span 4;text-align:right;font-variant-numeric:lining-nums tabular-nums}
+.sb-p span{display:flex;justify-content:flex-end;align-items:baseline;gap:2mm;white-space:nowrap}
+.sb-p span+span{margin-top:calc(.8mm*var(--s))}
+.sb-p b{font-family:'Open Sans',Arial,sans-serif;font-weight:400;font-size:calc(11.5pt*var(--s));color:var(--tief)}
+.sb-p em{font-family:'Instrument Sans',Arial,sans-serif;font-size:calc(8.2pt*var(--s));color:var(--leise)}
+.sb-p small{font-family:'DM Mono',Menlo,monospace;font-size:calc(7pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--leise)}
 
-/* Gestalten (Fortgeschritten): Stile, die satz.js an ein Element legt (nie fett, nie kursiv: «kursiv» und «medium» gibt es hier nicht) */
+/* Fussnoten der Karte (Preise, vegetarisch, Allergene) */
+.sb-fuss{margin-top:auto;padding-top:calc(5mm*var(--s));text-align:center}
+.sb-notiz{font-size:calc(8pt*var(--s));line-height:1.45;color:var(--leise);text-wrap:balance}
+.sb-notiz+.sb-notiz{margin-top:calc(1mm*var(--s))}
+.sb-fuss .sb-notiz:first-child{padding-top:calc(3mm*var(--s));border-top:.2mm solid var(--linie)}
+
+/* Mittig gesetzte Karten (Lunch, Lästermeile, Bankett): ein Block in der optischen Mitte */
+.sb-mitte{flex:1 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;width:100%}
+.sb-mitte .sb-h{justify-content:center;width:100%;max-width:140mm;margin-top:calc(7mm*var(--s))}
+.sb-mitte .sb-h::before{content:'';flex:1;border-top:.2mm solid var(--linie)}
+.sb-mitte .sb-h:first-child{margin-top:0}
+.sb-m{break-inside:avoid;max-width:140mm;margin-bottom:calc(4.4mm*var(--s))}
+.sb-m .sb-n{font-size:calc(11pt*var(--s))}
+.sb-mp{font-family:'Open Sans',Arial,sans-serif;font-weight:400;letter-spacing:.02em;color:var(--tief);margin-left:3mm}
+.sb-m .sb-t{margin-top:calc(1mm*var(--s))}
+/* Gang des Lunch-Menüs: Name grösser, eine Nabe zwischen den Gängen (rund wie die Zeiger, Schirmrot nur als Punkt) */
+.sb-m--gross .sb-n{font-size:calc(14pt*var(--s));letter-spacing:.08em}
+.sb-m--gross .sb-t{font-size:calc(11pt*var(--s))}
+.sb-gang{display:flex;justify-content:center;padding:calc(1.6mm*var(--s)) 0 calc(5.6mm*var(--s))}
+.sb-gang i{display:block;width:calc(1.8mm*var(--s));height:calc(1.8mm*var(--s));border-radius:50%;border:.25mm solid var(--himmel);background:var(--blatt)}
+/* Preis als ruhige Marke zwischen zwei feinen Linien */
+.sb-lunchpreis,.sb-menupreis{display:block;padding:calc(2.4mm*var(--s)) 12mm;border-top:.2mm solid var(--linie);border-bottom:.2mm solid var(--linie);margin:calc(3mm*var(--s)) 0 calc(6mm*var(--s))}
+.sb-lunchpreis .sb-p,.sb-menupreis .sb-p{display:flex;justify-content:center;text-align:center}
+.sb-lunchpreis .sb-p>span,.sb-menupreis .sb-p>span{gap:2.6mm}
+.sb-lunchpreis .sb-p em,.sb-menupreis .sb-p em{font-family:'DM Mono',Menlo,monospace;font-size:calc(7.6pt*var(--s));letter-spacing:.1em;text-transform:uppercase;color:var(--leise)}
+.sb-lunchpreis .sb-p b,.sb-menupreis .sb-p b{font-size:calc(19pt*var(--s));line-height:1}
+.sb-saison{font-size:calc(17pt*var(--s));letter-spacing:.18em}
+.sb-mitte .sb-g:not(.sb-lunchpreis):not(.sb-menupreis){grid-template-columns:1fr;text-align:center;width:100%;max-width:140mm}
+.sb-mitte .sb-g:not(.sb-lunchpreis):not(.sb-menupreis) .sb-p{grid-column:1;grid-row:auto;text-align:center;margin-top:calc(1mm*var(--s));order:9}
+.sb-mitte .sb-g:not(.sb-lunchpreis):not(.sb-menupreis) .sb-p span{justify-content:center}
+.sb-mitte .sb-g:not(.sb-lunchpreis):not(.sb-menupreis) .sb-p b{font-size:calc(9.6pt*var(--s))}
+.sb-mitte .sb-fuss{max-width:150mm}
+.sb-quer .inhalt{padding:12mm 26mm 4mm}
+
+/* Weinkarte: Art, Land, Region, Weingut, je Wein eine Zeile mit Jahrgang, Name, Flasche und Preis */
+.sb-wk .inhalt{padding-top:12mm}
+.sb-wk .sb-kopf{margin-bottom:calc(4mm*var(--s))}
+.sb-wart{font-size:calc(13pt*var(--s));letter-spacing:.18em;margin-top:calc(5mm*var(--s))}
+.sb-land{font-family:'Open Sans',Arial,sans-serif;font-weight:400;font-size:calc(10pt*var(--s));letter-spacing:.14em;text-transform:uppercase;color:var(--stuhl);margin:calc(4mm*var(--s)) 0 calc(1.4mm*var(--s));break-after:avoid}
+.sb-region{font-family:'DM Mono',Menlo,monospace;font-size:calc(7.6pt*var(--s));letter-spacing:.1em;text-transform:uppercase;color:var(--tief);margin:calc(3mm*var(--s)) 0 calc(1mm*var(--s));break-after:avoid}
+.sb-land+.sb-region{margin-top:calc(1mm*var(--s))}
+.sb-gut{font-family:'Instrument Sans',Arial,sans-serif;font-weight:600;font-size:calc(9.8pt*var(--s));color:var(--tinte);margin:calc(2.4mm*var(--s)) 0 calc(.8mm*var(--s));padding-bottom:calc(.6mm*var(--s));border-bottom:.2mm solid var(--linie);break-after:avoid}
+.sb-g.sb-wein{display:grid;grid-template-columns:calc(11mm*var(--s)) 1fr calc(14mm*var(--s)) calc(14mm*var(--s));column-gap:2.4mm;align-items:baseline;margin:0;font-size:calc(9.4pt*var(--s));line-height:1.38;font-variant-numeric:lining-nums tabular-nums;break-inside:avoid}
+.sb-wein .j{font-family:'DM Mono',Menlo,monospace;font-size:.84em;letter-spacing:.04em;color:var(--leise)}
+.sb-wein .n{color:var(--tinte)}
+.sb-wein .f{font-family:'DM Mono',Menlo,monospace;text-align:right;font-size:.8em;color:var(--leise)}
+.sb-wein .p{font-family:'Open Sans',Arial,sans-serif;text-align:right;color:var(--tief)}
+.sb-wein .d{font-size:.84em;color:var(--leise)}
+.sb-wk .sb-gut,.sb-wk .sb-land,.sb-wk .sb-region,.sb-wk .sb-wart{padding-top:var(--luft,0px)}
+.sb-wk .sb-land+.sb-region{padding-top:0}
+.sb-wk .sb-horizont{margin-bottom:calc(3mm*var(--s))}
+
+/* Gestalten (Fortgeschritten): Stile, die satz.js an ein Element legt (nie fett, nie kursiv) */
 [data-gf]{font-family:var(--gf)!important}
 [data-gc]{color:var(--gc)!important}
-[data-ga="versal"]{text-transform:uppercase!important;letter-spacing:.06em}
+[data-ga="versal"]{text-transform:uppercase!important;letter-spacing:.08em}
 [data-ga="normal"]{text-transform:none!important;letter-spacing:0!important}
 [data-gal]{text-align:var(--gal)!important;justify-content:var(--gai)!important;align-items:var(--gai)}
 [data-gz]{line-height:var(--gz)!important}
 @media print{html,body{background:none}.blatt{margin:0}}
-/* Flächen wachsen, schrumpfen aber nie: sonst läuft Inhalt unbemerkt übereinander statt dass blatt.js die Schrift einpasst (Fehlerbuch 9) */
-.sb-quer,.sb-menue{flex:1 0 auto;min-height:auto}
-.sb-menue{flex:0 0 auto}
+.sb-tr.bruch{display:block;height:0;overflow:hidden;font-size:0;line-height:0}   /* Trenner, an dem die Zeile bricht (blatt.js trennerAmRand) */

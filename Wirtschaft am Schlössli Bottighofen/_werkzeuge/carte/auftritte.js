@@ -1,4 +1,4 @@
-/* Auftritte für alles, was stillstand, und der Takt des Gasterntal für die Auftritte des Kits (gebaut von _werkbank/gt_auftritte.py, nicht von Hand ändern) */
+/* Auftritte für alles, was stillstand, und der Takt der Häuser für die Auftritte des Kits (gebaut von _werkbank/gt_auftritte.py, nicht von Hand ändern) */
 (function () {
   'use strict';
   var doc = document.documentElement;

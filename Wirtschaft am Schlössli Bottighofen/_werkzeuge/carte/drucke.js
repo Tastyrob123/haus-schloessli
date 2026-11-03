@@ -1,7 +1,9 @@
-// La Carte · Druck einer Karte als PDF (wie _werkbank/satz_druck_datei.js, mit dem die PDFs der Website gedruckt sind): node drucke.js <karte> <stand|entwurf|…> <ziel.pdf>
+// Das Kartenpult · Druck einer Karte als PDF (wie _werkbank/satz_druck_datei.js, mit dem die PDFs der Website gedruckt sind): node drucke.js <karte> <stand|entwurf|…> <ziel.pdf>
 // Öffnet satz/blatt.html auf dem eigenen Server (CARTE_PORT, Standard 9283), wartet, bis der Satz steht, und druckt. Letzte Zeile: Bericht als JSON.
 const path = require('path'), fs = require('fs');
-const { chromium } = require(path.join(process.env.HOME, 'Desktop/Apps & Tools/Tasty Website Builder/node_modules/playwright'));
+const WEGE = ['/Users/robertreff/Aussen-Pruefung/node_modules/playwright', path.join(process.env.HOME || '', 'Aussen-Pruefung/node_modules/playwright'), 'playwright'];
+let pw = null; for (const w of WEGE) { try { pw = require(w); break; } catch (e) { /* nächster Weg */ } }
+const { chromium } = pw;
 const [z, art, aus] = process.argv.slice(2);
 const PORT = process.env.CARTE_PORT || '9283';
 (async () => {

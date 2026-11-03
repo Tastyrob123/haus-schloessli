@@ -1,5 +1,5 @@
-/* La Carte · Culinarium Hannover (über die Tafeln des Schäfli und des Doldenhorn und La Carte des Carlton-Europe): Kopie von studio/schweben.css des Grand Beau-Rivage (16.10.2026), unverändert in der Wirkung. */
-/* Schweben, Pulsieren, Zoom für die Werkzeuge (Gefühl der Carlton-Seiten, wie in Le Registre). Gehört zu schweben.js.
+/* Das Kartenpult · Wirtschaft am Schlössli: Schweben aus dem gemeinsamen Stamm der Werkzeuge (16.10.2026), unverändert in der Wirkung.
+/* Schweben, Pulsieren, Zoom für die Werkzeuge (wie in der Besucherliste). Gehört zu schweben.js.
    Jedes Blatt trägt data-sw. Wo der Browser Scroll-Zeitachsen kann, wird es am Scrollen aus der Tiefe hochgeführt (sw-zug, gebunden an den Einzug
    entry 0% bis 100%, nichts bleibt am Seitenende hängen); im Bild (.sw-da) federt es zusätzlich nach der Uhr in seine Grösse (sw-puls).
    Viele gleiche Zeilen (data-sw="z") blenden nur sanft ein. Nur translate, scale, opacity. Muss nach studio.css geladen werden. */
@@ -10,7 +10,7 @@
 [data-sw]{--weg:clamp(60px,7vw,110px)}
 h2[data-sw],[data-sw="k"]{--weg:clamp(30px,3.2vw,48px);--kl:.97}
 /* Nach der Uhr, nicht am Scrollen (Robert 16.10.2026): sobald ein Blatt auftaucht, schwebt es in 1,5 s mit leichter Feder an seinen Platz, immer deckend */
-/* Rezeptur der Carlton-Landingpage (Robert 16.10.2026: «hochgeschwebt mit diesem Reinzoomen, leicht federnd, das will ich haben»):
+/* Rezeptur der Landingpage (Robert 16.10.2026: «hochgeschwebt mit diesem Reinzoomen, leicht federnd, das will ich haben»):
    Blatt aus clamp(80px,9vw,140px) Tiefe und 93 %, 2,7 s Feder (.28,1.42,.42,1), Staffel 100 ms; das Foto darin zoomt gleichzeitig von 108 % in Ruhe */
 @keyframes sw-feder{from{translate:0 clamp(80px,9vw,140px);scale:.93}}
 @keyframes sw-bild{from{scale:1.08}}

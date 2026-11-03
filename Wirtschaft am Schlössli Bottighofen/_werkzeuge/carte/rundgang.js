@@ -1,65 +1,65 @@
-/* Kurzer Rundgang durch La Carte · Culinarium Hannover (28.10.2026, Kopie aus der Tafel im Schäfli, dort aus dem Schlössli, dort aus dem Gasterntal, dort aus dem Ruedihus, dort aus dem Doldenhorn und La Carte des Carlton-Europe; Vorlage assets/js/rundgang.js des Grand Beau-Rivage, data-werkzeug="carte"; 17.10.2026).
+/* Kurzer Rundgang durch das Kartenpult · Wirtschaft am Schlössli (Nachtbau 3.11.2026, Kopie aus der Tafel im Schäfli; data-werkzeug="carte").
    Robert 16.10.2026: «einmal ganz kurz zeigen, hier kannst du das machen, da das, damit man weiss, wo man gelandet ist». Ein Lichtkegel liegt auf dem echten Bedienelement, daneben eine Karte mit zwei, drei Sätzen.
    Kein Start von selbst: unten rechts erscheint ein Schild «Kurzer Rundgang» (fünf Sekunden, die Maus darauf hält es), dann zieht es sich zurück.
    Wieder aufrufen: «Kurzer Rundgang» im Rand oder ?rundgang (startet direkt). Automatische Prüfungen (navigator.webdriver) und eingebettete Ansichten sehen nichts. */
 (function () {
   var Q = new URLSearchParams(location.search), ERZWINGEN = Q.has('rundgang');
   if (window.self !== window.top && !ERZWINGEN) return;
-  var G = { name: (window.WO && WO.name('karten')) || 'Die Pairing-Karte', schritte: [
-    { ziel: ['#kopf'], titel: 'Das ist ' + ((window.WO && WO.name('karten')) || 'Die Pairing-Karte').replace(/^(Das|Die|Der) /, function (a) { return a.toLowerCase(); }),
-      text: 'Die Karte am Platz für jeden Abend: zu jedem Gang Rudis Teller und Momos Drink, dazu Datum, Motto und Ticketpreis. Was am Abend auf der Tafel liegt, entsteht hier, gesetzt im Stil der Plakate.' },
-    { ziel: ['#rand .karten', '#rand'], titel: 'Jeder Abend mit seiner Karte',
-      text: 'Oben der nächste Abend, den du Gang für Gang einträgst. Darunter jeder frühere Abend mit seiner Karte, so wie er auf dem Tisch lag.' },
+  var G = { name: (window.WO && WO.name('karten')) || 'Das Kartenpult', schritte: [
+    { ziel: ['#kopf'], titel: 'Das ist ' + ((window.WO && WO.name('karten')) || 'Das Kartenpult').replace(/^(Das|Die|Der) /, function (a) { return a.toLowerCase(); }),
+      text: 'Hier schreibt das Haus seine Karten: die Karte nach Ländern, das Lunch-Menü, die Lästermeile, die Weinkarte und die Bankettmenüs. Daraus entstehen die gedruckte Karte und ihre PDF, gesetzt in den Schriften des Hauses.' },
+    { ziel: ['#rand .karten', '#rand'], titel: 'Jede Karte an ihrem Platz',
+      text: 'Links stehen die fünf Karten, nach Restaurant, Lästermeile, Keller und Banketts. Ein Klick öffnet eine Karte mit allen Gerichten, Weinen und Preisen.' },
     { ziel: ['#arbeit .vorschau'], min: 560, titel: 'Gedruckt und online aus einer Quelle',
-      text: 'Aus jeder Änderung entsteht die Karte zum Drucken, rechts siehst du sie schon vorher. Eine Quelle für die Tafel und die Website, sobald die Website angeschlossen ist.' },
+      text: 'Rechts steht die Karte so, wie sie gedruckt wird, schon vor dem Veröffentlichen. Eine Quelle für den Tisch und die Website, sobald die Website angeschlossen ist.' },
     { ziel: ['#rand .modus'], titel: 'Für jeden im Team',
       text: 'Einfach wie eine Liste, oder frei gestaltet direkt auf der Karte.' }
   ] };
-  var SCHLUESSEL = 'rundgang-culinarium-carte';
+  var SCHLUESSEL = 'rundgang-schloessli-carte';
   function merk() { try { localStorage.setItem(SCHLUESSEL, '1'); } catch (e) { } }
 
   var CSS = '' +
     '.rdg-kegel{position:fixed;left:0;top:0;z-index:2147483000;border-radius:18px;pointer-events:none;' +
-      'box-shadow:0 0 0 3px #EF7649,0 0 0 9px rgba(239,118,73,.35),0 0 40px 10px rgba(239,118,73,.35),0 0 0 200vmax rgba(22,21,26,.76)}' +
+      'box-shadow:0 0 0 3px #A2B6CF,0 0 0 9px rgba(162,182,207,.35),0 0 40px 10px rgba(162,182,207,.35),0 0 0 200vmax rgba(11,29,61,.76)}' +
     '.rdg-sperre{position:fixed;inset:0;z-index:2147482999}' +
     '.rdg-karte{position:fixed;left:0;top:0;z-index:2147483001;width:370px;max-width:calc(100vw - 32px);box-sizing:border-box;' +
-      'padding:24px 26px 22px;border-radius:22px;color:#26242D;background:linear-gradient(180deg,#FFFCFB,#efe8dc);' +
-      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(28,27,33,.3),0 30px 60px -24px rgba(22,21,26,.65),0 10px 22px -12px rgba(22,21,26,.45);' +
+      'padding:24px 26px 22px;border-radius:22px;color:#041023;background:linear-gradient(180deg,#FBFDFD,#efe8dc);' +
+      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(10,35,76,.3),0 30px 60px -24px rgba(11,29,61,.65),0 10px 22px -12px rgba(11,29,61,.45);' +
       'font:15px/1.55 "Instrument Sans",system-ui,sans-serif;animation:rdg-auf .42s cubic-bezier(.2,.8,.2,1) both}' +
     '@keyframes rdg-auf{from{transform:translate3d(var(--rx,0),calc(var(--ry,0px) + 14px),0)}to{transform:translate3d(var(--rx,0),var(--ry,0),0)}}' +
     '.rdg-karte{transform:translate3d(var(--rx,0),var(--ry,0),0)}' +
-    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase;color:#3A3845}' +
-    '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#EF7649,rgba(239,118,73,0))}' +
-    '.rdg-karte h3{margin:12px 0 6px;font:340 25px/1.15 Fraunces,Georgia,serif;color:#1C1B21;letter-spacing:0}' +
-    '.rdg-karte p{margin:0;color:rgba(38,36,45,.78)}' +
+    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase;color:#113D88}' +
+    '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#A2B6CF,rgba(162,182,207,0))}' +
+    '.rdg-karte h3{margin:12px 0 6px;font:400 21px/1.2 "Open Sans",system-ui,sans-serif;color:#0A234C;letter-spacing:0}' +
+    '.rdg-karte p{margin:0;color:rgba(4,16,35,.78)}' +
     '.rdg-fuss{display:flex;align-items:center;gap:14px;margin-top:20px}' +
-    '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(38,36,45,.14)}.rdg-karte .rdg-weg b.da{background:#B15736}' +
-    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#3A3845;cursor:pointer}' +
-    '.rdg-karte .rdg-zu:hover{color:#26242D}' +
+    '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(4,16,35,.14)}.rdg-karte .rdg-weg b.da{background:#0F3678}' +
+    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#113D88;cursor:pointer}' +
+    '.rdg-karte .rdg-zu:hover{color:#041023}' +
     '.rdg-karte .rdg-los,.rdg-schild .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:0 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
-      'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#FFFCFB;' +
-      'background:linear-gradient(180deg,#3A3845,#1C1B21 46%,#0F0E13);box-shadow:0 1px 0 rgba(255,255,255,.26) inset,0 -3px 0 rgba(0,0,0,.5) inset,0 10px 18px -10px rgba(22,21,26,.8)}' +
-    '.rdg-karte .rdg-los i,.rdg-schild .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(180deg,#FBD9CB,#EF7649);' +
+      'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#FBFDFD;' +
+      'background:linear-gradient(180deg,#113D88,#0A234C 46%,#06142C);box-shadow:0 1px 0 rgba(255,255,255,.26) inset,0 -3px 0 rgba(0,0,0,.5) inset,0 10px 18px -10px rgba(11,29,61,.8)}' +
+    '.rdg-karte .rdg-los i,.rdg-schild .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(180deg,#E2E9F2,#A2B6CF);' +
       'box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 -2px 0 rgba(0,0,0,.22) inset;transition:transform .2s}' +
-    '.rdg-karte .rdg-los svg,.rdg-schild .rdg-los svg{width:14px;height:14px;fill:none;stroke:#26242D;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
+    '.rdg-karte .rdg-los svg,.rdg-schild .rdg-los svg{width:14px;height:14px;fill:none;stroke:#041023;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
     '.rdg-los:hover i{transform:translateX(2px)}' +
-    '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #B15736;outline-offset:3px}' +
+    '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #0F3678;outline-offset:3px}' +
     '@media (max-width:700px){.rdg-karte{left:16px!important;right:16px;top:auto!important;bottom:16px;width:auto;--rx:0!important;--ry:0!important}}' +
     '@media (prefers-reduced-motion:reduce){.rdg-karte{animation:none}}';
   var SCHILD_CSS = '' +
     '.rdg-schild{position:fixed;right:24px;bottom:24px;z-index:2147482990;display:flex;align-items:center;gap:14px;box-sizing:border-box;' +
-      'padding:10px 10px 10px 20px;border-radius:999px;color:#26242D;background:linear-gradient(180deg,#FFFCFB,#efe8dc);' +
-      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(28,27,33,.32),0 18px 34px -16px rgba(22,21,26,.6),0 6px 14px -8px rgba(22,21,26,.4);' +
+      'padding:10px 10px 10px 20px;border-radius:999px;color:#041023;background:linear-gradient(180deg,#FBFDFD,#efe8dc);' +
+      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(10,35,76,.32),0 18px 34px -16px rgba(11,29,61,.6),0 6px 14px -8px rgba(11,29,61,.4);' +
       'transform:translate3d(0,0,0);transition:transform .55s cubic-bezier(.2,.8,.2,1);animation:rdg-schild-auf .7s cubic-bezier(.2,.9,.25,1.15) both}' +
     '@keyframes rdg-schild-auf{from{transform:translate3d(0,calc(100% + 40px),0)}to{transform:translate3d(0,0,0)}}' +
     '.rdg-schild.weg{animation:none;transform:translate3d(0,calc(100% + 60px),0)}' +
     '.rdg-schild__t{display:flex;flex-direction:column;gap:4px;line-height:1}' +
-    '.rdg-schild__t small{font:500 9px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase;color:#3A3845}' +
-    '.rdg-schild__t b{font:340 18px/1 Fraunces,Georgia,serif;color:#1C1B21}' +
+    '.rdg-schild__t small{font:500 9px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase;color:#113D88}' +
+    '.rdg-schild__t b{font:400 16px/1 "Open Sans",system-ui,sans-serif;color:#0A234C}' +
     '.rdg-schild .rdg-los{height:38px;padding:0 5px 0 15px;font-size:9.5px}.rdg-schild .rdg-los i{width:28px;height:28px}' +
-    '.rdg-schild__zu{flex:none;width:26px;height:26px;margin:0 2px 0 -4px;padding:0;border:0;border-radius:50%;background:none;cursor:pointer;color:#3A3845;font:16px/1 system-ui}' +
+    '.rdg-schild__zu{flex:none;width:26px;height:26px;margin:0 2px 0 -4px;padding:0;border:0;border-radius:50%;background:none;cursor:pointer;color:#113D88;font:16px/1 system-ui}' +
     '.rdg-schild__zu{display:grid;place-items:center}.rdg-schild__zu svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}' +   /* kein «×» (Robert 30.10.2026): Zurück-Pfeil wie «Verwerfen» */
-    '.rdg-schild__zu:hover{color:#26242D}' +
+    '.rdg-schild__zu:hover{color:#041023}' +
     '@media (max-width:700px){.rdg-schild{right:16px;left:auto}}' +
     '@media (prefers-reduced-motion:reduce){.rdg-schild{animation:none;transition:none}}';
   var PFEIL = '<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i>';
@@ -218,7 +218,7 @@
   /* «Kurzer Rundgang» als Weg im Rand, damit er sich jederzeit wieder öffnen lässt. */
   function weg_im_rand() {
     var wege = document.querySelector('#rand .wege');
-    if (!wege || wege.querySelector('.rdg-wieder') || wege.querySelector('[data-akt="rundgang"]')) return;   /* La Carte führt ihn schon im Rand */
+    if (!wege || wege.querySelector('.rdg-wieder') || wege.querySelector('[data-akt="rundgang"]')) return;   /* das Kartenpult führt ihn schon im Rand */
     var a = document.createElement('a'); a.href = '#'; a.className = 'rdg-wieder'; a.textContent = 'Kurzer Rundgang';
     a.onclick = function (e) { e.preventDefault(); starte(); };
     var haus = wege.querySelector('.rand__haus');

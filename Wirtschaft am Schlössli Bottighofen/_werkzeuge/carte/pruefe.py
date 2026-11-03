@@ -1,136 +1,95 @@
 #!/usr/bin/env python3
-"""La Carte · Culinarium Hannover — Prüfungen der Karten (28.10.2026, Muster: pruefe.py der Tafel im Schäfli). Für «wortlaut» muss der Server laufen
-(python3 _werkzeuge/carte/serve.py, Port aus CARTE_PORT, Standard 9283).
+"""Das Kartenpult · Wirtschaft am Schlössli — Prüfungen der Karten (Nachtbau 3.11.2026, Muster: pruefe.py der Tafel im Schäfli).
 
-    python3 _werkzeuge/carte/pruefe.py rund        Satz von La Carte = Satz des Projekts, Zeichen für Zeichen (pruef/rund.js, Grundstand)
-    python3 _werkzeuge/carte/pruefe.py wortlaut    jede Karte aus dem veröffentlichten Stand drucken und Wort für Wort gegen ihre Quelle prüfen
-                                                   (_daten/quelle/<karte>.json, aus der Website gelesen): gezählt je Wort, Gross und Klein gleich;
-                                                   erlaubt dazu nur, was der Satz bewusst gibt (Fusszeile, «Ticket», «Upgrade nach Wahl», Titel «Menü»)
-    python3 _werkzeuge/carte/pruefe.py website     die Karten des Werkzeugs in der Form der Website (web.py zeilen) = die Menükarten, die die
-                                                   Website heute zeigt (website/abende_info.py KARTEN): Gang, Teller, Drink, Upgrade, Preis je Abend
-    python3 _werkzeuge/carte/pruefe.py schrift     jede PDF: nur feste Schnitte (pdffonts, kein Type 3), keine zerfallenen Wörter (pdftotext)
+    python3 _werkzeuge/carte/pruefe.py rund        Satz → Baum → Satz Zeichen für Zeichen gleich (pruef_rund.js, Grundstand)
+    python3 _werkzeuge/carte/pruefe.py quelle      jede Karte gegen die Daten der Website (website/inhalt/*.json): jeder Name, jede Zeile, jeder Preis
+                                                   steht im Grundstand, genau so oft wie in der Quelle (Schweizer Schreibung: «ß» als «ss»)
+    python3 _werkzeuge/carte/pruefe.py druck       jede Karte aus dem Stand drucken (Server muss laufen, CARTE_PORT, Standard 9283), PDF = Daten
+                                                   (Wort für Wort) und nur feste Schnitte (pdffonts, kein Type 3)
     python3 _werkzeuge/carte/pruefe.py alles
 Nur gelesen wird website/; geschrieben wird nur nach pruef/aus/."""
-import collections, json, os, re, subprocess, sys, unicodedata
+import collections, json, os, re, subprocess, sys
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HIER)
 AUS = os.path.join(HIER, 'pruef', 'aus')
-QD = os.path.join(HIER, '_daten', 'quelle')
-KARTEN = sorted(f[:-5] for f in os.listdir(QD) if f.endswith('.json') and f.startswith('abend'))
-
-
-def druck(z, art='stand'):
-    os.makedirs(AUS, exist_ok=True)
-    p = os.path.join(AUS, z + '.pdf')
-    r = subprocess.run(['node', os.path.join(HIER, 'drucke.js'), z, art, p], capture_output=True, text=True, timeout=300)
-    if r.returncode:
-        raise SystemExit(f'Druck {z} gescheitert: {r.stderr[-400:]}')
-    return p
+INHALT = os.path.join(os.path.dirname(os.path.dirname(HIER)), 'website', 'inhalt')
+import carte  # noqa: E402
+import satz_bau  # noqa: E402
 
 
 def rund():
-    r = subprocess.run(['node', os.path.join(HIER, 'pruef', 'rund.js')], capture_output=True, text=True)
+    r = subprocess.run(['node', os.path.join(HIER, 'pruef_rund.js')], capture_output=True, text=True)
     print(r.stdout.strip())
     return r.returncode == 0
 
 
-MUSTER = r'[0-9a-zäöüéèêëàâîïôùûçœß]+'
+def soll(z):
+    """Was aus der Quelle auf der Karte stehen muss (Texte in Schweizer Schreibung, Preise als Zahl)."""
+    T, P = satz_bau.t, satz_bau.preis
+    j = lambda n: json.load(open(os.path.join(INHALT, n + '.json'), encoding='utf-8'))
+    aus = []
+    if z == 'speisekarte':
+        for l in j('karte')['laender']:
+            aus.append(T(l['land']))
+            for g in l['gerichte']:
+                aus += [T(g['name']), T(g['text']), T(g['allergene']), P(g['preis'])] + ([P(g['haupt'])] if g.get('haupt') else []) + ([T(g['hinweis'])] if g.get('hinweis') else [])
+    elif z == 'lunch':
+        d = j('lunch')
+        aus += [T(d['titel'])] + [T(x) for g in d['gaenge'] for x in (g['name'], g['text'])]
+    elif z == 'laestermeile':
+        for g in j('laestermeile')['gruppen']:
+            aus.append(T(g['titel']))
+            for x in g['eintraege']:
+                aus += [T(x['name']), P(x['preis'])] + ([T(x['text'])] if x.get('text') else [])
+    elif z == 'weinkarte':
+        for g in j('wein')['gruppen']:
+            aus.append(T(g['titel']))
+            for r in g['regionen']:
+                if r['titel']:
+                    aus.append(T(r['titel']))
+                for e in r['erzeuger']:
+                    aus.append(T(e['name']))
+                    for w in e['weine']:
+                        aus += [T(w['name'])] + ([T(w['jahr'])] if w.get('jahr') else []) + ([T(w['notiz'])] if w.get('notiz') else [])
+                        aus += [x for f in w['flaschen'] for x in (T(f['gross']), P(f['preis']))]
+    elif z == 'bankett':
+        for m in j('bankett')['menues']:
+            aus += [T(m['name']), P(m['preis'])]
+            for g in m['gerichte']:
+                aus += [T(g['name']), T(g['text']), P(g['preis'])]
+    return [x for x in aus if x]
 
 
-def _text(pfad, layout=False):
-    t = subprocess.run(['pdftotext'] + (['-layout'] if layout else []) + [pfad, '-'], capture_output=True, text=True).stdout
-    t = unicodedata.normalize('NFC', t).replace('\xa0', ' ').replace('\xad', '')
-    for a, b in (('ﬁ', 'fi'), ('ﬂ', 'fl'), ('ﬀ', 'ff'), ('ﬃ', 'ffi'), ('’', "'"), ('‘', "'")):
-        t = t.replace(a, b)
-    return re.sub(r'[-]', ' ', t)
-
-
-def _w(t):
-    """Wörter gezählt; Bindestriche fallen auf beiden Seiten weg (pdftotext liest «FETA-» am Zeilenende und «KÄSE» als «FETAKÄSE»)"""
-    return collections.Counter(re.findall(MUSTER, unicodedata.normalize('NFC', t).lower().replace('-', '')))
-
-
-def _soll(q):
-    """Alle Wörter, die laut Quelle auf der Karte stehen."""
-    if q['art'] == 'abend':
-        a = q['abend']
-        t = a['tage'][0]
-        teile = [v for k, v in t.items() if k not in ('zu', 'hinweis') and v] + [a['preis'], a['mit'], a['motto'] or a['titel'] or 'Menü']
-        teile += ['Amuse Bouche' if t['amuse'] or t['amuse_z'] else '', 'Apéritif' if t['aperitif'] or t['aperitif_z'] else '', 'Vorspeise' if t['vorspeise'] or t['vorspeise_z'] else '',
-                  'Hauptgang' if t['haupt'] or t['haupt_z'] else '', 'Dessert' if t['dessert'] or t['dessert_z'] else '', 'Absacker' if t['absacker'] or t['absacker_z'] else '']
-        return ' '.join(teile)
-    teile = [x for g in q['gaenge'] for x in (g['gang'], g['teller'], g['drink'])] + q['upgrade'] + [q['preis'], q['mit'], q['motto'] or q['titel'] or 'Menü', q['datum']]
-    return ' '.join(teile)
-
-
-def wortlaut():
-    import satz_bau
+def quelle():
     ok = True
-    for z in KARTEN:
-        q = json.load(open(os.path.join(QD, z + '.json'), encoding='utf-8'))
-        p = druck(z)
-        neu = _w(_text(p))
-        alt = _w(_soll(q))
-        dazu_ok = _w(satz_bau.FUSS + ' Ticket')
-        if q.get('upgrade'):
-            dazu_ok += _w('Upgrade nach Wahl')
-        if q['art'] == 'abend':   # Datum setzt der Satz aus dem Tag («Fr 21. und Sa 22. Februar 2025»), dazu der Satz zum Beispiel
-            dazu_ok += _w('Fr Sa und Januar Februar März April Mai Juni Juli August September Oktober November Dezember 0123456789 2024 2025 2026 2027 '
-                          + ' '.join(str(i) for i in range(1, 32)) + ' Beispiel bitte die Gänge des nächsten Abends eintragen')
-        fehlt, dazu = alt - neu, (neu - alt) - collections.Counter({k: 10 ** 6 for k in dazu_ok})
-        gleich = not fehlt and not dazu
-        ok = ok and gleich
-        print(f'{z}: {sum(alt.values())} Wörter in der Quelle, {sum(neu.values())} im Druck · ' + ('Wortlaut gleich' if gleich else 'ABWEICHUNG'))
-        if not gleich:
-            print('   fehlt im Druck:', ' '.join(sorted(fehlt.elements()))[:400])
-            print('   kommt dazu:    ', ' '.join(sorted(dazu.elements()))[:400])
-    print('\nWortlaut gegen die Quellen:', 'alle Karten stimmen' if ok else 'ABWEICHUNGEN')
-    return ok
-
-
-def website():
-    """Daten von La Carte (Stand) in der Form der Website = KARTEN der Website. Teller: « / » der Karte = « | » der Website (Trennzeichen, satz_bau.rudi)."""
-    import carte, web, karten_lesen
-    karten, _info, _abende, _t = karten_lesen.quellen()
-    ok = True
-    n = lambda t: re.sub(r'\s*[|/]\s*', ' / ', (t or '').strip())
     for z in carte.ZIELE:
-        if z == 'abend':
-            continue
-        s = carte._lies(carte._p('stand', z))
-        ist = web.zeilen(s)
-        k = karten[s['key']]
-        soll_g = [(g, n(t), d) for g, t, d in k['gaenge']]
-        ist_g = [(g, n(t), d) for g, t, d in ist['gaenge']]
-        q = json.load(open(os.path.join(QD, z + '.json'), encoding='utf-8'))
-        gleich = soll_g == ist_g and list(k.get('upgrade') or []) == ist['upgrade'] and ist['preis'] == q['preis']
-        ok = ok and gleich
-        print(f'{z} ({s["key"]}): ' + ('wie die Website' if gleich else f'ANDERS: {ist_g} ≠ {soll_g} oder Preis {ist["preis"]} ≠ {q["preis"]}'))
-    print('\nKarten gegen die Website:', 'gleich' if ok else 'ABWEICHUNGEN')
+        g = carte._lies(carte._p('grundstand', z))
+        ist = collections.Counter(x.strip() for x in carte.texte(g))
+        s = collections.Counter(soll(z))
+        fehlt = s - ist
+        print(f'{z}: {sum(s.values())} Angaben aus der Quelle, ' + ('alle auf der Karte' if not fehlt else f'FEHLEN {dict(list(fehlt.items())[:6])}'))
+        ok = ok and not fehlt
     return ok
 
 
-def schrift():
+def druck():
     ok = True
-    for z in KARTEN:
+    os.makedirs(AUS, exist_ok=True)
+    for z in carte.ZIELE:
         p = os.path.join(AUS, z + '.pdf')
-        if not os.path.exists(p):
-            p = druck(z)
+        b = carte.drucke(z, 'stand', p)
+        v = carte.pdf_gleich_daten(carte._lies(carte._p('stand', z)), p)
         f = subprocess.run(['pdffonts', p], capture_output=True, text=True).stdout
         typ3 = 'Type 3' in f
-        einzeln = re.findall(r'(?:\b\w\b ){4,}', _text(p))   # zerfallene Wörter («H A N D …»)
-        gut = not typ3 and not einzeln
-        ok = ok and gut
-        namen = sorted(set(re.findall(r'^([A-Z]{6}\+\S+)', f, re.M)))
-        print(f'{z}: ' + ('feste Schnitte, ganze Wörter' if gut else f'SCHRIFT: Type 3={typ3}, zerfallen={einzeln[:3]}') + f' · {", ".join(x.split("+")[1] for x in namen)}')
-    print('\nSchriften der PDFs:', 'gut' if ok else 'FEHLER')
+        print(f'{z}: {b.get("seiten")} Seiten, Schriftmass {b.get("mass")}, {v["woerter"]} Wörter, ' + ('PDF = Daten' if not v['fehlt'] else f'FEHLT {list(v["fehlt"])[:4]}') + (', TYPE 3' if typ3 else ', feste Schnitte') + (f', passt nicht: {b["fehler"][:2]}' if b.get('fehler') else ''))
+        ok = ok and not v['fehlt'] and not typ3 and not b.get('fehler')
     return ok
 
 
 if __name__ == '__main__':
-    was = sys.argv[1] if len(sys.argv) > 1 else 'alles'
-    r = {'rund': rund, 'wortlaut': wortlaut, 'website': website, 'schrift': schrift}
-    ergebnis = [r[x]() for x in (r if was == 'alles' else [was])]
-    print('\nGESAMT:', 'GRÜN' if all(ergebnis) else 'ROT')
-    sys.exit(0 if all(ergebnis) else 1)
+    was = (sys.argv[1:] or ['alles'])[0]
+    teile = {'rund': [rund], 'quelle': [quelle], 'druck': [druck], 'alles': [rund, quelle, druck]}[was]
+    gut = all([f() for f in teile])
+    print('GESAMT', 'GRÜN' if gut else 'ROT')
+    sys.exit(0 if gut else 1)

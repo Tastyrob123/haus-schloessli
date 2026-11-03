@@ -1,37 +1,36 @@
 #!/usr/bin/env python3
-"""La Carte · Culinarium Hannover: liest die Menükarten der Abende einmal als Daten ein (28.10.2026, C17).
-Kopie von einlesen.py der Tafel im Schäfli (dort aus Schlössli, Gasterntal, Ruedihus, Doldenhorn).
+"""Das Kartenpult · Wirtschaft am Schlössli: liest die fünf Karten des Hauses einmal als Daten ein (Nachtbau 3.11.2026, C17).
+Kopie von einlesen.py der Tafel im Schäfli, Inhalt aus diesem Haus.
 
-Nichts wird abgetippt. karten_lesen.py liest die Menükarten aus der Website (_daten/quelle/<karte>.json, Wort für Wort gegen
-website/abende_info.py und gegen die gebaute Seite abende.html geprüft), satz_bau.py setzt sie im Kleid des Culinarium nach satz/u-<karte>.html.
-Dieses Skript zerlegt den Satz in einen Baum: Elemente (Tag, Merkmale, Kinder), Texte (das, was das Haus ändert) und feste Teile (Wortmarke).
-Aus diesem Baum setzt satz/satz.js dasselbe HTML Zeichen für Zeichen wieder (python3 _werkzeuge/carte/pruefe.py rund).
-
-«Der nächste Abend» (C08/C24 in der Form des Hauses: Gänge mit Rudis Teller und Momos Drink, Datum, Preis) wird als Abend angelegt, jedes Feld
-wörtlich aus _daten/quelle/abend.json; satz.js setzt daraus das Blatt (A4 hoch wie die anderen Menükarten).
+Nichts wird abgetippt. satz_bau.py setzt die Karten aus den Daten der Website (website/inhalt/karte.json, lunch.json, laestermeile.json,
+wein.json, bankett.json) im Kleid des Hauses nach satz/u-<karte>.html. Dieses Skript zerlegt den Satz in einen Baum: Elemente (Tag, Merkmale,
+Kinder), Texte (das, was das Haus ändert) und feste Teile (Zeichen und Wortmarke). Aus diesem Baum setzt satz/satz.js dasselbe HTML Zeichen
+für Zeichen wieder (python3 _werkzeuge/carte/pruefe.py rund).
 
 Geschrieben wird nur in _werkzeuge/carte/ (_daten/, bilder/z/, bilder/fotos.json).
 
     python3 _werkzeuge/carte/einlesen.py            nur wo noch kein Stand liegt (ein Stand des Hauses wird nie überschrieben)
     python3 _werkzeuge/carte/einlesen.py --grund    nur den Grundstand neu (_daten/grundstand/), für den Rundlauf und «Ursprünglicher Stand»
 """
-import datetime, html, json, os, re, shutil, sys
+import datetime, html, json, os, re, sys
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 _WURZEL = os.path.dirname(os.path.dirname(HIER))
-PROJ = os.path.join(_WURZEL, 'website')   # Culinarium: Website in website/
-QD = os.path.join(HIER, '_daten', 'quelle')
+PROJ = os.path.join(_WURZEL, 'website')
 DATEN = os.environ.get('CARTE_DATEN') or os.path.join(HIER, '_daten')
 sys.path.insert(0, HIER)
 
-# Karten, die La Carte pflegt: Kennung = Satz satz/u-<kennung>.html = Name der PDF (je Abend eine Menükarte, karten_lesen.py)
-KARTEN = {}
-for _f in sorted(os.listdir(QD)):
-    if _f.startswith('abend-') and _f.endswith('.json'):
-        _q = json.load(open(os.path.join(QD, _f), encoding='utf-8'))
-        KARTEN[_q['ziel']] = dict(name=_q['name'], unter=_q['unter'], gruppe=_q['gruppe'], quelle=_q['quelle'], ab=_q['ab'], plakat=_q['plakat'], key=_q['key'])
+_STAND = {n: json.load(open(os.path.join(PROJ, 'inhalt', n + '.json'), encoding='utf-8')).get('stand', '') for n in ('karte', 'lunch', 'laestermeile', 'wein', 'bankett')}
+# Karten, die das Kartenpult pflegt: Kennung = Satz satz/u-<kennung>.html = Name der PDF. Reihenfolge = Reihenfolge in der Seitenleiste.
+KARTEN = {
+    'speisekarte': dict(name='Karte', unter='nach Ländern', gruppe='Restaurant', quelle='website/inhalt/karte.json · ' + _STAND['karte']),
+    'lunch': dict(name='Lunch', unter='am Mittag', gruppe='Restaurant', quelle='website/inhalt/lunch.json · ' + _STAND['lunch']),
+    'laestermeile': dict(name='Lästermeile', unter='an der Bar', gruppe='Lästermeile', quelle='website/inhalt/laestermeile.json · ' + _STAND['laestermeile']),
+    'weinkarte': dict(name='Weinkarte', unter='aus dem Keller', gruppe='Keller', quelle='website/inhalt/wein.json · ' + _STAND['wein']),
+    'bankett': dict(name='Bankett', unter='für Gruppen', gruppe='Banketts', quelle='website/inhalt/bankett.json · ' + _STAND['bankett']),
+}
 LEER_TAG = {'img', 'br', 'hr', 'meta', 'link', 'input', 'wbr', 'col', 'source'}
-A, Z = '', ''          # Platzhalter für feste Teile (Bilder als data:, Zeichen als svg) im Baum
+A, Z = '', ''          # Platzhalter für feste Teile (Zeichen als svg) im Baum
 TOKEN = re.compile(r'<!--.*?-->|<svg\b.*?</svg>|</?([a-zA-Z][\w-]*)((?:[^>"\']|"[^"]*"|\'[^\']*\')*)>', re.S)
 
 
@@ -104,7 +103,7 @@ def lies(kennung):
             raise AssertionError(('zwischen den Seiten steht etwas', kennung, str(x)[:120]))
     fmt = re.search(r'@page\{size:(\d+)mm (\d+)mm', kopf)
     k = KARTEN[kennung]
-    return dict(art='satz', ziel=kennung, name=k['name'], unter=k['unter'], gruppe=k['gruppe'], quelle=k['quelle'], ab=k['ab'], plakat=k['plakat'], key=k['key'], schema=1,
+    return dict(art='satz', ziel=kennung, name=k['name'], unter=k['unter'], gruppe=k['gruppe'], quelle=k['quelle'], schema=1,
                 format=[int(fmt.group(1)), int(fmt.group(2))], kopf=kopf, fuss=fuss, seiten=seiten, teile=T.liste)
 
 
@@ -117,50 +116,37 @@ def _schreib(p, d):
     os.replace(t, p)
 
 
-# Fotos des Hauses für Liste und Kacheln (Bildregister BILD in website/bau.py, ausgeliefert unter website/assets/bild/<schlüssel>-<breite>.webp):
-# je Abend sein Plakat (p_<Beitrags-ID>), ohne Plakat das erste Bild des Abends; «Der nächste Abend» die Tafel der Bar (Schlüssel aus BILD, nicht geraten)
-FOTO_NAECHSTER = 'tafelleer'
-
-
-def foto_von(k):
-    if k.get('plakat'):
-        return 'p_' + k['plakat']
-    return 'ab_%s_0' % k['key'].replace('-', '_')
+# Fotos des Hauses für Liste und Kacheln (Register website/inhalt/bilder.json, ausgeliefert unter /assets/img/<schlüssel>-<breite>.webp):
+# je Karte ein Foto, das zu ihr gehört (Teller von oben, Suppe am Mittag, die Bar, das Weinregal, die Gaststube für Banketts)
+FOTOS = {'speisekarte': 'anguria', 'lunch': 'suppe', 'laestermeile': 'bar', 'weinkarte': 'wein', 'bankett': 'gaststube'}
 
 
 def vorschaubilder():
     """Kleine Bilder für die Liste und die Kacheln (112 × 112 px aus der kleinsten Liefergrösse der Website); fotos.json: Karte → Schlüssel."""
     from PIL import Image
+    reg = json.load(open(os.path.join(PROJ, 'inhalt', 'bilder.json'), encoding='utf-8'))
     ziel = os.path.join(HIER, 'bilder', 'z')
     os.makedirs(ziel, exist_ok=True)
-    fotos = {k: foto_von(v) for k, v in KARTEN.items()}
-    fotos['abend'] = FOTO_NAECHSTER
-    for nm in sorted(set(fotos.values())):
-        q = os.path.join(PROJ, 'assets', 'bild', nm + '-640.webp')
+    for f in os.listdir(ziel):
+        if f.endswith('.webp') and f[:-5] not in FOTOS.values():
+            os.remove(os.path.join(ziel, f))
+    for nm in sorted(set(FOTOS.values())):
+        assert nm in reg, ('Bild nicht im Register', nm)
+        q = os.path.join(PROJ, 'assets', 'img', nm + '-480.webp')
         if not os.path.isfile(q):
             raise SystemExit(f'Bild fehlt: {q}')
         im = Image.open(q).convert('RGB'); w, h = im.size; k = min(w, h)
         im.crop(((w - k) // 2, (h - k) // 2, (w - k) // 2 + k, (h - k) // 2 + k)).resize((112, 112), Image.LANCZOS).save(os.path.join(ziel, nm + '.webp'), 'WEBP', quality=80)
-    _schreib(os.path.join(HIER, 'bilder', 'fotos.json'), fotos)
-    return len(set(fotos.values()))
-
-
-GAENGE = ('amuse', 'aperitif', 'vorspeise', 'haupt', 'dessert', 'absacker')   # Gänge eines Abends (satz.js ABEND, karten_lesen.py GAENGE)
-
-
-def abend():
-    """«Der nächste Abend» (C08/C24 in der Form des Hauses): jedes Feld wörtlich aus _daten/quelle/abend.json (Beispiel, bis das Haus einträgt)."""
-    d = json.load(open(os.path.join(QD, 'abend.json'), encoding='utf-8'))
-    t = d['abend']['tage'][0]
-    assert all(g in t and g + '_z' in t for g in GAENGE), ('Abend hat eine andere Form als erwartet', list(t))
-    return dict(art='abend', ziel='abend', name=d['name'], unter=d['unter'], gruppe=d['gruppe'], quelle=d['quelle'],
-                schema=1, format=[210, 297], abend=d['abend'], seiten=[], teile=[])
+    gross = {}
+    for z, nm in FOTOS.items():   # grösste Liefergrösse bis 1200 px für das Startbild
+        br = sorted(b for b in reg[nm].get('breiten', []) if b <= 1200 and os.path.isfile(os.path.join(PROJ, 'assets', 'img', f'{nm}-{b}.webp')))
+        gross[z] = [nm, br[-1] if br else 800, reg[nm].get('alt', '')]
+    _schreib(os.path.join(HIER, 'bilder', 'fotos.json'), gross)
+    return len(set(FOTOS.values()))
 
 
 def alle():
-    aus = {'abend': abend()}
-    aus.update({k: lies(k) for k in KARTEN})
-    return aus
+    return {k: lies(k) for k in KARTEN}
 
 
 if __name__ == '__main__':
