@@ -6,7 +6,7 @@
 (function () {
   var BASIS = 'haeuser/schloessli/kopf/';
   /* Foto je Ansicht (1200 px, haeuser/schloessli/kopf/, gebaut von bau.py) */
-  var FOTO = { msStart: 'start', msAbend: 'platanen', msMotive: 'bootshafen', msEvents: 'moni', msAbteilungen: 'gaststube', msHinweise: 'schild', msNewsletter: 'abend', msFotos: 'thon', msMarke: 'fliesen', msLivre: 'regal', msMeine: 'bar', msFreigegeben: 'glas', msNeu: 'tortelloni', weg: 'apero', entwuerfe: 'anguria' };
+  var FOTO = { msStart: 'start', msAbend: 'platanen', msMotive: 'bootshafen', msEvents: 'abendschiff', msAbteilungen: 'gaststube', msHinweise: 'schild', msNewsletter: 'abend', msFotos: 'thon', msMarke: 'fliesen', msLivre: 'regal', msMeine: 'bar', msFreigegeben: 'glas', msNeu: 'tortelloni', weg: 'apero', entwuerfe: 'anguria' };
   /* Das Hafenbüro: liegt wie die Hausdruckerei unter _werkzeuge/ (lokal /_werkzeuge/maison/ auf deren Server :9281, online /maison/) */
   var MAISON = location.port === '9287' ? 'http://127.0.0.1:9281/_werkzeuge/maison/' : /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';
   /* R05: die Website des Hauses (lokal auf ihrem Server WO_HAUS.ports.website_lokal, online dieselbe Adresse) */

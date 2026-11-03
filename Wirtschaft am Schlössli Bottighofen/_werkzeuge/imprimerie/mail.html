@@ -14,7 +14,7 @@
 document.write('<link rel="stylesheet" href="haeuser/'+h+'/hell.css?v=6-sl1"><script src="haeuser/'+h+'/buehne.js?v=3-sl1" defer><\/script>');})();</script>
 <script src="/assets/oberflaeche/kleid/schloessli.js"></script>
 <script>/* Namen der Werkzeuge nur aus dem Kleid (WO.name, kleid/schloessli.js): Elemente mit data-wo-name bekommen ihren Namen */
-addEventListener('DOMContentLoaded',function(){var f=function(){if(!window.WO||!WO.name)return;[].forEach.call(document.querySelectorAll('[data-wo-name]'),function(e){var n=WO.name(e.getAttribute('data-wo-name'));if(n)e.textContent=n;});if(window.DS&&DS.NAME)document.title=document.title.replace(/^Die Werkstatt/,DS.NAME());};f();setTimeout(f,400);});</script>
+addEventListener('DOMContentLoaded',function(){var nm=function(k){return (window.WO&&WO.name&&WO.name(k))||(window.WO_HAUS&&WO_HAUS.namen&&WO_HAUS.namen[k])||'';};var f=function(){[].forEach.call(document.querySelectorAll('[data-wo-name]'),function(e){var n=nm(e.getAttribute('data-wo-name'));if(n)e.textContent=n;});var d=nm('druck');if(d)document.title=document.title.replace(/Die Werkstatt/,d);};f();setTimeout(f,400);});</script>
 </head>
 <body class="ml-seite">
 <div class="ml">

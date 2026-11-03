@@ -1672,7 +1672,7 @@ textarea.kopf__name.zwei{font-size:16px;line-height:1.2;padding:3px 10px}
 .stueck--vorlage .stueck__name,.stueck--vorlage .stueck__format,.stueck--vorlage .zl__name{padding-inline:6px}
 #startFrei::placeholder,#startDirekt::placeholder,#kampFrei::placeholder{color:rgba(15,35,66,.85)}
 /* Tor 2 (1000 px): im schmalen Kopf von «Neu erstellen» zeigt «Fünf Entwürfe» nur den Pfeil-Knauf, damit der Platzhalter ganz in das Feld passt (Name bleibt als aria-label) */
-@media (max-width:1100px) and (min-width:701px){[data-st="direkt"]>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}[data-st="direkt"]{padding:0!important;width:52px!important;min-width:52px;flex:none;justify-content:center;gap:0}}
+@media (max-width:1100px) and (min-width:701px){[data-st="direkt"]>span{display:none}[data-st="direkt"]{padding:0!important;width:52px!important;min-width:52px;flex:none;justify-content:center;gap:0}}
 
 /* Tor 1, 31.10.2026 (werkstatt-3110a): Fotos ganz, Pillen mit Luft, keine Trennung in Titeln */
 #fotos .foto img,.lf__foto img{object-fit:contain}

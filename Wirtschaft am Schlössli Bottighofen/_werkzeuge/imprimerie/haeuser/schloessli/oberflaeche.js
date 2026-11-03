@@ -9,7 +9,7 @@
   /* Kopf-Fotos mit 800er-Fassung (kopf/<name>-800.webp) und Breite des Originals: das Foto steht bei 1440 rund 660, bei 1000 rund 385, am Handy rund 265 px breit,
      die 800er reicht dort; ab rund 1700 px Fensterbreite oder bei doppelter Dichte nimmt der Browser das Original (30.10.2026, Oberchef) */
   var B800 = { abend: 900, abendschiff: 1200, anguria: 900, apero: 900, bar: 900, bootshafen: 1200, fliesen: 1200, gaststube: 1200, morgen: 1200, platanen: 900, regal: 1200, saentis: 1200, schild: 900, start: 1200, team: 1200, wein: 901 };
-  var FOTO = { msAbend: 'platanen', msMotive: 'bootshafen', msEvents: 'moni', msAbteilungen: 'gaststube', msHinweise: 'schild', msNewsletter: 'abend', msFotos: 'thon', msMarke: 'fliesen', msLivre: 'regal', msMeine: 'bar', msFreigegeben: 'glas', msNeu: 'tortelloni' };
+  var FOTO = { msAbend: 'platanen', msMotive: 'bootshafen', msEvents: 'abendschiff', msAbteilungen: 'gaststube', msHinweise: 'schild', msNewsletter: 'abend', msFotos: 'thon', msMarke: 'fliesen', msLivre: 'regal', msMeine: 'bar', msFreigegeben: 'glas', msNeu: 'tortelloni' };
   var WEBSITE = location.port === '9287' ? 'http://127.0.0.1:' + ((window.WO_HAUS && WO_HAUS.ports && WO_HAUS.ports.website_lokal) || 8982) + '/' : '/';
   var MARKE = function () { return WO.zeichen() + '<span><b>' + WO.esc(WO.name('druck')) + '</b><small>Drucksachen · ' + WO.esc(WO.haus.name) + '</small></span>'; };
 

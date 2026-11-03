@@ -93,3 +93,25 @@
 
 /* K35 (Tor 30.10.2026): Ziffern 3/4/5 in den runden Wahlknöpfen optisch mittig */
 .pk-zahl button{display:grid;place-items:center;padding:1px 0 0;line-height:1}
+
+/* Schnelle Prüfung Schlössli 3.11.2026: lange Wörter des Hauses (Betriebsferien, Gourmetkreuzfahrt), Daten der kleinen Anlass-Kacheln, ausgewogene Titel, Feldgrund */
+#startWochen>.wo:not(:first-child) .wo__datum{white-space:normal;overflow:visible;text-overflow:clip;letter-spacing:.1em;line-height:1.35;border-radius:10px;width:max-content;max-width:calc(100% - 20px)}
+#startWochen>.wo:not(:first-child) .wo__n b{font-size:clamp(17px,1.45vw,21px);hyphens:auto;-webkit-hyphens:auto}
+#startWochen>.wo:first-child .wo__n b,.ev-raster .wo--breit .wo__n b{font-size:clamp(22px,1.9vw,34px);hyphens:auto;-webkit-hyphens:auto;min-width:0;max-width:100%}
+.wo__n b,.ms-zeile h2,.hk h2,.ms-tafel h1,.start__wahl h1,.handy__text{text-wrap:balance}
+.start__direkt{background-color:#eff2f6}
+.start__direkt textarea{background-color:transparent}
+#start #startGruppen button{text-indent:.12em}
+#start .wo__bild[data-bg]{background-image:linear-gradient(160deg,#1a3b6e,#0b1d3d)}
+#start #startGruppen button,.pk-chips button,.fo-reihe button,#seitenwahl button,.vb__toene button{letter-spacing:.12em!important;text-indent:.12em}
+.ms-kopf a.wo-kn--gold{padding-top:2.6px!important;padding-bottom:0!important}
+#btnPruefen{padding-top:1.8px!important;padding-bottom:0!important}
+#btnSpeichern{padding-top:2.2px!important;padding-bottom:0!important}
+#start h1,#start h2,#start h3,.kd__text h1{text-wrap:balance}
+.wo-sb__h,.mb__tw figcaption,.kd__text h1{text-wrap:balance}
+.ms-feld{background-color:#eff2f6}
+.ms-feld textarea{background-color:transparent}
+@media (max-width:1180px){#startZu>span{display:none}#startZu{width:42px;min-width:42px;padding:0!important;justify-content:center}}
+.ev-raster .wo--breit .wo__n>*{max-width:100%;min-width:0;align-self:stretch}
+#startWochen>.wo:not(:first-child){grid-template-columns:minmax(100px,38%) minmax(0,1fr)}
+#startWochen>.wo:not(:first-child) .wo__n b{font-size:clamp(16px,1.3vw,21px)}

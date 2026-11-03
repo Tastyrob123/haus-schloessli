@@ -68,6 +68,9 @@ def probe(daten):
                 'menuekarte': ('menükarte', 'menuekarte', 'menü', 'lunch'), 'weinempfehlung': ('wein', 'weinempfehlung'), 'postkarte': ('postkarte', 'ansichtskarte'), 'ferien': ('ferien', 'betriebsferien', 'geschlossen'), 'plakat': ('plakat', 'aushang an der wand'), 'flyer': ('flyer',), 'story': ('story',), 'instagram': ('instagram', 'beitrag'),
                 'gutschein': ('gutschein',), 'einladung': ('einladung',), 'aushang': ('aushang',), 'hinweiskarte': ('hinweis',), 'newsletter': ('newsletter', 'e-mail')}
     trifft = lambda w, t: w in t or (len(w) > 6 and (w[:-1] in t or w[:-2] in t))
+    # Schnelle Prüfung 3.11.2026: Wörter, die nur die Art nennen («Aushang»), zählen schon im Art-Bonus, nicht noch einmal im Text (sonst schlägt «Lästermeile · Aushang» die «Betriebsferien»)
+    art_namen = {os.path.basename(f)[:-5] for f in glob.glob(os.path.join(HIER, "haeuser", "schloessli", "vorlagen", "*.json"))}
+    inhalt_woerter = {w for w in woerter if w not in art_namen} or woerter
     dc = False   # keine Sondermarke im Schlössli
     beste = []
     for f in glob.glob(os.path.join(HIER, 'haeuser', 'schloessli', 'vorlagen', '*.json')):
@@ -83,7 +86,7 @@ def probe(daten):
                 continue   # Menükarte eines kommenden Abends: dafür ist kein Menü belegt (Abnahme-Tor 30.10.2026), nie als Beispiel
             t = (v['titel'] + ' ' + json.dumps(v['inhalt'], ensure_ascii=False)).lower()
             menue_bonus = 4 + ((menue_datum(v['inhalt'].get('ueber', '')) or __import__('datetime').date(2000, 1, 1)).toordinal() - 730000) / 1e5 if v['vorlage'] == 'menue' and re.search(r'men[üu]e?karte|\bmen[üu]\b', a_low) and re.search(r'\d{1,2}\.\s+\w+\s+\d{4}', v['inhalt'].get('ueber', '')) else 0   # bei Gleichstand der jüngste vergangene Abend mit vollem Datum (wie website/abende_info.py)   # «Menükarte am Tisch …» ist eine Menükarte, nicht die Karte «Pairing zum Gang» (30.10.2026)
-            beste.append((sum(trifft(w, t) for w in woerter) + art_bonus + menue_bonus + (4 if dc and v.get('ton') == 'dc' else 0) - (4 if not dc and v.get('ton') == 'dc' else 0), d['format'], v, art))
+            beste.append((sum(trifft(w, t) for w in inhalt_woerter) + art_bonus + menue_bonus + (4 if dc and v.get('ton') == 'dc' else 0) - (4 if not dc and v.get('ton') == 'dc' else 0), d['format'], v, art))
     beste.sort(key=lambda x: -x[0])
     if not beste:
         raise ValueError('Keine passende Vorlage')

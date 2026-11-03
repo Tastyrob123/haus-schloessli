@@ -200,7 +200,7 @@ NEWSLETTER = [
 
 # ---------------- Anlässe & Events (haus.json › anlaesse, ferien) ----------------
 ANLAESSE = [
-    {"k": "kreuzfahrt-2026", "t": "Excellence Gourmetkreuzfahrt", "z": "13.–15. November", "von": "2026-11-13", "bis": "2026-11-15", "wo": "stadt",
+    {"k": "kreuzfahrt-2026", "t": "Four-Hands an Bord", "z": "13.–15. November", "von": "2026-11-13", "bis": "2026-11-15", "wo": "stadt",
      "ort": "Excellence Countess · Basel – Strassburg", "satz": "Four-Hands-Dinner mit Dieter Koschina an Bord, Start am Freitag in Basel. Das Restaurant ist über diese drei Tage geschlossen.", "fotos": ["moni", "iberia", "thon"]},
     {"k": "lunch-herbst", "t": "Lunch-Menü am Mittag", "z": "bis 21. Dezember", "von": "2026-10-19", "bis": "2026-12-21", "wo": "haus",
      "ort": "Wirtschaft am Schlössli · am Mittag", "satz": "Drei Gänge am Mittag: Kürbissuppe, Risi e bisi, Joghurt Panna Cotta.", "fotos": ["suppe", "tortelloni", "dessert"]},

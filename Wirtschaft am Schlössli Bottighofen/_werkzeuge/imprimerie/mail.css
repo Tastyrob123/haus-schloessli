@@ -299,3 +299,9 @@
 .ml-fotos__raster img{aspect-ratio:520/402}
 /* Tor 2, F2 (K35): «Eintrag hinzufügen» und «Alle» in Safari optisch mittig, wie die Chips */
 @supports (font:-apple-system-body){#mlFotoGruppen button,.ml-eintraege .kn{text-indent:.06em}}
+
+/* Schnelle Prüfung 3.11.2026 (Mail-Seite) */
+.ml-zurueck{display:flex;justify-content:center;text-align:center}
+.ml-einfuegen{text-align:center}
+.ml-meine__e b{white-space:normal;overflow:visible;text-overflow:clip;text-wrap:balance}
+.ml-kapitel h1,.wo-sb__h,.mb__tw figcaption{text-wrap:balance}

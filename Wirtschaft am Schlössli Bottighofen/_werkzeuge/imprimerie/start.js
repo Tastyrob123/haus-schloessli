@@ -40,7 +40,7 @@
   const IN_GRUPPE = new Set(Object.values(GRUPPE).flat());
   const ARTEN_SICHT = ARTEN.filter(a => !IN_GRUPPE.has(a.key));
   const mitGruppe = a => GRUPPE[a.key] ? Object.assign({}, a, { name: GRUPPE_NAME[a.key], gruppe: GRUPPE[a.key], satz: a.satz + '. Dazu ' + GRUPPE[a.key].map(g => ARTEN.find(x => x.key === g).name).join(' und ') + '.' }) : a;
-  const zus = t => esc(t).replace(/ (\S+)$/, '\u00a0$1');   // K7 (Tor 2, 30.10.2026): nie ein Wort allein in der letzten Zeile
+  const zus = t => { const s = esc(t); return (/ (\S+)$/.exec(s) || [''])[0].length + ((/(\S+) \S+$/.exec(s) || ['', ''])[1].length) > 18 ? s : s.replace(/ (\S+)$/, '\u00a0$1'); };   // K7 (Tor 2, 30.10.2026): nie ein Wort allein in der letzten Zeile; lange Wortpaare (Excellence Gourmetkreuzfahrt) dürfen umbrechen, text-wrap:balance hält sie zusammen
   const inhalt = (art, v) => (INHALT[art.key] && INHALT[art.key][v]) || DS.BEISPIEL[v];
 
   let wahl = null, fk = null;
@@ -655,7 +655,7 @@
   function kurzPlatz(t) {
     if (!t) return; t.dataset.lang = t.dataset.lang || t.placeholder;
     const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')); c.font = `${g.fontWeight} ${g.fontSize} ${g.fontFamily}`;
-    t.placeholder = [t.dataset.lang, 'Etwa: ein Plakat', 'Beschreiben …'].find(x => c.measureText(x).width <= t.clientWidth - 4) || 'Beschreiben …';   // Tor 2: nie zweizeilig
+    t.placeholder = [t.dataset.lang, 'Etwa: ein Plakat', 'Beschreiben …'].find(x => c.measureText(x).width * 1.1 + 8 <= t.clientWidth) || 'Beschreiben …';   // Tor 2: nie zweizeilig (Rand für Sperrung und Rundung)
   }
   ['startFrei', 'startDirekt'].forEach(id => { const t = document.getElementById(id); if (!t) return; kurzPlatz(t); if (window.ResizeObserver) new ResizeObserver(() => kurzPlatz(t)).observe(t); if (document.fonts) document.fonts.ready.then(() => kurzPlatz(t)); });
   /* Schnell anlegen: Arten mit echten Proportionen */
