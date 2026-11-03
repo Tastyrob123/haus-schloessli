@@ -124,3 +124,9 @@
 .stueck__nimm{visibility:hidden;transition:opacity .4s,transform .5s var(--e1),visibility 0s .4s}
 .stueck:hover .stueck__nimm,.stueck:focus-visible .stueck__nimm{visibility:visible;transition:opacity .4s,transform .5s var(--e1),visibility 0s}
 @media (max-width:600px){#startWochen>.wo:not(:first-child){display:block}#startWochen>.wo:not(:first-child) .wo__k{aspect-ratio:16/9}#startWochen>.wo:not(:first-child) .wo__n{margin:14px 8px 0 10px;padding-right:0}#startWochen>.wo:not(:first-child) .wo__n b{font-size:21px}}
+/* «Übernehmen» erscheint erst beim Zeigen; der Platz bleibt reserviert (::after), damit nichts springt */
+.stueck--vorlage{position:relative}
+.stueck--vorlage::after{content:"";display:block;height:35px}
+.stueck--vorlage .stueck__nimm{display:none;position:absolute;left:50%;bottom:0;margin:0;transform:translate(-50%,4px)}
+.stueck--vorlage:hover .stueck__nimm,.stueck--vorlage:focus-visible .stueck__nimm{display:inline-block;visibility:visible;animation:nimmAuf .45s var(--e1) both}
+@keyframes nimmAuf{from{opacity:0;transform:translate(-50%,4px)}to{opacity:1;transform:translate(-50%,0)}}

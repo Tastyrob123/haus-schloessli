@@ -307,3 +307,4 @@
 .ml-kapitel h1,.wo-sb__h,.mb__tw figcaption{text-wrap:balance}
 .ml-links h3{text-align:center}
 @media (max-width:700px){.ml-pruef__liste{left:0;right:auto;width:min(380px,calc(100vw - 32px))}}
+.ml-einfuegen [data-neu=knopf]{--h:2.7px}
