@@ -26,6 +26,8 @@ def _j(p, leer):
 
 def zahlen(z):
     p = _j(os.path.join(W, 'papier_plan.json'), {'druck': [], 'etiketten': []})
+    mehr = _j(os.path.join(W, 'papier_mehr.json'), {'druck': []}).get('druck', [])   # die Drucksachen aus der Hausdruckerei (Werkbank Papier), wie im Kapitel VI gezählt
+    p = dict(p, druck=list(p.get('druck', [])) + list(mehr))
     u = _j(os.path.join(W, 'unterlagen.json'), [])
     pk = len(_j(os.path.join(W, 'postkarten_plan.json'), {'karten': []}).get('karten', []))
     feed = len(_j(os.path.join(ROOT, 'feed', 'feed.json'), {'posts': []}).get('posts', []))
@@ -48,7 +50,7 @@ def inhalt(z):
            f'Ihre Karten neu gesetzt{", " + papier if papier else ""}{" und " + post if post else ""}. Alles davon können Sie hier anklicken.',
            'Gebaut ist es. Was fehlt, liegt bei Ihnen: die Zugänge zu Domain und Mail, der Entscheid zu den Fotos und das Gegenlesen von Karten und Preisen.',
            f'Den Betrag für den Bau nennen Sie. Danach kümmere ich mich um Seite, Werkzeuge und KI, für CHF {BETREUUNG_CHF} im Monat, monatlich kündbar.']
-    steht = [f'{gross(wort(Z["gaeste_seiten"]))} Seiten für Ihre Gäste und das Rechtliche', 'Die Karte nach Ländern, Lunch, Lästermeile, Wein und Bankett, je als PDF',
+    steht = [f'{gross(wort(Z["seiten"]))} Seiten: {wort(Z["gaeste_seiten"])} für Ihre Gäste, dazu das Rechtliche' if Z['seiten'] != Z['gaeste_seiten'] else f'{gross(wort(Z["seiten"]))} Seiten für Ihre Gäste', 'Die Karte nach Ländern, Lunch, Lästermeile, Wein und Bankett, je als PDF',
              'Reservation und Gutschein auf jeder Seite', gross(papier) if papier else 'Drucksachen für Tisch, Tür und Post',
              gross(post) if post else 'Mails an Ihre Gäste', 'Alle Dateien in einem Ordner, dazu Ihre Zeiger und die Wortmarke']
     import rh_werkzeuge as WK
@@ -63,7 +65,7 @@ AUFBAU = ['Fertige Seiten, kein Programm dazwischen: schnell und robust.', 'Jede
 DATEN = ['Keine Cookies, kein Verfolgen.', 'Der Chat antwortet nur aus Ihren Seiten und Karten.', 'Keine Karten- oder Zahlungsdaten im Chat.',
          'Ein Passwort je Person, ab dem Umzug.', 'Für Suchmaschinen gesperrt, bis zum Umzug.']
 WEITER = [   # «So geht's weiter» (Robert 29.10.2026 statt «Woche für Woche»), Schritte aus dem alten Schlössli-Stand, ohne erfundene Daten
-    ('Gespräch und Zugänge', 'Wir gehen den Entwurf mit Ihnen und Monika Huber durch. Sie geben mir die Zugänge zu Domain und Mail und die Wege zu gastronovi und zenchef.'),
+    ('Gespräch und Zugänge', 'Wir gehen den Entwurf gemeinsam mit Ihrem Team durch. Sie geben mir die Zugänge zu Domain und Mail und die Wege zu gastronovi und zenchef.'),
     ('Lesen und berichtigen', 'Küche und Service lesen Karten, Preise und Seiten gegen. Jede Korrektur kommt am selben Tag.'),
     ('Fotos und Anbindungen', 'Sie entscheiden über die Fotos. Mailversand, Chat und jedes Werkzeug bekommen ihren Zugang.'),
     ('Eine Stunde je Werkzeug', 'Ihr Team lernt jedes Werkzeug in einer Stunde kennen. Dazu kommen Rechtstexte, Weiterleitungen und der Eintrag bei Google.'),

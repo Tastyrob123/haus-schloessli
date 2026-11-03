@@ -429,7 +429,7 @@ def mit_vorschau(t, ordner):
             except Exception:
                 return m.group(0)
         return m.group(1) + f'<span class="dt-b"><img src="_vorschau/{n}.webp" alt="" loading="lazy" decoding="async"></span>'
-    t = re.sub(r'(<li[^>]*><a href="([^"]+)"[^>]*>)(?!<span class="dt-b">)', eins, t)   # Gestaltung 28.10.2026: nur einmal; vorher kam bei jedem Bau ein weiteres Bild dazu (13 gleiche Vorschauen je Datei)
+    t = re.sub(r'(<li[^>]*><a href="([^"]+)"[^>]*>)(?!<span class="(?:dt-b|vs(?: [^"]*)?)">)', eins, t)   # Gestaltung 28.10.2026: nur einmal; vorher kam bei jedem Bau ein weiteres Bild dazu (13 gleiche Vorschauen je Datei)   # 3.11.2026: Einträge mit eigenem Bild der Dateien-Seite (.vs, Werkbank Feed) bekommen kein zweites
     if 'id="sb-vorschau"' not in t:
         t = t.replace('</head>', VS_CSS + '</head>', 1)
     else:

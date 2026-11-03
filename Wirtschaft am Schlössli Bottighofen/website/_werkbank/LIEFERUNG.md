@@ -27,6 +27,13 @@ Kopiert, umgekleidet, Hauswerte eingetragen: Aufbau, Wege und Prüf-Nachbauten d
 - PDF «Ein Vorschlag.»: nur feste TrueType-Schnitte (kein Type 3), kein ß.
 - Suchlauf aus dem gemeinsamen Auftrag über `werkbank/`, `befund/`: keine sichtbaren Treffer (nur Herkunftsvermerke in Kommentaren).
 
+## Nachtrag 3.11. abends (nach dem Neustart des Rechners)
+
+- Bildschirme der sieben Werkzeuge neu aufgenommen (20:30 UTC, alle sieben im Kleid des Schlössli, Hausdruckerei mit 89 Vorlagen), Kern neu gebaut.
+- Letzter Bauschritt setzt den Rücksprung jetzt in der Kit-Fassung (`_Werkbank-Kit/ruecksprung.py`, mit Merkpunkt); die ältere Fassung in `_werkbank/ruecksprung.py` überschrieb sie.
+- Glanzknopf der Leiste («Alles auf einen Blick») in Stuhlblau statt im Grau der Vorlage (`nur_bewegung.py`).
+- Angebot: Drucksachen gezählt wie im Kapitel VI (36: vier eigene und 32 aus der Hausdruckerei, `papier_mehr.json`), «Zwölf Seiten: neun für Ihre Gäste, dazu das Rechtliche», «So geht's weiter» ohne Einzelnamen.
+
 ## Offen, mit Grund
 
-- Bildschirme der Werkzeuge: Stand vom 3.11. abends; neu aufnehmen, sobald alle Werkzeug-Agenten fertig melden (`node _werkbank/sb_werkzeuge.js`, dann `bash bau_alles.sh --ohne-aufnahmen --nur-kern`).
+- Nichts im Kern. Stand der Prüfläufe: Meldung an den Oberchef.
