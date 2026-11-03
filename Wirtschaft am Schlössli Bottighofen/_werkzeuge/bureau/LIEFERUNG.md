@@ -21,7 +21,7 @@ Nachtbau 3.11.2026, Agent `schloessli-bureau`. Aufbau und Funktionen aus dem Sch
 
 ## Wie geprüft
 
-- Schnelle Prüfung `tor-schnell.js … --nur schaufenster` und `--nur schaufenster-anleitung` (Chromium, 1440/1280/1000/390), Ergebnis siehe Schlussmeldung an den Oberchef.
+- Schnelle Prüfung (Chromium, 1440/1280/1000/390, 3.11.2026 19:54): `schaufenster` 40 Zustände (Stichprobe 390: 63) **0 Funde**, `schaufenster-anleitung` 21 Zustände (390: 41) **0 Funde**, nichts «nicht erreicht». Sechs Runden; behoben u. a. Aufgaben-Raster (3 × 3, 901–1179 px quer), Bildtitel im Fenster «Foto tauschen», lange Felder (Google-Titel, Instagram, Bildbeschreibung) als mitwachsendes Feld, Kanten, Einzelwörter in Titeln, Antworten ohne Stand (Prüflauf fängt Schreibwege ab).
 - Bildschirme 1440 und 390 mit dem Auge (Übersicht, Termine, Bereich, Angaben, Google, Entwurf, Verlauf, Anlässe, Team, Prüfseite, Anleitung).
 - `termine.fuelle`: ohne Änderung Seite unverändert; mit Änderung `data-zu` und Ferien-Zeile neu; falsche Eingaben abgewiesen.
 - Suchlauf aus dem gemeinsamen Auftrag: Treffer nur in Herkunftsvermerken der Code-Kommentare.
