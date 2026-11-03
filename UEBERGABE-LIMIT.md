@@ -26,7 +26,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 Agenten starten (Agent-Werkzeug, `model: "opus"`), je Agent: «Lies `Wirtschaft am Schlössli Bottighofen/_werkzeuge/AUFTRAG-GEMEINSAM.md`, dein Revier ist …».
 
 ## Prüfstand
-Noch kein Lauf.
+- 17:46–17:54 UTC Probelauf `schnell.yml` (workflow_dispatch, nur=tresen, Zweig `claude/…`): Ablauf läuft durch, Server 9281–9287 starten auf dem Runner; 9288 (Werkbank) antwortet 404, weil `website/_werkbank/werkbank/index.html` noch nicht eingecheckt ist (gewollt, bis Schlössli-Inhalt da ist). Tor darum noch 0 Zustände. Tafel: `ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-teil/`.
+- Agenten gestartet 17:46 UTC (10, Opus): maison+oberflaeche, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed.
 
 ## Stolpersteine
 - `rsync` fehlt im Container (Kopie mit `python3 -I <scratchpad>/kopieren.py`).
