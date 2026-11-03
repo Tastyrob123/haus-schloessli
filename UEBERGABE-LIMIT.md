@@ -20,6 +20,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 
 - 18:40 UTC: **Werkbank Feed/Mails/Material fertig** (48 Beiträge, 10 Mails, 207 Dateien; Commits d50ee08/60d41e4). **Kartenpult fertig** (fünf Karten, 0 Funde, Commit fc3fc9e). Kleid: WO_ZEILEN trennt nur noch an gewöhnlichen Leerzeichen.
 
+- 18:55 UTC: **Markenbuch fertig** (47 Fotos, Dateien, Hausregeln; Commits 279fb30/c07d1db), **Reservationsbuch fertig** (b145e0e), **Besucherliste fertig** (a10c07c); Hafenbüro WebKit-Fund (Eck-Knöpfe text-mitte) behoben (a45fb13). Hinweis: `reception/online/schluessel.txt` (Culinarium-Token, steht auch im öffentlichen Culinarium-Repo) war im Commit 2eee208 eingecheckt; jetzt gelöscht, in der Geschichte noch vorhanden – Robert entscheidet.
+
 ## Was offen ist (Reihenfolge)
 1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
 2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.
