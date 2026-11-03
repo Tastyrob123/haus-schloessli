@@ -40,6 +40,8 @@ Agenten starten (Agent-Werkzeug, `model: "opus"`), je Agent: «Lies `Wirtschaft 
 - Agenten gestartet 17:46 UTC (10, Opus): maison+oberflaeche, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed.
 
 ## Stolpersteine
+- **Cloud-Prüfung und Pushes:** `schnell.yml` hatte eine Gruppe je Zweig; GitHub bricht ältere wartende Läufe ab, sobald ein neuer Push kommt (auch ohne `[schnell`). So fiel die Sammelprüfung 19:02 aus. Seit 20:05 UTC: Gruppe je Lauf, Teilprüfungen unter `ergebnis/laeufe/<zweig>-teil-<laufnummer>/`, Ablegen mit Wettlauf-Schutz. Pushes gehen Commit für Commit (`scratchpad/push.sh`-Logik: `git push origin <sha>:refs/heads/<zweig>`), weil der Proxy grosse Pakete kappt.
+- Agenten schreiben teils «Co-Authored-By: Claude Opus 5.5» in Commit-Nachrichten (Modellname); bereits gepusht, nicht umgeschrieben.
 - `rsync` fehlt im Container (Kopie mit `python3 -I <scratchpad>/kopieren.py`).
 - Playwright-Download ist gesperrt; der vorinstallierte Chromium 1243 ist als 1234 verlinkt (`/opt/pw-browsers`).
 - Agenten: keine Heredocs / `python3 -` in der Shell (Freigabe-Abfrage), Skripte als Datei anlegen.
