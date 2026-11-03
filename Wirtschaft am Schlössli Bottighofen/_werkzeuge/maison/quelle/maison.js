@@ -203,7 +203,7 @@
     var liste = Array.isArray(l) ? l : Array.isArray(l.vorlagen) ? l.vorlagen : null; if (!liste || !liste.length) throw new Error('leer');
     var z = 0, arten = {}, gruppiert = false; liste.forEach(function (x) { z += ganz(x && x.zahl) || 1; var g = x && (x.gruppe || x.art); if (g) arten[String(g)] = 1; if (x && x.gruppe) gruppiert = true; });   /* Arten nach «gruppe» (Werkstatt, 30.10.2026), sonst nach «art» */
     var a = Object.keys(arten).length;
-    var text = function (n) { return z + '\u00a0Vorlagen' + (n ? ' in ' + n + (n === 1 ? '\u00a0Art' : '\u00a0Arten') : ''); };
+    var text = function (n) { return z + '\u00a0Vorlagen' + (n ? ', ' + n + (n === 1 ? '\u00a0Art' : '\u00a0Arten') : ''); };
     setze('imprimerie-kurz', text(a));
     /* 30.10.2026 (Tor, Oberchef): die Zahl der Arten wie in der Ansicht der Hausdruckerei. Sie legt kleine Arten zu Gruppen zusammen (GRUPPE in start.js);
        die Zentrale liest Arten und Gruppen dort mit, damit die Zahl nie von der Hausdruckerei abweicht. */
@@ -237,7 +237,7 @@
   hole('livre').then(function (d) {
     var s = d.stand || {}, f = ganz(s.fotos), da = ganz(s.dateien), ki = ganz(s.ki), ue = ganz(s.ue);
     if (!f && !da) throw new Error('leer');
-    setze('livre-kurz', f + '\u00a0Fotos · ' + da + '\u00a0Dateien');
+    setze('livre-kurz', f + '\u00a0Fotos, ' + da + '\u00a0Dateien');
     var dazu = [ki ? ki + ' mit KI erzeugt' : '', ue ? ue + ' nachgeschärft' : ''].filter(Boolean);
     setze('livre', f + ' Fotos in fertigen Grössen' + (dazu.length ? ', davon ' + dazu.join(' und ') + ', alle gekennzeichnet' : '') + '. ' + da + ' Dateien für Agenturen und Druckereien.');
   }).catch(function () { setze('livre-kurz', grund('livre-kurz')); setze('livre', '&nbsp;'); });

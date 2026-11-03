@@ -399,3 +399,7 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 @media (max-width:800px){.m-f5__zeile>.hz-z{display:block;flex-basis:100%;margin-top:6px}.m-f5__zeile>.rw-pkt{display:none}}
 /* Eck-Knöpfe der Leiste (46 px): Schrift optisch mittig (gemessen, Regel text-mitte) */
 .m-oben__ecke.knopf{padding-top:2.5px}
+/* Fensterleiste der Bildschirme am Handy: «Werkzeug · Bereich» passt ganz hinein (Tor 390: Reservationsbuch · Chat ausprobieren) */
+@media (max-width:700px){.m-schirm__leiste{padding:0 10px}.m-schirm__leiste span{font-size:8.5px;letter-spacing:.04em}}
+@media (max-width:800px){.m-f5 .rw-kopf__bsp{display:block}.m-f5 .rw-kopf__bsp .rw-pkt{display:none}}
+.m-saal__satz{text-wrap:balance}

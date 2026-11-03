@@ -657,7 +657,12 @@ def rundgang():
   }};'''
     s = s[:a] + gang + s[b:]
     s = s.replace("'rundgang-bg-'", f"'rundgang-{KURZNAME}-'")
-    s = s.replace('font:600 26px/1.1 "Barlow Semi","Arial Narrow",sans-serif', 'font:400 21px/1.2 "Open Sans",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase')
+    # Titel der Karte wie die Titel des Hauses: Open Sans 400 in Versalien gesperrt (die Vorlage setzt danach letter-spacing:0 / text-transform:none)
+    s = s.replace('.rdg-karte h3{margin:12px 0 6px;font:600 26px/1.1 "Barlow Semi","Arial Narrow",sans-serif;color:#2c3136;letter-spacing:0}',
+                  '.rdg-karte h3{margin:12px 0 6px;font:400 19px/1.25 "Open Sans",Arial,sans-serif;color:#2c3136;letter-spacing:.08em;text-transform:uppercase}')
+    s = s.replace('.rdg-karte h3{font:600 26px/1.1 "Barlow Semi","Arial Narrow",sans-serif!important;letter-spacing:0!important;text-transform:none!important}',
+                  '.rdg-karte h3{font:400 19px/1.25 "Open Sans",Arial,sans-serif!important;letter-spacing:.08em!important;text-transform:uppercase!important}')
+    s = s.replace('font:600 26px/1.1 "Barlow Semi","Arial Narrow",sans-serif','font:400 21px/1.2 "Open Sans",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase')
     s = s.replace('font:600 18px/1 "Barlow Semi","Arial Narrow",sans-serif', 'font:400 15px/1.1 "Open Sans",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase')
     s = s.replace('"Barlow Semi","Arial Narrow",sans-serif', '"Open Sans",Arial,sans-serif')
     for alt_, neu in (('#2c3136', '#0A2552'), ('#485056', '#113d88'), ('#1d2224', '#0b1d3d'), ('#7c8386', '#0F3678'), ('#e9ecec', '#F3F6F9'),

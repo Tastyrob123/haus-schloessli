@@ -16,8 +16,8 @@
   ["zurueck", "Speichern und zeigen", "«Speichern» legt den Entwurf ab, «Veröffentlichen» setzt die PDF neu. Unter «Frühere Fassungen» liegt jede frühere Karte bereit."]
  ],
  "imprimerie": [
-  ["satz", "Sagen, was Sie brauchen", "In einem Satz beschreiben, was gebraucht wird: ein Aushang zu den Ferien, eine Einladung zum Bankett, eine Tischkarte. Daraus entstehen Vorschläge im Stil des Hauses."],
-  ["fuenf", "Einen Vorschlag wählen", "Den passenden mit «Diesen bearbeiten» öffnen und im Editor fertig machen: Texte, Fotos des Hauses, Format."],
+  ["satz", "Sagen, was Sie brauchen", "Oben in einem Satz beschreiben, was gebraucht wird, etwa ein Aushang zu den Ferien oder eine Einladung zum Bankett, und «Fünf Entwürfe» drücken. Es entstehen Vorschläge im Stil des Hauses."],
+  ["fuenf", "Einen Vorschlag wählen", "Unter «Arten und Vorlagen» die passende Vorlage öffnen und im Editor fertig machen: Texte, Fotos des Hauses, Format."],
   ["druck", "Drucken", "«Druckfertig speichern» legt das Blatt als PDF für die Druckerei ab, dazu Bilder für Beitrag und Story."]
  ]
 }

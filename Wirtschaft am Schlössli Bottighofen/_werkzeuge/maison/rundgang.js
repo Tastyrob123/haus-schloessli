@@ -44,7 +44,7 @@
     '.rdg-karte{transform:translate3d(var(--rx,0),var(--ry,0),0)}' +
     '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;color:#113d88}' +
     '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#C5D2E1,rgba(162,182,207,0))}' +
-    '.rdg-karte h3{margin:12px 0 6px;font:400 21px/1.2 "Open Sans",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#0A2552;letter-spacing:0}' +
+    '.rdg-karte h3{margin:12px 0 6px;font:400 19px/1.25 "Open Sans",Arial,sans-serif;color:#0A2552;letter-spacing:.08em;text-transform:uppercase}' +
     '.rdg-karte p{margin:0;color:rgba(4,16,35,.78)}' +
     '.rdg-fuss{display:flex;align-items:center;gap:14px;margin-top:20px}' +
     '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(4,16,35,.14)}.rdg-karte .rdg-weg b.da{background:#A2B6CF}' +
@@ -61,7 +61,7 @@
     /* Werkzeug-Stile (La Carte vergrössert Knöpfe und Schrift) dürfen die Karte nicht verändern */
     '.rdg-karte,.rdg-karte *{box-sizing:border-box!important}' +
     '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important}' +
-    '.rdg-karte h3{font:400 21px/1.2 "Open Sans",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase!important;letter-spacing:0!important;text-transform:none!important}' +
+    '.rdg-karte h3{font:400 19px/1.25 "Open Sans",Arial,sans-serif!important;letter-spacing:.08em!important;text-transform:uppercase!important}' +
     '.rdg-karte .rdg-fuss{flex-wrap:nowrap!important}' +
     '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 10px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
     '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#113d88!important}' +
