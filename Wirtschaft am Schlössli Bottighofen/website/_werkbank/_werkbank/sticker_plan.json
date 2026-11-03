@@ -1,0 +1,329 @@
+{
+ "etiketten": [
+  {
+   "id": "s01",
+   "b": 46,
+   "h": 46,
+   "name": "Die Zeiger",
+   "satz": "Rund, 46 mm. Das Zeichen des Hauses im Stuhlblau.",
+   "form": "M23.0 0A23.0 23.0 0 1 1 22.99 0Z"
+  },
+  {
+   "id": "s02",
+   "b": 40,
+   "h": 40,
+   "name": "Die Zeiger auf Papier",
+   "satz": "Rund, 40 mm.",
+   "form": "M20.0 0A20.0 20.0 0 1 1 19.99 0Z"
+  },
+  {
+   "id": "s03",
+   "b": 40,
+   "h": 40,
+   "name": "Die Zeiger im Seehimmel",
+   "satz": "Rund, 40 mm.",
+   "form": "M20.0 0A20.0 20.0 0 1 1 19.99 0Z"
+  },
+  {
+   "id": "s04",
+   "b": 110,
+   "h": 20,
+   "name": "Die Wortmarke",
+   "satz": "Kapsel, 110 mm. WIRTSCHAFT AM SCHLÖSSLI auf der Nacht über dem See.",
+   "form": "M10.0 0H100.0A10.0 10.0 0 0 1 110 10.0V10.0A10.0 10.0 0 0 1 100.0 20H10.0A10.0 10.0 0 0 1 0 10.0V10.0A10.0 10.0 0 0 1 10.0 0Z"
+  },
+  {
+   "id": "s05",
+   "b": 110,
+   "h": 20,
+   "name": "Die Wortmarke auf Papier",
+   "satz": "Kapsel, 110 mm.",
+   "form": "M10.0 0H100.0A10.0 10.0 0 0 1 110 10.0V10.0A10.0 10.0 0 0 1 100.0 20H10.0A10.0 10.0 0 0 1 0 10.0V10.0A10.0 10.0 0 0 1 10.0 0Z"
+  },
+  {
+   "id": "s06",
+   "b": 56,
+   "h": 56,
+   "name": "Lästermeile",
+   "satz": "Rund, 56 mm. Der Name der Bar, geteilt wie auf der Startseite.",
+   "form": "M28.0 0A28.0 28.0 0 1 1 27.99 0Z"
+  },
+  {
+   "id": "s07",
+   "b": 96,
+   "h": 24,
+   "name": "Tapas durchgehend",
+   "satz": "Kapsel, 96 mm. Die erste Spalte der Karte der Lästermeile.",
+   "form": "M12.0 0H84.0A12.0 12.0 0 0 1 96 12.0V12.0A12.0 12.0 0 0 1 84.0 24H12.0A12.0 12.0 0 0 1 0 12.0V12.0A12.0 12.0 0 0 1 12.0 0Z"
+  },
+  {
+   "id": "s08",
+   "b": 50,
+   "h": 50,
+   "name": "Zur Stärkung & Süsses",
+   "satz": "Rund, 50 mm. Die zweite Spalte der Karte.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s09",
+   "b": 54,
+   "h": 54,
+   "name": "Den ganzen Tag",
+   "satz": "Eckig, 54 mm. Aus dem Satz zu den Zeiten.",
+   "form": "M2.6 0H51.4A2.6 2.6 0 0 1 54 2.6V51.4A2.6 2.6 0 0 1 51.4 54H2.6A2.6 2.6 0 0 1 0 51.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s10",
+   "b": 50,
+   "h": 50,
+   "name": "Pimientos De Padrón",
+   "satz": "Rund, 50 mm. Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s11",
+   "b": 50,
+   "h": 50,
+   "name": "Patatine Fritte",
+   "satz": "Rund, 50 mm. Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s12",
+   "b": 50,
+   "h": 50,
+   "name": "Croquetas",
+   "satz": "Rund, 50 mm. Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s13",
+   "b": 50,
+   "h": 50,
+   "name": "Kalamata Oliven",
+   "satz": "Rund, 50 mm. Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s14",
+   "b": 52,
+   "h": 52,
+   "name": "Direkt im Hafen",
+   "satz": "Rund, 52 mm. Aus Ihrem Satz zur Lage.",
+   "form": "M26.0 0A26.0 26.0 0 1 1 25.99 0Z"
+  },
+  {
+   "id": "s15",
+   "b": 112,
+   "h": 22,
+   "name": "Mit Blick aufs Wasser und die Alpen",
+   "satz": "Kapsel, 112 mm. Der zweite Teil Ihres Satzes zur Lage.",
+   "form": "M11.0 0H101.0A11.0 11.0 0 0 1 112 11.0V11.0A11.0 11.0 0 0 1 101.0 22H11.0A11.0 11.0 0 0 1 0 11.0V11.0A11.0 11.0 0 0 1 11.0 0Z"
+  },
+  {
+   "id": "s16",
+   "b": 62,
+   "h": 46,
+   "name": "Die schönste Terrasse",
+   "satz": "Eckig, 62 × 46 mm. Der Satz von Christian Kuchler.",
+   "form": "M2.6 0H59.4A2.6 2.6 0 0 1 62 2.6V43.4A2.6 2.6 0 0 1 59.4 46H2.6A2.6 2.6 0 0 1 0 43.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s17",
+   "b": 44,
+   "h": 44,
+   "name": "Bottighofen",
+   "satz": "Rund, 44 mm. Der Ort am See.",
+   "form": "M22.0 0A22.0 22.0 0 1 1 21.99 0Z"
+  },
+  {
+   "id": "s18",
+   "b": 90,
+   "h": 20,
+   "name": "By Christian Kuchler",
+   "satz": "Kapsel, 90 mm. Die Zeile des Logos.",
+   "form": "M10.0 0H80.0A10.0 10.0 0 0 1 90 10.0V10.0A10.0 10.0 0 0 1 80.0 20H10.0A10.0 10.0 0 0 1 0 10.0V10.0A10.0 10.0 0 0 1 10.0 0Z"
+  },
+  {
+   "id": "s19",
+   "b": 54,
+   "h": 54,
+   "name": "Willkommen",
+   "satz": "Eckig, 54 mm. Ihr Satz zur Begrüssung auf der Startseite.",
+   "form": "M2.6 0H51.4A2.6 2.6 0 0 1 54 2.6V51.4A2.6 2.6 0 0 1 51.4 54H2.6A2.6 2.6 0 0 1 0 51.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s20",
+   "b": 60,
+   "h": 60,
+   "name": "Foto: die Terrasse am Mittag",
+   "satz": "Eckig, 60 mm. Die blauen Stühle, dahinter der See und die Alpen.",
+   "form": "M2.6 0H57.4A2.6 2.6 0 0 1 60 2.6V57.4A2.6 2.6 0 0 1 57.4 60H2.6A2.6 2.6 0 0 1 0 57.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s21",
+   "b": 60,
+   "h": 60,
+   "name": "Foto: unter den Platanen",
+   "satz": "Eckig, 60 mm. Gedeckte Tische unter den Platanen.",
+   "form": "M2.6 0H57.4A2.6 2.6 0 0 1 60 2.6V57.4A2.6 2.6 0 0 1 57.4 60H2.6A2.6 2.6 0 0 1 0 57.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s22",
+   "b": 50,
+   "h": 50,
+   "name": "Foto: Tortelloni",
+   "satz": "Rund, 50 mm. Tortelloni mit Tomate, Burrata und Taggiasca-Olive.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s23",
+   "b": 60,
+   "h": 60,
+   "name": "Foto: blaue Stunde",
+   "satz": "Eckig, 60 mm. Ein Spritz und ein Bier auf dem blauen Tisch.",
+   "form": "M2.6 0H57.4A2.6 2.6 0 0 1 60 2.6V57.4A2.6 2.6 0 0 1 57.4 60H2.6A2.6 2.6 0 0 1 0 57.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s24",
+   "b": 50,
+   "h": 50,
+   "name": "Foto: Dessert",
+   "satz": "Rund, 50 mm. Dessert mit Beeren auf dem blauen Teller.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s25",
+   "b": 60,
+   "h": 60,
+   "name": "Foto: an der Bar",
+   "satz": "Eckig, 60 mm. An der Bar wird ein Bier gezapft.",
+   "form": "M2.6 0H57.4A2.6 2.6 0 0 1 60 2.6V57.4A2.6 2.6 0 0 1 57.4 60H2.6A2.6 2.6 0 0 1 0 57.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s26",
+   "b": 50,
+   "h": 50,
+   "name": "Foto: von oben",
+   "satz": "Rund, 50 mm. Ein Teller auf dem blauen Platzteller.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s27",
+   "b": 60,
+   "h": 60,
+   "name": "Foto: ein Glas am See",
+   "satz": "Eckig, 60 mm. Ein Glas Weisswein vor dem See.",
+   "form": "M2.6 0H57.4A2.6 2.6 0 0 1 60 2.6V57.4A2.6 2.6 0 0 1 57.4 60H2.6A2.6 2.6 0 0 1 0 57.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s28",
+   "b": 50,
+   "h": 50,
+   "name": "15 Punkte",
+   "satz": "Rund, 50 mm. GaultMillau, Guide 2027.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s29",
+   "b": 56,
+   "h": 56,
+   "name": "Entdeckung des Jahres 2026",
+   "satz": "Rund, 56 mm. GaultMillau über Monika Huber.",
+   "form": "M28.0 0A28.0 28.0 0 1 1 27.99 0Z"
+  },
+  {
+   "id": "s30",
+   "b": 44,
+   "h": 44,
+   "name": "91 von 100",
+   "satz": "Rund, 44 mm. Falstaff.",
+   "form": "M22.0 0A22.0 22.0 0 1 1 21.99 0Z"
+  },
+  {
+   "id": "s31",
+   "b": 64,
+   "h": 34,
+   "name": "Favorit der Inspektoren",
+   "satz": "Eckig, 64 × 34 mm. Guide Michelin, Selektion 2025.",
+   "form": "M2.6 0H61.4A2.6 2.6 0 0 1 64 2.6V31.4A2.6 2.6 0 0 1 61.4 34H2.6A2.6 2.6 0 0 1 0 31.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s32",
+   "b": 56,
+   "h": 56,
+   "name": "Ein Besen statt eines Schilds",
+   "satz": "Eckig, 56 mm. Die Geschichte vom Haus am See.",
+   "form": "M2.6 0H53.4A2.6 2.6 0 0 1 56 2.6V53.4A2.6 2.6 0 0 1 53.4 56H2.6A2.6 2.6 0 0 1 0 53.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s33",
+   "b": 108,
+   "h": 22,
+   "name": "Die Karte nach Ländern",
+   "satz": "Kapsel, 108 mm. Die Länder der Karte.",
+   "form": "M11.0 0H97.0A11.0 11.0 0 0 1 108 11.0V11.0A11.0 11.0 0 0 1 97.0 22H11.0A11.0 11.0 0 0 1 0 11.0V11.0A11.0 11.0 0 0 1 11.0 0Z"
+  },
+  {
+   "id": "s34",
+   "b": 50,
+   "h": 50,
+   "name": "Der Keller",
+   "satz": "Rund, 50 mm. Der Schwerpunkt der Weinkarte von Jonas Volpert.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s35",
+   "b": 64,
+   "h": 44,
+   "name": "Zwei Etagen",
+   "satz": "Eckig, 64 × 44 mm. Platz für Ihre Feier.",
+   "form": "M2.6 0H61.4A2.6 2.6 0 0 1 64 2.6V41.4A2.6 2.6 0 0 1 61.4 44H2.6A2.6 2.6 0 0 1 0 41.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s36",
+   "b": 46,
+   "h": 46,
+   "name": "Lunch",
+   "satz": "Rund, 46 mm. Das Lunch-Menü der Woche.",
+   "form": "M23.0 0A23.0 23.0 0 1 1 22.99 0Z"
+  },
+  {
+   "id": "s37",
+   "b": 60,
+   "h": 42,
+   "name": "Die Zeiten",
+   "satz": "Eckig, 60 × 42 mm. Offen Donnerstag bis Montag.",
+   "form": "M2.6 0H57.4A2.6 2.6 0 0 1 60 2.6V39.4A2.6 2.6 0 0 1 57.4 42H2.6A2.6 2.6 0 0 1 0 39.4V2.6A2.6 2.6 0 0 1 2.6 0Z"
+  },
+  {
+   "id": "s38",
+   "b": 108,
+   "h": 22,
+   "name": "Four Hands an Bord",
+   "satz": "Kapsel, 108 mm. Das Dinner mit Dieter Koschina auf dem Schiff.",
+   "form": "M11.0 0H97.0A11.0 11.0 0 0 1 108 11.0V11.0A11.0 11.0 0 0 1 97.0 22H11.0A11.0 11.0 0 0 1 0 11.0V11.0A11.0 11.0 0 0 1 11.0 0Z"
+  },
+  {
+   "id": "s39",
+   "b": 100,
+   "h": 20,
+   "name": "Instagram",
+   "satz": "Kapsel, 100 mm. Wo das Haus seine Abende zeigt.",
+   "form": "M10.0 0H90.0A10.0 10.0 0 0 1 100 10.0V10.0A10.0 10.0 0 0 1 90.0 20H10.0A10.0 10.0 0 0 1 0 10.0V10.0A10.0 10.0 0 0 1 10.0 0Z"
+  },
+  {
+   "id": "s40",
+   "b": 52,
+   "h": 52,
+   "name": "Seestrasse 50",
+   "satz": "Rund, 52 mm. Die Adresse am Hafen.",
+   "form": "M26.0 0A26.0 26.0 0 1 1 25.99 0Z"
+  }
+ ],
+ "boegen": 2,
+ "masse": [
+  20,
+  112
+ ]
+}

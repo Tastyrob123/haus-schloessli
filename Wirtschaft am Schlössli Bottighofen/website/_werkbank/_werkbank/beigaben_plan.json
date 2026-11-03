@@ -1,0 +1,142 @@
+{
+ "druck": [
+  {
+   "id": "serviettenband",
+   "name": "Serviettenband für die Feier",
+   "format": "Band 210 × 40 mm, um die gerollte Serviette",
+   "vorschau": [
+    [
+     "band",
+     1
+    ],
+    [
+     "band-r",
+     2
+    ]
+   ],
+   "satz": "Bei Banketts liegt auf jedem Teller die Serviette gerollt, ein Band mit den Zeigern und der Wortmarke hält sie zusammen. Innen ein Satz zur Begrüssung.",
+   "karton": [
+    [
+     "band",
+     90,
+     "Aussen"
+    ],
+    [
+     "band-r",
+     90,
+     "Innen"
+    ]
+   ],
+   "titel": [
+    "Ein Band",
+    "um die Serviette."
+   ],
+   "seiten": 2
+  },
+  {
+   "id": "tischset",
+   "name": "Tischset der Lästermeile",
+   "format": "A3 quer, 420 × 297 mm",
+   "vorschau": [
+    [
+     "tischset",
+     1
+    ]
+   ],
+   "satz": "Auf den Tischen der Lästermeile liegt ein Blatt aus Papier: links die Tapas, die es den ganzen Tag gibt, rechts die Geschichte vom Besen, der Ende des 17. Jahrhunderts statt eines Schilds heraushing.",
+   "karton": [
+    [
+     "tischset",
+     92,
+     ""
+    ]
+   ],
+   "titel": [
+    "Ein Tischset",
+    "für die Bar."
+   ],
+   "seiten": 1
+  },
+  {
+   "id": "faehnchen",
+   "name": "Fähnchen für die Tapas",
+   "format": "Fähnchen 46 × 26 mm, gefalzt am Spiess",
+   "vorschau": [
+    [
+     "faehnchen",
+     1
+    ]
+   ],
+   "satz": "Am Spiess in der Schale: welche der Tapas auf dem Tisch steht. Vier Fähnchen für die vier Tapas der Lästermeile, Namen wie auf der Karte.",
+   "karton": [
+    [
+     "faehnchen",
+     90,
+     ""
+    ]
+   ],
+   "titel": [
+    "Ein Fähnchen",
+    "in jeder Schale."
+   ],
+   "seiten": 1
+  },
+  {
+   "id": "flaschenanhaenger",
+   "name": "Flaschenanhänger aus dem Keller",
+   "format": "55 × 120 mm, zwei Seiten, gelocht",
+   "vorschau": [
+    [
+     "anhaenger",
+     1
+    ],
+    [
+     "anhaenger-r",
+     2
+    ]
+   ],
+   "satz": "Für die Flasche, die ein Gast mit nach Hause nimmt: vorne die Empfehlung von Jonas Volpert, hinten Wein, Jahrgang und was dazu passt, von Hand eingetragen.",
+   "karton": [
+    [
+     "anhaenger",
+     30,
+     "Vorderseite"
+    ],
+    [
+     "anhaenger-r",
+     30,
+     "Rückseite"
+    ]
+   ],
+   "titel": [
+    "Ein Anhänger",
+    "für die Flasche."
+   ],
+   "seiten": 2
+  },
+  {
+   "id": "streichholz",
+   "name": "Streichholzbriefchen",
+   "format": "Briefchen 50 × 110 mm (gefalzt 50 × 40)",
+   "vorschau": [
+    [
+     "streichholz",
+     1
+    ]
+   ],
+   "satz": "Für die Windlichter auf der Terrasse, zum Mitnehmen nach dem Abend unter der Platane. Aussen die Zeiger auf der Nacht über dem See.",
+   "karton": [
+    [
+     "streichholz",
+     30,
+     ""
+    ]
+   ],
+   "titel": [
+    "Streichhölzer",
+    "für die Windlichter."
+   ],
+   "seiten": 1
+  }
+ ]
+}

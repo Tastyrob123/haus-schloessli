@@ -1,0 +1,234 @@
+{
+ "druck": [
+  {
+   "id": "platzkarte",
+   "name": "Platzkarte für Banketts",
+   "seiten": 2
+  },
+  {
+   "id": "anfahrt",
+   "name": "Der Weg ans Wasser",
+   "seiten": 1
+  },
+  {
+   "id": "visitenkarte",
+   "name": "Visitenkarte",
+   "seiten": 2
+  },
+  {
+   "id": "briefpapier",
+   "name": "Briefpapier",
+   "seiten": 2
+  },
+  {
+   "id": "hd-aushang-betriebsferien",
+   "name": "Betriebsferien im Winter",
+   "seiten": 1
+  },
+  {
+   "id": "hd-aushang-kreuzfahrt-geschlossen",
+   "name": "Geschlossen wegen Kreuzfahrt",
+   "seiten": 1
+  },
+  {
+   "id": "hd-aushang-oeffnungszeiten",
+   "name": "Öffnungszeiten",
+   "seiten": 1
+  },
+  {
+   "id": "hd-aushang-ruhetag",
+   "name": "Ruhetag",
+   "seiten": 1
+  },
+  {
+   "id": "hd-aushang-besen",
+   "name": "Statt eines Schilds ein Besen",
+   "seiten": 1
+  },
+  {
+   "id": "hd-plakat-terrasse",
+   "name": "Die schönste Terrasse",
+   "seiten": 1
+  },
+  {
+   "id": "hd-einladung-gourmetkreuzfahrt",
+   "name": "Excellence Gourmetkreuzfahrt",
+   "seiten": 1
+  },
+  {
+   "id": "hd-programm-die-reise",
+   "name": "Die Reise",
+   "seiten": 1
+  },
+  {
+   "id": "hd-flyer-banketts",
+   "name": "Banketts & Gruppen",
+   "seiten": 1
+  },
+  {
+   "id": "hd-menuekarte-lunch",
+   "name": "Lunch-Menü",
+   "seiten": 1
+  },
+  {
+   "id": "hd-menuekarte-bankett-herbst",
+   "name": "Bankettmenü Herbst",
+   "seiten": 1
+  },
+  {
+   "id": "hd-menuekarte-bankett-sommer",
+   "name": "Bankettmenü Sommer",
+   "seiten": 1
+  },
+  {
+   "id": "hd-einleger-italien",
+   "name": "Aus Italien",
+   "seiten": 1
+  },
+  {
+   "id": "hd-einleger-klassiker",
+   "name": "Die Klassiker",
+   "seiten": 1
+  },
+  {
+   "id": "hd-wein-buendner-herrschaft",
+   "name": "Bündner Herrschaft",
+   "seiten": 1
+  },
+  {
+   "id": "hd-wein-burgund",
+   "name": "Burgund",
+   "seiten": 1
+  },
+  {
+   "id": "hd-wein-champagne",
+   "name": "Champagne",
+   "seiten": 1
+  },
+  {
+   "id": "hd-laestermeile-tapas",
+   "name": "Tapas durchgehend",
+   "seiten": 1
+  },
+  {
+   "id": "hd-hinweiskarte-laestermeile",
+   "name": "Den ganzen Tag",
+   "seiten": 1
+  },
+  {
+   "id": "hd-hinweiskarte-allergien",
+   "name": "Allergien",
+   "seiten": 1
+  },
+  {
+   "id": "hd-tischkarte-reserviert",
+   "name": "Reserviert",
+   "seiten": 1
+  },
+  {
+   "id": "hd-tischkarte-terrasse",
+   "name": "Reserviert · Die Seeterrasse",
+   "seiten": 1
+  },
+  {
+   "id": "hd-gutschein",
+   "name": "Gutschein",
+   "seiten": 2
+  },
+  {
+   "id": "hd-flyer-des-hauses",
+   "name": "Flyer des Hauses",
+   "seiten": 2
+  },
+  {
+   "id": "hd-pressemappe",
+   "name": "Pressemappe",
+   "seiten": 1
+  },
+  {
+   "id": "hd-teamaushang-ablauf-bankett",
+   "name": "Ablauf Bankett",
+   "seiten": 1
+  },
+  {
+   "id": "hd-teamaushang-kuechenzeiten",
+   "name": "Küchenzeiten",
+   "seiten": 1
+  },
+  {
+   "id": "hd-instagram-laestermeile",
+   "name": "Die Lästermeile",
+   "seiten": 1
+  },
+  {
+   "id": "hd-instagram-monika-huber",
+   "name": "Monika Huber",
+   "seiten": 1
+  },
+  {
+   "id": "hd-instagram-weinkeller",
+   "name": "Der Weinkeller",
+   "seiten": 1
+  },
+  {
+   "id": "hd-story-four-hands",
+   "name": "Story",
+   "seiten": 1
+  },
+  {
+   "id": "hd-story-terrasse",
+   "name": "Story: Die Terrasse",
+   "seiten": 1
+  }
+ ],
+ "etiketten": [
+  {
+   "id": "u01",
+   "name": "Die Zeiger"
+  },
+  {
+   "id": "u02",
+   "name": "Direkt im Hafen"
+  },
+  {
+   "id": "u03",
+   "name": "Seehimmel"
+  },
+  {
+   "id": "u04",
+   "name": "By Christian Kuchler"
+  },
+  {
+   "id": "u05",
+   "name": "Lästermeile"
+  },
+  {
+   "id": "u06",
+   "name": "Tapas durchgehend"
+  },
+  {
+   "id": "u07",
+   "name": "Pimientos De Padrón"
+  },
+  {
+   "id": "u08",
+   "name": "Patatine Fritte"
+  },
+  {
+   "id": "u09",
+   "name": "Croquetas"
+  },
+  {
+   "id": "u10",
+   "name": "Kalamata Oliven"
+  },
+  {
+   "id": "u11",
+   "name": "Zur Stärkung & Süsses"
+  },
+  {
+   "id": "u12",
+   "name": "Die schönste Terrasse"
+  }
+ ]
+}

@@ -1,0 +1,886 @@
+{
+ "druck": [
+  {
+   "id": "hd-aushang-betriebsferien",
+   "name": "Betriebsferien im Winter",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Der Aushang für Tür und Bar zu den Betriebsferien im Winter, vom 22. Dezember bis zum 10. Februar.",
+   "titel": [
+    "Wenn das Schlössli",
+    "Pause macht."
+   ],
+   "pdf": "wirtschaft-am-schloessli-aushang-betriebsferien.pdf",
+   "karton": [
+    [
+     "hd-aushang-betriebsferien",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-aushang-betriebsferien": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-aushang-kreuzfahrt-geschlossen",
+   "name": "Geschlossen wegen Kreuzfahrt",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Vom 13. bis 15. November ist das Haus zu, weil das ganze Team auf der Excellence kocht. Das Blatt sagt es an der Tür.",
+   "titel": [
+    "Geschlossen,",
+    "das Team ist an Bord."
+   ],
+   "pdf": "wirtschaft-am-schloessli-aushang-kreuzfahrt-geschlossen.pdf",
+   "karton": [
+    [
+     "hd-aushang-kreuzfahrt-geschlossen",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-aushang-kreuzfahrt-geschlossen": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-aushang-oeffnungszeiten",
+   "name": "Öffnungszeiten",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Donnerstag bis Montag, die Zeiten der Küche und der Ruhetag auf einem Blatt A4 für die Tür.",
+   "titel": [
+    "Die",
+    "Öffnungszeiten."
+   ],
+   "pdf": "wirtschaft-am-schloessli-aushang-oeffnungszeiten.pdf",
+   "karton": [
+    [
+     "hd-aushang-oeffnungszeiten",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-aushang-oeffnungszeiten": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-aushang-ruhetag",
+   "name": "Ruhetag",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Ein kleines Blatt A5 für die Tür an den Ruhetagen Dienstag und Mittwoch.",
+   "titel": [
+    "Heute",
+    "ist Ruhetag."
+   ],
+   "pdf": "wirtschaft-am-schloessli-aushang-ruhetag.pdf",
+   "karton": [
+    [
+     "hd-aushang-ruhetag",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-aushang-ruhetag": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-aushang-besen",
+   "name": "Statt eines Schilds ein Besen",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Die Geschichte vom Haus am See als Aushang A4, zum Lesen im Eingang.",
+   "titel": [
+    "Statt eines Schilds",
+    "ein Besen."
+   ],
+   "pdf": "wirtschaft-am-schloessli-aushang-besen.pdf",
+   "karton": [
+    [
+     "hd-aushang-besen",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-aushang-besen": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-plakat-terrasse",
+   "name": "Die schönste Terrasse",
+   "format": "A3 hoch · aus der Hausdruckerei",
+   "satz": "Ein Plakat A3 mit der Terrasse am Mittag, für das Fenster oder den Steg.",
+   "titel": [
+    "Die schönste",
+    "Terrasse."
+   ],
+   "pdf": "wirtschaft-am-schloessli-plakat-terrasse.pdf",
+   "karton": [
+    [
+     "hd-plakat-terrasse",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-plakat-terrasse": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-einladung-gourmetkreuzfahrt",
+   "name": "Excellence Gourmetkreuzfahrt",
+   "format": "Quadrat · aus der Hausdruckerei",
+   "satz": "Die Einladung zum Four-Hands-Dinner mit Dieter Koschina auf der Excellence, quadratisch zum Verschicken.",
+   "titel": [
+    "Four Hands",
+    "an Bord."
+   ],
+   "pdf": "wirtschaft-am-schloessli-einladung-gourmetkreuzfahrt.pdf",
+   "karton": [
+    [
+     "hd-einladung-gourmetkreuzfahrt",
+     86,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-einladung-gourmetkreuzfahrt": [
+     1000,
+     1000
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-programm-die-reise",
+   "name": "Die Reise",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Das Programm der Gourmetkreuzfahrt auf A5: von Basel nach Strassburg und zurück.",
+   "titel": [
+    "Die",
+    "Reise."
+   ],
+   "pdf": "wirtschaft-am-schloessli-programm-die-reise.pdf",
+   "karton": [
+    [
+     "hd-programm-die-reise",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-programm-die-reise": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-flyer-banketts",
+   "name": "Banketts & Gruppen",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Das Angebotsblatt A5 für Feiern auf zwei Etagen mit je bis zu 26 Personen.",
+   "titel": [
+    "Banketts",
+    "und Gruppen."
+   ],
+   "pdf": "wirtschaft-am-schloessli-flyer-banketts.pdf",
+   "karton": [
+    [
+     "hd-flyer-banketts",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-flyer-banketts": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-menuekarte-lunch",
+   "name": "Lunch-Menü",
+   "format": "DL hoch · aus der Hausdruckerei",
+   "satz": "Die drei Gänge am Mittag als schmale Menükarte für den Tisch.",
+   "titel": [
+    "Das Lunch-Menü",
+    "der Woche."
+   ],
+   "pdf": "wirtschaft-am-schloessli-menuekarte-lunch.pdf",
+   "karton": [
+    [
+     "hd-menuekarte-lunch",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-menuekarte-lunch": [
+     1000,
+     2121
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-menuekarte-bankett-herbst",
+   "name": "Bankettmenü Herbst",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Das Bankettmenü des Herbsts auf A5, fünf Gerichte für den Tisch der Feier.",
+   "titel": [
+    "Ein Menü",
+    "im Herbst."
+   ],
+   "pdf": "wirtschaft-am-schloessli-menuekarte-bankett-herbst.pdf",
+   "karton": [
+    [
+     "hd-menuekarte-bankett-herbst",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-menuekarte-bankett-herbst": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-menuekarte-bankett-sommer",
+   "name": "Bankettmenü Sommer",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Das Bankettmenü des Sommers auf A5, fünf Gerichte für den Tisch der Feier.",
+   "titel": [
+    "Ein Menü",
+    "im Sommer."
+   ],
+   "pdf": "wirtschaft-am-schloessli-menuekarte-bankett-sommer.pdf",
+   "karton": [
+    [
+     "hd-menuekarte-bankett-sommer",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-menuekarte-bankett-sommer": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-einleger-italien",
+   "name": "Aus Italien",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Ein Einleger A5 für die Karte mit den Gerichten aus Italien, ohne Preise.",
+   "titel": [
+    "Aus",
+    "Italien."
+   ],
+   "pdf": "wirtschaft-am-schloessli-einleger-italien.pdf",
+   "karton": [
+    [
+     "hd-einleger-italien",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-einleger-italien": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-einleger-klassiker",
+   "name": "Die Klassiker",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Ein Einleger A5 mit den Klassikern der Karte, ohne Preise.",
+   "titel": [
+    "Die",
+    "Klassiker."
+   ],
+   "pdf": "wirtschaft-am-schloessli-einleger-klassiker.pdf",
+   "karton": [
+    [
+     "hd-einleger-klassiker",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-einleger-klassiker": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-wein-buendner-herrschaft",
+   "name": "Bündner Herrschaft",
+   "format": "DL hoch · aus der Hausdruckerei",
+   "satz": "Die Weinempfehlung als schmale Karte: ein Pinot Noir aus der Bündner Herrschaft.",
+   "titel": [
+    "Ein Glas aus der",
+    "Bündner Herrschaft."
+   ],
+   "pdf": "wirtschaft-am-schloessli-wein-buendner-herrschaft.pdf",
+   "karton": [
+    [
+     "hd-wein-buendner-herrschaft",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-wein-buendner-herrschaft": [
+     1000,
+     2121
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-wein-burgund",
+   "name": "Burgund",
+   "format": "DL hoch · aus der Hausdruckerei",
+   "satz": "Die Weinempfehlung als schmale Karte: ein Weisswein aus dem Burgund.",
+   "titel": [
+    "Ein Glas",
+    "aus dem Burgund."
+   ],
+   "pdf": "wirtschaft-am-schloessli-wein-burgund.pdf",
+   "karton": [
+    [
+     "hd-wein-burgund",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-wein-burgund": [
+     1000,
+     2121
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-wein-champagne",
+   "name": "Champagne",
+   "format": "DL hoch · aus der Hausdruckerei",
+   "satz": "Die Weinempfehlung als schmale Karte für den Champagner zum Apéro.",
+   "titel": [
+    "Ein Glas",
+    "Champagne."
+   ],
+   "pdf": "wirtschaft-am-schloessli-wein-champagne.pdf",
+   "karton": [
+    [
+     "hd-wein-champagne",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-wein-champagne": [
+     1000,
+     2121
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-laestermeile-tapas",
+   "name": "Tapas durchgehend",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Die Karte der Lästermeile auf A5, für die Tische an der Promenade.",
+   "titel": [
+    "Die Karte",
+    "der Lästermeile."
+   ],
+   "pdf": "wirtschaft-am-schloessli-laestermeile-tapas.pdf",
+   "karton": [
+    [
+     "hd-laestermeile-tapas",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-laestermeile-tapas": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-hinweiskarte-laestermeile",
+   "name": "Den ganzen Tag",
+   "format": "A6 hoch · aus der Hausdruckerei",
+   "satz": "Ein Aufsteller A6: die Karte der Lästermeile gibt es den ganzen Tag.",
+   "titel": [
+    "Den ganzen",
+    "Tag geöffnet."
+   ],
+   "pdf": "wirtschaft-am-schloessli-hinweiskarte-laestermeile.pdf",
+   "karton": [
+    [
+     "hd-hinweiskarte-laestermeile",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-hinweiskarte-laestermeile": [
+     1000,
+     1409
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-hinweiskarte-allergien",
+   "name": "Allergien",
+   "format": "A6 hoch · aus der Hausdruckerei",
+   "satz": "Eine Hinweiskarte A6 am Tisch mit den Allergenen, wie sie auf Ihren Karten stehen.",
+   "titel": [
+    "Was dürfen wir",
+    "weglassen?"
+   ],
+   "pdf": "wirtschaft-am-schloessli-hinweiskarte-allergien.pdf",
+   "karton": [
+    [
+     "hd-hinweiskarte-allergien",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-hinweiskarte-allergien": [
+     1000,
+     1409
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-tischkarte-reserviert",
+   "name": "Reserviert",
+   "format": "A7 quer · aus der Hausdruckerei",
+   "satz": "Die Tischkarte A7 für reservierte Tische in der Gaststube und an der Lästermeile.",
+   "titel": [
+    "Dieser Tisch",
+    "ist reserviert."
+   ],
+   "pdf": "wirtschaft-am-schloessli-tischkarte-reserviert.pdf",
+   "karton": [
+    [
+     "hd-tischkarte-reserviert",
+     86,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-tischkarte-reserviert": [
+     1000,
+     705
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-tischkarte-terrasse",
+   "name": "Reserviert · Die Seeterrasse",
+   "format": "A7 quer · aus der Hausdruckerei",
+   "satz": "Dieselbe Tischkarte für die Tische auf der Seeterrasse.",
+   "titel": [
+    "Reserviert",
+    "auf der Terrasse."
+   ],
+   "pdf": "wirtschaft-am-schloessli-tischkarte-terrasse.pdf",
+   "karton": [
+    [
+     "hd-tischkarte-terrasse",
+     86,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-tischkarte-terrasse": [
+     1000,
+     705
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-gutschein",
+   "name": "Gutschein",
+   "format": "DL quer · 2 Seiten · aus der Hausdruckerei",
+   "satz": "Der Gutschein in DL quer, vorne die Zeiger, hinten für wen, von wem und der Betrag.",
+   "titel": [
+    "Ein Gutschein",
+    "zum Verschenken."
+   ],
+   "pdf": "wirtschaft-am-schloessli-gutschein.pdf",
+   "karton": [
+    [
+     "hd-gutschein",
+     84,
+     "Vorderseite"
+    ],
+    [
+     "hd-gutschein-r",
+     84,
+     "Rückseite"
+    ]
+   ],
+   "masse": {
+    "hd-gutschein": [
+     1000,
+     472
+    ],
+    "hd-gutschein-r": [
+     1000,
+     472
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 2
+  },
+  {
+   "id": "hd-flyer-des-hauses",
+   "name": "Flyer des Hauses",
+   "format": "A6 hoch · 2 Seiten · aus der Hausdruckerei",
+   "satz": "Ein Flyer A6: vorne die Terrasse, hinten die Zeiten und der Weg.",
+   "titel": [
+    "Der Flyer",
+    "des Hauses."
+   ],
+   "pdf": "wirtschaft-am-schloessli-flyer-des-hauses.pdf",
+   "karton": [
+    [
+     "hd-flyer-des-hauses",
+     44,
+     "Vorderseite"
+    ],
+    [
+     "hd-flyer-des-hauses-r",
+     44,
+     "Rückseite"
+    ]
+   ],
+   "masse": {
+    "hd-flyer-des-hauses": [
+     1000,
+     1409
+    ],
+    "hd-flyer-des-hauses-r": [
+     1000,
+     1409
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 2
+  },
+  {
+   "id": "hd-pressemappe",
+   "name": "Pressemappe",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Das Deckblatt A4 der Pressemappe, für Anfragen von Zeitungen und Guides.",
+   "titel": [
+    "Die",
+    "Pressemappe."
+   ],
+   "pdf": "wirtschaft-am-schloessli-pressemappe.pdf",
+   "karton": [
+    [
+     "hd-pressemappe",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-pressemappe": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-teamaushang-ablauf-bankett",
+   "name": "Ablauf Bankett",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Ein Aushang A4 für das Team: wie ein Bankett abläuft, Schritt für Schritt.",
+   "titel": [
+    "Ablauf",
+    "eines Banketts."
+   ],
+   "pdf": "wirtschaft-am-schloessli-teamaushang-ablauf-bankett.pdf",
+   "karton": [
+    [
+     "hd-teamaushang-ablauf-bankett",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-teamaushang-ablauf-bankett": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-teamaushang-kuechenzeiten",
+   "name": "Küchenzeiten",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Ein Aushang A4 für das Team mit den Zeiten der Küche und der Lästermeile.",
+   "titel": [
+    "Die",
+    "Küchenzeiten."
+   ],
+   "pdf": "wirtschaft-am-schloessli-teamaushang-kuechenzeiten.pdf",
+   "karton": [
+    [
+     "hd-teamaushang-kuechenzeiten",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-teamaushang-kuechenzeiten": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-instagram-laestermeile",
+   "name": "Die Lästermeile",
+   "format": "Instagram 4:5 · aus der Hausdruckerei",
+   "satz": "Ein Beitrag 4:5 für Instagram: die Bar am Hafen.",
+   "titel": [
+    "Die Lästermeile",
+    "auf Instagram."
+   ],
+   "pdf": "wirtschaft-am-schloessli-instagram-laestermeile.pdf",
+   "karton": [
+    [
+     "hd-instagram-laestermeile",
+     64,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-instagram-laestermeile": [
+     1000,
+     1250
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-instagram-monika-huber",
+   "name": "Monika Huber",
+   "format": "Instagram 4:5 · aus der Hausdruckerei",
+   "satz": "Ein Beitrag 4:5 für Instagram über die Küchenchefin.",
+   "titel": [
+    "Monika Huber",
+    "auf Instagram."
+   ],
+   "pdf": "wirtschaft-am-schloessli-instagram-monika-huber.pdf",
+   "karton": [
+    [
+     "hd-instagram-monika-huber",
+     64,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-instagram-monika-huber": [
+     1000,
+     1250
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-instagram-weinkeller",
+   "name": "Der Weinkeller",
+   "format": "Instagram 4:5 · aus der Hausdruckerei",
+   "satz": "Ein Beitrag 4:5 für Instagram mit dem Satz von GaultMillau über den Keller.",
+   "titel": [
+    "Der Weinkeller",
+    "auf Instagram."
+   ],
+   "pdf": "wirtschaft-am-schloessli-instagram-weinkeller.pdf",
+   "karton": [
+    [
+     "hd-instagram-weinkeller",
+     64,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-instagram-weinkeller": [
+     1000,
+     1250
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-story-four-hands",
+   "name": "Story",
+   "format": "Story 9:16 · aus der Hausdruckerei",
+   "satz": "Eine Story 9:16 für Instagram zum Four-Hands-Dinner an Bord.",
+   "titel": [
+    "Four Hands",
+    "als Story."
+   ],
+   "pdf": "wirtschaft-am-schloessli-story-four-hands.pdf",
+   "karton": [
+    [
+     "hd-story-four-hands",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-story-four-hands": [
+     1000,
+     1778
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "hd-story-terrasse",
+   "name": "Story: Die Terrasse",
+   "format": "Story 9:16 · aus der Hausdruckerei",
+   "satz": "Eine Story 9:16 für Instagram: unter den Platanen.",
+   "titel": [
+    "Die Terrasse",
+    "als Story."
+   ],
+   "pdf": "wirtschaft-am-schloessli-story-terrasse.pdf",
+   "karton": [
+    [
+     "hd-story-terrasse",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "hd-story-terrasse": [
+     1000,
+     1778
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  }
+ ]
+}

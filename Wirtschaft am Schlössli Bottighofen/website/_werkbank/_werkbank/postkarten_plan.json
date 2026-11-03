@@ -1,0 +1,125 @@
+{
+ "karten": [
+  {
+   "id": "pk01",
+   "key": "start",
+   "name": "Bottighofen",
+   "satz": "Die blauen Stühle auf der Terrasse am Mittag, dahinter der See und die Alpen.",
+   "hoch": false,
+   "nachweis": ""
+  },
+  {
+   "id": "pk02",
+   "key": "bootshafen",
+   "name": "Bottighofen",
+   "satz": "Der Bootshafen, dahinter die Wirtschaft und das Schlössli.",
+   "hoch": false,
+   "nachweis": "Foto: JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "id": "pk03",
+   "key": "platanen",
+   "name": "Am Hafen",
+   "satz": "Gedeckte Tische unter den Platanen, dahinter der Hafen.",
+   "hoch": true,
+   "nachweis": ""
+  },
+  {
+   "id": "pk04",
+   "key": "morgen",
+   "name": "Bodensee",
+   "satz": "Morgen am See, hinten die Alpen und die Schifflände.",
+   "hoch": false,
+   "nachweis": "Foto: JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "id": "pk05",
+   "key": "abend",
+   "name": "Bottighofen",
+   "satz": "Abend unter der Platane, die Lichterkette über dem See.",
+   "hoch": true,
+   "nachweis": ""
+  },
+  {
+   "id": "pk06",
+   "key": "haus",
+   "name": "Am Hafen",
+   "satz": "Das ehemalige Hafenmeistergebäude mit der Wirtschaft.",
+   "hoch": false,
+   "nachweis": "Foto: JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "id": "pk07",
+   "key": "saentis",
+   "name": "Bodensee",
+   "satz": "Der Blick über den See bis zum Säntis.",
+   "hoch": false,
+   "nachweis": "Foto: qwesy, CC BY 3.0, Wikimedia Commons"
+  },
+  {
+   "id": "pk08",
+   "key": "apero",
+   "name": "Bodensee",
+   "satz": "Ein Spritz und ein Bier in der blauen Stunde.",
+   "hoch": true,
+   "nachweis": ""
+  },
+  {
+   "id": "pk09",
+   "key": "schifflaende",
+   "name": "Bottighofen",
+   "satz": "Die Schifflände am Hafen.",
+   "hoch": false,
+   "nachweis": "Foto: JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "id": "pk10",
+   "key": "gaststube",
+   "name": "Am Hafen",
+   "satz": "Die Gaststube mit den grossen Fenstern zum Hafen.",
+   "hoch": false,
+   "nachweis": ""
+  },
+  {
+   "id": "pk11",
+   "key": "abendschiff",
+   "name": "Bodensee",
+   "satz": "Ein Kursschiff im Abendlicht, dahinter das Säntis-Massiv.",
+   "hoch": false,
+   "nachweis": "Foto: Ameichle, CC BY-SA 3.0, Wikimedia Commons"
+  },
+  {
+   "id": "pk12",
+   "key": "regal",
+   "name": "Lästermeile",
+   "satz": "An der Bar: durch die Scheibe der See.",
+   "hoch": false,
+   "nachweis": ""
+  },
+  {
+   "id": "pk13",
+   "key": "glas",
+   "name": "Bodensee",
+   "satz": "Ein Glas Weisswein vor dem See.",
+   "hoch": true,
+   "nachweis": ""
+  },
+  {
+   "id": "pk14",
+   "key": "luft1954",
+   "name": "Bottighofen, 1954",
+   "satz": "Das Strandhotel Schlössli am See aus der Luft.",
+   "hoch": false,
+   "nachweis": "Foto: Werner Friedli, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "id": "pk15",
+   "key": "bar",
+   "name": "Lästermeile",
+   "satz": "An der Bar wird gezapft, unter der Theke die Zementfliesen.",
+   "hoch": false,
+   "nachweis": ""
+  }
+ ],
+ "boegen": 4
+}

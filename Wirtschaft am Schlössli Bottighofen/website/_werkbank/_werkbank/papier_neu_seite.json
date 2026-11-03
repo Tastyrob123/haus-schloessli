@@ -1,0 +1,96 @@
+{
+ "platzkarte": {
+  "karton": [
+   "",
+   [
+    [
+     "platzkarte",
+     46,
+     "Vorderseite"
+    ],
+    [
+     "platzkarte-r",
+     46,
+     "Rückseite"
+    ]
+   ]
+  ],
+  "titel": [
+   "Ihr Platz",
+   "an der Tafel."
+  ],
+  "breit": [
+   "platzkarte",
+   "platzkarte-r"
+  ]
+ },
+ "anfahrt": {
+  "karton": [
+   "",
+   [
+    [
+     "anfahrt",
+     36,
+     ""
+    ]
+   ]
+  ],
+  "titel": [
+   "Direkt",
+   "im Hafen."
+  ],
+  "breit": [
+   "anfahrt"
+  ]
+ },
+ "visitenkarte": {
+  "karton": [
+   "",
+   [
+    [
+     "visitenkarte",
+     60,
+     "Vorderseite"
+    ],
+    [
+     "visitenkarte-r",
+     60,
+     "Rückseite"
+    ]
+   ]
+  ],
+  "titel": [
+   "Die",
+   "Visitenkarte."
+  ],
+  "breit": [
+   "visitenkarte",
+   "visitenkarte-r"
+  ]
+ },
+ "briefpapier": {
+  "karton": [
+   "",
+   [
+    [
+     "couvert",
+     92,
+     "Couvert"
+    ],
+    [
+     "briefbogen",
+     38,
+     "Briefbogen"
+    ]
+   ]
+  ],
+  "titel": [
+   "Briefbogen",
+   "und Couvert."
+  ],
+  "breit": [
+   "briefbogen",
+   "couvert"
+  ]
+ }
+}

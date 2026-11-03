@@ -1,0 +1,180 @@
+{
+ "druck": [
+  {
+   "id": "platzkarte",
+   "name": "Platzkarte für Banketts",
+   "format": "A7 quer, gefalzt, zwei Seiten",
+   "vorschau": [
+    [
+     "platzkarte",
+     1
+    ],
+    [
+     "platzkarte-r",
+     2
+    ]
+   ],
+   "satz": "Für die Feiern auf den zwei Etagen: vorne der Name des Gastes, hinten die Wortmarke.",
+   "quelle": "Seite «Banketts & Gruppen»",
+   "seiten": 2
+  },
+  {
+   "id": "anfahrt",
+   "name": "Der Weg ans Wasser",
+   "format": "DL hoch, 99 × 210 mm",
+   "vorschau": [
+    [
+     "anfahrt",
+     1
+    ]
+   ],
+   "satz": "Ein schmales Blatt für die Post und den Tresen: der Weg über die Seestrasse zum Parkplatz und mit dem Zug zum Bahnhof Bottighofen.",
+   "quelle": "Kontakt-Seite Ihrer Website",
+   "seiten": 1
+  },
+  {
+   "id": "visitenkarte",
+   "name": "Visitenkarte",
+   "format": "85 × 55 mm, zwei Seiten",
+   "vorschau": [
+    [
+     "visitenkarte",
+     1
+    ],
+    [
+     "visitenkarte-r",
+     2
+    ]
+   ],
+   "satz": "Vorne die Wortmarke auf der Nacht über dem See, hinten Adresse, Telefon, Instagram und die Zeiten.",
+   "quelle": "Fuss Ihrer Website",
+   "seiten": 2
+  },
+  {
+   "id": "briefpapier",
+   "name": "Briefpapier",
+   "format": "Briefbogen A4, Couvert C5/6",
+   "vorschau": [
+    [
+     "briefbogen",
+     1
+    ],
+    [
+     "couvert",
+     2
+    ]
+   ],
+   "satz": "Briefbogen und Couvert mit den Zeigern, der Wortmarke und Ihrer Adresse.",
+   "quelle": "Kontakt Ihrer Website",
+   "seiten": 2
+  }
+ ],
+ "etiketten": [
+  {
+   "id": "u01",
+   "b": 94,
+   "h": 94,
+   "name": "Die Zeiger",
+   "satz": "Stuhlblau, in der Mitte die Zeiger, ringsum der Name des Hauses.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u02",
+   "b": 94,
+   "h": 94,
+   "name": "Direkt im Hafen",
+   "satz": "Papier, die Zeiger in Stuhlblau, ringsum der Satz zur Lage.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u03",
+   "b": 94,
+   "h": 94,
+   "name": "Seehimmel",
+   "satz": "Im Seehimmel, die Zeiger in der Nacht über dem See.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u04",
+   "b": 94,
+   "h": 94,
+   "name": "By Christian Kuchler",
+   "satz": "Nacht über dem See, die Zeiger und die Zeile des Logos.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u05",
+   "b": 94,
+   "h": 94,
+   "name": "Lästermeile",
+   "satz": "Der Name der Bar, geteilt wie auf der Startseite.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u06",
+   "b": 94,
+   "h": 94,
+   "name": "Tapas durchgehend",
+   "satz": "Die erste Spalte der Karte der Lästermeile, ringsum die Zeiten.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u07",
+   "b": 94,
+   "h": 94,
+   "name": "Pimientos De Padrón",
+   "satz": "Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u08",
+   "b": 94,
+   "h": 94,
+   "name": "Patatine Fritte",
+   "satz": "Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u09",
+   "b": 94,
+   "h": 94,
+   "name": "Croquetas",
+   "satz": "Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u10",
+   "b": 94,
+   "h": 94,
+   "name": "Kalamata Oliven",
+   "satz": "Ein Gericht der Lästermeile, Name wie auf der Karte.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u11",
+   "b": 94,
+   "h": 94,
+   "name": "Zur Stärkung & Süsses",
+   "satz": "Die zweite Spalte der Karte der Lästermeile.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  },
+  {
+   "id": "u12",
+   "b": 94,
+   "h": 94,
+   "name": "Die schönste Terrasse",
+   "satz": "Der Satz von Christian Kuchler, auf dem Papier der Karte.",
+   "form": "M47.0 0A47.0 47.0 0 1 1 46.99 0Z"
+  }
+ ],
+ "boegen": 2,
+ "meins": [
+  "Feldnamen auf Gutschein, Tischkarte, Platzkarte und Menükarte, das Wort «Reserviert»",
+  "Der Satz auf dem Aushang zu den Betriebsferien",
+  "Auswahl der Sätze und Gerichte auf Aufsteller, Kärtchen und Untersetzern"
+ ],
+ "masse": [
+  94,
+  94
+ ]
+}
