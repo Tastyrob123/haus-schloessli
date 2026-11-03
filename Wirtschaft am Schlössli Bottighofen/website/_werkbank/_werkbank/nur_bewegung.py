@@ -13,7 +13,7 @@ ERLAUBT = ('transform', 'opacity', 'visibility', 'translate', 'scale', 'rotate',
 GLANZ = ('/* nur-bewegung */.glanz{animation:none!important;border:0!important;background:none!important;transition:transform .5s var(--e2)!important}'
          '.glanz::before{content:"";position:absolute;z-index:-2;left:50%;top:50%;width:260px;height:260px;margin:-130px 0 0 -130px;'
          'background:conic-gradient(transparent,var(--gold) 6%,#ffffff 12%,var(--taupe) 18%,transparent 24%);animation:glanzdreh 4s linear infinite;will-change:transform}'
-         '.glanz::after{content:"";position:absolute;z-index:-1;inset:1px;border-radius:inherit;background:linear-gradient(180deg,#423e4c,#23212a)}'
+         '.glanz::after{content:"";position:absolute;z-index:-1;inset:1px;border-radius:inherit;background:linear-gradient(180deg,#123a7d,#0a234c)}'
          '@keyframes glanzdreh{to{transform:rotate(1turn)}}'
          '@media (prefers-reduced-motion:reduce){.glanz::before{animation:none}}')
 KARTE = ('<style id="nur-bewegung">@media screen{html.bew .mn-kopf>*,html.bew .mn-gang,html.bew .mn-l li,html.bew .sag-orn{opacity:0;transform:translateY(22px);'
