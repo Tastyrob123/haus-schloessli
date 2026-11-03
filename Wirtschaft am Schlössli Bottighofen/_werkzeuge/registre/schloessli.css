@@ -235,6 +235,6 @@
 /* Ranglisten mit Bild: Platz für den längsten Seitennamen («Kontakt & Öffnungszeiten») in einer Zeile; am Handy entfällt der Balken (der Anteil steht daneben), der Name bricht vor den letzten zwei Wörtern */
 @media (min-width:621px){.rg .rang:has(.mit-bild){grid-template-columns:fit-content(320px) minmax(60px,1fr) auto 42px}}
 @media (max-width:620px){.rg .rang:has(.mit-bild){grid-template-columns:minmax(0,1fr) auto 34px}.rg .rang:has(.mit-bild) .rang__b{display:none}.rg .rang__n:has(.mit-bild) .mit-bild>span{white-space:normal}}
-/* Cloud-Prüfung 3.11.2026 (3) Kennzahl-Blätter «Zur Reservation»: Etikett oben, Zahl auf der gemeinsamen Linie der Reihe, der Satz schliesst unten ab;
-   so steht die Komposition in der Mitte des Blatts (oben und unten gleich viel Luft), auch wenn der Nachbar einen längeren Satz hat */
-@media (min-width:621px){.rg .werte .wert>p{align-self:end}}
+/* Cloud-Prüfung 3.11.2026 (3) Kennzahl-Blätter «Zur Reservation»: Etikett, Zahl und Satz als ein Block ohne Lücke,
+   senkrecht mittig im Blatt (oben und unten gleich viel Luft, innen kein Loch), auch wenn der Nachbar einen längeren Satz hat; Zahl grösser */
+@media (min-width:621px){.rg .werte .wert{grid-row:auto;display:flex;flex-direction:column;justify-content:center;gap:6px}.rg .werte .wert>.mono{min-height:0}.rg .werte .wert>b{font-size:clamp(2.2rem,2.9vw,2.8rem)}}
