@@ -39,13 +39,14 @@
     '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(4,16,35,.14)}.rdg-karte .rdg-weg b.da{background:#A2B6CF}' +
     '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 0;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#0F3678;cursor:pointer}' +
     '.rdg-karte .rdg-zu:hover{color:#041023}' +
-    '.rdg-karte .rdg-los,.rdg-schild .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:3px 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
+    '.rdg-karte .rdg-los,.rdg-schild .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:0 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
       'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#F4F6F9;' +
       'background:linear-gradient(180deg,#113d88,#0A234C 46%,#0b1d3d);box-shadow:0 1px 0 rgba(255,255,255,.26) inset,0 -3px 0 rgba(0,0,0,.5) inset,0 10px 18px -10px rgba(4,16,35,.8)}' +
     '.rdg-karte .rdg-los i,.rdg-schild .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(180deg,#FBFDFD,#A2B6CF);' +
       'box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 -2px 0 rgba(0,0,0,.22) inset;transition:transform .2s}' +
     '.rdg-karte .rdg-los svg,.rdg-schild .rdg-los svg{width:14px;height:14px;fill:none;stroke:#041023;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
-    '.rdg-los:hover i{transform:translateX(2px)}.rdg-karte .rdg-los i{margin-top:-3px}' +
+    '.rdg-los:hover i{transform:translateX(2px)}' +
+    '.rdg-los .rdg-t{display:block;line-height:1;text-box:trim-both cap alphabetic}' +
     '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #A2B6CF;outline-offset:3px}' +
     '@media (max-width:700px){.rdg-karte{left:16px!important;right:16px;top:auto!important;bottom:16px;width:auto;--rx:0!important;--ry:0!important}}' +
     '@media (prefers-reduced-motion:reduce){.rdg-karte{animation:none}}';
@@ -136,10 +137,10 @@
       if (r.top < 70 || r.bottom > innerHeight - 20) ziel.scrollIntoView({ block: r.height > innerHeight * .7 ? 'start' : 'center', behavior: 'instant' });
       var weg = ''; for (var i = 0; i < schritte.length; i++) weg += '<b' + (i <= n ? ' class="da"' : '') + '></b>';
       karte.innerHTML = '<div class="rdg-zier"><span>' + G.name + ' · ' + (n + 1) + ' von ' + schritte.length + '</span><i></i></div>' +
-        '<h3>' + s.titel + '</h3><p>' + s.text + '</p>' +
+        '<h3>' + s.titel.replace(/ (\S+)$/, '\u00a0$1') + '</h3><p>' + s.text + '</p>' +
         '<div class="rdg-fuss"><div class="rdg-weg" aria-hidden="true">' + weg + '</div>' +
         (letzt ? '' : '<button type="button" class="rdg-zu">Überspringen</button>') +
-        '<button type="button" class="rdg-los">' + (letzt ? 'Los geht’s' : 'Weiter') + PFEIL + '</button></div>';
+        '<button type="button" class="rdg-los"><span class="rdg-t">' + (letzt ? 'Los geht’s' : 'Weiter') + '</span>' + PFEIL + '</button></div>';
       karte.style.animation = 'none'; void karte.offsetWidth; karte.style.animation = '';
       var handy = function () { if (window.WO && WO.rdgHandy) WO.rdgHandy(ziel, karte); };   /* Handy: Ziel ins freie Feld zwischen Kopf und Karte (30.10.2026) */
       handy(); lege(); setTimeout(function () { handy(); lege(); }, 450); setTimeout(lege, 1300);   /* nach den Auftritten: Zeilengrenze neu messen */
@@ -203,7 +204,7 @@
     if (!document.getElementById('rdg-schild-css')) { var st = document.createElement('style'); st.id = 'rdg-schild-css'; st.textContent = SCHILD_CSS; document.head.appendChild(st); }
     var s = document.createElement('div'); s.className = 'rdg-schild'; s.setAttribute('role', 'status');
     s.innerHTML = '<span class="rdg-schild__t"><small>' + G.name + '</small><b>Kurzer Rundgang</b></span>' +
-      '<button type="button" class="rdg-los">Zeigen' + PFEIL + '</button><button type="button" class="rdg-schild__zu" aria-label="Schliessen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 9.67 2.67 6.33 6 3M2.67 6.33h7.33a3.33 3.33 0 0 1 0 6.67h-2"/></svg></button>';
+      '<button type="button" class="rdg-los"><span class="rdg-t">Zeigen</span>' + PFEIL + '</button><button type="button" class="rdg-schild__zu" aria-label="Schliessen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 9.67 2.67 6.33 6 3M2.67 6.33h7.33a3.33 3.33 0 0 1 0 6.67h-2"/></svg></button>';
     function platz() {   /* über die Leiste unten setzen, nie darauf */
       var l = document.querySelector('#leiste'), lr = l && l.getBoundingClientRect();
       if (!l || !lr || lr.height < 5) return;

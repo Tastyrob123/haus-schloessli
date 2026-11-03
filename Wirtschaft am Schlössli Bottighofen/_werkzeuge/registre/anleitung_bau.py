@@ -51,7 +51,7 @@ THEMEN = [
     '«Zeit im Schnitt» zählt nur, solange die Seite im Vordergrund war. Liegt sie in einem Reiter im Hintergrund, läuft die Zeit nicht.',
     '«Zur Reservation» nennt, wie oft die Seite in einem Besuch angesehen wurde, der danach zu einer Tisch-Anfrage oder zu «Direkt buchen» führte.'],
    'Eine Seite mit vielen Aufrufen und wenig Zeit wird oft nur überflogen. Eine Seite mit wenigen Aufrufen und viel Zeit wird gelesen, aber selten gefunden.'),
-  ('k08', 'Verlauf', 'Wie sich die Besuche entwickeln.', 'Unter «Verlauf» steht der gewählte Zeitraum neben dem Zeitraum davor: Geht es aufwärts oder abwärts?',
+  ('k08', 'Verlauf', 'Die Besuche im Verlauf.', 'Unter «Verlauf» steht der gewählte Zeitraum neben dem Zeitraum davor: Geht es aufwärts oder abwärts?',
    ['Die Säulen zeigen die Besuche je Tag, dahinter hell derselbe Tag im Zeitraum davor.',
     '«Neben dem Zeitraum davor» vergleicht Besuche, Seiten, Zeit, Schritte zur Reservation, Bankett und Anfragen, Anrufe und Mails sowie die Route zum Hafen, mit dem Unterschied in Prozent.',
     '«Woche für Woche» fasst von Montag bis Sonntag zusammen, darunter die wichtigsten Länder als kleine Verlaufslinien.'],
