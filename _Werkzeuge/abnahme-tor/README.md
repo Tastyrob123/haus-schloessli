@@ -69,3 +69,6 @@ Tafel: `http://localhost:8978/haus/_Oberchef/zeigen/<haus>/abnahme-tor/<lauf-nam
 `TOR_BEWEGUNG=1` lässt die Animationen an (nur zum Vergleich). `TOR_HAENGER_MIN`, `TOR_KLICK_MIN` wie beim alten Tor.
 
 **Gemessen am Culinarium (31.10.2026, gleicher Stand, altes gegen neues Tor):** siehe unten «Messwerte».
+
+## Grundlinie für Kriterium 34 (Oberchef 3.11.2026, Nachtbau Schlössli)
+`bewegung-tor.js` misst zuerst eine stille Vergleichsseite (16 Abschnitte Text und Verläufe, ohne Skript) auf demselben Rechner und hebt die Schwellen um das, was der Rechner selbst nicht schafft (Ruckler: Grundlinie + 2, mindestens 2; p95: 1,5 × Grundlinie, mindestens 34 ms). Beleg: Auf den GitHub-Rechnern (2 Kerne, WebKit ohne GPU) war Kriterium 34 in allen sieben Werkzeugen des Schlössli rot, auch im nahezu stillen Hafenbüro (78 Bilder über 50 ms von 259), während dieselben Seiten in Chromium mit 12-fach gedrosselter Rechenleistung glatt liefen (höchstens 1 Bild über 50 ms). Die Grundlinie steht in `bewegung.json` (`grundlinie`) und in jedem Fund.

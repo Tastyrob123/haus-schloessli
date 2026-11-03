@@ -33,8 +33,23 @@ const messeScroll = async (p) => p.evaluate(async () => {
   return { bilder: f.length, ruckler: f.filter(x => x > 50).length, p95: sortiert[Math.floor(sortiert.length * .95)] || 0, mittel: f.reduce((a, b) => a + b, 0) / Math.max(1, f.length), maxAnim, animiert: [...animiert].slice(0, 30), eigenschaften: [...eigenschaften], unsichtbar: u };
 });
 
+/* Grundlinie des Rechners (Oberchef 3.11.2026, Nachtbau Schlössli): Auf den GitHub-Rechnern (2 Kerne, WebKit ohne GPU) ruckelte das Scrollen in allen sieben
+   Werkzeugen, auch im nahezu stillen Hafenbüro (78 Bilder über 50 ms), während dieselben Seiten in Chromium mit 12-fach gedrosselter Rechenleistung glatt liefen
+   (höchstens 1 Bild über 50 ms). Darum misst das Tor zuerst eine stille Vergleichsseite (langer Text, Verläufe, keine Skripte) auf demselben Rechner und
+   hebt die Schwellen um das, was der Rechner selbst nicht schafft. Die Grundlinie steht im Ergebnis und in jedem Fund. */
+const GRUNDSEITE = 'data:text/html;charset=utf-8,' + encodeURIComponent('<!doctype html><meta name=viewport content="width=device-width"><style>body{margin:0;font:18px/1.6 system-ui}section{min-height:100vh;padding:40px;background:linear-gradient(160deg,#e7ecf3,#fff)}h1{font-size:64px}img{width:40%;height:auto;border-radius:12px}</style>'
+  + Array.from({ length: 16 }, (_, i) => `<section><h1>Abschnitt ${i + 1}</h1><p>${'Ein ruhiger Satz zum Scrollen. '.repeat(40)}</p><div style="height:240px;background:linear-gradient(90deg,#0b1d3d,#a2b6cf);border-radius:16px"></div></section>`).join(''));
+const messeGrund = async (b) => {
+  const ctx = await b.newContext({ viewport: { width: W, height: H }, locale: 'de-DE' }); const p = await ctx.newPage();
+  await p.goto(GRUNDSEITE, { waitUntil: 'load', timeout: 30000 }).catch(() => { }); await warte(800);
+  const m = await messeScroll(p).catch(() => ({ ruckler: 0, p95: 0, bilder: 0 })); await ctx.close();
+  return { ruckler: m.ruckler || 0, p95: m.p95 || 0, bilder: m.bilder || 0 };
+};
 (async () => {
   const b = await pw.webkit.launch(); const erg = [];
+  const grund = await messeGrund(b); const rucklerMax = Math.max(2, grund.ruckler + 2), p95Max = Math.max(34, grund.p95 * 1.5);
+  const grundText = `Grundlinie dieses Rechners: ${grund.ruckler} Bilder über 50 ms, 95 % unter ${Math.round(grund.p95)} ms (${grund.bilder} Bilder); Schwellen ${rucklerMax} Ruckler / ${Math.round(p95Max)} ms`;
+  console.log(grundText);
   for (const z of ziele) for (const url of [z.url, ...(z.startExtra || [])]) {
     const r = { k: z.k, name: z.name, url, funde: [] };
     for (const reduce of [false, true]) {
@@ -50,7 +65,7 @@ const messeScroll = async (p) => p.evaluate(async () => {
       r[reduce ? 'ruhig' : 'bewegt'] = { ...m, ladezeit: lade, bild };
       if (m.fehler) r.funde.push({ k: 34, info: 'Messung fehlgeschlagen: ' + m.fehler });
       else if (!reduce) {
-        if (m.ruckler > 2 || m.p95 > 34) r.funde.push({ k: 34, info: `Scrollen ruckelt: ${m.ruckler} Bilder über 50 ms, 95 % der Bilder unter ${Math.round(m.p95)} ms (${m.bilder} Bilder)` });
+        if (m.ruckler > rucklerMax || m.p95 > p95Max) r.funde.push({ k: 34, info: `Scrollen ruckelt: ${m.ruckler} Bilder über 50 ms, 95 % der Bilder unter ${Math.round(m.p95)} ms (${m.bilder} Bilder) · ${grundText}` });
         if (!m.maxAnim) r.funde.push({ k: 37, info: 'Keine Bewegung beim Scrollen (keine Animation lief)' });
         const fremd = m.eigenschaften.filter(x => !/^(transform|opacity|translate|scale|rotate|filter|clip-path|all)$/.test(x));
         if (fremd.length) r.funde.push({ k: 37, info: `Animiert auch ${fremd.slice(0, 6).join(', ')} (erlaubt nur transform/opacity)` });
@@ -62,7 +77,7 @@ const messeScroll = async (p) => p.evaluate(async () => {
       await ctx.close();
     }
     erg.push(r); console.log(z.k, url.split('/').pop(), r.funde.length ? r.funde.map(f => 'K' + f.k + ' ' + f.info).join(' | ') : 'ok', `· ${r.bewegt && r.bewegt.bilder} Bilder, ${r.bewegt && r.bewegt.maxAnim} Animationen`);
-    fs.writeFileSync(path.join(AUS, 'bewegung.json'), JSON.stringify({ zeit: new Date().toISOString(), groesse: [W, H], seiten: erg }, null, 1));
+    fs.writeFileSync(path.join(AUS, 'bewegung.json'), JSON.stringify({ zeit: new Date().toISOString(), groesse: [W, H], grundlinie: { ...grund, rucklerMax, p95Max }, seiten: erg }, null, 1));
   }
   await b.close();
 })();
