@@ -1,0 +1,15 @@
+/* Wirtschaft am Schlössli · Farben der Marke (03.11.2026), Werte der Website, Farbwelt «Stuhl und See» */
+:root{
+  --nacht:#0b1d3d; /* Nacht: Nacht über dem See: Grund der dunklen Flächen, immer mit der Punkt-Tapete */
+  --tief:#0a234c; /* Tief: zweite dunkle Fläche, Platten auf Nacht */
+  --stuhl:#113d88; /* Stuhlblau: das Blau der Terrassenstühle: Knöpfe, Linien und Flächen */
+  --papier:#e7ecf3; /* Papier: Grund der hellen Flächen, mit der Punkt-Tapete */
+  --seespiegel:#d0dae7; /* Seespiegel: zweite helle Fläche, Felder und Linien */
+  --blatt:#f3f6f9; /* Blatt: ruhige helle Abschnitte ohne Tapete */
+  --himmel:#a2b6cf; /* Seehimmel: Linie, Zeichen und Knauf auf Dunkel, der Horizont */
+  --himmel-h:#c5d2e1; /* Seehimmel hell: Betonung in Titeln auf Dunkel */
+  --himmel-t:#0f3678; /* Seehimmel tief: Betonung in Titeln auf Hell */
+  --tinte:#041023; /* Tinte: Schrift auf hellen Flächen, nie reines Schwarz */
+  --titel:#0a2552; /* Titelblau: Titel in Versalien auf Hell */
+  --punkt:#fd9964; /* Schirmrot: nur als Punkt: Stempel, Markierung, Nabe der Zeiger, nie als Fläche */
+}

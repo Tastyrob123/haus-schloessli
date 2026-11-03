@@ -1,5 +1,5 @@
-/* Le Livre · Culinarium Hannover · läuft vor allem anderen (Master R03, R04, R15).
-   Fehlermelder: Skriptfehler nach localStorage «cu-livre-fehler» (letzte 20) und an api/fehler; Netzfehler und fehlende Dateien nie, höchstens 20 je Seite,
+/* Das Markenbuch (Le Livre) · Wirtschaft am Schlössli · läuft vor allem anderen (Master R03, R04, R15).
+   Fehlermelder: Skriptfehler nach localStorage «sl-livre-fehler» (letzte 20) und an api/fehler; Netzfehler und fehlende Dateien nie, höchstens 20 je Seite,
    ein eigener Fehlschlag schaltet ab (Safari-Schleife 15.10.2026). Ladezeichen erst nach 280 ms. Kommt livre.js nach 12 s nicht hoch: ein Satz statt leerer Fläche. */
 'use strict';
 (function () {
@@ -7,7 +7,7 @@
   const melde = (art, text, wo) => {
     if (aus || n >= 20) return; n++;
     const e = { zeit: new Date().toISOString(), art, text: String(text || '').slice(0, 300), wo: String(wo || '').slice(0, 200), seite: location.pathname + location.hash, browser: navigator.userAgent.slice(0, 160) };
-    try { const l = JSON.parse(localStorage.getItem('cu-livre-fehler') || '[]'); l.push(e); localStorage.setItem('cu-livre-fehler', JSON.stringify(l.slice(-20))); } catch (x) { /* privat */ }
+    try { const l = JSON.parse(localStorage.getItem('sl-livre-fehler') || '[]'); l.push(e); localStorage.setItem('sl-livre-fehler', JSON.stringify(l.slice(-20))); } catch (x) { /* privat */ }
     try { fetch('api/fehler', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(e), keepalive: true }).then(r => { if (!r.ok) aus = true; }, () => { aus = true; }); } catch (x) { aus = true; }
   };
   window.LIVRE_MELDE = melde;

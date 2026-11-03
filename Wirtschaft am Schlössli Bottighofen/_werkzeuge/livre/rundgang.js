@@ -1,4 +1,4 @@
-/* Rundgang (R18): Kopie aus Le Livre der Taverne zum Schäfli (dort nur gelesen), in den Farben von Culinarium (Nacht, Kerze, Warmweiss; Schild fest über der Leiste, Fehlerbuch 10a 20.10.2026), Gang für Le Livre,
+/* Rundgang (R18): Aufbau aus dem Markenbuch des Culinarium, in den Farben des Schlössli (Nacht, Stuhlblau, Seehimmel, Papier; Schild fest über der Leiste, Fehlerbuch 10a 20.10.2026), Gang für Le Livre,
    dazu aus dem Schlössli: fehlt das Ziel eines Schritts, steht die Karte über dem Arbeitsbereich (Endprüfung 19.10.2026). */
 /* Kurzer Rundgang beim ersten Öffnen eines Werkzeugs (Robert 16.10.2026: «einmal ganz kurz zeigen, hier kannst du das machen,
    da das, damit man weiss, wo man gelandet ist»). Ein Lichtkegel liegt auf dem echten Bedienelement, daneben eine Karte mit
@@ -15,11 +15,11 @@
   var GAENGE = {
     livre: { name: ((window.LIVRE_NAMEN || (window.WO_HAUS && WO_HAUS.namen) || {}).marke || 'Le Livre'), schritte: [
       { ziel: ['.wo-sb', '#ansicht'], titel: 'Das ist ' + ((window.LIVRE_NAMEN || (window.WO_HAUS && WO_HAUS.namen) || {}).marke || 'Le Livre').replace(/^D(as|ie|er) /, function (m) { return m.toLowerCase(); }),
-        text: 'Die Marke von Culinarium zum Arbeiten: die Fotos der Abende, Rudis Wortmarke, Farben und Schriften an einem Ort, für Agenturen, Druckereien und das Team.' },
+        text: 'Die Marke des Hauses zum Arbeiten: die Fotos vom Hafen, von der Terrasse, den Tellern und dem Team, die Zeiger, das Logo, Farben und Schriften an einem Ort, für Agenturen, Druckereien und das Team.' },
       { ziel: ['.wo-ag[data-gehe="bilder"]', '.wo-aufg'], titel: 'Jedes Foto in der richtigen Grösse',
-        text: 'Unter «Fotos» liegen alle Fotos der Website, nach Bereich, Format und Herkunft. Jedes gibt es als Beitrag, Story, für die Website oder den Druck.' },
-      { ziel: ['.wo-ag[data-gehe="pruefung"]', '.wo-aufg'], titel: 'Passt ein Entwurf zu Culinarium?',
-        text: 'Die Markenprüfung sagt Punkt für Punkt, was an einem Plakat oder Beitrag zu Culinarium passt und was nicht. Gespeichert wird dabei nichts.' },
+        text: 'Unter «Fotos» liegen alle Fotos der Website, nach Gruppe, Format und Herkunft. Jedes gibt es als Beitrag, Story, für die Website oder den Druck.' },
+      { ziel: ['.wo-ag[data-gehe="pruefung"]', '.wo-aufg'], titel: 'Passt ein Entwurf zum Haus?',
+        text: 'Die Markenprüfung sagt Punkt für Punkt, was an einem Aushang oder Beitrag zum Haus passt und was nicht. Gespeichert wird dabei nichts.' },
       { ziel: ['#leiste', '.wo-leiste'], titel: 'Was erlaubt ist',
         text: 'Unten stehen die Bildrechte und alle Dateien der Marke in einem Paket. In den Hausregeln steht, warum alles so aussieht, wie es aussieht.' }
     ] }
@@ -27,43 +27,43 @@
 
   /* La Réception: «Das weiss der Chat» bekommt seinen eigenen Rundgang, sobald man dorthin wechselt. */
   function aktuell() { return WZ === 'reception' && (document.querySelector('#ansicht .wi-oben, #w-ein') || /^#wissen/.test(location.hash)) ? 'savoir' : WZ; }   /* La Réception merkt sich die letzte Ansicht, darum nach dem Inhalt fragen */
-  function schluessel(w) { return 'rundgang-culinarium-' + w; }
+  function schluessel(w) { return 'rundgang-schloessli-' + w; }
   function gesehen(w) { try { return localStorage.getItem(schluessel(w)) === '1'; } catch (e) { return true; } }
   function merk(w) { try { localStorage.setItem(schluessel(w), '1'); } catch (e) { } }
 
   var CSS = '' +
     '.rdg-kegel{position:fixed;left:0;top:0;z-index:2147483000;border-radius:16px;pointer-events:none;' +
-      'box-shadow:0 0 0 3px #F5A689,0 0 0 9px rgba(245,166,137,.35),0 0 40px 10px rgba(245,166,137,.35),0 0 0 200vmax rgba(38,36,45,.74)}' +
+      'box-shadow:0 0 0 3px #C5D2E1,0 0 0 9px rgba(162,182,207,.35),0 0 40px 10px rgba(162,182,207,.35),0 0 0 200vmax rgba(4,16,35,.74)}' +
     '.rdg-sperre{position:fixed;inset:0;z-index:2147482999}' +
     '.rdg-karte{position:fixed;left:0;top:0;z-index:2147483001;width:360px;max-width:calc(100vw - 32px);box-sizing:border-box;' +
-      'padding:22px 24px 20px;border-radius:18px;color:#26242D;background:linear-gradient(180deg,#FAF4F4,#FBD9CC);' +
-      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(58,56,69,.22),0 30px 60px -24px rgba(38,36,45,.6),0 10px 22px -12px rgba(38,36,45,.4);' +
+      'padding:22px 24px 20px;border-radius:18px;color:#0A234C;background:linear-gradient(180deg,#F4F6F9,#E7ECF3);' +
+      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(17,61,136,.22),0 30px 60px -24px rgba(4,16,35,.6),0 10px 22px -12px rgba(4,16,35,.4);' +
       'font:15px/1.55 "Instrument Sans",system-ui,sans-serif;animation:rdg-auf .42s cubic-bezier(.2,.8,.2,1) both}' +
     '@keyframes rdg-auf{from{transform:translate3d(var(--rx,0),calc(var(--ry,0px) + 14px),0)}to{transform:translate3d(var(--rx,0),var(--ry,0),0)}}' +
     '.rdg-karte{transform:translate3d(var(--rx,0),var(--ry,0),0)}' +
-    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;color:#B15736}' +
-    '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#F5A689,rgba(245,166,137,0))}' +
-    '.rdg-karte h3{margin:12px 0 6px;font:340 26px/1.12 Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100,"opsz" 72;color:#26242D;letter-spacing:0}' +
-    '.rdg-karte p{margin:0;color:rgba(38,36,45,.78)}' +
+    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;color:#0F3678}' +
+    '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#C5D2E1,rgba(162,182,207,0))}' +
+    '.rdg-karte h3{margin:12px 0 6px;font:400 20px/1.25 "Open Sans",Arial,sans-serif;color:#0A234C;letter-spacing:.12em;text-transform:uppercase}' +
+    '.rdg-karte p{margin:0;color:rgba(4,16,35,.78)}' +
     '.rdg-fuss{display:flex;align-items:center;gap:14px;margin-top:20px}' +
-    '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(38,36,45,.14)}.rdg-karte .rdg-weg b.da{background:#EF7649}' +
-    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#B15736;cursor:pointer}' +
-    '.rdg-karte .rdg-zu:hover{color:#26242D}' +
+    '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(4,16,35,.14)}.rdg-karte .rdg-weg b.da{background:#A2B6CF}' +
+    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#0F3678;cursor:pointer}' +
+    '.rdg-karte .rdg-zu:hover{color:#0A234C}' +
     '.rdg-karte .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:0 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
-      'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#FAF4F4!important;' +
-      'background:linear-gradient(180deg,#B15736,#26242D 55%,#16151A);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 18px -10px rgba(38,36,45,.8)}' +
-    '.rdg-karte .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FBD9CC,#F5A689 55%,#EF7649);' +
+      'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#F4F6F9!important;' +
+      'background:linear-gradient(180deg,#0F3678,#0A234C 55%,#0B1D3D);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 18px -10px rgba(4,16,35,.8)}' +
+    '.rdg-karte .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#E7ECF3,#C5D2E1 55%,#A2B6CF);' +
       'box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45)}' +
-    '.rdg-karte .rdg-los svg{width:14px;height:14px;fill:none;stroke:#26242D;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
+    '.rdg-karte .rdg-los svg{width:14px;height:14px;fill:none;stroke:#0A234C;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
     '.rdg-karte .rdg-los:hover i{transform:translateX(2px)}.rdg-karte .rdg-los i{transition:transform .2s}' +
-    '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #EF7649;outline-offset:3px}' +
+    '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #A2B6CF;outline-offset:3px}' +
     /* Werkzeug-Stile (La Carte vergrössert Knöpfe und Schrift) dürfen die Karte nicht verändern */
     '.rdg-karte,.rdg-karte *{box-sizing:border-box!important}' +
-    '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important}' +
-    '.rdg-karte h3{font:340 26px/1.12 Fraunces,Georgia,serif!important;font-variation-settings:"SOFT" 100,"opsz" 72!important;letter-spacing:0!important;text-transform:none!important}' +
+    '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:uppercase!important}' +
+    '.rdg-karte h3{font:400 20px/1.25 "Open Sans",Arial,sans-serif!important;letter-spacing:.12em!important;text-transform:uppercase!important;text-transform:uppercase!important}' +
     '.rdg-karte .rdg-fuss{flex-wrap:nowrap!important}' +
     '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 10px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
-    '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#B15736!important}' +
+    '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#0F3678!important}' +
     '.rdg-karte .rdg-los{height:42px!important;padding:0 6px 0 18px!important;letter-spacing:.16em!important;border-radius:999px!important}' +
     '.rdg-karte .rdg-los i{width:30px!important;height:30px!important;flex:none!important}' +
     '.rdg-los>span{text-box:trim-both cap alphabetic}' +   /* Messlauf 30.10.2026: Schrift optisch mittig (Kriterium 35) */
@@ -209,23 +209,23 @@
 
   var SCHILD_CSS = '' +
     '.rdg-schild{position:fixed;right:24px;bottom:24px;z-index:2147482990;display:flex;align-items:center;gap:14px;box-sizing:border-box;' +
-      'padding:10px 10px 10px 18px;border-radius:999px;color:#26242D;background:linear-gradient(180deg,#FAF4F4,#FBD9CC);' +
-      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(58,56,69,.28),0 18px 34px -16px rgba(38,36,45,.55),0 6px 14px -8px rgba(38,36,45,.35);' +
+      'padding:10px 10px 10px 18px;border-radius:999px;color:#0A234C;background:linear-gradient(180deg,#F4F6F9,#E7ECF3);' +
+      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(17,61,136,.28),0 18px 34px -16px rgba(4,16,35,.55),0 6px 14px -8px rgba(4,16,35,.35);' +
       'transform:translate3d(0,0,0);transition:transform .55s cubic-bezier(.2,.8,.2,1);animation:rdg-schild-auf .7s cubic-bezier(.2,.9,.25,1.15) both}' +
     '@keyframes rdg-schild-auf{from{transform:translate3d(0,calc(100% + 40px),0)}to{transform:translate3d(0,0,0)}}' +
     '.rdg-schild.weg{animation:none;transform:translate3d(0,calc(100% + 60px),0)}' +
     '.rdg-schild__t{display:flex;flex-direction:column;gap:4px;line-height:1}' +
-    '.rdg-schild__t small{font:500 9px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.2em!important;text-transform:uppercase;color:#B15736}' +
-    '.rdg-schild__t b{font:340 18px/1 Fraunces,Georgia,serif!important;font-variation-settings:"SOFT" 100,"opsz" 72!important;letter-spacing:0!important;color:#26242D}' +
+    '.rdg-schild__t small{font:500 9px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.2em!important;text-transform:uppercase;color:#0F3678}' +
+    '.rdg-schild__t b{font:400 14px/1.1 "Open Sans",Arial,sans-serif!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:#0A234C}' +
     '.rdg-schild .rdg-los{flex:none;margin:0!important;display:inline-flex;align-items:center;gap:10px;height:38px!important;padding:0 5px 0 15px!important;border:0!important;border-radius:999px!important;cursor:pointer;' +
-      'font:500 9.5px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#FAF4F4!important;' +
-      'background:linear-gradient(180deg,#B15736,#26242D 55%,#16151A)!important;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 8px 16px -10px rgba(38,36,45,.8)!important}' +
-    '.rdg-schild .rdg-los i{display:grid;place-items:center;width:28px!important;height:28px!important;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FBD9CC,#F5A689 55%,#EF7649);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45);transition:transform .2s}' +
+      'font:500 9.5px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#F4F6F9!important;' +
+      'background:linear-gradient(180deg,#0F3678,#0A234C 55%,#0B1D3D)!important;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 8px 16px -10px rgba(4,16,35,.8)!important}' +
+    '.rdg-schild .rdg-los i{display:grid;place-items:center;width:28px!important;height:28px!important;border-radius:50%;background:radial-gradient(circle at 35% 30%,#E7ECF3,#C5D2E1 55%,#A2B6CF);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45);transition:transform .2s}' +
     '.rdg-schild .rdg-los:hover i{transform:translateX(2px)}' +
-    '.rdg-schild .rdg-los svg{width:13px;height:13px;fill:none;stroke:#26242D;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
+    '.rdg-schild .rdg-los svg{width:13px;height:13px;fill:none;stroke:#0A234C;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
     '.rdg-schild__zu{flex:none;width:26px;height:26px;margin:0 2px 0 -4px!important;padding:0!important;border:0!important;border-radius:50%;background:none!important;box-shadow:none!important;cursor:pointer;color:#8A8590;font:16px/1 system-ui!important}' +
     '.rdg-schild__zu{display:grid;place-items:center}.rdg-schild__zu svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}' +   /* kein «×» (Robert 30.10.2026): Zurück-Pfeil wie «Verwerfen» */
-    '.rdg-schild__zu:hover{color:#26242D}' +
+    '.rdg-schild__zu:hover{color:#0A234C}' +
     '@media (max-width:700px){.rdg-schild{right:16px;left:auto}}' +
     '@media (prefers-reduced-motion:reduce){.rdg-schild{animation:none;transition:none}}';
 

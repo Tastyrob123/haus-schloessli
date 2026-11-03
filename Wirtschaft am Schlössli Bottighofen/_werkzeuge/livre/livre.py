@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Le Livre · Culinarium Hannover, Server-Teil (Nachbau von livre.py der Taverne zum Schäfli, dort nur gelesen). Aufgerufen von
+"""Das Markenbuch (Le Livre) · Wirtschaft am Schlössli, Server-Teil (Aufbau aus dem Markenbuch des Culinarium). Aufgerufen von
 server.py (lokal) und online/livre_online.py (Vercel) unter …/api/<was>:
 
    GET  bild?k=<foto>&f=instagram|story|web|druck[&x=0..1][&y=0..1]   das Foto in fertiger Grösse als Download
@@ -7,7 +7,7 @@ server.py (lokal) und online/livre_online.py (Vercel) unter …/api/<was>:
    POST pruefen  {name, typ, daten (data-URL), sprache}                 Markenprüfung eines Entwurfs
    POST fehler   {zeit, art, text, wo, seite, browser}                  Skriptfehler aus dem Browser (R03)
 
-Farben werden ohne KI gemessen (gegen die Palette aus livre.json, gebaut aus website/assets/culinarium.css, Abstand nach CIEDE2000). Bild, Schrift, Zeichen und Ton
+Farben werden ohne KI gemessen (gegen die Palette aus livre.json, gebaut aus website/assets/css/haus.css, Abstand nach CIEDE2000). Bild, Schrift, Zeichen und Ton
 beurteilt Claude, aber nur mit LIVRE_KI=1 (Regel 54: der Schlüssel ist gesperrt, ohne Roberts Wort kein Aufruf). Ohne den Schalter antwortet eine
 Probe-Antwort in derselben Form, gerechnet aus der Messung und überall als Probe beschriftet. Gespeichert wird nichts: der Entwurf lebt nur im
 Arbeitsspeicher und in einem Zwischenordner, der nach der Antwort gelöscht wird."""
@@ -18,14 +18,14 @@ from PIL import Image, ImageOps, ImageFile, ImageFilter, ImageChops
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 Image.MAX_IMAGE_PIXELS = None
 HIER = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.join(os.path.dirname(os.path.dirname(HIER)), 'website')   # die Website von Culinarium (Werkzeug liegt in _werkzeuge/livre/)
+ROOT = os.path.join(os.path.dirname(os.path.dirname(HIER)), 'website')   # die Website des Hauses (Werkzeug liegt in _werkzeuge/livre/)
 PROJEKTE = os.path.dirname(os.path.dirname(ROOT))
 LIVRE_JSON = next((x for x in (os.environ.get('LIVRE_JSON'), os.path.join(HIER, 'livre.json')) if x and os.path.exists(x)), os.path.join(HIER, 'livre.json'))
 QUELLEN_JSON = os.path.join(HIER, '_quellen.json')       # nur lokal: wo das Original je Foto liegt (geht nie online)
 FEHLER_LOG = os.environ.get('LIVRE_FEHLER') or os.path.join(HIER, '_qa', 'fehler.jsonl')
-WEB_WURZEL = os.environ.get('LIVRE_WEB') or ROOT          # online: Ordner mit assets/bild (Vercel legt die Website neben die Funktion)
+WEB_WURZEL = os.environ.get('LIVRE_WEB') or ROOT          # online: Ordner mit assets/img (Vercel legt die Website neben die Funktion)
 HOECHST_PIXEL = 120_000_000
-SCHLUESSEL = 'culinarium-hannover'
+SCHLUESSEL = 'wirtschaft-am-schloessli'
 MODELL = 'claude-sonnet-5-5'
 FORMATE = {'instagram': (1080, 1350, 'Instagram 1080 × 1350'), 'story': (1080, 1920, 'Story 1080 × 1920'),
            'web': (2000, None, 'Web, längste Seite 2000 px'), 'druck': (None, None, 'Druck, volle Auflösung')}
@@ -205,31 +205,29 @@ def farben(im, n=28):
 # ---------------------------------------------------------------- Regeln für die Beurteilung (aus der Website und dem Markenbuch buch.html)
 def regeln():
     L = _livre()
-    pal = '\n'.join(f"- {f['n']} {f['h']} ({f['r']})" for f in L['farben'] if f.get('g') != 'abende')
-    abende = ', '.join(f"{f['n']} {f['h']} ({f['r']})" for f in L['farben'] if f.get('g') == 'abende')
-    return f'''MARKE CULINARIUM HANNOVER (Hausregeln, Oktober 2026)
+    pal = '\n'.join(f"- {f['n']} {f['h']} ({f['r']})" for f in L['farben'])
+    return f'''MARKE WIRTSCHAFT AM SCHLÖSSLI, BOTTIGHOFEN (Hausregeln, Oktober 2026)
 
-Was Culinarium ist: Food-Pairing-Abende «Momo x Rudi» in der Bar Walk on the Wild Side, Haasemannstraße 13, Hannover-Linden. Rudi kocht ein Menü, Momo stellt fünf Signature Drinks dazu und erklärt jeden; wenige Plätze an einer langen Tafel, Kerzenlicht. Jeder Abend hat sein eigenes Plakat in einer eigenen Farbe. Dazu Rudis zweite Küche Dirty Chicken (Fried Chicken, Sandwiches) mit eigenem violettem Logo.
+Das Haus: Restaurant mit Seeterrasse direkt im Hafen von Bottighofen am Bodensee, Seestrasse 50, 8598 Bottighofen TG, «by Christian Kuchler». Terrasse unter Platanen mit blauen Stühlen auf Kies, Blick aufs Wasser und die Alpen; die Bar «Lästermeile» mit Zementfliesen führt von drinnen nach draussen. Küche: Monika Huber, mediterran (Frankreich, Italien, Iberische Halbinsel, Klassiker). Gastgeber und Sommelier Jonas Volpert. Kein Hotel, keine Zimmer. Das Schwesterhaus (Taverne zum Schäfli in Wigoltingen) steht höchstens als Verweis.
 
-Farben (aus der Gestaltung der Website, culinarium.css; Farbwelt «Plakat»):
+Farben (aus der Gestaltung der Website; Farbwelt «Stuhl und See», Ton in Ton auf das Blau des Platztellers gestimmt):
 {pal}
-Farben der Abende (je Plakat eine, gemessen an der Illustration): {abende}
-Regeln: Nacht, Strasse, Bar, Tafel und Schiefer tragen die dunklen Flächen, so wie die Bar am Abend. Warmweiss trägt den Lesetext, geschrieben in Tinte, nie in reinem Schwarz. Kerze ist die Farbe des Abends: sie betont (Schrägstrich in Rudis Zeilen, Knauf am Knopf, Linien), schreibt nie den Lesetext. Ein Plakat darf die Farbe seines Abends tragen. Violett gehört nur zu Dirty Chicken, nie zu den Abenden von Culinarium.
+Regeln: Nacht, Tief und Stuhlblau tragen die dunklen Flächen, immer mit der Punkt-Tapete. Papier, Seespiegel und Blatt tragen den Lesetext. Seehimmel zeichnet Linie und Zeichen und betont in Titeln, schreibt nie den Lesetext. Geschrieben wird in Tinte (#041023), nie in reinem Schwarz. Schirmrot nur als Punkt, nie als Fläche. Kein Gold, kein Grün.
 
-Schriften: Fraunces mit weichen Enden (SOFT 100), leicht (Titel 340, Rudis Zeilen 300 in Versalien), nie fett, nie kursiv. Rudis Zeilen in Versalien mit Schrägstrich: «LAUCH / BLUMENKOHL / CHIPOTLE». Urbanist für Etiketten und Knöpfe in Versalien, gesperrt. Instrument Sans für den Lesetext. DM Mono für Zeiten, Daten und Preise. Keine anderen Schriften.
+Schriften: Open Sans 400 in gesperrten Versalien für Titel und Namen (die Schrift der Wortmarke), Betonung nur über Farbe, nie fett oder kursiv. Instrument Sans für den Lesetext. DM Mono in Versalien, gesperrt, für Zahlen, Zeiten, Etiketten und Gerichte wie auf der Karte (THON, CAVATELLI). Caveat nur für einzelne Wörter in Handschrift. Keine anderen Schriften.
 
-Zeichen: Die Wortmarke ist Rudis Original: CULINARIUM in einer breiten Display-Schrift der 70er mit tropfenförmigen Enden, darunter linksbündig «A UNiQUE EXPERiENCE» (das i klein). Sie steht in Schiefer auf Warmweiss oder in Warmweiss auf Dunkel, gerade, unverzerrt, nie neu gesetzt, nie mit Schatten oder Leuchten, nie auf einem unruhigen Foto. Das C der Wortmarke ist das Zeichen. Das Logo von Dirty Chicken (das D mit dem Hühnerfuss) steht nur im Original auf Violett.
+Zeichen und Name: Das Logo des Hauses ist ein Kreis mit zwei Zeigern und zwei Kugeln, die Nabe ist das Ö im Namen SCHLÖSSLI, darunter WIRTSCHAFT und BY CHRISTIAN KUCHLER. Das Zeichen sind die Zeiger. Gerade, unverändert, nur in Nacht, Schwarz, Weiss oder Seehimmel. Der Name steht in weit gesperrten Versalien: WIRTSCHAFT AM SCHLÖSSLI, kurz SCHLÖSSLI.
 
-Tapete: Gitter aus der doppelten Linie der Plakate, das C in jedem Feld, Ton in Ton, auf Nacht und auf Warmweiss. Nie ein freies Motiv.
+Tapete: feines Punktraster, in der Mitte jedes Felds die Zeiger als Medaillon, Ton in Ton (Seehimmel auf Nacht, Stuhlblau auf Papier). Nie ein freies Motiv.
 
-Bilder: zeigen, was ein Gast an einem Abend erlebt: Teller und Glas, die Tafel bei Kerzenlicht, die Bar, Rudi und Momo bei der Arbeit. Warmes Licht bleibt warm. Nie ein erzeugtes Bild als ersten Eindruck, keine Fotos der Bar ohne ihre Freigabe, keine Gäste aus Instagram, nie hineinzoomen, bis es unscharf wird.
+Ordnung: der Horizont des Sees als feine Linie über die ganze Breite, Titel und Bild sitzen an ihr.
 
-Bausteine: Knopf als dunkle Platte mit rundem Knauf in Kerze, Urbanist in Versalien. Keine Einkerbungen, keine Pillen-Reihen, kein gerahmtes Schild auf einem Foto.
+Bilder: zeigen, was der Gast vorfindet: Hafen, Terrasse, See, Teller, Bar, Team. Nie ein erzeugtes Bild als ersten Eindruck, nie Gästefotos für Werbung, nie hineinzoomen, bis es unscharf wird.
 
-Ton der Texte: Du, herzlich, knapp, ein bisschen Strasse; nie Werbesprache. Jeder Satz wertet auf: Sorgfalt, Handarbeit, der einzelne Gast. Zahlen nur als Exklusivität (wenige Plätze), nie als Menge. Wörter des Hauses: {', '.join(L['ton']['eigene_worte'])}. Nicht: {', '.join(L['ton']['nicht'])}. Keine Emojis, keine Superlative. Lieber eine echte Angabe (Tag, Ort, Preis) als ein Adjektiv.'''
+Ton der Texte: herzlich, unkompliziert, «Mehr Wirtschaft, weniger feine Pinkel», in der Sie-Form, Schweizer Schreibung (ss, nie das scharfe S, Anführungszeichen «…»). Titel kurz, höchstens fünf Wörter, ohne Ausrufezeichen. Wörter des Hauses: {', '.join(L['ton']['eigene_worte'])}. Nicht: {', '.join(L['ton']['nicht'])}. Keine Superlative und Werbefloskeln, keine Emojis. Lieber eine echte Angabe (Zeit, Ort, Preis) als ein Adjektiv.'''
 
 
-SPRACHE = {'de': 'Deutsch (Deutschland, mit ß), im Du'}   # die Website spricht Deutsch; weitere Sprachen erst mit Schritt 15a
+SPRACHE = {'de': 'Deutsch in Schweizer Schreibung (ss, nie das scharfe S), in der Sie-Form'}   # die Website spricht Deutsch; weitere Sprachen erst mit Schritt 15a
 
 
 def _ki_an():
@@ -273,7 +271,7 @@ Regeln: 5 bis 9 Punkte, je Bereich höchstens zwei. Nur, was im Bild wirklich zu
             'ton': {'type': 'array', 'items': {'type': 'object', 'required': ['stelle', 'vorschlag'], 'properties': {
                 'stelle': {'type': 'string', 'description': 'wörtlich aus dem Entwurf'}, 'vorschlag': {'type': 'string', 'description': 'Fassung im Ton des Hauses'}}}}}}}
     koerper = {'model': MODELL, 'max_tokens': 4000, 'tools': [werkzeug], 'tool_choice': {'type': 'tool', 'name': 'rueckmeldung'},
-               'system': 'Du bist die Markenprüfung im Markenbuch von Culinarium Hannover. Du beurteilst Entwürfe von Agenturen und vom Team ruhig, konkret und Punkt für Punkt gegen diese Regeln. Sprich von Culinarium oder von der Marke, nie von «Le Livre» oder vom Werkzeug.\n\n' + regeln(),
+               'system': 'Du bist die Markenprüfung im Markenbuch der Wirtschaft am Schlössli in Bottighofen. Du beurteilst Entwürfe von Agenturen und vom Team ruhig, konkret und Punkt für Punkt gegen diese Regeln. Sprich vom Haus oder von der Marke des Hauses, nie von «Le Livre» oder vom Werkzeug.\n\n' + regeln(),
                'messages': [{'role': 'user', 'content': inhalt}]}
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=json.dumps(koerper).encode('utf-8'), method='POST',
                                  headers={'content-type': 'application/json', 'x-api-key': os.environ['ANTHROPIC_API_KEY'], 'anthropic-version': '2023-06-01',
@@ -314,7 +312,7 @@ def _probe(messung, seiten, groesse):
     titel = {'passt': f'{pr}\u00a0% in den Farben des Hauses', 'achten': 'Farben teils fremd', 'passt_nicht': 'Farben fremd'}[urteil]
     punkte = [dict(bereich='farben', urteil=urteil, titel=titel, text=text)]
     if messung['schwarz'] > .01:
-        punkte.append(dict(bereich='farben', urteil='passt_nicht', titel='Reines Schwarz', text=f'Auf {round(messung["schwarz"] * 100)}\u00a0% der Fläche steht reines Schwarz. Geschrieben wird in Tinte #2A2833, dunkle Flächen sind Nacht #16151A.'))
+        punkte.append(dict(bereich='farben', urteil='passt_nicht', titel='Reines Schwarz', text=f'Auf {round(messung["schwarz"] * 100)}\u00a0% der Fläche steht reines Schwarz. Geschrieben wird in Tinte #041023, dunkle Flächen sind Nacht #0B1D3D.'))
     satz = {'passt': f'Die Farben sind gemessen und liegen zu {pr}\u00a0% in der Palette des Hauses.',
             'achten': 'Die Farben sind gemessen: ein Teil liegt ausserhalb der Palette des Hauses.',
             'passt_nicht': 'Die Farben sind gemessen und passen nicht zum Haus.'}[urteil]

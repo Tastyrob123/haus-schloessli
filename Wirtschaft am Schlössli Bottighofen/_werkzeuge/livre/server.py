@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Le Livre (Marke) · Culinarium Hannover, lokaler Server (Port 9285; Nachbau des Schäfli, dort nur gelesen): liefert die Website (website/) unter / und Le Livre
+"""Das Markenbuch (Le Livre) · Wirtschaft am Schlössli, lokaler Server (Port 9285; Aufbau aus dem Markenbuch des Culinarium): liefert die Website (website/) unter / und Le Livre
 (_werkzeuge/livre/) nur lesend aus, das gemeinsame Kleid der Werkzeuge (_werkzeuge/oberflaeche/) unter /assets/oberflaeche/, und beantwortet /api/…:
    python3 _werkzeuge/livre/server.py [port]           danach http://127.0.0.1:9285/_werkzeuge/livre/
    LIVRE_KI=1 python3 _werkzeuge/livre/server.py       Markenprüfung mit Claude (nur auf Roberts Wort, Regel 54); ohne den Schalter Probe-Antwort
@@ -16,7 +16,7 @@ von der eigenen Seite (Origin/Sec-Fetch-Site, 403), Grenzen je Minute nur auf di
 import collections, http.server, json, os, socketserver, sys, threading, time, urllib.parse
 
 HIER = os.path.dirname(os.path.abspath(__file__))
-PROJ = os.path.dirname(os.path.dirname(HIER))            # Culinarium Hannover
+PROJ = os.path.dirname(os.path.dirname(HIER))            # Wirtschaft am Schlössli Bottighofen
 WURZEL = os.path.join(PROJ, 'website')                   # die Website, nur gelesen
 # Wege ausserhalb der Website: Le Livre selbst, die Nachbarn (nur ihre Oberflächen) und das gemeinsame Kleid
 # (nur die Oberflächen der Nachbarn, ihre Server-Teile laufen auf ihren eigenen Servern)
