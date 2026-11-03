@@ -36,4 +36,9 @@ Kopiert, umgekleidet, Hauswerte eingetragen: Aufbau, Wege und Prüf-Nachbauten d
 
 ## Offen, mit Grund
 
-- Nichts im Kern. Stand der Prüfläufe: Meldung an den Oberchef.
+- Nichts im Kern.
+
+## Prüfstand 3.11.2026, 22:00 UTC (tor-schnell, Chromium, 1440/1280/1000/390, max. 40, Tiefe 2)
+
+werkbank 40 Zustände · werkbank-ki 40 · werkbank-karte 11 · werkbank-geprueft 6 · werkbank-befund 1 · werkbank-unterlagen 7 · -drucksachen, -untersetzer, -sticker, -postkarten, -beigaben, -mails, -material je 1 · -feed 2: **überall 0 Funde.** Dazu die Werkbank Fensterhöhe für Fensterhöhe bei 1440 (46 Halte) und 390 (48 Halte) mit dem Auge angesehen.
+Vorher behoben (nach dem Bau des Kerns auf den Seiten von Papier und Feed): Feed-Titel lief bei 1000/1280 über das Handy (`zeile_ganz.py`), Pfeile der Mails 0,6 px neben der Mitte (`text_mitte.py` lässt `mails/` aus), Dateien mit doppelter Vorschau (`wb_kapitel.mit_vorschau` überspringt Einträge mit eigenem Bild).
