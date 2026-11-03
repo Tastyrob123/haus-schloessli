@@ -408,5 +408,5 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 .knopf>.knopf__t{text-box:trim-both cap alphabetic}
 @supports (text-box:trim-both cap alphabetic){.knopf--klein,.m-oben__ecke.knopf{padding-top:0}}
 /* Nach dem Zuschneiden misst die Regel text-mitte die Versalhöhe am «H» der DM Mono: es steht 0,45 px über der Versalhöhe aus den Schriftdaten, die text-box nutzt.
-   Das liegt an der Schrift, nicht am Browser; beide Kerne schneiden gleich zu, darum gilt der Ausgleich für beide (nur mit text-box). */
-@supports (text-box:trim-both cap alphabetic){.knopf>.knopf__t{position:relative;top:.45px}}
+   In Chromium bleibt die Mitte so 0,45 px zu hoch, WebKit liegt von selbst um diesen Betrag tiefer: Ausgleich nur in Chromium. */
+@supports (text-box:trim-both cap alphabetic) and (interpolate-size:allow-keywords){.knopf>.knopf__t{position:relative;top:.45px}}   /* nur Chromium: WebKit setzt die zugeschnittene Zeile von selbst rund 0,45 px tiefer (Cloud-Prüfung 3.11.2026: Saal-Knöpfe 0,6 px zu tief mit Ausgleich, Eck-Knöpfe sauber) */

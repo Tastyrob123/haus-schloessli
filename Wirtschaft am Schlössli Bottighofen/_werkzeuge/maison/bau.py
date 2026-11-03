@@ -318,14 +318,14 @@ def schirm(n, k, leiste, alt, i=0, sizes='(max-width:1000px) 92vw, 60vw'):
                 f'<small>Platzhalter, nur lokal</small></div></figure>')
     b = BILDER[name]
     return (f'<figure class="m-schirm" data-r="schweb" style="--i:{i}"><div class="m-schirm__leiste" aria-hidden="true"><span>{e(leiste)}</span></div>'
-            f'<img src="img/{name}.webp" srcset="img/{name}-s.webp 1200w, img/{name}.webp {b[0]}w" sizes="{sizes}" width="{b[0]}" height="{b[1]}" alt="{e(alt)}" loading="lazy" decoding="async"></figure>')
+            f'<img src="img/{name}.webp" srcset="img/{name}-s.webp 1200w, img/{name}.webp {b[0]}w" sizes="{sizes}" width="{b[0]}" height="{b[1]}" alt="{e(alt)}" loading="eager" decoding="sync"></figure>')
 
 
 def stueck_bild(name, alt, cls='', i=0):
     if name not in BILDER:
         return ''
     w, h = BILDER[name]
-    return f'<figure class="m-stueck {cls}" data-r="schweb" style="--i:{i}"><img src="img/{name}.webp" width="{w}" height="{h}" alt="{e(alt)}" loading="lazy" decoding="async"></figure>'
+    return f'<figure class="m-stueck {cls}" data-r="schweb" style="--i:{i}"><img src="img/{name}.webp" width="{w}" height="{h}" alt="{e(alt)}" loading="eager" decoding="sync"></figure>'
 
 
 def stuecke(k):

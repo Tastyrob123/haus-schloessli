@@ -189,3 +189,11 @@ h1,h2,h3,h4,figcaption{text-wrap:balance}
   .wo-marke,.wo-sp,.wo-an__st em,.rdg-karte .rdg-zu,.wo-sperr-mitte{text-indent:var(--wo-sperr)}
   :is(.wo-marke,.wo-sp,.wo-an__st em,.wo-sperr-mitte) :is(i,svg,img){text-indent:0}
 }
+
+/* Kopf-Marke am Handy und Tablet (≤ 900 px, Cloud-Prüfung 3.11.2026: «DAS RESERVATIONSBUCH» am Handy mit «…» gekürzt, Kriterium 2): der Name steht immer ganz,
+   bei Bedarf in zwei Zeilen (Artikel oben, Name unten), etwas kleiner und weniger gesperrt; nie «…», nie abgeschnitten. Gilt für alle sieben Werkzeuge. */
+@media (max-width:900px){
+  .wo-marke-w b{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;max-width:none!important;font-size:14px!important;letter-spacing:.04em!important;line-height:1.15!important;text-wrap:balance}
+  .wo-marke-w span{min-width:0}
+}
+@media (max-width:480px){.wo-marke-w b{font-size:12px!important;letter-spacing:.03em!important}}
