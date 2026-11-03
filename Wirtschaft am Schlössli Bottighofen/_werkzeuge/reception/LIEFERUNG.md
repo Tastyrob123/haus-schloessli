@@ -34,7 +34,13 @@ Start aus dem Hausordner: `python3 _werkzeuge/reception/server.py 9284`.
 ## Wie geprüft
 
 `node _Werkzeuge/abnahme-tor/tor-schnell.js … --nur gaestebuch` und `--nur gaestebuch-anleitung`, Chromium, 1440/1280/1000/390, max. 40 Zustände,
-Tiefe 2; Zustandsbilder 1440 und 390 mit dem Auge; Suchlauf aus dem gemeinsamen Auftrag. Ergebnis unten (Prüfstand).
+Tiefe 2; Zustandsbilder 1440 und 390 mit dem Auge; Suchlauf aus dem gemeinsamen Auftrag.
+
+**Prüfstand 3.11.2026, 19:05 UTC:** `gaestebuch` 40 Zustände (+ 40/40/58 Stichproben 1280/1000/390) **0 Funde**, nichts «nicht erreicht»;
+`gaestebuch-anleitung` 11 Zustände (+ Stichproben) **0 Funde**. Vorher behoben: Knopfschrift 0,5 px (DM Mono aus /assets/fonts/), Platzhalter blass,
+Einzelwörter in Titeln, Kopf am Handy gekürzt («Das Reservationsbuch»), Titel der Mitte bei 1280, Stand der Anfrage als Marke statt Lesezeile,
+leere Zeilen zugeklappter Antworten, Notiz «Vor dem Senden» auf einer Kante, Anleitung am Handy (Kopf, Titel). Brief-PDF mit dem Auge geprüft.
+Suchlauf: kein sichtbarer Treffer; übrig sind nur Herkunftsvermerke in Code-Kommentaren. `daten/` frisch (nur Beispiele, keine Proben).
 
 ## Offen, mit Grund
 

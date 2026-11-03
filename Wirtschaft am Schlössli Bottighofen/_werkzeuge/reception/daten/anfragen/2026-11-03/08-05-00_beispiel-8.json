@@ -1,0 +1,41 @@
+{
+ "zeit": "2026-11-03T08:05:00+01:00",
+ "art": "tisch",
+ "name": "Andrea Schmid",
+ "kontakt": "+41 79 000 00 01",
+ "datum": "Do, 31. Dezember 2026, 19:00 Uhr",
+ "personen": 4,
+ "anliegen": "Tisch für vier Personen an Silvester, Donnerstag, 31. Dezember, 19:00 Uhr, gerne mit Blick auf den See.",
+ "sprache": "de",
+ "gespraech": "beispiel-8",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Haben Sie an Silvester offen? Wir wären zu viert, so um 19 Uhr, am liebsten mit Blick auf den See."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Vom 22. Dezember 2026 bis 10. Februar 2027 macht das Restaurant Ferien. Gerne gebe ich Ihre Frage an das Team weiter, dafür brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer."
+  },
+  {
+   "rolle": "user",
+   "text": "Andrea Schmid, +41 79 000 00 01"
+  },
+  {
+   "rolle": "assistant",
+   "text": "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Haus, sie liegt nur zur Ansicht im Reservationsbuch."
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "an": "kontakt@schloessli-bottighofen.ch",
+ "abteilung": "Reservation",
+ "entwurf": {
+  "betreff": "Silvester in der Wirtschaft am Schlössli",
+  "text": "Guten Tag Frau Schmid\n\nvielen Dank für Ihre Anfrage und dass Sie den Jahreswechsel bei uns am See feiern möchten.\n\nVom 22. Dezember 2026 bis 10. Februar 2027 macht unser Restaurant Ferien, an Silvester sind wir deshalb nicht für Sie da. Gerne reservieren wir Ihnen einen Tisch vor den Ferien oder ab Donnerstag, 11. Februar 2027 [neues Datum vorschlagen].\n\nGeöffnet sind wir Donnerstag bis Montag von 11:30 bis 23:00 Uhr, die Küche kocht von 11:30 bis 13:30 und von 18:00 bis 20:00 Uhr.\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Öffnungszeiten und Ferien (22. Dezember 2026 bis 10. Februar 2027).\nOffen: Ersatzdatum.",
+  "vorlage": "",
+  "absender": "kontakt@schloessli-bottighofen.ch",
+  "zeit": "2026-11-03T08:05:00+01:00"
+ }
+}

@@ -422,3 +422,10 @@ html.probe-offen{overflow:visible}
 .re-q .re-a__n b{text-wrap:balance}
 /* Tor 3.11.2026 (K4): zugeklappte Antwort des Chats wirklich weg (Chromium blendet den Inhalt geschlossener <details> nur aus, die Zeilen behalten ihre Fläche) */
 details.re-f__antw:not([open])>.re-chat-antwort,details:not([open])>.re-gespraech__l{display:none}
+/* Tor 3.11.2026 (K2 «spalte»): der Stand der Anfrage («Neu», «Brief bereit») steht oben rechts in der Karte, Name und Angaben bekommen die ganze Breite */
+.re-a:not(.re-q){position:relative;grid-template-columns:auto minmax(0,1fr)!important}
+.re-a:not(.re-q) .re-a__st{position:absolute;top:13px;right:16px;margin:0!important;grid-column:auto}
+.re-a:not(.re-q) .re-a__k{padding-right:92px}
+/* Felder haben unter dem Verlauf eine feste helle Grundfarbe (Platzhalter-Kontrast wird gegen sie gemessen, Kriterium 8) */
+.feld input:not([type=checkbox]):not([type=radio]),.feld textarea{background-color:#e9eef4}
+.re-a:not(.re-q) .re-a__st::before{content:attr(data-st)}   /* Stand als Marke, nicht als Lesezeile der Karte */

@@ -1,0 +1,13 @@
+{
+ "zeit": "2026-11-03T10:20:00+01:00",
+ "frage": "Habt ihr am Dienstag offen?",
+ "antwort": "Dienstag und Mittwoch ist Ruhetag. Geöffnet ist Donnerstag bis Montag:\n- Restaurant: 11:30 bis 23:00 Uhr\n- Küche à la carte: 11:30 bis 13:30 und 18:00 bis 20:00 Uhr\n- Lästermeile: die Tapas-Karte den ganzen Tag",
+ "belegt": true,
+ "thema": "",
+ "gruppe": "Reservation & Zeiten",
+ "sprache": "de",
+ "buchung": false,
+ "mappe": false,
+ "anfrage": "",
+ "beispiel": true
+}

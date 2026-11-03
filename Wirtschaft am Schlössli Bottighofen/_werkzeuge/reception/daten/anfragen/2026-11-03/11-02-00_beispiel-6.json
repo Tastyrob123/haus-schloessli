@@ -1,0 +1,41 @@
+{
+ "zeit": "2026-11-03T11:02:00+01:00",
+ "art": "tisch",
+ "name": "Marco Frei",
+ "kontakt": "marco.frei@example.com",
+ "datum": "So, 8. November 2026, 18:30 Uhr",
+ "personen": 8,
+ "anliegen": "Tisch für acht Personen am Sonntag, 8. November, 18:30 Uhr, mit Hund, gerne auf der Terrasse.",
+ "sprache": "de",
+ "gespraech": "beispiel-6",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Habt ihr am Sonntag, 8. November um 18:30 Platz für 8 Personen? Wir bringen unseren Hund mit."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Die Reservation online zeigt die freien Tische. Hunde sind willkommen. Ab 6 Personen gelten Sie als Gruppe; gerne gebe ich Ihre Anfrage an das Team weiter, dafür brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer."
+  },
+  {
+   "rolle": "user",
+   "text": "Marco Frei, marco.frei@example.com, gerne auf der Terrasse."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Danke. Dies ist ein Entwurf von Tasty Studios: Die Anfrage geht nicht an das Haus, sie liegt nur zur Ansicht im Reservationsbuch."
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "an": "kontakt@schloessli-bottighofen.ch",
+ "abteilung": "Reservation",
+ "entwurf": {
+  "betreff": "Ihr Tisch für acht Personen am Sonntag, 8. November",
+  "text": "Guten Tag Herr Frei\n\nvielen Dank für Ihre Anfrage. Gerne halten wir für Sie und Ihre Gäste am Sonntag, 8. November, um 18:30 Uhr einen Tisch für acht Personen bereit [Tisch bestätigen].\n\nIhr Hund ist bei uns herzlich willkommen. Auf der Terrasse decken wir an einem Novemberabend nur, wenn das Wetter mitspielt [Terrasse je nach Wetter]; in der Gaststube sitzen Sie mit Blick auf den Hafen.\n\nAb sechs Personen gilt eine Reservation nach unseren AGB als Gruppe. Die Küche kocht abends von 18:00 bis 20:00 Uhr, die Karte der Lästermeile gibt es den ganzen Tag.\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Lage, Anreise & Geschichte (Hunde willkommen), AGB (Gruppen ab 6 Personen), Öffnungszeiten (Küche 18:00 bis 20:00 Uhr).\nOffen: Tisch, Terrasse je nach Wetter.",
+  "vorlage": "",
+  "absender": "kontakt@schloessli-bottighofen.ch",
+  "zeit": "2026-11-03T11:02:00+01:00"
+ }
+}

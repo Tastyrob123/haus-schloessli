@@ -40,4 +40,5 @@
 @media (max-width:480px){.wo-kopf .wo-marke-w b{font-size:12px;letter-spacing:0}.wo-kopf .wo-marke-w{gap:10px}}
 @media (max-width:360px){.wo-kopf .wo-marke-w b{font-size:10.5px;letter-spacing:0}}
 /* Schlössli 3.11.2026: runder Hauptweg in der Leiste am Handy (nur Knauf-Symbol, ohne hellen Knauf): Pfeil hell auf Stuhlblau statt Stuhlblau auf Stuhlblau */
-.wo-kn--gold.wo-kn--klein i{color:var(--wo-blatt)}
+.wo-leiste .wo-kn--gold.wo-kn--klein i{color:#113d88}
+@media (max-width:900px){.wo-leiste .wo-kn--gold.wo-kn--klein i{color:var(--wo-blatt)}}

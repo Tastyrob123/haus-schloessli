@@ -1,0 +1,34 @@
+{
+ "zeit": "2026-11-01T20:15:00+01:00",
+ "art": "anlass",
+ "name": "Peter Meier",
+ "kontakt": "peter.meier@example.com",
+ "datum": "13. bis 15. November 2026",
+ "personen": 2,
+ "anliegen": "Plätze für die Excellence Gourmetkreuzfahrt",
+ "sprache": "de",
+ "gespraech": "beispiel-5",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Events & Termine): Anlass: Excellence Gourmetkreuzfahrt, 13. bis 15. November 2026\nPersonen: 2\nWünsche, Allergien: Meine Frau isst kein Fleisch. Buchen wir die Kabine bei Ihnen oder direkt beim Schiff?"
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "an": "kontakt@schloessli-bottighofen.ch",
+ "abteilung": "Bankett",
+ "seite": "/anlaesse.html",
+ "seite_name": "Events & Termine",
+ "web": true,
+ "nachricht": "Anlass: Excellence Gourmetkreuzfahrt, 13. bis 15. November 2026\nPersonen: 2\nWünsche, Allergien: Meine Frau isst kein Fleisch. Buchen wir die Kabine bei Ihnen oder direkt beim Schiff?",
+ "formular": "plaetze",
+ "entwurf": {
+  "betreff": "Ihre Plätze für die Excellence Gourmetkreuzfahrt",
+  "text": "Guten Tag Herr Meier\n\nvielen Dank für Ihr Interesse, es freut uns sehr, dass Sie mit uns an Bord gehen möchten.\n\nVom 13. bis 15. November 2026 kocht Monika Huber gemeinsam mit Dieter Koschina auf der Excellence Countess: Start ist am Freitag in Basel, über Nacht geht es nach Strassburg und am Samstag denselben Weg zurück. Plätze und Kabinen buchen Sie direkt bei Excellence, beim Gourmetfestival Dieter Koschina & Monika Huber auf excellence.ch [Link mitschicken].\n\nDass Ihre Frau kein Fleisch isst, geben wir gerne an die Küche an Bord weiter [mit Excellence klären].\n\nUnser Restaurant ist über diese drei Tage geschlossen, da das ganze Team mit an Bord ist. Ab Donnerstag, 19. November sind wir wieder am Hafen für Sie da.\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Events & Termine (Excellence Gourmetkreuzfahrt, 13. bis 15. November 2026, Gourmetfestival auf excellence.ch), Ferien.\nOffen: Link mitschicken, Menü ohne Fleisch an Bord mit Excellence klären.",
+  "vorlage": "anlass",
+  "absender": "kontakt@schloessli-bottighofen.ch",
+  "zeit": "2026-11-01T20:15:00+01:00"
+ }
+}

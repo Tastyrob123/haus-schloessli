@@ -1,0 +1,39 @@
+{
+ "zeit": "2026-11-03T09:12:00+01:00",
+ "art": "tisch",
+ "name": "Sandra Keller",
+ "kontakt": "sandra.keller@example.com",
+ "datum": "Do, 12. November 2026",
+ "personen": 2,
+ "anliegen": "Reservation mit Wünschen, Draussen auf der Terrasse",
+ "sprache": "de",
+ "gespraech": "beispiel-1",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Startseite): Datum: Do, 12. November 2026\nUhrzeit: 12:00 Uhr\nPersonen: 2\nPlatz: Draussen auf der Terrasse\nAllergien: Nüsse\nWünsche: Wir feiern unseren Hochzeitstag."
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "an": "kontakt@schloessli-bottighofen.ch",
+ "abteilung": "Reservation",
+ "seite": "/index.html",
+ "seite_name": "Startseite",
+ "web": true,
+ "nachricht": "Datum: Do, 12. November 2026\nUhrzeit: 12:00 Uhr\nPersonen: 2\nPlatz: Draussen auf der Terrasse\nAllergien: Nüsse\nWünsche: Wir feiern unseren Hochzeitstag.",
+ "formular": "reservation",
+ "allergene": [
+  "N"
+ ],
+ "uhrzeit": "12:00 Uhr",
+ "platz": "Draussen auf der Terrasse",
+ "entwurf": {
+  "betreff": "Ihr Hochzeitstag am Donnerstag, 12. November",
+  "text": "Guten Tag Frau Keller\n\nvielen Dank für Ihre Reservation und herzliche Gratulation zum Hochzeitstag. Gerne halten wir für Sie beide am Donnerstag, 12. November, um 12:00 Uhr einen Tisch bereit [Tisch bestätigen].\n\nDraussen auf der Terrasse sitzen Sie unter den Platanen mit Blick auf den See; im November entscheidet das Wetter, ob wir draussen decken [Terrasse je nach Wetter]. Sonst finden Sie in der Gaststube einen Platz an den grossen Fenstern zum Hafen.\n\nDie Nussallergie geben wir an Monika Huber und die Küche weiter [Küche informieren]. Auf der Karte sind die Allergene bei jedem Gericht ausgewiesen, unser Service berät Sie gerne.\n\nMittags kocht die Küche von 11:30 bis 13:30 Uhr, dazu gibt es das Lunch-Menü mit drei Gängen.\n\nMit freundlichen Grüssen\n\n[Name]\nWirtschaft am Schlössli",
+  "team": "Grundlage: Öffnungszeiten (Küche 11:30 bis 13:30 Uhr), Willkommen (Terrasse im Schatten der Platanen), Speisekarte (Allergene, N = Nüsse), Lunch-Menü.\nOffen: Tisch, Terrasse je nach Wetter, Küche informieren.",
+  "vorlage": "",
+  "absender": "kontakt@schloessli-bottighofen.ch",
+  "zeit": "2026-11-03T09:12:00+01:00"
+ }
+}

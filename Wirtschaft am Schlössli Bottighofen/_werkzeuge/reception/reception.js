@@ -249,8 +249,8 @@ function karteAnfrage(a, i = 0) {
   const st = a.status === 'neu' ? 'Neu' : a.status === 'erledigt' ? 'Erledigt' : a.entwurf ? 'Brief bereit' : 'Gelesen';
   return `<button class="re-a${a.status === 'neu' ? ' neu' : ''}${a.status === 'erledigt' ? ' erledigt' : ''}${S.wahl === a.id && S.ansicht === 'eingang' ? ' aktiv' : ''}" style="--i:${i}" type="button" data-gehe="eingang" data-wahl="${esc(a.id)}">
     ${bild(a.art, 're-a__bild', a.id)}
-    <span class="re-a__n"><span class="re-a__k re-gl-r">${glieder([esc(ART[a.art] || a.art), abt(a) !== ART[a.art] ? esc(abt(a)) : '', esc(uhr(a.zeit).replace(' Uhr', '')), a.web ? 'Website' : ''])}</span><b><bdi>${esc(a.name || 'Ohne Namen')}</bdi></b><small class="re-gl-r">${glieder([String(a.datum || '').replace(/,? 20\d\d\b/, ''), a.personen ? a.personen + (+a.personen === 1 ? ' Person' : ' Personen') : '', a.sprache && a.sprache !== 'de' ? SPRACHE[a.sprache] || a.sprache : ''].filter(Boolean).map(x => `<bdi>${esc(x)}</bdi>`))}</small>${hinwKurz(a).length ? `<em class="re-a__hinw re-gl-r">${glieder(hinwKurz(a).map(x => esc(x)))}</em>` : ''}</span>
-    <span class="re-a__st">${st}</span></button>`;
+    <span class="re-a__n"><span class="re-a__k re-gl-r">${glieder([esc(ART[a.art] || a.art), abt(a) !== ART[a.art] ? esc(abt(a)) : '', esc(uhr(a.zeit).replace(' Uhr', ''))])}</span><b><bdi>${esc(a.name || 'Ohne Namen')}</bdi></b><small class="re-gl-r">${glieder([String(a.datum || '').replace(/,? 20\d\d\b/, ''), a.personen ? a.personen + (+a.personen === 1 ? ' Person' : ' Personen') : '', a.sprache && a.sprache !== 'de' ? SPRACHE[a.sprache] || a.sprache : ''].filter(Boolean).map(x => `<bdi>${esc(x)}</bdi>`))}</small>${hinwKurz(a).length ? `<em class="re-a__hinw re-gl-r">${glieder(hinwKurz(a).map(x => esc(x)))}</em>` : ''}</span>
+    <span class="re-a__st" data-st="${st}"></span></button>`;
 }
 function tagVon(iso) {   // Heute, Gestern, Wochentag, sonst Datum
   const d = new Date(iso), h = new Date(); h.setHours(0, 0, 0, 0);
