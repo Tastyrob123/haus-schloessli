@@ -34,6 +34,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 
 - 20:50 UTC: Sammelprüfung WebKit (Lauf 42ab779, 204 Zustände, 84 Funde: Knopfschrift, Einzelwörter, lazy Bilder, Kopf-Marke am Handy) → alle sechs Werkzeug-Agenten haben nachgebessert (68ce5c3, 228a7e7, 2e73590, 28bed90, f21dd52, b25a5f3). Kriterium 34 war auf dem Runner überall rot → `bewegung-tor.js` misst jetzt die Grundlinie des Rechners (0467813). Nachprüfung aller sechs läuft.
 
+- 21:35 UTC: Nachprüfung WebKit (Lauf 0d296ae, 230 Zustände): Messfunde 0 in allen sechs Werkzeugen; übrig 13 Bildfunde (Reservationsbuch Listenbilder leer, Schaufenster Monogramm-Kacheln/Weinkarte-Gruppe, Besucherliste Loch in Kennzahl-Blättern) → an die drei Agenten; Grundlinie für K34 jetzt mit animierten Fotos (Textseite war auf dem Runner glatt, jedes Werkzeug mit Fotos nicht). Oberchef hat 18 Zustandsbilder (1440, WebKit) mit dem Auge gesehen: Kleid, Inhalt, Fotos des Hauses, nichts Culinarium.
+
 ## Was offen ist (Reihenfolge)
 1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
 2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.
