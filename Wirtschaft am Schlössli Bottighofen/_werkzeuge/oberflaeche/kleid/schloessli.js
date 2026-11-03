@@ -54,9 +54,9 @@ window.WO_ZEILEN = function (el) {
   if (!ts.length) return false;
   ts.forEach(function (t) {
     var f = document.createDocumentFragment();
-    t.data.split(/(\s+)/).forEach(function (s) {
+    t.data.split(/([ \t\n\r]+)/).forEach(function (s) {   /* nur gewöhnliche Leerzeichen trennen; ein geschütztes Leerzeichen hält zwei Wörter zusammen (Kartenpult 3.11.2026) */
       if (!s) return;
-      if (/^\s+$/.test(s)) { f.appendChild(document.createTextNode(s)); return; }
+      if (/^[ \t\n\r]+$/.test(s)) { f.appendChild(document.createTextNode(s)); return; }
       var w = document.createElement('span'); w.className = 'wo-w'; w.textContent = s; f.appendChild(w);
     });
     t.parentNode.replaceChild(f, t);

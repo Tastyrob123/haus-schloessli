@@ -18,6 +18,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 
 - 18:35 UTC: **Hafenbüro fertig** (Agent maison): lokal 0 Funde, Commits cf5ae83/af305b7; offen nur: Bildschirme der anderen Werkzeuge am Ende neu aufnehmen (`SCHIRM_KERN=chromium node schirme.js`, dann `python3 bau.py` in `_werkzeuge/maison`).
 
+- 18:40 UTC: **Werkbank Feed/Mails/Material fertig** (48 Beiträge, 10 Mails, 207 Dateien; Commits d50ee08/60d41e4). **Kartenpult fertig** (fünf Karten, 0 Funde, Commit fc3fc9e). Kleid: WO_ZEILEN trennt nur noch an gewöhnlichen Leerzeichen.
+
 ## Was offen ist (Reihenfolge)
 1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
 2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.
