@@ -37,8 +37,14 @@ const messeScroll = async (p) => p.evaluate(async () => {
    Werkzeugen, auch im nahezu stillen Hafenbüro (78 Bilder über 50 ms), während dieselben Seiten in Chromium mit 12-fach gedrosselter Rechenleistung glatt liefen
    (höchstens 1 Bild über 50 ms). Darum misst das Tor zuerst eine stille Vergleichsseite (langer Text, Verläufe, keine Skripte) auf demselben Rechner und
    hebt die Schwellen um das, was der Rechner selbst nicht schafft. Die Grundlinie steht im Ergebnis und in jedem Fund. */
-const GRUNDSEITE = 'data:text/html;charset=utf-8,' + encodeURIComponent('<!doctype html><meta name=viewport content="width=device-width"><style>body{margin:0;font:18px/1.6 system-ui}section{min-height:100vh;padding:40px;background:linear-gradient(160deg,#e7ecf3,#fff)}h1{font-size:64px}img{width:40%;height:auto;border-radius:12px}</style>'
-  + Array.from({ length: 16 }, (_, i) => `<section><h1>Abschnitt ${i + 1}</h1><p>${'Ein ruhiger Satz zum Scrollen. '.repeat(40)}</p><div style="height:240px;background:linear-gradient(90deg,#0b1d3d,#a2b6cf);border-radius:16px"></div></section>`).join(''));
+const GRUNDSEITE = 'data:text/html;charset=utf-8,' + encodeURIComponent('<!doctype html><meta name=viewport content="width=device-width"><style>body{margin:0;font:18px/1.6 system-ui;background:#f4f6f9}section{min-height:100vh;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}h1{font-size:64px;grid-column:1/-1}'
+  + '.f{overflow:hidden;border-radius:16px;aspect-ratio:3/2;box-shadow:0 18px 40px -26px rgba(4,16,35,.45)}.f img{width:100%;height:112%;display:block;object-fit:cover;animation:z 2.6s cubic-bezier(.19,1,.22,1) both}@keyframes z{from{scale:1.12}}'
+  + '@supports (animation-timeline:view()){@keyframes p{from{translate:0 -6%}to{translate:0 0}}.f img{animation:z 2.6s cubic-bezier(.19,1,.22,1) both,p linear both;animation-timeline:auto,view();animation-range:normal,exit 0% exit 100%}}</style>'
+  + Array.from({ length: 12 }, (_, i) => `<section><h1>Abschnitt ${i + 1}</h1><p>${'Ein ruhiger Satz zum Scrollen. '.repeat(30)}</p><div class=f><img id=b${i}></div></section>`).join('')
+  + '<script>(function(){var c=document.createElement("canvas");c.width=1600;c.height=1067;var x=c.getContext("2d");var g=x.createLinearGradient(0,0,1600,1067);g.addColorStop(0,"#0b1d3d");g.addColorStop(.5,"#a2b6cf");g.addColorStop(1,"#e7ecf3");x.fillStyle=g;x.fillRect(0,0,1600,1067);'
+  + 'var d=x.getImageData(0,0,1600,1067),q=d.data;for(var i=0;i<q.length;i+=4){var n=(Math.random()-.5)*40;q[i]+=n;q[i+1]+=n;q[i+2]+=n}x.putImageData(d,0,0);var u=c.toDataURL("image/jpeg",.85);document.querySelectorAll("img").forEach(function(im){im.src=u})})()</script>');
+/* Die Vergleichsseite trägt dieselbe Arbeit wie die Startbilder der Werkzeuge: zwölf grosse Fotos (1600 px, Rauschen wie ein Foto), die beim Erscheinen zoomen und
+   beim Scrollen mitziehen (Scroll-Zeitachse wie im Kleid). Was der Rechner damit nicht schafft, wird keinem Werkzeug angelastet. */
 const messeGrund = async (b) => {
   const ctx = await b.newContext({ viewport: { width: W, height: H }, locale: 'de-DE' }); const p = await ctx.newPage();
   await p.goto(GRUNDSEITE, { waitUntil: 'load', timeout: 30000 }).catch(() => { }); await warte(800);
