@@ -1,34 +1,61 @@
-/* Anschluss der Warteliste der Website an La Réception · Culinarium Hannover (28.10.2026, Master Werkzeug-Bau E12/E24/E33, Muster: Gastgeber der Taverne zum Schäfli).
-   Die Website hat ein Formular, das etwas an das Team geben soll: die Warteliste «Dein Platz an der Tafel.» auf Der Abend (form.wt-form in abend.html: Tag Freitag,
-   Samstag oder egal, Plätze 1 bis 6, Name, E-Mail). Bisher zeigte sie nur den Abriss «Vorgemerkt» (Vorschau, nichts ging weg). Das Feld «Vormerken» im Fuss
-   jeder Seite schickt nichts ab, es trägt nur die E-Mail in die Warteliste auf Der Abend ein (culinarium.js); hier bleibt es unberührt.
-   Mit diesem Baustein geht jeder Eintrag in den Eingang von La Réception, mit Tag und Plätzen; erst wenn La Réception ihn angenommen hat, löst sich der Abriss
-   wie bisher (das Skript der Website setzt «Danke, … Du stehst auf der Liste»). Geht etwas schief, steht unter dem Ticket eine Meldung mit der Telefonnummer
-   der Bar und Instagram, die Eingaben bleiben. Nie mailto, nie ein Mailprogramm.
-   Die Skripte der Website (culinarium.js) bleiben unverändert. Der Baustein fängt das Abschicken im Fang-Durchlauf am Dokument ab, bevor die Website den Abriss
-   löst, schickt an La Réception und gibt das Abschicken danach an die Website weiter.
-   Die gespielte Buchung «Platz buchen» (buchen.js, Zahlung nur simuliert) ist kein Formular des Hauses und bleibt hier draussen.
-   Einbinden (Website-Chat über bau.py, nicht von Hand): <script src="assets/anfrage.js?v={V}" defer></script> nach culinarium.js.
-   Ziel: /_werkzeuge/reception/api/formular (anders mit <script … data-api="http://127.0.0.1:9284/_werkzeuge/reception/api/formular"> oder window.WS_ANFRAGE_API). */
+/* Anschluss der Formulare der Website an das Reservationsbuch (La Réception) · Wirtschaft am Schlössli, Bottighofen (19.10.2026, Master Werkzeug-Bau E12/E24).
+   Die Website hat fünf Formulare: Reservation mit Wünschen (#fe-reservation, mit Allergien), Bankettanfrage (#fe-bankett), Gutschein (#fe-gutschein),
+   Plätze für einen Anlass (#fe-plaetze) und «Ihr Abend» ([data-abend]). Bisher zeigten sie nur «Vielen Dank» (Designstudie, nichts ging weg).
+   Mit diesem Baustein geht jede Anfrage in den Eingang des Reservationsbuchs, mit allen Angaben und den Allergien als Kürzel; erst wenn das Reservationsbuch
+   sie angenommen hat, zeigt das Fenster «Vielen Dank». Nie mailto, nie ein Mailprogramm.
+   Eigenes Fenster braucht es nicht: die Fenster der Website bleiben, wie sie sind (haus.js, funktionen.js unverändert). Der Baustein fängt das
+   Abschicken im Fang-Durchlauf am Dokument ab, bevor haus.js «gesendet» setzt, und setzt es selbst, wenn die Anfrage angekommen ist.
+   Einbinden (Station 14, Werkbank-Bauer, über bau.py, nicht von Hand): <script src="assets/js/anfrage.js?v={V}" defer></script> nach haus.js und funktionen.js.
+   Ziel: /_werkzeuge/reception/api/formular (anders mit <script … data-api="/pfad"> oder window.WS_ANFRAGE_API). */
 (function () {
   'use strict';
   var D = document, skript = D.currentScript;
   var API = window.WS_ANFRAGE_API || (skript && skript.getAttribute('data-api')) || '/_werkzeuge/reception/api/formular';
-  var WEGE = 'Telefon der Bar +49 163 3909578 oder eine Nachricht an @culinarium_hannover auf Instagram';
-  var TAG = { fr: ['Freitag', 'ab 19:00'], sa: ['Samstag', 'ab 17:00'], egal: ['Freitag oder Samstag', 'beides geht'] };
+  var TEL = '+41 71 688 90 92';
+  var $ = function (s, c) { return (c || D).querySelector(s); }, $$ = function (s, c) { return [].slice.call((c || D).querySelectorAll(s)); };
   var wert = function (f, n) { var e = f.querySelector('[name="' + n + '"]'); return e ? String(e.value || '').trim() : ''; };
-  var seiteName = function () { var t = (D.title || '').split(/ · | \| | — /)[0].trim(); return /^Culinarium/.test(t) ? 'Startseite' : t; };
+  var gewaehlt = function (f, n) { var e = f.querySelector('[name="' + n + '"]:checked'); return e ? e.value : ''; };
+  var kuerzel = function (f) { return $$('[name=allergene]:checked', f).map(function (c) { return c.value; }); };
+  var namen = function (f) { return $$('[name=allergene]:checked', f).map(function (c) { return (c.nextElementSibling || c).textContent.trim(); }); };
+  var seiteName = function () { var t = (D.title || '').split(' · ')[0].trim(); return /^Wirtschaft am Schl/.test(t) ? 'Startseite' : t; };
 
-  /* Was die Warteliste mitschickt: dieselben Angaben, die der Gast auf dem Ticket sieht, in Zeilen für das Team */
-  function warteliste(f) {
-    var r = f.querySelector('[name=tag]:checked'), tag = TAG[(r && r.value) || 'fr'] || TAG.fr;
-    var o = f.querySelector('output[data-feld=n]'), n = o ? String(o.value || o.textContent || '').trim() : '';
-    return { art: 'warteliste', formular: 'warteliste', anliegen: 'Warteliste: ' + tag[0] + (n ? ', ' + n + (n === '1' ? ' Platz' : ' Plätze') : ''),
-      datum: tag[0], uhrzeit: tag[1] === 'beides geht' ? '' : tag[1], personen: n, name: wert(f, 'name'), kontakt: wert(f, 'mail'),
-      zeilen: ['Tag: ' + tag[0] + ', ' + tag[1], 'Plätze: ' + (n || '-')] };
+  /* Was jedes Formular mitschickt: dieselben Felder, die der Gast ausgefüllt hat, in Zeilen für das Team */
+  var FENSTER = {
+    'fe-reservation': function (f) {
+      var al = namen(f), z = ['Datum: ' + (wert(f, 'datum') || 'nicht gewählt'), 'Uhrzeit: ' + (wert(f, 'uhrzeit') || 'nicht gewählt'), 'Personen: ' + wert(f, 'personen'), 'Platz: ' + wert(f, 'platz')];
+      if (wert(f, 'flasche')) z.push('Flasche: ' + wert(f, 'flasche'));
+      z.push('Allergien: ' + (al.join(', ') || 'keine angegeben'));
+      if (wert(f, 'wunsch')) z.push('Wünsche: ' + wert(f, 'wunsch'));
+      return { art: 'tisch', formular: 'reservation', anliegen: 'Reservation mit Wünschen' + (wert(f, 'platz') ? ', ' + wert(f, 'platz') : ''), datum: wert(f, 'datum'),
+        uhrzeit: wert(f, 'uhrzeit'), personen: wert(f, 'personen'), platz: wert(f, 'platz'), allergene: kuerzel(f), name: wert(f, 'name'), kontakt: wert(f, 'kontakt'), zeilen: z };
+    },
+    'fe-bankett': function (f) {
+      var z = ['Datum: ' + (wert(f, 'datum') || 'nicht gewählt'), 'Uhrzeit: ' + (wert(f, 'uhrzeit') || 'nicht gewählt'), 'Personenzahl: ' + wert(f, 'personen'),
+        'Gewünschte Speisenform: ' + wert(f, 'speisenform'), 'Anzahl Gänge: ' + (wert(f, 'gaenge') || '-'), 'Richt-Budget: ' + (wert(f, 'budget') || '-')];
+      if (wert(f, 'text')) z.push('Gericht, Allergien: ' + wert(f, 'text'));
+      return { art: 'bankett', formular: 'bankett', anliegen: 'Bankettanfrage, ' + wert(f, 'speisenform'), datum: wert(f, 'datum'), uhrzeit: wert(f, 'uhrzeit'), personen: wert(f, 'personen'),
+        name: wert(f, 'name'), kontakt: wert(f, 'kontakt'), zeilen: z };
+    },
+    'fe-gutschein': function (f) {
+      return { art: 'gutschein', formular: 'gutschein', anliegen: 'Gutschein über ' + wert(f, 'betrag') + ' Franken', name: wert(f, 'name'), kontakt: wert(f, 'mail'),
+        zeilen: ['Name Käufer: ' + wert(f, 'name'), 'E-Mail: ' + wert(f, 'mail'), 'Adresse: ' + wert(f, 'adresse'), 'Betrag in Franken: ' + wert(f, 'betrag')] };
+    },
+    'fe-plaetze': function (f) {
+      var z = ['Anlass: ' + wert(f, 'anlass'), 'Personen: ' + wert(f, 'personen')];
+      if (wert(f, 'wunsch')) z.push('Wünsche, Allergien: ' + wert(f, 'wunsch'));
+      return { art: 'anlass', formular: 'plaetze', anliegen: 'Plätze für ' + wert(f, 'anlass'), personen: wert(f, 'personen'), name: wert(f, 'name'), kontakt: wert(f, 'kontakt'), zeilen: z };
+    }
+  };
+  function abend(f) {
+    var menue = gewaehlt(f, 'menue'), anlass = gewaehlt(f, 'anlass'), z = $$('[data-zettel] dt').map(function (dt) { return dt.textContent.trim() + ': ' + ((dt.nextElementSibling || {}).textContent || '').trim(); });
+    var summe = $('[data-summe]'); if (summe && !summe.hidden) z.push(summe.textContent.replace(/\s+/g, ' ').trim());
+    if (wert(f, 'wunsch')) z.push('Wünsche: ' + wert(f, 'wunsch'));
+    var gross = /^bankett-/.test(menue) || /familienfeier|firmenanlass/i.test(anlass);
+    return { art: gross ? 'bankett' : 'tisch', formular: 'abend', anliegen: 'Ihr Abend: ' + (anlass || 'Anlass offen'), datum: wert(f, 'datum'), uhrzeit: wert(f, 'uhrzeit'),
+      personen: wert(f, 'personen'), platz: wert(f, 'platz'), allergene: kuerzel(f), name: wert(f, 'name'), kontakt: wert(f, 'kontakt'), zeilen: z };
   }
 
-  /* Feld, das Menschen nicht sehen: nur Maschinen füllen es aus (La Réception nimmt solche Anfragen still an und legt nichts ab) */
+  /* Feld, das Menschen nicht sehen: nur Maschinen füllen es aus (das Reservationsbuch nimmt solche Anfragen still an und legt nichts ab) */
   function falle(f) {
     if (f.querySelector('[name=website]')) return;
     var i = D.createElement('input'); i.type = 'text'; i.name = 'website'; i.tabIndex = -1; i.autocomplete = 'off'; i.setAttribute('aria-hidden', 'true');
@@ -36,40 +63,42 @@
     f.appendChild(i);
   }
   function meldung(f, text) {
-    var p = f.querySelector('.wt-meldung');
-    if (!p) return;
-    f.classList.remove('fertig');
-    p.textContent = text;
+    var p = f.querySelector('.ws-anfrage-fehler');
+    if (!p) { p = D.createElement('p'); p.className = 'fe__hinweis ws-anfrage-fehler'; p.setAttribute('role', 'alert'); (f.querySelector('.fe__senden') || f).insertAdjacentElement('afterend', p); }
+    p.textContent = text; p.hidden = !text;
   }
   function senden(f, d, knopf, fertig) {
     if (f.dataset.sendet) return;
-    f.dataset.sendet = '1'; if (knopf) knopf.disabled = true;
+    f.dataset.sendet = '1'; if (knopf) knopf.disabled = true; meldung(f, '');
     var koerper = { art: d.art, formular: d.formular, name: d.name, kontakt: d.kontakt, datum: d.datum || '', uhrzeit: d.uhrzeit || '', personen: d.personen || '',
-      allergene: [], anliegen: d.anliegen, nachricht: d.zeilen.join('\n'), seite: location.pathname + location.search + '#warteliste',
+      platz: d.platz || '', allergene: d.allergene || [], anliegen: d.anliegen, nachricht: d.zeilen.join('\n'), seite: location.pathname + location.search,
       seite_name: seiteName(), sprache: (D.documentElement.lang || 'de').slice(0, 2), website: wert(f, 'website') };
     fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(koerper) })
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; }); })
       .then(function (x) {
-        if (!x.ok) throw new Error(String((x.j && x.j.fehler) || '').replace(/^[A-ZÄÖÜ-]+ · /, '') || 'Dein Eintrag kam nicht an.');
+        if (!x.ok) throw new Error(String((x.j && x.j.fehler) || '').replace(/^[A-ZÄÖÜ-]+ · /, '') || 'Die Anfrage kam nicht an.');
         fertig();
       })
-      .catch(function (e) { meldung(f, (e && e.message && !/fetch|network|load/i.test(e.message) ? e.message : 'Dein Eintrag kam nicht an.') + ' Versuch es gleich noch einmal, oder melde dich direkt: ' + WEGE + '.'); })
+      .catch(function (e) { meldung(f, (e && e.message && !/fetch|network|load/i.test(e.message) ? e.message : 'Die Anfrage kam nicht an.') + ' Bitte noch einmal versuchen oder anrufen: ' + TEL + '.'); })
       .then(function () { delete f.dataset.sendet; if (knopf) knopf.disabled = false; });
   }
 
   D.addEventListener('submit', function (e) {
-    var f = e.target;
-    if (!f || !f.classList || !f.classList.contains('wt-form')) return;
-    if (f.dataset.durch) { delete f.dataset.durch; return; }   // angenommen: jetzt löst die Website den Abriss wie bisher
+    var f = e.target, dlg = f.closest && f.closest('dialog');
+    var bau = dlg && FENSTER[dlg.id];
+    if (!bau) return;
     e.preventDefault(); e.stopImmediatePropagation();
-    var name = f.querySelector('[name=name]'), mail = f.querySelector('[name=mail]');
-    var fehlt = [name, mail].filter(function (x) { return x && (!x.value.trim() || !x.checkValidity()); });
-    if (fehlt.length) { f.dataset.durch = '1'; f.dispatchEvent(new Event('submit', { cancelable: true })); return; }   // die Website sagt selbst, was fehlt
-    senden(f, warteliste(f), f.querySelector('[type=submit]'), function () {
-      f.dataset.durch = '1'; f.dispatchEvent(new Event('submit', { cancelable: true }));
-      var s = f.querySelector('.wt-meldung small'); if (s) s.textContent = 'Dein Eintrag liegt beim Team.';   // statt «Diese Vorschau verschickt noch nichts.»
-    });
+    if (!f.reportValidity()) return;
+    senden(f, bau(f), f.querySelector('[type=submit]'), function () { dlg.classList.add('gesendet'); f.reset && $$('[name=allergene]', f).forEach(function (c) { c.checked = false; }); });
   }, true);
-  function bereit() { [].forEach.call(D.querySelectorAll('form.wt-form'), falle); }
+  D.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-abend-senden]');
+    if (!b) return;
+    var f = $('[data-abend]'); if (!f) return;
+    e.preventDefault(); e.stopImmediatePropagation();
+    if (!f.reportValidity()) return;
+    senden(f, abend(f), b, function () { var d = $('.zettel__danke'); if (d) d.hidden = false; b.hidden = true; });
+  }, true);
+  function bereit() { $$('dialog.fe form').concat($$('[data-abend]')).forEach(falle); }
   if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', bereit); else bereit();
 })();

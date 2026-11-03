@@ -1,27 +1,26 @@
 ---
 tags: [projekt, website]
-status: aktiv
+status: entwurf
 ---
 
-# Baustein: Warteliste der Website → Eingang von La Réception · Culinarium Hannover
+# Formulare der Website → Das Reservationsbuch · Wirtschaft am Schlössli (Baustein, E12/E24)
 
-Gebaut am 28.10.2026 vom Chat `culinarium-reception` (Werkzeug Gäste-Chat-Team), Muster: Baustein des Gastgebers der Taverne zum Schäfli. Auf der Website ist **nichts** eingebaut; das macht der Website-Chat (Revier `website/`), sobald der Oberchef es freigibt.
+Gebaut am 19.10.2026 vom Werkzeug-Anpasser des Reservationsbuchs (Station 11, Teil `gaeste`). Auf der Website ist **nichts** eingebaut; das macht der Werkbank-Bauer in Station 14 über `website/bau.py`. Geprüft im Prüfbrowser: die Seite der Website, dazu `baustein/anfrage.js` nur im Prüfbrowser geladen (`pruefung/schloessli.js`, Schritte «Website-Formular …», in Chromium und Safari-Kern, 1440 und 390).
 
-## Was er tut
+## Was es tut
 
-- Die Website hat ein Formular für das Team: die Warteliste «Dein Platz an der Tafel.» auf `abend.html` (`form.wt-form`: Tag Freitag/Samstag/egal, Plätze 1 bis 6, Name, E-Mail). Heute löst sich nur der Abriss «Vorgemerkt», nichts geht weg («Diese Vorschau verschickt noch nichts.»).
-- Mit dem Baustein geht jeder Eintrag in den Eingang von La Réception (Art «Warteliste», Abteilung «Warteliste», Tag, Plätze, Name, E-Mail, Seite). Erst wenn La Réception ihn angenommen hat, löst sich der Abriss wie bisher; der kleine Satz darunter heisst dann «Dein Eintrag liegt beim Team.».
-- Kommt der Eintrag nicht an: Meldung unter dem Ticket mit Telefon der Bar und Instagram, die Eingaben bleiben. Nie `mailto:`, nie ein Mailprogramm.
-- `culinarium.js` der Website bleibt unverändert: der Baustein fängt das Abschicken im Fang-Durchlauf am Dokument ab und gibt es nach der Annahme an die Website weiter.
-- Unberührt: «Vormerken» im Fuss (schickt nichts, trägt nur die E-Mail auf Der Abend ein) und «Platz buchen» (gespielte Zahlung, `buchen.js`).
+- Die Website hat fünf Formulare: **Reservation mit Wünschen** (`#fe-reservation`, mit Allergenen als Kürzel G, L, E, F, S, So, En, N, Se, VEG), **Bankettanfrage** (`#fe-bankett`), **Gutschein** (`#fe-gutschein`), **Plätze für einen Anlass** (`#fe-plaetze`, anlaesse.html) und **«Ihr Abend»** (`[data-abend]`, abend.html). Heute zeigen sie nur «Vielen Dank» (Designstudie), nichts geht weg.
+- Mit dem Baustein geht jede Anfrage in den Eingang des Reservationsbuchs, mit allen Angaben in Zeilen, den Allergenen, Formular und Seite. Erst wenn das Reservationsbuch sie angenommen hat, erscheint «Vielen Dank» (das Fenster der Website setzt es selbst, haus.js und funktionen.js bleiben unverändert). Geht etwas schief, steht im Fenster eine Meldung mit der Telefonnummer des Hauses; die Eingaben bleiben.
+- «Ihr Abend»: Familienfeier, Firmenanlass oder ein Bankettmenü werden **Bankett**, sonst **Reservation**.
+- Ein unsichtbares Feld `website` hält Maschinen ab (das Reservationsbuch legt dann nichts ab). Kein Mailprogramm, nie `mailto`.
 
-## Einbauen (Website-Chat, über `bau.py`)
+## Einbauen (Station 14)
 
-1. `_werkzeuge/reception/baustein/anfrage.js` nach `website/assets/anfrage.js` kopieren.
-2. In `bau.py` auf `abend.html` **nach** `culinarium.js` einhängen: `<script src="assets/anfrage.js?v={VERSION}" defer></script>`.
-3. Ziel der Anfragen: auf dem Server von La Réception (:9284) gilt der Standard `/_werkzeuge/reception/api/formular`. Läuft die Website auf :8765, braucht es `data-api` mit voller Adresse **und** eine Weiterleitung, weil La Réception nur Aufrufe von der eigenen Seite annimmt (Herkunft 403). Vorschlag wie im Schäfli: der Website-Server reicht `POST /_werkzeuge/reception/api/formular` an `http://127.0.0.1:9284` weiter.
-4. Datenschutz: der Satz zur Warteliste auf `datenschutz.html` («wird erst gespeichert, wenn der Ticketweg steht») muss dann sagen, wo der Eintrag liegt (La Réception, zwölf Monate, Löschung auf Wunsch). Vorschlag: «Was du in die Warteliste einträgst (Name, E-Mail, Tag, Plätze), liegt beim Team von Culinarium und wird nach zwölf Monaten gelöscht, auf Wunsch sofort.» Vom Haus zu prüfen.
+1. `baustein/anfrage.js` → `website/assets/js/anfrage.js`.
+2. In `bau.py` je Seite **nach** `haus.js` und `funktionen.js` einhängen: `<script src="assets/js/anfrage.js?v={V}" defer></script>`. Fassungsnummer aus dem Inhalt.
+3. Die Hinweise «Designstudie: In diesem Entwurf wird nichts verschickt.» in den Fenstern bleiben, solange die Seite ein Entwurf ist; sie gehören der Website, nicht dem Baustein.
+4. Lokal: Die Website auf :8982 und das Reservationsbuch auf :9284 sind zwei Adressen; das Reservationsbuch nimmt Formulare nur von seiner eigenen Adresse an (Schutz gegen fremde Seiten). Entweder `POST /_werkzeuge/reception/api/formular` im Hausserver an :9047 weiterreichen, oder die Website über den Gastgeber ansehen (`http://127.0.0.1:9047/` liefert die Website mit). Ohne das zeigt das Fenster die Meldung mit der Telefonnummer, nichts geht verloren.
+5. Online (Station 16): Eine Online-Fassung des Reservationsbuchs gibt es noch nicht. Bis dahin bleibt der Baustein draussen oder zeigt online die Meldung.
+6. Datenschutz (`datenschutz.html`, über `inhalt/`): Absatz zu den Formularen ergänzen. Vorschlag: «Anfragen über die Formulare der Website (Name, E-Mail oder Telefon, Datum, Personen, Allergien, Nachricht, Seite) speichern wir, um Ihnen zu antworten, und löschen sie nach zwölf Monaten. [Vom Haus zu prüfen.]»
 
-## Geprüft
-
-`pruefung/culinarium.js` öffnet `abend.html` auf dem Prüfserver mit dem Baustein (in die Seite gesetzt, nicht in die Website geschrieben), trägt Name, E-Mail, Tag und Plätze ein, schickt ab und sieht nach, dass der Eintrag im Eingang liegt (auch mit `<script>` und Emoji im Namen, entschärft) und der Abriss sich löst; ohne Verbindung steht die Meldung mit Telefon der Bar, die Eingaben bleiben.
+Anderes Ziel als `/_werkzeuge/reception/api/formular`: `<script … data-api="/pfad">` oder `window.WS_ANFRAGE_API`.

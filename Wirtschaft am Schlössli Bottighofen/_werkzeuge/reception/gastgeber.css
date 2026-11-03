@@ -13,21 +13,21 @@
 .wo-app button.wo-ag{color:var(--wo-weiss);text-align:left;padding:0;border:0;font:inherit}
 .wo-app button.wo-kopf__ber{font:400 10.5px/1 var(--wo-mono);letter-spacing:.16em;text-transform:uppercase}
 .wo-app button.wo-kn--hell{color:var(--wo-tinte)}
-.wo-app button.wo-kn--gold{color:var(--wo-tief)}
+.wo-app button.wo-kn--gold{color:var(--wo-blatt)}   /* Schlössli: Hauptweg Stuhlblau mit hellem Knauf, helle Schrift */
 .wo-app button.wo-kn--dunkel,.wo-app button.wo-kn--glas{color:var(--wo-weiss)}
 .wo-app button.wo-kn--rund{color:var(--wo-gold)}
 
 /* Werkbank-Chat 18.10.2026 (Kopfleiste 1000–1920 ganz drin): bei schmalem Fenster steht der Titel der Ansicht nicht unter «Chat ausprobieren» */
-@media (max-width:1240px){.wo-kopf__mitte{display:none!important}}
+@media (max-width:1366px){.wo-kopf__mitte{display:none!important}}   /* Schlössli: «Vom Team nachgetragen» passte bei 1280 nicht zwischen Marke und Knöpfe */
 
 /* Endprüfung 19.10.2026: «Alle 10 Fragen ansehen» lag unter der letzten Fragen-Kachel und liess sich nicht anklicken; der Stand «Gesichert» beim Brief
    war mit 9,5 px Beige auf Beige kaum lesbar (1,9:1) */
 .re-mehr{position:relative;z-index:3;margin-top:26px!important}
 .re-qliste{position:relative;z-index:1}
-.gs-hinweis .gs-werk__stand{font-size:11px!important;font-weight:400;letter-spacing:.14em;color:#444152!important}
-.gs-hinweis .gs-werk__stand.laeuft{color:#1a191f!important}
+.gs-hinweis .gs-werk__stand{font-size:11px!important;font-weight:400;letter-spacing:.14em;color:#213f72!important}
+.gs-hinweis .gs-werk__stand.laeuft{color:#0d182b!important}
 
-/* Culinarium Hannover 21.10.2026 (lädt als letztes, deshalb hier) */
+/* Stamm 21.10.2026 (lädt als letztes, deshalb hier) */
 /* Kopf (Fehlerbuch 10a «Titel überdeckt nie einen Knopf»): La Réception hat rechts zusätzlich «Chat ausprobieren»; der Titel in der Mitte nimmt deshalb
    in jeder Breite nur den freien Platz zwischen Marke und Knöpfen und kürzt notfalls mit «…» (gemessen 21.10.2026: «Vom Team nachgetragen» lief bei 1440 unter den Knopf). */
 @media (min-width:901px){
@@ -35,3 +35,9 @@
   .wo-kopf__mitte{min-width:0;max-width:100%}
   .wo-kopf__mitte b,.wo-kopf__mitte small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 }
+
+/* Schlössli 3.11.2026: «Das Reservationsbuch» ist der längste Name der sieben Werkzeuge; am Handy steht er ganz im Kopf, nie mit «…» (Kriterium 2) */
+@media (max-width:480px){.wo-kopf .wo-marke-w b{font-size:12px;letter-spacing:0}.wo-kopf .wo-marke-w{gap:10px}}
+@media (max-width:360px){.wo-kopf .wo-marke-w b{font-size:10.5px;letter-spacing:0}}
+/* Schlössli 3.11.2026: runder Hauptweg in der Leiste am Handy (nur Knauf-Symbol, ohne hellen Knauf): Pfeil hell auf Stuhlblau statt Stuhlblau auf Stuhlblau */
+.wo-kn--gold.wo-kn--klein i{color:var(--wo-blatt)}

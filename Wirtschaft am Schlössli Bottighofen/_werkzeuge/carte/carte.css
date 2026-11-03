@@ -336,3 +336,6 @@ aside.wo-rand .wo-rand__wege button{padding-left:0;padding-right:0}
 .lc .chips button{border-radius:14px}
 /* K35: Marke «Entwurf» in der Leiste, Schrift sass 1,3 px zu hoch (Glyphen 7 px in 22 px): Ausgleich oben */
 .lc #leiste .wo-marke{padding:7.3px 9px 4.7px}
+/* Handy: Frühere Fassungen ragten rechts aus dem Fenster (Knopf «In den Entwurf holen» neben dem Text); der Knopf steht jetzt unter dem Text */
+.fenster__k{min-width:0;max-width:100%}
+@media (max-width:600px){ .lc .verlauf__z{flex-wrap:wrap} .lc .verlauf__z > div:last-child{flex-basis:100%;justify-content:flex-start;padding-left:0} .lc .verlauf{overflow-x:hidden} }

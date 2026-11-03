@@ -49,7 +49,7 @@
   var OHNE_SPRACHE = /^(control|_?werkzeuge|studio|mission-control|reception|marke|maison|imprimerie|mails|werkbank\/anleitung)\/|^mappe/;   // gibt es nur deutsch: Sprache der Werkbank gilt
   var FREMD_ZIEL = /^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):8963$/;   // L’Imprimerie auf eigener Adresse
   var HERKUNFT = /^https:\/\/[a-z0-9-]+\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/;   // von wo eine Werkbank herkommen darf
-  var SCHL = 'culinarium-wb';
+  var SCHL = 'ds-schloessli-wb';
 
   var tag = document.currentScript || document.querySelector('script[src*="zur-werkbank.js"]');
   var src = tag && tag.src || '';
@@ -147,7 +147,7 @@
        Im Stylesheet bleiben nur die Schrift und der Druck. */
     var lage = document.createElement('style');
     lage.textContent =
-      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/schrift/dmmono.woff2') + '")}' +
+      '@font-face{font-family:"ZW Mono";font-style:normal;font-weight:400;font-display:swap;src:local("DM Mono"),url("' + (tag && tag.getAttribute('data-schrift') || (WURZEL || basis) + 'assets/fonts/DMMono-normal-400.woff2') + '")}' +
       '@media print{#zur-werkbank{display:none!important}}';
     document.head.appendChild(lage);
     var setz = function (k, v) { wirt.style.setProperty(k, v, 'important'); };
@@ -176,18 +176,18 @@
       ':host{direction:ltr}' +
       'a{position:relative;overflow:hidden;isolation:isolate;box-sizing:border-box;display:inline-flex;align-items:center;gap:11px;height:44px;padding:0 20px 0 5px;border-radius:999px;' +
       'font:400 11.5px/1 "ZW Mono","DM Mono",ui-monospace,"SF Mono",Menlo,"PingFang SC","Apple SD Gothic Neo","Geeza Pro",monospace;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap;text-decoration:none;' +
-      'color:#15141a;background:linear-gradient(180deg,#f9f6f5 0%,#e4dcda 46%,#cebbb7 100%);cursor:pointer;-webkit-tap-highlight-color:transparent;' +
-      'box-shadow:inset 0 1px 0 #fff,inset 0 -3px 0 rgba(146,73,46,.32),inset 0 0 0 1px rgba(201,93,54,.62),0 0 0 1px rgba(22,21,27,.28),0 12px 22px -12px rgba(22,21,27,.6);' +
+      'color:#0a1424;background:linear-gradient(180deg,#f5f7f9 0%,#d9dee5 46%,#b7c1ce 100%);cursor:pointer;-webkit-tap-highlight-color:transparent;' +
+      'box-shadow:inset 0 1px 0 #fff,inset 0 -3px 0 rgba(48,83,144,.32),inset 0 0 0 1px rgba(74,113,181,.62),0 0 0 1px rgba(11,20,37,.28),0 12px 22px -12px rgba(11,20,37,.6);' +
       'transition:transform .55s cubic-bezier(.32,.72,0,1)}' +
       'a::after{content:"";position:absolute;z-index:-1;top:-20%;bottom:-20%;left:0;width:38%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.85) 50%,transparent 100%);transform:translateX(-180%) skewX(-18deg);transition:transform 0s}' +
-      'i{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#393644,#0e0e11);color:#eee8e7;' +
-      'box-shadow:inset 0 1px 0 rgba(231,217,214,.4),inset 0 -2px 0 rgba(0,0,0,.4),0 0 0 1px rgba(244,173,148,.45);transition:transform .6s cubic-bezier(.32,.72,0,1)}' +
+      'i{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#1b345f,#070d18);color:#e7eaee;' +
+      'box-shadow:inset 0 1px 0 rgba(214,221,231,.4),inset 0 -2px 0 rgba(0,0,0,.4),0 0 0 1px rgba(177,193,215,.45);transition:transform .6s cubic-bezier(.32,.72,0,1)}' +
       'svg{display:block;width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}' +
       'span{display:block;padding-top:1px}' +
       ':host([lang="zh"]) a,:host([lang="ko"]) a,:host([lang="ar"]) a{letter-spacing:.04em;font-size:13px;text-transform:none}' +
       '@media (hover:hover){a:hover{transform:translateY(-2px)}a:hover i{transform:translateX(-2px) scale(1.05)}a:hover::after{transform:translateX(360%) skewX(-18deg);transition:transform 1s cubic-bezier(.16,1,.3,1)}}' +
       'a:active{transform:translateY(1px) scale(.985)}' +
-      'a:focus-visible{outline:2px solid #f4ad94;outline-offset:3px}' +
+      'a:focus-visible{outline:2px solid #b1c1d7;outline-offset:3px}' +
       '@media (max-width:560px){a{height:40px;gap:9px;padding:0 16px 0 4px;font-size:10.5px}i{width:32px;height:32px}:host([lang="zh"]) a,:host([lang="ko"]) a,:host([lang="ar"]) a{font-size:12px}}' +
       '@media (prefers-reduced-motion:reduce){a,i,a::after{transition:none!important}}' +
       '</style>' +

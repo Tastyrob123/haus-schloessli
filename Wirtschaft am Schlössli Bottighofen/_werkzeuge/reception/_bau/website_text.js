@@ -1,9 +1,9 @@
-// Wortlaut der Culinarium-Website, wie ein Gast ihn sieht (28.10.2026): innerText jeder Seite, headless, nur lesen.
-// Quelle für _bau/culinarium_wissen.py. Aufruf aus dem Projektordner: node _werkzeuge/reception/_bau/website_text.js [basis, Standard http://localhost:8765]
+// Wortlaut der Website des Schlössli, wie ein Gast ihn sieht (Nachtbau 3.11.2026, Muster 28.10.2026): innerText jeder Seite, headless, nur lesen.
+// Quelle für _bau/schloessli_wissen.py. Aufruf: node _werkzeuge/reception/_bau/website_text.js [basis, Standard http://127.0.0.1:9284]
 const path = require('path'), fs = require('fs');
 const { chromium } = require(path.join(process.env.HOME, 'Desktop/Apps & Tools/Tasty Website Builder/node_modules/playwright'));
-const BASIS = process.argv[2] || 'http://localhost:8765';
-const SEITEN = ['index', 'abend', 'abende', 'bar', 'leute', 'weg', 'dirty-chicken', 'impressum', 'datenschutz'];
+const BASIS = process.argv[2] || 'http://127.0.0.1:9284';
+const SEITEN = ['index', 'karte', 'weinkarte', 'feiern', 'anlaesse', 'gutschein', 'kontakt', 'team', 'abend', 'agb'];
 const ZIEL = path.join(__dirname, 'website-text');
 (async () => {
   const br = await chromium.launch({ headless: true });

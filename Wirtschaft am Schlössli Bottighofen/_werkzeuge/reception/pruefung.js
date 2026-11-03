@@ -1,17 +1,17 @@
-/* Prüfseite von La Réception (pruefung.html): eigenes Skript, weil die Website online keine eingebetteten Skripte zulässt (CSP). */
+/* Prüfseite des Reservationsbuchs (pruefung.html): eigenes Skript, weil die Website online keine eingebetteten Skripte zulässt (CSP). */
 (function () {
   var LEX = {
     ANFRAGE: ['«Diese Anfrage gibt es nicht mehr.»', 'Jemand hat sie in einem anderen Fenster gelöscht, oder sie war älter als zwölf Monate.', 'Im Eingang «Neu laden». Die Liste zeigt dann den aktuellen Stand.'],
     BRIEF: ['«Zu dieser Anfrage gibt es noch keinen Brief.»', 'Der Brief wird beim ersten Öffnen geschrieben; das hat nicht geklappt.', 'Anfrage schliessen und wieder öffnen, oder «Neu schreiben lassen».'],
-    ENTWURF: ['Der Brief liess sich nicht schreiben.', 'Der Assistent hat die Anfrage abgelehnt oder eine Vorlage aus dem Wortlaut der Website fehlt.', 'Brief selbst in «Nur Text» schreiben. Fehlt die Vorlage: vorlagen/warteliste.txt, abend.txt, feier.txt prüfen (neu bauen mit _bau/culinarium_wissen.py).'],
+    ENTWURF: ['Der Brief liess sich nicht schreiben.', 'Der Assistent hat die Anfrage abgelehnt oder eine Vorlage des Hauses fehlt.', 'Brief selbst in «Nur Text» schreiben. Fehlt die Vorlage: vorlagen/bankett.txt, anlass.txt, gutschein.txt prüfen (neu bauen mit _bau/schloessli_wissen.py).'],
     KI: ['«Der Chat antwortet gerade nicht» oder «Guthaben aufgebraucht».', 'Der Dienst hinter dem Chat ist nicht erreichbar oder das Monatsguthaben ist leer.', 'Später noch einmal. Eingang, Brief gestalten, PDF und Wissen gehen trotzdem. Hält es an: Guthaben im Konto des Hauses prüfen.'],
     CHAT: ['«Der Assistent ist noch nicht geladen.»', 'Der Server-Teil ist gerade erst gestartet.', 'Einen Moment warten und noch einmal klicken; hilft das nicht, den Server neu starten.'],
     'ÜBERSETZEN': ['«Die Übersetzung kam unvollständig zurück.»', 'Der Assistent hat nicht alles übersetzt.', '«Neu übersetzen» klicken.'],
     PDF: ['Das PDF liess sich nicht setzen.', 'Auf dem Rechner fehlt node mit Chromium (Playwright), oder der Satz brauchte über zwei Minuten.', 'Oben unter «Brief» nachsehen, was fehlt. Bis dahin: Brief kopieren oder ⌘P im Brief.'],
     KONFLIKT: ['«Dieser Brief wurde inzwischen in einem anderen Fenster geändert.»', 'Zwei Fenster (oder zwei Personen) haben denselben Brief offen; das andere hat zuerst gespeichert. Nichts wurde überschrieben.', 'Eigene Änderung kopieren, «Neu laden», ansehen, was das andere Fenster geändert hat, und die eigene Änderung wieder einsetzen.'],
-    FORMULAR: ['«Bitte Name und E-Mail oder Telefon angeben.»', 'In der Warteliste der Website fehlte der Kontakt.', 'Nichts zu tun; der Gast sieht den Hinweis selbst.'],
+    FORMULAR: ['«Bitte Name und E-Mail oder Telefon angeben.»', 'In einem Formular der Website fehlte der Kontakt.', 'Nichts zu tun; der Gast sieht den Hinweis selbst.'],
     EINGABE: ['Eine Eingabe wurde abgewiesen.', 'Feld leer, zu lang oder in falscher Form.', 'Den Hinweis in der Meldung lesen und das Feld anpassen.'],
-    NAME: ['«Bitte deinen Namen eintragen.»', 'Jede Änderung am Wissen trägt einen Namen, damit man später weiss, wer was eingetragen hat.', 'Vor- und Nachname eintragen; der Name bleibt im Browser gemerkt.'],
+    NAME: ['«Bitte Ihren Namen eintragen.»', 'Jede Änderung am Wissen trägt einen Namen, damit man später weiss, wer was eingetragen hat.', 'Vor- und Nachname eintragen; der Name bleibt im Browser gemerkt.'],
     WISSEN: ['Eine Änderung am Wissen ging nicht.', 'Die Zeile oder der Eintrag gibt es nicht mehr, oder der Text fehlt.', 'Neu laden und noch einmal versuchen.'],
     AUSZUG: ['«Das Material liess sich nicht auswerten.»', 'Der Assistent fand im Link, Dokument oder Foto nichts Belegbares.', '«Neu einlesen» oder den Text selbst ins Feld kopieren.'],
     SEITE: ['«Die Seite zeigt ihren Inhalt erst im Browser.»', 'Die verlinkte Seite baut ihren Text erst mit Skripten auf.', 'Den Text der Seite kopieren und ins Feld einfügen.'],
@@ -22,7 +22,7 @@
     GRENZE: ['«Zu viele Anfragen in kurzer Zeit.»', 'Schutz gegen Fehlbedienung und Angriffe: höchstens 900 Aufrufe, 120 Änderungen und 8 PDF je Minute.', 'Eine Minute warten.'],
     HOST: ['«Falsche Adresse.»', 'Das Werkzeug wurde über einen fremden Namen aufgerufen.', 'Über localhost oder 127.0.0.1 öffnen.'],
     HERKUNFT: ['«Nicht erlaubt.»', 'Die Anfrage kam nicht vom Werkzeug selbst (fremde Seite, fremdes Gerät).', 'Das Werkzeug direkt öffnen, nicht eingebettet in eine fremde Seite.'],
-    VERBINDUNG: ['«Der Server-Teil antwortet nicht.»', 'Der Server ist nicht gestartet, oder das Netz war kurz weg.', 'Server starten (python3 _werkzeuge/reception/server.py 9064) und neu laden.'],
+    VERBINDUNG: ['«Der Server-Teil antwortet nicht.»', 'Der Server ist nicht gestartet, oder das Netz war kurz weg.', 'Server starten (python3 _werkzeuge/reception/server.py 9284) und neu laden.'],
     SERVER: ['Fehler im Server-Teil.', 'Etwas Unerwartetes; der genaue Grund steht in der Meldung.', 'Neu laden. Wiederholt es sich: Meldung mit Uhrzeit an Robert.'],
     FORMULAR: ['Ein Gast kann ein Formular der Website nicht abschicken.', 'Es fehlt eine E-Mail-Adresse oder Telefonnummer, oder sie hat eine Form, die keine sein kann. Der Gast sieht die Meldung direkt am Formular.', 'Nichts zu tun: der Gast ergänzt seine Angabe. Kommen viele solche Meldungen, das Formular auf der Website ansehen (Feld E-Mail oder Telefon).'],
     ANMELDUNG: ['Keine Anmeldung vor dem Werkzeug.', 'So gewollt bis zur Auslieferung an das Haus (Robert 15.10.2026).', 'Vor der Auslieferung: Anmeldung mit Passwort davorsetzen.']

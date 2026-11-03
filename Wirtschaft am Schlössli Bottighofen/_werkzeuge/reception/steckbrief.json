@@ -1,426 +1,163 @@
 {
- "stand": 1793159628.4597652,
+ "stand": 1793728203.8522735,
  "bereiche": [
   {
-   "bereich": "Culinarium",
+   "bereich": "Das Haus",
    "gruppen": [
     {
      "gruppe": "Auf einen Blick",
      "zeilen": [
       {
-       "fid": "2522ee7985",
-       "was": "Was es ist",
-       "angabe": "Food-Pairing-Abende an der langen Tafel im Walk on the Wild Side, Hannover-Linden",
-       "beleg": "Food-Pairing-Abende an der langen Tafel im Walk on the Wild Side, Hannover-Linden.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "64ab26bbcb",
-       "was": "Am Abend",
-       "angabe": "ein Menü mit fünf passenden Drinks an einer langen Tafel",
-       "beleg": "ein Menü mit fünf passenden Drinks an einer langen Tafel für vierzehn Gäste",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "a616d71711",
-       "was": "Wann",
-       "angabe": "an einzelnen Wochenenden, meist ein Freitag und der Samstag danach",
-       "beleg": "Culinarium gibt es an einzelnen Wochenenden, meist ein Freitag und der Samstag danach.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "05af1ce63e",
-       "was": "Beginn",
-       "angabe": "Freitag ab 19 Uhr, Samstag ab 17 Uhr",
-       "beleg": "Freitags ab 19 Uhr, samstags ab 17 Uhr.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "d9269e4318",
-       "was": "Plätze",
-       "angabe": "vierzehn an einer langen Tafel",
-       "beleg": "Vierzehn Gäste an einer langen Tafel.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "68557d731b",
-       "was": "Seit wann",
-       "angabe": "seit 2023: aus einem Pop-up an der Bar sind ausgebuchte Abende geworden",
-       "beleg": "Aus einem Pop-up an der Bar sind ausgebuchte Abende geworden.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "bereich": "Der Abend & Warteliste",
-   "gruppen": [
-    {
-     "gruppe": "So läuft ein Abend",
-     "zeilen": [
-      {
-       "fid": "54eb896e9b",
-       "was": "Aperitif",
-       "angabe": "zum Ankommen",
-       "beleg": "Aperitif",
-       "datei": "gast_wissen.txt",
-       "mehr": [
-        "zum Ankommen"
-       ]
-      },
-      {
-       "fid": "ffbf937928",
-       "was": "Drei Gänge",
-       "angabe": "von Rudi, an jedem Abend neu",
-       "beleg": "von Rudi, an jedem Abend neu",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "7f6ed51d55",
-       "was": "Fünf Drinks",
-       "angabe": "Momos Signature Drinks, passend zum Essen",
-       "beleg": "Momos Signature Drinks, passend zum Essen",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "4280f69c70",
-       "was": "Tasting und Schulung",
-       "angabe": "Momo erklärt jeden Drink am Tisch: Fatwashing, Milkwashing, Klärung mit Enzymen",
-       "beleg": "Momo erklärt jeden Drink am Tisch: Fatwashing, Milkwashing, Klärung mit Enzymen",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "9d934fa323",
-       "was": "Das Menü",
-       "angabe": "ändert sich mit jedem Abend; was es gibt, steht auf der Karte an deinem Platz",
-       "beleg": "Das Menü ändert sich mit jedem Abend.",
-       "datei": "gast_wissen.txt",
-       "mehr": [
-        "Was genau es gibt, steht auf der Karte an deinem Platz."
-       ]
-      }
-     ]
-    },
-    {
-     "gruppe": "Der nächste Abend",
-     "zeilen": [
-      {
-       "fid": "2fd9b282a0",
-       "was": "Termin",
-       "angabe": "steht noch nicht fest",
-       "beleg": "Der nächste Termin steht noch nicht fest.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "2d8581748a",
-       "was": "Warteliste",
-       "angabe": "wer sich einträgt, erfährt den nächsten Termin vor allen anderen",
-       "beleg": "Trag dich ein: Sobald der nächste Termin feststeht, erfährst du es vor allen anderen.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "5a4cd49276",
-       "was": "Eintragen",
-       "angabe": "auf «Der Abend»: Tag (Freitag, Samstag oder egal), Plätze, Name und E-Mail; im Fuss jeder Seite mit der E-Mail vormerken",
-       "beleg": "Egal",
-       "datei": "gast_wissen.txt",
-       "mehr": [
-        "Dein Platz am nächsten Abend."
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "bereich": "Tickets & Preise",
-   "gruppen": [
-    {
-     "gruppe": "Preis",
-     "zeilen": [
-      {
-       "fid": "a6430beac7",
-       "was": "Zuletzt",
-       "angabe": "89,00 EUR am 25. und 26. September 2026, ausgebucht",
-       "beleg": "Zuletzt 89,00 EUR am 25. und 26. September 2026.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "dbd24d3878",
-       "was": "Darin",
-       "angabe": "drei Gänge, fünf Drinks, Tasting und Schulung",
-       "beleg": "Angekündigt waren drei Gänge, fünf Drinks, Tasting und Schulung.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      }
-     ]
-    },
-    {
-     "gruppe": "Tickets",
-     "zeilen": [
-      {
-       "fid": "6fd3b62876",
-       "was": "Vorverkauf",
-       "angabe": "Tickets gibt es bisher nur im Vorverkauf, per PayPal; dazu eine Nachricht an @culinarium_hannover",
-       "beleg": "Tickets gibt es bisher nur im Vorverkauf.",
-       "datei": "gast_wissen.txt",
-       "mehr": [
-        "Tickets ausschließlich per Vorverkauf über PayPal."
-       ]
-      },
-      {
-       "fid": "ae2db5c064",
-       "was": "Zurückgeben",
-       "angabe": "nicht möglich: Tickets werden nicht rückerstattet",
-       "beleg": "Da die Plätze begrenzt sind, bitten wir um Verständnis, dass Tickets nicht rückerstattet werden können.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "bereich": "Drinks & Küche",
-   "gruppen": [
-    {
-     "gruppe": "Die Drinks",
-     "zeilen": [
-      {
-       "fid": "aaa08baf5d",
-       "was": "Wer",
-       "angabe": "Momo (Mohamed Ben Khelifa) mixt die Signature Drinks hinter der Bar des Hauses",
-       "beleg": "Die Drinks mixt Momo, hinter der Bar des Hauses.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "04b700ebef",
-       "was": "Fatwashing",
-       "angabe": "die Spirituose nimmt den Geschmack eines Fetts an, kalt gestellt wird das Fett wieder abgehoben",
-       "beleg": "Die Spirituose nimmt den Geschmack eines Fetts an; kalt gestellt, wird das Fett wieder abgehoben.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "0bcad735e8",
-       "was": "Milkwashing",
-       "angabe": "Milch bindet die Trübstoffe und wird abgefiltert, der Drink wird klar und weich",
-       "beleg": "Milch bindet die Trübstoffe und wird abgefiltert, der Drink wird klar und weich.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "bf82796124",
-       "was": "Enzyme",
-       "angabe": "lösen die Trübung aus Fruchtsaft, der Geschmack bleibt",
-       "beleg": "Enzyme lösen die Trübung aus Fruchtsaft, der Geschmack bleibt.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      }
-     ]
-    },
-    {
-     "gruppe": "Die Küche",
-     "zeilen": [
-      {
-       "fid": "33901f1062",
-       "was": "Wer",
-       "angabe": "Rudi Napieraj kocht die drei Gänge",
-       "beleg": "In der Küche steht Rudi Napieraj.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "22846a9f0c",
-       "was": "Rudis Zeilen",
-       "angabe": "LAUCH / BLUMENKOHL / CHIPOTLE, so schreibt er seine Teller",
-       "beleg": "LAUCH / BLUMENKOHL / CHIPOTLE",
-       "datei": "gast_wissen.txt",
-       "mehr": [
-        "Seine Teller schreibt er in drei, vier Wörtern, so stehen sie auch hier."
-       ]
-      },
-      {
-       "fid": "c046ffe946",
-       "was": "Gemüse",
-       "angabe": "steht bei ihm oft im Mittelpunkt: Lauch, Blumenkohl, Kürbis, Rote Bete",
-       "beleg": "Gemüse steht bei ihm oft im Mittelpunkt: Lauch, Blumenkohl, Kürbis, Rote Bete.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "bereich": "Kontakt",
-   "gruppen": [
-    {
-     "gruppe": "So erreichst du das Team",
-     "zeilen": [
-      {
-       "fid": "1a43b44e04",
-       "was": "Culinarium",
-       "angabe": "keine eigene Telefonnummer und keine E-Mail-Adresse; Fragen zu einem Abend per Nachricht an @culinarium_hannover auf Instagram",
-       "beleg": "Culinarium hat keine eigene Telefonnummer und keine eigene E-Mail-Adresse.",
-       "datei": "gast_umgebung.txt",
-       "mehr": []
-      },
-      {
-       "fid": "f6bb1bfd97",
-       "was": "Die Bar",
-       "angabe": "Telefon +49 163 3909578; reservieren per Nachricht oder Telefon",
-       "beleg": "Telefon +49 163 3909578.",
-       "datei": "gast_umgebung.txt",
-       "mehr": [
-        "Reservieren geht per Nachricht oder Telefon."
-       ]
-      },
-      {
-       "fid": "a820b2f818",
-       "was": "Instagram",
-       "angabe": "@culinarium_hannover, @walkonthewildside_hannover, @dirtychicken.hannover",
-       "beleg": "Instagram: @culinarium_hannover (Culinarium), @walkonthewildside_hannover (die Bar), @dirtychicken.hannover (Dirty Chicken).",
-       "datei": "gast_umgebung.txt",
-       "mehr": []
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "bereich": "Das Haus (Bar)",
-   "gruppen": [
-    {
-     "gruppe": "Walk on the Wild Side",
-     "zeilen": [
-      {
-       "fid": "7f9807974c",
-       "was": "Was",
-       "angabe": "eine Nachbarschafts-Mixology-Bar in Linden, Haasemannstraße 13: Drinks, Events, private Veranstaltungen und Tastings",
-       "beleg": "eine Nachbarschafts-Mixology-Bar in Linden, Haasemannstraße 13. Drinks, Events, private Veranstaltungen und Tastings.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "c08f465ff5",
-       "was": "Ohne Karte",
-       "angabe": "wer an die Theke kommt, erzählt, was er mag, und bekommt seinen eigenen Drink",
-       "beleg": "Eine Getränkekarte gibt es im Walk on the Wild Side nicht.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "dd6446411a",
-       "was": "Geöffnet",
-       "angabe": "Donnerstag 19 bis 1 Uhr, Freitag und Samstag 19 bis 2 Uhr; Sonntag bis Mittwoch geschlossen",
-       "beleg": "Donnerstag 19 bis 1 Uhr · Freitag und Samstag 19 bis 2 Uhr",
-       "datei": "gast_wissen.txt",
-       "mehr": [
-        "Sonntag bis Mittwoch"
-       ]
-      },
-      {
-       "fid": "c3d4f06c52",
-       "was": "Eigene Feier",
-       "angabe": "die lange Tafel für eure eigene Feier; dazu Konzerte, DJ-Abende, Gastschichten",
-       "beleg": "die lange Tafel für eure eigene Feier",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "398daf3015",
-       "was": "Seit",
-       "angabe": "Ende Oktober 2017 in Linden; seit dem Reopening am 9. November 2023 führt Derya Ivkin die Bar",
-       "beleg": "Christoph Elbert und Verena Schindler eröffneten die Bar Ende Oktober 2017 in Linden",
-       "datei": "gast_wissen.txt",
-       "mehr": [
-        "Seit dem Reopening am 9. November 2023 führt Derya Ivkin sie."
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "bereich": "Team",
-   "gruppen": [
-    {
-     "gruppe": "Drei Leute, ein Haus",
-     "zeilen": [
-      {
-       "fid": "f7d448b11f",
-       "was": "Derya Ivkin",
-       "angabe": "führt die Bar, das Haus von Culinarium, seit dem Reopening im November 2023",
-       "beleg": "Führt das Walk on the Wild Side, das Haus von Culinarium, seit dem Reopening im November 2023.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "469bed48f9",
-       "was": "Momo",
-       "angabe": "Mohamed Ben Khelifa, mixt die Signature Drinks und erklärt jeden selbst",
-       "beleg": "Steht hinter der Bar und mixt die Signature Drinks, auch die fünf eines Culinarium-Abends, und erklärt jeden selbst.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      },
-      {
-       "fid": "b9e81cbeed",
-       "was": "Rudi Napieraj",
-       "angabe": "kocht seit 2024 bei Culinarium und steht beim Pop-up Dirty Chicken in der Küche",
-       "beleg": "Kocht seit 2024 bei Culinarium, drei Gänge an der langen Tafel, und steht beim Pop-up Dirty Chicken in der Küche.",
-       "datei": "gast_wissen.txt",
-       "mehr": []
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "bereich": "Der Weg",
-   "gruppen": [
-    {
-     "gruppe": "Hinfinden",
-     "zeilen": [
-      {
-       "fid": "1242db0cb0",
+       "fid": "ebd4b78067",
        "was": "Adresse",
-       "angabe": "Walk on the Wild Side, Haasemannstraße 13, 30449 Hannover",
-       "beleg": "Haasemannstraße 13",
+       "angabe": "Seestrasse 50, 8598 Bottighofen",
+       "beleg": "Adresse: Wirtschaft am Schlössli, Seestrasse 50, 8598 Bottighofen TG",
        "datei": "gast_wissen.txt",
-       "mehr": [
-        "30449 Hannover"
-       ]
+       "mehr": []
       },
       {
-       "fid": "dd95ea7b9a",
-       "was": "Ecke",
-       "angabe": "Haasemannstraße, Ecke Rampenstraße, am Schild über der Hausecke",
-       "beleg": "Haasemannstraße, Ecke Rampenstraße",
+       "fid": "b75f262d66",
+       "was": "Telefon und E-Mail",
+       "angabe": "+41 71 688 90 92, kontakt@schloessli-bottighofen.ch",
+       "beleg": "Telefon: +41 71 688 90 92 · E-Mail: kontakt@schloessli-bottighofen.ch",
        "datei": "gast_wissen.txt",
-       "mehr": [
-        "Am Schild über der Hausecke erkennst du die Bar schon von weitem."
-       ]
+       "mehr": []
       },
       {
-       "fid": "758bf80316",
-       "was": "Plus Code",
-       "angabe": "9PC7+49 Hannover",
-       "beleg": "9PC7+49 Hannover",
+       "fid": "e3da9aa3c9",
+       "was": "Instagram",
+       "angabe": "@schloessli_bottighofen",
+       "beleg": "Instagram: @schloessli_bottighofen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "2440fcc729",
+       "was": "Lage",
+       "angabe": "direkt im Hafen von Bottighofen, mit Blick aufs Wasser und die Alpen",
+       "beleg": "Direkt im Hafen von Bottighofen gelegen mit Blick aufs Wasser und die Alpen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "aaf30e2416",
+       "was": "Küche",
+       "angabe": "mediterran, mit frischen, hochwertigen Zutaten",
+       "beleg": "Hier erwartet Sie eine kulinarische Reise in die Welt der mediterranen Küche, die mit frischen, hochwertigen Zutaten und kreativen Rezepten zubereitet wird.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "fbf100f545",
+       "was": "Terrasse",
+       "angabe": "«Die schönste Terrasse am Bodensee», sagt Christian Kuchler",
+       "beleg": "„Die schönste Terrasse am Bodensee“ — Christian Kuchler",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "5714c388b3",
+       "was": "Hunde",
+       "angabe": "willkommen (Falstaff, Tagblatt)",
+       "beleg": "Hunde willkommen (Falstaff «Dogs allowed»",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      },
+      {
+       "fid": "52a742ce6b",
+       "was": "Zahlung",
+       "angabe": "bar, Debit, Kredit, NFC",
+       "beleg": "Zahlung bar, Debit, Kredit, NFC",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Auszeichnungen",
+     "zeilen": [
+      {
+       "fid": "de64b2d93c",
+       "was": "GaultMillau",
+       "angabe": "15 Punkte (Guide 2027)",
+       "beleg": "GaultMillau: 15 Punkte (Guide 2027)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "5b0d4db0b0",
+       "was": "Entdeckung des Jahres",
+       "angabe": "Moni Huber, GaultMillau «Entdeckung des Jahres 2026»",
+       "beleg": "GaultMillau: «Entdeckung des Jahres 2026» (Moni Huber)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "518cb678cf",
+       "was": "Falstaff",
+       "angabe": "91 von 100 Punkten",
+       "beleg": "Falstaff: 91 von 100",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "eb97a2c191",
+       "was": "Guide Michelin",
+       "angabe": "«Favorit der Inspektoren»",
+       "beleg": "Guide Michelin: «Favorit der Inspektoren»",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Das Team",
+     "zeilen": [
+      {
+       "fid": "48a323c8b9",
+       "was": "Pächter",
+       "angabe": "Christian Kuchler",
+       "beleg": "Pächter: Christian Kuchler",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "ce0b92b0e0",
+       "was": "Gastgeber und Sommelier",
+       "angabe": "Jonas Volpert",
+       "beleg": "Jonas Volpert, Gastgeber & Sommelier",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "4c78bbbd8f",
+       "was": "Küchenchefin",
+       "angabe": "Monika Huber",
+       "beleg": "Monika Huber, Küchenchefin",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "7e5aad4cb3",
+       "was": "Sous-Chef",
+       "angabe": "Lukas Siebel",
+       "beleg": "Lukas Siebel, Sous-Chef",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "c331d2fd6b",
+       "was": "Entremetier",
+       "angabe": "Marco Reisinger",
+       "beleg": "Marco Reisinger, Entremetier",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "3d6e962134",
+       "was": "Service",
+       "angabe": "Ole Sass",
+       "beleg": "Ole Sass, Service",
        "datei": "gast_wissen.txt",
        "mehr": []
       }
@@ -429,37 +166,152 @@
    ]
   },
   {
-   "bereich": "Dirty Chicken",
+   "bereich": "Öffnungszeiten & Reservation",
    "gruppen": [
     {
-     "gruppe": "Das Pop-up",
+     "gruppe": "Wann offen ist",
      "zeilen": [
       {
-       "fid": "5d975a0db5",
-       "was": "Was",
-       "angabe": "Fried Chicken im Brötchen mit Paprika-Honig-Mayo und eingelegten Zwiebeln, Chunks mit Spicy Glaze und grüner Sauce, Pommes, Krautsalat, Dirty Drinks und Musik",
-       "beleg": "Im Brötchen mit Paprika-Honig-Mayo und eingelegten Zwiebeln, als Chunks mit Spicy Glaze und grüner Sauce.",
+       "fid": "236dea6f92",
+       "was": "Restaurant",
+       "angabe": "Donnerstag bis Montag, 11:30 bis 23:00 Uhr",
+       "beleg": "Donnerstag - Montag: 11:30 Uhr - 23:00 Uhr",
        "datei": "gast_wissen.txt",
        "mehr": []
       },
       {
-       "fid": "74ab53c459",
-       "was": "Wann",
-       "angabe": "nur an einzelnen Tagen; die Termine stehen auf Instagram @dirtychicken.hannover",
-       "beleg": "Nur an einzelnen Tagen.",
+       "fid": "25ab30414f",
+       "was": "Ruhetage",
+       "angabe": "Dienstag und Mittwoch",
+       "beleg": "Dienstag & Mittwoch Ruhetag",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "0071f1a01c",
+       "was": "Küche à la carte",
+       "angabe": "11:30 bis 13:30 und 18:00 bis 20:00 Uhr",
+       "beleg": "Küche: 11:30 Uhr - 13:30 Uhr und 18:00 Uhr - 20:00 Uhr.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "e90d933cab",
+       "was": "Lästermeile",
+       "angabe": "die Karte der Lästermeile den ganzen Tag",
+       "beleg": "Den ganzen Tag durchgängig bieten wir die Karte der Lästermeile an.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "bab058e25c",
+       "was": "Ferien",
+       "angabe": "13. bis 15. November 2026 (Excellence Gourmetkreuzfahrt) und 22. Dezember 2026 bis 10. Februar 2027",
+       "beleg": "- 13. - 15. November (Excellence Gourmetkreuzfahrt)",
        "datei": "gast_wissen.txt",
        "mehr": [
-        "@dirtychicken.hannover"
+        "- 22. Dezember 2026 - 10. Februar 2027"
+       ]
+      }
+     ]
+    },
+    {
+     "gruppe": "Reservieren",
+     "zeilen": [
+      {
+       "fid": "21c286b14e",
+       "was": "Online",
+       "angabe": "über gastronovi, der Link steht auf der Website",
+       "beleg": "Reservation online: https://services.gastronovi.com/restaurants/118851/reservation/widget (System gastronovi).",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b008588637",
+       "was": "Gruppen",
+       "angabe": "ab 6 gebuchten Personen gilt eine Reservation als Gruppe (AGB)",
+       "beleg": "Gruppen im Sinne dieser AGB sind Gruppen mit einer Mindestzahl von 6 gebuchten Personen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Karte & Lunch",
+   "gruppen": [
+    {
+     "gruppe": "Die Karte",
+     "zeilen": [
+      {
+       "fid": "d372ce73b4",
+       "was": "Aufbau",
+       "angabe": "Frankreich, Italien, Iberische Halbinsel und Klassiker",
+       "beleg": "## Frankreich",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "## Italien",
+        "## Iberische Halbinsel",
+        "## Klassiker"
        ]
       },
       {
-       "fid": "24ef551a52",
-       "was": "Opening",
-       "angabe": "30. Mai 2026, 14 bis 22 Uhr, im AM:PM Café im Tiedthof, Goseriede 4",
-       "beleg": "30. Mai 2026, 14 bis 22 Uhr",
+       "fid": "63a9964c91",
+       "was": "Vegetarisch",
+       "angabe": "VEG = vegetarisch, OVEG = als vegetarische Option verfügbar; weitere vegetarische Optionen berät der Service",
+       "beleg": "VEG = vegetarisch, OVEG = als vegetarische Option verfügbar",
        "datei": "gast_wissen.txt",
        "mehr": [
-        "AM:PM Café im Tiedthof, Goseriede 4"
+        "Für weitere vegetarische Optionen berät Sie gerne unser Service."
+       ]
+      },
+      {
+       "fid": "baf9e60f4c",
+       "was": "Tortelloni",
+       "angabe": "Tomate, Burrata, Taggiasca-Olive; vegetarisch, CHF 35, als Hauptgang 50",
+       "beleg": "TORTELLONI (VEG/G/L/E/SE): Tomate – Burrata – Taggiasca Olive – CHF 35 / 50 (als Hauptgang)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "1db11b6ba4",
+       "was": "Allergene",
+       "angabe": "G Gluten, L Laktose, E Eier, F Fische, S Schalen- und Weichtiere, So Soja, En Erdnüsse, N Nüsse, Se Sellerie",
+       "beleg": "G = Gluten, L = Laktose, E = Eier, F = Fische, S = Schalen- und Weichtiere, So = Soja, En = Erdnüsse, N = Nüsse, Se = Sellerie",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "ae6ca81aea",
+       "was": "Preise",
+       "angabe": "in Schweizer Franken inkl. 8,1% MwSt.",
+       "beleg": "Alle Preise verstehen sich in Schweizer Franken inkl. 8,1% MwSt.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Lunch",
+     "zeilen": [
+      {
+       "fid": "65bbd328ae",
+       "was": "Lunch-Menü",
+       "angabe": "3 Gänge, CHF 35",
+       "beleg": "(3 – Gänge – 35.- Chf)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "1e1c0eb937",
+       "was": "Die Gänge",
+       "angabe": "Kürbissuppe, Risi e bisi, Joghurt Panna Cotta",
+       "beleg": "Kürbissuppe: Wachtelei – Serrano Schinken",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Risi e bisi: Reis – Miesmuschel – Erbsen – Spinat",
+        "Joghurt Panna Cotta: Apfelcrumble"
        ]
       }
      ]
@@ -467,33 +319,329 @@
    ]
   },
   {
-   "bereich": "Alle Abende",
+   "bereich": "Lästermeile",
    "gruppen": [
     {
-     "gruppe": "Bisher",
+     "gruppe": "Tapas und mehr",
      "zeilen": [
       {
-       "fid": "08c2d94600",
-       "was": "Erstes Pop-up",
-       "angabe": "20. Mai 2023 mit Momo",
-       "beleg": "Das erste Pop-up gab es am 20. Mai 2023 mit Momo.",
+       "fid": "ed1c8d742e",
+       "was": "Tapas",
+       "angabe": "durchgehend: Pimientos de Padrón, Patatine fritte, Croquetas, Kalamata-Oliven",
+       "beleg": "## Tapas durchgehend",
        "datei": "gast_wissen.txt",
        "mehr": []
       },
       {
-       "fid": "b045eb44ce",
-       "was": "Name",
-       "angabe": "2023 «by Momo x Christoph», seit Juli 2024 «by Momo x Rudi»",
-       "beleg": "2023 hiessen die Abende „by Momo x Christoph“, seit Juli 2024 „by Momo x Rudi“.",
+       "fid": "f55bb008ab",
+       "was": "Prato",
+       "angabe": "Aufschnitt, Käse, Pickels und Focaccia, CHF 30",
+       "beleg": "PRATO: Aufschnitt, Käse, Pickels und Focaccia G/L – CHF 30",
        "datei": "gast_wissen.txt",
        "mehr": []
       },
       {
-       "fid": "2843d4db14",
-       "was": "Plakate",
-       "angabe": "seit September 2023 bekommt jeder Abend ein eigenes Plakat",
-       "beleg": "Seit September 2023 bekommt jeder Culinarium-Abend ein eigenes Plakat.",
+       "fid": "f38ce54981",
+       "was": "Tarte flambée",
+       "angabe": "vegetarisch oder mit Speck, CHF 20",
+       "beleg": "TARTE FLAMBÉE: Vegetarisch oder mit Speck G/L – CHF 20",
        "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "622c2b3658",
+       "was": "Süsses",
+       "angabe": "Kuchen vom Blech CHF 7, Löffeldessert im Glas CHF 9",
+       "beleg": "TARTA: hausgemachter Kuchen vom Blech G/L/N – CHF 7",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "DOLCE AL CUCCHIAIO: Geschichtetes Löffeldessert im Glas G/L/N – CHF 9"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Wein",
+   "gruppen": [
+    {
+     "gruppe": "Der Keller",
+     "zeilen": [
+      {
+       "fid": "5bce31f16e",
+       "was": "Weinkarte",
+       "angabe": "468 Weine, Schwerpunkt Bündner Herrschaft, Burgund und Champagne",
+       "beleg": "Die Weinkarte hat 468 Weine.",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Der Schwerpunkt liegt auf der Bündner Herrschaft, dem Burgund und der Champagne."
+       ]
+      },
+      {
+       "fid": "2c38afd683",
+       "was": "Sommelier",
+       "angabe": "Jonas Volpert, Sommelier und Gastgeber",
+       "beleg": "Weinauswahl von Sommelier und Gastgeber Jonas Volpert",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "8b7fb56306",
+       "was": "Gruppen",
+       "angabe": "Champagner & Schaumwein, Weisswein, Rosé, Rotwein, Süsswein",
+       "beleg": "## Champagner & Schaumwein",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "## Weisswein",
+        "## Rosé",
+        "## Rotwein",
+        "## Süsswein"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Bankette & Gruppen",
+   "gruppen": [
+    {
+     "gruppe": "Platz und Form",
+     "zeilen": [
+      {
+       "fid": "879f7c0610",
+       "was": "Plätze",
+       "angabe": "zwei Etagen für jeweils bis zu 26 Personen",
+       "beleg": "Wir haben auf zwei Etagen Platz für jeweils bis zu 26 Personen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "4cad6496f8",
+       "was": "Speisenform",
+       "angabe": "Tavolata oder gesetztes Menue",
+       "beleg": "Sie geben den Rahmen vor - ob Tavolata oder gesetztes Menue!",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "eeef9f15fc",
+       "was": "Besprechen",
+       "angabe": "unkompliziert, gerne auch vor Ort in Ruhe",
+       "beleg": "wir können das sehr gerne auch vor Ort in Ruhe besprechen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Bankettmenüs",
+     "zeilen": [
+      {
+       "fid": "6e8daa0791",
+       "was": "Frühling",
+       "angabe": "CHF 175",
+       "beleg": "## Bankettmenü Frühling (175 CHF)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "6ea986652e",
+       "was": "Sommer",
+       "angabe": "CHF 185",
+       "beleg": "## Bankettmenü Sommer (185 CHF)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "70d656c5f6",
+       "was": "Herbst",
+       "angabe": "CHF 175",
+       "beleg": "## Bankettmenü Herbst (175 CHF)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "ddb3035b4c",
+       "was": "Auswahl",
+       "angabe": "3 bis 5 Gerichte aus den Menüs, mischen und anpassen möglich",
+       "beleg": "Aus den Menüs können 3-5 Gerichte ausgewählt werden. Nach Belieben können die Menüs auch gemischt werden",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Gutschein",
+   "gruppen": [
+    {
+     "gruppe": "Bestellen",
+     "zeilen": [
+      {
+       "fid": "08122e47da",
+       "was": "Wofür",
+       "angabe": "einen Abend unter der Platane, einen Lunch am Hafen oder die Lästermeile",
+       "beleg": "Für einen Abend unter der Platane, einen Lunch am Hafen oder die Lästermeile.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "7160623185",
+       "was": "Angaben",
+       "angabe": "Name, E-Mail, Adresse und Betrag",
+       "beleg": "Für den Gutschein fragt das Haus: Name Käufer, E-Mail, Adresse, Betrag.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "2d4561d620",
+       "was": "Bestätigung",
+       "angabe": "sobald der Gutschein versendet wurde",
+       "beleg": "Wir senden Ihnen eine Bestätigung, sobald der Gutschein versendet wurde.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Anlässe & Events",
+   "gruppen": [
+    {
+     "gruppe": "Als Nächstes",
+     "zeilen": [
+      {
+       "fid": "be6306ca6e",
+       "was": "Excellence Gourmetkreuzfahrt",
+       "angabe": "13. bis 15. November 2026, Four-Hands-Dinner mit Dieter Koschina an Bord der Excellence Countess",
+       "beleg": "Steht bevor: 13. bis 15. November 2026",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Four-Hands-Dinner auf der Excellence Countess!"
+       ]
+      },
+      {
+       "fid": "a159cde71b",
+       "was": "Restaurant geschlossen",
+       "angabe": "während der Gourmetkreuzfahrt, das Team ist an Bord",
+       "beleg": "Unser Restaurant ist über diese drei Tage geschlossen, da unser Team geschlossen mit an Board ist.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Was war",
+     "zeilen": [
+      {
+       "fid": "09d09b009e",
+       "was": "Seenachtfest",
+       "angabe": "7. bis 8. August 2026, Feuerwerk mit Sicht von der Terrasse",
+       "beleg": "War: 7. bis 8. August 2026",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "wir haben beste Sicht von unserer Terrasse auf dieses Spektakel!"
+       ]
+      },
+      {
+       "fid": "7f7bfa0da4",
+       "was": "Ehemaligen Lunch",
+       "angabe": "Sonntag, 6. September 2026",
+       "beleg": "War: Sonntag, 6. September 2026",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Hausregeln (AGB)",
+   "gruppen": [
+    {
+     "gruppe": "Veranstaltungen",
+     "zeilen": [
+      {
+       "fid": "a24149851c",
+       "was": "Teilnehmerzahl",
+       "angabe": "verbindlich spätestens 2 Werktage vorher",
+       "beleg": "die verbindliche Teilnehmerzahl für eine Veranstaltung spätestens 2 Werktage vor dem Veranstaltungstermin mitzuteilen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "755610edb9",
+       "was": "Anzahlung",
+       "angabe": "ab CHF 1000 Reservationsbetrag kann das Restaurant 50 % Anzahlung verlangen",
+       "beleg": "ab einem Reservationsbetrag von CHF 1000.- kann das Restaurant eine Anzahlung von 50% des gesamten Buchungsbetrags verlangen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Lage, Anreise & Geschichte",
+   "gruppen": [
+    {
+     "gruppe": "Anreise",
+     "zeilen": [
+      {
+       "fid": "d4d42cf383",
+       "was": "Mit dem Auto",
+       "angabe": "am Kreisverkehr beim Restaurant Bären in die Seestrasse Richtung Hafen, über den Bahnübergang zum Parkplatz",
+       "beleg": "Am Kreisverkehr beim Restaurant Bären Abfahrt in die Seestrasse in Richtung Hafen, über den Bahnübergang hinweg gelangen Sie der Strasse immer weiter folgend direkt zu unserem Parkplatz.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "52f5a93bc9",
+       "was": "Parkplatz und Zug",
+       "angabe": "ausreichend Parkplätze, Bahnhof Bottighofen in der Nähe",
+       "beleg": "ausreichend Parkplätze und eine nahe Anbindung zum Zugverkehr mit dem Bahnhof Bottighofen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "314ccb52f1",
+       "was": "Am Hafen",
+       "angabe": "Schifflände, Bootshafen und Bootstankstelle; ob ein Kursschiff anlegt, beim Haus fragen",
+       "beleg": "am Hafen liegen die Schifflände, der Bootshafen und die Bootstankstelle.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Geschichte",
+     "zeilen": [
+      {
+       "fid": "6ea1c178bf",
+       "was": "1676",
+       "angabe": "Erlaubnis für ein «Haus am See», das spätere Schlössli, unter der Bedingung, dass darin nicht gewirtet wird",
+       "beleg": "1676: Untermüller Hans Conrad Hafen-Schedler erhält vom Kloster Münsterlingen die Erlaubnis",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      },
+      {
+       "fid": "819ae20c8b",
+       "was": "Der Besen",
+       "angabe": "statt eines Wirtshausschilds hing nur ein Besen heraus",
+       "beleg": "Statt eines Wirtshausschilds hing nur ein Besen heraus.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "87bb586c74",
+       "was": "Heute",
+       "angabe": "das Schlössli ist ein Wohnhaus, die Wirtschaft liegt im ehemaligen Hafenmeistergebäude",
+       "beleg": "Heute: das Schlössli ist ein Wohnhaus, die Wirtschaft am Schlössli liegt im ehemaligen Hafenmeistergebäude",
+       "datei": "gast_umgebung.txt",
        "mehr": []
       }
      ]

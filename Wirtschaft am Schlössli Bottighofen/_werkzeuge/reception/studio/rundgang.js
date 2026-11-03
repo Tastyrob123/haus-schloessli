@@ -1,4 +1,4 @@
-/* Rundgang von La Réception · Culinarium Hannover (28.10.2026, Kopie aus der Taverne zum Schäfli), Kopie aus dem Schlössli, dort aus dem Ruedihus; dort übernommen aus La Réception des Carlton-Europe (studio/rundgang.js dort, nur gelesen), dort aus dem Grand Beau-Rivage; Schlüssel des Hauses «rundgang-rh-…». */
+/* Rundgang des Reservationsbuchs · Wirtschaft am Schlössli (Nachtbau 3.11.2026, Aufbau aus dem Stamm), Kopie aus dem Schlössli, dort aus dem Ruedihus; dort übernommen aus La Réception des Carlton-Europe (studio/rundgang.js dort, nur gelesen), dort aus dem Grand Beau-Rivage; Schlüssel des Hauses «rundgang-rh-…». */
 /* Kurzer Rundgang beim ersten Öffnen eines Werkzeugs (Robert 16.10.2026: «einmal ganz kurz zeigen, hier kannst du das machen,
    da das, damit man weiss, wo man gelandet ist»). Ein Lichtkegel liegt auf dem echten Bedienelement, daneben eine Karte mit
    zwei, drei Sätzen. Je Werkzeug und Browser einmal; wieder aufrufen über «Kurzer Rundgang» im Rand oder ?rundgang.
@@ -10,79 +10,27 @@
   var Q = new URLSearchParams(location.search), ERZWINGEN = Q.has('rundgang');
   if (window.self !== window.top && !ERZWINGEN) return;
 
-  /* ziel: Liste von Wahlorten, der erste sichtbare gilt (Handy hat andere Flächen). */
+  /* ziel: Liste von Wahlorten, der erste sichtbare gilt (Handy hat andere Flächen). Nur die Gänge dieses Werkzeugs (Schlössli 3.11.2026). */
   var GAENGE = {
-    maison: { name: 'Die Stube', schritte: [
-      { ziel: ['.m-f5__gruss', '#oben'], oben: true, titel: 'Das ist die Stube',
-        text: 'Der Eingang zu allen Werkzeugen des Hauses. Von hier aus pflegst du Website, Karten, Drucksachen, den Chat und die Marke selbst.' },
-      { ziel: ['.m-f5__k:first-child .m-f5__t', '.m-f5__k:first-child'], titel: 'Jedes Bild ist ein Werkzeug',
-        text: 'Der Schreibtisch, die Tafel, die Werkstatt, die Gäste, das Hausbuch. Darunter steht, was dort gerade ansteht. Ein Klick öffnet es.' },
-      { ziel: ['.m-f5__zeile'], titel: 'Heute auf der Website',
-        text: 'Wie viele Gäste heute auf der Website waren und wie viele weiter zur Buchung gingen.' },
-      { ziel: ['.m-insel', '.m-oben'], oben: true, titel: 'Immer erreichbar',
-        text: 'Diese Leiste führt in jedes Werkzeug. Aus jedem Werkzeug kommst du hierher zurück.' },
-      { ziel: ['#bureau .m-kopf', '#bureau'], titel: 'Jedes Werkzeug stellt sich vor',
-        text: 'Weiter unten zeigt jeder Abschnitt, was ein Werkzeug für das Haus tut, mit Bildern aus dem Werkzeug selbst.' }
-    ] },
-    bureau: { name: 'Der Schreibtisch', schritte: [
-      { ziel: ['#ansicht .titel'], titel: 'Das ist der Schreibtisch',
-        text: 'Deine Website zum Selbstpflegen. Texte, Fotos, Preise, Öffnungszeiten, Angebote: alles, was Gäste online sehen, änderst du hier, ohne Agentur und ohne Programmierer.' },
-      { ziel: ['#rand .nav', '#rand'], titel: 'Jede Seite deiner Website',
-        text: 'Zimmer, Restaurant und Bar, Wellness, Feiern, Angebote, Region: jede Seite einzeln, in allen drei Sprachen.' },
-      { ziel: ['#ansicht .aufgaben'], max: 300, titel: 'Was sich im Alltag ändert',
-        text: 'Ein neues Package, ein anderer Preis, ein frisches Foto, ein Hinweis für die Festtage. Das ist eine Sache von Minuten, kein Auftrag mehr.' },
-      { ziel: ['#leiste'], titel: 'Nichts geht aus Versehen online',
-        text: 'Du arbeitest in Ruhe, die Website ändert sich erst, wenn du es willst. Jeder frühere Stand lässt sich zurückholen.' }
-    ] },
-    carte: { name: 'Die Tafel', schritte: [
-      { ziel: ['#kopf'], titel: 'Das ist die Tafel',
-        text: 'Die Speise-, Getränke- und Weinkarten des Hauses an einem Ort. Ein neues Gericht, ein anderer Preis, ein Wein ist aus: das änderst du hier selbst.' },
-      { ziel: ['#rand .karten', '#rand'], titel: 'Alle Karten des Hauses',
-        text: 'Die Restaurants, die Bar, die Weinkarte und das Mittagsmenü, jede Karte für sich.' },
-      { ziel: ['#arbeit .vorschau'], min: 560, titel: 'Gedruckt und online aus einer Quelle',
-        text: 'Aus jeder Änderung entsteht die neue Karte zum Drucken, und die Restaurant-Seiten der Website stimmen automatisch mit. Nie wieder zwei verschiedene Fassungen.' },
-      { ziel: ['#rand .modus'], titel: 'Für jeden im Team',
-        text: 'Einfach wie eine Liste, oder frei gestaltet direkt auf der Karte.' }
-    ] },
     reception: { name: (window.WO ? WO.name('gaeste') : 'Werkzeug'), schritte: [
-      { ziel: ['#ansicht .wo-sb'], titel: 'Das ist ' + (window.WO ? WO.name('gaeste') : 'das Werkzeug').replace(/^Das /, 'das ').replace(/^Der /, 'der ').replace(/^Die /, 'die '),
-        text: 'Hier landet, was Gäste über deine Website schreiben: wer auf die Warteliste für den nächsten Abend will, wer einen Platz an der Tafel sucht, wer die lange Tafel für eine eigene Feier möchte. Dazu die Fragen, die Gäste dem Chat auf der Website stellen.' },
-      { ziel: ['#ansicht .wo-aufg', '#rand [data-gehe="eingang"]', '#ansicht .re-spalte'], titel: 'Anfragen, die direkt bei dir landen',   /* Tor 3: die Anfragen, nicht die Begrüssung */
-        text: 'Jede Anfrage steht hier mit Tag, Plätzen und Wünschen für die Küche, dazu ein Hinweis, wenn der Termin noch offen ist oder mehr Gäste kommen wollen, als die Tafel Plätze hat. Den Brief im Ton deiner Website schreibt der Assistent auf Knopfdruck.' },
+      { ziel: ['#ansicht .wo-sb'], titel: 'Das ist ' + (window.WO ? WO.name('gaeste') : 'das Werkzeug').replace(/^Das /, 'das\u00a0').replace(/^Der /, 'der\u00a0').replace(/^Die /, 'die\u00a0'),
+        text: 'Hier landet, was Gäste über Ihre Website schreiben: Reservationen mit Wünschen und Allergien, Bankette, Plätze für Anlässe, Gutscheine. Dazu die Fragen an den Chat, sobald er auf der Website steht.' },
+      { ziel: ['#ansicht .wo-aufg', '#rand [data-gehe="eingang"]', '#ansicht .re-spalte'], titel: 'Anfragen, die direkt bei Ihnen landen',   /* Tor 3: die Anfragen, nicht die Begrüssung */
+        text: 'Jede Anfrage steht hier mit allen Angaben, den Allergien und einem Hinweis, wenn der Tag ein Ruhetag ist, in die Ferien fällt oder mehr Personen kommen, als eine Etage fasst. Den Brief schreibt der Assistent auf Knopfdruck.' },
       { ziel: ['#rand [data-gehe="gefragt"]', '#rand .wo-rand__g', '#rand'], titel: 'Was Gäste wissen wollen',   /* Tor 3: «Das wurde gefragt» */
-        text: 'Alle Fragen an den Chat. Du siehst, was Gäste beschäftigt und wo der Chat noch eine Antwort von dir braucht.' },
-      { ziel: ['#k-probe', '#kopf .wo-kopf__r', '#rand [data-probe]'], oben: true, titel: 'Probier es selbst',
+        text: 'Alle Fragen an den Chat. Sie sehen, was Gäste beschäftigt und wo der Chat noch eine Antwort von Ihnen braucht.' },
+      { ziel: ['#k-probe', '#kopf .wo-kopf__r', '#rand [data-probe]'], oben: true, titel: 'Probieren Sie es selbst',
         text: 'Der Chat so, wie Gäste ihn auf dem Handy sehen würden.' }
     ] },
     savoir: { name: 'Das weiss der Chat', schritte: [
       { ziel: ['#ansicht .wo-sb'], titel: 'Das Gedächtnis des Chats',
-        text: 'Hier steht alles, was der Chat über Culinarium weiss. Er antwortet nur mit dem, was hier steht, und erfindet nichts dazu.' },
-      { ziel: ['#w-ein'], titel: 'Neues lernt er von dir',
-        text: 'Der Termin des nächsten Abends, ein neues Plakat, ein Dirty-Chicken-Tag: hineinschreiben oder als Link und Datei dazulegen, und der Chat weiss es.' },
+        text: 'Hier steht alles, was der Chat über die Wirtschaft am Schlössli weiss. Er antwortet nur mit dem, was hier steht, und erfindet nichts dazu.' },
+      { ziel: ['#w-ein'], titel: 'Neues lernt er von Ihnen',
+        text: 'Eine neue Karte, ein neuer Anlass, geänderte Ferien: hineinschreiben oder als Link und Datei dazulegen, und der Chat weiss es.' },
       { ziel: ['#ansicht .sb-idx'], titel: 'Geordnet wie das Haus',
-        text: 'Der Abend, Tickets, Drinks und Küche, die Bar, der Weg: alles auf einen Blick und jederzeit zu berichtigen.' },
+        text: 'Öffnungszeiten, Karten, Lästermeile, Bankette, Anreise: alles auf einen Blick und jederzeit zu berichtigen.' },
       { ziel: ['#ansicht .wi-probe'], titel: 'Vorher ausprobieren',
-        text: 'Frag wie ein Gast und sieh, was der Chat antworten würde.' }
-    ] },
-    livre: { name: 'Das Hausbuch', schritte: [
-      { ziel: ['#ansicht .titel'], titel: 'Das ist das Hausbuch',
-        text: 'Die Marke des Hauses zum Arbeiten. Alles, was Team, Agenturen und Druckereien von deinem Haus brauchen, an einem Ort.' },
-      { ziel: ['#ansicht .li-karten'], titel: 'Fotos, Logo, Prüfung',
-        text: 'Jedes Foto in der richtigen Grösse für Instagram, Website oder Druck, das Logo für jede Fläche und eine Prüfung, ob ein Entwurf zum Haus passt.' },
-      { ziel: ['#ansicht .li-buch'], titel: 'Wie das Haus aussieht',
-        text: 'Das Markenbuch: Farben, Schriften, Zeichen und warum sie so sind. Zum Nachschlagen und zum Weitergeben.' },
-      { ziel: ['#leiste'], titel: 'Weitergeben mit einem Klick',
-        text: 'Alle Dateien als ein Paket, die Bildrechte gleich dabei.' }
-    ] },
-    registre: { name: 'Das Besucherbuch', schritte: [
-      { ziel: ['#ansicht .titel'], titel: 'Das ist das Besucherbuch',
-        text: 'Hier siehst du, wer deine Website besucht: woher die Gäste kommen, was sie interessiert und wie viele weiter zur Buchung gehen.' },
-      { ziel: ['#ansicht .rg-zahlen'], titel: 'Bringt die Website Gäste?',
-        text: 'Besuche, Verweildauer und Klicks zur Buchung. So siehst du, ob ein Angebot, eine Aktion oder ein Beitrag Gäste bringt.' },
-      { ziel: ['#ansicht .rg-zwei'], titel: 'Woher deine Gäste kommen',
-        text: 'Länder und Städte, und welche Seiten am längsten gelesen werden. Gut zu wissen für Werbung, Sprachen und Angebote.' },
-      { ziel: ['#ansicht .rg-liste'], titel: 'Jeder Besuch einzeln',
-        text: 'Wie sich ein Gast durch die Seiten bewegt hat. Ohne Namen, ohne Cookies.' }
+        text: 'Fragen Sie wie ein Gast und sehen Sie, was der Chat antworten würde.' }
     ] }
   };
 
@@ -94,37 +42,37 @@
 
   var CSS = '' +
     '.rdg-kegel{position:fixed;left:0;top:0;z-index:2147483000;border-radius:16px;pointer-events:none;' +
-      'box-shadow:0 0 0 3px #f5b49d,0 0 0 9px rgba(245,180,157,.35),0 0 40px 10px rgba(245,180,157,.35),0 0 0 200vmax rgba(13,13,16,.74)}' +
+      'box-shadow:0 0 0 3px #b8c7da,0 0 0 9px rgba(184,199,218,.35),0 0 40px 10px rgba(184,199,218,.35),0 0 0 200vmax rgba(7,12,22,.74)}' +
     '.rdg-sperre{position:fixed;inset:0;z-index:2147482999}' +
     '.rdg-karte{position:fixed;left:0;top:0;z-index:2147483001;width:360px;max-width:calc(100vw - 32px);box-sizing:border-box;' +
-      'padding:22px 24px 20px;border-radius:18px;color:#1f1d25;background:linear-gradient(180deg,#f9f6f6,#ece7e6);' +
-      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(146,73,46,.22),0 30px 60px -24px rgba(13,13,16,.6),0 10px 22px -12px rgba(13,13,16,.4);' +
+      'padding:22px 24px 20px;border-radius:18px;color:#0f1c33;background:linear-gradient(180deg,#f6f7f9,#e5e8ed);' +
+      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(48,83,144,.22),0 30px 60px -24px rgba(7,12,22,.6),0 10px 22px -12px rgba(7,12,22,.4);' +
       'font:15px/1.55 "Instrument Sans",system-ui,sans-serif;animation:rdg-auf .42s cubic-bezier(.2,.8,.2,1) both}' +
     '@keyframes rdg-auf{from{transform:translate3d(var(--rx,0),calc(var(--ry,0px) + 14px),0)}to{transform:translate3d(var(--rx,0),var(--ry,0),0)}}' +
     '.rdg-karte{transform:translate3d(var(--rx,0),var(--ry,0),0)}' +
-    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 Open Sans,Georgia,serif;letter-spacing:.2em;text-transform:uppercase;color:#454252}' +
-    '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#f4ab91,rgba(244,171,145,0))}' +
-    '.rdg-karte h3{margin:12px 0 6px;font:500 27px/1.12 "Fraunces",Georgia,serif;color:#1f1d25;letter-spacing:0}' +
-    '.rdg-karte p{margin:0;color:rgba(19,18,22,.78)}' +
+    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 Open Sans,Georgia,serif;letter-spacing:.2em;text-transform:uppercase;color:#213f73}' +
+    '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#afc0d6,rgba(175,192,214,0))}' +
+    '.rdg-karte h3{margin:12px 0 6px;font:500 27px/1.12 "Open Sans",Georgia,serif;color:#0f1c33;letter-spacing:0}' +
+    '.rdg-karte p{margin:0;color:rgba(9,17,31,.78)}' +
     '.rdg-fuss{display:flex;align-items:center;gap:14px;margin-top:20px}' +
-    '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(31,29,37,.14)}.rdg-karte .rdg-weg b.da{background:#d06138}' +
-    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#454252;cursor:pointer}' +
-    '.rdg-karte .rdg-zu:hover{color:#1f1d25}' +
+    '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(15,28,51,.14)}.rdg-karte .rdg-weg b.da{background:#5076b8}' +
+    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#213f73;cursor:pointer}' +
+    '.rdg-karte .rdg-zu:hover{color:#0f1c33}' +
     '.rdg-karte .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:0 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
-      'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#e5dedd!important;' +
-      'background:linear-gradient(180deg,#34323f,#1f1d25 55%,#131216);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 18px -10px rgba(13,13,16,.8)}' +
-    '.rdg-karte .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e1d0cd,#f4ab91 55%,#d06138);' +
+      'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#dce0e6!important;' +
+      'background:linear-gradient(180deg,#193058,#0f1c33 55%,#09111f);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 18px -10px rgba(7,12,22,.8)}' +
+    '.rdg-karte .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#cdd5e1,#afc0d6 55%,#5076b8);' +
       'box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45)}' +
-    '.rdg-karte .rdg-los svg{width:14px;height:14px;fill:none;stroke:#1f1d25;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
+    '.rdg-karte .rdg-los svg{width:14px;height:14px;fill:none;stroke:#0f1c33;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
     '.rdg-karte .rdg-los:hover i{transform:translateX(2px)}.rdg-karte .rdg-los i{transition:transform .2s}' +
-    '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #d06138;outline-offset:3px}' +
+    '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #5076b8;outline-offset:3px}' +
     /* Werkzeug-Stile (La Carte vergrössert Knöpfe und Schrift) dürfen die Karte nicht verändern */
     '.rdg-karte,.rdg-karte *{box-sizing:border-box!important}' +
     '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important}' +
-    '.rdg-karte h3{font:500 27px/1.12 "Fraunces",Georgia,serif!important;letter-spacing:0!important;text-transform:none!important}' +
+    '.rdg-karte h3{font:500 27px/1.12 "Open Sans",Georgia,serif!important;letter-spacing:0!important;text-transform:none!important}' +
     '.rdg-karte .rdg-fuss{flex-wrap:nowrap!important}' +
     '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 10px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
-    '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#454252!important}' +
+    '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#213f73!important}' +
     '.rdg-karte .rdg-los{height:42px!important;padding:0 6px 0 18px!important;letter-spacing:.16em!important;border-radius:999px!important}' +
     '.rdg-karte .rdg-los i{width:30px!important;height:30px!important;flex:none!important}' +
     '@media (max-width:700px){.rdg-karte{left:16px!important;right:16px;top:auto!important;bottom:16px;width:auto;--rx:0!important;--ry:0!important}}' +
@@ -259,22 +207,22 @@
 
   var SCHILD_CSS = '' +
     '.rdg-schild{position:fixed;right:24px;bottom:24px;z-index:2147482990;display:flex;align-items:center;gap:14px;box-sizing:border-box;' +
-      'padding:10px 10px 10px 18px;border-radius:999px;color:#1f1d25;background:linear-gradient(180deg,#f9f6f6,#e5dedd);' +
-      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(146,73,46,.28),0 18px 34px -16px rgba(13,13,16,.55),0 6px 14px -8px rgba(13,13,16,.35);' +
+      'padding:10px 10px 10px 18px;border-radius:999px;color:#0f1c33;background:linear-gradient(180deg,#f6f7f9,#dce0e6);' +
+      'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(48,83,144,.28),0 18px 34px -16px rgba(7,12,22,.55),0 6px 14px -8px rgba(7,12,22,.35);' +
       'transform:translate3d(0,0,0);transition:transform .55s cubic-bezier(.2,.8,.2,1);animation:rdg-schild-auf .7s cubic-bezier(.2,.9,.25,1.15) both}' +
     '@keyframes rdg-schild-auf{from{transform:translate3d(0,calc(100% + 40px),0)}to{transform:translate3d(0,0,0)}}' +
     '.rdg-schild.weg{animation:none;transform:translate3d(0,calc(100% + 60px),0)}' +
     '.rdg-schild__t{display:flex;flex-direction:column;gap:4px;line-height:1}' +
-    '.rdg-schild__t small{font:500 9px/1 Open Sans,Georgia,serif!important;letter-spacing:.2em!important;text-transform:uppercase;color:#454252}' +
-    '.rdg-schild__t b{font:500 19px/1 "Fraunces",Georgia,serif!important;letter-spacing:0!important;color:#1f1d25}' +
+    '.rdg-schild__t small{font:500 9px/1 Open Sans,Georgia,serif!important;letter-spacing:.2em!important;text-transform:uppercase;color:#213f73}' +
+    '.rdg-schild__t b{font:500 19px/1 "Open Sans",Georgia,serif!important;letter-spacing:0!important;color:#0f1c33}' +
     '.rdg-schild .rdg-los{flex:none;margin:0!important;display:inline-flex;align-items:center;gap:10px;height:38px!important;padding:0 5px 0 15px!important;border:0!important;border-radius:999px!important;cursor:pointer;' +
-      'font:500 9.5px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#e5dedd!important;' +
-      'background:linear-gradient(180deg,#34323f,#1f1d25 55%,#131216)!important;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 8px 16px -10px rgba(13,13,16,.8)!important}' +
-    '.rdg-schild .rdg-los i{display:grid;place-items:center;width:28px!important;height:28px!important;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e1d0cd,#f4ab91 55%,#d06138);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45);transition:transform .2s}' +
+      'font:500 9.5px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#dce0e6!important;' +
+      'background:linear-gradient(180deg,#193058,#0f1c33 55%,#09111f)!important;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 8px 16px -10px rgba(7,12,22,.8)!important}' +
+    '.rdg-schild .rdg-los i{display:grid;place-items:center;width:28px!important;height:28px!important;border-radius:50%;background:radial-gradient(circle at 35% 30%,#cdd5e1,#afc0d6 55%,#5076b8);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45);transition:transform .2s}' +
     '.rdg-schild .rdg-los:hover i{transform:translateX(2px)}' +
-    '.rdg-schild .rdg-los svg{width:13px;height:13px;fill:none;stroke:#1f1d25;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
-    '.rdg-schild__zu{flex:none;width:26px;height:26px;margin:0 2px 0 -4px!important;padding:0!important;border:0!important;border-radius:50%;background:none!important;box-shadow:none!important;cursor:pointer;color:#92492e;font:16px/1 system-ui!important}' +
-    '.rdg-schild__zu:hover{color:#1f1d25}' +
+    '.rdg-schild .rdg-los svg{width:13px;height:13px;fill:none;stroke:#0f1c33;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
+    '.rdg-schild__zu{flex:none;width:26px;height:26px;margin:0 2px 0 -4px!important;padding:0!important;border:0!important;border-radius:50%;background:none!important;box-shadow:none!important;cursor:pointer;color:#305390;font:16px/1 system-ui!important}' +
+    '.rdg-schild__zu:hover{color:#0f1c33}' +
     '.rdg-schild__zu{display:grid;place-items:center}.rdg-schild__zu svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}' +
     '@media (max-width:700px){.rdg-schild{right:16px;left:auto}}' +
     '@media (prefers-reduced-motion:reduce){.rdg-schild{animation:none;transition:none}}';

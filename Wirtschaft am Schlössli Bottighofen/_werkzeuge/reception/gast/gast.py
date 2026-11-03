@@ -1,11 +1,11 @@
-"""Der Chat von Culinarium Hannover (Food-Pairing-Abende an der langen Tafel in der Bar Walk on the Wild Side, Linden; dazu das Pop-up Dirty Chicken).
-Kopie aus der Taverne zum Schäfli (28.10.2026, dort aus dem Schlössli, Carlton-Europe und Ruedihus), Warteliste für den nächsten Abend statt Tischreservation.
-Auf der Website von Culinarium gibt es den Chat noch nicht; in La Réception läuft er unter «Chat ausprobieren» (Python ohne Zusatzpakete).
+"""Der Chat der Wirtschaft am Schlössli, Bottighofen (Restaurant direkt im Hafen, ohne Zimmer). Stand des Reservationsbuchs vom 19.10.2026,
+im Nachtbau 3.11.2026 übernommen: Reservation (gastronovi) statt Zimmerbuchung, Sie-Form, Schweizer Schreibung.
+Auf der Website des Schlössli gibt es den Chat noch nicht; im Reservationsbuch läuft er unter «Chat ausprobieren» (online unter /api/gast, Python ohne Zusatzpakete).
 
 Eingang (POST, JSON):
   {"messages":[{"role":"user"|"assistant","content":"…"}], "mappe":bool, "sprache":"de|en|fr", "heute":"YYYY-MM-DD"}   Gästechat
   {"modus":"anfrage", "mail":"…", "hinweis":"…"}                                                                     Antwort-Entwurf auf eine Anfrage
-Wissen: gast_wissen.txt (Wortlaut der Website) und gast_umgebung.txt (Tickets laut Instagram, Kontaktwege, Lage). Ohne Orte in gast_haus.json
+Wissen: gast_wissen.txt (Seiten und Unterlagen der Website des Hauses) und gast_umgebung.txt (Lage, Anreise, Geschichte). Ohne Orte in gast_haus.json
 holt der Chat kein Wetter (am Rechner nichts aus dem Netz). Der Chat antwortet nur daraus.
 Schlüssel: ANTHROPIC_API_KEY, ANTHROPIC_WORKSPACE_ID beim Vercel-Projekt. Jede Gästefrage geht mit Antwort an /api/fragen (Speicher fürs Studio,
 siehe fragen.js), gesichert mit GAST_GEHEIM. Schutz gegen Missbrauch: Grenzen je Besucher und je Tag (siehe GRENZEN), nur Aufrufe von der eigenen Seite."""
@@ -20,10 +20,9 @@ def _lies(n):
         return ''
 WISSEN = _lies('gast_wissen.txt')
 TAL = _lies('gast_umgebung.txt')
-# Das Haus (gast_haus.json daneben, aus den Quellen des Culinarium, _bau/culinarium_wissen.py). Ohne die Datei startet der Chat nicht mit fremden Werten:
-# Vorfall 10.10.2026 (Carlton-Hundepreise als Antwort im Gasterntal), deshalb stehen hier keine Werte und kein Muster eines anderen Hauses mehr.
-HAUS = {'name': 'Culinarium', 'ort': 'Hannover-Linden', 'tel': '', 'mail': '', 'kontakt': '', 'adresse': '', 'zeiten': '', 'fahrplan': '', 'kategorien': [], 'orte': [],
-        'art': 'Food-Pairing-Abende', 'ruhetage': '', 'reservation_name': 'Warteliste'}
+# Das Haus (gast_haus.json daneben, aus den Quellen des Schlössli, _bau/schloessli_wissen.py). Ohne die Datei startet der Chat nicht mit fremden Werten:
+# Vorfall 10.10.2026 (Werte eines anderen Hauses als Antwort), deshalb stehen hier keine Werte und kein Muster eines anderen Hauses mehr.
+HAUS = {'name': 'Wirtschaft am Schlössli', 'ort': 'Bottighofen', 'tel': '', 'mail': '', 'adresse': '', 'zeiten': '', 'fahrplan': 'sbb.ch', 'kategorien': [], 'orte': []}
 try:
     HAUS.update(json.loads(_lies('gast_haus.json') or '{}'))
 except ValueError:
@@ -31,8 +30,8 @@ except ValueError:
 MUSTER_CARLTON = ''
 REGELN_MEHR = f'''- Sprache: Schreibt der Gast Englisch, Französisch oder eine andere Sprache, antwortest du vollständig in seiner Sprache, auch die Punkte. Nur bei deutschen Fragen deutsch.
 - Du bist ein KI-Assistent, kein Mensch. Wenn jemand fragt, sag das.
-- Bleib bei Culinarium, seinen Abenden, Drinks und Gängen, der Bar Walk on the Wild Side, dem Pop-up Dirty Chicken, {HAUS['ort']} und dem Weg dorthin. Zu anderen Themen freundlich zurück zum Abend.
-- Persönliche Daten (Kreditkarten, Ausweise, PayPal-Zugang) nimmst du nicht entgegen; dafür ist das Team da.
+- Bleib beim Restaurant, seinen Karten, Anlässen, Banketten, {HAUS['ort']} und der Anreise. Zu anderen Themen freundlich zurück zum Restaurant.
+- Persönliche Daten (Kreditkarten, Ausweise) nimmst du nicht entgegen; dafür ist das Team da.
 - Schreibe immer zuerst deine Antwort an den Gast, dann erst ein Werkzeug.
 - Widersprechen sich die Seiten der Website und eine ältere Unterlage, gilt die Website.
 - Sagt eine Seite «auf Anfrage» oder nennt keinen Preis, nennst du auch keinen.'''   # 15.10.2026: vorher standen diese Regeln versehentlich im Muster
@@ -42,25 +41,24 @@ MODELL = HAUS.get('modell') or MODELL   # je Haus umstellbar (gast_haus.json): D
 GRENZE = 1000 if 'haiku' in MODELL else 4000   # Sonnet denkt vor der Antwort mit; mit 1000 brach die Antwort mitten im Satz ab (10.10.2026)
 TEL = HAUS['tel']
 MAIL = HAUS['mail']
-KONTAKT = HAUS.get('kontakt') or ' oder '.join(x for x in (TEL, MAIL) if x)   # Culinarium: die Bar am Telefon oder eine Nachricht auf Instagram (keine eigene Mail)
 HOECHSTENS_NACHRICHTEN = 12   # nur die letzten Beiträge reisen mit
 HOECHSTENS_ZEICHEN = 600      # je Frage
 # Grenzen gegen Missbrauch: je Besucher (IP) und gesamt je Tag. Darüber antwortet die Rezeption freundlich mit der Telefonnummer.
 GRENZEN = {'besucher_10min': 20, 'besucher_tag': 80, 'gesamt_tag': 2000, 'anfrage_tag': 60}
-SPRACHE = {'de': 'Deutsch, Schreibung wie die Website (ss statt ß, Namen wie Haasemannstraße bleiben)', 'en': 'Englisch (britische Schreibung)', 'fr': 'Französisch'}
+SPRACHE = {'de': 'Deutsch in Schweizer Schreibung (ss statt ß)', 'en': 'Englisch (britische Schreibung)', 'fr': 'Französisch (Schweizer Gebrauch)'}
 
-ANWEISUNG = f"""Du bist der Chat von {HAUS['name']} in {HAUS['ort']} ({HAUS['art']}) und beantwortest Fragen der Gäste im Chatfenster der Website.
+ANWEISUNG = f"""Du bist der Chat der {HAUS['name']} in {HAUS['ort']} (Restaurant direkt im Hafen, keine Zimmer) und beantwortest Fragen der Gäste im Chatfenster der Website.
 
 Regeln:
-- Antworte nur mit dem, was in WISSEN oder TALWISSEN steht. WISSEN ist der Wortlaut der Website (Der Abend, Alle Abende, Das Haus, Team, Der Weg, Dirty Chicken); TALWISSEN sind die Wege zum Ticket und zum Team. Erfinde nichts dazu, auch keine Preise, Termine, Plätze, Gänge oder Regeln.
-- Steht die Antwort nirgends, sag das offen und verweise an das Team: {KONTAKT}. Rufe dann zusätzlich das Werkzeug nicht_belegt auf.
-- Termine und Plätze: Der nächste Termin steht noch nicht fest; nenne nie ein Datum, das nicht in WISSEN steht. Du kannst nichts prüfen und nichts zusagen. Rufe das Werkzeug warteliste auf, sobald der Gast einen Platz will oder wissen möchte, wann der nächste Abend ist. {HAUS['ruhetage']}.
-- Allergien und Unverträglichkeiten: Die Website sagt dazu nichts. Sag, dass Rudi in der Küche es mit dem Gast klärt, und nimm es in eine Anfrage auf. Sag nie von dir aus, ein Gang sei frei davon. «Vegetarisch» ist kein Merkmal der Abende; sag nicht, dass sie vegetarisch sind.
-- Form (wichtig, der Gast liest auf dem Handy): Erst EIN kurzer Satz mit der direkten Antwort. Wenn es mehrere Angaben gibt (Zeiten, Preis, Ablauf), danach höchstens vier Punkte, jeder auf einer eigenen Zeile, beginnend mit «- », im Muster «Stichwort: Angabe». Kein Absatz länger als zwei Sätze. Nur, was gefragt ist; Zusätzliches höchstens als ein kurzer Satz am Schluss.
-- Ton wie die Website: immer «du», herzlich, knapp, ein bisschen Linden. Jeder Satz macht den Abend wertvoller (der einzelne Gast, das erklärte Glas, der von Hand angerichtete Teller); vierzehn Plätze nur als «wenige Plätze», nie als Menge. Nie «gute Frage», «gerne doch», «leider» am Satzanfang oder andere Floskeln. Keine Emojis, kein Fettdruck, keine Überschriften, keine Gedankenstriche.
-- Nichts Ungefragtes: Fragt jemand nach dem Weg, kein Wort zum Preis. Fragt jemand nach den Drinks, nichts zu Dirty Chicken.
+- Antworte nur mit dem, was in WISSEN oder TALWISSEN steht. WISSEN ist der Wortlaut der Website und der Unterlagen des Hauses (Speisekarte, Lunch, Lästermeile, Bankettmenüs, Weinkarte, Events, AGB). Erfinde nichts dazu, auch keine Preise, Zeiten, Plätze oder Regeln.
+- Steht die Antwort nirgends, sag das offen und verweise an das Team: {TEL} oder {MAIL} ({HAUS['zeiten']}). Rufe dann zusätzlich das Werkzeug nicht_belegt auf.
+- Freie Tische und Reservationen: Du kannst nichts prüfen und nichts zusagen. Rufe das Werkzeug buchungsmaske auf, sobald der Gast einen Tisch reservieren oder wissen will, ob an einem Tag Platz ist. Dienstag und Mittwoch sind Ruhetag; die Ferien stehen in WISSEN.
+- Allergien und Unverträglichkeiten: Nenne nur, was die Karte mit ihren Kürzeln ausweist, und sag dazu, dass die Küche es mit dem Gast abstimmt. Sag nie von dir aus, ein Gericht sei frei davon.
+- Form (wichtig, der Gast liest auf dem Handy): Erst EIN kurzer Satz mit der direkten Antwort. Wenn es mehrere Angaben gibt (Preise, Zeiten, Varianten), danach höchstens vier Punkte, jeder auf einer eigenen Zeile, beginnend mit «- », im Muster «Stichwort: Angabe». Kein Absatz länger als zwei Sätze. Nur, was gefragt ist; Zusätzliches höchstens als ein kurzer Satz am Schluss.
+- Ton: immer «Sie», nie «du». Herzlich und unkompliziert. Nie «gute Frage», «gerne doch», «leider» am Satzanfang oder andere Floskeln. Keine Emojis, kein Fettdruck, keine Überschriften, keine Gedankenstriche.
+- Nichts Ungefragtes: Fragt jemand nach dem Parkplatz, kein Wort zum Bahnhof. Fragt jemand nach dem Lunch, nichts zur Weinkarte.
 {REGELN_MEHR}
-- Warteliste: Du prüfst nichts selbst, sag nie «ich prüfe», «ich zeige» oder «ich schaue nach». Erster Satz: Auf der Warteliste erfährt der Gast den nächsten Abend zuerst. Nennt der Gast etwas Besonderes (Allergie, Anlass, mehrere Plätze) oder stellt er dazu eine Frage, folgen die Angaben aus WISSEN als Punkte, im selben Text, bevor du die Warteliste aufrufst. Die Frage des Gastes bleibt nie unbeantwortet.
+- Reservation: Du prüfst nichts selbst, sag nie «ich prüfe», «ich zeige» oder «ich schaue nach». Erster Satz: Die Reservation online zeigt die freien Tische. Nennt der Gast etwas Besonderes (Allergie, Anlass, Hund, Terrasse) oder stellt er dazu eine Frage, folgen die Angaben aus WISSEN als Punkte, im selben Text, bevor du die Reservation aufrufst. Die Frage des Gastes bleibt nie unbeantwortet.
 
 So sehen gute Antworten aus (nur die FORM übernehmen; Zahlen und Angaben stammen immer aus WISSEN dieses Hauses, nie aus den Mustern):
 {MUSTER}
@@ -71,40 +69,40 @@ WISSEN:
 TALWISSEN:
 {TAL or '(keins)'}"""
 
-# ANFRAGE: Grundfassung; La Réception setzt beim Einbinden ihre eigene (reception.ANFRAGE_GBR) ein.
-ANFRAGE = f"""Du schreibst im Namen des Teams von {HAUS['name']} in {HAUS['ort']} den Entwurf einer Antwort an einen Gast (Warteliste, Platz an einem Abend, eigene Feier).
+# ANFRAGE: Grundfassung; das Reservationsbuch setzt beim Einbinden seine eigene (reception.ANFRAGE_GBR) ein.
+ANFRAGE = f"""Du schreibst im Namen des Teams der {HAUS['name']} in {HAUS['ort']} den Entwurf einer Antwort-Mail auf eine Anfrage (Reservation mit Wünschen, Bankett oder Feier, Anlass, Gutschein).
 
 Regeln:
-- Alles, was du an Preisen, Zeiten, Plätzen, Drinks und Gängen nennst, steht wörtlich in WISSEN. Erfinde nichts; der nächste Termin steht noch nicht fest, setz dafür [Termin eintragen].
-- Freie Plätze kannst du nicht prüfen: setz dafür [Plätze prüfen].
-- Was in der Anfrage fehlt (Tag, Plätze, Wünsche), erfragst du freundlich am Ende, in einer kurzen Liste.
-- Was das Team selbst entscheiden muss, markierst du in eckigen Klammern, zum Beispiel [Preis bestätigen].
-- Ton der Website: Du, herzlich, knapp, keine Werbesprache, keine Emojis, kein Fettdruck. Kurze Absätze.
+- Alles, was du an Preisen, Menüs, Pauschalen, Sälen, Kapazitäten und Leistungen nennst, steht wörtlich in WISSEN (Website und Karten des Hauses: Speisekarte, Lunch, Lästermeile, Weinkarte, Bankettmenüs). Erfinde nichts, rechne keine Gesamtpreise, die nicht eindeutig aus den Angaben folgen; wenn du rechnest, zeig die Rechnung.
+- Freie Daten und Etagen kannst du nicht prüfen: schreib, dass das Team die Verfügbarkeit prüft, und setz dafür [VERFÜGBARKEIT PRÜFEN] an die Stelle.
+- Was in der Anfrage fehlt (Datum, Personenzahl, Budget, Wünsche), erfragst du freundlich am Ende, in einer kurzen Liste.
+- Was das Haus selbst entscheiden muss, markierst du in eckigen Klammern, zum Beispiel [Angebot freigeben] oder [Preis bestätigen].
+- Ton des Hauses: herzlich und unkompliziert, Sie-Form, Schweizer Schreibung (ss statt ß), keine Werbesprache, keine Emojis, kein Fettdruck. Kurze Absätze.
 - Sprache: die Sprache der Anfrage.
-- Form: Zeile 1 «Betreff: …», dann Leerzeile, dann die Antwort mit Anrede und Gruss «Bis bald an der Tafel» und darunter «[Name], {HAUS['name']} im Walk on the Wild Side».
-- Nach der Antwort eine Zeile «---» und darunter für das Team, nicht für den Gast: «Grundlage:» mit den Seiten, aus denen die Angaben stammen, und «Offen:» mit dem, was das Team vor dem Senden klären muss.
+- Form: Zeile 1 «Betreff: …», dann Leerzeile, dann die Mail mit Anrede und Gruss «Herzliche Grüsse aus {HAUS['ort']}» und darunter «[Name], {HAUS['name']}, {HAUS['adresse']}, {TEL}, {MAIL}».
+- Nach der Mail eine Zeile «---» und darunter für das Team, nicht für den Gast: «Grundlage:» mit den Unterlagen, aus denen die Angaben stammen, und «Offen:» mit dem, was das Team vor dem Senden klären muss.
 
 WISSEN:
 {WISSEN}"""
 
 WERKZEUGE = [{
-    'name': 'warteliste',
-    'description': 'Zeigt dem Gast im Chat den Weg zur Warteliste auf der Seite «Der Abend» (Tag, Plätze, Name, E-Mail). Aufrufen, sobald der Gast einen Platz will oder wissen möchte, wann der nächste Abend ist. Eintragen, was der Gast schon genannt hat, den Rest null lassen.',
+    'name': 'buchungsmaske',
+    'description': 'Zeigt dem Gast im Chat den Weg zur Reservation online (gastronovi) mit Datum, Uhrzeit und Personen. Aufrufen, sobald der Gast einen Tisch reservieren oder wissen will, ob an einem Tag Platz ist. Eintragen, was der Gast schon genannt hat, den Rest null lassen.',
     'strict': True,
     'input_schema': {'type': 'object', 'additionalProperties': False,
                      'required': ['datum', 'uhrzeit', 'personen'],
-                     'properties': {'datum': {'type': ['string', 'null'], 'description': 'Tag: fr, sa, egal oder null'},
-                                    'uhrzeit': {'type': ['string', 'null'], 'description': 'immer null (die Abende beginnen Freitag 19 Uhr, Samstag 17 Uhr)'},
-                                    'personen': {'type': ['integer', 'null'], 'description': 'Plätze (1 bis 6) oder null'}}}},
+                     'properties': {'datum': {'type': ['string', 'null'], 'description': 'YYYY-MM-DD oder null'},
+                                    'uhrzeit': {'type': ['string', 'null'], 'description': 'HH:MM oder null'},
+                                    'personen': {'type': ['integer', 'null'], 'description': 'Personen oder null'}}}},
     {
     'name': 'nicht_belegt',
-    'description': 'Vermerk für das Haus: Die Frage des Gastes liess sich aus WISSEN und TALWISSEN nicht beantworten. Das Team sieht diese Fragen in seinem Werkzeug und trägt die Antwort nach.',
+    'description': 'Vermerk für das Haus: Die Frage des Gastes liess sich aus WISSEN und TALWISSEN nicht beantworten. Das Team sieht diese Fragen im Reservationsbuch und trägt die Antwort nach.',
     'strict': True,
     'input_schema': {'type': 'object', 'additionalProperties': False, 'required': ['thema'],
-                     'properties': {'thema': {'type': 'string', 'description': 'Worum es ging, in zwei bis vier Wörtern auf Deutsch, z. B. «Nussallergie»'}}}}]
+                     'properties': {'thema': {'type': 'string', 'description': 'Worum es ging, in zwei bis vier Wörtern auf Deutsch, z. B. «Kinderstuhl»'}}}}]
 MAPPE = """
 
-Zusatz: Der Gast sitzt bereits an der Tafel. Antworte wie das Team vor Ort (was heute kommt, wo etwas ist), nicht wie für jemanden, der erst auf die Warteliste will."""
+Zusatz: Der Gast sitzt bereits im Restaurant. Antworte wie das Team vor Ort (was heute geht, wo etwas ist), nicht wie für jemanden, der erst reserviert."""
 
 # ---------------------------------------------------------------- Wetter (Open-Meteo, frei, ohne Schlüssel), 30 Minuten gemerkt
 WMO = {0: 'klar', 1: 'überwiegend klar', 2: 'teils bewölkt', 3: 'bedeckt', 45: 'Nebel', 48: 'Raureifnebel', 51: 'leichter Niesel', 53: 'Niesel', 55: 'starker Niesel',
@@ -154,10 +152,10 @@ def erlaubt(ip, art='gast'):
         z.append(jetzt); BESUCHER[ip] = z; TAG['n'] += 1
         return True
 
-GRENZE_TEXT = {'de': f'Du hast in kurzer Zeit sehr viele Fragen gestellt. Damit alle Gäste eine Antwort bekommen, mache ich hier kurz Pause. Das Team ist direkt für dich da: {KONTAKT}.',
+GRENZE_TEXT = {'de': f'Sie haben in kurzer Zeit sehr viele Fragen gestellt. Damit alle Gäste eine Antwort bekommen, mache ich hier kurz Pause. Das Team ist gerne direkt für Sie da: {TEL} oder {MAIL}.',
                'en': f'You have asked a great many questions in a short time. So that every guest gets an answer, I will pause here for a moment. The team is happy to help directly: {TEL} or {MAIL}.',
                'fr': f'Vous avez posé beaucoup de questions en peu de temps. Pour que chaque client reçoive une réponse, je fais une petite pause. L’équipe vous aide volontiers : {TEL} ou {MAIL}.'}
-NICHTS = {'de': f'Dazu kann ich hier nichts sagen. Das Team hilft dir weiter: {KONTAKT}.',
+NICHTS = {'de': f'Dazu kann ich hier leider nichts sagen. Das Team hilft Ihnen gerne weiter: {TEL} oder {MAIL}.',
           'en': f'I am afraid I cannot help with that here. The team will gladly assist: {TEL} or {MAIL}.',
           'fr': f'Je ne peux malheureusement pas vous renseigner ici. L’équipe vous aide volontiers : {TEL} ou {MAIL}.'}
 
@@ -182,9 +180,9 @@ def frage(messages, mappe=False, heute='', sprache='de'):
         else:
             verlauf.append({'role': rolle, 'content': inhalt})
     if not verlauf or verlauf[0]['role'] != 'user':
-        verlauf.insert(0, {'role': 'user', 'content': 'Hallo'})
+        verlauf.insert(0, {'role': 'user', 'content': 'Grüezi'})
     if verlauf[-1]['role'] != 'user':
-        verlauf.append({'role': 'user', 'content': 'Mach bitte weiter.'})
+        verlauf.append({'role': 'user', 'content': 'Bitte fahren Sie fort.'})
     sp = sprache if sprache in SPRACHE else 'de'
     # Sprache der letzten Frage erkennen: Haiku antwortete auf englische Fragen sonst deutsch (10.10.2026)
     letzte = verlauf[-1]['content'].lower()
@@ -200,7 +198,7 @@ def frage(messages, mappe=False, heute='', sprache='de'):
         return {'text': NICHTS[sp], 'belegt': False, 'thema': 'abgelehnt'}
     text = ''.join(b.get('text', '') for b in antwort.get('content', []) if b.get('type') == 'text').strip()
     werk = {b.get('name'): b.get('input') for b in antwort.get('content', []) if b.get('type') == 'tool_use'}
-    maske, lucke = werk.get('warteliste'), werk.get('nicht_belegt')
+    maske, lucke = werk.get('buchungsmaske'), werk.get('nicht_belegt')
     # Ruft die Rezeption die Buchungsmaske auf, endet ihr Text dort. Fragte der Gast dazu noch etwas (Spa, Essen, Anreise), blieb das
     # unbeantwortet oder endete mit einem Doppelpunkt (10.10.2026). Darum ein zweiter, kurzer Schritt: die Rezeption sieht die Maske
     # als erledigt und ergänzt nur, was noch offen ist. Der Zwischenspeicher macht den zweiten Schritt billig.
@@ -212,7 +210,7 @@ def frage(messages, mappe=False, heute='', sprache='de'):
                            {'type': 'text', 'text': (MAPPE if mappe else '') + f'\n\nWETTER:\n{wetter()}\n\nHeute ist {heute or time.strftime("%Y-%m-%d")}. Antworte auf {SPRACHE[sp]}.'}],
                 'messages': verlauf + [{'role': 'assistant', 'content': antwort['content']},
                                        {'role': 'user', 'content': [{'type': 'tool_result', 'tool_use_id': b['id'],
-                                        'content': 'Der Weg zur Warteliste steht jetzt unter deiner Antwort. Ist eine Frage des Gastes (ausser freie Plätze) noch nicht beantwortet, '
+                                        'content': 'Der Weg zur Reservation steht jetzt unter deiner Antwort. Ist eine Frage des Gastes (ausser freie Tische) noch nicht beantwortet, '
                                                    'beantworte sie jetzt als höchstens fünf Punkte «- Stichwort: Angabe», nur mit Angaben, die so in WISSEN stehen. Keine Einleitung, keine Überschrift, kein Fettdruck, keine Frage am Schluss, die Maske nicht erwähnen. Ist alles beantwortet, antworte nur mit OK.'}
                                         for b in antwort['content'] if b.get('type') == 'tool_use']}]})
             mehr = ''.join(x.get('text', '') for x in erg.get('content', []) if x.get('type') == 'text').strip()
@@ -223,8 +221,8 @@ def frage(messages, mappe=False, heute='', sprache='de'):
         if text.endswith(':'):   # nichts nachgekommen: den angefangenen Satz nicht stehen lassen
             text = text.rsplit('\n', 1)[0].strip() if '\n' in text else ''
     if not text:
-        text = ({'de': 'Auf der Warteliste erfährst du den nächsten Abend zuerst.', 'en': 'On the waiting list you hear about the next evening first.',
-                 'fr': 'Sur la liste d’attente, tu apprends la prochaine soirée en premier.'} if maske else NICHTS)[sp]
+        text = ({'de': 'Gerne. Die Reservation online zeigt die freien Tische.', 'en': 'Of course. The online reservation shows the free tables.',
+                 'fr': 'Volontiers. La réservation en ligne affiche les tables libres.'} if maske else NICHTS)[sp]
     n = antwort.get('usage', {})
     return {'text': text, 'maske': maske, 'belegt': not lucke, 'thema': (lucke or {}).get('thema', ''),
             'tokens': {'ein': n.get('input_tokens'), 'cache': n.get('cache_read_input_tokens'), 'aus': n.get('output_tokens')}}
