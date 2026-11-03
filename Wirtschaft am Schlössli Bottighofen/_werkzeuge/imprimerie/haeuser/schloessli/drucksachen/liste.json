@@ -1,0 +1,450 @@
+[
+ {
+  "k": "aushang-betriebsferien",
+  "n": "Betriebsferien im Winter",
+  "was": "Aushang A4: Betriebsferien 22. Dezember 2026 bis 10. Februar 2027",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "aushang-betriebsferien.pdf",
+  "vorschau": [
+   "aushang-betriebsferien.jpg"
+  ]
+ },
+ {
+  "k": "aushang-kreuzfahrt-geschlossen",
+  "n": "Geschlossen wegen Kreuzfahrt",
+  "was": "Aushang A4: geschlossen 13. bis 15. November, das Team ist an Bord",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "aushang-kreuzfahrt-geschlossen.pdf",
+  "vorschau": [
+   "aushang-kreuzfahrt-geschlossen.jpg"
+  ]
+ },
+ {
+  "k": "aushang-oeffnungszeiten",
+  "n": "Öffnungszeiten",
+  "was": "Aushang A4: Donnerstag bis Montag, Küche, Ruhetag",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "aushang-oeffnungszeiten.pdf",
+  "vorschau": [
+   "aushang-oeffnungszeiten.jpg"
+  ]
+ },
+ {
+  "k": "aushang-ruhetag",
+  "n": "Ruhetag",
+  "was": "Aushang A5 an der Tür: Dienstag & Mittwoch Ruhetag",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "aushang-ruhetag.pdf",
+  "vorschau": [
+   "aushang-ruhetag.jpg"
+  ]
+ },
+ {
+  "k": "aushang-besen",
+  "n": "Statt eines Schilds ein Besen",
+  "was": "Aushang A4 zur Geschichte des Hauses",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "aushang-besen.pdf",
+  "vorschau": [
+   "aushang-besen.jpg"
+  ]
+ },
+ {
+  "k": "plakat-terrasse",
+  "n": "Die schönste Terrasse",
+  "was": "Plakat A3 mit der Terrasse am Mittag",
+  "format": "A3 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "plakat-terrasse.pdf",
+  "vorschau": [
+   "plakat-terrasse.jpg"
+  ]
+ },
+ {
+  "k": "einladung-gourmetkreuzfahrt",
+  "n": "Excellence Gourmetkreuzfahrt",
+  "was": "Einladung quadratisch 148 mm: Four-Hands an Bord",
+  "format": "Quadrat",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "einladung-gourmetkreuzfahrt.pdf",
+  "vorschau": [
+   "einladung-gourmetkreuzfahrt.jpg"
+  ]
+ },
+ {
+  "k": "programm-die-reise",
+  "n": "Die Reise",
+  "was": "Programm A5: Basel, Strassburg, zurück",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "programm-die-reise.pdf",
+  "vorschau": [
+   "programm-die-reise.jpg"
+  ]
+ },
+ {
+  "k": "flyer-banketts",
+  "n": "Banketts & Gruppen",
+  "was": "Angebot A5: zwei Etagen, bis zu 26 Personen",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "flyer-banketts.pdf",
+  "vorschau": [
+   "flyer-banketts.jpg"
+  ]
+ },
+ {
+  "k": "menuekarte-lunch",
+  "n": "Lunch-Menü",
+  "was": "Menükarte DL hoch: drei Gänge am Mittag",
+  "format": "DL hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "menuekarte-lunch.pdf",
+  "vorschau": [
+   "menuekarte-lunch.jpg"
+  ]
+ },
+ {
+  "k": "menuekarte-bankett-herbst",
+  "n": "Bankettmenü Herbst",
+  "was": "Bankettmenü A5: fünf Gerichte des Herbsts",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "menuekarte-bankett-herbst.pdf",
+  "vorschau": [
+   "menuekarte-bankett-herbst.jpg"
+  ]
+ },
+ {
+  "k": "menuekarte-bankett-sommer",
+  "n": "Bankettmenü Sommer",
+  "was": "Bankettmenü A5: fünf Gerichte des Sommers",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "menuekarte-bankett-sommer.pdf",
+  "vorschau": [
+   "menuekarte-bankett-sommer.jpg"
+  ]
+ },
+ {
+  "k": "einleger-italien",
+  "n": "Aus Italien",
+  "was": "Menü-Einleger A5: Gerichte aus Italien, ohne Preise",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "einleger-italien.pdf",
+  "vorschau": [
+   "einleger-italien.jpg"
+  ]
+ },
+ {
+  "k": "einleger-klassiker",
+  "n": "Die Klassiker",
+  "was": "Menü-Einleger A5: die Klassiker, ohne Preise",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "einleger-klassiker.pdf",
+  "vorschau": [
+   "einleger-klassiker.jpg"
+  ]
+ },
+ {
+  "k": "wein-buendner-herrschaft",
+  "n": "Bündner Herrschaft",
+  "was": "Weinempfehlung DL hoch: Pinot Noir aus der Bündner Herrschaft",
+  "format": "DL hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "wein-buendner-herrschaft.pdf",
+  "vorschau": [
+   "wein-buendner-herrschaft.jpg"
+  ]
+ },
+ {
+  "k": "wein-burgund",
+  "n": "Burgund",
+  "was": "Weinempfehlung DL hoch: Weisswein aus dem Burgund",
+  "format": "DL hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "wein-burgund.pdf",
+  "vorschau": [
+   "wein-burgund.jpg"
+  ]
+ },
+ {
+  "k": "wein-champagne",
+  "n": "Champagne",
+  "was": "Weinempfehlung DL hoch: Champagne",
+  "format": "DL hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "wein-champagne.pdf",
+  "vorschau": [
+   "wein-champagne.jpg"
+  ]
+ },
+ {
+  "k": "laestermeile-tapas",
+  "n": "Tapas durchgehend",
+  "was": "Karte A5 der Lästermeile, ohne Preise",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "laestermeile-tapas.pdf",
+  "vorschau": [
+   "laestermeile-tapas.jpg"
+  ]
+ },
+ {
+  "k": "hinweiskarte-laestermeile",
+  "n": "Den ganzen Tag",
+  "was": "Tischaufsteller A6: die Karte der Lästermeile den ganzen Tag",
+  "format": "A6 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [
+   "Foto «bar» hat 205 dpi: für Plakate aus Abstand gut, für Karten aus der Nähe knapp"
+  ],
+  "pdf": "hinweiskarte-laestermeile.pdf",
+  "vorschau": [
+   "hinweiskarte-laestermeile.jpg"
+  ]
+ },
+ {
+  "k": "hinweiskarte-allergien",
+  "n": "Allergien",
+  "was": "Hinweiskarte A6 am Tisch: Allergene",
+  "format": "A6 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "hinweiskarte-allergien.pdf",
+  "vorschau": [
+   "hinweiskarte-allergien.jpg"
+  ]
+ },
+ {
+  "k": "tischkarte-reserviert",
+  "n": "Reserviert",
+  "was": "Tischkarte A7 quer: Reserviert",
+  "format": "A7 quer",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "tischkarte-reserviert.pdf",
+  "vorschau": [
+   "tischkarte-reserviert.jpg"
+  ]
+ },
+ {
+  "k": "tischkarte-terrasse",
+  "n": "Reserviert · Die Seeterrasse",
+  "was": "Tischkarte A7 quer: Reserviert auf der Seeterrasse",
+  "format": "A7 quer",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "tischkarte-terrasse.pdf",
+  "vorschau": [
+   "tischkarte-terrasse.jpg"
+  ]
+ },
+ {
+  "k": "postkarte-bottighofen",
+  "n": "Postkarte Bottighofen",
+  "was": "Postkarte A6 quer vom Bootshafen, mit Rückseite",
+  "format": "A6 quer",
+  "seiten": 2,
+  "rot": [],
+  "gelb": [],
+  "pdf": "postkarte-bottighofen.pdf",
+  "vorschau": [
+   "postkarte-bottighofen.jpg",
+   "postkarte-bottighofen-2.jpg"
+  ]
+ },
+ {
+  "k": "postkarte-bodensee",
+  "n": "Postkarte Bodensee",
+  "was": "Postkarte A6 quer bis zum Säntis, mit Rückseite",
+  "format": "A6 quer",
+  "seiten": 2,
+  "rot": [],
+  "gelb": [],
+  "pdf": "postkarte-bodensee.pdf",
+  "vorschau": [
+   "postkarte-bodensee.jpg",
+   "postkarte-bodensee-2.jpg"
+  ]
+ },
+ {
+  "k": "gutschein",
+  "n": "Gutschein",
+  "was": "Gutschein DL quer, Vorder- und Rückseite",
+  "format": "DL quer",
+  "seiten": 2,
+  "rot": [],
+  "gelb": [],
+  "pdf": "gutschein.pdf",
+  "vorschau": [
+   "gutschein.jpg",
+   "gutschein-2.jpg"
+  ]
+ },
+ {
+  "k": "flyer-des-hauses",
+  "n": "Flyer des Hauses",
+  "was": "Flyer A6, vorne die Terrasse, hinten die Zeiten",
+  "format": "A6 hoch",
+  "seiten": 2,
+  "rot": [],
+  "gelb": [],
+  "pdf": "flyer-des-hauses.pdf",
+  "vorschau": [
+   "flyer-des-hauses.jpg",
+   "flyer-des-hauses-2.jpg"
+  ]
+ },
+ {
+  "k": "pressemappe",
+  "n": "Pressemappe",
+  "was": "Deckblatt A4 der Pressemappe",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "pressemappe.pdf",
+  "vorschau": [
+   "pressemappe.jpg"
+  ]
+ },
+ {
+  "k": "teamaushang-ablauf-bankett",
+  "n": "Ablauf Bankett",
+  "was": "Team-Aushang A4: Ablauf eines Banketts",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "teamaushang-ablauf-bankett.pdf",
+  "vorschau": [
+   "teamaushang-ablauf-bankett.jpg"
+  ]
+ },
+ {
+  "k": "teamaushang-kuechenzeiten",
+  "n": "Küchenzeiten",
+  "was": "Team-Aushang A4: Küchenzeiten und Lästermeile",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "teamaushang-kuechenzeiten.pdf",
+  "vorschau": [
+   "teamaushang-kuechenzeiten.jpg"
+  ]
+ },
+ {
+  "k": "instagram-laestermeile",
+  "n": "Die Lästermeile",
+  "was": "Instagram-Beitrag 4:5: die Bar am Hafen",
+  "format": "Instagram 4:5",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "instagram-laestermeile.pdf",
+  "vorschau": [
+   "instagram-laestermeile.jpg"
+  ]
+ },
+ {
+  "k": "instagram-monika-huber",
+  "n": "Monika Huber",
+  "was": "Instagram-Beitrag 4:5: die Küchenchefin",
+  "format": "Instagram 4:5",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "instagram-monika-huber.pdf",
+  "vorschau": [
+   "instagram-monika-huber.jpg"
+  ]
+ },
+ {
+  "k": "instagram-weinkeller",
+  "n": "Der Weinkeller",
+  "was": "Instagram-Beitrag 4:5: GaultMillau über den Weinkeller",
+  "format": "Instagram 4:5",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "instagram-weinkeller.pdf",
+  "vorschau": [
+   "instagram-weinkeller.jpg"
+  ]
+ },
+ {
+  "k": "story-four-hands",
+  "n": "Story",
+  "was": "Story 9:16: Four-Hands an Bord",
+  "format": "Story 9:16",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "story-four-hands.pdf",
+  "vorschau": [
+   "story-four-hands.jpg"
+  ]
+ },
+ {
+  "k": "story-terrasse",
+  "n": "Story: Die Terrasse",
+  "was": "Story 9:16: unter den Platanen",
+  "format": "Story 9:16",
+  "seiten": 1,
+  "rot": [],
+  "gelb": [],
+  "pdf": "story-terrasse.pdf",
+  "vorschau": [
+   "story-terrasse.jpg"
+  ]
+ }
+]

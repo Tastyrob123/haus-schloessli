@@ -57,6 +57,8 @@
     if (/\u00a0/.test(t)) {   // das zusammengehaltene Wortpaar muss in die Zeile passen, sonst kleiner (nie unter den Mindestgrad)
       const paar = t.slice(t.lastIndexOf(' ') + 1), pb = DS.mess(Object.assign({}, el, { text: paar, w: 100000 })).bw;
       if (pb > el.w) { el.gr = +Math.max(el._min, el.gr * el.w / (pb + .5)).toFixed(2); if (DS.mess(Object.assign({}, el, { text: paar, w: 100000 })).bw > el.w) el.text = t.replace(/\u00a0/g, ' '); }
+      /* jede zusammengehaltene Gruppe (auch «Ein Essen» vorn) muss in die Zeile passen, sonst löst sie sich: nie ein Umbruch mitten im Wort (Schlössli 3.11.) */
+      el.text = String(el.text).split(' ').map(g => /\u00a0/.test(g) && DS.mess(Object.assign({}, el, { text: g, w: 100000 })).bw > el.w - .3 ? g.replace(/\u00a0/g, ' ') : g).join(' ');
     }
     el.h = DS.mess(el).h;
     if (el.ausr === 'c' && o.x === undefined) el.x = (c.w - el.w) / 2;
@@ -315,7 +317,7 @@
         return G0; })(liste.map((e, n) => sauber([
         e.gang && tx(c, 'mono', e.gang, bw, .0175 * u * Math.min(1.25, k), akz, { slot: `liste.${n}.gang`, sperr: .1, x: mx - bw / 2 }), e.gang && .012 * u * k,
         e.name && ausgewogen(c, gliederSatz(tx(c, versalName(e.name) ? 'kapitale' : 'titel', e.name, bw, (versalName(e.name) ? .04 : .047) * u * k, c.T.titel, { slot: `liste.${n}.name`, zeile: 1.14, x: mx - bw / 2 }))), e.name && e.detail && .01 * u * k,
-        e.detail && gliederSatz(tx(c, 'text', e.detail, bw * .94, .029 * u * Math.min(1.35, k), c.T.text, { slot: `liste.${n}.detail`, deck: .82, zeile: 1.38, x: mx - bw * .47 })),
+        e.detail && gliederSatz(tx(c, 'text', e.detail, bw * .94, .029 * u * Math.min(1.8, k), c.T.text, { slot: `liste.${n}.detail`, deck: .82, zeile: 1.38, x: mx - bw * .47 })),
       ])));
       const titelG = k => sauber([
         i.titel && tx(c, 'titel', i.titel, cw, .13 * u * Math.min(1.1, k), c.T.titel, { slot: 'titel', zeile: 1 }), i.titel && .018 * u,
@@ -327,7 +329,7 @@
       const y0 = kopfEnde + .035 * u, y1 = fussY - .06 * u - (text ? text.h + .05 * u : 0);
       const verf = y1 - y0;
       /* Grösse: Gänge und Titel zusammen füllen höchstens 80 % der Höhe; der Rest wird gleichmässig verteilt (Abstand Kopf ↔ erster Gang = 1,6 × Gang ↔ Gang) */
-      let k = 2.2, G, T, H;   // wenig Inhalt (kurze Gänge): die Gerichte dürfen grösser stehen, statt unten Leere zu lassen
+      let k = 3.2, G, T, H;   // wenig Inhalt (kurze Gänge): die Gerichte dürfen grösser stehen, statt unten Leere zu lassen
       for (let n = 0; n < 22; n++) {
         G = bauGaenge(k); T = titelG(k);
         H = stapelH(c, T) + G.reduce((s, g) => s + stapelH(c, g), 0);
@@ -528,11 +530,12 @@
       grund(c, seite);
       const u = c.u, B = DS.B, ph0 = c.quer ? c.h * .38 : c.h * Math.min(.52, Math.max(.4, (c.stil.bild || .52) * .86)), d = .15 * u;
       const iF = /Seestrasse/.test(i.aktion || '') ? Object.assign({}, i, { fuss: '' }) : i;   // Adresse steht schon in der Gruppe: keine zweite Fusszeile
-      const bw = c.w - 2 * (.045 * u + .08 * u), bau = gruppeBau(c, i, bw, { ohneZeichen: true, titel: .88 });
+      const bw = c.w - 2 * (.045 * u + .08 * u), bau = gruppeBau(c, i, bw, { ohneZeichen: true, titel: .88, kText: ['a3h', 'a4h', 'a5h'].includes(c.fk) ? 1.7 : 1.15 });   // Aushang: Titel stösst an die Breite, Text und Angaben wachsen mit, damit unten kein Loch bleibt (Schlössli 3.11.)
       // Foto so hoch wie möglich, aber nie so hoch, dass die Gruppe in den Mindestgraden nicht mehr Platz hat (sonst läge die Fusszeile auf dem Text)
       const fussH = (() => { const t = c.el.length; const y = nurFuss(c, iF); c.el.length = t; return y; })();
       let ph = ph0, g, y0, y1;
-      for (let n = 0; n < 8; n++) { y0 = ph + d / 2 + .05 * u; y1 = fussH - .05 * u; g = passend(c, bau, (y1 - y0) * .9, 1.3, .45); if (stapelH(c, g) <= (y1 - y0) || ph < c.h * .26) break; ph *= .9; }
+      for (let n = 0; n < 8; n++) { y0 = ph + d / 2 + .05 * u; y1 = fussH - .05 * u; g = passend(c, bau, (y1 - y0) * .9, 1.6, .45); if (stapelH(c, g) <= (y1 - y0) || ph < c.h * .26) break; ph *= .9; }
+      { const frei = (y1 - y0) - stapelH(c, g); if (frei > .14 * (y1 - y0)) { ph += frei * .55; y0 = ph + d / 2 + .05 * u; } }   // Gruppe kleiner als der Platz (Titel stösst an die Breite): das Foto nimmt den Rest, unten bleibt kein Loch (Schlössli 3.11.)
       c.el.push({ id: id(), typ: 'bild', bild: i.bild, x: -B, y: -B, w: c.w + 2 * B, h: ph + B, fx: .5, fy: .5, zoom: 1, slot: 'bild' });
       c.el.push({ id: id(), typ: 'flaeche', x: (c.w - d) / 2, y: ph - d / 2, w: d, h: d, r: d / 2, farbe: seite.grund, tapete: seite.tapete, deck: 1 });
       const zw = d * .6, z = zeichen(c, zw); z.y = +(ph - zw * DS.zz(c.M, z).verh / 2).toFixed(2); c.el.push(z);

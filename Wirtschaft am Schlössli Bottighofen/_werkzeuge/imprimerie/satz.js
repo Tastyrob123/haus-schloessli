@@ -162,7 +162,7 @@
     if (el.typ === 'text') {
       st += `width:${el.w * S}px;font-family:'DS-${el.rolle}';font-size:${el.gr * S}px;line-height:${el.zeile || 1.2};letter-spacing:${el.sperr || 0}em;` +
         `text-align:${{ l: 'left', c: 'center', r: 'right' }[el.ausr || 'l']};color:${DS.farbe(M, el.farbe)};opacity:${el.deck ?? 1};` +
-        `white-space:pre-wrap;overflow-wrap:break-word;font-variant-ligatures:none;font-feature-settings:'liga' 0,'clig' 0;` +
+        `white-space:pre-wrap;overflow-wrap:${/^(titel|kapitale|plakat|plakatfett|kopf)$/.test(el.rolle) ? 'normal' : 'break-word'};font-variant-ligatures:none;font-feature-settings:'liga' 0,'clig' 0;text-rendering:geometricPrecision;` +
         (el.gross ? 'text-transform:uppercase;' : '') +
         (el.schatten ? (t => `text-shadow:${t.dx * S}px ${t.dy * S}px 0 ${t.hart}` + (t.glow ? `,0 0 ${t.blur * S}px ${t.glow}` : '') + ';')(DS.kopfTiefe(DS.farbe(M, el.farbe), el.schatten, el.gr)) : '');   // Kopfzeile wie Rudi: harte Kante, gedruckter Schatten (29.10.)
       d.textContent = el.text;
