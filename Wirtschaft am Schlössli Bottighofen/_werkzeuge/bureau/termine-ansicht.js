@@ -384,7 +384,7 @@
   /* K7 (schnelle Prüfung 3.11.2026): Titel der Bühne («KONTAKT & GUTSCHEIN», «EVENTS & TERMINE») ohne einzelnes Wort in der letzten Zeile:
      das letzte Leerzeichen des Titels, auch über die Grenze von <em> hinweg, wird ein festes */
   function titelFest() {
-    document.querySelectorAll('.wo-sb__h:not([data-fest]), .ws-gt__kopf h2:not([data-fest])').forEach(function (h) {
+    document.querySelectorAll('.wo-sb__h:not([data-fest]), .ws-gt__kopf h2:not([data-fest]), .ws-quit__t > b:not([data-fest])').forEach(function (h) {
       h.setAttribute('data-fest', '');
       if (h.textContent.trim().split(/\s+/).length < 3) return;   /* zwei Wörter dürfen umbrechen («FRÜHERE / FASSUNGEN.»), sonst ragt der Titel am Handy hinaus */
       var w = document.createTreeWalker(h, NodeFilter.SHOW_TEXT), n, alle = [];
