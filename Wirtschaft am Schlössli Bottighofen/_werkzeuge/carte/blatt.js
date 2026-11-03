@@ -182,7 +182,9 @@
         var innen = m.knoten;
         (m.kette || []).slice().reverse().forEach(function (k) { innen = { fn: 'el', a: [k.tag, k.at, innen] }; });
         var html = SATZ.seiten({ art: 'satz', format: d.format, teile: d.teile, seiten: [{ fn: 'seite', a: [m.seite || ' class="blatt dh" data-b="210"', innen] }] })[0];
-        document.getElementById('karte-css').textContent = SATZ.kopfCss(d) + '.blatt{height:auto!important;min-height:0!important;margin:0!important}.blatt .inhalt{flex:none!important;height:auto!important}';
+        /* Schlössli 3.11.2026 (Tor K4): ein Wein ist eine einzige breite Zeile; im Mini steht er auf schmalem Blatt, damit er gross genug lesbar ist, und unter ihm liegt Papier, keine dunkle Fläche */
+        document.documentElement.style.background = document.body.style.background = '#F4F6F9';
+        document.getElementById('karte-css').textContent = SATZ.kopfCss(d) + '.blatt{height:auto!important;min-height:0!important;margin:0!important}.blatt .inhalt{flex:none!important;height:auto!important}' + (/sb-wein/.test(html) ? '.blatt{width:140mm!important}' : '');
         document.getElementById('seiten').innerHTML = html;
         return document.fonts.ready;
       }).then(function () {

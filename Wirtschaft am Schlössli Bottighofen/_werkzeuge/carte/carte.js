@@ -670,7 +670,7 @@ function entfernen(pfad) {
   let bis = v.idx + 1;
   if (rubrik) while (bis < v.arr.length && !istRub(v.arr, bis, el)) bis++;
   const anz = rubrik ? v.arr.slice(v.idx + 1, bis).filter(istEl).length : 0;
-  frage(rubrik ? 'Rubrik <em>entfernen?</em>' : 'Von der Karte <em>nehmen?</em>', rubrik && anz ? `«${t}» und die ${anz} Einträge darunter verschwinden aus der Karte. Bis zum Veröffentlichen holen Sie alles mit «Rückgängig» oder «Entwurf verwerfen» zurück.` : `«${t}» verschwindet aus der Karte. Wenn es nur vorübergehend ist, blenden Sie es lieber aus (Auge). Bis zum Veröffentlichen lässt es sich zurückholen.`, 'Von der Karte nehmen',
+  frage(rubrik ? 'Rubrik <em>entfernen?</em>' : 'Von der Karte&nbsp;<em>nehmen?</em>', rubrik && anz ? `«${t}» und die ${anz} Einträge darunter verschwinden aus der Karte. Bis zum Veröffentlichen holen Sie alles mit «Rückgängig» oder «Entwurf verwerfen» zurück.` : `«${t}» verschwindet aus der Karte. Wenn es nur vorübergehend ist, blenden Sie es lieber aus (Auge). Bis zum Veröffentlichen lässt es sich zurückholen.`, 'Von der Karte nehmen',
     () => tun(() => { v.arr.splice(v.idx, rubrik ? bis - v.idx : 1); }, rubrik ? 'Rubrik entfernt' : 'Von der Karte genommen', t));
 }
 function schiebe(pfad, r) {
@@ -741,7 +741,7 @@ function vglFenster() {
   const v = vergleich(STAND, D), W = { neu: 'Neu', weg: 'Entfernt', anders: 'Geändert', verschoben: 'Verschoben', anordnung: 'Anordnung' };
   const darf = darfVeroeffentlichen();
   const markiere = (a, b) => { const wa = new Set(a.replace(/<[^>]+>/g, ' ').split(/\s+/)); return b.replace(/>([^<]+)</g, (m, t) => '>' + t.split(/(\s+)/).map(w => w.trim() && !wa.has(w) ? `<mark>${w}</mark>` : w).join('') + '<'); };
-  fenster(`<h2>Vorher <em>und nachher.</em></h2><p class="satz">${v.length ? `${v.length} ${v.length === 1 ? 'Stelle' : 'Stellen'} im Entwurf. Links steht, was heute in der PDF steht, rechts der Entwurf. Was neu ist, ist markiert.` : 'Der Entwurf ist gleich wie die PDF.'}</p>
+  fenster(`<h2>Vorher <em>und&nbsp;nachher.</em></h2><p class="satz">${v.length ? `${v.length} ${v.length === 1 ? 'Stelle' : 'Stellen'} im Entwurf. Links steht, was heute in der PDF steht, rechts der Entwurf. Was neu ist, ist markiert.` : 'Der Entwurf ist gleich wie die PDF.'}</p>
     <div class="vgl__k"><span></span><span class="mono">Heute in der PDF</span><span class="mono">Im Entwurf</span></div>
     <div class="vgl">${v.map(x => { if (x.art === 'anordnung') return `<div class="vgl__z"><span class="mono">${W[x.art]}<br><small style="text-transform:none;letter-spacing:0;color:var(--leise)">${h(x.b.ort)}</small></span><div>Wie gesetzt</div><div>${x.n} ${x.n === 1 ? 'Element verschoben, in der Grösse oder Gestaltung geändert' : 'Elemente verschoben, in der Grösse oder Gestaltung geändert'}</div></div>`; const a = x.a ? x.a.text : '', b = x.b ? x.b.text : ''; return `<div class="vgl__z"><span class="mono">${W[x.art]}<br><small style="text-transform:none;letter-spacing:0;color:var(--leise)">${h((x.b || x.a).ort || '')}</small></span><div class="${a ? '' : 'leer'}">${a ? (x.art === 'weg' ? `<del>${a}</del>` : a) : 'stand noch nicht da'}</div><div class="${b ? '' : 'leer'}">${b ? (x.art === 'anders' ? markiere(a, b) : b) : 'nicht mehr auf der Karte'}</div></div>`; }).join('')}</div>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button>${v.length && darf ? `<button class="kn kn--gold" type="button" id="v-ok">Veröffentlichen<i>${PF}</i></button>` : ''}</div>`, true);
@@ -764,7 +764,7 @@ async function verlaufFenster() {
   });
 }
 function datenFenster() {
-  fenster(`<h2>Daten <em>der Karte.</em></h2><p class="satz">Für Fortgeschrittene: die Seiten der Karte als Text. Jeder Eintrag ist ein Baustein (fn) mit seinen Angaben (a, k). «aus»: true blendet einen Eintrag aus. Nach «Übernehmen» steht die Karte rechts, gespeichert wird mit dem Knopf unten; der Server prüft jede Eingabe.</p>
+  fenster(`<h2>Daten <em>der&nbsp;Karte.</em></h2><p class="satz">Für Fortgeschrittene: die Seiten der Karte als Text. Jeder Eintrag ist ein Baustein (fn) mit seinen Angaben (a, k). «aus»: true blendet einen Eintrag aus. Nach «Übernehmen» steht die Karte rechts, gespeichert wird mit dem Knopf unten; der Server prüft jede Eingabe.</p>
     <textarea class="daten" id="j-t" spellcheck="false">${h(JSON.stringify(D.seiten, null, 1))}</textarea><p class="fehler" id="j-f"></p>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Abbrechen</button><button class="kn" type="button" id="j-ok">Übernehmen<i>${PF}</i></button></div>`, true);
   $('#j-ok').addEventListener('click', () => {
@@ -778,7 +778,7 @@ async function protokollFenster() {
   let l = [];
   try { l = (await api('protokoll?z=' + Z)).liste; } catch (e) { return fehlerSagen('Protokoll nicht lesbar', e); }
   const T = { entwurf: 'hat gespeichert', verworfen: 'hat den Entwurf verworfen', probe: 'hat eine Probe gedruckt', veroeffentlicht: 'hat veröffentlicht', 'veroeffentlichen-abgebrochen': 'Veröffentlichen abgebrochen', einstellungen: 'hat Einstellungen geändert', 'aus-sicherung': 'Datei aus der Sicherung geholt' };
-  fenster(`<h2>Wer hat was <em>getan?</em></h2><p class="satz">Die letzten Einträge zu dieser Karte, neueste zuerst.</p><div class="prot">${l.map(x => `<div><span class="mono">${h(x.zeit)}</span><span><b style="font-weight:600">${h(x.wer)}</b> ${h(ROLLEN[x.rolle] ? '(' + ROLLEN[x.rolle] + ')' : '')} ${h(T[x.was] || x.was)}${x.text ? `<small>${h(x.text)}</small>` : ''}${x.grund ? `<small>${h(x.grund)}</small>` : ''}</span></div>`).join('') || '<div><span></span><span>Noch nichts eingetragen.</span></div>'}</div>
+  fenster(`<h2>Wer hat was&nbsp;<em>getan?</em></h2><p class="satz">Die letzten Einträge zu dieser Karte, neueste zuerst.</p><div class="prot">${l.map(x => `<div><span class="mono">${h(x.zeit)}</span><span><b style="font-weight:600">${h(x.wer)}</b> ${h(ROLLEN[x.rolle] ? '(' + ROLLEN[x.rolle] + ')' : '')} ${h(T[x.was] || x.was)}${x.text ? `<small>${h(x.text)}</small>` : ''}${x.grund ? `<small>${h(x.grund)}</small>` : ''}</span></div>`).join('') || '<div><span></span><span>Noch nichts eingetragen.</span></div>'}</div>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button></div>`, true);
 }
 async function gesundFenster() {
@@ -787,15 +787,15 @@ async function gesundFenster() {
   const z = (t, ok) => `<div><span>${h(t)}</span><b class="${ok ? 'ja' : 'nein'}">${ok ? 'in Ordnung' : 'fehlt'}</b></div>`;
   const W = { node: 'Druck der PDF', playwright: 'Druckprogramm', pdftotext: 'Prüfung der PDF', speicher: 'Speicher', druck: 'Druck der PDF', pdfpruefung: 'Prüfung der PDF' };
   const bf = (g.browserfehler || [])[0];
-  fenster(`<h2>Ist alles <em>in Ordnung?</em></h2><p class="satz">Der Zustand des Werkzeugs, direkt vom Server gelesen.${g.vorfuehrung ? ' Vorführ-Betrieb: Gespeichertes hält nicht.' : ''}</p><div class="gesund">${Object.entries(g.karten).map(([k, ok]) => z('Daten ' + ((LISTE.find(x => x.ziel === k) || {}).name || k), ok)).join('')}${Object.entries(g.werkzeug).map(([k, ok]) => z(W[k] || k, ok)).join('')}
+  fenster(`<h2>Ist alles <em>in&nbsp;Ordnung?</em></h2><p class="satz">Der Zustand des Werkzeugs, direkt vom Server gelesen.${g.vorfuehrung ? ' Vorführ-Betrieb: Gespeichertes hält nicht.' : ''}</p><div class="gesund">${Object.entries(g.karten).map(([k, ok]) => z('Daten ' + ((LISTE.find(x => x.ziel === k) || {}).name || k), ok)).join('')}${Object.entries(g.werkzeug).map(([k, ok]) => z(W[k] || k, ok)).join('')}
     <div><span>Speicher des Werkzeugs</span><b>${g.speicher_mb} MB</b></div><div><span>Läuft seit</span><b>${Math.round(g.seit / 60)} Min.</b></div>${g.fehler.length ? `<div><span>Letzter Fehler im Server</span><b class="nein">${h(g.fehler[g.fehler.length - 1].slice(0, 160))}</b></div>` : ''}${bf ? `<div><span>Letzter Fehler im Browser</span><b class="nein">${h(bf.zeit + ' · ' + bf.text.slice(0, 120))}</b></div>` : ''}</div>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button><a class="kn" href="/_werkzeuge/carte/pruefung.html" target="_blank" rel="noopener">Prüfung öffnen<i>${PF}</i></a></div>`);
 }
 async function einstFenster() {
   const s = (await api('status')).einstellungen; EINST = s;
-  if (s.demo) return fenster(`<h2>Anschluss an die <em>Website.</em></h2><p class="satz"><b>Demo.</b> In der Demo arbeitet ${h(klein(NAME))} für sich: «Veröffentlichen» setzt die Karte und ihre PDF hier im Werkzeug, die Website bleibt, wie sie ist. Mit dem Auftrag wird der Anschluss eingeschaltet; dann erscheinen veröffentlichte Karten auch auf der Website.</p>
+  if (s.demo) return fenster(`<h2>Anschluss an die&nbsp;<em>Website.</em></h2><p class="satz"><b>Demo.</b> In der Demo arbeitet ${h(klein(NAME))} für sich: «Veröffentlichen» setzt die Karte und ihre PDF hier im Werkzeug, die Website bleibt, wie sie ist. Mit dem Auftrag wird der Anschluss eingeschaltet; dann erscheinen veröffentlichte Karten auch auf der Website.</p>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button></div>`);   // Demo-Check 21.10.2026
-  fenster(`<h2>Anschluss an die <em>Website.</em></h2><p class="satz">Die Website zeigt die Karten heute aus ihren eigenen Daten, eine PDF verlinkt sie nicht. Solange der Anschluss aus ist, arbeitet das Werkzeug für sich. Mit Anschluss legt «Veröffentlichen» die neue PDF auf die Website (unterlagen/pdf/), die vorige wird vorher gesichert; die Karten in der Form der Website stehen nach jedem Veröffentlichen in karten.json bereit. Nur die Direktion darf das ändern.</p>
+  fenster(`<h2>Anschluss an die&nbsp;<em>Website.</em></h2><p class="satz">Die Website zeigt die Karten heute aus ihren eigenen Daten, eine PDF verlinkt sie nicht. Solange der Anschluss aus ist, arbeitet das Werkzeug für sich. Mit Anschluss legt «Veröffentlichen» die neue PDF auf die Website (unterlagen/pdf/), die vorige wird vorher gesichert; die Karten in der Form der Website stehen nach jedem Veröffentlichen in karten.json bereit. Nur die Direktion darf das ändern.</p>
     <div class="felder" style="margin-top:20px"><div class="feld"><span class="schalter" role="switch" tabindex="0" aria-checked="${!!s.anschluss_pdf}" id="e-a"><b></b>Veröffentlichte PDF auf die Website übernehmen</span></div></div>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button><button class="kn" type="button" id="e-ok">Speichern<i>${PF}</i></button></div>`);
   const sw = $('#e-a'); const um = () => sw.setAttribute('aria-checked', sw.getAttribute('aria-checked') !== 'true'); sw.addEventListener('click', um); sw.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); um(); } });
@@ -820,7 +820,7 @@ async function veroeffentlichen() {
   if (OFFEN && !(await speichern('Im Entwurf gespeichert', 'Vor dem Veröffentlichen gespeichert.'))) return;
   if (!geaendert()) { zu(); return sag('Nichts geändert, nichts veröffentlicht.'); }
   const SCHRITTE = ['Der Entwurf wird geprüft', 'Die Karte wird gesetzt und gedruckt', 'PDF und Daten werden verglichen', 'Die neue Fassung wird übernommen'];
-  fenster(`<div class="lade"><div class="lade__r"></div><h2>Die Karte <em>entsteht.</em></h2><p class="satz" style="margin:0">Die PDF wird gedruckt und Wort für Wort gegen die Daten geprüft. Erst wenn alles stimmt, ersetzt sie die bisherige; sonst bleibt alles, wie es ist. Das dauert etwa eine halbe Minute.</p><ol id="l-s">${SCHRITTE.map(s => `<li>${h(s)}</li>`).join('')}</ol></div>`);
+  fenster(`<div class="lade"><div class="lade__r"></div><h2>Die Karte&nbsp;<em>entsteht.</em></h2><p class="satz" style="margin:0">Die PDF wird gedruckt und Wort für Wort gegen die Daten geprüft. Erst wenn alles stimmt, ersetzt sie die bisherige; sonst bleibt alles, wie es ist. Das dauert etwa eine halbe Minute.</p><ol id="l-s">${SCHRITTE.map(s => `<li>${h(s)}</li>`).join('')}</ol></div>`);
   $('#fenster').onclick = null;
   try { const r0 = await api('veroeffentlichen', { z: Z }); if (r0.geaendert === false) { zu(); await lade(Z, true); return sag('Nichts geändert, nichts veröffentlicht.'); } } catch (e) { zu(); return fehlerSagen('Nicht veröffentlicht', e); }
   const t0 = Date.now();
@@ -833,7 +833,7 @@ async function veroeffentlichen() {
       if (s.fehler) { zu(); await lade(Z); return sag('Nicht veröffentlicht', 'Die PDF ist unverändert, Ihr Entwurf ist noch da. ' + s.fehler.slice(0, 220), [], true); }
       await lade(Z, true);
       const b = s.bericht || {};
-      return fenster(`<h2>Veröffentlicht. <em>Die neue Fassung steht.</em></h2><p class="satz">${h(s.fertig)}. ${b.mass ? `Schriftmass ${Math.min(...b.mass)} bis ${Math.max(...b.mass)} %. ` : ''}${/^demo/.test(b.anschluss || '') ? 'Demo: Die Website bleibt, wie sie ist; mit dem Auftrag erscheint die neue Karte dort von selbst.' : b.anschluss && !/^aus/.test(b.anschluss) ? `Die PDF liegt auch auf der Website (${h(b.anschluss)}).` : 'Die Website bleibt bei ihrer Karte, solange der Anschluss aus ist.'} Die vorige Fassung liegt unter «Frühere Fassungen».</p>
+      return fenster(`<h2>Veröffentlicht. <em>Die neue Fassung&nbsp;steht.</em></h2><p class="satz">${h(s.fertig)}. ${b.mass ? `Schriftmass ${Math.min(...b.mass)} bis ${Math.max(...b.mass)} %. ` : ''}${/^demo/.test(b.anschluss || '') ? 'Demo: Die Website bleibt, wie sie ist; mit dem Auftrag erscheint die neue Karte dort von selbst.' : b.anschluss && !/^aus/.test(b.anschluss) ? `Die PDF liegt auch auf der Website (${h(b.anschluss)}).` : 'Die Website bleibt bei ihrer Karte, solange der Anschluss aus ist.'} Die vorige Fassung liegt unter «Frühere Fassungen».</p>
         <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button><a class="kn kn--gold" href="${API}pdf?z=${Z}&q=live" target="_blank" rel="noopener">PDF öffnen<i>${PF}</i></a></div>`);
     }
     if (Date.now() - t0 > 300000) { zu(); return sag('Das dauert ungewöhnlich lange', 'Bitte die Seite später neu laden.', [], true); }

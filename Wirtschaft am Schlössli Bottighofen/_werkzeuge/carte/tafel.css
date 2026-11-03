@@ -50,7 +50,7 @@ body.lc.wo-app{background:var(--wo-blatt)}
 .lc .r--rubrik .r__t b{font-size:22px}
 .lc .r--rubrik{background:rgba(239,230,228,.32)}
 .lc .r.gewaehlt{box-shadow:inset 3px 0 0 var(--wo-akzent)}
-.lc .vorschau{background:#E9E0DE}
+.lc .vorschau{background:#E2E9F2}
 .lc .ansicht{flex-wrap:wrap}
 .lc .webwahl button{font-size:11.5px}
 .lc .ansicht button[aria-pressed="true"]{background:var(--wo-nacht)}

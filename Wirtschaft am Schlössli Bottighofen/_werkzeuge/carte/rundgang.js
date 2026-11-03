@@ -9,7 +9,7 @@
     { ziel: ['#kopf'], titel: 'Das ist ' + ((window.WO && WO.name('karten')) || 'Das Kartenpult').replace(/^(Das|Die|Der) /, function (a) { return a.toLowerCase(); }),
       text: 'Hier schreibt das Haus seine Karten: die Karte nach Ländern, das Lunch-Menü, die Lästermeile, die Weinkarte und die Bankettmenüs. Daraus entstehen die gedruckte Karte und ihre PDF, gesetzt in den Schriften des Hauses.' },
     { ziel: ['#rand .karten', '#rand'], titel: 'Jede Karte an ihrem Platz',
-      text: 'Links stehen die fünf Karten, nach Restaurant, Lästermeile, Keller und Banketts. Ein Klick öffnet eine Karte mit allen Gerichten, Weinen und Preisen.' },
+      text: 'Im Rand stehen die fünf Karten, nach Restaurant, Lästermeile, Keller und Banketts (am Handy unter «Bereiche»). Ein Klick öffnet eine Karte mit allen Gerichten, Weinen und Preisen.' },
     { ziel: ['#arbeit .vorschau'], min: 560, titel: 'Gedruckt und online aus einer Quelle',
       text: 'Rechts steht die Karte so, wie sie gedruckt wird, schon vor dem Veröffentlichen. Eine Quelle für den Tisch und die Website, sobald die Website angeschlossen ist.' },
     { ziel: ['#rand .modus'], titel: 'Für jeden im Team',
@@ -23,7 +23,7 @@
       'box-shadow:0 0 0 3px #A2B6CF,0 0 0 9px rgba(162,182,207,.35),0 0 40px 10px rgba(162,182,207,.35),0 0 0 200vmax rgba(11,29,61,.76)}' +
     '.rdg-sperre{position:fixed;inset:0;z-index:2147482999}' +
     '.rdg-karte{position:fixed;left:0;top:0;z-index:2147483001;width:370px;max-width:calc(100vw - 32px);box-sizing:border-box;' +
-      'padding:24px 26px 22px;border-radius:22px;color:#041023;background:linear-gradient(180deg,#FBFDFD,#efe8dc);' +
+      'padding:24px 26px 22px;border-radius:22px;color:#041023;background:linear-gradient(180deg,#FBFDFD,#E7ECF3);' +
       'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(10,35,76,.3),0 30px 60px -24px rgba(11,29,61,.65),0 10px 22px -12px rgba(11,29,61,.45);' +
       'font:15px/1.55 "Instrument Sans",system-ui,sans-serif;animation:rdg-auf .42s cubic-bezier(.2,.8,.2,1) both}' +
     '@keyframes rdg-auf{from{transform:translate3d(var(--rx,0),calc(var(--ry,0px) + 14px),0)}to{transform:translate3d(var(--rx,0),var(--ry,0),0)}}' +
@@ -48,7 +48,7 @@
     '@media (prefers-reduced-motion:reduce){.rdg-karte{animation:none}}';
   var SCHILD_CSS = '' +
     '.rdg-schild{position:fixed;right:24px;bottom:24px;z-index:2147482990;display:flex;align-items:center;gap:14px;box-sizing:border-box;' +
-      'padding:10px 10px 10px 20px;border-radius:999px;color:#041023;background:linear-gradient(180deg,#FBFDFD,#efe8dc);' +
+      'padding:10px 10px 10px 20px;border-radius:999px;color:#041023;background:linear-gradient(180deg,#FBFDFD,#E7ECF3);' +
       'box-shadow:0 1px 0 #fff inset,0 0 0 1px rgba(10,35,76,.32),0 18px 34px -16px rgba(11,29,61,.6),0 6px 14px -8px rgba(11,29,61,.4);' +
       'transform:translate3d(0,0,0);transition:transform .55s cubic-bezier(.2,.8,.2,1);animation:rdg-schild-auf .7s cubic-bezier(.2,.9,.25,1.15) both}' +
     '@keyframes rdg-schild-auf{from{transform:translate3d(0,calc(100% + 40px),0)}to{transform:translate3d(0,0,0)}}' +
