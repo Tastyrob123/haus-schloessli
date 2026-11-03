@@ -30,7 +30,7 @@ const frei = () => new Promise(r => { const s = net.createServer(); s.listen(0, 
   await geh('haus:team'); const ein = p.locator('details.ws-eintrag').nth(1); await ein.locator('summary').click(); await warte(500);
   await ein.locator('button.ws-foto').first().click({ force: true }); await p.waitForSelector('[data-ws-fenster="bild"]'); await warte(1500); fertig.push(['foto', await bild('foto')]);
   await geh('angaben'); fertig.push(['angaben', await bild('angaben')]);
-  await geh('google'); await p.locator('[data-ws-seo="abend.html"] [data-ws-gt="titel"]').fill('Ihr Abend am Tisch · Wirtschaft am Schlössli Bottighofen'); await p.locator('#ws-speichern').click(); await warte(1500);
+  await geh('google'); await p.locator('[data-ws-seo="abend.html"] textarea.ws-langfeld').fill('Ihr Abend am Tisch · Wirtschaft am Schlössli Bottighofen'); await p.locator('#ws-speichern').click(); await warte(1500);
   await geh('google'); await p.locator('[data-ws-seo="abend.html"]').scrollIntoViewIfNeeded(); await warte(800); fertig.push(['google', await bild('google')]);
   await geh('entwurf'); fertig.push(['entwurf', await bild('entwurf')]);
   await geh('verlauf'); fertig.push(['verlauf', await bild('verlauf')]);

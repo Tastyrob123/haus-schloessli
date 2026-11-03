@@ -208,7 +208,27 @@ body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapet
 .ws.wo-app .ws-aufgaben{grid-template-columns:minmax(0,1fr)!important}
 .ws.wo-app .ws-aufgaben > .wo-ag{grid-column:auto!important}
 @media (min-width:620px){.ws.wo-app .ws-aufgaben:has(>.wo-ag:nth-child(9):last-child){grid-template-columns:repeat(3,minmax(0,1fr))!important}}
-.ws.wo-app .ws-aufgaben .wo-ag__t{padding-right:26px}
+.ws.wo-app .ws-aufgaben .wo-ag__t{padding-right:26px;padding-top:0;margin-top:26px}   /* Innenabstand oben als Aussenabstand: Kasten und Titel beginnen auf derselben Höhe (K2 zählt Oberkanten als Zeilen) */
+.ws.wo-app .ws-aufgaben .wo-ag__z{top:-47px}   /* der Knauf sitzt weiter auf der Bildkante */
+/* 901–1179 px: der Rand steht daneben, drei Kacheln hätten je 199 px; hier liegt jede Aufgabe quer, Bild links, Text rechts */
+@media (min-width:901px) and (max-width:1179.98px){
+  .ws.wo-app .ws-aufgaben:has(>.wo-ag:nth-child(9):last-child){grid-template-columns:minmax(0,1fr)!important}
+  .ws.wo-app .ws-aufgaben > .wo-ag{flex-direction:row;align-items:stretch}
+  .ws.wo-app .ws-aufgaben > .wo-ag .wo-ag__b{flex:0 0 38%;aspect-ratio:16/9;height:auto}
+  .ws.wo-app .ws-aufgaben > .wo-ag .wo-ag__t{flex:1 1 auto;margin-top:72px;padding-left:24px}
+  .ws.wo-app .ws-aufgaben > .wo-ag .wo-ag__z{top:-56px;left:24px}
+}
+/* K2 «spalte» bei 1440: der Bildtitel im Fenster «Foto tauschen» hatte 151 px; jede Zelle mindestens 172 px */
+.ws.wo-app .ws-fundus{grid-template-columns:repeat(auto-fill,minmax(172px,1fr))}
+/* K2 «randlos»: Knöpfe des Stamms in Fenstern («Speichern») mit Innenabstand wie die Knöpfe des Rahmens */
+.ws.wo-app .ws-fenster__kn .kn{padding:0 6px 0 20px}
+/* K6 Kante: Reihe kleiner Tasten unter einem Absatz rückt um den Innenabstand der ersten Taste nach links, ihre Schrift steht auf der Kante des Absatzes */
+.ws.wo-app .ws-karte > .ws-reihe:has(> .ws-taste:first-child){margin-left:-15px}
+/* K7: «Ändern» im Kopf eines Eintrags stand allein in der letzten Zeile; es heisst «Eintrag ändern» */
+.ws.wo-app .ws-eintrag__auf{font-size:0}
+.ws.wo-app .ws-eintrag__auf::before{content:"Eintrag ändern";font-size:13px}
+/* Lange Felder (Google-Titel, Instagram-Adresse) als mitwachsendes Feld (termine-ansicht.js › langFelder) */
+.ws.wo-app textarea.ws-langfeld{display:block;width:100%;box-sizing:border-box;min-height:0!important;resize:none;overflow:hidden;white-space:pre-wrap;overflow-wrap:anywhere}
 /* K2 «randlos»: der Link «In der Seite» unter Zeiten & Preise und die Bildtitel im Fenster «Foto tauschen» liefen bis an den Rand ihres Knopfs */
 .ws.wo-app .ws-zl > .ws-link{padding-inline:4px}
 .ws.wo-app .ws-fwahl__t{padding-inline:4px}
@@ -222,8 +242,6 @@ body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapet
 /* K6 Kante: die Google-Vorschau rückt ihren Rahmen nach aussen, damit ihre Zeilen auf der Kante von Titel und Feldern stehen */
 .ws.wo-app .ws-gt__vorschau{margin-inline:-18px}
 @media (max-width:560px){.ws.wo-app .ws-gt__vorschau{margin-inline:-12px;padding-inline:12px}}
-/* «gekürzt» am Handy: die Instagram-Adresse (49 Zeichen) stand in 17 px breiter als das Feld */
-@media (max-width:560px){.ws.wo-app #ws-ang-instagram{font-size:11.5px;padding-inline:8px;letter-spacing:0}}
 /* K5 Frühere Fassungen, Beispielzeile: drei Teile in drei Spalten (die Notiz drückte die Zeit auf null Breite) */
 .cu-vl__z--beispiel{grid-template-columns:96px minmax(0,190px) minmax(0,1fr)}
 @media (max-width:860px){.cu-vl__z--beispiel{grid-template-columns:1fr}}

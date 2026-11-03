@@ -355,8 +355,9 @@
   /* K7 (schnelle Prüfung 3.11.2026): Titel der Bühne («KONTAKT & GUTSCHEIN», «EVENTS & TERMINE») ohne einzelnes Wort in der letzten Zeile:
      das letzte Leerzeichen des Titels, auch über die Grenze von <em> hinweg, wird ein festes */
   function titelFest() {
-    document.querySelectorAll('.wo-sb__h:not([data-fest])').forEach(function (h) {
+    document.querySelectorAll('.wo-sb__h:not([data-fest]), .ws-gt__kopf h2:not([data-fest])').forEach(function (h) {
       h.setAttribute('data-fest', '');
+      if (h.textContent.trim().split(/\s+/).length < 3) return;   /* zwei Wörter dürfen umbrechen («FRÜHERE / FASSUNGEN.»), sonst ragt der Titel am Handy hinaus */
       var w = document.createTreeWalker(h, NodeFilter.SHOW_TEXT), n, alle = [];
       while ((n = w.nextNode())) alle.push(n);
       var ende = true;
@@ -368,7 +369,29 @@
       }
     });
   }
+  /* Lange einzeilige Felder (Google-Titel, Instagram-Adresse): ein Eingabefeld zeigt 60 Zeichen nie ganz («gekürzt», am Handy schon gar nicht). Daneben steht
+     ein mitwachsendes Feld, das jede Eingabe an das Feld des Stamms weitergibt (Wert und input-Ereignis); das Feld des Stamms bleibt der einzige Speicherweg. */
+  function langFelder() {
+    document.querySelectorAll('.ws-gt input[id^="ws-gt-t-"]:not([data-lang]), #ws-ang-instagram:not([data-lang])').forEach(function (i) {
+      i.setAttribute('data-lang', '');
+      var c = getComputedStyle(i), t = document.createElement('textarea');
+      t.className = 'ws-langfeld ' + i.className; t.rows = 1; t.value = i.value; t.spellcheck = false;
+      t.setAttribute('aria-label', (i.labels && i.labels[0] ? i.labels[0].firstChild.textContent : i.getAttribute('aria-label') || '').trim());
+      if (i.maxLength > 0) t.maxLength = i.maxLength;
+      ['font', 'letterSpacing', 'color', 'background', 'boxShadow', 'border', 'borderRadius', 'paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight'].forEach(function (k) { t.style[k] = c[k]; });
+      t.style.lineHeight = '1.4';
+      var hoehe = function () { t.style.height = 'auto'; t.style.height = Math.max(parseFloat(c.height) || 0, t.scrollHeight) + 'px'; };
+      t.addEventListener('input', function () { var v = t.value.replace(/\s*\n\s*/g, ' '); if (v !== t.value) t.value = v; i.value = v; i.dispatchEvent(new Event('input', { bubbles: true })); i.dispatchEvent(new Event('change', { bubbles: true })); hoehe(); });
+      t.addEventListener('keydown', function (ev) { if (ev.key === 'Enter') ev.preventDefault(); });
+      t.addEventListener('blur', function () { i.dispatchEvent(new Event('blur')); });
+      i.addEventListener('input', function () { if (t.value !== i.value) { t.value = i.value; hoehe(); } });   /* «Wie ursprünglich» setzt das Feld des Stamms */
+      i.style.display = 'none';
+      i.after(t);
+      if (i.labels && i.labels[0]) i.labels[0].addEventListener('click', function (ev) { ev.preventDefault(); t.focus(); });
+      hoehe(); requestAnimationFrame(hoehe);
+    });
+  }
   var plan = 0;
-  function alles() { plan = 0; fest(); ganz(); ohneX(); titelFest(); }
+  function alles() { plan = 0; fest(); ganz(); ohneX(); titelFest(); langFelder(); }
   if (window.MutationObserver) new MutationObserver(function () { if (!plan) plan = requestAnimationFrame(alles); }).observe(document.documentElement, { childList: true, subtree: true, characterData: true });
 })();
