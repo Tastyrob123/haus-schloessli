@@ -1,8 +1,11 @@
 {
- "_lies_mich": "Beschreibung des Hauses für das Werkzeug «website» (Der Schreibtisch). Wirtschaft am Schlössli, Bottighofen: Restaurant, keine Zimmer, nur Deutsch. Jeder Text, jede Zahl, jedes Foto wird aus den gebauten Seiten gelesen (website/ des Projekts, Station 07). Hilfe: python3 werkzeuge/website/beschreibe.py Das Schlössli läuft im eigenen Rahmen des Hauses: http://127.0.0.1:9035/_werkzeuge/bureau/ (Wirtschaft am Schlössli Bottighofen/_werkzeuge/bureau/). Ein eigenes Kleid hier gibt es nicht (Chef-Chat 19.10.: ein Kleid für alle Werkzeuge).",
+ "_lies_mich": "Beschreibung des Hauses für das Werkzeug «website» (Das Schaufenster · Website pflegen). Wirtschaft am Schlössli, Bottighofen: Restaurant am Hafen, keine Zimmer, nur Deutsch. Jeder Text, jede Zahl, jedes Foto wird aus den gebauten Seiten gelesen (website/ des Projekts). Läuft im Rahmen des Hauses: http://127.0.0.1:9282/_werkzeuge/bureau/ (Wirtschaft am Schlössli Bottighofen/_werkzeuge/bureau/). Geschrieben von _werkzeuge/bureau/beschreibung.py, nie von Hand ändern.",
  "seiten": [
   {
    "datei": "index.html"
+  },
+  {
+   "datei": "abend.html"
   },
   {
    "datei": "karte.html"
@@ -26,13 +29,16 @@
    "datei": "gutschein.html"
   },
   {
-   "datei": "impressum.html"
+   "datei": "impressum.html",
+   "foto": "bootshafen"
   },
   {
-   "datei": "datenschutz.html"
+   "datei": "datenschutz.html",
+   "foto": "morgen"
   },
   {
-   "datei": "agb.html"
+   "datei": "agb.html",
+   "foto": "regal"
   }
  ],
  "sprachen": [],
@@ -61,13 +67,12 @@
   }
  ],
  "auslassen": [
-  ".fz__h.b"
+  ".fz__h.b",
+  ".ab__ferien"
  ],
  "vorschau": {
   "ohne_skripte": [],
-  "zusatz_css": ".fenster{overflow:clip}@media (hover:none){[data-ws-e],img[data-ws-b]{cursor:pointer}}",
-  "_zusatz_css": "Robert 19.10.2026 (Bildschirmfoto): «mit Blick aufs» wird hochgeschoben. Der Rahmen der Vorschau ist hoch (100lvh ≈ 1250 px, Lästermeile 1321 px), so reicht der Text des nächsten Fensters bis über das vorige Bild. Jedes Fenster zeigt nur, was in seinem Rahmen liegt (overflow:clip lässt sticky arbeiten). Dieselbe Lücke hat die Website bei hohen Bildschirmen: an den Website-Chat gemeldet.",
-  "_zusatz_css_tippen": "Demo-Check 21.10.2026: Safari auf iPhone/iPad löst beim Tippen auf ein Element ohne Klick-Merkmal keinen Klick aus, wenn der Hörer am Dokument sitzt (so in der Vorschau). Auf Geräten ohne Maus tragen Texte und Fotos der Vorschau deshalb cursor:pointer (bekannte Abhilfe). Im Prüfbrowser nicht nachstellbar (der Safari-Kern auf dem Mac erzeugt aus Tippen keinen Klick); am echten iPhone ungeprüft."
+  "zusatz_css": ".fenster{overflow:clip}@media (hover:none){[data-ws-e],img[data-ws-b]{cursor:pointer}}"
  },
  "bereiche": {
   "zimmer": {
@@ -90,7 +95,7 @@
   },
   "anlaesse": {
    "name": "Anlässe",
-   "satz": "Der nächste Anlass am Hafen mit Titel, Datum, Text und Fotos.",
+   "satz": "Der nächste Anlass am Hafen mit Titel, Datum, Text und Fotos, so wie er auf der Seite «Events & Termine» steht.",
    "quellen": [
     {
      "seite": "anlaesse.html",
@@ -135,12 +140,11 @@
       }
      ]
     }
-   ],
-   "_warum": "Demo-Check 21.10.2026: Der Jahreskalender (#kalender .ap__gross/.ap__p) ist seit dem Seitenbau vom 20.10. nicht mehr auf anlaesse.html. Der Rückblick (#rueckblick .kbg__s) taugt nicht als Liste: ausser dem ersten Blatt tragen alle aria-hidden und die Schicht liest dort keinen Text. Bleibt die grosse Ankündigung."
+   ]
   },
   "team": {
    "name": "Team",
-   "satz": "Jeder Mensch auf der Seite Team mit Name, Aufgabe und Foto.",
+   "satz": "Jeder Mensch auf der Seite «Über uns» mit Name, Aufgabe und Foto.",
    "quellen": [
     {
      "seite": "team.html",
@@ -175,7 +179,8 @@
   "zeichen": "assets/svg/zeichen.svg",
   "zeichen_art": "maske",
   "tapete": "assets/svg/tapete-a-hell.svg",
-  "tapete_breite": 168
+  "tapete_breite": 168,
+  "foto": "start"
  },
  "website": [
   {
@@ -188,9 +193,18 @@
    "foto": "start"
   },
   {
+   "key": "abend",
+   "name": "Ihr Abend",
+   "satz": "Der Abend am Tisch: wie er abläuft, was auf den Tisch kommt, und der Weg zur Reservation.",
+   "seiten": [
+    "abend.html"
+   ],
+   "foto": "abend"
+  },
+  {
    "key": "essen",
    "name": "Karte & Wein",
-   "satz": "Texte und Fotos rund um Speisekarte, Lunch, Lästermeile und Weinkarte. Gerichte, Preise und Weine pflegt Die Tafel.",
+   "satz": "Texte und Fotos rund um Speisekarte, Lunch, Lästermeile und Weinkarte. Gerichte, Preise und Weine pflegen Sie im Kartenpult.",
    "seiten": [
     "karte.html",
     "weinkarte.html"
@@ -200,7 +214,7 @@
   {
    "key": "feiern",
    "name": "Feiern",
-   "satz": "Banketts und Gruppen: die zwei Etagen und die Anfrage. Die Bankettmenüs pflegt Die Tafel.",
+   "satz": "Banketts und Gruppen: die zwei Etagen und die Anfrage. Die Bankettmenüs pflegen Sie im Kartenpult.",
    "seiten": [
     "feiern.html"
    ],
@@ -209,7 +223,7 @@
   {
    "key": "anlaesse",
    "name": "Events & Termine",
-   "satz": "Der nächste Anlass und der Rückblick. Was vorbei ist, blenden Sie aus.",
+   "satz": "Der nächste Anlass und der Rückblick. Die Ferien des Hauses pflegen Sie unter «Termine».",
    "seiten": [
     "anlaesse.html"
    ],
@@ -227,7 +241,7 @@
   {
    "key": "kontakt",
    "name": "Kontakt & Gutschein",
-   "satz": "Adresse, Öffnungszeiten, Anfahrt, Weg über das Wasser und der Gutschein.",
+   "satz": "Adresse, Öffnungszeiten, Anfahrt, der Weg über das Wasser und der Gutschein.",
    "seiten": [
     "kontakt.html",
     "gutschein.html"
@@ -246,9 +260,54 @@
    "foto": "haus"
   }
  ],
- "funktionen": [
-  "leiste_klar"
+ "angaben": [
+  {
+   "key": "telefon",
+   "label": "Telefon",
+   "art": "telefon",
+   "wert": "+41 71 688 90 92",
+   "link": "tel:+41716889092",
+   "quelle": "website/inhalt/haus.json (gebaut in alle Seiten von website/bau.py)"
+  },
+  {
+   "key": "strasse",
+   "label": "Strasse",
+   "art": "text",
+   "wert": "Seestrasse 50",
+   "quelle": "website/inhalt/haus.json (gebaut in alle Seiten von website/bau.py)"
+  },
+  {
+   "key": "ort",
+   "label": "PLZ und Ort",
+   "art": "text",
+   "wert": "8598 Bottighofen",
+   "quelle": "website/inhalt/haus.json (gebaut in alle Seiten von website/bau.py)"
+  },
+  {
+   "key": "mail",
+   "label": "E-Mail",
+   "art": "text",
+   "wert": "kontakt@schloessli-bottighofen.ch",
+   "quelle": "website/inhalt/haus.json (gebaut in alle Seiten von website/bau.py)"
+  },
+  {
+   "key": "instagram",
+   "label": "Instagram",
+   "art": "link",
+   "wert": "https://www.instagram.com/schloessli_bottighofen/",
+   "quelle": "website/inhalt/haus.json (gebaut in alle Seiten von website/bau.py)"
+  }
  ],
- "_funktionen": "Demo-Check 21.10.2026: Leiste ohne ausgegraute Knöpfe (Fehlerbuch 10a «Untere Leiste: keine ausgegrauten Knöpfe»), Schalter des Stamms aus dem Schäfli-Bau (L18).",
- "_auslassen": "Demo-Check 21.10.2026 (Oberchef): Im Fuss jeder Seite steht die Karte der Schwester (Taverne zum Schäfli: Adresse, Öffnungszeiten, Telefon). Die pflegt das Schlössli nicht; ohne Auslassen standen ihre Zeiten in «Zeiten & Preise» als zweites «Offen» neben denen des Schlössli. Ausgelassen heisst nur: nicht als Stelle angeboten, die Seite bleibt Byte für Byte gleich."
+ "google": {
+  "an": true
+ },
+ "hochladen": {
+  "an": true,
+  "ordner": "assets/img"
+ },
+ "funktionen": [
+  "leiste_klar",
+  "team_wer"
+ ],
+ "anleitung": "/_werkzeuge/bureau/anleitung.html"
 }

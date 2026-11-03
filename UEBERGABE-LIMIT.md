@@ -24,6 +24,8 @@ Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und
 
 - 19:40 UTC: **Werkbank Papier fertig** (707eea8/346a5c6). Kartenpult: WebKit-Funde (text-mitte Entwurf/Schliessen, leer-bild Rundgang, Einzelwort) behoben (ee03799), Nachprüfung läuft.
 
+- 19:50 UTC: **Schaufenster fertig** (12 Seiten, Ferien-Termine aus haus.json, Anleitung neu; Commits bis 73a1969; Stamm-Dateien `_Werkzeuge/werkzeuge/website/haeuser/schloessli.json`, `_Werkzeuge/haeuser/schloessli/haus.json` vom Oberchef eingecheckt).
+
 ## Was offen ist (Reihenfolge)
 1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
 2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.

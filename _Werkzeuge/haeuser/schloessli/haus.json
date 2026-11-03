@@ -3,5 +3,5 @@
  "name": "Wirtschaft am Schlössli",
  "welt": "land",
  "quelle": "~/Desktop/Website-Projekte/Wirtschaft am Schlössli Bottighofen",
- "hinweis": "Restaurant am Hafen von Bottighofen, keine Zimmer. Welt aus _kette/05-markenbauer/marke.json (welt: land). Die Quelle wird nur gelesen, nie beschrieben."
+ "hinweis": "Restaurant am Hafen von Bottighofen, keine Zimmer, nur Deutsch. Welt aus _kette/05-markenbauer/marke.json. Geschrieben von _werkzeuge/bureau/beschreibung.py (Nachtbau 3.11.2026). Die Quelle wird nur gelesen, nie beschrieben."
 }
