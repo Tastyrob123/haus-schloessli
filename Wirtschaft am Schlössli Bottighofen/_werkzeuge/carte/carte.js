@@ -223,7 +223,8 @@ function kopf() {
   const kn = MODUS === 'einfach' ? WO.knopf('Neuer Eintrag', 'plus', 'gold', { attr: 'data-akt="neu"' }) : WO.knopf('Daten der Karte', 'pfeil', 'hell', { attr: 'data-akt="daten"' });
   $('#kopf').innerHTML = WO.startbild({ werkzeug: 'karten', art: 'buehne', foto: fotoGross(Z),
     zier: `${h(NAME)} · ${h(k.gruppe || '')}`,   // Tor 5 30.10.2026 (K7/K12): ohne «· Einfach» (stand am Handy allein, «·» am Zeilenende); der Weg steht im Rand
-    h1: `${h(k.name || '')} <em>${h(k.unter || 'Karte des Hauses').replace(/ (\S+)$/, '&nbsp;$1')}</em>`,   // K7: das letzte Wort steht nie allein in der zweiten Zeile satz: h(SATZ_KOPF[MODUS === 'frei' ? 'frei' : 'einfach']),
+    /* Titel in zwei Zeilen: der Name der Karte, darunter ihr Zusatz (K7: nie ein Wort allein in der letzten Zeile) */
+    h1: `${h(k.name || '')}<br><span><em>${h(k.unter || 'Karte des Hauses')}</em></span>`, satz: h(SATZ_KOPF[MODUS === 'frei' ? 'frei' : 'einfach']),
     knoepfe: kn + `<dl class="kopf__zahlen">${zahlen.map(([z, t]) => `<div><dt>${h(t)}</dt><dd>${h(String(z))}</dd></div>`).join('')}</dl>` });
   const sb = $('#kopf .wo-sb'); if (sb && neu) sb.classList.add('auftritt');
   const img = $('#kopf .wo-sb__foto img'); if (img) { img.alt = (FOTO[Z] || [])[2] || ''; img.setAttribute('decoding', 'async'); }
