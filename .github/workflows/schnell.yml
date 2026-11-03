@@ -22,8 +22,10 @@ permissions:
   contents: write
   actions: read
 
+# Jeder Lauf in eigener Gruppe (Oberchef 3.11.2026): GitHub lässt je Gruppe nur einen wartenden Lauf zu und bricht ältere wartende ab –
+# so ging im Nachtbau eine ganze Teilprüfung verloren, weil danach gewöhnliche Pushes kamen. Läufe laufen jetzt nebeneinander.
 concurrency:
-  group: schnell-${{ github.ref }}
+  group: schnell-${{ github.ref }}-${{ github.run_id }}
   cancel-in-progress: false
 
 env:
@@ -103,7 +105,7 @@ jobs:
           for d in teile/schnell-*/; do cp -r "$d"/* lauf/ 2>/dev/null || true; done
           python3 _Werkzeuge/abnahme-tor/auswertung.py lauf ergebnis/tor --titel "${{ inputs.titel || 'Schnelle Prüfung' }} · $GITHUB_REF_NAME" $( [ -f "_Werkzeuge/abnahme-tor/gegenprobe-$(python3 -c "import json;print(json.load(open('cloud/haus.json'))['kurz'])").json" ] && echo --gegenprobe "_Werkzeuge/abnahme-tor/gegenprobe-$(python3 -c "import json;print(json.load(open('cloud/haus.json'))['kurz'])").json" ) | tee ergebnis/auswertung.txt
           python3 _Werkzeuge/abnahme-tor/zeiten.py lauf | tee ergebnis/zeiten.txt
-          echo "{\"commit\":\"$GITHUB_SHA\",\"zweig\":\"$GITHUB_REF_NAME\",\"run\":\"$GITHUB_RUN_ID\",\"art\":\"schnell\"}" > ergebnis/lauf.json
+          echo "{\"commit\":\"$GITHUB_SHA\",\"stand\":\"$GITHUB_SHA\",\"zweig\":\"$GITHUB_REF_NAME\",\"run\":\"$GITHUB_RUN_ID\",\"art\":\"schnell\",\"zeit\":\"$(date -u +%Y-%m-%dT%H:%M:%S)\",\"werkzeuge\":$(printf '%s' '${{ needs.plan.outputs.ks }}')}" > ergebnis/lauf.json
           { echo "## Schnelle Prüfung $GITHUB_REF_NAME"; echo '```'; cat ergebnis/zeiten.txt; echo; tail -15 ergebnis/auswertung.txt; echo '```'; } > ergebnis/zusammenfassung.md
           cat ergebnis/zusammenfassung.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
@@ -118,8 +120,13 @@ jobs:
         run: |
           git config user.name "schnelle-pruefung"; git config user.email "pruefung@users.noreply.github.com"
           # Teilprüfung ([schnell: …] oder nur=…) in eigenen Ordner «-teil», die volle Tafel «-schnell» bleibt stehen (Oberchef 1.11.2026)
-          if [ -n "$NUR" ] || printf '%s' "$NACHRICHT" | grep -q '\[schnell:'; then Z="ergebnis/laeufe/${GITHUB_REF_NAME//\//-}-teil"; else Z="ergebnis/laeufe/${GITHUB_REF_NAME//\//-}-schnell"; fi
-          if git fetch --depth 1 origin ergebnis 2>/dev/null; then git worktree add -f /tmp/erg FETCH_HEAD; else git worktree add --detach /tmp/erg; (cd /tmp/erg && git rm -rqf . >/dev/null 2>&1 || true); fi
-          cd /tmp/erg && rm -rf "$Z" && mkdir -p "$Z" && cp -r "$GITHUB_WORKSPACE/ergebnis/." "$Z/"
-          python3 "$GITHUB_WORKSPACE/cloud/uebersicht.py" ergebnis/laeufe > index.html || true
-          git checkout -q --orphan erg-neu && git add -A && git commit -qm "Schnelle Prüfung $GITHUB_REF_NAME $GITHUB_SHA" && git push -f origin HEAD:refs/heads/ergebnis
+          # Teilprüfung in eigenen Ordner je Lauf «-teil-<nummer>» (Läufe laufen nebeneinander, nichts überschreibt sich), die volle Tafel «-schnell» bleibt stehen
+          if [ -n "$NUR" ] || printf '%s' "$NACHRICHT" | grep -q '\[schnell:'; then Z="ergebnis/laeufe/${GITHUB_REF_NAME//\//-}-teil-$GITHUB_RUN_NUMBER"; else Z="ergebnis/laeufe/${GITHUB_REF_NAME//\//-}-schnell"; fi
+          # Ablegen mit Wettlauf-Schutz: wer zwischen Holen und Schieben überholt wurde, holt neu und legt noch einmal (bis fünfmal)
+          for v in 1 2 3 4 5; do
+            rm -rf /tmp/erg; git worktree prune
+            if git fetch --depth 1 origin ergebnis 2>/dev/null; then ALT=$(git rev-parse FETCH_HEAD); git worktree add -f /tmp/erg FETCH_HEAD; else ALT=""; git worktree add --detach /tmp/erg; (cd /tmp/erg && git rm -rqf . >/dev/null 2>&1 || true); fi
+            ( cd /tmp/erg && rm -rf "$Z" && mkdir -p "$Z" && cp -r "$GITHUB_WORKSPACE/ergebnis/." "$Z/" && python3 "$GITHUB_WORKSPACE/cloud/uebersicht.py" ergebnis/laeufe > index.html || true )
+            ( cd /tmp/erg && git checkout -q --orphan erg-neu && git add -A && git commit -qm "Schnelle Prüfung $GITHUB_REF_NAME $GITHUB_SHA" && git push --force-with-lease=refs/heads/ergebnis:${ALT:-0000000000000000000000000000000000000000} origin HEAD:refs/heads/ergebnis ) && { echo "abgelegt: $Z"; break; }
+            echo "Wettlauf beim Ablegen, Versuch $v"; sleep $((v * 7))
+          done
