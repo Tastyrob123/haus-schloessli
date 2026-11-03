@@ -1,0 +1,184 @@
+{
+ "id": 1514403,
+ "name": "Kiedrich Gräfenberg Riesling Trocken GG",
+ "weingut": "Robert Weil",
+ "region": "Rheingau",
+ "region_id": 479,
+ "alkohol": 13,
+ "verschluss": "screw",
+ "natur": false,
+ "reben": [
+  "Riesling"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Geflügel",
+  "Scharfe Gerichte",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 4.4673448,
+  "fizziness": null,
+  "intensity": 3.1146376,
+  "sweetness": 1.7677916,
+  "tannin": null,
+  "user_structure_count": 650,
+  "calculated_structure_count": 252
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 347,
+   "worte": [
+    "peach",
+    "apple",
+    "apricot",
+    "pear",
+    "green apple"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 311,
+   "worte": [
+    "minerals",
+    "honey",
+    "petroleum",
+    "stone",
+    "flint"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 260,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 85,
+   "worte": [
+    "tropical",
+    "mango",
+    "pineapple",
+    "passion fruit",
+    "kiwi"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 35,
+   "worte": [
+    "elderflower",
+    "honeysuckle",
+    "jasmine",
+    "acacia",
+    "chamomile"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 32,
+   "worte": [
+    "cream",
+    "oil",
+    "cheese",
+    "banana",
+    "lemon curd"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 28,
+   "worte": [
+    "oak",
+    "butter",
+    "vanilla",
+    "caramel",
+    "coconut"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 23,
+   "worte": [
+    "dried herbs",
+    "mint",
+    "savory",
+    "white pepper",
+    "fennel"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 19,
+   "worte": [
+    "straw",
+    "grass",
+    "asparagus",
+    "hay"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 13,
+   "worte": [
+    "toast",
+    "almond",
+    "biscuit",
+    "burnt sugar",
+    "chestnut"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 8,
+   "worte": [
+    "cherry",
+    "red currant",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 5,
+   "worte": [
+    "dried apricot",
+    "raisin"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "blueberry"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 186,
+  "name": "Riesling Deutschland",
+  "description": "Riesling is without question Germany's favorite grape. Widely planted, though once derided, Riesling is the superstar of the white wine world at the moment.\n\nThere is a lot of scope for versatility with this sweet, viscous wine, though you can expect to get hints of tropical fruit, nectarine, melon and pineapple from a solid Riesling.\n\nThe grape originated in the Rhine region of Germany, and the best of them are said to grow along the banks of the Mosel River on the beautiful steep, south facing hills.\n\nThere are six categories of Riesling which indicate the ripeness of the grapes. Kabinett is considered “off-dry” and is a typically ripe grape. Spätlese is riper and therefor sweeter, and Auslese is even riper still. Beyond on that you have Beerenauslese, Trockenbeerenauslese and Eiswein (or ice wine), all getting sweeter, more viscous and more expensive.\n\nIt's a favorite in the food and beverage industry because of its willingness to play with a wide variety of foods, particular spicy dishes. The current Asian fusion boom is thought to have had a tremendous effect on Riesling's popularity.",
+  "blurb": null,
+  "interesting_facts": [
+   "Riesling is grown all over the world and thrives in cool to warm climates.",
+   "Riesling is one of the few white wines that develops and improves with age.",
+   "There are an unusually high number of German Riesling producers that carry the prefix “Dr.”"
+  ],
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 5428,
+ "weingut_weine": 79,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

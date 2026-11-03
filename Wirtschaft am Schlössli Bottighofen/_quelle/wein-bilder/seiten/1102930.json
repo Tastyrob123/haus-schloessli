@@ -1,0 +1,185 @@
+{
+ "id": 1102930,
+ "name": "Ried Loibenberg Loibner Grüner Veltliner Smaragd",
+ "weingut": "Weingut Knoll",
+ "region": "Wachau",
+ "region_id": 747,
+ "alkohol": 14,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Grüner Veltliner"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Magerer Fisch",
+  "Milde Käsesorten und Weichkäse",
+  "Ziegenkäse"
+ ],
+ "struktur": {
+  "acidity": 3.7586555,
+  "fizziness": null,
+  "intensity": 2.7236214,
+  "sweetness": 1.87856,
+  "tannin": null,
+  "user_structure_count": 262,
+  "calculated_structure_count": 152
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 208,
+   "worte": [
+    "peach",
+    "apple",
+    "apricot",
+    "pear",
+    "green apple"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 144,
+   "worte": [
+    "minerals",
+    "honey",
+    "stone",
+    "petroleum",
+    "salt"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 113,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "lemon",
+    "lime",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 54,
+   "worte": [
+    "white pepper",
+    "pepper",
+    "thyme",
+    "green herbs",
+    "lemon grass"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 37,
+   "worte": [
+    "butter",
+    "vanilla",
+    "oak",
+    "tobacco",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 30,
+   "worte": [
+    "cream",
+    "oil",
+    "banana",
+    "yeast",
+    "cheese"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 29,
+   "worte": [
+    "lychee",
+    "pineapple",
+    "mango",
+    "passion fruit",
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 13,
+   "worte": [
+    "acacia",
+    "apple blossom",
+    "chamomile",
+    "elderflower",
+    "honeysuckle"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 10,
+   "worte": [
+    "hay",
+    "chard",
+    "gooseberry",
+    "asparagus",
+    "grass"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 9,
+   "worte": [
+    "almond",
+    "hazelnut",
+    "nutty",
+    "toast",
+    "roasted almond"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 4,
+   "worte": [
+    "strawberry",
+    "cherry",
+    "raspberry"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "dried apricot",
+    "golden raisin",
+    "yellow raisin"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "plum"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 93,
+  "name": "Grüner Veltliner Österreich",
+  "description": "Grüner Veltliner is Austria’s signature grape. Fresh and zesty, it's the liquid equivalent of some cool Austrian mountain air.\n\nAustrian Grüner Veltliner tends to have strong citrus flavors of lime, lemon, and grapefruit. Some Grüners also have a distinct nectarine note as well. In terms of more savory flavors, look out for white pepper and a slight radish-like bitterness. If oaked, Austrian Grüner Veltliner will also get some aromas and flavors of nuts and cream.\n\nWhen pairing with food, think light delicate meats such as veal, pâté, or roasted pork. Or you could go all out for an Austrian feast and pair it with a traditional Wienerschnitzel. On the lighter side of things, it goes well with delicate fish dishes, and is great with seafood such as oysters and mussels. When it comes to cheese, Grüner goes particularly well with soft cows' milk or goat cheese.\n\nAustrian Grüner Veltliner tends to be best enjoyed within 2 years of bottling.",
+  "blurb": null,
+  "interesting_facts": [
+   "Austria is home to some of the oldest wine grapes dating as far back as 2000 BC.",
+   "Grüner Veltliner has been around since Roman times."
+  ],
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 4779,
+ "weingut_weine": 48,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,167 @@
+{
+ "id": 5552281,
+ "name": "La Cuvée Brut Champagne",
+ "weingut": "Laurent-Perrier",
+ "region": "Champagne",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.237278,
+  "fizziness": 4.215405,
+  "intensity": 3.6183472,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 6459,
+  "calculated_structure_count": 969
+ },
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 3113,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lime",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 2834,
+   "worte": [
+    "apple",
+    "green apple",
+    "pear",
+    "peach",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 2196,
+   "worte": [
+    "brioche",
+    "toast",
+    "biscuit",
+    "almond",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 976,
+   "worte": [
+    "cream",
+    "yeast",
+    "cheese",
+    "toasted bread",
+    "lemon curd"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 780,
+   "worte": [
+    "minerals",
+    "honey",
+    "stone",
+    "chalk",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 463,
+   "worte": [
+    "butter",
+    "vanilla",
+    "oak",
+    "pastry",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 227,
+   "worte": [
+    "straw",
+    "gooseberry",
+    "grass",
+    "chard",
+    "hay"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 115,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "mango",
+    "kiwi",
+    "lychee"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 96,
+   "worte": [
+    "honeysuckle",
+    "elderflower",
+    "jasmine",
+    "chamomile",
+    "orange blossom"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 77,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "cherry",
+    "red fruit",
+    "red currant"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 56,
+   "worte": [
+    "savory",
+    "cinnamon",
+    "white pepper",
+    "fennel",
+    "pepper"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 18,
+   "worte": [
+    "plum",
+    "blackcurrant",
+    "jam",
+    "black cherry",
+    "blackberry"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 14,
+   "worte": [
+    "fig",
+    "dried fruit",
+    "raisin",
+    "dried apricot"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

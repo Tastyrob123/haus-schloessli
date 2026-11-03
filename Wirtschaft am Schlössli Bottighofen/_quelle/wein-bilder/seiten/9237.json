@@ -1,0 +1,164 @@
+{
+ "id": 9237,
+ "name": "Brut Champagne Grand Cru 'Le Mesnil-sur-Oger'",
+ "weingut": "Delamotte",
+ "region": "Champagne Grand Cru 'Le Mesnil-sur-Oger'",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.170485,
+  "fizziness": 4.190473,
+  "intensity": 3.690473,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 2107,
+  "calculated_structure_count": 255
+ },
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 875,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lime",
+    "lemon peel"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 812,
+   "worte": [
+    "green apple",
+    "apple",
+    "pear",
+    "peach",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 672,
+   "worte": [
+    "brioche",
+    "toast",
+    "almond",
+    "biscuit",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 337,
+   "worte": [
+    "yeast",
+    "cream",
+    "cheese",
+    "lemon curd",
+    "toasted bread"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 313,
+   "worte": [
+    "minerals",
+    "honey",
+    "stone",
+    "chalk",
+    "flint"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 149,
+   "worte": [
+    "butter",
+    "vanilla",
+    "caramel",
+    "pastry",
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 42,
+   "worte": [
+    "straw",
+    "grass",
+    "chard",
+    "gooseberry",
+    "bitter almond"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 36,
+   "worte": [
+    "tropical",
+    "pineapple",
+    "kiwi",
+    "mango",
+    "bubblegum"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 23,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "cherry",
+    "cranberry",
+    "watermelon"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 18,
+   "worte": [
+    "savory",
+    "pepper",
+    "anise",
+    "cinnamon",
+    "gingerbread"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 12,
+   "worte": [
+    "acacia",
+    "dried flowers",
+    "honeysuckle",
+    "apple blossom",
+    "dandelion"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 5,
+   "worte": [
+    "plum",
+    "black olive",
+    "jam"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "dried apricot",
+    "dragon fruit",
+    "fig"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

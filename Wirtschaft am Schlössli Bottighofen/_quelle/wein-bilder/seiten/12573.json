@@ -1,0 +1,153 @@
+{
+ "id": 12573,
+ "name": "Ried Setzberg - Riesling Smaragd",
+ "weingut": "Franz Hirtzberger",
+ "region": "Wachau",
+ "region_id": 747,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Riesling"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Geflügel",
+  "Scharfe Gerichte",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 4.5655823,
+  "fizziness": null,
+  "intensity": 3.3803244,
+  "sweetness": 1.8432251,
+  "tannin": null,
+  "user_structure_count": 78,
+  "calculated_structure_count": 38
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 40,
+   "worte": [
+    "minerals",
+    "honey",
+    "stone",
+    "petroleum",
+    "ginger"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 36,
+   "worte": [
+    "peach",
+    "apricot",
+    "pear",
+    "melon",
+    "apple"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 28,
+   "worte": [
+    "citrus",
+    "lemon",
+    "orange",
+    "grapefruit",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 18,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "mango",
+    "green mango",
+    "guava"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 8,
+   "worte": [
+    "oil",
+    "cream",
+    "lemon curd",
+    "yogurt"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 7,
+   "worte": [
+    "straw",
+    "grass",
+    "gooseberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 5,
+   "worte": [
+    "dried herbs",
+    "thyme",
+    "sage"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 5,
+   "worte": [
+    "vanilla",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 5,
+   "worte": [
+    "honeysuckle",
+    "chamomile",
+    "dried flowers",
+    "elderflower"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 4,
+   "worte": [
+    "almond",
+    "biscuit",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "strawberry"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 302,
+  "name": "Riesling Österreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 839,
+ "weingut_weine": 33,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

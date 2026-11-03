@@ -1,0 +1,146 @@
+{
+ "id": 1370930,
+ "name": "Passion Chardonnay",
+ "weingut": "Donatsch",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.5998871,
+  "fizziness": null,
+  "intensity": 3.362538,
+  "sweetness": 1.5022621,
+  "tannin": null,
+  "user_structure_count": 33,
+  "calculated_structure_count": 26
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 37,
+   "worte": [
+    "oak",
+    "vanilla",
+    "butter",
+    "caramel",
+    "mocha"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 36,
+   "worte": [
+    "peach",
+    "apricot",
+    "pear",
+    "quince",
+    "apple"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 27,
+   "worte": [
+    "honey",
+    "minerals",
+    "chalk",
+    "mushroom",
+    "saline"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 12,
+   "worte": [
+    "cream",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 11,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "lemon",
+    "lime",
+    "pink grapefruit"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 7,
+   "worte": [
+    "almond",
+    "brioche",
+    "hazelnut",
+    "toast",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 7,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "lychee"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "chard"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "menthol"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "fig"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "chamomile"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 64,
+  "name": "Chardonnay Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.1,
+ "bewertungen": 876,
+ "weingut_weine": 38,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

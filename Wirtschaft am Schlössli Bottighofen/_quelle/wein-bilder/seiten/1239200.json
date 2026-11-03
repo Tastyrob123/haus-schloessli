@@ -1,0 +1,91 @@
+{
+ "id": 1239200,
+ "name": "Pinot Gris",
+ "weingut": "Giani Boner",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 14,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Gris"
+ ],
+ "speisen": [
+  "Kalbfleisch",
+  "Schweinefleisch",
+  "Schalentiere",
+  "Vegetarische Gerichte",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.0738096,
+  "fizziness": null,
+  "intensity": 3.1214287,
+  "sweetness": 2.6833334,
+  "tannin": null,
+  "user_structure_count": 1,
+  "calculated_structure_count": 3
+ },
+ "aromen": [
+  {
+   "gruppe": "microbio",
+   "n": 4,
+   "worte": [
+    "cheese",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 2,
+   "worte": [
+    "apricot",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "lemon"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 1,
+   "worte": [
+    "honey"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 1,
+   "worte": [
+    "oak"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 689,
+  "name": "Swiss Pinot Gris White",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4,
+ "bewertungen": 177,
+ "weingut_weine": 7,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

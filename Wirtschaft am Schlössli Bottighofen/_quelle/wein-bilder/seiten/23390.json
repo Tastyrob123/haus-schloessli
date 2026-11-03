@@ -1,0 +1,177 @@
+{
+ "id": 23390,
+ "name": "Sammarco",
+ "weingut": "Castello dei Rampolla",
+ "region": "Toscana",
+ "region_id": 394,
+ "alkohol": 14.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Cabernet Sauvignon"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.1561594,
+  "fizziness": null,
+  "intensity": 3.485264,
+  "sweetness": 1.7375219,
+  "tannin": 3.2112799,
+  "user_structure_count": 786,
+  "calculated_structure_count": 385
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 460,
+   "worte": [
+    "tobacco",
+    "oak",
+    "chocolate",
+    "cedar",
+    "vanilla"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 444,
+   "worte": [
+    "leather",
+    "earthy",
+    "smoke",
+    "graphite",
+    "tar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 364,
+   "worte": [
+    "blackberry",
+    "black fruit",
+    "blackcurrant",
+    "dark fruit",
+    "plum"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 174,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "red currant",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 147,
+   "worte": [
+    "licorice",
+    "pepper",
+    "cinnamon",
+    "mint",
+    "thyme"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 29,
+   "worte": [
+    "bitter almond",
+    "tomato",
+    "hay",
+    "bell pepper",
+    "rhubarb"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 22,
+   "worte": [
+    "violet",
+    "perfume",
+    "lavender",
+    "elderflower",
+    "honeysuckle"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 22,
+   "worte": [
+    "raisin",
+    "dried fruit",
+    "prune",
+    "fig"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 19,
+   "worte": [
+    "hazelnut",
+    "dried fig",
+    "walnut",
+    "marzipan",
+    "pine nut"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 15,
+   "worte": [
+    "cream",
+    "cheese",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 5,
+   "worte": [
+    "marmalade",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 2,
+   "worte": [
+    "baked apple",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "mango"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 292,
+  "name": "Toskana Rot Italien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 7164,
+ "weingut_weine": 12,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

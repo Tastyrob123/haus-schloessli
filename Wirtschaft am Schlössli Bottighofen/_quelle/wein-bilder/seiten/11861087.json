@@ -1,0 +1,44 @@
+{
+ "id": 11861087,
+ "name": "Höhenrausch Rosé",
+ "weingut": "Vollmayer",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 12,
+ "verschluss": null,
+ "natur": false,
+ "reben": [],
+ "speisen": [
+  "Schalentiere",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Vorspeisen und Snacks",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3,
+  "fizziness": null,
+  "intensity": 3,
+  "sweetness": 2,
+  "tannin": null,
+  "user_structure_count": 0,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 622,
+  "name": "German Rosé",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 0,
+ "bewertungen": 24,
+ "weingut_weine": 53,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

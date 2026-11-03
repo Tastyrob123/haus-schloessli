@@ -1,0 +1,146 @@
+{
+ "id": 5616742,
+ "name": "Schlossberg Spätburgunder GG",
+ "weingut": "Bernhard Huber",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Spätburgunder"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.313993,
+  "fizziness": null,
+  "intensity": 2.0489614,
+  "sweetness": 1.7989076,
+  "tannin": 2.3680305,
+  "user_structure_count": 45,
+  "calculated_structure_count": 21
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 31,
+   "worte": [
+    "smoke",
+    "mushroom",
+    "leather",
+    "forest floor",
+    "minerals"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 30,
+   "worte": [
+    "raspberry",
+    "cherry",
+    "red fruit",
+    "red currant",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 15,
+   "worte": [
+    "thyme",
+    "pepper",
+    "juniper",
+    "licorice",
+    "mint"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 14,
+   "worte": [
+    "oak",
+    "cedar",
+    "tobacco",
+    "vanilla",
+    "camphor"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 12,
+   "worte": [
+    "black cherry",
+    "blackberry",
+    "plum",
+    "black fruit",
+    "blueberry"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 5,
+   "worte": [
+    "dried cranberry",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 4,
+   "worte": [
+    "citrus",
+    "lemon"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 3,
+   "worte": [
+    "toast",
+    "almond"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 3,
+   "worte": [
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 3,
+   "worte": [
+    "perfume",
+    "rose petal",
+    "violet"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 160,
+  "name": "Spätburgunder Deutschland",
+  "description": null,
+  "blurb": "Also known as Pinot Noir",
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 323,
+ "weingut_weine": 67,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

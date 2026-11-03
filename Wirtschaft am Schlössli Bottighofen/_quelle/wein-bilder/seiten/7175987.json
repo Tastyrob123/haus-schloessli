@@ -1,0 +1,165 @@
+{
+ "id": 7175987,
+ "name": "Eleivera Tinto",
+ "weingut": "Dos Lusíadas",
+ "region": "Douro",
+ "region_id": 433,
+ "alkohol": 14,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Touriga Nacional"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Pasta",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.1828382,
+  "fizziness": null,
+  "intensity": 4.5799923,
+  "sweetness": 1.7837657,
+  "tannin": 3.5982785,
+  "user_structure_count": 66,
+  "calculated_structure_count": 63
+ },
+ "aromen": [
+  {
+   "gruppe": "black_fruit",
+   "n": 105,
+   "worte": [
+    "blackberry",
+    "plum",
+    "black fruit",
+    "blackcurrant",
+    "blueberry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 58,
+   "worte": [
+    "earthy",
+    "leather",
+    "smoke",
+    "mushroom",
+    "iron"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 55,
+   "worte": [
+    "oak",
+    "chocolate",
+    "tobacco",
+    "cedar",
+    "vanilla"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 46,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "sour cherry",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 43,
+   "worte": [
+    "pepper",
+    "licorice",
+    "thyme",
+    "eucalyptus",
+    "juniper"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 15,
+   "worte": [
+    "violet",
+    "hibiscus",
+    "lavender",
+    "orange blossom",
+    "rose petal"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "dried fruit",
+    "fig",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 3,
+   "worte": [
+    "cream",
+    "cheese"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 3,
+   "worte": [
+    "blood orange",
+    "orange peel"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 3,
+   "worte": [
+    "bell pepper",
+    "green bell pepper",
+    "tomato leaf"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 2,
+   "worte": [
+    "apple",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 1,
+   "worte": [
+    "marzipan"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 81,
+  "name": "Douro Rot Portugal",
+  "description": "Douro Red wines range in style from light and fruity to lush and smooth to dark and dense with flavors of mature dark fruit, with herbal and schist.\n\nThe wines are often and inky purple due to the thickening of the skins from the intense summer heat of the region.\n\nMost of the best made reds from the region come from the larger port houses where the skill of the winemakers go back for generations. The wines tend to be an incredible value for the time being but costs are slowly increasing due to the amazing blends coming from the area.\n\nThe first time one sees the Douro region they will always ask themselves, how can wine be made in such rugged terrain. It is also an amazingly beautiful area, with hillsides covered in terraced vineyards. Most larger winemakers have also started converting their areas into tourist destinations and wine hotels.\n\nGrapes include the Touriga Francesa, Tinta Roriz, Touriga Nacional and Tinta Barroca. Older vineyards still contain many less used vine varieties which makes their annual efforts less predictable, but allowing for unexpected surprises yielding unique, complex wines.",
+  "blurb": "Red wine from Northern Portugal",
+  "interesting_facts": [
+   "The Douro Valley is the home of Port wine.",
+   "There is evidence as early as the 3rd century AD of winegrowing in the region.",
+   "Temperatures in the Douro Valley often reach above 100 degrees F in the summer months. This lends to the inky color of the red wines, whose skin is thicker than cool climate grapes."
+  ],
+  "body": 5,
+  "body_description": "Sehr voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 3.7,
+ "bewertungen": 2137,
+ "weingut_weine": 5,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

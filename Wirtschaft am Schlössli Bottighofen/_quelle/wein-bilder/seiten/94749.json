@@ -1,0 +1,175 @@
+{
+ "id": 94749,
+ "name": "Percarlo",
+ "weingut": "San Giusto a Rentennano",
+ "region": "Toscana",
+ "region_id": 394,
+ "alkohol": 14.02,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Sangiovese"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.230228,
+  "fizziness": null,
+  "intensity": 3.4224045,
+  "sweetness": 1.7689052,
+  "tannin": 3.2794993,
+  "user_structure_count": 789,
+  "calculated_structure_count": 270
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 294,
+   "worte": [
+    "tobacco",
+    "oak",
+    "vanilla",
+    "chocolate",
+    "coffee"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 210,
+   "worte": [
+    "leather",
+    "earthy",
+    "tar",
+    "smoke",
+    "balsamic"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 159,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "red cherry",
+    "raspberry",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 134,
+   "worte": [
+    "black cherry",
+    "dark fruit",
+    "blackberry",
+    "plum",
+    "black fruit"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 101,
+   "worte": [
+    "pepper",
+    "licorice",
+    "mint",
+    "green herbs",
+    "cinnamon"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 25,
+   "worte": [
+    "dried fruit",
+    "prune",
+    "raisin",
+    "dried apricot",
+    "quince paste"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 18,
+   "worte": [
+    "perfume",
+    "violet",
+    "lily",
+    "dried flowers",
+    "hibiscus"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 13,
+   "worte": [
+    "orange",
+    "orange peel",
+    "blood orange",
+    "citrus",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 12,
+   "worte": [
+    "cream",
+    "cheese",
+    "sourdough"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 11,
+   "worte": [
+    "walnut",
+    "almond",
+    "dried fig",
+    "toast",
+    "chestnut"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 8,
+   "worte": [
+    "hay",
+    "arugula",
+    "asparagus",
+    "earl grey tea",
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 4,
+   "worte": [
+    "apple",
+    "apricot",
+    "quince"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 292,
+  "name": "Toskana Rot Italien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 6394,
+ "weingut_weine": 8,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

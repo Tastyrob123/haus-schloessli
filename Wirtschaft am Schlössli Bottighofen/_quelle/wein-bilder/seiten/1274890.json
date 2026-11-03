@@ -1,0 +1,91 @@
+{
+ "id": 1274890,
+ "name": "Fläscher Riesling - Sylvaner",
+ "weingut": "Hansruedi Adank",
+ "region": "Graubünden",
+ "region_id": 1455,
+ "alkohol": 12.7,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Riesling",
+  "Silvaner"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 9,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "grapefruit pith",
+    "orange peel",
+    "orange zest"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 7,
+   "worte": [
+    "apple",
+    "peach",
+    "apricot",
+    "cantaloupe"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 2,
+   "worte": [
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 2,
+   "worte": [
+    "nutmeg"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 2,
+   "worte": [
+    "minerals",
+    "stone"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "dried fruit"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 1,
+   "worte": [
+    "asparagus"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": null,
+ "bewertung": 3.6,
+ "bewertungen": 262,
+ "weingut_weine": 27,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

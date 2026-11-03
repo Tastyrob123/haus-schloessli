@@ -1,0 +1,8 @@
+{
+ "extern/portale/guide-michelin/guide-michelin_titelbild.jpeg": {
+  "quelle": "https://prod-pics.guide.michelin.com/api/public/content/975458abe66f4be68970c5aed0af4d32.jpeg (ohne Grössenangabe = Original 1000 px; grössere Angaben rechnen nur hoch)",
+  "seite": "https://guide.michelin.com/ch/de/thurgau/bottighofen_1149146/restaurant/wirtschaft-am-schlossli",
+  "was": "og:image der Michelin-Seite (Titelbild). Die Galerien im Quelltext (data-gallery-image) gehören zu Nachbarkarten, nicht geladen.",
+  "datum": "19.10.2026"
+ }
+}

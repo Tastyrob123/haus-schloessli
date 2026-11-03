@@ -1,0 +1,134 @@
+{
+ "id": 1633662,
+ "name": "Les Rissieux",
+ "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+ "region": "Neuchâtel",
+ "region_id": 1401,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.114856,
+  "fizziness": null,
+  "intensity": 2.1826098,
+  "sweetness": 1.7264919,
+  "tannin": 2.3756897,
+  "user_structure_count": 38,
+  "calculated_structure_count": 16
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 22,
+   "worte": [
+    "raspberry",
+    "red cherry",
+    "strawberry",
+    "pomegranate",
+    "cherry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 12,
+   "worte": [
+    "oak",
+    "tobacco",
+    "coffee",
+    "chocolate",
+    "clove"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 10,
+   "worte": [
+    "blackcurrant",
+    "blackberry",
+    "black cherry",
+    "black raspberry",
+    "dark fruit"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 8,
+   "worte": [
+    "ginger",
+    "balsamic",
+    "charcoal",
+    "earthy",
+    "graphite"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 7,
+   "worte": [
+    "juniper",
+    "pepper",
+    "dried herbs",
+    "rosemary",
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 4,
+   "worte": [
+    "perfume",
+    "violet"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 3,
+   "worte": [
+    "chestnut",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "cheese"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.5,
+ "bewertungen": 518,
+ "weingut_weine": 9,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

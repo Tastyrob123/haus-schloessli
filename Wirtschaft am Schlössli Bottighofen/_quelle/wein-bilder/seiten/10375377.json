@@ -1,0 +1,89 @@
+{
+ "id": 10375377,
+ "name": "Scadena Weissburgunder",
+ "weingut": "Weingut Wegelin",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Weissburgunder"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 6,
+   "worte": [
+    "apricot",
+    "nectarine",
+    "peach",
+    "quince",
+    "white peach"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 2,
+   "worte": [
+    "bergamot",
+    "white pepper"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 2,
+   "worte": [
+    "butter",
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 2,
+   "worte": [
+    "almond",
+    "hazelnut"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "jackfruit"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "lemon"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "earth",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": null,
+ "bewertung": 4.1,
+ "bewertungen": 74,
+ "weingut_weine": 30,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

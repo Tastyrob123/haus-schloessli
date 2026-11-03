@@ -1,0 +1,161 @@
+{
+ "id": 1108861,
+ "name": "Brut Rosé Champagne Grand Cru 'Bouzy'",
+ "weingut": "Andre Clouet",
+ "region": "Champagne Grand Cru 'Bouzy'",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.0965166,
+  "fizziness": 4.2057285,
+  "intensity": 3.7553706,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 178,
+  "calculated_structure_count": 13
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 516,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "cherry",
+    "wild strawberry",
+    "red fruit"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 179,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "lemon",
+    "orange",
+    "blood orange"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 175,
+   "worte": [
+    "apple",
+    "peach",
+    "green apple",
+    "pear",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 163,
+   "worte": [
+    "brioche",
+    "toast",
+    "almond",
+    "marzipan",
+    "biscuit"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 113,
+   "worte": [
+    "minerals",
+    "honey",
+    "chalk",
+    "earthy",
+    "saline"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 100,
+   "worte": [
+    "cream",
+    "yeast",
+    "banana",
+    "cheese",
+    "sourdough"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 49,
+   "worte": [
+    "vanilla",
+    "butter",
+    "oak",
+    "chocolate",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 22,
+   "worte": [
+    "rose petal",
+    "perfume",
+    "acacia",
+    "hibiscus",
+    "jasmine"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 16,
+   "worte": [
+    "gooseberry",
+    "rhubarb",
+    "grass",
+    "straw",
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 16,
+   "worte": [
+    "jam",
+    "blackcurrant",
+    "plum",
+    "cassis",
+    "black cherry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 14,
+   "worte": [
+    "mint",
+    "pepper",
+    "savory",
+    "anise",
+    "fennel"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 5,
+   "worte": [
+    "tropical",
+    "kiwi"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "dragon fruit"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

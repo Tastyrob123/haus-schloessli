@@ -1,0 +1,134 @@
+{
+ "id": 2410648,
+ "name": "Viuda Negra Crianza",
+ "weingut": "Bodegas Javier San Pedro Ortega",
+ "region": "Rioja",
+ "region_id": 492,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Tempranillo"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel"
+ ],
+ "struktur": {
+  "acidity": 2.8072405,
+  "fizziness": null,
+  "intensity": 3.996518,
+  "sweetness": 1.5940149,
+  "tannin": 3.5835137,
+  "user_structure_count": 160,
+  "calculated_structure_count": 37
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 47,
+   "worte": [
+    "oak",
+    "vanilla",
+    "tobacco",
+    "chocolate",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 37,
+   "worte": [
+    "blackberry",
+    "black fruit",
+    "black cherry",
+    "blackcurrant",
+    "blueberry"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 24,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "red plum",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 11,
+   "worte": [
+    "earthy",
+    "leather",
+    "smoke",
+    "black truffle",
+    "cocoa"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 8,
+   "worte": [
+    "cinnamon",
+    "mint",
+    "pepper",
+    "anise",
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 2,
+   "worte": [
+    "violet"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "microbio",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 190,
+  "name": "Rioja Rot Spanien",
+  "description": "Rioja is one Spain's most famous wine regions and is one of only two regions classified under the Denominación de Origen Calificada (DOCa) system. Its two most important red grapes are Tempranillo and Garnacha. \n\nWhen it comes to Rioja reds, there are 4 categories of ageing to keep in mind:\n\nJoven - There are no specific requirements here, but these wines tend to be 1-2 years old. \n\nCrianza - These wines are in their 3rd year, with at least 12 months spent in oak barrels.\n\nReserva - When excellent vintages are selected to become Reserva wines, they spend 3 years aging, 12 months minimum of which is in oak, followed by 6 months in the bottle. \n\nGran Reserva - The wines carefully selected for this process must undergo a minimum of 60 months aging,  of which 2 years must be in oak barrels, with another 2 years spent in the bottle. \n\nTypically younger wines will be lighter in body style, exhibit more fresh fruit characteristics and are suitable to drink while young. Older wines have more developed flavor profiles and earthy characteristics.",
+  "blurb": null,
+  "interesting_facts": [
+   "Archaeologists believe that wine has been cultivated and consumed in the region since between 3000 and 4000 BC.",
+   "In Spain, wineries are most commonly known as 'bodegas'. ",
+   "The medium body and high acidity in Rioja Reds make them excellent for pairing with a variety of foods."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 3.8,
+ "bewertungen": 2220,
+ "weingut_weine": 29,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,45 @@
+{
+ "id": 10773805,
+ "name": "Nonnenhorner Seehalde Weissburgunder Trocken",
+ "weingut": "Jonas Kurek",
+ "region": "Württemberg",
+ "region_id": 939,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Weissburgunder"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 4.0787883,
+  "fizziness": null,
+  "intensity": 3.2757578,
+  "sweetness": 1,
+  "tannin": null,
+  "user_structure_count": 1,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 141,
+  "name": "Weissburgunder Deutschland",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.1,
+ "bewertungen": 29,
+ "weingut_weine": 18,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,158 @@
+{
+ "id": 87509,
+ "name": "San Stunet Barbaresco",
+ "weingut": "Piero Busso",
+ "region": "Barbaresco",
+ "region_id": 722,
+ "alkohol": 14.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Nebbiolo"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Pasta",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.4539948,
+  "fizziness": null,
+  "intensity": 3.7301338,
+  "sweetness": 1.5880023,
+  "tannin": 4.0461297,
+  "user_structure_count": 92,
+  "calculated_structure_count": 68
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 100,
+   "worte": [
+    "leather",
+    "earthy",
+    "tar",
+    "mushroom",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 90,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "red fruit",
+    "red cherry",
+    "maraschino cherry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 64,
+   "worte": [
+    "licorice",
+    "mint",
+    "menthol",
+    "pepper",
+    "anise"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 60,
+   "worte": [
+    "tobacco",
+    "oak",
+    "cedar",
+    "clove",
+    "coffee"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 27,
+   "worte": [
+    "plum",
+    "blackberry",
+    "blueberry",
+    "black fruit",
+    "blackcurrant"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 14,
+   "worte": [
+    "violet",
+    "rose hip",
+    "rose petal",
+    "rose water"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 10,
+   "worte": [
+    "dried fruit",
+    "raisin",
+    "dried cranberry",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 4,
+   "worte": [
+    "almond",
+    "dried fig"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 2,
+   "worte": [
+    "orange peel"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 1,
+   "worte": [
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 5,
+  "name": "Barbaresco Italien",
+  "description": "You can find the elegant, striking wines of Barbaresco in the Piedmont region of Northern Italy. These wines are composed of Nebbiolo, the region's premier grape. \n\nBarbaresco wines are generally a light, reddish-orange in color, but they are not light on flavor. Their high acidity and tannins benefit from a couple of years aging, after which these wines reveal invigorating aromas of tart cranberries and cherries, cardamom, earth, and spices.\n\nIf you ever wished that Pinot Noir had the punch of Cab, this might be the wine for you!",
+  "blurb": "Nebbiolo-based DOCG wine from Piedmont",
+  "interesting_facts": [
+   "Millions of years ago, Barbaresco was under the sea.",
+   "Legend has it that the Romans named the region after the Barbarians, due to the area's surrounding forest that provided cover for these attackers."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 1944,
+ "weingut_weine": 18,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

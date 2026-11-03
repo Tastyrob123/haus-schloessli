@@ -1,0 +1,50 @@
+{
+ "id": 8710775,
+ "name": "Monte Vacano Riesling",
+ "weingut": "Robert Weil",
+ "region": "Rheingau",
+ "region_id": 479,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Riesling"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Geflügel",
+  "Scharfe Gerichte",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.5395012,
+  "fizziness": null,
+  "intensity": 2.9892704,
+  "sweetness": 2.2306912,
+  "tannin": null,
+  "user_structure_count": 31,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 186,
+  "name": "Riesling Deutschland",
+  "description": "Riesling is without question Germany's favorite grape. Widely planted, though once derided, Riesling is the superstar of the white wine world at the moment.\n\nThere is a lot of scope for versatility with this sweet, viscous wine, though you can expect to get hints of tropical fruit, nectarine, melon and pineapple from a solid Riesling.\n\nThe grape originated in the Rhine region of Germany, and the best of them are said to grow along the banks of the Mosel River on the beautiful steep, south facing hills.\n\nThere are six categories of Riesling which indicate the ripeness of the grapes. Kabinett is considered “off-dry” and is a typically ripe grape. Spätlese is riper and therefor sweeter, and Auslese is even riper still. Beyond on that you have Beerenauslese, Trockenbeerenauslese and Eiswein (or ice wine), all getting sweeter, more viscous and more expensive.\n\nIt's a favorite in the food and beverage industry because of its willingness to play with a wide variety of foods, particular spicy dishes. The current Asian fusion boom is thought to have had a tremendous effect on Riesling's popularity.",
+  "blurb": null,
+  "interesting_facts": [
+   "Riesling is grown all over the world and thrives in cool to warm climates.",
+   "Riesling is one of the few white wines that develops and improves with age.",
+   "There are an unusually high number of German Riesling producers that carry the prefix “Dr.”"
+  ],
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 138,
+ "weingut_weine": 79,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

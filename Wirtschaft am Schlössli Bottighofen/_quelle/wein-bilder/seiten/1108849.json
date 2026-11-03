@@ -1,0 +1,166 @@
+{
+ "id": 1108849,
+ "name": "Grande Réserve Brut Champagne Grand Cru 'Bouzy'",
+ "weingut": "Andre Clouet",
+ "region": "Champagne Grand Cru 'Bouzy'",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.2004566,
+  "fizziness": 4.250428,
+  "intensity": 3.8103938,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 2270,
+  "calculated_structure_count": 306
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 1139,
+   "worte": [
+    "apple",
+    "green apple",
+    "pear",
+    "yellow apple",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 769,
+   "worte": [
+    "toast",
+    "brioche",
+    "nutty",
+    "almond",
+    "biscuit"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 727,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lime",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 471,
+   "worte": [
+    "yeast",
+    "cream",
+    "cheese",
+    "toasted bread",
+    "lemon curd"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 349,
+   "worte": [
+    "minerals",
+    "honey",
+    "stone",
+    "chalk",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 149,
+   "worte": [
+    "butter",
+    "vanilla",
+    "oak",
+    "chocolate",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 63,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "red fruit",
+    "cherry",
+    "red currant"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 57,
+   "worte": [
+    "straw",
+    "hay",
+    "grass",
+    "gooseberry",
+    "asparagus"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 45,
+   "worte": [
+    "tropical",
+    "pineapple",
+    "mango",
+    "passion fruit",
+    "guava"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 23,
+   "worte": [
+    "cinnamon",
+    "fennel",
+    "licorice",
+    "savory",
+    "white pepper"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 15,
+   "worte": [
+    "honeysuckle",
+    "elderflower",
+    "jasmine",
+    "perfume",
+    "acacia"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 14,
+   "worte": [
+    "plum",
+    "jam",
+    "cassis",
+    "black cherry"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 9,
+   "worte": [
+    "dried fruit",
+    "raisin",
+    "dried apricot",
+    "prune"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

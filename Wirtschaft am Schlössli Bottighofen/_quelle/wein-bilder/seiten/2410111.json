@@ -1,0 +1,185 @@
+{
+ "id": 2410111,
+ "name": "Gaia & Rey Langhe",
+ "weingut": "Gaja",
+ "region": "Langhe",
+ "region_id": 613,
+ "alkohol": 14,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Reife Käsesorten und Hartkäse",
+  "Magerer Fisch",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.2349694,
+  "fizziness": null,
+  "intensity": 3.844451,
+  "sweetness": 2.4616964,
+  "tannin": null,
+  "user_structure_count": 432,
+  "calculated_structure_count": 235
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 303,
+   "worte": [
+    "oak",
+    "butter",
+    "vanilla",
+    "caramel",
+    "butterscotch"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 195,
+   "worte": [
+    "pear",
+    "peach",
+    "apple",
+    "green apple",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 186,
+   "worte": [
+    "honey",
+    "minerals",
+    "stone",
+    "smoke",
+    "earthy"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 146,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lime",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 76,
+   "worte": [
+    "almond",
+    "toast",
+    "nutty",
+    "hazelnut",
+    "brioche"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 73,
+   "worte": [
+    "cream",
+    "oil",
+    "cheese",
+    "lemon curd",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 71,
+   "worte": [
+    "tropical",
+    "pineapple",
+    "mango",
+    "lychee",
+    "guava"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 27,
+   "worte": [
+    "straw",
+    "chard",
+    "grass",
+    "gooseberry",
+    "bell pepper"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 17,
+   "worte": [
+    "honeysuckle",
+    "acacia",
+    "elderflower",
+    "chamomile",
+    "apple blossom"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 14,
+   "worte": [
+    "white pepper",
+    "fennel",
+    "pepper",
+    "savory",
+    "bergamot"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 7,
+   "worte": [
+    "dried apricot",
+    "fig",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 3,
+   "worte": [
+    "plum",
+    "blackcurrant"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "cherry"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 131,
+  "name": "Norditalien Weiß",
+  "description": "Often better known for red varieties, Northern Italy has a number of delicious and drinkable white wines. To know Northern Italian wines is to know the influences of the wines of the countries that border Italy.\n\nOld World wines tend to be far less about fruit-forward  flavors, and more about the effect that the climate, soil, and adjacently growing flora (terroir) have on the grapes during their growth.\n\nThe most widely recognizable varietal is Pinot Grigio which is very rustic, medium-bodied, with medium to high acidity. Chardonnay seems to grow anywhere grapes can grow; although Italian varieties are not normally coveted quality.\n\nGewürztraminer usually makes us think of Germany, but it's also thriving in Northern Italy. The warmer climate imparts a little less sugar and little more acidity than its German cousin.\n\nThen there is Moscato. From the northwest Piedmont region, this wine is sweet and very popular in North America, and comes in both still and sparkling varieties.\n\nWhatever your choice, taking a tour of Italian white wines is an enjoyable experience that you will be thankful you took.",
+  "blurb": null,
+  "interesting_facts": [
+   "More wine is produced in Italy than any other country, and wine has been made there for nearly 3000 years.",
+   "There are over 3000 different grape varietals in Italy.",
+   "There is more than 2 lbs (2 kilo) of grapes in each bottle of Italian wine."
+  ],
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.5,
+ "bewertungen": 7689,
+ "weingut_weine": 59,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

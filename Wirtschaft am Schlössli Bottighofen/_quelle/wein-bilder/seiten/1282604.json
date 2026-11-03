@@ -1,0 +1,153 @@
+{
+ "id": 1282604,
+ "name": "Pinot Noir",
+ "weingut": "Thomas Studach",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 13.3,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.8414962,
+  "fizziness": null,
+  "intensity": 2.0679114,
+  "sweetness": 1.8042793,
+  "tannin": 2.4673874,
+  "user_structure_count": 220,
+  "calculated_structure_count": 63
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 69,
+   "worte": [
+    "raspberry",
+    "cherry",
+    "strawberry",
+    "red fruit",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 54,
+   "worte": [
+    "oak",
+    "tobacco",
+    "vanilla",
+    "chocolate",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 48,
+   "worte": [
+    "minerals",
+    "smoke",
+    "earthy",
+    "forest floor",
+    "leather"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 19,
+   "worte": [
+    "plum",
+    "blackberry",
+    "black cherry",
+    "dark fruit",
+    "black fruit"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 7,
+   "worte": [
+    "cinnamon",
+    "mint",
+    "chili pepper",
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 4,
+   "worte": [
+    "toast",
+    "spice cake",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 4,
+   "worte": [
+    "hay",
+    "rhubarb"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 2,
+   "worte": [
+    "cheese",
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 2,
+   "worte": [
+    "lavender",
+    "violet"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 2,
+   "worte": [
+    "grapefruit",
+    "orange zest"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 1,
+   "worte": [
+    "yellow apple"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 1947,
+ "weingut_weine": 6,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

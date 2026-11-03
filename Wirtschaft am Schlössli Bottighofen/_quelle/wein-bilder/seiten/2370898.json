@@ -1,0 +1,97 @@
+{
+ "id": 2370898,
+ "name": "Platine Extra Brut Champagne Premier Cru",
+ "weingut": "Nicolas Maillart",
+ "region": "Champagne Premier Cru",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.5321198,
+  "fizziness": 4.5408726,
+  "intensity": 4.239177,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 22,
+  "calculated_structure_count": 2
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 7,
+   "worte": [
+    "minerals",
+    "honey"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 6,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "lime"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 4,
+   "worte": [
+    "apple",
+    "green apple"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 3,
+   "worte": [
+    "almond",
+    "brioche",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 2,
+   "worte": [
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "plum"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "cherry"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "orange blossom"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

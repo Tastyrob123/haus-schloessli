@@ -1,0 +1,45 @@
+{
+ "id": 11872263,
+ "name": "Malterdinger Spätburgunder Rosé",
+ "weingut": "Bernhard Huber",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 12.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Spätburgunder"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Geflügel",
+  "Vorspeisen und Snacks",
+  "Milde Käsesorten und Weichkäse"
+ ],
+ "struktur": {
+  "acidity": 4.173429,
+  "fizziness": null,
+  "intensity": 2.4424765,
+  "sweetness": 1.5147618,
+  "tannin": null,
+  "user_structure_count": 7,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 623,
+  "name": "German Pinot Noir Rosé",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 324,
+ "weingut_weine": 67,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

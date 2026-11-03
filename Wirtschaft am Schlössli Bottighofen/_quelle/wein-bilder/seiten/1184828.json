@@ -1,0 +1,143 @@
+{
+ "id": 1184828,
+ "name": "Passion Pinot Noir",
+ "weingut": "Donatsch",
+ "region": "Graubünden",
+ "region_id": 1455,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.0126567,
+  "fizziness": null,
+  "intensity": 1.8483919,
+  "sweetness": 1.9330295,
+  "tannin": 2.234198,
+  "user_structure_count": 145,
+  "calculated_structure_count": 37
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 28,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 25,
+   "worte": [
+    "oak",
+    "vanilla",
+    "cedar",
+    "mocha",
+    "chocolate"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 19,
+   "worte": [
+    "earthy",
+    "smoke",
+    "leather",
+    "minerals",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 11,
+   "worte": [
+    "pepper",
+    "dried herbs",
+    "licorice",
+    "oregano",
+    "thyme"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 9,
+   "worte": [
+    "blackberry",
+    "plum",
+    "cassis",
+    "dark fruit"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 2,
+   "worte": [
+    "biscuit",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 2,
+   "worte": [
+    "dried flowers"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "toasted bread"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 1,
+   "worte": [
+    "stone fruit"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "orange"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.1,
+ "bewertungen": 1841,
+ "weingut_weine": 38,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

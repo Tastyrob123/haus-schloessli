@@ -1,0 +1,45 @@
+{
+ "id": 10421107,
+ "name": "Nonnenhorner Seehalde Chardonnay Trocken",
+ "weingut": "Jonas Kurek",
+ "region": "Württemberg",
+ "region_id": 939,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.25,
+  "fizziness": null,
+  "intensity": 3,
+  "sweetness": 2,
+  "tannin": null,
+  "user_structure_count": 1,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 58,
+  "name": "Chardonnay Deutschland",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 29,
+ "weingut_weine": 18,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,118 @@
+{
+ "id": 7781748,
+ "name": "Cauro",
+ "weingut": "Statti",
+ "region": "Kalabrien",
+ "region_id": 849,
+ "alkohol": 13.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Magliocco Canino",
+  "Cabernet Sauvignon",
+  "Gaglioppo"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Pasta"
+ ],
+ "struktur": {
+  "acidity": 2.9613883,
+  "fizziness": null,
+  "intensity": 3.9804237,
+  "sweetness": 2.0443647,
+  "tannin": 3.1487057,
+  "user_structure_count": 53,
+  "calculated_structure_count": 9
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 24,
+   "worte": [
+    "tobacco",
+    "vanilla",
+    "chocolate",
+    "cigar box",
+    "dark chocolate"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 9,
+   "worte": [
+    "blackberry",
+    "black cherry",
+    "blackcurrant",
+    "blueberry",
+    "plum"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 7,
+   "worte": [
+    "smoke",
+    "earthy",
+    "leather",
+    "minerals",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 3,
+   "worte": [
+    "strawberry",
+    "raspberry"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "jasmine"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "spices",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 208,
+  "name": "Süditalien Rot",
+  "description": "Southern Italy is the toe, heel, and ankle of the Italian “boot” where we find the regions Campania, Basilicata, Puglia, Calabria, and Sicily as well as the distant relative Sardegna. There are scores of fascinating indigenous grape varieties here, different winemaking traditions and styles are defining each region, and the wines are often less expensive than their Northern counterparts.\n\nPuglia and Sicily are producing huge volumes of wine, and they are battling to be the second biggest wine producing region in Italy. The hot climate is reflected in the wines and they are famous for their inexpensive, full bodied, warm, and fruit forward red wines based on Primitivo and Nero d’Avola. Less famous yet very interesting are the Sicilian wines from Mount Etna. The higher altitude yields wines that are lighter, fresh and complex. The indigenous grape Nerello Mascalese offers some fine examples.\n\nIn Campania and the northern part of Basilicata, winemakers have been finding success with the grape Aglianico (pronounced “ahl-YAH-nee-koe”). The slightly colder climate is ideal for this grape and produces wines that are garnet-colored with high tannins and acidity. Harsh when young, but after some aging they become elegant and complex, and reveal lovely plummy flavors with a hint of chocolate.\n\nIn Sardegna they lean more towards the grapes Carignano and Cannonau with French/Spanish origin. The wines here are often powerful with a spicy touch.",
+  "blurb": null,
+  "interesting_facts": [
+   "The soil in Southern Italy is largely volcanic and also granitic.",
+   "Southern Italy receives very little rain and is extremely sunny. It is the hottest and driest region of Italy.",
+   "The best vineyards in the area are high in elevation on the north-facing hillsides, where they don't get as much sun.",
+   "The best known wine of Campania is called Lacryma Christi which means “the Tears of Christ.”",
+   "Mount Vulture is just north of the city of Potenza in Basilicata. It is an extinct volcano!"
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 300,
+ "weingut_weine": 30,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

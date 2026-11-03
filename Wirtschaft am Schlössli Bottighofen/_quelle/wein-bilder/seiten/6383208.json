@@ -1,0 +1,110 @@
+{
+ "id": 6383208,
+ "name": "Blanc de Noir Schiefer",
+ "weingut": "Obrecht",
+ "region": "Bundner Herrschaft",
+ "region_id": 1456,
+ "alkohol": 12.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 18,
+   "worte": [
+    "grapefruit",
+    "lime",
+    "citrus",
+    "lemon"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 13,
+   "worte": [
+    "minerals",
+    "stone",
+    "honey",
+    "chalk",
+    "flint"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 8,
+   "worte": [
+    "apple",
+    "pear",
+    "apricot",
+    "baked apple",
+    "green apple"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 4,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 2,
+   "worte": [
+    "butter",
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 1,
+   "worte": [
+    "marzipan"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": null,
+ "bewertung": 3.9,
+ "bewertungen": 576,
+ "weingut_weine": 25,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

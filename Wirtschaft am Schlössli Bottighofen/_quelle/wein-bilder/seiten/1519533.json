@@ -1,0 +1,148 @@
+{
+ "id": 1519533,
+ "name": "Chardonnay",
+ "weingut": "Thomas Studach",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 14,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.5933769,
+  "fizziness": null,
+  "intensity": 3.196971,
+  "sweetness": 1.6461781,
+  "tannin": null,
+  "user_structure_count": 37,
+  "calculated_structure_count": 16
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 28,
+   "worte": [
+    "butter",
+    "oak",
+    "vanilla",
+    "caramel",
+    "pastry"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 26,
+   "worte": [
+    "apple",
+    "apricot",
+    "peach",
+    "green apple",
+    "melon"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 14,
+   "worte": [
+    "cream",
+    "banana",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 11,
+   "worte": [
+    "lemon",
+    "citrus",
+    "grapefruit",
+    "lime",
+    "tangerine"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 9,
+   "worte": [
+    "minerals",
+    "smoke",
+    "saline",
+    "salt",
+    "stone"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 5,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "passion fruit"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 4,
+   "worte": [
+    "bergamot",
+    "mint",
+    "savory",
+    "white pepper"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 2,
+   "worte": [
+    "almond",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "chard"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 2,
+   "worte": [
+    "chamomile",
+    "honeysuckle"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "fig"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 64,
+  "name": "Chardonnay Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 708,
+ "weingut_weine": 6,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

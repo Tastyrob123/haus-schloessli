@@ -1,0 +1,45 @@
+{
+ "id": 10922217,
+ "name": "Langhe Nebbiolo",
+ "weingut": "Castrum Roche",
+ "region": "Langhe",
+ "region_id": 613,
+ "alkohol": 14,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Nebbiolo"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.4464777,
+  "fizziness": null,
+  "intensity": 3.1727529,
+  "sweetness": 2.4576619,
+  "tannin": 3.2698584,
+  "user_structure_count": 54,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 128,
+  "name": "Nebbiolo Italien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 5,
+  "body_description": "Sehr voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.1,
+ "bewertungen": 670,
+ "weingut_weine": 5,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,178 @@
+{
+ "id": 1102929,
+ "name": "Ried Loibenberg Loibner Riesling Smaragd",
+ "weingut": "Weingut Knoll",
+ "region": "Wachau",
+ "region_id": 747,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Riesling"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Geflügel",
+  "Scharfe Gerichte",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 4.6182513,
+  "fizziness": null,
+  "intensity": 3.4995275,
+  "sweetness": 1.7112162,
+  "tannin": null,
+  "user_structure_count": 177,
+  "calculated_structure_count": 132
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 185,
+   "worte": [
+    "peach",
+    "apricot",
+    "pear",
+    "apple",
+    "green apple"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 174,
+   "worte": [
+    "minerals",
+    "honey",
+    "stone",
+    "slate",
+    "petroleum"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 108,
+   "worte": [
+    "lemon",
+    "citrus",
+    "lime",
+    "grapefruit",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 49,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "guava",
+    "lychee",
+    "mango"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 24,
+   "worte": [
+    "honeysuckle",
+    "acacia",
+    "elderflower",
+    "chamomile",
+    "jasmine"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 22,
+   "worte": [
+    "butter",
+    "oak",
+    "caramel",
+    "vanilla",
+    "baking spice"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 16,
+   "worte": [
+    "oil",
+    "cream",
+    "banana",
+    "lemon curd"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 14,
+   "worte": [
+    "white pepper",
+    "dried herbs",
+    "savory",
+    "eucalyptus",
+    "fennel"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 14,
+   "worte": [
+    "straw",
+    "grass",
+    "gooseberry",
+    "hay"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 7,
+   "worte": [
+    "almond",
+    "nutty",
+    "brown sugar",
+    "hazelnut",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 3,
+   "worte": [
+    "dragon fruit",
+    "dried apricot",
+    "raisin"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "cranberry"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "jam"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 302,
+  "name": "Riesling Österreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 3201,
+ "weingut_weine": 48,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

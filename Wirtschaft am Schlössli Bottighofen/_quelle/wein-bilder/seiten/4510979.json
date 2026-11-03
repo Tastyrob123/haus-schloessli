@@ -1,0 +1,152 @@
+{
+ "id": 4510979,
+ "name": "Buschenberg Riesling",
+ "weingut": "Veyder-Malberg",
+ "region": "Wachau",
+ "region_id": 747,
+ "alkohol": 13.8,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Riesling"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Geflügel",
+  "Scharfe Gerichte",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 4.794663,
+  "fizziness": null,
+  "intensity": 3.4952412,
+  "sweetness": 1.7465273,
+  "tannin": null,
+  "user_structure_count": 20,
+  "calculated_structure_count": 17
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 23,
+   "worte": [
+    "apple",
+    "peach",
+    "apricot",
+    "green apple",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 20,
+   "worte": [
+    "minerals",
+    "flint",
+    "petroleum",
+    "saline",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 13,
+   "worte": [
+    "lemon",
+    "citrus",
+    "grapefruit",
+    "lemon zest",
+    "lime"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 8,
+   "worte": [
+    "almond",
+    "nutty",
+    "biscuit",
+    "marzipan",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 6,
+   "worte": [
+    "honeysuckle",
+    "dried flowers",
+    "elderflower"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 4,
+   "worte": [
+    "tropical",
+    "mango",
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 3,
+   "worte": [
+    "butter",
+    "butterscotch",
+    "nutmeg"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 2,
+   "worte": [
+    "cream",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 2,
+   "worte": [
+    "dried apricot"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "pepper"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "plum"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 302,
+  "name": "Riesling Österreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 303,
+ "weingut_weine": 17,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

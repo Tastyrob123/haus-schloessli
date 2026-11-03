@@ -1,0 +1,184 @@
+{
+ "id": 100679,
+ "name": "Nuits-Saint-Georges Premier Cru 'Clos de la Maréchale'",
+ "weingut": "Jacques-Frederic Mugnier",
+ "region": "Nuits-Saint-Georges Premier Cru",
+ "region_id": 3020,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.0698276,
+  "fizziness": null,
+  "intensity": 2.9574053,
+  "sweetness": 1.7368447,
+  "tannin": 2.6150937,
+  "user_structure_count": 716,
+  "calculated_structure_count": 466
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 483,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "strawberry",
+    "red fruit",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 469,
+   "worte": [
+    "earthy",
+    "leather",
+    "mushroom",
+    "minerals",
+    "forest floor"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 249,
+   "worte": [
+    "oak",
+    "vanilla",
+    "coffee",
+    "clove",
+    "chocolate"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 148,
+   "worte": [
+    "black cherry",
+    "blackberry",
+    "plum",
+    "black fruit",
+    "jam"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 104,
+   "worte": [
+    "pepper",
+    "licorice",
+    "cinnamon",
+    "savory",
+    "menthol"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 52,
+   "worte": [
+    "violet",
+    "perfume",
+    "dried rose",
+    "dried flowers",
+    "lilac"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 25,
+   "worte": [
+    "citrus",
+    "orange",
+    "lime",
+    "orange peel",
+    "lemon"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 24,
+   "worte": [
+    "apple",
+    "pear",
+    "peach",
+    "apricot",
+    "melon"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 23,
+   "worte": [
+    "asparagus",
+    "grass",
+    "rhubarb",
+    "straw",
+    "hay"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 19,
+   "worte": [
+    "cream",
+    "banana",
+    "cheese",
+    "oil",
+    "sweaty"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 15,
+   "worte": [
+    "almond",
+    "toast",
+    "brioche",
+    "brown sugar",
+    "hazelnut"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 13,
+   "worte": [
+    "prune",
+    "raisin",
+    "dried fruit"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 3,
+   "worte": [
+    "pineapple",
+    "kiwi"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 283,
+  "name": "Burgund Côte de Nuits Rot Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 8473,
+ "weingut_weine": 13,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

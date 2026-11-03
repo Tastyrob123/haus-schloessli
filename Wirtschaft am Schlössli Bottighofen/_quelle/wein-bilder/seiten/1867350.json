@@ -1,0 +1,157 @@
+{
+ "id": 1867350,
+ "name": "Chassagne-Montrachet 1er Cru 'Les Vergers'",
+ "weingut": "Domaine Fernand & Laurent Pillot",
+ "region": "Chassagne-Montrachet 1er Cru 'Les Vergers'",
+ "region_id": 3744,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.0586562,
+  "fizziness": null,
+  "intensity": 3.808765,
+  "sweetness": 1.79633,
+  "tannin": null,
+  "user_structure_count": 41,
+  "calculated_structure_count": 33
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 54,
+   "worte": [
+    "minerals",
+    "honey",
+    "flint",
+    "stone",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 45,
+   "worte": [
+    "oak",
+    "butter",
+    "vanilla",
+    "baking spice",
+    "coconut"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 33,
+   "worte": [
+    "citrus",
+    "lime",
+    "lemon",
+    "lemon zest",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 28,
+   "worte": [
+    "apple",
+    "green apple",
+    "peach",
+    "apricot",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 11,
+   "worte": [
+    "toast",
+    "almond",
+    "brioche",
+    "hazelnut",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 6,
+   "worte": [
+    "cream",
+    "lemon curd",
+    "banana",
+    "cheese"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 6,
+   "worte": [
+    "pineapple",
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 3,
+   "worte": [
+    "coriander",
+    "fennel",
+    "thyme"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 3,
+   "worte": [
+    "honeysuckle",
+    "elderflower"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "chard"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 2,
+   "worte": [
+    "black cherry",
+    "cassis"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 285,
+  "name": "Burgund Côte de Beaune Weiß Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 605,
+ "weingut_weine": 32,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

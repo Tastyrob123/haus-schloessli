@@ -1,0 +1,168 @@
+{
+ "id": 18929,
+ "name": "Special Cuvée Brut Aÿ Champagne",
+ "weingut": "Bollinger",
+ "region": "Champagne",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.230114,
+  "fizziness": 4.26011,
+  "intensity": 3.9000888,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 8903,
+  "calculated_structure_count": 1175
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 4511,
+   "worte": [
+    "apple",
+    "pear",
+    "green apple",
+    "peach",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 3726,
+   "worte": [
+    "brioche",
+    "toast",
+    "biscuit",
+    "almond",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 2560,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1518,
+   "worte": [
+    "yeast",
+    "cream",
+    "cheese",
+    "toasted bread",
+    "lemon curd"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 1029,
+   "worte": [
+    "minerals",
+    "honey",
+    "stone",
+    "smoke",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 975,
+   "worte": [
+    "butter",
+    "oak",
+    "vanilla",
+    "caramel",
+    "pastry"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 248,
+   "worte": [
+    "straw",
+    "gooseberry",
+    "grass",
+    "hay",
+    "chard"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 152,
+   "worte": [
+    "strawberry",
+    "red fruit",
+    "cherry",
+    "raspberry",
+    "red currant"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 134,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "mango",
+    "passion fruit",
+    "kiwi"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 76,
+   "worte": [
+    "elderflower",
+    "honeysuckle",
+    "acacia",
+    "lily",
+    "perfume"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 68,
+   "worte": [
+    "cinnamon",
+    "savory",
+    "white pepper",
+    "pepper",
+    "gingerbread"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 43,
+   "worte": [
+    "raisin",
+    "dried apricot",
+    "dried fruit",
+    "fig",
+    "yellow raisin"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 37,
+   "worte": [
+    "plum",
+    "jam",
+    "blackberry",
+    "cassis",
+    "blueberry"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

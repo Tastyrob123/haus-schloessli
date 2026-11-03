@@ -1,0 +1,173 @@
+{
+ "id": 1496022,
+ "name": "Dellchen Riesling GG",
+ "weingut": "Dönnhoff",
+ "region": "Nahe",
+ "region_id": 578,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Riesling"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Geflügel",
+  "Scharfe Gerichte",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 4.5450892,
+  "fizziness": null,
+  "intensity": 3.2247088,
+  "sweetness": 1.6880814,
+  "tannin": null,
+  "user_structure_count": 276,
+  "calculated_structure_count": 111
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 160,
+   "worte": [
+    "minerals",
+    "stone",
+    "honey",
+    "petroleum",
+    "slate"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 136,
+   "worte": [
+    "apricot",
+    "peach",
+    "apple",
+    "green apple",
+    "stone fruit"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 111,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 48,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "mango",
+    "kiwi",
+    "passion fruit"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 17,
+   "worte": [
+    "elderflower",
+    "honeysuckle",
+    "jasmine"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 14,
+   "worte": [
+    "straw",
+    "gooseberry",
+    "grass",
+    "asparagus"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 13,
+   "worte": [
+    "cream",
+    "lemon curd",
+    "banana",
+    "oil",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 12,
+   "worte": [
+    "bergamot",
+    "mint",
+    "white pepper",
+    "licorice",
+    "sage"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 10,
+   "worte": [
+    "vanilla",
+    "butter",
+    "nutmeg",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 9,
+   "worte": [
+    "almond",
+    "nutty",
+    "biscuit",
+    "brioche",
+    "burnt sugar"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 5,
+   "worte": [
+    "dried apricot",
+    "dried fruit"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 3,
+   "worte": [
+    "white cherry",
+    "strawberry"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 186,
+  "name": "Riesling Deutschland",
+  "description": "Riesling is without question Germany's favorite grape. Widely planted, though once derided, Riesling is the superstar of the white wine world at the moment.\n\nThere is a lot of scope for versatility with this sweet, viscous wine, though you can expect to get hints of tropical fruit, nectarine, melon and pineapple from a solid Riesling.\n\nThe grape originated in the Rhine region of Germany, and the best of them are said to grow along the banks of the Mosel River on the beautiful steep, south facing hills.\n\nThere are six categories of Riesling which indicate the ripeness of the grapes. Kabinett is considered “off-dry” and is a typically ripe grape. Spätlese is riper and therefor sweeter, and Auslese is even riper still. Beyond on that you have Beerenauslese, Trockenbeerenauslese and Eiswein (or ice wine), all getting sweeter, more viscous and more expensive.\n\nIt's a favorite in the food and beverage industry because of its willingness to play with a wide variety of foods, particular spicy dishes. The current Asian fusion boom is thought to have had a tremendous effect on Riesling's popularity.",
+  "blurb": null,
+  "interesting_facts": [
+   "Riesling is grown all over the world and thrives in cool to warm climates.",
+   "Riesling is one of the few white wines that develops and improves with age.",
+   "There are an unusually high number of German Riesling producers that carry the prefix “Dr.”"
+  ],
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 2213,
+ "weingut_weine": 80,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

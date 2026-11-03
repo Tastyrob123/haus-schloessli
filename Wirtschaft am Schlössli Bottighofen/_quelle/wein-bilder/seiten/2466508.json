@@ -1,0 +1,140 @@
+{
+ "id": 2466508,
+ "name": "Unique Pinot Noir",
+ "weingut": "Donatsch",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 14,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.003286,
+  "fizziness": null,
+  "intensity": 2.061166,
+  "sweetness": 2.080575,
+  "tannin": 2.2899504,
+  "user_structure_count": 166,
+  "calculated_structure_count": 66
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 56,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "red fruit",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 51,
+   "worte": [
+    "oak",
+    "vanilla",
+    "cedar",
+    "tobacco",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 35,
+   "worte": [
+    "smoke",
+    "leather",
+    "minerals",
+    "iron",
+    "balsamic"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 33,
+   "worte": [
+    "cassis",
+    "black cherry",
+    "blackberry",
+    "black fruit",
+    "blueberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 17,
+   "worte": [
+    "licorice",
+    "juniper",
+    "black licorice",
+    "cinnamon",
+    "eucalyptus"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 8,
+   "worte": [
+    "dried flowers",
+    "perfume",
+    "geranium"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 5,
+   "worte": [
+    "marzipan",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "prune",
+    "fig"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "grass"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "cream"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 1708,
+ "weingut_weine": 38,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

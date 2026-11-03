@@ -1,0 +1,168 @@
+{
+ "id": 1239209,
+ "name": "Les Maillons Blanc de Noirs Extra Brut Champagne",
+ "weingut": "Ulysse Collin",
+ "region": "Champagne",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.330862,
+  "fizziness": 4.161081,
+  "intensity": 4.0705533,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 888,
+  "calculated_structure_count": 96
+ },
+ "aromen": [
+  {
+   "gruppe": "non_oak",
+   "n": 233,
+   "worte": [
+    "brioche",
+    "toast",
+    "marzipan",
+    "almond",
+    "biscuit"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 220,
+   "worte": [
+    "apple",
+    "apricot",
+    "green apple",
+    "pear",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 214,
+   "worte": [
+    "minerals",
+    "honey",
+    "chalk",
+    "saline",
+    "stone"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 152,
+   "worte": [
+    "citrus",
+    "lemon",
+    "orange",
+    "lime",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 109,
+   "worte": [
+    "oak",
+    "butter",
+    "caramel",
+    "vanilla",
+    "pastry"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 86,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "red fruit",
+    "cherry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 79,
+   "worte": [
+    "cream",
+    "yeast",
+    "cheese",
+    "oil",
+    "lemon curd"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 31,
+   "worte": [
+    "tropical",
+    "pineapple",
+    "tamarind",
+    "lychee",
+    "mango"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 23,
+   "worte": [
+    "cinnamon",
+    "anise",
+    "savory",
+    "dried herbs",
+    "fennel"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 16,
+   "worte": [
+    "straw",
+    "gooseberry",
+    "rhubarb",
+    "asparagus",
+    "chard"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 16,
+   "worte": [
+    "chamomile",
+    "perfume",
+    "acacia",
+    "honeysuckle",
+    "dried rose"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 11,
+   "worte": [
+    "dried apricot",
+    "raisin",
+    "dried fruit",
+    "dried mango",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 11,
+   "worte": [
+    "jam",
+    "plum",
+    "blackcurrant",
+    "blueberry",
+    "cassis"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

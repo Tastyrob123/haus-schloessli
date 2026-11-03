@@ -1,0 +1,122 @@
+{
+ "id": 4198659,
+ "name": "Pinot Noir",
+ "weingut": "Weingut Eichholz - Irene Grünenfelder",
+ "region": "Graubünden",
+ "region_id": 1455,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.8304431,
+  "fizziness": null,
+  "intensity": 1.736293,
+  "sweetness": 1.6929748,
+  "tannin": 2.2602077,
+  "user_structure_count": 56,
+  "calculated_structure_count": 15
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 31,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "strawberry",
+    "cranberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 23,
+   "worte": [
+    "oak",
+    "vanilla",
+    "cola",
+    "cedar",
+    "chocolate"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 9,
+   "worte": [
+    "smoke",
+    "forest floor",
+    "leather",
+    "tar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 5,
+   "worte": [
+    "blackberry",
+    "blackcurrant",
+    "blueberry",
+    "jam",
+    "cassis"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 3,
+   "worte": [
+    "pepper",
+    "cinnamon"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 2,
+   "worte": [
+    "cheese",
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 1,
+   "worte": [
+    "hay"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 713,
+ "weingut_weine": 14,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

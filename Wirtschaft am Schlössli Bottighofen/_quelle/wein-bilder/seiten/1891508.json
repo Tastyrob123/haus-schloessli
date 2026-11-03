@@ -1,0 +1,104 @@
+{
+ "id": 1891508,
+ "name": "No. 2 Pinot Noir",
+ "weingut": "Schlossgut Bachtobel",
+ "region": "Thurgau",
+ "region_id": 1479,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.8697512,
+  "fizziness": null,
+  "intensity": 1.8750542,
+  "sweetness": 1.3575162,
+  "tannin": 2.3665726,
+  "user_structure_count": 50,
+  "calculated_structure_count": 13
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 19,
+   "worte": [
+    "raspberry",
+    "cranberry",
+    "red cherry",
+    "red currant",
+    "red fruit"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 11,
+   "worte": [
+    "oak",
+    "caramel",
+    "coffee",
+    "sandalwood",
+    "vanilla"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 5,
+   "worte": [
+    "forest floor",
+    "earthy",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "jam"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "spices",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "microbio",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 3.8,
+ "bewertungen": 500,
+ "weingut_weine": 14,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

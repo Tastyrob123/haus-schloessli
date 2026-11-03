@@ -1,0 +1,174 @@
+{
+ "id": 75818,
+ "name": "Giusto di Notri Toscana",
+ "weingut": "Tua Rita",
+ "region": "Toscana",
+ "region_id": 394,
+ "alkohol": 14.4,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Cabernet Franc",
+  "Merlot",
+  "Cabernet Sauvignon"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.1532524,
+  "fizziness": null,
+  "intensity": 3.5524852,
+  "sweetness": 1.7301447,
+  "tannin": 3.1488006,
+  "user_structure_count": 1111,
+  "calculated_structure_count": 461
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 532,
+   "worte": [
+    "oak",
+    "vanilla",
+    "chocolate",
+    "tobacco",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 467,
+   "worte": [
+    "blackberry",
+    "plum",
+    "black fruit",
+    "blackcurrant",
+    "cassis"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 324,
+   "worte": [
+    "leather",
+    "earthy",
+    "smoke",
+    "graphite",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 169,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 143,
+   "worte": [
+    "licorice",
+    "pepper",
+    "cinnamon",
+    "mint",
+    "menthol"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 26,
+   "worte": [
+    "almond",
+    "toast",
+    "hazelnut",
+    "dried fig",
+    "marzipan"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 26,
+   "worte": [
+    "prune",
+    "raisin",
+    "dried fruit",
+    "fig"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 23,
+   "worte": [
+    "violet",
+    "lavender",
+    "dried flowers",
+    "lily"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 19,
+   "worte": [
+    "cream",
+    "cheese",
+    "parmesan cheese"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 13,
+   "worte": [
+    "tomato",
+    "bell pepper",
+    "grass",
+    "green bell pepper",
+    "tomato leaf"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 11,
+   "worte": [
+    "orange",
+    "citrus",
+    "grapefruit",
+    "lemon zest",
+    "orange peel"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 3,
+   "worte": [
+    "apple",
+    "pear"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 292,
+  "name": "Toskana Rot Italien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 9769,
+ "weingut_weine": 35,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

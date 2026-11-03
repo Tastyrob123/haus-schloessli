@@ -1,0 +1,113 @@
+{
+ "id": 1883118,
+ "name": "MT Muller-Thurgau",
+ "weingut": "Schlossgut Bachtobel",
+ "region": "Thurgau",
+ "region_id": 1479,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Müller-Thurgau"
+ ],
+ "speisen": [
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Magerer Fisch"
+ ],
+ "struktur": {
+  "acidity": 2.5686667,
+  "fizziness": null,
+  "intensity": 1.487641,
+  "sweetness": 1.9653846,
+  "tannin": null,
+  "user_structure_count": 1,
+  "calculated_structure_count": 9
+ },
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 11,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 9,
+   "worte": [
+    "honey",
+    "minerals",
+    "slate",
+    "stone",
+    "wax"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 5,
+   "worte": [
+    "green apple",
+    "apple"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 2,
+   "worte": [
+    "mango",
+    "passion fruit"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "rose petal"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "cheese"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 1,
+   "worte": [
+    "vanilla"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 694,
+  "name": "Swiss Müller-Thurgau White",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 1,
+  "acidity_description": "Niedrig"
+ },
+ "bewertung": 3.7,
+ "bewertungen": 237,
+ "weingut_weine": 14,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,81 @@
+{
+ "id": 9182292,
+ "name": "Les Chypres",
+ "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+ "region": "Neuchâtel",
+ "region_id": 1401,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.8059263,
+  "fizziness": null,
+  "intensity": 2.6396294,
+  "sweetness": 2.1933334,
+  "tannin": 2.0051854,
+  "user_structure_count": 12,
+  "calculated_structure_count": 2
+ },
+ "aromen": [
+  {
+   "gruppe": "black_fruit",
+   "n": 3,
+   "worte": [
+    "blackberry",
+    "blackcurrant"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 3,
+   "worte": [
+    "raspberry",
+    "red cherry",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 2,
+   "worte": [
+    "oak",
+    "tobacco"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.5,
+ "bewertungen": 119,
+ "weingut_weine": 9,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,48 @@
+{
+ "id": 12657693,
+ "name": "Intuition Brut Rosé Champagne",
+ "weingut": "Legras & Haas",
+ "region": "Schaumwein",
+ "region_id": 409,
+ "alkohol": 12.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse"
+ ],
+ "struktur": {
+  "acidity": 3.5251048,
+  "fizziness": 3.529755,
+  "intensity": 3.1714687,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 17,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 50,
+  "name": "Champagne Frankreich",
+  "description": "While there are many sparkling wine regions around the globe, only Champagne from the Champagne appellation in France can be labeled as such. \n\nChampagne has long been the wine of choice to celebrate special occasions, and its reputation as a luxury beverage has been intact since the Romans established vineyards in Reims in the 5th century (that's a really long time ago). \n\nSparkling Champagne wasn't discovered until the 16th century, by accident, by the Benedictine Monks. Early vintages of Champagne were dubbed “the devil's wine” because the bottles tended to explode. Improvements to both bottle and cork developed over hundreds of years. \n\nChampagne is mainly made from a blend of Chardonnay, Pinot Noir, and Pinot Meunier grapes, and most of it is produced as a non-vintage wine, meaning that it's a blend of several vintages. Generally speaking, non-vintage Champagne is fantastic, and tends to be less expensive than vintage Champagne—this is because a vintage year is only declared when growing conditions are especially favorable. \n\nThe convivial nature of Champagne is due in part to how it's made. Following primary fermentation and bottling, a secondary alcoholic fermentation is induced in the bottle, which is achieved by the addition of yeast and rock sugar. The bubbles we love so much are a natural byproduct of this magical secondary fermentation, in the form of carbon dioxide.",
+  "blurb": "Premium sparkling wine",
+  "interesting_facts": [
+   "Champagne corks are under so much pressure that a flying cork can reach speeds of 50 miles (80km) per hour. ",
+   "Champagne goes great with comfort foods like mac & cheese, fried chicken and buttered popcorn. "
+  ],
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 72,
+ "weingut_weine": 23,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,170 @@
+{
+ "id": 20637,
+ "name": "Côte-Rôtie \"Les Bécasses\"",
+ "weingut": "M. Chapoutier",
+ "region": "Côte-Rôtie",
+ "region_id": 693,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Shiraz/Syrah"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.9117875,
+  "fizziness": null,
+  "intensity": 4.1205196,
+  "sweetness": 1.6249846,
+  "tannin": 4.0019298,
+  "user_structure_count": 63,
+  "calculated_structure_count": 230
+ },
+ "aromen": [
+  {
+   "gruppe": "black_fruit",
+   "n": 244,
+   "worte": [
+    "blackberry",
+    "plum",
+    "black fruit",
+    "blackcurrant",
+    "black cherry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 209,
+   "worte": [
+    "oak",
+    "tobacco",
+    "vanilla",
+    "cedar",
+    "chocolate"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 201,
+   "worte": [
+    "leather",
+    "smoke",
+    "earthy",
+    "minerals",
+    "cocoa"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 181,
+   "worte": [
+    "pepper",
+    "licorice",
+    "white pepper",
+    "rosemary",
+    "cinnamon"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 97,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "red fruit",
+    "strawberry",
+    "cranberry"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 38,
+   "worte": [
+    "violet",
+    "lavender",
+    "lilac",
+    "perfume",
+    "hibiscus"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 14,
+   "worte": [
+    "toast",
+    "chestnut",
+    "hazelnut",
+    "molasses",
+    "marzipan"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 12,
+   "worte": [
+    "cream",
+    "cheese",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 11,
+   "worte": [
+    "dried fruit",
+    "fig",
+    "prune",
+    "dried cranberry"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 8,
+   "worte": [
+    "asparagus",
+    "bell pepper",
+    "green almond",
+    "green bell pepper",
+    "hay"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 4,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "orange peel",
+    "orange zest"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "tropical"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 70,
+  "name": "Côte-Rotie Nördliche Rhône",
+  "description": null,
+  "blurb": "Syrah - Viognier from Northern Rhône",
+  "interesting_facts": null,
+  "body": 5,
+  "body_description": "Sehr voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 4774,
+ "weingut_weine": 233,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

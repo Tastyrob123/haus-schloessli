@@ -1,0 +1,172 @@
+{
+ "id": 2049180,
+ "name": "Valdegines",
+ "weingut": "Artadi",
+ "region": "Vino de España",
+ "region_id": 839,
+ "alkohol": 13.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Tempranillo"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel"
+ ],
+ "struktur": {
+  "acidity": 3.4617105,
+  "fizziness": null,
+  "intensity": 4.059242,
+  "sweetness": 1.7365978,
+  "tannin": 3.850792,
+  "user_structure_count": 288,
+  "calculated_structure_count": 168
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 189,
+   "worte": [
+    "oak",
+    "vanilla",
+    "chocolate",
+    "tobacco",
+    "coffee"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 151,
+   "worte": [
+    "blackberry",
+    "plum",
+    "dark fruit",
+    "black fruit",
+    "blueberry"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 97,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 94,
+   "worte": [
+    "leather",
+    "smoke",
+    "minerals",
+    "cocoa",
+    "earthy"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 50,
+   "worte": [
+    "licorice",
+    "pepper",
+    "cinnamon",
+    "anise",
+    "mint"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 18,
+   "worte": [
+    "violet",
+    "lavender",
+    "perfume",
+    "rose petal",
+    "dried rose"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 11,
+   "worte": [
+    "cream",
+    "cheese",
+    "banana"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 9,
+   "worte": [
+    "prune",
+    "raisin",
+    "dried cranberry",
+    "dried fruit",
+    "fig"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 8,
+   "worte": [
+    "toast",
+    "hazelnut",
+    "marzipan",
+    "peanut shell",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 2,
+   "worte": [
+    "apple",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 1,
+   "worte": [
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "bubblegum"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "lemon peel"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 304,
+  "name": "Tempranillo Spanien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 3691,
+ "weingut_weine": 41,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

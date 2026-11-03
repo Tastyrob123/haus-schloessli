@@ -1,0 +1,71 @@
+{
+ "id": 6262706,
+ "name": "Wildenstein Spätburgunder GG",
+ "weingut": "Bernhard Huber",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Spätburgunder"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.5142393,
+  "fizziness": null,
+  "intensity": 1.5619023,
+  "sweetness": 1.2927175,
+  "tannin": 2.2145653,
+  "user_structure_count": 4,
+  "calculated_structure_count": 5
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 5,
+   "worte": [
+    "minerals",
+    "clay pot",
+    "earthy",
+    "game"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 3,
+   "worte": [
+    "cherry",
+    "red fruit"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "cheese"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 160,
+  "name": "Spätburgunder Deutschland",
+  "description": null,
+  "blurb": "Also known as Pinot Noir",
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 154,
+ "weingut_weine": 67,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

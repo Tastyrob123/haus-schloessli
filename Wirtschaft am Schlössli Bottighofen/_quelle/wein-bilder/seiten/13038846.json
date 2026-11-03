@@ -1,0 +1,51 @@
+{
+ "id": 13038846,
+ "name": "Le Vris Bourgogne Aligoté",
+ "weingut": "Maison Meyer",
+ "region": "Bourgogne Aligoté",
+ "region_id": 2185,
+ "alkohol": 12,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Aligoté"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.184,
+  "fizziness": null,
+  "intensity": 3.2779999,
+  "sweetness": 1.9979999,
+  "tannin": null,
+  "user_structure_count": 4,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 24,
+  "name": "Burgund Weiß Frankreich",
+  "description": "White Burgundy, or Bourgogne Blanc, as it is often called, is made from Chardonnay grown in the Burgundy region of France. The other principal grape grown in Burgundy is Pinot Noir.\n\nBurgundy has had a long love affair with wine, starting around the 1st century AD with the Romans. Later, the Cistercian monks really put Burgundy on the map by crafting wines for the local aristocracy.\n\nWidely viewed as the most terroir-driven of French wines, Burgundy wines, both red and white are made from varieties that easily reflect the soil and climate they are grown in. Like a blank canvas, Chardonnay readily expresses subtle variations from vineyards that are a mere stone's throw from one another, this is part of what makes Burgundy so compelling and so expensive.\n\nAs with other regions in France, Burgundy can range in price from expensive to reasonably affordable. Burgundy's vineyard sites have been carefully divided over the centuries into Grand Cru, Premier Cru, village appellations and regional wines (aka Bourgogne blanc).\n\nSome things to keep in mind when selecting white Burgundy: It's more nuanced than New World Chardonnay, this restraint is reflected in the alcohol as well, which often falls between 12.5-13.5%.\n\nYoung white Burgundies have aromas of fresh apple and pear, citrus, mineral overtones and sometimes toasted hazelnut notes from barrel aging. Try white Burgundies with delicate seafood dishes, like poached salmon or scallops, roasted chicken or spring vegetables.",
+  "blurb": null,
+  "interesting_facts": [
+   "60.5% of Burgundy's overall production is white wine, most of which is Chardonnay.",
+   "With more AOCs (Appellations dOrigine Contrôlée) than any other French wine region, Burgundy is a rich tapestry of Grand Crus, Premier Crus and village wines.",
+   "The perceptible minerally vein in white and red Burgundies is due to limestone and marl found in Burgundian soil, as much of the region sits atop ancient sea floor.",
+   "Burgundy produces a small amount of sparkling wine known as Crémant de Bourgogne."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 28,
+ "weingut_weine": 12,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

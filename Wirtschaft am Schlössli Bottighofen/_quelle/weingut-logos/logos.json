@@ -1,0 +1,1091 @@
+{
+ "Champagne Roses de Jeanne – Cédric Bouchard": {
+  "status": "kein Logo gefunden",
+  "seite": "https://champagne-rosesdejeanne.fr/"
+ },
+ "Champagne Ulysse Collin": {
+  "status": "svg im Kopf",
+  "datei": "ulysse-collin.svg",
+  "seite": "https://stanislascollin.fr/"
+ },
+ "Champagne Romain Henin – La Bulle Libre": {
+  "status": "keine Website"
+ },
+ "Champagne Gosset": {
+  "status": "logo",
+  "datei": "gosset.svg",
+  "quelle": "https://www.champagne-gosset.com/site/assets/img/gosset_logo_full.svg",
+  "seite": "https://www.champagne-gosset.com/"
+ },
+ "Champagne Valentin Leflaive": {
+  "status": "logo",
+  "datei": "valentin-leflaive.webp",
+  "quelle": "https://valentin-leflaive.com/admin/wp-content/uploads/2022/03/logo-vl-age-gate.png",
+  "seite": "https://valentin-leflaive.com/",
+  "gross": [
+   600,
+   775
+  ]
+ },
+ "Champagne Ruinart": {
+  "status": "logo",
+  "datei": "ruinart.webp",
+  "quelle": "https://www.ruinart.com/dw/image/v2/BGMK_PRD/on/demandware.static/-/Library-Sites-Ruinart-shared/default/dwa9a539b8/ruinart-logo.png",
+  "seite": "https://www.ruinart.com/en-int/home",
+  "gross": [
+   222,
+   159
+  ]
+ },
+ "Champagne Dom Pérignon": {
+  "status": "logo",
+  "datei": "dom-perignon.svg",
+  "quelle": "https://www.domperignon.com/_next/static/immutable/media/logo-white.0zhf3gr5ycf9e.svg",
+  "seite": "https://www.domperignon.com/"
+ },
+ "Champagne Agrapart et fils": {
+  "status": "icon",
+  "datei": "agrapart.webp",
+  "quelle": "https://www.champagnepascalagrapart.com/apple-touch-icon-144-precomposed.png",
+  "seite": "https://www.champagnepascalagrapart.com/",
+  "gross": [
+   144,
+   144
+  ]
+ },
+ "Champagne Laurent-Perrier": {
+  "status": "logo",
+  "datei": "laurent-perrier.svg",
+  "quelle": "https://www.laurent-perrier.com/wp-content/themes/laurentperrier/dist/assets/img/laurent-perrier.svg",
+  "seite": "https://www.laurent-perrier.com/de/"
+ },
+ "Champagne Delamotte": {
+  "status": "logo",
+  "datei": "delamotte.svg",
+  "quelle": "https://www.champagne-delamotte.com/img/logo/logo-delamotte.svg",
+  "seite": "https://www.champagne-delamotte.com/en/"
+ },
+ "Champagne Taittinger": {
+  "status": "logo",
+  "datei": "taittinger.svg",
+  "quelle": "https://www.taittinger.com/_nuxt/logo-taittinger.BDXUrb-k.svg",
+  "seite": "https://www.taittinger.com/"
+ },
+ "Champagne Louis Roederer": {
+  "status": "icon",
+  "datei": "louis-roederer.webp",
+  "quelle": "https://www.louis-roederer.com/sites/all/themes/roederer/roederer-57x57.png",
+  "seite": "https://www.louis-roederer.com/fr/prehome",
+  "gross": [
+   57,
+   57
+  ]
+ },
+ "Champagne Bollinger": {
+  "status": "svg im Kopf",
+  "datei": "bollinger.svg",
+  "seite": "https://www.champagne-bollinger.com/"
+ },
+ "Champagne André Clouet": {
+  "status": "logo",
+  "datei": "andre-clouet.webp",
+  "quelle": "https://andreclouet.com/wp-content/uploads/2024/09/AC_Noir_2106@4x-8.png",
+  "seite": "https://andreclouet.com/",
+  "gross": [
+   600,
+   179
+  ]
+ },
+ "Champagne Legras & Haas": {
+  "status": "logo",
+  "datei": "legras-haas.svg",
+  "quelle": "https://www.legras-et-haas.com/wp-content/themes/legras-et-haas/assets/images/logo.svg",
+  "seite": "https://www.legras-et-haas.com/de/"
+ },
+ "Champagne Huré Frères": {
+  "status": "Fehler",
+  "fehler": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1082)>"
+ },
+ "Champagne Nicolas Maillard": {
+  "status": "logo",
+  "datei": "nicolas-maillard.webp",
+  "quelle": "https://champagne-maillart.fr/wp-content/themes/theme_modele/img/logo.png",
+  "seite": "https://champagne-maillart.fr/",
+  "gross": [
+   600,
+   411
+  ]
+ },
+ "Schlossgut Bachtobel": {
+  "status": "logo",
+  "datei": "schlossgut-bachtobel.webp",
+  "quelle": "https://www.bachtobel.ch/themes/bachtobel-theme/assets/images/logo-horizontal-mobile.png",
+  "seite": "https://www.bachtobel.ch/de",
+  "gross": [
+   194,
+   36
+  ]
+ },
+ "Forster Weinbau": {
+  "status": "icon",
+  "datei": "forster.webp",
+  "quelle": "https://static.wixstatic.com/media/eba3da_b11c32e2821d4594ba11f60b8119f8cd%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/eba3da_b11c32e2821d4594ba11f60b8119f8cd%7Emv2.png",
+  "seite": "https://www.forster-weinbau.com/",
+  "gross": [
+   180,
+   180
+  ]
+ },
+ "Weingut Familie Zahner": {
+  "status": "logo",
+  "datei": "familie-zahner.webp",
+  "quelle": "https://images.squarespace-cdn.com/content/v1/6644c1657b22462fc99ecaca/3ef03df4-8d3f-4666-bdb4-eea78cb63d07/Logo.png?format=1500w",
+  "seite": "https://www.zahner.biz/",
+  "gross": [
+   600,
+   255
+  ]
+ },
+ "Hansruedi Adank": {
+  "status": "logo",
+  "datei": "hansruedi-adank.webp",
+  "quelle": "https://www.adank-weine.ch/wp-content/uploads/2023/03/biosiusse_logo.png",
+  "seite": "https://www.adank-weine.ch/",
+  "gross": [
+   300,
+   261
+  ]
+ },
+ "Christian & Francisca Obrecht - Weingut zur Sonne": {
+  "status": "icon",
+  "datei": "christian-francisca-obrecht-sonne.webp",
+  "quelle": "https://obrecht.ch/wp-content/uploads/2023/03/Obrecht-Logo-Bildmarke-schwarz-300x300.png",
+  "seite": "https://obrecht.ch/",
+  "gross": [
+   300,
+   300
+  ]
+ },
+ "Martha & Daniel Gantenbein": {
+  "status": "logo",
+  "datei": "martha-daniel-gantenbein.webp",
+  "quelle": "https://gantenbeinwein.com/assets/img/logo.png",
+  "seite": "https://gantenbeinwein.com/de/",
+  "gross": [
+   360,
+   182
+  ]
+ },
+ "Weingut Roman Hermann": {
+  "status": "icon",
+  "datei": "roman-hermann.webp",
+  "quelle": "https://static.wixstatic.com/media/aa1f00_48f5cbfd811345c6a04ef20d05f1a8e7%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/aa1f00_48f5cbfd811345c6a04ef20d05f1a8e7%7Emv2.png",
+  "seite": "https://www.weingut-hermann.ch/",
+  "gross": [
+   180,
+   180
+  ]
+ },
+ "Martin Donatsch – Weingut zum Ochsen": {
+  "status": "icon",
+  "datei": "martin-donatsch-ochsen.webp",
+  "quelle": "https://static.wixstatic.com/media/d1c60e_bb1744be1cfe4754aefc8d3e254ad869%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/d1c60e_bb1744be1cfe4754aefc8d3e254ad869%7Emv2.png",
+  "seite": "https://www.donatsch.info/",
+  "gross": [
+   180,
+   180
+  ]
+ },
+ "Weingut Wegelin - Scadenagut": {
+  "status": "logo",
+  "datei": "wegelin-scadenagut.svg",
+  "quelle": "https://weingutwegelin.ch/_assets/c0e33b46e7bdfe37b98fa369f704e262/Images/Bio-Logo.svg",
+  "seite": "https://weingutwegelin.ch/"
+ },
+ "Thomas Studach": {
+  "status": "keine Website"
+ },
+ "Weinkellerei Giani Boner": {
+  "status": "logo",
+  "datei": "giani-boner.webp",
+  "quelle": "https://www.gianiboner.ch/assets/images/logo-simple.png",
+  "seite": "https://www.gianiboner.ch/",
+  "gross": [
+   218,
+   133
+  ]
+ },
+ "Weingut Seehaldenhof – Simon Hornstein": {
+  "status": "logo",
+  "datei": "seehaldenhof-simon-hornstein.svg",
+  "quelle": "https://seehaldenhof.de/cdn/shop/files/seehaldenhof-logo-lila_0e114314-6eec-476e-8377-b3c5779777ee.svg?v=1710088014",
+  "seite": "https://seehaldenhof.de/"
+ },
+ "Weingut Jonas Kurek": {
+  "status": "logo",
+  "datei": "jonas-kurek.webp",
+  "quelle": "https://www.weingut-kurek.de/wp-content/uploads/2020/07/Bild01-1.jpg",
+  "seite": "https://www.weingut-kurek.de/",
+  "gross": [
+   600,
+   360
+  ]
+ },
+ "Weingut Bernhard Huber": {
+  "status": "logo",
+  "datei": "bernhard-huber.webp",
+  "quelle": "https://weingut-huber.com/img/logo_klein_2.png",
+  "seite": "https://weingut-huber.com/",
+  "gross": [
+   122,
+   80
+  ]
+ },
+ "Weingut Vollmayer": {
+  "status": "logo",
+  "datei": "vollmayer.webp",
+  "quelle": "https://vollmayer-weingut.de/wp-content/uploads/2021/07/Vollmayer_RGB.png",
+  "seite": "https://vollmayer-weingut.de/",
+  "gross": [
+   600,
+   124
+  ]
+ },
+ "Johannes Aufricht": {
+  "status": "kein Logo gefunden",
+  "seite": "https://www.aufricht.de/"
+ },
+ "Weingut Achim Molitor": {
+  "status": "logo",
+  "datei": "achim-molitor.webp",
+  "quelle": "https://cdn.website-start.de/s/img/logo.gif",
+  "seite": "https://www.weingut-molitor.eu/",
+  "gross": [
+   45,
+   45
+  ]
+ },
+ "Weingut von Winning": {
+  "status": "logo",
+  "datei": "winning.webp",
+  "quelle": "https://www.von-winning.de/_ipx/f_webp&q_80/images/Logo-Von_Winning.png",
+  "seite": "https://www.von-winning.de/",
+  "gross": [
+   500,
+   433
+  ]
+ },
+ "Weingut Dr. Bürklin-Wolf": {
+  "status": "logo",
+  "datei": "buerklin-wolf.webp",
+  "quelle": "https://www.buerklin-wolf.de/_assets/334d1269750c1766608983f2f33bc1bd/Images/Misc/logo_buerklin_wolf.png",
+  "seite": "https://www.buerklin-wolf.de/",
+  "gross": [
+   600,
+   364
+  ]
+ },
+ "Weingut A. Christmann": {
+  "status": "logo",
+  "datei": "christmann.webp",
+  "quelle": "https://weingut-christmann.de/wp-content/uploads/2023/07/Weingut_Christmann_Logo_2021.png",
+  "seite": "https://weingut-christmann.de/",
+  "gross": [
+   600,
+   164
+  ]
+ },
+ "Hermann Dönnhoff": {
+  "status": "icon",
+  "datei": "hermann-doennhoff.webp",
+  "quelle": "https://www.doennhoff.com/apple-touch-icon.png",
+  "seite": "https://www.doennhoff.com/",
+  "gross": [
+   180,
+   180
+  ]
+ },
+ "Weingut Schäfer-Fröhlich": {
+  "status": "kein Logo gefunden",
+  "seite": "https://www.weingut-schaefer-froehlich.de/"
+ },
+ "Weingut Robert Weil": {
+  "status": "logo",
+  "datei": "robert-weil.svg",
+  "quelle": "https://www.weingut-robert-weil.com/_assets/1cf73443c55b35d99bb64387d68a720a/Images/Misc/logo_weiss.svg",
+  "seite": "https://www.weingut-robert-weil.com/de/"
+ },
+ "Weingut Künstler": {
+  "status": "logo",
+  "datei": "kuenstler.svg",
+  "quelle": "https://www.weingut-kuenstler.de/fileadmin/gfx/logo-kuenstler.svg",
+  "seite": "https://www.weingut-kuenstler.de/"
+ },
+ "Weingut von Oetinger": {
+  "status": "logo",
+  "datei": "oetinger.webp",
+  "quelle": "https://www.von-oetinger.de/images/Loewe-rrr-gelb-300x300.png",
+  "seite": "https://www.von-oetinger.de/",
+  "gross": [
+   300,
+   300
+  ]
+ },
+ "Weingut Wittmann": {
+  "status": "logo",
+  "datei": "wittmann.webp",
+  "quelle": "https://www.weingutwittmann.de/media/images/imageLink/_1920x500_crop_center-center_72_none/Wittmann_Juli_2021_01_DJI_0804.jpg",
+  "seite": "https://www.weingutwittmann.de/",
+  "gross": [
+   600,
+   156
+  ]
+ },
+ "Weingut Battenfeld-Spanier": {
+  "status": "logo",
+  "datei": "battenfeld-spanier.webp",
+  "quelle": "https://www.kuehlingandbattenfeld.com/_assets/334d1269750c1766608983f2f33bc1bd/Images/Footer/vdp_logo-weingut.png?1790164479",
+  "seite": "https://www.kuehlingandbattenfeld.com/de/miteinander",
+  "gross": [
+   600,
+   294
+  ]
+ },
+ "Weingut Kühling-Gillot": {
+  "status": "logo",
+  "datei": "kuehling-gillot.webp",
+  "quelle": "https://www.kuehlingandbattenfeld.com/_assets/334d1269750c1766608983f2f33bc1bd/Images/Footer/vdp_logo-weingut.png?1790164479",
+  "seite": "https://www.kuehlingandbattenfeld.com/de/miteinander",
+  "gross": [
+   600,
+   294
+  ]
+ },
+ "Weingut Katharina Wechsler": {
+  "status": "svg im Kopf",
+  "datei": "katharina-wechsler.svg",
+  "seite": "https://www.weingut-wechsler.de/"
+ },
+ "Weingut Klaus Peter Keller": {
+  "status": "logo",
+  "datei": "klaus-peter-keller.webp",
+  "quelle": "https://static.wixstatic.com/media/883e82_9a55b0ea7fd74b97b8004ee9d7809edf~mv2.png/v1/crop/x_25,y_0,w_1886,h_1138/fill/w_446,h_270,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KELLER-Wappen-Logo-Rebe.png",
+  "seite": "https://www.keller-wein.de/",
+  "gross": [
+   446,
+   270
+  ]
+ },
+ "Weingut Emmerich Knoll": {
+  "status": "logo",
+  "datei": "emmerich-knoll.webp",
+  "quelle": "https://www.knoll.at/knoll_logo_web.jpg",
+  "seite": "https://www.knoll.at/",
+  "gross": [
+   500,
+   500
+  ]
+ },
+ "Weingut Veyder-Malberg": {
+  "status": "icon",
+  "datei": "veyder-malberg.webp",
+  "quelle": "https://veyder.malberg.at/wp-content/uploads/2025/03/cropped-Bildschirmfoto-2025-03-14-um-19.31.16-180x180.png",
+  "seite": "https://veyder.malberg.at/",
+  "gross": [
+   180,
+   180
+  ]
+ },
+ "Weingut Franz Hirtzberger": {
+  "status": "Fehler",
+  "fehler": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'hirtzberger.at'. (_ssl.c:1082)>"
+ },
+ "Weingut Josef & Philipp Bründlmayer": {
+  "status": "Fehler",
+  "fehler": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+ },
+ "Weingut Tement": {
+  "status": "logo",
+  "datei": "tement.webp",
+  "quelle": "https://www.tement.at/wp-content/uploads/2021/07/tement-logo-fusszeile.png",
+  "seite": "https://www.tement.at/",
+  "gross": [
+   600,
+   224
+  ]
+ },
+ "Weingut Walter Polz": {
+  "status": "logo",
+  "datei": "walter-polz.webp",
+  "quelle": "https://assets.nicepagecdn.com/ee293c42/6496886/images/Polz_Walter_Logo.png",
+  "seite": "https://www.walterpolz.at/",
+  "gross": [
+   600,
+   404
+  ]
+ },
+ "Weingut Tiefenbrunner": {
+  "status": "logo",
+  "datei": "tiefenbrunner.svg",
+  "quelle": "https://www.tiefenbrunner.com/themes/custom/logo/logo.svg",
+  "seite": "https://www.tiefenbrunner.com/"
+ },
+ "Tenuta Alois Lageder": {
+  "status": "logo",
+  "datei": "alois-lageder.webp",
+  "quelle": "https://aloislageder.eu/assets/images/logo_lageder.png",
+  "seite": "https://aloislageder.eu/",
+  "gross": [
+   566,
+   200
+  ]
+ },
+ "Angelo Gaja": {
+  "status": "Fehler",
+  "fehler": "cannot identify image file <_io.BytesIO object at 0x10e15ff10>"
+ },
+ "Bruno Giacosa": {
+  "status": "logo",
+  "datei": "bruno-giacosa.webp",
+  "quelle": "https://brunogiacosa.it/img/logo.png",
+  "seite": "https://brunogiacosa.it/it/index.php",
+  "gross": [
+   360,
+   27
+  ]
+ },
+ "Tenuta dell’Ornellaia": {
+  "status": "logo",
+  "datei": "dellornellaia.svg",
+  "quelle": "https://www.ornellaia.com/static/media/logo.svg",
+  "seite": "https://www.ornellaia.com/de/"
+ },
+ "Castello della Sala": {
+  "status": "keine Website"
+ },
+ "Bodegas Muga": {
+  "status": "logo",
+  "datei": "muga.webp",
+  "quelle": "https://www.bodegasmuga.com/wp-content/uploads/muga-logo-blanco.png",
+  "seite": "https://www.bodegasmuga.com/",
+  "gross": [
+   600,
+   175
+  ]
+ },
+ "Miguel Torres": {
+  "status": "logo",
+  "datei": "miguel-torres.webp",
+  "quelle": "https://www.torres.es/themes/custom/torres_theme/logo.png",
+  "seite": "https://www.torres.es/",
+  "gross": [
+   444,
+   229
+  ]
+ },
+ "Domaine Christian Moreau": {
+  "status": "logo",
+  "datei": "christian-moreau.webp",
+  "quelle": "https://www.domainechristianmoreau.com/wp-content/uploads/2018/03/logosite.gif",
+  "seite": "https://www.domainechristianmoreau.com/",
+  "gross": [
+   600,
+   159
+  ]
+ },
+ "Domaine Francois Raveneau": {
+  "status": "logo",
+  "datei": "francois-raveneau.webp",
+  "quelle": "https://www.raveneau.fr/wp-content/uploads/2022/05/LOGO-RAVENEAU-BLANC.png",
+  "seite": "https://www.raveneau.fr/",
+  "gross": [
+   401,
+   59
+  ]
+ },
+ "Maison Meyer": {
+  "status": "kein Logo gefunden",
+  "seite": "https://www.maisonmeyer.com/"
+ },
+ "Domaine Lorenzon": {
+  "status": "icon",
+  "datei": "lorenzon.webp",
+  "quelle": "https://www.domainelorenzon.com/wp-content/uploads/2019/09/cropped-favicon-lorenzon2-180x180.png",
+  "seite": "https://www.domainelorenzon.com/",
+  "gross": [
+   180,
+   180
+  ]
+ },
+ "Olivier Leflaive": {
+  "status": "logo",
+  "datei": "olivier-leflaive.webp",
+  "quelle": "https://olivier-leflaive.com/admin/wp-content/uploads/2024/02/logo-ol-color-1.png",
+  "seite": "https://olivier-leflaive.com/",
+  "gross": [
+   600,
+   359
+  ]
+ },
+ "Maison Glandien": {
+  "status": "keine Website"
+ },
+ "Hubert Lamy": {
+  "status": "logo",
+  "datei": "hubert-lamy.webp",
+  "quelle": "https://www.domainehubertlamy.com/style/logo-domaine-lamy.png",
+  "seite": "https://www.domainehubertlamy.com/",
+  "gross": [
+   426,
+   161
+  ]
+ },
+ "Laurent Ponsot": {
+  "status": "logo",
+  "datei": "laurent-ponsot.svg",
+  "quelle": "https://laurentponsot.com/wp-content/uploads/2025/04/Laurent-ponsot-sur-une-ligne.svg",
+  "seite": "https://laurentponsot.com/"
+ },
+ "Vignoble des Cabottes": {
+  "status": "logo",
+  "datei": "cabottes.svg",
+  "quelle": "https://cabottes.com/wp-content/uploads/2026/02/Group-46.svg",
+  "seite": "https://cabottes.com/"
+ },
+ "Paul Pillot": {
+  "status": "keine Website"
+ },
+ "Jacques-Frédéric Mugnier": {
+  "status": "icon",
+  "datei": "jacques-frederic-mugnier.webp",
+  "quelle": "https://mugnier.fr/wp-content/uploads/2024/06/cropped-favicon-1-300x300.png",
+  "seite": "https://mugnier.fr/",
+  "gross": [
+   300,
+   300
+  ]
+ },
+ "Domaine Joseph Collin": {
+  "status": "keine Website"
+ },
+ "Bastian Wolber": {
+  "status": "keine Website"
+ },
+ "Domaine des Lambrays": {
+  "status": "logo",
+  "datei": "lambrays.webp",
+  "quelle": "https://www.lambrays.com/wp-content/uploads/2021/03/LOGO_2021.png",
+  "seite": "https://www.lambrays.com/",
+  "gross": [
+   300,
+   104
+  ]
+ },
+ "Domaine Arnaud Baillot": {
+  "status": "keine Website"
+ },
+ "Domaine Rémi Jobard": {
+  "status": "keine Website"
+ },
+ "Benjamin Leroux": {
+  "status": "logo",
+  "datei": "benjamin-leroux.webp",
+  "quelle": "https://images.squarespace-cdn.com/content/v1/65ed75e119244c26a0d1b01e/19988424-1b5c-43aa-b8b6-77af65e07bd9/Untitled+design+%285%29.png?format=1500w",
+  "seite": "https://www.benjamin-leroux.com/",
+  "gross": [
+   500,
+   500
+  ]
+ },
+ "Fernand & Laurent Pillot": {
+  "status": "Fehler",
+  "fehler": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.vinpillot.com'. (_ssl.c:1082)>"
+ },
+ "Cassiopée": {
+  "status": "keine Website"
+ },
+ "Florence Cholet": {
+  "status": "keine Website"
+ },
+ "Domaine Jobard-Morey": {
+  "status": "logo",
+  "datei": "jobard-morey.webp",
+  "quelle": "https://www.jobard-morey.com/logo.png",
+  "seite": "https://www.jobard-morey.com/",
+  "gross": [
+   202,
+   240
+  ]
+ },
+ "Domaine de Villaine": {
+  "status": "logo",
+  "datei": "villaine.svg",
+  "quelle": "https://boutique.de-villaine.com/vinium-theme/images/logo.de1b2b57.svg",
+  "seite": "https://boutique.de-villaine.com/fr_FR/"
+ },
+ "Verget (J.M. Guffens-Heynen)": {
+  "status": "logo",
+  "datei": "verget-guffens-heynen.webp",
+  "quelle": "https://www.verget-sa.fr/img/verget-logo-1578592320.jpg",
+  "seite": "https://www.verget-sa.fr/fr/",
+  "gross": [
+   350,
+   100
+  ]
+ },
+ "Jean-Phillipe Agisson": {
+  "status": "keine Website"
+ },
+ "Domaine Vacheron": {
+  "status": "keine Website"
+ },
+ "Domaine Chatelain": {
+  "status": "logo",
+  "datei": "chatelain.webp",
+  "quelle": "https://www.domaine-chatelain.com/images/menu/logo.png",
+  "seite": "https://d.domaine-chatelain.com/",
+  "gross": [
+   257,
+   85
+  ]
+ },
+ "Christian & Francisca Obrecht – Weingut zur Sonne": {
+  "status": "icon",
+  "datei": "christian-francisca-obrecht-sonne.webp",
+  "quelle": "https://obrecht.ch/wp-content/uploads/2023/03/Obrecht-Logo-Bildmarke-schwarz-300x300.png",
+  "seite": "https://obrecht.ch/",
+  "gross": [
+   300,
+   300
+  ]
+ },
+ "Domaine Ruedin by Jacques Tatasciore": {
+  "status": "kein Logo gefunden",
+  "seite": "https://www.ruedinvins.ch/"
+ },
+ "Levant 32": {
+  "status": "keine Website"
+ },
+ "Miraval": {
+  "status": "keine Website"
+ },
+ "Weingut Benjamin Lanz": {
+  "status": "logo",
+  "datei": "benjamin-lanz.webp",
+  "quelle": "https://www.lanzwein.de/wp-content/uploads/2020/05/LANZ_Logo_anthrazit250px.png",
+  "seite": "https://www.lanzwein.de/",
+  "gross": [
+   250,
+   88
+  ]
+ },
+ "Weingut Schlossgut Bachtobel": {
+  "status": "logo",
+  "datei": "schlossgut-bachtobel.webp",
+  "quelle": "https://www.bachtobel.ch/themes/bachtobel-theme/assets/images/logo-horizontal-mobile.png",
+  "seite": "https://www.bachtobel.ch/de",
+  "gross": [
+   194,
+   36
+  ]
+ },
+ "Weingut zum Ochsen - Martin Donatsch": {
+  "status": "icon",
+  "datei": "ochsen-martin-donatsch.webp",
+  "quelle": "https://static.wixstatic.com/media/d1c60e_bb1744be1cfe4754aefc8d3e254ad869%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/d1c60e_bb1744be1cfe4754aefc8d3e254ad869%7Emv2.png",
+  "seite": "https://www.donatsch.info/",
+  "gross": [
+   180,
+   180
+  ]
+ },
+ "Joel Nänni": {
+  "status": "logo",
+  "datei": "joel-naenni.webp",
+  "quelle": "https://joeljoel.de/wp-content/uploads/2026/01/Logo_JOELJOEL_RGB_rot_ohne_Schatten_klein.png",
+  "seite": "https://joeljoel.de/",
+  "gross": [
+   300,
+   103
+  ]
+ },
+ "Weingut Hansruedi Adank": {
+  "status": "logo",
+  "datei": "hansruedi-adank.webp",
+  "quelle": "https://www.adank-weine.ch/wp-content/uploads/2023/03/biosiusse_logo.png",
+  "seite": "https://www.adank-weine.ch/",
+  "gross": [
+   300,
+   261
+  ]
+ },
+ "Weingut Eichholz – Irene Grünenfelder": {
+  "status": "logo",
+  "datei": "eichholz-irene-gruenenfelder.webp",
+  "quelle": "https://static.wixstatic.com/media/4bf2a0_189571b3d662401eb5b5675a75fa5efc~mv2.png/v1/crop/x_111,y_0,w_1889,h_1354/fill/w_119,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DEF_weingut_eichholz_logo_weiss.png",
+  "seite": "https://www.weinguteichholz.ch/",
+  "gross": [
+   119,
+   85
+  ]
+ },
+ "Weingut Thomas Studach": {
+  "status": "logo",
+  "datei": "thomas-studach.webp",
+  "quelle": "https://www.studach.li/templates/header.png",
+  "seite": "https://www.studach.li/",
+  "gross": [
+   600,
+   119
+  ]
+ },
+ "Jacques Tatasciore": {
+  "status": "keine Website"
+ },
+ "Weingut Schmidt am Bodensee": {
+  "status": "logo",
+  "datei": "schmidt-bodensee.svg",
+  "quelle": "https://www.schmidt-am-bodensee.de/_assets/334d1269750c1766608983f2f33bc1bd/Images/SocialMedia/Brand/facebook.svg",
+  "seite": "https://www.schmidt-am-bodensee.de/weingut/das-gut"
+ },
+ "Weingut Rudolf Fürst": {
+  "status": "kein Logo gefunden",
+  "seite": "https://weingut-rudolf-fuerst.de/"
+ },
+ "Klaus Peter Keller": {
+  "status": "logo",
+  "datei": "klaus-peter-keller.webp",
+  "quelle": "https://static.wixstatic.com/media/883e82_9a55b0ea7fd74b97b8004ee9d7809edf~mv2.png/v1/crop/x_25,y_0,w_1886,h_1138/fill/w_446,h_270,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KELLER-Wappen-Logo-Rebe.png",
+  "seite": "https://www.keller-wein.de/",
+  "gross": [
+   446,
+   270
+  ]
+ },
+ "Torre San Quirico": {
+  "status": "Fehler",
+  "fehler": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+ },
+ "Cantine Statti Lamezia Terme": {
+  "status": "logo",
+  "datei": "statti-lamezia-terme.svg",
+  "quelle": "https://storage1390.cdn-immedia.net/wp-content/themes/statti.com/assets/img/share/logo-statti-primary.svg",
+  "seite": "https://www.statti.com/"
+ },
+ "Cantina Vietti": {
+  "status": "logo",
+  "datei": "vietti.svg",
+  "quelle": "https://vietti.com/img/logo.svg",
+  "seite": "https://vietti.com/it/"
+ },
+ "Castrum Roche": {
+  "status": "keine Website"
+ },
+ "San Barnaba": {
+  "status": "keine Website"
+ },
+ "Piero Busso": {
+  "status": "logo",
+  "datei": "piero-busso.svg",
+  "quelle": "https://www.pierobusso.com/wp-content/themes/pierobusso2020/dist/images/logo/logo-black.svg",
+  "seite": "https://www.pierobusso.com/"
+ },
+ "Tua Rita": {
+  "status": "logo",
+  "datei": "tua-rita.webp",
+  "quelle": "https://www.tuarita.it/wp-content/uploads/2023/05/LogoTuaRitaWhite.png",
+  "seite": "https://www.tuarita.it/",
+  "gross": [
+   600,
+   138
+  ]
+ },
+ "Tenuta Tignanello": {
+  "status": "keine Website"
+ },
+ "Tenuta Guado al Tasso": {
+  "status": "logo",
+  "datei": "guado-tasso.webp",
+  "quelle": "https://www.osteriadeltasso.com/wp-content/themes/tasso/img/logo.png",
+  "seite": "https://www.osteriadeltasso.com/en/",
+  "gross": [
+   500,
+   216
+  ]
+ },
+ "Monteverro": {
+  "status": "logo",
+  "datei": "monteverro.webp",
+  "quelle": "https://www.monteverro.com/app/uploads/2022/08/cropped-Tavola-disegno-1.png",
+  "seite": "https://www.monteverro.com/",
+  "gross": [
+   401,
+   250
+  ]
+ },
+ "Castello Tricerchi": {
+  "status": "logo",
+  "datei": "tricerchi.webp",
+  "quelle": "https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_405,h_83/https://castellotricerchi.com/wp-content/uploads/2019/10/Logo-ombra.png",
+  "seite": "https://castellotricerchi.com/",
+  "gross": [
+   405,
+   83
+  ]
+ },
+ "Tenuta dell’ Ornellaia": {
+  "status": "logo",
+  "datei": "dell-ornellaia.svg",
+  "quelle": "https://www.ornellaia.com/static/media/logo.svg",
+  "seite": "https://www.ornellaia.com/de/"
+ },
+ "Le Mortelle": {
+  "status": "keine Website"
+ },
+ "Tenuta San Guido": {
+  "status": "logo",
+  "datei": "san-guido.svg",
+  "quelle": "https://www.tenutasanguido.com/icons/Logo-TSG-negative.svg",
+  "seite": "https://www.tenutasanguido.com/en"
+ },
+ "Tenuta di Biserno": {
+  "status": "logo",
+  "datei": "biserno.webp",
+  "quelle": "https://www.biserno.it/assets/img/logo.png",
+  "seite": "https://www.biserno.it/de/home.html",
+  "gross": [
+   600,
+   417
+  ]
+ },
+ "Tenuta Luce – Marchesi Frescobaldi": {
+  "status": "logo",
+  "datei": "luce-marchesi-frescobaldi.svg",
+  "quelle": "https://www.tenutaluce.com/static/svg/logo.svg",
+  "seite": "https://www.tenutaluce.com/it/"
+ },
+ "Fontodi": {
+  "status": "logo",
+  "datei": "fontodi.webp",
+  "quelle": "https://fontodi.com/images/LogoFontodi.png",
+  "seite": "https://fontodi.com/",
+  "gross": [
+   600,
+   158
+  ]
+ },
+ "Castello dei Rampola": {
+  "status": "logo",
+  "datei": "dei-rampola.webp",
+  "quelle": "https://www.castellodeirampolla.it/wp-content/uploads/thegem/logos/logo_e978fe72760a76ec3e308746825c1fc7_1x.png",
+  "seite": "https://www.castellodeirampolla.it/",
+  "gross": [
+   40,
+   40
+  ]
+ },
+ "Tenuta Argentiera": {
+  "status": "logo",
+  "datei": "argentiera.webp",
+  "quelle": "https://www.argentiera.eu/custom/img/logo-menu.png",
+  "seite": "https://www.argentiera.eu/it/",
+  "gross": [
+   600,
+   318
+  ]
+ },
+ "San Giusto a Rentennano": {
+  "status": "logo",
+  "datei": "san-giusto-rentennano.webp",
+  "quelle": "https://www.fattoriasangiusto.it/images/system/logo_smalls.png",
+  "seite": "https://www.fattoriasangiusto.it/it/",
+  "gross": [
+   71,
+   63
+  ]
+ },
+ "Dos Luciadas": {
+  "status": "keine Website"
+ },
+ "Clos d`Agon": {
+  "status": "logo",
+  "datei": "clos-agon.webp",
+  "quelle": "https://closdagon.com/wp-content/uploads/2022/05/cropped-Nuevo-logo-color-300-px-1x1-1-150x103-1-1.webp",
+  "seite": "https://closdagon.com/",
+  "gross": [
+   150,
+   103
+  ]
+ },
+ "Bodegas Ateca": {
+  "status": "keine Website"
+ },
+ "Bodegas El Nido": {
+  "status": "keine Website"
+ },
+ "Mas la Plana – Familia Torres": {
+  "status": "logo",
+  "datei": "mas-plana-torres.webp",
+  "quelle": "https://www.torres.es/themes/custom/torres_theme/logo.png",
+  "seite": "https://www.torres.es/",
+  "gross": [
+   444,
+   229
+  ]
+ },
+ "R. López de Heredia – Viña Tondonia": {
+  "status": "logo",
+  "datei": "lopez-heredia-vina-tondonia.webp",
+  "quelle": "https://lopezdeheredia.com/images/winemoderation.jpg",
+  "seite": "https://lopezdeheredia.com/",
+  "gross": [
+   200,
+   44
+  ]
+ },
+ "Bodegas Artadi": {
+  "status": "logo",
+  "datei": "artadi.webp",
+  "quelle": "https://artadi.com/wp-content/uploads/2023/04/logo-artadi-200.png",
+  "seite": "https://artadi.com/",
+  "gross": [
+   200,
+   41
+  ]
+ },
+ "Bodegas Javier San Pedro Ortega": {
+  "status": "logo",
+  "datei": "javier-san-pedro-ortega.webp",
+  "quelle": "https://www.bodegasjaviersanpedro.com/wp-content/uploads/2020/05/Logo_JSP.png",
+  "seite": "https://www.bodegasjaviersanpedro.com/",
+  "gross": [
+   600,
+   86
+  ]
+ },
+ "Dominio de Pingus": {
+  "status": "keine Website"
+ },
+ "Bodegas y Vinedos Alnardo": {
+  "status": "keine Website"
+ },
+ "Bodegas Vega Sicilia": {
+  "status": "Fehler",
+  "fehler": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.vegasicilia.com'. (_ssl.c:1082)>"
+ },
+ "Alvaro Palacios": {
+  "status": "Fehler",
+  "fehler": "<urlopen error timed out>"
+ },
+ "Ses Talaioles": {
+  "status": "logo",
+  "datei": "ses-talaioles.webp",
+  "quelle": "https://www.sestalaioles.com/cdn/shop/files/logo.png?v=1678959922",
+  "seite": "https://www.sestalaioles.com/",
+  "gross": [
+   474,
+   104
+  ]
+ },
+ "Arnaud Baillot": {
+  "status": "keine Website"
+ },
+ "Cellier aux Moines": {
+  "status": "logo",
+  "datei": "cellier-aux-moines.webp",
+  "quelle": "https://cellierauxmoines.com/wp-content/themes/core-cellier/images/logo-crest.png",
+  "seite": "https://cellierauxmoines.com/",
+  "gross": [
+   600,
+   286
+  ]
+ },
+ "Domaine Laurent Ponsot": {
+  "status": "logo",
+  "datei": "laurent-ponsot.svg",
+  "quelle": "https://laurentponsot.com/wp-content/uploads/2025/04/Laurent-ponsot-sur-une-ligne.svg",
+  "seite": "https://laurentponsot.com/"
+ },
+ "Domaine de la Romanée-Conti": {
+  "status": "svg im Kopf",
+  "datei": "romanee-conti.svg",
+  "seite": "https://www.romanee-conti.fr/"
+ },
+ "Guilbert Gillet": {
+  "status": "icon",
+  "datei": "guilbert-gillet.webp",
+  "quelle": "https://guilbert-gillet.fr/wp-content/uploads/2022/08/cropped-logo-180x180.png",
+  "seite": "https://guilbert-gillet.fr/",
+  "gross": [
+   180,
+   180
+  ]
+ },
+ "Domaine Michel Noëllat": {
+  "status": "Fehler",
+  "fehler": "<urlopen error timed out>"
+ },
+ "Domaine Guiberteau": {
+  "status": "icon",
+  "datei": "guiberteau.webp",
+  "quelle": "https://www.domaine-guiberteau.com/apple-touch-icon.png",
+  "seite": "https://www.domaine-guiberteau.com/",
+  "gross": [
+   180,
+   180
+  ]
+ },
+ "M. Chapoutier": {
+  "status": "logo",
+  "datei": "chapoutier.svg",
+  "quelle": "https://www.chapoutier.com/chapoutier/images/logo.svg",
+  "seite": "https://www.chapoutier.com/fr/"
+ },
+ "Pierre Gonon": {
+  "status": "keine Website"
+ },
+ "Yann Chave": {
+  "status": "logo",
+  "datei": "yann-chave.svg",
+  "quelle": "https://cdn.prod.website-files.com/6810a8c28d96a04b420cdcd7/690373ae903146fd8bf3274d_YC%20Logo%20Small%20Black.svg",
+  "seite": "https://yannchave.com/"
+ },
+ "Weingut Joh. Jos. Prüm": {
+  "status": "logo",
+  "datei": "joh-jos-pruem.webp",
+  "quelle": "https://www.jjpruem.com/img/logo_facebook.png",
+  "seite": "https://www.jjpruem.com/",
+  "gross": [
+   150,
+   150
+  ]
+ },
+ "Château Lafaurie-Peyraguey": {
+  "status": "Fehler",
+  "fehler": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)>"
+ },
+ "Château de Rayne Vigneau": {
+  "status": "Fehler",
+  "fehler": "HTTP Error 403: Forbidden"
+ },
+ "Weingut Heidi Schröck": {
+  "status": "logo",
+  "datei": "heidi-schroeck.webp",
+  "quelle": "https://www.heidischroeckundsoehne.com/templates/heidischroeck/images/logo-heidi-schroeck.png",
+  "seite": "https://www.heidischroeckundsoehne.com/de/",
+  "gross": [
+   600,
+   419
+  ]
+ },
+ "Weinlaubenhof Kracher": {
+  "status": "logo",
+  "datei": "weinlaubenhof-kracher.webp",
+  "quelle": "https://www.kracher.at/fileadmin/templates/images/logo.png",
+  "seite": "https://www.kracher.at/",
+  "gross": [
+   250,
+   167
+  ]
+ }
+}

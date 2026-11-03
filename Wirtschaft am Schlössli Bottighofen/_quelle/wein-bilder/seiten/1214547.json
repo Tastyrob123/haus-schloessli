@@ -1,0 +1,175 @@
+{
+ "id": 1214547,
+ "name": "Chablis Premier Cru 'Montée de Tonnerre'",
+ "weingut": "Raveneau",
+ "region": "Chablis 1er Cru 'Montee de Tonnerre'",
+ "region_id": 3657,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse"
+ ],
+ "struktur": {
+  "acidity": 3.9265368,
+  "fizziness": null,
+  "intensity": 3.171041,
+  "sweetness": 1.6437864,
+  "tannin": null,
+  "user_structure_count": 298,
+  "calculated_structure_count": 254
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 363,
+   "worte": [
+    "minerals",
+    "honey",
+    "stone",
+    "saline",
+    "flint"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 228,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "lemon zest",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 194,
+   "worte": [
+    "oak",
+    "butter",
+    "vanilla",
+    "caramel",
+    "chocolate"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 148,
+   "worte": [
+    "pear",
+    "green apple",
+    "stone fruit",
+    "apple",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 86,
+   "worte": [
+    "cream",
+    "cheese",
+    "oil",
+    "lemon curd",
+    "yogurt"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 54,
+   "worte": [
+    "toast",
+    "almond",
+    "nutty",
+    "brioche",
+    "hazelnut"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 35,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "mango",
+    "grilled pineapple",
+    "passion fruit"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 27,
+   "worte": [
+    "acacia",
+    "honeysuckle",
+    "dandelion",
+    "jasmine",
+    "chamomile"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 26,
+   "worte": [
+    "fennel",
+    "white pepper",
+    "cinnamon",
+    "musk",
+    "dried herbs"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 17,
+   "worte": [
+    "straw",
+    "grass",
+    "hay",
+    "chard",
+    "gooseberry"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "sour plum"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "dried fruit"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 49,
+  "name": "Chablis Frankreich",
+  "description": "Chablis is the northernmost wine growing region in Burgundy. It's actually closer to Champagne than much of the rest of Burgundy, because it is separated by the Morvan hills.\n\nChablis produces dry white wines made from Chardonnay, and is situated on ancient Jurassic soils that give its wines minerally and flinty accents.\n\nIn fact, some of the best vineyard sites have a unique soil type known as Kimmeridgean, a distinctive mix of limestone, clay and fossilized oyster shells. The soil in combination with the cooler climate gives Chablis its distinctive flavor profile as well as a lovely pale gold-green color.\n\nAs with the rest of Burgundy, Chablis is classified by a strict hierarchy. The vast majority of wines on the market bear the Chablis regional label – they are often excellent wines that are attractively priced.\n\nPremier Crus and Grand Crus are from top vineyard sites, and while more expensive, they also age beautifully.\n\nFresh and vibrant, Chablis has transporting aromas of green apples, lemon zest, spring flowers, and characteristic flint and chalk notes.\n\nChablis can be enjoyed year-round, but it is a particularly excellent wine to serve in the springtime and early summer, as Chablis loves oysters, mussels, sushi, green salads, asparagus, peas and just about anything with goat cheese.",
+  "blurb": null,
+  "interesting_facts": [
+   "Petit Chablis is made from Chardonnay just outside the Chablis appellation. Often it's far less expensive than Chablis, but equally tasty – especially when consumed young.",
+   "Wine experts, like Jancis Robinson believe that Chardonnay from the Chablis is the “purest” possible expression of the varietal.",
+   "Diet conscious wine drinkers will appreciate that Chablis is one of the lower calorie wines available, at 100-105 calories per 6 oz (15 cl) glass, thanks to its low alcohol content.",
+   "Chablis is mentioned in Leo Tolstoy's epic work, Anna Karenina, in chapter 10."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.5,
+ "bewertungen": 4930,
+ "weingut_weine": 11,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,187 @@
+{
+ "id": 82828,
+ "name": "Sauternes (Premier Grand Cru Classé)",
+ "weingut": "Château de Rayne Vigneau",
+ "region": "Sauternes",
+ "region_id": 432,
+ "alkohol": 12.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Muscadelle",
+  "Sauvignon Blanc",
+  "Sémillon"
+ ],
+ "speisen": [
+  "Fruchtige Desserts",
+  "Blauschimmelkäse"
+ ],
+ "struktur": {
+  "acidity": 4.2938104,
+  "fizziness": null,
+  "intensity": 4.6853795,
+  "sweetness": 4.826545,
+  "tannin": null,
+  "user_structure_count": 215,
+  "calculated_structure_count": 469
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 478,
+   "worte": [
+    "honey",
+    "ginger",
+    "wax",
+    "honeycomb",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 433,
+   "worte": [
+    "apricot",
+    "peach",
+    "apple",
+    "pear",
+    "melon"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 282,
+   "worte": [
+    "orange",
+    "marmalade",
+    "citrus",
+    "lemon",
+    "orange peel"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 206,
+   "worte": [
+    "caramel",
+    "vanilla",
+    "oak",
+    "toffee",
+    "butter"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 142,
+   "worte": [
+    "pineapple",
+    "mango",
+    "tropical",
+    "lychee",
+    "guava"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 122,
+   "worte": [
+    "dried apricot",
+    "raisin",
+    "dried fruit",
+    "fig",
+    "dried mango"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 114,
+   "worte": [
+    "almond",
+    "nutty",
+    "marzipan",
+    "toast",
+    "brioche"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 101,
+   "worte": [
+    "cream",
+    "cheese",
+    "banana",
+    "oil",
+    "lemon curd"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 45,
+   "worte": [
+    "honeysuckle",
+    "acacia",
+    "chamomile",
+    "dandelion",
+    "elderflower"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 32,
+   "worte": [
+    "cinnamon",
+    "mint",
+    "savory",
+    "candied ginger",
+    "eucalyptus"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 20,
+   "worte": [
+    "jam",
+    "plum",
+    "blueberry",
+    "dark fruit"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 10,
+   "worte": [
+    "grass",
+    "hay",
+    "straw",
+    "rhubarb",
+    "cat's pee"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 5,
+   "worte": [
+    "cherry",
+    "sour cherry",
+    "sour cherry pie",
+    "strawberry"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 195,
+  "name": "Sauternes Bordeaux Frankreich",
+  "description": null,
+  "blurb": "Sweet white wine",
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 8606,
+ "weingut_weine": 13,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

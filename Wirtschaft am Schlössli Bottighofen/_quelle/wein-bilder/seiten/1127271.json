@@ -1,0 +1,169 @@
+{
+ "id": 1127271,
+ "name": "Chablis Grand Cru Les Clos Des Hospices",
+ "weingut": "Christian Moreau Pere & Fils",
+ "region": "Chablis Grand Cru",
+ "region_id": 2188,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse"
+ ],
+ "struktur": {
+  "acidity": 3.8692546,
+  "fizziness": null,
+  "intensity": 3.159117,
+  "sweetness": 1.8768319,
+  "tannin": null,
+  "user_structure_count": 54,
+  "calculated_structure_count": 55
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 77,
+   "worte": [
+    "butter",
+    "oak",
+    "vanilla",
+    "caramel",
+    "coconut"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 69,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 57,
+   "worte": [
+    "minerals",
+    "honey",
+    "flint",
+    "smoke",
+    "chalk"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 50,
+   "worte": [
+    "apple",
+    "green apple",
+    "pear",
+    "peach",
+    "white peach"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 31,
+   "worte": [
+    "cream",
+    "yeast",
+    "cheese",
+    "lemon curd",
+    "toasted bread"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 16,
+   "worte": [
+    "almond",
+    "hazelnut",
+    "nutty",
+    "brioche",
+    "burnt caramel"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 8,
+   "worte": [
+    "gooseberry",
+    "asparagus",
+    "straw",
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 8,
+   "worte": [
+    "passion fruit",
+    "tropical",
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 4,
+   "worte": [
+    "honeysuckle",
+    "dandelion"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 2,
+   "worte": [
+    "licorice",
+    "musk"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "jam"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 49,
+  "name": "Chablis Frankreich",
+  "description": "Chablis is the northernmost wine growing region in Burgundy. It's actually closer to Champagne than much of the rest of Burgundy, because it is separated by the Morvan hills.\n\nChablis produces dry white wines made from Chardonnay, and is situated on ancient Jurassic soils that give its wines minerally and flinty accents.\n\nIn fact, some of the best vineyard sites have a unique soil type known as Kimmeridgean, a distinctive mix of limestone, clay and fossilized oyster shells. The soil in combination with the cooler climate gives Chablis its distinctive flavor profile as well as a lovely pale gold-green color.\n\nAs with the rest of Burgundy, Chablis is classified by a strict hierarchy. The vast majority of wines on the market bear the Chablis regional label – they are often excellent wines that are attractively priced.\n\nPremier Crus and Grand Crus are from top vineyard sites, and while more expensive, they also age beautifully.\n\nFresh and vibrant, Chablis has transporting aromas of green apples, lemon zest, spring flowers, and characteristic flint and chalk notes.\n\nChablis can be enjoyed year-round, but it is a particularly excellent wine to serve in the springtime and early summer, as Chablis loves oysters, mussels, sushi, green salads, asparagus, peas and just about anything with goat cheese.",
+  "blurb": null,
+  "interesting_facts": [
+   "Petit Chablis is made from Chardonnay just outside the Chablis appellation. Often it's far less expensive than Chablis, but equally tasty – especially when consumed young.",
+   "Wine experts, like Jancis Robinson believe that Chardonnay from the Chablis is the “purest” possible expression of the varietal.",
+   "Diet conscious wine drinkers will appreciate that Chablis is one of the lower calorie wines available, at 100-105 calories per 6 oz (15 cl) glass, thanks to its low alcohol content.",
+   "Chablis is mentioned in Leo Tolstoy's epic work, Anna Karenina, in chapter 10."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 1173,
+ "weingut_weine": 11,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

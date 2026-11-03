@@ -1,0 +1,164 @@
+{
+ "id": 1117558,
+ "name": "Centgrafenberg GG Spätburgunder",
+ "weingut": "Fürst",
+ "region": "Franken",
+ "region_id": 597,
+ "alkohol": 13.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Spätburgunder"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.2827806,
+  "fizziness": null,
+  "intensity": 1.7184439,
+  "sweetness": 1.5659947,
+  "tannin": 2.3536923,
+  "user_structure_count": 90,
+  "calculated_structure_count": 81
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 92,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "red fruit",
+    "cherry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 56,
+   "worte": [
+    "earthy",
+    "minerals",
+    "smoke",
+    "leather",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 52,
+   "worte": [
+    "oak",
+    "vanilla",
+    "tobacco",
+    "baking spice",
+    "cigar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 19,
+   "worte": [
+    "blackberry",
+    "black fruit",
+    "blueberry",
+    "plum",
+    "bilberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 16,
+   "worte": [
+    "pepper",
+    "white pepper",
+    "mint",
+    "savory",
+    "bay leaf"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 7,
+   "worte": [
+    "violet",
+    "acacia",
+    "dried flowers",
+    "perfume",
+    "potpourri"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 6,
+   "worte": [
+    "cream",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 6,
+   "worte": [
+    "lemon",
+    "blood orange",
+    "citrus",
+    "grapefruit",
+    "lime"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 3,
+   "worte": [
+    "nutty",
+    "toast",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 3,
+   "worte": [
+    "bitter almond",
+    "grass",
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 2,
+   "worte": [
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 2,
+   "worte": [
+    "apple",
+    "melon"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 160,
+  "name": "Spätburgunder Deutschland",
+  "description": null,
+  "blurb": "Also known as Pinot Noir",
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.1,
+ "bewertungen": 1449,
+ "weingut_weine": 48,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

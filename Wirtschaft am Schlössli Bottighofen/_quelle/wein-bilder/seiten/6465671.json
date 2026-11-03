@@ -1,0 +1,107 @@
+{
+ "id": 6465671,
+ "name": "Vieilles Vignes Gevrey-Chambertin",
+ "weingut": "Arnaud Baillot",
+ "region": "Gevrey-Chambertin",
+ "region_id": 2200,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.9690423,
+  "fizziness": null,
+  "intensity": 2.952036,
+  "sweetness": 1.5712277,
+  "tannin": 2.5108085,
+  "user_structure_count": 19,
+  "calculated_structure_count": 3
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 12,
+   "worte": [
+    "raspberry",
+    "strawberry",
+    "cherry",
+    "red cherry",
+    "cranberry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 8,
+   "worte": [
+    "chocolate",
+    "oak",
+    "nutmeg"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 4,
+   "worte": [
+    "earthy",
+    "mushroom",
+    "stone"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 3,
+   "worte": [
+    "licorice",
+    "anise"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "blueberry"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 0,
+   "worte": []
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 283,
+  "name": "Burgund Côte de Nuits Rot Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 180,
+ "weingut_weine": 83,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

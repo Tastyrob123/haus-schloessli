@@ -1,0 +1,108 @@
+{
+ "id": 2915468,
+ "name": "Selección Especial",
+ "weingut": "Clos d'Agon",
+ "region": "Catalunya",
+ "region_id": 1783,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Cabernet Franc",
+  "Petit Verdot",
+  "Cabernet Sauvignon"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Pasta"
+ ],
+ "struktur": {
+  "acidity": 3.2676303,
+  "fizziness": null,
+  "intensity": 3.9715798,
+  "sweetness": 1.8752744,
+  "tannin": 3.1292236,
+  "user_structure_count": 38,
+  "calculated_structure_count": 6
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 17,
+   "worte": [
+    "clove",
+    "oak",
+    "nutmeg",
+    "milk chocolate",
+    "vanilla"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 10,
+   "worte": [
+    "minerals",
+    "smoke",
+    "balsamic",
+    "cocoa"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 7,
+   "worte": [
+    "black fruit",
+    "plum"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 4,
+   "worte": [
+    "cherry",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 2,
+   "worte": [
+    "licorice",
+    "pepper"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 176,
+  "name": "Spanien Rot",
+  "description": "Spain is one of the largest wine producing countries in the world with reds to suit any taste. While Tempranillo and Garnacha are some of the most common grapes in the country, you'll find plenty of wines composed of Bobal, Mencía, Monastrell, plus international varietals like Cabernet Sauvignon. \n\nSpanish Reds are often distinguished by their age. Younger wines are typically fresh with bright fruit notes, like fresh cherry and strawberry, while older wines that have spent time maturing in oak bring forth dried fruit, chocolate, and spices. For a hint on how your wine might taste, look for these aging classifications on the label:\n\nJoven - These young wines are meant to be drunk within 1-2 years of bottling.\n\nRoble - This indicates that your Joven wine has spent 3-6 months in oak.\n\nCrianza - It takes 2 years aging to reach this category, with 6 months spent in oak.\n\nReserva - For these wines, 3 years of aging are required, 1 of which is spent in oak.\n\nGran Reserva - The most ambitious classification requires 5 years of aging, 18 months of which are in the barrel. \n\nIf you're looking at a Spanish subregion, like Rioja, these requirements will slightly differ. But as you can see, aging is important for Spanish Reds and hopefully learning a bit about the differences will help you choose the right one!",
+  "blurb": "Often Tempranillo-based",
+  "interesting_facts": [
+   "Spain has the most land dedicated to vineyards of any country in the world.",
+   "Spanish Red was some of the first wine to come to the New World, when missionaries planted Spanish grapes for religious rituals."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 367,
+ "weingut_weine": 18,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

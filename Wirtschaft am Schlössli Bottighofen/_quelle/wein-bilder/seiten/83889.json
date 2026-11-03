@@ -1,0 +1,176 @@
+{
+ "id": 83889,
+ "name": "Pouilly-Fumé",
+ "weingut": "Domaine Chatelain",
+ "region": "Pouilly-Fumé",
+ "region_id": 759,
+ "alkohol": 12.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Sauvignon Blanc"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Vegetarische Gerichte",
+  "Scharfe Gerichte",
+  "Ziegenkäse"
+ ],
+ "struktur": {
+  "acidity": 4.0391884,
+  "fizziness": null,
+  "intensity": 2.0871477,
+  "sweetness": 1.1481286,
+  "tannin": null,
+  "user_structure_count": 51,
+  "calculated_structure_count": 191
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 141,
+   "worte": [
+    "apple",
+    "green apple",
+    "pear",
+    "peach",
+    "melon"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 138,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lime",
+    "lemon peel"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 76,
+   "worte": [
+    "minerals",
+    "flint",
+    "stone",
+    "honey",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 65,
+   "worte": [
+    "gooseberry",
+    "grass",
+    "straw",
+    "asparagus",
+    "tomato leaf"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 38,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "kiwi",
+    "guava",
+    "lychee"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 19,
+   "worte": [
+    "butter",
+    "vanilla",
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 13,
+   "worte": [
+    "cheese",
+    "cream",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 8,
+   "worte": [
+    "elderflower",
+    "honeysuckle",
+    "lily",
+    "orange blossom",
+    "perfume"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 6,
+   "worte": [
+    "almond",
+    "biscuit",
+    "brown sugar",
+    "nutty",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 5,
+   "worte": [
+    "pepper",
+    "cinnamon",
+    "green herbs",
+    "thyme"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 2,
+   "worte": [
+    "blackcurrant",
+    "jam"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "roasted tomato"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 235,
+  "name": "Loire Weiß Frankreich",
+  "description": "The upper Loire Valley is known for two iconic wine growing sub-regions – Pouilly Fume, and Sancerre. Nearly all wine cultivated in these areas are from the Sauvignon Blanc variety.\n\nCrisp, appropriately acidic, and aromatic, these wines are an amazing experience on both the nose and palate. They also tend to be somewhat more expensive compared to Sauvignon Blancs from other regions - but not necessarily without good reason.\n\nPouilly Fume to the east of the Loire river, and Sancerre to the west, each region's terroir imparts slightly different characteristics to their respective wines. Mostly unoaked, these wines have amazing structure with perfumy notes of grapefruit and gooseberry with a slight note of honey.\n\nWines from the Pouilly Fume tend to be a little more full-bodied than their Sancerre counterparts.\n\nThese wines pair amazingly well with nearly all kinds of seafood and salad greens with citrus or vinegar based dressings. The classic pairing of Sancerre with grilled goat cheese is quite possibly the best thing to put in one's mouth.\n\nSomewhat collectable, a good vintage of Upper Noire white can shelve for up to ten years; although, that could be pushing it. It is suggested you drink them in the 4-6 year age range.",
+  "blurb": null,
+  "interesting_facts": [
+   "There is evidence of wine cultivation in the Upper Loire from the beginning of the common era (1st century).",
+   "Before the phylloxera epidemic in the 1850s, nearly all wines grown in this region were red.",
+   "The French used this region as vacation destination during World War 2 while the beaches of Normandy were -- occupied."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 3.9,
+ "bewertungen": 2212,
+ "weingut_weine": 9,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

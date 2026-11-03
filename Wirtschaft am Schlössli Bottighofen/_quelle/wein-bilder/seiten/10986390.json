@@ -1,0 +1,45 @@
+{
+ "id": 10986390,
+ "name": "Berglage Spätburgunder",
+ "weingut": "Vollmayer",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Spätburgunder"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.5,
+  "fizziness": null,
+  "intensity": 1,
+  "sweetness": 1,
+  "tannin": 2,
+  "user_structure_count": 1,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 160,
+  "name": "Spätburgunder Deutschland",
+  "description": null,
+  "blurb": "Also known as Pinot Noir",
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 3.9,
+ "bewertungen": 35,
+ "weingut_weine": 53,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

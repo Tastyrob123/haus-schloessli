@@ -1,0 +1,128 @@
+{
+ "id": 1501890,
+ "name": "Malanser Chardonnay",
+ "weingut": "Weingut Wegelin",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.697506,
+  "fizziness": null,
+  "intensity": 3.3604937,
+  "sweetness": 1.8719765,
+  "tannin": null,
+  "user_structure_count": 12,
+  "calculated_structure_count": 11
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 13,
+   "worte": [
+    "oak",
+    "vanilla",
+    "butter"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 12,
+   "worte": [
+    "honey",
+    "minerals",
+    "petroleum",
+    "smoke",
+    "stone"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 7,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "lemon",
+    "lemon peel",
+    "lime"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 7,
+   "worte": [
+    "apricot",
+    "peach",
+    "apple",
+    "green apple",
+    "stone fruit"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 6,
+   "worte": [
+    "cream",
+    "banana",
+    "curd",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 3,
+   "worte": [
+    "pineapple",
+    "mango"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 3,
+   "worte": [
+    "chard",
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "mint"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 1,
+   "worte": [
+    "walnut"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 64,
+  "name": "Chardonnay Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 3.9,
+ "bewertungen": 366,
+ "weingut_weine": 30,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

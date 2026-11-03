@@ -1,0 +1,82 @@
+{
+ "id": 6400517,
+ "name": "Riesling - Sylvaner Schiefer",
+ "weingut": "Obrecht",
+ "region": "Bundner Herrschaft",
+ "region_id": 1456,
+ "alkohol": 10.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Sylvaner",
+  "Riesling"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 7,
+   "worte": [
+    "honey",
+    "minerals",
+    "rubber"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 5,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "lemon zest",
+    "lime",
+    "orange peel"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 4,
+   "worte": [
+    "peach",
+    "apple",
+    "green melon"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 2,
+   "worte": [
+    "oil",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "lychee"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "bergamot"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "dried flowers"
+   ]
+  }
+ ],
+ "stil": null,
+ "bewertung": 3.7,
+ "bewertungen": 236,
+ "weingut_weine": 25,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

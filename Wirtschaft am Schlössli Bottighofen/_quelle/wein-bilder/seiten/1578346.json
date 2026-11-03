@@ -1,0 +1,137 @@
+{
+ "id": 1578346,
+ "name": "Malanserrebe Completer",
+ "weingut": "Donatsch",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Completer"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 54,
+   "worte": [
+    "apricot",
+    "quince",
+    "green apple",
+    "apple",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 40,
+   "worte": [
+    "honey",
+    "minerals",
+    "smoke",
+    "stone",
+    "chalk"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 36,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "lemon",
+    "lime",
+    "orange zest"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 20,
+   "worte": [
+    "oak",
+    "vanilla",
+    "caramel",
+    "butter",
+    "tobacco"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 10,
+   "worte": [
+    "almond",
+    "hazelnut",
+    "nutty",
+    "toast",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 10,
+   "worte": [
+    "green almond",
+    "hay",
+    "straw",
+    "gooseberry",
+    "grass"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 6,
+   "worte": [
+    "cream",
+    "banana",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 6,
+   "worte": [
+    "tropical",
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 3,
+   "worte": [
+    "candied ginger",
+    "thyme",
+    "white pepper"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 2,
+   "worte": [
+    "dried fruit",
+    "dried mango"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "plum"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "elderflower"
+   ]
+  }
+ ],
+ "stil": null,
+ "bewertung": 4.2,
+ "bewertungen": 1348,
+ "weingut_weine": 38,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,182 @@
+{
+ "id": 1127429,
+ "name": "Saint-Aubin 1er Cru 'Les Frionnes'",
+ "weingut": "Hubert Lamy",
+ "region": "Saint-Aubin 1er Cru 'Les Frionnes'",
+ "region_id": 4106,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.4174562,
+  "fizziness": null,
+  "intensity": 3.6418593,
+  "sweetness": 1.5212266,
+  "tannin": null,
+  "user_structure_count": 180,
+  "calculated_structure_count": 152
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 167,
+   "worte": [
+    "oak",
+    "butter",
+    "vanilla",
+    "caramel",
+    "toffee"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 156,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 141,
+   "worte": [
+    "minerals",
+    "stone",
+    "honey",
+    "flint",
+    "salt"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 102,
+   "worte": [
+    "apple",
+    "pear",
+    "stone fruit",
+    "green apple",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 43,
+   "worte": [
+    "cream",
+    "oil",
+    "banana",
+    "cheese",
+    "lemon curd"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 41,
+   "worte": [
+    "toast",
+    "hazelnut",
+    "brioche",
+    "nutty",
+    "almond"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 18,
+   "worte": [
+    "tropical",
+    "mango",
+    "pineapple",
+    "papaya",
+    "green mango"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 14,
+   "worte": [
+    "straw",
+    "grass",
+    "hay",
+    "asparagus",
+    "chard"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 10,
+   "worte": [
+    "acacia",
+    "orange blossom",
+    "chamomile",
+    "honeysuckle",
+    "jasmine"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 8,
+   "worte": [
+    "fennel",
+    "green herbs",
+    "pepper",
+    "sage",
+    "vanilla bean"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 3,
+   "worte": [
+    "blackberry",
+    "blackcurrant",
+    "jam"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 2,
+   "worte": [
+    "pomegranate",
+    "red fruit"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 2,
+   "worte": [
+    "dried apricot",
+    "fig"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 285,
+  "name": "Burgund Côte de Beaune Weiß Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 3237,
+ "weingut_weine": 31,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

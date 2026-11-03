@@ -1,0 +1,130 @@
+{
+ "id": 9243,
+ "name": "Rosé Brut Champagne Grand Cru 'Le Mesnil-sur-Oger'",
+ "weingut": "Delamotte",
+ "region": "Champagne Grand Cru 'Le Mesnil-sur-Oger'",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.3734536,
+  "fizziness": 4.274002,
+  "intensity": 3.823728,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 192,
+  "calculated_structure_count": 22
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 112,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "cherry",
+    "cranberry",
+    "ripe strawberry"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 45,
+   "worte": [
+    "citrus",
+    "orange",
+    "grapefruit",
+    "lemon",
+    "orange peel"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 43,
+   "worte": [
+    "brioche",
+    "toast",
+    "almond",
+    "biscuit",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 36,
+   "worte": [
+    "green apple",
+    "pear",
+    "apple",
+    "peach",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 25,
+   "worte": [
+    "minerals",
+    "honey",
+    "smoke",
+    "stone",
+    "ginger"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 22,
+   "worte": [
+    "cream",
+    "yeast",
+    "cheese",
+    "cheesy"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 5,
+   "worte": [
+    "caramel",
+    "vanilla",
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 5,
+   "worte": [
+    "anise",
+    "cinnamon",
+    "green herbs",
+    "mint",
+    "white pepper"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 5,
+   "worte": [
+    "dried rose",
+    "elderflower",
+    "perfume",
+    "rose petal",
+    "violet"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 3,
+   "worte": [
+    "chard",
+    "rhubarb",
+    "tomato"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

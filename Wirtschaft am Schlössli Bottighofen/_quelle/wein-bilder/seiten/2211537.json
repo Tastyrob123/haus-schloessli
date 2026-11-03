@@ -1,0 +1,130 @@
+{
+ "id": 2211537,
+ "name": "Auxey-Duresses La Macabrèe",
+ "weingut": "Olivier Leflaive",
+ "region": "Auxey-Duresses",
+ "region_id": 2245,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.4168208,
+  "fizziness": null,
+  "intensity": 3.9395254,
+  "sweetness": 1.3029683,
+  "tannin": null,
+  "user_structure_count": 29,
+  "calculated_structure_count": 22
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 61,
+   "worte": [
+    "oak",
+    "butter",
+    "butterscotch",
+    "vanilla",
+    "baking spice"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 28,
+   "worte": [
+    "lemon",
+    "citrus",
+    "grapefruit",
+    "lime"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 27,
+   "worte": [
+    "green apple",
+    "apricot",
+    "peach",
+    "apple",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 18,
+   "worte": [
+    "minerals",
+    "stone",
+    "chalk",
+    "flint",
+    "honey"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 11,
+   "worte": [
+    "cream",
+    "fresh bread",
+    "lemon curd",
+    "toasted bread"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 11,
+   "worte": [
+    "toast",
+    "brioche",
+    "almond",
+    "peanut"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 4,
+   "worte": [
+    "gooseberry",
+    "rhubarb"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 2,
+   "worte": [
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 285,
+  "name": "Burgund Côte de Beaune Weiß Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 583,
+ "weingut_weine": 145,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

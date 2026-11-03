@@ -1,0 +1,128 @@
+{
+ "id": 1198774,
+ "name": "No. 3 Pinot Noir",
+ "weingut": "Schlossgut Bachtobel",
+ "region": "Thurgau",
+ "region_id": 1479,
+ "alkohol": 14.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.9643586,
+  "fizziness": null,
+  "intensity": 2.060243,
+  "sweetness": 1.6980153,
+  "tannin": 2.5557497,
+  "user_structure_count": 88,
+  "calculated_structure_count": 22
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 28,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "red fruit",
+    "red cherry",
+    "red currant"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 20,
+   "worte": [
+    "oak",
+    "vanilla",
+    "chocolate",
+    "clove",
+    "coffee"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 13,
+   "worte": [
+    "earthy",
+    "leather",
+    "forest floor",
+    "smoke",
+    "balsamic"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 9,
+   "worte": [
+    "white pepper",
+    "aniseed",
+    "cinnamon",
+    "fennel",
+    "licorice"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 5,
+   "worte": [
+    "plum",
+    "blackcurrant",
+    "blueberry"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 4,
+   "worte": [
+    "dried rose",
+    "lavender",
+    "perfume",
+    "violet"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 1,
+   "worte": [
+    "rhubarb"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "cheese"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 957,
+ "weingut_weine": 14,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

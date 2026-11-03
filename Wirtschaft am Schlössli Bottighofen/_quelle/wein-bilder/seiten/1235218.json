@@ -1,0 +1,112 @@
+{
+ "id": 1235218,
+ "name": "Nuits-Saint-Georges",
+ "weingut": "Michel Noëllat",
+ "region": "Nuits-Saint-Georges",
+ "region_id": 2230,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.676664,
+  "fizziness": null,
+  "intensity": 3.0785928,
+  "sweetness": 1.8220779,
+  "tannin": 2.7236176,
+  "user_structure_count": 64,
+  "calculated_structure_count": 23
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 24,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "strawberry",
+    "raspberry",
+    "cherry cola"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 19,
+   "worte": [
+    "oak",
+    "tobacco",
+    "chocolate",
+    "cola"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 11,
+   "worte": [
+    "earthy",
+    "cocoa",
+    "leather",
+    "forest floor",
+    "graphite"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 11,
+   "worte": [
+    "menthol",
+    "mint",
+    "thyme",
+    "pepper",
+    "sage"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 10,
+   "worte": [
+    "black cherry",
+    "blackberry",
+    "black fruit",
+    "blackcurrant",
+    "blueberry"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 1,
+   "worte": [
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 283,
+  "name": "Burgund Côte de Nuits Rot Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 984,
+ "weingut_weine": 41,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

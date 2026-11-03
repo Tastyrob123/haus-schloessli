@@ -1,0 +1,135 @@
+{
+ "id": 1893592,
+ "name": "Chambolle-Musigny",
+ "weingut": "Michel Noëllat",
+ "region": "Chambolle-Musigny",
+ "region_id": 2215,
+ "alkohol": 13.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.9769692,
+  "fizziness": null,
+  "intensity": 3.0587938,
+  "sweetness": 1.6020999,
+  "tannin": 2.6153762,
+  "user_structure_count": 68,
+  "calculated_structure_count": 23
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 30,
+   "worte": [
+    "cherry",
+    "strawberry",
+    "raspberry",
+    "red fruit",
+    "cranberry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 22,
+   "worte": [
+    "earthy",
+    "leather",
+    "forest floor",
+    "tar",
+    "chalk"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 20,
+   "worte": [
+    "plum",
+    "blackberry",
+    "black fruit",
+    "cassis",
+    "black cherry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 15,
+   "worte": [
+    "oak",
+    "baking spice",
+    "cedar",
+    "chocolate",
+    "nutmeg"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 7,
+   "worte": [
+    "cinnamon",
+    "licorice",
+    "mint",
+    "pepper"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 4,
+   "worte": [
+    "rose petal",
+    "rose hip",
+    "violet"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 1,
+   "worte": [
+    "dried fig"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "guava"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "citrus"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 283,
+  "name": "Burgund Côte de Nuits Rot Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 719,
+ "weingut_weine": 41,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

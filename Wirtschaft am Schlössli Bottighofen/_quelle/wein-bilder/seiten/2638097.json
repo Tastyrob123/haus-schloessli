@@ -1,0 +1,194 @@
+{
+ "id": 2638097,
+ "name": "Côtes de Provence Rosé",
+ "weingut": "Miraval",
+ "region": "Côtes de Provence",
+ "region_id": 450,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Cinsault"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Vegetarische Gerichte",
+  "Geflügel"
+ ],
+ "struktur": {
+  "acidity": 3.9058082,
+  "fizziness": null,
+  "intensity": 2.4888217,
+  "sweetness": 1.3243858,
+  "tannin": null,
+  "user_structure_count": 1079,
+  "calculated_structure_count": 3037
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 2416,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "watermelon",
+    "red fruit",
+    "cherry"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 1613,
+   "worte": [
+    "peach",
+    "melon",
+    "apple",
+    "pear",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1305,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "lemon",
+    "orange",
+    "lime"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 790,
+   "worte": [
+    "minerals",
+    "stone",
+    "honey",
+    "saline",
+    "earthy"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 225,
+   "worte": [
+    "lavender",
+    "rose petal",
+    "honeysuckle",
+    "orange blossom",
+    "perfume"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 191,
+   "worte": [
+    "cream",
+    "cheese",
+    "banana",
+    "oil",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 168,
+   "worte": [
+    "vanilla",
+    "butter",
+    "oak",
+    "caramel",
+    "chocolate"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 111,
+   "worte": [
+    "white pepper",
+    "pepper",
+    "thyme",
+    "fennel",
+    "mint"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 108,
+   "worte": [
+    "tropical",
+    "pineapple",
+    "lychee",
+    "mango",
+    "bubblegum"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 96,
+   "worte": [
+    "grass",
+    "rhubarb",
+    "gooseberry",
+    "straw",
+    "hay"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 38,
+   "worte": [
+    "almond",
+    "toast",
+    "nutty",
+    "biscuit",
+    "brioche"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 32,
+   "worte": [
+    "plum",
+    "blueberry",
+    "blackberry",
+    "blackcurrant",
+    "cassis"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "dragon fruit",
+    "dried apricot",
+    "dried fruit",
+    "prune"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 173,
+  "name": "Provence Rosé Frankreich",
+  "description": "No summer afternoon is complete without a little bit of the pale pink/orange wines from Provence.\n\nThese light and crisp roses have just the slightest touches of bright berry flavors and can complement a meal perfectly or be delightful on their own.\n\nThe dry, refreshing, pink wines of Provence may not be complicated or heady, but they are certainly lovely. These brightly flavored, yet pale colored wines are full of crisp acidity with light touches of tart red berries and citrus fruit.\n\nThese wines may not be serious, but you can't drink serious wines all of the time! Current trends are making these wines ridiculously popular, and for good reason.\n\nThey are the perfect summer wine and can make any light afternoon meal even better with their liveliness and pretty fruit. These are much lighter than most California roses, but are typically much fresher and sharper.",
+  "blurb": null,
+  "interesting_facts": [
+   "In Provence, almost 90% of the wine production is attributed to rose.",
+   "Brad Pitt and Angelina Jolie are part owners of a Provencal Rose called Miraval.",
+   "The light, pink wines of the area have been around since even before the Roman control in the 2nd Century BC!",
+   "There are 13 different grape varieties allowed in Cotes de Provence.",
+   "Provence has a Mediterranean climate."
+  ],
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 60104,
+ "weingut_weine": 21,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

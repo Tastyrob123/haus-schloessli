@@ -1,0 +1,45 @@
+{
+ "id": 11313809,
+ "name": "Höchste Lage Grauburgunder",
+ "weingut": "Vollmayer",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Grauburgunder"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Scharfe Gerichte",
+  "Pilze",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 2.5,
+  "fizziness": null,
+  "intensity": 3,
+  "sweetness": 1.5,
+  "tannin": null,
+  "user_structure_count": 0,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 148,
+  "name": "Grauburgunder Deutschland",
+  "description": null,
+  "blurb": "Also known as Pinot Gris",
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 0,
+ "bewertungen": 9,
+ "weingut_weine": 53,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

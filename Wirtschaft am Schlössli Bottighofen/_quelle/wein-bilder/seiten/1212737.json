@@ -1,0 +1,139 @@
+{
+ "id": 1212737,
+ "name": "Chassagne-Montrachet 1er Cru 'Vide Bourse'",
+ "weingut": "Domaine Fernand & Laurent Pillot",
+ "region": "Chassagne-Montrachet 1er Cru 'Vide Bourse'",
+ "region_id": 3749,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.1629214,
+  "fizziness": null,
+  "intensity": 3.8348348,
+  "sweetness": 1.6741829,
+  "tannin": null,
+  "user_structure_count": 49,
+  "calculated_structure_count": 28
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 39,
+   "worte": [
+    "oak",
+    "vanilla",
+    "butter",
+    "caramel",
+    "butterscotch"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 34,
+   "worte": [
+    "minerals",
+    "honey",
+    "flint",
+    "chalk",
+    "honeycomb"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 32,
+   "worte": [
+    "apricot",
+    "peach",
+    "green apple",
+    "melon",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 19,
+   "worte": [
+    "lemon",
+    "citrus",
+    "lime",
+    "grapefruit",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 15,
+   "worte": [
+    "brioche",
+    "toast",
+    "chestnut",
+    "hazelnut",
+    "marzipan"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 11,
+   "worte": [
+    "cream",
+    "cheese",
+    "banana",
+    "cheesy",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 4,
+   "worte": [
+    "lychee",
+    "pineapple",
+    "starfruit",
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 3,
+   "worte": [
+    "pepper",
+    "licorice"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "gooseberry",
+    "straw"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 285,
+  "name": "Burgund Côte de Beaune Weiß Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 569,
+ "weingut_weine": 32,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

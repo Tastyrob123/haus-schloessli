@@ -1,0 +1,132 @@
+{
+ "id": 95821,
+ "name": "Ruster Ausbruch Auf den Flügeln der Morgenröte",
+ "weingut": "Heidi Schröck",
+ "region": "Neusiedlersee-Hügelland",
+ "region_id": 875,
+ "alkohol": 11,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Furmint",
+  "Welschriesling"
+ ],
+ "speisen": [
+  "Süße Desserts",
+  "Fruchtige Desserts",
+  "Blauschimmelkäse"
+ ],
+ "struktur": {
+  "acidity": 4.9457855,
+  "fizziness": null,
+  "intensity": 4.0328097,
+  "sweetness": 4.9801655,
+  "tannin": null,
+  "user_structure_count": 2,
+  "calculated_structure_count": 20
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 21,
+   "worte": [
+    "apricot",
+    "peach",
+    "apple",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 17,
+   "worte": [
+    "honey",
+    "ginger",
+    "smoke",
+    "beeswax",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 9,
+   "worte": [
+    "citrus",
+    "marmalade",
+    "orange",
+    "lemon",
+    "orange rind"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 5,
+   "worte": [
+    "cheese",
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "dried apricot",
+    "dried fruit",
+    "golden raisin",
+    "raisin"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 2,
+   "worte": [
+    "coriander",
+    "pepper"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 1,
+   "worte": [
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 1,
+   "worte": [
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "red plum"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "acacia"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 490,
+  "name": "Austrian Dessert",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 278,
+ "weingut_weine": 51,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

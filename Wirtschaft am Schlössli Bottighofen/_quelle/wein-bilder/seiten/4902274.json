@@ -1,0 +1,134 @@
+{
+ "id": 4902274,
+ "name": "Hundsrück GG Spätburgunder",
+ "weingut": "Fürst",
+ "region": "Franken",
+ "region_id": 597,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Spätburgunder"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.3433948,
+  "fizziness": null,
+  "intensity": 2.1032798,
+  "sweetness": 1.5586879,
+  "tannin": 2.450595,
+  "user_structure_count": 49,
+  "calculated_structure_count": 28
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 30,
+   "worte": [
+    "red fruit",
+    "cherry",
+    "raspberry",
+    "strawberry",
+    "cranberry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 17,
+   "worte": [
+    "earthy",
+    "cocoa",
+    "forest floor",
+    "minerals",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 9,
+   "worte": [
+    "thyme",
+    "licorice",
+    "menthol",
+    "musk",
+    "pepper"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 9,
+   "worte": [
+    "oak",
+    "chocolate",
+    "clove",
+    "coffee",
+    "dark chocolate"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 8,
+   "worte": [
+    "hibiscus",
+    "perfume",
+    "iris",
+    "potpourri"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 5,
+   "worte": [
+    "black fruit",
+    "berry jam",
+    "plum",
+    "cassis"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 3,
+   "worte": [
+    "black raisin",
+    "prune",
+    "raisin"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 2,
+   "worte": [
+    "campfire",
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 1,
+   "worte": [
+    "black walnut"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 160,
+  "name": "Spätburgunder Deutschland",
+  "description": null,
+  "blurb": "Also known as Pinot Noir",
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 554,
+ "weingut_weine": 48,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

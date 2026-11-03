@@ -1,0 +1,142 @@
+{
+ "id": 1974703,
+ "name": "Puligny-Montrachet Premier Cru Les Folatières",
+ "weingut": "Domaine des Lambrays",
+ "region": "Puligny-Montrachet Premier Cru",
+ "region_id": 3022,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.1372962,
+  "fizziness": null,
+  "intensity": 3.703407,
+  "sweetness": 1.929358,
+  "tannin": null,
+  "user_structure_count": 38,
+  "calculated_structure_count": 12
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 21,
+   "worte": [
+    "apple",
+    "green apple",
+    "pear",
+    "apricot",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 18,
+   "worte": [
+    "oak",
+    "butter",
+    "caramel",
+    "vanilla",
+    "nutmeg"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 17,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "orange",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 13,
+   "worte": [
+    "honey",
+    "stone",
+    "chalk",
+    "minerals",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 6,
+   "worte": [
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 5,
+   "worte": [
+    "biscuit",
+    "hazelnut",
+    "nutty",
+    "peanut",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 4,
+   "worte": [
+    "mango",
+    "pineapple",
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 3,
+   "worte": [
+    "acacia",
+    "daffodil",
+    "violet"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "hay",
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "cinnamon"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 285,
+  "name": "Burgund Côte de Beaune Weiß Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 435,
+ "weingut_weine": 12,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

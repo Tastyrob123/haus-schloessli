@@ -1,0 +1,181 @@
+{
+ "id": 1223680,
+ "name": "Saumur Rouge",
+ "weingut": "Guiberteau",
+ "region": "Saumur",
+ "region_id": 711,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Cabernet Franc"
+ ],
+ "speisen": [
+  "Lamm",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Ziegenkäse"
+ ],
+ "struktur": {
+  "acidity": 3.8357468,
+  "fizziness": null,
+  "intensity": 3.4088662,
+  "sweetness": 1.9025077,
+  "tannin": 3.5519176,
+  "user_structure_count": 28,
+  "calculated_structure_count": 87
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 142,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "red fruit",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 115,
+   "worte": [
+    "earthy",
+    "leather",
+    "minerals",
+    "smoke",
+    "forest floor"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 85,
+   "worte": [
+    "plum",
+    "blackberry",
+    "blackcurrant",
+    "blueberry",
+    "black fruit"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 55,
+   "worte": [
+    "pepper",
+    "jalapeno",
+    "licorice",
+    "savory",
+    "white pepper"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 39,
+   "worte": [
+    "oak",
+    "tobacco",
+    "vanilla",
+    "cedar",
+    "chocolate"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 21,
+   "worte": [
+    "bell pepper",
+    "green bell pepper",
+    "grass",
+    "hay",
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 15,
+   "worte": [
+    "pear",
+    "apricot",
+    "apple",
+    "green apple",
+    "melon"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 10,
+   "worte": [
+    "cream",
+    "cheese",
+    "banana",
+    "yogurt"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 7,
+   "worte": [
+    "violet",
+    "acacia",
+    "lilac",
+    "perfume"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 7,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "orange peel"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 6,
+   "worte": [
+    "almond",
+    "marzipan",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 5,
+   "worte": [
+    "dried blackberry",
+    "dried fruit",
+    "fig",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 4,
+   "worte": [
+    "guava",
+    "papaya",
+    "tamarind"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 466,
+  "name": "French Middle Loire Cabernet Franc Red",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 3454,
+ "weingut_weine": 14,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

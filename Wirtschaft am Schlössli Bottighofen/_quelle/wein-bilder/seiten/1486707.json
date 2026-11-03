@@ -1,0 +1,111 @@
+{
+ "id": 1486707,
+ "name": "Fläscher Sauvignon Blanc",
+ "weingut": "Hansruedi Adank",
+ "region": "Graubünden",
+ "region_id": 1455,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Sauvignon Blanc"
+ ],
+ "speisen": [
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Magerer Fisch",
+  "Ziegenkäse"
+ ],
+ "struktur": {
+  "acidity": 4.015034,
+  "fizziness": null,
+  "intensity": 2.806207,
+  "sweetness": 1.6362758,
+  "tannin": null,
+  "user_structure_count": 4,
+  "calculated_structure_count": 11
+ },
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 9,
+   "worte": [
+    "citrus",
+    "lime",
+    "grapefruit",
+    "lemon",
+    "marmalade"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 5,
+   "worte": [
+    "gooseberry",
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 4,
+   "worte": [
+    "elderflower"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 4,
+   "worte": [
+    "pear",
+    "apple",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 2,
+   "worte": [
+    "minerals",
+    "saline"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 2,
+   "worte": [
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 2,
+   "worte": [
+    "mango",
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "cassis"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 695,
+  "name": "Swiss Sauvignon Blanc White",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 575,
+ "weingut_weine": 27,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

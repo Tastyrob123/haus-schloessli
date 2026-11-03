@@ -1,0 +1,22 @@
+{
+ "id": 8325888,
+ "name": "Wyfelder Solaris",
+ "weingut": "Forster Weinbau",
+ "region": "Thurgau",
+ "region_id": 1479,
+ "alkohol": 13.8,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Solaris"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [],
+ "stil": null,
+ "bewertung": 3.8,
+ "bewertungen": 36,
+ "weingut_weine": 19,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

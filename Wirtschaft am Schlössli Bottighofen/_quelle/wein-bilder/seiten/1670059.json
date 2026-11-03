@@ -1,0 +1,188 @@
+{
+ "id": 1670059,
+ "name": "Il Pino di Biserno",
+ "weingut": "Biserno",
+ "region": "Toscana",
+ "region_id": 394,
+ "alkohol": 14.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Cabernet Sauvignon",
+  "Cabernet Franc",
+  "Merlot",
+  "Petit Verdot"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.0263183,
+  "fizziness": null,
+  "intensity": 3.576016,
+  "sweetness": 1.9585358,
+  "tannin": 3.0554748,
+  "user_structure_count": 2128,
+  "calculated_structure_count": 666
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 807,
+   "worte": [
+    "oak",
+    "tobacco",
+    "chocolate",
+    "vanilla",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 691,
+   "worte": [
+    "blackberry",
+    "plum",
+    "cassis",
+    "blackcurrant",
+    "dark fruit"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 392,
+   "worte": [
+    "leather",
+    "earthy",
+    "smoke",
+    "minerals",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 227,
+   "worte": [
+    "pepper",
+    "licorice",
+    "cinnamon",
+    "eucalyptus",
+    "menthol"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 211,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 37,
+   "worte": [
+    "cream",
+    "cheese",
+    "cheesy"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 31,
+   "worte": [
+    "violet",
+    "perfume",
+    "dried rose",
+    "lavender",
+    "lily"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 30,
+   "worte": [
+    "prune",
+    "fig",
+    "raisin",
+    "dried fruit",
+    "black raisin"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 21,
+   "worte": [
+    "bell pepper",
+    "tomato",
+    "rhubarb",
+    "tomato leaf",
+    "asparagus"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 20,
+   "worte": [
+    "toast",
+    "dried fig",
+    "brown sugar",
+    "marzipan",
+    "almond"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 8,
+   "worte": [
+    "stone fruit",
+    "apple",
+    "apricot",
+    "baked apple",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 4,
+   "worte": [
+    "fruit cup",
+    "mango",
+    "tamarind",
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 3,
+   "worte": [
+    "citrus",
+    "marmalade",
+    "orange peel"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 292,
+  "name": "Toskana Rot Italien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 23910,
+ "weingut_weine": 9,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

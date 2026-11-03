@@ -1,0 +1,45 @@
+{
+ "id": 12590774,
+ "name": "Bothmarhalde Chardonnay",
+ "weingut": "Weingut Wegelin",
+ "region": "Bundner Herrschaft",
+ "region_id": 1456,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.5700002,
+  "fizziness": null,
+  "intensity": 2.8366666,
+  "sweetness": 1.5683333,
+  "tannin": null,
+  "user_structure_count": 5,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 64,
+  "name": "Chardonnay Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.1,
+ "bewertungen": 37,
+ "weingut_weine": 30,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

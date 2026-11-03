@@ -1,0 +1,135 @@
+Quelle: https://de.wikipedia.org/wiki/Bottighofen (Wikitext)
+Abgerufen: 19.10.2026
+
+<!--schweizbezogen-->
+{{Infobox Ort in der Schweiz
+| NAME_ORT = Bottighofen
+| BILD = 2003-07-26 18-12-02 Switzerland Thurgau Bottighofen.JPG
+| BESCHREIBUNG = Hafen Bottighofen
+| BILDPFAD_KARTE = Karte Gemeinde Bottighofen 2011.png
+| BILDPFAD_WAPPEN = Bottighofen-blazon.svg
+| REGION-ISO = CH-TG
+| BEZIRK = [[Bezirk Kreuzlingen|Kreuzlingen]]
+| IMAGEMAP = Bezirk Kreuzlingen
+| BFS = 4643
+| PLZ = 8598
+| BREITENGRAD = 47.639754
+| LÄNGENGRAD = 9.207862
+| HÖHE = 411
+| FLÄCHE = 2.41
+| QUELLE-FLÄCHE = <ref name="TG in Zahlen" />
+| EINWOHNER = <!-- wird durch eine zentralisierte Vorlage eingebunden-->
+| STAND_EINWOHNER = <!-- wird durch eine zentralisierte Vorlage eingebunden-->
+| WEBSITE = www.bottighofen.ch
+}}
+'''Bottighofen''' ist eine Gemeinde und eine [[Ortschaft]]<ref name="Orte TG" /> im [[Bezirk Kreuzlingen]] des [[Kanton Thurgau|Kantons Thurgau]] in der [[Schweiz]]. Bottighofen war von 1803 bis 1993 eine [[Ortsgemeinde (Schweiz)|Ortsgemeinde]] der ehemaligen [[Munizipalgemeinde (Kanton Thurgau)|Munizipalgemeinde]] [[Scherzingen]] und ist seit 1994 eine eigene [[politische Gemeinde]].
+
+== Geographie ==
+Bottighofen liegt am Südwestufer des [[Obersee (Bodensee)|Obersee]] genannten Teils des Bodensees. Die Nachbargemeinden von Bottighofen sind [[Kreuzlingen]], [[Münsterlingen]] und [[Lengwil]]. Der tiefstgelegene Punkt des Gemeindegebiets ist das Seeufer im Norden auf ca. 396 m ü. M., der höchstgelegene liegt auf dem Aggerhau an der Südgrenze der Gemeinde auf 481 m ü. M.
+
+== Geologie ==
+Die Geologie von Bottighofen und Umgebung ist geprägt von den Ablagerungen und den landschaftsbildenden Prozessen der letzten [[Paläoproterozoische Vereisung|Eiszeit]]. Das ganze Gebiet wird bedeckt von einer wenige bis viele Meter mächtigen [[Grundmoräne]], deren Zusammensetzung sowohl von der Korngrösse (ton bis Findling) wie auch vom Gesteinsmaterial her sehr vielfältig ist. Auf dieser Moränendecke bildeten sich deshalb fruchtbare Böden mit einem günstigen Wasserhaushalt, die sich vorzüglich für die Landwirtschaft eignen.<ref name=":0">{{Literatur |Autor=Carl Ruch, Heinrich Näf, Martin Nigg, Urs Fröhlich |Titel=Der Stichbach |Hrsg=Gemeinde Bottighofen |Ort=Bottighofen |Datum=2002 |Seiten=83}}</ref>
+
+== Geschichte ==
+[[Datei:Bodensee Bottighofen 2005.JPG|mini|links|Bodensee bei Bottighofen]]
+Die ältesten Funde, welche in Bottighofen gefunden wurden, stammen aus der [[Jungsteinzeit]]. Daraus schliesst man, dass sich an dem damals dicht bewaldeten Ufer des Sees [[Pfahlbau]]ten befunden hatten. Vereinzelte Funde aus der [[Bronzezeit]] gelangten nach Frauenfeld und Zürich. Ein in Bottighofen gefundenes Bronzebeil wird heute im [[Rosgartenmuseum]] in [[Konstanz]] aufbewahrt.
+
+Zur späten Bronze- und frühen [[Eisenzeit]] lag Bottighofen im Gebiet der [[Helvetier]]. Durch die Niederlage der Helvetier gegen die [[Römisches Reich|Römer]] bei der [[Schlacht bei Bibracte]] geriet auch das Gebiet um Bottighofen während 500 Jahren unter die Herrschaft Roms und wurde somit romanisiert. Die Römer bauten in der Bodenseeregion Strassen, Kastelle, Gutshöfe und Städte. Doch im Laufe der ersten Jahrhunderte mussten sich die Römer zurückziehen, und die [[Alemannen]] nahmen Besitz von diesem Land. Im frühen [[Mittelalter]] führten machtpolitische Begebenheiten zu Umwälzungen und Verschiebungen. Es bildeten sich [[Gau]]e, so der Thurgau, der vom Bodensee bis an den [[Zürichsee]] reichte.
+
+Der Name von Bottighofen enthält den germanischen Personennamen Botto oder Potto. Der älteste Beleg lautet ''Pottinichovum'' und bedeutet bei den Höfen der Pottinge, den Nachfahren eines Botto oder Potto. Im Jahre 830 wird der Name Bottighofen erstmals urkundlich erwähnt in einer Pergamenthandschrift des [[Kloster St. Gallen|Klosters St. Gallen]] vom 4. April 830, in der ein Immo (Personenname) dem Kloster St. Gallen alle seine Besitztümer übertrug. Die nächste Urkunde stammt aus dem Jahre 837. Abt [[Bernwig]] verleiht an Nidhart und Engilsind den von ihnen an St. Gallen übertragenen Besitz zu Bottighofen gegen Zins. 1083 wird ''Waceli de botinhoven'' unter anderem als Zeuge in einer Urkunde einen Tausch zweier Güter betreffend zwischen dem [[Kloster Allerheiligen (Schweiz)|Kloster Allerheiligen zu Schaffhausen]] und einem Manno Tuto von [[Wagenhausen TG|Wagenhausen]] genannt.<ref name=":1">{{Literatur |Autor=Magdalena Munz-Schaufelberger |Hrsg=Gemeinde Bottighofen |Titel=1150 Jahre Bottighofen (830–1980) |Ort=Bottighofen |Datum=1980 |Seiten=64}}</ref><ref>[https://www.bottighofen.ch/geschichte/2219 ''Bottighofen im Wandel der Zeit.''] Auf der Webseite der Gemeinde Bottighofen, abgerufen am 1. Dezember 2019.</ref>
+
+[[Datei:ETH-BIB-Bottighofen aus 300 m-Inlandflüge-LBS MH01-004195.tif|mini|links|Bottighofen im Jahr 1924. Vorne die Untere Mühle, dahinter die damals noch nicht elektrifizierte [[Seelinie (Bahnstrecke)|Seelinie]] der [[Schweizerische Bundesbahnen|SBB]], im Hintergrund Bottighoferwald]]
+[[Grundherr]] war vom [[Hochmittelalter]] bis ins 19. Jahrhundert das [[Kloster Münsterlingen]]. Gerichtlich gehörte Bottighofen bis 1798 zur [[Vogtei Eggen]]. Bottighofen lag in der [[Pfarrei]] [[Münsterlingen]], die nach der Wiederaufnahme des Klosterlebens 1549/51 wiederhergestellt wurde. 1594 erfolgte die Zuteilung der mehrheitlich reformierten Einwohner zur Pfarrei Scherzingen.<ref name="HLS">{{HLS|1937|Autor=[[Gregor Spuhler]]|Datum=2004-08-19}}</ref>
+
+[[Datei:ETH-BIB-Bottighofen, Untere Mühle (E. Munz Erben)-Inlandflüge-LBS MH03-1510.tif|mini|Untere Mühle in der Zwischenkriegszeit]]
+Um vier Mühlen am Stichbach entstanden die zum Teil noch erhaltenen historischen Siedlungskerne.
+Am 10. Januar 1800 erschienen vor Bottighofen elf bewaffnete [[Schaluppe]]n, und der Kommandant der österreichischen Flotte liess das Feuer eröffnen. Das waren bis zum Ersten Weltkrieg die einzigen kriegerischen Ereignisse auf dem See.<ref name=":1" /> Im 19. Jahrhundert wurden Müllerei,<ref>{{Internetquelle |autor=E. Rieben |url=https://www.e-periodica.ch/digbib/view?pid=tjb-002:1927:3#70 |titel=Die untere Mühle zu Bottighofen |hrsg=Thurgauer Jahrbuch, 1927 |abruf=2020-03-05}}</ref> Acker- und Rebbau sowie Wein- und Holzhandel (Schifflände) betrieben.<ref name="HLS" />
+
+Im 20. Jahrhundert siedelten sich einige Kleinunternehmen in Bottighofen an. 1990 waren 35 % der Erwerbstätigen im zweiten und 57 % im dritten [[Wirtschaftssektor]] beschäftigt. Die nach [[Kreuzlingen]] und Konstanz orientierte Gemeinde erlangte ihre politische Selbstständigkeit dank des starken Wachstums seit 1960, das unter anderem zum Bau von Hafen, Dorfzentrum und neuen Wohnquartieren führte.<ref name="HLS" />
+<div style="clear:left;"></div>
+
+== Wappen ==
+[[Datei:Bottighofen-blazon.svg|links|60px]]
+[[Blasonierung]]: In Weiss ein durchgehendes rotes [[Tatzenkreuz]], das oben rechts einen schwarzen, silberbereiften [[Reichsapfel]] einschliesst.<ref name="Staatsarchiv">[https://staatsarchiv.tg.ch/de/wissen/gemeindewappen.html/881 ''Gemeindewappen.''] Auf der Webseite des Staatsarchivs des Kantons Thurgau, abgerufen am 8. Dezember 2019.</ref>
+
+Das Tatzenkreuz in den umgekehrten Farben des Klosters erinnert an die engen Beziehungen zwischen Bottighofen und dem Kloster Münsterlingen. Der Reichsapfel verweist auf die Zugehörigkeit der Gemeinde zur Vogtei Eggen.<ref name="Staatsarchiv" />
+<div style="clear:left;"></div>
+
+== Bevölkerung ==
+{| class="wikitable"
+|+Bevölkerungsentwicklung der Orts- und politischen Gemeinde<ref name="StatistikTG" />
+|- class="hintergrundfarbe5" align="center"
+!                                !! 1850 !! 1900 !! 1950 !! 1990 !! 2000 !! 2010 !! 2018
+!2023
+|- align="right"
+|align=left | Politische Gemeinde|| colspan="4"|                 || 1684 || 2096 || 2219
+|2681<ref name=":2">{{Internetquelle |url=https://statistik.tg.ch/themen-und-daten/raum-verkehr-und-umwelt/flaechen-raumgliederungen/ortschaftenverzeichnis.html/9817 |titel=Die Ortschaften des Kantons Thurgau und ihre Wohnbevölkerung 2024 |hrsg=Kanton Thurgau, Dienststelle für Statistik, Frauenfeld |datum=2024 |abruf=2024-06-27}}</ref>
+|- align="right"
+|align=left | Ortsgemeinde       ||  483 ||  488 ||  572 || 1156 || colspan="3"|
+|
+|-
+| colspan="20" | {{ChartDirektEW
+ |x=1850,1860,1870,1880,1888,1900,1910,1920,1930,1941,1950,1960,1970,1980,1990,2000,2010,2018,2023
+ |y= 483, 500, 518, 437, 474, 488, 581, 561, 532, 538, 572, 572, 788, 997,1156,1684,2096,2219,2681}}
+|}
+Von den insgesamt 2681 Einwohnern der Gemeinde Bottighofen am 31. Dezember 2023 waren 995 bzw. 37,1 % ausländische Staatsbürger. 786 (29,3 %) waren evangelisch-reformiert und 646 (24,1 %) römisch-katholisch.<ref name=":2" />
+
+== Wirtschaft ==
+Im Jahr 2016 bot Bottighofen 661 Personen Arbeit (umgerechnet auf Vollzeitstellen). Davon waren 0,7 % in der Land- und Forstwirtschaft, 11,4 % in Industrie, Gewerbe und Bau sowie 87,9 % im Dienstleistungssektor tätig.<ref name="TG in Zahlen" />
+
+== Stichbach ==
+Der Stichbach ist ein Bach, welcher sich durch den Bottighoferwald und durch Bottighofen zieht. Am 14. Juni 1999 trat der Stichbach über die Ufer. Heftige lokale Niederschläge im Einzugsgebiet des Stichbaches führten zu einem schnellen Anstieg des Baches. Viel Gehölz wurde durch die Wassermassen mitgerissen und verstopfte die Durchlässe unter den Brücken. Das Wasser setzte die Stromversorgung für das ganze Dorf ausser Betrieb und überschwemmte mehrere Liegenschaften im Bereich Rüti, Obere Mühle, Brunnenstrasse und Hauptstrasse. Dieses Jahrhundertereignis führte zu genaueren Untersuchungen des ganzen Bachlaufes. So wurde am 24. August 1999 durch die Gemeindeversammlung ein Kredit über 2,5 Mio. Franken für die Sanierung des Baches und dessen Renaturierung gesprochen.<ref name=":0" /><ref>[https://www.bottighofen.ch/geschichte/2367 ''Der Stichbach.''] Auf der Webseite der Gemeinde Bottighofen, abgerufen am 1. Dezember 2019.</ref>
+
+== Sehenswürdigkeiten ==
+[[Datei:BottighofenHafen.jpg|mini|Hafen Bottighofen mit dem Schlössli im Hintergrund]]
+In Bottighofen gab es vier Mühlen. Drei von diesen waren am Oberlauf des Stichbaches, die vierte (Untere Mühle) war am Ende des Stichbaches beim Auslauf zum Bodensee. Da alle vom gleichen Gewässer abhängig waren, gab es oft Streit unter den Müllern.
+
+Das Schlössli, ehemaliges Restaurant und Hotelbetrieb, ist heute ein Wohnhaus. Die Wirtschaft am Schlössli wird im ehemaligen Hafenmeistergebäude geführt.<ref>{{Literatur |Autor=Ines Rusca, Magdalena Munz-Schaufelberger |Hrsg=Gemeinde Bottighofen |Titel=Die Bottighofer Mühlen und das Schlössli am See |Ort=Bottighofen |Datum=1994 |Seiten=145}}</ref><ref>[https://www.bottighofen.ch/geschichte/2220 ''Das Mühlendorf.''] Auf der Webseite der Gemeinde Bottighofen, abgerufen am 1. Dezember 2019.</ref>
+
+== Bilder ==
+<gallery widths="200" heights="130">
+Gasthof Bären und Kreisel am Ortseingang.jpg|Gasthof Bären und Kreisel am Ortseingang
+BottighofenMarina.jpg|Bootshafen
+Hochhäuser im Bottighofen.jpg|Ortsbildprägend: die beiden Hochhäuser am Bootshafen
+"Langhaus" Untere Mühle Bottighofen-20140601.jpg|«Langhaus» Untere Mühle
+Mehrfamilienhäuser "Mühlenpark" Bottighofen-20140601.jpg|Mehrfamilienhäuser «Mühlenpark»
+</gallery>
+
+== Söhne und Töchter der Stadt ==
+* [[Hans Munz (Politiker, 1916)|Hans Munz]] (1916–2013), Politiker (FDP) und Rechtsanwalt
+
+== Persönlichkeiten ==
+* [[Hans Munz (Politiker, 1916)|Hans Munz]] (1916–2013), Politiker (FDP) und Rechtsanwalt
+* [[Bernd Rüthers]] (1930–2023), deutscher Rechtswissenschaftler, Rektor der Universität Konstanz von 1991 bis 1996
+* [[Hagen Klein]] (* 1949), deutscher Motorradrennfahrer
+* [[Werner Ebke]] (* 1951), deutscher Rechtswissenschaftler, Vorstandsmitglied der Stiftung Lindauer Nobelpreisträgertagungen
+* [[Bernd Schneider (Rennfahrer)|Bernd Schneider]] (* 1964), deutscher Automobilrennfahrer ([[DTM]])
+* [[Alex Müller (Rennfahrer)|Alex Müller]] (* 1979), deutscher Automobilrennfahrer ([[Gruppe GT2|GT2]])
+* [[Markus Keller (Snowboarder)|Markus Keller]] (* 1982), Snowboarder
+
+== Literatur ==
+* Magdalena Munz-Schaufelberger: ''Bottighofen. Ein weiterer Beitrag aus dessen Vergangenheit: Rund um die Offnung der Vogtei Eggen und Bottighofer Einzugsbriefe und die bäuerliche Bewirtschaftung in unserem Dorf.'' Bottighofen 2003, {{DNB|971774382}}.
+* Magdalena Munz-Schaufelberger: ''1150 Jahre Bottighofen (830–1980).'' 1980, {{DNB|953137791}}. 
+* Regine Abegg, Peter Erni, Alfons Raimann: ''Die Kunstdenkmäler des Kantons Thurgau, Band VIII: Rund um Kreuzlingen.'' (= ''Kunstdenkmäler der Schweiz.'' Band 125). Hrsg. von der [[Gesellschaft für Schweizerische Kunstgeschichte]] GSK. Bern 2014, ISBN 978-3-03797-116-1, S.&nbsp;34–65.
+* Carl Ruch, Heinrich Näf, Martin Nigg, Urs Fröhlich: ''Der Stichbach.'' Hrsg. von der Gemeinde Bottighofen. Bottighofen 2002, {{DNB|967473195}}.
+
+== Weblinks ==
+{{Commonscat|Bottighofen}}
+* [https://www.bottighofen.ch/ Offizielle Website der Gemeinde Bottighofen]
+
+== Einzelnachweise ==
+<references>
+<ref name="TG in Zahlen">{{Zahlen TG 2018}}</ref>
+<ref name="Orte TG">{{Orte TG 2018}}</ref>
+<ref name="StatistikTG">{{Statistik TG 1850–2018}}</ref>
+</references>
+
+{{Navigationsleiste Bezirk Kreuzlingen}}
+
+{{Normdaten|TYP=g|GND=4377665-6|LCCN=no99024299|VIAF=123853173}}
+
+[[Kategorie:Ort im Kanton Thurgau]]
+[[Kategorie:Schweizer Gemeinde]]
+[[Kategorie:Bottighofen| ]]
+[[Kategorie:Ersterwähnung 830]]
+[[Kategorie:Ort am Bodensee]]

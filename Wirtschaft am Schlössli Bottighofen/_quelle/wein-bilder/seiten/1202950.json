@@ -1,0 +1,160 @@
+{
+ "id": 1202950,
+ "name": "Grand Blanc de Blancs Brut Champagne",
+ "weingut": "Gosset",
+ "region": "Champagne",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.411169,
+  "fizziness": 4.3812284,
+  "intensity": 3.731526,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 565,
+  "calculated_structure_count": 67
+ },
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 202,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lime",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 194,
+   "worte": [
+    "green apple",
+    "apple",
+    "apricot",
+    "pear",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 128,
+   "worte": [
+    "brioche",
+    "toast",
+    "almond",
+    "biscuit",
+    "hazelnut"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 96,
+   "worte": [
+    "minerals",
+    "honey",
+    "chalk",
+    "stone",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 62,
+   "worte": [
+    "yeast",
+    "cream",
+    "oil",
+    "cheese",
+    "cheesy"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 30,
+   "worte": [
+    "butter",
+    "vanilla",
+    "caramel",
+    "pastry",
+    "toffee"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 15,
+   "worte": [
+    "gooseberry",
+    "straw",
+    "celery",
+    "grass",
+    "hay"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 13,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "kiwi",
+    "lychee",
+    "passion fruit"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 9,
+   "worte": [
+    "savory",
+    "marjoram",
+    "mint",
+    "anise",
+    "licorice"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 7,
+   "worte": [
+    "strawberry",
+    "cherry",
+    "pomegranate",
+    "white cherry"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 6,
+   "worte": [
+    "acacia",
+    "elderflower",
+    "honeysuckle",
+    "jasmine",
+    "lilac"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "raisin",
+    "dried apricot"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 2,
+   "worte": [
+    "plum"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

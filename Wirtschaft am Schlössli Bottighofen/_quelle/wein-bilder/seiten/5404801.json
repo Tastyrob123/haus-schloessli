@@ -1,0 +1,142 @@
+{
+ "id": 5404801,
+ "name": "Alte Reben Chardonnay",
+ "weingut": "Bernhard Huber",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.8171399,
+  "fizziness": null,
+  "intensity": 2.8860524,
+  "sweetness": 1.5646827,
+  "tannin": null,
+  "user_structure_count": 37,
+  "calculated_structure_count": 25
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 44,
+   "worte": [
+    "oak",
+    "vanilla",
+    "butter",
+    "butterscotch",
+    "baking spice"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 44,
+   "worte": [
+    "minerals",
+    "flint",
+    "smoke",
+    "salt",
+    "stone"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 40,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lemon zest",
+    "lime"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 20,
+   "worte": [
+    "green apple",
+    "apple",
+    "apricot",
+    "pear",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 8,
+   "worte": [
+    "toast",
+    "almond",
+    "brioche",
+    "hazelnut"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 8,
+   "worte": [
+    "cream",
+    "cheese",
+    "lemon curd",
+    "oil",
+    "sourdough"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 4,
+   "worte": [
+    "licorice",
+    "mint",
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 4,
+   "worte": [
+    "chard",
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 4,
+   "worte": [
+    "pineapple",
+    "mango",
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 58,
+  "name": "Chardonnay Deutschland",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 823,
+ "weingut_weine": 67,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

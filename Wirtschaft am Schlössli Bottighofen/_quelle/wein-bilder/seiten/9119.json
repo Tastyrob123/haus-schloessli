@@ -1,0 +1,196 @@
+{
+ "id": 9119,
+ "name": "Viña Tondonia Reserva",
+ "weingut": "R. López de Heredia",
+ "region": "Rioja",
+ "region_id": 492,
+ "alkohol": 12,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Tempranillo",
+  "Mazuelo",
+  "Graciano",
+  "Garnacha"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel"
+ ],
+ "struktur": {
+  "acidity": 3.815217,
+  "fizziness": null,
+  "intensity": 3.6983352,
+  "sweetness": 1.585378,
+  "tannin": 3.7054846,
+  "user_structure_count": 8057,
+  "calculated_structure_count": 4073
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 7065,
+   "worte": [
+    "oak",
+    "vanilla",
+    "tobacco",
+    "cedar",
+    "chocolate"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 4686,
+   "worte": [
+    "leather",
+    "earthy",
+    "smoke",
+    "mushroom",
+    "forest floor"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 3731,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "strawberry",
+    "raspberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 2198,
+   "worte": [
+    "plum",
+    "blackberry",
+    "black cherry",
+    "dark fruit",
+    "black fruit"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1303,
+   "worte": [
+    "pepper",
+    "licorice",
+    "cinnamon",
+    "savory",
+    "mint"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 614,
+   "worte": [
+    "prune",
+    "raisin",
+    "dried fruit",
+    "fig",
+    "dried cranberry"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 339,
+   "worte": [
+    "toast",
+    "almond",
+    "nutty",
+    "dried fig",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 307,
+   "worte": [
+    "orange",
+    "citrus",
+    "orange peel",
+    "lemon",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 246,
+   "worte": [
+    "cream",
+    "cheese",
+    "oil",
+    "banana",
+    "yogurt"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 191,
+   "worte": [
+    "violet",
+    "dried flowers",
+    "perfume",
+    "dried rose",
+    "rose petal"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 143,
+   "worte": [
+    "apple",
+    "apricot",
+    "peach",
+    "melon",
+    "stone fruit"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 138,
+   "worte": [
+    "tomato",
+    "grass",
+    "hay",
+    "straw",
+    "bell pepper"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 26,
+   "worte": [
+    "tropical",
+    "pineapple",
+    "mango",
+    "passion fruit",
+    "bubblegum"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 190,
+  "name": "Rioja Rot Spanien",
+  "description": "Rioja is one Spain's most famous wine regions and is one of only two regions classified under the Denominación de Origen Calificada (DOCa) system. Its two most important red grapes are Tempranillo and Garnacha. \n\nWhen it comes to Rioja reds, there are 4 categories of ageing to keep in mind:\n\nJoven - There are no specific requirements here, but these wines tend to be 1-2 years old. \n\nCrianza - These wines are in their 3rd year, with at least 12 months spent in oak barrels.\n\nReserva - When excellent vintages are selected to become Reserva wines, they spend 3 years aging, 12 months minimum of which is in oak, followed by 6 months in the bottle. \n\nGran Reserva - The wines carefully selected for this process must undergo a minimum of 60 months aging,  of which 2 years must be in oak barrels, with another 2 years spent in the bottle. \n\nTypically younger wines will be lighter in body style, exhibit more fresh fruit characteristics and are suitable to drink while young. Older wines have more developed flavor profiles and earthy characteristics.",
+  "blurb": null,
+  "interesting_facts": [
+   "Archaeologists believe that wine has been cultivated and consumed in the region since between 3000 and 4000 BC.",
+   "In Spain, wineries are most commonly known as 'bodegas'. ",
+   "The medium body and high acidity in Rioja Reds make them excellent for pairing with a variety of foods."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 94139,
+ "weingut_weine": 12,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

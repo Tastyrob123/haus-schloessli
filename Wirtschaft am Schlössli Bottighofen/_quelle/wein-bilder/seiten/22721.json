@@ -1,0 +1,184 @@
+{
+ "id": 22721,
+ "name": "Flaccianello della Pieve",
+ "weingut": "Fontodi",
+ "region": "Colli della Toscana Centrale",
+ "region_id": 2915,
+ "alkohol": 15,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Sangiovese"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.2181559,
+  "fizziness": null,
+  "intensity": 3.5180583,
+  "sweetness": 1.7204494,
+  "tannin": 3.1948843,
+  "user_structure_count": 2672,
+  "calculated_structure_count": 1366
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 1607,
+   "worte": [
+    "oak",
+    "tobacco",
+    "vanilla",
+    "chocolate",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 1265,
+   "worte": [
+    "leather",
+    "earthy",
+    "smoke",
+    "balsamic",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1177,
+   "worte": [
+    "plum",
+    "blackberry",
+    "black cherry",
+    "dark fruit",
+    "black fruit"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 759,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "red cherry",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 471,
+   "worte": [
+    "licorice",
+    "pepper",
+    "mint",
+    "cinnamon",
+    "dried herbs"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 102,
+   "worte": [
+    "violet",
+    "perfume",
+    "lavender",
+    "rose petal",
+    "dried flowers"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 94,
+   "worte": [
+    "prune",
+    "raisin",
+    "fig",
+    "dried fruit",
+    "black raisin"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 55,
+   "worte": [
+    "toast",
+    "walnut",
+    "almond",
+    "dried fig",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 39,
+   "worte": [
+    "tomato",
+    "tomato leaf",
+    "grass",
+    "arugula",
+    "hay"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 34,
+   "worte": [
+    "cream",
+    "cheese",
+    "yeast",
+    "campfire",
+    "cheesy"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 31,
+   "worte": [
+    "orange",
+    "orange peel",
+    "citrus",
+    "marmalade",
+    "lime"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 4,
+   "worte": [
+    "stone fruit",
+    "nectarine",
+    "persimmon"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "pineapple"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 292,
+  "name": "Toskana Rot Italien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 27902,
+ "weingut_weine": 13,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

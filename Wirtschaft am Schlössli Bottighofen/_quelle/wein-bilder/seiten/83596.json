@@ -1,0 +1,188 @@
+{
+ "id": 83596,
+ "name": "Lucente",
+ "weingut": "Tenuta Luce",
+ "region": "Toscana",
+ "region_id": 394,
+ "alkohol": 14.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Merlot",
+  "Sangiovese"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.1639857,
+  "fizziness": null,
+  "intensity": 3.4075415,
+  "sweetness": 1.6470217,
+  "tannin": 3.0912812,
+  "user_structure_count": 3575,
+  "calculated_structure_count": 1876
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 2230,
+   "worte": [
+    "oak",
+    "vanilla",
+    "chocolate",
+    "tobacco",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1709,
+   "worte": [
+    "plum",
+    "blackberry",
+    "blackcurrant",
+    "dark fruit",
+    "black cherry"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1150,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 880,
+   "worte": [
+    "leather",
+    "earthy",
+    "smoke",
+    "mushroom",
+    "cocoa"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 486,
+   "worte": [
+    "pepper",
+    "licorice",
+    "mint",
+    "cinnamon",
+    "rosemary"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 87,
+   "worte": [
+    "violet",
+    "perfume",
+    "lavender",
+    "dried rose",
+    "iris"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 80,
+   "worte": [
+    "prune",
+    "raisin",
+    "fig",
+    "dried fruit",
+    "dried blackberry"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 69,
+   "worte": [
+    "cheese",
+    "cream",
+    "oil",
+    "banana",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 66,
+   "worte": [
+    "toast",
+    "walnut",
+    "almond",
+    "dried fig",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 54,
+   "worte": [
+    "tomato",
+    "bell pepper",
+    "grass",
+    "hay",
+    "arugula"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 19,
+   "worte": [
+    "citrus",
+    "lime",
+    "orange",
+    "orange peel",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 16,
+   "worte": [
+    "stone fruit",
+    "apple",
+    "pear",
+    "melon",
+    "apricot jam"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 3,
+   "worte": [
+    "bubblegum",
+    "guava"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 292,
+  "name": "Toskana Rot Italien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4,
+ "bewertungen": 46261,
+ "weingut_weine": 7,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

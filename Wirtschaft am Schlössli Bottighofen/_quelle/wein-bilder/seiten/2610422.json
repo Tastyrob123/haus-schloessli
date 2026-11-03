@@ -1,0 +1,135 @@
+{
+ "id": 2610422,
+ "name": "Fläscher Chardonnay",
+ "weingut": "Hansruedi Adank",
+ "region": "Graubünden",
+ "region_id": 1455,
+ "alkohol": 13.2,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.6313906,
+  "fizziness": null,
+  "intensity": 3.540658,
+  "sweetness": 1.2010715,
+  "tannin": null,
+  "user_structure_count": 20,
+  "calculated_structure_count": 17
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 24,
+   "worte": [
+    "oak",
+    "butter",
+    "vanilla"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 19,
+   "worte": [
+    "lemon",
+    "lime",
+    "citrus",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 16,
+   "worte": [
+    "cream",
+    "banana",
+    "yeast",
+    "cheese"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 12,
+   "worte": [
+    "peach",
+    "apple",
+    "yellow apple",
+    "apricot",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 9,
+   "worte": [
+    "minerals",
+    "smoke",
+    "beeswax",
+    "stone",
+    "wax"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 6,
+   "worte": [
+    "toast",
+    "brioche"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 5,
+   "worte": [
+    "asparagus",
+    "straw",
+    "chard"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 3,
+   "worte": [
+    "bubblegum",
+    "lychee",
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 64,
+  "name": "Chardonnay Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4,
+ "bewertungen": 529,
+ "weingut_weine": 27,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

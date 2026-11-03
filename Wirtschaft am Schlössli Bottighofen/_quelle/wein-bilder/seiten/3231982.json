@@ -1,0 +1,163 @@
+{
+ "id": 3231982,
+ "name": "Saint-Romain  'Sous le Château'",
+ "weingut": "Benjamin Leroux",
+ "region": "Saint-Romain",
+ "region_id": 2243,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.2901454,
+  "fizziness": null,
+  "intensity": 3.5606973,
+  "sweetness": 1.6477451,
+  "tannin": null,
+  "user_structure_count": 106,
+  "calculated_structure_count": 70
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 108,
+   "worte": [
+    "apple",
+    "pear",
+    "green apple",
+    "yellow apple",
+    "melon"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 103,
+   "worte": [
+    "butter",
+    "oak",
+    "vanilla",
+    "cedar",
+    "baking spice"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 95,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 94,
+   "worte": [
+    "minerals",
+    "honey",
+    "smoke",
+    "flint",
+    "stone"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 33,
+   "worte": [
+    "cream",
+    "lemon curd",
+    "oil",
+    "cheese",
+    "creme fraiche"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 23,
+   "worte": [
+    "toast",
+    "nutty",
+    "almond",
+    "toasted almond"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 16,
+   "worte": [
+    "pineapple",
+    "lychee",
+    "tropical",
+    "papaya",
+    "green pineapple"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 9,
+   "worte": [
+    "savory",
+    "cinnamon",
+    "green herbs",
+    "mint",
+    "musk"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "dried apricot",
+    "dried fruit"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 3,
+   "worte": [
+    "grass",
+    "straw",
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "cherry"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 285,
+  "name": "Burgund Côte de Beaune Weiß Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 1488,
+ "weingut_weine": 85,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

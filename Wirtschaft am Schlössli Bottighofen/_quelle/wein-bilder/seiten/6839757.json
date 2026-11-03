@@ -1,0 +1,159 @@
+{
+ "id": 6839757,
+ "name": "Cuvée des Peupliers Bourgogne",
+ "weingut": "Laurent Ponsot",
+ "region": "Bourgogne",
+ "region_id": 385,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.853815,
+  "fizziness": null,
+  "intensity": 2.6359367,
+  "sweetness": 1.8057126,
+  "tannin": 2.3117888,
+  "user_structure_count": 66,
+  "calculated_structure_count": 46
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 87,
+   "worte": [
+    "raspberry",
+    "strawberry",
+    "cherry",
+    "red fruit",
+    "cranberry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 58,
+   "worte": [
+    "oak",
+    "vanilla",
+    "chocolate",
+    "baking spice",
+    "clove"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 47,
+   "worte": [
+    "earthy",
+    "minerals",
+    "mushroom",
+    "forest floor",
+    "leather"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 20,
+   "worte": [
+    "plum",
+    "blackberry",
+    "black fruit",
+    "black cherry",
+    "blackcurrant"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 18,
+   "worte": [
+    "mint",
+    "licorice",
+    "cinnamon",
+    "savory",
+    "dried herbs"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 9,
+   "worte": [
+    "lavender",
+    "violet",
+    "dried rose",
+    "perfume",
+    "rose hip"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 5,
+   "worte": [
+    "fig",
+    "dried fruit",
+    "fruitcake",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 5,
+   "worte": [
+    "lemon",
+    "marmalade",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 4,
+   "worte": [
+    "cheese",
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 4,
+   "worte": [
+    "tomato",
+    "fresh-cut grass",
+    "grass"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 1,
+   "worte": [
+    "almond"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 23,
+  "name": "Burgund Rot Frankreich",
+  "description": "Burgundian reds completely depend on their environment (terroir) to gain their nuances in flavor. These reds are lighter with medium acid and typically lower tannins.\n\nThere is significant variety in price on reds from Burgundy. The region produces some of the most consistent table wines along with some of the most expensive and collectable in the world.\n\nPinot Noir is almost always the grape of choice in Burgundy. These reds are significantly less fruit-forward than American varietals – in Burgundy it's all about the terroir, which can vary widely within the region. The character of these wines is a result of variations in climate and the differences in soil from along the river upon which the region lines.\n\nIn the far south of Burgundy, Gamay is used instead of Pinot. Red fruits typically grace the nose and palate.\n\nBurgundian reds collect well and can usually age for many years before drinking.\n\nWith respect to food, these reds go well with savory dishes without too much spice. You can even enjoy a light red Burgundy with some fattier fishes. Try to avoid spicier dishes and leafy greens.",
+  "blurb": null,
+  "interesting_facts": [
+   "Burgundy vineyards are passed down through families with sometimes several dozen owners to a single plot – sometimes split up by rows.",
+   "Emperor Napoleon first drew boundaries for Burgundian vineyards.",
+   "Burgundy produces the most collectable and expensive wines of France."
+  ],
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 3.9,
+ "bewertungen": 880,
+ "weingut_weine": 34,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

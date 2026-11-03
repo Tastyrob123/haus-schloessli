@@ -1,0 +1,119 @@
+{
+ "id": 1564152,
+ "name": "Vieilles Vignes",
+ "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+ "region": "Neuchâtel",
+ "region_id": 1401,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.00679,
+  "fizziness": null,
+  "intensity": 2.8022442,
+  "sweetness": 1.5905,
+  "tannin": 2.5339534,
+  "user_structure_count": 41,
+  "calculated_structure_count": 12
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 19,
+   "worte": [
+    "red fruit",
+    "cherry",
+    "pomegranate",
+    "raspberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 5,
+   "worte": [
+    "earthy",
+    "smoke",
+    "graphite"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 5,
+   "worte": [
+    "oak",
+    "cedar",
+    "incense"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 4,
+   "worte": [
+    "dark fruit",
+    "blackberry"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 4,
+   "worte": [
+    "orange zest",
+    "blood orange",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 2,
+   "worte": [
+    "oregano",
+    "vanilla bean"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 1,
+   "worte": [
+    "apple"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "violet"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 589,
+ "weingut_weine": 9,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

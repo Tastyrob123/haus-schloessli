@@ -1,0 +1,186 @@
+{
+ "id": 80279,
+ "name": "Bouzeron",
+ "weingut": "Domaine A. et P. de Villaine",
+ "region": "Bouzéron",
+ "region_id": 2259,
+ "alkohol": 12.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Aligoté"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.041228,
+  "fizziness": null,
+  "intensity": 2.9049263,
+  "sweetness": 1.3911825,
+  "tannin": null,
+  "user_structure_count": 84,
+  "calculated_structure_count": 555
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 594,
+   "worte": [
+    "apple",
+    "pear",
+    "green apple",
+    "peach",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 535,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 477,
+   "worte": [
+    "minerals",
+    "honey",
+    "stone",
+    "flint",
+    "saline"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 157,
+   "worte": [
+    "butter",
+    "oak",
+    "vanilla",
+    "caramel",
+    "butterscotch"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 121,
+   "worte": [
+    "cream",
+    "cheese",
+    "oil",
+    "banana",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 84,
+   "worte": [
+    "almond",
+    "nutty",
+    "toast",
+    "brioche",
+    "hazelnut"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 82,
+   "worte": [
+    "straw",
+    "grass",
+    "hay",
+    "fresh-cut grass",
+    "gooseberry"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 70,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "passion fruit",
+    "lychee",
+    "mango"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 44,
+   "worte": [
+    "honeysuckle",
+    "acacia",
+    "chamomile",
+    "jasmine",
+    "apple blossom"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 29,
+   "worte": [
+    "fennel",
+    "white pepper",
+    "mint",
+    "aniseed",
+    "cinnamon"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 12,
+   "worte": [
+    "fig",
+    "dried apricot",
+    "raisin",
+    "dried fruit",
+    "dried mango"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 6,
+   "worte": [
+    "plum",
+    "jam",
+    "cassis"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 4,
+   "worte": [
+    "watermelon",
+    "cotton candy",
+    "raspberry"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 287,
+  "name": "Burgund Côte Chalonnaise Weiß Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 3.9,
+ "bewertungen": 9546,
+ "weingut_weine": 21,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

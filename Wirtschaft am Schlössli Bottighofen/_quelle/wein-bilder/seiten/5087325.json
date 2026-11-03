@@ -1,0 +1,140 @@
+{
+ "id": 5087325,
+ "name": "Les Combes Vieilles Vignes Pouilly-Fuissé",
+ "weingut": "Verget",
+ "region": "Pouilly-Fuissé",
+ "region_id": 2264,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Vegetarische Gerichte",
+  "Pasta",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 2.9309864,
+  "fizziness": null,
+  "intensity": 3.21071,
+  "sweetness": 1.4571401,
+  "tannin": null,
+  "user_structure_count": 14,
+  "calculated_structure_count": 24
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 40,
+   "worte": [
+    "oak",
+    "butter",
+    "vanilla",
+    "coconut",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 27,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "citrus zest",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 24,
+   "worte": [
+    "peach",
+    "pear",
+    "apple",
+    "apricot",
+    "white peach"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 22,
+   "worte": [
+    "minerals",
+    "smoke",
+    "honey",
+    "salt",
+    "stone"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 9,
+   "worte": [
+    "tropical",
+    "pineapple",
+    "guava",
+    "kiwi",
+    "mango"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 7,
+   "worte": [
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 6,
+   "worte": [
+    "hay",
+    "asparagus",
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 4,
+   "worte": [
+    "toast",
+    "almond",
+    "brioche"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 2,
+   "worte": [
+    "fennel",
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 2,
+   "worte": [
+    "honeysuckle"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 288,
+  "name": "Burgund Mâconnais Weißwein",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 389,
+ "weingut_weine": 173,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

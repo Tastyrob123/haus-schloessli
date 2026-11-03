@@ -1,0 +1,153 @@
+{
+ "id": 1128663,
+ "name": "Les Mazures Chassagne-Montrachet",
+ "weingut": "Paul Pillot",
+ "region": "Chassagne-Montrachet",
+ "region_id": 636,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)",
+  "Milde Käsesorten und Weichkäse",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.2867856,
+  "fizziness": null,
+  "intensity": 3.671026,
+  "sweetness": 1.487114,
+  "tannin": null,
+  "user_structure_count": 77,
+  "calculated_structure_count": 39
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 67,
+   "worte": [
+    "oak",
+    "butter",
+    "vanilla",
+    "butterscotch",
+    "pastry"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 60,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 46,
+   "worte": [
+    "minerals",
+    "stone",
+    "honey",
+    "flint",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 31,
+   "worte": [
+    "pear",
+    "melon",
+    "apple",
+    "peach",
+    "stone fruit"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 6,
+   "worte": [
+    "cream",
+    "curd",
+    "lemon curd",
+    "oil",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 6,
+   "worte": [
+    "lychee",
+    "tropical",
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 5,
+   "worte": [
+    "almond",
+    "brioche",
+    "hazelnut",
+    "nutty",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 4,
+   "worte": [
+    "jasmine",
+    "apple blossom",
+    "hibiscus"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 2,
+   "worte": [
+    "menthol",
+    "white pepper"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 1,
+   "worte": [
+    "gooseberry"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1,
+   "worte": [
+    "black olive"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 285,
+  "name": "Burgund Côte de Beaune Weiß Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 934,
+ "weingut_weine": 18,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

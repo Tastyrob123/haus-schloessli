@@ -1,0 +1,62 @@
+{
+ "id": 1808694,
+ "name": "Langenmooser Gewürztraminer",
+ "weingut": "Zahner",
+ "region": "Zürich",
+ "region_id": 958,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Gewürztraminer"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 5,
+   "worte": [
+    "peach",
+    "apricot",
+    "melon",
+    "yellow apple"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 4,
+   "worte": [
+    "honey"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 2,
+   "worte": [
+    "lychee",
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 2,
+   "worte": [
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "cheese"
+   ]
+  }
+ ],
+ "stil": null,
+ "bewertung": 4.2,
+ "bewertungen": 181,
+ "weingut_weine": 29,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

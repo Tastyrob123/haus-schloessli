@@ -1,0 +1,116 @@
+{
+ "id": 7281016,
+ "name": "Blanc de Blancs Brut Nature",
+ "weingut": "Laurent-Perrier",
+ "region": "Champagne",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.4455433,
+  "fizziness": 4.259705,
+  "intensity": 3.645435,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 384,
+  "calculated_structure_count": 54
+ },
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 98,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lime",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 68,
+   "worte": [
+    "green apple",
+    "pear",
+    "apple",
+    "peach",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 67,
+   "worte": [
+    "brioche",
+    "almond",
+    "toast",
+    "biscuit",
+    "hazelnut"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 33,
+   "worte": [
+    "minerals",
+    "chalk",
+    "saline",
+    "honey",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 31,
+   "worte": [
+    "cream",
+    "yeast",
+    "lemon curd",
+    "fresh bread",
+    "toasted bread"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 14,
+   "worte": [
+    "butter",
+    "pastry",
+    "vanilla"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 7,
+   "worte": [
+    "straw",
+    "gooseberry",
+    "chard",
+    "grass"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 4,
+   "worte": [
+    "apple blossom",
+    "jasmine"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 3,
+   "worte": [
+    "cinnamon",
+    "eucalyptus",
+    "pepper"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

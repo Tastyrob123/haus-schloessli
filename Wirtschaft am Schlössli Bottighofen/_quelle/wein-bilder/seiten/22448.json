@@ -1,0 +1,197 @@
+{
+ "id": 22448,
+ "name": "Le Serre Nuove",
+ "weingut": "Ornellaia",
+ "region": "Bolgheri",
+ "region_id": 673,
+ "alkohol": 14.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Cabernet Sauvignon",
+  "Cabernet Franc",
+  "Merlot",
+  "Petit Verdot"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Pasta",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.4572937,
+  "fizziness": null,
+  "intensity": 3.893835,
+  "sweetness": 1.6464863,
+  "tannin": 3.8577063,
+  "user_structure_count": 1665,
+  "calculated_structure_count": 2652
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 2883,
+   "worte": [
+    "oak",
+    "vanilla",
+    "chocolate",
+    "tobacco",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 2423,
+   "worte": [
+    "blackberry",
+    "plum",
+    "black fruit",
+    "dark fruit",
+    "blackcurrant"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 1674,
+   "worte": [
+    "leather",
+    "earthy",
+    "smoke",
+    "minerals",
+    "balsamic"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 945,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 692,
+   "worte": [
+    "pepper",
+    "licorice",
+    "mint",
+    "cinnamon",
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 147,
+   "worte": [
+    "violet",
+    "lavender",
+    "perfume",
+    "rose petal",
+    "dried flowers"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 105,
+   "worte": [
+    "prune",
+    "raisin",
+    "fig",
+    "dried fruit",
+    "black raisin"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 96,
+   "worte": [
+    "cream",
+    "cheese",
+    "oil",
+    "banana",
+    "sourdough"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 61,
+   "worte": [
+    "tomato",
+    "bell pepper",
+    "grass",
+    "green bell pepper",
+    "rhubarb"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 55,
+   "worte": [
+    "toast",
+    "walnut",
+    "almond",
+    "hazelnut",
+    "dried fig"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 22,
+   "worte": [
+    "orange",
+    "citrus",
+    "marmalade",
+    "grapefruit",
+    "lemon"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 12,
+   "worte": [
+    "stone fruit",
+    "apple",
+    "apricot",
+    "pear",
+    "persimmon"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 5,
+   "worte": [
+    "mango",
+    "bubblegum",
+    "papaya",
+    "passion fruit"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 9,
+  "name": "Bolgheri Italien",
+  "description": "Bolgheri is a wine producing region in Tuscany that produces “Super Tuscan” wines that are known for blending international varieties such as Cabernet Sauvignon, Merlot, Cabernet Franc, and Syrah with the local grape Sangiovese.\n\nSuper Tuscans overall, including Bolgheri, are concentrated wines with ripe berry flavours, firm tannins and lasting finishes. Plum, cassis, licorice and pepper are also familiar flavour profiles found in this wine style.\n\nThe principal grapes of the region are mainly the Bordeaux varieties, Cabernet Sauvignon, Merlot, and Cabernet Franc which can constitute up to 100% of the wine, as well as Sangiovese and Syrah at a maximum of 50%. Other red varieties can represent up to 30%. Red Bolgheri are known to be premium full-bodied wines that are suited to ageing.\n\nThe wines are well received both in Italy and abroad, but like many wines from this region, they often come with a heftier price tag.\n\nAlthough the area was previously known to produce inexpensive, bulk wines, it was revitalized in the mid-20th Century by a Tuscan noble, Marquis Mario Incisa della Rocchetta, who planted Cabernet Sauvignon in his vineyard. The wines have been gaining in popularity ever since.\n\nThe region has maintained an aristocratic feel, with the area situated around a picturesque castle in the small town for which the region got its name.",
+  "blurb": "Sangiovese-based DOC wine from Tuscany",
+  "interesting_facts": [
+   "In 1983, Bolgheri achieved DOC status.",
+   "The DOC Bolgheri area has expanded rapidly in the last ten years.",
+   "The first Bolgheri wines were exclusively produced for family consumption by the Marquis Mario Incisa della Rocchetta.",
+   "Bolgheri Rosso is required to age a minimum of 10 months and Bolgheri Superiore must age a minimum 24 months."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 66271,
+ "weingut_weine": 33,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

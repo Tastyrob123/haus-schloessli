@@ -1,0 +1,185 @@
+{
+ "id": 79814,
+ "name": "Flor de Pingus",
+ "weingut": "Dominio de Pingus",
+ "region": "Ribera del Duero",
+ "region_id": 405,
+ "alkohol": 14,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Tempranillo"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.7051322,
+  "fizziness": null,
+  "intensity": 3.9137409,
+  "sweetness": 1.8370491,
+  "tannin": 3.520103,
+  "user_structure_count": 2680,
+  "calculated_structure_count": 1184
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 1526,
+   "worte": [
+    "oak",
+    "vanilla",
+    "tobacco",
+    "chocolate",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1007,
+   "worte": [
+    "blackberry",
+    "plum",
+    "black fruit",
+    "dark fruit",
+    "blackcurrant"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 635,
+   "worte": [
+    "leather",
+    "smoke",
+    "earthy",
+    "cocoa",
+    "minerals"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 332,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "red cherry",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 308,
+   "worte": [
+    "licorice",
+    "pepper",
+    "cinnamon",
+    "anise",
+    "mint"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 80,
+   "worte": [
+    "prune",
+    "fig",
+    "raisin",
+    "dried fruit",
+    "dried blackberry"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 66,
+   "worte": [
+    "violet",
+    "perfume",
+    "lavender",
+    "potpourri",
+    "dried flowers"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 49,
+   "worte": [
+    "cream",
+    "cheese",
+    "banana",
+    "oil",
+    "sweaty"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 41,
+   "worte": [
+    "toast",
+    "almond",
+    "chestnut",
+    "dried fig",
+    "brown sugar"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 19,
+   "worte": [
+    "orange",
+    "orange zest",
+    "blood orange",
+    "lemon",
+    "marmalade"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 8,
+   "worte": [
+    "tomato",
+    "asparagus",
+    "fresh-cut grass",
+    "grass",
+    "rhubarb"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 4,
+   "worte": [
+    "apple",
+    "apricot",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 180,
+  "name": "Ribera Del Duero Rot Spanien",
+  "description": "Rioja may be the most famous region in Spain, but Ribera del Duero is no slouch. These classic wines are made mostly from the grape Tempranillo.\n\nRibera del Duero wines are known for being strong, dark-colored wines filled with dark fruit, tobacco and vanilla flavors.\n\nThe sensual wines of Ribera del Duero are dark, brooding, and exciting. They are famous for taking the traditional Spanish grape Tempranillo and blending it with Bordeaux grapes Cabernet Sauvignon and Merlot. This practice makes wines that are strong, dark and beautiful.\n\nThis specific grape blend makes these wines very delicious, but their popularity slipped drastically in the 1970s. Extremely long barrel aging and old winemaking practices made the wines extremely inconsistent. Even bottles in the same vintage could be very different.\n\nNow, with modern winemaking practices and attention to detail these wines are becoming as consistently incredible as they should be!",
+  "blurb": "Often Tempranillo-based",
+  "interesting_facts": [
+   "In Ribera del Duero, the grape Tempranillo is called Tinto Fino.",
+   "Vega Sicilia in Ribera del Duero has historically been Spain's most expensive wine.",
+   "The DO classification for Ribera del Duero was created in 1982.",
+   "Ribera del Duero translates to “alongside the Duero River”, which is apt because the Duero River runs through it."
+  ],
+  "body": 5,
+  "body_description": "Sehr voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.5,
+ "bewertungen": 42384,
+ "weingut_weine": 5,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

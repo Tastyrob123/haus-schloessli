@@ -1,0 +1,37 @@
+{
+ "id": 2273664,
+ "name": "WR Weisser Riesling",
+ "weingut": "Schlossgut Bachtobel",
+ "region": "Thurgau",
+ "region_id": 1479,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Riesling"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [
+  {
+   "gruppe": "vegetal",
+   "n": 1,
+   "worte": [
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 1,
+   "worte": [
+    "minerals"
+   ]
+  }
+ ],
+ "stil": null,
+ "bewertung": 4,
+ "bewertungen": 125,
+ "weingut_weine": 14,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

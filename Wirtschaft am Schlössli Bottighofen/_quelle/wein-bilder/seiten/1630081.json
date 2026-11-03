@@ -1,0 +1,189 @@
+{
+ "id": 1630081,
+ "name": "Sauternes (Premier Grand Cru Classé)",
+ "weingut": "Château Lafaurie-Peyraguey",
+ "region": "Sauternes",
+ "region_id": 432,
+ "alkohol": 13.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Sauvignon Blanc",
+  "Sémillon",
+  "Muscadelle"
+ ],
+ "speisen": [
+  "Fruchtige Desserts",
+  "Blauschimmelkäse"
+ ],
+ "struktur": {
+  "acidity": 4.2701263,
+  "fizziness": null,
+  "intensity": 4.7160597,
+  "sweetness": 4.843129,
+  "tannin": null,
+  "user_structure_count": 350,
+  "calculated_structure_count": 552
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 684,
+   "worte": [
+    "honey",
+    "ginger",
+    "minerals",
+    "stone",
+    "beeswax"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 544,
+   "worte": [
+    "apricot",
+    "peach",
+    "apple",
+    "pear",
+    "quince"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 513,
+   "worte": [
+    "marmalade",
+    "orange",
+    "citrus",
+    "orange peel",
+    "lemon"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 307,
+   "worte": [
+    "caramel",
+    "vanilla",
+    "toffee",
+    "butter",
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 231,
+   "worte": [
+    "pineapple",
+    "tropical",
+    "mango",
+    "papaya",
+    "guava"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 134,
+   "worte": [
+    "almond",
+    "nutty",
+    "maple syrup",
+    "marzipan",
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 125,
+   "worte": [
+    "dried apricot",
+    "raisin",
+    "fig",
+    "dried fruit",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 114,
+   "worte": [
+    "cream",
+    "cheese",
+    "oil",
+    "banana",
+    "lemon curd"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 85,
+   "worte": [
+    "honeysuckle",
+    "acacia",
+    "orange blossom",
+    "perfume",
+    "chamomile"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 46,
+   "worte": [
+    "cinnamon",
+    "candied ginger",
+    "white pepper",
+    "musk",
+    "gingerbread"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 17,
+   "worte": [
+    "jam",
+    "plum",
+    "blueberry",
+    "hoisin",
+    "mulberry"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 14,
+   "worte": [
+    "straw",
+    "hay",
+    "bitter almond",
+    "asparagus",
+    "gooseberry"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 13,
+   "worte": [
+    "strawberry",
+    "cotton candy",
+    "bing cherry",
+    "cherry",
+    "cranberry"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 195,
+  "name": "Sauternes Bordeaux Frankreich",
+  "description": null,
+  "blurb": "Sweet white wine",
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 9481,
+ "weingut_weine": 9,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

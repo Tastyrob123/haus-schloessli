@@ -1,0 +1,167 @@
+{
+ "id": 1186645,
+ "name": "Kirchspiel Riesling GG",
+ "weingut": "Keller",
+ "region": "Rheinhessen",
+ "region_id": 480,
+ "alkohol": 12.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Riesling"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Schalentiere",
+  "Geflügel",
+  "Scharfe Gerichte",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 4.507639,
+  "fizziness": null,
+  "intensity": 3.3325438,
+  "sweetness": 1.6997551,
+  "tannin": null,
+  "user_structure_count": 443,
+  "calculated_structure_count": 121
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 165,
+   "worte": [
+    "minerals",
+    "honey",
+    "petroleum",
+    "stone",
+    "flint"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 118,
+   "worte": [
+    "peach",
+    "apple",
+    "apricot",
+    "pear",
+    "green apple"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 100,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lime",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 62,
+   "worte": [
+    "tropical",
+    "mango",
+    "pineapple",
+    "lychee",
+    "passion fruit"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 22,
+   "worte": [
+    "oak",
+    "butter",
+    "caramel",
+    "vanilla",
+    "nutmeg"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 15,
+   "worte": [
+    "cream",
+    "banana",
+    "lemon curd",
+    "oil",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 14,
+   "worte": [
+    "honeysuckle",
+    "dried flowers",
+    "elderflower",
+    "orange blossom",
+    "acacia"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 13,
+   "worte": [
+    "straw",
+    "celery",
+    "asparagus",
+    "gooseberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 12,
+   "worte": [
+    "fennel",
+    "mint",
+    "candied ginger",
+    "cinnamon",
+    "eucalyptus"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 6,
+   "worte": [
+    "nutty",
+    "almond",
+    "biscuit",
+    "pecan",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "dried apricot"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 186,
+  "name": "Riesling Deutschland",
+  "description": "Riesling is without question Germany's favorite grape. Widely planted, though once derided, Riesling is the superstar of the white wine world at the moment.\n\nThere is a lot of scope for versatility with this sweet, viscous wine, though you can expect to get hints of tropical fruit, nectarine, melon and pineapple from a solid Riesling.\n\nThe grape originated in the Rhine region of Germany, and the best of them are said to grow along the banks of the Mosel River on the beautiful steep, south facing hills.\n\nThere are six categories of Riesling which indicate the ripeness of the grapes. Kabinett is considered “off-dry” and is a typically ripe grape. Spätlese is riper and therefor sweeter, and Auslese is even riper still. Beyond on that you have Beerenauslese, Trockenbeerenauslese and Eiswein (or ice wine), all getting sweeter, more viscous and more expensive.\n\nIt's a favorite in the food and beverage industry because of its willingness to play with a wide variety of foods, particular spicy dishes. The current Asian fusion boom is thought to have had a tremendous effect on Riesling's popularity.",
+  "blurb": null,
+  "interesting_facts": [
+   "Riesling is grown all over the world and thrives in cool to warm climates.",
+   "Riesling is one of the few white wines that develops and improves with age.",
+   "There are an unusually high number of German Riesling producers that carry the prefix “Dr.”"
+  ],
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.5,
+ "bewertungen": 2763,
+ "weingut_weine": 178,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

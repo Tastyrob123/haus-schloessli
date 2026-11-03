@@ -1,0 +1,151 @@
+{
+ "id": 63954,
+ "name": "Sommerhalde Spätburgunder GG",
+ "weingut": "Bernhard Huber",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Spätburgunder"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.2625475,
+  "fizziness": null,
+  "intensity": 1.9580153,
+  "sweetness": 1.6283742,
+  "tannin": 2.3984468,
+  "user_structure_count": 93,
+  "calculated_structure_count": 39
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 53,
+   "worte": [
+    "raspberry",
+    "cranberry",
+    "cherry",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 46,
+   "worte": [
+    "leather",
+    "mushroom",
+    "stone",
+    "earthy",
+    "balsamic"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 32,
+   "worte": [
+    "oak",
+    "vanilla",
+    "cedar",
+    "caramel",
+    "clove"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 14,
+   "worte": [
+    "anise",
+    "cinnamon",
+    "licorice",
+    "pepper",
+    "thyme"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 13,
+   "worte": [
+    "plum",
+    "black cherry",
+    "black fruit",
+    "blackberry",
+    "blackcurrant"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 4,
+   "worte": [
+    "violet",
+    "perfume",
+    "potpourri"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 2,
+   "worte": [
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 2,
+   "worte": [
+    "melon",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "dried cranberry"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "lemon peel"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 1,
+   "worte": [
+    "bell pepper"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 160,
+  "name": "Spätburgunder Deutschland",
+  "description": null,
+  "blurb": "Also known as Pinot Noir",
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 802,
+ "weingut_weine": 67,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

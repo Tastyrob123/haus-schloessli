@@ -1,0 +1,152 @@
+{
+ "id": 6570237,
+ "name": "Bienenberg Spätburgunder GG",
+ "weingut": "Bernhard Huber",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Spätburgunder"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.1855583,
+  "fizziness": null,
+  "intensity": 2.1138566,
+  "sweetness": 1.5950525,
+  "tannin": 2.4088078,
+  "user_structure_count": 70,
+  "calculated_structure_count": 24
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 54,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "red cherry",
+    "red fruit",
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 31,
+   "worte": [
+    "mushroom",
+    "minerals",
+    "earthy",
+    "forest floor",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 19,
+   "worte": [
+    "oak",
+    "tobacco",
+    "vanilla",
+    "clove",
+    "baking spice"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 12,
+   "worte": [
+    "cassis",
+    "blackberry",
+    "black cherry",
+    "black fruit",
+    "bramble"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 7,
+   "worte": [
+    "pepper",
+    "anise",
+    "licorice"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 5,
+   "worte": [
+    "dried flowers",
+    "violet",
+    "perfume"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 5,
+   "worte": [
+    "red bell pepper",
+    "asparagus",
+    "tomato leaf"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 3,
+   "worte": [
+    "dried fig",
+    "roasted hazelnut",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 2,
+   "worte": [
+    "orange peel"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 1,
+   "worte": [
+    "quince"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 160,
+  "name": "Spätburgunder Deutschland",
+  "description": null,
+  "blurb": "Also known as Pinot Noir",
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 489,
+ "weingut_weine": 67,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

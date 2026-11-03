@@ -1,0 +1,146 @@
+{
+ "id": 9567895,
+ "name": "Flor de Muga Blanco Reserva",
+ "weingut": "Bodegas Muga",
+ "region": "Rioja",
+ "region_id": 492,
+ "alkohol": 14,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Viura",
+  "Garnacha Blanca",
+  "Maturana Blanca"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Vorspeisen und Snacks",
+  "Magerer Fisch",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.3038383,
+  "fizziness": null,
+  "intensity": 4.1532884,
+  "sweetness": 1.8638945,
+  "tannin": null,
+  "user_structure_count": 36,
+  "calculated_structure_count": 23
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 47,
+   "worte": [
+    "apple",
+    "peach",
+    "pear",
+    "green apple",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 43,
+   "worte": [
+    "oak",
+    "butter",
+    "caramel",
+    "vanilla",
+    "baking spice"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 28,
+   "worte": [
+    "minerals",
+    "honey",
+    "salt",
+    "earthy",
+    "stone"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 19,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lemon pith",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 11,
+   "worte": [
+    "cream",
+    "oil",
+    "yeast",
+    "toasted bread"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 10,
+   "worte": [
+    "almond",
+    "toast",
+    "brioche",
+    "hazelnut",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 6,
+   "worte": [
+    "gooseberry",
+    "grass",
+    "hay",
+    "rhubarb",
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 2,
+   "worte": [
+    "grilled pineapple",
+    "lychee"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "cinnamon"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "honeysuckle"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 191,
+  "name": "Rioja Weiß Spanien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 1711,
+ "weingut_weine": 22,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

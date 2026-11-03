@@ -1,0 +1,176 @@
+{
+ "id": 1447267,
+ "name": "Barolo Ravera",
+ "weingut": "Vietti",
+ "region": "Barolo",
+ "region_id": 504,
+ "alkohol": 14.92,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Nebbiolo"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Pasta",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.554477,
+  "fizziness": null,
+  "intensity": 3.7585242,
+  "sweetness": 1.4458163,
+  "tannin": 4.349896,
+  "user_structure_count": 148,
+  "calculated_structure_count": 89
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 109,
+   "worte": [
+    "leather",
+    "tar",
+    "earthy",
+    "mushroom",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 85,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "pomegranate",
+    "red fruit",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 60,
+   "worte": [
+    "tobacco",
+    "oak",
+    "cedar",
+    "coffee",
+    "incense"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 38,
+   "worte": [
+    "licorice",
+    "menthol",
+    "mint",
+    "pepper",
+    "sage"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 31,
+   "worte": [
+    "dried rose",
+    "perfume",
+    "violet",
+    "rose petal",
+    "hibiscus"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 24,
+   "worte": [
+    "blackberry",
+    "black cherry",
+    "dark fruit",
+    "plum",
+    "black fruit"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 7,
+   "worte": [
+    "citrus",
+    "blood orange",
+    "mandarin orange",
+    "orange peel",
+    "orange rind"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 5,
+   "worte": [
+    "banana",
+    "campfire",
+    "cream",
+    "yeast"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 5,
+   "worte": [
+    "dried cranberry",
+    "raisin",
+    "dried fruit"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 3,
+   "worte": [
+    "hazelnut",
+    "nutty",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "rhubarb"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 2,
+   "worte": [
+    "apple",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "tropical"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 7,
+  "name": "Barolo Italien",
+  "description": "Barolo is a delicious red wine that comes from the town of the same name in the Northern Italian region of Piedmont. Literally meaning ‘Foot of the Mountain,’ Piedmont (or Piemonte in Italian) sits in the shadow of the snow-capped Alps and is one of Italy’s most beautiful regions.\n\nBarolo must be 100% Nebbiolo, a pernickety grape supposedly named after Piedmont’s famous fog (or ‘nebbia’ in Italian). Nebbiolo requires particular soils and hillside sites above that fog to fully ripen.\n\nLike Pinot Noir, Nebbiolo offers a true reflection of where it’s grown, meaning you could spend a lifetime exploring the different expressions of the wine made in beautiful Barolo. \n\nBarolo must be aged for at least 3 years before release (5 years for Riserva wines), and, thanks to high acidity and firm tannins, can last a long time. Combine a bottle of well-aged Barolo (even over 20 years old) and some of Piedmont’s incredible food (truffle risotto anyone?) for a very special experience.",
+  "blurb": "Nebbiolo-based DOCG wine from Piedmont",
+  "interesting_facts": [
+   "Barolo is one of Italy's best red wines - often with prices to match.",
+   "Barbaresco is produced just down the road from Barolo and is also 100% Nebbiolo."
+  ],
+  "body": 5,
+  "body_description": "Sehr voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 1482,
+ "weingut_weine": 42,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

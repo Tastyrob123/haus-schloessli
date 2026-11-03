@@ -1,0 +1,153 @@
+{
+ "id": 2895026,
+ "name": "Weitenberg Grüner Veltliner",
+ "weingut": "Veyder-Malberg",
+ "region": "Wachau",
+ "region_id": 747,
+ "alkohol": 13.7,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Grüner Veltliner"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Magerer Fisch",
+  "Milde Käsesorten und Weichkäse",
+  "Ziegenkäse"
+ ],
+ "struktur": {
+  "acidity": 3.8715477,
+  "fizziness": null,
+  "intensity": 2.489524,
+  "sweetness": 1.7442423,
+  "tannin": null,
+  "user_structure_count": 30,
+  "calculated_structure_count": 29
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 39,
+   "worte": [
+    "apple",
+    "pear",
+    "peach",
+    "melon",
+    "white peach"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 31,
+   "worte": [
+    "minerals",
+    "honey",
+    "smoke",
+    "chalk",
+    "rubber"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 16,
+   "worte": [
+    "lemon",
+    "citrus",
+    "grapefruit",
+    "lime",
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 14,
+   "worte": [
+    "tropical",
+    "kiwi",
+    "pineapple",
+    "lychee",
+    "mango"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 7,
+   "worte": [
+    "butter",
+    "oak",
+    "tobacco",
+    "vanilla"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 7,
+   "worte": [
+    "pepper",
+    "white pepper",
+    "dried herbs",
+    "tarragon"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 5,
+   "worte": [
+    "cream",
+    "cheese",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 3,
+   "worte": [
+    "grass"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 3,
+   "worte": [
+    "honeysuckle",
+    "lavender",
+    "rose petal"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 2,
+   "worte": [
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "dried apricot"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 93,
+  "name": "Grüner Veltliner Österreich",
+  "description": "Grüner Veltliner is Austria’s signature grape. Fresh and zesty, it's the liquid equivalent of some cool Austrian mountain air.\n\nAustrian Grüner Veltliner tends to have strong citrus flavors of lime, lemon, and grapefruit. Some Grüners also have a distinct nectarine note as well. In terms of more savory flavors, look out for white pepper and a slight radish-like bitterness. If oaked, Austrian Grüner Veltliner will also get some aromas and flavors of nuts and cream.\n\nWhen pairing with food, think light delicate meats such as veal, pâté, or roasted pork. Or you could go all out for an Austrian feast and pair it with a traditional Wienerschnitzel. On the lighter side of things, it goes well with delicate fish dishes, and is great with seafood such as oysters and mussels. When it comes to cheese, Grüner goes particularly well with soft cows' milk or goat cheese.\n\nAustrian Grüner Veltliner tends to be best enjoyed within 2 years of bottling.",
+  "blurb": null,
+  "interesting_facts": [
+   "Austria is home to some of the oldest wine grapes dating as far back as 2000 BC.",
+   "Grüner Veltliner has been around since Roman times."
+  ],
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 546,
+ "weingut_weine": 17,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

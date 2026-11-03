@@ -1,0 +1,135 @@
+{
+ "id": 5509352,
+ "name": "Bienenberg Chardonnay GG",
+ "weingut": "Bernhard Huber",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 12.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.66,
+  "fizziness": null,
+  "intensity": 3.2553866,
+  "sweetness": 1.7754799,
+  "tannin": null,
+  "user_structure_count": 13,
+  "calculated_structure_count": 10
+ },
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 12,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "lime",
+    "marmalade"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 11,
+   "worte": [
+    "stone",
+    "flint",
+    "minerals",
+    "saline",
+    "slate"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 8,
+   "worte": [
+    "butter",
+    "vanilla",
+    "butterscotch",
+    "nutmeg",
+    "oak"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 6,
+   "worte": [
+    "almond",
+    "biscuit",
+    "brioche",
+    "nutty",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 5,
+   "worte": [
+    "apple",
+    "green apple",
+    "green melon",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 5,
+   "worte": [
+    "lychee",
+    "mango",
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 4,
+   "worte": [
+    "cream",
+    "lemon curd",
+    "oil",
+    "toasted bread"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 3,
+   "worte": [
+    "grass",
+    "hay",
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "eucalyptus"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 58,
+  "name": "Chardonnay Deutschland",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 262,
+ "weingut_weine": 67,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

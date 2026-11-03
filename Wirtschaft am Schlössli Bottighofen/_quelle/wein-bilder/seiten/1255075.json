@@ -1,0 +1,188 @@
+{
+ "id": 1255075,
+ "name": "Löwengang Chardonnay",
+ "weingut": "Alois Lageder",
+ "region": "Südtirol - Alto Adige",
+ "region_id": 661,
+ "alkohol": 13.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schalentiere",
+  "Pasta",
+  "Reife Käsesorten und Hartkäse",
+  "Magerer Fisch",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.1535907,
+  "fizziness": null,
+  "intensity": 3.7860348,
+  "sweetness": 2.2650619,
+  "tannin": null,
+  "user_structure_count": 613,
+  "calculated_structure_count": 199
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 306,
+   "worte": [
+    "oak",
+    "butter",
+    "vanilla",
+    "caramel",
+    "butterscotch"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 190,
+   "worte": [
+    "apple",
+    "apricot",
+    "peach",
+    "pear",
+    "melon"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 129,
+   "worte": [
+    "minerals",
+    "honey",
+    "smoke",
+    "stone",
+    "earthy"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 86,
+   "worte": [
+    "citrus",
+    "lemon",
+    "grapefruit",
+    "orange",
+    "lemon peel"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 85,
+   "worte": [
+    "cream",
+    "banana",
+    "cheese",
+    "oil",
+    "salted butter"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 66,
+   "worte": [
+    "tropical",
+    "pineapple",
+    "mango",
+    "passion fruit",
+    "guava"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 55,
+   "worte": [
+    "toast",
+    "almond",
+    "nutty",
+    "hazelnut",
+    "brioche"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 31,
+   "worte": [
+    "chard",
+    "straw",
+    "grass",
+    "hay",
+    "gooseberry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 17,
+   "worte": [
+    "white pepper",
+    "pepper",
+    "mint",
+    "savory",
+    "dried herbs"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 9,
+   "worte": [
+    "acacia",
+    "perfume",
+    "citrus blossom",
+    "geranium",
+    "jasmine"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 9,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "cherry",
+    "cotton candy",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "dried fruit",
+    "dried apricot"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 4,
+   "worte": [
+    "blackberry",
+    "blackcurrant"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 131,
+  "name": "Norditalien Weiß",
+  "description": "Often better known for red varieties, Northern Italy has a number of delicious and drinkable white wines. To know Northern Italian wines is to know the influences of the wines of the countries that border Italy.\n\nOld World wines tend to be far less about fruit-forward  flavors, and more about the effect that the climate, soil, and adjacently growing flora (terroir) have on the grapes during their growth.\n\nThe most widely recognizable varietal is Pinot Grigio which is very rustic, medium-bodied, with medium to high acidity. Chardonnay seems to grow anywhere grapes can grow; although Italian varieties are not normally coveted quality.\n\nGewürztraminer usually makes us think of Germany, but it's also thriving in Northern Italy. The warmer climate imparts a little less sugar and little more acidity than its German cousin.\n\nThen there is Moscato. From the northwest Piedmont region, this wine is sweet and very popular in North America, and comes in both still and sparkling varieties.\n\nWhatever your choice, taking a tour of Italian white wines is an enjoyable experience that you will be thankful you took.",
+  "blurb": null,
+  "interesting_facts": [
+   "More wine is produced in Italy than any other country, and wine has been made there for nearly 3000 years.",
+   "There are over 3000 different grape varietals in Italy.",
+   "There is more than 2 lbs (2 kilo) of grapes in each bottle of Italian wine."
+  ],
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 6588,
+ "weingut_weine": 109,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

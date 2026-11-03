@@ -1,0 +1,98 @@
+{
+ "id": 1973844,
+ "name": "Fläscher Pinot Gris",
+ "weingut": "Hansruedi Adank",
+ "region": "Graubünden",
+ "region_id": 1455,
+ "alkohol": 14.3,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Gris"
+ ],
+ "speisen": [
+  "Kalbfleisch",
+  "Schweinefleisch",
+  "Schalentiere",
+  "Vegetarische Gerichte",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3,
+  "fizziness": null,
+  "intensity": 3.5,
+  "sweetness": 2.375,
+  "tannin": null,
+  "user_structure_count": 0,
+  "calculated_structure_count": 1
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 3,
+   "worte": [
+    "pear",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 3,
+   "worte": [
+    "stone",
+    "honey"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 2,
+   "worte": [
+    "walnut"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "mango"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "banana"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 1,
+   "worte": [
+    "oak"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 689,
+  "name": "Swiss Pinot Gris White",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4,
+ "bewertungen": 182,
+ "weingut_weine": 27,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,110 @@
+{
+ "id": 1458129,
+ "name": "Malanser Weissburgunder",
+ "weingut": "Weingut Wegelin",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Weissburgunder"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 5,
+   "worte": [
+    "apple",
+    "apricot",
+    "melon",
+    "pear",
+    "yellow apple"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 5,
+   "worte": [
+    "citrus",
+    "lemon",
+    "tangerine"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 4,
+   "worte": [
+    "cheese",
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 3,
+   "worte": [
+    "oak",
+    "butter"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 3,
+   "worte": [
+    "straw",
+    "grass"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 2,
+   "worte": [
+    "minerals",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 1,
+   "worte": [
+    "strawberry"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "bergamot"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 1,
+   "worte": [
+    "perfume"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 1,
+   "worte": [
+    "hazelnut"
+   ]
+  }
+ ],
+ "stil": null,
+ "bewertung": 3.8,
+ "bewertungen": 306,
+ "weingut_weine": 30,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

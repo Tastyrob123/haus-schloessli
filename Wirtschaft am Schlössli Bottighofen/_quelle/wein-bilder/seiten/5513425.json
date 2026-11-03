@@ -1,0 +1,177 @@
+{
+ "id": 5513425,
+ "name": "Flor de Muga Rosado",
+ "weingut": "Bodegas Muga",
+ "region": "Rioja",
+ "region_id": 492,
+ "alkohol": 14,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Garnacha"
+ ],
+ "speisen": [
+  "Geflügel",
+  "Scharfe Gerichte",
+  "Vorspeisen und Snacks"
+ ],
+ "struktur": {
+  "acidity": 3.3114398,
+  "fizziness": null,
+  "intensity": 2.8348784,
+  "sweetness": 1.7267407,
+  "tannin": null,
+  "user_structure_count": 10,
+  "calculated_structure_count": 79
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 131,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "red fruit",
+    "watermelon",
+    "cherry"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 74,
+   "worte": [
+    "peach",
+    "pear",
+    "apricot",
+    "melon",
+    "apple"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 53,
+   "worte": [
+    "citrus",
+    "orange",
+    "lemon",
+    "grapefruit",
+    "pink grapefruit"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 45,
+   "worte": [
+    "minerals",
+    "stone",
+    "smoke",
+    "chalk",
+    "crushed rocks"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 31,
+   "worte": [
+    "oak",
+    "vanilla",
+    "butter",
+    "coconut",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 23,
+   "worte": [
+    "cream",
+    "cheese",
+    "banana"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 12,
+   "worte": [
+    "white pepper",
+    "cinnamon",
+    "dried herbs",
+    "fennel",
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 9,
+   "worte": [
+    "perfume",
+    "rose petal",
+    "acacia",
+    "apple blossom",
+    "dried rose"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 7,
+   "worte": [
+    "pineapple",
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 5,
+   "worte": [
+    "biscuit",
+    "almond",
+    "peanut",
+    "roasted almond"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 5,
+   "worte": [
+    "berry jam",
+    "black fruit",
+    "bramble",
+    "plum",
+    "sour plum"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 4,
+   "worte": [
+    "celery",
+    "grass",
+    "rhubarb",
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "dried apricot"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 582,
+  "name": "Spanish Grenache Rosé",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.1,
+ "bewertungen": 2967,
+ "weingut_weine": 22,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

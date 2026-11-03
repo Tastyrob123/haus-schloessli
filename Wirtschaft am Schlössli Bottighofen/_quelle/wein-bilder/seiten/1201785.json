@@ -1,0 +1,172 @@
+{
+ "id": 1201785,
+ "name": "Pinot Noir",
+ "weingut": "Daniel & Marta Gantenbein",
+ "region": "Graubünden",
+ "region_id": 1455,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.061773,
+  "fizziness": null,
+  "intensity": 1.9211662,
+  "sweetness": 1.8656145,
+  "tannin": 2.2292812,
+  "user_structure_count": 343,
+  "calculated_structure_count": 207
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 189,
+   "worte": [
+    "raspberry",
+    "strawberry",
+    "cherry",
+    "red fruit",
+    "cranberry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 158,
+   "worte": [
+    "smoke",
+    "earthy",
+    "leather",
+    "minerals",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 150,
+   "worte": [
+    "oak",
+    "vanilla",
+    "chocolate",
+    "caramel",
+    "tobacco"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 45,
+   "worte": [
+    "plum",
+    "blackberry",
+    "black cherry",
+    "blueberry",
+    "blackcurrant"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 39,
+   "worte": [
+    "pepper",
+    "cinnamon",
+    "licorice",
+    "dried herbs",
+    "savory"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 21,
+   "worte": [
+    "cream",
+    "cheese",
+    "banana",
+    "campfire",
+    "cheesy"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 15,
+   "worte": [
+    "toast",
+    "brown sugar",
+    "dried fig",
+    "marzipan",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 10,
+   "worte": [
+    "lavender",
+    "rose petal",
+    "dried flowers",
+    "elderflower",
+    "perfume"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 4,
+   "worte": [
+    "grass",
+    "celery"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 3,
+   "worte": [
+    "lemon peel",
+    "orange peel",
+    "orange zest"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 3,
+   "worte": [
+    "apple",
+    "green apple",
+    "melon"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "fig"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.4,
+ "bewertungen": 6349,
+ "weingut_weine": 7,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

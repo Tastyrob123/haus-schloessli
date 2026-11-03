@@ -1,0 +1,150 @@
+{
+ "id": 1171620,
+ "name": "Giani Boner Malanser Pinot Noir Grand Cru",
+ "weingut": "Giani Boner",
+ "region": "Malanser",
+ "region_id": 3292,
+ "alkohol": 14,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.9749045,
+  "fizziness": null,
+  "intensity": 2.171788,
+  "sweetness": 1.7801056,
+  "tannin": 2.343214,
+  "user_structure_count": 124,
+  "calculated_structure_count": 44
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 51,
+   "worte": [
+    "cherry",
+    "raspberry",
+    "strawberry",
+    "red cherry",
+    "red fruit"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 26,
+   "worte": [
+    "oak",
+    "vanilla",
+    "chocolate",
+    "tobacco",
+    "baking spice"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 25,
+   "worte": [
+    "pepper",
+    "cinnamon",
+    "white pepper",
+    "mint",
+    "dried herbs"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 20,
+   "worte": [
+    "smoke",
+    "earthy",
+    "leather",
+    "minerals",
+    "balsamic"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 5,
+   "worte": [
+    "black cherry",
+    "blackberry",
+    "blackcurrant",
+    "dark fruit",
+    "cassis"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 5,
+   "worte": [
+    "prune",
+    "dried fruit"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "bitter almond",
+    "rhubarb"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 2,
+   "worte": [
+    "perfume"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 1,
+   "worte": [
+    "molasses"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 1,
+   "worte": [
+    "apple"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "orange"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 165,
+  "name": "Pinot Noir Schweiz",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.1,
+ "bewertungen": 2181,
+ "weingut_weine": 7,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

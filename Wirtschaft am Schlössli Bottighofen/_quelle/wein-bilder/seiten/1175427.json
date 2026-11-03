@@ -1,0 +1,193 @@
+{
+ "id": 1175427,
+ "name": "Valbuena 5º (Reserva)",
+ "weingut": "Vega Sicilia",
+ "region": "Ribera del Duero",
+ "region_id": 405,
+ "alkohol": 14.5,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Merlot",
+  "Tinto Fino"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.6646354,
+  "fizziness": null,
+  "intensity": 3.8916466,
+  "sweetness": 1.8449154,
+  "tannin": 3.4525664,
+  "user_structure_count": 5844,
+  "calculated_structure_count": 2171
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 3254,
+   "worte": [
+    "oak",
+    "vanilla",
+    "tobacco",
+    "chocolate",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 1787,
+   "worte": [
+    "blackberry",
+    "plum",
+    "black fruit",
+    "dark fruit",
+    "black cherry"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 1420,
+   "worte": [
+    "leather",
+    "smoke",
+    "earthy",
+    "balsamic",
+    "mushroom"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 836,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "raspberry",
+    "strawberry",
+    "red cherry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 637,
+   "worte": [
+    "licorice",
+    "pepper",
+    "cinnamon",
+    "mint",
+    "eucalyptus"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 190,
+   "worte": [
+    "prune",
+    "raisin",
+    "dried fruit",
+    "fig",
+    "dried blackberry"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 128,
+   "worte": [
+    "toast",
+    "almond",
+    "dried fig",
+    "hazelnut",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 104,
+   "worte": [
+    "cream",
+    "cheese",
+    "oil",
+    "banana",
+    "cheesy"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 100,
+   "worte": [
+    "violet",
+    "perfume",
+    "lavender",
+    "potpourri",
+    "rose petal"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 58,
+   "worte": [
+    "orange",
+    "orange peel",
+    "citrus",
+    "marmalade",
+    "grapefruit"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 57,
+   "worte": [
+    "tomato",
+    "hay",
+    "grass",
+    "bell pepper",
+    "green bell pepper"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 17,
+   "worte": [
+    "apple",
+    "apricot",
+    "cantaloupe",
+    "green apple",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 4,
+   "worte": [
+    "guava",
+    "passion fruit",
+    "pineapple",
+    "tropical"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 180,
+  "name": "Ribera Del Duero Rot Spanien",
+  "description": "Rioja may be the most famous region in Spain, but Ribera del Duero is no slouch. These classic wines are made mostly from the grape Tempranillo.\n\nRibera del Duero wines are known for being strong, dark-colored wines filled with dark fruit, tobacco and vanilla flavors.\n\nThe sensual wines of Ribera del Duero are dark, brooding, and exciting. They are famous for taking the traditional Spanish grape Tempranillo and blending it with Bordeaux grapes Cabernet Sauvignon and Merlot. This practice makes wines that are strong, dark and beautiful.\n\nThis specific grape blend makes these wines very delicious, but their popularity slipped drastically in the 1970s. Extremely long barrel aging and old winemaking practices made the wines extremely inconsistent. Even bottles in the same vintage could be very different.\n\nNow, with modern winemaking practices and attention to detail these wines are becoming as consistently incredible as they should be!",
+  "blurb": "Often Tempranillo-based",
+  "interesting_facts": [
+   "In Ribera del Duero, the grape Tempranillo is called Tinto Fino.",
+   "Vega Sicilia in Ribera del Duero has historically been Spain's most expensive wine.",
+   "The DO classification for Ribera del Duero was created in 1982.",
+   "Ribera del Duero translates to “alongside the Duero River”, which is apt because the Duero River runs through it."
+  ],
+  "body": 5,
+  "body_description": "Sehr voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.6,
+ "bewertungen": 92139,
+ "weingut_weine": 5,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

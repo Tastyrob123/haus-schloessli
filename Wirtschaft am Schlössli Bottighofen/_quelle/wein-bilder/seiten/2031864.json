@@ -1,0 +1,161 @@
+{
+ "id": 2031864,
+ "name": "Tinata Toscana",
+ "weingut": "Monteverro",
+ "region": "Toscana",
+ "region_id": 394,
+ "alkohol": 14,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Shiraz/Syrah",
+  "Grenache"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Kalbfleisch",
+  "Geflügel",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 3.2013128,
+  "fizziness": null,
+  "intensity": 3.5062945,
+  "sweetness": 1.8323727,
+  "tannin": 3.041011,
+  "user_structure_count": 244,
+  "calculated_structure_count": 72
+ },
+ "aromen": [
+  {
+   "gruppe": "oak",
+   "n": 99,
+   "worte": [
+    "tobacco",
+    "vanilla",
+    "chocolate",
+    "oak",
+    "coffee"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 77,
+   "worte": [
+    "blackberry",
+    "plum",
+    "dark fruit",
+    "blackcurrant",
+    "black fruit"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 54,
+   "worte": [
+    "pepper",
+    "licorice",
+    "cinnamon",
+    "eucalyptus",
+    "rosemary"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 40,
+   "worte": [
+    "leather",
+    "smoke",
+    "earthy",
+    "exotic spice",
+    "graphite"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 29,
+   "worte": [
+    "raspberry",
+    "cherry",
+    "strawberry",
+    "sour cherry",
+    "cranberry"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 10,
+   "worte": [
+    "lavender",
+    "violet",
+    "geranium"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 9,
+   "worte": [
+    "toast",
+    "biscuit",
+    "black walnut",
+    "brioche"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 5,
+   "worte": [
+    "prune",
+    "raisin"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 2,
+   "worte": [
+    "cheese",
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "straw",
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 2,
+   "worte": [
+    "apple",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 1,
+   "worte": [
+    "lemon"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 292,
+  "name": "Toskana Rot Italien",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.3,
+ "bewertungen": 1809,
+ "weingut_weine": 7,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

@@ -1,0 +1,78 @@
+{
+ "id": 4050056,
+ "name": "Completer Grand Maître",
+ "weingut": "Weingut Roman Hermann",
+ "region": "Graubünden",
+ "region_id": 1455,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Completer"
+ ],
+ "speisen": [],
+ "struktur": null,
+ "aromen": [
+  {
+   "gruppe": "citrus_fruit",
+   "n": 9,
+   "worte": [
+    "citrus",
+    "lemon",
+    "pink grapefruit"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 4,
+   "worte": [
+    "green apple",
+    "apricot",
+    "white peach"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 4,
+   "worte": [
+    "honey",
+    "minerals"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 2,
+   "worte": [
+    "snap pea",
+    "straw"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 1,
+   "worte": [
+    "oak"
+   ]
+  }
+ ],
+ "stil": null,
+ "bewertung": 4.2,
+ "bewertungen": 388,
+ "weingut_weine": 30,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

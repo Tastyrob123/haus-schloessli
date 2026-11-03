@@ -1,0 +1,164 @@
+{
+ "id": 1191368,
+ "name": "Albesani Vigna Borgese Barbaresco",
+ "weingut": "Piero Busso",
+ "region": "Barbaresco",
+ "region_id": 722,
+ "alkohol": 14.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Nebbiolo"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Lamm",
+  "Pasta",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 4.517204,
+  "fizziness": null,
+  "intensity": 3.689495,
+  "sweetness": 1.4162891,
+  "tannin": 4.126273,
+  "user_structure_count": 60,
+  "calculated_structure_count": 61
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 77,
+   "worte": [
+    "leather",
+    "earthy",
+    "tar",
+    "mushroom",
+    "smoke"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 71,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "red cherry",
+    "pomegranate",
+    "raspberry"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 43,
+   "worte": [
+    "oak",
+    "tobacco",
+    "cedar",
+    "chocolate",
+    "vanilla"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 25,
+   "worte": [
+    "blackberry",
+    "black cherry",
+    "black fruit",
+    "dark fruit",
+    "cassis"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 17,
+   "worte": [
+    "mint",
+    "pepper",
+    "menthol",
+    "anise",
+    "cinnamon"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 13,
+   "worte": [
+    "raisin",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 10,
+   "worte": [
+    "violet",
+    "rose petal",
+    "dried rose",
+    "perfume",
+    "rose hip"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 6,
+   "worte": [
+    "almond",
+    "biscuit",
+    "dried fig",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 5,
+   "worte": [
+    "orange",
+    "citrus",
+    "lime",
+    "orange peel"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 1,
+   "worte": [
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 1,
+   "worte": [
+    "tomato"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 1,
+   "worte": [
+    "peach"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 5,
+  "name": "Barbaresco Italien",
+  "description": "You can find the elegant, striking wines of Barbaresco in the Piedmont region of Northern Italy. These wines are composed of Nebbiolo, the region's premier grape. \n\nBarbaresco wines are generally a light, reddish-orange in color, but they are not light on flavor. Their high acidity and tannins benefit from a couple of years aging, after which these wines reveal invigorating aromas of tart cranberries and cherries, cardamom, earth, and spices.\n\nIf you ever wished that Pinot Noir had the punch of Cab, this might be the wine for you!",
+  "blurb": "Nebbiolo-based DOCG wine from Piedmont",
+  "interesting_facts": [
+   "Millions of years ago, Barbaresco was under the sea.",
+   "Legend has it that the Romans named the region after the Barbarians, due to the area's surrounding forest that provided cover for these attackers."
+  ],
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 1511,
+ "weingut_weine": 18,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

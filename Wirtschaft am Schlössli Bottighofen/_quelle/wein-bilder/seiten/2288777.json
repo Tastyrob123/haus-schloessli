@@ -1,0 +1,110 @@
+{
+ "id": 2288777,
+ "name": "Schlossberg Chardonnay GG",
+ "weingut": "Bernhard Huber",
+ "region": "Baden",
+ "region_id": 924,
+ "alkohol": 13.5,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Fetthaltiger Fisch (Lachs, Thunfisch etc.)"
+ ],
+ "struktur": {
+  "acidity": 3.6831481,
+  "fizziness": null,
+  "intensity": 3.398148,
+  "sweetness": 1.424074,
+  "tannin": null,
+  "user_structure_count": 7,
+  "calculated_structure_count": 4
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 8,
+   "worte": [
+    "flint",
+    "saline",
+    "honey",
+    "iron",
+    "minerals"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 6,
+   "worte": [
+    "oak",
+    "vanilla",
+    "butter"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 5,
+   "worte": [
+    "lemon",
+    "lime",
+    "tangerine"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 3,
+   "worte": [
+    "green apple",
+    "peach"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 2,
+   "worte": [
+    "cream"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 2,
+   "worte": [
+    "almond",
+    "hazelnut"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 1,
+   "worte": [
+    "menthol"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 58,
+  "name": "Chardonnay Deutschland",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 4,
+  "body_description": "Voller Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.5,
+ "bewertungen": 107,
+ "weingut_weine": 67,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

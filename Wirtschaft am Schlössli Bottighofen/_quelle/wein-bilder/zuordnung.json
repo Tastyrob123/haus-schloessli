@@ -1,0 +1,3746 @@
+{
+ "1": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Roses de Jeanne",
+  "wert": 0.33,
+  "karte": "Champagne Roses de Jeanne – Cédric Bouchard · Champagne pas dosé a VV «2023»"
+ },
+ "2": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Roses de Jeanne",
+  "wert": 0.33,
+  "karte": "Champagne Roses de Jeanne – Cédric Bouchard · Champagne pas dosé a VV «2024»"
+ },
+ "3": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Roses de Jeanne",
+  "wert": 0.33,
+  "karte": "Champagne Roses de Jeanne – Cédric Bouchard · Champagne pas dosé UR 2022"
+ },
+ "4": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Roses de Jeanne",
+  "wert": 0.25,
+  "karte": "Champagne Roses de Jeanne – Cédric Bouchard · Champagne pas dosé CE BLANC 2022"
+ },
+ "5": {
+  "flasche": "//images.vivino.com/thumbs/TNmerGfXRZmgNxb4Jhtrxg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Les Roises Blanc de Blancs Extra Brut Champagne",
+  "weingut": "Ulysse Collin",
+  "wert": 1.0,
+  "karte": "Champagne Ulysse Collin · Les Roises Blanc de Blancs"
+ },
+ "6": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Ulysse Collin",
+  "wert": 0.5,
+  "karte": "Champagne Ulysse Collin · Jardin d’Ulysse"
+ },
+ "7": {
+  "flasche": "//images.vivino.com/thumbs/geIkD28jSq6RMeVYmLpVlQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Les Maillons Blanc de Noirs Extra Brut Champagne",
+  "weingut": "Ulysse Collin",
+  "wert": 1.0,
+  "karte": "Champagne Ulysse Collin · Les Maillons Blanc de Noirs"
+ },
+ "8": {
+  "flasche": "//images.vivino.com/thumbs/a17snulsSBqL3VjG_-Nd4g_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Les Pierrières Blanc de Blancs Extra Brut Champagne",
+  "weingut": "Ulysse Collin",
+  "wert": 0.67,
+  "karte": "Champagne Ulysse Collin · Les Perrières Blanc de Blancs"
+ },
+ "9": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Ulysse Collin",
+  "wert": 0.5,
+  "karte": "Champagne Ulysse Collin · Jardin d’Ulysse"
+ },
+ "10": {
+  "flasche": "//images.vivino.com/thumbs/SqeiaDHAQcS4QeUWLWMcYQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "La Bulle Libre L'Odyssée Pétillante Chapitre 2",
+  "weingut": "Romain Henin",
+  "wert": 0.6,
+  "karte": "Champagne Romain Henin – La Bulle Libre · Brut Nature «Odyssée Pétillante Chapitre 2»"
+ },
+ "11": {
+  "flasche": "//images.vivino.com/thumbs/dMTQO97DTdOvTDvxwlcFiQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Brut Grand Rosé Champagne",
+  "weingut": "Gosset",
+  "wert": 1.0,
+  "karte": "Champagne Gosset · Grand Rosé Brut"
+ },
+ "12": {
+  "flasche": "//images.vivino.com/thumbs/Tznwj7-dQwK4cdLJ1SygMw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Grand Blanc de Blancs Brut Champagne",
+  "weingut": "Gosset",
+  "wert": 1.0,
+  "karte": "Champagne Gosset · Grand Blanc de Blancs Brut"
+ },
+ "13": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Valentin Leflaive",
+  "wert": 1.0,
+  "karte": "Champagne Valentin Leflaive · Extra Brut Blanc de Blancs"
+ },
+ "14": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Valentin Leflaive",
+  "wert": 1.0,
+  "karte": "Champagne Valentin Leflaive · Extra Brut Blanc de Blancs Grand Cru Les Peignottes"
+ },
+ "15": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Valentin Leflaive",
+  "wert": 1.0,
+  "karte": "Champagne Valentin Leflaive · Extra Brut Rosé Grand Cru Les Marquises"
+ },
+ "16": {
+  "flasche": "//images.vivino.com/thumbs/Eg22whhBTpi3ri01QV1f-w_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Brut Rosé Champagne",
+  "weingut": "Ruinart",
+  "wert": 1.0,
+  "karte": "Champagne Ruinart · Rosé Brut"
+ },
+ "17": {
+  "flasche": "//images.vivino.com/thumbs/s5aXYaQiTu-V_xEYI3KXRg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Dom Pérignon",
+  "wert": 0,
+  "karte": "Champagne Dom Pérignon · Dom Pérignon"
+ },
+ "18": {
+  "flasche": "//images.vivino.com/thumbs/s5aXYaQiTu-V_xEYI3KXRg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Dom Pérignon",
+  "wert": 0,
+  "karte": "Champagne Dom Pérignon · Dom Pérignon"
+ },
+ "19": {
+  "flasche": "//images.vivino.com/thumbs/VhLkvaMQT9ydS3DIy19kJw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Brut Rosé Champagne",
+  "weingut": "Dom Pérignon",
+  "wert": 1.0,
+  "karte": "Champagne Dom Pérignon · Dom Pérignon Rosé"
+ },
+ "20": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Agrapart & Fils",
+  "wert": 1.0,
+  "karte": "Champagne Agrapart et fils · 7 Crus Extra Brut"
+ },
+ "21": {
+  "flasche": "//images.vivino.com/thumbs/FdhHhaq1STWS7DxqCjIhgw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Terroirs Blanc de Blancs Extra Brut Champagne Grand Cru 'Avize'",
+  "weingut": "Agrapart & Fils",
+  "wert": 1.0,
+  "karte": "Champagne Agrapart et fils · Terroirs Extra Brut Blanc de Blancs Grand Cru"
+ },
+ "22": {
+  "flasche": "//images.vivino.com/thumbs/JTZMGrGES1KmzYRm89KKrw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Minéral Blanc de Blancs Extra Brut Champagne Grand Cru 'Avize'",
+  "weingut": "Agrapart & Fils",
+  "wert": 1.0,
+  "karte": "Champagne Agrapart et fils · Mineral Extra Brut Blanc de Blancs Grand Cru"
+ },
+ "23": {
+  "flasche": "//images.vivino.com/thumbs/MYK1MWwURlWiiVcibYOG2Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "La Cuvée Brut Champagne",
+  "weingut": "Laurent-Perrier",
+  "wert": 1.0,
+  "karte": "Champagne Laurent-Perrier · La Cuvée"
+ },
+ "24": {
+  "flasche": "//images.vivino.com/thumbs/sLi6vUNBTlCVNPSsGoCppw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Brut Millésimé Champagne",
+  "weingut": "Laurent-Perrier",
+  "wert": 1.0,
+  "karte": "Champagne Laurent-Perrier · Millésimé"
+ },
+ "25": {
+  "flasche": "//images.vivino.com/thumbs/8eplhbUISsSo-nqz0nv22w_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Blanc de Blancs Brut Nature",
+  "weingut": "Laurent-Perrier",
+  "wert": 1.0,
+  "karte": "Champagne Laurent-Perrier · Blanc de Blancs"
+ },
+ "26": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Laurent-Perrier",
+  "wert": 0.6,
+  "karte": "Champagne Laurent-Perrier · Grand Siècle It. No.27"
+ },
+ "27": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Laurent-Perrier",
+  "wert": 0.6,
+  "karte": "Champagne Laurent-Perrier · Grand Siècle It. No.24"
+ },
+ "28": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Laurent-Perrier",
+  "wert": 1.0,
+  "karte": "Champagne Laurent-Perrier · Cuvée Rosé Brut"
+ },
+ "29": {
+  "flasche": "//images.vivino.com/thumbs/ccqd0o9cTbeGY8EQCJ2kvw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Brut Champagne Grand Cru 'Le Mesnil-sur-Oger'",
+  "weingut": "Delamotte",
+  "wert": 1.0,
+  "karte": "Champagne Delamotte · Brut"
+ },
+ "30": {
+  "flasche": "//images.vivino.com/thumbs/_bNmaRfGSQ6bpILhAtDHCA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Collection Blanc de Blancs Champagne Grand Cru 'Le Mesnil-sur-Oger",
+  "weingut": "Delamotte",
+  "wert": 1.0,
+  "karte": "Champagne Delamotte · Blanc de Blancs"
+ },
+ "31": {
+  "flasche": "//images.vivino.com/thumbs/Si-HFgOHSrSesYLXXadwiA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Blanc de Blancs Brut Millésimé Champagne Grand Cru",
+  "weingut": "Delamotte",
+  "wert": 1.0,
+  "karte": "Champagne Delamotte · Blanc de Blancs Millésimé"
+ },
+ "32": {
+  "flasche": "//images.vivino.com/thumbs/B-Fp7GRpSsq48xgoGgggyw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Rosé Brut Champagne Grand Cru 'Le Mesnil-sur-Oger'",
+  "weingut": "Delamotte",
+  "wert": 1.0,
+  "karte": "Champagne Delamotte · Rosé Brut"
+ },
+ "33": {
+  "flasche": "//images.vivino.com/thumbs/hhUNQQdSSV-YWyLXdzAcbQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Prestige Rosé Brut Champagne",
+  "weingut": "Taittinger",
+  "wert": 1.0,
+  "karte": "Champagne Taittinger · Brut Rosé"
+ },
+ "34": {
+  "flasche": "//images.vivino.com/thumbs/oYGCPxFLTLWsjFdzDAZsFA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Millésimé Brut Champagne",
+  "weingut": "Taittinger",
+  "wert": 1.0,
+  "karte": "Champagne Taittinger · Brut Millésimé"
+ },
+ "35": {
+  "flasche": "//images.vivino.com/thumbs/kPJzCwsqT72d4v2vEgDdXQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Comtes de Champagne Blanc de Blancs",
+  "weingut": "Taittinger",
+  "wert": 1.0,
+  "karte": "Champagne Taittinger · Comtes de Champagne Blanc de Blancs"
+ },
+ "36": {
+  "flasche": "//images.vivino.com/thumbs/mJmfn-BTQRqW5pcjlmPbjg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Comtes de Champagne Rosé",
+  "weingut": "Taittinger",
+  "wert": 1.0,
+  "karte": "Champagne Taittinger · Comtes de Champagne Rosé"
+ },
+ "37": {
+  "flasche": "//images.vivino.com/thumbs/bXZK_MhMQi-a2xrjEITv2A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Cristal Brut Champagne (Millésimé)",
+  "weingut": "Louis Roederer",
+  "wert": 1.0,
+  "karte": "Champagne Louis Roederer · Cristal Brut"
+ },
+ "38": {
+  "flasche": "//images.vivino.com/thumbs/bXZK_MhMQi-a2xrjEITv2A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Cristal Brut Champagne (Millésimé)",
+  "weingut": "Louis Roederer",
+  "wert": 1.0,
+  "karte": "Champagne Louis Roederer · Cristal Brut"
+ },
+ "39": {
+  "flasche": "//images.vivino.com/thumbs/JWaBmNtSQxehHJ0jr09NSQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Cristal Rosé Brut Champagne (Millésimé)",
+  "weingut": "Louis Roederer",
+  "wert": 1.0,
+  "karte": "Champagne Louis Roederer · Cristal Rosé"
+ },
+ "40": {
+  "flasche": "//images.vivino.com/thumbs/x-fGwQkyQIq38cDR6n2L7w_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Special Cuvée Brut Aÿ Champagne",
+  "weingut": "Bollinger",
+  "wert": 1.0,
+  "karte": "Champagne Bollinger · Special Cuvee Brut"
+ },
+ "41": {
+  "flasche": "//images.vivino.com/thumbs/aM6tHd2WRlG4I-txTAq0fQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Grande Réserve Brut Champagne Grand Cru 'Bouzy'",
+  "weingut": "Andre Clouet",
+  "wert": 1.0,
+  "karte": "Champagne André Clouet · Grande Réserve Grand Cru Brut"
+ },
+ "42": {
+  "flasche": "//images.vivino.com/thumbs/gY87xcBoTg6IOEPcEz4U_A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Brut Rosé Champagne Grand Cru 'Bouzy'",
+  "weingut": "Andre Clouet",
+  "wert": 1.0,
+  "karte": "Champagne André Clouet · Brut Rosé Grand Cru"
+ },
+ "43": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Legras & Haas",
+  "wert": 1.0,
+  "karte": "Champagne Legras & Haas · Intuition Rosé"
+ },
+ "44": {
+  "flasche": "//images.vivino.com/thumbs/od33l3IvQaKHL07zPk6W4Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "L'Invitation Brut Champagne",
+  "weingut": "Huré Frères",
+  "wert": 0.5,
+  "karte": "Champagne Huré Frères · Invitation Brut (B.2021) [Deg.25]"
+ },
+ "45": {
+  "flasche": "//images.vivino.com/thumbs/-2_KNzOEQ6ySWP0G8P0RMQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "4 Élements Chardonnay Champagne",
+  "weingut": "Huré Frères",
+  "wert": 0.4,
+  "karte": "Champagne Huré Frères · 4 Eléments Chardonnay [Deg. 04/25]"
+ },
+ "46": {
+  "flasche": "//images.vivino.com/thumbs/2Fyo6cYJSQq5GIyA30hdKg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "4 Éléments Pinot Noir Champagne",
+  "weingut": "Huré Frères",
+  "wert": 0.5,
+  "karte": "Champagne Huré Frères · 4 Eléments Pinot Noir [Deg 04/25]"
+ },
+ "47": {
+  "flasche": "//images.vivino.com/thumbs/A3Z1wnO-TMWLlNzyBpcLcA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": "Platine Extra Brut Champagne Premier Cru",
+  "weingut": "Nicolas Maillart",
+  "wert": 0.8,
+  "karte": "Champagne Nicolas Maillard · Extra Brut 1 er Cru Platine"
+ },
+ "48": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Nicolas Maillart",
+  "wert": 0.75,
+  "karte": "Champagne Nicolas Maillard · Brut Rosé 1 er Cru"
+ },
+ "49": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/8/83/Weinlese_bei_Ermatingen_TG_%282009%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Schlossgut Bachtobel – Mousseux (Deg: 03/24)"
+ },
+ "50": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/8/83/Weinlese_bei_Ermatingen_TG_%282009%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Schlossgut Bachtobel – Mousseux (Deg: 03/26)"
+ },
+ "51": {
+  "flasche": "//images.vivino.com/thumbs/0gSoSnYnRBa2uF7ndLjIFg_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/8/83/Weinlese_bei_Ermatingen_TG_%282009%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Adank`s Brut"
+ },
+ "52": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/8/83/Weinlese_bei_Ermatingen_TG_%282009%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Scadenagut Wegelin – Scampagna (BdN)"
+ },
+ "53": {
+  "flasche": "//images.vivino.com/thumbs/XC_5_v0wRz6hJA-aw1pdZA_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/8/83/Weinlese_bei_Ermatingen_TG_%282009%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Obrecht Brut Nature Blanc (Tirage 2022)"
+ },
+ "54": {
+  "flasche": "//images.vivino.com/thumbs/NlAknf6fTXmf0a5x20UX0g_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/8/83/Weinlese_bei_Ermatingen_TG_%282009%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Obrecht Brut Rosé"
+ },
+ "55": {
+  "flasche": "//images.vivino.com/thumbs/NlAknf6fTXmf0a5x20UX0g_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/8/83/Weinlese_bei_Ermatingen_TG_%282009%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Obrecht Brut Rosé"
+ },
+ "56": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/8/83/Weinlese_bei_Ermatingen_TG_%282009%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Donatsch Extra Brut – Blanc de Blancs"
+ },
+ "57": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/8/83/Weinlese_bei_Ermatingen_TG_%282009%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Donatsch Extra Brut – Blanc de Blancs"
+ },
+ "58": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Johannes Aufricht – Blanc de Blancs Brut nature"
+ },
+ "59": {
+  "flasche": "//images.vivino.com/thumbs/nOov5PpET8eAUOgn9fB9TA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Bernhard Huber – Blanc de Blancs Brut nature"
+ },
+ "60": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Bernhard Huber – Blanc de Noir Brut nature"
+ },
+ "61": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Weingut Keller - Grande Cuvée Brut nature No. 002"
+ },
+ "62": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Benjamin Lanz – Sprudeldicke Dirn Brut nature"
+ },
+ "63": {
+  "flasche": "//images.vivino.com/thumbs/ISWenzCgTRGyr7tTH1b_wg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/fwSJeiXsQKa5CAbMMDKygA_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Ferrari Perlé Rosé Riserva"
+ },
+ "64": {
+  "flasche": "//images.vivino.com/thumbs/KN8lE4feR_WHLMyw0hqzhg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/fwSJeiXsQKa5CAbMMDKygA_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Ferrari Maximum Blanc de Blancs"
+ },
+ "65": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Cava Gilmas Brut Reserva"
+ },
+ "66": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Domaine Trapet Alsace Richovila Crémant extra brut"
+ },
+ "67": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Schlossgut Bachtobel · Pinot Gris"
+ },
+ "68": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Schlossgut Bachtobel · Pinot Gris"
+ },
+ "69": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Schlossgut Bachtobel · Pinot Gris"
+ },
+ "70": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Schlossgut Bachtobel · Sauvignon Blanc"
+ },
+ "71": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Schlossgut Bachtobel · Sauvignon Blanc"
+ },
+ "72": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Schlossgut Bachtobel · Weisser Riesling"
+ },
+ "73": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Schlossgut Bachtobel · Weisser Riesling"
+ },
+ "74": {
+  "flasche": "//images.vivino.com/thumbs/H1AsA-joSk6SfgZET-M1Wg_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": "MT Muller-Thurgau",
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Schlossgut Bachtobel · Müller-Thurgau"
+ },
+ "75": {
+  "flasche": "//images.vivino.com/thumbs/H1AsA-joSk6SfgZET-M1Wg_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": "MT Muller-Thurgau",
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Schlossgut Bachtobel · Müller-Thurgau"
+ },
+ "76": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Forster Weinbau",
+  "wert": 0,
+  "karte": "Forster Weinbau · Sauvignac"
+ },
+ "77": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Forster Weinbau",
+  "wert": 1.0,
+  "karte": "Forster Weinbau · Solaris"
+ },
+ "78": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Eglisau-Buchberg_-_Rhinsberg_2011-09-21_13-41-52.jpg",
+  "treffer": null,
+  "weingut": "Zahner",
+  "wert": 1.0,
+  "karte": "Weingut Familie Zahner · Langenmooser Gewürztraminer"
+ },
+ "79": {
+  "flasche": "//images.vivino.com/thumbs/qgnOTFZzThm-SzuOSvAZ0g_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Fläscher Riesling - Sylvaner",
+  "weingut": "Hansruedi Adank",
+  "wert": 1.0,
+  "karte": "Hansruedi Adank · Riesling-Sylvaner"
+ },
+ "80": {
+  "flasche": "//images.vivino.com/thumbs/MsBmYNWFTZuB4zNIOuPciQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Fläscher Pinot Gris",
+  "weingut": "Hansruedi Adank",
+  "wert": 1.0,
+  "karte": "Hansruedi Adank · Pinot Gris"
+ },
+ "81": {
+  "flasche": "//images.vivino.com/thumbs/iRPSVTheSHuHzlO7VQlweA_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Fläscher Sauvignon Blanc",
+  "weingut": "Hansruedi Adank",
+  "wert": 1.0,
+  "karte": "Hansruedi Adank · Sauvignon Blanc"
+ },
+ "82": {
+  "flasche": "//images.vivino.com/thumbs/loBYesVmRReBehxry-3TTQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Fläscher Chardonnay",
+  "weingut": "Hansruedi Adank",
+  "wert": 1.0,
+  "karte": "Hansruedi Adank · Chardonnay"
+ },
+ "83": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": null,
+  "weingut": "Hansruedi Adank",
+  "wert": 1.0,
+  "karte": "Hansruedi Adank · Chardonnay am Berg"
+ },
+ "84": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": null,
+  "weingut": "Hansruedi Adank",
+  "wert": 1.0,
+  "karte": "Hansruedi Adank · Chardonnay am Berg"
+ },
+ "85": {
+  "flasche": "//images.vivino.com/thumbs/PtlcsBARRDCuxv0KLEggEQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Riesling - Sylvaner Schiefer",
+  "weingut": "Obrecht",
+  "wert": 1.0,
+  "karte": "Christian & Francisca Obrecht - Weingut zur Sonne · Riesling Sylvaner Schiefer"
+ },
+ "86": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Christian & Francisca Obrecht - Weingut zur Sonne · Chardonnay"
+ },
+ "87": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Christian & Francisca Obrecht - Weingut zur Sonne · Chardonnay"
+ },
+ "88": {
+  "flasche": "//images.vivino.com/thumbs/A8JXP6kTRIiIoJIZ2Ntbtg_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Chardonnay",
+  "weingut": "Daniel & Marta Gantenbein",
+  "wert": 1.0,
+  "karte": "Martha & Daniel Gantenbein · Chardonnay"
+ },
+ "89": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": null,
+  "weingut": "Daniel & Marta Gantenbein",
+  "wert": 1.0,
+  "karte": "Martha & Daniel Gantenbein · Riesling"
+ },
+ "90": {
+  "flasche": "//images.vivino.com/thumbs/uouYlkt5TQSxgaQAuhKOzQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Completer Grand Maître",
+  "weingut": "Weingut Roman Hermann",
+  "wert": 1.0,
+  "karte": "Weingut Roman Hermann · Completer Grand Maitre"
+ },
+ "91": {
+  "flasche": "//images.vivino.com/thumbs/eezJXeTXQ1q3m7VKQnc2XQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Passion Chardonnay",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Martin Donatsch – Weingut zum Ochsen · Chardonnay Passion"
+ },
+ "92": {
+  "flasche": "//images.vivino.com/thumbs/ExFjd-jrSQyIZcgamBs0kw_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Malanserrebe Completer",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Martin Donatsch – Weingut zum Ochsen · Completer"
+ },
+ "93": {
+  "flasche": "//images.vivino.com/thumbs/ExFjd-jrSQyIZcgamBs0kw_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Malanserrebe Completer",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Martin Donatsch – Weingut zum Ochsen · Completer"
+ },
+ "94": {
+  "flasche": "//images.vivino.com/thumbs/ExFjd-jrSQyIZcgamBs0kw_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Malanserrebe Completer",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Martin Donatsch – Weingut zum Ochsen · Completer"
+ },
+ "95": {
+  "flasche": "//images.vivino.com/thumbs/DjQUjANgSkKjXmvx_uGCjg_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Unique Chardonnay",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Martin Donatsch – Weingut zum Ochsen · Chardonnay Unique"
+ },
+ "96": {
+  "flasche": "//images.vivino.com/thumbs/DjQUjANgSkKjXmvx_uGCjg_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Unique Chardonnay",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Martin Donatsch – Weingut zum Ochsen · Chardonnay Unique"
+ },
+ "97": {
+  "flasche": "//images.vivino.com/thumbs/BdR9xhSgRhSx4Iy-cbUD_Q_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Malanser Weissburgunder",
+  "weingut": "Weingut Wegelin",
+  "wert": 1.0,
+  "karte": "Weingut Wegelin - Scadenagut · Malanser Weissburgunder"
+ },
+ "98": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": null,
+  "weingut": "Weingut Wegelin",
+  "wert": 1.0,
+  "karte": "Weingut Wegelin - Scadenagut · Weissburgunder Scadena"
+ },
+ "99": {
+  "flasche": "//images.vivino.com/thumbs/Ys78GSr5Rd6b6a0KS7E9rw_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Malanser Chardonnay",
+  "weingut": "Weingut Wegelin",
+  "wert": 1.0,
+  "karte": "Weingut Wegelin - Scadenagut · Malanser Chardonnay"
+ },
+ "100": {
+  "flasche": "//images.vivino.com/thumbs/4uGyeSgWSlKp2aW9-LRM7A_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Frassa Chardonnay",
+  "weingut": "Weingut Wegelin",
+  "wert": 1.0,
+  "karte": "Weingut Wegelin - Scadenagut · Chardonnay Frassa"
+ },
+ "101": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": null,
+  "weingut": "Weingut Wegelin",
+  "wert": 1.0,
+  "karte": "Weingut Wegelin - Scadenagut · Chardonnay Bothmarhalde"
+ },
+ "102": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": null,
+  "weingut": "Weingut Wegelin",
+  "wert": 0.5,
+  "karte": "Weingut Wegelin - Scadenagut · Malanser Completer"
+ },
+ "103": {
+  "flasche": "//images.vivino.com/thumbs/l46u1_EuSASktFyg7AhrXA_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Chardonnay",
+  "weingut": "Thomas Studach",
+  "wert": 1.0,
+  "karte": "Thomas Studach · Chardonnay"
+ },
+ "104": {
+  "flasche": "//images.vivino.com/thumbs/l46u1_EuSASktFyg7AhrXA_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Chardonnay",
+  "weingut": "Thomas Studach",
+  "wert": 1.0,
+  "karte": "Thomas Studach · Chardonnay"
+ },
+ "105": {
+  "flasche": "//images.vivino.com/thumbs/qnVHaNKUSaWNmKqkPFMGjQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Pinot Gris",
+  "weingut": "Giani Boner",
+  "wert": 1.0,
+  "karte": "Weinkellerei Giani Boner · Pinot Gris"
+ },
+ "106": {
+  "flasche": "//images.vivino.com/thumbs/A9H3Hjk7RDGd0BW6aWZ1FQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Sauvignon Blanc",
+  "weingut": "Giani Boner",
+  "wert": 1.0,
+  "karte": "Weinkellerei Giani Boner · Sauvignon Blanc"
+ },
+ "107": {
+  "flasche": "//images.vivino.com/thumbs/A9H3Hjk7RDGd0BW6aWZ1FQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Sauvignon Blanc",
+  "weingut": "Giani Boner",
+  "wert": 1.0,
+  "karte": "Weinkellerei Giani Boner · Sauvignon Blanc"
+ },
+ "108": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Weingut Seehaldenhof – Simon Hornstein · Chardonnay Sonnenbichl"
+ },
+ "109": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Hornstein am See",
+  "wert": 1.0,
+  "karte": "Weingut Seehaldenhof – Simon Hornstein · Chardonnay Seehalde"
+ },
+ "110": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Weingut Seehaldenhof – Simon Hornstein · Chardonnay Sonnenbichl"
+ },
+ "111": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Weingut Seehaldenhof – Simon Hornstein · Chardonnay Gundelsberg"
+ },
+ "112": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Jonas Kurek",
+  "wert": 1.0,
+  "karte": "Weingut Jonas Kurek · Weissburgunder Seehalde"
+ },
+ "113": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Jonas Kurek",
+  "wert": 1.0,
+  "karte": "Weingut Jonas Kurek · Chardonnay Seehalde"
+ },
+ "114": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Jonas Kurek",
+  "wert": 0.5,
+  "karte": "Weingut Jonas Kurek · Chardonnay Sonnenbichl"
+ },
+ "115": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Bernhard Huber",
+  "wert": 0.25,
+  "karte": "Weingut Bernhard Huber · Breisgau Weiss (CHA&WB)"
+ },
+ "116": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Malterdingen Chardonnay"
+ },
+ "117": {
+  "flasche": "//images.vivino.com/thumbs/VhLqL3y5SkO4yYcfyGUDeA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Alte Reben Chardonnay",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Alte Reben Chardonnay"
+ },
+ "118": {
+  "flasche": "//images.vivino.com/thumbs/_Yq9ThAQQYC-PvbfMZ33cg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Bienenberg Chardonnay GG",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Chardonnay Bienenberg GG"
+ },
+ "119": {
+  "flasche": "//images.vivino.com/thumbs/7aHVDnuwSGO0Cq9ETA2a1Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Schlossberg Chardonnay GG",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Chardonnay Schlossberg GG"
+ },
+ "120": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vollmayer",
+  "wert": 1.0,
+  "karte": "Weingut Vollmayer · Grauburgunder Höchste Lage"
+ },
+ "121": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vollmayer",
+  "wert": 1.0,
+  "karte": "Weingut Vollmayer · Chardonnay Höchste Lage"
+ },
+ "122": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Aufricht",
+  "wert": 0,
+  "karte": "Johannes Aufricht · Bodensxx Aligoté"
+ },
+ "123": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Molitor Rosenkreuz",
+  "wert": 0.8,
+  "karte": "Weingut Achim Molitor · Riesling Spätlese trocken Piesporter Goldtröpfchen"
+ },
+ "124": {
+  "flasche": "//images.vivino.com/thumbs/zW7pgFO3TU-i-stpJS5DPA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/klw147B8QSi16e-qNdUAYA_1280x760.jpg",
+  "treffer": "Grainhubel Riesling GG",
+  "weingut": "Von Winning",
+  "wert": 0.67,
+  "karte": "Weingut von Winning · Riesling Kirchenstück GG"
+ },
+ "125": {
+  "flasche": "//images.vivino.com/thumbs/AWCELgR_SYWn2lIZ2byjgg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/klw147B8QSi16e-qNdUAYA_1280x760.jpg",
+  "treffer": "Win Win Riesling",
+  "weingut": "Von Winning",
+  "wert": 0.5,
+  "karte": "Weingut von Winning · Riesling Marmar"
+ },
+ "126": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/klw147B8QSi16e-qNdUAYA_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Dr. Bürklin-Wolf",
+  "wert": 0.5,
+  "karte": "Weingut Dr. Bürklin-Wolf · Riesling Hohenmorgen G.C."
+ },
+ "127": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/klw147B8QSi16e-qNdUAYA_1280x760.jpg",
+  "treffer": null,
+  "weingut": "A. Christmann",
+  "wert": 0.75,
+  "karte": "Weingut A. Christmann · Riesling Königsbacher Idig GG"
+ },
+ "128": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/klw147B8QSi16e-qNdUAYA_1280x760.jpg",
+  "treffer": null,
+  "weingut": "A. Christmann",
+  "wert": 0.75,
+  "karte": "Weingut A. Christmann · Riesling Königsbacher Idig GG"
+ },
+ "129": {
+  "flasche": "//images.vivino.com/thumbs/jTnBDambTAmJ0UksYG9eOg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": "Hermannshöhle Riesling GG",
+  "weingut": "Dönnhoff",
+  "wert": 0.75,
+  "karte": "Hermann Dönnhoff · Riesling Niederhäuser Hermannshöhle GG"
+ },
+ "130": {
+  "flasche": "//images.vivino.com/thumbs/jTnBDambTAmJ0UksYG9eOg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": "Hermannshöhle Riesling GG",
+  "weingut": "Dönnhoff",
+  "wert": 0.75,
+  "karte": "Hermann Dönnhoff · Riesling Niederhäuser Hermannshöhle GG"
+ },
+ "131": {
+  "flasche": "//images.vivino.com/thumbs/EZbX1aGYQ9amIpAhV9Hh4A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": "Dellchen Riesling GG",
+  "weingut": "Dönnhoff",
+  "wert": 0.75,
+  "karte": "Hermann Dönnhoff · Riesling Norheimer Dellchen GG"
+ },
+ "132": {
+  "flasche": "//images.vivino.com/thumbs/baHVVBm2S_Cq8xUgvHmsng_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": "Halenberg Riesling GG",
+  "weingut": "Schäfer-Fröhlich",
+  "wert": 1.0,
+  "karte": "Weingut Schäfer-Fröhlich · Riesling Halenberg GG"
+ },
+ "133": {
+  "flasche": "//images.vivino.com/thumbs/szpLyQbYQSW5BP9pQVHTTQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": "Frühlingsplätzchen Riesling GG",
+  "weingut": "Schäfer-Fröhlich",
+  "wert": 1.0,
+  "karte": "Weingut Schäfer-Fröhlich · Riesling Frühlingsplätzchen GG"
+ },
+ "134": {
+  "flasche": "//images.vivino.com/thumbs/cS-hU5mlTGCepgAL6gbtMA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": "Stromberg Riesling GG",
+  "weingut": "Schäfer-Fröhlich",
+  "wert": 1.0,
+  "karte": "Weingut Schäfer-Fröhlich · Riesling Stromberg GG"
+ },
+ "135": {
+  "flasche": "//images.vivino.com/thumbs/ev-bV1VjRvK9Y0JfzJm3TA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Kiedrich Gräfenberg Riesling Trocken GG",
+  "weingut": "Robert Weil",
+  "wert": 1.0,
+  "karte": "Weingut Robert Weil · Riesling Kiedrich Gräfenberg GG"
+ },
+ "136": {
+  "flasche": "//images.vivino.com/thumbs/kyvgnSA9R_SzAMBsPL1yNw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Monte Vacano Riesling",
+  "weingut": "Robert Weil",
+  "wert": 1.0,
+  "karte": "Weingut Robert Weil · Riesling Monte Vacano"
+ },
+ "137": {
+  "flasche": "//images.vivino.com/thumbs/VeL3x6XJTlSwIB295-cNrw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Monte Nostrum",
+  "weingut": "Robert Weil",
+  "wert": 0.67,
+  "karte": "Weingut Robert Weil · Riesling Monte Nostrum"
+ },
+ "138": {
+  "flasche": "//images.vivino.com/thumbs/mQU6KvQ0RaCBbYfub-osqg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Riesling Spätlese",
+  "weingut": "Robert Weil",
+  "wert": 1.0,
+  "karte": "Weingut Robert Weil · Riesling Spätlese Rheingau"
+ },
+ "139": {
+  "flasche": "//images.vivino.com/thumbs/u7ZejOyJSsaRbAuaEG4HTw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Riesling Hochheim Kirchenstück Trocken GG",
+  "weingut": "Künstler",
+  "wert": 1.0,
+  "karte": "Weingut Künstler · Riesling Hochheim Kirchenstück GG"
+ },
+ "140": {
+  "flasche": "//images.vivino.com/thumbs/u7ZejOyJSsaRbAuaEG4HTw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Riesling Hochheim Kirchenstück Trocken GG",
+  "weingut": "Künstler",
+  "wert": 1.0,
+  "karte": "Weingut Künstler · Riesling Hochheim Kirchenstück GG"
+ },
+ "141": {
+  "flasche": "//images.vivino.com/thumbs/hYhRs_C6Tt2jBiCIvQScxw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Hohenrain GG",
+  "weingut": "Von Oetinger",
+  "wert": 0.67,
+  "karte": "Weingut von Oetinger · Riesling Hohenrain GG"
+ },
+ "142": {
+  "flasche": "//images.vivino.com/thumbs/hYhRs_C6Tt2jBiCIvQScxw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Hohenrain GG",
+  "weingut": "Von Oetinger",
+  "wert": 0.67,
+  "karte": "Weingut von Oetinger · Riesling Hohenrain GG"
+ },
+ "143": {
+  "flasche": "//images.vivino.com/thumbs/1iRHtiYCRnGwGUpKRvGLSg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Siegelsberg GG",
+  "weingut": "Von Oetinger",
+  "wert": 0.67,
+  "karte": "Weingut von Oetinger · Riesling Siegelsberg GG"
+ },
+ "144": {
+  "flasche": "//images.vivino.com/thumbs/1iRHtiYCRnGwGUpKRvGLSg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Siegelsberg GG",
+  "weingut": "Von Oetinger",
+  "wert": 0.67,
+  "karte": "Weingut von Oetinger · Riesling Siegelsberg GG"
+ },
+ "145": {
+  "flasche": "//images.vivino.com/thumbs/1iRHtiYCRnGwGUpKRvGLSg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Siegelsberg GG",
+  "weingut": "Von Oetinger",
+  "wert": 0.67,
+  "karte": "Weingut von Oetinger · Riesling Siegelsberg GG"
+ },
+ "146": {
+  "flasche": "//images.vivino.com/thumbs/Vg_M4cBgR4qBWF4A-yCg5Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Kirchspiel Riesling GG",
+  "weingut": "Wittmann",
+  "wert": 0.75,
+  "karte": "Weingut Wittmann · Riesling Westhofen Kirchspiel GG"
+ },
+ "147": {
+  "flasche": "//images.vivino.com/thumbs/Vg_M4cBgR4qBWF4A-yCg5Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Kirchspiel Riesling GG",
+  "weingut": "Wittmann",
+  "wert": 0.75,
+  "karte": "Weingut Wittmann · Riesling Westhofen Kirchspiel GG"
+ },
+ "148": {
+  "flasche": "//images.vivino.com/thumbs/3hPYigqLT62_PIweSWTB8Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Aulerde Riesling GG",
+  "weingut": "Wittmann",
+  "wert": 0.75,
+  "karte": "Weingut Wittmann · Riesling Westhofen Aulerde GG"
+ },
+ "149": {
+  "flasche": "//images.vivino.com/thumbs/9SWvYZrlSbaKfwQpB1df2g_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Am Schwarzen Herrgott Riesling GG",
+  "weingut": "Battenfeld Spanier",
+  "wert": 0.6,
+  "karte": "Weingut Battenfeld-Spanier · Riesling Zellerweg am Schwarzer Herrgott GG"
+ },
+ "150": {
+  "flasche": "//images.vivino.com/thumbs/IxuW5x2aQmq0_kHKq7q4iw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Frauenberg Riesling GG",
+  "weingut": "Battenfeld Spanier",
+  "wert": 1.0,
+  "karte": "Weingut Battenfeld-Spanier · Riesling Frauenberg GG"
+ },
+ "151": {
+  "flasche": "//images.vivino.com/thumbs/jn2YczNzQkmLH8xso_po8g_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "C.O. Liquid Earth",
+  "weingut": "Battenfeld Spanier",
+  "wert": 0.67,
+  "karte": "Weingut Battenfeld-Spanier · C.O. Steinlinden Liquid Earth"
+ },
+ "152": {
+  "flasche": "//images.vivino.com/thumbs/tNuAsfAgSCyv8qqSsPMOZQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Hipping Riesling GG",
+  "weingut": "Kühling-Gillot",
+  "wert": 1.0,
+  "karte": "Weingut Kühling-Gillot · Riesling Hipping GG"
+ },
+ "153": {
+  "flasche": "//images.vivino.com/thumbs/SfNTHw_jSmW4nex3aiCx-w_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Weingut Katharina Wechsler · Riesling Kirchspiel Grosse Lage"
+ },
+ "154": {
+  "flasche": "//images.vivino.com/thumbs/va60MVGXTeq6sKnfawK0uA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Weisser Burgunder - Chardonnay Trocken",
+  "weingut": "Keller",
+  "wert": 1.0,
+  "karte": "Weingut Klaus Peter Keller · Weisser Burgunder & Chardonnay"
+ },
+ "155": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Keller",
+  "wert": 0.5,
+  "karte": "Weingut Klaus Peter Keller · Westhofen Sylvaner"
+ },
+ "156": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Keller",
+  "wert": 0.5,
+  "karte": "Weingut Klaus Peter Keller · Sylvaner „Feuervogel“"
+ },
+ "157": {
+  "flasche": "//images.vivino.com/thumbs/4833fWLTTrCrCCPCq70Xug_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Von der Fels Riesling",
+  "weingut": "Keller",
+  "wert": 1.0,
+  "karte": "Weingut Klaus Peter Keller · Riesling „von der Fels“"
+ },
+ "158": {
+  "flasche": "//images.vivino.com/thumbs/3hM2pVPBQBWXRixHJHp_AQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Kirchspiel Riesling GG",
+  "weingut": "Keller",
+  "wert": 0.75,
+  "karte": "Weingut Klaus Peter Keller · Riesling Westhofen Kirchspiel GG"
+ },
+ "159": {
+  "flasche": "//images.vivino.com/thumbs/NUVi2gR3TeOtecw-RdF5fQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Riesling Hubacker GG",
+  "weingut": "Keller",
+  "wert": 0.6,
+  "karte": "Weingut Klaus Peter Keller · Riesling Dalsheim Oberer Hubacker GG"
+ },
+ "160": {
+  "flasche": "//images.vivino.com/thumbs/NUVi2gR3TeOtecw-RdF5fQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Riesling Hubacker GG",
+  "weingut": "Keller",
+  "wert": 0.75,
+  "karte": "Weingut Klaus Peter Keller · Riesling Dalsheim Hubacker GG"
+ },
+ "161": {
+  "flasche": "//images.vivino.com/thumbs/3hM2pVPBQBWXRixHJHp_AQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Kirchspiel Riesling GG",
+  "weingut": "Keller",
+  "wert": 0.75,
+  "karte": "Weingut Klaus Peter Keller · Riesling Westhofen Kirchspiel GG"
+ },
+ "162": {
+  "flasche": "//images.vivino.com/thumbs/3Ot4ozexRF2N2zM4AZn7gA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Ried Loibenberg Loibner Riesling Smaragd",
+  "weingut": "Weingut Knoll",
+  "wert": 1.0,
+  "karte": "Weingut Emmerich Knoll · Riesling Loibner Ried Loibenberg Smaragd"
+ },
+ "163": {
+  "flasche": "//images.vivino.com/thumbs/cxgF3kUzSMCmzN9OumiK5w_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Ried Schütt Dürnsteiner Riesling Smaragd",
+  "weingut": "Weingut Knoll",
+  "wert": 1.0,
+  "karte": "Weingut Emmerich Knoll · Riesling Ried Schütt Smaragd"
+ },
+ "164": {
+  "flasche": "//images.vivino.com/thumbs/qARKLVAoSxK_DhMK7YQzHw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Ried Loibenberg Loibner Grüner Veltliner Smaragd",
+  "weingut": "Weingut Knoll",
+  "wert": 1.0,
+  "karte": "Weingut Emmerich Knoll · Grüner Veltliner Smaragd Loibner"
+ },
+ "165": {
+  "flasche": "//images.vivino.com/thumbs/bgUDePFjQ_ii_12SxovtoQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Weitenberg Grüner Veltliner",
+  "weingut": "Veyder-Malberg",
+  "wert": 1.0,
+  "karte": "Weingut Veyder-Malberg · Grüner Veltliner Weitenberg"
+ },
+ "166": {
+  "flasche": "//images.vivino.com/thumbs/a6bL6kkNTUOIH5nrPOHW3g_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Bruck Riesling",
+  "weingut": "Veyder-Malberg",
+  "wert": 1.0,
+  "karte": "Weingut Veyder-Malberg · Riesling Bruck"
+ },
+ "167": {
+  "flasche": "//images.vivino.com/thumbs/JhzyslotSB6UhPTKwGGa1g_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Buschenberg Riesling",
+  "weingut": "Veyder-Malberg",
+  "wert": 1.0,
+  "karte": "Weingut Veyder-Malberg · Riesling Buschenberg"
+ },
+ "168": {
+  "flasche": "//images.vivino.com/thumbs/pc_MFx9CTd6817UGckPlGQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Elsarner Ried Brandstatt Riesling",
+  "weingut": "Veyder-Malberg",
+  "wert": 1.0,
+  "karte": "Weingut Veyder-Malberg · Riesling Brandstatt"
+ },
+ "169": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Franz Hirtzberger",
+  "wert": 1.0,
+  "karte": "Weingut Franz Hirtzberger · Riesling Smaragd Ried Setzberg"
+ },
+ "170": {
+  "flasche": "//images.vivino.com/thumbs/gKT0vLOjQESJKgXXhGm_Zw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Hochrain - Riesling Smaragd",
+  "weingut": "Franz Hirtzberger",
+  "wert": 0.75,
+  "karte": "Weingut Franz Hirtzberger · Riesling Smaragd Ried Hochrain"
+ },
+ "171": {
+  "flasche": "//images.vivino.com/thumbs/W7Tblf6DSU6rZjeCpIkJ8Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Singerriedel - Riesling Smaragd",
+  "weingut": "Franz Hirtzberger",
+  "wert": 0.75,
+  "karte": "Weingut Franz Hirtzberger · Riesling Smaragd Ried Singerriedel"
+ },
+ "172": {
+  "flasche": "//images.vivino.com/thumbs/fnn8pOwdSu-NQ_uIr96oVQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": "Grüner Veltliner Ried Vordernberg Reserve",
+  "weingut": "Philipp Bründlmayer",
+  "wert": 0.75,
+  "karte": "Weingut Josef & Philipp Bründlmayer · Neuburger Ried Vordernberg Reserve"
+ },
+ "173": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Tement",
+  "wert": 1.0,
+  "karte": "Weingut Tement · Sauvignon Blanc Ehrenhausen"
+ },
+ "174": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Weingut Erich & Walter Polz",
+  "wert": 0.5,
+  "karte": "Weingut Walter Polz · Sauvignon Blanc Stone White"
+ },
+ "175": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Weingut Erich & Walter Polz",
+  "wert": 1.0,
+  "karte": "Weingut Walter Polz · Sauvignon Blanc Ried Hochgrassnitzberg"
+ },
+ "176": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/w7wCTCHOSFqza3UxUJTgZQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Weingut Erich & Walter Polz",
+  "wert": 0.75,
+  "karte": "Weingut Walter Polz · Sauvignon Blanc Ried Obegg"
+ },
+ "177": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/fwSJeiXsQKa5CAbMMDKygA_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Tiefenbrunner",
+  "wert": 0.67,
+  "karte": "Weingut Tiefenbrunner · Müller-Thurgau Feldmarschall"
+ },
+ "178": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2qafYwi5SMqB_MJ7bbL4uw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Tiefenbrunner",
+  "wert": 0.5,
+  "karte": "Weingut Tiefenbrunner · Sauvignon Blanc Riserva Rachtl"
+ },
+ "179": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/fwSJeiXsQKa5CAbMMDKygA_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Tiefenbrunner",
+  "wert": 0,
+  "karte": "Weingut Tiefenbrunner · Sauvignon Blanc Riserva Rachtl «Ad Tempus»"
+ },
+ "180": {
+  "flasche": "//images.vivino.com/thumbs/Lrk-OiaISG-diOLtHx4RCg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/fwSJeiXsQKa5CAbMMDKygA_1280x760.jpeg",
+  "treffer": "Löwengang Chardonnay",
+  "weingut": "Alois Lageder",
+  "wert": 1.0,
+  "karte": "Tenuta Alois Lageder · Chardonnay Löwengang"
+ },
+ "181": {
+  "flasche": "//images.vivino.com/thumbs/5K9sXX9CQ8eonyEU71IlDA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opgciJbpQWSPQgG2bP4X5Q_1280x760.jpg",
+  "treffer": "Gaia & Rey Langhe",
+  "weingut": "Gaja",
+  "wert": 1.0,
+  "karte": "Angelo Gaja · Gaja & Rey"
+ },
+ "182": {
+  "flasche": "//images.vivino.com/thumbs/oW8G07uJQpeo-63FuEN2KA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/QCMFDiiuTVmD66CZfZFvBA_1280x760.jpg",
+  "treffer": "Roero Arneis",
+  "weingut": "Bruno Giacosa",
+  "wert": 1.0,
+  "karte": "Bruno Giacosa · Roero Arneis"
+ },
+ "183": {
+  "flasche": "//images.vivino.com/thumbs/WJxPsEm7SYS0PK5valZTrw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Tenuta dell’Ornellaia · Poggio alle Gazze dell’Ornellaia"
+ },
+ "184": {
+  "flasche": "//images.vivino.com/thumbs/Y1uUaXusSpevqhZDOh7GrA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Tenuta dell’Ornellaia · Ornellaia Bianco"
+ },
+ "185": {
+  "flasche": "//images.vivino.com/thumbs/afSvSVYqTBiJrB1H5-4YEQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/fwSJeiXsQKa5CAbMMDKygA_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Castello della Sala · Conte della Vipera"
+ },
+ "186": {
+  "flasche": "//images.vivino.com/thumbs/LzJgYC-iS2uW01CSi1IXzw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/fwSJeiXsQKa5CAbMMDKygA_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Castello della Sala · Cervaro della Sala"
+ },
+ "187": {
+  "flasche": "//images.vivino.com/thumbs/sbLK6JH8Qd6Emen7mwyWAA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Flor de Muga Blanco Reserva",
+  "weingut": "Bodegas Muga",
+  "wert": 1.0,
+  "karte": "Bodegas Muga · Flor de Muga Reserva Blanco"
+ },
+ "188": {
+  "flasche": "//images.vivino.com/thumbs/D5b31qWGRE-yDj30pnP4Hw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/nQ-e1SKxQ7uyle9B1oIp9Q_1280x760.jpeg",
+  "treffer": "Pazo das Bruxas",
+  "weingut": "Familia Torres",
+  "wert": 0.67,
+  "karte": "Miguel Torres · Pazo das Bruxas Albarinho"
+ },
+ "189": {
+  "flasche": "//images.vivino.com/thumbs/CDUan3SfRNGF5xmzVRa-DQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OwuuFVr6SaeZ24OGfqjRHQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Christian Moreau Pere & Fils",
+  "wert": 0,
+  "karte": "Domaine Christian Moreau · Chablis AC"
+ },
+ "190": {
+  "flasche": "//images.vivino.com/thumbs/lqUl5S96RHqe6YTS0YUyDw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OwuuFVr6SaeZ24OGfqjRHQ_1280x760.jpg",
+  "treffer": "Chablis 1er Cru 'Vaillon' Cuvée",
+  "weingut": "Christian Moreau Pere & Fils",
+  "wert": 0.67,
+  "karte": "Domaine Christian Moreau · Chablis 1 er Cru Vaillon"
+ },
+ "191": {
+  "flasche": "//images.vivino.com/thumbs/m07kYrMwRdKtsz2_GGfFYQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OwuuFVr6SaeZ24OGfqjRHQ_1280x760.jpg",
+  "treffer": "Chablis Grand Cru 'Valmur'",
+  "weingut": "Christian Moreau Pere & Fils",
+  "wert": 1.0,
+  "karte": "Domaine Christian Moreau · Chablis Grand Cru Valmur"
+ },
+ "192": {
+  "flasche": "//images.vivino.com/thumbs/GG8ngB0yRUmmJ-gGzSY1Xw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OwuuFVr6SaeZ24OGfqjRHQ_1280x760.jpg",
+  "treffer": "Chablis Grand Cru Les Clos Des Hospices",
+  "weingut": "Christian Moreau Pere & Fils",
+  "wert": 1.0,
+  "karte": "Domaine Christian Moreau · Chablis Grand Cru Clos des Hospices"
+ },
+ "193": {
+  "flasche": "//images.vivino.com/thumbs/IfMOOhZhTBWRsmEipBpRtw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/weFAYoFASW6ZmQsYQNnN1Q_1280x760.jpg",
+  "treffer": "Chablis Premier Cru 'Monts Mains'",
+  "weingut": "Raveneau",
+  "wert": 0.75,
+  "karte": "Domaine Francois Raveneau · Chablis 1 er Cru Monts Mains"
+ },
+ "194": {
+  "flasche": "//images.vivino.com/thumbs/_XGqsMI8SJGpQ88B3vDLCg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/weFAYoFASW6ZmQsYQNnN1Q_1280x760.jpg",
+  "treffer": "La Grande Rue Grand Cru Monopole",
+  "weingut": "Domaine Nicole Lamarche (François Lamarche)",
+  "wert": 0.33,
+  "karte": "Domaine Francois Raveneau · Chablis 1 er Cru Vaillons"
+ },
+ "195": {
+  "flasche": "//images.vivino.com/thumbs/lhoVd6A_RyCBnFXk_otI6A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/weFAYoFASW6ZmQsYQNnN1Q_1280x760.jpg",
+  "treffer": "Chablis Premier Cru 'Montée de Tonnerre'",
+  "weingut": "Raveneau",
+  "wert": 0.75,
+  "karte": "Domaine Francois Raveneau · Chablis 1 er Cru Montée de Tonnerre"
+ },
+ "196": {
+  "flasche": "//images.vivino.com/thumbs/NvJW_m_oSouF5BbUQ6a_Yg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/weFAYoFASW6ZmQsYQNnN1Q_1280x760.jpg",
+  "treffer": "Chablis Grand Cru 'Valmur'",
+  "weingut": "Raveneau",
+  "wert": 1.0,
+  "karte": "Domaine Francois Raveneau · Chablis Grand Cru Valmur"
+ },
+ "197": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Maison Meyer",
+  "wert": 0.67,
+  "karte": "Maison Meyer · Bourgogne Blanc Chardonnay"
+ },
+ "198": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Maison Meyer",
+  "wert": 1.0,
+  "karte": "Maison Meyer · Bourgogne Aligoté"
+ },
+ "199": {
+  "flasche": "//images.vivino.com/thumbs/hqGU-L7CSy-RATqIKdaElw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Montagny Le May",
+  "weingut": "Lorenzon",
+  "wert": 0.67,
+  "karte": "Domaine Lorenzon · Montagny Blanc Le May"
+ },
+ "200": {
+  "flasche": "//images.vivino.com/thumbs/JNjxRAf_Tw6zpGkRQ1l8Fg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/mZRvjBMOS3mXoLh_YtEV5g_1280x760.jpeg",
+  "treffer": "Montagny 1er Cru 'Les Truffières'",
+  "weingut": "Lorenzon",
+  "wert": 0.6,
+  "karte": "Domaine Lorenzon · Montagny Blanc 1 er Cru Les Truffières"
+ },
+ "201": {
+  "flasche": "//images.vivino.com/thumbs/UWBsdYNSSHCOk6Bd2P60CA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Mercurey 1er Cru 'Champs Martin' Blanc",
+  "weingut": "Lorenzon",
+  "wert": 0.83,
+  "karte": "Domaine Lorenzon · Mercurey Blanc 1 er Cru Champs Martin"
+ },
+ "202": {
+  "flasche": "//images.vivino.com/thumbs/-MpMGuCUQYebx0vq2vj3rg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Bourgogne 'Les Sétilles'",
+  "weingut": "Olivier Leflaive",
+  "wert": 0.67,
+  "karte": "Olivier Leflaive · Bourgogne Blanc Les Sétilles"
+ },
+ "203": {
+  "flasche": "//images.vivino.com/thumbs/O8SWPuEYTBOd3JNBzl04uA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Auxey-Duresses La Macabrèe",
+  "weingut": "Olivier Leflaive",
+  "wert": 1.0,
+  "karte": "Olivier Leflaive · Auxey-Duresses La Macabrée"
+ },
+ "204": {
+  "flasche": "//images.vivino.com/thumbs/y2IPdd7RTmyPUAYR8qdSsg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Meursault 1er Cru Sous Le Dos d'Âne",
+  "weingut": "Olivier Leflaive",
+  "wert": 0.67,
+  "karte": "Olivier Leflaive · Meursault 1 er Cru Sous le Dos d’Âne"
+ },
+ "205": {
+  "flasche": "//images.vivino.com/thumbs/cTeKm1Z4S2Gch23l7wFC8g_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Meursault 1er Cru 'Les Caillerets'",
+  "weingut": "Olivier Leflaive",
+  "wert": 0.75,
+  "karte": "Olivier Leflaive · Meursault 1 er Cru Les Caillerets"
+ },
+ "206": {
+  "flasche": "//images.vivino.com/thumbs/5FWFCIFoTy-BXHrf5DFMag_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Chassagne-Montrachet 1er Cru 'Clos Saint-Marc'",
+  "weingut": "Olivier Leflaive",
+  "wert": 0.83,
+  "karte": "Olivier Leflaive · Chassagne-Montrachet 1 er Cru Clos Saint-Marc"
+ },
+ "207": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/50RQyI8kSxCUxXanviGV9g_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Maison Glandien",
+  "wert": 0.5,
+  "karte": "Maison Glandien · L’Ouverture Blanc"
+ },
+ "208": {
+  "flasche": "//images.vivino.com/thumbs/IQCD2uSkRPmtrnOpWgMPfQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Saint-Aubin 1er Cru 'Les Frionnes'",
+  "weingut": "Hubert Lamy",
+  "wert": 0.8,
+  "karte": "Hubert Lamy · Saint-Aubin 1 er Cru Les Frionnes"
+ },
+ "209": {
+  "flasche": "//images.vivino.com/thumbs/579JigerRMSxVDpd5bO-Vg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Saint-Aubin 1er Cru 'En Remilly'",
+  "weingut": "Hubert Lamy",
+  "wert": 0.83,
+  "karte": "Hubert Lamy · Saint-Aubin 1 er Cru En Remilly"
+ },
+ "210": {
+  "flasche": "//images.vivino.com/thumbs/1wZpgkKfQuWv1jow7Gmtrg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Cuvée de la Centaurée Meursault Charmes Premier Cru",
+  "weingut": "Laurent Ponsot",
+  "wert": 0.67,
+  "karte": "Laurent Ponsot · Meursault Charmes 1 er Cru «Cuvée de la Centauré»"
+ },
+ "211": {
+  "flasche": "//images.vivino.com/thumbs/A4ZqJZvHTbSde9stuamN5A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Cuvée du Kalimeris Corton-Charlemagne Grand Cru",
+  "weingut": "Laurent Ponsot",
+  "wert": 1.0,
+  "karte": "Laurent Ponsot · Corton-Charlemagne G.C. «Cuvée du Kalimeris»"
+ },
+ "212": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vignoble des Verdots",
+  "wert": 0,
+  "karte": "Vignoble des Cabottes · Meursault Les Clous"
+ },
+ "213": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vignoble des Cabottes",
+  "wert": 0,
+  "karte": "Vignoble des Cabottes · Meursault 1 er Cru Les Genevrières"
+ },
+ "214": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vignoble des Cabottes",
+  "wert": 0,
+  "karte": "Vignoble des Cabottes · Meursault 1 er Cru Charmes"
+ },
+ "215": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vignoble des Cabottes",
+  "wert": 0.5,
+  "karte": "Vignoble des Cabottes · Corton-Charlemagne Grand Cru"
+ },
+ "216": {
+  "flasche": "//images.vivino.com/thumbs/tZKaWtn_QtCczbk3gjVOdw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Les Mazures Chassagne-Montrachet",
+  "weingut": "Paul Pillot",
+  "wert": 1.0,
+  "karte": "Paul Pillot · Chassagne-Montrachet Les Mazures"
+ },
+ "217": {
+  "flasche": "//images.vivino.com/thumbs/QzCq5e05T76HNX0pMkTV7Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Saint-Aubin 1er Cru Les Charmois",
+  "weingut": "Paul Pillot",
+  "wert": 0.8,
+  "karte": "Paul Pillot · Saint Aubin 1 er Cru «Les Charmois»"
+ },
+ "218": {
+  "flasche": "//images.vivino.com/thumbs/FhpDsQ4VQOqFxF_76NAocw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Nuits-Saint-Georges Premier Cru 'Clos de la Maréchale'",
+  "weingut": "Jacques-Frederic Mugnier",
+  "wert": 0.86,
+  "karte": "Jacques-Frédéric Mugnier · Nuits-Saint-Georges 1 er Cru Clos de la Maréchale"
+ },
+ "219": {
+  "flasche": "//images.vivino.com/thumbs/JWkam_F2QTCTQLFbsi9j7A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Chassagne-Montrachet 1er Cru 'Vide Bourse'",
+  "weingut": "Joseph Colin",
+  "wert": 0.83,
+  "karte": "Domaine Joseph Collin · Chassagne-Montrachet 1 er Cru Vide Bourse"
+ },
+ "220": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Bastian Wolber",
+  "wert": 0.67,
+  "karte": "Bastian Wolber · Bourgogne Blanc Chardonnay"
+ },
+ "221": {
+  "flasche": "//images.vivino.com/thumbs/gFbPL31NSjKJd973p_W9Pw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Puligny-Montrachet Premier Cru Les Folatières",
+  "weingut": "Domaine des Lambrays",
+  "wert": 0.8,
+  "karte": "Domaine des Lambrays · Puligny-Montrachet 1 er Cru Les Folatières"
+ },
+ "222": {
+  "flasche": "//images.vivino.com/thumbs/gFbPL31NSjKJd973p_W9Pw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Puligny-Montrachet Premier Cru Les Folatières",
+  "weingut": "Domaine des Lambrays",
+  "wert": 0.8,
+  "karte": "Domaine des Lambrays · Puligny-Montrachet 1 er Cru Les Folatières"
+ },
+ "223": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OGrtojEwTp2niM9p2eBAGQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Arnaud Baillot",
+  "wert": 0.75,
+  "karte": "Domaine Arnaud Baillot · Bourgogne Blanc Bourgogne Côte d’Or"
+ },
+ "224": {
+  "flasche": "//images.vivino.com/thumbs/BCtNTQXASxWLGH2q7w8vew_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OGrtojEwTp2niM9p2eBAGQ_1280x760.jpg",
+  "treffer": "Vieilles Vignes Chassagne-Montrachet",
+  "weingut": "Arnaud Baillot",
+  "wert": 1.0,
+  "karte": "Domaine Arnaud Baillot · Chassagne-Montrachet"
+ },
+ "225": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OGrtojEwTp2niM9p2eBAGQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Arnaud Baillot",
+  "wert": 1.0,
+  "karte": "Domaine Arnaud Baillot · Meursault"
+ },
+ "226": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OGrtojEwTp2niM9p2eBAGQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Domaine Arnaud Germain",
+  "wert": 1.0,
+  "karte": "Domaine Arnaud Baillot · Puligny-Montrachet"
+ },
+ "227": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OGrtojEwTp2niM9p2eBAGQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Domaine Arnaud Germain",
+  "wert": 1.0,
+  "karte": "Domaine Arnaud Baillot · Puligny-Montrachet"
+ },
+ "228": {
+  "flasche": "//images.vivino.com/thumbs/CeWdm8ZJRa2wDmDqkWVCow_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Meursault 'Les Chevalières'",
+  "weingut": "Rémi Jobard",
+  "wert": 1.0,
+  "karte": "Domaine Rémi Jobard · Meursault Les Chevalières"
+ },
+ "229": {
+  "flasche": "//images.vivino.com/thumbs/T0xfmM2NTHWgusrJ9z9w5A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Bourgogne Blanc",
+  "weingut": "Benjamin Leroux",
+  "wert": 1.0,
+  "karte": "Benjamin Leroux · Bourgogne Blanc"
+ },
+ "230": {
+  "flasche": "//images.vivino.com/thumbs/aae6Tw_xQoumT__rd4PUDA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Saint-Romain  'Sous le Château'",
+  "weingut": "Benjamin Leroux",
+  "wert": 0.75,
+  "karte": "Benjamin Leroux · Saint-Romain blanc «Sous le Château»"
+ },
+ "231": {
+  "flasche": "//images.vivino.com/thumbs/Pl8GHUuITsarrBMcqa6LAw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Chassagne-Montrachet 1er Cru 'Baudines'",
+  "weingut": "Benjamin Leroux",
+  "wert": 0.8,
+  "karte": "Benjamin Leroux · Chassagne-Montrachet 1 er Cru Les Baudines"
+ },
+ "232": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Benjamin Leroux",
+  "wert": 0.75,
+  "karte": "Benjamin Leroux · Meursault 1 er Cru Les Genevrières"
+ },
+ "233": {
+  "flasche": "//images.vivino.com/thumbs/pWqdP2RgS6qyj62BL5yyjg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Chassagne-Montrachet 1er Cru 'Vide Bourse'",
+  "weingut": "Domaine Fernand & Laurent Pillot",
+  "wert": 0.83,
+  "karte": "Fernand & Laurent Pillot · Chassagne-Montrachet 1 er Cru Vide Bourse"
+ },
+ "234": {
+  "flasche": "//images.vivino.com/thumbs/jpBNd4lxRNK95MRvEsTxTA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Chassagne-Montrachet 1er Cru 'Les Vergers'",
+  "weingut": "Domaine Fernand & Laurent Pillot",
+  "wert": 0.8,
+  "karte": "Fernand & Laurent Pillot · Chassagne-Montrachet 1 er Cru Les Vergers"
+ },
+ "235": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Jean Marc Pillot",
+  "wert": 0.83,
+  "karte": "Fernand & Laurent Pillot · Chassagne-Montrachet 1 er Cru Champs Gain"
+ },
+ "236": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Domaine De Cassiopée",
+  "wert": 1.0,
+  "karte": "Cassiopée · Bourgogne Aligoté Mitancherie"
+ },
+ "237": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Domaine Florence Cholet",
+  "wert": 1.0,
+  "karte": "Florence Cholet · Auxey-Duresses"
+ },
+ "238": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Domaine Jobard-Morey",
+  "wert": 0.5,
+  "karte": "Domaine Jobard-Morey · Bourgogne Blanc"
+ },
+ "239": {
+  "flasche": "//images.vivino.com/thumbs/aMVVh9L2QXiSWLHRdcJHPQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Meursault 1er Cru 'Charmes'",
+  "weingut": "Domaine Jobard-Morey",
+  "wert": 0.75,
+  "karte": "Domaine Jobard-Morey · Meursault 1 er Cru Charmes"
+ },
+ "240": {
+  "flasche": "//images.vivino.com/thumbs/OJ9DF1JTTpSLim2gChZyWw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Bouzeron",
+  "weingut": "Domaine A. et P. de Villaine",
+  "wert": 1.0,
+  "karte": "Domaine de Villaine · Bouzeron"
+ },
+ "241": {
+  "flasche": "//images.vivino.com/thumbs/3i0IlA5MQHyEA_CTIezyXg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Bourgogne Côte Chalonnaise \"Les Clous Aime\"",
+  "weingut": "Domaine A. et P. de Villaine",
+  "wert": 1.0,
+  "karte": "Domaine de Villaine · Les Clous Aimé Côte Chalonnaise"
+ },
+ "242": {
+  "flasche": "//images.vivino.com/thumbs/3i0IlA5MQHyEA_CTIezyXg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Bourgogne Côte Chalonnaise \"Les Clous Aime\"",
+  "weingut": "Domaine A. et P. de Villaine",
+  "wert": 1.0,
+  "karte": "Domaine de Villaine · Les Clous Aimé Côte Chalonnaise"
+ },
+ "243": {
+  "flasche": "//images.vivino.com/thumbs/EStxtRbMRVi5HfQBx2uLbQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Rully 1er Cru 'Gresigny'",
+  "weingut": "Domaine A. et P. de Villaine",
+  "wert": 0.6,
+  "karte": "Domaine de Villaine · Rully blanc Gresigny 1 er Cru"
+ },
+ "244": {
+  "flasche": "//images.vivino.com/thumbs/ocRaaZvXTkuqM-qynlejqA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Rully 1er Cru Les Margotés",
+  "weingut": "Domaine A. et P. de Villaine",
+  "wert": 0.6,
+  "karte": "Domaine de Villaine · Rully blanc Les Margotés 1 er Cru"
+ },
+ "245": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Domaine A. et P. de Villaine",
+  "wert": 0.6,
+  "karte": "Domaine de Villaine · Rully blanc Montpalais 1 er Cru"
+ },
+ "246": {
+  "flasche": "//images.vivino.com/thumbs/nh4PIOY3SHKjj2lV3xrjBA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Grand Élevage Bourgogne",
+  "weingut": "Verget",
+  "wert": 0.75,
+  "karte": "Verget (J.M. Guffens-Heynen) · Bourgogne Blanc Grand Elevage"
+ },
+ "247": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/50RQyI8kSxCUxXanviGV9g_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Verget",
+  "wert": 1.0,
+  "karte": "Verget (J.M. Guffens-Heynen) · Pouilly-Fuissé Les Combes Vieilles Vignes"
+ },
+ "248": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/50RQyI8kSxCUxXanviGV9g_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Verget",
+  "wert": 0.83,
+  "karte": "Verget (J.M. Guffens-Heynen) · Pouilly-Fuissé 1 er Cru Sur la Roche"
+ },
+ "249": {
+  "flasche": "//images.vivino.com/thumbs/s3CAh6ZtSYurMrbJk-9f5Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/VYhjeA-TQFKuMlhX0bx8EA_1280x760.jpg",
+  "treffer": "La Belle Endormie Pouilly-Fumé",
+  "weingut": "JP et S. Agisson",
+  "wert": 1.0,
+  "karte": "Jean-Phillipe Agisson · Pouilly-Fumé La Belle Endormie"
+ },
+ "250": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/VYhjeA-TQFKuMlhX0bx8EA_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Domaine Vacheron",
+  "wert": 1.0,
+  "karte": "Domaine Vacheron · Sancerre"
+ },
+ "251": {
+  "flasche": "//images.vivino.com/thumbs/nirOYTWLTUyYwr3Mhdr9IA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/OwuuFVr6SaeZ24OGfqjRHQ_1280x760.jpg",
+  "treffer": "Pouilly-Fumé",
+  "weingut": "Domaine Chatelain",
+  "wert": 1.0,
+  "karte": "Domaine Chatelain · Pouilly Fumé"
+ },
+ "252": {
+  "flasche": "//images.vivino.com/thumbs/pUvmdyp8RlOQjV9kaFCqAg_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/6/61/Wein_und_Berge_-_Rebst%C3%B6cke_in_der_B%C3%BCndner_Herrschaft_bei_Maienfeld_GR_%282021%29.jpg",
+  "treffer": "Blanc de Noir Schiefer",
+  "weingut": "Obrecht",
+  "wert": 1.0,
+  "karte": "Christian & Francisca Obrecht – Weingut zur Sonne · Blanc de Noir Schiefer"
+ },
+ "253": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Nicolas Ruedin",
+  "wert": 1.0,
+  "karte": "Domaine Ruedin by Jacques Tatasciore · Oeil-de-Perdrix"
+ },
+ "254": {
+  "flasche": "//images.vivino.com/thumbs/Hbg-LEbBT-uqLy7QCUWYtA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/f6SgQnCgSAGVBlY9MIxwZw_1280x760.jpg",
+  "treffer": "Levant Côtes de Provence Rosé",
+  "weingut": "Rosa 32",
+  "wert": 1.0,
+  "karte": "Levant 32 · Levant Rosé"
+ },
+ "255": {
+  "flasche": "//images.vivino.com/thumbs/0cJ57utwTNy-Ufpr-7GApg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/f6SgQnCgSAGVBlY9MIxwZw_1280x760.jpg",
+  "treffer": "Côtes de Provence Rosé",
+  "weingut": "Miraval",
+  "wert": 1.0,
+  "karte": "Miraval · Miraval Rosé"
+ },
+ "256": {
+  "flasche": "//images.vivino.com/thumbs/dcq37yJ5RqSJ-G96Q0PUaA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Flor de Muga Rosado",
+  "weingut": "Bodegas Muga",
+  "wert": 1.0,
+  "karte": "Bodegas Muga · Flor de Muga Rosado"
+ },
+ "257": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Benjamin Darnault",
+  "wert": 0.5,
+  "karte": "Weingut Benjamin Lanz · Nonnenhorner Rosé"
+ },
+ "258": {
+  "flasche": "//images.vivino.com/thumbs/LOAIKNJQTQC-vWucLZhROg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Malterdinger Spätburgunder Rosé",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Malterdinger Rosé"
+ },
+ "259": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vollmayer",
+  "wert": 1.0,
+  "karte": "Weingut Vollmayer · Höhenrausch Rosé"
+ },
+ "260": {
+  "flasche": "//images.vivino.com/thumbs/W4i6WajoTFWGT52NkN0cXg_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": "No. 1 Pinot Noir",
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Weingut Schlossgut Bachtobel · Pinot Noir No 1"
+ },
+ "261": {
+  "flasche": "//images.vivino.com/thumbs/AmiExBS9SbiQEVJrtMQoWQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": "No. 2 Pinot Noir",
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Weingut Schlossgut Bachtobel · Pinot Noir No 2"
+ },
+ "262": {
+  "flasche": "//images.vivino.com/thumbs/V0FL6mVITRaSB8slcfc4QQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": "No. 3 Pinot Noir",
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Weingut Schlossgut Bachtobel · Pinot Noir No 3"
+ },
+ "263": {
+  "flasche": "//images.vivino.com/thumbs/V0FL6mVITRaSB8slcfc4QQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": "No. 3 Pinot Noir",
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Weingut Schlossgut Bachtobel · Pinot Noir No 3"
+ },
+ "264": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/99/Weinbau_am_Ottenberg_und_Restaurant_Thurberg_%28Weinfelden%2C_2015%29.jpg",
+  "treffer": null,
+  "weingut": "Schlossgut Bachtobel",
+  "wert": 1.0,
+  "karte": "Weingut Schlossgut Bachtobel · Pinot Noir No 4"
+ },
+ "265": {
+  "flasche": "//images.vivino.com/thumbs/XQLnOrtRRrWRlIiOKt6BdQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Giani Boner Malanser Pinot Noir Grand Cru",
+  "weingut": "Giani Boner",
+  "wert": 1.0,
+  "karte": "Weinkellerei Giani Boner · Malanser Pinot Noir"
+ },
+ "266": {
+  "flasche": "//images.vivino.com/thumbs/XQLnOrtRRrWRlIiOKt6BdQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Giani Boner Malanser Pinot Noir Grand Cru",
+  "weingut": "Giani Boner",
+  "wert": 1.0,
+  "karte": "Weinkellerei Giani Boner · Malanser Pinot Noir"
+ },
+ "267": {
+  "flasche": "//images.vivino.com/thumbs/XQLnOrtRRrWRlIiOKt6BdQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Giani Boner Malanser Pinot Noir Grand Cru",
+  "weingut": "Giani Boner",
+  "wert": 1.0,
+  "karte": "Weinkellerei Giani Boner · Malanser Pinot Noir Grand Cru"
+ },
+ "268": {
+  "flasche": "//images.vivino.com/thumbs/XQLnOrtRRrWRlIiOKt6BdQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Giani Boner Malanser Pinot Noir Grand Cru",
+  "weingut": "Giani Boner",
+  "wert": 1.0,
+  "karte": "Weinkellerei Giani Boner · Malanser Pinot Noir Grand Cru"
+ },
+ "269": {
+  "flasche": "//images.vivino.com/thumbs/3gd8xf_lSSCKH-XQjDpQVA_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Passion Pinot Noir",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Weingut zum Ochsen - Martin Donatsch · Pinot Noir Passion"
+ },
+ "270": {
+  "flasche": "//images.vivino.com/thumbs/3gd8xf_lSSCKH-XQjDpQVA_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Passion Pinot Noir",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Weingut zum Ochsen - Martin Donatsch · Pinot Noir Passion"
+ },
+ "271": {
+  "flasche": "//images.vivino.com/thumbs/3gd8xf_lSSCKH-XQjDpQVA_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Passion Pinot Noir",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Weingut zum Ochsen - Martin Donatsch · Pinot Noir Passion"
+ },
+ "272": {
+  "flasche": "//images.vivino.com/thumbs/Tel_eerdQZ-RcL9fhsvg8Q_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Unique Pinot Noir",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Weingut zum Ochsen - Martin Donatsch · Pinot Noir Unique"
+ },
+ "273": {
+  "flasche": "//images.vivino.com/thumbs/Tel_eerdQZ-RcL9fhsvg8Q_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Unique Pinot Noir",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Weingut zum Ochsen - Martin Donatsch · Pinot Noir Unique"
+ },
+ "274": {
+  "flasche": "//images.vivino.com/thumbs/Tel_eerdQZ-RcL9fhsvg8Q_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Unique Pinot Noir",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Weingut zum Ochsen - Martin Donatsch · Pinot Noir Unique"
+ },
+ "275": {
+  "flasche": "//images.vivino.com/thumbs/Tel_eerdQZ-RcL9fhsvg8Q_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Unique Pinot Noir",
+  "weingut": "Donatsch",
+  "wert": 1.0,
+  "karte": "Weingut zum Ochsen - Martin Donatsch · Pinot Noir Unique"
+ },
+ "276": {
+  "flasche": "//images.vivino.com/thumbs/dHhHmT35Te--71T9d3yneQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Jessie James Vineyard Pinot Noir",
+  "weingut": "Martin Woods",
+  "wert": 0.67,
+  "karte": "Weingut zum Ochsen - Martin Donatsch · Pinot Noir Tradition"
+ },
+ "277": {
+  "flasche": "//images.vivino.com/thumbs/t3-bXJPYQ4G2zxKi0I71KQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Pinot Noir",
+  "weingut": "Daniel & Marta Gantenbein",
+  "wert": 1.0,
+  "karte": "Martha & Daniel Gantenbein · Pinot Noir"
+ },
+ "278": {
+  "flasche": "//images.vivino.com/thumbs/t3-bXJPYQ4G2zxKi0I71KQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Pinot Noir",
+  "weingut": "Daniel & Marta Gantenbein",
+  "wert": 1.0,
+  "karte": "Martha & Daniel Gantenbein · Pinot Noir"
+ },
+ "279": {
+  "flasche": "//images.vivino.com/thumbs/t3-bXJPYQ4G2zxKi0I71KQ_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Pinot Noir",
+  "weingut": "Daniel & Marta Gantenbein",
+  "wert": 1.0,
+  "karte": "Martha & Daniel Gantenbein · Pinot Noir"
+ },
+ "280": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": null,
+  "weingut": "Joel Gott",
+  "wert": 0.67,
+  "karte": "Joel Nänni · Jeninser Pinot Noir"
+ },
+ "281": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": null,
+  "weingut": "Hansruedi Adank",
+  "wert": 0.67,
+  "karte": "Weingut Hansruedi Adank · Pinot Noir Spondis"
+ },
+ "282": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": null,
+  "weingut": "Hansruedi Adank",
+  "wert": 0.67,
+  "karte": "Weingut Hansruedi Adank · Pinot Noir Herrenacker"
+ },
+ "283": {
+  "flasche": "//images.vivino.com/thumbs/MVw34g_jToOGntzlzZjK1g_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Pinot Noir",
+  "weingut": "Weingut Eichholz - Irene Grünenfelder",
+  "wert": 1.0,
+  "karte": "Weingut Eichholz – Irene Grünenfelder · Pinot Noir Eichholz"
+ },
+ "284": {
+  "flasche": "//images.vivino.com/thumbs/R4eKMPoJSXSW_WZaRn6B_g_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Pinot Noir",
+  "weingut": "Thomas Studach",
+  "wert": 1.0,
+  "karte": "Weingut Thomas Studach · Pinot Noir"
+ },
+ "285": {
+  "flasche": "//images.vivino.com/thumbs/R4eKMPoJSXSW_WZaRn6B_g_pb_x960.png",
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fl%C3%A4sch_Autumn_2020_03.jpg",
+  "treffer": "Pinot Noir",
+  "weingut": "Thomas Studach",
+  "wert": 1.0,
+  "karte": "Weingut Thomas Studach · Pinot Noir"
+ },
+ "286": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+  "wert": 1.0,
+  "karte": "Jacques Tatasciore · Vieilles Vignes"
+ },
+ "287": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+  "wert": 1.0,
+  "karte": "Jacques Tatasciore · Vieilles Vignes"
+ },
+ "288": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+  "wert": 1.0,
+  "karte": "Jacques Tatasciore · Les Virgas"
+ },
+ "289": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+  "wert": 1.0,
+  "karte": "Jacques Tatasciore · Les Virgas"
+ },
+ "290": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+  "wert": 1.0,
+  "karte": "Jacques Tatasciore · Les Margiles"
+ },
+ "291": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+  "wert": 1.0,
+  "karte": "Jacques Tatasciore · Les Margiles"
+ },
+ "292": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+  "wert": 1.0,
+  "karte": "Jacques Tatasciore · Les Rissieux"
+ },
+ "293": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+  "wert": 1.0,
+  "karte": "Jacques Tatasciore · Les Rissieux"
+ },
+ "294": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Domaine de la Rochette - Jacques Tatasciore",
+  "wert": 1.0,
+  "karte": "Jacques Tatasciore · Les Chypres"
+ },
+ "295": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Jean Jacques Bardin",
+  "wert": 0.5,
+  "karte": "Domaine Ruedin by Jacques Tatasciore · Neuchâtel Rouge Les Ratenets"
+ },
+ "296": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Nicolas Ruedin",
+  "wert": 0.5,
+  "karte": "Domaine Ruedin by Jacques Tatasciore · Neuchâtel Rouge «Valentin»"
+ },
+ "297": {
+  "flasche": null,
+  "region_bild": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Auvernier-village.jpg",
+  "treffer": null,
+  "weingut": "Nicolas Ruedin",
+  "wert": 0.67,
+  "karte": "Domaine Ruedin by Jacques Tatasciore · Neuchâtel Rouge «Valentin Vase N 2»"
+ },
+ "298": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Jonas Kurek",
+  "wert": 1.0,
+  "karte": "Weingut Jonas Kurek · Spätburgunder Seehalde"
+ },
+ "299": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Jonas Kurek",
+  "wert": 1.0,
+  "karte": "Weingut Jonas Kurek · Spätburgunder Seehalde"
+ },
+ "300": {
+  "flasche": "//images.vivino.com/thumbs/OSx62ig9RWKFg2XIWTTuLg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Nonnenhorner Seehalde Spätburgunder",
+  "weingut": "Hornstein am See",
+  "wert": 1.0,
+  "karte": "Weingut Seehaldenhof – Simon Hornstein · Spätburgunder Seehalde"
+ },
+ "301": {
+  "flasche": "//images.vivino.com/thumbs/OSx62ig9RWKFg2XIWTTuLg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": "Nonnenhorner Seehalde Spätburgunder",
+  "weingut": "Hornstein am See",
+  "wert": 1.0,
+  "karte": "Weingut Seehaldenhof – Simon Hornstein · Spätburgunder Seehalde"
+ },
+ "302": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/2W6syZygQH-VRyXDOFe9Pw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Weingut Seehaldenhof – Simon Hornstein · Spätburgunder Hummler"
+ },
+ "303": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/klw147B8QSi16e-qNdUAYA_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Schmidt Am Bodensee",
+  "wert": 1.0,
+  "karte": "Weingut Schmidt am Bodensee · Spätburgunder Gundelsberg"
+ },
+ "304": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/klw147B8QSi16e-qNdUAYA_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Schmidt Am Bodensee",
+  "wert": 1.0,
+  "karte": "Weingut Schmidt am Bodensee · Spätburgunder Gundelsberg"
+ },
+ "305": {
+  "flasche": "//images.vivino.com/thumbs/mNglpD6ZTIijP8vFYIBHFg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ogLP94yMTDe3X6tkcQR9Kg_1280x760.jpg",
+  "treffer": "Centgrafenberg GG Spätburgunder",
+  "weingut": "Fürst",
+  "wert": 1.0,
+  "karte": "Weingut Rudolf Fürst · Spätburgunder Centgrafenberg"
+ },
+ "306": {
+  "flasche": "//images.vivino.com/thumbs/MLc1ZZd7RjCzwhZFwM-YrQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": "Hundsrück GG Spätburgunder",
+  "weingut": "Fürst",
+  "wert": 1.0,
+  "karte": "Weingut Rudolf Fürst · Spätburgunder Hundsrück GG"
+ },
+ "307": {
+  "flasche": "//images.vivino.com/thumbs/ZbSWHnnVReWDedSKc1sHtw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Spätburgunder",
+  "weingut": "Bernhard Huber",
+  "wert": 0.5,
+  "karte": "Weingut Bernhard Huber · Malterdingen Spätburgunder"
+ },
+ "308": {
+  "flasche": "//images.vivino.com/thumbs/ZbSWHnnVReWDedSKc1sHtw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Spätburgunder",
+  "weingut": "Bernhard Huber",
+  "wert": 0.5,
+  "karte": "Weingut Bernhard Huber · Malterdingen Spätburgunder"
+ },
+ "309": {
+  "flasche": "//images.vivino.com/thumbs/ZbSWHnnVReWDedSKc1sHtw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Spätburgunder",
+  "weingut": "Bernhard Huber",
+  "wert": 0.5,
+  "karte": "Weingut Bernhard Huber · Malterdingen Spätburgunder"
+ },
+ "310": {
+  "flasche": "//images.vivino.com/thumbs/mwy86MMVQD-661XBaoZyUQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Malterdinger Alte Reben Spätburgunder",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Alte Reben Spätburgunder"
+ },
+ "311": {
+  "flasche": "//images.vivino.com/thumbs/mwy86MMVQD-661XBaoZyUQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Malterdinger Alte Reben Spätburgunder",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Alte Reben Spätburgunder"
+ },
+ "312": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Bernhard Huber",
+  "wert": 0.5,
+  "karte": "Weingut Bernhard Huber · Hecklingen Spätburgunder"
+ },
+ "313": {
+  "flasche": "//images.vivino.com/thumbs/GVKlcJQERH2KzeEXwYjnRQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Sommerhalde Spätburgunder GG",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Sommerhalde Spätburgunder GG"
+ },
+ "314": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Bernhard Huber",
+  "wert": 0.5,
+  "karte": "Weingut Bernhard Huber · Alte Burg Spätburgunder GG"
+ },
+ "315": {
+  "flasche": "//images.vivino.com/thumbs/fMKeMtZmSweYbuWGl5lx1A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Bienenberg Spätburgunder GG",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Bienenberg Spätburgunder GG"
+ },
+ "316": {
+  "flasche": "//images.vivino.com/thumbs/fMKeMtZmSweYbuWGl5lx1A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Bienenberg Spätburgunder GG",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Bienenberg Spätburgunder GG"
+ },
+ "317": {
+  "flasche": "//images.vivino.com/thumbs/fMKeMtZmSweYbuWGl5lx1A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Bienenberg Spätburgunder GG",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Bienenberg Spätburgunder GG"
+ },
+ "318": {
+  "flasche": "//images.vivino.com/thumbs/q3KDLGJ9Qg2ERszxr6dCYQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Schlossberg Spätburgunder GG",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Schlossberg Spätburgunder GG"
+ },
+ "319": {
+  "flasche": "//images.vivino.com/thumbs/34ejx1VcR2aEPBRKx96Kig_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": "Wildenstein Spätburgunder GG",
+  "weingut": "Bernhard Huber",
+  "wert": 1.0,
+  "karte": "Weingut Bernhard Huber · Wildenstein Spätburgunder GG"
+ },
+ "320": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vollmayer",
+  "wert": 1.0,
+  "karte": "Weingut Vollmayer · Spätburgunder Berglage"
+ },
+ "321": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vollmayer",
+  "wert": 1.0,
+  "karte": "Weingut Vollmayer · Spätburgunder Höchste Lage"
+ },
+ "322": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vollmayer",
+  "wert": 0.67,
+  "karte": "Weingut Vollmayer · Cuvée Cabernet Berglage"
+ },
+ "323": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/shbhdzJqQ9u1iSyDKAlKfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Fritz Keller",
+  "wert": 1.0,
+  "karte": "Klaus Peter Keller · Spätburgunder Réserve"
+ },
+ "324": {
+  "flasche": "//images.vivino.com/thumbs/0RVcZ0vQQFSfrgZsaVpbtA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/q694FLEERu6-oBYfx9mMzw_1280x760.jpg",
+  "treffer": "Sommoclivo Nebbiolo",
+  "weingut": "Torre San Quirico",
+  "wert": 1.0,
+  "karte": "Torre San Quirico · Sommoclivo Nebbiolo"
+ },
+ "325": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/Rglbap4wQWCwFUf34Y_ZAA_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Statti",
+  "wert": 1.0,
+  "karte": "Cantine Statti Lamezia Terme · Cauro"
+ },
+ "326": {
+  "flasche": "//images.vivino.com/thumbs/aoU0-FWMS4ey4szM9xFEZA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/a-efi6VCTsmjG447UJcw3g_1280x760.jpg",
+  "treffer": "Barolo Castiglione",
+  "weingut": "Vietti",
+  "wert": 1.0,
+  "karte": "Cantina Vietti · Barolo Castiglione"
+ },
+ "327": {
+  "flasche": "//images.vivino.com/thumbs/nEeQzgYzS7WR85XyavBseQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/a-efi6VCTsmjG447UJcw3g_1280x760.jpg",
+  "treffer": "Barolo Ravera",
+  "weingut": "Vietti",
+  "wert": 1.0,
+  "karte": "Cantina Vietti · Barolo Ravera"
+ },
+ "328": {
+  "flasche": "//images.vivino.com/thumbs/Oqs-hN0HQ6Cr2RklUDUfGg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/a-efi6VCTsmjG447UJcw3g_1280x760.jpg",
+  "treffer": "Falletto Barolo Le Rocche del Falletto",
+  "weingut": "Bruno Giacosa",
+  "wert": 1.0,
+  "karte": "Bruno Giacosa · Barolo «Falletto»"
+ },
+ "329": {
+  "flasche": "//images.vivino.com/thumbs/Oqs-hN0HQ6Cr2RklUDUfGg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/a-efi6VCTsmjG447UJcw3g_1280x760.jpg",
+  "treffer": "Falletto Barolo Le Rocche del Falletto",
+  "weingut": "Bruno Giacosa",
+  "wert": 1.0,
+  "karte": "Bruno Giacosa · Barolo «Falletto»"
+ },
+ "330": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opgciJbpQWSPQgG2bP4X5Q_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Castrum Roche",
+  "wert": 1.0,
+  "karte": "Castrum Roche · Langhe Nebbiolo"
+ },
+ "331": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opgciJbpQWSPQgG2bP4X5Q_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Castrum Roche",
+  "wert": 1.0,
+  "karte": "Castrum Roche · Langhe Nebbiolo"
+ },
+ "332": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opgciJbpQWSPQgG2bP4X5Q_1280x760.jpg",
+  "treffer": null,
+  "weingut": "San Barnába",
+  "wert": 0.5,
+  "karte": "San Barnaba · Langhe Nebbiolo"
+ },
+ "333": {
+  "flasche": "//images.vivino.com/thumbs/dzydHR-3QD6kJaFM2xNNGw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/nDMU5HqHQa2SHcZcaLSnRg_1280x760.jpg",
+  "treffer": "Albesani Vigna Borgese Barbaresco",
+  "weingut": "Piero Busso",
+  "wert": 1.0,
+  "karte": "Piero Busso · Barbaresco «Albesani»"
+ },
+ "334": {
+  "flasche": "//images.vivino.com/thumbs/dzydHR-3QD6kJaFM2xNNGw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/nDMU5HqHQa2SHcZcaLSnRg_1280x760.jpg",
+  "treffer": "Albesani Vigna Borgese Barbaresco",
+  "weingut": "Piero Busso",
+  "wert": 1.0,
+  "karte": "Piero Busso · Barbaresco «Albesani»"
+ },
+ "335": {
+  "flasche": "//images.vivino.com/thumbs/mmI9SCigSH6EKzgfyNRZ5A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/nDMU5HqHQa2SHcZcaLSnRg_1280x760.jpg",
+  "treffer": "San Stunet Barbaresco",
+  "weingut": "Piero Busso",
+  "wert": 1.0,
+  "karte": "Piero Busso · Barbaresco «San Stunet»"
+ },
+ "336": {
+  "flasche": "//images.vivino.com/thumbs/BwdOAW6TQ-KAdVKPUT2yTA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Giusto di Notri Toscana",
+  "weingut": "Tua Rita",
+  "wert": 1.0,
+  "karte": "Tua Rita · Giusto di Notri"
+ },
+ "337": {
+  "flasche": "//images.vivino.com/thumbs/FFZUPNsuR7Og6_Ou2Bb1MQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Redigaffi Toscana",
+  "weingut": "Tua Rita",
+  "wert": 1.0,
+  "karte": "Tua Rita · Redigaffi"
+ },
+ "338": {
+  "flasche": "//images.vivino.com/thumbs/LtqnB-H2QFmN6ixL3FQcdw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Tenuta Tignanello · Tignanello"
+ },
+ "339": {
+  "flasche": "//images.vivino.com/thumbs/LtqnB-H2QFmN6ixL3FQcdw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Tenuta Tignanello · Tignanello"
+ },
+ "340": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Tenuta Guado al Tasso · Cont’Ugo"
+ },
+ "341": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "Tenuta Guado al Tasso · Guado al Tasso"
+ },
+ "342": {
+  "flasche": "//images.vivino.com/thumbs/OKfPJFNWQ1qq7DrsehPdUA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Tinata Toscana",
+  "weingut": "Monteverro",
+  "wert": 1.0,
+  "karte": "Monteverro · Tinata"
+ },
+ "343": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/RzihMQuMRySNMnMjSDxpBg_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Tricerchi",
+  "wert": 1.0,
+  "karte": "Castello Tricerchi · Rosso di Montalcino"
+ },
+ "344": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/c25PzK2tRryTKLWVHhqCBA_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Tricerchi",
+  "wert": 1.0,
+  "karte": "Castello Tricerchi · Brunello di Montalcino «Castello Tricerchi»"
+ },
+ "345": {
+  "flasche": "//images.vivino.com/thumbs/9Py47A5USOmNIYquq0JNrg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/phNc7gxrRHeZEnTURN7Lvg_1280x760.jpg",
+  "treffer": "Le Serre Nuove",
+  "weingut": "Ornellaia",
+  "wert": 1.0,
+  "karte": "Tenuta dell’ Ornellaia · Le Serre Nuove"
+ },
+ "346": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Ornellaia",
+  "wert": 0,
+  "karte": "Tenuta dell’ Ornellaia · Ornellaia"
+ },
+ "347": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Ornellaia",
+  "wert": 0,
+  "karte": "Tenuta dell’ Ornellaia · Ornellaia"
+ },
+ "348": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Tenuta dell'Ugolino",
+  "wert": 0,
+  "karte": "Tenuta dell’ Ornellaia · Massetino"
+ },
+ "349": {
+  "flasche": "//images.vivino.com/thumbs/9SBPRRzJTUWlpyBe7fdNsg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Ampio",
+  "weingut": "Le Mortelle",
+  "wert": 0.5,
+  "karte": "Le Mortelle · Ampio delle Mortelle"
+ },
+ "350": {
+  "flasche": "//images.vivino.com/thumbs/9SBPRRzJTUWlpyBe7fdNsg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Ampio",
+  "weingut": "Le Mortelle",
+  "wert": 0.5,
+  "karte": "Le Mortelle · Ampio delle Mortelle"
+ },
+ "351": {
+  "flasche": "//images.vivino.com/thumbs/4mbySWkTQSGDnDvLiPQOAw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Sassicaia",
+  "weingut": "Tenuta San Guido",
+  "wert": 1.0,
+  "karte": "Tenuta San Guido · Sassicaia"
+ },
+ "352": {
+  "flasche": "//images.vivino.com/thumbs/4mbySWkTQSGDnDvLiPQOAw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Sassicaia",
+  "weingut": "Tenuta San Guido",
+  "wert": 1.0,
+  "karte": "Tenuta San Guido · Sassicaia"
+ },
+ "353": {
+  "flasche": "//images.vivino.com/thumbs/4mbySWkTQSGDnDvLiPQOAw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Sassicaia",
+  "weingut": "Tenuta San Guido",
+  "wert": 1.0,
+  "karte": "Tenuta San Guido · Sassicaia"
+ },
+ "354": {
+  "flasche": "//images.vivino.com/thumbs/4mbySWkTQSGDnDvLiPQOAw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Sassicaia",
+  "weingut": "Tenuta San Guido",
+  "wert": 1.0,
+  "karte": "Tenuta San Guido · Sassicaia"
+ },
+ "355": {
+  "flasche": "//images.vivino.com/thumbs/4mbySWkTQSGDnDvLiPQOAw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Sassicaia",
+  "weingut": "Tenuta San Guido",
+  "wert": 1.0,
+  "karte": "Tenuta San Guido · Sassicaia"
+ },
+ "356": {
+  "flasche": "//images.vivino.com/thumbs/4mbySWkTQSGDnDvLiPQOAw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Sassicaia",
+  "weingut": "Tenuta San Guido",
+  "wert": 1.0,
+  "karte": "Tenuta San Guido · Sassicaia"
+ },
+ "357": {
+  "flasche": "//images.vivino.com/thumbs/FXmJoDYMRNyQp3VdLUkYVA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Biserno",
+  "wert": 0,
+  "karte": "Tenuta di Biserno · Biserno"
+ },
+ "358": {
+  "flasche": "//images.vivino.com/thumbs/FXmJoDYMRNyQp3VdLUkYVA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Biserno",
+  "wert": 0,
+  "karte": "Tenuta di Biserno · Biserno"
+ },
+ "359": {
+  "flasche": "//images.vivino.com/thumbs/FXmJoDYMRNyQp3VdLUkYVA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Biserno",
+  "wert": 0,
+  "karte": "Tenuta di Biserno · Biserno"
+ },
+ "360": {
+  "flasche": "//images.vivino.com/thumbs/k7QG1jZ9Ru27874C9ZD5aA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Il Pino di Biserno",
+  "weingut": "Biserno",
+  "wert": 1.0,
+  "karte": "Tenuta di Biserno · Il Pino"
+ },
+ "361": {
+  "flasche": "//images.vivino.com/thumbs/k7QG1jZ9Ru27874C9ZD5aA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Il Pino di Biserno",
+  "weingut": "Biserno",
+  "wert": 1.0,
+  "karte": "Tenuta di Biserno · Il Pino"
+ },
+ "362": {
+  "flasche": "//images.vivino.com/thumbs/mrivmdHpRqig2KMs8Wchew_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Lucente",
+  "weingut": "Tenuta Luce",
+  "wert": 1.0,
+  "karte": "Tenuta Luce – Marchesi Frescobaldi · Lucente"
+ },
+ "363": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Tenuta Luce",
+  "wert": 0,
+  "karte": "Tenuta Luce – Marchesi Frescobaldi · Luce"
+ },
+ "364": {
+  "flasche": "//images.vivino.com/thumbs/jGNV1lZ9Qs-65nJyR4bVPQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/5E2Cc2aCRjCJl3JhfI4tQA_1280x760.jpg",
+  "treffer": "Flaccianello della Pieve",
+  "weingut": "Fontodi",
+  "wert": 1.0,
+  "karte": "Fontodi · Flaccianello"
+ },
+ "365": {
+  "flasche": "//images.vivino.com/thumbs/jGNV1lZ9Qs-65nJyR4bVPQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/5E2Cc2aCRjCJl3JhfI4tQA_1280x760.jpg",
+  "treffer": "Flaccianello della Pieve",
+  "weingut": "Fontodi",
+  "wert": 1.0,
+  "karte": "Fontodi · Flaccianello"
+ },
+ "366": {
+  "flasche": "//images.vivino.com/thumbs/o6s3_R3dTfqqxYbzVUYsXg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Sammarco",
+  "weingut": "Castello dei Rampolla",
+  "wert": 1.0,
+  "karte": "Castello dei Rampola · Sammarco"
+ },
+ "367": {
+  "flasche": "//images.vivino.com/thumbs/o6s3_R3dTfqqxYbzVUYsXg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Sammarco",
+  "weingut": "Castello dei Rampolla",
+  "wert": 1.0,
+  "karte": "Castello dei Rampola · Sammarco"
+ },
+ "368": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/a-efi6VCTsmjG447UJcw3g_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Rocche dei Manzoni",
+  "wert": 0.5,
+  "karte": "Castello dei Rampola · Vigna d’Alceo"
+ },
+ "369": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/a-efi6VCTsmjG447UJcw3g_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Rocche dei Manzoni",
+  "wert": 0.5,
+  "karte": "Castello dei Rampola · Vigna d’Alceo"
+ },
+ "370": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/phNc7gxrRHeZEnTURN7Lvg_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Tenuta Argentiera",
+  "wert": 0,
+  "karte": "Tenuta Argentiera · Argentiera"
+ },
+ "371": {
+  "flasche": "//images.vivino.com/thumbs/SQgIfHpqSLOcS8mOTBRSVA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/qa-Yh0SLQaGSpaxWw7WHXQ_1280x760.jpeg",
+  "treffer": "Percarlo",
+  "weingut": "San Giusto a Rentennano",
+  "wert": 1.0,
+  "karte": "San Giusto a Rentennano · Percarlo"
+ },
+ "372": {
+  "flasche": "//images.vivino.com/thumbs/U7tA7WFAR7-qJIuI88gXaA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/ePk3750qR3ioS9lEfzLBnA_1280x760.jpg",
+  "treffer": "Eleivera Tinto",
+  "weingut": "Dos Lusíadas",
+  "wert": 1.0,
+  "karte": "Dos Luciadas · Eleivera"
+ },
+ "373": {
+  "flasche": "//images.vivino.com/thumbs/4x_zrWavRViIw1t_1I-6zw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Selección Especial",
+  "weingut": "Clos d'Agon",
+  "wert": 1.0,
+  "karte": "Clos d`Agon · Clos d`Agon «Selección Especial»"
+ },
+ "374": {
+  "flasche": "//images.vivino.com/thumbs/GWXlMZrrQg6Jekk3LYVkCQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Atteca Garnacha (Old Vines)",
+  "weingut": "Bodegas Ateca",
+  "wert": 0.67,
+  "karte": "Bodegas Ateca · Atteca Old Vine"
+ },
+ "375": {
+  "flasche": "//images.vivino.com/thumbs/aZv79b8xSHqtvx-GvAvjWQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "La Vina de Corteo",
+  "weingut": "Bodegas El Nido",
+  "wert": 1.0,
+  "karte": "Bodegas El Nido · Corteo"
+ },
+ "376": {
+  "flasche": "//images.vivino.com/thumbs/3HmkiIKcSsOqlJTNvvF_4g_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/bSzEldKyTuuUx1lRhyQZfQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Familia Torres",
+  "wert": 0,
+  "karte": "Mas la Plana – Familia Torres · Mas la Plana"
+ },
+ "377": {
+  "flasche": "//images.vivino.com/thumbs/HqJLl3DxTtOI_0WoDXT7_Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Viña Tondonia Reserva",
+  "weingut": "R. López de Heredia",
+  "wert": 1.0,
+  "karte": "R. López de Heredia – Viña Tondonia · Viña Tondonia Rioja Reserva"
+ },
+ "378": {
+  "flasche": "//images.vivino.com/thumbs/HqJLl3DxTtOI_0WoDXT7_Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Viña Tondonia Reserva",
+  "weingut": "R. López de Heredia",
+  "wert": 1.0,
+  "karte": "R. López de Heredia – Viña Tondonia · Viña Tondonia Rioja Reserva"
+ },
+ "379": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "R. López de Heredia",
+  "wert": 1.0,
+  "karte": "R. López de Heredia – Viña Tondonia · Viña Tondonia Rioja Gran Reserva"
+ },
+ "380": {
+  "flasche": "//images.vivino.com/thumbs/rcz02_eRTg-ADPhCF5_UEg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Viñas de Gain",
+  "weingut": "Artadi",
+  "wert": 0.67,
+  "karte": "Bodegas Artadi · Viñas de Gain Álava"
+ },
+ "381": {
+  "flasche": "//images.vivino.com/thumbs/rcz02_eRTg-ADPhCF5_UEg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Viñas de Gain",
+  "weingut": "Artadi",
+  "wert": 0.67,
+  "karte": "Bodegas Artadi · Viñas de Gain Álava"
+ },
+ "382": {
+  "flasche": "//images.vivino.com/thumbs/A2A0kN1IS-eot3WMvtO56g_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Valdegines",
+  "weingut": "Artadi",
+  "wert": 1.0,
+  "karte": "Bodegas Artadi · Valdeginés"
+ },
+ "383": {
+  "flasche": "//images.vivino.com/thumbs/cVBVQQlWR92OH_mM2zZlXA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Viuda Negra Crianza",
+  "weingut": "Bodegas Javier San Pedro Ortega",
+  "wert": 1.0,
+  "karte": "Bodegas Javier San Pedro Ortega · Viuda Negra Crianza"
+ },
+ "384": {
+  "flasche": "//images.vivino.com/thumbs/xB7PRv5tRfyMPq6SaPXxTw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Viuda Negra El Arca de Asa",
+  "weingut": "Bodegas Javier San Pedro Ortega",
+  "wert": 1.0,
+  "karte": "Bodegas Javier San Pedro Ortega · Viuda Negra Arca de Asa"
+ },
+ "385": {
+  "flasche": "//images.vivino.com/thumbs/xB7PRv5tRfyMPq6SaPXxTw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/LUg7S_OaSNuSi_1QTtESGg_1280x760.jpeg",
+  "treffer": "Viuda Negra El Arca de Asa",
+  "weingut": "Bodegas Javier San Pedro Ortega",
+  "wert": 1.0,
+  "karte": "Bodegas Javier San Pedro Ortega · Viuda Negra Arca de Asa"
+ },
+ "386": {
+  "flasche": "//images.vivino.com/thumbs/--nMiPI9TO6CW-OizP53Nw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/_nMNiDRrQG-Y6aphFjOyYQ_1280x760.jpeg",
+  "treffer": "Flor de Pingus",
+  "weingut": "Dominio de Pingus",
+  "wert": 1.0,
+  "karte": "Dominio de Pingus · Flor de Pingus"
+ },
+ "387": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/_nMNiDRrQG-Y6aphFjOyYQ_1280x760.jpeg",
+  "treffer": null,
+  "weingut": "Bodegas y Vinedos Alnardo",
+  "wert": 0,
+  "karte": "Bodegas y Vinedos Alnardo · PSI"
+ },
+ "388": {
+  "flasche": "//images.vivino.com/thumbs/PCImbI11T4i-rZASrHk3gA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/_nMNiDRrQG-Y6aphFjOyYQ_1280x760.jpeg",
+  "treffer": "Valbuena 5º (Reserva)",
+  "weingut": "Vega Sicilia",
+  "wert": 1.0,
+  "karte": "Bodegas Vega Sicilia · Valbuena 5°"
+ },
+ "389": {
+  "flasche": "//images.vivino.com/thumbs/SCnpJk_ySUe6XS3U-lFOwQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/_nMNiDRrQG-Y6aphFjOyYQ_1280x760.jpeg",
+  "treffer": "Unico Reserva Especial Edición",
+  "weingut": "Vega Sicilia",
+  "wert": 0.67,
+  "karte": "Bodegas Vega Sicilia · Unico Gran Reserva"
+ },
+ "390": {
+  "flasche": "//images.vivino.com/thumbs/SCnpJk_ySUe6XS3U-lFOwQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/_nMNiDRrQG-Y6aphFjOyYQ_1280x760.jpeg",
+  "treffer": "Unico Reserva Especial Edición",
+  "weingut": "Vega Sicilia",
+  "wert": 0.67,
+  "karte": "Bodegas Vega Sicilia · Unico Gran Reserva"
+ },
+ "391": {
+  "flasche": "//images.vivino.com/thumbs/ndNWJfC0TSmRFTNW9_u9OA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/bOduog3tREaXMpUvJq5ytg_1280x760.jpg",
+  "treffer": "Les Terrasses Laderas de Pizarra",
+  "weingut": "Álvaro Palacios",
+  "wert": 1.0,
+  "karte": "Alvaro Palacios · Les Terrasses"
+ },
+ "392": {
+  "flasche": "//images.vivino.com/thumbs/YbR7hlJqRD242kEyfHdonA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/foPnh3UXQtGkEY3X5OGvcw_1280x760.jpeg",
+  "treffer": "Sestal",
+  "weingut": "Ses Talaioles",
+  "wert": 1.0,
+  "karte": "Ses Talaioles · Sestal"
+ },
+ "393": {
+  "flasche": "//images.vivino.com/thumbs/GyVUkvsXQ0SCWlQjCR4dMA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Vieilles Vignes Gevrey-Chambertin",
+  "weingut": "Arnaud Baillot",
+  "wert": 1.0,
+  "karte": "Arnaud Baillot · Gevrey-Chambertin"
+ },
+ "394": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vignoble des Cabottes",
+  "wert": 0,
+  "karte": "Vignoble des Cabottes · Beaune 1 er Cru Clos de la Mousse"
+ },
+ "395": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vignoble des Cabottes",
+  "wert": 0,
+  "karte": "Vignoble des Cabottes · Beaune 1 er Cru Vigne de l’Enfant Jésus Les Grèves"
+ },
+ "396": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Vignoble des Cabottes",
+  "wert": 0.33,
+  "karte": "Vignoble des Cabottes · Corton Le Corton Grand Cru"
+ },
+ "397": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Bastian Wolber",
+  "wert": 0.5,
+  "karte": "Bastian Wolber · Santenay 1 er Cru «Beauregard»"
+ },
+ "398": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Bastian Wolber",
+  "wert": 0.5,
+  "karte": "Bastian Wolber · Beaune 1 er Cru «Beauregard»"
+ },
+ "399": {
+  "flasche": "//images.vivino.com/thumbs/XxczJNFAQL-Phz3KFohxiA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Le Petit Clos du Cellier Givry",
+  "weingut": "Domaine du Cellier aux Moines",
+  "wert": 1.0,
+  "karte": "Cellier aux Moines · Givry Le Petit Cellier"
+ },
+ "400": {
+  "flasche": "//images.vivino.com/thumbs/592-J3hgQSen23OGQhTi7A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Givry Premier Cru Clos du 'Cellier aux Moines'",
+  "weingut": "Domaine du Cellier aux Moines",
+  "wert": 0.75,
+  "karte": "Cellier aux Moines · Givry 1 er Cru Clos du Cellier aux Moines"
+ },
+ "401": {
+  "flasche": "//images.vivino.com/thumbs/T3SK5LyoQxmYJcjDC1icXQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Nuits-St Georges",
+  "weingut": "Benjamin Leroux",
+  "wert": 1.0,
+  "karte": "Benjamin Leroux · Nuits St-Georges"
+ },
+ "402": {
+  "flasche": "//images.vivino.com/thumbs/Ef6L9YExTFKLp70ZrZzRyw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Vosne-Romanee",
+  "weingut": "Benjamin Leroux",
+  "wert": 1.0,
+  "karte": "Benjamin Leroux · Vosne Romanée"
+ },
+ "403": {
+  "flasche": "//images.vivino.com/thumbs/hjcbDthaR-yvA_5cJYMJsg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Cuvée des Peupliers Bourgogne",
+  "weingut": "Laurent Ponsot",
+  "wert": 0.75,
+  "karte": "Domaine Laurent Ponsot · Bourgogne Rouge «Cuvée des Peupliers»"
+ },
+ "404": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Domaine de La Romanée-Conti",
+  "wert": 0.5,
+  "karte": "Domaine de la Romanée-Conti · Romanée-St-Vivant"
+ },
+ "405": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Domaine de La Romanée-Conti",
+  "wert": 0.5,
+  "karte": "Domaine de la Romanée-Conti · Romanée-St-Vivant"
+ },
+ "406": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/50RQyI8kSxCUxXanviGV9g_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Maison Glandien",
+  "wert": 0.5,
+  "karte": "Maison Glandien · L’Ouverture Rouge"
+ },
+ "407": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Guilbert Gillet",
+  "wert": 0.6,
+  "karte": "Guilbert Gillet · Chorey-lès-Beaune «Les Beaumonts» Vieille Vignes"
+ },
+ "408": {
+  "flasche": "//images.vivino.com/thumbs/FhpDsQ4VQOqFxF_76NAocw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Nuits-Saint-Georges Premier Cru 'Clos de la Maréchale'",
+  "weingut": "Jacques-Frederic Mugnier",
+  "wert": 0.86,
+  "karte": "Jacques-Frédéric Mugnier · Nuits-Saint-Georges 1 er Cru «Clos de la Maréchale»"
+ },
+ "409": {
+  "flasche": "//images.vivino.com/thumbs/VDhM38JKSJ-uW4bDI0kJIA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/5ZnLxlyTQJmWvI6GI9Bzdw_1280x760.jpg",
+  "treffer": "Nuits-Saint-Georges",
+  "weingut": "Michel Noëllat",
+  "wert": 1.0,
+  "karte": "Domaine Michel Noëllat · Nuits-Saint-Georges"
+ },
+ "410": {
+  "flasche": "//images.vivino.com/thumbs/Y7NatHGWR4uJC3YgJ1SH9A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/5ZnLxlyTQJmWvI6GI9Bzdw_1280x760.jpg",
+  "treffer": "Chambolle-Musigny",
+  "weingut": "Michel Noëllat",
+  "wert": 1.0,
+  "karte": "Domaine Michel Noëllat · Chambolle Musigny"
+ },
+ "411": {
+  "flasche": "//images.vivino.com/thumbs/ia6iPpVNSciG_HqYGn6Rxg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Beaune Premier Cru 'Boucherottes'",
+  "weingut": "Domaine Fernand & Laurent Pillot",
+  "wert": 0.6,
+  "karte": "Fernand & Laurent Pillot · Beaune Rouge 1 er Cru Boucherottes"
+ },
+ "412": {
+  "flasche": "//images.vivino.com/thumbs/8j5SpvgFTgqHprpQM9c4_Q_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Pommard 1er Cru 'Les Charmots'",
+  "weingut": "Domaine Fernand & Laurent Pillot",
+  "wert": 0.6,
+  "karte": "Fernand & Laurent Pillot · Pommard Rouge 1 er Cru Les Charmots"
+ },
+ "413": {
+  "flasche": "//images.vivino.com/thumbs/h9ekIwwzSlOXvd4N-SWxsg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/B_R9c4eLQCuo7Nqjbii6WQ_1280x760.jpg",
+  "treffer": "Pommard 1er Cru 'Clos de Verger'",
+  "weingut": "Domaine Fernand & Laurent Pillot",
+  "wert": 0.67,
+  "karte": "Fernand & Laurent Pillot · Pommard Rouge 1 er Cru Clos de Verger"
+ },
+ "414": {
+  "flasche": "//images.vivino.com/thumbs/RYcl8FwgQfWTPplGyN1tVg_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/YwIW7ixmTJujfG0sWu1Sjg_1280x760.jpg",
+  "treffer": "Saumur Rouge",
+  "weingut": "Guiberteau",
+  "wert": 1.0,
+  "karte": "Domaine Guiberteau · Saumur Rouge"
+ },
+ "415": {
+  "flasche": "//images.vivino.com/thumbs/CqiSkJQrSSqtGjfmtXbVEQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/weFAYoFASW6ZmQsYQNnN1Q_1280x760.jpg",
+  "treffer": "Côte-Rôtie \"Les Bécasses\"",
+  "weingut": "M. Chapoutier",
+  "wert": 1.0,
+  "karte": "M. Chapoutier · Côte-Rôtie Les Bécasses"
+ },
+ "416": {
+  "flasche": "//images.vivino.com/thumbs/JGU0Fs9ETuyTYPDvM9LUWQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/weFAYoFASW6ZmQsYQNnN1Q_1280x760.jpg",
+  "treffer": "Côte-Rôtie \"Neve\"",
+  "weingut": "M. Chapoutier",
+  "wert": 1.0,
+  "karte": "M. Chapoutier · Côte-Rôtie Neve"
+ },
+ "417": {
+  "flasche": "//images.vivino.com/thumbs/AmllwYO1RPu9oocAqEbBXA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/50RQyI8kSxCUxXanviGV9g_1280x760.jpg",
+  "treffer": "Saint-Joseph",
+  "weingut": "Domaine Pierre Gonon",
+  "wert": 0.67,
+  "karte": "Pierre Gonon · Saint Joseph Rouge"
+ },
+ "418": {
+  "flasche": "//images.vivino.com/thumbs/AmllwYO1RPu9oocAqEbBXA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/50RQyI8kSxCUxXanviGV9g_1280x760.jpg",
+  "treffer": "Saint-Joseph",
+  "weingut": "Domaine Pierre Gonon",
+  "wert": 0.67,
+  "karte": "Pierre Gonon · Saint Joseph Rouge"
+ },
+ "419": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/weFAYoFASW6ZmQsYQNnN1Q_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Yann Chave",
+  "wert": 0.67,
+  "karte": "Yann Chave · Saint-Joseph Rouge"
+ },
+ "420": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Léoville-Poyferré"
+ },
+ "421": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Léoville-Poyferré"
+ },
+ "422": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Lagrange"
+ },
+ "423": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Langoa-Barton"
+ },
+ "424": {
+  "flasche": "//images.vivino.com/thumbs/v5ZMXf_CSMWSG_O_XkUB-A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Moulin Riche"
+ },
+ "425": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Léoville-Barton"
+ },
+ "426": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Léoville-Barton"
+ },
+ "427": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Bernon Bécot"
+ },
+ "428": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Rocheyron"
+ },
+ "429": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Troplong-Mondot"
+ },
+ "430": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château La Mondotte Comtes de Neipperg"
+ },
+ "431": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Montrose"
+ },
+ "432": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Montrose"
+ },
+ "433": {
+  "flasche": "//images.vivino.com/thumbs/tAOFS48yTauFNSrWJgxqoQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · La Dame de Montrose"
+ },
+ "434": {
+  "flasche": "//images.vivino.com/thumbs/tAOFS48yTauFNSrWJgxqoQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · La Dame de Montrose"
+ },
+ "435": {
+  "flasche": "//images.vivino.com/thumbs/xOg8yGXKT_Wi_3z6lVQVdw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Marbuzet"
+ },
+ "436": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Cos d’Estournel"
+ },
+ "437": {
+  "flasche": "//images.vivino.com/thumbs/QmQ_cg9ZS_6R1-5zc2XdHw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Phélan-Ségur"
+ },
+ "438": {
+  "flasche": "//images.vivino.com/thumbs/QmQ_cg9ZS_6R1-5zc2XdHw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Phélan-Ségur"
+ },
+ "439": {
+  "flasche": "//images.vivino.com/thumbs/68WN6gYfQaW5iKZWTQNusw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Haut-Bailly"
+ },
+ "440": {
+  "flasche": "//images.vivino.com/thumbs/68WN6gYfQaW5iKZWTQNusw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Haut-Bailly"
+ },
+ "441": {
+  "flasche": "//images.vivino.com/thumbs/xSJO5Y_3RLWYsLpWfM24ng_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Haut Bailly II"
+ },
+ "442": {
+  "flasche": "//images.vivino.com/thumbs/HblCMW7kSWeo4DVT949s6A_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Mille Roses"
+ },
+ "443": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Cantemerle"
+ },
+ "444": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Cantemerle"
+ },
+ "445": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Belgrave"
+ },
+ "446": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Poujeaux"
+ },
+ "447": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Pichon-Longueville-Baron"
+ },
+ "448": {
+  "flasche": "//images.vivino.com/thumbs/8GOQAjMSTxm0So0G-URPXw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Réserve de la Comtesse"
+ },
+ "449": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Pichon-Comtesse de Lalande"
+ },
+ "450": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Pichon-Comtesse de Lalande"
+ },
+ "451": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Lynch-Bages"
+ },
+ "452": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Lynch-Bages"
+ },
+ "453": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Lynch-Bages"
+ },
+ "454": {
+  "flasche": "//images.vivino.com/thumbs/iPJbOceNQRKoP-yIA0dNJA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Latour Les Forts de Latour"
+ },
+ "455": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château d’Armailhac"
+ },
+ "456": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Pontet-Canet"
+ },
+ "457": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Pontet-Canet"
+ },
+ "458": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Grand-Puy-Lacoste"
+ },
+ "459": {
+  "flasche": "//images.vivino.com/thumbs/TtKu-nWNQ1yN1OBXh0OfbA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/pDAYNERYTeqN3vazOSIscw_1280x760.jpg",
+  "treffer": null,
+  "weingut": null,
+  "wert": 0,
+  "karte": "None · Château Grand Village Rouge"
+ },
+ "460": {
+  "flasche": "//images.vivino.com/thumbs/kYXFjkzZRgm28eaEHoNPmw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": "Oberhäuser Brücke Riesling Spätlese",
+  "weingut": "Dönnhoff",
+  "wert": 1.0,
+  "karte": "Hermann Dönnhoff · Riesling Oberhäuser Brücke Spätlese"
+ },
+ "461": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Dönnhoff",
+  "wert": 1.0,
+  "karte": "Hermann Dönnhoff · Riesling Auslese Hermannshöhle"
+ },
+ "462": {
+  "flasche": "//images.vivino.com/thumbs/sckfHWIeTMiLpDrvr4eEHw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": "Wehlener Sonnenuhr Riesling Auslese 'Goldkapsel'",
+  "weingut": "Joh. Jos. Prüm",
+  "wert": 1.0,
+  "karte": "Weingut Joh. Jos. Prüm · Riesling Auslese Goldkapsel Wehlener Sonnenuhr"
+ },
+ "463": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Molitor Rosenkreuz",
+  "wert": 0.75,
+  "karte": "Weingut Achim Molitor · Riesling Beerenauslese Piesporter Falkenberg"
+ },
+ "464": {
+  "flasche": "//images.vivino.com/thumbs/9j14R5y3RRWN_DZZi4-WSQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/NOjj4xPmSVeQew-vf1Tgdw_1280x760.jpg",
+  "treffer": "Sauternes (Premier Grand Cru Classé)",
+  "weingut": "Château Lafaurie-Peyraguey",
+  "wert": 0.8,
+  "karte": "Château Lafaurie-Peyraguey · Sauternes 1 er Grand Cru Classé"
+ },
+ "465": {
+  "flasche": "//images.vivino.com/thumbs/PhOewPRDQPSVRRSsz9ldDQ_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/NOjj4xPmSVeQew-vf1Tgdw_1280x760.jpg",
+  "treffer": "Sauternes (Premier Grand Cru Classé)",
+  "weingut": "Château de Rayne Vigneau",
+  "wert": 1.0,
+  "karte": "Château de Rayne Vigneau · Sauternes"
+ },
+ "466": {
+  "flasche": "//images.vivino.com/thumbs/wxbZJTsLTWOGeW1ErTv6Pw_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/R4HmoMEwSRi6hJalA3Um5Q_1280x760.jpg",
+  "treffer": "Ruster Ausbruch Auf den Flügeln der Morgenröte",
+  "weingut": "Heidi Schröck",
+  "wert": 1.0,
+  "karte": "Weingut Heidi Schröck · Ruster Ausbruch „Auf den Flügeln der Morgenröte“"
+ },
+ "467": {
+  "flasche": "//images.vivino.com/thumbs/ONbxgnOcRqSuI-e0DppQNA_pb_x960.png",
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/R4HmoMEwSRi6hJalA3Um5Q_1280x760.jpg",
+  "treffer": "Nummer 6 Zwischen den Seen Welschriesling Trockenbeerenauslese",
+  "weingut": "Kracher",
+  "wert": 0.67,
+  "karte": "Weinlaubenhof Kracher · TBA Welschriesling No. 6 „Zwischen den Seen“"
+ },
+ "468": {
+  "flasche": null,
+  "region_bild": "//thumbs.vivino.com/region_backgrounds/R4HmoMEwSRi6hJalA3Um5Q_1280x760.jpg",
+  "treffer": null,
+  "weingut": "Kracher",
+  "wert": 0.67,
+  "karte": "Weinlaubenhof Kracher · TBA Grande Cuvee No. 4 „Nouvelle Vague»"
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": 1675958,
+ "name": "Givry Premier Cru Clos du 'Cellier aux Moines'",
+ "weingut": "Domaine du Cellier aux Moines",
+ "region": "Givry 1er Cru 'Cellier aux Moines'",
+ "region_id": 3789,
+ "alkohol": 13,
+ "verschluss": "cork",
+ "natur": false,
+ "reben": [
+  "Pinot Noir"
+ ],
+ "speisen": [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Geflügel",
+  "Wild (Hirsch, Reh)"
+ ],
+ "struktur": {
+  "acidity": 3.968539,
+  "fizziness": null,
+  "intensity": 2.2671995,
+  "sweetness": 1.5758255,
+  "tannin": 2.2560847,
+  "user_structure_count": 18,
+  "calculated_structure_count": 108
+ },
+ "aromen": [
+  {
+   "gruppe": "earth",
+   "n": 103,
+   "worte": [
+    "earthy",
+    "leather",
+    "mushroom",
+    "smoke",
+    "forest floor"
+   ]
+  },
+  {
+   "gruppe": "red_fruit",
+   "n": 102,
+   "worte": [
+    "cherry",
+    "red fruit",
+    "strawberry",
+    "raspberry",
+    "pomegranate"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 55,
+   "worte": [
+    "plum",
+    "blueberry",
+    "black cherry",
+    "black fruit",
+    "blackcurrant"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 40,
+   "worte": [
+    "oak",
+    "clove",
+    "cola",
+    "vanilla",
+    "cedar"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 33,
+   "worte": [
+    "cinnamon",
+    "pepper",
+    "licorice",
+    "savory",
+    "rosemary"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 7,
+   "worte": [
+    "violet",
+    "dried flowers",
+    "hibiscus",
+    "lavender",
+    "perfume"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 4,
+   "worte": [
+    "cream",
+    "cheese"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 4,
+   "worte": [
+    "grass",
+    "tomato",
+    "tomato leaf"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 4,
+   "worte": [
+    "dried cranberry",
+    "dried fruit",
+    "prune"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 3,
+   "worte": [
+    "almond",
+    "nutty",
+    "toast"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 3,
+   "worte": [
+    "orange peel",
+    "citrus"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 1,
+   "worte": [
+    "melon"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 1,
+   "worte": [
+    "mango"
+   ]
+  }
+ ],
+ "stil": {
+  "id": 286,
+  "name": "Burgund Côte Chalonnaise Rot Frankreich",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 2,
+  "body_description": "Leichter Körper",
+  "acidity": 3,
+  "acidity_description": "Hoch"
+ },
+ "bewertung": 4.1,
+ "bewertungen": 1975,
+ "weingut_weine": 14,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

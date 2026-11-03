@@ -1,0 +1,44 @@
+{
+ "id": 12282432,
+ "name": "Pouilly-Fuissé 1er Cru Sur La Roche",
+ "weingut": "Verget",
+ "region": "Pouilly-Fuissé Premier Cru",
+ "region_id": 4958,
+ "alkohol": 0,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay"
+ ],
+ "speisen": [
+  "Vegetarische Gerichte",
+  "Pasta",
+  "Geräucherte Fleischprodukte"
+ ],
+ "struktur": {
+  "acidity": 2.6806061,
+  "fizziness": null,
+  "intensity": 3.478788,
+  "sweetness": 1.4833333,
+  "tannin": null,
+  "user_structure_count": 3,
+  "calculated_structure_count": 0
+ },
+ "aromen": [],
+ "stil": {
+  "id": 288,
+  "name": "Burgund Mâconnais Weißwein",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 4.2,
+ "bewertungen": 82,
+ "weingut_weine": 173,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

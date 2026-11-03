@@ -1,0 +1,142 @@
+{
+ "id": 1802729,
+ "name": "Weisser Burgunder - Chardonnay Trocken",
+ "weingut": "Keller",
+ "region": "Rheinhessen",
+ "region_id": 480,
+ "alkohol": 13,
+ "verschluss": null,
+ "natur": false,
+ "reben": [
+  "Chardonnay",
+  "Weissburgunder"
+ ],
+ "speisen": [
+  "Schweinefleisch",
+  "Vegetarische Gerichte",
+  "Geflügel",
+  "Vorspeisen und Snacks",
+  "Milde Käsesorten und Weichkäse",
+  "Ziegenkäse"
+ ],
+ "struktur": {
+  "acidity": 3.4530995,
+  "fizziness": null,
+  "intensity": 2.9080613,
+  "sweetness": 1.6226635,
+  "tannin": null,
+  "user_structure_count": 73,
+  "calculated_structure_count": 27
+ },
+ "aromen": [
+  {
+   "gruppe": "tree_fruit",
+   "n": 37,
+   "worte": [
+    "apple",
+    "green apple",
+    "peach",
+    "pear",
+    "apricot"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 20,
+   "worte": [
+    "citrus",
+    "lemon",
+    "lime",
+    "grapefruit",
+    "lemon zest"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 17,
+   "worte": [
+    "minerals",
+    "stone",
+    "slate",
+    "crushed rocks",
+    "honey"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 11,
+   "worte": [
+    "yeast",
+    "cream",
+    "cheese",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 11,
+   "worte": [
+    "straw",
+    "asparagus",
+    "hay",
+    "grass",
+    "snap pea"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 10,
+   "worte": [
+    "butter",
+    "vanilla",
+    "oak",
+    "toffee"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 6,
+   "worte": [
+    "pineapple",
+    "kiwi",
+    "tropical"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 3,
+   "worte": [
+    "nutty",
+    "hazelnut"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 1,
+   "worte": [
+    "fig"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 0,
+   "worte": []
+  }
+ ],
+ "stil": {
+  "id": 785,
+  "name": "German White",
+  "description": null,
+  "blurb": null,
+  "interesting_facts": null,
+  "body": 3,
+  "body_description": "Mittlerer Körper",
+  "acidity": 2,
+  "acidity_description": "Mittel"
+ },
+ "bewertung": 3.9,
+ "bewertungen": 748,
+ "weingut_weine": 178,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}

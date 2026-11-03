@@ -1,0 +1,168 @@
+{
+ "id": 1148298,
+ "name": "Brut Rosé Champagne",
+ "weingut": "Ruinart",
+ "region": "Champagne",
+ "alkohol": null,
+ "verschluss": null,
+ "reben": [],
+ "speisen": [],
+ "struktur": {
+  "acidity": 4.1503577,
+  "fizziness": 4.2303243,
+  "intensity": 3.770307,
+  "sweetness": null,
+  "tannin": null,
+  "user_structure_count": 3044,
+  "calculated_structure_count": 454
+ },
+ "aromen": [
+  {
+   "gruppe": "red_fruit",
+   "n": 1593,
+   "worte": [
+    "strawberry",
+    "raspberry",
+    "cherry",
+    "red fruit",
+    "pomegranate"
+   ]
+  },
+  {
+   "gruppe": "citrus_fruit",
+   "n": 581,
+   "worte": [
+    "citrus",
+    "grapefruit",
+    "orange",
+    "lemon",
+    "pink grapefruit"
+   ]
+  },
+  {
+   "gruppe": "non_oak",
+   "n": 517,
+   "worte": [
+    "brioche",
+    "toast",
+    "biscuit",
+    "almond",
+    "nutty"
+   ]
+  },
+  {
+   "gruppe": "microbio",
+   "n": 341,
+   "worte": [
+    "cream",
+    "yeast",
+    "cheese",
+    "toasted bread",
+    "oil"
+   ]
+  },
+  {
+   "gruppe": "tree_fruit",
+   "n": 294,
+   "worte": [
+    "apple",
+    "peach",
+    "apricot",
+    "green apple",
+    "pear"
+   ]
+  },
+  {
+   "gruppe": "earth",
+   "n": 263,
+   "worte": [
+    "minerals",
+    "honey",
+    "smoke",
+    "stone",
+    "chalk"
+   ]
+  },
+  {
+   "gruppe": "oak",
+   "n": 133,
+   "worte": [
+    "butter",
+    "pastry",
+    "vanilla",
+    "oak",
+    "caramel"
+   ]
+  },
+  {
+   "gruppe": "tropical_fruit",
+   "n": 72,
+   "worte": [
+    "tropical",
+    "lychee",
+    "guava",
+    "passion fruit",
+    "pineapple"
+   ]
+  },
+  {
+   "gruppe": "floral",
+   "n": 57,
+   "worte": [
+    "rose petal",
+    "hibiscus",
+    "honeysuckle",
+    "potpourri",
+    "elderflower"
+   ]
+  },
+  {
+   "gruppe": "black_fruit",
+   "n": 55,
+   "worte": [
+    "jam",
+    "cassis",
+    "blackberry",
+    "plum",
+    "black cherry"
+   ]
+  },
+  {
+   "gruppe": "spices",
+   "n": 30,
+   "worte": [
+    "mint",
+    "savory",
+    "anise",
+    "cinnamon",
+    "pepper"
+   ]
+  },
+  {
+   "gruppe": "vegetal",
+   "n": 25,
+   "worte": [
+    "rhubarb",
+    "straw",
+    "hay",
+    "chard",
+    "gooseberry"
+   ]
+  },
+  {
+   "gruppe": "dried_fruit",
+   "n": 10,
+   "worte": [
+    "dried cranberry",
+    "dried apricot",
+    "fig",
+    "raisin",
+    "dried fruit"
+   ]
+  }
+ ],
+ "stil": null,
+ "nur_geschmack": true,
+ "gelesen": "2026-10-19",
+ "geschmack_geholt": true
+}
