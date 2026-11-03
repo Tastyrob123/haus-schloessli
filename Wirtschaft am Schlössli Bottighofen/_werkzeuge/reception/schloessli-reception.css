@@ -430,3 +430,5 @@ details.re-f__antw:not([open])>.re-chat-antwort,details:not([open])>.re-gespraec
 /* Felder haben unter dem Verlauf eine feste helle Grundfarbe (Platzhalter-Kontrast wird gegen sie gemessen, Kriterium 8) */
 .feld input:not([type=checkbox]):not([type=radio]),.feld textarea{background-color:#e9eef4}
 .re-a:not(.re-q) .re-a__st::before{content:attr(data-st)}   /* Stand als Marke, nicht als Lesezeile der Karte */
+/* WebKit-Nachprüfung 3.11.2026 (K4): solange ein Listenfoto noch nicht gemalt ist, steht dort die Fläche des Hauses (Nacht, Punkt-Tapete, Zeiger) statt Hellgrau */
+.re-a__bild,.re-d__bild,.re-art__bild,.re-n__bild,.re-f__bild,.sb-i__bild,.sb-t__bild{background:url("zeichen-hell.svg") center/auto 54% no-repeat,var(--wo-tapete),#0b1d3d}
