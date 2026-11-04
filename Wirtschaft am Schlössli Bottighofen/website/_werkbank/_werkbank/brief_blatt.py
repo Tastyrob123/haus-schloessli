@@ -48,7 +48,7 @@ eben();addEventListener('resize',eben);addEventListener('load',eben);if(document
       <footer class="bf-fuss">
         {f'<p class="bf-gruss">{B["schluss"]}</p>' if B.get('schluss') else ''}
         <div class="bf-fuss__reihe">{_OK.block('brief')}
-        <p class="bf-name"><img class="bf-sig" src="eigen/unterschrift.webp" width="890" height="282" alt="Unterschrift Robert Reff" loading="lazy" decoding="async"><span>Robert Reff · Tasty Studios</span></p></div>
+        <p class="bf-name"><img class="bf-sig" src="eigen/unterschrift.webp" width="890" height="282" alt="Unterschrift Robert Reff" loading="lazy" decoding="async"><span>Robert&nbsp;Reff · Tasty&nbsp;Studios</span></p></div>
       </footer>
     </article>
   </div>
@@ -110,7 +110,7 @@ CSS = """
 .bf-gruss q{quotes:'«' '»'}
 .bf-name{margin:0 clamp(10px,4vw,56px) 0 auto;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}   /* Robert 18.10.2026: nicht ganz an den rechten Rand, kleiner, Luft */
 .bf-name .bf-sig{margin-right:0;width:clamp(118px,11vw,168px);transform:rotate(-3deg)}
-.bf-name span{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.bf-name span{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe);white-space:nowrap}
 @media(max-width:759px){.bf-stuetze{height:calc(2*1.68em)}.bf-ich{width:104px;shape-margin:16px}.bf-name{align-self:flex-end}}
 /* Robert 18.10.2026 23:22: rechte Spalte oben bündig mit der linken, unten keine leere Fläche. Zwei feste Spalten (links die ersten Absätze, rechts der
    letzte beim Porträt); die Stütze schiebt das Porträt so weit hinunter, dass es mit dem letzten Wort links endet (BF_JS rechnet nach). */
@@ -119,6 +119,6 @@ CSS = """
   .bf-rechts{display:flow-root}.bf-rechts .bf-ich{margin-bottom:0}}
 /* Brief mit den drei Orten (29.10.2026): Kursblatt und Unterschrift in einer Reihe unter dem Gruss, beide auf einer Mitte, kein Loch */
 .bf-fuss__reihe{flex:1 1 100%;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:center;gap:clamp(22px,3.4vw,56px)}
-.bf-fuss__reihe .bf-name{margin:0 auto;align-self:center}
+.bf-fuss__reihe .bf-name{margin:0 auto;align-self:center;width:max-content;max-width:100%}   /* 4.11.2026: Name in einer Zeile, «Studios» nie allein (K7, WebKit) */
 @media(max-width:759px){.bf-fuss__reihe{grid-template-columns:1fr}.bf-fuss__reihe .bf-name{align-self:center}}
 """

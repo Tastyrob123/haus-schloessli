@@ -442,7 +442,7 @@ def pruef_bilder(t):
     B = {'Die Website': 'gpm-website', 'Die Karten': 'gpm-karten', 'Die sieben Werkzeuge': 'gpm-werkzeuge', 'Ihre Daten und die Ihrer Gäste': 'gpm-daten', 'Die Suche': 'gpm-suche', 'Was offen bleibt': 'gpm-offen'}
     for h2, n in B.items():
         if os.path.exists(os.path.join(IMG, n + '.webp')) and f'../img/{n}.webp' not in t:
-            t = t.replace(f'<h2>{h2}</h2>', f'<h2>{h2}</h2><span class="gp__bild"><img src="../img/{n}.webp" alt="" loading="lazy" decoding="async"></span>', 1)
+            t = t.replace(f'<h2>{h2}</h2>', f'<h2>{h2}</h2><span class="gp__bild"><img src="../img/{n}.webp" alt="" decoding="async"></span>', 1)   # 4.11.2026: ohne lazy wie in der gebauten Seite; gpm-karten aus «Die Karte» (vorher fast leerer Ausschnitt des PDF-Deckblatts, Fund K4 leer-bild)
     if 'id="sb-vorschau"' not in t:
         t = t.replace('</head>', VS_CSS + '</head>', 1)
     return t

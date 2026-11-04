@@ -189,7 +189,7 @@
         bilder.forEach(function (x) { x.remove(); }); bilder = [];
         for (var k = 0; k < d.n; k++) { var i = img('img/' + d.s + '-' + (k + 1) + '.webp', d.t + ', Ansicht ' + (k + 1)); buehne.appendChild(i); bilder.push(i); }
 
-        titel.textContent = d.t; satz.textContent = d.x; offen.href = '../' + d.d; adr.textContent = 'wirtschaft-am-schloessli / ' + (d.d === 'index.html' ? 'startseite' : d.d.replace('.html', ''));
+        titel.textContent = d.t.replace(/ (?=\S+$)/, ' '); satz.textContent = d.x; offen.href = '../' + d.d; adr.textContent = 'wirtschaft-am-schloessli / ' + (d.d === 'index.html' ? 'startseite' : d.d.replace('.html', ''));
         wahl.forEach(function (w, k) { w.setAttribute('aria-pressed', k === si); if (k === si) { var kiste = w.parentNode; kiste.scrollTo({ left: w.offsetLeft - kiste.clientWidth / 2 + w.offsetWidth / 2, behavior: ruhig ? 'auto' : 'smooth' }); } });
         pk.innerHTML = ''; for (var p = 0; p < d.n; p++) pk.appendChild(doc.createElement('i'));
         bi = -1;
