@@ -1,4 +1,4 @@
-# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 03:10 UTC
+# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 04:30 UTC
 
 Neuer Chat: zuerst diese Datei lesen, dann `CLAUDE.md`, dann beim «Nächsten genauen Schritt» weitermachen.
 
@@ -24,6 +24,12 @@ Offene Funde (fast alle Kriterium 35, Schrift in Knöpfen in WebKit 0,6–1,3 px
 5. **Kriterium 34 (Scrollen flüssig):** auf dem Runner überall rot, auch mit Grundlinie. Die Grundlinie misst seit 21:37 zwölf animierte Fotos; ob das reicht, zeigt erst der nächste Lauf. Lokal in Chromium ist alles flüssig.
 
 Um 01:40 UTC liefen drei Opus-Agenten auf die Punkte 1, 2 und 3+4. Ihr Stand ist nur, was committet ist (`git log`).
+
+## Stand 04:30 UTC
+- Prüfung über alles auf fb2eb3a: **12.488 → 50 Funde** (Tafel `ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-schnell/`). Werkbank ohne Kriterium 35.
+- Danach behoben (noch ungeprüft): Kriterium 37 «bleibt unsichtbar» als Regel-Lücke geschärft (waagrecht ausserhalb, geparkte Reihenglieder; Beleg README), Mail-Seiten `overflow-x:clip`, Prüftor holt Vorschau-Blätter ins Fenster vor dem Bild (WebKit lud lazy-Bilder nicht; Beleg README).
+- Offen: **Kriterium 34 (Scrollen flüssig) überall rot** auf dem Runner (Grundlinie 1 Ruckler, Werkzeuge 19–56). Messprobe läuft (Commit b2a249e, `probe.on` mit tresen, plakatarchiv-buch): misst das Scrollen mit je einem abgeschalteten Effekt; Ergebnis steht im K34-Fund der Tafel. `probe.on` danach löschen.
+- Agent für leere Kacheln Schaufenster/Reservationsbuch läuft noch (Reservationsbuch schon grün).
 
 ## Stand 03:10 UTC (zweiter Chat)
 - Ursache der Knopfschrift-Funde (Kriterium 35, über 11.000): der Runner-WebKit unter Linux kennt `font:-apple-system-body` nicht, also galt der Chromium-Ausgleich `@supports not (font:-apple-system-body)` dort mit. Ersetzt in der ganzen Werkbank durch die Chromium-Weiche `@supports (interpolate-size:allow-keywords) and (app-region:drag)` (Commit 1ca728c, Prüfung `[schnell: werkbank]` läuft). Lokal in Chromium unverändert (0,7 px).
