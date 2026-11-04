@@ -1,63 +1,46 @@
-# Übergabe (laufend) · Schlössli Nachtbau 3./4.11.2026
+# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 01:45 UTC
 
-Ein Chat in einem anderen Profil liest zuerst diese Datei, dann `CLAUDE.md`, und setzt beim «nächsten genauen Schritt» an.
+Neuer Chat: zuerst diese Datei lesen, dann `CLAUDE.md`, dann beim «Nächsten genauen Schritt» weitermachen.
 
 ## Auftrag
-`AUFTRAG-NACHT.md`: Werkbank, sieben Werkzeuge, Drucksachen, Feed, Prüfung für die Wirtschaft am Schlössli Bottighofen aus dem Stamm des Culinarium (`/tmp/culinarium`, Vorbild Wild Side `/tmp/wildside`). **Fertig 01:00 UTC am 4.11.2026** (09:00 Ortszeit Robert). Letzte Nachricht an Robert genau eine: «Fertig. <Link Werkbank> <Link Prüftafel>» oder «Nicht fertig. <Links> – es fehlt: <Liste>».
-
-## Zweige
-- Arbeit: `claude/schloessli-nachtbau-auftrag-es1vpf` (alle Commits, Pushes mit `[schnell: …]` stossen die Cloud-Prüfung an).
-- `main`: Meilensteine (Fast-Forward von der Arbeit, Commit-Nachricht ohne `[schnell`).
-- `ergebnis`: Prüftafeln `ergebnis/laeufe/<zweig>-schnell/tor/index.html` bzw. `<zweig>-teil/`.
-- `quelle`: Kundenmaterial; in der Sitzung: `git worktree add -f /tmp/quelle origin/quelle && ln -sfn "/tmp/quelle/Wirtschaft am Schlössli Bottighofen/_quelle" "Wirtschaft am Schlössli Bottighofen/_quelle"`.
+`AUFTRAG-NACHT.md`: Werkbank, sieben Werkzeuge, Drucksachen, Feed, Prüfung für die Wirtschaft am Schlössli Bottighofen, Stamm Culinarium (`git clone --depth 1 https://github.com/Tastyrob123/haus-culinarium-hannover /tmp/culinarium`), Vorbild Wild Side (`/tmp/wildside`). Frist war 01:00 UTC. Am Ende **eine** Meldung an Robert: «Fertig. <Link Werkbank> <Link Prüftafel>» oder «Nicht fertig. <Links> – es fehlt: <Liste>». Deutsch, kurz, keine Begründungen.
 
 ## Was fertig ist
-- 17:20 UTC: Vorbilder geholt, Chromium läuft (Playwright 1.62.1 unter `/Users/robertreff/Aussen-Pruefung`, Browser verlinkt `/opt/pw-browsers/chromium-1234 → chromium-1243`; `cloud/vorbereiten.sh` kann hier nicht laden, Netz gesperrt).
-- 17:35 UTC: Culinarium-Werkzeuge nach `Wirtschaft am Schlössli Bottighofen/_werkzeuge/` kopiert (ohne Prüfordner), Werkbank nach `website/_werkbank/`; alter Stand daneben in `*.vor-nachtbau-2026-11-03/` (nicht eingecheckt, nur lesen). Kleid `oberflaeche/kleid/schloessli.{js,css}` + `schloessli-zeichen.svg` + `schloessli-marke.svg`; Ports 908x→928x; Ziellisten `_Werkzeuge/abnahme-tor/ziele-schloessli.json`, `_Werkzeuge/messlauf/ziele-schloessli.json`; `cloud/haus.json` mit acht Servern (9281–9288); alle acht Server laufen (`bash cloud/server.sh`).
-- 17:45 UTC: `_werkzeuge/AUFTRAG-GEMEINSAM.md` (Reviere, Kleid, Hauswerte, Regeln, Prüfung).
-
-- 18:35 UTC: **Hafenbüro fertig** (Agent maison): lokal 0 Funde, Commits cf5ae83/af305b7; offen nur: Bildschirme der anderen Werkzeuge am Ende neu aufnehmen (`SCHIRM_KERN=chromium node schirme.js`, dann `python3 bau.py` in `_werkzeuge/maison`).
-
-- 18:40 UTC: **Werkbank Feed/Mails/Material fertig** (48 Beiträge, 10 Mails, 207 Dateien; Commits d50ee08/60d41e4). **Kartenpult fertig** (fünf Karten, 0 Funde, Commit fc3fc9e). Kleid: WO_ZEILEN trennt nur noch an gewöhnlichen Leerzeichen.
-
-- 18:55 UTC: **Markenbuch fertig** (47 Fotos, Dateien, Hausregeln; Commits 279fb30/c07d1db), **Reservationsbuch fertig** (b145e0e), **Besucherliste fertig** (a10c07c); Hafenbüro WebKit-Fund (Eck-Knöpfe text-mitte) behoben (a45fb13). Hinweis: `reception/online/schluessel.txt` (Culinarium-Token, steht auch im öffentlichen Culinarium-Repo) war im Commit 2eee208 eingecheckt; jetzt gelöscht, in der Geschichte noch vorhanden – Robert entscheidet.
-
-- 19:40 UTC: **Werkbank Papier fertig** (707eea8/346a5c6). Kartenpult: WebKit-Funde (text-mitte Entwurf/Schliessen, leer-bild Rundgang, Einzelwort) behoben (ee03799), Nachprüfung läuft.
-
-- 19:50 UTC: **Schaufenster fertig** (12 Seiten, Ferien-Termine aus haus.json, Anleitung neu; Commits bis 73a1969; Stamm-Dateien `_Werkzeuge/werkzeuge/website/haeuser/schloessli.json`, `_Werkzeuge/haeuser/schloessli/haus.json` vom Oberchef eingecheckt).
-
-- 20:05 UTC: **Kartenpult in WebKit grün** (27 Zustände, 0 Funde, vier Breiten; Lauf ee19290). Sammelprüfung Hafenbüro/Markenbuch/Reservationsbuch/Besucherliste/Schaufenster läuft (Lauf 42ab779).
-
-- 20:20 UTC: Kartenpult Kriterium 34 (Scrollen ruckelt in WebKit auf dem Runner, 22 Bilder > 50 ms) → Vorschau auf eigener Ebene, content-visibility, kleinere Schatten (251bf66); Nachprüfung läuft.
-
-- 20:20 UTC: **Container-Neustart.** Dateien erhalten (auch uncommittete Stände), Prozesse weg. 20:25: Server neu gestartet (`bash cloud/server.sh`), Warter neu gesetzt, zwei neue Agenten für Hausdruckerei (ab Commit 54c8970 + Platte) und Werkbank-Kern (ab ba6ff61 + Platte).
-
-- 20:50 UTC: Sammelprüfung WebKit (Lauf 42ab779, 204 Zustände, 84 Funde: Knopfschrift, Einzelwörter, lazy Bilder, Kopf-Marke am Handy) → alle sechs Werkzeug-Agenten haben nachgebessert (68ce5c3, 228a7e7, 2e73590, 28bed90, f21dd52, b25a5f3). Kriterium 34 war auf dem Runner überall rot → `bewegung-tor.js` misst jetzt die Grundlinie des Rechners (0467813). Nachprüfung aller sechs läuft.
-
-- 21:35 UTC: Nachprüfung WebKit (Lauf 0d296ae, 230 Zustände): Messfunde 0 in allen sechs Werkzeugen; übrig 13 Bildfunde (Reservationsbuch Listenbilder leer, Schaufenster Monogramm-Kacheln/Weinkarte-Gruppe, Besucherliste Loch in Kennzahl-Blättern) → an die drei Agenten; Grundlinie für K34 jetzt mit animierten Fotos (Textseite war auf dem Runner glatt, jedes Werkzeug mit Fotos nicht). Oberchef hat 18 Zustandsbilder (1440, WebKit) mit dem Auge gesehen: Kleid, Inhalt, Fotos des Hauses, nichts Culinarium.
-
-- 21:55 UTC: **Werkbank fertig** (Kern: 14 Seiten, lokal 0 Funde; Commits 1090e2b…b68053b), Reservationsbuch und Schaufenster nachgebessert (80a19df, 7388744). Prüfung über alles gestartet (`[schnell]`); Hausdruckerei (Agent nach Neustart) noch in Arbeit, Besucherliste richtet die Kennzahl-Blätter auf eine Linie.
-
-- 22:10 UTC: **Hausdruckerei fertig** (89 Vorlagen, 34 Drucksachen, Stilblatt, Anleitung neu; Commit b95d728); Prüfregel «Text zerfällt» lässt Karten mit gesetztem Blatt aus (Beleg: Postkarten-Vorschauen). Besucherliste-Blätter auf einer Linie (8f13c29). Alle zehn Reviere fertig gemeldet.
-
-## Was offen ist (Reihenfolge)
-1. Zehn Opus-Agenten parallel: maison, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed (Reviere laut `AUFTRAG-GEMEINSAM.md`).
-2. Je Werkzeug nach «fertig»: Commit, Push mit `[schnell: <k>]`, Funde aus `origin/ergebnis` zurück an den Agenten, Nachprüfung.
-3. Werkbank-Ausgaben (werkbank/, befund/, unterlagen/, … in `website/_werkbank/`) erst committen, wenn sie Schlössli-Inhalt zeigen (jetzt noch Culinarium-Inhalt, absichtlich nicht eingecheckt).
-4. Am Ende `[schnell]` über alles, Fundbilder und 15 Zustandsbilder je Werkzeug ansehen, `main` nachziehen, Meldung an Robert.
-
-## Nächster genauer Schritt
-Agenten starten (Agent-Werkzeug, `model: "opus"`), je Agent: «Lies `Wirtschaft am Schlössli Bottighofen/_werkzeuge/AUFTRAG-GEMEINSAM.md`, dein Revier ist …».
+Alle zehn Reviere sind gebaut, committet und gepusht (Zweig `claude/schloessli-nachtbau-auftrag-es1vpf`). Lokal in Chromium haben alle 0 Funde.
+- **Hafenbüro** (`_werkzeuge/maison`, 9281), **Kartenpult** (`carte`, 9283), **Markenbuch** (`livre`, 9285, Hausregeln, Anleitung), **Besucherliste** (`registre`, 9286): in WebKit 0 Messfunde.
+- **Schaufenster** (`bureau`, 9282), **Reservationsbuch** (`reception`, 9284): in WebKit nur noch wenige «leere Kachel»-Funde.
+- **Hausdruckerei** (`imprimerie`, 9287): 89 Vorlagen, 34 fertige Drucksachen (`haeuser/schloessli/drucksachen/LISTE.md`), Stilblatt.
+- **Werkbank** (`website/_werkbank/`, 9288): alle 14 Seiten mit Schlössli-Inhalt (Start, Karte, KI, Geprüft, Befund, Unterlagen, Drucksachen, Untersetzer, Sticker, Postkarten, Beigaben, Feed mit 48 Beiträgen, 10 Mails, Material).
+- Kleid `_werkzeuge/oberflaeche/kleid/schloessli.{js,css}`, Ziellisten `_Werkzeuge/abnahme-tor/ziele-schloessli.json` und `_Werkzeuge/messlauf/ziele-schloessli.json`, `cloud/haus.json` mit Servern 9281–9288.
+- Prüfregeln geschärft (mit Beleg in `_Werkzeuge/abnahme-tor/README.md`): Kriterium 34 misst eine Grundlinie des Rechners; «Text zerfällt» lässt Karten mit gesetztem Blatt aus. `schnell.yml`: jeder Lauf eigene Gruppe, Teilprüfungen unter `ergebnis/laeufe/<zweig>-teil-<laufnummer>/`.
 
 ## Prüfstand
-- 17:46–17:54 UTC Probelauf `schnell.yml` (workflow_dispatch, nur=tresen, Zweig `claude/…`): Ablauf läuft durch, Server 9281–9287 starten auf dem Runner; 9288 (Werkbank) antwortet 404, weil `website/_werkbank/werkbank/index.html` noch nicht eingecheckt ist (gewollt, bis Schlössli-Inhalt da ist). Tor darum noch 0 Zustände. Tafel: `ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-teil/`.
-- Agenten gestartet 17:46 UTC (10, Opus): maison+oberflaeche, bureau, carte, reception, livre, registre, imprimerie, werkbank-kern, werkbank-papier, werkbank-feed.
+Letzter Lauf über alles: Commit 4381dcf, Tafel im Zweig `ergebnis`: `ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-schnell/tor/index.html`. 442 Zustände, nichts «nicht erreicht» ausser 1 in der Hausdruckerei.
+Offene Funde (fast alle Kriterium 35, Schrift in Knöpfen in WebKit 0,6–1,3 px versetzt):
+1. **Werkbank, alle Seiten:** Knöpfe (Kasten 56 px) 0,7 px zu tief; Reiter-Pillen 1,0 px zu tief und 0,8 px zu weit rechts; Ziffern 0,6 px. Ursache: Ausgleiche in `_werkbank/text_mitte.py` / `knopf_mitte.css` gelten nur für Chromium. Dazu Geprüft 6× leere Kachel.
+2. **Hausdruckerei:** «Website ansehen» 1,3 px tief, Filter-Pillen 0,6 px rechts, Einzelwort «Gourmetkreuzfahrt», eine Kante, ein Loch 15 %, Mail-Seite leere Kacheln und Kriterium 37 (Bewegung) in allen Zuständen.
+3. **Reservationsbuch:** Listenbilder im Eingang in WebKit leer (wohl eigener Scrollbereich oder Einblende-Klasse `sw-da`).
+4. **Schaufenster:** 5 leere Kacheln (Team ohne Foto, Weinkarte). **Markenbuch-Anleitung:** 1 leere Kachel.
+5. **Kriterium 34 (Scrollen flüssig):** auf dem Runner überall rot, auch mit Grundlinie. Die Grundlinie misst seit 21:37 zwölf animierte Fotos; ob das reicht, zeigt erst der nächste Lauf. Lokal in Chromium ist alles flüssig.
+
+Um 01:40 UTC liefen drei Opus-Agenten auf die Punkte 1, 2 und 3+4. Ihr Stand ist nur, was committet ist (`git log`).
+
+## Nächster genauer Schritt
+1. `git fetch origin && git log --oneline origin/claude/schloessli-nachtbau-auftrag-es1vpf -15` lesen: was von den drei Agenten committet ist.
+2. Einrichten: `cd /Users/robertreff/Aussen-Pruefung` nötig? Nein – in der Cloud: `bash cloud/vorbereiten.sh chromium` scheitert am Download; stattdessen Playwright 1.62.1 unter `/Users/robertreff/Aussen-Pruefung` (`npm i playwright@1.62.1`) und `ln -sfn /opt/pw-browsers/chromium-1243 /opt/pw-browsers/chromium-1234` und dasselbe für `chromium_headless_shell`. Dann `bash cloud/server.sh` (Server 9281–9288). Kundenmaterial: siehe CLAUDE.md (`quelle`).
+3. Die offenen Funde 1–4 reparieren (Lösungsmuster: Beschriftung in `<span>` mit `text-box: trim-both cap alphabetic`, Grundfall symmetrisch, jeder Ausgleich nur in `@supports (interpolate-size:allow-keywords)`; Bilder `loading="eager" decoding="sync"`).
+4. Commit mit `[schnell]` in der Nachricht, pushen **Commit für Commit** (`git push origin <sha>:refs/heads/claude/schloessli-nachtbau-auftrag-es1vpf`, der Proxy kappt grosse Pakete), Ergebnis im Zweig `ergebnis` abwarten (rund 45 min).
+5. Bei null offenen Funden: `main` vorspulen (`git push origin claude/schloessli-nachtbau-auftrag-es1vpf:main`), Meldung an Robert.
+
+## Links
+- Werkbank (Quelle): https://github.com/Tastyrob123/haus-schloessli/tree/claude/schloessli-nachtbau-auftrag-es1vpf/Wirtschaft%20am%20Schl%C3%B6ssli%20Bottighofen/website/_werkbank
+- Prüftafel: https://github.com/Tastyrob123/haus-schloessli/blob/ergebnis/ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-schnell/tor/index.html
+- Lokal nach `bash cloud/server.sh`: http://127.0.0.1:9288/werkbank/index.html
 
 ## Stolpersteine
-- **Cloud-Prüfung und Pushes:** `schnell.yml` hatte eine Gruppe je Zweig; GitHub bricht ältere wartende Läufe ab, sobald ein neuer Push kommt (auch ohne `[schnell`). So fiel die Sammelprüfung 19:02 aus. Seit 20:05 UTC: Gruppe je Lauf, Teilprüfungen unter `ergebnis/laeufe/<zweig>-teil-<laufnummer>/`, Ablegen mit Wettlauf-Schutz. Pushes gehen Commit für Commit (`scratchpad/push.sh`-Logik: `git push origin <sha>:refs/heads/<zweig>`), weil der Proxy grosse Pakete kappt.
-- Agenten schreiben teils «Co-Authored-By: Claude Opus 5.5» in Commit-Nachrichten (Modellname); bereits gepusht, nicht umgeschrieben.
-- `rsync` fehlt im Container (Kopie mit `python3 -I <scratchpad>/kopieren.py`).
-- Playwright-Download ist gesperrt; der vorinstallierte Chromium 1243 ist als 1234 verlinkt (`/opt/pw-browsers`).
-- Agenten: keine Heredocs / `python3 -` in der Shell (Freigabe-Abfrage), Skripte als Datei anlegen.
-- `website/assets/schrift/` und `/assets/bild/` gibt es hier nicht: Schriften unter `/assets/fonts/`, Fotos unter `/assets/img/<schlüssel>-<breite>.webp`.
-- `imprimerie/haeuser/culinarium/` ist per `.gitignore` ausgeschlossen (nur Vorlage auf dem Rechner).
+- Container-Neustarts löschen Prozesse, nicht Dateien: Server neu starten, uncommittete Agentenarbeit sichten.
+- Agenten: keine Heredocs / `python3 -` in der Shell (wartet auf Freigabe); Skripte als Datei.
+- Untracked Dateien in `website/_werkbank/_werkbank/` (roh, sb, Cache) sind Bau-Rohstoff, absichtlich nicht eingecheckt.
+- `reception/online/schluessel.txt` (Culinarium-Token, auch im öffentlichen Culinarium-Repo) stand im Commit 2eee208; gelöscht, in der Geschichte noch drin – Robert entscheidet.
+- Agenten-Commits tragen teils «Co-Authored-By: Claude Opus 5.5»; gepusht, nicht umgeschrieben.
+- Kein WebKit lokal (Download gesperrt); WebKit-Prüfung nur in Actions.
