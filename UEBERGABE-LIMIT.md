@@ -1,4 +1,4 @@
-# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 08:00 UTC
+# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 10:00 UTC
 
 Neuer Chat: zuerst diese Datei lesen, dann `CLAUDE.md`, dann beim «Nächsten genauen Schritt» weitermachen.
 
@@ -24,6 +24,11 @@ Offene Funde (fast alle Kriterium 35, Schrift in Knöpfen in WebKit 0,6–1,3 px
 5. **Kriterium 34 (Scrollen flüssig):** auf dem Runner überall rot, auch mit Grundlinie. Die Grundlinie misst seit 21:37 zwölf animierte Fotos; ob das reicht, zeigt erst der nächste Lauf. Lokal in Chromium ist alles flüssig.
 
 Um 01:40 UTC liefen drei Opus-Agenten auf die Punkte 1, 2 und 3+4. Ihr Stand ist nur, was committet ist (`git log`).
+
+## Stand 10:00 UTC (dritter Chat)
+- Eingecheckt: Besucherliste-Reparaturen und Prüftor-K4-Schärfungen (51721b1, Teilprüfung teil-84: Kartenpult/Schaufenster sauber, nur Einzelwort in der neuen Bildzeile → 4c… behoben), **K34 jetzt in Chromium gemessen** (9e2b3fd, Beleg README «K34 in Chromium»; WebKit bleibt für K37), Werkbank flüssiger (67c0efd: Material/Sticker unter Schwelle, Start halbiert, KI knapp), Hausdruckerei-Funde + vier Prüftor-Schärfungen + Vorschaubilder neu, 16 verwaiste Vorschaubilder mit Culinarium-/Wild-Side-Inhalt gelöscht (9e14d83, `[schnell]` über alles läuft).
+- Bekannt offen vor dem Lauf: Werkbank-Start in Chromium noch ~60 Ruckler, KI ~10 (Laptop-Bilder mit `filter: drop-shadow`).
+- Nächster Schritt: Ergebnis 9e14d83 lesen (`ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-schnell/`), Reste reparieren, `[schnell]`, bei null Funden `main` vorspulen und Meldung nach AUFTRAG-NACHT.md.
 
 ## Stand 08:00 UTC (dritter Chat, Sitzung session_0189oeKh7869Pv9w5X38SPb3)
 - Lauf über alles auf d62a6ef (Tafel `ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-schnell/`): 39 Funde + Kriterium 34. Werkbank-K37 ist weg.
