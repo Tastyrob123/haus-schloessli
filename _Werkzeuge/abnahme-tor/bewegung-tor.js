@@ -72,7 +72,22 @@ const messeGrund = async (b) => {
       r[reduce ? 'ruhig' : 'bewegt'] = { ...m, ladezeit: lade, bild };
       if (m.fehler) r.funde.push({ k: 34, info: 'Messung fehlgeschlagen: ' + m.fehler });
       else if (!reduce) {
-        if (m.ruckler > rucklerMax || m.p95 > p95Max) r.funde.push({ k: 34, info: `Scrollen ruckelt: ${m.ruckler} Bilder über 50 ms, 95 % der Bilder unter ${Math.round(m.p95)} ms (${m.bilder} Bilder) · ${grundText}` });
+        let probeText = '';
+        // Messprobe (4.11.2026, Nachtbau Schlössli): liegt probe.on neben diesem Skript, misst das Tor bei den Zielen aus probe.on dasselbe Scrollen noch einmal mit je einem abgeschalteten Effekt, um zu finden, was der Rechner nicht schafft
+        const probeDatei = path.join(__dirname, 'probe.on');
+        if (fs.existsSync(probeDatei) && fs.readFileSync(probeDatei, 'utf8').split(/[\s,]+/).includes(z.k) && url === z.url) {
+          const AUS_ = { 'ohne Unschärfe': '*,*::before,*::after{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}', 'ohne Schatten': '*,*::before,*::after{box-shadow:none!important;text-shadow:none!important}',
+            'ohne Filter': '*,*::before,*::after{filter:none!important}', 'ohne Animation': '*,*::before,*::after{animation:none!important;transition:none!important}', 'ohne Hintergrundbilder': '*,*::before,*::after{background-image:none!important}',
+            'ohne Bilder': 'img,video,canvas,svg{visibility:hidden!important}', 'ohne fest/klebend': '*{position:static!important}', 'ohne Mischmodus': '*,*::before,*::after{mix-blend-mode:normal!important;isolation:auto!important}',
+            'ohne alles': '*,*::before,*::after{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:none!important;text-shadow:none!important;filter:none!important;animation:none!important;transition:none!important;background-image:none!important;mix-blend-mode:normal!important}' };
+          const teile = [];
+          for (const [name, css] of Object.entries(AUS_)) {
+            const p2 = await ctx.newPage(); await p2.goto(url, { waitUntil: 'load', timeout: 30000 }).catch(() => { }); await p2.addStyleTag({ content: css }).catch(() => { }); await warte(1200);
+            const m2 = await messeScroll(p2).catch(() => null); await p2.close(); teile.push(`${name}: ${m2 ? m2.ruckler + '/' + Math.round(m2.p95) + ' ms' : '–'}`);
+          }
+          probeText = ' · Probe (Ruckler/p95): ' + teile.join('; '); r.probe = teile; console.log('Probe', z.k, teile.join(' | '));
+        }
+        if (m.ruckler > rucklerMax || m.p95 > p95Max || probeText) r.funde.push({ k: 34, info: `Scrollen ruckelt: ${m.ruckler} Bilder über 50 ms, 95 % der Bilder unter ${Math.round(m.p95)} ms (${m.bilder} Bilder) · ${grundText}${probeText}` });
         if (!m.maxAnim) r.funde.push({ k: 37, info: 'Keine Bewegung beim Scrollen (keine Animation lief)' });
         const fremd = m.eigenschaften.filter(x => !/^(transform|opacity|translate|scale|rotate|filter|clip-path|all)$/.test(x));
         if (fremd.length) r.funde.push({ k: 37, info: `Animiert auch ${fremd.slice(0, 6).join(', ')} (erlaubt nur transform/opacity)` });
