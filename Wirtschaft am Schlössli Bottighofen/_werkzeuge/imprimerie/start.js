@@ -40,7 +40,7 @@
   const IN_GRUPPE = new Set(Object.values(GRUPPE).flat());
   const ARTEN_SICHT = ARTEN.filter(a => !IN_GRUPPE.has(a.key));
   const mitGruppe = a => GRUPPE[a.key] ? Object.assign({}, a, { name: GRUPPE_NAME[a.key], gruppe: GRUPPE[a.key], satz: a.satz + '. Dazu ' + GRUPPE[a.key].map(g => ARTEN.find(x => x.key === g).name).join(' und ') + '.' }) : a;
-  const zus = t => { const s = esc(t); return (/ (\S+)$/.exec(s) || [''])[0].length + ((/(\S+) \S+$/.exec(s) || ['', ''])[1].length) > 18 ? s : s.replace(/ (\S+)$/, '\u00a0$1'); };   // K7 (Tor 2, 30.10.2026): nie ein Wort allein in der letzten Zeile; lange Wortpaare (Excellence Gourmetkreuzfahrt) dürfen umbrechen, text-wrap:balance hält sie zusammen
+  const zus = (t, grenze = 18) => { const s = esc(t); return (/ (\S+)$/.exec(s) || [''])[0].length + ((/(\S+) \S+$/.exec(s) || ['', ''])[1].length) > grenze ? s : s.replace(/ (\S+)$/, '\u00a0$1'); };   // 4.11.2026: Namen unter den Vorlagen (zl__name) mit Grenze 29, WebKit h\u00e4lt \u00abExcellence Gourmetkreuzfahrt\u00bb mit balance nicht zusammen (Paar 250 px, schmalste Kachel 271 px) \u00b7 K7 (Tor 2, 30.10.2026): nie ein Wort allein in der letzten Zeile; lange Wortpaare (Excellence Gourmetkreuzfahrt) dürfen umbrechen, text-wrap:balance hält sie zusammen
   const inhalt = (art, v) => (INHALT[art.key] && INHALT[art.key][v]) || DS.BEISPIEL[v];
 
   let wahl = null, fk = null;
@@ -485,7 +485,7 @@
     Object.entries(attr).forEach(([k, v]) => b.dataset[k] = v);
     const bu = document.createElement('span'); bu.className = 'stueck__buehne'; bu.style.height = Math.ceil(H + 36) + 'px';
     const sa = document.createElement('span'); sa.className = 'stueck__satz'; blaetter.forEach(x => x && sa.appendChild(x)); bu.appendChild(sa); b.appendChild(bu);
-    b.insertAdjacentHTML('beforeend', `<b class="zl__name">${zus(name)}</b><em class="stueck__format">${esc(info)}</em>${nimm ? `<small class="stueck__satztext stueck__nimm">${esc(nimm)}</small>` : ''}`);
+    b.insertAdjacentHTML('beforeend', `<b class="zl__name">${zus(name, 29)}</b><em class="stueck__format">${esc(info)}</em>${nimm ? `<small class="stueck__satztext stueck__nimm">${esc(nimm)}</small>` : ''}`);
     return b;
   }
   function leerStueck(attr, f, basis, info) {
@@ -654,10 +654,11 @@
   /* Fundliste 29.10., 03: der Platzhalter der grossen Felder steht einzeilig; wird das Feld zu schmal, gilt die kurze Fassung «Zum Beispiel: Plakat» */
   function kurzPlatz(t) {
     if (!t) return; t.dataset.lang = t.dataset.lang || t.placeholder;
-    const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')), pg = getComputedStyle(t, "::placeholder"); c.font = `${pg.fontStyle} ${pg.fontWeight} ${pg.fontSize} ${pg.fontFamily}`;
+    const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')), pg0 = getComputedStyle(t, "::placeholder"), pg = pg0.fontFamily ? pg0 : g; c.font = `${pg.fontStyle} ${pg.fontWeight} ${pg.fontSize} ${pg.fontFamily}`;   // 4.11.2026: ohne Schrift des Platzhalters (WebKit) die des Feldes
+    if (!t.clientWidth) return;   // verborgenes Feld: beim Zeigen misst der ResizeObserver neu
     t.placeholder = [t.dataset.lang, 'Etwa: ein Plakat', 'Beschreiben …'].find(x => c.measureText(x).width * 1.2 + 6 <= t.clientWidth - parseFloat(g.paddingLeft) - parseFloat(g.paddingRight)) || 'Beschreiben …';   // Tor 2: nie zweizeilig (Rand für Sperrung und Rundung)
   }
-  ['startFrei', 'startDirekt'].forEach(id => { const t = document.getElementById(id); if (!t) return; kurzPlatz(t); if (window.ResizeObserver) new ResizeObserver(() => kurzPlatz(t)).observe(t); if (document.fonts) document.fonts.ready.then(() => kurzPlatz(t)); });
+  ['startFrei', 'startDirekt'].forEach(id => { const t = document.getElementById(id); if (!t) return; kurzPlatz(t); if (window.ResizeObserver) new ResizeObserver(() => kurzPlatz(t)).observe(t); if (document.fonts) document.fonts.ready.then(() => kurzPlatz(t)); addEventListener('resize', () => requestAnimationFrame(() => kurzPlatz(t))); });   // 4.11.2026: auch beim Ändern der Fensterbreite (WebKit 1280: langer Platzhalter blieb stehen)
   /* Schnelle Prüfung 3.11.2026: auch das Suchfeld und das Auftragsfeld der Arten kürzen ihren Platzhalter, wenn das Fenster schmaler wird (nicht nur beim Öffnen) */
   function suchPlatz() {
     const t = document.getElementById('startSuche'); if (!t || !t.clientWidth) return;

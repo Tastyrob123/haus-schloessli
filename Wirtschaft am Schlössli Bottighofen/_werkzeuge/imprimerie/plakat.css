@@ -114,6 +114,11 @@
 @supports not ((interpolate-size:allow-keywords) and (app-region:drag)){
   #btnSpeichern{padding-top:1px!important;padding-bottom:0!important}
 }
+/* Arten: Kacheln einer Reihe gleich hoch (Prüfung WebKit 1000 px, Kriterium 3: 467–521 px), Inhalt bleibt oben */
+#arten > .stueck{align-self:stretch}
+/* Kriterium 37 (Bewegung nur transform/opacity, Prüfung 4.11.2026: «Animiert auch height»): Höhe der Bühne und des Leisten-Gleiters springt, gleitet nicht */
+.stueck__buehne{transition:none}
+.ms-gleiter{transition:transform .7s var(--e1),opacity .4s}
 #start h1,#start h2,#start h3,.kd__text h1{text-wrap:balance}
 .wo-sb__h,.mb__tw figcaption,.kd__text h1{text-wrap:balance}
 .ms-feld{background-color:#eff2f6}
