@@ -74,7 +74,7 @@ jobs:
         with:
           path: /home/runner/ms-playwright
           key: pw-1.62.1-webkit-chromium
-      - run: bash cloud/vorbereiten.sh "webkit"
+      - run: bash cloud/vorbereiten.sh "webkit chromium"
       - run: bash cloud/server.sh
       - name: Schnelle Prüfung ${{ matrix.k }}
         run: bash cloud/schnell.sh "${{ matrix.k }}"

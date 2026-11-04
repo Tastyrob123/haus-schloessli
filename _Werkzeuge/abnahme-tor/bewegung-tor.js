@@ -55,7 +55,17 @@ const messeGrund = async (b) => {
 };
 (async () => {
   const b = await pw.webkit.launch(); const erg = [];
-  const grund = await messeGrund(b); const rucklerMax = Math.max(2, grund.ruckler + 2), p95Max = Math.max(34, grund.p95 * 1.5);
+  /* Kriterium 34 in Chromium (Oberchef 4.11.2026, Beleg README «K34 in Chromium»): WebKit unter Linux läuft in Playwright ohne beschleunigtes Zusammensetzen,
+     jedes Scrollbild wird auf dem Hauptfaden neu gemalt – das tut kein Browser eines Gastes (Safari auf Mac/iPhone setzt auf der Grafikkarte zusammen).
+     Chromium scrollt wie die Geräte der Gäste auf einem eigenen Faden; gemessen wird dort, was die Seite selbst kostet (Skripte, Stil, Layout, Malen, Dekodieren).
+     WebKit bleibt für Kriterium 37 (Eigenschaften, Unsichtbares, reduced-motion). */
+  const bk = await pw.chromium.launch();
+  const messeK34 = async (z, url) => { const c = await bk.newContext({ viewport: { width: W, height: H }, locale: 'de-DE' });
+    await c.route('**/*', q => q.request().method() === 'GET' || q.request().method() === 'HEAD' ? q.continue() : q.fulfill({ status: 200, body: '{}' }));
+    await c.addInitScript(v => { try { for (const [k, w] of Object.entries(v || {})) localStorage.setItem(k, w); } catch (e) { } }, z.localStorage || {});
+    const q = await c.newPage(); await q.goto(url, { waitUntil: 'load', timeout: 30000 }).catch(() => { }); await warte(1200);
+    const m = await messeScroll(q).catch(e => ({ fehler: String(e).slice(0, 120) })); await c.close(); return m; };
+  const grund = await messeGrund(bk); const rucklerMax = Math.max(2, grund.ruckler + 2), p95Max = Math.max(34, grund.p95 * 1.5);
   const grundText = `Grundlinie dieses Rechners: ${grund.ruckler} Bilder über 50 ms, 95 % unter ${Math.round(grund.p95)} ms (${grund.bilder} Bilder); Schwellen ${rucklerMax} Ruckler / ${Math.round(p95Max)} ms`;
   console.log(grundText);
   for (const z of ziele) for (const url of [z.url, ...(z.startExtra || [])]) {
@@ -69,10 +79,12 @@ const messeGrund = async (b) => {
       let m = await messeScroll(p).catch(e => ({ fehler: String(e).slice(0, 120) }));
       // Kriterium 34 gegen die Last des Rechners im selben Augenblick (4.11.2026, Beleg README): Grundlinie direkt vor der Seite neu messen; ist die Seite rot, ein zweites Mal messen, der bessere Lauf zählt
       let gJetzt = null;
-      if (!reduce && !m.fehler) { gJetzt = await messeGrund(b);
+      if (!reduce && !m.fehler) { gJetzt = await messeGrund(bk);
         const rm = Math.max(rucklerMax, gJetzt.ruckler + 2), pm = Math.max(p95Max, gJetzt.p95 * 1.5);
-        if (m.ruckler > rm || m.p95 > pm) { await p.reload({ waitUntil: 'load', timeout: 30000 }).catch(() => { }); await warte(1200); const m2 = await messeScroll(p).catch(() => null);
-          if (m2 && !m2.fehler && m2.ruckler < m.ruckler) m = { ...m2, unsichtbar: m.unsichtbar, eigenschaften: [...new Set([...(m.eigenschaften || []), ...(m2.eigenschaften || [])])], maxAnim: Math.max(m.maxAnim || 0, m2.maxAnim || 0), zweiter: true }; }
+        let k = await messeK34(z, url);
+        if (!k.fehler && (k.ruckler > rm || k.p95 > pm)) { const k2 = await messeK34(z, url); if (k2 && !k2.fehler && k2.ruckler < k.ruckler) k = { ...k2, zweiter: true }; }
+        m.webkit = { ruckler: m.ruckler, p95: m.p95, bilder: m.bilder };
+        if (!k.fehler) { m.ruckler = k.ruckler; m.p95 = k.p95; m.bilder = k.bilder; m.zweiter = k.zweiter; }
         m.rm = rm; m.pm = pm; m.gJetzt = gJetzt; }
       await p.evaluate(() => scrollTo(0, 0)); await warte(400);
       const bild = `${z.k}-${(url.split('?')[1] || 'start').replace(/\W+/g, '')}-${reduce ? 'ruhig' : 'bewegt'}.jpg`;
@@ -95,7 +107,7 @@ const messeGrund = async (b) => {
           }
           probeText = ' · Probe (Ruckler/p95): ' + teile.join('; '); r.probe = teile; console.log('Probe', z.k, teile.join(' | '));
         }
-        if (m.ruckler > (m.rm ?? rucklerMax) || m.p95 > (m.pm ?? p95Max) || probeText) r.funde.push({ k: 34, info: `Scrollen ruckelt: ${m.ruckler} Bilder über 50 ms, 95 % der Bilder unter ${Math.round(m.p95)} ms (${m.bilder} Bilder${m.zweiter ? ', besserer von zwei Läufen' : ''}) · ${grundText}${m.gJetzt ? ` · Grundlinie direkt davor: ${m.gJetzt.ruckler} Ruckler, 95 % unter ${Math.round(m.gJetzt.p95)} ms; Schwellen ${m.rm} / ${Math.round(m.pm)} ms` : ''}${probeText}` });
+        if (m.ruckler > (m.rm ?? rucklerMax) || m.p95 > (m.pm ?? p95Max) || probeText) r.funde.push({ k: 34, info: `Scrollen ruckelt: ${m.ruckler} Bilder über 50 ms, 95 % der Bilder unter ${Math.round(m.p95)} ms (${m.bilder} Bilder in Chromium${m.zweiter ? ', besserer von zwei Läufen' : ''}${m.webkit ? `; WebKit ohne Beschleunigung: ${m.webkit.ruckler} Ruckler` : ''}) · ${grundText}${m.gJetzt ? ` · Grundlinie direkt davor: ${m.gJetzt.ruckler} Ruckler, 95 % unter ${Math.round(m.gJetzt.p95)} ms; Schwellen ${m.rm} / ${Math.round(m.pm)} ms` : ''}${probeText}` });
         if (!m.maxAnim) r.funde.push({ k: 37, info: 'Keine Bewegung beim Scrollen (keine Animation lief)' });
         const fremd = m.eigenschaften.filter(x => !/^(transform|opacity|translate|scale|rotate|filter|clip-path|all)$/.test(x));
         if (fremd.length) r.funde.push({ k: 37, info: `Animiert auch ${fremd.slice(0, 6).join(', ')} (erlaubt nur transform/opacity)` });
@@ -109,5 +121,5 @@ const messeGrund = async (b) => {
     erg.push(r); console.log(z.k, url.split('/').pop(), r.funde.length ? r.funde.map(f => 'K' + f.k + ' ' + f.info).join(' | ') : 'ok', `· ${r.bewegt && r.bewegt.bilder} Bilder, ${r.bewegt && r.bewegt.maxAnim} Animationen`);
     fs.writeFileSync(path.join(AUS, 'bewegung.json'), JSON.stringify({ zeit: new Date().toISOString(), groesse: [W, H], grundlinie: { ...grund, rucklerMax, p95Max }, seiten: erg }, null, 1));
   }
-  await b.close();
+  await b.close(); await bk.close();
 })();
