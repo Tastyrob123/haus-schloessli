@@ -1,4 +1,4 @@
-# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 10:00 UTC
+# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 11:40 UTC
 
 Neuer Chat: zuerst diese Datei lesen, dann `CLAUDE.md`, dann beim «Nächsten genauen Schritt» weitermachen.
 
@@ -24,6 +24,11 @@ Offene Funde (fast alle Kriterium 35, Schrift in Knöpfen in WebKit 0,6–1,3 px
 5. **Kriterium 34 (Scrollen flüssig):** auf dem Runner überall rot, auch mit Grundlinie. Die Grundlinie misst seit 21:37 zwölf animierte Fotos; ob das reicht, zeigt erst der nächste Lauf. Lokal in Chromium ist alles flüssig.
 
 Um 01:40 UTC liefen drei Opus-Agenten auf die Punkte 1, 2 und 3+4. Ihr Stand ist nur, was committet ist (`git log`).
+
+## Stand 11:40 UTC (dritter Chat)
+- Lauf 9e14d83: **Kriterium 34 überall grün** (Messung in Chromium), nur noch 7 rote Felder: Hausdruckerei K10 Loch (5) und Schaufenster K4 Länderkarten (2).
+- Behoben: Schaufenster Länderkarten auf hellem Blatt (3061fb4); Hausdruckerei Luft um die Titellinie, Vorschaubilder neu (57c25f8, `[schnell]` über alles läuft).
+- Nächster Schritt: Ergebnis 57c25f8 lesen; bei null Funden Augenprüfung (je Werkzeug 15 Zustandsbilder, `augen.json`), `main` vorspulen (`git push origin claude/schloessli-nachtbau-auftrag-es1vpf:main`), Meldung nach AUFTRAG-NACHT.md.
 
 ## Stand 10:00 UTC (dritter Chat)
 - Eingecheckt: Besucherliste-Reparaturen und Prüftor-K4-Schärfungen (51721b1, Teilprüfung teil-84: Kartenpult/Schaufenster sauber, nur Einzelwort in der neuen Bildzeile → 4c… behoben), **K34 jetzt in Chromium gemessen** (9e2b3fd, Beleg README «K34 in Chromium»; WebKit bleibt für K37), Werkbank flüssiger (67c0efd: Material/Sticker unter Schwelle, Start halbiert, KI knapp), Hausdruckerei-Funde + vier Prüftor-Schärfungen + Vorschaubilder neu, 16 verwaiste Vorschaubilder mit Culinarium-/Wild-Side-Inhalt gelöscht (9e14d83, `[schnell]` über alles läuft).
