@@ -245,7 +245,7 @@
         const lu = v => Math.min(v, (zeit ? Z.text * c.u * k * 1.05 : xg) * 1.35 * 2.2);   // Luft nie über 2,2 Textzeilen, auch wenn der Titel mitwächst
         const items = [zeichen(c, zw), lu(zw * .42),
           i.ueber && tx(c, 'mono', i.ueber, bw, Z.mono * c.u * Math.min(k, 1.1), c.T.mono, { slot: 'ueber' }), i.ueber && lu(tg * .38),
-          titel, lu(tg * .5), linie(c, .08 * c.u), lu(tg * .55)];
+          titel, Math.min(lu(tg * .5), lu(1e9) * .42), linie(c, .08 * c.u), Math.min(lu(tg * .55), lu(1e9) * .42)];   // um die Linie zusammen höchstens 1,8 Textzeilen: in der Kachel ist die Linie unsichtbar dünn, sonst liest sich Titel–Satz als Loch (Prüftor K10, 4.11.2026)
         if (zeit) {   // Zeitleiste: Zeitspalte so breit wie die längste Zeit, Schritte an einer gemeinsamen Kante, der Block als Ganzes mittig
           const zg = Z.text * c.u * k * 1.05, gap = zg * 1.2;   // die Zeitleiste wächst mit der Gruppe (wenig Inhalt = grösser)
           const zeiten = zeit.map(z => tx(c, 'mono', z.wann, bw, zg * .8, c.T.mono, { ausr: 'l', slot: null, sperr: .04 }));
@@ -437,7 +437,7 @@
       return sauber([
         !o.ohneZeichen && zeichen(c, zw, null, L ? { x: o.links } : {}), !o.ohneZeichen && lu(zw * .42),
         i.ueber && tx(c, 'mono', i.ueber, bw, mg, c.T.mono, p({ slot: 'ueber' })), i.ueber && lu(tg * .38),
-        titel, lu(titel.gr * .5), linie(c, .08 * u, L ? { x: o.links } : {}), lu(titel.gr * .55),   // grosse Titel: Luft nie über zwei Textzeilen
+        titel, Math.min(lu(titel.gr * .5), lu(1e9) * .42), linie(c, .08 * u, L ? { x: o.links } : {}), Math.min(lu(titel.gr * .55), lu(1e9) * .42),   // um die Linie höchstens 1,8 Textzeilen (Prüftor K10)   // grosse Titel: Luft nie über zwei Textzeilen
         i.wann && tx(c, 'mono', i.wann, bw, mg * 1.25, c.T.mono, p({ slot: 'wann', sperr: .08 })), i.wann && lu(xg * .5),
         i.wo && ausgewogen(c, gliederSatz(tx(c, 'kursiv', i.wo, bw, xg, c.T.text, p({ slot: 'wo' })))), i.wo && lu(xg * 1.2),
         i.unter && ausgewogen(c, gliederSatz(tx(c, 'mono', i.unter, bw, mg, c.T.mono, p({ slot: 'unter' })))), i.unter && lu(xg * 1.1),
@@ -825,7 +825,12 @@
     const hG = gU - gO, breit = c.w - 2 * Math.max(6, .1 * c.u);
     const breite = e => { if (e.typ !== 'text') return e.w || 0; try { const m = DS.mess(e); return Math.min(e.w, m.bw || e.w); } catch (x) { return e.w; } };   // gesetzte Zeilenbreite, nicht die Satzbreite
     const wMax = Math.max(...gruppe.map(x => breite(x.e))); if (!hG || !wMax) return;
-    const f = Math.min(1 + extra / hG, breit / wMax, 1.6);
+    // sichtbare Lücken: Linien zählen nicht (in der Kachel dünner als ein Bildpunkt), nur Schrift und Zeichen trennen
+    const sichtbar = () => { const xs = gruppe.filter(x => x.e.typ !== 'linie').sort((p, q) => p.o - q.o), bs = [];
+      for (const x of xs) { const bd = bs[bs.length - 1]; if (bd && x.o < bd.u + .2) { bd.u = Math.max(bd.u, x.u); bd.xs.push(x); } else bs.push({ o: x.o, u: x.u, xs: [x] }); }
+      let g = 0; for (let n = 1; n < bs.length; n++) g = Math.max(g, bs[n].o - bs[n - 1].u); return { bs, g }; };
+    const v0 = sichtbar().g;
+    const f = Math.min(1 + extra / hG, breit / wMax, 1.6, v0 > 0 ? Math.max(1, max * .8 / v0) : 1.6);
     const oG = gO;
     function mitteRuecken() { const nO = Math.min(...gruppe.map(x => x.o)), nU = Math.max(...gruppe.map(x => x.u)), d2 = ((unten - nU) - (nO - oben)) / 2; gruppe.forEach(x => schieb(x, d2)); }
     if (f > 1.01) gruppe.forEach(x => { const e = x.e, mx = e.x + e.w / 2;
@@ -836,11 +841,19 @@
     // 3. stösst die Gruppe an die Breite und bleibt doch Luft: die Abstände zwischen ihren Teilen wachsen gleichmässig, nie zu einem neuen Loch
     const nO = Math.min(...gruppe.map(x => x.o)), nU = Math.max(...gruppe.map(x => x.u)), rest = (nO - oben - max) + (unten - nU - max);
     if (rest <= 0) return;
-    const baender = []; for (const x of [...gruppe].sort((p, q) => p.o - q.o)) { const bd = baender[baender.length - 1]; if (bd && x.o < bd.u + .2) { bd.u = Math.max(bd.u, x.u); bd.xs.push(x); } else baender.push({ o: x.o, u: x.u, xs: [x] }); }
+    const { bs: baender, g: innen } = sichtbar();
     if (baender.length < 3) return;
-    let innen = 0; for (let n = 1; n < baender.length; n++) innen = Math.max(innen, baender[n].o - baender[n - 1].u);
-    const je = Math.min(rest / (baender.length - 1), max * .8 - innen); if (je <= 0) return;
-    baender.forEach((bd, n) => bd.xs.forEach(x => schieb(x, n * je)));
+    // jede Lücke wächst für sich, keine über 80 % der Grenze; was eine grosse Lücke nicht nehmen kann, nehmen die kleinen (4.11.2026)
+    void innen; let offen = rest; const zu = baender.map(() => 0);
+    for (let runde = 0; runde < 4 && offen > .05; runde++) {
+      const frei = baender.map((bd, n) => n ? Math.max(0, max * .8 - (baender[n].o - baender[n - 1].u) - zu[n]) : 0), k = frei.filter(v => v > .01).length; if (!k) break;
+      const je = offen / k; baender.forEach((bd, n) => { if (!n) return; const d = Math.min(je, frei[n]); zu[n] += d; offen -= d; });
+    }
+    const linien = gruppe.filter(x => x.e.typ === 'linie');
+    let summe = 0; const verschub = zu.map(d => (summe += d));
+    linien.forEach(l => { let k = 0; baender.forEach((bd, n) => { if (bd.o <= l.o) k = n; }); l.k = k; });   // eine Linie geht mit der Schrift darüber
+    baender.forEach((bd, n) => bd.xs.forEach(x => schieb(x, verschub[n])));
+    linien.forEach(l => schieb(l, verschub[l.k]));
     mitteRuecken();
   }
   for (const k of Object.keys(V)) { const v = V[k]; if (!v || typeof v.bau !== 'function') continue; const bau = v.bau;
