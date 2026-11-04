@@ -33,7 +33,7 @@ CSS = """
 .ok .kurs .weg,.ok .kurs .welle{stroke:var(--gold)}
 .ok .kurs .pkt{fill:#faf4f4}.ok .kurs .da0{fill:var(--gold)}
 /* Schatten an der Hülle (drop-shadow folgt der Maske), Fläche Nacht mit Kerben an der Naht, Abriss Warmweiss */
-.tk{--ab:clamp(112px,22%,168px);--k:12px;color:#faf4f4;text-align:left;filter:drop-shadow(0 22px 26px rgba(8,7,10,.55)) drop-shadow(0 3px 6px rgba(8,7,10,.38))}
+.tk{--ab:clamp(112px,22%,168px);--k:12px;color:#faf4f4;text-align:left;border-radius:20px;box-shadow:0 22px 26px rgba(8,7,10,.55),0 3px 6px rgba(8,7,10,.38)}   /* Schatten als box-shadow statt drop-shadow-Filter über der Maske: beim Scrollen ohne Neuberechnung (Kriterium 34, 4.11.2026) */
 .tk__f{display:grid;grid-template-columns:minmax(0,1fr) var(--ab);border-radius:20px;overflow:hidden;background:linear-gradient(180deg,#1c1b21,#16151a);
   -webkit-mask:radial-gradient(circle at calc(100% - var(--ab)) 0,#0000 var(--k),#000 calc(var(--k) + .6px)) top/100% 51% no-repeat,radial-gradient(circle at calc(100% - var(--ab)) 100%,#0000 var(--k),#000 calc(var(--k) + .6px)) bottom/100% 51% no-repeat;
   mask:radial-gradient(circle at calc(100% - var(--ab)) 0,#0000 var(--k),#000 calc(var(--k) + .6px)) top/100% 51% no-repeat,radial-gradient(circle at calc(100% - var(--ab)) 100%,#0000 var(--k),#000 calc(var(--k) + .6px)) bottom/100% 51% no-repeat}

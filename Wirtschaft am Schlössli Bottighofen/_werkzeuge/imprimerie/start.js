@@ -656,7 +656,7 @@
     if (!t) return; t.dataset.lang = t.dataset.lang || t.placeholder;
     const g = getComputedStyle(t), c = (kurzPlatz.c = kurzPlatz.c || document.createElement('canvas').getContext('2d')), pg0 = getComputedStyle(t, "::placeholder"), pg = pg0.fontFamily ? pg0 : g; c.font = `${pg.fontStyle} ${pg.fontWeight} ${pg.fontSize} ${pg.fontFamily}`;   // 4.11.2026: ohne Schrift des Platzhalters (WebKit) die des Feldes
     if (!t.clientWidth) return;   // verborgenes Feld: beim Zeigen misst der ResizeObserver neu
-    t.placeholder = [t.dataset.lang, 'Etwa: ein Plakat', 'Beschreiben …'].find(x => c.measureText(x).width * 1.2 + 6 <= t.clientWidth - parseFloat(g.paddingLeft) - parseFloat(g.paddingRight)) || 'Beschreiben …';   // Tor 2: nie zweizeilig (Rand für Sperrung und Rundung)
+    t.placeholder = [t.dataset.lang, 'Etwa: ein Plakat', 'Beschreiben …'].find(x => c.measureText(x).width * 1.35 + 10 <= t.clientWidth - parseFloat(g.paddingLeft) - parseFloat(g.paddingRight)) || 'Beschreiben …';   // Tor 2: nie zweizeilig (Rand für Sperrung und Rundung)
   }
   ['startFrei', 'startDirekt'].forEach(id => { const t = document.getElementById(id); if (!t) return; kurzPlatz(t); if (window.ResizeObserver) new ResizeObserver(() => kurzPlatz(t)).observe(t); if (document.fonts) document.fonts.ready.then(() => kurzPlatz(t)); addEventListener('resize', () => requestAnimationFrame(() => kurzPlatz(t))); });   // 4.11.2026: auch beim Ändern der Fensterbreite (WebKit 1280: langer Platzhalter blieb stehen)
   /* Schnelle Prüfung 3.11.2026: auch das Suchfeld und das Auftragsfeld der Arten kürzen ihren Platzhalter, wenn das Fenster schmaler wird (nicht nur beim Öffnen) */

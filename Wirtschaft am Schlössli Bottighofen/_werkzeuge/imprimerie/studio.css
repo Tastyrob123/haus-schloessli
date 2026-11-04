@@ -45,7 +45,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-l
   font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;color:var(--t);
   background:linear-gradient(180deg,var(--o) 0%,var(--m) 46%,var(--u) 100%);
   box-shadow:inset 0 1px 0 var(--licht),inset 0 -3px 0 var(--kante),inset 0 0 0 1px rgba(70,100,144,.36),0 1px 1px rgba(6,14,27,.14),0 16px 26px -14px var(--tief);
-  transition:transform .55s var(--e2),box-shadow .55s var(--e2)}
+  transition:transform .55s var(--e2)}   /* K37 (Cloud-Prüfung 4.11.2026): nur transform bewegt sich */
 .kn::after,.knopf::after{content:'';position:absolute;z-index:-1;top:-20%;bottom:-20%;left:0;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.85) 50%,transparent);transform:translateX(-180%) skewX(-18deg)}
 .kn i,.knopf i{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,var(--ko),var(--ku));color:var(--kt);
   box-shadow:inset 0 1px 0 var(--klicht),inset 0 -2px 0 rgba(0,0,0,.4),0 0 0 1px rgba(154,184,228,.45),0 6px 12px -6px rgba(9,21,39,.55);transition:transform .6s var(--e2)}
@@ -101,7 +101,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-l
 .kopf__marke small{display:block;margin-top:6px;font:9.5px/1 var(--mono);letter-spacing:.28em;text-transform:uppercase;color:rgba(205,215,229,.7)}
 .kopf__mitte{flex:1;display:flex;flex-direction:column;align-items:center;min-width:0}
 .kopf__name{width:min(460px,100%);background:transparent;border:0;border-radius:10px;padding:4px 12px 2px;text-align:center;font:500 23px/1.15 var(--serif);color:#ebeff4;
-  text-shadow:0 1px 1px rgba(0,0,0,.4);transition:background .4s,box-shadow .4s}
+  text-shadow:0 1px 1px rgba(0,0,0,.4)}
 .kopf__name:hover{background:rgba(255,255,255,.04)}
 .kopf__name:focus{outline:none;background:rgba(0,0,0,.2);box-shadow:inset 0 1px 3px rgba(0,0,0,.45),0 0 0 1px rgba(154,184,228,.5)}
 .kopf__gespeichert{font:9px var(--mono);letter-spacing:.26em;text-transform:uppercase;color:var(--gold);opacity:0;transform:translateY(-3px);transition:opacity .6s,transform .6s var(--e1)}
@@ -142,7 +142,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-l
 .reiter button{position:relative;z-index:1;flex:1;border:0;background:none;padding:10px 4px;font:10.5px var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--leise);transition:color .45s}
 .reiter button.an{color:var(--navy)}
 .reiter__gleiter{position:absolute;z-index:0;top:4px;bottom:4px;left:0;width:0;border-radius:12px;background:linear-gradient(180deg,#fdfafa,#dde3ed);
-  box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(99,145,213,.32),0 6px 12px -6px rgba(15,35,66,.35);transition:transform .7s var(--e1),width .7s var(--e1)}
+  box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(99,145,213,.32),0 6px 12px -6px rgba(15,35,66,.35);transition:transform .7s var(--e1)}
 .tab{display:none;padding:22px 20px 44px}
 .tab.an{display:block;animation:tabAuf .7s var(--e1)}
 h2{font:500 30px/1.06 var(--serif);margin:2px 0 8px;color:var(--navy);letter-spacing:-.005em}
@@ -209,7 +209,7 @@ label>select,label>input,label>.hwahl{margin-top:7px!important;font:13px var(--s
 .vk{border:0;background:none;padding:0;text-align:center;animation:auf .9s var(--e1) both;animation-delay:calc(var(--i,0)*60ms)}
 .vk__bild{display:grid;place-items:center;aspect-ratio:1/1.08;border-radius:18px;margin-bottom:11px;overflow:hidden;position:relative;isolation:isolate;
   background:linear-gradient(180deg,#081323,#091526);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 0 0 1px rgba(154,184,228,.38),0 18px 26px -18px rgba(0,0,0,.7);
-  transition:transform .8s var(--e1),box-shadow .8s var(--e1)}
+  transition:transform .8s var(--e1)}
 .vk__bild::before{content:'';position:absolute;inset:0;z-index:-1;background:url('haeuser/schloessli/tapete-ui-dunkel.webp') 0 0/224px auto;opacity:.6}
 .vk__bild .blatt{position:relative;box-shadow:0 14px 22px -10px rgba(0,0,0,.75),0 2px 4px rgba(0,0,0,.4);transition:transform .9s var(--e1)}
 .vk:hover .vk__bild{transform:translateY(-5px) rotateX(6deg);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 0 0 1px rgba(170,188,216,.85),0 30px 36px -18px rgba(0,0,0,.75)}
@@ -259,7 +259,7 @@ label>select,label>input,label>.hwahl{margin-top:7px!important;font:13px var(--s
 .insel__zeichen{width:18px;height:18px;color:var(--gold);display:block;transition:transform .6s var(--e1)}
 .insel__trenn{width:1px;height:22px;margin:0 4px;background:linear-gradient(180deg,rgba(154,184,228,0),rgba(154,184,228,.5),rgba(154,184,228,0))}
 .seitenwahl{display:flex;gap:2px;padding:4px;border-radius:999px;background:linear-gradient(180deg,#050b13,#0d1e38);box-shadow:inset 0 2px 5px rgba(0,0,0,.6),0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(154,184,228,.28)}
-.seitenwahl button{height:32px;padding:0 14px;border:0;border-radius:999px;background:none;color:rgba(219,226,236,.7);font:9.5px var(--mono);letter-spacing:.13em;text-transform:uppercase;transition:color .35s,background .5s,box-shadow .5s}
+.seitenwahl button{height:32px;padding:0 14px;border:0;border-radius:999px;background:none;color:rgba(219,226,236,.7);font:9.5px var(--mono);letter-spacing:.13em;text-transform:uppercase;transition:color .35s}
 .seitenwahl button:hover{color:#fff}
 .seitenwahl button.an{color:var(--navy);background:linear-gradient(180deg,#d4dce9,#92a8ca);box-shadow:inset 0 1px 0 #f1f4f8,inset 0 -1px 0 rgba(22,51,94,.4),0 4px 8px -4px rgba(0,0,0,.6)}
 .seitenwahl button[data-seite="neu"]{width:32px;padding:0;font-size:16px;letter-spacing:0}
@@ -310,11 +310,11 @@ label>select,label>input,label>.hwahl{margin-top:7px!important;font:13px var(--s
 .gruppe+.gruppe::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,rgba(72,107,159,0),rgba(72,107,159,.38) 20%,rgba(72,107,159,.38) 80%,rgba(72,107,159,0))}
 .gruppe>label,.gruppe>.titel{display:block;margin-bottom:10px}
 .segment{display:flex;padding:3px;border-radius:14px;background:var(--kuhle);box-shadow:var(--kuhle-s)}
-.segment button{flex:1;border:0;background:none;padding:9px 4px;border-radius:11px;font:9.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--leise);transition:color .35s,background .5s,box-shadow .5s}
+.segment button{flex:1;border:0;background:none;padding:9px 4px;border-radius:11px;font:9.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--leise);transition:color .35s}
 .segment button:hover{color:var(--tinte)}
 .segment button.an{color:var(--navy);background:linear-gradient(180deg,#fdfafa,#dde3ed);box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(99,145,213,.35),0 5px 10px -5px rgba(15,35,66,.4)}
 .farben{display:flex;flex-wrap:wrap;gap:10px}
-.farben button{width:30px;height:30px;border-radius:50%;border:0;padding:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 -2px 3px rgba(0,0,0,.2),0 0 0 1px rgba(15,35,66,.18),0 4px 8px -4px rgba(15,35,66,.45);transition:transform .5s var(--e2),box-shadow .35s}
+.farben button{width:30px;height:30px;border-radius:50%;border:0;padding:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 -2px 3px rgba(0,0,0,.2),0 0 0 1px rgba(15,35,66,.18),0 4px 8px -4px rgba(15,35,66,.45);transition:transform .5s var(--e2)}
 .farben button:hover{transform:translateY(-2px) scale(1.1)}
 .farben button.an{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 0 0 2px #f0f3f7,0 0 0 3.5px var(--messing),0 6px 10px -4px rgba(15,35,66,.5)}
 .regler{display:grid;grid-template-columns:1fr 64px;gap:12px;align-items:center;margin:8px 0}
@@ -509,7 +509,7 @@ input[type=range]:active::-webkit-slider-thumb{transform:scale(1.18)}
 .wv{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:20px 14px;perspective:900px}
 .wv__k{border:0;background:none;padding:0;text-align:center;animation:auf .9s var(--e1) both;animation-delay:calc(.2s + var(--i,0)*60ms)}
 .wv__bild{display:grid;place-items:center;aspect-ratio:1/1.08;border-radius:18px;margin-bottom:10px;position:relative;isolation:isolate;overflow:hidden;
-  background:linear-gradient(180deg,#081323,#091526);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 0 0 1px rgba(154,184,228,.38),0 18px 26px -18px rgba(0,0,0,.7);transition:transform .8s var(--e1),box-shadow .8s var(--e1)}
+  background:linear-gradient(180deg,#081323,#091526);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 0 0 1px rgba(154,184,228,.38),0 18px 26px -18px rgba(0,0,0,.7);transition:transform .8s var(--e1)}
 .wv__bild::before{content:'';position:absolute;inset:0;z-index:-1;background:url('haeuser/schloessli/tapete-ui-dunkel.webp') 0 0/224px auto;opacity:.6}
 .wv__bild .blatt{box-shadow:0 14px 22px -10px rgba(0,0,0,.75);transition:transform .9s var(--e1)}
 .wv__k:hover .wv__bild{transform:translateY(-5px) rotateX(6deg);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 0 0 1.5px #99b1d5,0 30px 36px -18px rgba(0,0,0,.75)}
@@ -1639,6 +1639,7 @@ textarea.kopf__name.zwei{font-size:16px;line-height:1.2;padding:3px 10px}
 @media (max-width:1380px){#btnNeu{width:36px;height:36px;padding:0!important;justify-content:center}}
 /* K2/K8: Platzhalter gut lesbar (Robert: «kann man nicht wirklich erkennen und lesen») */
 .ms-feld textarea::placeholder,.start__suche input::placeholder,#startFrei::placeholder,#startDirekt::placeholder,#startAuftrag::placeholder,#kampFrei::placeholder{color:rgba(15,35,66,.72);opacity:1}
+#startFrei::placeholder,#startDirekt::placeholder{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}   /* Cloud-Prüfung WebKit 4.11.2026 (K2): Platzhalter nie zweizeilig */
 /* K2: Auswahlfelder zeigen den ganzen Wert, notfalls in zwei Zeilen, nie «…» */
 .hwahl-wert{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;text-wrap:balance}
 /* K3: Vorlagen-Kacheln einer Reihe gleich hoch */
