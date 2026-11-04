@@ -1,4 +1,4 @@
-# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 04:30 UTC
+# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 06:45 UTC
 
 Neuer Chat: zuerst diese Datei lesen, dann `CLAUDE.md`, dann beim «Nächsten genauen Schritt» weitermachen.
 
@@ -24,6 +24,13 @@ Offene Funde (fast alle Kriterium 35, Schrift in Knöpfen in WebKit 0,6–1,3 px
 5. **Kriterium 34 (Scrollen flüssig):** auf dem Runner überall rot, auch mit Grundlinie. Die Grundlinie misst seit 21:37 zwölf animierte Fotos; ob das reicht, zeigt erst der nächste Lauf. Lokal in Chromium ist alles flüssig.
 
 Um 01:40 UTC liefen drei Opus-Agenten auf die Punkte 1, 2 und 3+4. Ihr Stand ist nur, was committet ist (`git log`).
+
+## Stand 06:45 UTC (dritter Chat, Sitzung session_0189oeKh7869Pv9w5X38SPb3)
+- Voriger Chat seit 04:37 ohne Commit; übernommen.
+- Messprobe b2a249e gelesen (Tafel `teil-77`): **Hafenbüro** 38 Ruckler (Grundlinie 1), «ohne Schatten» 16, «ohne alles» 2; **Markenbuch-Hausregeln** 2 Ruckler, rot nur wegen Probe. (README-Beleg zu 9d7c664 nennt die beiden vertauscht.)
+- Wild Side (fertig abgegeben) hatte auf dem Runner ebenfalls Kriterium 34 in allen Werkzeugen rot (375 Felder) – WebKit unter Linux ohne GPU.
+- Prüfung über alles auf dem jetzigen Stand gestartet (dieser Commit, `[schnell]`).
+- Noch offen aus fb2eb3a ausser K34: Schaufenster K4 (3), Besucherliste K10 (1), Hausdruckerei K4 (6) / K10 (13) / K35 (1), Mail K5/K10/K35, Werkbank-Mails K5.
 
 ## Stand 04:30 UTC
 - Prüfung über alles auf fb2eb3a: **12.488 → 50 Funde** (Tafel `ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-schnell/`). Werkbank ohne Kriterium 35.
