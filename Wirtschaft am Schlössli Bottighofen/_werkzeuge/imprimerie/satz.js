@@ -163,7 +163,7 @@
       const fam = ((M.schriften && M.schriften[el.rolle] && M.schriften[el.rolle].familie) || '').replace(/\s+\d+$/, '').replace(/'/g, '');   // Familienname des Hauses als Rückfall (für Prüfung und Barrierefreiheit lesbar)
       st += `width:${el.w * S}px;font-family:'DS-${el.rolle}'${fam ? `,'${fam}'` : ''};font-size:${el.gr * S}px;line-height:${el.zeile || 1.2};letter-spacing:${el.sperr || 0}em;` +
         `text-align:${{ l: 'left', c: 'center', r: 'right' }[el.ausr || 'l']};color:${DS.farbe(M, el.farbe)};opacity:${el.deck ?? 1};` +
-        `white-space:pre-wrap;overflow-wrap:${/^(titel|kapitale|plakat|plakatfett|kopf)$/.test(el.rolle) ? 'normal' : 'break-word'};font-variant-ligatures:none;font-feature-settings:'liga' 0,'clig' 0;text-rendering:geometricPrecision;` +
+        `white-space:pre-wrap;overflow-wrap:normal;font-variant-ligatures:none;font-feature-settings:'liga' 0,'clig' 0;text-rendering:geometricPrecision;` +
         (el.gross ? 'text-transform:uppercase;' : '') +
         (el.schatten ? (t => `text-shadow:${t.dx * S}px ${t.dy * S}px 0 ${t.hart}` + (t.glow ? `,0 0 ${t.blur * S}px ${t.glow}` : '') + ';')(DS.kopfTiefe(DS.farbe(M, el.farbe), el.schatten, el.gr)) : '');   // Kopfzeile: harte Kante, gedruckter Schatten (29.10.)
       d.textContent = el.text;
@@ -196,6 +196,9 @@
       d.innerHTML = DS.zeichenSvg(M, DS.farbe(M, el.farbe), el);
     }
     d.style.cssText = st;
+    // Kein Bruch mitten im Wort («SCHÖNST/E», 4.11.2026): passt das längste Wort nicht in die Breite, wird die Schrift dieses Feldes kleiner statt das Wort zu teilen
+    if (el.typ === 'text') { const passe = () => { if (!d.isConnected || !d.clientWidth || d.scrollWidth <= d.clientWidth + 1) return; d.style.fontSize = (parseFloat(d.style.fontSize) * d.clientWidth / d.scrollWidth * .98) + 'px'; };
+      requestAnimationFrame(passe); if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => requestAnimationFrame(passe)); }
     return d;
   };
 

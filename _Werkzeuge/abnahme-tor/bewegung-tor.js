@@ -25,9 +25,10 @@ const messeScroll = async (p) => p.evaluate(async () => {
   await new Promise(r => setTimeout(r, 1800)); sammle(); laufend = false;
   const f = frames.slice(2).filter(x => x < 1000); const sortiert = [...f].sort((a, b) => a - b);
   // Stücke im Fenster, die nach dem Scrollen unsichtbar geblieben sind (Auftritt nicht ausgelöst)
+  // Ausgenommen: natives <select> mit opacity:0 und pointer-events:none unter einem eigenen Auswahlknopf (lib/auswahl.css .hwahl-nativ, Hausdruckerei Mail-Seite, 4.11.2026) – absichtlich unsichtbar, kein Auftritt
   const unsichtbar = []; for (let y = 0; y <= hoch; y += innerHeight * .8) { scrollTo(0, y); await new Promise(r => setTimeout(r, 900));
     for (const e of document.querySelectorAll('body *')) { const r = e.getBoundingClientRect(); if (r.width < 30 || r.height < 14 || r.bottom < 0 || r.top > innerHeight) continue;
-      const c = getComputedStyle(e); if (c.display === 'none' || c.visibility === 'hidden' || +c.opacity >= .1) continue; let a = e.parentElement, schon = false; while (a) { const ca = getComputedStyle(a); if (+ca.opacity < .1 || ca.visibility === 'hidden' || ca.display === 'none') { schon = true; break; } a = a.parentElement; }
+      const c = getComputedStyle(e); if (c.display === 'none' || c.visibility === 'hidden' || +c.opacity >= .1) continue; if (e.tagName === 'SELECT' && c.pointerEvents === 'none') continue; let a = e.parentElement, schon = false; while (a) { const ca = getComputedStyle(a); if (+ca.opacity < .1 || ca.visibility === 'hidden' || ca.display === 'none') { schon = true; break; } a = a.parentElement; }
       if (!schon && (e.innerText || '').trim() || (!schon && e.querySelector('img'))) unsichtbar.push({ sel: e.tagName.toLowerCase() + '.' + String(e.className.baseVal ?? e.className).trim().split(/\s+/).slice(0, 2).join('.'), text: (e.innerText || '').trim().slice(0, 40), y: Math.round(r.top + scrollY) }); } }
   const u = [...new Map(unsichtbar.map(x => [x.sel + x.text, x])).values()].slice(0, 20);
   return { bilder: f.length, ruckler: f.filter(x => x > 50).length, p95: sortiert[Math.floor(sortiert.length * .95)] || 0, mittel: f.reduce((a, b) => a + b, 0) / Math.max(1, f.length), maxAnim, animiert: [...animiert].slice(0, 30), eigenschaften: [...eigenschaften], unsichtbar: u };
