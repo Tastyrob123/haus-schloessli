@@ -1,0 +1,3262 @@
+[
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "«entwickeln.» steht allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "«entwickeln.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[1280] «entwickeln.» steht allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[1280] «entwickeln.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[390] «entwickeln.» steht allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[390] «entwickeln.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[1000] «entwickeln.» steht allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[1000] «entwickeln.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "003",
+"name": "Bild gross ansehen: Der Aufbau auf einen",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "«entwickeln.» steht allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "003",
+"name": "Bild gross ansehen: Der Aufbau auf einen",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "«entwickeln.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "003",
+"name": "Bild gross ansehen: Der Aufbau auf einen",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[1280] «entwickeln.» steht allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "003",
+"name": "Bild gross ansehen: Der Aufbau auf einen",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[1280] «entwickeln.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "003",
+"name": "Bild gross ansehen: Der Aufbau auf einen",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[390] «entwickeln.» steht allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "003",
+"name": "Bild gross ansehen: Der Aufbau auf einen",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[390] «entwickeln.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "003",
+"name": "Bild gross ansehen: Der Aufbau auf einen",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[1000] «entwickeln.» steht allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "003",
+"name": "Bild gross ansehen: Der Aufbau auf einen",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE SICH DIE BESUCHE ENTWICKELN.",
+"info": "[1000] «entwickeln.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article#k08 > div.kap__t > h2"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "009",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Zur Reservation",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 8 %, unten 22 % frei",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "009",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Zur Reservation",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 8 %, unten 20 % frei",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "009",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Zur Reservation",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 10 %, unten 24 % frei",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "011",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Kurzer Rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "011",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "«Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "011",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Kurzer Rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[1280] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "011",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[1280] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "011",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Kurzer Rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[390] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "011",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[390] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "011",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Kurzer Rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[1000] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "011",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[1000] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "«Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[1280] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[1280] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[390] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[390] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[1000] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[1000] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[390 Menü offen] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "002",
+"name": "?rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[390 Menü offen] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "008",
+"name": "Zur Reservation",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 8 %, unten 22 % frei",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "008",
+"name": "Zur Reservation",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 8 %, unten 20 % frei",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "008",
+"name": "Zur Reservation",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 10 %, unten 24 % frei",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "010",
+"name": "Kurzer Rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "010",
+"name": "Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "«Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "010",
+"name": "Kurzer Rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[1280] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "010",
+"name": "Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[1280] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "010",
+"name": "Kurzer Rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[390] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "010",
+"name": "Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[390] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "010",
+"name": "Kurzer Rundgang",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[1000] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "010",
+"name": "Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DIE BESUCHERLISTE",
+"info": "[1000] «Besucherliste» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "017",
+"name": "?rundgang → WEITER",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "017",
+"name": "?rundgang → WEITER",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[1280] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "017",
+"name": "?rundgang → WEITER",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[390] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "017",
+"name": "?rundgang → WEITER",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[1000] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "017",
+"name": "?rundgang → WEITER",
+"k": 35,
+"art": "text-mitte",
+"text": "WEITER",
+"info": "[390 Menü offen] Schrift 1.0 px zu tief (Glyphen 8 px hoch in Kasten 42 px)",
+"sel": "div.rdg-karte > div.rdg-fuss > button.rdg-los"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "002",
+"name": "WERKZEUG ÖFFNEN",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[1280] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "002",
+"name": "WERKZEUG ÖFFNEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "002",
+"name": "WERKZEUG ÖFFNEN",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[390] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "002",
+"name": "WERKZEUG ÖFFNEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "002",
+"name": "WERKZEUG ÖFFNEN",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[390 Menü offen] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "004",
+"name": "WERKZEUG ÖFFNEN → Das wurde gefragt 2",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "004",
+"name": "WERKZEUG ÖFFNEN → Das wurde gefragt 2",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "005",
+"name": "WERKZEUG ÖFFNEN → Vom Team nachgetragen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "005",
+"name": "WERKZEUG ÖFFNEN → Vom Team nachgetragen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "006",
+"name": "WERKZEUG ÖFFNEN → Das weiss der Chat",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "007",
+"name": "WERKZEUG ÖFFNEN → Kurzer Rundgang",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "008",
+"name": "WERKZEUG ÖFFNEN → Fragen ansehen",
+"k": 35,
+"art": "text-mitte",
+"text": "OHNE ANTWORT · 2",
+"info": "Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div#ansicht > div.filter > div.wahl2 > button"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "008",
+"name": "WERKZEUG ÖFFNEN → Fragen ansehen",
+"k": 35,
+"art": "text-mitte",
+"text": "OHNE ANTWORT · 2",
+"info": "[1280] Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div#ansicht > div.filter > div.wahl2 > button"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "008",
+"name": "WERKZEUG ÖFFNEN → Fragen ansehen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "008",
+"name": "WERKZEUG ÖFFNEN → Fragen ansehen",
+"k": 35,
+"art": "text-mitte",
+"text": "OHNE ANTWORT · 2",
+"info": "[390] Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div#ansicht > div.filter > div.wahl2 > button"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "008",
+"name": "WERKZEUG ÖFFNEN → Fragen ansehen",
+"k": 35,
+"art": "text-mitte",
+"text": "OHNE ANTWORT · 2",
+"info": "[1000] Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div#ansicht > div.filter > div.wahl2 > button"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[1280] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "001",
+"name": "Start",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[390] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "001",
+"name": "Start",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[390 Menü offen] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "002",
+"name": "?rundgang",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "002",
+"name": "?rundgang",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "002",
+"name": "?rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[390 Menü offen] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "004",
+"name": "Das wurde gefragt 2",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "004",
+"name": "Das wurde gefragt 2",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "005",
+"name": "Vom Team nachgetragen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "005",
+"name": "Vom Team nachgetragen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "006",
+"name": "Das weiss der Chat",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "007",
+"name": "Kurzer Rundgang",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "008",
+"name": "Fragen ansehen",
+"k": 35,
+"art": "text-mitte",
+"text": "OHNE ANTWORT · 2",
+"info": "Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div#ansicht > div.filter > div.wahl2 > button"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "008",
+"name": "Fragen ansehen",
+"k": 35,
+"art": "text-mitte",
+"text": "OHNE ANTWORT · 2",
+"info": "[1280] Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div#ansicht > div.filter > div.wahl2 > button"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "008",
+"name": "Fragen ansehen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "008",
+"name": "Fragen ansehen",
+"k": 35,
+"art": "text-mitte",
+"text": "OHNE ANTWORT · 2",
+"info": "[390] Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div#ansicht > div.filter > div.wahl2 > button"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "008",
+"name": "Fragen ansehen",
+"k": 35,
+"art": "text-mitte",
+"text": "OHNE ANTWORT · 2",
+"info": "[1000] Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div#ansicht > div.filter > div.wahl2 > button"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.aktiv > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "013",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[1280] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "013",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "013",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[390] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "013",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "013",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[390 Menü offen] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "014",
+"name": "?rundgang → WEITER",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "014",
+"name": "?rundgang → WEITER",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "014",
+"name": "?rundgang → WEITER",
+"k": 7,
+"art": "einzelwort",
+"text": "Are the Tortelloni vegetarian?",
+"info": "[390 Menü offen] «vegetarian?» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.re-liste.re-qliste > button.re-a.re-q > span.re-a__n > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "015",
+"name": "Eingang 5 → RESERVATION 4",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "016",
+"name": "Eingang 5 → BANKETT 3",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "017",
+"name": "Eingang 5 → GUTSCHEIN 0",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "018",
+"name": "Eingang 5 → NEU 4",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "019",
+"name": "Eingang 5 → OFFEN 7",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "020",
+"name": "Eingang 5 → ERLEDIGT 1",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "021",
+"name": "Eingang 5 → NUR TEXT",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "021",
+"name": "Eingang 5 → NUR TEXT",
+"k": 35,
+"art": "text-mitte",
+"text": "NUR TEXT",
+"info": "[390] Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "section.re-post.re-auf > div.re-post__kopf > div.wahl2.re-modus > button"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "022",
+"name": "Eingang 5 → Neu schreiben lassen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "022",
+"name": "Eingang 5 → Neu schreiben lassen",
+"k": 35,
+"art": "text-mitte",
+"text": "NUR TEXT",
+"info": "[390] Schrift 0.5 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "section.re-post.re-auf > div.re-post__kopf > div.wahl2.re-modus > button"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "023",
+"name": "Das wurde gefragt 2 → ANTWORT NACHTRAGEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "024",
+"name": "Vom Team nachgetragen → ANTWORT OHNE FRAGE ANLEGEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "025",
+"name": "Das weiss der Chat → ANGABE HINZUFÜGEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "026",
+"name": "Das weiss der Chat → Öffnungszeiten & Reservation 7 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "026",
+"name": "Das weiss der Chat → Öffnungszeiten & Reservation 7 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "027",
+"name": "Das weiss der Chat → Karte & Lunch 7 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "027",
+"name": "Das weiss der Chat → Karte & Lunch 7 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "028",
+"name": "Das weiss der Chat → Lästermeile 4 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "028",
+"name": "Das weiss der Chat → Lästermeile 4 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "029",
+"name": "Das weiss der Chat → Wein 3 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "029",
+"name": "Das weiss der Chat → Wein 3 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "030",
+"name": "Das weiss der Chat → Bankette & Gruppen 7 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "030",
+"name": "Das weiss der Chat → Bankette & Gruppen 7 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "031",
+"name": "Das weiss der Chat → Gutschein 3 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "031",
+"name": "Das weiss der Chat → Gutschein 3 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "032",
+"name": "Das weiss der Chat → Anlässe & Events 4 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "032",
+"name": "Das weiss der Chat → Anlässe & Events 4 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "033",
+"name": "Das weiss der Chat → Hausregeln (AGB) 2 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "033",
+"name": "Das weiss der Chat → Hausregeln (AGB) 2 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "034",
+"name": "Das weiss der Chat → Lage, Anreise & Geschichte 6 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "034",
+"name": "Das weiss der Chat → Lage, Anreise & Geschichte 6 ANGABEN",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "035",
+"name": "Das weiss der Chat → Veranstaltungen NOCH LEER",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "035",
+"name": "Das weiss der Chat → Veranstaltungen NOCH LEER",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "036",
+"name": "Das weiss der Chat → Fragen & Antworten NOCH LEER",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "036",
+"name": "Das weiss der Chat → Fragen & Antworten NOCH LEER",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390 Menü offen] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "037",
+"name": "Das weiss der Chat → Adresse Seestrasse 50, 8598 Bottighofen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "038",
+"name": "Das weiss der Chat → Telefon und E-Mail +41 71 688 90",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "039",
+"name": "Das weiss der Chat → Instagram @schloessli_bottighofen",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "040",
+"name": "Das weiss der Chat → Lage direkt im Hafen von Bottighofen, mit",
+"k": 2,
+"art": "gekuerzt",
+"text": "DAS RESERVATIONSBUCH",
+"info": "[390] Text 143 px breit in Kasten 143×13, abgeschnitten (mit …)",
+"sel": "header#kopf > a.wo-marke-w > span > b"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "article#k05 > figure.kap__b > button.bild"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "article#k06 > figure.kap__b > button.bild"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "article#k07 > figure.kap__b > button.bild"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "article#k08 > figure.kap__b > button.bild"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "article#k09 > figure.kap__b > button.bild"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "«spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "[1280] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "[1280] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "[1280] «spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "[390] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "[390] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "[390] «spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "SIE, HERZLICH UND UNKOMPLIZIERT",
+"info": "[390] «unkompliziert» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.innen > ol.hr > li > h3"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "[1000] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "[1000] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "007",
+"name": "DAS MARKENBUCH ÖFFNEN → Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "[1000] «spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "008",
+"name": "DAS MARKENBUCH ÖFFNEN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "«Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "008",
+"name": "DAS MARKENBUCH ÖFFNEN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "[1280] «Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "008",
+"name": "DAS MARKENBUCH ÖFFNEN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "[390] «Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv-anleitung",
+"zustand": "008",
+"name": "DAS MARKENBUCH ÖFFNEN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "[1000] «Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "«spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "[1280] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "[1280] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "[1280] «spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "[390] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "[390] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "[390] «spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "SIE, HERZLICH UND UNKOMPLIZIERT",
+"info": "[390] «unkompliziert» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.innen > ol.hr > li > h3"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "[1000] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "[1000] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "[1000] «spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "003",
+"name": "RICHTIG Schwarz auf Hell",
+"k": 35,
+"art": "text-mitte",
+"text": "ZURÜCK ZU DEN HAUSREGELN",
+"info": "Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "main.rfk.hell > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "003",
+"name": "RICHTIG Schwarz auf Hell",
+"k": 35,
+"art": "text-mitte",
+"text": "ZURÜCK ZU DEN HAUSREGELN",
+"info": "[1280] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "main.rfk.hell > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "003",
+"name": "RICHTIG Schwarz auf Hell",
+"k": 35,
+"art": "text-mitte",
+"text": "ZURÜCK ZU DEN HAUSREGELN",
+"info": "[390] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "main.rfk.hell > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "003",
+"name": "RICHTIG Schwarz auf Hell",
+"k": 35,
+"art": "text-mitte",
+"text": "ZURÜCK ZU DEN HAUSREGELN",
+"info": "[1000] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "main.rfk.hell > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "007",
+"name": "DAS MARKENBUCH DIE HAUSREGELN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "«Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "007",
+"name": "DAS MARKENBUCH DIE HAUSREGELN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "[1280] «Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "007",
+"name": "DAS MARKENBUCH DIE HAUSREGELN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "[390] «Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv-buch",
+"zustand": "007",
+"name": "DAS MARKENBUCH DIE HAUSREGELN → Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "[1000] «Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "«spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "[1280] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "[1280] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "[1280] «spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "[390] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "[390] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "[390] «spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "SIE, HERZLICH UND UNKOMPLIZIERT",
+"info": "[390] «unkompliziert» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.innen > ol.hr > li > h3"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH RESERVIEREN",
+"info": "[1000] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.welten.welten--eins > article.wt > div.wt__h.hell > span.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE REGELN ANSEHEN",
+"info": "[1000] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "section#logo > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "005",
+"name": "Die Hausregeln LESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "WIE DAS HAUS SPRICHT.",
+"info": "[1000] «spricht.» allein in der letzten Zeile (2 Zeilen)",
+"sel": "section#ton > div.innen > div.kopf > h2"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "006",
+"name": "Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "«Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "006",
+"name": "Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "[1280] «Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "006",
+"name": "Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "[390] «Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "006",
+"name": "Kurzer Rundgang",
+"k": 7,
+"art": "einzelwort",
+"text": "DAS IST DAS MARKENBUCH",
+"info": "[1000] «Markenbuch» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.rdg-karte > h3"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "016",
+"name": "Die Hausregeln LESEN → RICHTIG Schwarz auf Hell",
+"k": 35,
+"art": "text-mitte",
+"text": "ZURÜCK ZU DEN HAUSREGELN",
+"info": "Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "main.rfk.hell > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "016",
+"name": "Die Hausregeln LESEN → RICHTIG Schwarz auf Hell",
+"k": 35,
+"art": "text-mitte",
+"text": "ZURÜCK ZU DEN HAUSREGELN",
+"info": "[1280] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "main.rfk.hell > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "016",
+"name": "Die Hausregeln LESEN → RICHTIG Schwarz auf Hell",
+"k": 35,
+"art": "text-mitte",
+"text": "ZURÜCK ZU DEN HAUSREGELN",
+"info": "[390] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "main.rfk.hell > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "plakatarchiv",
+"zustand": "016",
+"name": "Die Hausregeln LESEN → RICHTIG Schwarz auf Hell",
+"k": 35,
+"art": "text-mitte",
+"text": "ZURÜCK ZU DEN HAUSREGELN",
+"info": "[1000] Schrift 0.8 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "main.rfk.hell > div.innen > p.mitte > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "schaufenster-anleitung",
+"zustand": "019",
+"name": "DAS SCHAUFENSTER ANLEITUNG · WIRTSCHAFT AM SCHLÖSSLI → Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.91, Spanne 3.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster-anleitung",
+"zustand": "019",
+"name": "DAS SCHAUFENSTER ANLEITUNG · WIRTSCHAFT AM SCHLÖSSLI → Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.6, Spanne 2.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster-anleitung",
+"zustand": "019",
+"name": "DAS SCHAUFENSTER ANLEITUNG · WIRTSCHAFT AM SCHLÖSSLI → Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.6, Spanne 2.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "018",
+"name": "Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.91, Spanne 3.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "018",
+"name": "Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.6, Spanne 2.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "018",
+"name": "Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.6, Spanne 2.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "023",
+"name": "Startseite → Ein Teller von oben auf dem blauen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "023",
+"name": "Startseite → Ein Teller von oben auf dem blauen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "023",
+"name": "Startseite → Ein Teller von oben auf dem blauen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "024",
+"name": "Startseite → Leere blaue Stühle am Wasser, dahinter die",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "024",
+"name": "Startseite → Leere blaue Stühle am Wasser, dahinter die",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "024",
+"name": "Startseite → Leere blaue Stühle am Wasser, dahinter die",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "025",
+"name": "Startseite → Gedeckte Tische unter den Platanen, Sonnenschirme, dahinter",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "025",
+"name": "Startseite → Gedeckte Tische unter den Platanen, Sonnenschirme, dahinter",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "025",
+"name": "Startseite → Gedeckte Tische unter den Platanen, Sonnenschirme, dahinter",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "028",
+"name": "Startseite → Gäste am Tisch im Schatten des Baums",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "028",
+"name": "Startseite → Gäste am Tisch im Schatten des Baums",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "028",
+"name": "Startseite → Gäste am Tisch im Schatten des Baums",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "029",
+"name": "Startseite → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "029",
+"name": "Startseite → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "029",
+"name": "Startseite → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "030",
+"name": "Ihr Abend → Lounge mit Champagner am Ufer, dahinter der",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "030",
+"name": "Ihr Abend → Lounge mit Champagner am Ufer, dahinter der",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "030",
+"name": "Ihr Abend → Lounge mit Champagner am Ufer, dahinter der",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "031",
+"name": "Ihr Abend → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "031",
+"name": "Ihr Abend → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "031",
+"name": "Ihr Abend → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "032",
+"name": "Ihr Abend → Blaue Stühle auf der Terrasse am Mittag,",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "032",
+"name": "Ihr Abend → Blaue Stühle auf der Terrasse am Mittag,",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "032",
+"name": "Ihr Abend → Blaue Stühle auf der Terrasse am Mittag,",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "033",
+"name": "Ihr Abend → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "033",
+"name": "Ihr Abend → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "033",
+"name": "Ihr Abend → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "034",
+"name": "Karte & Wein → WEINKARTE",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 1.04, Spanne 5.0)",
+"sel": "div#ws-gruppen > details.ws-gr > div.ws-fotos"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "034",
+"name": "Karte & Wein → WEINKARTE",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 1.15, Spanne 6.0)",
+"sel": "div#ws-gruppen > details.ws-gr > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "037",
+"name": "Feiern → Blaue Stühle auf der Terrasse am Mittag,",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "037",
+"name": "Feiern → Blaue Stühle auf der Terrasse am Mittag,",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "037",
+"name": "Feiern → Blaue Stühle auf der Terrasse am Mittag,",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "038",
+"name": "Feiern → Schlössli Wirtschaft by Christian Kuchler",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "038",
+"name": "Feiern → Schlössli Wirtschaft by Christian Kuchler",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "038",
+"name": "Feiern → Schlössli Wirtschaft by Christian Kuchler",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "039",
+"name": "Feiern → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "039",
+"name": "Feiern → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "039",
+"name": "Feiern → ",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "040",
+"name": "Feiern → Die Wirtschaft am Schlössli im ehemaligen Hafenmeistergebäude",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "040",
+"name": "Feiern → Die Wirtschaft am Schlössli im ehemaligen Hafenmeistergebäude",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "040",
+"name": "Feiern → Die Wirtschaft am Schlössli im ehemaligen Hafenmeistergebäude",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "header#ws-kopf > div.wo-kopf__r > a.wo-kn.wo-kn--rund"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS SCHAUFENSTER ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel.m-tafel--stand > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS KARTENPULT ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE HAUSDRUCKEREI ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS RESERVATIONSBUCH ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS MARKENBUCH ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE BESUCHERLISTE ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.13, Spanne 0.0)",
+"sel": "div.m-saal__feld > div.m-saal__links > div.m-stuecke.m-stuecke--fotos > figure.m-stueck.m-stueck--foto"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.22, Spanne 1.0)",
+"sel": "div.m-saal__feld > div.m-saal__links > div.m-stuecke.m-stuecke--fotos > figure.m-stueck.m-stueck--foto"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.15, Spanne 1.0)",
+"sel": "div.m-saal__feld > div.m-saal__links > div.m-stuecke.m-stuecke--fotos > figure.m-stueck.m-stueck--foto"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.2, Spanne 1.0)",
+"sel": "div.m-saal__feld > div.m-saal__links > div.m-stuecke.m-stuecke--fotos > figure.m-stueck.m-stueck--foto"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.15, Spanne 1.0)",
+"sel": "div.m-saal__feld > div.m-saal__links > div.m-stuecke.m-stuecke--fotos > figure.m-stueck.m-stueck--foto"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.m-saal__feld > div.m-saal__links > div.m-stuecke.m-stuecke--fotos > figure.m-stueck.m-stueck--foto"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS SCHAUFENSTER ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel.m-tafel--stand > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS KARTENPULT ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE HAUSDRUCKEREI ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS RESERVATIONSBUCH ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS MARKENBUCH ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE BESUCHERLISTE ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS SCHAUFENSTER ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel.m-tafel--stand > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS KARTENPULT ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE HAUSDRUCKEREI ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS RESERVATIONSBUCH ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS MARKENBUCH ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE BESUCHERLISTE ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS SCHAUFENSTER ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel.m-tafel--stand > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS KARTENPULT ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE HAUSDRUCKEREI ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS RESERVATIONSBUCH ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS MARKENBUCH ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE BESUCHERLISTE ÖFFNEN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS SCHAUFENSTER ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel.m-tafel--stand > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS KARTENPULT ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE HAUSDRUCKEREI ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS RESERVATIONSBUCH ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS MARKENBUCH ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE BESUCHERLISTE ÖFFNEN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS SCHAUFENSTER ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel.m-tafel--stand > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS KARTENPULT ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE HAUSDRUCKEREI ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS RESERVATIONSBUCH ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > p > a.knopf"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DAS MARKENBUCH ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div > a.knopf.knopf--dunkel"
+},
+{
+"werkzeug": "tresen",
+"zustand": "003",
+"name": "?rundgang → ÜBERSPRINGEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIE BESUCHERLISTE ÖFFNEN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 54 px)",
+"sel": "div.m-saal__feld > div > div.m-tafel > a.knopf.knopf--dunkel"
+}
+]

@@ -1,0 +1,12 @@
+[
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 2,
+"art": "platzhalter",
+"text": "Etwa: ein Aushang zu den Ferien",
+"info": "[1280] Platzhalter braucht 2 Zeilen (50 px), Feld 34 px hoch: «Etwa: ein Aushang zu den Ferien» abgeschnitten",
+"sel": "textarea#startDirekt"
+}
+]

@@ -1,0 +1,42 @@
+[
+{
+"werkzeug": "pairing-karte",
+"zustand": "016",
+"name": "?rundgang → ",
+"k": 2,
+"art": "gekuerzt",
+"text": "",
+"info": "Eingabe 551 px in Feld 504 px",
+"sel": "input#f-0"
+},
+{
+"werkzeug": "pairing-karte",
+"zustand": "016",
+"name": "?rundgang → ",
+"k": 2,
+"art": "gekuerzt",
+"text": "",
+"info": "[1280] Eingabe 551 px in Feld 504 px",
+"sel": "input#f-0"
+},
+{
+"werkzeug": "pairing-karte",
+"zustand": "016",
+"name": "?rundgang → ",
+"k": 2,
+"art": "gekuerzt",
+"text": "",
+"info": "[390] Eingabe 551 px in Feld 306 px",
+"sel": "input#f-0"
+},
+{
+"werkzeug": "pairing-karte",
+"zustand": "016",
+"name": "?rundgang → ",
+"k": 2,
+"art": "gekuerzt",
+"text": "",
+"info": "[1000] Eingabe 551 px in Feld 449 px",
+"sel": "input#f-0"
+}
+]

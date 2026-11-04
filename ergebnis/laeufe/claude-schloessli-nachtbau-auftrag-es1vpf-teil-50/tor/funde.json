@@ -1,0 +1,412 @@
+[
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "009",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Zur Reservation",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 22 % der Höhe (von 44 % bis 65 %)",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "009",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Zur Reservation",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 22 % der Höhe (von 44 % bis 65 %)",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "009",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Zur Reservation",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 24 % der Höhe (von 50 % bis 74 %)",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "008",
+"name": "Zur Reservation",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 22 % der Höhe (von 44 % bis 65 %)",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "008",
+"name": "Zur Reservation",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 22 % der Höhe (von 44 % bis 65 %)",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "008",
+"name": "Zur Reservation",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 24 % der Höhe (von 50 % bis 74 %)",
+"sel": "div#ansicht > div.werte > div.wert.blatt"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.aktiv > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "schaufenster-anleitung",
+"zustand": "019",
+"name": "DAS SCHAUFENSTER ANLEITUNG · WIRTSCHAFT AM SCHLÖSSLI → Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.91, Spanne 3.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster-anleitung",
+"zustand": "019",
+"name": "DAS SCHAUFENSTER ANLEITUNG · WIRTSCHAFT AM SCHLÖSSLI → Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.6, Spanne 2.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster-anleitung",
+"zustand": "019",
+"name": "DAS SCHAUFENSTER ANLEITUNG · WIRTSCHAFT AM SCHLÖSSLI → Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.6, Spanne 2.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "018",
+"name": "Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.91, Spanne 3.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "018",
+"name": "Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.6, Spanne 2.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "018",
+"name": "Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.6, Spanne 2.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "034",
+"name": "Karte & Wein → WEINKARTE",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 1.04, Spanne 5.0)",
+"sel": "div#ws-gruppen > details.ws-gr > div.ws-fotos"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "034",
+"name": "Karte & Wein → WEINKARTE",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 1.15, Spanne 6.0)",
+"sel": "div#ws-gruppen > details.ws-gr > div.ws-fotos > button.ws-foto"
+}
+]

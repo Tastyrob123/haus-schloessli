@@ -1,0 +1,72 @@
+[
+{
+"werkzeug": "werkbank-mails",
+"zustand": "001",
+"name": "Start",
+"k": 5,
+"art": "anschnitt",
+"text": "IM TON IHRES HAUSES.",
+"info": "[390] 46…668 px bei Fensterbreite 390",
+"sel": "header.kopf > h1.hr > em"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "028",
+"name": "",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "«Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "028",
+"name": "",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "[390] «Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "029",
+"name": "Leiste am Dokument",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "«Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "029",
+"name": "Leiste am Dokument",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "[390] «Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "040",
+"name": "Kapitel V → BANKETTS",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "«Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "040",
+"name": "Kapitel V → BANKETTS",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "[390] «Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+}
+]

@@ -1,0 +1,12 @@
+{
+ "zustaende": 26,
+ "felder": {
+  "rot": 27,
+  "gruen": 415,
+  "auge": 390,
+  "np": 0,
+  "na": 130
+ },
+ "funde": 2,
+ "gegenprobe": null
+}

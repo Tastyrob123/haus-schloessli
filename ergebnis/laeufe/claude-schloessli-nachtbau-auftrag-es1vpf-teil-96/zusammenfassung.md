@@ -1,0 +1,22 @@
+## Schnelle Prüfung claude/schloessli-nachtbau-auftrag-es1vpf
+```
+Werkzeug                     Zust.    min  s/Zust gleich nachgesp. Funde 1440 alle Breiten
+werkbank-befund                  1    0.2    12.0      0         1          0            0
+werkbank-beigaben                1    0.3    18.0      0         1          0            0
+werkbank-drucksachen             1    0.9    54.0      0         1          0            0
+werkbank-feed                    2    1.5    45.0      0         1          0            0
+werkbank-geprueft                6    1.5    15.0      5         1          0            0
+werkbank-karte                  12    3.1    15.5      0         8          0            0
+werkbank-ki                     41   34.6    50.6      0        62          0            0
+werkbank-mails                   1    0.2    12.0      0         1          0            0
+werkbank-material                1    0.6    36.0      0         1          0            0
+werkbank-postkarten              1    0.2    12.0      0         1          0            0
+werkbank-sticker                 1    0.2    12.0      0         1          0            0
+werkbank-unterlagen              7    1.2    10.3      0         1          0            0
+werkbank-untersetzer             1    0.3    18.0      0         1          0            0
+werkbank                        40   39.4    59.1      4        19          0            0
+SUMME                          116   84.2    43.6      9       100                       0
+Rechnerzeit aller Tore: 84 min (nacheinander); Uhrzeit mit 3 parallel siehe lauf.out
+
+{"zustaende": 116, "felder": {"rot": 40, "gruen": 2076, "auge": 1956, "np": 0, "na": 220}, "funde": 0}
+```

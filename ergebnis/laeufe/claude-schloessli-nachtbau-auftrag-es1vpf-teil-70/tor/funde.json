@@ -1,0 +1,1232 @@
+[
+{
+"werkzeug": "werkbank-geprueft",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.75, Spanne 1.0)",
+"sel": "section#g2 > span.gp__bild"
+},
+{
+"werkzeug": "werkbank-geprueft",
+"zustand": "002",
+"name": "WEBSITE",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.75, Spanne 1.0)",
+"sel": "section#g2 > span.gp__bild"
+},
+{
+"werkzeug": "werkbank-geprueft",
+"zustand": "003",
+"name": "KARTEN",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.75, Spanne 1.0)",
+"sel": "section#g2 > span.gp__bild"
+},
+{
+"werkzeug": "werkbank-geprueft",
+"zustand": "004",
+"name": "WERKZEUGE",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.75, Spanne 1.0)",
+"sel": "section#g2 > span.gp__bild"
+},
+{
+"werkzeug": "werkbank-geprueft",
+"zustand": "005",
+"name": "DATEN",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.75, Spanne 1.0)",
+"sel": "section#g2 > span.gp__bild"
+},
+{
+"werkzeug": "werkbank-geprueft",
+"zustand": "006",
+"name": "OFFEN",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.75, Spanne 1.0)",
+"sel": "section#g2 > span.gp__bild"
+},
+{
+"werkzeug": "werkbank-karte",
+"zustand": "008",
+"name": "KI UND IHRE DATEN → ZURÜCK ZUM VORSCHLAG",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "007",
+"name": "ZURÜCK ZUM VORSCHLAG",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "008",
+"name": "",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "011",
+"name": "ZURÜCK ZUM VORSCHLAG → BEFUND",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "012",
+"name": "ZURÜCK ZUM VORSCHLAG → MARKE",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "013",
+"name": "ZURÜCK ZUM VORSCHLAG → WEBSITE",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "014",
+"name": "ZURÜCK ZUM VORSCHLAG → KARTEN",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "015",
+"name": "ZURÜCK ZUM VORSCHLAG → WERKZEUGE",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "016",
+"name": "ZURÜCK ZUM VORSCHLAG → DRAUSSEN",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "017",
+"name": "ZURÜCK ZUM VORSCHLAG → GEPRÜFT",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "018",
+"name": "ZURÜCK ZUM VORSCHLAG → ANGEBOT",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "019",
+"name": "ZURÜCK ZUM VORSCHLAG → ÜBERSICHT",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "020",
+"name": "ZURÜCK ZUM VORSCHLAG → WEITERLESEN",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "021",
+"name": "ZURÜCK ZUM VORSCHLAG → Voriges Kapitel",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "021",
+"name": "ZURÜCK ZUM VORSCHLAG → Voriges Kapitel",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "021",
+"name": "ZURÜCK ZUM VORSCHLAG → Voriges Kapitel",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "021",
+"name": "ZURÜCK ZUM VORSCHLAG → Voriges Kapitel",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "021",
+"name": "ZURÜCK ZUM VORSCHLAG → Voriges Kapitel",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "022",
+"name": "ZURÜCK ZUM VORSCHLAG → Nächstes Kapitel",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "023",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel I",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "024",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel III",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "025",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel IV",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "026",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel V",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "027",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VI",
+"k": 35,
+"art": "text-mitte",
+"text": "VI",
+"info": "Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "027",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VI",
+"k": 35,
+"art": "text-mitte",
+"text": "VI",
+"info": "[1280] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "027",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VI",
+"k": 35,
+"art": "text-mitte",
+"text": "VI",
+"info": "[390] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "027",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VI",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "027",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VI",
+"k": 35,
+"art": "text-mitte",
+"text": "VI",
+"info": "[1000] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "028",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VII",
+"k": 35,
+"art": "text-mitte",
+"text": "VII",
+"info": "Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "028",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VII",
+"k": 35,
+"art": "text-mitte",
+"text": "VII",
+"info": "[1280] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "028",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VII",
+"k": 35,
+"art": "text-mitte",
+"text": "VII",
+"info": "[390] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "028",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VII",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "028",
+"name": "ZURÜCK ZUM VORSCHLAG → Kapitel VII",
+"k": 35,
+"art": "text-mitte",
+"text": "VII",
+"info": "[1000] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "029",
+"name": "ZURÜCK ZUM VORSCHLAG → Voriger Befund",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "030",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "031",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "032",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "033",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "034",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "035",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "036",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "037",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "038",
+"name": "ZURÜCK ZUM VORSCHLAG → Weiter",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "039",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "040",
+"name": "ZURÜCK ZUM VORSCHLAG → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank-ki",
+"zustand": "041",
+"name": "ZURÜCK ZUM VORSCHLAG → Leiste am Dokument",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "002",
+"name": "BEFUND",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "003",
+"name": "MARKE",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "004",
+"name": "WEBSITE",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "005",
+"name": "KARTEN",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "006",
+"name": "DRAUSSEN",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "007",
+"name": "GEPRÜFT",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "008",
+"name": "ANGEBOT",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "009",
+"name": "ÜBERSICHT",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "010",
+"name": "Voriges Kapitel",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "010",
+"name": "Voriges Kapitel",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "010",
+"name": "Voriges Kapitel",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "010",
+"name": "Voriges Kapitel",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "010",
+"name": "Voriges Kapitel",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "011",
+"name": "",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "011",
+"name": "",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "011",
+"name": "",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "011",
+"name": "",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "011",
+"name": "",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "012",
+"name": "Kapitel II",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "013",
+"name": "Kapitel III",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "014",
+"name": "Kapitel IV",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "015",
+"name": "Kapitel V",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "016",
+"name": "Kapitel VI",
+"k": 35,
+"art": "text-mitte",
+"text": "VI",
+"info": "Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "016",
+"name": "Kapitel VI",
+"k": 35,
+"art": "text-mitte",
+"text": "VI",
+"info": "[1280] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "016",
+"name": "Kapitel VI",
+"k": 35,
+"art": "text-mitte",
+"text": "VI",
+"info": "[390] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "016",
+"name": "Kapitel VI",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "016",
+"name": "Kapitel VI",
+"k": 35,
+"art": "text-mitte",
+"text": "VI",
+"info": "[1000] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "017",
+"name": "Kapitel VII",
+"k": 35,
+"art": "text-mitte",
+"text": "VII",
+"info": "Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "017",
+"name": "Kapitel VII",
+"k": 35,
+"art": "text-mitte",
+"text": "VII",
+"info": "[1280] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "017",
+"name": "Kapitel VII",
+"k": 35,
+"art": "text-mitte",
+"text": "VII",
+"info": "[390] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "017",
+"name": "Kapitel VII",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "017",
+"name": "Kapitel VII",
+"k": 35,
+"art": "text-mitte",
+"text": "VII",
+"info": "[1000] Schrift 0.7 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "018",
+"name": "Voriger Befund",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "018",
+"name": "Voriger Befund",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "018",
+"name": "Voriger Befund",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "018",
+"name": "Voriger Befund",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "018",
+"name": "Voriger Befund",
+"k": 35,
+"art": "text-mitte",
+"text": "VIII",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 12 px hoch in Kasten 39 px)",
+"sel": "div.rgw > div.wfa > div.rgc-punkte > button.rgc-p"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "020",
+"name": "",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "021",
+"name": "Vorige Ansicht",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "022",
+"name": "Voriges Werkzeug",
+"k": 35,
+"art": "text-mitte",
+"text": "ÜBERSICHT",
+"info": "Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div.ins-g > div.ins-minis > div.ins-mini > button.ins-m"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "022",
+"name": "Voriges Werkzeug",
+"k": 35,
+"art": "text-mitte",
+"text": "ÜBERSICHT",
+"info": "[1280] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div.ins-g > div.ins-minis > div.ins-mini > button.ins-m"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "022",
+"name": "Voriges Werkzeug",
+"k": 35,
+"art": "text-mitte",
+"text": "ÜBERSICHT",
+"info": "[390] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div.ins-g > div.ins-minis > div.ins-mini > button.ins-m"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "022",
+"name": "Voriges Werkzeug",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "022",
+"name": "Voriges Werkzeug",
+"k": 35,
+"art": "text-mitte",
+"text": "ÜBERSICHT",
+"info": "[1000] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div.ins-g > div.ins-minis > div.ins-mini > button.ins-m"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "023",
+"name": "Nächstes Werkzeug",
+"k": 35,
+"art": "text-mitte",
+"text": "ÜBERSICHT",
+"info": "Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div.ins-g > div.ins-minis > div.ins-mini > button.ins-m"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "023",
+"name": "Nächstes Werkzeug",
+"k": 35,
+"art": "text-mitte",
+"text": "ÜBERSICHT",
+"info": "[1280] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div.ins-g > div.ins-minis > div.ins-mini > button.ins-m"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "023",
+"name": "Nächstes Werkzeug",
+"k": 35,
+"art": "text-mitte",
+"text": "ÜBERSICHT",
+"info": "[390] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div.ins-g > div.ins-minis > div.ins-mini > button.ins-m"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "023",
+"name": "Nächstes Werkzeug",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "023",
+"name": "Nächstes Werkzeug",
+"k": 35,
+"art": "text-mitte",
+"text": "ÜBERSICHT",
+"info": "[1000] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 33 px)",
+"sel": "div.ins-g > div.ins-minis > div.ins-mini > button.ins-m"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "025",
+"name": "Zurück",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "026",
+"name": "Weiter",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "028",
+"name": "",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "«Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "028",
+"name": "",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "028",
+"name": "",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "[390] «Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "029",
+"name": "Leiste am Dokument",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "«Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "029",
+"name": "Leiste am Dokument",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "029",
+"name": "Leiste am Dokument",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "[390] «Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "030",
+"name": "BEFUND → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "031",
+"name": "BEFUND → Leiste am Dokument",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "032",
+"name": "Voriges Kapitel → ",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "033",
+"name": "Voriges Kapitel → ZUM KAPITEL",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "034",
+"name": "Kapitel II → Kapitel II",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "035",
+"name": "Kapitel III → 01",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "036",
+"name": "Kapitel III → 02",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "037",
+"name": "Kapitel III → 03",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "038",
+"name": "Kapitel III → 04",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "039",
+"name": "Kapitel IV → Kapitel IV",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "040",
+"name": "Kapitel V → BANKETTS",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "«Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "040",
+"name": "Kapitel V → BANKETTS",
+"k": 7,
+"art": "einzelwort",
+"text": "ROBERT REFF · TASTY STUDIOS",
+"info": "[390] «Studios» allein in der letzten Zeile (2 Zeilen)",
+"sel": "article.bf-blatt.da > footer.bf-fuss > div.bf-fuss__reihe > p.bf-name"
+},
+{
+"werkzeug": "werkbank",
+"zustand": "040",
+"name": "Kapitel V → BANKETTS",
+"k": 7,
+"art": "einzelwort",
+"text": "Banketts und Gruppen",
+"info": "[390] «Gruppen» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.schau.da > div.schau__r > div.schau__t > h3"
+}
+]

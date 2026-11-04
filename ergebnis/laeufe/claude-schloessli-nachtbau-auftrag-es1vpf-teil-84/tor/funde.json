@@ -1,0 +1,522 @@
+[
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "004",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Besuche 1",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "004",
+"name": "DIE BESUCHERLISTE ÖFFNEN → Besuche 1",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "012",
+"name": "DIE BESUCHERLISTE ÖFFNEN → DE Konstanz, Deutschland Gestern, 19:41 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "012",
+"name": "DIE BESUCHERLISTE ÖFFNEN → DE Konstanz, Deutschland Gestern, 19:41 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "014",
+"name": "DIE BESUCHERLISTE ÖFFNEN → CH Winterthur, Schweiz Gestern, 19:02 Uhr 6",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "014",
+"name": "DIE BESUCHERLISTE ÖFFNEN → CH Winterthur, Schweiz Gestern, 19:02 Uhr 6",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "015",
+"name": "DIE BESUCHERLISTE ÖFFNEN → CH Zürich, Schweiz Gestern, 17:43 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste-anleitung",
+"zustand": "015",
+"name": "DIE BESUCHERLISTE ÖFFNEN → CH Zürich, Schweiz Gestern, 17:43 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "003",
+"name": "Besuche 1",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "003",
+"name": "Besuche 1",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "011",
+"name": "DE Konstanz, Deutschland Gestern, 19:41 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "011",
+"name": "DE Konstanz, Deutschland Gestern, 19:41 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "013",
+"name": "CH Winterthur, Schweiz Gestern, 19:02 Uhr 6",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "013",
+"name": "CH Winterthur, Schweiz Gestern, 19:02 Uhr 6",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "014",
+"name": "CH Zürich, Schweiz Gestern, 17:43 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "014",
+"name": "CH Zürich, Schweiz Gestern, 17:43 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "017",
+"name": "Besuche 1 → Zur Reservation · 43",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "017",
+"name": "Besuche 1 → Zur Reservation · 43",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "019",
+"name": "Besuche 1 → Anruf oder Mail · 29",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "019",
+"name": "Besuche 1 → Anruf oder Mail · 29",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "020",
+"name": "Besuche 1 → Am Handy · 259",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "020",
+"name": "Besuche 1 → Am Handy · 259",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "021",
+"name": "Besuche 1 → DE Konstanz, Deutschland Gestern, 19:41 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "021",
+"name": "Besuche 1 → DE Konstanz, Deutschland Gestern, 19:41 Uhr 4",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "022",
+"name": "Besuche 1 → CH Winterthur, Schweiz Gestern, 19:02 Uhr 6",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "022",
+"name": "Besuche 1 → CH Winterthur, Schweiz Gestern, 19:02 Uhr 6",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "023",
+"name": "Besuche 1 → AT Bregenz, Österreich Gestern, 09:48 Uhr eine",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "023",
+"name": "Besuche 1 → AT Bregenz, Österreich Gestern, 09:48 Uhr eine",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "024",
+"name": "Besuche 1 → CH Münsterlingen, Schweiz Mo., 02.11., 16:36 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "024",
+"name": "Besuche 1 → CH Münsterlingen, Schweiz Mo., 02.11., 16:36 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "025",
+"name": "Besuche 1 → CH Weinfelden, Schweiz Mo., 02.11., 13:15 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "025",
+"name": "Besuche 1 → CH Weinfelden, Schweiz Mo., 02.11., 13:15 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "027",
+"name": "Besuche 1 → CH Zürich, Schweiz Gestern, 16:43 Uhr 3",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "027",
+"name": "Besuche 1 → CH Zürich, Schweiz Gestern, 16:43 Uhr 3",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "029",
+"name": "Besuche 1 → CH Basel, Schweiz Gestern, 14:57 Uhr 3",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "029",
+"name": "Besuche 1 → CH Basel, Schweiz Gestern, 14:57 Uhr 3",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "030",
+"name": "Besuche 1 → CH St. Gallen, Schweiz Gestern, 13:27 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "030",
+"name": "Besuche 1 → CH St. Gallen, Schweiz Gestern, 13:27 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "031",
+"name": "Besuche 1 → CH Münsterlingen, Schweiz Gestern, 12:48 Uhr 2",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "031",
+"name": "Besuche 1 → CH Münsterlingen, Schweiz Gestern, 12:48 Uhr 2",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "032",
+"name": "Besuche 1 → CH Weinfelden, Schweiz Gestern, 12:14 Uhr 5",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "032",
+"name": "Besuche 1 → CH Weinfelden, Schweiz Gestern, 12:14 Uhr 5",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "035",
+"name": "Besuche 1 → CH Bottighofen, Schweiz Mo., 02.11., 17:32 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "035",
+"name": "Besuche 1 → CH Bottighofen, Schweiz Mo., 02.11., 17:32 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "036",
+"name": "Besuche 1 → CH St. Gallen, Schweiz Mo., 02.11., 17:20",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN WEINKARTE",
+"info": "«Weinkarte» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "036",
+"name": "Besuche 1 → CH St. Gallen, Schweiz Mo., 02.11., 17:20",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN WEINKARTE",
+"info": "[1280] «Weinkarte» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "037",
+"name": "Besuche 1 → DE Konstanz, Deutschland Mo., 02.11., 16:14 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN WEINKARTE",
+"info": "«Weinkarte» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "037",
+"name": "Besuche 1 → DE Konstanz, Deutschland Mo., 02.11., 16:14 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN WEINKARTE",
+"info": "[1280] «Weinkarte» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "039",
+"name": "Besuche 1 → CH St. Gallen, Schweiz Mo., 02.11., 13:47",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "039",
+"name": "Besuche 1 → CH St. Gallen, Schweiz Mo., 02.11., 13:47",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "040",
+"name": "Besuche 1 → DE Stuttgart, Deutschland Mo., 02.11., 12:22 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "«Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+},
+{
+"werkzeug": "besucherliste",
+"zustand": "040",
+"name": "Besuche 1 → DE Stuttgart, Deutschland Mo., 02.11., 12:22 Uhr",
+"k": 7,
+"art": "einzelwort",
+"text": "HIER KAM DER GAST AN STARTSEITE",
+"info": "[1280] «Startseite» allein in der letzten Zeile (2 Zeilen)",
+"sel": "div.detail.rg-detail > article.blatt.besuchsblatt > figure.besuch__buehne > figcaption"
+}
+]

@@ -1,0 +1,6462 @@
+[
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "003",
+"name": "WERKZEUG ÖFFNEN → Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "009",
+"name": "WERKZEUG ÖFFNEN → RESERVATION09:12 Sandra Keller Do, 12. November2 Personen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "010",
+"name": "WERKZEUG ÖFFNEN → RESERVATION08:05 Andrea Schmid Do, 31. Dezember, 19:00",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch-anleitung",
+"zustand": "011",
+"name": "WERKZEUG ÖFFNEN → RESERVATION07:48 Emma Clarke Di, 10. November4 PersonenEnglisch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "003",
+"name": "Eingang 5",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "009",
+"name": "Reservation 4 Anfragen · 4 offen",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "010",
+"name": "Bankett & Gruppen 2 Anfragen · 2",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.neu > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "011",
+"name": "Anlässe & Events eine Anfrage · 1",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.sw-da > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.aktiv > span.re-a__bild"
+},
+{
+"werkzeug": "gaestebuch",
+"zustand": "012",
+"name": "Gutscheine eine Anfrage",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.0, Spanne 0.0)",
+"sel": "div.re-spalte > div.re-liste > button.re-a.erledigt > span.re-a__bild"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "002",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "002",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL",
+"k": 35,
+"art": "text-mitte",
+"text": "",
+"info": "Symbol 72.7 px waagrecht, 0.0 px senkrecht neben der Mitte",
+"sel": "div.wo-sb__text > div.wo-sb__kn > div.ms-feld > button.kn.knopf--voll"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "002",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "«Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "002",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "002",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1280] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "002",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "002",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1000] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "004",
+"name": "ZUR ÜBERSICHT",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "004",
+"name": "ZUR ÜBERSICHT",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "«Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "004",
+"name": "ZUR ÜBERSICHT",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "004",
+"name": "ZUR ÜBERSICHT",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1280] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "004",
+"name": "ZUR ÜBERSICHT",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "004",
+"name": "ZUR ÜBERSICHT",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1000] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "015",
+"name": "KNOPF",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 30 px)",
+"sel": "div#mlFelder > div.ml-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "015",
+"name": "KNOPF",
+"k": 35,
+"art": "text-mitte",
+"text": "TELEFON",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 30 px)",
+"sel": "div#mlFelder > div.ml-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "015",
+"name": "KNOPF",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 30 px)",
+"sel": "div#mlFelder > div.ml-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "015",
+"name": "KNOPF",
+"k": 35,
+"art": "text-mitte",
+"text": "TELEFON",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 30 px)",
+"sel": "div#mlFelder > div.ml-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "015",
+"name": "KNOPF",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 30 px)",
+"sel": "div#mlFelder > div.ml-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "015",
+"name": "KNOPF",
+"k": 35,
+"art": "text-mitte",
+"text": "TELEFON",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 30 px)",
+"sel": "div#mlFelder > div.ml-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "015",
+"name": "KNOPF",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 30 px)",
+"sel": "div#mlFelder > div.ml-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "015",
+"name": "KNOPF",
+"k": 35,
+"art": "text-mitte",
+"text": "TELEFON",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 30 px)",
+"sel": "div#mlFelder > div.ml-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "016",
+"name": "TERMINE",
+"k": 35,
+"art": "text-mitte",
+"text": "EINTRAG HINZUFÜGEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#mlFelder > div.ml-eintraege > button.kn.kn--klein"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "016",
+"name": "TERMINE",
+"k": 35,
+"art": "text-mitte",
+"text": "EINTRAG HINZUFÜGEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#mlFelder > div.ml-eintraege > button.kn.kn--klein"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "016",
+"name": "TERMINE",
+"k": 35,
+"art": "text-mitte",
+"text": "EINTRAG HINZUFÜGEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#mlFelder > div.ml-eintraege > button.kn.kn--klein"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "016",
+"name": "TERMINE",
+"k": 35,
+"art": "text-mitte",
+"text": "EINTRAG HINZUFÜGEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#mlFelder > div.ml-eintraege > button.kn.kn--klein"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "017",
+"name": "PREISLISTE",
+"k": 35,
+"art": "text-mitte",
+"text": "EINTRAG HINZUFÜGEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#mlFelder > div.ml-eintraege > button.kn.kn--klein"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "017",
+"name": "PREISLISTE",
+"k": 35,
+"art": "text-mitte",
+"text": "EINTRAG HINZUFÜGEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#mlFelder > div.ml-eintraege > button.kn.kn--klein"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "017",
+"name": "PREISLISTE",
+"k": 35,
+"art": "text-mitte",
+"text": "EINTRAG HINZUFÜGEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#mlFelder > div.ml-eintraege > button.kn.kn--klein"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "017",
+"name": "PREISLISTE",
+"k": 35,
+"art": "text-mitte",
+"text": "EINTRAG HINZUFÜGEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#mlFelder > div.ml-eintraege > button.kn.kn--klein"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "019",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "020",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Übersicht",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "020",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Übersicht",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "«Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "020",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Übersicht",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "020",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Übersicht",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1280] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "020",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Übersicht",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "020",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Übersicht",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1000] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "021",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Anlässe & Events 26",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "021",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Anlässe & Events 26",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "021",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Anlässe & Events 26",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "022",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Anlass anlegen",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "022",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Anlass anlegen",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "022",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Anlass anlegen",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 17 % der Höhe (von 37 % bis 54 %)",
+"sel": "div#pkMotive > div.pk-karte > div.pk-blaetter > div.blatt.pk-vorn"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "023",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "024",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Abteilungen 44",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "024",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Abteilungen 44",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "024",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Abteilungen 44",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "025",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Hinweise im Haus 7",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "025",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Hinweise im Haus 7",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "025",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Hinweise im Haus 7",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "026",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Newsletter & E-Mail 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "026",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Newsletter & E-Mail 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "026",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Newsletter & E-Mail 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "027",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Meine Medien 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "027",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Meine Medien 6",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "«Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#bibliothek > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "027",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Meine Medien 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "027",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Meine Medien 6",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1280] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#bibliothek > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "027",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Meine Medien 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "027",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Meine Medien 6",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1000] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#bibliothek > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "028",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Freigegeben 0",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "028",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Freigegeben 0",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "028",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Freigegeben 0",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 15 % der Höhe (von 76 % bis 91 %)",
+"sel": "button.stueck.stueck--rand-l > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "029",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "030",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "031",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Farben & Schriften",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "031",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Farben & Schriften",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "031",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Farben & Schriften",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "033",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Four-Hands an Bord",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "033",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Four-Hands an Bord",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "033",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Four-Hands an Bord",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "034",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Betriebsferien",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "034",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Betriebsferien",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "034",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Betriebsferien",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "035",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Zurück am See",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "035",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Zurück am See",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "035",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Zurück am See",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "036",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Lunch-Menü am Mittag",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "036",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Lunch-Menü am Mittag",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "036",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Lunch-Menü am Mittag",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "037",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Restaurant & Karte",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "037",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Restaurant & Karte",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "037",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Restaurant & Karte",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "038",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Die Lästermeile",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "038",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Die Lästermeile",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "038",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Die Lästermeile",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "039",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Wein",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "039",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Wein",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 46 % der Höhe (von 34 % bis 80 %)",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "039",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Wein",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "039",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Wein",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "040",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Anlässe & Banketts",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "040",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Anlässe & Banketts",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt-mail",
+"zustand": "040",
+"name": "DIE HAUSDRUCKEREI NEWSLETTER & E-MAIL → Anlässe & Banketts",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "«Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "001",
+"name": "Start",
+"k": 4,
+"art": "leer",
+"text": "Startbild",
+"info": "Kachel ohne Inhalt (1062×444 px)",
+"sel": "div#msStart > section.wo-sb.wo-sb--voll"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1280] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "001",
+"name": "Start",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "001",
+"name": "Start",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1000] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "002",
+"name": "Erster Besuch",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "002",
+"name": "Erster Besuch",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "«Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "002",
+"name": "Erster Besuch",
+"k": 4,
+"art": "leer",
+"text": "Startbild",
+"info": "Kachel ohne Inhalt (1062×444 px)",
+"sel": "div#msStart > section.wo-sb.wo-sb--voll"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "002",
+"name": "Erster Besuch",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.3, Spanne 1.0)",
+"sel": "div#startWochen > div.wo > span.wo__n"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "002",
+"name": "Erster Besuch",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "002",
+"name": "Erster Besuch",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1280] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "002",
+"name": "Erster Besuch",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "002",
+"name": "Erster Besuch",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1000] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#startZuletzt > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 2,
+"art": "platzhalter",
+"text": "Etwa: ein Aushang zu den Ferien",
+"info": "[1280] Platzhalter braucht 2 Zeilen (50 px), Feld 34 px hoch: «Etwa: ein Aushang zu den Ferien» abgeschnitten",
+"sel": "textarea#startDirekt"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 3,
+"art": "reihe",
+"text": "Menükarte am Tisch | Flyer und Programm",
+"info": "[1000] Höhe 467–488 px (2 Kacheln)",
+"sel": "div#arten > button.stueck"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 3,
+"art": "reihe",
+"text": "Plakat und Presse  | Karte und Einleger",
+"info": "[1000] Höhe 467–488 px (2 Kacheln)",
+"sel": "div#arten > button.stueck"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 3,
+"art": "reihe",
+"text": "Weinempfehlung DL  | Einladung und Guts",
+"info": "[1000] Höhe 488–500 px (2 Kacheln)",
+"sel": "div#arten > button.stueck"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 3,
+"art": "reihe",
+"text": "Aushang und Hinwei | Tischaufsteller A6",
+"info": "[1000] Höhe 467–521 px (2 Kacheln)",
+"sel": "div#arten > button.stueck"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 3,
+"art": "reihe",
+"text": "9:41 Wirtschaft am | Postkarte vom Hafe",
+"info": "[1000] Höhe 467–500 px (2 Kacheln)",
+"sel": "div#arten > button.stueck"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 3,
+"art": "reihe",
+"text": "Story STORY 9:16 · | Leeres Blatt FORMA",
+"info": "[1000] Höhe 445–467 px (2 Kacheln)",
+"sel": "div#arten > button.stueck"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "003",
+"name": "NEU ERSTELLEN",
+"k": 7,
+"art": "einzelwort",
+"text": "Was möchten Sie erstellen?",
+"info": "[1000] «erstellen?» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#msNeu > div.ms-tafel.ms-tafel--mitte > h1"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "004",
+"name": "Anlässe & Events 26",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "004",
+"name": "Anlässe & Events 26",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "004",
+"name": "Anlässe & Events 26",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "005",
+"name": "Anlass anlegen",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "005",
+"name": "Anlass anlegen",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "005",
+"name": "Anlass anlegen",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 14 %, unten 1 % frei",
+"sel": "div#pkMotive > div.pk-karte > div.pk-blaetter > div.blatt.pk-vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BOTTIGHOFEN",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "006",
+"name": "Motive vom See 12",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#pkFilter > div.ms-chips.pk-chips > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "007",
+"name": "Abteilungen 44",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "007",
+"name": "Abteilungen 44",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "007",
+"name": "Abteilungen 44",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "008",
+"name": "Hinweise im Haus 7",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "008",
+"name": "Hinweise im Haus 7",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "008",
+"name": "Hinweise im Haus 7",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "009",
+"name": "Newsletter & E-Mail 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "009",
+"name": "Newsletter & E-Mail 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "009",
+"name": "Newsletter & E-Mail 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "010",
+"name": "Meine Medien 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "010",
+"name": "Meine Medien 6",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "«Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#bibliothek > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "010",
+"name": "Meine Medien 6",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 14 % der Höhe (von 78 % bis 92 %)",
+"sel": "div.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "010",
+"name": "Meine Medien 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "010",
+"name": "Meine Medien 6",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1280] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#bibliothek > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "010",
+"name": "Meine Medien 6",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "010",
+"name": "Meine Medien 6",
+"k": 7,
+"art": "einzelwort",
+"text": "Four-Hands an Bord · 13.–15. November · Excellence Gourmetkr",
+"info": "[1000] «Gourmetkreuzfahrt» allein in der letzten Zeile (3 Zeilen)",
+"sel": "div#bibliothek > div.stueck.stueck--vorlage > b.zl__name"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "011",
+"name": "Freigegeben 0",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "011",
+"name": "Freigegeben 0",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "011",
+"name": "Freigegeben 0",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 15 % der Höhe (von 76 % bis 91 %)",
+"sel": "button.stueck.stueck--rand-l > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "012",
+"name": "Arten und Vorlagen 89",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "HAFEN & TERRASSE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "KÜCHE & TELLER",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BAR & LÄSTERMEILE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "WEIN",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "TEAM",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "BODENSEE & GESCHICHTE",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "013",
+"name": "Fotos des Hauses 42",
+"k": 35,
+"art": "text-mitte",
+"text": "INSTAGRAM DES HAUSES",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "div#fotoGruppen > div.fo-reihe > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "014",
+"name": "Farben & Schriften",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "014",
+"name": "Farben & Schriften",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "014",
+"name": "Farben & Schriften",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "016",
+"name": "Four-Hands an Bord",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "016",
+"name": "Four-Hands an Bord",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "016",
+"name": "Four-Hands an Bord",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "017",
+"name": "Betriebsferien",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "017",
+"name": "Betriebsferien",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "017",
+"name": "Betriebsferien",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "018",
+"name": "Zurück am See",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "018",
+"name": "Zurück am See",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "018",
+"name": "Zurück am See",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "019",
+"name": "Lunch-Menü am Mittag",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "019",
+"name": "Lunch-Menü am Mittag",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "019",
+"name": "Lunch-Menü am Mittag",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "020",
+"name": "Restaurant & Karte",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "020",
+"name": "Restaurant & Karte",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "020",
+"name": "Restaurant & Karte",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "021",
+"name": "Die Lästermeile",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "021",
+"name": "Die Lästermeile",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "021",
+"name": "Die Lästermeile",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "022",
+"name": "Wein",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "022",
+"name": "Wein",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 31 % der Höhe (von 7 % bis 38 %)",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "022",
+"name": "Wein",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "022",
+"name": "Wein",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "023",
+"name": "Anlässe & Banketts",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "023",
+"name": "Anlässe & Banketts",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "023",
+"name": "Anlässe & Banketts",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "024",
+"name": "Hafen & Terrasse",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "024",
+"name": "Hafen & Terrasse",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 19 %, unten 1 % frei",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "024",
+"name": "Hafen & Terrasse",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 44 %, unten 1 % frei",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "024",
+"name": "Hafen & Terrasse",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "024",
+"name": "Hafen & Terrasse",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "025",
+"name": "Das Haus",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "025",
+"name": "Das Haus",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "025",
+"name": "Das Haus",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "026",
+"name": "Gutscheine",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "026",
+"name": "Gutscheine",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 0 %, unten 14 % frei",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "026",
+"name": "Gutscheine",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "026",
+"name": "Gutscheine",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "027",
+"name": "EXCELLENCE GOURMETKREUZFAHRTFOUR-HANDS AN BORD13. BIS 15. NOVEMBER",
+"k": 35,
+"art": "text-mitte",
+"text": "0 DRUCKPRÜFUNG",
+"info": "Schrift 0.9 px zu tief (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "button#btnPruefen"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "027",
+"name": "EXCELLENCE GOURMETKREUZFAHRTFOUR-HANDS AN BORD13. BIS 15. NOVEMBER",
+"k": 35,
+"art": "text-mitte",
+"text": "",
+"info": "Symbol 102.4 px waagrecht, 0.5 px senkrecht neben der Mitte",
+"sel": "button#btnSpeichern"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "027",
+"name": "EXCELLENCE GOURMETKREUZFAHRTFOUR-HANDS AN BORD13. BIS 15. NOVEMBER",
+"k": 35,
+"art": "text-mitte",
+"text": "SEITE 1",
+"info": "Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 32 px)",
+"sel": "div#seitenwahl > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "027",
+"name": "EXCELLENCE GOURMETKREUZFAHRTFOUR-HANDS AN BORD13. BIS 15. NOVEMBER",
+"k": 35,
+"art": "text-mitte",
+"text": "DRUCKFERTIG SPEICHERN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 46 px)",
+"sel": "button#btnSpeichern"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "027",
+"name": "EXCELLENCE GOURMETKREUZFAHRTFOUR-HANDS AN BORD13. BIS 15. NOVEMBER",
+"k": 35,
+"art": "text-mitte",
+"text": "SEITE 1",
+"info": "[1280] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 32 px)",
+"sel": "div#seitenwahl > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "027",
+"name": "EXCELLENCE GOURMETKREUZFAHRTFOUR-HANDS AN BORD13. BIS 15. NOVEMBER",
+"k": 35,
+"art": "text-mitte",
+"text": "SPEICHERN",
+"info": "[390] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 46 px)",
+"sel": "button#btnSpeichern"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "027",
+"name": "EXCELLENCE GOURMETKREUZFAHRTFOUR-HANDS AN BORD13. BIS 15. NOVEMBER",
+"k": 35,
+"art": "text-mitte",
+"text": "SEITE 1",
+"info": "[390] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 32 px)",
+"sel": "div#seitenwahl > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "027",
+"name": "EXCELLENCE GOURMETKREUZFAHRTFOUR-HANDS AN BORD13. BIS 15. NOVEMBER",
+"k": 35,
+"art": "text-mitte",
+"text": "SPEICHERN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 46 px)",
+"sel": "button#btnSpeichern"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "027",
+"name": "EXCELLENCE GOURMETKREUZFAHRTFOUR-HANDS AN BORD13. BIS 15. NOVEMBER",
+"k": 35,
+"art": "text-mitte",
+"text": "SEITE 1",
+"info": "[1000] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 32 px)",
+"sel": "div#seitenwahl > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 35,
+"art": "text-mitte",
+"text": "0 DRUCKPRÜFUNG",
+"info": "Schrift 0.9 px zu tief (Glyphen 7 px hoch in Kasten 36 px)",
+"sel": "button#btnPruefen"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 35,
+"art": "text-mitte",
+"text": "DRUCKFERTIG SPEICHERN",
+"info": "Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 46 px)",
+"sel": "button#btnSpeichern"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 35,
+"art": "text-mitte",
+"text": "SEITE 1",
+"info": "Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 32 px)",
+"sel": "div#seitenwahl > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 14 % der Höhe (von 77 % bis 91 %)",
+"sel": "div#wirt > div.blatt"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 35,
+"art": "text-mitte",
+"text": "DRUCKFERTIG SPEICHERN",
+"info": "[1280] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 46 px)",
+"sel": "button#btnSpeichern"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 35,
+"art": "text-mitte",
+"text": "SEITE 1",
+"info": "[1280] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 32 px)",
+"sel": "div#seitenwahl > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 35,
+"art": "text-mitte",
+"text": "SPEICHERN",
+"info": "[390] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 46 px)",
+"sel": "button#btnSpeichern"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 35,
+"art": "text-mitte",
+"text": "SEITE 1",
+"info": "[390] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 32 px)",
+"sel": "div#seitenwahl > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 35,
+"art": "text-mitte",
+"text": "SPEICHERN",
+"info": "[1000] Schrift 0.6 px zu tief (Glyphen 8 px hoch in Kasten 46 px)",
+"sel": "button#btnSpeichern"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "028",
+"name": "DIREKT IM HAFEN VON BOTTIGHOFENSEESTRASSE 50 ·",
+"k": 35,
+"art": "text-mitte",
+"text": "SEITE 1",
+"info": "[1000] Schrift 0.9 px zu weit rechts (Glyphen 7 px hoch in Kasten 32 px)",
+"sel": "div#seitenwahl > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "029",
+"name": "NEU ERSTELLEN → ALLE 89 VORLAGEN DES HAUSES DURCHSUCHEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "029",
+"name": "NEU ERSTELLEN → ALLE 89 VORLAGEN DES HAUSES DURCHSUCHEN",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "029",
+"name": "NEU ERSTELLEN → ALLE 89 VORLAGEN DES HAUSES DURCHSUCHEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "029",
+"name": "NEU ERSTELLEN → ALLE 89 VORLAGEN DES HAUSES DURCHSUCHEN",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "029",
+"name": "NEU ERSTELLEN → ALLE 89 VORLAGEN DES HAUSES DURCHSUCHEN",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "029",
+"name": "NEU ERSTELLEN → ALLE 89 VORLAGEN DES HAUSES DURCHSUCHEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "029",
+"name": "NEU ERSTELLEN → ALLE 89 VORLAGEN DES HAUSES DURCHSUCHEN",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.91, Spanne 3.0)",
+"sel": "div#arten > button.stueck.stueck--rand-r > span.stueck__buehne > span.stueck__satz"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "030",
+"name": "NEU ERSTELLEN → ZUM MITNEHMEN",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 0 %, unten 14 % frei",
+"sel": "button.stueck.stueck--rand-l > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 22 % der Höhe (von 11 % bis 33 %)",
+"sel": "button.stueck > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 23 % der Höhe (von 6 % bis 29 %)",
+"sel": "button.stueck.stueck--rand-r > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "AUSHÄNGE & PLAKATE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ANLÄSSE & GESCHENKE",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ALLE",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "ZUM MITNEHMEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "KARTEN & MENÜS",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "TISCH & BAR",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "INTERN & MEDIEN",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "031",
+"name": "NEU ERSTELLEN → KARTEN & MENÜS",
+"k": 35,
+"art": "text-mitte",
+"text": "DIGITAL",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 40 px)",
+"sel": "div#startGruppen > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "032",
+"name": "NEU ERSTELLEN → Menükarte am Tisch DL HOCH · 99",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "032",
+"name": "NEU ERSTELLEN → Menükarte am Tisch DL HOCH · 99",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "032",
+"name": "NEU ERSTELLEN → Menükarte am Tisch DL HOCH · 99",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "032",
+"name": "NEU ERSTELLEN → Menükarte am Tisch DL HOCH · 99",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "032",
+"name": "NEU ERSTELLEN → Menükarte am Tisch DL HOCH · 99",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "032",
+"name": "NEU ERSTELLEN → Menükarte am Tisch DL HOCH · 99",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "032",
+"name": "NEU ERSTELLEN → Menükarte am Tisch DL HOCH · 99",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "032",
+"name": "NEU ERSTELLEN → Menükarte am Tisch DL HOCH · 99",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "033",
+"name": "NEU ERSTELLEN → Flyer und Programm A6 HOCH · 105",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "033",
+"name": "NEU ERSTELLEN → Flyer und Programm A6 HOCH · 105",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "033",
+"name": "NEU ERSTELLEN → Flyer und Programm A6 HOCH · 105",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.99, Spanne 3.0)",
+"sel": "div.atelier.wv > button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "033",
+"name": "NEU ERSTELLEN → Flyer und Programm A6 HOCH · 105",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "033",
+"name": "NEU ERSTELLEN → Flyer und Programm A6 HOCH · 105",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "033",
+"name": "NEU ERSTELLEN → Flyer und Programm A6 HOCH · 105",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "033",
+"name": "NEU ERSTELLEN → Flyer und Programm A6 HOCH · 105",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "033",
+"name": "NEU ERSTELLEN → Flyer und Programm A6 HOCH · 105",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 18 % der Höhe (von 20 % bis 38 %)",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.88, Spanne 3.0)",
+"sel": "div.atelier.wv > button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "034",
+"name": "NEU ERSTELLEN → Plakat und Presse A3 HOCH · 297",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 20 % der Höhe (von 8 % bis 28 %)",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 20 % der Höhe (von 8 % bis 27 %)",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 1.01, Spanne 3.0)",
+"sel": "div.atelier.wv > button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "035",
+"name": "NEU ERSTELLEN → Karte und Einleger A5 HOCH · 148",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "036",
+"name": "NEU ERSTELLEN → Weinempfehlung DL HOCH · 99 AUF 210",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "036",
+"name": "NEU ERSTELLEN → Weinempfehlung DL HOCH · 99 AUF 210",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "036",
+"name": "NEU ERSTELLEN → Weinempfehlung DL HOCH · 99 AUF 210",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 15 %, unten 1 % frei",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "036",
+"name": "NEU ERSTELLEN → Weinempfehlung DL HOCH · 99 AUF 210",
+"k": 10,
+"art": "mitte",
+"text": "",
+"info": "Komposition nicht in der Mitte: oben 22 %, unten 1 % frei",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "036",
+"name": "NEU ERSTELLEN → Weinempfehlung DL HOCH · 99 AUF 210",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "036",
+"name": "NEU ERSTELLEN → Weinempfehlung DL HOCH · 99 AUF 210",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "036",
+"name": "NEU ERSTELLEN → Weinempfehlung DL HOCH · 99 AUF 210",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "036",
+"name": "NEU ERSTELLEN → Weinempfehlung DL HOCH · 99 AUF 210",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "036",
+"name": "NEU ERSTELLEN → Weinempfehlung DL HOCH · 99 AUF 210",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 34 % der Höhe (von 12 % bis 46 %)",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 38 % der Höhe (von 10 % bis 48 %)",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.96, Spanne 3.0)",
+"sel": "div.atelier.wv > button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "037",
+"name": "NEU ERSTELLEN → Einladung und Gutschein QUADRAT · 148 AUF",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "038",
+"name": "NEU ERSTELLEN → Aushang und Hinweise A4 HOCH · 210",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "038",
+"name": "NEU ERSTELLEN → Aushang und Hinweise A4 HOCH · 210",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "038",
+"name": "NEU ERSTELLEN → Aushang und Hinweise A4 HOCH · 210",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "038",
+"name": "NEU ERSTELLEN → Aushang und Hinweise A4 HOCH · 210",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "038",
+"name": "NEU ERSTELLEN → Aushang und Hinweise A4 HOCH · 210",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "038",
+"name": "NEU ERSTELLEN → Aushang und Hinweise A4 HOCH · 210",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "038",
+"name": "NEU ERSTELLEN → Aushang und Hinweise A4 HOCH · 210",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "038",
+"name": "NEU ERSTELLEN → Aushang und Hinweise A4 HOCH · 210",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "039",
+"name": "NEU ERSTELLEN → Tischaufsteller A6 HOCH · 105 AUF 148",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "039",
+"name": "NEU ERSTELLEN → Tischaufsteller A6 HOCH · 105 AUF 148",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "039",
+"name": "NEU ERSTELLEN → Tischaufsteller A6 HOCH · 105 AUF 148",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "039",
+"name": "NEU ERSTELLEN → Tischaufsteller A6 HOCH · 105 AUF 148",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "039",
+"name": "NEU ERSTELLEN → Tischaufsteller A6 HOCH · 105 AUF 148",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "039",
+"name": "NEU ERSTELLEN → Tischaufsteller A6 HOCH · 105 AUF 148",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "039",
+"name": "NEU ERSTELLEN → Tischaufsteller A6 HOCH · 105 AUF 148",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 10,
+"art": "loch",
+"text": "",
+"info": "Loch 20 % der Höhe (von 66 % bis 85 %)",
+"sel": "button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz > span.papier.papier--vorn"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.99, Spanne 3.0)",
+"sel": "div.atelier.wv > button.stueck.stueck--vorlage > span.stueck__buehne > span.stueck__satz"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1280] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1280] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 35,
+"art": "text-mitte",
+"text": "WEBSITE ANSEHEN",
+"info": "[1000] Schrift 1.3 px zu tief (Glyphen 7 px hoch in Kasten 42 px)",
+"sel": "div#start > header.ms-kopf > a.wo-kn.wo-kn--gold"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[1000] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "plakatwerkstatt",
+"zustand": "040",
+"name": "NEU ERSTELLEN → 9:41 Wirtschaft am Schlössli Bottighofen Wirtschaft am",
+"k": 35,
+"art": "text-mitte",
+"text": "JEDER GRUND",
+"info": "[390 Menü offen] Schrift 0.6 px zu weit rechts (Glyphen 7 px hoch in Kasten 34 px)",
+"sel": "div#vbKopf > div.vb__wahl > div.vb__toene > button"
+},
+{
+"werkzeug": "schaufenster-anleitung",
+"zustand": "019",
+"name": "DAS SCHAUFENSTER ANLEITUNG · WIRTSCHAFT AM SCHLÖSSLI → Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.91, Spanne 3.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster-anleitung",
+"zustand": "019",
+"name": "DAS SCHAUFENSTER ANLEITUNG · WIRTSCHAFT AM SCHLÖSSLI → Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 2.13, Spanne 1.3)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster-anleitung",
+"zustand": "019",
+"name": "DAS SCHAUFENSTER ANLEITUNG · WIRTSCHAFT AM SCHLÖSSLI → Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 2.13, Spanne 1.3)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "018",
+"name": "Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 0.91, Spanne 3.0)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "018",
+"name": "Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 2.13, Spanne 1.3)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "018",
+"name": "Team",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 2.13, Spanne 1.3)",
+"sel": "details.platte.ws-eintrag > div.ws-eintrag__innen > div.ws-fotos > button.ws-foto"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "034",
+"name": "Karte & Wein → WEINKARTE",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 1.04, Spanne 5.0)",
+"sel": "div#ws-gruppen > details.ws-gr > div.ws-fotos"
+},
+{
+"werkzeug": "schaufenster",
+"zustand": "034",
+"name": "Karte & Wein → WEINKARTE",
+"k": 4,
+"art": "leer-bild",
+"text": "",
+"info": "Kachel wirkt leer: fast einfarbig (Streuung 1.15, Spanne 6.0)",
+"sel": "div#ws-gruppen > details.ws-gr > div.ws-fotos > button.ws-foto"
+}
+]

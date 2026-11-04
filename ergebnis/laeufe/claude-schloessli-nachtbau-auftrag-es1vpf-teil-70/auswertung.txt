@@ -1,0 +1,1 @@
+{"zustaende": 116, "felder": {"rot": 280, "gruen": 1834, "auge": 1953, "np": 0, "na": 225}, "funde": 12}
