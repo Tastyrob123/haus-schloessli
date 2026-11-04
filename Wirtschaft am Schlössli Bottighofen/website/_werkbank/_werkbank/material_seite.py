@@ -268,7 +268,7 @@ h2{{margin:0;font:400 clamp(1.5rem,2.4vw,2.2rem)/1.2 'Open Sans',Arial,sans-seri
   background:linear-gradient(180deg,#1d4f9e,var(--stuhl) 60%,var(--tief));box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 0 0 1px rgba(162,182,207,.38),0 16px 26px -14px rgba(0,0,0,.7)}}
 .kn i{{width:40px;height:40px}}.kn svg{{width:14px;height:14px}}
 .zu>span,.kn>span{{position:relative}}
-@supports not (font:-apple-system-body){{.zu>span,.kn>span{{top:.5px}}}}
+@supports (interpolate-size:allow-keywords) and (app-region:drag){{.zu>span,.kn>span{{top:.5px}}}}
 footer{{background:var(--tief);color:rgba(244,246,249,.66);text-align:center;font-size:.9rem;padding:26px var(--rand) 34px}}
 footer a{{color:var(--himmel2)}}
 html.js .hr{{opacity:0;transform:translate3d(0,26px,0)}}

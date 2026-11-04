@@ -203,7 +203,7 @@ body{background:var(--nacht) url(../assets/svg/tapete-a-dunkel.svg) 50% 0/168px 
 </script>
 <script src="uebergang.js" defer></script>
 <style id="text-mitte">.tm{position:relative}
-@supports not (font:-apple-system-body){
+@supports (interpolate-size:allow-keywords) and (app-region:drag){
   .kn>.tm{top:.7px}.kn.kn--klein>.tm{top:0}
   .wahl button>.tm,.vh-wahl button>.tm,.uwahl button>.tm,.uschalter button>.tm{top:1px;left:.065em}
   .mb-kn>span{position:relative;top:.9px}
@@ -212,7 +212,7 @@ body{background:var(--nacht) url(../assets/svg/tapete-a-dunkel.svg) 50% 0/168px 
 .rund[aria-label^="Zur"] svg,.rund[aria-label^="Vorig"] svg,.pf[aria-label^="Vorig"] svg{transform:translateX(.5px)}
 .rund[aria-label^="Weiter"] svg,.rund[aria-label^="Nächst"] svg,.pf[aria-label^="Nächst"] svg{transform:translateX(-.5px)}
 @supports (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{transform:translate(.6px,.5px)}.pf[aria-label^="Nächst"] svg{transform:translate(-.6px,.5px)}}
-@supports not (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{transform:translateX(.6px)}.pf[aria-label^="Nächst"] svg{transform:translateX(-.6px)}}</style><script id="text-mitte-js">(function(){function t(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){var n=k.firstChild;if(n&&n.nodeType===3&&n.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=n.textContent;k.replaceChild(s,n)}})}t();addEventListener('load',t)})();</script><script id="ruecksprung">/* Rücksprung (Robert 1.11.2026): Zurück/Vor im Browser landet auf der alten Höhe der Seite, nie ganz oben.
+@supports (interpolate-size:allow-keywords) and (app-region:drag){.pf[aria-label^="Vorig"] svg{transform:translateX(.6px)}.pf[aria-label^="Nächst"] svg{transform:translateX(-.6px)}}</style><script id="text-mitte-js">(function(){function t(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){var n=k.firstChild;if(n&&n.nodeType===3&&n.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=n.textContent;k.replaceChild(s,n)}})}t();addEventListener('load',t)})();</script><script id="ruecksprung">/* Rücksprung (Robert 1.11.2026): Zurück/Vor im Browser landet auf der alten Höhe der Seite, nie ganz oben.
    Merkt je Seite in sessionStorage (rs:<Pfad>) die Höhe und das Inhaltsstück am oberen Fensterrand (beim Scrollen, beim Klick auf einen Link, bei pagehide).
    Kommt man mit Zurück/Vor wieder (Navigation «back_forward»), richtet sich die Seite nach dem Aufbau an diesem Stück aus, nicht nur an der Pixelzahl:
    Abschnitte mit content-visibility:auto stehen nach dem Laden als 1400-px-Platzhalter da, dieselbe Pixelhöhe zeigt sonst anderen Inhalt.

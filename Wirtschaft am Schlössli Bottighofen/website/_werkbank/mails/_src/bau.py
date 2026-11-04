@@ -237,7 +237,7 @@ main{{padding:0 0 clamp(60px,8vw,120px)}}
 .mb-kn svg{{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}}
 .mb-kn .z,.mb.auf .mb-kn .a{{display:none}}.mb.auf .mb-kn .z{{display:inline}}.mb.auf .mb-kn svg{{transform:rotate(180deg)}}
 .mb-kn .a,.mb-kn .z{{position:relative}}
-@supports not (font:-apple-system-body){{.mb-kn .a,.mb-kn .z{{top:1.3px}}}}   /* Schrift optisch mittig (Messlauf text-mitte), nur Chromium wie text_mitte.py der Werkbank */
+@supports (interpolate-size:allow-keywords) and (app-region:drag){{.mb-kn .a,.mb-kn .z{{top:1.3px}}}}   /* Schrift optisch mittig (Messlauf text-mitte), nur Chromium wie text_mitte.py der Werkbank */
 .mb-kn:focus-visible{{outline:2px solid {HIMMEL2};outline-offset:3px}}
 .pfeile{{display:flex;justify-content:center;gap:14px;margin-top:4px}}
 .pf{{width:52px;height:52px;border:0;border-radius:50%;cursor:pointer;display:grid;place-items:center;color:{TINTE};background:linear-gradient(180deg,#f3f6f9,{HIMMEL2} 55%,{HIMMEL});box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 12px 20px -10px rgba(0,0,0,.7)}}

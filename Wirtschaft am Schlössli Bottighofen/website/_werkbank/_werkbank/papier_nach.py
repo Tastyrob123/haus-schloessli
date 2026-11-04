@@ -48,7 +48,7 @@ for o in ORDNER:
     # Titel: die letzten zwei Wörter jeder Zeile fest verbunden (kein Einzelwort allein unten, Kriterium 7)
     n = re.sub(r'(<h[1-4][^>]*>)(.*?)(</h[1-4]>)', lambda m: m.group(1) + re.sub(r'(>|^)([^<>]*\S) (\S+)(?=<|$)', lambda k: k.group(1) + k.group(2) + '\u00a0' + k.group(3), m.group(2)) + m.group(3), n, flags=re.S)
     if o == 'unterlagen':   # «LUNCH» sitzt mit der Chromium-Verschiebung der Knöpfe 0,5 px rechts (Tor 3.11.2026)
-        n = n.replace('</head>', '<style id="papier-lunch">@supports not (font:-apple-system-body){.uwahl button[data-id$="-lunch"]>.tm{left:.02em}}</style></head>', 1) if 'papier-lunch' not in n else n
+        n = n.replace('</head>', '<style id="papier-lunch">@supports (interpolate-size:allow-keywords) and (app-region:drag){.uwahl button[data-id$="-lunch"]>.tm{left:.02em}}</style></head>', 1) if 'papier-lunch' not in n else n
     if TM and '</body>' in n:   # Schrift mittig in den Knöpfen wie auf allen Seiten der Werkbank (Baustein des Kerns, text_mitte.py, nur gelesen)
         n = re.sub(r'<style id="text-mitte">.*?</style><script id="text-mitte-js">.*?</script>', '', n, flags=re.S)
         i = n.rfind('</body>'); n = n[:i] + TM + n[i:]

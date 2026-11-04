@@ -7,7 +7,7 @@ der Werkbank, wiederholbar.   python3 _werkbank/text_mitte.py [<website/_werkban
 import glob, os, re, sys
 
 CSS = """.tm{position:relative}
-@supports not (font:-apple-system-body){
+@supports (interpolate-size:allow-keywords) and (app-region:drag){
   .kn>.tm{top:.7px}.kn.kn--klein>.tm{top:0}
   .wahl button>.tm,.vh-wahl button>.tm,.uwahl button>.tm,.uschalter button>.tm{top:1px;left:.065em}
   .mb-kn>span{position:relative;top:.9px}
@@ -16,7 +16,7 @@ CSS = """.tm{position:relative}
 .rund[aria-label^="Zur"] svg,.rund[aria-label^="Vorig"] svg,.pf[aria-label^="Vorig"] svg{transform:translateX(.5px)}
 .rund[aria-label^="Weiter"] svg,.rund[aria-label^="Nächst"] svg,.pf[aria-label^="Nächst"] svg{transform:translateX(-.5px)}
 @supports (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{transform:translate(.6px,.5px)}.pf[aria-label^="Nächst"] svg{transform:translate(-.6px,.5px)}}
-@supports not (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{transform:translateX(.6px)}.pf[aria-label^="Nächst"] svg{transform:translateX(-.6px)}}"""
+@supports (interpolate-size:allow-keywords) and (app-region:drag){.pf[aria-label^="Vorig"] svg{transform:translateX(.6px)}.pf[aria-label^="Nächst"] svg{transform:translateX(-.6px)}}"""
 JS = ("(function(){function t(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){"
       "var n=k.firstChild;if(n&&n.nodeType===3&&n.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=n.textContent;k.replaceChild(s,n)}})}"
       "t();addEventListener('load',t)})();")
