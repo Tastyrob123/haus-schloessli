@@ -382,7 +382,7 @@ b,strong{font-weight:500}
 @media(max-width:480px){.t2.zt,h2.zt{font-size:min(1.85rem,7.2vw)!important;letter-spacing:.07em!important}.t1.zt,h1.zt{font-size:min(2.3rem,8.6vw)!important;letter-spacing:.07em!important}}
 @media(max-width:600px){.auftakt__fuss .runter i{display:none}.auftakt__fuss .runter{gap:0}}
 .sag-h{display:block!important}.sag-h span{display:inline-block;margin-right:16px}
-.rgc-p{letter-spacing:0!important}.rgc-p[data-i="3"]{padding-left:9.1px!important;padding-right:10.9px!important}.rgc-p[data-i="5"],.rgc-p[data-i="6"]{padding-left:10.7px!important;padding-right:9.3px!important}.rgc-p[data-i="7"]{padding-left:10.6px!important;padding-right:9.4px!important}
+.rgc-p{letter-spacing:0!important}.rgc-p[data-i="3"]{padding-left:9.1px!important;padding-right:10.9px!important}@supports (interpolate-size:allow-keywords) and (app-region:drag){.rgc-p[data-i="5"],.rgc-p[data-i="6"]{padding-left:10.7px!important;padding-right:9.3px!important}}@supports (interpolate-size:allow-keywords) and (app-region:drag){.rgc-p[data-i="7"]{padding-left:10.6px!important;padding-right:9.4px!important}}
 @media(max-width:640px){#handschrift .hs2-her{grid-template-columns:minmax(0,1fr)!important}}
 .sag-h::before{content:attr(data-n);display:inline-block;margin-right:16px;font-family:var(--mono);font-size:clamp(.78rem,.9vw,.92rem);letter-spacing:.16em;color:var(--blau);vertical-align:.3em}
 @media(max-width:480px){.faecher .blattk span{font-size:9.5px;letter-spacing:.08em;white-space:nowrap}.faecher .blattk span b{display:none}}
