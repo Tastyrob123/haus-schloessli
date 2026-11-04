@@ -89,7 +89,7 @@ SEITEN = [   # alle Seiten, die ein Gast als Seite wahrnimmt, dazu das Rechtlich
     ('abend.html', 'Ihr Abend', 2, 'Anlass, Tag, Personen, Platz und Menü wählen, der Zettel rechnet mit den Preisen der Karte.', ''),
     ('impressum.html', 'Rechtliches', 1, 'Impressum, Datenschutz, AGB und der Bildnachweis.', 'recht'),
 ]
-LANG = {'Startseite': 'Startseite', 'Banketts & Gruppen': 'Banketts und Gruppen', 'Rechtliches': 'Rechtliches und\u00a0Bildnachweis'}
+LANG = {'Startseite': 'Startseite', 'Banketts & Gruppen': 'Banketts und\u00a0Gruppen', 'Rechtliches': 'Rechtliches und\u00a0Bildnachweis'}
 KURZNAME = {'Banketts & Gruppen': 'Banketts'}
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
