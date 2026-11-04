@@ -28,8 +28,9 @@ Um 01:40 UTC liefen drei Opus-Agenten auf die Punkte 1, 2 und 3+4. Ihr Stand ist
 ## Stand 5.11.2026 (Abgleich mit dem Schäfli, Mac-Chat)
 - Werkbank auf den Stand der Schäfli-Werkbank vom 4.11. gebracht: kein Betrag mehr (Karte «Ein Vorschlag.», Zusammenfassung, Kapitelzeile, Angebots-PDF unter «Ihre Karten» samt Vorschaubildern, Laptop-Bild der Karte); Brief oben nur mit den drei Orten, Schluss mit dem Gruss wie in der Mail und dem Billett (`_werkbank/gruss_tg.py`, `eigen/tg/`); Kapitel I hell (`sbf--weiss`); Seiten-Reiter brechen nur um, wenn sie angeschnitten sind (1280, 1000), in zwei Reihen zu fünf. `sb_farbe.py` lässt `gruss.css` in den Farben der Mail.
 - Gebaut auf dem Mac ohne den Rohstoff `roh/`/`sb/` (nicht eingecheckt): Kit-Bau mit schon gebauten Bildern (Hilfsskript nur im Scratchpad, nicht im Repo). Ein voller `bau_alles.sh` in der Cloud baut dasselbe aus den Quellen.
-- Geprüft in WebKit und Chromium bei 1440 und 390; alle sichtbaren Bilder laden. Prüfung `[schnell: werkbank]` mit diesem Commit gestartet.
-- Nächster Schritt: Ergebnis des Laufs im Zweig `ergebnis` lesen (`ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-teil…`), Funde beheben.
+- Geprüft in WebKit und Chromium bei 1440 und 390; alle sichtbaren Bilder laden.
+- `[schnell: werkbank]` auf 23316cb: **0 Funde** (Tafel `ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-teil-96/`). Unterwegs behoben: «Banketts und Gruppen» band «Gruppen» allein (haus.py LANG), Mail-Titel bei 390 in WebKit unter Linux zu breit (mails/_src/bau.py, `max-width:100%`).
+- Offen am Schäfli (nicht hier): dessen Farbgang färbt `gruss.css` um (LinkedIn braun); Schlössli nimmt `gruss.css` aus `sb_farbe.py` aus.
 
 ## Stand 11:40 UTC (dritter Chat)
 - Lauf 9e14d83: **Kriterium 34 überall grün** (Messung in Chromium), nur noch 7 rote Felder: Hausdruckerei K10 Loch (5) und Schaufenster K4 Länderkarten (2).
