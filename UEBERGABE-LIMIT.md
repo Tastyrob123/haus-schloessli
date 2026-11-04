@@ -1,4 +1,4 @@
-# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 01:45 UTC
+# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 03:10 UTC
 
 Neuer Chat: zuerst diese Datei lesen, dann `CLAUDE.md`, dann beim «Nächsten genauen Schritt» weitermachen.
 
@@ -24,6 +24,11 @@ Offene Funde (fast alle Kriterium 35, Schrift in Knöpfen in WebKit 0,6–1,3 px
 5. **Kriterium 34 (Scrollen flüssig):** auf dem Runner überall rot, auch mit Grundlinie. Die Grundlinie misst seit 21:37 zwölf animierte Fotos; ob das reicht, zeigt erst der nächste Lauf. Lokal in Chromium ist alles flüssig.
 
 Um 01:40 UTC liefen drei Opus-Agenten auf die Punkte 1, 2 und 3+4. Ihr Stand ist nur, was committet ist (`git log`).
+
+## Stand 03:10 UTC (zweiter Chat)
+- Ursache der Knopfschrift-Funde (Kriterium 35, über 11.000): der Runner-WebKit unter Linux kennt `font:-apple-system-body` nicht, also galt der Chromium-Ausgleich `@supports not (font:-apple-system-body)` dort mit. Ersetzt in der ganzen Werkbank durch die Chromium-Weiche `@supports (interpolate-size:allow-keywords) and (app-region:drag)` (Commit 1ca728c, Prüfung `[schnell: werkbank]` läuft). Lokal in Chromium unverändert (0,7 px).
+- Einrichtung in dieser Sitzung: `~/Desktop/Website-Projekte` -> Repo verlinken (sonst startet Schaufenster 9282 nicht), Playwright 1.62.1 unter `/Users/robertreff/Aussen-Pruefung`, Links chromium-1234 -> 1243, dann `bash cloud/server.sh`.
+- Drei Opus-Agenten arbeiten (nicht committet, bis der Oberchef committet): Hausdruckerei-Funde; leere Kacheln Reservationsbuch/Schaufenster/Anleitung; Werkbank Einzelwörter und Geprüft-Kacheln.
 
 ## Nächster genauer Schritt
 1. `git fetch origin && git log --oneline origin/claude/schloessli-nachtbau-auftrag-es1vpf -15` lesen: was von den drei Agenten committet ist.
