@@ -37,6 +37,11 @@ def dokument(pfad):
         if i - p > h * .012: seg.append((s, p)); s = i
         p = i
     seg.append((s, p))
+    # Rahmenlinie an der Kante des Ausschnitts (kleine Formate: Rahmen 4,5 mm liegt innerhalb der 7 %) ist kein Inhalt (4.11.2026, README «K10 Rahmen am Rand»)
+    dichte = ink.mean(axis=1); n = ink.shape[0]
+    rahmen = lambda q: q[1] - q[0] <= h * .015 and dichte[q[0]:q[1] + 1].max() > .6
+    if len(seg) > 1 and seg[0][0] <= 1 and rahmen(seg[0]): seg = seg[1:]
+    if len(seg) > 1 and seg[-1][1] >= n - 2 and rahmen(seg[-1]): seg = seg[:-1]
     luecken = [((seg[i + 1][0] - seg[i][1]) / h, (seg[i][1] + y0) / h, (seg[i + 1][0] + y0) / h) for i in range(len(seg) - 1)]
     oben = (seg[0][0]) / h; unten = (y1 - y0 - seg[-1][1]) / h
     gr = max(luecken, default=(0, 0, 0))
@@ -68,6 +73,7 @@ for inv in sorted(glob.glob(os.path.join(LAUF, '*', 'inventar.json'))):
             if not os.path.exists(p): continue
             e = dokument(p); d['pruefung'] = e
             if not e or e.get('leer'): continue
+            if d.get('foto'): e['foto'] = True; continue   # randloses Foto (seite.js): Himmel ist kein leeres Papier (README «K10 randloses Foto»)
             if e['loch'] > LOCH: zu['funde'].append({'k': 10, 'art': 'loch', 'sel': d['sel'], 'text': '', 'info': f"Loch {round(e['loch'] * 100)} % der Höhe (von {round(e['loch_von'] * 100)} % bis {round(e['loch_bis'] * 100)} %)", 'r': d['r'], 'dok': d['datei']})
             if abs(e['oben'] - e['unten']) > MITTE: zu['funde'].append({'k': 10, 'art': 'mitte', 'sel': d['sel'], 'text': '', 'info': f"Komposition nicht in der Mitte: oben {round(e['oben'] * 100)} %, unten {round(e['unten'] * 100)} % frei", 'r': d['r'], 'dok': d['datei']})
         for t in zu.get('kacheln', []):

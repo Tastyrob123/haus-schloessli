@@ -309,3 +309,8 @@
 
 /* Seite nie seitlich breiter als das Fenster (Prüfung 4.11.2026: WebKit 390 px, Seite 694 px breit) */
 html,body{overflow-x:clip}
+
+/* Posteingang am Handy (Prüftor 4.11.2026, WebKit 390: Zeilen 137…662 px): die Bühne trägt unter 981 px nie die Verkleinerung der breiten Ansicht,
+   und Absender, Betreff und Vorschau brechen innerhalb des Kastens um */
+@media (max-width:980px){#mlBuehne{scale:none!important;margin-left:auto!important;margin-right:auto!important;margin-bottom:0!important}
+  .ml-posteingang,.ml-posteingang div{max-width:100%;min-width:0}.ml-posteingang b,.ml-pe__betreff,.ml-pe__vorschau{overflow-wrap:anywhere}}

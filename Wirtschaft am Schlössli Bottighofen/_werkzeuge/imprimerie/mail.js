@@ -324,12 +324,14 @@
     document.addEventListener('click', e => { const p = $('#mlPruefen'); if (p.open && !e.target.closest('#mlPruefen')) p.open = false; });
     document.body.classList.add('an');
     /* K5 (Tor 2, 30.10.2026): reicht die mittlere Spalte nicht (z. B. 1000 px), wird die Vorschau als Ganzes kleiner, nie angeschnitten und nie seitlich scrollend */
-    let passt = false;
-    const passe = () => { if (passt) return; const m = $('.ml-mitte'), b = $('#mlBuehne'); if (!m || !b) return; passt = true;
-      Object.assign(b.style, { scale: '', transformOrigin: '', marginLeft: '', marginRight: '', marginBottom: '' });   // zoom schneidet in Safari das iframe ab, darum scale mit ausgeglichenen Rändern
+    /* Ohne Sperre über requestAnimationFrame (4.11.2026, Prüftor WebKit 390): lief kein Bild dazwischen, blieb die Sperre stehen, und beim Wechsel auf 390 px
+       behielt die Bühne Verkleinerung und negative Ränder der breiten Ansicht (Posteingang 137…662 px im 390-px-Fenster). Jetzt wird nur geschrieben, was sich ändert
+       (offsetWidth/offsetHeight hängen weder an scale noch an den Rändern), dann ruft der Beobachter nichts nach. zoom schneidet in Safari das iframe ab, darum scale. */
+    const passe = () => { const m = $('.ml-mitte'), b = $('#mlBuehne'); if (!m || !b) return;
+      let soll = { scale: '', transformOrigin: '', marginLeft: '', marginRight: '', marginBottom: '' };
       if (innerWidth > 980) { const g = getComputedStyle(m), frei = m.clientWidth - parseFloat(g.paddingLeft) - parseFloat(g.paddingRight), W = b.offsetWidth, H = b.offsetHeight, z = Math.min(1, frei / W);
-        if (z < 1) Object.assign(b.style, { scale: z.toFixed(3), transformOrigin: '50% 0', marginLeft: `${-(W - z * W) / 2}px`, marginRight: `${-(W - z * W) / 2}px`, marginBottom: `${-(H - z * H)}px` }); }
-      requestAnimationFrame(() => { passt = false; }); };
+        if (z < 1) soll = { scale: z.toFixed(3), transformOrigin: '50% 0', marginLeft: `${-(W - z * W) / 2}px`, marginRight: `${-(W - z * W) / 2}px`, marginBottom: `${-(H - z * H)}px` }; }
+      const key = JSON.stringify(soll); if (b.__passe === key) return; b.__passe = key; Object.assign(b.style, soll); };
     addEventListener('resize', passe); new MutationObserver(passe).observe($('#mlBuehne'), { attributes: true, attributeFilter: ['style', 'class'] }); passe();
   }
   window.__ML = { get doc() { return doc; }, VORLAGEN, neu: k => neu(VORLAGEN.find(x => x.key === k)), html: o => DSMAIL.html(doc, o || { M }) };

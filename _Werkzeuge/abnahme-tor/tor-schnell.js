@@ -128,18 +128,45 @@ const ohneZahlen = s => String(s).replace(/[\d.,:%]+/g, '#');
     zu.doks = []; zu.kacheln = [];
     // Vor jedem Kachel-/Blattbild die Stelle ins Fenster holen und auf ihre Bilder warten (4.11.2026, Beleg in README: WebKit lädt loading=lazy unterhalb des Fensters
     // bei einem Ganzseitenbild nicht nach, Vorschauen der Hausdruckerei wirkten dadurch leer oder mit Loch, obwohl ein Gast sie beim Scrollen gefüllt sieht)
-    const insBild = async r => { await page.evaluate(async q => { scrollTo(0, Math.max(0, q.y + q.h / 2 - innerHeight / 2)); const t0 = performance.now();
+    // Liegt die Stelle in einem eigenen Rollkasten (overflow auto/scroll, Seite selbst rollt nicht), wird dieser Kasten gerollt, bis sie ganz darin steht; danach
+    // zurückgerollt. Ein Blatt, das auch dann vom Kasten- oder Seitenrand abgeschnitten bleibt, wird nicht beurteilt (ein halbes Blatt hat kein «Loch», keine «Mitte»).
+    // (4.11.2026, Beleg in README «K10/K4 Rollkasten»: Hausdruckerei, Hauptfläche .start__in.ms-haupt rollt, Dokument 900 px hoch; Vorschau-Blätter am unteren
+    // Fensterrand wurden halb aufgenommen → Loch/Mitte/«fast einfarbig» an Blättern, die ganz gefüllt sind)
+    const insBild = async r => (await page.evaluate(async q0 => {
+      window.__torRoll = window.__torRoll || []; let dy = 0; const vy = q0.y - scrollY;
+      const kaesten = [...document.querySelectorAll('*')].filter(e => { const c = getComputedStyle(e); if (!/(auto|scroll)/.test(c.overflowY) || e.scrollHeight <= e.clientHeight + 4) return false;
+        const b = e.getBoundingClientRect(), oben = b.top + e.clientTop; return b.left <= q0.x + 2 && b.right >= q0.x + q0.w - 2 && vy >= oben - e.scrollTop - 2 && vy + q0.h <= oben - e.scrollTop + e.scrollHeight + 2; })
+        .sort((a, b) => a.clientWidth * a.clientHeight - b.clientWidth * b.clientHeight);
+      const k = kaesten[0]; let ganz = true;
+      if (k) { const b = k.getBoundingClientRect(), oben = b.top + k.clientTop, alt = k.scrollTop;
+        k.scrollTop = alt + (vy + q0.h / 2) - (oben + k.clientHeight / 2); dy = k.scrollTop - alt; if (dy) window.__torRoll.push([k, alt]);
+        ganz = vy - dy >= oben - 2 && vy - dy + q0.h <= oben + k.clientHeight + 2; }
+      const q = { ...q0, y: q0.y - dy };
+      scrollTo(0, Math.max(0, q.y + q.h / 2 - innerHeight / 2)); const t0 = performance.now();
       const offen = () => [...document.images].filter(im => { const b = im.getBoundingClientRect(); return b.width && b.bottom + scrollY > q.y && b.top + scrollY < q.y + q.h && !(im.complete && im.naturalWidth); });
       while (offen().length && performance.now() - t0 < 2500) await new Promise(z => setTimeout(z, 100));
-      await Promise.all(offen().concat([...document.images].filter(im => im.complete)).slice(0, 40).map(im => im.decode ? im.decode().catch(() => { }) : 0)); }, r).catch(() => { }); await warte(120); };
-    for (const [i, d] of e.doks.entries()) { if (d.r.h < 110 || d.r.w < 70 || d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-d${i}.png`; const c = clip(d.r, 0); if (c.width < 20 || c.height < 20) continue; await insBild(d.r);
-      await page.screenshot({ path: path.join(ordner, f), clip: c, fullPage: true }).then(() => zu.doks.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { }); }
+      await Promise.all(offen().concat([...document.images].filter(im => im.complete)).slice(0, 40).map(im => im.decode ? im.decode().catch(() => { }) : 0));
+      return { r: q, ganz }; }, r).catch(() => null)) || { r, ganz: true };
+    const zurueckRollen = () => page.evaluate(() => { (window.__torRoll || []).reverse().forEach(([k, v]) => { k.scrollTop = v; }); window.__torRoll = []; }).catch(() => { });
+    for (const [i, d] of e.doks.entries()) { if (d.r.h < 110 || d.r.w < 70 || d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-d${i}.png`;
+      // schräg gelegtes Blatt fürs Bild gerade legen (Drehung der Vorfahren aus, danach zurück; README «K10 schräg»)
+      let rd = d.r; if (d.schraeg) rd = (await page.evaluate(n => { const e = document.querySelector(`[data-tor-dok="${n}"]`); if (!e) return null; window.__torGerade = [];
+        for (let x = e, k = 0; x && k < 5; x = x.parentElement, k++) { window.__torGerade.push([x, x.style.transform, x.style.rotate]); x.style.setProperty('rotate', 'none', 'important'); x.style.setProperty('transform', 'none', 'important'); }
+        const b = e.getBoundingClientRect(); return { x: Math.round(b.left), y: Math.round(b.top + scrollY), w: Math.round(b.width), h: Math.round(b.height) }; }, i).catch(() => null)) || d.r;
+      const ib = await insBild(rd); await warte(120);
+      const c = clip(ib.r, 0); if (ib.ganz && c.width >= 20 && c.height >= 20 && c.height >= ib.r.h - 2) await page.screenshot({ path: path.join(ordner, f), clip: c, fullPage: true }).then(() => zu.doks.push({ datei: f, r: d.r, sel: d.sel, foto: d.foto })).catch(() => { });
+      if (d.schraeg) await page.evaluate(() => { (window.__torGerade || []).forEach(([x, t, r]) => { x.style.transform = t; x.style.rotate = r; }); window.__torGerade = []; }).catch(() => { });
+      await zurueckRollen(); }
     for (const [i, d] of e.bilder.entries()) { if (d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-k${i}.png`;
       // feste Ebene (Fussleiste): im Fensterbild ausschneiden, nicht im Ganzseitenbild – dort steht sie nicht an ihrer Stelle (README «K4 feste Ebenen»)
-      if (d.fest) { await page.evaluate(() => scrollTo(0, 0)).catch(() => { }); await warte(150); const q = d.fest; const fx = Math.max(0, q.x), fy = Math.max(0, q.y); const fc = { x: fx, y: fy, width: Math.min(w - fx, q.w), height: Math.min(h - fy, q.h) }; if (fc.width < 20 || fc.height < 20) continue;
-        await page.screenshot({ path: path.join(ordner, f), clip: fc }).then(() => zu.kacheln.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { }); continue; }
-      const c = clip(d.r, 0); if (c.width < 20 || c.height < 20) continue; await insBild(d.r);
-      await page.screenshot({ path: path.join(ordner, f), clip: c, fullPage: true }).then(() => zu.kacheln.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { }); }
+      // liegt sie dort in einem Rollkasten (Ebene «Neu erstellen» der Hausdruckerei), wird der Kasten gerollt wie bei insBild; halbe Kacheln werden nicht beurteilt (README «K10/K4 Rollkasten»)
+      if (d.fest) { await page.evaluate(() => scrollTo(0, 0)).catch(() => { }); await warte(150); const ib = await insBild(d.fest); await page.evaluate(() => scrollTo(0, 0)).catch(() => { }); await warte(120);
+        const q = ib.r; const fx = Math.max(0, q.x), fy = Math.max(0, q.y); const fc = { x: fx, y: fy, width: Math.min(w - fx, q.w), height: Math.min(h - fy, q.h) };
+        if (ib.ganz && fc.width >= 20 && fc.height >= 20 && fc.height >= q.h - 2) await page.screenshot({ path: path.join(ordner, f), clip: fc }).then(() => zu.kacheln.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { });
+        await zurueckRollen(); continue; }
+      const ib = await insBild(d.r); await warte(120); const c = clip(ib.r, 0);
+      if (ib.ganz && c.width >= 20 && c.height >= 20 && c.height >= ib.r.h - 2) await page.screenshot({ path: path.join(ordner, f), clip: c, fullPage: true }).then(() => zu.kacheln.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { });
+      await zurueckRollen(); }
     await page.evaluate(() => document.querySelectorAll('[data-messlauf-aus="verdeckt"]').forEach(e => e.removeAttribute('data-messlauf-aus'))).catch(() => { });
     await page.evaluate(() => scrollTo(0, 0)).catch(() => { });
   };

@@ -213,9 +213,26 @@ exports.ergaenzung = function ergaenzung(opt) {
   // Dokumente: Lage für die Bildprüfung (Löcher, Mitte); K12 Stil; K14 doppelte Marke
   const stil = opt.stil || {};
   const doks = sichtbar.filter(istDok).filter((e, i, a) => !a.some(o => o !== e && o.contains(e)) && e.getBoundingClientRect().height > 60);
-  const dokListe = [];
+  const dokListe = []; document.querySelectorAll('[data-tor-dok]').forEach(e => e.removeAttribute('data-tor-dok'));
+  // Ein festes Fenster (Willkommen, Dialog), das ein Blatt beim Hineinrollen zudeckt: kein Bild dieses Blatts für Loch/Mitte (4.11.2026, README «K10 zugedeckt»).
+  // Zählt nur, was nicht das Blatt selbst trägt, mindestens 30 % der Fensterhöhe hoch ist und waagrecht ein Drittel des Blatts überdeckt; liegt das Blatt selbst
+  // in einer festen Ebene, nur Fenster mit höherem z-index darüber
+  const festAhn = e => { for (let x = e.parentElement; x && x.nodeType === 1; x = x.parentElement) if (cs(x).position === 'fixed') return x; return null; };
+  const zi = e => parseInt(cs(e).zIndex, 10) || 0;
+  const fenster = [...document.querySelectorAll('body *')].filter(q => cs(q).position === 'fixed' && sicht(q) && q.getBoundingClientRect().height > innerHeight * .3 && !festAhn(q));
+  const zugedeckt = d => { const r = d.getBoundingClientRect(), fa = festAhn(d); return fenster.some(q => { if (q.contains(d) || d.contains(q)) return false; if (fa && (fa.contains(q) || zi(q) <= zi(fa))) return false;
+    const b = q.getBoundingClientRect(); return Math.min(r.right, b.right) - Math.max(r.left, b.left) > r.width / 3; }); };
   for (const d of doks) {
-    dokListe.push({ sel: pfad(d), r: rect(d) });
+    if (zugedeckt(d)) continue;
+    // Ansichtskarte mit randlosem Foto (ein Bild deckt ≥ 90 % des Blatts): Himmel oder Dunst sind dort keine leere Papierfläche, Loch/Mitte gelten nicht
+    // (4.11.2026, README «K10 randloses Foto»). Fertige Vorschaubilder ganzer Blätter (.vbild, vorschau) zählen nicht als Foto, sie werden weiter geprüft.
+    const dr = d.getBoundingClientRect();
+    const foto = [...d.querySelectorAll('img')].some(im => { if (im.closest('.vbild,[class*="vorschau"]')) return false; const b = im.getBoundingClientRect();
+      const ix = Math.min(b.right, dr.right) - Math.max(b.left, dr.left), iy = Math.min(b.bottom, dr.bottom) - Math.max(b.top, dr.top); return ix > 0 && iy > 0 && ix * iy >= .9 * dr.width * dr.height; });
+    // schräg gelegtes Blatt (Galerie-Stücke mit rotate): Kennung für tor-schnell, das es fürs Bild gerade legt (4.11.2026, README «K10 schräg»)
+    let schraeg = false; for (let x = d, n = 0; x && n < 5; x = x.parentElement, n++) { const t = cs(x).transform, ro = cs(x).rotate; if ((ro && ro !== 'none' && parseFloat(ro)) || (t && t !== 'none' && /^matrix\(([^,]+),\s*([^,]+)/.test(t) && Math.abs(parseFloat(RegExp.$2)) > .005)) { schraeg = true; break; } }
+    if (schraeg) d.setAttribute('data-tor-dok', String(dokListe.length));
+    dokListe.push({ sel: pfad(d), r: rect(d), foto, schraeg });
     const innen = [...d.querySelectorAll('*')].filter(sicht);
     // K12 Versalien in Lesezeilen (nicht Mono-Etiketten), Trennzeichen
     if (stil.versalienNur) { const erlaubt = new RegExp(stil.versalienErlaubt || stil.versalienNur, 'i');

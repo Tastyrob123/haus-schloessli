@@ -717,7 +717,7 @@
         <div class="mb__p mb__p--angaben"><h3>Angaben</h3><dl>${[['Adresse', M.adr], ['Telefon', M.tel], ['E-Mail', M.mail], ['Website', M.web]].filter(x => x[1]).map(([l, v]) => `<dt>${l}</dt><dd>${esc(v)}</dd>`).join('')}</dl><button class="ms-lnk" data-ansicht="fotos"><span>${(M.bilder || []).length} Fotos ansehen</span>${PFEIL_SVG}</button></div>
       </div>`;
     /* Tapete erlebbar (Robert 29.10.2026: «sieht auch einfach scheiße leer aus»): auf jeder Fläche ein echtes Blatt des Hauses im passenden Ton */
-    document.querySelectorAll('#msMarke .mb__tw-doc').forEach(t => { try { const d = DS.dokument(M, { name: 'Beispiel', format: 'a6h', seiten: [{ vorlage: 'deckel', ton: t.dataset.ton, inhalt: {} }] }); t.appendChild(window.DSStudio.miniBox(d, 0, 190)); } catch (e) { console.warn(e); } });
+    document.querySelectorAll('#msMarke .mb__tw-doc').forEach(t => { try { const d = DS.dokument(M, { name: 'Beispiel', format: 'a6h', seiten: [{ vorlage: 'deckel', ton: t.dataset.ton, inhalt: { ueber: t.dataset.ton === 'dunkel' ? 'Donnerstag bis Montag' : 'Täglich ab 11:30 Uhr', titel: t.dataset.ton === 'dunkel' ? 'Am Abend' : 'Am Mittag', text: 'Wirtschaft am Schlössli, direkt im Hafen von Bottighofen.', aktion: '@schloessli_bottighofen' } }]   /* mit Titel und Satz: ein leeres Muster zeigte nur Zeichen und Linie über einem Loch (Prüftor K10, 4.11.2026) */ }); t.appendChild(window.DSStudio.miniBox(d, 0, 190)); } catch (e) { console.warn(e); } });
   }
   /* Begrüssung nach Tageszeit */
   function gruss() {

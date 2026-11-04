@@ -165,7 +165,9 @@
   const stapelH = (c, items) => items.reduce((y, it) => y + (typeof it === 'number' ? it : hoehe(c, it)), 0);
   function setze(c, items, y) { for (const it of items) { if (typeof it === 'number') { y += it; continue; } it.y = +y.toFixed(2); y += hoehe(c, it); c.el.push(it); } return y; }
   /* Gruppe auf die optische Mitte eines Bereichs: 4 % der Bereichshöhe über der geometrischen Mitte */
-  const optisch = (c, items, y0, y1) => setze(c, items, Math.max(y0 - .02 * (y1 - y0), y0 + (y1 - y0 - stapelH(c, items)) / 2 - (y1 - y0) * .042));
+  /* Hub über die geometrische Mitte 2,5 % des Bereichs (4.11.2026, Prüftor K10: mit 4,2 % blieb unter der Gruppe bis 18 % der Blatthöhe leer bis zur Fusszeile) */
+  const HUB = .025;
+  const optisch = (c, items, y0, y1) => setze(c, items, Math.max(y0 - .02 * (y1 - y0), y0 + (y1 - y0 - stapelH(c, items)) / 2 - (y1 - y0) * HUB));
   /* Grösse suchen: bauer(k) liefert die Gruppe; das grösste k bis kMax, bei dem die Gruppe höchstens «anteil» der Höhe füllt */
   function passend(c, bauer, hoeheMax, kMax = 1.25, kMin = .55) {
     let lo = kMin, hi = kMax, best = bauer(kMin);
@@ -272,7 +274,7 @@
   /* Reihen (Zeit | Schritt) als ein Glied im Stapel */
   function optischReihen(c, items, y0, y1) {
     const H = items.reduce((y, it) => y + (typeof it === 'number' ? it : it.typ === 'reihe' ? it.h : hoehe(c, it)), 0);
-    let y = Math.max(y0 - .02 * (y1 - y0), y0 + (y1 - y0 - H) / 2 - (y1 - y0) * .042);
+    let y = Math.max(y0 - .02 * (y1 - y0), y0 + (y1 - y0 - H) / 2 - (y1 - y0) * HUB);
     for (const it of items) {
       if (typeof it === 'number') { y += it; continue; }
       if (it.typ === 'reihe') { it.teile.forEach(t => { t.y = +(y + (t.y0 || 0)).toFixed(2); delete t.y0; c.el.push(t); }); y += it.h; continue; }
@@ -448,11 +450,11 @@
     const u = c.u, bw = c.w - 2 * (r + .08 * u);
     const kf = kopfFuss(c, i, r, { ohne: o.ohneKopfFuss });
     const luft = .07 * u, y0 = kf.oben + luft, y1 = kf.unten - luft;
-    let hm = o.fuellungKf ? Math.min(y1 - y0, (kf.unten - kf.oben) * o.fuellungKf) : (y1 - y0) * (o.fuellung || .76), g;   // fuellungKf: Anteil zwischen Kopf und Fuss (kleine Querformate)
+    let hm = o.fuellungKf ? Math.min(y1 - y0, (kf.unten - kf.oben) * o.fuellungKf) : (y1 - y0) * (o.fuellung || .86), g;   // Prüftor K10 4.11.2026: .86 statt .76, sonst bis 18 % leer über der Fusszeile; fuellungKf: Anteil zwischen Kopf und Fuss (kleine Querformate)
     for (let n = 0; n < 8; n++) {   // mit Kopfzeile: die Gruppe hält mehr als 2,5 Textzeilen Abstand, sonst gehört der Kopf zur Gruppe
-      g = passend(c, gruppeBau(c, i, bw, o), hm, o.kMax || 1.8, .5);
+      g = passend(c, gruppeBau(c, i, bw, o), hm, o.kMax || 2.4, .5);
       if (o.ohneKopfFuss || i.fuss === '') break;
-      const H = stapelH(c, g), yy = Math.max(y0 - .02 * (y1 - y0), y0 + (y1 - y0 - H) / 2 - .042 * (y1 - y0));
+      const H = stapelH(c, g), yy = Math.max(y0 - .02 * (y1 - y0), y0 + (y1 - y0 - H) / 2 - HUB * (y1 - y0));
       const t = g.filter(e => e && e.typ === 'text' && /^(text|kursiv)$/.test(e.rolle)).map(e => e.gr).sort((a, b) => a - b), zl = (t.length ? t[Math.floor(t.length / 2)] : 0) * 1.35;
       if (!zl || yy - kf.oben > 2.7 * zl) break;
       hm *= .93;
@@ -485,7 +487,7 @@
     const et = [...links, ...re].filter(e => e && e.typ === 'text' && e.rolle === 'mono' && /^(ueber|unter|aktion)$/.test(e.slot)), eg = Math.min(Math.max(...et.map(e => e.gr)), Math.max(Math.min(...et.map(e => e.gr)), Z.mono * u));   // nie unter die Etikettgrösse des Formats
     et.forEach(e => { if (e.slot === 'ueber') e.w = wl; });
     et.forEach(e => { const m = e.x + e.w / 2; e.gr = +eg.toFixed(2); e.h = DS.mess(e).h; ausgewogen(c, e); e.x = +(m - e.w / 2).toFixed(2); });
-    const hL = stapelH(c, links), hR = stapelH(c, re), H = Math.max(hL, hR), yG = Math.max(y0, y0 + (y1 - y0 - H) / 2 - .042 * (y1 - y0));
+    const hL = stapelH(c, links), hR = stapelH(c, re), H = Math.max(hL, hR), yG = Math.max(y0, y0 + (y1 - y0 - H) / 2 - HUB * (y1 - y0));
     setze(c, links, yG + (H - hL) / 2); setze(c, re, yG + (H - hR) / 2);
   }
   /* Nur eine Fusszeile (unter einem Bild oben): Abstand zum Rand wie bei kopfFuss */
@@ -518,7 +520,7 @@
       const c = erweitere(c0); c.stil.ausr = 'c';
       grund(c, seite); const r = rahmen(c);
       if (ZWEISPALTIG(c)) return zweispaltig(c, i, r);
-      mitte(c, i, r, c.quer && c.u < 110 ? { zeichen: .5, titel: 1.25, fuellungKf: .76, ohneKopfFuss: true, kText: 1.6, textVoll: true } : c.quer ? { zeichen: .75, titel: 1.25, fuellung: .74, ohneKopfFuss: true } : { fuellung: .72, ohneKopfFuss: true });   // kleine Querformate: wenig Höhe, also kleines Zeichen und Satz über die volle Breite
+      mitte(c, i, r, c.quer && c.u < 110 ? { zeichen: .5, titel: 1.25, fuellungKf: .76, ohneKopfFuss: true, kText: 1.6, textVoll: true } : c.quer ? { zeichen: .75, titel: 1.25, fuellung: .74, ohneKopfFuss: true } : { fuellung: .8, ohneKopfFuss: true });   // .8 statt .72 (Prüftor K10 4.11.2026: Quadrat mit 14 % Luft über dem Zeichen)   // kleine Querformate: wenig Höhe, also kleines Zeichen und Satz über die volle Breite
     },
   });
 
@@ -793,6 +795,56 @@
   };
   for (const [k, f] of Object.entries(FORMATE_JE)) if (V[k]) V[k] = Object.assign({}, V[k], { formate: f });
   delete V.tuer;
+
+  /* ---------- Ausgleich nach dem Satz (4.11.2026, Prüftor K10 «Loch»): zwischen Kopfzeile, Gruppe und Fusszeile bleibt nie mehr als 12 % der Blatthöhe leer.
+     Steht die Gruppe zu hoch, rückt sie zur Mitte; reicht das nicht (wenig Inhalt in einem grossen Blatt), wächst die Luft zwischen ihren Teilen gleichmässig,
+     so steht die Komposition als Einheit zwischen Kopf und Fuss statt über einem Loch. Blätter mit Foto setzen ihre Höhe selbst und bleiben unberührt. ---------- */
+  const LOCH = .10;   // Kästen tragen Zeilenabstand, das Auge (und das Prüftor) misst ab der Schrift: .10 der Kästen ≈ .12–.13 sichtbar
+  function ausgleich(c) {
+    const el = c.el || []; if (!el.length || el.some(e => e.typ === 'bild')) return;
+    const inhalt = el.filter(e => /^(text|zeichen|linie)$/.test(e.typ)).map(e => ({ e, o: e.y, u: e.y + hoehe(c, e) })).sort((a, b) => a.o - b.o);
+    if (inhalt.length < 3) return;
+    const H = c.h, grenze = H * .05;
+    let kopf = null, fuss = null;
+    const erst = inhalt[0], letzt = inhalt[inhalt.length - 1];
+    if (letzt.e.slot === 'fuss' && letzt.o - inhalt[inhalt.length - 2].u > grenze) fuss = letzt;
+    if (erst.e.typ === 'text' && erst.e.rolle === 'mono' && erst.o < H * .16 && inhalt[1].o - erst.u > grenze) kopf = erst;
+    if (!fuss) return;
+    const gruppe = inhalt.filter(x => x !== kopf && x !== fuss); if (!gruppe.length) return;
+    const oben = kopf ? kopf.u : H - fuss.o, unten = fuss.o;   // ohne Kopfzeile oben so viel Luft wie unter der Fusszeile (wie kopfFuss)
+    const gO = Math.min(...gruppe.map(x => x.o)), gU = Math.max(...gruppe.map(x => x.u));
+    let T = gO - oben, B = unten - gU; const max = LOCH * H;
+    if (T <= max && B <= max) return;
+    const schieb = (x, d) => { x.e.y = +(x.e.y + d).toFixed(2); x.o += d; x.u += d; };
+    // 1. zur Mitte rücken
+    const d = Math.max(-T, Math.min(B, (B - T) / 2));
+    if (Math.abs(d) > .01) { gruppe.forEach(x => schieb(x, d)); T += d; B -= d; }
+    if (T <= max && B <= max) return;
+    // 2. wenig Inhalt wird grösser, nicht leerer: die Gruppe wächst als Ganzes (Schrift, Zeichen, Linie, Abstände), Umbrüche bleiben, die Breite hält
+    const extra = (T - max) + (B - max); if (extra <= 0) return;
+    const hG = gU - gO, breit = c.w - 2 * Math.max(6, .1 * c.u);
+    const breite = e => { if (e.typ !== 'text') return e.w || 0; try { const m = DS.mess(e); return Math.min(e.w, m.bw || e.w); } catch (x) { return e.w; } };   // gesetzte Zeilenbreite, nicht die Satzbreite
+    const wMax = Math.max(...gruppe.map(x => breite(x.e))); if (!hG || !wMax) return;
+    const f = Math.min(1 + extra / hG, breit / wMax, 1.6);
+    const oG = gO;
+    function mitteRuecken() { const nO = Math.min(...gruppe.map(x => x.o)), nU = Math.max(...gruppe.map(x => x.u)), d2 = ((unten - nU) - (nO - oben)) / 2; gruppe.forEach(x => schieb(x, d2)); }
+    if (f > 1.01) gruppe.forEach(x => { const e = x.e, mx = e.x + e.w / 2;
+      e.w = +(e.w * f).toFixed(2); e.x = +(mx - e.w / 2).toFixed(2);
+      if (e.typ === 'text') { e.gr = +(e.gr * f).toFixed(2); e.h = +(e.h * f).toFixed(2); }
+      e.y = +(oG + (e.y - oG) * f).toFixed(2); x.o = e.y; x.u = e.y + hoehe(c, e); });
+    mitteRuecken();
+    // 3. stösst die Gruppe an die Breite und bleibt doch Luft: die Abstände zwischen ihren Teilen wachsen gleichmässig, nie zu einem neuen Loch
+    const nO = Math.min(...gruppe.map(x => x.o)), nU = Math.max(...gruppe.map(x => x.u)), rest = (nO - oben - max) + (unten - nU - max);
+    if (rest <= 0) return;
+    const baender = []; for (const x of [...gruppe].sort((p, q) => p.o - q.o)) { const bd = baender[baender.length - 1]; if (bd && x.o < bd.u + .2) { bd.u = Math.max(bd.u, x.u); bd.xs.push(x); } else baender.push({ o: x.o, u: x.u, xs: [x] }); }
+    if (baender.length < 3) return;
+    let innen = 0; for (let n = 1; n < baender.length; n++) innen = Math.max(innen, baender[n].o - baender[n - 1].u);
+    const je = Math.min(rest / (baender.length - 1), max * .8 - innen); if (je <= 0) return;
+    baender.forEach((bd, n) => bd.xs.forEach(x => schieb(x, n * je)));
+    mitteRuecken();
+  }
+  for (const k of Object.keys(V)) { const v = V[k]; if (!v || typeof v.bau !== 'function') continue; const bau = v.bau;
+    V[k] = Object.assign({}, v, { bau(c0, i, seite) { const r = bau.call(this, c0, i, seite); if (istHaus(c0)) try { ausgleich(c0); } catch (e) { } return r; } }); }
 
   DS.SATZ_HAUS = { V, ALT, ablauf, gliederSatz };
 })();
