@@ -126,9 +126,15 @@ const ohneZahlen = s => String(s).replace(/[\d.,:%]+/g, '#');
     const ph = await hoch() || h;
     const clip = (r, rand) => { const x = Math.max(0, r.x - rand), y = Math.max(0, r.y - rand); return { x, y, width: Math.min(w - x, r.w + 2 * rand), height: Math.min(ph - y, r.h + 2 * rand) }; };
     zu.doks = []; zu.kacheln = [];
-    for (const [i, d] of e.doks.entries()) { if (d.r.h < 110 || d.r.w < 70 || d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-d${i}.png`; const c = clip(d.r, 0); if (c.width < 20 || c.height < 20) continue;
+    // Vor jedem Kachel-/Blattbild die Stelle ins Fenster holen und auf ihre Bilder warten (4.11.2026, Beleg in README: WebKit lädt loading=lazy unterhalb des Fensters
+    // bei einem Ganzseitenbild nicht nach, Vorschauen der Hausdruckerei wirkten dadurch leer oder mit Loch, obwohl ein Gast sie beim Scrollen gefüllt sieht)
+    const insBild = async r => { await page.evaluate(async q => { scrollTo(0, Math.max(0, q.y + q.h / 2 - innerHeight / 2)); const t0 = performance.now();
+      const offen = () => [...document.images].filter(im => { const b = im.getBoundingClientRect(); return b.width && b.bottom + scrollY > q.y && b.top + scrollY < q.y + q.h && !(im.complete && im.naturalWidth); });
+      while (offen().length && performance.now() - t0 < 2500) await new Promise(z => setTimeout(z, 100));
+      await Promise.all(offen().concat([...document.images].filter(im => im.complete)).slice(0, 40).map(im => im.decode ? im.decode().catch(() => { }) : 0)); }, r).catch(() => { }); await warte(120); };
+    for (const [i, d] of e.doks.entries()) { if (d.r.h < 110 || d.r.w < 70 || d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-d${i}.png`; const c = clip(d.r, 0); if (c.width < 20 || c.height < 20) continue; await insBild(d.r);
       await page.screenshot({ path: path.join(ordner, f), clip: c, fullPage: true }).then(() => zu.doks.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { }); }
-    for (const [i, d] of e.bilder.entries()) { if (d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-k${i}.png`; const c = clip(d.r, 0); if (c.width < 20 || c.height < 20) continue;
+    for (const [i, d] of e.bilder.entries()) { if (d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-k${i}.png`; const c = clip(d.r, 0); if (c.width < 20 || c.height < 20) continue; await insBild(d.r);
       await page.screenshot({ path: path.join(ordner, f), clip: c, fullPage: true }).then(() => zu.kacheln.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { }); }
     await page.evaluate(() => document.querySelectorAll('[data-messlauf-aus="verdeckt"]').forEach(e => e.removeAttribute('data-messlauf-aus'))).catch(() => { });
     await page.evaluate(() => scrollTo(0, 0)).catch(() => { });
