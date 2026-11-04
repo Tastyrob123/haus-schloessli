@@ -1401,3 +1401,12 @@ html.cv-alle main>section.fl:not(#brief){content-visibility:visible}
 @media(max-width:480px){.kn{max-width:100%;height:auto;min-height:54px;padding-top:9px;padding-bottom:9px;white-space:normal;line-height:1.35;text-align:left}.kn i{flex:none}.kn-reihe{max-width:100%}}
 .schluss .zt,.schluss .lauf p,.schluss .kap span{text-shadow:0 1px 2px rgba(4,16,35,.9),0 2px 16px rgba(4,16,35,.8),0 0 42px rgba(4,16,35,.55)}
 /* nur-bewegung */.glanz{animation:none!important;border:0!important;background:none!important;transition:transform .5s var(--e2)!important}.glanz::before{content:"";position:absolute;z-index:-2;left:50%;top:50%;width:260px;height:260px;margin:-130px 0 0 -130px;background:conic-gradient(transparent,var(--gold) 6%,#ffffff 12%,var(--taupe) 18%,transparent 24%);animation:glanzdreh 4s linear infinite;will-change:transform}.glanz::after{content:"";position:absolute;z-index:-1;inset:1px;border-radius:inherit;background:linear-gradient(180deg,#123a7d,#0a234c)}@keyframes glanzdreh{to{transform:rotate(1turn)}}@media (prefers-reduced-motion:reduce){.glanz::before{animation:none}}
+/* k34-fluss */
+.js img.ld.da.k34-sofort{animation:none}
+.k34-ruh,.k34-ruh::before,.k34-ruh::after{animation-play-state:paused!important}
+.stapel>*,.pk__b>*,.feedb__r>*,.tb__r>.abzug,.tb__r>.tel,.kt__tisch>*,.wg>*,.brief__a,.fst__s,.kopfzeile .zt .z>span,.da[data-drift]{will-change:auto!important}
+[data-a="worte"].zl .wt{opacity:1;transform:none;transition:none}
+[data-a="worte"] .wl{display:block;opacity:0;transform:translateY(.75em);transition:opacity .8s var(--e1),transform 1s var(--e1);transition-delay:calc(var(--vz,0ms) + var(--l)*120ms)}
+[data-a="worte"].da .wl{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){[data-a="worte"] .wl{opacity:1!important;transform:none!important;transition:none!important}}
+@media print{[data-a="worte"] .wl{opacity:1!important;transform:none!important}}

@@ -63,7 +63,23 @@
   /* ---------- Hereinkommen ---------- */
   var spiel = null;
   var ziele = $$('[data-a],.odo,.zt,.roll'), spaet = doc.documentElement.getAttribute('data-herein') === 'spaet';
+  /* k34-fluss: Absätze zeilenweise hereinholen (eine Ebene je Zeile statt je Wort), danach wieder frei fliessen lassen */
+  function zeilen(el) {
+    el.__zl = 1; var w = $$('.wt', el); if (!w.length) return;
+    el.classList.add('zl');
+    var reihen = [], oben = null;
+    w.forEach(function (s) { var t = s.offsetTop; if (oben === null || Math.abs(t - oben) > 4) { reihen.push([]); oben = t; } reihen[reihen.length - 1].push(s); });
+    for (var i = reihen.length - 1; i >= 0; i--) {
+      var r = doc.createRange(), l = doc.createElement('span'), z = reihen[i];
+      r.setStartBefore(z[0]); r.setEndAfter(z[z.length - 1]);
+      l.className = 'wl'; l.style.setProperty('--l', i); l.appendChild(r.extractContents()); r.insertNode(l);
+    }
+    void el.offsetWidth;
+    var vz = parseFloat(getComputedStyle(el).getPropertyValue('--vz')) || 0;
+    setTimeout(function () { $$('.wl', el).forEach(function (l) { while (l.firstChild) l.parentNode.insertBefore(l.firstChild, l); l.parentNode.removeChild(l); }); }, vz + reihen.length * 120 + 1300);
+  }
   function zeig(el) {
+    if (!ruhig && !el.__zl && el.getAttribute('data-a') === 'worte') zeilen(el);
     el.classList.add('da');
     if (el.classList.contains('odo')) rolle(el);
   }
@@ -85,7 +101,17 @@
   /* ---------- Bilder: drei Bildschirme voraus holen, in Reihenfolge, bis zu sechs auf einmal; jedes Foto blendet ein, sobald es da ist (Robert 10.10.2026: «die Bilder laden erst so spät») ---------- */
   (function () {
     var alle = $$('img.ld'), faul = alle.filter(function (im) { return im.getAttribute('loading') === 'lazy'; });
-    function fertig(im) { if (im.__d) return; im.__d = 1; im.classList.add('da'); }
+    /* k34-fluss: Einblenden nur im Fenster und erst nach dem Dekodieren; ausserhalb (Vorausladen) ohne Einblenden, das sieht niemand */
+    var sicht = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) { es.forEach(function (e) { var im = e.target; im.__s = e.isIntersecting; if (im.__w) { im.__w = 0; fertig(im); } }); }, { rootMargin: '8% 0px' }) : null;
+    function fertig(im) {
+      if (im.__d) return;
+      if (sicht && im.__s === undefined) { im.__w = 1; return; }
+      im.__d = 1; if (sicht) sicht.unobserve(im);
+      if (ruhig || (sicht && !im.__s)) { im.classList.add('k34-sofort', 'da'); return; }
+      var z = function () { im.classList.add('da'); };
+      if (im.decode && im.naturalWidth) im.decode().then(z, z); else z();
+    }
+    if (sicht) alle.forEach(function (im) { sicht.observe(im); });
     alle.forEach(function (im) { if (im.complete && im.naturalWidth) fertig(im); else { im.addEventListener('load', function () { fertig(im); }, { once: true }); im.addEventListener('error', function () { fertig(im); }, { once: true }); } });
     if (!('IntersectionObserver' in window)) { faul.forEach(function (im) { im.loading = 'eager'; }); return; }
     var GLEICH = 6, laeuft = 0, warte = [];
@@ -113,7 +139,9 @@
   var leiste = $('.leiste'), yAlt = scrollY, richt = 0, anker = yAlt;
   function lauf() {
     takt = 0;
-    var y = scrollY, vh = innerHeight, h = doc.documentElement.scrollHeight - vh;
+    var y = scrollY, vh = innerHeight, jetzt = performance.now();
+    if (!lauf.t || jetzt - lauf.t > 300) { lauf.t = jetzt; lauf.h = doc.documentElement.scrollHeight; lauf.o = abschn.map(function (s) { return s ? s.getBoundingClientRect().top + y : 1e9; }); }   /* k34-fluss: Lage höchstens alle 300 ms lesen */
+    var h = lauf.h - vh;
     /* Leiste weg beim Runterscrollen, zurück beim Hochscrollen, wie auf der Website (Robert 12.10.2026).
        Gezählt wird der Weg seit dem letzten Richtungswechsel, damit kleine Scrollschritte bei 120 Bildern/s nicht verloren gehen. */
     if (leiste) {
@@ -125,7 +153,7 @@
     }
     if (linie) linie.style.transform = 'scaleX(' + (h > 0 ? y / h : 0) + ')';
     var an = -1;
-    abschn.forEach(function (s, i) { if (s && s.getBoundingClientRect().top < vh * 0.42) an = i; });
+    lauf.o.forEach(function (o, i) { if (o - y < vh * 0.42) an = i; });   /* k34-fluss */
     if (an !== anAlt) { links.forEach(function (a, i) { a.classList.toggle('an', i === an); }); anAlt = an; }
     /* Abstand zur Bildmitte, begrenzt auf den Bereich, in dem das Element im Bild sein kann. Ohne Grenze blieb nach einem Sprung über die
        ganze Seite (Anker, Seitenanfang) ein Element um Tausende px verschoben liegen: der Takt lief noch mit der alten Liste, bevor der
@@ -453,4 +481,18 @@
   dunkel.addEventListener('click', zu);
   doc.addEventListener('keydown', function (e) { if (e.key === 'Escape') zu(); });
   addEventListener('resize', function () { if (offen && !lauf) { var k = offen; klein(k, true); gross(k); } });
+})();
+
+/* k34-fluss: Endlos-Bewegungen (Glanz, Wiegen, Pfeil, Welle …) halten an, solange sie nicht im Fenster sind */
+(function () {
+  if (!('IntersectionObserver' in window) || !document.getAnimations) return;
+  function such() {
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.target.classList.toggle('k34-ruh', !e.isIntersecting); }); }, { rootMargin: '12% 0px' }), da = [];
+    document.getAnimations().forEach(function (a) {
+      var ef = a.effect, t = ef && ef.target, z = ef && ef.getComputedTiming ? ef.getComputedTiming() : null;
+      if (!t || !z || z.iterations !== Infinity || da.indexOf(t) >= 0) return;
+      da.push(t); io.observe(t);
+    });
+  }
+  if (document.readyState === 'complete') setTimeout(such, 1200); else addEventListener('load', function () { setTimeout(such, 1200); });
 })();

@@ -211,7 +211,7 @@ def seite(O):
 *{{box-sizing:border-box}}html{{-webkit-text-size-adjust:100%}}
 body{{margin:0;background:var(--papier);color:var(--tinte);font:400 17px/1.6 'Instrument Sans',system-ui,sans-serif}}
 a{{color:inherit}}
-.leiste{{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px var(--rand);background:rgba(11,29,61,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(162,182,207,.25)}}
+.leiste{{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px var(--rand);background:rgba(11,29,61,.97);border-bottom:1px solid rgba(162,182,207,.25)}}
 .leiste .mk{{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--blatt);min-width:0}}
 .leiste .mk img{{width:26px;height:auto;display:block}}
 .leiste .mk span{{font:400 13px/1.2 'Open Sans',Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
@@ -236,6 +236,8 @@ h1 em{{font-style:normal;color:var(--himmel)}}
 .held dt{{font:400 11px/1 'DM Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--himmel)}}
 .held dd{{margin:0;font:400 clamp(1.6rem,2.4vw,2.2rem)/1 'DM Mono',monospace;color:var(--blatt)}}
 .or{{position:relative;margin-top:-22px;border-radius:22px 22px 0 0;padding:clamp(56px,6.4vw,96px) 0 clamp(70px,7vw,110px);box-shadow:inset 0 1px 0 rgba(162,182,207,.55)}}
+/* flüssig scrollen (Kriterium 34): Ordner ausserhalb des Fensters werden nicht gemalt; beim Laden einmal ganz gezeichnet, damit jede Höhe stimmt (Rücksprung) */
+@supports (content-visibility:auto){{.or{{content-visibility:auto;contain-intrinsic-size:auto 1000px}}html.cv-alle .or{{content-visibility:visible}}}}
 .or--b{{background:var(--blatt)}}.or--p{{background:var(--papier)}}
 .or .in{{display:grid;grid-template-columns:minmax(260px,.8fr) 1.6fr;gap:clamp(30px,5vw,90px);padding:0 var(--rand);max-width:1500px;margin:0 auto;align-items:start}}
 .kopf{{position:sticky;top:96px}}
@@ -299,6 +301,12 @@ html.js .hr.da{{opacity:1;transform:none;transition:opacity .8s cubic-bezier(.2,
   if (!document.documentElement.classList.contains('js')) return;
   var io = new IntersectionObserver(function (es) {{ es.forEach(function (x) {{ if (x.isIntersecting) {{ x.target.classList.add('da'); io.unobserve(x.target); }} }}); }}, {{ rootMargin: '0px 0px -6% 0px' }});
   [].forEach.call(document.querySelectorAll('.hr'), function (x) {{ io.observe(x); }});
+}})();
+(function () {{
+  var d = document.documentElement;
+  function alle() {{ d.classList.add('cv-alle'); requestAnimationFrame(function () {{ requestAnimationFrame(function () {{ d.classList.remove('cv-alle'); }}); }}); }}
+  d.classList.add('cv-alle'); addEventListener('load', function () {{ setTimeout(alle, 300); }});
+  addEventListener('resize', function () {{ clearTimeout(alle.t); alle.t = setTimeout(alle, 400); }});
 }})();
 </script>
 </body></html>

@@ -514,6 +514,8 @@ def nach_bau():
     bild_mass.anwenden(ROOT)
     import kleid_schloessli   # zuletzt: Reste der Vorlagen im Kleid des Hauses (Nachtbau 3.11.2026)
     kleid_schloessli.anwenden(ROOT)
+    import k34_fluss   # flüssig scrollen (Kriterium 34, 4.11.2026): Absätze zeilenweise, Takt ohne Layout-Lesen je Bild, Fotos 1x/2x, Endlos-Bewegung nur im Fenster
+    k34_fluss.anwenden(ROOT)
     import importlib.util as _iu   # ruecksprung.py des Reviers, nicht das gleichnamige Skript des Kits (Robert 1.11.2026: Zurück landet auf der alten Höhe)
     _sp = _iu.spec_from_file_location('ruecksprung_wb', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ruecksprung.py'))
     _rs = _iu.module_from_spec(_sp); _sp.loader.exec_module(_rs)
