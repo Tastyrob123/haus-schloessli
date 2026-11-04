@@ -1,4 +1,4 @@
-# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 06:45 UTC
+# Übergabe (Limit) · Schlössli Nachtbau · Stand 4.11.2026, 08:00 UTC
 
 Neuer Chat: zuerst diese Datei lesen, dann `CLAUDE.md`, dann beim «Nächsten genauen Schritt» weitermachen.
 
@@ -24,6 +24,13 @@ Offene Funde (fast alle Kriterium 35, Schrift in Knöpfen in WebKit 0,6–1,3 px
 5. **Kriterium 34 (Scrollen flüssig):** auf dem Runner überall rot, auch mit Grundlinie. Die Grundlinie misst seit 21:37 zwölf animierte Fotos; ob das reicht, zeigt erst der nächste Lauf. Lokal in Chromium ist alles flüssig.
 
 Um 01:40 UTC liefen drei Opus-Agenten auf die Punkte 1, 2 und 3+4. Ihr Stand ist nur, was committet ist (`git log`).
+
+## Stand 08:00 UTC (dritter Chat, Sitzung session_0189oeKh7869Pv9w5X38SPb3)
+- Lauf über alles auf d62a6ef (Tafel `ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-schnell/`): 39 Funde + Kriterium 34. Werkbank-K37 ist weg.
+- Offen: Hausdruckerei K10 Vorschauen (loch/mitte), K4 leere Vorlagen-Kacheln und Startkacheln, K35 Knöpfe 027, Mail K5 bei 390; Kartenpult K4 Fussleisten-Knöpfe (`#leiste .wo-kn--glas`, `#l-sp`); Schaufenster K4 Team-Fotos; Besucherliste K10 (liste-txt, vergleich, besuchsblatt).
+- Zwei Opus-Agenten arbeiten daran (1: Hausdruckerei; 2: Kartenpult/Schaufenster/Besucherliste), uncommittet bis der Oberchef committet.
+- **Kriterium 34:** auch mit «besserer von zwei Läufen» rot (Hafenbüro 79, Werkbank 303, KI 65, Material 95 Ruckler; Grundlinie 0–1). Reproduzierbar, also keine Last. In Chromium lokal ohne Drosselung: Hafenbüro 0, Werkbank 96, Material 19, Gästebuch 9, KI 7. Lange Aufgaben: Rastern grosser Fotos, programmatisches Scrollen inkl. Scroll-Zeitachsen. Wild Side hatte dasselbe Bild (375 rote K34-Felder). Messskripte: Scratchpad `k34.js` (Chromium + Trace, Argumente URL, Drosselung, Zusatz-CSS).
+- Lokal eingerichtet: Playwright 1.62.1 unter `/Users/robertreff/Aussen-Pruefung`, `~/Desktop/Website-Projekte -> /home/user/haus-schloessli` (sonst startet 9282 nicht).
 
 ## Stand 06:45 UTC (dritter Chat, Sitzung session_0189oeKh7869Pv9w5X38SPb3)
 - Voriger Chat seit 04:37 ohne Commit; übernommen.
