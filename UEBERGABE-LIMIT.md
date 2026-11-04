@@ -25,6 +25,12 @@ Offene Funde (fast alle Kriterium 35, Schrift in Knöpfen in WebKit 0,6–1,3 px
 
 Um 01:40 UTC liefen drei Opus-Agenten auf die Punkte 1, 2 und 3+4. Ihr Stand ist nur, was committet ist (`git log`).
 
+## Stand 5.11.2026 (Abgleich mit dem Schäfli, Mac-Chat)
+- Werkbank auf den Stand der Schäfli-Werkbank vom 4.11. gebracht: kein Betrag mehr (Karte «Ein Vorschlag.», Zusammenfassung, Kapitelzeile, Angebots-PDF unter «Ihre Karten» samt Vorschaubildern, Laptop-Bild der Karte); Brief oben nur mit den drei Orten, Schluss mit dem Gruss wie in der Mail und dem Billett (`_werkbank/gruss_tg.py`, `eigen/tg/`); Kapitel I hell (`sbf--weiss`); Seiten-Reiter brechen nur um, wenn sie angeschnitten sind (1280, 1000), in zwei Reihen zu fünf. `sb_farbe.py` lässt `gruss.css` in den Farben der Mail.
+- Gebaut auf dem Mac ohne den Rohstoff `roh/`/`sb/` (nicht eingecheckt): Kit-Bau mit schon gebauten Bildern (Hilfsskript nur im Scratchpad, nicht im Repo). Ein voller `bau_alles.sh` in der Cloud baut dasselbe aus den Quellen.
+- Geprüft in WebKit und Chromium bei 1440 und 390; alle sichtbaren Bilder laden. Prüfung `[schnell: werkbank]` mit diesem Commit gestartet.
+- Nächster Schritt: Ergebnis des Laufs im Zweig `ergebnis` lesen (`ergebnis/laeufe/claude-schloessli-nachtbau-auftrag-es1vpf-teil…`), Funde beheben.
+
 ## Stand 11:40 UTC (dritter Chat)
 - Lauf 9e14d83: **Kriterium 34 überall grün** (Messung in Chromium), nur noch 7 rote Felder: Hausdruckerei K10 Loch (5) und Schaufenster K4 Länderkarten (2).
 - Behoben: Schaufenster Länderkarten auf hellem Blatt (3061fb4); Hausdruckerei Luft um die Titellinie, Vorschaubilder neu (57c25f8, `[schnell]` über alles läuft).

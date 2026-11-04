@@ -18,6 +18,7 @@ from PIL import Image
 import kern as K
 import rh_kapitel as KP, rh_werkzeuge as WK, rh_strom as SB, rh_worum as VT, rh_impressum as IM, sb_worum as SW, sb_befund as BE, sb_angebot as SA
 import fuss_faecher as FU, mails_reihe as ML, namen_fall as NF, orte_kurs as OK
+import gruss_tg as _TG
 
 e = html.escape
 W = os.path.dirname(os.path.abspath(__file__))
@@ -165,9 +166,7 @@ def schluss():
     <div class="lauf">
       <p data-a="worte">Was hier liegt, ist für die Wirtschaft am Schlössli gemacht: die Seite, die Werkzeuge, jedes Blatt. Öffnen Sie es, so oft Sie mögen, und sagen Sie mir, wo es noch nicht nach Ihrem Haus aussieht.</p>
     </div>
-    <div class="rh-gruss" data-a="auf"><p class="rh-gruss__t">Bis bald<span class="rh-gruss__b">{bild('robert', 'Robert Reff')}</span></p>
-      <p class="rh-gruss__n"><img class="rh-gruss__sig" src="img/unterschrift.webp" width="{M['unterschrift'][0]}" height="{M['unterschrift'][1]}" alt="Unterschrift Robert Reff" loading="lazy" decoding="async"><span>Robert Reff · Tasty Studios</span></p></div>
-    {OK.block('schluss')}
+    {_TG.schluss()}   <!-- Gruss wie in der Mail mit Billett (Robert 01.11.2026, nachgezogen 04.11.2026) -->
     <div class="kn-reihe" data-a="auf">{K.kn('Website ansehen', '../index.html', neu=True)}{K.kn(NF.akk(stube[1]) + ' öffnen', stube[6], 'kn--linie', neu=True) if stube[6] else ''}</div>
   </div>
 </section>'''

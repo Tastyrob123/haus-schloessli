@@ -466,6 +466,8 @@ def nach_bau():
     _fw.anwenden(seite)
     import wb_kapitel as _kp
     _kp.anwenden(seite)
+    import gruss_tg as _tg   # Brief mit drei Orten, Gruss mit Billett, Kapitel I hell (wie Wild Side und Schäfli, 04.11.2026)
+    _tg.anwenden(ROOT)
     # Nichts läuft mit dem Scrollen mit (Regel 55)
     t = open(seite, encoding='utf-8').read()
     t = _re.sub(r'\sdata-(?:drift|zug)="[^"]*"', '', t)

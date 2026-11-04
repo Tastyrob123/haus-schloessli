@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Werkbank Wirtschaft am Schlössli, Kapitel VIII «Das Angebot» (Nachtbau 3.11.2026). Inhalt wie im alten Schlössli-Stand (sb_angebot.py vom 20.10.2026):
-Betreuung CHF 200 im Monat (Robert 20.10.2026), der Bau ohne Betrag («Den Betrag nennen Sie», Roberts Entscheid 20.10.2026); Aufbau und Kleid wie die
-Werkbank des Culinarium (helle Blätter auf der Nacht, Karte als Menükarte), «So geht's weiter» statt «Woche für Woche» (Robert 29.10.2026, gilt für alle Häuser).
+"""Werkbank Wirtschaft am Schlössli, Kapitel VIII «Das Angebot» (Nachtbau 3.11.2026). Inhalt wie im alten Schlössli-Stand (sb_angebot.py vom 20.10.2026);
+Aufbau und Kleid wie die Werkbank des Culinarium (helle Blätter auf der Nacht, Karte als Menükarte), «So geht's weiter» statt «Woche für Woche» (Robert 29.10.2026, gilt für alle Häuser).
 Register → Zusammenfassung (mit Hausfoto) → Was dazugehört → Wie es gebaut ist und Ihre Daten → So geht's weiter → Karte «Ein Vorschlag.» (Was Ihnen gehört,
-Der Preis, Laufende Betreuung, Link zur Seite «KI und Ihre Daten», PDF). Keine weiteren Beträge, keine Kosten der KI (nicht gemessen). Zahlen gezählt aus dem gebauten Stand."""
+Laufende Betreuung, Link zur Seite «KI und Ihre Daten», PDF). Kein Betrag und kein Gang «Der Preis» (Robert 28./29.10.2026, nachgezogen 4.11.2026 wie beim Schäfli;
+vorher «Den Betrag nennen Sie» und Betreuung CHF 200 im Monat). Keine Kosten der KI (nicht gemessen). Zahlen gezählt aus dem gebauten Stand."""
 import html, json, os
 
 e = html.escape
 W = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(W)
 
-BETREUUNG_CHF = '200'   # CHF im Monat, Robert 20.10.2026
+BETREUUNG = None   # Robert 28.10.2026: «Kein Betrag auf der Werkbank, die Stelle bleibt ohne Zahl.» Gilt für alle Häuser, nachgezogen 4.11.2026 (vorher CHF 200)
 DATUM = 'Hamburg, 4. November 2026'   # Absender und Ort immer Hamburg, nie der Ort des Hauses (Demo-Check Schäfli 21.10.2026)
 PDF_NAME = 'vorschlag-wirtschaft-am-schloessli.pdf'
 PF = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg>'
@@ -49,7 +49,7 @@ def inhalt(z):
     zus = [f'Für die Wirtschaft am Schlössli habe ich einen ganzen Auftritt gebaut: die Website mit {wort(Z["seiten"])} Seiten, sieben Werkzeuge, mit denen Ihr Team sie selbst pflegt, '
            f'Ihre Karten neu gesetzt{", " + papier if papier else ""}{" und " + post if post else ""}. Alles davon können Sie hier anklicken.',
            'Gebaut ist es. Was fehlt, liegt bei Ihnen: die Zugänge zu Domain und Mail, der Entscheid zu den Fotos und das Gegenlesen von Karten und Preisen.',
-           f'Den Betrag für den Bau nennen Sie. Danach kümmere ich mich um Seite, Werkzeuge und KI, für CHF {BETREUUNG_CHF} im Monat, monatlich kündbar.']
+           'Um Seite, Werkzeuge und KI kümmere ich mich auch danach: Server, Sicherungen und Aktualisierungen, und Sie hören spätestens am nächsten Werktag von mir.']   # kein Betrag (Robert 28.10.2026)
     steht = [f'{gross(wort(Z["seiten"]))} Seiten: {wort(Z["gaeste_seiten"])} für Ihre Gäste, dazu das Rechtliche' if Z['seiten'] != Z['gaeste_seiten'] else f'{gross(wort(Z["seiten"]))} Seiten für Ihre Gäste', 'Die Karte nach Ländern, Lunch, Lästermeile, Wein und Bankett, je als PDF',
              'Reservation und Gutschein auf jeder Seite', gross(papier) if papier else 'Drucksachen für Tisch, Tür und Post',
              gross(post) if post else 'Mails an Ihre Gäste', 'Alle Dateien in einem Ordner, dazu Ihre Zeiger und die Wortmarke']
@@ -74,15 +74,11 @@ WEITER_SATZ = 'Das Tempo bestimmt Ihr Haus. Was in einem Schritt nicht fertig wi
 
 EIGENTUM = ['Website, Code, Karten, Drucksachen und Beiträge gehören Ihrem Haus.', 'Domain, Server und alle Zugänge laufen auf Ihren Namen.',
             'Die Fotos bleiben bei Ihnen und Ihren Fotografen.', 'Sollten wir einmal getrennte Wege gehen, nehmen Sie alles mit.']
-PREIS = [
-    ('Der Bau', 'Den Betrag nennen Sie', 'Sie nennen den Betrag, bei dem Sie sich wohlfühlen.'),
-    ('Betreuung', f'CHF {BETREUUNG_CHF} im Monat', ['Server, Domain, Sicherungen, Aktualisierungen, Sicherheit und Datenschutz.',
-        'Die sieben Werkzeuge laufen, Fehler behebe ich ohne Rechnung, ein Ausfall hat Vorrang.',
-        'Die KI kennt Ihre neuen Karten, Zeiten und Preise: ich halte ihr Wissen aktuell.',
-        'Antwort spätestens am nächsten Werktag. Ihr Team pflegt die Inhalte selbst.']),
-    ('Wünsche darüber hinaus', 'Angebot vorher', 'Ein weiterer Bereich oder eine neue Funktion: dafür mache ich Ihnen gern vorher ein Angebot.')]
-PREIS_FUSS = 'Monatlich kündbar, Beträge netto.'
-DANACH = ['Bis zum Umzug passen wir an, bis es stimmt.', 'Druckerei und Fotografen bleiben Ihre Rechnungen, ebenso die Gebühren von gastronovi und zenchef.']
+PREIS = []   # Robert 29.10.2026: über Geld wird in der Werkbank nicht gesprochen; der Gang «Der Preis» ist gestrichen (nachgezogen 4.11.2026)
+PREIS_FUSS = ''
+DANACH = ['Server, Domain, Sicherungen, Aktualisierungen, Sicherheit und Datenschutz.', 'Die sieben Werkzeuge laufen, Fehler behebe ich, ein Ausfall hat Vorrang.',
+          'Die KI kennt Ihre neuen Karten, Zeiten und Preise: ich halte ihr Wissen aktuell.', 'Antwort spätestens am nächsten Werktag. Ihr Team pflegt die Inhalte selbst.',
+          'Bis zum Umzug passen wir an, bis es stimmt.', 'Druckerei und Fotografen bleiben Ihre Rechnungen, ebenso die Gebühren von gastronovi und zenchef.']
 KI_SATZ = 'An vier Stellen arbeitet KI mit. Was sie dort tut und wo Ihre Daten bleiben, steht auf einer eigenen Seite.'
 
 
@@ -128,20 +124,15 @@ def angebot(k):
 def karte_html():
     zeilen = lambda pp: '<ul class="mn-l">' + ''.join(f'<li>{e(p)}</li>' for p in pp) + '</ul>'
     gang = lambda n, t: f'<p class="mn-gang"><span>{n}</span>{e(t)}</p>'
-    preis = ''
-    for t, r, s in PREIS:
-        unten = ('<ul class="mn-p__l">' + ''.join(f'<li>{e(x)}</li>' for x in s) + '</ul>') if isinstance(s, list) else f'<p class="mn-p__s">{e(s)}</p>'
-        preis += f'<li class="mn-p"><p class="mn-p__z"><b>{e(t)}</b><i></i><span>{e(r)}</span></p>{unten}</li>'
     return f'''<article class="mn" data-a="heben">
         <header class="mn-kopf">
           <img class="mn-zeichen" src="eigen/zeichen-kerze.svg" alt="" width="44" height="73">
           <p class="mn-haus">Wirtschaft am Schlössli · Bottighofen</p>
           <h3 class="mn-titel">Ein Vorschlag.</h3>
-          <p class="mn-unter">Eigentum, Preis und Betreuung, so wie ich es mir vorstelle. Über alles davon sprechen wir gern gemeinsam.</p>
+          <p class="mn-unter">Eigentum und Betreuung, so wie ich es mir vorstelle. Über alles davon sprechen wir gern gemeinsam.</p>
         </header>
         {ORN}{gang('I', 'Was Ihnen gehört')}{zeilen(EIGENTUM)}
-        {ORN}{gang('II', 'Der Preis')}<ul class="mn-l mn-preise">{preis}</ul><p class="mn-fuss">{e(PREIS_FUSS)}</p>
-        {ORN}{gang('III', 'Laufende Betreuung')}{zeilen(DANACH)}
+        {ORN}{gang('II', 'Laufende Betreuung')}{zeilen(DANACH)}
         {ORN}<p class="mn-ki-satz">{e(KI_SATZ)}</p>
         <p class="mn-ki"><a class="kn kn--klein" href="ki.html">KI und Ihre Daten<i>{PF}</i></a></p>
         <footer class="mn-ende"><i></i><span>{e(DATUM)}</span><i></i></footer>

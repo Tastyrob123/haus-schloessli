@@ -4,7 +4,8 @@ Die fünf Karten des Hauses als Idee neben der heutigen Fassung: Speisekarte nac
 «Idee» = der Satz des Hauses in _karten/pdf/ (Open Sans, Instrument Sans, DM Mono, feste Schnitte, kein Type 3, Preise wie im Original),
 «Heute» = die Original-PDFs des Hauses (einmal aus _quelle/website/pdf/ nach _werkbank/unterlagen_heute/ kopiert und eingecheckt: zur Laufzeit lädt
 nichts aus _quelle/). Je Seite der Idee die Seite des Originals mit den meisten gleichen Wörtern (altmap, pdftotext).
-Dazu zwei Unterlagen ohne heutige Fassung: der Brief an Christian Kuchler und das Angebot (Betreuung CHF 200 im Monat, Robert 20.10.2026; der Bau ohne Betrag).
+Dazu zwei Unterlagen ohne heutige Fassung: der Brief an Christian Kuchler und das Angebot, ohne Betrag und ohne Gang «Der Preis» (Robert 28./29.10.2026, nachgezogen 4.11.2026;
+vorher Betreuung CHF 200 im Monat und «Den Betrag nennen Sie»). «So geht es weiter» mit den fünf Schritten der Werkbank (sb_angebot.WEITER).
    PYTHONPATH=<Kit>:<_werkbank> python3 _werkbank/unterlagen_bau.py "<website/_werkbank>"            → unterlagen/pdf, satz/unterlagen-*.html, unterlagen.json
    node _werkbank/unterlagen_druck.js "<website/_werkbank>"                                            → unterlagen/pdf/<kurz>-brief.pdf, -angebot.pdf
    PYTHONPATH=<Kit>:<_werkbank> python3 _werkbank/unterlagen_bau.py "<website/_werkbank>" --seite     → unterlagen/index.html, unterlagen/img"""
@@ -32,7 +33,7 @@ OS, IN, MO = "'Open Sans',Arial,sans-serif", "'Instrument Sans',Arial,sans-serif
 MONATE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
 HEUTE_D = datetime.date.today()
 DATUM = f'{HEUTE_D.day}. {MONATE[HEUTE_D.month - 1]} {HEUTE_D.year}'
-BETREUUNG = 200   # CHF im Monat, Robert 20.10.2026
+BETREUUNG = None   # kein Betrag auf der Werkbank (Robert 28.10.2026, nachgezogen 4.11.2026; vorher CHF 200 im Monat)
 
 
 def woerter(pdf):
@@ -133,18 +134,18 @@ def angebot():
            f'{zw(Z["karten"]).lower()} Karten neu gesetzt, {zw(Z["druck"]).lower()} Drucksachen, {zw(Z["unter"]).lower()} Untersetzer für die Lästermeile, '
            f'{zw(Z["sticker"]).lower()} Sticker, {zw(Z["post"]).lower()} Postkarten und {zw(Z["gaben"]).lower()} Beigaben. Alles davon können Sie in der Werkbank anklicken.',
            'Gebaut ist es. Was fehlt, liegt bei Ihnen: die Zugänge zu Domain und Mail, der Entscheid zu den Fotos und das Gegenlesen von Karten und Preisen.',
-           f'Den Betrag für den Bau nennen Sie. Danach kümmere ich mich um Website, Werkzeuge und KI, für CHF {BETREUUNG} im Monat, monatlich kündbar.']
+           'Um Website, Werkzeuge und KI kümmere ich mich auch danach: Server, Sicherungen und Aktualisierungen, und Sie hören spätestens am nächsten Werktag von mir.']
     steht = ['Die Website mit allen Seiten und dem Rechtlichen', 'Die Karte nach Ländern, Lunch, Lästermeile, Weinkarte und Bankett, je als PDF',
              'Reservation über gastronovi und der Gutschein auf jeder Seite', f'{zw(Z["druck"])} Drucksachen, {zw(Z["unter"]).lower()} Untersetzer, {zw(Z["sticker"]).lower()} Sticker',
              f'{zw(Z["post"])} Postkarten und {zw(Z["gaben"]).lower()} Beigaben']
     braucht = ['Zugänge zu Domain und Mail', 'Der Entscheid zu den Fotos', 'Gegenlesen von Karten und Preisen', 'Freigabe der Rechtstexte']
     eigentum = ['Website, Code, Karten, Drucksachen und Beiträge gehören Ihrem Haus.', 'Domain, Server und alle Zugänge laufen auf Ihren Namen.',
                 'Die Fotos bleiben bei Ihnen und Ihren Fotografen.', 'Sollten wir einmal getrennte Wege gehen, nehmen Sie alles mit.']
-    betreuung = ['Server, Domain, Sicherungen, Aktualisierungen, Sicherheit und Datenschutz.', 'Die sieben Werkzeuge laufen, Fehler behebe ich ohne Rechnung, ein Ausfall hat Vorrang.',
-                 'Die KI kennt Ihre neuen Karten, Zeiten und Preise: ich halte ihr Wissen aktuell.', 'Antwort spätestens am nächsten Werktag. Ihr Team pflegt die Inhalte selbst.']
-    wochen = [('Zugänge und Gespräch', 'Gespräch mit Ihnen und Monika Huber, dazu die Liste der Zugänge.'), ('Lesen und berichtigen', 'Küche und Service lesen Karten, Preise und Seiten gegen; jede Korrektur am selben Tag.'),
-              ('Anbindungen und Fotos', 'Mailversand, Chat und jedes Werkzeug mit Passwort; freigegebene Fotos einarbeiten.'), ('Runde im Haus', 'Gemeinsam durch jede Seite und jedes Werkzeug.'),
-              ('Schulung', 'Eine Stunde je Werkzeug; Rechtstexte, Weiterleitungen, Google.'), ('Umzug', f'Die Seite geht unter {WEBSITE} online; zwei Wochen täglich hinsehen.')]
+    betreuung = ['Server, Domain, Sicherungen, Aktualisierungen, Sicherheit und Datenschutz.', 'Die sieben Werkzeuge laufen, Fehler behebe ich, ein Ausfall hat Vorrang.',
+                 'Die KI kennt Ihre neuen Karten, Zeiten und Preise: ich halte ihr Wissen aktuell.', 'Antwort spätestens am nächsten Werktag. Ihr Team pflegt die Inhalte selbst.',
+                 'Bis zum Umzug passen wir an, bis es stimmt.', 'Druckerei und Fotografen bleiben Ihre Rechnungen, ebenso die Gebühren von gastronovi und zenchef.']   # wie sb_angebot.DANACH
+    import sb_angebot as _SA
+    weiter = _SA.WEITER   # «So geht's weiter» wie auf der Werkbank (Robert 29.10.2026), statt sechs Wochen
 
     def block(titel, innen, b=160):
         return f'<div style="width:{b}mm;margin:0 0 7mm">{_et(titel, 2, HIMMELT, .18)}<i style="display:block;height:.25mm;background:{HIMMEL};margin:1.6mm 0 3mm"></i>{innen}</div>'
@@ -154,20 +155,14 @@ def angebot():
           + block('Zusammenfassung', ''.join(_p(e(ss(x)), 3.4) for x in zus))
           + f'<div style="display:flex;gap:10mm">{block("Steht, zum Anklicken", liste(steht, 3), 75)}{block("Läuft im Entwurf, zieht mit um", liste(wz, 3), 75)}</div>'
           + block('Braucht etwas von Ihnen', f'<div style="display:grid;grid-template-columns:1fr 1fr;column-gap:10mm">{liste(braucht, 3)}</div>')
-          + block('Wo die KI arbeitet', _p('Vier Stellen nutzen ein Sprachmodell: der Chat für Ihre Gäste, die Antwort auf eine Anfrage, Entwürfe in der Hausdruckerei und die Markenprüfung im Markenbuch. Es läuft über ein eigenes Konto Ihres Hauses beim Anbieter: Sie zahlen dort direkt nach Verbrauch, ich richte das Konto ein und setze eine Obergrenze je Monat. Jede Stelle läuft auch ohne KI weiter.', 3.1))
+          + block('Wo die KI arbeitet', _p('Vier Stellen nutzen ein Sprachmodell: der Chat für Ihre Gäste, die Antwort auf eine Anfrage, Entwürfe in der Hausdruckerei und die Markenprüfung im Markenbuch. Es läuft über ein eigenes Konto Ihres Hauses beim Anbieter; ich richte das Konto ein und setze eine Obergrenze je Monat. Jede Stelle läuft auch ohne KI weiter.', 3.1))
           + '</div>' + fuss_brief(1, 2))
-    zeile = lambda a, b_, c: (f'<div style="display:grid;grid-template-columns:40mm 50mm 1fr;gap:4mm;padding:3.4mm 0;border-bottom:.25mm solid {HIMMELH};align-items:baseline">'
-                              f'<div style="font:400 3.6mm/1.3 {OS};letter-spacing:.1em;text-transform:uppercase;color:{STUHL}">{e(a)}</div>'
-                              f'<div style="font:400 3.3mm/1.3 {MO};letter-spacing:.04em;color:{TINTE}">{e(b_)}</div><div>{c}</div></div>')
-    preis = (zeile('Der Bau', 'Den Betrag nennen Sie', _p('Sie nennen den Betrag, bei dem Sie sich wohlfühlen.', 3.1, mehr='margin:0'))
-             + zeile('Betreuung', f'CHF {BETREUUNG} im Monat', liste(betreuung, 3.1))
-             + zeile('Wünsche darüber hinaus', 'Angebot vorher', _p('Ein weiterer Bereich oder eine neue Funktion: dafür mache ich Ihnen gern vorher ein Angebot.', 3.1, mehr='margin:0')))
-    woche = ''.join(f'<div style="display:grid;grid-template-columns:16mm 1fr;gap:3mm;margin:0 0 2.2mm;align-items:baseline"><div style="font:400 2.2mm/1.4 {MO};letter-spacing:.12em;color:{HIMMELT}">WOCHE {i + 1}</div>'
-                    f'<div style="font:400 3.1mm/1.45 {IN};color:{TINTE}"><b style="font-weight:600">{e(t)}.</b> {e(ss(s))}</div></div>' for i, (t, s) in enumerate(wochen))
+    woche = ''.join(f'<div style="display:grid;grid-template-columns:16mm 1fr;gap:3mm;margin:0 0 2.2mm;align-items:baseline"><div style="font:400 2.2mm/1.4 {MO};letter-spacing:.12em;color:{HIMMELT}">{i + 1:02d}</div>'
+                    f'<div style="font:400 3.1mm/1.45 {IN};color:{TINTE}"><b style="font-weight:600">{e(t)}.</b> {e(ss(s))}</div></div>' for i, (t, s) in enumerate(weiter))
     s2 = (f'<i class="abs" style="inset:0;background:{WEISS}"></i>' + kopf_brief()
           + f'<div class="abs" style="left:25mm;top:44mm;width:160mm">'
-          + block('Der Preis', preis + _p('Monatlich kündbar, Beträge netto.', 2.9, LEISE, mehr='margin-top:3mm'))
           + block('Eigentum', liste(eigentum, 3.1))
+          + block('Laufende Betreuung', liste(betreuung, 3.1))
           + block('So geht es weiter', woche)
           + '</div>' + fuss_brief(2, 2))
     return [blatt(210, 297, s1, '', f'background:{WEISS}'), blatt(210, 297, s2, '', f'background:{WEISS}')]

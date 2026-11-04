@@ -24,7 +24,7 @@ KAPITEL_ALLE = [  # Anker, Name, Zeile im Register, Name in der Leiste, Objekt
     ('k5', 'Ihre Werkzeuge', 'Sieben Werkzeuge für Zeiten, Karten, Anlässe und Gäste, eines davon als Eingang zu allen.', 'Werkzeuge', 'maison'),
     ('k6', 'Für draussen', 'Drucksachen, Untersetzer für die Lästermeile, Mails an Ihre Gäste, Postkarten vom Hafen, Sticker und Beigaben, dazu ein Feed für Instagram.', 'Draussen', 'drucksachen'),
     ('k7', 'Geprüft', 'Wie alles ausprobiert wurde, und welche Fragen bei Ihnen liegen.', 'Geprüft', 'geprueft'),
-    ('k8', 'Das Angebot', 'Was Sie bekommen, so geht es weiter, und der Vorschlag: der Bau zu Ihrem Betrag, die Betreuung im Monat.', 'Angebot', 'vorschlag'),
+    ('k8', 'Das Angebot', 'Was Sie bekommen, so geht es weiter, und am Ende der Vorschlag als Menükarte.', 'Angebot', 'vorschlag'),   # kein Betrag (Robert 28.10.2026, nachgezogen 4.11.2026)
 ]
 BEFUND_DA = False   # setzt wb_kapitel.py, sobald der Befund («Die Lupe») gebaut ist
 

@@ -79,6 +79,8 @@ def ohne_fett(t):
 def anwenden():
     n = 0
     for p in glob.glob(os.path.join(ROOT, 'werkbank', '**', '*.css'), recursive=True) + glob.glob(os.path.join(ROOT, 'befund', '**', '*.css'), recursive=True):
+        if os.path.basename(p) == 'gruss.css':   # Gruss wie in der Mail bleibt in seinen Farben und Schnitten (Kanäle, Billett; Wild Side 01.11.2026, gruss_tg.py)
+            continue
         a = open(p, encoding='utf-8').read(); b = ohne_fett(faerbe(a))
         if a != b:
             open(p, 'w', encoding='utf-8').write(b); n += 1

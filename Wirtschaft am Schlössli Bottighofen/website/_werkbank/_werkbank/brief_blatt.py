@@ -9,6 +9,7 @@ Das Blatt steigt mit dem Scrollen herauf und ist von Anfang an ganz zu sehen (ke
 Eingehängt in haus.py: brief_abschnitt = brief_blatt.abschnitt(globals()), CSS am Dateiende, BILDER an EIGENE_BILDER."""
 import os
 import orte_kurs as _OK
+import gruss_tg as _TG   # Brief oben nur mit den drei Orten, kein Ticket (wie Wild Side und Schäfli, 4.11.2026)
 
 W = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(W)
@@ -47,7 +48,7 @@ function eben(){{if(innerWidth<900){{st.style.height='';return}}st.style.height=
 eben();addEventListener('resize',eben);addEventListener('load',eben);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(eben)}})();</script>
       <footer class="bf-fuss">
         {f'<p class="bf-gruss">{B["schluss"]}</p>' if B.get('schluss') else ''}
-        <div class="bf-fuss__reihe">{_OK.block('brief')}
+        <div class="bf-fuss__reihe">{_TG.brief()}
         <p class="bf-name"><img class="bf-sig" src="eigen/unterschrift.webp" width="890" height="282" alt="Unterschrift Robert Reff" loading="lazy" decoding="async"><span>Robert&nbsp;Reff · Tasty&nbsp;Studios</span></p></div>
       </footer>
     </article>
