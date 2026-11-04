@@ -241,3 +241,14 @@
 /* Kennzahl-Blätter bis 1240 px in zwei Spalten (das letzte über die ganze Breite): in drei schmalen Spalten brachen Etiketten und Sätze ungleich um */
 @media (min-width:621px) and (max-width:1240px){.rg .werte{grid-template-columns:repeat(2,minmax(0,1fr))}.rg .werte>.wert:last-child{grid-column:1/-1}}
 @media (min-width:621px) and (max-width:960px){.rg .werte .wert>p{max-width:36ch}}
+/* Cloud-Prüfung WebKit 4.11.2026 (K10 mitte/loch): zwei Blätter nebeneinander sind gleich hoch; das kürzere verteilt seine Zeilen über die ganze Höhe
+   («So wird gezählt»: erste Zeile unter dem Titel, letzte am Blattfuss; «Neben dem Zeitraum davor»: die Zeilen der Tabelle wachsen gleichmässig mit, die Werte stehen mittig in der Zeile) */
+.rg .zwei>.liste-txt{display:flex;flex-direction:column}
+.rg .zwei>.liste-txt>ul{flex:1 1 auto;align-content:space-between}
+.rg .zwei--fuell>.vergleich>.vz:not(.vz--kopf){flex:1 1 auto;align-items:center;align-content:center}
+@media (min-width:1241px){.rg .zwei--fuell>.vergleich>.vz:not(.vz--kopf){font-size:16px}}
+/* Besuchskarte: das Bild der Ankunftsseite trägt oben einen Schleier in Hausnacht mit der Zeile «Hier kam der Gast an · <Seite>»; ein heller Bildhimmel stand sonst als leeres Loch im Blatt */
+.besuch__buehne{position:relative}
+.besuch__buehne figcaption{position:absolute;inset:0;display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:linear-gradient(180deg,rgba(11,29,61,.74) 0,rgba(11,29,61,.34) 46%,rgba(11,29,61,.06) 82%,rgba(11,29,61,0) 100%);color:var(--wo-weiss,#fff);pointer-events:none}
+.besuch__buehne figcaption .mono{color:var(--wo-g2,#cfd8e6)}
+.besuch__buehne figcaption b{font:var(--wo-titel-g,400) 1.25rem/1.1 var(--titel);letter-spacing:var(--wo-titel-ls,.06em);text-transform:uppercase}

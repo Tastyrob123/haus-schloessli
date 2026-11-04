@@ -57,7 +57,7 @@ function seite(datei) { return S.namen[datei] || String(datei).replace(/\.html$/
 /* Bild je Seite (Fehlerbuch 10a, Robert 19.10.2026: jede Liste zeigt zu jedem Eintrag sein Bild): erstes eigenes Foto der Seite, kleine Fassung (seiten-bilder.json aus registre.py seiten) */
 function sbild(datei) { const b = S.bilder[datei]; return b ? `<img class="sbild" src="/${esc(b)}" alt="" width="56" height="42" loading="lazy" decoding="async">` : '<i class="sbild sbild--leer" aria-hidden="true"></i>'; }
 /* Tor 30.10.2026: ein kurzer Weg liess die Besuchskarte zur Hälfte leer. Die freie Höhe zeigt die Seite, auf der der Gast ankam; bei einem langen Weg bleibt dafür kein Platz und das Bild entfällt. */
-const buehne = b => { const s = b.weg && b.weg[0] && S.bilder[b.weg[0].s]; return s ? `<figure class="besuch__buehne" aria-hidden="true"><img src="/${esc(s)}" alt="" loading="lazy" decoding="async"></figure>` : ''; };
+const buehne = b => { const s = b.weg && b.weg[0] && S.bilder[b.weg[0].s]; return s ? `<figure class="besuch__buehne" aria-hidden="true"><img src="/${esc(s)}" alt="" loading="eager" decoding="sync"><figcaption><span class="mono">Hier kam der Gast an</span><b>${esc(seite(b.weg[0].s))}</b></figcaption></figure>` : ''; };
 /* Tor 30.10.2026: die letzten zwei Wörter bleiben zusammen («Frankfurt am Main, Deutschland» liess «Deutschland» allein stehen) */
 const zusammen = t => { const w = esc(t).split(' '); return w.length < 3 ? w.join(' ') : w.slice(0, -2).join(' ') + ' <span style="white-space:nowrap">' + w.slice(-2).join(' ') + '</span>'; };
 const mitBild = datei => `<span class="mit-bild">${sbild(datei)}<span>${zusammen(seite(datei))}</span></span>`;   /* «Kontakt & Öffnungszeiten»: die letzten zwei Wörter bleiben zusammen */

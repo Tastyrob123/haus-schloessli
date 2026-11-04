@@ -101,7 +101,9 @@ exports.verdeckte = function verdeckte() {
 exports.ergaenzung = function ergaenzung(opt) {
   const F = [], VW = innerWidth;
   const cs = e => getComputedStyle(e);
-  const sicht = e => { if (e.closest('[data-messlauf-aus]')) return false; const r = e.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return false; for (let x = e; x && x.nodeType === 1; x = x.parentElement) { const c = cs(x); if (c.display === 'none' || c.visibility === 'hidden' || +c.opacity < 0.05) return false; } return true; };
+  // Inhalt eines geschlossenen <details> (ausser der Summary) ist unsichtbar, meldet in WebKit/Chromium mit ::details-content (content-visibility:hidden) aber volle Masse (4.11.2026, README «K4 geschlossene details»)
+  const zuDetails = e => { for (let d = e.parentElement && e.parentElement.closest('details:not([open])'); d; d = d.parentElement && d.parentElement.closest('details:not([open])')) { const s = d.querySelector(':scope > summary'); if (!(s && s.contains(e))) return true; } return false; };
+  const sicht = e => { if (e.closest('[data-messlauf-aus]')) return false; if (zuDetails(e)) return false; const r = e.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return false; for (let x = e; x && x.nodeType === 1; x = x.parentElement) { const c = cs(x); if (c.display === 'none' || c.visibility === 'hidden' || +c.opacity < 0.05) return false; } return true; };
   const pfad = e => { const p = []; for (let x = e; x && x !== document.body && p.length < 4; x = x.parentElement) { let t = x.tagName.toLowerCase(); if (x.id) { p.unshift(t + '#' + x.id); break; } const k = typeof x.className === 'string' ? x.className.trim().split(/\s+/).slice(0, 2) : []; if (k.length && k[0]) t += '.' + k.join('.'); p.unshift(t); } return p.join(' > '); };
   const rect = e => { const r = e.getBoundingClientRect(); return { x: Math.round(r.left), y: Math.round(r.top + scrollY), w: Math.round(r.width), h: Math.round(r.height) }; };
   const txt = e => (e.innerText || e.placeholder || e.getAttribute('aria-label') || '').trim().replace(/\s+/g, ' ').slice(0, 60);
@@ -184,13 +186,20 @@ exports.ergaenzung = function ergaenzung(opt) {
 
   // K4 leere Kachel: Kachel/Knopf ohne Text und ohne sichtbares Bild; Bilder, die nicht laden; Flächen nur mit Hintergrund → Bildprüfung
   const KACHEL = /k[aä]chel|karte|tile|card|stueck|\bwo\b|wo__|feld|tafel|kasten|swatch|muster|tapete|vorschau|bild|foto|thumb|mini/i;
-  const pruefBild = [];
+  // Feste Ebenen (position:fixed, z. B. Fussleiste) im Fensterbild ausschneiden statt im Ganzseitenbild (dort rutschen sie weg); was unter einem festen
+  // Fenster/Schleier liegt (Dialog offen), ist keine sichtbare Kachel und wird nicht ins Bild geprüft (4.11.2026, Beleg in README «K4 feste Ebenen»)
+  const festIn = e => { for (let x = e; x && x.nodeType === 1; x = x.parentElement) if (cs(x).position === 'fixed') return true; return false; };
+  const unterSchleier = e => { const r = e.getBoundingClientRect(); const x = r.left + r.width / 2, y = r.top + r.height / 2; if (x < 0 || y < 0 || x > VW || y > innerHeight) return false;
+    const h = document.elementFromPoint(x, y); if (!h || e.contains(h) || h.contains(e)) return false;
+    for (let q = h; q && q.nodeType === 1; q = q.parentElement) { if (q.contains(e)) return false; if (cs(q).position === 'fixed') return true; } return false; };
+  const pruefBild = []; const pb = pruefBild.push.bind(pruefBild);
+  pruefBild.push = (t, e) => { if (e && unterSchleier(e)) return pruefBild.length; if (e && festIn(e)) { const r = e.getBoundingClientRect(); t.fest = { x: Math.round(r.left), y: Math.round(r.top), w: Math.round(r.width), h: Math.round(r.height) }; } return pb(t); };
   for (const e of sichtbar) {
     const k = typeof e.className === 'string' ? e.className : ''; const r = e.getBoundingClientRect();
     if (r.width < 40 || r.height < 40 || r.width > VW * 0.9) continue;
     if (e.tagName === 'IMG') { if (e.complete && e.naturalWidth === 0 && e.getAttribute('src')) fund(4, 'bild-fehlt', e, `Bild lädt nicht: ${(e.getAttribute('src') || '').split('/').pop()}`); continue; }
     // Fläche, die nur aus einem Hintergrundbild besteht (Muster, Tapete, Farbfeld): ins Bild schauen, ob etwas zu sehen ist
-    if (cs(e).backgroundImage.startsWith('url(') && !(e.innerText || '').trim() && !e.children.length && pruefBild.length < 14 && !e.closest('[class*="papier"],[class*="blatt"]')) { pruefBild.push({ sel: pfad(e) + ' [' + (cs(e).backgroundImage.match(/([^/]+?)["')]*$/) || ['', ''])[1] + ']', r: rect(e) }); continue; }
+    if (cs(e).backgroundImage.startsWith('url(') && !(e.innerText || '').trim() && !e.children.length && pruefBild.length < 14 && !e.closest('[class*="papier"],[class*="blatt"]')) { pruefBild.push({ sel: pfad(e) + ' [' + (cs(e).backgroundImage.match(/([^/]+?)["')]*$/) || ['', ''])[1] + ']', r: rect(e) }, e); continue; }
     if (!KACHEL.test(k) && !e.matches('button,a[href],figure,li')) continue;
     if (e.closest('[class*="papier"],[class*="blatt"]') && !istDok(e)) continue;
     const hatText = (e.innerText || '').trim().length > 0;
@@ -198,7 +207,7 @@ exports.ergaenzung = function ergaenzung(opt) {
     const bg = cs(e).backgroundImage !== 'none' || [...e.querySelectorAll('*')].some(x => sicht(x) && cs(x).backgroundImage !== 'none' && x.getBoundingClientRect().width > r.width * .5);
     if (!hatText && !medien.length && !bg && !e.matches('input,textarea,select') && (e.children.length === 0 || KACHEL.test(k))) {
       if (cs(e).backgroundColor !== 'rgba(0, 0, 0, 0)' || parseFloat(cs(e).borderTopWidth) > 0) fund(4, 'leer', e, `Kachel ohne Inhalt (${Math.round(r.width)}×${Math.round(r.height)} px)`); }
-    else if (!hatText && (bg || medien.length) && KACHEL.test(k) && pruefBild.length < 14) pruefBild.push({ sel: pfad(e), r: rect(e) });
+    else if (!hatText && (bg || medien.length) && KACHEL.test(k) && pruefBild.length < 14) pruefBild.push({ sel: pfad(e), r: rect(e) }, e);
   }
 
   // Dokumente: Lage für die Bildprüfung (Löcher, Mitte); K12 Stil; K14 doppelte Marke

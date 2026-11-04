@@ -134,7 +134,11 @@ const ohneZahlen = s => String(s).replace(/[\d.,:%]+/g, '#');
       await Promise.all(offen().concat([...document.images].filter(im => im.complete)).slice(0, 40).map(im => im.decode ? im.decode().catch(() => { }) : 0)); }, r).catch(() => { }); await warte(120); };
     for (const [i, d] of e.doks.entries()) { if (d.r.h < 110 || d.r.w < 70 || d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-d${i}.png`; const c = clip(d.r, 0); if (c.width < 20 || c.height < 20) continue; await insBild(d.r);
       await page.screenshot({ path: path.join(ordner, f), clip: c, fullPage: true }).then(() => zu.doks.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { }); }
-    for (const [i, d] of e.bilder.entries()) { if (d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-k${i}.png`; const c = clip(d.r, 0); if (c.width < 20 || c.height < 20) continue; await insBild(d.r);
+    for (const [i, d] of e.bilder.entries()) { if (d.r.x < 0 || d.r.x + d.r.w > w + 2) continue; const f = `${bildName}-k${i}.png`;
+      // feste Ebene (Fussleiste): im Fensterbild ausschneiden, nicht im Ganzseitenbild – dort steht sie nicht an ihrer Stelle (README «K4 feste Ebenen»)
+      if (d.fest) { await page.evaluate(() => scrollTo(0, 0)).catch(() => { }); await warte(150); const q = d.fest; const fx = Math.max(0, q.x), fy = Math.max(0, q.y); const fc = { x: fx, y: fy, width: Math.min(w - fx, q.w), height: Math.min(h - fy, q.h) }; if (fc.width < 20 || fc.height < 20) continue;
+        await page.screenshot({ path: path.join(ordner, f), clip: fc }).then(() => zu.kacheln.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { }); continue; }
+      const c = clip(d.r, 0); if (c.width < 20 || c.height < 20) continue; await insBild(d.r);
       await page.screenshot({ path: path.join(ordner, f), clip: c, fullPage: true }).then(() => zu.kacheln.push({ datei: f, r: d.r, sel: d.sel })).catch(() => { }); }
     await page.evaluate(() => document.querySelectorAll('[data-messlauf-aus="verdeckt"]').forEach(e => e.removeAttribute('data-messlauf-aus'))).catch(() => { });
     await page.evaluate(() => scrollTo(0, 0)).catch(() => { });
