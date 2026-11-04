@@ -101,12 +101,19 @@
 .wo__n b,.ms-zeile h2,.hk h2,.ms-tafel h1,.start__wahl h1,.handy__text{text-wrap:balance}
 .start__direkt{background-color:#eff2f6}
 .start__direkt textarea{background-color:transparent}
-#start #startGruppen button{text-indent:.12em}
 #start .wo__bild[data-bg]{background-image:linear-gradient(160deg,#1a3b6e,#0b1d3d)}
-#start #startGruppen button,.pk-chips button,.fo-reihe button,#seitenwahl button,.vb__toene button{letter-spacing:.12em!important;text-indent:.12em}
-.ms-kopf a.wo-kn--gold{padding-top:2.6px!important;padding-bottom:0!important}
-#btnPruefen{padding-top:1.8px!important;padding-bottom:0!important}
-#btnSpeichern{padding-top:2.2px!important;padding-bottom:0!important}
+#start #startGruppen button,.pk-chips button,.fo-reihe button,#seitenwahl button,.vb__toene button{letter-spacing:.12em!important}
+/* Knopfschrift (Prüfung WebKit/Linux 4.11.2026): Grundfall symmetrisch, wie WebKit setzt. Nur Chromium hängt die Sperrung nach dem letzten Buchstaben an
+   und setzt die Versalien dieser Knöpfe tiefer: Ausgleich nur in der Chromium-Weiche (interpolate-size + app-region kennt nur Chromium) */
+@supports (interpolate-size:allow-keywords) and (app-region:drag){
+  #start #startGruppen button,.pk-chips button,.fo-reihe button,#seitenwahl button,.vb__toene button{text-indent:.12em}
+  .ms-kopf a.wo-kn--gold{padding-top:2.6px!important;padding-bottom:0!important}
+  #btnPruefen{padding-top:1.8px!important;padding-bottom:0!important}
+  #btnSpeichern{padding-top:2.2px!important;padding-bottom:0!important}
+}
+@supports not ((interpolate-size:allow-keywords) and (app-region:drag)){
+  #btnSpeichern{padding-top:1px!important;padding-bottom:0!important}
+}
 #start h1,#start h2,#start h3,.kd__text h1{text-wrap:balance}
 .wo-sb__h,.mb__tw figcaption,.kd__text h1{text-wrap:balance}
 .ms-feld{background-color:#eff2f6}

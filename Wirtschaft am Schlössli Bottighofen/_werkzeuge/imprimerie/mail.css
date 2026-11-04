@@ -264,7 +264,8 @@
 .ml-f textarea.ml-zeile{resize:none;overflow:hidden;display:block}
 .ml-f textarea{overflow:hidden}
 /* Chips und Gruppen: halbe Sperrung links ausgleichen, das Wort steht optisch mittig */
-.ml-chips button,#mlFotoGruppen button,.ml-eintraege .kn{text-indent:.12em}
+/* nur Chromium hängt die Sperrung nach dem letzten Buchstaben an; WebKit setzt symmetrisch (Prüfung WebKit/Linux 4.11.2026: mit Ausgleich 0,6 px zu weit rechts) */
+@supports (interpolate-size:allow-keywords) and (app-region:drag){.ml-chips button,#mlFotoGruppen button,.ml-eintraege .kn{text-indent:.12em}}
 .ml-einfuegen button>span{text-box:trim-both cap alphabetic}   /* Wort ohne Leerraum unter der Grundlinie: Zeichen und Wort stehen als Gruppe mittig */
 /* Gemessener Ausgleich je Zeichen (Messlauf text-mitte, 30.10.2026): die Zeichen tragen oben unterschiedlich viel Luft im Raster, die Gruppe rückt um so viel hoch */
 .ml-einfuegen button{padding-top:calc(12px - var(--h,0px));padding-bottom:calc(12px + var(--h,0px))}
@@ -294,11 +295,8 @@
 .ml-kapitel p{text-wrap:balance}   /* M-D (Tor 2): «Hauses» nie allein in der letzten Zeile */
 /* Tor 2, Maschinenlauf 13:09: «PREISLISTE» bei schmaler Platte mit Luft zum Rand; «WEBSITE» in Safari mittig */
 @media (max-width:1180px) and (min-width:981px){#mlEinfuegen button span{letter-spacing:0;font-size:7.6px}}
-@supports (font:-apple-system-body){.ml-chips button{text-indent:.06em}}
 /* Tor 2, F1 (K13): Kacheln im Fenster «Fotos des Hauses» im Seitenverhältnis der Vorschaubilder (520 × 402), Plakate werden nicht beschnitten */
 .ml-fotos__raster img{aspect-ratio:520/402}
-/* Tor 2, F2 (K35): «Eintrag hinzufügen» und «Alle» in Safari optisch mittig, wie die Chips */
-@supports (font:-apple-system-body){#mlFotoGruppen button,.ml-eintraege .kn{text-indent:.06em}}
 
 /* Schnelle Prüfung 3.11.2026 (Mail-Seite) */
 .ml-zurueck{display:flex;justify-content:center;text-align:center}

@@ -391,6 +391,8 @@ html.probe-offen{overflow:visible}
 @media (min-width:701px) and (max-width:1180px){#ansicht>.wo-sb .wo-sb__text{max-width:min(76%,700px)}}
 /* Eingang: Liste und geöffnete Anfrage bis 1360 px untereinander, damit Kopf, Name und Felder der Anfrage nicht zerfallen (vorher bis 1180 px) */
 @media (max-width:1360px){.re-eingang{grid-template-columns:minmax(0,1fr)}.re-spalte{position:static;max-height:none;overflow:visible;margin:0;padding:0}}
+/* Liste im Eingang ohne eigenen Scrollbereich, auch breit: jede Anfrage liegt in der Seite und ist zu sehen, keine Karte hinter dem Rand der Spalte versteckt (Tor 4.11.2026: abgeschnittene Bildkacheln wirkten leer) */
+@media (min-width:1361px){.re-spalte{position:static;max-height:none;overflow:visible;margin:0;padding:0}.re-eingang{align-items:start}}
 
 /* Tor 3 (390): Kopfzeile im Angabe-Fenster hält Abstand zum runden Zurück-Knopf, Trenner nie am Zeilenanfang */
 #fenster .sb-fk{display:block;padding-right:44px;margin-left:-1.6em;clip-path:inset(-4px -4px -4px 1.6em);white-space:normal;text-wrap:balance}

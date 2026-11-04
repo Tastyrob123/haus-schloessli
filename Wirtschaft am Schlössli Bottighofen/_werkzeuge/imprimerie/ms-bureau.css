@@ -216,7 +216,7 @@ a.ms-lnk{color:var(--taupe-tief)}
    Text im eigenen span auf die Versalhöhe beschnitten; zentrierter, gesperrter Text links um die halbe Sperrung ausgeglichen (Chromium hängt die Sperrung
    nach dem letzten Buchstaben an, WebKit nicht) */
 .kn > span:not([class]), #msNav > button > span { text-box: trim-both cap alphabetic }
-#seitenwahl > button { padding-left: calc(14px + .065em) }
+@supports (interpolate-size:allow-keywords) and (app-region:drag) { #seitenwahl > button { padding-left: calc(14px + .065em) } }   /* nur Chromium (WebKit/Linux 4.11.2026: dort 0,9 px zu weit rechts) */
 
 /* Safari (29.10.2026, «Arten und Vorlagen» 24–43 fps): unter der offenen Übersicht malte WebKit bei jedem Scrollbild die ganze Arbeitsfläche mit
    (Verläufe, Blatt, Schatten), obwohl sie vollständig verdeckt ist (#start deckend, z 21 über 20). Darum unsichtbar, solange die Übersicht offen ist;
